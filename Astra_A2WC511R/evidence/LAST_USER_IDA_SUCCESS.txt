@@ -1,0 +1,21 @@
+Source: user's directly pasted final function-recovery report in the handoff conversation.
+This is a preserved excerpt, not a newly executed test.
+
+=== RECOVER MAIN TCU UPDATE FUNCTION ===
+00015A2C: create_insn -> 2
+add_func(15A2C) -> True
+function = 00015A2C-00015D46 sub_15A2C
+Boundary exactly matches 15A2C-15D46; name applied.
+0001122C: create_insn -> 2
+0001122E: create_insn -> 2
+00011230: create_insn -> 2
+1122E -> 15A2C: True
+0001122E: jsr @r2 ; sUpdateTcuDerivedSnapshot
+0001122C: mov.l #sUpdateTcuDerivedSnapshot, r2
+00011424: .data.l sUpdateTcuDerivedSnapshot
+function = 00015A2C-00015D46 sUpdateTcuDerivedSnapshot
+Database has been saved
+00015A02: create_insn -> 2
+add_func(15A02) -> True
+15A02 function: 00015A02-00015A16
+Database has been saved

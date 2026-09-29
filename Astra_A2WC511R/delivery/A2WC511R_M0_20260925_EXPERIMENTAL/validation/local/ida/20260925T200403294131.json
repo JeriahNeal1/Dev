@@ -1,0 +1,31 @@
+{
+  "request": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "tools/call",
+    "params": {
+      "name": "execute_python",
+      "arguments": {
+        "code": "import hashlib, json, dataclasses\nfrom pathlib import Path\nimport ida_bytes, ida_funcs, ida_name, ida_nalt, ida_segment, ida_ua, ida_ida, idautils, idc\noutdir = Path('C:/Dev/Astra_A2WC511R/reports/local/ida')\nrom = ida_bytes.get_bytes(0, 0x100000)\nassert rom and rom[0x2000:0x2009] == b'A2WC511R\\0'\nresult = {'metadata': dataclasses.asdict(db.metadata), 'input_path': ida_nalt.get_input_file_path(),\n    'rom_sha256': hashlib.sha256(rom).hexdigest(), 'processor': ida_ida.inf_get_procname(),\n    'big_endian': ida_ida.inf_is_be(), 'segments': [], 'functions': []}\nfor ea in idautils.Segments():\n    seg = ida_segment.getseg(ea)\n    result['segments'].append({'start': hex(seg.start_ea), 'end': hex(seg.end_ea), 'name': ida_segment.get_segm_name(seg)})\ndef disasm_window(start, end):\n    lines=[]\n    for ea in range(start,end,2):\n        insn=ida_ua.insn_t()\n        size=ida_ua.decode_insn(insn,ea)\n        lines.append({'ea':hex(ea),'bytes':ida_bytes.get_bytes(ea,2).hex(),'code':ida_bytes.is_code(ida_bytes.get_flags(ea)),\n            'size':size,'text':idc.generate_disasm_line(ea,idc.GENDSM_FORCE_CODE) if size else None})\n    return lines\nfor start,end in [(0x147AC,0x14818),(0x15A02,0x15A2C),(0x15A2C,0x15D92),(0x24950,0x24AA4),\n                  (0xAAC,0xC00),(0xF928,0x10000),(0xD270,0xD350),(0x121E0,0x122E0)]:\n    f=ida_funcs.get_func(start)\n    result['functions'].append({'requested':hex(start),'function':None if not f else [hex(f.start_ea),hex(f.end_ea)],\n        'name':ida_name.get_name(start),'lines':disasm_window(start,end),\n        'xrefs':[{'from':hex(x.frm),'type':x.type,'is_code':bool(x.iscode)} for x in idautils.XrefsTo(start)]})\n(outdir/'initial_static_audit.json').write_text(json.dumps(result,indent=2,default=str),encoding='utf-8')\nprint(json.dumps({k:v for k,v in result.items() if k!='functions'},default=str))\nprint('Function windows exported to initial_static_audit.json; no IDB edits.')\n"
+      }
+    }
+  },
+  "response": {
+    "jsonrpc": "2.0",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"result\": null,\n  \"stdout\": \"{\\\"metadata\\\": {\\\"path\\\": \\\"C:\\\\\\\\Dev\\\\\\\\SubaruRoms\\\\\\\\OEM\\\\\\\\A2WC511R_STOCK_ROMRAIDER.bin\\\", \\\"module\\\": \\\"A2WC511R_STOCK_ROMRAIDER.bin\\\", \\\"base_address\\\": 0, \\\"filesize\\\": 1048576, \\\"md5\\\": \\\"594f95336f5604f756487c01b9ad7f79\\\", \\\"sha256\\\": \\\"a34c4ce8238bf28bdc18c191bbe73b2179130aa9846e952a6fa332bae442de96\\\", \\\"crc32\\\": 1645573407, \\\"architecture\\\": \\\"SH4B\\\", \\\"bitness\\\": 32, \\\"format\\\": \\\"Binary file\\\", \\\"load_time\\\": \\\"2026-08-23 13:10:21\\\", \\\"compiler_information\\\": \\\"Name: Unknown, sizes in bits: (byte: 8, short: 16, enum: 32, int: 32, long: 32, double: 64, long_long: 64)\\\", \\\"execution_mode\\\": \\\"User Mode\\\"}, \\\"input_path\\\": \\\"C:\\\\\\\\Dev\\\\\\\\SubaruRoms\\\\\\\\OEM\\\\\\\\A2WC511R_STOCK_ROMRAIDER.bin\\\", \\\"rom_sha256\\\": \\\"a34c4ce8238bf28bdc18c191bbe73b2179130aa9846e952a6fa332bae442de96\\\", \\\"processor\\\": \\\"SH4B\\\", \\\"big_endian\\\": true, \\\"segments\\\": [{\\\"start\\\": \\\"0x0\\\", \\\"end\\\": \\\"0x100000\\\", \\\"name\\\": \\\"ROM\\\"}, {\\\"start\\\": \\\"0xffff0000\\\", \\\"end\\\": \\\"0xffffc000\\\", \\\"name\\\": \\\"RAM\\\"}]}\\nFunction windows exported to initial_static_audit.json; no IDB edits.\\n\",\n  \"stderr\": \"\"\n}"
+        }
+      ],
+      "isError": false,
+      "structuredContent": {
+        "result": null,
+        "stdout": "{\"metadata\": {\"path\": \"C:\\\\Dev\\\\SubaruRoms\\\\OEM\\\\A2WC511R_STOCK_ROMRAIDER.bin\", \"module\": \"A2WC511R_STOCK_ROMRAIDER.bin\", \"base_address\": 0, \"filesize\": 1048576, \"md5\": \"594f95336f5604f756487c01b9ad7f79\", \"sha256\": \"a34c4ce8238bf28bdc18c191bbe73b2179130aa9846e952a6fa332bae442de96\", \"crc32\": 1645573407, \"architecture\": \"SH4B\", \"bitness\": 32, \"format\": \"Binary file\", \"load_time\": \"2026-08-23 13:10:21\", \"compiler_information\": \"Name: Unknown, sizes in bits: (byte: 8, short: 16, enum: 32, int: 32, long: 32, double: 64, long_long: 64)\", \"execution_mode\": \"User Mode\"}, \"input_path\": \"C:\\\\Dev\\\\SubaruRoms\\\\OEM\\\\A2WC511R_STOCK_ROMRAIDER.bin\", \"rom_sha256\": \"a34c4ce8238bf28bdc18c191bbe73b2179130aa9846e952a6fa332bae442de96\", \"processor\": \"SH4B\", \"big_endian\": true, \"segments\": [{\"start\": \"0x0\", \"end\": \"0x100000\", \"name\": \"ROM\"}, {\"start\": \"0xffff0000\", \"end\": \"0xffffc000\", \"name\": \"RAM\"}]}\nFunction windows exported to initial_static_audit.json; no IDB edits.\n",
+        "stderr": ""
+      }
+    },
+    "id": 1
+  }
+}

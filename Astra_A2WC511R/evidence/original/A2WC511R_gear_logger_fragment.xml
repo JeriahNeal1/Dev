@@ -1,0 +1,17 @@
+<!-- Paste these two <ecuparam> blocks anywhere inside the existing <ecuparams>...</ecuparams> section -->
+<ecuparam id="E_A2WC511R_GE8" name="A2WC511R Gear State E8*" desc="Raw uint8 ECU RAM value at physical address 0xFFFF52E8 for A2WC511R 5EAT gear-state validation." target="1">
+    <ecu id="2F12515306">
+        <address>0xFF52E8</address>
+    </ecu>
+    <conversions>
+        <conversion units="raw" storagetype="uint8" expr="x" format="0" />
+    </conversions>
+</ecuparam>
+<ecuparam id="E_A2WC511R_GE9" name="A2WC511R Gear Index E9*" desc="Raw uint8 ECU RAM value at physical address 0xFFFF52E9 for A2WC511R 5EAT gear/index validation." target="1">
+    <ecu id="2F12515306">
+        <address>0xFF52E9</address>
+    </ecu>
+    <conversions>
+        <conversion units="raw" storagetype="uint8" expr="x" format="0" />
+    </conversions>
+</ecuparam>

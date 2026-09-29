@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "status": "FAIL",
+  "classification": "OLD_COMPILED_KERNEL_REJECTS_AFTER_VERSION_UNDER_ECU_SELF_ECHO",
+  "test_status": "PASS_REPRODUCED",
+  "kernel_sha256": "3d70abfb8617b87e1b9c52724fd27ed4066ba231818994e780c8ba3006de273f",
+  "manifest": "C:\\Dev\\A2WC511R_ReadKernel\\build\\attempt_03\\manifest.json",
+  "model_source": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\self_echo.py",
+    "sha256": "c269fc68522fde655b8b1c008f18c50ba68d4c1b53cec6ca7290c0231bea74ce"
+  },
+  "ready": {
+    "status": "PASS",
+    "tx_hex": "",
+    "instruction_count": 4214,
+    "stop_reason": "RX_WAIT",
+    "evidence": {
+      "sequence": 0,
+      "terminal_pc": "FFFF31CE",
+      "terminal_sp": "FFFF370C",
+      "min_sp": "FFFF370C",
+      "memory_event_sha256": "3e48b655376b0bcb171ab68810dc1c2aaa8b57e9daceb72c78cf3c32bf3b1604",
+      "execution_sha256": "6b8f10c37b5464c47a7cc2ece9a5d42a8a9d4f9be96e076c0fc26d1bb8464a59",
+      "SCI_schedule_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "physical": false
+    }
+  },
+  "version_exchange": {
+    "status": "FAIL",
+    "tx_hex": "beef000f8141325743353131522d524b3031005e",
+    "instruction_count": 549,
+    "stop_reason": "KERNEL_REJECT",
+    "evidence": {
+      "sequence": 1,
+      "terminal_pc": "FFFF31B2",
+      "terminal_sp": "FFFF370C",
+      "min_sp": "FFFF370C",
+      "memory_event_sha256": "22b247e549c592db45b11cdac8bb620c30626b3ac8b85687f2aa819ed1287ddd",
+      "execution_sha256": "cc108fb7d58df3cae1b8a55f986293f6a4e65c728080925b15d2f6122d5616bf",
+      "SCI_schedule_sha256": "2e6d0147b2fe8b3de7e22abac58e158440caa6e315d3726a15764e0a930d4d74",
+      "physical": false
+    }
+  },
+  "self_echo_events": {
+    "register_write": 53,
+    "register_read": 57,
+    "host_rx_enqueued": 1,
+    "rx_character_ready": 6,
+    "tx_character_start": 20,
+    "tx_shift_register_loaded": 20,
+    "tx_character_complete": 20,
+    "ECU_self_echo_received": 1,
+    "ECU_self_echo_overrun": 19
+  },
+  "controls": [
+    {
+      "RE": 0,
+      "status": "PASS",
+      "SSR": "84",
+      "RDR": "00",
+      "event_counts": {
+        "register_read": 2,
+        "register_write": 4,
+        "tx_character_start": 2,
+        "tx_shift_register_loaded": 2,
+        "tx_character_complete": 2,
+        "ECU_self_echo_ignored_RE0": 2
+      }
+    },
+    {
+      "RE": 1,
+      "status": "PASS",
+      "SSR": "E4",
+      "RDR": "12",
+      "event_counts": {
+        "register_read": 2,
+        "register_write": 4,
+        "tx_character_start": 2,
+        "tx_shift_register_loaded": 2,
+        "tx_character_complete": 2,
+        "ECU_self_echo_received": 1,
+        "ECU_self_echo_overrun": 1
+      }
+    }
+  ],
+  "physical_operations": 0,
+  "provider_loaded": false,
+  "scope": [
+    "Declared ECU transceiver loopback topology, not host J2534 TX-echo metadata",
+    "Actual compiled bytecode emits the version then sees ORER/RDRF and enters its fail halt",
+    "Prior no-self-echo model qualification remains scoped to its recorded profile and does not close this topology",
+    "Stock programming helper RE-disable evidence is supplied independently by the contracts agent"
+  ]
+}

@@ -1,0 +1,24 @@
+warning: [options] source value 8 is obsolete and will be removed in a future release
+warning: [options] target value 8 is obsolete and will be removed in a future release
+warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+3 warnings
+warning: [options] source value 8 is obsolete and will be removed in a future release
+warning: [options] target value 8 is obsolete and will be removed in a future release
+warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+3 warnings
+Classfile jar:file:///mnt/data/revision_work/A2WC511R_Codex_Handoff/integrations/romraider/dist/romraider-bridge.jar!/rombridge/Agent.class
+  Last modified Sep 25, 2026; size 5263 bytes
+  SHA-256 checksum a0628ed7b7b58d07f7f81e81de4b794690c8a2f310f7f6dadf45790bd62ecb62
+  Compiled from "Agent.java"
+public final class rombridge.Agent
+  minor version: 0
+  major version: 52
+  flags: (0x0031) ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+  this_class: #2                          // rombridge/Agent
+  super_class: #8                         // java/lang/Object
+  interfaces: 0, fields: 1, methods: 3, attributes: 2
+Constant pool:
+    #1 = Fieldref           #2.#3         // rombridge/Agent.server:Lcom/sun/net/httpserver/HttpServer;
+    #2 = Class              #4            // rombridge/Agent
+    #3 = NameAndType        #5:#6         // server:Lcom/sun/net/httpserver/HttpServer;
+    #4 = Utf8               rombridge/Agent

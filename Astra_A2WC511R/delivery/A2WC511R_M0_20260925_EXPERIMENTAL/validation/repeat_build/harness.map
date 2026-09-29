@@ -1,0 +1,64 @@
+
+Discarded input sections
+
+ .comment       0x0000000000000000       0x1d C:\Dev\Astra_A2WC511R\work\builds\m0_final_repeat_06\Diagnostic.o
+ .comment       0x0000000000000000       0x1d C:\Dev\Astra_A2WC511R\work\builds\m0_final_repeat_06\Bindings.o
+ .comment       0x0000000000000000       0x1d C:\Dev\Astra_A2WC511R\work\builds\m0_final_repeat_06\Identifier.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+
+.m0             0x00000000000e1000      0x364
+ *(.m0.code)
+ .m0.code       0x00000000000e1000      0x240 C:\Dev\Astra_A2WC511R\work\builds\m0_final_repeat_06\Diagnostic.o
+                0x00000000000e1000                m0_decode
+                0x00000000000e101c                m0_reasons
+                0x00000000000e10bc                m0_init
+                0x00000000000e1114                m0_observe
+ .m0.code       0x00000000000e1240       0x9c C:\Dev\Astra_A2WC511R\work\builds\m0_final_repeat_06\Bindings.o
+                0x00000000000e1240                m0_sample_hardware
+ .m0.code       0x00000000000e12dc       0x6c C:\Dev\Astra_A2WC511R\work\builds\m0_final_repeat_06\DecoderHook.o
+                0x00000000000e12dc                m0_decoder_hook
+ *(.text)
+ .text          0x00000000000e1348        0x0 C:\Dev\Astra_A2WC511R\work\builds\m0_final_repeat_06\Diagnostic.o
+ .text          0x00000000000e1348        0x0 C:\Dev\Astra_A2WC511R\work\builds\m0_final_repeat_06\Bindings.o
+ .text          0x00000000000e1348        0x0 C:\Dev\Astra_A2WC511R\work\builds\m0_final_repeat_06\Identifier.o
+ .text          0x00000000000e1348        0x0 C:\Dev\Astra_A2WC511R\work\builds\m0_final_repeat_06\DecoderHook.o
+ *(.text.*)
+ *(.rodata*)
+ *(.m0.identity)
+ .m0.identity   0x00000000000e1348       0x1c C:\Dev\Astra_A2WC511R\work\builds\m0_final_repeat_06\Identifier.o
+                0x00000000000e1348                m0_identifier
+                0x00000000ffff7400                _m0_state = 0xffff7400
+
+.rela.dyn       0x00000000000e1364        0x0
+ .rela.m0.code  0x0000000000000000        0x0 C:\Dev\Astra_A2WC511R\work\builds\m0_final_repeat_06\DecoderHook.o
+
+.forbidden      0x0000000071000000        0x0
+ *(.data*)
+ .data          0x0000000071000000        0x0 C:\Dev\Astra_A2WC511R\work\builds\m0_final_repeat_06\Diagnostic.o
+ .data          0x0000000071000000        0x0 C:\Dev\Astra_A2WC511R\work\builds\m0_final_repeat_06\Bindings.o
+ .data          0x0000000071000000        0x0 C:\Dev\Astra_A2WC511R\work\builds\m0_final_repeat_06\Identifier.o
+ .data          0x0000000071000000        0x0 C:\Dev\Astra_A2WC511R\work\builds\m0_final_repeat_06\DecoderHook.o
+ *(.bss*)
+ .bss           0x0000000071000000        0x0 C:\Dev\Astra_A2WC511R\work\builds\m0_final_repeat_06\Diagnostic.o
+ .bss           0x0000000071000000        0x0 C:\Dev\Astra_A2WC511R\work\builds\m0_final_repeat_06\Bindings.o
+ .bss           0x0000000071000000        0x0 C:\Dev\Astra_A2WC511R\work\builds\m0_final_repeat_06\Identifier.o
+ .bss           0x0000000071000000        0x0 C:\Dev\Astra_A2WC511R\work\builds\m0_final_repeat_06\DecoderHook.o
+ *(COMMON)
+
+/DISCARD/
+ *(.comment)
+ *(.note*)
+                0x0000000000000001                ASSERT ((SIZEOF (.forbidden) == 0x0), Unexpected global writable state)
+                0x0000000000000001                ASSERT ((SIZEOF (.m0) <= 0x1000), Diagnostic code exceeds provisional audit budget)
+LOAD C:\Dev\Astra_A2WC511R\work\builds\m0_final_repeat_06\Diagnostic.o
+LOAD C:\Dev\Astra_A2WC511R\work\builds\m0_final_repeat_06\Bindings.o
+LOAD C:\Dev\Astra_A2WC511R\work\builds\m0_final_repeat_06\Identifier.o
+LOAD C:\Dev\Astra_A2WC511R\work\builds\m0_final_repeat_06\DecoderHook.o
+OUTPUT(C:\Dev\Astra_A2WC511R\work\builds\m0_final_repeat_06\A2WC511R_DiagnosticM0.EXPERIMENTAL_UNAPPROVED.elf elf32-sh)

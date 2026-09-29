@@ -1,0 +1,3 @@
+# checksum_verification
+
+PASS offline arithmetic/round-trip. Native installed RomRaider and independent Python agree: tableFFB80, active descriptor sums32-bit BE words over[2000,FFAF8), correctionFFB88 equals5AA5A55A minus sum modulo2^32. RawSHA 8092a20fd37f17dd351d18c805fdf195c2207af9adecca25e388146c7a9acc37 intentionally has an invalid changed checksum; correctedSHA 6e556dd084e69af47c230a1787d229aee7b49d957d2848bb14a39a48a69042af is valid. Raw remove returns exact baseline; corrected remove plus checksum normalization returns exact baseline. No edit stamp added/normalized. See validation/patch/roundtrip_review.json and native final checksum audit.

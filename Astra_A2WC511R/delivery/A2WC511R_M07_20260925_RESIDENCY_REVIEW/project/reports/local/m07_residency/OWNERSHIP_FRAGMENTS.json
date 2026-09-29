@@ -1,0 +1,468 @@
+{
+  "schema": 1,
+  "classification": "CONDITIONAL_EXECUTABLE_SAVINGS_NOT_APPROVED_OWNERSHIP",
+  "stock_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+  "conditional_tail_bytes": 162,
+  "provably_owned_bytes": 0,
+  "status": "FAIL",
+  "objects": {
+    "division": {
+      "entry": 16992,
+      "changed_prefix": [
+        16992,
+        17060
+      ],
+      "original_changed_span": [
+        16992,
+        17162
+      ],
+      "candidate_tail": [
+        17060,
+        17162
+      ],
+      "conditional_saved_bytes": 102,
+      "proven_owned_bytes": 0,
+      "replacement_sha256": "d484207950dd46302e68a8d4f0d9cd9dfeeb9273ab565c6e2647b2ec23de39c5",
+      "entry_and_inbound_evidence": {
+        "entry": "00004260",
+        "changed_span": [
+          "00004260",
+          "0000430A"
+        ],
+        "proposed_tail": [
+          "000042A4",
+          "0000430A"
+        ],
+        "proposed_bytes": 102,
+        "provably_owned_bytes": 0,
+        "bounded_subclaims": {
+          "external_encoded_direct_branch": "PASS: all524287 aligned ROM words scanned; none target the full original object from outside.",
+          "external_PC_relative_read_of_changed_bytes": "PASS: all raw MOV.W/MOV.L/MOVA forms scanned; none overlap changed span from outside.",
+          "literal_function_entry_classification": "PASS: every aligned raw pointer into the full original object points at its ordinary entry; actual literal-load/JSR/delay-slot sequences verified.",
+          "external_call_manufactured_interior_return": "PASS: no BSR/BSRF/JSR outside the object has architectural returnPC inside it.",
+          "original_internal_calls": "PASS: original executed division and range paths contain no calls, so no original nested callee retains a legitimate returnPC into reclaimed instructions.",
+          "transparent_ROM_readback": "PASS_AS_ALLOWED_BEHAVIOR: native A0/A8 may expose changed bytes. No virtualization or claim of original byte identity.",
+          "semantic_replacement": "PASS_CONDITIONAL: reviewed structural induction / complete nibble partition argument, not finite sample extrapolation."
+        },
+        "complete_inbound_ownership": "FAIL",
+        "remaining_obligations": [
+          "computed_control_source_contracts",
+          "internal_code_as_data_consumers",
+          "interrupt_context_and_stack"
+        ],
+        "ordinary_calls": [
+          {
+            "load": "0001B250",
+            "call": "0001B254",
+            "pool": "0001B330",
+            "target": "00004260",
+            "register": 3,
+            "through_delay_slot": "d33760ec430b6143"
+          },
+          {
+            "load": "00033E6C",
+            "call": "00033E72",
+            "pool": "00033EE0",
+            "target": "00004260",
+            "register": 2,
+            "through_delay_slot": "d21c2c01d01a420b6183"
+          },
+          {
+            "load": "000483BC",
+            "call": "000483C2",
+            "pool": "000484A8",
+            "target": "00004260",
+            "register": 3,
+            "through_delay_slot": "d33a610c71fe430be003"
+          },
+          {
+            "load": "0006425C",
+            "call": "00064260",
+            "pool": "00064318",
+            "target": "00004260",
+            "register": 3,
+            "through_delay_slot": "d32e611c430be005"
+          }
+        ],
+        "old_literal_pool": "430A NOP and430C..4314 literals remain outside changedspan. No original linker/object identity established.",
+        "semantic_conditions": [
+          "R0divisor,R1dividend; arithmeticpair induction32 iterations; DT altersT then SHAR restorescapturedT; otherSRbits unchanged.",
+          "ExtraR4store/load at[initialSP-12,initialSP-8) onnonzerodivisor only. Contents of this word are not restored to pre-call contents; ownership/private assumption is necessary.",
+          "Divisorzero retains originalR2save,errorwrite44E toFFFF130C,R0zero and registersideeffects."
+        ]
+      },
+      "semantic_equivalence": "PASS_UNDER_DECLARED_ENTRY_PRIVATE_STACK_NONINTERLEAVING_CONTRACT",
+      "ownership_status": "FAIL"
+    },
+    "range_tail": {
+      "entry": 83566,
+      "changed_prefix": [
+        83772,
+        83824
+      ],
+      "original_changed_span": [
+        83772,
+        83884
+      ],
+      "candidate_tail": [
+        83824,
+        83884
+      ],
+      "conditional_saved_bytes": 60,
+      "proven_owned_bytes": 0,
+      "replacement_sha256": "6f89e419e01fb9c0b318f2e40b16a9d0f35ffc1af3c7f13c5d46679e173f3f4b",
+      "entry_and_inbound_evidence": {
+        "entry": "0001466E",
+        "changed_span": [
+          "0001473C",
+          "000147AC"
+        ],
+        "proposed_tail": [
+          "00014770",
+          "000147AC"
+        ],
+        "proposed_bytes": 60,
+        "provably_owned_bytes": 0,
+        "bounded_subclaims": {
+          "external_encoded_direct_branch": "PASS: all524287 aligned ROM words scanned; none target the full original object from outside.",
+          "external_PC_relative_read_of_changed_bytes": "PASS: all raw MOV.W/MOV.L/MOVA forms scanned; none overlap changed span from outside.",
+          "literal_function_entry_classification": "PASS: every aligned raw pointer into the full original object points at its ordinary entry; actual literal-load/JSR/delay-slot sequences verified.",
+          "external_call_manufactured_interior_return": "PASS: no BSR/BSRF/JSR outside the object has architectural returnPC inside it.",
+          "original_internal_calls": "PASS: original executed division and range paths contain no calls, so no original nested callee retains a legitimate returnPC into reclaimed instructions.",
+          "transparent_ROM_readback": "PASS_AS_ALLOWED_BEHAVIOR: native A0/A8 may expose changed bytes. No virtualization or claim of original byte identity.",
+          "semantic_replacement": "PASS_CONDITIONAL: reviewed structural induction / complete nibble partition argument, not finite sample extrapolation."
+        },
+        "complete_inbound_ownership": "FAIL",
+        "remaining_obligations": [
+          "computed_control_source_contracts",
+          "internal_code_as_data_consumers",
+          "interrupt_context_and_stack"
+        ],
+        "ordinary_calls": [
+          {
+            "load": "00011934",
+            "call": "00011936",
+            "pool": "00011AD8",
+            "target": "0001466E",
+            "register": 3,
+            "through_delay_slot": "d368430b0009"
+          }
+        ],
+        "semantic_conditions": [
+          "Entry1466E dominates withR6=64; original1473A setsR0=15 beforemask.",
+          "All16low-nibble classes preserveR4output,R0nibble,R3destination,R7=128,R6=64,allotherregisters andT=(n<=8 or n==15).",
+          "Sharedliteralpool146B4..14730 is read by preceding functions; it is not exclusive to this function and remains unchanged.",
+          "Arbitrary interior entry bypassingR6setup has a known negative equivalence counterexample."
+        ]
+      },
+      "semantic_equivalence": "PASS_UNDER_DECLARED_ENTRY_PRIVATE_STACK_NONINTERLEAVING_CONTRACT",
+      "ownership_status": "FAIL"
+    }
+  },
+  "profiles": {
+    "one_page": {
+      "raw_sha256": "005861f92771fc6b84e8e747faf5998130c12a528e3d73d2d35213d596de0513",
+      "payload_bytes": 100,
+      "additional_adapter_stack": 8,
+      "persistent_project_RAM_bytes": 0,
+      "payload_capacity_arithmetic": "PASS",
+      "accepted_residency": "FAIL",
+      "fragments": [
+        {
+          "role": "existing_executable_replacement",
+          "label": "experimental replacement division",
+          "start": 16992,
+          "end_exclusive": 17060,
+          "hex_range": [
+            "00004260",
+            "000042A4"
+          ],
+          "bytes": 68,
+          "parent_object": "division",
+          "before_sha256": "cdea4bf65c8a632690c1a32de843117cce391135dcd8510b41b872016f80aea7",
+          "after_sha256": "d484207950dd46302e68a8d4f0d9cd9dfeeb9273ab565c6e2647b2ec23de39c5",
+          "before_hex": "20082f26894b2f36e2002127333a312a23074124330441243304412433044124330441243304412433044124330441243304412433044124330441243304412433044124",
+          "after_hex": "20082f2689142f362f46e2002127333a312a2307e22041243304042942108ffa44214124312e601364f663f6000b62f6d102d203e0002122000b62f6ffff130c0000044e",
+          "ownership_status": "FAIL",
+          "owned_bytes": 0,
+          "semantic_scope": "Bounded original-function contract passes; complete incoming-control/internal-consumer closure fails",
+          "unclosed": [
+            "all calculated entries and internal code-as-data consumers",
+            "whole-context stack/interrupt contract"
+          ],
+          "evidence": [
+            {
+              "path": "protocol/execution_01/one_page_overlay.json",
+              "sha256": "0ad9d7115f19d9a928a870436a3cfb6ca5c9ff2d0d05084f5cb015c9a5058dae"
+            },
+            {
+              "path": "ownership_review/ownership_peer_review.json",
+              "sha256": "68c45930a964c7dfdb41db33410c1addbd7a3bd4b5577041d3fdb680852bd9be"
+            }
+          ]
+        },
+        {
+          "role": "payload",
+          "label": "raw six adapter",
+          "start": 17060,
+          "end_exclusive": 17160,
+          "hex_range": [
+            "000042A4",
+            "00004308"
+          ],
+          "bytes": 100,
+          "parent_object": "division",
+          "before_sha256": "ea3bcf3feda5496228629a3d7feadc11c9b447123d4da1b30b872f0f21ef69e0",
+          "after_sha256": "99fc9436af0c418bf07d61f135048508f32c8842666c115423badaa2e39214fc",
+          "before_hex": "3304412433044124330441243304412433044124330441243304412433044124330441243304412433044124330441243304412433044124330441243304412433044124330441243304412433044124312e601363f6000b62f6d103d203e0002122000b",
+          "after_hex": "2f162f4662d3d30fe4066026613630108b0c44108bf964f661f6e0072c00e0fc2b0060e0cb102e00a005000864f661f684e1cb0180e160e0c97f2e00d202422b00090009000042f0000484bc8010f014be10ff4c75ff4c8dff4ca1ff4c50ff4bc1ff4bc2",
+          "ownership_status": "FAIL",
+          "owned_bytes": 0,
+          "semantic_scope": "Bounded original-function contract passes; complete incoming-control/internal-consumer closure fails",
+          "unclosed": [
+            "all calculated entries and internal code-as-data consumers",
+            "whole-context stack/interrupt contract"
+          ],
+          "evidence": [
+            {
+              "path": "protocol/execution_01/one_page_overlay.json",
+              "sha256": "0ad9d7115f19d9a928a870436a3cfb6ca5c9ff2d0d05084f5cb015c9a5058dae"
+            },
+            {
+              "path": "ownership_review/ownership_peer_review.json",
+              "sha256": "68c45930a964c7dfdb41db33410c1addbd7a3bd4b5577041d3fdb680852bd9be"
+            }
+          ]
+        },
+        {
+          "role": "payload",
+          "label": "project default adapter",
+          "start": 296112,
+          "end_exclusive": 296124,
+          "hex_range": [
+            "000484B0",
+            "000484BC"
+          ],
+          "bytes": 12,
+          "parent_object": "SSM_live_default",
+          "before_sha256": "4590e1f7727bef2b7491c631fbccfb67483bb7571aef74074a37523fe53cf4b9",
+          "after_sha256": "a1483f637ff028910335699741c86d939ad517775c4f03291b6819d79cfeabd5",
+          "before_hex": "84e1cb0180e160e0c97f2e00",
+          "after_hex": "d201422b00090009000042a4",
+          "ownership_status": "FAIL",
+          "owned_bytes": 0,
+          "semantic_scope": "Intentional exact project-request extension; original default fallback preserved",
+          "unclosed": [
+            "all calculated entries and internal code-as-data consumers",
+            "whole-context stack/interrupt contract"
+          ],
+          "evidence": [
+            {
+              "path": "protocol/execution_01/one_page_overlay.json",
+              "sha256": "0ad9d7115f19d9a928a870436a3cfb6ca5c9ff2d0d05084f5cb015c9a5058dae"
+            },
+            {
+              "path": "protocol/DEFAULT_STUB_REFERENCES.json",
+              "sha256": "209f445a7461def859a20dc235055d4ca02a8576491004c20ffb3238b87b7501"
+            }
+          ]
+        }
+      ]
+    },
+    "two_pages": {
+      "raw_sha256": "9dc63ee19afaef524755e00e1da3ca958b12f76ceeaf8e36c70cd3a9e3bf57a1",
+      "payload_bytes": 148,
+      "additional_adapter_stack": 8,
+      "persistent_project_RAM_bytes": 0,
+      "payload_capacity_arithmetic": "PASS",
+      "accepted_residency": "FAIL",
+      "fragments": [
+        {
+          "role": "existing_executable_replacement",
+          "label": "experimental replacement division",
+          "start": 16992,
+          "end_exclusive": 17060,
+          "hex_range": [
+            "00004260",
+            "000042A4"
+          ],
+          "bytes": 68,
+          "parent_object": "division",
+          "before_sha256": "cdea4bf65c8a632690c1a32de843117cce391135dcd8510b41b872016f80aea7",
+          "after_sha256": "d484207950dd46302e68a8d4f0d9cd9dfeeb9273ab565c6e2647b2ec23de39c5",
+          "before_hex": "20082f26894b2f36e2002127333a312a23074124330441243304412433044124330441243304412433044124330441243304412433044124330441243304412433044124",
+          "after_hex": "20082f2689142f362f46e2002127333a312a2307e22041243304042942108ffa44214124312e601364f663f6000b62f6d102d203e0002122000b62f6ffff130c0000044e",
+          "ownership_status": "FAIL",
+          "owned_bytes": 0,
+          "semantic_scope": "Bounded original-function contract passes; complete incoming-control/internal-consumer closure fails",
+          "unclosed": [
+            "all calculated entries and internal code-as-data consumers",
+            "whole-context stack/interrupt contract"
+          ],
+          "evidence": [
+            {
+              "path": "protocol/execution_01/two_pages_overlay.json",
+              "sha256": "b15efa4a7a0f909529e368cae938e0f7f9258497bec6d4de10eb73f2576b98eb"
+            },
+            {
+              "path": "ownership_review/ownership_peer_review.json",
+              "sha256": "68c45930a964c7dfdb41db33410c1addbd7a3bd4b5577041d3fdb680852bd9be"
+            }
+          ]
+        },
+        {
+          "role": "existing_executable_replacement",
+          "label": "experimental replacement range_tail",
+          "start": 83772,
+          "end_exclusive": 83824,
+          "hex_range": [
+            "0001473C",
+            "00014770"
+          ],
+          "bytes": 52,
+          "parent_object": "range_tail",
+          "before_sha256": "6bc4bab946c50a48c011e082bfdf4f087dbe6adc5e02f053ac1e09bdc3d14ae1",
+          "after_sha256": "6f89e419e01fb9c0b318f2e40b16a9d0f35ffc1af3c7f13c5d46679e173f3f4b",
+          "before_hex": "9761205988008d1d000988018d1c000988028d1b000988038d1a000988048d19000988058d18000988068d17000988078d160009",
+          "after_hex": "970e2059e30833028900880fd402044c644cd302000b23400001475effff4bc000800001020408102040808080808080800f0009",
+          "ownership_status": "FAIL",
+          "owned_bytes": 0,
+          "semantic_scope": "Bounded original-function contract passes; complete incoming-control/internal-consumer closure fails",
+          "unclosed": [
+            "all calculated entries and internal code-as-data consumers",
+            "whole-context stack/interrupt contract"
+          ],
+          "evidence": [
+            {
+              "path": "protocol/execution_01/two_pages_overlay.json",
+              "sha256": "b15efa4a7a0f909529e368cae938e0f7f9258497bec6d4de10eb73f2576b98eb"
+            },
+            {
+              "path": "ownership_review/ownership_peer_review.json",
+              "sha256": "68c45930a964c7dfdb41db33410c1addbd7a3bd4b5577041d3fdb680852bd9be"
+            }
+          ]
+        },
+        {
+          "role": "payload",
+          "label": "two-page match",
+          "start": 17060,
+          "end_exclusive": 17148,
+          "hex_range": [
+            "000042A4",
+            "000042FC"
+          ],
+          "bytes": 88,
+          "parent_object": "division",
+          "before_sha256": "1ad5101aefa8856d92e3c91db889396328e5085767e087a1c6ae0e1875ee9bfb",
+          "after_sha256": "31bfda410cbc399f24a360895e8dda3ce8facdd8b87162df85546a1bd463aa0d",
+          "before_hex": "3304412433044124330441243304412433044124330441243304412433044124330441243304412433044124330441243304412433044124330441243304412433044124330441243304412433044124312e601363f6000b",
+          "after_hex": "84d3880e8b02d309a004e41288088b0ad307e40c62d36024613430108b0344108bf9000b6030000be0000009000042d8000042ec8010f00ebe10ff4c75ff4c8dff4ca1ff4c5005008010f008be11ff4bc1ff4bc203000009",
+          "ownership_status": "FAIL",
+          "owned_bytes": 0,
+          "semantic_scope": "Bounded original-function contract passes; complete incoming-control/internal-consumer closure fails",
+          "unclosed": [
+            "all calculated entries and internal code-as-data consumers",
+            "whole-context stack/interrupt contract"
+          ],
+          "evidence": [
+            {
+              "path": "protocol/execution_01/two_pages_overlay.json",
+              "sha256": "b15efa4a7a0f909529e368cae938e0f7f9258497bec6d4de10eb73f2576b98eb"
+            },
+            {
+              "path": "ownership_review/ownership_peer_review.json",
+              "sha256": "68c45930a964c7dfdb41db33410c1addbd7a3bd4b5577041d3fdb680852bd9be"
+            }
+          ]
+        },
+        {
+          "role": "payload",
+          "label": "two-page main",
+          "start": 83824,
+          "end_exclusive": 83884,
+          "hex_range": [
+            "00014770",
+            "000147AC"
+          ],
+          "bytes": 60,
+          "parent_object": "range_tail",
+          "before_sha256": "b86e2c828f23245d908f12e43dbd0efa9fd29759e10d7c5aa0b3d09d144cbb5a",
+          "after_sha256": "e1b87d3e683128c8b2ada9e18e8db85afe4b18ac9bc6d744677f24029820773e",
+          "before_hex": "88088d170009880f8d120009a0120009a011e400a00fe401a00de402a00be404a009e408a007e410a005e420a0036463a001e40f6473d318000b2340",
+          "after_hex": "2f162f46d30b430b000964f661f68b072c004021600b70fe2b0060e0a004cb1084e1cb0180e160e0c97f2e000008d202422b0009000042a4000484bc",
+          "ownership_status": "FAIL",
+          "owned_bytes": 0,
+          "semantic_scope": "Bounded original-function contract passes; complete incoming-control/internal-consumer closure fails",
+          "unclosed": [
+            "all calculated entries and internal code-as-data consumers",
+            "whole-context stack/interrupt contract"
+          ],
+          "evidence": [
+            {
+              "path": "protocol/execution_01/two_pages_overlay.json",
+              "sha256": "b15efa4a7a0f909529e368cae938e0f7f9258497bec6d4de10eb73f2576b98eb"
+            },
+            {
+              "path": "ownership_review/ownership_peer_review.json",
+              "sha256": "68c45930a964c7dfdb41db33410c1addbd7a3bd4b5577041d3fdb680852bd9be"
+            }
+          ]
+        },
+        {
+          "role": "payload",
+          "label": "project default adapter",
+          "start": 296112,
+          "end_exclusive": 296124,
+          "hex_range": [
+            "000484B0",
+            "000484BC"
+          ],
+          "bytes": 12,
+          "parent_object": "SSM_live_default",
+          "before_sha256": "4590e1f7727bef2b7491c631fbccfb67483bb7571aef74074a37523fe53cf4b9",
+          "after_sha256": "e88cef13d716ffa2c00f7dfe3bb19991dd0f84659a4a741bc0471492efe8b833",
+          "before_hex": "84e1cb0180e160e0c97f2e00",
+          "after_hex": "d201422b0009000900014770",
+          "ownership_status": "FAIL",
+          "owned_bytes": 0,
+          "semantic_scope": "Intentional exact project-request extension; original default fallback preserved",
+          "unclosed": [
+            "all calculated entries and internal code-as-data consumers",
+            "whole-context stack/interrupt contract"
+          ],
+          "evidence": [
+            {
+              "path": "protocol/execution_01/two_pages_overlay.json",
+              "sha256": "b15efa4a7a0f909529e368cae938e0f7f9258497bec6d4de10eb73f2576b98eb"
+            },
+            {
+              "path": "protocol/DEFAULT_STUB_REFERENCES.json",
+              "sha256": "209f445a7461def859a20dc235055d4ca02a8576491004c20ffb3238b87b7501"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "allowed_modified_image_behavior": "Transparent OEM diagnostic ROM readback exposes the modified bytes; it need not emulate the old ROM.",
+  "not_allowed_as_proof": "No finite test count, missing literal reference or capacity calculation closes an unknown pointer domain.",
+  "evidence": [
+    {
+      "path": "ownership_review/ownership_peer_review.json",
+      "sha256": "68c45930a964c7dfdb41db33410c1addbd7a3bd4b5577041d3fdb680852bd9be"
+    },
+    {
+      "path": "semantic/TARGET_DOMAIN_CLOSURE.json",
+      "sha256": "fe06f22d6d8de4b2c5f43db3fcebefc7baa158c214d5ece0f670a6e9482a0bb1"
+    },
+    {
+      "path": "semantic/semantic_structural_proof.json",
+      "sha256": "3ccb19ea564fc4a4fbc2e2344cfab3622f5df8c1ac1a6501400f4b2b7b88f0e9"
+    },
+    {
+      "path": "semantic/abstract_concrete_crosscheck.json",
+      "sha256": "30902579b5030ddd0d39a8262c6bb6c428455f3f9876a394e18c63dc3635f1a9"
+    }
+  ]
+}

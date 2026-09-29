@@ -1,0 +1,33 @@
+<!-- Add inside the SSM <ecuparams> block -->
+<ecuparam id="E_A2WC511R_TCU_BC0" name="A2WC511R TCU State BC0*" desc="Raw uint8 ECU RAM byte at physical address 0xFFFF4BC0; adjacent transmission-derived state." target="1">
+                    <ecu id="2F12515306">
+                        <address>0xFF4BC0</address>
+                    </ecu>
+                    <conversions>
+                        <conversion units="raw" storagetype="uint8" expr="x" format="0" />
+                    </conversions>
+                </ecuparam>
+<ecuparam id="E_A2WC511R_RAW_GEAR_RANGE_A" name="A2WC511R Raw Gear/Range A*" desc="Raw uint8 ECU RAM byte at physical address 0xFFFF4BC1; decoded from the upper nibble of 0xFFFF4C8D." target="1">
+                    <ecu id="2F12515306">
+                        <address>0xFF4BC1</address>
+                    </ecu>
+                    <conversions>
+                        <conversion units="raw" storagetype="uint8" expr="x" format="0" />
+                    </conversions>
+                </ecuparam>
+<ecuparam id="E_A2WC511R_TCU_STATE_BC3" name="A2WC511R TCU State BC3*" desc="Raw uint8 ECU RAM byte at physical address 0xFFFF4BC3; adjacent state consumed with BC1/BC2." target="1">
+                    <ecu id="2F12515306">
+                        <address>0xFF4BC3</address>
+                    </ecu>
+                    <conversions>
+                        <conversion units="raw" storagetype="uint8" expr="x" format="0" />
+                    </conversions>
+                </ecuparam>
+<ecuparam id="E_A2WC511R_PACKED_GEAR_RANGE" name="A2WC511R Packed Gear/Range Byte*" desc="Raw uint8 ECU RAM byte at physical address 0xFFFF4C8D; OEM decoder splits upper nibble to FFFF4BC1 and lower nibble to FFFF4BC2." target="1">
+                    <ecu id="2F12515306">
+                        <address>0xFF4C8D</address>
+                    </ecu>
+                    <conversions>
+                        <conversion units="raw" storagetype="uint8" expr="x" format="0" />
+                    </conversions>
+                </ecuparam>

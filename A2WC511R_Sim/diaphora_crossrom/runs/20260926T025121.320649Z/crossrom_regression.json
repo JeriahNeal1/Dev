@@ -1,0 +1,626 @@
+{
+  "classification": "SCOPED_CROSS_ROM_FUNCTION_CORRESPONDENCE_NOT_OWNERSHIP",
+  "status": "PASS",
+  "core_sha256": "b47ac261634c116c3ffcdf19da9ec73e7014c034cd349ea8867f5f54895cdfff",
+  "baseline": {
+    "source": "C:\\Dev\\SubaruRoms\\OEM\\A2WC511R.bin",
+    "sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+    "base_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+    "overlays": [],
+    "size": 1048576
+  },
+  "inventory_path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\diaphora\\rom_inventory\\public_rom_manifest.json",
+  "inventory_sha256": "d8a21b1313c5b795a2bbfa9d2a26c1383ed8b7bf15b8afb0cc1d867826e7c3cb",
+  "normalization": "Range only: explicit3 RAM roles and finalR3 output pointer; immutable ROM literal access order may differ for first3 independent loads. All other GPRs/system state and full canonical RAM/init bytes plus ordered RAM/MMIO accesses compared exactly. Division compares actual addresses without normalization.",
+  "ROM_mapping": [
+    {
+      "calid": "A2WC412D",
+      "rom": {
+        "source": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\diaphora\\rom_inventory\\public_reference_roms\\A2WC412D-2005-USDM-Subaru-Forester-XT-AT.hex",
+        "sha256": "9e3fef13a900745e6704188d76d12f021f984ad2e670b7df007d6943e3532d49",
+        "base_sha256": "9e3fef13a900745e6704188d76d12f021f984ad2e670b7df007d6943e3532d49",
+        "overlays": [],
+        "size": 1048576
+      },
+      "division_entry": "0x00004260",
+      "division_full_object_equal": true,
+      "range_entry": "0x0001447C",
+      "range_last_instruction": "0x00014562",
+      "range_roles": {
+        "source": "0xFFFF4C58",
+        "flags": "0xFFFF4BA4",
+        "output": "0xFFFF4BB4"
+      },
+      "range_structural_signature_sha256": "e6fbc1a51c12ee9b0e77102175f636305503a7d1aefa7af847ebd4f18477ea44",
+      "reachable_instruction_count": 95,
+      "first3_reordered": true,
+      "literal_dependencies": [
+        {
+          "pc": 83068,
+          "register": 3,
+          "address": 83172,
+          "size": 4,
+          "value": 4294921304
+        },
+        {
+          "pc": 83072,
+          "register": 4,
+          "address": 83176,
+          "size": 4,
+          "value": 4294921124
+        },
+        {
+          "pc": 83188,
+          "register": 7,
+          "address": 83356,
+          "size": 2,
+          "value": 128
+        },
+        {
+          "pc": 83294,
+          "register": 3,
+          "address": 83360,
+          "size": 4,
+          "value": 4294921140
+        }
+      ]
+    },
+    {
+      "calid": "A2WC510C",
+      "rom": {
+        "source": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\diaphora\\rom_inventory\\public_reference_roms\\A2WC510C-2005-USDM-Legacy-GT.hex",
+        "sha256": "77c797e8fd88b642fb1779367b4ce482e90760d251ad1cf68f533e81b49ea7dc",
+        "base_sha256": "77c797e8fd88b642fb1779367b4ce482e90760d251ad1cf68f533e81b49ea7dc",
+        "overlays": [],
+        "size": 1048576
+      },
+      "division_entry": "0x00004260",
+      "division_full_object_equal": true,
+      "range_entry": "0x0001466E",
+      "range_last_instruction": "0x000147AA",
+      "range_roles": {
+        "source": "0xFFFF4C8C",
+        "flags": "0xFFFF4BA4",
+        "output": "0xFFFF4BC0"
+      },
+      "range_structural_signature_sha256": "e6fbc1a51c12ee9b0e77102175f636305503a7d1aefa7af847ebd4f18477ea44",
+      "reachable_instruction_count": 95,
+      "first3_reordered": false,
+      "literal_dependencies": [
+        {
+          "pc": 83568,
+          "register": 4,
+          "address": 83760,
+          "size": 4,
+          "value": 4294921124
+        },
+        {
+          "pc": 83570,
+          "register": 3,
+          "address": 83756,
+          "size": 4,
+          "value": 4294921356
+        },
+        {
+          "pc": 83772,
+          "register": 7,
+          "address": 83970,
+          "size": 2,
+          "value": 128
+        },
+        {
+          "pc": 83878,
+          "register": 3,
+          "address": 83976,
+          "size": 4,
+          "value": 4294921152
+        }
+      ]
+    },
+    {
+      "calid": "A2WC521C",
+      "rom": {
+        "source": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\diaphora\\rom_inventory\\public_reference_roms\\A2WC521C-2005-USDM-Legacy-GT.hex",
+        "sha256": "412286a0c4e8106bf6db73a67b908108a9730f9ad41d22c4e946b147a9137461",
+        "base_sha256": "412286a0c4e8106bf6db73a67b908108a9730f9ad41d22c4e946b147a9137461",
+        "overlays": [],
+        "size": 1048576
+      },
+      "division_entry": "0x00004260",
+      "division_full_object_equal": true,
+      "range_entry": "0x0001466E",
+      "range_last_instruction": "0x000147AA",
+      "range_roles": {
+        "source": "0xFFFF4C9C",
+        "flags": "0xFFFF4BA4",
+        "output": "0xFFFF4BC0"
+      },
+      "range_structural_signature_sha256": "e6fbc1a51c12ee9b0e77102175f636305503a7d1aefa7af847ebd4f18477ea44",
+      "reachable_instruction_count": 95,
+      "first3_reordered": false,
+      "literal_dependencies": [
+        {
+          "pc": 83568,
+          "register": 4,
+          "address": 83760,
+          "size": 4,
+          "value": 4294921124
+        },
+        {
+          "pc": 83570,
+          "register": 3,
+          "address": 83756,
+          "size": 4,
+          "value": 4294921372
+        },
+        {
+          "pc": 83772,
+          "register": 7,
+          "address": 83970,
+          "size": 2,
+          "value": 128
+        },
+        {
+          "pc": 83878,
+          "register": 3,
+          "address": 83976,
+          "size": 4,
+          "value": 4294921152
+        }
+      ]
+    },
+    {
+      "calid": "A2WC500R",
+      "rom": {
+        "source": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\diaphora\\rom_inventory\\public_reference_roms\\A2WC500R-2005-USDM-Subaru-Outback-XT-AT.hex",
+        "sha256": "826aa3d8150ad90817d99b70f53a7cbeef3a8a26e2760de609b2c0d2b0c3b6ee",
+        "base_sha256": "826aa3d8150ad90817d99b70f53a7cbeef3a8a26e2760de609b2c0d2b0c3b6ee",
+        "overlays": [],
+        "size": 1048576
+      },
+      "division_entry": "0x00004260",
+      "division_full_object_equal": true,
+      "range_entry": "0x000146AE",
+      "range_last_instruction": "0x000147EA",
+      "range_roles": {
+        "source": "0xFFFF4C8C",
+        "flags": "0xFFFF4BA4",
+        "output": "0xFFFF4BC0"
+      },
+      "range_structural_signature_sha256": "e6fbc1a51c12ee9b0e77102175f636305503a7d1aefa7af847ebd4f18477ea44",
+      "reachable_instruction_count": 95,
+      "first3_reordered": false,
+      "literal_dependencies": [
+        {
+          "pc": 83632,
+          "register": 4,
+          "address": 83824,
+          "size": 4,
+          "value": 4294921124
+        },
+        {
+          "pc": 83634,
+          "register": 3,
+          "address": 83820,
+          "size": 4,
+          "value": 4294921356
+        },
+        {
+          "pc": 83836,
+          "register": 7,
+          "address": 84034,
+          "size": 2,
+          "value": 128
+        },
+        {
+          "pc": 83942,
+          "register": 3,
+          "address": 84040,
+          "size": 4,
+          "value": 4294921152
+        }
+      ]
+    },
+    {
+      "calid": "A2WC510R",
+      "rom": {
+        "source": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\diaphora\\rom_inventory\\public_reference_roms\\A2WC510R-2005-USDM-Subaru-Outback-XT-AT.hex",
+        "sha256": "436727271930c5cf13ec948e0416f661c6b3b2575ccdc35cfb787aafd5715e49",
+        "base_sha256": "436727271930c5cf13ec948e0416f661c6b3b2575ccdc35cfb787aafd5715e49",
+        "overlays": [],
+        "size": 1048576
+      },
+      "division_entry": "0x00004260",
+      "division_full_object_equal": true,
+      "range_entry": "0x0001466E",
+      "range_last_instruction": "0x000147AA",
+      "range_roles": {
+        "source": "0xFFFF4C8C",
+        "flags": "0xFFFF4BA4",
+        "output": "0xFFFF4BC0"
+      },
+      "range_structural_signature_sha256": "e6fbc1a51c12ee9b0e77102175f636305503a7d1aefa7af847ebd4f18477ea44",
+      "reachable_instruction_count": 95,
+      "first3_reordered": false,
+      "literal_dependencies": [
+        {
+          "pc": 83568,
+          "register": 4,
+          "address": 83760,
+          "size": 4,
+          "value": 4294921124
+        },
+        {
+          "pc": 83570,
+          "register": 3,
+          "address": 83756,
+          "size": 4,
+          "value": 4294921356
+        },
+        {
+          "pc": 83772,
+          "register": 7,
+          "address": 83970,
+          "size": 2,
+          "value": 128
+        },
+        {
+          "pc": 83878,
+          "register": 3,
+          "address": 83976,
+          "size": 4,
+          "value": 4294921152
+        }
+      ]
+    },
+    {
+      "calid": "A2WC510S",
+      "rom": {
+        "source": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\diaphora\\rom_inventory\\public_reference_roms\\A2WC510S-2005-USDM-Subaru-Outback-XT-MT.hex",
+        "sha256": "c23268551cb2a1a8820525ef98a00d7032ad6989fe0b6a1e77dfd39528b9292c",
+        "base_sha256": "c23268551cb2a1a8820525ef98a00d7032ad6989fe0b6a1e77dfd39528b9292c",
+        "overlays": [],
+        "size": 1048576
+      },
+      "division_entry": "0x00004260",
+      "division_full_object_equal": true,
+      "range_entry": "0x0001466E",
+      "range_last_instruction": "0x000147AA",
+      "range_roles": {
+        "source": "0xFFFF4C8C",
+        "flags": "0xFFFF4BA4",
+        "output": "0xFFFF4BC0"
+      },
+      "range_structural_signature_sha256": "e6fbc1a51c12ee9b0e77102175f636305503a7d1aefa7af847ebd4f18477ea44",
+      "reachable_instruction_count": 95,
+      "first3_reordered": false,
+      "literal_dependencies": [
+        {
+          "pc": 83568,
+          "register": 4,
+          "address": 83760,
+          "size": 4,
+          "value": 4294921124
+        },
+        {
+          "pc": 83570,
+          "register": 3,
+          "address": 83756,
+          "size": 4,
+          "value": 4294921356
+        },
+        {
+          "pc": 83772,
+          "register": 7,
+          "address": 83970,
+          "size": 2,
+          "value": 128
+        },
+        {
+          "pc": 83878,
+          "register": 3,
+          "address": 83976,
+          "size": 4,
+          "value": 4294921152
+        }
+      ]
+    },
+    {
+      "calid": "A2WC511R",
+      "rom": {
+        "source": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\diaphora\\rom_inventory\\public_reference_roms\\A2WC511R-2005-USDM-Outback-XT.hex",
+        "sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+        "base_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+        "overlays": [],
+        "size": 1048576
+      },
+      "division_entry": "0x00004260",
+      "division_full_object_equal": true,
+      "range_entry": "0x0001466E",
+      "range_last_instruction": "0x000147AA",
+      "range_roles": {
+        "source": "0xFFFF4C8C",
+        "flags": "0xFFFF4BA4",
+        "output": "0xFFFF4BC0"
+      },
+      "range_structural_signature_sha256": "e6fbc1a51c12ee9b0e77102175f636305503a7d1aefa7af847ebd4f18477ea44",
+      "reachable_instruction_count": 95,
+      "first3_reordered": false,
+      "literal_dependencies": [
+        {
+          "pc": 83568,
+          "register": 4,
+          "address": 83760,
+          "size": 4,
+          "value": 4294921124
+        },
+        {
+          "pc": 83570,
+          "register": 3,
+          "address": 83756,
+          "size": 4,
+          "value": 4294921356
+        },
+        {
+          "pc": 83772,
+          "register": 7,
+          "address": 83970,
+          "size": 2,
+          "value": 128
+        },
+        {
+          "pc": 83878,
+          "register": 3,
+          "address": 83976,
+          "size": 4,
+          "value": 4294921152
+        }
+      ]
+    },
+    {
+      "calid": "A2WC521R",
+      "rom": {
+        "source": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\diaphora\\rom_inventory\\public_reference_roms\\A2WC521R-2005-USDM-Subaru-Outback-XT-AT.hex",
+        "sha256": "9bc99f4c735d962f9ba8f79e8f445af387effdfb9553ebe896445d931c12741d",
+        "base_sha256": "9bc99f4c735d962f9ba8f79e8f445af387effdfb9553ebe896445d931c12741d",
+        "overlays": [],
+        "size": 1048576
+      },
+      "division_entry": "0x00004260",
+      "division_full_object_equal": true,
+      "range_entry": "0x0001466E",
+      "range_last_instruction": "0x000147AA",
+      "range_roles": {
+        "source": "0xFFFF4C9C",
+        "flags": "0xFFFF4BA4",
+        "output": "0xFFFF4BC0"
+      },
+      "range_structural_signature_sha256": "e6fbc1a51c12ee9b0e77102175f636305503a7d1aefa7af847ebd4f18477ea44",
+      "reachable_instruction_count": 95,
+      "first3_reordered": false,
+      "literal_dependencies": [
+        {
+          "pc": 83568,
+          "register": 4,
+          "address": 83760,
+          "size": 4,
+          "value": 4294921124
+        },
+        {
+          "pc": 83570,
+          "register": 3,
+          "address": 83756,
+          "size": 4,
+          "value": 4294921372
+        },
+        {
+          "pc": 83772,
+          "register": 7,
+          "address": 83970,
+          "size": 2,
+          "value": 128
+        },
+        {
+          "pc": 83878,
+          "register": 3,
+          "address": 83976,
+          "size": 4,
+          "value": 4294921152
+        }
+      ]
+    },
+    {
+      "calid": "A2WC522S",
+      "rom": {
+        "source": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\diaphora\\rom_inventory\\public_reference_roms\\A2WC522S-2005-USDM-Subaru-Outback-XT-MT.hex",
+        "sha256": "f241a8e222ca18e116f63dc8ede7ae40b8d43747b071101f768c19683c78ca8f",
+        "base_sha256": "f241a8e222ca18e116f63dc8ede7ae40b8d43747b071101f768c19683c78ca8f",
+        "overlays": [],
+        "size": 1048576
+      },
+      "division_entry": "0x00004260",
+      "division_full_object_equal": true,
+      "range_entry": "0x0001466E",
+      "range_last_instruction": "0x000147AA",
+      "range_roles": {
+        "source": "0xFFFF4C9C",
+        "flags": "0xFFFF4BA4",
+        "output": "0xFFFF4BC0"
+      },
+      "range_structural_signature_sha256": "e6fbc1a51c12ee9b0e77102175f636305503a7d1aefa7af847ebd4f18477ea44",
+      "reachable_instruction_count": 95,
+      "first3_reordered": false,
+      "literal_dependencies": [
+        {
+          "pc": 83568,
+          "register": 4,
+          "address": 83760,
+          "size": 4,
+          "value": 4294921124
+        },
+        {
+          "pc": 83570,
+          "register": 3,
+          "address": 83756,
+          "size": 4,
+          "value": 4294921372
+        },
+        {
+          "pc": 83772,
+          "register": 7,
+          "address": 83970,
+          "size": 2,
+          "value": 128
+        },
+        {
+          "pc": 83878,
+          "register": 3,
+          "address": 83976,
+          "size": 4,
+          "value": 4294921152
+        }
+      ]
+    },
+    {
+      "calid": "A2WF200R",
+      "rom": {
+        "source": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\diaphora\\rom_inventory\\public_reference_roms\\A2WF200R-2006-USDM-Outback-XT.hex",
+        "sha256": "7478ead68c0fc5f3f46658b40d543a66940d6398e4ac66dfdf4d7587819b75b6",
+        "base_sha256": "7478ead68c0fc5f3f46658b40d543a66940d6398e4ac66dfdf4d7587819b75b6",
+        "overlays": [],
+        "size": 1048576
+      },
+      "division_entry": "0x00004260",
+      "division_full_object_equal": true,
+      "range_entry": "0x0001590E",
+      "range_last_instruction": "0x00015A4A",
+      "range_roles": {
+        "source": "0xFFFF4CA8",
+        "flags": "0xFFFF4BB0",
+        "output": "0xFFFF4BCC"
+      },
+      "range_structural_signature_sha256": "e6fbc1a51c12ee9b0e77102175f636305503a7d1aefa7af847ebd4f18477ea44",
+      "reachable_instruction_count": 95,
+      "first3_reordered": false,
+      "literal_dependencies": [
+        {
+          "pc": 88336,
+          "register": 4,
+          "address": 88528,
+          "size": 4,
+          "value": 4294921136
+        },
+        {
+          "pc": 88338,
+          "register": 3,
+          "address": 88524,
+          "size": 4,
+          "value": 4294921384
+        },
+        {
+          "pc": 88540,
+          "register": 7,
+          "address": 88738,
+          "size": 2,
+          "value": 128
+        },
+        {
+          "pc": 88646,
+          "register": 3,
+          "address": 88744,
+          "size": 4,
+          "value": 4294921164
+        }
+      ]
+    }
+  ],
+  "negative_controls": [
+    {
+      "name": "reachable_opcode_mutation",
+      "detected_by": "structural_signature"
+    },
+    {
+      "name": "reachable_opcode_mutation",
+      "detected_by": "actual_register_and_RAM_behavior"
+    },
+    {
+      "name": "wrong_cross_ROM_input_mapping",
+      "detected_by": "strict_uninitialized_RAM",
+      "error": "Uninitialized RAM read 0xffff4c9c+1"
+    },
+    {
+      "name": "incorrect_ROM_hash",
+      "detected_by": "immutable_input_identity"
+    },
+    {
+      "name": "unsupported_instruction",
+      "detected_by": "fail_closed_CFG_decoder"
+    }
+  ],
+  "source_sha256": "926c19242f3ccf440ecada858ef5222667ffcaf2f9c0f1c723a8e427c325eca5",
+  "counts": {
+    "division_per_rom": 633,
+    "range_per_rom": 2048,
+    "ROMs": 10,
+    "division_comparisons": 6330,
+    "range_comparisons": 20480
+  },
+  "deterministic_output_digest": "02bd1aac2b7928f972beaeca19841db5e22f7c8e6bf4a13c2f94fd9ee63398bc",
+  "all_reachable_instructions_executed": true,
+  "FPU": "No reachable instruction in either function uses FPU; core has no floating execution/state model, so this is static instruction exclusion, not simulated FPU validation.",
+  "peripheral_policy": "No MMIO mapping provided; any peripheral access fails. Both tested leaf functions make zero calls.",
+  "gates": {
+    "declared_input_function_correspondence": "PASS",
+    "exclusive_ROM_or_RAM_ownership": "FAIL",
+    "complete_firmware_correspondence": "FAIL",
+    "silicon_timing_and_interrupt_behavior": "PHYSICAL/BENCH REQUIRED"
+  },
+  "limitations": [
+    "Declared-entry only; arbitrary interior entries and other firmware consumers remain unproved.",
+    "Division scenarios are finite. Range enumerates all256 input bytes with8 prior flag seeds, not every architectural machine state.",
+    "Static CFG decoder rejects calls/indirect control/opaque instructions; it is not a whole-ROM reachability theorem.",
+    "RAM role mapping is a software correspondence, not a transmission physical-state/freshness claim."
+  ],
+  "instruction_coverage": {
+    "A2WC412D": {
+      "division": 85,
+      "range": 95
+    },
+    "A2WC510C": {
+      "division": 85,
+      "range": 95
+    },
+    "A2WC521C": {
+      "division": 85,
+      "range": 95
+    },
+    "A2WC500R": {
+      "division": 85,
+      "range": 95
+    },
+    "A2WC510R": {
+      "division": 85,
+      "range": 95
+    },
+    "A2WC510S": {
+      "division": 85,
+      "range": 95
+    },
+    "A2WC511R": {
+      "division": 85,
+      "range": 95
+    },
+    "A2WC521R": {
+      "division": 85,
+      "range": 95
+    },
+    "A2WC522S": {
+      "division": 85,
+      "range": 95
+    },
+    "A2WF200R": {
+      "division": 85,
+      "range": 95
+    }
+  }
+}

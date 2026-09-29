@@ -1,0 +1,86 @@
+[
+  {
+    "sequence": 0,
+    "state_before": "IDENTITY",
+    "tx_hex": "8010f001bf40",
+    "baud": 4800,
+    "physical": false,
+    "kernel_executed": false,
+    "provenance": "MODELED_OEM_BOOT_NEGOTIATION_NOT_OEM_EXECUTION",
+    "rx_hex": "80f01039ffa210112f1251530673facba62b81fea800000060ce54f9b1e4000c200000000000dc00005d1f3080f226000043fb00e1000000000000c1f0c2",
+    "state_after": "COMMUNICATION",
+    "status": "PASS"
+  },
+  {
+    "sequence": 1,
+    "state_before": "COMMUNICATION",
+    "tx_hex": "8010f0018102",
+    "baud": 4800,
+    "physical": false,
+    "kernel_executed": false,
+    "provenance": "MODELED_OEM_BOOT_NEGOTIATION_NOT_OEM_EXECUTION",
+    "rx_hex": "80f01003c1ef8fc2",
+    "state_after": "TIMINGS",
+    "status": "PASS"
+  },
+  {
+    "sequence": 2,
+    "state_before": "TIMINGS",
+    "tx_hex": "8010f002830005",
+    "baud": 4800,
+    "physical": false,
+    "kernel_executed": false,
+    "provenance": "MODELED_OEM_BOOT_NEGOTIATION_NOT_OEM_EXECUTION",
+    "rx_hex": "80f01007c30000ff00ff0048",
+    "state_after": "SEED",
+    "status": "PASS"
+  },
+  {
+    "sequence": 3,
+    "state_before": "SEED",
+    "tx_hex": "8010f0022701aa",
+    "baud": 4800,
+    "physical": false,
+    "kernel_executed": false,
+    "provenance": "MODELED_OEM_BOOT_NEGOTIATION_NOT_OEM_EXECUTION",
+    "rx_hex": "80f0100667011234567802",
+    "state_after": "KEY",
+    "status": "PASS"
+  },
+  {
+    "sequence": 4,
+    "state_before": "KEY",
+    "tx_hex": "8010f0062702e78f1f2165",
+    "baud": 4800,
+    "physical": false,
+    "kernel_executed": false,
+    "provenance": "MODELED_OEM_BOOT_NEGOTIATION_NOT_OEM_EXECUTION",
+    "rx_hex": "80f0100367023420",
+    "state_after": "SESSION",
+    "status": "PASS"
+  },
+  {
+    "sequence": 5,
+    "state_before": "SESSION",
+    "tx_hex": "8010f0031085021a",
+    "baud": 4800,
+    "physical": false,
+    "kernel_executed": false,
+    "provenance": "MODELED_OEM_BOOT_NEGOTIATION_NOT_OEM_EXECUTION",
+    "rx_hex": "80f01002508557",
+    "state_after": "DECLARE",
+    "status": "PASS"
+  },
+  {
+    "sequence": 6,
+    "state_before": "DECLARE",
+    "tx_hex": "8010f00834ff30000400071006",
+    "baud": 15625,
+    "physical": false,
+    "kernel_executed": false,
+    "provenance": "MODELED_OEM_BOOT_NEGOTIATION_NOT_OEM_EXECUTION",
+    "rx_hex": "80f0100274847a",
+    "state_after": "UPLOAD",
+    "status": "PASS"
+  }
+]

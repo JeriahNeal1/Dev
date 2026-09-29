@@ -1,0 +1,23 @@
+{
+  "context_restrictions": [
+    "PC-relative loads in taken-branch delay slots explicitly unsupported",
+    "Branch instructions in delay slots rejected",
+    "RAM execution unsupported"
+  ],
+  "not_modeled": [
+    "interrupts/exceptions and vector dispatch",
+    "FPU execution",
+    "DMA",
+    "watchdog",
+    "CPU pipeline/cycle time",
+    "SR effects other than storage and T bit",
+    "engine dynamics",
+    "transmission hydraulics",
+    "ADC/analog/electrical behavior",
+    "SSM/J2534 transport",
+    "RomRaider backend",
+    "full firmware boot"
+  ],
+  "opcodes": "Every opcode not matching supported_opcodes.json stops before execution.",
+  "peripherals": "All addresses outside ROM 00000000..000FFFFF and RAM FFFF0000..FFFFBFFF fail; no MMIO is stubbed."
+}

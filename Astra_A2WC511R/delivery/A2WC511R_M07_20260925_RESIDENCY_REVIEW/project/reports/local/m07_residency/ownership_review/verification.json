@@ -1,0 +1,190 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "division_no_external_direct_branch",
+      "status": "PASS"
+    },
+    {
+      "name": "division_no_external_PC_read",
+      "status": "PASS"
+    },
+    {
+      "name": "division_no_external_call_return_created_inside",
+      "status": "PASS"
+    },
+    {
+      "name": "range_enclosure_no_external_direct_branch",
+      "status": "PASS"
+    },
+    {
+      "name": "range_enclosure_no_external_call_return_created_inside",
+      "status": "PASS"
+    },
+    {
+      "name": "range_changed_no_external_direct_branch",
+      "status": "PASS"
+    },
+    {
+      "name": "range_changed_no_external_PC_read",
+      "status": "PASS"
+    },
+    {
+      "name": "range_changed_no_external_call_return_created_inside",
+      "status": "PASS"
+    },
+    {
+      "name": "call_1B250",
+      "status": "PASS"
+    },
+    {
+      "name": "call_33E6C",
+      "status": "PASS"
+    },
+    {
+      "name": "call_483BC",
+      "status": "PASS"
+    },
+    {
+      "name": "call_6425C",
+      "status": "PASS"
+    },
+    {
+      "name": "call_11934",
+      "status": "PASS"
+    },
+    {
+      "name": "pool_1B330",
+      "status": "PASS"
+    },
+    {
+      "name": "pool_33EE0",
+      "status": "PASS"
+    },
+    {
+      "name": "pool_484A8",
+      "status": "PASS"
+    },
+    {
+      "name": "pool_64318",
+      "status": "PASS"
+    },
+    {
+      "name": "range_pool_entry",
+      "status": "PASS"
+    },
+    {
+      "name": "range_R6_dominator",
+      "status": "PASS"
+    },
+    {
+      "name": "range_mask_seed",
+      "status": "PASS"
+    },
+    {
+      "name": "odd_hit_spans_data_words",
+      "status": "PASS"
+    },
+    {
+      "name": "division_preserved_old_literals",
+      "status": "PASS"
+    },
+    {
+      "name": "negative_added_direct_entry_detected",
+      "status": "PASS"
+    },
+    {
+      "name": "negative_added_PC_reader_detected",
+      "status": "PASS"
+    },
+    {
+      "name": "negative_external_call_return_detected",
+      "status": "PASS"
+    },
+    {
+      "name": "division_source_unchanged",
+      "status": "PASS"
+    },
+    {
+      "name": "division_binary_unchanged",
+      "status": "PASS"
+    },
+    {
+      "name": "division_elf_unchanged",
+      "status": "PASS"
+    },
+    {
+      "name": "range_tail_source_unchanged",
+      "status": "PASS"
+    },
+    {
+      "name": "range_tail_binary_unchanged",
+      "status": "PASS"
+    },
+    {
+      "name": "range_tail_elf_unchanged",
+      "status": "PASS"
+    }
+  ],
+  "scans": {
+    "division": {
+      "branches": [],
+      "pc_reads": [],
+      "external_call_returns": []
+    },
+    "range_enclosure": {
+      "branches": [],
+      "pc_reads": [
+        83124,
+        83148,
+        83154,
+        83156,
+        83162,
+        83164,
+        83172,
+        83176,
+        83188,
+        83200,
+        83204,
+        83206,
+        83236,
+        83240,
+        83244,
+        83246,
+        83252,
+        83264,
+        83268,
+        83276,
+        83308,
+        83312,
+        83316,
+        83326,
+        83328,
+        83348,
+        83352,
+        83358,
+        83364,
+        83382,
+        83408,
+        83414,
+        83420,
+        83456,
+        83460,
+        83466,
+        83472,
+        83490,
+        83524,
+        83530,
+        83536
+      ],
+      "external_call_returns": []
+    },
+    "range_changed": {
+      "branches": [],
+      "pc_reads": [],
+      "external_call_returns": []
+    }
+  },
+  "proof_scope": "Finite raw encoding and exact known call/constant invariants. Does not constrain unknown register-computed transfers.",
+  "stock_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218"
+}

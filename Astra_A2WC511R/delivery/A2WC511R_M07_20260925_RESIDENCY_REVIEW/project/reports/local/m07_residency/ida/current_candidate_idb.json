@@ -1,0 +1,313 @@
+{
+  "status": "PASS_LOCAL_IDB_BYTES_AND_METADATA_READ",
+  "rom_sha256": "a34c4ce8238bf28bdc18c191bbe73b2179130aa9846e952a6fa332bae442de96",
+  "stock_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+  "equal_spans": [
+    [
+      16992,
+      17162
+    ],
+    [
+      83772,
+      83884
+    ],
+    [
+      296112,
+      296124
+    ]
+  ],
+  "sites": [
+    {
+      "address": 16992,
+      "name": "sub_4260",
+      "decoded_size": 2,
+      "bytes": "20082f26894b2f36",
+      "function": {
+        "entry": 16992,
+        "end_exclusive": 17162,
+        "chunks": [
+          [
+            16992,
+            17162
+          ]
+        ]
+      },
+      "xrefs": [
+        {
+          "from": 111188,
+          "to": 16992,
+          "type": 17,
+          "code": true
+        },
+        {
+          "from": 295874,
+          "to": 16992,
+          "type": 17,
+          "code": true
+        },
+        {
+          "from": 111184,
+          "to": 16992,
+          "type": 1,
+          "code": false
+        },
+        {
+          "from": 111408,
+          "to": 16992,
+          "type": 1,
+          "code": false
+        },
+        {
+          "from": 295868,
+          "to": 16992,
+          "type": 1,
+          "code": false
+        },
+        {
+          "from": 296104,
+          "to": 16992,
+          "type": 1,
+          "code": false
+        }
+      ]
+    },
+    {
+      "address": 17060,
+      "name": "",
+      "decoded_size": 2,
+      "bytes": "3304412433044124",
+      "function": {
+        "entry": 16992,
+        "end_exclusive": 17162,
+        "chunks": [
+          [
+            16992,
+            17162
+          ]
+        ]
+      },
+      "xrefs": [
+        {
+          "from": 17058,
+          "to": 17060,
+          "type": 21,
+          "code": true
+        }
+      ]
+    },
+    {
+      "address": 17162,
+      "name": "",
+      "decoded_size": 2,
+      "bytes": "0009ffff130c0000",
+      "function": null,
+      "xrefs": []
+    },
+    {
+      "address": 83566,
+      "name": "sub_1466E",
+      "decoded_size": 2,
+      "bytes": "e640d42fd32e6730",
+      "function": {
+        "entry": 83566,
+        "end_exclusive": 83884,
+        "chunks": [
+          [
+            83566,
+            83884
+          ]
+        ]
+      },
+      "xrefs": [
+        {
+          "from": 71990,
+          "to": 83566,
+          "type": 17,
+          "code": true
+        },
+        {
+          "from": 71988,
+          "to": 83566,
+          "type": 1,
+          "code": false
+        },
+        {
+          "from": 72408,
+          "to": 83566,
+          "type": 1,
+          "code": false
+        }
+      ]
+    },
+    {
+      "address": 83770,
+      "name": "loc_1473A",
+      "decoded_size": 2,
+      "bytes": "e00f976120598800",
+      "function": {
+        "entry": 83566,
+        "end_exclusive": 83884,
+        "chunks": [
+          [
+            83566,
+            83884
+          ]
+        ]
+      },
+      "xrefs": [
+        {
+          "from": 83768,
+          "to": 83770,
+          "type": 21,
+          "code": true
+        },
+        {
+          "from": 83632,
+          "to": 83770,
+          "type": 19,
+          "code": true
+        }
+      ]
+    },
+    {
+      "address": 83772,
+      "name": "",
+      "decoded_size": 2,
+      "bytes": "9761205988008d1d",
+      "function": {
+        "entry": 83566,
+        "end_exclusive": 83884,
+        "chunks": [
+          [
+            83566,
+            83884
+          ]
+        ]
+      },
+      "xrefs": [
+        {
+          "from": 83770,
+          "to": 83772,
+          "type": 21,
+          "code": true
+        }
+      ]
+    },
+    {
+      "address": 83824,
+      "name": "",
+      "decoded_size": 2,
+      "bytes": "88088d170009880f",
+      "function": {
+        "entry": 83566,
+        "end_exclusive": 83884,
+        "chunks": [
+          [
+            83566,
+            83884
+          ]
+        ]
+      },
+      "xrefs": [
+        {
+          "from": 83822,
+          "to": 83824,
+          "type": 21,
+          "code": true
+        }
+      ]
+    },
+    {
+      "address": 83884,
+      "name": "sDecodePackedGearRangeByte",
+      "decoded_size": 2,
+      "bytes": "d217652096282659",
+      "function": {
+        "entry": 83884,
+        "end_exclusive": 83970,
+        "chunks": [
+          [
+            83884,
+            83970
+          ]
+        ]
+      },
+      "xrefs": [
+        {
+          "from": 71996,
+          "to": 83884,
+          "type": 17,
+          "code": true
+        },
+        {
+          "from": 71994,
+          "to": 83884,
+          "type": 1,
+          "code": false
+        },
+        {
+          "from": 72412,
+          "to": 83884,
+          "type": 1,
+          "code": false
+        }
+      ]
+    },
+    {
+      "address": 295564,
+      "name": "sSSM_DispatchRequest",
+      "decoded_size": 2,
+      "bytes": "2fe6e5392fd62fc6",
+      "function": {
+        "entry": 295564,
+        "end_exclusive": 296148,
+        "chunks": [
+          [
+            295564,
+            296148
+          ]
+        ]
+      },
+      "xrefs": [
+        {
+          "from": 294936,
+          "to": 295564,
+          "type": 17,
+          "code": true
+        },
+        {
+          "from": 295208,
+          "to": 295564,
+          "type": 17,
+          "code": true
+        }
+      ]
+    },
+    {
+      "address": 296112,
+      "name": "loc_484B0",
+      "decoded_size": 2,
+      "bytes": "84e1cb0180e160e0",
+      "function": {
+        "entry": 295564,
+        "end_exclusive": 296148,
+        "chunks": [
+          [
+            295564,
+            296148
+          ]
+        ]
+      },
+      "xrefs": [
+        {
+          "from": 295700,
+          "to": 296112,
+          "type": 19,
+          "code": true
+        }
+      ]
+    }
+  ],
+  "metadata_changed": false,
+  "scope": "Existing IDB function boundaries/xrefs are evidence, not a complete computed-entry theorem."
+}

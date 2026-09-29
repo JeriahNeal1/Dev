@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "status": "PASS",
+  "classification": "ACTUAL_COMPILED_KERNEL_TWO_FULL_VIRTUAL_ROM_READS",
+  "identity": {
+    "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+    "kernel_bytes": 1808,
+    "rom": {
+      "source": "C:\\Dev\\SubaruRoms\\OEM\\A2WC511R.bin",
+      "sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+      "base_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+      "overlays": [],
+      "size": 1048576
+    },
+    "core_path": "C:\\Dev\\A2WC511R_Sim\\sh2e.py",
+    "core_sha256": "b47ac261634c116c3ffcdf19da9ec73e7014c034cd349ea8867f5f54895cdfff",
+    "manifest_sha256": "a35562a19f21d4a2815e88fb729d21dd2cc08bf702c0d866f88ffc9e3ddb659e",
+    "model_sources": {
+      "core.py": "caf6571a836676b82bec8f8a5eaa356590532e15931fae2da4b5822fe8ef0f90",
+      "cpu.py": "5043dafdfe59447cb8d906f7570907c472e1d638deb507dc4af8546e9b0f1980",
+      "fast_step.py": "029bb2b484911289b19e5cdbad35bbbbdc80af05420e91dad6884e0ff0484cfa",
+      "harness.py": "0496579da46daf66eb3be3847da0f3e94f8f45bf6f0b494a1f89a97853a8b4c6",
+      "memory.py": "d6062f1dde275b9611d1b631f8151eac567314c603a533dad8751eede3fa2a38",
+      "sci.py": "6f3b4b38ae6e12ac75d5101c767f10b106e9676c322eac3a0e39a67a9c0030c1",
+      "self_echo.py": "87896f45a074fcff5132a6faa57af48f5444de13fdf67f00a4f1304ea583da5d",
+      "__init__.py": "8e8b1da117fdc2ba4fe06edfc32b9c8d67176ab69a9470ee21151018bc85fbd8"
+    },
+    "peripheral_initial": {
+      "sci2": {
+        "FFFFF010": 0,
+        "FFFFF011": 255,
+        "FFFFF012": 0,
+        "FFFFF013": 255,
+        "FFFFF014": 132,
+        "FFFFF015": 0,
+        "FFFFF016": 242
+      },
+      "pccr": 0,
+      "dmaor": 0,
+      "wdt_tcsr": 24,
+      "ramer": 0,
+      "fmats": 0
+    },
+    "schedule": {
+      "rx_gap_ticks": 1,
+      "tx_complete_ticks": 1,
+      "brr_settle_ticks": 1,
+      "tx_load_ticks": 1
+    },
+    "optimized": true,
+    "receiver_self_echo": true,
+    "echo_profile": {
+      "start_delay_ticks": 0,
+      "ordinals": null
+    },
+    "model": "DECLARED_INSTRUCTION_TICK_SCI2_NOT_PHYSICAL_TIMING"
+  },
+  "passes": [
+    {
+      "pass": 0,
+      "bytes": 1048576,
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\sim\\stock_full_01\\pass_0.bin",
+      "sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218"
+    },
+    {
+      "pass": 1,
+      "bytes": 1048576,
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\sim\\stock_full_01\\pass_1.bin",
+      "sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218"
+    }
+  ],
+  "blocks": 4096,
+  "version_responses": 1,
+  "instructions_executed": 42304173,
+  "seconds": 784.9135163000319,
+  "coverage": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\sim\\stock_full_01\\coverage.json",
+    "sha256": "74cb1f73df69ce270c4772e3d92c3a4db19a9c7aea1d5875b7f6b6158d19bb14"
+  },
+  "terminal": "COMPLETE",
+  "SCI2_SCR": 0,
+  "unsupported_instruction_or_MMIO": 0,
+  "physical": false,
+  "limitations": [
+    "Declared finite SCI instruction-tick model, not silicon timing",
+    "No physical upload or reset/power restoration performed"
+  ]
+}

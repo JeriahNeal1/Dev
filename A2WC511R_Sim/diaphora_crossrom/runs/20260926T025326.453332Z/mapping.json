@@ -1,0 +1,3692 @@
+{
+  "classification": "SCOPED_CROSS_ROM_FUNCTION_CORRESPONDENCE_NOT_OWNERSHIP",
+  "status": "RUNNING",
+  "core_sha256": "b47ac261634c116c3ffcdf19da9ec73e7014c034cd349ea8867f5f54895cdfff",
+  "baseline": {
+    "source": "C:\\Dev\\SubaruRoms\\OEM\\A2WC511R.bin",
+    "sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+    "base_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+    "overlays": [],
+    "size": 1048576
+  },
+  "inventory_path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\diaphora\\rom_inventory\\public_rom_manifest.json",
+  "inventory_sha256": "d8a21b1313c5b795a2bbfa9d2a26c1383ed8b7bf15b8afb0cc1d867826e7c3cb",
+  "normalization": "Range only: explicit3 RAM roles and finalR3 output pointer; immutable ROM literal access order may differ for first3 independent loads. All other GPRs/system state and full canonical RAM/init bytes plus ordered RAM/MMIO accesses compared exactly. Division compares actual addresses without normalization.",
+  "ROM_mapping": [
+    {
+      "calid": "A2WC412D",
+      "rom": {
+        "source": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\diaphora\\rom_inventory\\public_reference_roms\\A2WC412D-2005-USDM-Subaru-Forester-XT-AT.hex",
+        "sha256": "9e3fef13a900745e6704188d76d12f021f984ad2e670b7df007d6943e3532d49",
+        "base_sha256": "9e3fef13a900745e6704188d76d12f021f984ad2e670b7df007d6943e3532d49",
+        "overlays": [],
+        "size": 1048576
+      },
+      "division_entry": "0x00004260",
+      "division_full_object_equal": true,
+      "division_external_literals_verified": [
+        {
+          "pc": 17150,
+          "register": 1,
+          "address": 17164,
+          "size": 4,
+          "value": 4294906636
+        },
+        {
+          "pc": 17152,
+          "register": 2,
+          "address": 17168,
+          "size": 4,
+          "value": 1102
+        }
+      ],
+      "division_reachable_instruction_bytes": 170,
+      "division_native": {
+        "status": "EXACT_START",
+        "path": "C:\\Dev\\Astra_A2WC511R\\work\\diaphora\\exports\\A2WC412D_stock_01.analysis.json",
+        "sha256": "1b46cf2c832cc8fe61c6d3808ea8966cc3fefaba828aa071bde973ff8fc7ecdb",
+        "function": {
+          "start": 16992,
+          "end": 17162,
+          "name": "sub_4260",
+          "chunks": [
+            [
+              16992,
+              17162
+            ]
+          ],
+          "frame_size": 0,
+          "frame_regs": 0,
+          "args_size": 0,
+          "chunk_sha256": [
+            "7edbc4e84d1c25875e75cb3e96aaddc9a0ea0d008a36b0d299dc3e4b0e27736a"
+          ],
+          "inbound": [
+            {
+              "from": 105028,
+              "to": 16992,
+              "type": 17,
+              "iscode": true
+            },
+            {
+              "from": 290894,
+              "to": 16992,
+              "type": 17,
+              "iscode": true
+            },
+            {
+              "from": 105024,
+              "to": 16992,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 105248,
+              "to": 16992,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 290888,
+              "to": 16992,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 291124,
+              "to": 16992,
+              "type": 1,
+              "iscode": false
+            }
+          ],
+          "references": [
+            {
+              "from": 16996,
+              "to": 17150,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 17150,
+              "to": 17164,
+              "type": 3,
+              "iscode": false
+            },
+            {
+              "from": 17150,
+              "to": 4294906636,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 17152,
+              "to": 1102,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 17152,
+              "to": 17168,
+              "type": 3,
+              "iscode": false
+            }
+          ]
+        },
+        "scope": "Disposable native export only; xrefs are observed analysis evidence, not complete inbound closure."
+      },
+      "range_entry": "0x0001447C",
+      "range_last_instruction": "0x00014562",
+      "range_roles": {
+        "source": "0xFFFF4C58",
+        "flags": "0xFFFF4BA4",
+        "output": "0xFFFF4BB4"
+      },
+      "range_structural_signature_sha256": "e6fbc1a51c12ee9b0e77102175f636305503a7d1aefa7af847ebd4f18477ea44",
+      "reachable_instruction_count": 95,
+      "range_instruction_bytes": 190,
+      "range_entry_through_return_span": 232,
+      "range_unexecuted_bytes_inside_span": 42,
+      "range_native": {
+        "status": "NO_EXACT_NATIVE_START",
+        "path": "C:\\Dev\\Astra_A2WC511R\\work\\diaphora\\exports\\A2WC412D_stock_01.analysis.json",
+        "sha256": "1b46cf2c832cc8fe61c6d3808ea8966cc3fefaba828aa071bde973ff8fc7ecdb",
+        "function": null,
+        "scope": "Disposable native export only; xrefs are observed analysis evidence, not complete inbound closure."
+      },
+      "first3_reordered": true,
+      "literal_dependencies": [
+        {
+          "pc": 83068,
+          "register": 3,
+          "address": 83172,
+          "size": 4,
+          "value": 4294921304
+        },
+        {
+          "pc": 83072,
+          "register": 4,
+          "address": 83176,
+          "size": 4,
+          "value": 4294921124
+        },
+        {
+          "pc": 83188,
+          "register": 7,
+          "address": 83356,
+          "size": 2,
+          "value": 128
+        },
+        {
+          "pc": 83294,
+          "register": 3,
+          "address": 83360,
+          "size": 4,
+          "value": 4294921140
+        }
+      ]
+    },
+    {
+      "calid": "A2WC510C",
+      "rom": {
+        "source": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\diaphora\\rom_inventory\\public_reference_roms\\A2WC510C-2005-USDM-Legacy-GT.hex",
+        "sha256": "77c797e8fd88b642fb1779367b4ce482e90760d251ad1cf68f533e81b49ea7dc",
+        "base_sha256": "77c797e8fd88b642fb1779367b4ce482e90760d251ad1cf68f533e81b49ea7dc",
+        "overlays": [],
+        "size": 1048576
+      },
+      "division_entry": "0x00004260",
+      "division_full_object_equal": true,
+      "division_external_literals_verified": [
+        {
+          "pc": 17150,
+          "register": 1,
+          "address": 17164,
+          "size": 4,
+          "value": 4294906636
+        },
+        {
+          "pc": 17152,
+          "register": 2,
+          "address": 17168,
+          "size": 4,
+          "value": 1102
+        }
+      ],
+      "division_reachable_instruction_bytes": 170,
+      "division_native": {
+        "status": "EXACT_START",
+        "path": "C:\\Dev\\Astra_A2WC511R\\work\\diaphora\\exports\\A2WC510C_stock_01.analysis.json",
+        "sha256": "c6bc5609a58475406d28afabbaa82fcb09f248c8488dd41b97c1666693e61430",
+        "function": {
+          "start": 16992,
+          "end": 17162,
+          "name": "sub_4260",
+          "chunks": [
+            [
+              16992,
+              17162
+            ]
+          ],
+          "frame_size": 0,
+          "frame_regs": 0,
+          "args_size": 0,
+          "chunk_sha256": [
+            "7edbc4e84d1c25875e75cb3e96aaddc9a0ea0d008a36b0d299dc3e4b0e27736a"
+          ],
+          "inbound": [
+            {
+              "from": 111188,
+              "to": 16992,
+              "type": 17,
+              "iscode": true
+            },
+            {
+              "from": 295874,
+              "to": 16992,
+              "type": 17,
+              "iscode": true
+            },
+            {
+              "from": 111184,
+              "to": 16992,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 111408,
+              "to": 16992,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 295868,
+              "to": 16992,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 296104,
+              "to": 16992,
+              "type": 1,
+              "iscode": false
+            }
+          ],
+          "references": [
+            {
+              "from": 16996,
+              "to": 17150,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 17150,
+              "to": 17164,
+              "type": 3,
+              "iscode": false
+            },
+            {
+              "from": 17150,
+              "to": 4294906636,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 17152,
+              "to": 1102,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 17152,
+              "to": 17168,
+              "type": 3,
+              "iscode": false
+            }
+          ]
+        },
+        "scope": "Disposable native export only; xrefs are observed analysis evidence, not complete inbound closure."
+      },
+      "range_entry": "0x0001466E",
+      "range_last_instruction": "0x000147AA",
+      "range_roles": {
+        "source": "0xFFFF4C8C",
+        "flags": "0xFFFF4BA4",
+        "output": "0xFFFF4BC0"
+      },
+      "range_structural_signature_sha256": "e6fbc1a51c12ee9b0e77102175f636305503a7d1aefa7af847ebd4f18477ea44",
+      "reachable_instruction_count": 95,
+      "range_instruction_bytes": 190,
+      "range_entry_through_return_span": 318,
+      "range_unexecuted_bytes_inside_span": 128,
+      "range_native": {
+        "status": "EXACT_START",
+        "path": "C:\\Dev\\Astra_A2WC511R\\work\\diaphora\\exports\\A2WC510C_stock_01.analysis.json",
+        "sha256": "c6bc5609a58475406d28afabbaa82fcb09f248c8488dd41b97c1666693e61430",
+        "function": {
+          "start": 83566,
+          "end": 83884,
+          "name": "sub_1466E",
+          "chunks": [
+            [
+              83566,
+              83884
+            ]
+          ],
+          "frame_size": 0,
+          "frame_regs": 0,
+          "args_size": 0,
+          "chunk_sha256": [
+            "4ca264d5be45e8e8e26a1a1467d145280d0031ead6ab82517638402bd07bb221"
+          ],
+          "inbound": [],
+          "references": [
+            {
+              "from": 83568,
+              "to": 83760,
+              "type": 3,
+              "iscode": false
+            },
+            {
+              "from": 83568,
+              "to": 4294921124,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 83570,
+              "to": 83756,
+              "type": 3,
+              "iscode": false
+            },
+            {
+              "from": 83570,
+              "to": 4294921356,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 83580,
+              "to": 83592,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83588,
+              "to": 83598,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83602,
+              "to": 83614,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83610,
+              "to": 83620,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83624,
+              "to": 83764,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83632,
+              "to": 83770,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83772,
+              "to": 83970,
+              "type": 3,
+              "iscode": false
+            },
+            {
+              "from": 83778,
+              "to": 83840,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83784,
+              "to": 83844,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83790,
+              "to": 83848,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83796,
+              "to": 83852,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83802,
+              "to": 83856,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83808,
+              "to": 83860,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83814,
+              "to": 83864,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83820,
+              "to": 83868,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83826,
+              "to": 83876,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83832,
+              "to": 83872,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83836,
+              "to": 83876,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83840,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83844,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83848,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83852,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83856,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83860,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83864,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83868,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83872,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83878,
+              "to": 83976,
+              "type": 3,
+              "iscode": false
+            },
+            {
+              "from": 83878,
+              "to": 4294921152,
+              "type": 1,
+              "iscode": false
+            }
+          ]
+        },
+        "scope": "Disposable native export only; xrefs are observed analysis evidence, not complete inbound closure."
+      },
+      "first3_reordered": false,
+      "literal_dependencies": [
+        {
+          "pc": 83568,
+          "register": 4,
+          "address": 83760,
+          "size": 4,
+          "value": 4294921124
+        },
+        {
+          "pc": 83570,
+          "register": 3,
+          "address": 83756,
+          "size": 4,
+          "value": 4294921356
+        },
+        {
+          "pc": 83772,
+          "register": 7,
+          "address": 83970,
+          "size": 2,
+          "value": 128
+        },
+        {
+          "pc": 83878,
+          "register": 3,
+          "address": 83976,
+          "size": 4,
+          "value": 4294921152
+        }
+      ]
+    },
+    {
+      "calid": "A2WC521C",
+      "rom": {
+        "source": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\diaphora\\rom_inventory\\public_reference_roms\\A2WC521C-2005-USDM-Legacy-GT.hex",
+        "sha256": "412286a0c4e8106bf6db73a67b908108a9730f9ad41d22c4e946b147a9137461",
+        "base_sha256": "412286a0c4e8106bf6db73a67b908108a9730f9ad41d22c4e946b147a9137461",
+        "overlays": [],
+        "size": 1048576
+      },
+      "division_entry": "0x00004260",
+      "division_full_object_equal": true,
+      "division_external_literals_verified": [
+        {
+          "pc": 17150,
+          "register": 1,
+          "address": 17164,
+          "size": 4,
+          "value": 4294906636
+        },
+        {
+          "pc": 17152,
+          "register": 2,
+          "address": 17168,
+          "size": 4,
+          "value": 1102
+        }
+      ],
+      "division_reachable_instruction_bytes": 170,
+      "division_native": {
+        "status": "EXACT_START",
+        "path": "C:\\Dev\\Astra_A2WC511R\\work\\diaphora\\exports\\A2WC521C_stock_01.analysis.json",
+        "sha256": "c2a761fde13506cabc4ad9b0fd6cdccb6fd6443fb2e849bd8331ce3a10f17aa6",
+        "function": {
+          "start": 16992,
+          "end": 17162,
+          "name": "sub_4260",
+          "chunks": [
+            [
+              16992,
+              17162
+            ]
+          ],
+          "frame_size": 0,
+          "frame_regs": 0,
+          "args_size": 0,
+          "chunk_sha256": [
+            "7edbc4e84d1c25875e75cb3e96aaddc9a0ea0d008a36b0d299dc3e4b0e27736a"
+          ],
+          "inbound": [
+            {
+              "from": 111448,
+              "to": 16992,
+              "type": 17,
+              "iscode": true
+            },
+            {
+              "from": 296142,
+              "to": 16992,
+              "type": 17,
+              "iscode": true
+            },
+            {
+              "from": 111444,
+              "to": 16992,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 111668,
+              "to": 16992,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 296136,
+              "to": 16992,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 296372,
+              "to": 16992,
+              "type": 1,
+              "iscode": false
+            }
+          ],
+          "references": [
+            {
+              "from": 16996,
+              "to": 17150,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 17150,
+              "to": 17164,
+              "type": 3,
+              "iscode": false
+            },
+            {
+              "from": 17150,
+              "to": 4294906636,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 17152,
+              "to": 1102,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 17152,
+              "to": 17168,
+              "type": 3,
+              "iscode": false
+            }
+          ]
+        },
+        "scope": "Disposable native export only; xrefs are observed analysis evidence, not complete inbound closure."
+      },
+      "range_entry": "0x0001466E",
+      "range_last_instruction": "0x000147AA",
+      "range_roles": {
+        "source": "0xFFFF4C9C",
+        "flags": "0xFFFF4BA4",
+        "output": "0xFFFF4BC0"
+      },
+      "range_structural_signature_sha256": "e6fbc1a51c12ee9b0e77102175f636305503a7d1aefa7af847ebd4f18477ea44",
+      "reachable_instruction_count": 95,
+      "range_instruction_bytes": 190,
+      "range_entry_through_return_span": 318,
+      "range_unexecuted_bytes_inside_span": 128,
+      "range_native": {
+        "status": "EXACT_START",
+        "path": "C:\\Dev\\Astra_A2WC511R\\work\\diaphora\\exports\\A2WC521C_stock_01.analysis.json",
+        "sha256": "c2a761fde13506cabc4ad9b0fd6cdccb6fd6443fb2e849bd8331ce3a10f17aa6",
+        "function": {
+          "start": 83566,
+          "end": 83884,
+          "name": "sub_1466E",
+          "chunks": [
+            [
+              83566,
+              83884
+            ]
+          ],
+          "frame_size": 0,
+          "frame_regs": 0,
+          "args_size": 0,
+          "chunk_sha256": [
+            "e4f476560f30e3adad67d77f90ab78eee5151b31c0aea36a9bdda9606764d205"
+          ],
+          "inbound": [],
+          "references": [
+            {
+              "from": 83568,
+              "to": 83760,
+              "type": 3,
+              "iscode": false
+            },
+            {
+              "from": 83568,
+              "to": 4294921124,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 83570,
+              "to": 83756,
+              "type": 3,
+              "iscode": false
+            },
+            {
+              "from": 83570,
+              "to": 4294921372,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 83580,
+              "to": 83592,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83588,
+              "to": 83598,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83602,
+              "to": 83614,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83610,
+              "to": 83620,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83624,
+              "to": 83764,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83632,
+              "to": 83770,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83772,
+              "to": 83970,
+              "type": 3,
+              "iscode": false
+            },
+            {
+              "from": 83778,
+              "to": 83840,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83784,
+              "to": 83844,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83790,
+              "to": 83848,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83796,
+              "to": 83852,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83802,
+              "to": 83856,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83808,
+              "to": 83860,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83814,
+              "to": 83864,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83820,
+              "to": 83868,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83826,
+              "to": 83876,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83832,
+              "to": 83872,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83836,
+              "to": 83876,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83840,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83844,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83848,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83852,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83856,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83860,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83864,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83868,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83872,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83878,
+              "to": 83976,
+              "type": 3,
+              "iscode": false
+            },
+            {
+              "from": 83878,
+              "to": 4294921152,
+              "type": 1,
+              "iscode": false
+            }
+          ]
+        },
+        "scope": "Disposable native export only; xrefs are observed analysis evidence, not complete inbound closure."
+      },
+      "first3_reordered": false,
+      "literal_dependencies": [
+        {
+          "pc": 83568,
+          "register": 4,
+          "address": 83760,
+          "size": 4,
+          "value": 4294921124
+        },
+        {
+          "pc": 83570,
+          "register": 3,
+          "address": 83756,
+          "size": 4,
+          "value": 4294921372
+        },
+        {
+          "pc": 83772,
+          "register": 7,
+          "address": 83970,
+          "size": 2,
+          "value": 128
+        },
+        {
+          "pc": 83878,
+          "register": 3,
+          "address": 83976,
+          "size": 4,
+          "value": 4294921152
+        }
+      ]
+    },
+    {
+      "calid": "A2WC500R",
+      "rom": {
+        "source": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\diaphora\\rom_inventory\\public_reference_roms\\A2WC500R-2005-USDM-Subaru-Outback-XT-AT.hex",
+        "sha256": "826aa3d8150ad90817d99b70f53a7cbeef3a8a26e2760de609b2c0d2b0c3b6ee",
+        "base_sha256": "826aa3d8150ad90817d99b70f53a7cbeef3a8a26e2760de609b2c0d2b0c3b6ee",
+        "overlays": [],
+        "size": 1048576
+      },
+      "division_entry": "0x00004260",
+      "division_full_object_equal": true,
+      "division_external_literals_verified": [
+        {
+          "pc": 17150,
+          "register": 1,
+          "address": 17164,
+          "size": 4,
+          "value": 4294906636
+        },
+        {
+          "pc": 17152,
+          "register": 2,
+          "address": 17168,
+          "size": 4,
+          "value": 1102
+        }
+      ],
+      "division_reachable_instruction_bytes": 170,
+      "division_native": {
+        "status": "EXACT_START",
+        "path": "C:\\Dev\\Astra_A2WC511R\\work\\diaphora\\exports\\A2WC500R_stock_01.analysis.json",
+        "sha256": "fbb246c57e733d72086ac20c99c12e0d8aad1db1d69bccbcf0f086e972084bd2",
+        "function": {
+          "start": 16992,
+          "end": 17162,
+          "name": "sub_4260",
+          "chunks": [
+            [
+              16992,
+              17162
+            ]
+          ],
+          "frame_size": 0,
+          "frame_regs": 0,
+          "args_size": 0,
+          "chunk_sha256": [
+            "7edbc4e84d1c25875e75cb3e96aaddc9a0ea0d008a36b0d299dc3e4b0e27736a"
+          ],
+          "inbound": [
+            {
+              "from": 111252,
+              "to": 16992,
+              "type": 17,
+              "iscode": true
+            },
+            {
+              "from": 296430,
+              "to": 16992,
+              "type": 17,
+              "iscode": true
+            },
+            {
+              "from": 111248,
+              "to": 16992,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 111472,
+              "to": 16992,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 296424,
+              "to": 16992,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 296660,
+              "to": 16992,
+              "type": 1,
+              "iscode": false
+            }
+          ],
+          "references": [
+            {
+              "from": 16996,
+              "to": 17150,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 17150,
+              "to": 17164,
+              "type": 3,
+              "iscode": false
+            },
+            {
+              "from": 17150,
+              "to": 4294906636,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 17152,
+              "to": 1102,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 17152,
+              "to": 17168,
+              "type": 3,
+              "iscode": false
+            }
+          ]
+        },
+        "scope": "Disposable native export only; xrefs are observed analysis evidence, not complete inbound closure."
+      },
+      "range_entry": "0x000146AE",
+      "range_last_instruction": "0x000147EA",
+      "range_roles": {
+        "source": "0xFFFF4C8C",
+        "flags": "0xFFFF4BA4",
+        "output": "0xFFFF4BC0"
+      },
+      "range_structural_signature_sha256": "e6fbc1a51c12ee9b0e77102175f636305503a7d1aefa7af847ebd4f18477ea44",
+      "reachable_instruction_count": 95,
+      "range_instruction_bytes": 190,
+      "range_entry_through_return_span": 318,
+      "range_unexecuted_bytes_inside_span": 128,
+      "range_native": {
+        "status": "EXACT_START",
+        "path": "C:\\Dev\\Astra_A2WC511R\\work\\diaphora\\exports\\A2WC500R_stock_01.analysis.json",
+        "sha256": "fbb246c57e733d72086ac20c99c12e0d8aad1db1d69bccbcf0f086e972084bd2",
+        "function": {
+          "start": 83630,
+          "end": 83948,
+          "name": "sub_146AE",
+          "chunks": [
+            [
+              83630,
+              83948
+            ]
+          ],
+          "frame_size": 0,
+          "frame_regs": 0,
+          "args_size": 0,
+          "chunk_sha256": [
+            "aefa41ebe450394d33e2946f7ce1218f83f0720624021eef98059eb051376a32"
+          ],
+          "inbound": [],
+          "references": [
+            {
+              "from": 83632,
+              "to": 83824,
+              "type": 3,
+              "iscode": false
+            },
+            {
+              "from": 83632,
+              "to": 4294921124,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 83634,
+              "to": 83820,
+              "type": 3,
+              "iscode": false
+            },
+            {
+              "from": 83634,
+              "to": 4294921356,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 83644,
+              "to": 83656,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83652,
+              "to": 83662,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83666,
+              "to": 83678,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83674,
+              "to": 83684,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83688,
+              "to": 83828,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83696,
+              "to": 83834,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83836,
+              "to": 84034,
+              "type": 3,
+              "iscode": false
+            },
+            {
+              "from": 83842,
+              "to": 83904,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83848,
+              "to": 83908,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83854,
+              "to": 83912,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83860,
+              "to": 83916,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83866,
+              "to": 83920,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83872,
+              "to": 83924,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83878,
+              "to": 83928,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83884,
+              "to": 83932,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83890,
+              "to": 83940,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83896,
+              "to": 83936,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83900,
+              "to": 83940,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83904,
+              "to": 83942,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83908,
+              "to": 83942,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83912,
+              "to": 83942,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83916,
+              "to": 83942,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83920,
+              "to": 83942,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83924,
+              "to": 83942,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83928,
+              "to": 83942,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83932,
+              "to": 83942,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83936,
+              "to": 83942,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83942,
+              "to": 84040,
+              "type": 3,
+              "iscode": false
+            },
+            {
+              "from": 83942,
+              "to": 4294921152,
+              "type": 1,
+              "iscode": false
+            }
+          ]
+        },
+        "scope": "Disposable native export only; xrefs are observed analysis evidence, not complete inbound closure."
+      },
+      "first3_reordered": false,
+      "literal_dependencies": [
+        {
+          "pc": 83632,
+          "register": 4,
+          "address": 83824,
+          "size": 4,
+          "value": 4294921124
+        },
+        {
+          "pc": 83634,
+          "register": 3,
+          "address": 83820,
+          "size": 4,
+          "value": 4294921356
+        },
+        {
+          "pc": 83836,
+          "register": 7,
+          "address": 84034,
+          "size": 2,
+          "value": 128
+        },
+        {
+          "pc": 83942,
+          "register": 3,
+          "address": 84040,
+          "size": 4,
+          "value": 4294921152
+        }
+      ]
+    },
+    {
+      "calid": "A2WC510R",
+      "rom": {
+        "source": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\diaphora\\rom_inventory\\public_reference_roms\\A2WC510R-2005-USDM-Subaru-Outback-XT-AT.hex",
+        "sha256": "436727271930c5cf13ec948e0416f661c6b3b2575ccdc35cfb787aafd5715e49",
+        "base_sha256": "436727271930c5cf13ec948e0416f661c6b3b2575ccdc35cfb787aafd5715e49",
+        "overlays": [],
+        "size": 1048576
+      },
+      "division_entry": "0x00004260",
+      "division_full_object_equal": true,
+      "division_external_literals_verified": [
+        {
+          "pc": 17150,
+          "register": 1,
+          "address": 17164,
+          "size": 4,
+          "value": 4294906636
+        },
+        {
+          "pc": 17152,
+          "register": 2,
+          "address": 17168,
+          "size": 4,
+          "value": 1102
+        }
+      ],
+      "division_reachable_instruction_bytes": 170,
+      "division_native": {
+        "status": "EXACT_START",
+        "path": "C:\\Dev\\Astra_A2WC511R\\work\\diaphora\\exports\\A2WC510R_stock_01.analysis.json",
+        "sha256": "1e7b0c0a76b42dcd701cd18fab5f099c02de1fb0bbdb5b68537a7cd09eeb0100",
+        "function": {
+          "start": 16992,
+          "end": 17162,
+          "name": "sub_4260",
+          "chunks": [
+            [
+              16992,
+              17162
+            ]
+          ],
+          "frame_size": 0,
+          "frame_regs": 0,
+          "args_size": 0,
+          "chunk_sha256": [
+            "7edbc4e84d1c25875e75cb3e96aaddc9a0ea0d008a36b0d299dc3e4b0e27736a"
+          ],
+          "inbound": [
+            {
+              "from": 111188,
+              "to": 16992,
+              "type": 17,
+              "iscode": true
+            },
+            {
+              "from": 295874,
+              "to": 16992,
+              "type": 17,
+              "iscode": true
+            },
+            {
+              "from": 111184,
+              "to": 16992,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 111408,
+              "to": 16992,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 295868,
+              "to": 16992,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 296104,
+              "to": 16992,
+              "type": 1,
+              "iscode": false
+            }
+          ],
+          "references": [
+            {
+              "from": 16996,
+              "to": 17150,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 17150,
+              "to": 17164,
+              "type": 3,
+              "iscode": false
+            },
+            {
+              "from": 17150,
+              "to": 4294906636,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 17152,
+              "to": 1102,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 17152,
+              "to": 17168,
+              "type": 3,
+              "iscode": false
+            }
+          ]
+        },
+        "scope": "Disposable native export only; xrefs are observed analysis evidence, not complete inbound closure."
+      },
+      "range_entry": "0x0001466E",
+      "range_last_instruction": "0x000147AA",
+      "range_roles": {
+        "source": "0xFFFF4C8C",
+        "flags": "0xFFFF4BA4",
+        "output": "0xFFFF4BC0"
+      },
+      "range_structural_signature_sha256": "e6fbc1a51c12ee9b0e77102175f636305503a7d1aefa7af847ebd4f18477ea44",
+      "reachable_instruction_count": 95,
+      "range_instruction_bytes": 190,
+      "range_entry_through_return_span": 318,
+      "range_unexecuted_bytes_inside_span": 128,
+      "range_native": {
+        "status": "EXACT_START",
+        "path": "C:\\Dev\\Astra_A2WC511R\\work\\diaphora\\exports\\A2WC510R_stock_01.analysis.json",
+        "sha256": "1e7b0c0a76b42dcd701cd18fab5f099c02de1fb0bbdb5b68537a7cd09eeb0100",
+        "function": {
+          "start": 83566,
+          "end": 83884,
+          "name": "sub_1466E",
+          "chunks": [
+            [
+              83566,
+              83884
+            ]
+          ],
+          "frame_size": 0,
+          "frame_regs": 0,
+          "args_size": 0,
+          "chunk_sha256": [
+            "4ca264d5be45e8e8e26a1a1467d145280d0031ead6ab82517638402bd07bb221"
+          ],
+          "inbound": [],
+          "references": [
+            {
+              "from": 83568,
+              "to": 83760,
+              "type": 3,
+              "iscode": false
+            },
+            {
+              "from": 83568,
+              "to": 4294921124,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 83570,
+              "to": 83756,
+              "type": 3,
+              "iscode": false
+            },
+            {
+              "from": 83570,
+              "to": 4294921356,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 83580,
+              "to": 83592,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83588,
+              "to": 83598,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83602,
+              "to": 83614,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83610,
+              "to": 83620,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83624,
+              "to": 83764,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83632,
+              "to": 83770,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83772,
+              "to": 83970,
+              "type": 3,
+              "iscode": false
+            },
+            {
+              "from": 83778,
+              "to": 83840,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83784,
+              "to": 83844,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83790,
+              "to": 83848,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83796,
+              "to": 83852,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83802,
+              "to": 83856,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83808,
+              "to": 83860,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83814,
+              "to": 83864,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83820,
+              "to": 83868,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83826,
+              "to": 83876,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83832,
+              "to": 83872,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83836,
+              "to": 83876,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83840,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83844,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83848,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83852,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83856,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83860,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83864,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83868,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83872,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83878,
+              "to": 83976,
+              "type": 3,
+              "iscode": false
+            },
+            {
+              "from": 83878,
+              "to": 4294921152,
+              "type": 1,
+              "iscode": false
+            }
+          ]
+        },
+        "scope": "Disposable native export only; xrefs are observed analysis evidence, not complete inbound closure."
+      },
+      "first3_reordered": false,
+      "literal_dependencies": [
+        {
+          "pc": 83568,
+          "register": 4,
+          "address": 83760,
+          "size": 4,
+          "value": 4294921124
+        },
+        {
+          "pc": 83570,
+          "register": 3,
+          "address": 83756,
+          "size": 4,
+          "value": 4294921356
+        },
+        {
+          "pc": 83772,
+          "register": 7,
+          "address": 83970,
+          "size": 2,
+          "value": 128
+        },
+        {
+          "pc": 83878,
+          "register": 3,
+          "address": 83976,
+          "size": 4,
+          "value": 4294921152
+        }
+      ]
+    },
+    {
+      "calid": "A2WC510S",
+      "rom": {
+        "source": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\diaphora\\rom_inventory\\public_reference_roms\\A2WC510S-2005-USDM-Subaru-Outback-XT-MT.hex",
+        "sha256": "c23268551cb2a1a8820525ef98a00d7032ad6989fe0b6a1e77dfd39528b9292c",
+        "base_sha256": "c23268551cb2a1a8820525ef98a00d7032ad6989fe0b6a1e77dfd39528b9292c",
+        "overlays": [],
+        "size": 1048576
+      },
+      "division_entry": "0x00004260",
+      "division_full_object_equal": true,
+      "division_external_literals_verified": [
+        {
+          "pc": 17150,
+          "register": 1,
+          "address": 17164,
+          "size": 4,
+          "value": 4294906636
+        },
+        {
+          "pc": 17152,
+          "register": 2,
+          "address": 17168,
+          "size": 4,
+          "value": 1102
+        }
+      ],
+      "division_reachable_instruction_bytes": 170,
+      "division_native": {
+        "status": "EXACT_START",
+        "path": "C:\\Dev\\Astra_A2WC511R\\work\\diaphora\\exports\\A2WC510S_stock_01.analysis.json",
+        "sha256": "2f5026d847c1fb828942522fb19f7e8ac437a4d040a0e473fb53048c2f071716",
+        "function": {
+          "start": 16992,
+          "end": 17162,
+          "name": "sub_4260",
+          "chunks": [
+            [
+              16992,
+              17162
+            ]
+          ],
+          "frame_size": 0,
+          "frame_regs": 0,
+          "args_size": 0,
+          "chunk_sha256": [
+            "7edbc4e84d1c25875e75cb3e96aaddc9a0ea0d008a36b0d299dc3e4b0e27736a"
+          ],
+          "inbound": [
+            {
+              "from": 111188,
+              "to": 16992,
+              "type": 17,
+              "iscode": true
+            },
+            {
+              "from": 295874,
+              "to": 16992,
+              "type": 17,
+              "iscode": true
+            },
+            {
+              "from": 111184,
+              "to": 16992,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 111408,
+              "to": 16992,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 295868,
+              "to": 16992,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 296104,
+              "to": 16992,
+              "type": 1,
+              "iscode": false
+            }
+          ],
+          "references": [
+            {
+              "from": 16996,
+              "to": 17150,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 17150,
+              "to": 17164,
+              "type": 3,
+              "iscode": false
+            },
+            {
+              "from": 17150,
+              "to": 4294906636,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 17152,
+              "to": 1102,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 17152,
+              "to": 17168,
+              "type": 3,
+              "iscode": false
+            }
+          ]
+        },
+        "scope": "Disposable native export only; xrefs are observed analysis evidence, not complete inbound closure."
+      },
+      "range_entry": "0x0001466E",
+      "range_last_instruction": "0x000147AA",
+      "range_roles": {
+        "source": "0xFFFF4C8C",
+        "flags": "0xFFFF4BA4",
+        "output": "0xFFFF4BC0"
+      },
+      "range_structural_signature_sha256": "e6fbc1a51c12ee9b0e77102175f636305503a7d1aefa7af847ebd4f18477ea44",
+      "reachable_instruction_count": 95,
+      "range_instruction_bytes": 190,
+      "range_entry_through_return_span": 318,
+      "range_unexecuted_bytes_inside_span": 128,
+      "range_native": {
+        "status": "EXACT_START",
+        "path": "C:\\Dev\\Astra_A2WC511R\\work\\diaphora\\exports\\A2WC510S_stock_01.analysis.json",
+        "sha256": "2f5026d847c1fb828942522fb19f7e8ac437a4d040a0e473fb53048c2f071716",
+        "function": {
+          "start": 83566,
+          "end": 83884,
+          "name": "sub_1466E",
+          "chunks": [
+            [
+              83566,
+              83884
+            ]
+          ],
+          "frame_size": 0,
+          "frame_regs": 0,
+          "args_size": 0,
+          "chunk_sha256": [
+            "4ca264d5be45e8e8e26a1a1467d145280d0031ead6ab82517638402bd07bb221"
+          ],
+          "inbound": [],
+          "references": [
+            {
+              "from": 83568,
+              "to": 83760,
+              "type": 3,
+              "iscode": false
+            },
+            {
+              "from": 83568,
+              "to": 4294921124,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 83570,
+              "to": 83756,
+              "type": 3,
+              "iscode": false
+            },
+            {
+              "from": 83570,
+              "to": 4294921356,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 83580,
+              "to": 83592,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83588,
+              "to": 83598,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83602,
+              "to": 83614,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83610,
+              "to": 83620,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83624,
+              "to": 83764,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83632,
+              "to": 83770,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83772,
+              "to": 83970,
+              "type": 3,
+              "iscode": false
+            },
+            {
+              "from": 83778,
+              "to": 83840,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83784,
+              "to": 83844,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83790,
+              "to": 83848,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83796,
+              "to": 83852,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83802,
+              "to": 83856,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83808,
+              "to": 83860,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83814,
+              "to": 83864,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83820,
+              "to": 83868,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83826,
+              "to": 83876,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83832,
+              "to": 83872,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83836,
+              "to": 83876,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83840,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83844,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83848,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83852,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83856,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83860,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83864,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83868,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83872,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83878,
+              "to": 83976,
+              "type": 3,
+              "iscode": false
+            },
+            {
+              "from": 83878,
+              "to": 4294921152,
+              "type": 1,
+              "iscode": false
+            }
+          ]
+        },
+        "scope": "Disposable native export only; xrefs are observed analysis evidence, not complete inbound closure."
+      },
+      "first3_reordered": false,
+      "literal_dependencies": [
+        {
+          "pc": 83568,
+          "register": 4,
+          "address": 83760,
+          "size": 4,
+          "value": 4294921124
+        },
+        {
+          "pc": 83570,
+          "register": 3,
+          "address": 83756,
+          "size": 4,
+          "value": 4294921356
+        },
+        {
+          "pc": 83772,
+          "register": 7,
+          "address": 83970,
+          "size": 2,
+          "value": 128
+        },
+        {
+          "pc": 83878,
+          "register": 3,
+          "address": 83976,
+          "size": 4,
+          "value": 4294921152
+        }
+      ]
+    },
+    {
+      "calid": "A2WC511R",
+      "rom": {
+        "source": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\diaphora\\rom_inventory\\public_reference_roms\\A2WC511R-2005-USDM-Outback-XT.hex",
+        "sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+        "base_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+        "overlays": [],
+        "size": 1048576
+      },
+      "division_entry": "0x00004260",
+      "division_full_object_equal": true,
+      "division_external_literals_verified": [
+        {
+          "pc": 17150,
+          "register": 1,
+          "address": 17164,
+          "size": 4,
+          "value": 4294906636
+        },
+        {
+          "pc": 17152,
+          "register": 2,
+          "address": 17168,
+          "size": 4,
+          "value": 1102
+        }
+      ],
+      "division_reachable_instruction_bytes": 170,
+      "division_native": {
+        "status": "EXACT_START",
+        "path": "C:\\Dev\\Astra_A2WC511R\\work\\diaphora\\exports\\A2WC511R_stock_03.analysis.json",
+        "sha256": "850429c62f255f108c04ccb186c2f4b416c02770a89e96bec0b92604688f032d",
+        "function": {
+          "start": 16992,
+          "end": 17162,
+          "name": "sub_4260",
+          "chunks": [
+            [
+              16992,
+              17162
+            ]
+          ],
+          "frame_size": 0,
+          "frame_regs": 0,
+          "args_size": 0,
+          "chunk_sha256": [
+            "7edbc4e84d1c25875e75cb3e96aaddc9a0ea0d008a36b0d299dc3e4b0e27736a"
+          ],
+          "inbound": [
+            {
+              "from": 111188,
+              "to": 16992,
+              "type": 17,
+              "iscode": true
+            },
+            {
+              "from": 295874,
+              "to": 16992,
+              "type": 17,
+              "iscode": true
+            },
+            {
+              "from": 111184,
+              "to": 16992,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 111408,
+              "to": 16992,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 295868,
+              "to": 16992,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 296104,
+              "to": 16992,
+              "type": 1,
+              "iscode": false
+            }
+          ],
+          "references": [
+            {
+              "from": 16996,
+              "to": 17150,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 17150,
+              "to": 17164,
+              "type": 3,
+              "iscode": false
+            },
+            {
+              "from": 17150,
+              "to": 4294906636,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 17152,
+              "to": 1102,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 17152,
+              "to": 17168,
+              "type": 3,
+              "iscode": false
+            }
+          ]
+        },
+        "scope": "Disposable native export only; xrefs are observed analysis evidence, not complete inbound closure."
+      },
+      "range_entry": "0x0001466E",
+      "range_last_instruction": "0x000147AA",
+      "range_roles": {
+        "source": "0xFFFF4C8C",
+        "flags": "0xFFFF4BA4",
+        "output": "0xFFFF4BC0"
+      },
+      "range_structural_signature_sha256": "e6fbc1a51c12ee9b0e77102175f636305503a7d1aefa7af847ebd4f18477ea44",
+      "reachable_instruction_count": 95,
+      "range_instruction_bytes": 190,
+      "range_entry_through_return_span": 318,
+      "range_unexecuted_bytes_inside_span": 128,
+      "range_native": {
+        "status": "EXACT_START",
+        "path": "C:\\Dev\\Astra_A2WC511R\\work\\diaphora\\exports\\A2WC511R_stock_03.analysis.json",
+        "sha256": "850429c62f255f108c04ccb186c2f4b416c02770a89e96bec0b92604688f032d",
+        "function": {
+          "start": 83566,
+          "end": 83884,
+          "name": "sub_1466E",
+          "chunks": [
+            [
+              83566,
+              83884
+            ]
+          ],
+          "frame_size": 0,
+          "frame_regs": 0,
+          "args_size": 0,
+          "chunk_sha256": [
+            "4ca264d5be45e8e8e26a1a1467d145280d0031ead6ab82517638402bd07bb221"
+          ],
+          "inbound": [],
+          "references": [
+            {
+              "from": 83568,
+              "to": 83760,
+              "type": 3,
+              "iscode": false
+            },
+            {
+              "from": 83568,
+              "to": 4294921124,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 83570,
+              "to": 83756,
+              "type": 3,
+              "iscode": false
+            },
+            {
+              "from": 83570,
+              "to": 4294921356,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 83580,
+              "to": 83592,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83588,
+              "to": 83598,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83602,
+              "to": 83614,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83610,
+              "to": 83620,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83624,
+              "to": 83764,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83632,
+              "to": 83770,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83772,
+              "to": 83970,
+              "type": 3,
+              "iscode": false
+            },
+            {
+              "from": 83778,
+              "to": 83840,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83784,
+              "to": 83844,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83790,
+              "to": 83848,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83796,
+              "to": 83852,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83802,
+              "to": 83856,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83808,
+              "to": 83860,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83814,
+              "to": 83864,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83820,
+              "to": 83868,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83826,
+              "to": 83876,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83832,
+              "to": 83872,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83836,
+              "to": 83876,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83840,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83844,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83848,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83852,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83856,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83860,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83864,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83868,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83872,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83878,
+              "to": 83976,
+              "type": 3,
+              "iscode": false
+            },
+            {
+              "from": 83878,
+              "to": 4294921152,
+              "type": 1,
+              "iscode": false
+            }
+          ]
+        },
+        "scope": "Disposable native export only; xrefs are observed analysis evidence, not complete inbound closure."
+      },
+      "first3_reordered": false,
+      "literal_dependencies": [
+        {
+          "pc": 83568,
+          "register": 4,
+          "address": 83760,
+          "size": 4,
+          "value": 4294921124
+        },
+        {
+          "pc": 83570,
+          "register": 3,
+          "address": 83756,
+          "size": 4,
+          "value": 4294921356
+        },
+        {
+          "pc": 83772,
+          "register": 7,
+          "address": 83970,
+          "size": 2,
+          "value": 128
+        },
+        {
+          "pc": 83878,
+          "register": 3,
+          "address": 83976,
+          "size": 4,
+          "value": 4294921152
+        }
+      ]
+    },
+    {
+      "calid": "A2WC521R",
+      "rom": {
+        "source": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\diaphora\\rom_inventory\\public_reference_roms\\A2WC521R-2005-USDM-Subaru-Outback-XT-AT.hex",
+        "sha256": "9bc99f4c735d962f9ba8f79e8f445af387effdfb9553ebe896445d931c12741d",
+        "base_sha256": "9bc99f4c735d962f9ba8f79e8f445af387effdfb9553ebe896445d931c12741d",
+        "overlays": [],
+        "size": 1048576
+      },
+      "division_entry": "0x00004260",
+      "division_full_object_equal": true,
+      "division_external_literals_verified": [
+        {
+          "pc": 17150,
+          "register": 1,
+          "address": 17164,
+          "size": 4,
+          "value": 4294906636
+        },
+        {
+          "pc": 17152,
+          "register": 2,
+          "address": 17168,
+          "size": 4,
+          "value": 1102
+        }
+      ],
+      "division_reachable_instruction_bytes": 170,
+      "division_native": {
+        "status": "EXACT_START",
+        "path": "C:\\Dev\\Astra_A2WC511R\\work\\diaphora\\exports\\A2WC521R_stock_01.analysis.json",
+        "sha256": "5081474a05889b11a0b68604f14c78de1774c9673dc462d4443b087dd7081edf",
+        "function": {
+          "start": 16992,
+          "end": 17162,
+          "name": "sub_4260",
+          "chunks": [
+            [
+              16992,
+              17162
+            ]
+          ],
+          "frame_size": 0,
+          "frame_regs": 0,
+          "args_size": 0,
+          "chunk_sha256": [
+            "7edbc4e84d1c25875e75cb3e96aaddc9a0ea0d008a36b0d299dc3e4b0e27736a"
+          ],
+          "inbound": [
+            {
+              "from": 111448,
+              "to": 16992,
+              "type": 17,
+              "iscode": true
+            },
+            {
+              "from": 296142,
+              "to": 16992,
+              "type": 17,
+              "iscode": true
+            },
+            {
+              "from": 111444,
+              "to": 16992,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 111668,
+              "to": 16992,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 296136,
+              "to": 16992,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 296372,
+              "to": 16992,
+              "type": 1,
+              "iscode": false
+            }
+          ],
+          "references": [
+            {
+              "from": 16996,
+              "to": 17150,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 17150,
+              "to": 17164,
+              "type": 3,
+              "iscode": false
+            },
+            {
+              "from": 17150,
+              "to": 4294906636,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 17152,
+              "to": 1102,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 17152,
+              "to": 17168,
+              "type": 3,
+              "iscode": false
+            }
+          ]
+        },
+        "scope": "Disposable native export only; xrefs are observed analysis evidence, not complete inbound closure."
+      },
+      "range_entry": "0x0001466E",
+      "range_last_instruction": "0x000147AA",
+      "range_roles": {
+        "source": "0xFFFF4C9C",
+        "flags": "0xFFFF4BA4",
+        "output": "0xFFFF4BC0"
+      },
+      "range_structural_signature_sha256": "e6fbc1a51c12ee9b0e77102175f636305503a7d1aefa7af847ebd4f18477ea44",
+      "reachable_instruction_count": 95,
+      "range_instruction_bytes": 190,
+      "range_entry_through_return_span": 318,
+      "range_unexecuted_bytes_inside_span": 128,
+      "range_native": {
+        "status": "EXACT_START",
+        "path": "C:\\Dev\\Astra_A2WC511R\\work\\diaphora\\exports\\A2WC521R_stock_01.analysis.json",
+        "sha256": "5081474a05889b11a0b68604f14c78de1774c9673dc462d4443b087dd7081edf",
+        "function": {
+          "start": 83566,
+          "end": 83884,
+          "name": "sub_1466E",
+          "chunks": [
+            [
+              83566,
+              83884
+            ]
+          ],
+          "frame_size": 0,
+          "frame_regs": 0,
+          "args_size": 0,
+          "chunk_sha256": [
+            "e4f476560f30e3adad67d77f90ab78eee5151b31c0aea36a9bdda9606764d205"
+          ],
+          "inbound": [],
+          "references": [
+            {
+              "from": 83568,
+              "to": 83760,
+              "type": 3,
+              "iscode": false
+            },
+            {
+              "from": 83568,
+              "to": 4294921124,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 83570,
+              "to": 83756,
+              "type": 3,
+              "iscode": false
+            },
+            {
+              "from": 83570,
+              "to": 4294921372,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 83580,
+              "to": 83592,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83588,
+              "to": 83598,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83602,
+              "to": 83614,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83610,
+              "to": 83620,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83624,
+              "to": 83764,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83632,
+              "to": 83770,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83772,
+              "to": 83970,
+              "type": 3,
+              "iscode": false
+            },
+            {
+              "from": 83778,
+              "to": 83840,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83784,
+              "to": 83844,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83790,
+              "to": 83848,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83796,
+              "to": 83852,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83802,
+              "to": 83856,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83808,
+              "to": 83860,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83814,
+              "to": 83864,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83820,
+              "to": 83868,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83826,
+              "to": 83876,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83832,
+              "to": 83872,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83836,
+              "to": 83876,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83840,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83844,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83848,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83852,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83856,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83860,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83864,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83868,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83872,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83878,
+              "to": 83976,
+              "type": 3,
+              "iscode": false
+            },
+            {
+              "from": 83878,
+              "to": 4294921152,
+              "type": 1,
+              "iscode": false
+            }
+          ]
+        },
+        "scope": "Disposable native export only; xrefs are observed analysis evidence, not complete inbound closure."
+      },
+      "first3_reordered": false,
+      "literal_dependencies": [
+        {
+          "pc": 83568,
+          "register": 4,
+          "address": 83760,
+          "size": 4,
+          "value": 4294921124
+        },
+        {
+          "pc": 83570,
+          "register": 3,
+          "address": 83756,
+          "size": 4,
+          "value": 4294921372
+        },
+        {
+          "pc": 83772,
+          "register": 7,
+          "address": 83970,
+          "size": 2,
+          "value": 128
+        },
+        {
+          "pc": 83878,
+          "register": 3,
+          "address": 83976,
+          "size": 4,
+          "value": 4294921152
+        }
+      ]
+    },
+    {
+      "calid": "A2WC522S",
+      "rom": {
+        "source": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\diaphora\\rom_inventory\\public_reference_roms\\A2WC522S-2005-USDM-Subaru-Outback-XT-MT.hex",
+        "sha256": "f241a8e222ca18e116f63dc8ede7ae40b8d43747b071101f768c19683c78ca8f",
+        "base_sha256": "f241a8e222ca18e116f63dc8ede7ae40b8d43747b071101f768c19683c78ca8f",
+        "overlays": [],
+        "size": 1048576
+      },
+      "division_entry": "0x00004260",
+      "division_full_object_equal": true,
+      "division_external_literals_verified": [
+        {
+          "pc": 17150,
+          "register": 1,
+          "address": 17164,
+          "size": 4,
+          "value": 4294906636
+        },
+        {
+          "pc": 17152,
+          "register": 2,
+          "address": 17168,
+          "size": 4,
+          "value": 1102
+        }
+      ],
+      "division_reachable_instruction_bytes": 170,
+      "division_native": {
+        "status": "EXACT_START",
+        "path": "C:\\Dev\\Astra_A2WC511R\\work\\diaphora\\exports\\A2WC522S_stock_01.analysis.json",
+        "sha256": "714345341ae07c2d932676f300bfa9a27d28bcd1c8c12bbff22842d84ed68bbd",
+        "function": {
+          "start": 16992,
+          "end": 17162,
+          "name": "sub_4260",
+          "chunks": [
+            [
+              16992,
+              17162
+            ]
+          ],
+          "frame_size": 0,
+          "frame_regs": 0,
+          "args_size": 0,
+          "chunk_sha256": [
+            "7edbc4e84d1c25875e75cb3e96aaddc9a0ea0d008a36b0d299dc3e4b0e27736a"
+          ],
+          "inbound": [
+            {
+              "from": 111448,
+              "to": 16992,
+              "type": 17,
+              "iscode": true
+            },
+            {
+              "from": 296142,
+              "to": 16992,
+              "type": 17,
+              "iscode": true
+            },
+            {
+              "from": 111444,
+              "to": 16992,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 111668,
+              "to": 16992,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 296136,
+              "to": 16992,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 296372,
+              "to": 16992,
+              "type": 1,
+              "iscode": false
+            }
+          ],
+          "references": [
+            {
+              "from": 16996,
+              "to": 17150,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 17150,
+              "to": 17164,
+              "type": 3,
+              "iscode": false
+            },
+            {
+              "from": 17150,
+              "to": 4294906636,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 17152,
+              "to": 1102,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 17152,
+              "to": 17168,
+              "type": 3,
+              "iscode": false
+            }
+          ]
+        },
+        "scope": "Disposable native export only; xrefs are observed analysis evidence, not complete inbound closure."
+      },
+      "range_entry": "0x0001466E",
+      "range_last_instruction": "0x000147AA",
+      "range_roles": {
+        "source": "0xFFFF4C9C",
+        "flags": "0xFFFF4BA4",
+        "output": "0xFFFF4BC0"
+      },
+      "range_structural_signature_sha256": "e6fbc1a51c12ee9b0e77102175f636305503a7d1aefa7af847ebd4f18477ea44",
+      "reachable_instruction_count": 95,
+      "range_instruction_bytes": 190,
+      "range_entry_through_return_span": 318,
+      "range_unexecuted_bytes_inside_span": 128,
+      "range_native": {
+        "status": "EXACT_START",
+        "path": "C:\\Dev\\Astra_A2WC511R\\work\\diaphora\\exports\\A2WC522S_stock_01.analysis.json",
+        "sha256": "714345341ae07c2d932676f300bfa9a27d28bcd1c8c12bbff22842d84ed68bbd",
+        "function": {
+          "start": 83566,
+          "end": 83884,
+          "name": "sub_1466E",
+          "chunks": [
+            [
+              83566,
+              83884
+            ]
+          ],
+          "frame_size": 0,
+          "frame_regs": 0,
+          "args_size": 0,
+          "chunk_sha256": [
+            "e4f476560f30e3adad67d77f90ab78eee5151b31c0aea36a9bdda9606764d205"
+          ],
+          "inbound": [],
+          "references": [
+            {
+              "from": 83568,
+              "to": 83760,
+              "type": 3,
+              "iscode": false
+            },
+            {
+              "from": 83568,
+              "to": 4294921124,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 83570,
+              "to": 83756,
+              "type": 3,
+              "iscode": false
+            },
+            {
+              "from": 83570,
+              "to": 4294921372,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 83580,
+              "to": 83592,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83588,
+              "to": 83598,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83602,
+              "to": 83614,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83610,
+              "to": 83620,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83624,
+              "to": 83764,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83632,
+              "to": 83770,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83772,
+              "to": 83970,
+              "type": 3,
+              "iscode": false
+            },
+            {
+              "from": 83778,
+              "to": 83840,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83784,
+              "to": 83844,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83790,
+              "to": 83848,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83796,
+              "to": 83852,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83802,
+              "to": 83856,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83808,
+              "to": 83860,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83814,
+              "to": 83864,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83820,
+              "to": 83868,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83826,
+              "to": 83876,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83832,
+              "to": 83872,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83836,
+              "to": 83876,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83840,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83844,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83848,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83852,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83856,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83860,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83864,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83868,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83872,
+              "to": 83878,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 83878,
+              "to": 83976,
+              "type": 3,
+              "iscode": false
+            },
+            {
+              "from": 83878,
+              "to": 4294921152,
+              "type": 1,
+              "iscode": false
+            }
+          ]
+        },
+        "scope": "Disposable native export only; xrefs are observed analysis evidence, not complete inbound closure."
+      },
+      "first3_reordered": false,
+      "literal_dependencies": [
+        {
+          "pc": 83568,
+          "register": 4,
+          "address": 83760,
+          "size": 4,
+          "value": 4294921124
+        },
+        {
+          "pc": 83570,
+          "register": 3,
+          "address": 83756,
+          "size": 4,
+          "value": 4294921372
+        },
+        {
+          "pc": 83772,
+          "register": 7,
+          "address": 83970,
+          "size": 2,
+          "value": 128
+        },
+        {
+          "pc": 83878,
+          "register": 3,
+          "address": 83976,
+          "size": 4,
+          "value": 4294921152
+        }
+      ]
+    },
+    {
+      "calid": "A2WF200R",
+      "rom": {
+        "source": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\diaphora\\rom_inventory\\public_reference_roms\\A2WF200R-2006-USDM-Outback-XT.hex",
+        "sha256": "7478ead68c0fc5f3f46658b40d543a66940d6398e4ac66dfdf4d7587819b75b6",
+        "base_sha256": "7478ead68c0fc5f3f46658b40d543a66940d6398e4ac66dfdf4d7587819b75b6",
+        "overlays": [],
+        "size": 1048576
+      },
+      "division_entry": "0x00004260",
+      "division_full_object_equal": true,
+      "division_external_literals_verified": [
+        {
+          "pc": 17150,
+          "register": 1,
+          "address": 17164,
+          "size": 4,
+          "value": 4294906636
+        },
+        {
+          "pc": 17152,
+          "register": 2,
+          "address": 17168,
+          "size": 4,
+          "value": 1102
+        }
+      ],
+      "division_reachable_instruction_bytes": 170,
+      "division_native": {
+        "status": "EXACT_START",
+        "path": "C:\\Dev\\Astra_A2WC511R\\work\\diaphora\\exports\\A2WF200R_stock_01.analysis.json",
+        "sha256": "6faa82453c5e46251ea24a335f566efee8274fd99edd58a9981163f7b8895034",
+        "function": {
+          "start": 16992,
+          "end": 17162,
+          "name": "sub_4260",
+          "chunks": [
+            [
+              16992,
+              17162
+            ]
+          ],
+          "frame_size": 0,
+          "frame_regs": 0,
+          "args_size": 0,
+          "chunk_sha256": [
+            "7edbc4e84d1c25875e75cb3e96aaddc9a0ea0d008a36b0d299dc3e4b0e27736a"
+          ],
+          "inbound": [
+            {
+              "from": 116216,
+              "to": 16992,
+              "type": 17,
+              "iscode": true
+            },
+            {
+              "from": 299962,
+              "to": 16992,
+              "type": 17,
+              "iscode": true
+            },
+            {
+              "from": 116212,
+              "to": 16992,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 116436,
+              "to": 16992,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 299956,
+              "to": 16992,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 300048,
+              "to": 16992,
+              "type": 1,
+              "iscode": false
+            }
+          ],
+          "references": [
+            {
+              "from": 16996,
+              "to": 17150,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 17150,
+              "to": 17164,
+              "type": 3,
+              "iscode": false
+            },
+            {
+              "from": 17150,
+              "to": 4294906636,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 17152,
+              "to": 1102,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 17152,
+              "to": 17168,
+              "type": 3,
+              "iscode": false
+            }
+          ]
+        },
+        "scope": "Disposable native export only; xrefs are observed analysis evidence, not complete inbound closure."
+      },
+      "range_entry": "0x0001590E",
+      "range_last_instruction": "0x00015A4A",
+      "range_roles": {
+        "source": "0xFFFF4CA8",
+        "flags": "0xFFFF4BB0",
+        "output": "0xFFFF4BCC"
+      },
+      "range_structural_signature_sha256": "e6fbc1a51c12ee9b0e77102175f636305503a7d1aefa7af847ebd4f18477ea44",
+      "reachable_instruction_count": 95,
+      "range_instruction_bytes": 190,
+      "range_entry_through_return_span": 318,
+      "range_unexecuted_bytes_inside_span": 128,
+      "range_native": {
+        "status": "EXACT_START",
+        "path": "C:\\Dev\\Astra_A2WC511R\\work\\diaphora\\exports\\A2WF200R_stock_01.analysis.json",
+        "sha256": "6faa82453c5e46251ea24a335f566efee8274fd99edd58a9981163f7b8895034",
+        "function": {
+          "start": 88334,
+          "end": 88652,
+          "name": "sub_1590E",
+          "chunks": [
+            [
+              88334,
+              88652
+            ]
+          ],
+          "frame_size": 0,
+          "frame_regs": 0,
+          "args_size": 0,
+          "chunk_sha256": [
+            "66e982ed5deaf269ebe2e6396f59e315dda9fd20c26deb2dd3e3b91f10ae9ff7"
+          ],
+          "inbound": [],
+          "references": [
+            {
+              "from": 88336,
+              "to": 88528,
+              "type": 3,
+              "iscode": false
+            },
+            {
+              "from": 88336,
+              "to": 4294921136,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 88338,
+              "to": 88524,
+              "type": 3,
+              "iscode": false
+            },
+            {
+              "from": 88338,
+              "to": 4294921384,
+              "type": 1,
+              "iscode": false
+            },
+            {
+              "from": 88348,
+              "to": 88360,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 88356,
+              "to": 88366,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 88370,
+              "to": 88382,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 88378,
+              "to": 88388,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 88392,
+              "to": 88532,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 88400,
+              "to": 88538,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 88540,
+              "to": 88738,
+              "type": 3,
+              "iscode": false
+            },
+            {
+              "from": 88546,
+              "to": 88608,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 88552,
+              "to": 88612,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 88558,
+              "to": 88616,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 88564,
+              "to": 88620,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 88570,
+              "to": 88624,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 88576,
+              "to": 88628,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 88582,
+              "to": 88632,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 88588,
+              "to": 88636,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 88594,
+              "to": 88644,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 88600,
+              "to": 88640,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 88604,
+              "to": 88644,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 88608,
+              "to": 88646,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 88612,
+              "to": 88646,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 88616,
+              "to": 88646,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 88620,
+              "to": 88646,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 88624,
+              "to": 88646,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 88628,
+              "to": 88646,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 88632,
+              "to": 88646,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 88636,
+              "to": 88646,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 88640,
+              "to": 88646,
+              "type": 19,
+              "iscode": true
+            },
+            {
+              "from": 88646,
+              "to": 88744,
+              "type": 3,
+              "iscode": false
+            },
+            {
+              "from": 88646,
+              "to": 4294921164,
+              "type": 1,
+              "iscode": false
+            }
+          ]
+        },
+        "scope": "Disposable native export only; xrefs are observed analysis evidence, not complete inbound closure."
+      },
+      "first3_reordered": false,
+      "literal_dependencies": [
+        {
+          "pc": 88336,
+          "register": 4,
+          "address": 88528,
+          "size": 4,
+          "value": 4294921136
+        },
+        {
+          "pc": 88338,
+          "register": 3,
+          "address": 88524,
+          "size": 4,
+          "value": 4294921384
+        },
+        {
+          "pc": 88540,
+          "register": 7,
+          "address": 88738,
+          "size": 2,
+          "value": 128
+        },
+        {
+          "pc": 88646,
+          "register": 3,
+          "address": 88744,
+          "size": 4,
+          "value": 4294921164
+        }
+      ]
+    }
+  ],
+  "negative_controls": [],
+  "source_sha256": "9fce83f174f850d108ee4c69b5ba3420146af2cd97a21fb1cb14fb8705ba40ec"
+}

@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "mode": "OFFLINE_ONLY_NO_PHYSICAL_BACKEND",
+  "fixture": {
+    "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\host\\stock_six_a8_fixtures.json",
+    "sha256": "1d6b4d789c74caee36506e3d831207f3d2039b1a3a9f584d6acff2d7498664fb"
+  },
+  "stock_rom": {
+    "path": "C:\\Dev\\SubaruRoms\\OEM\\A2WC511R.bin",
+    "sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218"
+  },
+  "java": {
+    "path": "C:\\Program Files\\RomRaider\\jdk-11.0.14.1+1-jre\\bin\\java.exe",
+    "sha256": "fb2e38ffd49ee440ec64b54af2cb0a6604b3719e213a208c4e7742eeb7fbbe86"
+  },
+  "classpath": [
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\work\\m07_host\\native\\m07-native-virtual.jar",
+      "sha256": "246e4ea0eb00773f06c733bfb06caf53ee6315b1167a785bf8d80f3738f4ba21"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\RomRaider.jar",
+      "sha256": "43f0e92d652a5d2dde57fbe76ef99ff4f18c8147b0cbc20c0c4ccb33a7fe6635"
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\integrations\\romraider\\dist\\romraider-bridge.jar",
+      "sha256": "88183aa9a7e84503f23a412b8490f644dda5153dcaf2f035f5e9e5b788f644b0"
+    }
+  ],
+  "endpoint_source_sha256": "7cafae170fa48b1322384c78dd5fbf478b906370b8e17e2fe443cd2dd33c8a1a",
+  "build_log": {
+    "path": "C:\\Dev\\Astra_A2WC511R\\work\\m07_host\\native\\build_log.json",
+    "sha256": "018d0c70071b04894c9e79eeef31605df3da95c3e5bad47487b3b15943f49f06"
+  },
+  "no_JNA_or_provider_library_on_classpath": true
+}

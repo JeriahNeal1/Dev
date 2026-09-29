@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "status": "PASS",
+  "groups": 9,
+  "local_ISA_value_T_delay_checks": 144,
+  "log": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\sim\\unit_models.log",
+    "sha256": "2afe3964c29cf0fa150adb0fdc9bdfa767a244a64e95305a993dd2e7b0803326"
+  },
+  "source": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\test_model.py",
+    "sha256": "4edeaf66ec89e1bfad0f266cf4a6af46c1411b1077d28c0aff1ef63bb58720e7"
+  },
+  "covers": [
+    "Six project-required instruction forms with signed-bit boundaries/T preservation/delay slots",
+    "Unknown opcodes/PC/MMIO, ROM/code writes and uninitialized/private-memory boundaries",
+    "SSR read-one/write-zero admission and receive flag lifetime",
+    "TDR/TSR two-stage buffering, TDRE-before-TEND and final completion",
+    "TE0 abort of both queued and shifting bytes without fabricated output",
+    "Forbidden flash controls, unsupported clock/interrupt/mode/width and inadequate declared settling interval"
+  ]
+}

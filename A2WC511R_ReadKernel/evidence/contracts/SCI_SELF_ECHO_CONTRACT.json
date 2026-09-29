@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "status": "OFFLINE_DEFECT_IDENTIFIED_REQUIRES_FINAL_BINARY_REVIEW",
+  "affected_kernel": "attempt_03",
+  "affected_kernel_sha256": "3d70abfb8617b87e1b9c52724fd27ed4066ba231818994e780c8ba3006de273f",
+  "problem": "Keeping SCI2 SCR=30 while streaming replies admits ECU transceiver self-echo into RDR; without draining it, overrun can invalidate the next request. Host J2534 TX-echo filtering does not address this ECU-side receive path.",
+  "stock_evidence": {
+    "ROM_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+    "TX_enable": "1CEE: SCR AND AF clears RE/RIE; SCR AND5B plusOR20 enables TX only.",
+    "RX_enable": "1CDC: SCR AND5B clears TE/TIE; SCR AND AF plusOR10 enables RX only.",
+    "ACK_flow": "1828/183E/1850 call1CEE before1D00 transmission; parserreset14E6 calls1CDC."
+  },
+  "DUAL_evidence": {
+    "scope": "Previously captured installed DUAL1.07 plaintext; no new executable or physical invocation",
+    "byte_TX": "FFFF3624 clears errors/drains existing RDR at3634..364C, submits TDR at3668, then polls RDRF and reads RDR at368E/3690, clearing RDRF at3694..3696, for each byte.",
+    "frame_TX": "FFFF3734 routes frame header/body/checksum throughFFFF3624.",
+    "source": "C:/Dev/Astra_A2WC511R/reports/local/ecuflash_dynamic/kernel_candidate/subarush7058dual_DECRYPTED_CANDIDATE.asm"
+  },
+  "required_owned_contract": [
+    "After validating the complete request, inspect residual RDR/error state so existing extra input is not silently accepted.",
+    "Disable RE before the first reply byte is submitted; keep it disabled for the entire reply.",
+    "Wait for actual TEND after the final checksum byte before re-enabling RE.",
+    "A TX-ready or TEND timeout remains terminal quiet failure, never success.",
+    "Do not interpret re-enabling RE as clearing preexisting error/RDR flags; handle them explicitly.",
+    "Verify final binary store domains and actual simulator self-echo injection, including an old-design negative control."
+  ],
+  "manual": "https://www.renesas.com/en/document/mah/sh-2e-sh7058-f-ztat-tm-hardware-manual",
+  "manual_qualification": {
+    "revision": "REJ09B0046-0300H Rev3 September2004",
+    "ORER": "Section15.2.6, PDF519/printed477: overrun preserves priorRDR and loses later receiveddata; receiving cannot continue until ORER is cleared.",
+    "transfer_rule": "Table15.11, PDF541/printed499, andtable15.13, PDF558/printed516: nextbyte completion withRDRF1 doesnot transferRSRtoRDR.",
+    "receiver_disable": "Section15.5.4, PDF558/printed516: RE0 initializesreceiver regardlessofstate; RE0doesnotclearSSRerrorflags.",
+    "simulation_scope": "A byte-completion echo schedule is an explicit input model, not measuredtransceiverdelay. SubsequentbyteswhileORER1 cannot become successfulRDRloads."
+  },
+  "physical_limits": "Exact line propagation, half-duplex turnaround and real provider timing remain physical inputs; the software receiver-control fix removes dependence on consuming each self-echo byte.",
+  "physical_operations": 0
+}

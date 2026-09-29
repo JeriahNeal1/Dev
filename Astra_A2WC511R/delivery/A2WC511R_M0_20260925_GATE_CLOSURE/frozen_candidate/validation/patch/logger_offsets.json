@@ -1,0 +1,121 @@
+[
+  {
+    "field": "sequence",
+    "offset": 0,
+    "bytes": 4,
+    "cpu_address": "0xffff7400",
+    "description": "Software publication sequence, even when complete; NOT a TCU heartbeat. Wraps modulo 2^32."
+  },
+  {
+    "field": "magic",
+    "offset": 4,
+    "bytes": 4,
+    "cpu_address": "0xffff7404",
+    "description": "M0D1 observer cookie. Does not establish power-cycle identity."
+  },
+  {
+    "field": "samples",
+    "offset": 8,
+    "bytes": 4,
+    "cpu_address": "0xffff7408",
+    "description": "Observer-call count modulo 2^32, NOT a CAN receive count."
+  },
+  {
+    "field": "reasons",
+    "offset": 12,
+    "bytes": 4,
+    "cpu_address": "0xffff740c",
+    "description": "Diagnostic rejection bits; freshness and coherence remain unproven."
+  },
+  {
+    "field": "transitions",
+    "offset": 16,
+    "bytes": 4,
+    "cpu_address": "0xffff7410",
+    "description": "Observed packed-snapshot changes, modulo 2^32. No physical gear-engagement claim."
+  },
+  {
+    "field": "source",
+    "offset": 20,
+    "bytes": 1,
+    "cpu_address": "0xffff7414",
+    "description": "Raw FFFF4C75 sampled byte."
+  },
+  {
+    "field": "snapshot",
+    "offset": 21,
+    "bytes": 1,
+    "cpu_address": "0xffff7415",
+    "description": "Raw FFFF4C8D sampled byte."
+  },
+  {
+    "field": "latch",
+    "offset": 22,
+    "bytes": 1,
+    "cpu_address": "0xffff7416",
+    "description": "Raw FFFF4CA1; not a freshness guarantee."
+  },
+  {
+    "field": "flags",
+    "offset": 23,
+    "bytes": 1,
+    "cpu_address": "0xffff7417",
+    "description": "Raw FFFF4C50; bit02 not a CAN-health guarantee."
+  },
+  {
+    "field": "target_nibble",
+    "offset": 24,
+    "bytes": 1,
+    "cpu_address": "0xffff7418",
+    "description": "High nibble of snapshot, requested working interpretation."
+  },
+  {
+    "field": "current_nibble",
+    "offset": 25,
+    "bytes": 1,
+    "cpu_address": "0xffff7419",
+    "description": "Low nibble of snapshot, reported working interpretation."
+  },
+  {
+    "field": "decoded_target",
+    "offset": 26,
+    "bytes": 1,
+    "cpu_address": "0xffff741a",
+    "description": "Observer reconstruction with local hold behavior. NOT direct OEM FFFF4BC1; first invalid nibble can differ from OEM retained value."
+  },
+  {
+    "field": "decoded_current",
+    "offset": 27,
+    "bytes": 1,
+    "cpu_address": "0xffff741b",
+    "description": "Observer reconstruction with local hold behavior. NOT direct OEM FFFF4BC2; first invalid nibble can differ from OEM retained value."
+  },
+  {
+    "field": "freshness",
+    "offset": 28,
+    "bytes": 1,
+    "cpu_address": "0xffff741c",
+    "description": "Hardware binding always 0 UNKNOWN. Does not authorize controls."
+  },
+  {
+    "field": "previous_snapshot",
+    "offset": 29,
+    "bytes": 1,
+    "cpu_address": "0xffff741d",
+    "description": "Observer previous snapshot, same as latest after publication."
+  },
+  {
+    "field": "initialized",
+    "offset": 30,
+    "bytes": 1,
+    "cpu_address": "0xffff741e",
+    "description": "Observer initialized cookie flag; lazy init does not prove warm-reset detection."
+  },
+  {
+    "field": "capture_changed",
+    "offset": 31,
+    "bytes": 1,
+    "cpu_address": "0xffff741f",
+    "description": "Raw values differed between two reads. Zero does not prove coherent sampling."
+  }
+]

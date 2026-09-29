@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "status": "COMPILED_EXPERIMENTAL_NOT_RELEASED",
+  "build_complete": true,
+  "offline_reviewed_candidate": false,
+  "production_release_allowed": false,
+  "physical_validation": false,
+  "session_id": "01a0da26-addc-7fe1-84df-8c0baa8174f8",
+  "blockers": {
+    "ROM_OWNERSHIP": {
+      "depends_on": [],
+      "status": "OPEN",
+      "required": "Exclusive runtime ownership of exact [E1000,E1364), including indirect readers, vectors/checksum and boot paths."
+    },
+    "RAM_OWNERSHIP": {
+      "depends_on": [],
+      "status": "OPEN",
+      "required": "Exclusive lifetime ownership of [FFFF7400,FFFF7420), including indirect/bulk/DMA accesses; reset DMA is known to cross it."
+    },
+    "TASK_STACK_TIMING": {
+      "depends_on": [
+        "RAM_OWNERSHIP"
+      ],
+      "status": "OPEN",
+      "required": "Task9/6580 ->11134 ->1193A stack/ISR nesting and reentrancy/cadence budget; added124-byte frame and instruction counts alone do not prove headroom."
+    },
+    "CURRENT_CALIBRATION": {
+      "depends_on": [],
+      "status": "OPEN",
+      "required": "Human-confirmed currently flashed read-back identity and compatibility review for actual VF52/3-port/3-inch MAF hardware. Known local filenames do not establish current installation."
+    },
+    "PHYSICAL_TEST_CANDIDATE": {
+      "depends_on": [
+        "ROM_OWNERSHIP",
+        "RAM_OWNERSHIP",
+        "TASK_STACK_TIMING",
+        "CURRENT_CALIBRATION"
+      ],
+      "status": "BLOCKED",
+      "required": "Review one precisely hashed candidate after all engineering prerequisites close."
+    },
+    "VEHICLE_VALIDATED": {
+      "depends_on": [
+        "PHYSICAL_TEST_CANDIDATE"
+      ],
+      "status": "NOT_RUN",
+      "required": "Human-controlled testing and measured results; none invented here."
+    }
+  }
+}

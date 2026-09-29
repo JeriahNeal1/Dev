@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "status": "PASS_BOUNDED_SOURCE_REVIEW",
+  "reviewer": "independent rom_inventory agent",
+  "inputs": [
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\native.cpp",
+      "bytes": 15997,
+      "sha256": "3e6b2e3b72697db9a7ed8143c47f706d4fa1ffa4125e341e8d24d6f89cf3e177"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\build_physical.py",
+      "bytes": 8190,
+      "sha256": "a97ff20768352ab8be96c027083d13e13fed0cc971636ccf00db7a01f893671f"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\run.py",
+      "bytes": 14771,
+      "sha256": "d3ce7bfb15c1ae6c69ce60a553510da319a7756a26855f48a4d8bacfa583cdaa"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\protocol.py",
+      "bytes": 4623,
+      "sha256": "7d53db478813ea3a5f96deb46b740844abc1446906f572eb50b71f4e5f31c8f9"
+    }
+  ],
+  "findings": [
+    "No new fail-open source defect identified in fixed native request construction, opcode/address/pass discrimination, bounded 523-byte reply assembly, status/extra-data checks or terminal unknown-status behavior.",
+    "Physical derivation is compile-only. It checks the fixed real provider hash and snapshot without loading it, pins the tested source and header, and reverses its finite source transformations exactly.",
+    "Generated physical executable requires the explicit acquisition flag and exact certificate hash; it locks and hashes the fixed certificate and provider before LoadLibraryExW. No arbitrary provider/kernel/address/opcode argument is exposed.",
+    "Physical derivation preserves the compiled protocol payload and ciphertext outside the explicitly replaced provider binding; generated final payload association must be refreshed after any kernel change.",
+    "Raw message timestamps/status and bytes are retained in the native journal; no simulated timing is promoted to physical timing."
+  ],
+  "limits": [
+    "Read-only source review, no executable, provider, RPC or physical action run by this reviewer.",
+    "Fatal native host path deliberately issues no further J2534 calls. Driver cleanup, ECU reset and verified power-loss exit remain external; process termination alone is not cleanup proof.",
+    "Host/J2534 echo filtering does not fix ECU SCI self-echo. Attempt03 kernel defect is recorded separately and final communication qualification awaits receiver-control fix.",
+    "Certificate/current-ROM identity and physical UART/electrical/adapter acceptance remain separate gates."
+  ],
+  "physical_operations": 0
+}

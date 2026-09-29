@@ -1,0 +1,189 @@
+{
+  "HKLM/x86/SOFTWARE\\PassThruSupport.04.04": {
+    "values": {},
+    "children": {
+      "Tactrix Inc. - OpenPort 2.0 J2534 ISO/CAN/VPW/PWM": {
+        "values": {
+          "Name": {
+            "type": 1,
+            "value": "OpenPort 2.0 J2534 ISO/CAN/VPW/PWM"
+          },
+          "Vendor": {
+            "type": 1,
+            "value": "Tactrix Inc."
+          },
+          "ConfigApplication": {
+            "type": 1,
+            "value": ""
+          },
+          "DeviceId": {
+            "type": 4,
+            "value": 0
+          },
+          "CAN": {
+            "type": 4,
+            "value": 1
+          },
+          "ISO9141": {
+            "type": 4,
+            "value": 1
+          },
+          "ISO9141_CH1": {
+            "type": 4,
+            "value": 1
+          },
+          "ISO9141_CH2": {
+            "type": 4,
+            "value": 1
+          },
+          "ISO9141_CH3": {
+            "type": 4,
+            "value": 1
+          },
+          "ISO14230": {
+            "type": 4,
+            "value": 1
+          },
+          "ISO14230_CH1": {
+            "type": 4,
+            "value": 1
+          },
+          "ISO14230_CH2": {
+            "type": 4,
+            "value": 1
+          },
+          "ISO14230_CH3": {
+            "type": 4,
+            "value": 1
+          },
+          "ISO15765": {
+            "type": 4,
+            "value": 1
+          },
+          "J1850PWM": {
+            "type": 4,
+            "value": 0
+          },
+          "J1850VPW": {
+            "type": 4,
+            "value": 0
+          },
+          "FunctionLibrary": {
+            "type": 1,
+            "value": "C:\\WINDOWS\\SysWOW64\\op20pt32.dll"
+          }
+        },
+        "children": {}
+      }
+    }
+  },
+  "HKLM/x86/SOFTWARE\\PassThruSupport.05.00": null,
+  "HKLM/x64/SOFTWARE\\PassThruSupport.04.04": null,
+  "HKLM/x64/SOFTWARE\\PassThruSupport.05.00": null,
+  "HKCU/OpenECU": {
+    "values": {},
+    "children": {
+      "EcuFlash": {
+        "values": {},
+        "children": {
+          "files": {
+            "values": {
+              "default vehicle": {
+                "type": 1,
+                "value": "read_sti05"
+              },
+              "recent file list": {
+                "type": 7,
+                "value": [
+                  "C:/Users/Jeriah Neal/Desktop/AdjustedBaseTimingANDNOCLOLD.bin",
+                  "C:/Users/Jeriah Neal/Desktop/ECUFlashReadRaw.bin",
+                  "C:/Users/Jeriah Neal/Desktop/ECUFlashRead.srf"
+                ]
+              },
+              "ROM directory": {
+                "type": 1,
+                "value": "C:/Users/Jeriah Neal/Desktop/AdjustedBaseTimingANDNOCLOLD.bin"
+              }
+            },
+            "children": {}
+          },
+          "hardware": {
+            "values": {},
+            "children": {
+              "openport": {
+                "values": {
+                  "last available serial": {
+                    "type": 1,
+                    "value": "TAPoN7at"
+                  },
+                  "last available firmware": {
+                    "type": 1,
+                    "value": "1.17.4877"
+                  },
+                  "last available": {
+                    "type": 1,
+                    "value": "OpenPort 2.0 on \\\\?\\usb#vid_0403&pid_cc4c&mi_00#7&2743fbd8&0&0000#{6d1781b7-c987-4f6c-8d4f-1efc098bea67}"
+                  },
+                  "license update": {
+                    "type": 1,
+                    "value": "TA 0 44000000040000000A0001006BCB641F4DD48160FCB06C5F02D4994B230782493DB9A7697397D3D88A5CA0587CB217E4B999DB658A11588285216376B9661DD0FF4D9FE6F1ABE8AC6A559899"
+                  }
+                },
+                "children": {}
+              }
+            }
+          },
+          "ui": {
+            "values": {},
+            "children": {
+              "docview": {
+                "values": {
+                  "size": {
+                    "type": 1,
+                    "value": "@Size(300 187)"
+                  }
+                },
+                "children": {}
+              },
+              "mainwindow": {
+                "values": {
+                  "pos": {
+                    "type": 1,
+                    "value": "@Point(-9 -9)"
+                  },
+                  "size": {
+                    "type": 1,
+                    "value": "@Size(1920 1001)"
+                  }
+                },
+                "children": {}
+              },
+              "metadataview": {
+                "values": {
+                  "size": {
+                    "type": 1,
+                    "value": "@Size(300 708)"
+                  }
+                },
+                "children": {}
+              },
+              "taskview": {
+                "values": {
+                  "size": {
+                    "type": 1,
+                    "value": "@Size(1615 900)"
+                  },
+                  "visible": {
+                    "type": 1,
+                    "value": "true"
+                  }
+                },
+                "children": {}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

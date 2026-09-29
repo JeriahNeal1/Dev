@@ -1,0 +1,111 @@
+{
+  "status": "PASS_OFFLINE_RESEARCH_CODEC",
+  "valid_compiled_frames": 3,
+  "compiled_negative_requests": 15,
+  "records": [
+    {
+      "architecture": "EXPERIMENTAL_ECU_PROTOCOL_NOT_OWNERSHIP_APPROVED",
+      "profile": "one_page",
+      "version": 1,
+      "page": 0,
+      "raw_hex": "111128820101",
+      "raw": {
+        "source": 17,
+        "snapshot": 17,
+        "latch": 40,
+        "flags": 130,
+        "oem_target": 1,
+        "oem_current": 1
+      },
+      "raw_by_address": {
+        "FFFF4C75": 17,
+        "FFFF4C8D": 17,
+        "FFFF4CA1": 40,
+        "FFFF4C50": 130,
+        "FFFF4BC1": 1,
+        "FFFF4BC2": 1
+      },
+      "freshness": "UNKNOWN",
+      "coherence": "UNPROVEN_SEQUENTIAL_READS_AND_SEPARATE_REQUESTS",
+      "physical_gear": "NOT_INFERRED",
+      "ECU_reason_computation": false,
+      "host_replay_utc": "2026-09-26T01:26:10.078051+00:00",
+      "host_replay_monotonic_ns": 27734887577300,
+      "timestamp_is_ECU_age": false,
+      "request_hex": "8010f014be10ff4c75ff4c8dff4ca1ff4c50ff4bc1ff4bc298",
+      "response_hex": "80f01007fc11112882010151",
+      "rom_sha256": "005861f92771fc6b84e8e747faf5998130c12a528e3d73d2d35213d596de0513",
+      "fixture_sha256": "8f1bf4e238e1b4e604d33ae16fcb14e76e8b969bd74ebc065600b9d061fd7868",
+      "echo": "MODELED_HOST_ECHO",
+      "physical_backend": false
+    },
+    {
+      "architecture": "EXPERIMENTAL_ECU_PROTOCOL_NOT_OWNERSHIP_APPROVED",
+      "profile": "two_pages",
+      "version": 1,
+      "page": 0,
+      "raw_hex": "11112882",
+      "raw": {
+        "source": 17,
+        "snapshot": 17,
+        "latch": 40,
+        "flags": 130
+      },
+      "raw_by_address": {
+        "FFFF4C75": 17,
+        "FFFF4C8D": 17,
+        "FFFF4CA1": 40,
+        "FFFF4C50": 130
+      },
+      "freshness": "UNKNOWN",
+      "coherence": "UNPROVEN_SEQUENTIAL_READS_AND_SEPARATE_REQUESTS",
+      "physical_gear": "NOT_INFERRED",
+      "ECU_reason_computation": false,
+      "host_replay_utc": "2026-09-26T01:26:10.082488+00:00",
+      "host_replay_monotonic_ns": 27734892012400,
+      "timestamp_is_ECU_age": false,
+      "request_hex": "8010f00ebe10ff4c75ff4c8dff4ca1ff4c507b",
+      "response_hex": "80f01005fc111128824d",
+      "rom_sha256": "9dc63ee19afaef524755e00e1da3ca958b12f76ceeaf8e36c70cd3a9e3bf57a1",
+      "fixture_sha256": "8f1bf4e238e1b4e604d33ae16fcb14e76e8b969bd74ebc065600b9d061fd7868",
+      "echo": "MODELED_HOST_ECHO",
+      "physical_backend": false
+    },
+    {
+      "architecture": "EXPERIMENTAL_ECU_PROTOCOL_NOT_OWNERSHIP_APPROVED",
+      "profile": "two_pages",
+      "version": 1,
+      "page": 1,
+      "raw_hex": "0101",
+      "raw": {
+        "oem_target": 1,
+        "oem_current": 1
+      },
+      "raw_by_address": {
+        "FFFF4BC1": 1,
+        "FFFF4BC2": 1
+      },
+      "freshness": "UNKNOWN",
+      "coherence": "UNPROVEN_SEQUENTIAL_READS_AND_SEPARATE_REQUESTS",
+      "physical_gear": "NOT_INFERRED",
+      "ECU_reason_computation": false,
+      "host_replay_utc": "2026-09-26T01:26:10.085507+00:00",
+      "host_replay_monotonic_ns": 27734895027700,
+      "timestamp_is_ECU_age": false,
+      "request_hex": "8010f008be11ff4bc1ff4bc26e",
+      "response_hex": "80f01003fd010182",
+      "rom_sha256": "9dc63ee19afaef524755e00e1da3ca958b12f76ceeaf8e36c70cd3a9e3bf57a1",
+      "fixture_sha256": "8f1bf4e238e1b4e604d33ae16fcb14e76e8b969bd74ebc065600b9d061fd7868",
+      "echo": "MODELED_HOST_ECHO",
+      "physical_backend": false
+    }
+  ],
+  "physical_backend": false,
+  "ROM_ownership_approved": false,
+  "limitations": [
+    "Research codecs are separate from supported native A8 host diagnostics",
+    "No transport, electrical timing, timer, interrupt, or physical evidence",
+    "No age proof or atomicity within/between pages",
+    "No same-page nonce: outstanding request isolation and terminal faults belong to any future transport"
+  ]
+}

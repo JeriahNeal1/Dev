@@ -1,0 +1,99 @@
+
+C:\Dev\SubaruRoms\OEM\A2WC511R.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000004f4 <.data+0x4f4>:
+     4f4:	2f e6       	mov.l	r14,@-r15
+     4f6:	4f 22       	sts.l	pr,@-r15
+     4f8:	9e 4a       	mov.w	0x590,r14	! bfb8
+     4fa:	64 e1       	mov.w	@r14,r4
+     4fc:	d3 29       	mov.l	0x5a4,r3	! ffffb4e0
+     4fe:	64 4d       	extu.w	r4,r4
+     500:	d1 27       	mov.l	0x5a0,r1	! ffffbfa8
+     502:	44 08       	shll2	r4
+     504:	62 10       	mov.b	@r1,r2
+     506:	44 00       	shll	r4
+     508:	22 28       	tst	r2,r2
+     50a:	8f 06       	bf.s	0x51a
+     50c:	34 3c       	add	r3,r4
+     50e:	92 40       	mov.w	0x592,r2	! 392
+     510:	42 0b       	jsr	@r2
+     512:	00 09       	nop	
+     514:	65 03       	mov	r0,r5
+     516:	a0 04       	bra	0x522
+     518:	88 01       	cmp/eq	#1,r0
+     51a:	92 3b       	mov.w	0x594,r2	! 5dc
+     51c:	42 0b       	jsr	@r2
+     51e:	00 09       	nop	
+     520:	65 03       	mov	r0,r5
+     522:	60 53       	mov	r5,r0
+     524:	88 01       	cmp/eq	#1,r0
+     526:	8b 08       	bf	0x53a
+     528:	62 e1       	mov.w	@r14,r2
+     52a:	e3 64       	mov	#100,r3
+     52c:	72 01       	add	#1,r2
+     52e:	2e 21       	mov.w	r2,@r14
+     530:	62 2d       	extu.w	r2,r2
+     532:	32 33       	cmp/ge	r3,r2
+     534:	8b 01       	bf	0x53a
+     536:	e1 00       	mov	#0,r1
+     538:	2e 11       	mov.w	r1,@r14
+     53a:	4f 26       	lds.l	@r15+,pr
+     53c:	00 0b       	rts	
+     53e:	6e f6       	mov.l	@r15+,r14
+     540:	94 29       	mov.w	0x596,r4	! bfba
+     542:	e1 64       	mov	#100,r1
+     544:	d3 17       	mov.l	0x5a4,r3	! ffffb4e0
+     546:	65 41       	mov.w	@r4,r5
+     548:	62 41       	mov.w	@r4,r2
+     54a:	65 5d       	extu.w	r5,r5
+     54c:	45 08       	shll2	r5
+     54e:	45 00       	shll	r5
+     550:	72 01       	add	#1,r2
+     552:	24 21       	mov.w	r2,@r4
+     554:	62 2d       	extu.w	r2,r2
+     556:	32 13       	cmp/ge	r1,r2
+     558:	8f 02       	bf.s	0x560
+     55a:	35 3c       	add	r3,r5
+     55c:	e0 00       	mov	#0,r0
+     55e:	24 01       	mov.w	r0,@r4
+     560:	00 0b       	rts	
+     562:	60 53       	mov	r5,r0
+     564:	93 14       	mov.w	0x590,r3	! bfb8
+     566:	e4 00       	mov	#0,r4
+     568:	92 15       	mov.w	0x596,r2	! bfba
+     56a:	23 41       	mov.w	r4,@r3
+     56c:	00 0b       	rts	
+     56e:	22 41       	mov.w	r4,@r2
+     570:	93 0e       	mov.w	0x590,r3	! bfb8
+     572:	64 31       	mov.w	@r3,r4
+     574:	91 0f       	mov.w	0x596,r1	! bfba
+     576:	64 4d       	extu.w	r4,r4
+     578:	62 11       	mov.w	@r1,r2
+     57a:	62 2d       	extu.w	r2,r2
+     57c:	34 28       	sub	r2,r4
+     57e:	44 11       	cmp/pz	r4
+     580:	89 00       	bt	0x584
+     582:	74 64       	add	#100,r4
+     584:	00 0b       	rts	
+     586:	60 43       	mov	r4,r0
+     588:	ec 10       	mov	#16,r12
+     58a:	f7 38       	fmov	@r3,fr7
+     58c:	04 06       	mov.l	r0,@(r0,r4)
+     58e:	06 08       	.word 0x0608
+     590:	bf b8       	bsr	0x504
+     592:	03 92       	.word 0x0392
+     594:	05 dc       	mov.b	@(r0,r13),r5
+     596:	bf ba       	bsr	0x50e
+     598:	00 00       	.word 0x0000
+     59a:	a5 3c       	bra	0x1016
+     59c:	00 00       	.word 0x0000
+     59e:	80 00       	mov.b	r0,@(0,r0)
+     5a0:	ff ff       	.word 0xffff
+     5a2:	bf a8       	bsr	0x4f6
+     5a4:	ff ff       	.word 0xffff
+     5a6:	b4 e0       	bsr	0xf6a
+     5a8:	95 59       	mov.w	0x65e,r5	! bfe4
+     5aa:	e4 00       	mov	#0,r4

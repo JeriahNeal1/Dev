@@ -1,0 +1,646 @@
+{
+  "schema": 1,
+  "status": "PASS_SCOPED_STOCK_SETUP",
+  "inputs": [
+    {
+      "path": "C:\\Dev\\SubaruRoms\\OEM\\A2WC511R.bin",
+      "bytes": 1048576,
+      "sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\verify_boot_setup.py",
+      "bytes": 4373,
+      "sha256": "0f3ee64335dc27716e4bf791bb96617e61498263d5d7d3adfcd3f11718260152"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\verify_boot_entry.py",
+      "bytes": 6314,
+      "sha256": "70f1521fa040c86f7ba5c7264e2031eb1ced4022dadf248b1d8fc9a195d6970e"
+    }
+  ],
+  "entry": "0000125C",
+  "end": "000012F0",
+  "instructions": 444,
+  "SR_I": 15,
+  "VBR": "00001F44",
+  "SP": "FFFFBFA0",
+  "programming_gate": "1008 observed F74Ebit6=0 and F75Ebit2=0 continuously across at least78 WDT counter ticks; setsBFBA1. ADC alternative not executed.",
+  "register_transcript": "InitialGPIOwords0 unless initialized by executedboot; F74E inputbit6 andF75E inputbit2 forcedlow independentlyofoutputlatches; SCR initially0; SSR84 ready/TEND; EC10overflow0; EC11returns50,100,150,200 then255; F81920 holds ADC busy.",
+  "MMIO": [
+    {
+      "pc": "00001CCC",
+      "mode": "w",
+      "address": "FFFFF70A",
+      "size": 2,
+      "value": "3C00"
+    },
+    {
+      "pc": "00001DD8",
+      "mode": "w",
+      "address": "FFFFEC12",
+      "size": 2,
+      "value": "5A1F"
+    },
+    {
+      "pc": "00001DDE",
+      "mode": "w",
+      "address": "FFFFEC10",
+      "size": 2,
+      "value": "5A00"
+    },
+    {
+      "pc": "00001DE0",
+      "mode": "r",
+      "address": "FFFFEC10",
+      "size": 1,
+      "value": "00"
+    },
+    {
+      "pc": "00001DE6",
+      "mode": "w",
+      "address": "FFFFEC10",
+      "size": 2,
+      "value": "A53D"
+    },
+    {
+      "pc": "00001B5A",
+      "mode": "w",
+      "address": "FFFFF722",
+      "size": 2,
+      "value": "0000"
+    },
+    {
+      "pc": "00001B5E",
+      "mode": "w",
+      "address": "FFFFF724",
+      "size": 2,
+      "value": "0000"
+    },
+    {
+      "pc": "00001B62",
+      "mode": "w",
+      "address": "FFFFF720",
+      "size": 2,
+      "value": "0000"
+    },
+    {
+      "pc": "00001B68",
+      "mode": "w",
+      "address": "FFFFF738",
+      "size": 2,
+      "value": "EFFF"
+    },
+    {
+      "pc": "00001B6C",
+      "mode": "w",
+      "address": "FFFFF732",
+      "size": 2,
+      "value": "0000"
+    },
+    {
+      "pc": "00001B70",
+      "mode": "w",
+      "address": "FFFFF734",
+      "size": 2,
+      "value": "0000"
+    },
+    {
+      "pc": "00001B76",
+      "mode": "w",
+      "address": "FFFFF730",
+      "size": 2,
+      "value": "8020"
+    },
+    {
+      "pc": "00001B7A",
+      "mode": "w",
+      "address": "FFFFF736",
+      "size": 2,
+      "value": "0000"
+    },
+    {
+      "pc": "00001B80",
+      "mode": "w",
+      "address": "FFFFF73C",
+      "size": 2,
+      "value": "0050"
+    },
+    {
+      "pc": "00001B86",
+      "mode": "w",
+      "address": "FFFFF73A",
+      "size": 2,
+      "value": "0004"
+    },
+    {
+      "pc": "00001B8C",
+      "mode": "w",
+      "address": "FFFFF746",
+      "size": 2,
+      "value": "3CFF"
+    },
+    {
+      "pc": "00001B90",
+      "mode": "w",
+      "address": "FFFFF742",
+      "size": 2,
+      "value": "0000"
+    },
+    {
+      "pc": "00001B94",
+      "mode": "w",
+      "address": "FFFFF744",
+      "size": 2,
+      "value": "0000"
+    },
+    {
+      "pc": "00001B9A",
+      "mode": "w",
+      "address": "FFFFF740",
+      "size": 2,
+      "value": "0320"
+    },
+    {
+      "pc": "00001B9E",
+      "mode": "w",
+      "address": "FFFFF752",
+      "size": 2,
+      "value": "0000"
+    },
+    {
+      "pc": "00001BA2",
+      "mode": "w",
+      "address": "FFFFF750",
+      "size": 2,
+      "value": "0000"
+    },
+    {
+      "pc": "00001BA8",
+      "mode": "w",
+      "address": "FFFFF74E",
+      "size": 2,
+      "value": "FF7F"
+    },
+    {
+      "pc": "00001BAE",
+      "mode": "w",
+      "address": "FFFFF74A",
+      "size": 2,
+      "value": "8000"
+    },
+    {
+      "pc": "00001BB2",
+      "mode": "w",
+      "address": "FFFFF74C",
+      "size": 2,
+      "value": "0000"
+    },
+    {
+      "pc": "00001BB8",
+      "mode": "w",
+      "address": "FFFFF748",
+      "size": 2,
+      "value": "0280"
+    },
+    {
+      "pc": "00001BBC",
+      "mode": "w",
+      "address": "FFFFF762",
+      "size": 2,
+      "value": "0000"
+    },
+    {
+      "pc": "00001BC0",
+      "mode": "w",
+      "address": "FFFFF760",
+      "size": 2,
+      "value": "0000"
+    },
+    {
+      "pc": "00001BC4",
+      "mode": "w",
+      "address": "FFFFF72A",
+      "size": 2,
+      "value": "0000"
+    },
+    {
+      "pc": "00001BC8",
+      "mode": "w",
+      "address": "FFFFF728",
+      "size": 2,
+      "value": "0000"
+    },
+    {
+      "pc": "00001BCC",
+      "mode": "w",
+      "address": "FFFFF768",
+      "size": 2,
+      "value": "0000"
+    },
+    {
+      "pc": "00001BD0",
+      "mode": "w",
+      "address": "FFFFF76A",
+      "size": 2,
+      "value": "0000"
+    },
+    {
+      "pc": "00001BD4",
+      "mode": "w",
+      "address": "FFFFF766",
+      "size": 2,
+      "value": "0000"
+    },
+    {
+      "pc": "00001BD8",
+      "mode": "w",
+      "address": "FFFFF772",
+      "size": 2,
+      "value": "0000"
+    },
+    {
+      "pc": "00001BDC",
+      "mode": "w",
+      "address": "FFFFF774",
+      "size": 2,
+      "value": "0000"
+    },
+    {
+      "pc": "00001BE0",
+      "mode": "w",
+      "address": "FFFFF770",
+      "size": 2,
+      "value": "0000"
+    },
+    {
+      "pc": "00001BE6",
+      "mode": "w",
+      "address": "FFFFF776",
+      "size": 2,
+      "value": "0000"
+    },
+    {
+      "pc": "00001A6A",
+      "mode": "w",
+      "address": "FFFFF73C",
+      "size": 2,
+      "value": "0050"
+    },
+    {
+      "pc": "00001A70",
+      "mode": "w",
+      "address": "FFFFF012",
+      "size": 1,
+      "value": "00"
+    },
+    {
+      "pc": "00001A74",
+      "mode": "w",
+      "address": "FFFFF010",
+      "size": 1,
+      "value": "00"
+    },
+    {
+      "pc": "00001A7A",
+      "mode": "w",
+      "address": "FFFFF011",
+      "size": 1,
+      "value": "27"
+    },
+    {
+      "pc": "00001A80",
+      "mode": "w",
+      "address": "FFFFF016",
+      "size": 1,
+      "value": "F0"
+    },
+    {
+      "pc": "00001A86",
+      "mode": "w",
+      "address": "FFFFF012",
+      "size": 1,
+      "value": "10"
+    },
+    {
+      "pc": "00001A5C",
+      "mode": "r",
+      "address": "FFFFF014",
+      "size": 1,
+      "value": "84"
+    },
+    {
+      "pc": "00001A64",
+      "mode": "w",
+      "address": "FFFFF014",
+      "size": 1,
+      "value": "84"
+    },
+    {
+      "pc": "00001CDE",
+      "mode": "r",
+      "address": "FFFFF012",
+      "size": 1,
+      "value": "10"
+    },
+    {
+      "pc": "00001CE2",
+      "mode": "w",
+      "address": "FFFFF012",
+      "size": 1,
+      "value": "10"
+    },
+    {
+      "pc": "00001CE4",
+      "mode": "r",
+      "address": "FFFFF012",
+      "size": 1,
+      "value": "10"
+    },
+    {
+      "pc": "00001CEC",
+      "mode": "w",
+      "address": "FFFFF012",
+      "size": 1,
+      "value": "10"
+    },
+    {
+      "pc": "00001C94",
+      "mode": "r",
+      "address": "FFFFF74E",
+      "size": 2,
+      "value": "FF3F"
+    },
+    {
+      "pc": "00001CA2",
+      "mode": "w",
+      "address": "FFFFF74E",
+      "size": 2,
+      "value": "FF3F"
+    },
+    {
+      "pc": "00001C94",
+      "mode": "r",
+      "address": "FFFFF74E",
+      "size": 2,
+      "value": "FF3F"
+    },
+    {
+      "pc": "00001CA2",
+      "mode": "w",
+      "address": "FFFFF74E",
+      "size": 2,
+      "value": "FD3F"
+    },
+    {
+      "pc": "00001034",
+      "mode": "w",
+      "address": "FFFFF819",
+      "size": 1,
+      "value": "0F"
+    },
+    {
+      "pc": "0000103A",
+      "mode": "w",
+      "address": "FFFFF818",
+      "size": 1,
+      "value": "01"
+    },
+    {
+      "pc": "0000103E",
+      "mode": "w",
+      "address": "FFFFF819",
+      "size": 1,
+      "value": "2F"
+    },
+    {
+      "pc": "00001044",
+      "mode": "w",
+      "address": "FFFFEC10",
+      "size": 2,
+      "value": "A53D"
+    },
+    {
+      "pc": "00001048",
+      "mode": "w",
+      "address": "FFFFEC10",
+      "size": 2,
+      "value": "5A00"
+    },
+    {
+      "pc": "0000104E",
+      "mode": "r",
+      "address": "FFFFEC11",
+      "size": 1,
+      "value": "32"
+    },
+    {
+      "pc": "00001C94",
+      "mode": "r",
+      "address": "FFFFF74E",
+      "size": 2,
+      "value": "FD3F"
+    },
+    {
+      "pc": "00001CA6",
+      "mode": "w",
+      "address": "FFFFF74E",
+      "size": 2,
+      "value": "FDBF"
+    },
+    {
+      "pc": "0000106E",
+      "mode": "w",
+      "address": "FFFFEC10",
+      "size": 2,
+      "value": "5A00"
+    },
+    {
+      "pc": "00001072",
+      "mode": "r",
+      "address": "FFFFF74E",
+      "size": 2,
+      "value": "FDBF"
+    },
+    {
+      "pc": "00001084",
+      "mode": "r",
+      "address": "FFFFF75E",
+      "size": 2,
+      "value": "0000"
+    },
+    {
+      "pc": "00001098",
+      "mode": "r",
+      "address": "FFFFEC11",
+      "size": 1,
+      "value": "64"
+    },
+    {
+      "pc": "000010B0",
+      "mode": "r",
+      "address": "FFFFF819",
+      "size": 1,
+      "value": "20"
+    },
+    {
+      "pc": "00001114",
+      "mode": "r",
+      "address": "FFFFEC10",
+      "size": 1,
+      "value": "00"
+    },
+    {
+      "pc": "00001072",
+      "mode": "r",
+      "address": "FFFFF74E",
+      "size": 2,
+      "value": "FDBF"
+    },
+    {
+      "pc": "00001084",
+      "mode": "r",
+      "address": "FFFFF75E",
+      "size": 2,
+      "value": "0000"
+    },
+    {
+      "pc": "0000109A",
+      "mode": "r",
+      "address": "FFFFEC11",
+      "size": 1,
+      "value": "96"
+    },
+    {
+      "pc": "000010B0",
+      "mode": "r",
+      "address": "FFFFF819",
+      "size": 1,
+      "value": "20"
+    },
+    {
+      "pc": "00001114",
+      "mode": "r",
+      "address": "FFFFEC10",
+      "size": 1,
+      "value": "00"
+    },
+    {
+      "pc": "00001072",
+      "mode": "r",
+      "address": "FFFFF74E",
+      "size": 2,
+      "value": "FDBF"
+    },
+    {
+      "pc": "00001084",
+      "mode": "r",
+      "address": "FFFFF75E",
+      "size": 2,
+      "value": "0000"
+    },
+    {
+      "pc": "0000109A",
+      "mode": "r",
+      "address": "FFFFEC11",
+      "size": 1,
+      "value": "C8"
+    },
+    {
+      "pc": "00001C94",
+      "mode": "r",
+      "address": "FFFFF74E",
+      "size": 2,
+      "value": "FDBF"
+    },
+    {
+      "pc": "00001CA6",
+      "mode": "w",
+      "address": "FFFFF74E",
+      "size": 2,
+      "value": "FFBF"
+    },
+    {
+      "pc": "00001CDE",
+      "mode": "r",
+      "address": "FFFFF012",
+      "size": 1,
+      "value": "10"
+    },
+    {
+      "pc": "00001CE2",
+      "mode": "w",
+      "address": "FFFFF012",
+      "size": 1,
+      "value": "10"
+    },
+    {
+      "pc": "00001CE4",
+      "mode": "r",
+      "address": "FFFFF012",
+      "size": 1,
+      "value": "10"
+    },
+    {
+      "pc": "00001CEC",
+      "mode": "w",
+      "address": "FFFFF012",
+      "size": 1,
+      "value": "10"
+    },
+    {
+      "pc": "00001C94",
+      "mode": "r",
+      "address": "FFFFF746",
+      "size": 2,
+      "value": "3CFF"
+    },
+    {
+      "pc": "00001CA6",
+      "mode": "w",
+      "address": "FFFFF746",
+      "size": 2,
+      "value": "3EFF"
+    },
+    {
+      "pc": "000012DA",
+      "mode": "w",
+      "address": "FFFFF758",
+      "size": 2,
+      "value": "0000"
+    },
+    {
+      "pc": "000012DE",
+      "mode": "w",
+      "address": "FFFFF75A",
+      "size": 2,
+      "value": "0000"
+    },
+    {
+      "pc": "000012E2",
+      "mode": "w",
+      "address": "FFFFF756",
+      "size": 2,
+      "value": "0000"
+    },
+    {
+      "pc": "000012E6",
+      "mode": "w",
+      "address": "FFFFF75C",
+      "size": 2,
+      "value": "0000"
+    }
+  ],
+  "flash_controller_store_count": 0,
+  "trace": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\BOOT_SETUP_TRACE.json.gz",
+    "bytes": 8143,
+    "sha256": "afd4cb554bc5257a321688d59186c29a94aab1aea51352f65acea6db7600cdd7"
+  },
+  "limitations": [
+    "Pinned stock bytes, explicit peripheral values, no asynchronous interrupts/DMA/NMI.",
+    "The register transcript is not proof of physical connector, watchdog, ADC or oscillator behavior.",
+    "OEM changesGPIO direction/function/data andADC/WDT configuration; this is a temporary programming-session effect, not observational background execution.",
+    "No flash-controller access on this executed path; board-levelFWE wiring is not inferred fromGPIO values."
+  ],
+  "physical_operations": 0
+}

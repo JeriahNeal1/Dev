@@ -1,0 +1,25 @@
+{
+  "status": "PASS_QUALIFIED_COMMENTS_ONLY",
+  "backup": "C:\\Dev\\Astra_A2WC511R\\backups\\m07_residency_20260925\\A2WC511R_STOCK_ROMRAIDER.bin.i64",
+  "backup_sha256": "535381c425518f2de292c3ccffd7b6ee4abe009c842283518dcaea1241036e06",
+  "ROM_bytes_unchanged_sha256": "a34c4ce8238bf28bdc18c191bbe73b2179130aa9846e952a6fa332bae442de96",
+  "comments": [
+    {
+      "address": 16992,
+      "before": "",
+      "after": "[M0.7 RESEARCH 2026-09-26] Signed division: original 170 bytes through 0x430A; loop replacement 68 bytes tested separately. Structural 32 DIV1/ROTCL proof under entry/private-stack/noninterleaving contract; extra 4 stack bytes, up to 210 vs 79 instructions in tests. Proposed [42A4,430A) tail is NOT accepted ownership: calculated-entry/internal data-consumer contracts remain open. IDB remains original OEM bytes. Evidence: reports/local/m07_residency/semantic and ownership_review."
+    },
+    {
+      "address": 83566,
+      "before": "",
+      "after": "[M0.7 RESEARCH 2026-09-26] Original MOV #64,R6 supports bounded nibble switch replacement at [1473C,147AC): 112 original bytes become 52 bytes. All 16 nibble cases/T predicate preserved under enclosing entry contract. Proposed [14770,147AC) tail is NOT accepted ownership. Shared literals preceding1473C remain used by other functions and cannot be reclaimed. No patch applied to IDB. See M07 semantic/ownership reports."
+    },
+    {
+      "address": 296112,
+      "before": "",
+      "after": "[M0.7 RESEARCH 2026-09-26] Live unknown-command path, NOT dead/free code. Separate adapter experiments exact-match fixed BE/version/page/address frames, select FC/FD response, and reuse unchanged native A8 producer/progress. No persistent project RAM/refill hook. 100-byte one-page or 148-byte split two-page payload remains unapproved residency. Stock dispatcher bytes retained here; original SR.T=0 entry/PR and dead R2/R3 continuation contracts documented separately."
+    }
+  ],
+  "ownership_claimed": false,
+  "new_names_or_functions": false
+}

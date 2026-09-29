@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "status": "FAIL",
+  "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+  "validator_sha256": "038d98508dd0b6b8c3a0a43f1cdf915314daa54343dac79d0739098a1a44c083",
+  "artifact_review_sha256": "a17be84cb7a9fb035e5dc1eb87578f710f9f3a0f9f9f14143099003d22afceab",
+  "inputs": [
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\DRAFT_INPUTS_02.json",
+      "bytes": 3525559,
+      "sha256": "31ee7d0031f2d07ab4097a84f11e30cad840ae099ecb0221cdd12a57dcd0bfed"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\test_release_validator_rk02.py",
+      "bytes": 13933,
+      "sha256": "1341c08804fd18576dfc2cc8e4a17193378d0b1ab6191ad4092dde3bbac3d69c"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\tools\\validate.py",
+      "bytes": 29676,
+      "sha256": "038d98508dd0b6b8c3a0a43f1cdf915314daa54343dac79d0739098a1a44c083"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\tools\\artifact_review.py",
+      "bytes": 6414,
+      "sha256": "a17be84cb7a9fb035e5dc1eb87578f710f9f3a0f9f9f14143099003d22afceab"
+    }
+  ],
+  "baseline": {
+    "status": "FAIL",
+    "software_status": "FAIL",
+    "failed_checks": [
+      "HASH:evidence\\contracts\\test_release_validator_rk02.py",
+      "HOST_FINALIZER_AND_TERMINAL_TEST_ASSOCIATION"
+    ]
+  },
+  "case_count": 0,
+  "cases": [],
+  "failures": [
+    "UNCHANGED_FULL_BASELINE"
+  ],
+  "changed_real_files": [],
+  "real_artifact_mutations": 0,
+  "physical_operations": 0,
+  "provider_loaded": false,
+  "elapsed_seconds": 37.517,
+  "real_hashes_checked": 16257,
+  "method": "In-memory Path/sha overlays only. Mutation records are rehashed into an isolated copied index except intentional corruption. Each case must fail its specific semantic check, not merely an unrelated seal. Real hashes and read-only preservation are rechecked after the suite.",
+  "limits": [
+    "This is a regression suite for the reviewed checker, not a proof against a party able to replace the checker and every evidence record.",
+    "No native host, provider, physical adapter or vehicle is loaded. Full simulator/host executions are prior sealed evidence consumed by the unchanged validator."
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "status": "PASS",
+  "kernel_sha256": "3d70abfb8617b87e1b9c52724fd27ed4066ba231818994e780c8ba3006de273f",
+  "final_fake_host_sha256": "9ca8941960f64a1cb2931c18889e77fb8c3a0cd42840bff5422e05e1a363addc",
+  "fixed_only": true,
+  "all_TX_prefixes_replayed": true,
+  "physical_provider_loaded": false,
+  "final_native_full_run": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\composite_native04\\RESULT.json",
+    "sha256": "1e8334b4793e10add3a8f38f468d809a3589bdc153f2970c7618e22ed903903e",
+    "bytes": 15922
+  },
+  "faults": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\HOST_FAULTS.json",
+    "sha256": "49f0e1f0d5e3c6665b0b25798a84682548e9d6e82e06cb172854a53e955c591e",
+    "bytes": 18419
+  },
+  "full_fixtures": [
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\composite_01\\RESULT.json",
+      "sha256": "30340b427d200350eefd6cbc4e2508af036c0359eeed4b91ea0ecc5c06d4813b",
+      "bytes": 14664
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\random_01\\RESULT.json",
+      "sha256": "465490ae4a514f0893c82a20331a76d47d85775c5cbb4b973b52871ef5400a3c",
+      "bytes": 14517
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\composite_native04\\RESULT.json",
+      "sha256": "1e8334b4793e10add3a8f38f468d809a3589bdc153f2970c7618e22ed903903e",
+      "bytes": 15922
+    }
+  ],
+  "native_journal_only_finalization": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\composite_native04\\finalized\\FINALIZATION.json",
+    "sha256": "691580a5028c0b3a9d384d590db4dcd73593ca7790647bdc6c7286bd74e8bda1",
+    "bytes": 3473
+  },
+  "finalizer_adversarial_tests": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\tests\\FINALIZER_TESTS.json",
+    "sha256": "430513abd208ac78d24d51b0ec7e666f07533ddcb4ac6207e8d4d099f8e191cd",
+    "bytes": 2946
+  },
+  "pure_host_contract_tests": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\tests\\CONTRACT_TESTS.json",
+    "sha256": "6304675508c25db72cf9b5e64e37f07063f7c71a5b2595f039ccbc527f30d03d",
+    "bytes": 1278
+  },
+  "pure_stream_tests": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\tests\\STREAM_TESTS.json",
+    "sha256": "b5bc6ecb88b2944a169c567b37a4e999f24e4b9e89656311508a0a75b3bfbd9c",
+    "bytes": 606
+  },
+  "final_build": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\build\\native_04\\BUILD_MANIFEST.json",
+    "sha256": "70710e89e4168fcd65fda485b6a2cc48111dd6ba7f00820cb003c850ce3233b2",
+    "bytes": 3037
+  },
+  "OEM_scope": "Actual scoped OEM KWP producer/validator and decrypt checks recorded separately; full physical UART/session/reset not asserted",
+  "helper_boundary": "Python HostState/protocol are internal pure offline oracles without transport; only supported uploader executable embeds fixed kernel and exposes no arbitrary command/address/provider parameters",
+  "no_CRC_substitution": true,
+  "two_full_reads": true,
+  "close_is_ECU_reset": false,
+  "source_files": [
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\native.cpp",
+      "sha256": "3e6b2e3b72697db9a7ed8143c47f706d4fa1ffa4125e341e8d24d6f89cf3e177",
+      "bytes": 15997
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\protocol.py",
+      "sha256": "7d53db478813ea3a5f96deb46b740844abc1446906f572eb50b71f4e5f31c8f9",
+      "bytes": 4623
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\state.py",
+      "sha256": "f25e179632e2635236450c7d74aa067db3ac77d398cc88401879d56b058b3d06",
+      "bytes": 4489
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\stream.py",
+      "sha256": "f5eea7776b7e641378df94187ca59440cf3ab26853b747bd164810d56d5a6887",
+      "bytes": 1863
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\run.py",
+      "sha256": "d3ce7bfb15c1ae6c69ce60a553510da319a7756a26855f48a4d8bacfa583cdaa",
+      "bytes": 14771
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\finalize.py",
+      "sha256": "b55d0c85e6f3e6026a12c1360a77ad8bac892ed16891e69ddef4b18cfc1666ef",
+      "bytes": 9782
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\report.py",
+      "sha256": "1077c7575859eeabdd9e1ecc09504d02dc1d6a21f4587e0818f4fa98dbbd56da",
+      "bytes": 5448
+    }
+  ]
+}

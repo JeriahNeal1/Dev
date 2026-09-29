@@ -1,0 +1,432 @@
+{
+  "schema": 1,
+  "status": "PASS",
+  "artifact_class": "TEMP_RAM_ACQUISITION_TOOL",
+  "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+  "kernel_bytes": 1808,
+  "manifest": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\build\\rk02_01\\manifest.json",
+    "sha256": "a35562a19f21d4a2815e88fb729d21dd2cc08bf702c0d866f88ffc9e3ddb659e"
+  },
+  "software_scope": "Actual compiled RK02 with strict explicit SH7058 SCI2 receive-start/half-duplex model",
+  "receiver_self_echo": true,
+  "coverage": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\sim\\coverage.json",
+    "sha256": "fae1bf0880d59924f64652baa69849f85fce3d0b4cadb04c54001cd7931627cc"
+  },
+  "instruction_covered": 335,
+  "instruction_total": 335,
+  "instruction_missing": [],
+  "branches_total": 40,
+  "branch_directions_covered": 80,
+  "software_stack_bytes": 0,
+  "stack_max_bytes": 8,
+  "private_stack_bytes": 16,
+  "fixtures": [
+    {
+      "name": "exact A2WC511R stock",
+      "report": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\sim\\stock_full_01\\FULL_READ.json",
+        "sha256": "9dbb49746a80383f23a1df9b7cf2e35370e2beb5ce1ba7076b5a6b2f09f3c558"
+      },
+      "full_passes": 2,
+      "blocks": 4096,
+      "bytes_per_pass": 1048576,
+      "instructions_executed": 42304173,
+      "passes": [
+        {
+          "pass": 0,
+          "bytes": 1048576,
+          "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\sim\\stock_full_01\\pass_0.bin",
+          "sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218"
+        },
+        {
+          "pass": 1,
+          "bytes": 1048576,
+          "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\sim\\stock_full_01\\pass_1.bin",
+          "sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218"
+        }
+      ],
+      "executed_model_snapshot": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\sim\\final_model\\FILES.json",
+        "sha256": "65138649c9941503e59257f2f0696157f45d23e4e8dbc0b565fdf48e36228f0f"
+      },
+      "self_echo_ignored_bytes": 2142228
+    }
+  ],
+  "faults": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\sim\\faults_01\\FAULTS.json",
+    "sha256": "060b389bfdab22c439d7b0523e6f1484f9afcd0e218a4b5a249ace0368770375"
+  },
+  "compiled_fault_and_fuzz_cases": 535,
+  "closed_world_negative_controls": 14,
+  "self_echo": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\sim\\SELF_ECHO_QUALIFICATION.json",
+    "sha256": "d6937cfb5c1c9c811235972f9db8b0ada4f96ca5e9c9f69ff0a52224d92a19ae"
+  },
+  "self_echo_cases": 13,
+  "unit_models": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\sim\\unit_models.json",
+    "sha256": "ff6a7bb43dc53537696940de15180c7d860aa2b0f3661c2962c37f61f2a7d8f4"
+  },
+  "frozen_step_parity": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\sim\\fast_parity_01.json",
+    "sha256": "d211a506a1adae3f6cce8a05a694c637665f70ae98826158c29fe44dbb350ecc"
+  },
+  "compared_instruction_steps": 42276,
+  "parity_source_resolution": {
+    "core.py": {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\core.py",
+      "sha256": "caf6571a836676b82bec8f8a5eaa356590532e15931fae2da4b5822fe8ef0f90"
+    },
+    "cpu.py": {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\cpu.py",
+      "sha256": "5043dafdfe59447cb8d906f7570907c472e1d638deb507dc4af8546e9b0f1980"
+    },
+    "fast_step.py": {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\fast_step.py",
+      "sha256": "029bb2b484911289b19e5cdbad35bbbbdc80af05420e91dad6884e0ff0484cfa"
+    },
+    "full_read.py": {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\full_read.py",
+      "sha256": "23a7e7fc519407eca5a56b068c84dad882defc4ce4e67673de5da1c04c0acea5"
+    },
+    "generate_fast.py": {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\generate_fast.py",
+      "sha256": "4e53e3703d876b8f06fba4b24b112cf29a6749d7acda294ad6cf1c1f4ebcb76f"
+    },
+    "harness.py": {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\harness.py",
+      "sha256": "0496579da46daf66eb3be3847da0f3e94f8f45bf6f0b494a1f89a97853a8b4c6"
+    },
+    "memory.py": {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\memory.py",
+      "sha256": "d6062f1dde275b9611d1b631f8151eac567314c603a533dad8751eede3fa2a38"
+    },
+    "package_qualification.py": {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\package_qualification.py",
+      "sha256": "795a537eb7c44056c4cf358db9d47e8fbb3e22b14aa63f4050b442e07d07c87d"
+    },
+    "qualify_faults.py": {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\input_snapshot\\sim\\qualify_faults.py",
+      "sha256": "ed82f63d026e6fa4fd3cc396c2ca5db3a3dd91b68e553e702f81788a9f45e7f1"
+    },
+    "sci.py": {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\sci.py",
+      "sha256": "6f3b4b38ae6e12ac75d5101c767f10b106e9676c322eac3a0e39a67a9c0030c1"
+    },
+    "self_echo.py": {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\self_echo.py",
+      "sha256": "87896f45a074fcff5132a6faa57af48f5444de13fdf67f00a4f1304ea583da5d"
+    },
+    "test_echo.py": {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\test_echo.py",
+      "sha256": "b2131c6187ba38bd2d7bb524147cb856ef6db66465a79d449d4220dbfa6c3571"
+    },
+    "test_model.py": {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\test_model.py",
+      "sha256": "4edeaf66ec89e1bfad0f266cf4a6af46c1411b1077d28c0aff1ef63bb58720e7"
+    },
+    "verify_fast.py": {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\verify_fast.py",
+      "sha256": "ca2fa430f5f07557048383e41e770d799047721ea786ae5214953b1201642150"
+    },
+    "verify_model_projection.py": {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\verify_model_projection.py",
+      "sha256": "7ff90d8ccc8d950c58ce85bb2cb37e684d28ec7dfbf09c2abcf90ec4559102d1"
+    },
+    "__init__.py": {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\__init__.py",
+      "sha256": "8e8b1da117fdc2ba4fe06edfc32b9c8d67176ab69a9470ee21151018bc85fbd8"
+    }
+  },
+  "final_model_sources": {
+    "core.py": {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\core.py",
+      "sha256": "caf6571a836676b82bec8f8a5eaa356590532e15931fae2da4b5822fe8ef0f90"
+    },
+    "cpu.py": {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\cpu.py",
+      "sha256": "5043dafdfe59447cb8d906f7570907c472e1d638deb507dc4af8546e9b0f1980"
+    },
+    "fast_step.py": {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\fast_step.py",
+      "sha256": "029bb2b484911289b19e5cdbad35bbbbdc80af05420e91dad6884e0ff0484cfa"
+    },
+    "harness.py": {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\harness.py",
+      "sha256": "0496579da46daf66eb3be3847da0f3e94f8f45bf6f0b494a1f89a97853a8b4c6"
+    },
+    "memory.py": {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\memory.py",
+      "sha256": "d6062f1dde275b9611d1b631f8151eac567314c603a533dad8751eede3fa2a38"
+    },
+    "sci.py": {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\sci.py",
+      "sha256": "6f3b4b38ae6e12ac75d5101c767f10b106e9676c322eac3a0e39a67a9c0030c1"
+    },
+    "self_echo.py": {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\self_echo.py",
+      "sha256": "87896f45a074fcff5132a6faa57af48f5444de13fdf67f00a4f1304ea583da5d"
+    },
+    "__init__.py": {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\__init__.py",
+      "sha256": "8e8b1da117fdc2ba4fe06edfc32b9c8d67176ab69a9470ee21151018bc85fbd8"
+    }
+  },
+  "saved_model_snapshots": [
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\sim\\final_model\\FILES.json",
+      "sha256": "65138649c9941503e59257f2f0696157f45d23e4e8dbc0b565fdf48e36228f0f"
+    }
+  ],
+  "test_sources": [
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\package_rk02.py",
+      "sha256": "338a17c5826bc09afb76b1f099a0e11638e95fa9bff19aa88a170f35f63411fc"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\qualify_echo.py",
+      "sha256": "ad0da4271aeda41eb38609e6bdefc10d984420cdf6d76426cdab62a17a0eb2e9"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\qualify_faults.py",
+      "sha256": "80b9e9c6619497b7f1eed8df6f5deaa40f706680c03f5095ab25b2d254d486f8"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\full_read.py",
+      "sha256": "23a7e7fc519407eca5a56b068c84dad882defc4ce4e67673de5da1c04c0acea5"
+    }
+  ],
+  "frozen_core": {
+    "path": "C:\\Dev\\A2WC511R_Sim\\sh2e.py",
+    "sha256": "b47ac261634c116c3ffcdf19da9ec73e7014c034cd349ea8867f5f54895cdfff",
+    "modified": false
+  },
+  "unsupported_executed_instruction_count": 0,
+  "unsupported_executed_MMIO_count": 0,
+  "allowed_MMIO": [
+    {
+      "mode": "r",
+      "address": "FFFFE805",
+      "size": 1,
+      "pc": "FFFF3042"
+    },
+    {
+      "mode": "r",
+      "address": "FFFFEC10",
+      "size": 1,
+      "pc": "FFFF3024"
+    },
+    {
+      "mode": "r",
+      "address": "FFFFEC10",
+      "size": 1,
+      "pc": "FFFF302A"
+    },
+    {
+      "mode": "r",
+      "address": "FFFFEC26",
+      "size": 2,
+      "pc": "FFFF3036"
+    },
+    {
+      "mode": "r",
+      "address": "FFFFECB0",
+      "size": 2,
+      "pc": "FFFF3012"
+    },
+    {
+      "mode": "r",
+      "address": "FFFFECB0",
+      "size": 2,
+      "pc": "FFFF3018"
+    },
+    {
+      "mode": "r",
+      "address": "FFFFF014",
+      "size": 1,
+      "pc": "FFFF308E"
+    },
+    {
+      "mode": "r",
+      "address": "FFFFF014",
+      "size": 1,
+      "pc": "FFFF3094"
+    },
+    {
+      "mode": "r",
+      "address": "FFFFF014",
+      "size": 1,
+      "pc": "FFFF309C"
+    },
+    {
+      "mode": "r",
+      "address": "FFFFF014",
+      "size": 1,
+      "pc": "FFFF31BE"
+    },
+    {
+      "mode": "r",
+      "address": "FFFFF014",
+      "size": 1,
+      "pc": "FFFF31DC"
+    },
+    {
+      "mode": "r",
+      "address": "FFFFF014",
+      "size": 1,
+      "pc": "FFFF31EE"
+    },
+    {
+      "mode": "r",
+      "address": "FFFFF014",
+      "size": 1,
+      "pc": "FFFF3204"
+    },
+    {
+      "mode": "r",
+      "address": "FFFFF014",
+      "size": 1,
+      "pc": "FFFF3284"
+    },
+    {
+      "mode": "r",
+      "address": "FFFFF015",
+      "size": 1,
+      "pc": "FFFF309A"
+    },
+    {
+      "mode": "r",
+      "address": "FFFFF015",
+      "size": 1,
+      "pc": "FFFF31CA"
+    },
+    {
+      "mode": "r",
+      "address": "FFFFF73C",
+      "size": 2,
+      "pc": "FFFF307E"
+    },
+    {
+      "mode": "w",
+      "address": "FFFFEC10",
+      "size": 2,
+      "pc": "FFFF3028"
+    },
+    {
+      "mode": "w",
+      "address": "FFFFECB0",
+      "size": 2,
+      "pc": "FFFF3016"
+    },
+    {
+      "mode": "w",
+      "address": "FFFFF010",
+      "size": 1,
+      "pc": "FFFF3072"
+    },
+    {
+      "mode": "w",
+      "address": "FFFFF011",
+      "size": 1,
+      "pc": "FFFF307A"
+    },
+    {
+      "mode": "w",
+      "address": "FFFFF012",
+      "size": 1,
+      "pc": "FFFF3070"
+    },
+    {
+      "mode": "w",
+      "address": "FFFFF012",
+      "size": 1,
+      "pc": "FFFF30A4"
+    },
+    {
+      "mode": "w",
+      "address": "FFFFF012",
+      "size": 1,
+      "pc": "FFFF3196"
+    },
+    {
+      "mode": "w",
+      "address": "FFFFF012",
+      "size": 1,
+      "pc": "FFFF31A0"
+    },
+    {
+      "mode": "w",
+      "address": "FFFFF012",
+      "size": 1,
+      "pc": "FFFF3202"
+    },
+    {
+      "mode": "w",
+      "address": "FFFFF012",
+      "size": 1,
+      "pc": "FFFF3278"
+    },
+    {
+      "mode": "w",
+      "address": "FFFFF012",
+      "size": 1,
+      "pc": "FFFF329C"
+    },
+    {
+      "mode": "w",
+      "address": "FFFFF013",
+      "size": 1,
+      "pc": "FFFF31EC"
+    },
+    {
+      "mode": "w",
+      "address": "FFFFF014",
+      "size": 1,
+      "pc": "FFFF3092"
+    },
+    {
+      "mode": "w",
+      "address": "FFFFF014",
+      "size": 1,
+      "pc": "FFFF30A0"
+    },
+    {
+      "mode": "w",
+      "address": "FFFFF014",
+      "size": 1,
+      "pc": "FFFF31D2"
+    },
+    {
+      "mode": "w",
+      "address": "FFFFF014",
+      "size": 1,
+      "pc": "FFFF31F2"
+    },
+    {
+      "mode": "w",
+      "address": "FFFFF016",
+      "size": 1,
+      "pc": "FFFF3076"
+    },
+    {
+      "mode": "w",
+      "address": "FFFFF73C",
+      "size": 2,
+      "pc": "FFFF3086"
+    }
+  ],
+  "physical_status": "PHYSICAL_REQUIRED",
+  "physical_operations": 0,
+  "limitations": [
+    "No physical ECU/provider, electrical waveform, baud tolerance or silicon timing verified.",
+    "Self-echo starts during RE0 are ignored, including completion after RX restore. A genuinely new start after RX enable may enter the parser and reject; no arbitrary physical delay bound is asserted.",
+    "Controlled host request delivery and ECU self-echo are explicit schedules; host J2534 echo filtering is separate.",
+    "One injected hardware NMI frame at established RX boundary consumes eight bytes; prefix before private SP/VBR and rapid nested NMIs remain unproven.",
+    "Clock, RAM mode, prior/in-flight DMA, external watchdog and actual power/reset restoration remain entry/physical contracts.",
+    "Partial requests yield no response and require host deadlines; compiled reject/exception paths disable SCI and halt.",
+    "Host-native composite/random fixture execution is separate and joined by the root validator.",
+    "Full execution stores compact event hashes/counts rather than every event row; exact response equality is checked for each 512-byte block."
+  ]
+}

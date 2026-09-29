@@ -1,0 +1,93 @@
+{
+  "allocation_gate": "FAIL",
+  "current_calibration_identity": "PHYSICAL/BENCH REQUIRED",
+  "findings": [
+    {
+      "classification": "PASS",
+      "demonstration": {
+        "actual_first_pcs": [
+          0,
+          2,
+          8,
+          10,
+          2,
+          4
+        ],
+        "ordinary_pc_required": 4,
+        "walker_reached": [
+          0,
+          2,
+          4,
+          6,
+          8,
+          10
+        ],
+        "words": {
+          "00000000": "A002",
+          "00000002": "0009",
+          "00000004": "E100",
+          "00000006": "0009",
+          "00000008": "AFFB",
+          "0000000A": "0009"
+        }
+      },
+      "fix": "Separate ordinary-entry visited states from delay-slot words counted as executed; visit ordinary entry even if previously counted only as a slot.",
+      "id": "R1",
+      "impact": "Reachability result is not a guaranteed overapproximation. Does not change already-open allocation decision.",
+      "issue": "Delay-slot execution must be distinct from ordinary entry."
+    },
+    {
+      "classification": "PASS",
+      "demonstration": {
+        "actual_target": 128,
+        "call": 8,
+        "reported_call_target": null,
+        "skipped_load": 4
+      },
+      "existing_windows_crossing_incoming_joins": [
+        "0003DFA4",
+        "0000025A",
+        "0007C454",
+        "0002841E"
+      ],
+      "fix": "Discard a backward value across incoming branch targets unless a proper predecessor meet proves equal constants; handle implicit pointer updates or discard them.",
+      "id": "R2",
+      "impact": "Root corrected this during review; join crossing now loses the local constant. Actual four windows use loop-held pointers and may be sound after ABI-specific proof. Any remaining IDA targets remain positive evidence, not an exhaustive target theorem.",
+      "issue": "Backward constant resolver must reject incoming CFG joins."
+    },
+    {
+      "classification": "PASS",
+      "evidence": "Root added the requested completed-cal/completed-code guard fragment, stopping before the finishing FPU helper. The report now has 22 executed scenarios including this guard and the mutated exclusive-bound negative control.",
+      "followup": "Finishing FPU work and full reset/peripheral execution remain explicitly outside coverage.",
+      "id": "R3",
+      "issue": "Existing actual OEM regressions are appropriately scoped."
+    },
+    {
+      "classification": "PASS",
+      "evidence": "Byte-unaligned 32-bit scan, even-word PC-relative/direct-transfer scan, loaded table extents, and immediate construction searches identify positive evidence only. Unknown computed pointers, indirect dispatch, data accesses and undocumented definitions remain.",
+      "id": "R4",
+      "issue": "Whole-hole scans and loaded-definition extents do not prove exclusive allocation."
+    },
+    {
+      "classification": "PASS",
+      "evidence": "73 candidates/17 hashes in inspected inventory; one historical image matches all 16 logged CRC pages. CRC/log/date equality is not fresh cryptographic ECU identity.",
+      "id": "R5",
+      "issue": "Calibration inventory correctly leaves current ECU identity unknown.",
+      "limitation": "Inventory explicitly records absent roots and one access-denied temporary folder. Generic classification from path is a discovery hint, not an ECU identity claim."
+    }
+  ],
+  "scope": "Independent bounded review; no root scripts or frozen artifacts changed. PASS means review probes reproduced expected limitations.",
+  "source_hashes": {
+    "calibration/compare_history.py": "676992bd33afa7cb442c2469d81a90f52054ba898d3bb10f8630ff270e25ad3e",
+    "calibration/history_comparison.json": "4ac2d693115d440c4d9a3f08486c6892c609752bc312dac8f7d2d6a2b52f5faf",
+    "calibration/inventory.json": "7fd9c5a069711706c187ce8907fd6bdd127de59be880ff9fc8c482569b9c1de7",
+    "calibration/inventory_all.py": "b0ea701dbeaafacaedd59888ed9966b872e663b2b5b670a1e51e814ee72183d4",
+    "rom/audit.py": "0638cc2e9d39483dfc527a54dd3f2c424377f1e47932a05eb08fedd8a2b852f1",
+    "rom/definitions.py": "629c857da6691e9a7bd07ca41cde6730b894df26d172257af5db65ca24f85d95",
+    "rom/immediate_propagation.py": "f34f692e434ed425adbb4535f3c2c7145d3f7d157af4328ec1a9512ee91e1af8",
+    "rom/reachability.py": "51c2563295b0f507e6dcc087262e009eeffcdb2302093037694ad65035d98740",
+    "rom/routine_regression.json": "65302a7c1ea2e38b79a3f896cf5022a44eb8441b9260afd20b261ee53f6951c0",
+    "rom/test_rom_routines.py": "02e643fd217b39b43015bc15c67dac5023a9686a9660ffe3b5c346f7944e8b3b"
+  },
+  "status": "PASS"
+}

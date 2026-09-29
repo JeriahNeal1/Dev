@@ -1,0 +1,740 @@
+{
+  "schema": 1,
+  "status": "PASS",
+  "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+  "host_sha256": "4b681bcdb3c178b89382b37b207b4a7679f0a1e87ab13c7051e8cf8019c094ec",
+  "cases": {
+    "identity": {
+      "status": "PASS",
+      "result": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_identity_01\\RESULT.json",
+        "sha256": "d82625e3aa1ac987b70042471f4196e14872f8554a96cb952449041150dd5c08",
+        "bytes": 17193
+      },
+      "fixed_TX_prefix_replay": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_identity_01\\FIXED_TX_PREFIX_REPLAY.json",
+        "sha256": "0d3432b2fef3619f3439749280576808bc9a5923c0048b35199088e6daa4656f",
+        "bytes": 756
+      },
+      "host_sha256": "4b681bcdb3c178b89382b37b207b4a7679f0a1e87ab13c7051e8cf8019c094ec",
+      "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+      "terminal": true,
+      "physical": false,
+      "kernel_execution": "NOT_REACHED_BEFORE_TERMINAL_HOST_FAULT"
+    },
+    "upload_begin": {
+      "status": "PASS",
+      "result": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_upload_begin_01\\RESULT.json",
+        "sha256": "37366260fe7a3b7efb2c8907de8722dd6c05b2a99ae4462267b82eca1c7bd84c",
+        "bytes": 17381
+      },
+      "fixed_TX_prefix_replay": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_upload_begin_01\\FIXED_TX_PREFIX_REPLAY.json",
+        "sha256": "8af20f41ff0ef2b8741c4dbd7163caaa980fc99dfbbd966807d21ae9e8254d40",
+        "bytes": 730
+      },
+      "host_sha256": "4b681bcdb3c178b89382b37b207b4a7679f0a1e87ab13c7051e8cf8019c094ec",
+      "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+      "terminal": true,
+      "physical": false,
+      "kernel_execution": "NOT_REACHED_BEFORE_TERMINAL_HOST_FAULT"
+    },
+    "upload_middle": {
+      "status": "PASS",
+      "result": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_upload_middle_01\\RESULT.json",
+        "sha256": "6e5770069dea6504644662109291b79254eb1fc5369ac8446b6ef14e22b64a3a",
+        "bytes": 17435
+      },
+      "fixed_TX_prefix_replay": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_upload_middle_01\\FIXED_TX_PREFIX_REPLAY.json",
+        "sha256": "fb0ae24c440443994de2d7ae42cede7ef130211065fb28150ac53adf283e1083",
+        "bytes": 732
+      },
+      "host_sha256": "4b681bcdb3c178b89382b37b207b4a7679f0a1e87ab13c7051e8cf8019c094ec",
+      "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+      "terminal": true,
+      "physical": false,
+      "kernel_execution": "NOT_REACHED_BEFORE_TERMINAL_HOST_FAULT"
+    },
+    "upload_final": {
+      "status": "PASS",
+      "result": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_upload_final_01\\RESULT.json",
+        "sha256": "e517e53e8e3863252dc9e72c54c9b02e297c24dc061c81d32664998b3ad38ad9",
+        "bytes": 17389
+      },
+      "fixed_TX_prefix_replay": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_upload_final_01\\FIXED_TX_PREFIX_REPLAY.json",
+        "sha256": "7073106df155b15a7e04be38ec22ab85d8cb4d8905dfbb7625366ecab0d77d41",
+        "bytes": 734
+      },
+      "host_sha256": "4b681bcdb3c178b89382b37b207b4a7679f0a1e87ab13c7051e8cf8019c094ec",
+      "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+      "terminal": true,
+      "physical": false,
+      "kernel_execution": "NOT_REACHED_BEFORE_TERMINAL_HOST_FAULT"
+    },
+    "entry": {
+      "status": "PASS",
+      "result": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_entry_01\\RESULT.json",
+        "sha256": "cc3863add14a5c420a06e2f7bb9b0a29dca600a69db3f760f1fdc71c594da1f9",
+        "bytes": 17025
+      },
+      "fixed_TX_prefix_replay": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_entry_01\\FIXED_TX_PREFIX_REPLAY.json",
+        "sha256": "3e7ba89bea131e99ee2152b560f9dd1a2e7d60da08b395ce1b8c49a4149b70b2",
+        "bytes": 734
+      },
+      "host_sha256": "4b681bcdb3c178b89382b37b207b4a7679f0a1e87ab13c7051e8cf8019c094ec",
+      "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+      "terminal": true,
+      "physical": false,
+      "kernel_execution": "NOT_REACHED_BEFORE_TERMINAL_HOST_FAULT"
+    },
+    "version": {
+      "status": "PASS",
+      "result": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_version_01\\RESULT.json",
+        "sha256": "f7f3a8b33cc240c2f6f270e71b793228c6c6791b52cf5d135ead3ba9ed449087",
+        "bytes": 17387
+      },
+      "fixed_TX_prefix_replay": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_version_01\\FIXED_TX_PREFIX_REPLAY.json",
+        "sha256": "96edb8c68cfbf6c9e25e00d204accb0827f58301a6f26d06fac2b09fa9c143cf",
+        "bytes": 764
+      },
+      "host_sha256": "4b681bcdb3c178b89382b37b207b4a7679f0a1e87ab13c7051e8cf8019c094ec",
+      "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+      "terminal": true,
+      "physical": false,
+      "execution_coverage": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_version_01\\execution_coverage.json",
+        "sha256": "528a58d60f6d89f759bc1ad230d85c32d78a5d845384ee33ce98aa97752491f0",
+        "bytes": 35471
+      },
+      "receiver_self_echo": true,
+      "model_sources": {
+        "core.py": "caf6571a836676b82bec8f8a5eaa356590532e15931fae2da4b5822fe8ef0f90",
+        "cpu.py": "5043dafdfe59447cb8d906f7570907c472e1d638deb507dc4af8546e9b0f1980",
+        "fast_step.py": "029bb2b484911289b19e5cdbad35bbbbdc80af05420e91dad6884e0ff0484cfa",
+        "harness.py": "0496579da46daf66eb3be3847da0f3e94f8f45bf6f0b494a1f89a97853a8b4c6",
+        "memory.py": "d6062f1dde275b9611d1b631f8151eac567314c603a533dad8751eede3fa2a38",
+        "sci.py": "6f3b4b38ae6e12ac75d5101c767f10b106e9676c322eac3a0e39a67a9c0030c1",
+        "self_echo.py": "87896f45a074fcff5132a6faa57af48f5444de13fdf67f00a4f1304ea583da5d",
+        "__init__.py": "8e8b1da117fdc2ba4fe06edfc32b9c8d67176ab69a9470ee21151018bc85fbd8"
+      },
+      "kernel_terminal": null,
+      "kernel_exchanges": 2,
+      "completed_TX_characters": 20,
+      "self_echo_characters_ignored_RE0": 20
+    },
+    "read_begin": {
+      "status": "PASS",
+      "result": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_read_begin_01\\RESULT.json",
+        "sha256": "deaf820608b7fd333988bc4f12d513053a916b25027ccceed15f46e79f99dd0d",
+        "bytes": 17517
+      },
+      "fixed_TX_prefix_replay": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_read_begin_01\\FIXED_TX_PREFIX_REPLAY.json",
+        "sha256": "ffed77fa8d6c3e71072389681b9fb0bcc21de4e35f98a4caa679a8e00519c5ca",
+        "bytes": 734
+      },
+      "host_sha256": "4b681bcdb3c178b89382b37b207b4a7679f0a1e87ab13c7051e8cf8019c094ec",
+      "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+      "terminal": true,
+      "physical": false,
+      "execution_coverage": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_read_begin_01\\execution_coverage.json",
+        "sha256": "528a58d60f6d89f759bc1ad230d85c32d78a5d845384ee33ce98aa97752491f0",
+        "bytes": 35471
+      },
+      "receiver_self_echo": true,
+      "model_sources": {
+        "core.py": "caf6571a836676b82bec8f8a5eaa356590532e15931fae2da4b5822fe8ef0f90",
+        "cpu.py": "5043dafdfe59447cb8d906f7570907c472e1d638deb507dc4af8546e9b0f1980",
+        "fast_step.py": "029bb2b484911289b19e5cdbad35bbbbdc80af05420e91dad6884e0ff0484cfa",
+        "harness.py": "0496579da46daf66eb3be3847da0f3e94f8f45bf6f0b494a1f89a97853a8b4c6",
+        "memory.py": "d6062f1dde275b9611d1b631f8151eac567314c603a533dad8751eede3fa2a38",
+        "sci.py": "6f3b4b38ae6e12ac75d5101c767f10b106e9676c322eac3a0e39a67a9c0030c1",
+        "self_echo.py": "87896f45a074fcff5132a6faa57af48f5444de13fdf67f00a4f1304ea583da5d",
+        "__init__.py": "8e8b1da117fdc2ba4fe06edfc32b9c8d67176ab69a9470ee21151018bc85fbd8"
+      },
+      "kernel_terminal": null,
+      "kernel_exchanges": 2,
+      "completed_TX_characters": 20,
+      "self_echo_characters_ignored_RE0": 20
+    },
+    "read_middle": {
+      "status": "PASS",
+      "result": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_read_middle_01\\RESULT.json",
+        "sha256": "9d94c6bc8373f35a36c07512a674445a225930185ba3e19eaf5da1ae3e54b3cc",
+        "bytes": 17612
+      },
+      "fixed_TX_prefix_replay": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_read_middle_01\\FIXED_TX_PREFIX_REPLAY.json",
+        "sha256": "654f3506ceadca88b6dbe0958f9c1254b842bb207d4dc31bc681d248a530e551",
+        "bytes": 747
+      },
+      "host_sha256": "4b681bcdb3c178b89382b37b207b4a7679f0a1e87ab13c7051e8cf8019c094ec",
+      "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+      "terminal": true,
+      "physical": false,
+      "execution_coverage": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_read_middle_01\\execution_coverage.json",
+        "sha256": "ce63748c508792c71e3c37c007bfe0a38b976a9e2b25a60b23509e7b85b8783c",
+        "bytes": 543753
+      },
+      "receiver_self_echo": true,
+      "model_sources": {
+        "core.py": "caf6571a836676b82bec8f8a5eaa356590532e15931fae2da4b5822fe8ef0f90",
+        "cpu.py": "5043dafdfe59447cb8d906f7570907c472e1d638deb507dc4af8546e9b0f1980",
+        "fast_step.py": "029bb2b484911289b19e5cdbad35bbbbdc80af05420e91dad6884e0ff0484cfa",
+        "harness.py": "0496579da46daf66eb3be3847da0f3e94f8f45bf6f0b494a1f89a97853a8b4c6",
+        "memory.py": "d6062f1dde275b9611d1b631f8151eac567314c603a533dad8751eede3fa2a38",
+        "sci.py": "6f3b4b38ae6e12ac75d5101c767f10b106e9676c322eac3a0e39a67a9c0030c1",
+        "self_echo.py": "87896f45a074fcff5132a6faa57af48f5444de13fdf67f00a4f1304ea583da5d",
+        "__init__.py": "8e8b1da117fdc2ba4fe06edfc32b9c8d67176ab69a9470ee21151018bc85fbd8"
+      },
+      "kernel_terminal": null,
+      "kernel_exchanges": 2050,
+      "completed_TX_characters": 1071124,
+      "self_echo_characters_ignored_RE0": 1071124
+    },
+    "read_final": {
+      "status": "PASS",
+      "result": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_read_final_01\\RESULT.json",
+        "sha256": "131f0c30ea2b97b6c62749dfa469a599535414b3a3a28b8dd0a34b3f26de1b99",
+        "bytes": 17581
+      },
+      "fixed_TX_prefix_replay": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_read_final_01\\FIXED_TX_PREFIX_REPLAY.json",
+        "sha256": "8c44babb5c3b75bbf90af434885636116652efe0961c2b4b4877720db91be1a7",
+        "bytes": 753
+      },
+      "host_sha256": "4b681bcdb3c178b89382b37b207b4a7679f0a1e87ab13c7051e8cf8019c094ec",
+      "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+      "terminal": true,
+      "physical": false,
+      "execution_coverage": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_read_final_01\\execution_coverage.json",
+        "sha256": "63b3a3482195ca7fe28fc25e166d00cf7d7bd88694c64d085c157a7ce63e330a",
+        "bytes": 1043250
+      },
+      "receiver_self_echo": true,
+      "model_sources": {
+        "core.py": "caf6571a836676b82bec8f8a5eaa356590532e15931fae2da4b5822fe8ef0f90",
+        "cpu.py": "5043dafdfe59447cb8d906f7570907c472e1d638deb507dc4af8546e9b0f1980",
+        "fast_step.py": "029bb2b484911289b19e5cdbad35bbbbdc80af05420e91dad6884e0ff0484cfa",
+        "harness.py": "0496579da46daf66eb3be3847da0f3e94f8f45bf6f0b494a1f89a97853a8b4c6",
+        "memory.py": "d6062f1dde275b9611d1b631f8151eac567314c603a533dad8751eede3fa2a38",
+        "sci.py": "6f3b4b38ae6e12ac75d5101c767f10b106e9676c322eac3a0e39a67a9c0030c1",
+        "self_echo.py": "87896f45a074fcff5132a6faa57af48f5444de13fdf67f00a4f1304ea583da5d",
+        "__init__.py": "8e8b1da117fdc2ba4fe06edfc32b9c8d67176ab69a9470ee21151018bc85fbd8"
+      },
+      "kernel_terminal": null,
+      "kernel_exchanges": 4097,
+      "completed_TX_characters": 2141705,
+      "self_echo_characters_ignored_RE0": 2141705
+    },
+    "read_disconnect": {
+      "status": "PASS",
+      "result": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_read_disconnect_01\\RESULT.json",
+        "sha256": "96ca79942b718be13e7d97fe95441ddcf093252fde772af61aad2b541d4e8f7c",
+        "bytes": 17794
+      },
+      "fixed_TX_prefix_replay": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_read_disconnect_01\\FIXED_TX_PREFIX_REPLAY.json",
+        "sha256": "bbed74807025e29ac0f14c378efedd263c513af695641d70664223b84f490c90",
+        "bytes": 737
+      },
+      "host_sha256": "4b681bcdb3c178b89382b37b207b4a7679f0a1e87ab13c7051e8cf8019c094ec",
+      "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+      "terminal": true,
+      "physical": false,
+      "execution_coverage": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_read_disconnect_01\\execution_coverage.json",
+        "sha256": "dae92839d0bb83e27a4b6a14d113def7489b947a3ea97b43778fd46482eacfc8",
+        "bytes": 47411
+      },
+      "receiver_self_echo": true,
+      "model_sources": {
+        "core.py": "caf6571a836676b82bec8f8a5eaa356590532e15931fae2da4b5822fe8ef0f90",
+        "cpu.py": "5043dafdfe59447cb8d906f7570907c472e1d638deb507dc4af8546e9b0f1980",
+        "fast_step.py": "029bb2b484911289b19e5cdbad35bbbbdc80af05420e91dad6884e0ff0484cfa",
+        "harness.py": "0496579da46daf66eb3be3847da0f3e94f8f45bf6f0b494a1f89a97853a8b4c6",
+        "memory.py": "d6062f1dde275b9611d1b631f8151eac567314c603a533dad8751eede3fa2a38",
+        "sci.py": "6f3b4b38ae6e12ac75d5101c767f10b106e9676c322eac3a0e39a67a9c0030c1",
+        "self_echo.py": "87896f45a074fcff5132a6faa57af48f5444de13fdf67f00a4f1304ea583da5d",
+        "__init__.py": "8e8b1da117fdc2ba4fe06edfc32b9c8d67176ab69a9470ee21151018bc85fbd8"
+      },
+      "kernel_terminal": null,
+      "kernel_exchanges": 18,
+      "completed_TX_characters": 8388,
+      "self_echo_characters_ignored_RE0": 8388
+    },
+    "read_checksum": {
+      "status": "PASS",
+      "result": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_read_checksum_01\\RESULT.json",
+        "sha256": "cafd49576064bdd36d27a782035b6ec89b0230a666060a9dc8e72195680ec259",
+        "bytes": 17708
+      },
+      "fixed_TX_prefix_replay": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_read_checksum_01\\FIXED_TX_PREFIX_REPLAY.json",
+        "sha256": "66897c6bc6d8626156f4ee0280152a3d70c9ba9b0f8f567770d953d2e1ee1967",
+        "bytes": 757
+      },
+      "host_sha256": "4b681bcdb3c178b89382b37b207b4a7679f0a1e87ab13c7051e8cf8019c094ec",
+      "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+      "terminal": true,
+      "physical": false,
+      "execution_coverage": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_read_checksum_01\\execution_coverage.json",
+        "sha256": "8117df808e0d9419337110df5981001ed6c42014b039e0527291841f53ceff30",
+        "bytes": 47653
+      },
+      "receiver_self_echo": true,
+      "model_sources": {
+        "core.py": "caf6571a836676b82bec8f8a5eaa356590532e15931fae2da4b5822fe8ef0f90",
+        "cpu.py": "5043dafdfe59447cb8d906f7570907c472e1d638deb507dc4af8546e9b0f1980",
+        "fast_step.py": "029bb2b484911289b19e5cdbad35bbbbdc80af05420e91dad6884e0ff0484cfa",
+        "harness.py": "0496579da46daf66eb3be3847da0f3e94f8f45bf6f0b494a1f89a97853a8b4c6",
+        "memory.py": "d6062f1dde275b9611d1b631f8151eac567314c603a533dad8751eede3fa2a38",
+        "sci.py": "6f3b4b38ae6e12ac75d5101c767f10b106e9676c322eac3a0e39a67a9c0030c1",
+        "self_echo.py": "87896f45a074fcff5132a6faa57af48f5444de13fdf67f00a4f1304ea583da5d",
+        "__init__.py": "8e8b1da117fdc2ba4fe06edfc32b9c8d67176ab69a9470ee21151018bc85fbd8"
+      },
+      "kernel_terminal": null,
+      "kernel_exchanges": 19,
+      "completed_TX_characters": 8911,
+      "self_echo_characters_ignored_RE0": 8911
+    },
+    "read_address": {
+      "status": "PASS",
+      "result": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_read_address_01\\RESULT.json",
+        "sha256": "1beeeab45eeb3e3354de36f5260857552d451e9c974c04bf5dff52155f3062e7",
+        "bytes": 17681
+      },
+      "fixed_TX_prefix_replay": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_read_address_01\\FIXED_TX_PREFIX_REPLAY.json",
+        "sha256": "a5175f0179af23962a941b91f5313b3d92f815d681666573623340ee368241e2",
+        "bytes": 783
+      },
+      "host_sha256": "4b681bcdb3c178b89382b37b207b4a7679f0a1e87ab13c7051e8cf8019c094ec",
+      "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+      "terminal": true,
+      "physical": false,
+      "execution_coverage": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_read_address_01\\execution_coverage.json",
+        "sha256": "8117df808e0d9419337110df5981001ed6c42014b039e0527291841f53ceff30",
+        "bytes": 47653
+      },
+      "receiver_self_echo": true,
+      "model_sources": {
+        "core.py": "caf6571a836676b82bec8f8a5eaa356590532e15931fae2da4b5822fe8ef0f90",
+        "cpu.py": "5043dafdfe59447cb8d906f7570907c472e1d638deb507dc4af8546e9b0f1980",
+        "fast_step.py": "029bb2b484911289b19e5cdbad35bbbbdc80af05420e91dad6884e0ff0484cfa",
+        "harness.py": "0496579da46daf66eb3be3847da0f3e94f8f45bf6f0b494a1f89a97853a8b4c6",
+        "memory.py": "d6062f1dde275b9611d1b631f8151eac567314c603a533dad8751eede3fa2a38",
+        "sci.py": "6f3b4b38ae6e12ac75d5101c767f10b106e9676c322eac3a0e39a67a9c0030c1",
+        "self_echo.py": "87896f45a074fcff5132a6faa57af48f5444de13fdf67f00a4f1304ea583da5d",
+        "__init__.py": "8e8b1da117fdc2ba4fe06edfc32b9c8d67176ab69a9470ee21151018bc85fbd8"
+      },
+      "kernel_terminal": null,
+      "kernel_exchanges": 19,
+      "completed_TX_characters": 8911,
+      "self_echo_characters_ignored_RE0": 8911
+    },
+    "read_duplicate": {
+      "status": "PASS",
+      "result": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_read_duplicate_01\\RESULT.json",
+        "sha256": "e49d205aa7e4dd8ac6c1317a07fe845ff2b339f177c563f418b0868f771cf13e",
+        "bytes": 17785
+      },
+      "fixed_TX_prefix_replay": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_read_duplicate_01\\FIXED_TX_PREFIX_REPLAY.json",
+        "sha256": "a5175f0179af23962a941b91f5313b3d92f815d681666573623340ee368241e2",
+        "bytes": 783
+      },
+      "host_sha256": "4b681bcdb3c178b89382b37b207b4a7679f0a1e87ab13c7051e8cf8019c094ec",
+      "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+      "terminal": true,
+      "physical": false,
+      "execution_coverage": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_read_duplicate_01\\execution_coverage.json",
+        "sha256": "8117df808e0d9419337110df5981001ed6c42014b039e0527291841f53ceff30",
+        "bytes": 47653
+      },
+      "receiver_self_echo": true,
+      "model_sources": {
+        "core.py": "caf6571a836676b82bec8f8a5eaa356590532e15931fae2da4b5822fe8ef0f90",
+        "cpu.py": "5043dafdfe59447cb8d906f7570907c472e1d638deb507dc4af8546e9b0f1980",
+        "fast_step.py": "029bb2b484911289b19e5cdbad35bbbbdc80af05420e91dad6884e0ff0484cfa",
+        "harness.py": "0496579da46daf66eb3be3847da0f3e94f8f45bf6f0b494a1f89a97853a8b4c6",
+        "memory.py": "d6062f1dde275b9611d1b631f8151eac567314c603a533dad8751eede3fa2a38",
+        "sci.py": "6f3b4b38ae6e12ac75d5101c767f10b106e9676c322eac3a0e39a67a9c0030c1",
+        "self_echo.py": "87896f45a074fcff5132a6faa57af48f5444de13fdf67f00a4f1304ea583da5d",
+        "__init__.py": "8e8b1da117fdc2ba4fe06edfc32b9c8d67176ab69a9470ee21151018bc85fbd8"
+      },
+      "kernel_terminal": null,
+      "kernel_exchanges": 19,
+      "completed_TX_characters": 8911,
+      "self_echo_characters_ignored_RE0": 8911
+    },
+    "read_pass": {
+      "status": "PASS",
+      "result": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_read_pass_01\\RESULT.json",
+        "sha256": "f3867b60a773f0ae77ae2d9a8b90bf0f14c4b03b6e8b27c7c8e08a480e78ea39",
+        "bytes": 17522
+      },
+      "fixed_TX_prefix_replay": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_read_pass_01\\FIXED_TX_PREFIX_REPLAY.json",
+        "sha256": "a5175f0179af23962a941b91f5313b3d92f815d681666573623340ee368241e2",
+        "bytes": 783
+      },
+      "host_sha256": "4b681bcdb3c178b89382b37b207b4a7679f0a1e87ab13c7051e8cf8019c094ec",
+      "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+      "terminal": true,
+      "physical": false,
+      "execution_coverage": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_read_pass_01\\execution_coverage.json",
+        "sha256": "8117df808e0d9419337110df5981001ed6c42014b039e0527291841f53ceff30",
+        "bytes": 47653
+      },
+      "receiver_self_echo": true,
+      "model_sources": {
+        "core.py": "caf6571a836676b82bec8f8a5eaa356590532e15931fae2da4b5822fe8ef0f90",
+        "cpu.py": "5043dafdfe59447cb8d906f7570907c472e1d638deb507dc4af8546e9b0f1980",
+        "fast_step.py": "029bb2b484911289b19e5cdbad35bbbbdc80af05420e91dad6884e0ff0484cfa",
+        "harness.py": "0496579da46daf66eb3be3847da0f3e94f8f45bf6f0b494a1f89a97853a8b4c6",
+        "memory.py": "d6062f1dde275b9611d1b631f8151eac567314c603a533dad8751eede3fa2a38",
+        "sci.py": "6f3b4b38ae6e12ac75d5101c767f10b106e9676c322eac3a0e39a67a9c0030c1",
+        "self_echo.py": "87896f45a074fcff5132a6faa57af48f5444de13fdf67f00a4f1304ea583da5d",
+        "__init__.py": "8e8b1da117fdc2ba4fe06edfc32b9c8d67176ab69a9470ee21151018bc85fbd8"
+      },
+      "kernel_terminal": null,
+      "kernel_exchanges": 19,
+      "completed_TX_characters": 8911,
+      "self_echo_characters_ignored_RE0": 8911
+    },
+    "read_truncate": {
+      "status": "PASS",
+      "result": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_read_truncate_01\\RESULT.json",
+        "sha256": "655f1aad9ddfee6dd6bf50a537703afea4621638abdd3e73ae99c0e72c3bcb42",
+        "bytes": 17688
+      },
+      "fixed_TX_prefix_replay": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_read_truncate_01\\FIXED_TX_PREFIX_REPLAY.json",
+        "sha256": "61f7f525846f72da7ff5ea6c07d4172e21a37d5f1cef86caa7261a3c38a7e824",
+        "bytes": 737
+      },
+      "host_sha256": "4b681bcdb3c178b89382b37b207b4a7679f0a1e87ab13c7051e8cf8019c094ec",
+      "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+      "terminal": true,
+      "physical": false,
+      "execution_coverage": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_read_truncate_01\\execution_coverage.json",
+        "sha256": "8117df808e0d9419337110df5981001ed6c42014b039e0527291841f53ceff30",
+        "bytes": 47653
+      },
+      "receiver_self_echo": true,
+      "model_sources": {
+        "core.py": "caf6571a836676b82bec8f8a5eaa356590532e15931fae2da4b5822fe8ef0f90",
+        "cpu.py": "5043dafdfe59447cb8d906f7570907c472e1d638deb507dc4af8546e9b0f1980",
+        "fast_step.py": "029bb2b484911289b19e5cdbad35bbbbdc80af05420e91dad6884e0ff0484cfa",
+        "harness.py": "0496579da46daf66eb3be3847da0f3e94f8f45bf6f0b494a1f89a97853a8b4c6",
+        "memory.py": "d6062f1dde275b9611d1b631f8151eac567314c603a533dad8751eede3fa2a38",
+        "sci.py": "6f3b4b38ae6e12ac75d5101c767f10b106e9676c322eac3a0e39a67a9c0030c1",
+        "self_echo.py": "87896f45a074fcff5132a6faa57af48f5444de13fdf67f00a4f1304ea583da5d",
+        "__init__.py": "8e8b1da117fdc2ba4fe06edfc32b9c8d67176ab69a9470ee21151018bc85fbd8"
+      },
+      "kernel_terminal": null,
+      "kernel_exchanges": 19,
+      "completed_TX_characters": 8911,
+      "self_echo_characters_ignored_RE0": 8911
+    },
+    "read_extra": {
+      "status": "PASS",
+      "result": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_read_extra_02\\RESULT.json",
+        "sha256": "027b2a96f3b5e0a55131217ce4fbdaa408265c7693cd9c30129095e518e44254",
+        "bytes": 17843
+      },
+      "fixed_TX_prefix_replay": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_read_extra_02\\FIXED_TX_PREFIX_REPLAY.json",
+        "sha256": "1e15f31db2204c4b8a9efd400482aca8752758d7ce76dc65a42da8c73ffeab10",
+        "bytes": 747
+      },
+      "host_sha256": "4b681bcdb3c178b89382b37b207b4a7679f0a1e87ab13c7051e8cf8019c094ec",
+      "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+      "terminal": true,
+      "physical": false,
+      "execution_coverage": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_read_extra_02\\execution_coverage.json",
+        "sha256": "8117df808e0d9419337110df5981001ed6c42014b039e0527291841f53ceff30",
+        "bytes": 47653
+      },
+      "receiver_self_echo": true,
+      "model_sources": {
+        "core.py": "caf6571a836676b82bec8f8a5eaa356590532e15931fae2da4b5822fe8ef0f90",
+        "cpu.py": "5043dafdfe59447cb8d906f7570907c472e1d638deb507dc4af8546e9b0f1980",
+        "fast_step.py": "029bb2b484911289b19e5cdbad35bbbbdc80af05420e91dad6884e0ff0484cfa",
+        "harness.py": "0496579da46daf66eb3be3847da0f3e94f8f45bf6f0b494a1f89a97853a8b4c6",
+        "memory.py": "d6062f1dde275b9611d1b631f8151eac567314c603a533dad8751eede3fa2a38",
+        "sci.py": "6f3b4b38ae6e12ac75d5101c767f10b106e9676c322eac3a0e39a67a9c0030c1",
+        "self_echo.py": "87896f45a074fcff5132a6faa57af48f5444de13fdf67f00a4f1304ea583da5d",
+        "__init__.py": "8e8b1da117fdc2ba4fe06edfc32b9c8d67176ab69a9470ee21151018bc85fbd8"
+      },
+      "kernel_terminal": null,
+      "kernel_exchanges": 19,
+      "completed_TX_characters": 8911,
+      "self_echo_characters_ignored_RE0": 8911
+    },
+    "read_opcode": {
+      "status": "PASS",
+      "result": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_read_opcode_01\\RESULT.json",
+        "sha256": "950492a1b4efc3483810c2133adb74d789ead7ec1ea6adbfcf7640050fa43995",
+        "bytes": 17935
+      },
+      "fixed_TX_prefix_replay": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_read_opcode_01\\FIXED_TX_PREFIX_REPLAY.json",
+        "sha256": "0810e340f6601facac02edb072ab9e582f940000f2c5fb908efc32d7f25a3fdf",
+        "bytes": 780
+      },
+      "host_sha256": "4b681bcdb3c178b89382b37b207b4a7679f0a1e87ab13c7051e8cf8019c094ec",
+      "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+      "terminal": true,
+      "physical": false,
+      "execution_coverage": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_read_opcode_01\\execution_coverage.json",
+        "sha256": "b76160587e084865b199ebb34a2b4c55289aaff9477fa2fdcc1a6e33debb4b25",
+        "bytes": 43347
+      },
+      "receiver_self_echo": true,
+      "model_sources": {
+        "core.py": "caf6571a836676b82bec8f8a5eaa356590532e15931fae2da4b5822fe8ef0f90",
+        "cpu.py": "5043dafdfe59447cb8d906f7570907c472e1d638deb507dc4af8546e9b0f1980",
+        "fast_step.py": "029bb2b484911289b19e5cdbad35bbbbdc80af05420e91dad6884e0ff0484cfa",
+        "harness.py": "0496579da46daf66eb3be3847da0f3e94f8f45bf6f0b494a1f89a97853a8b4c6",
+        "memory.py": "d6062f1dde275b9611d1b631f8151eac567314c603a533dad8751eede3fa2a38",
+        "sci.py": "6f3b4b38ae6e12ac75d5101c767f10b106e9676c322eac3a0e39a67a9c0030c1",
+        "self_echo.py": "87896f45a074fcff5132a6faa57af48f5444de13fdf67f00a4f1304ea583da5d",
+        "__init__.py": "8e8b1da117fdc2ba4fe06edfc32b9c8d67176ab69a9470ee21151018bc85fbd8"
+      },
+      "kernel_terminal": null,
+      "kernel_exchanges": 3,
+      "completed_TX_characters": 543,
+      "self_echo_characters_ignored_RE0": 543
+    },
+    "rx_status": {
+      "status": "PASS",
+      "result": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_rx_status_01\\RESULT.json",
+        "sha256": "89a65b639524f3b7b875993d96e8c79b116e1a0e201767a391720aa2367e9271",
+        "bytes": 17810
+      },
+      "fixed_TX_prefix_replay": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_rx_status_01\\FIXED_TX_PREFIX_REPLAY.json",
+        "sha256": "bb6af25f980b31036d5044e4a476e4145655b15557240078ed11a7131a7c9efd",
+        "bytes": 755
+      },
+      "host_sha256": "4b681bcdb3c178b89382b37b207b4a7679f0a1e87ab13c7051e8cf8019c094ec",
+      "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+      "terminal": true,
+      "physical": false,
+      "execution_coverage": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_rx_status_01\\execution_coverage.json",
+        "sha256": "8117df808e0d9419337110df5981001ed6c42014b039e0527291841f53ceff30",
+        "bytes": 47653
+      },
+      "receiver_self_echo": true,
+      "model_sources": {
+        "core.py": "caf6571a836676b82bec8f8a5eaa356590532e15931fae2da4b5822fe8ef0f90",
+        "cpu.py": "5043dafdfe59447cb8d906f7570907c472e1d638deb507dc4af8546e9b0f1980",
+        "fast_step.py": "029bb2b484911289b19e5cdbad35bbbbdc80af05420e91dad6884e0ff0484cfa",
+        "harness.py": "0496579da46daf66eb3be3847da0f3e94f8f45bf6f0b494a1f89a97853a8b4c6",
+        "memory.py": "d6062f1dde275b9611d1b631f8151eac567314c603a533dad8751eede3fa2a38",
+        "sci.py": "6f3b4b38ae6e12ac75d5101c767f10b106e9676c322eac3a0e39a67a9c0030c1",
+        "self_echo.py": "87896f45a074fcff5132a6faa57af48f5444de13fdf67f00a4f1304ea583da5d",
+        "__init__.py": "8e8b1da117fdc2ba4fe06edfc32b9c8d67176ab69a9470ee21151018bc85fbd8"
+      },
+      "kernel_terminal": null,
+      "kernel_exchanges": 19,
+      "completed_TX_characters": 8911,
+      "self_echo_characters_ignored_RE0": 8911
+    },
+    "rx_extra": {
+      "status": "PASS",
+      "result": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_rx_extra_01\\RESULT.json",
+        "sha256": "ba2e34c31d9e7d31e7017e5a7d4106c62cdf447074906932f8e2f9b135adf6df",
+        "bytes": 17750
+      },
+      "fixed_TX_prefix_replay": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_rx_extra_01\\FIXED_TX_PREFIX_REPLAY.json",
+        "sha256": "68e4b40e6c04e891f9a71c70c03e5bc56da86fa56779d765a2f8d63e1416fe26",
+        "bytes": 749
+      },
+      "host_sha256": "4b681bcdb3c178b89382b37b207b4a7679f0a1e87ab13c7051e8cf8019c094ec",
+      "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+      "terminal": true,
+      "physical": false,
+      "execution_coverage": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_rx_extra_01\\execution_coverage.json",
+        "sha256": "8117df808e0d9419337110df5981001ed6c42014b039e0527291841f53ceff30",
+        "bytes": 47653
+      },
+      "receiver_self_echo": true,
+      "model_sources": {
+        "core.py": "caf6571a836676b82bec8f8a5eaa356590532e15931fae2da4b5822fe8ef0f90",
+        "cpu.py": "5043dafdfe59447cb8d906f7570907c472e1d638deb507dc4af8546e9b0f1980",
+        "fast_step.py": "029bb2b484911289b19e5cdbad35bbbbdc80af05420e91dad6884e0ff0484cfa",
+        "harness.py": "0496579da46daf66eb3be3847da0f3e94f8f45bf6f0b494a1f89a97853a8b4c6",
+        "memory.py": "d6062f1dde275b9611d1b631f8151eac567314c603a533dad8751eede3fa2a38",
+        "sci.py": "6f3b4b38ae6e12ac75d5101c767f10b106e9676c322eac3a0e39a67a9c0030c1",
+        "self_echo.py": "87896f45a074fcff5132a6faa57af48f5444de13fdf67f00a4f1304ea583da5d",
+        "__init__.py": "8e8b1da117fdc2ba4fe06edfc32b9c8d67176ab69a9470ee21151018bc85fbd8"
+      },
+      "kernel_terminal": null,
+      "kernel_exchanges": 19,
+      "completed_TX_characters": 8911,
+      "self_echo_characters_ignored_RE0": 8911
+    },
+    "rx_echo": {
+      "status": "PASS",
+      "result": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_rx_echo_01\\RESULT.json",
+        "sha256": "07ef78bf9dbf4c152be75b910fcb65dcd7fcbb96efa1e4f6c59ef9c318f2d793",
+        "bytes": 17693
+      },
+      "fixed_TX_prefix_replay": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_rx_echo_01\\FIXED_TX_PREFIX_REPLAY.json",
+        "sha256": "6e3a5f90e26c60076b956c1325a3a43a9211c4e82435467e32d71c679ea98091",
+        "bytes": 745
+      },
+      "host_sha256": "4b681bcdb3c178b89382b37b207b4a7679f0a1e87ab13c7051e8cf8019c094ec",
+      "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+      "terminal": true,
+      "physical": false,
+      "execution_coverage": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_rx_echo_01\\execution_coverage.json",
+        "sha256": "8117df808e0d9419337110df5981001ed6c42014b039e0527291841f53ceff30",
+        "bytes": 47653
+      },
+      "receiver_self_echo": true,
+      "model_sources": {
+        "core.py": "caf6571a836676b82bec8f8a5eaa356590532e15931fae2da4b5822fe8ef0f90",
+        "cpu.py": "5043dafdfe59447cb8d906f7570907c472e1d638deb507dc4af8546e9b0f1980",
+        "fast_step.py": "029bb2b484911289b19e5cdbad35bbbbdc80af05420e91dad6884e0ff0484cfa",
+        "harness.py": "0496579da46daf66eb3be3847da0f3e94f8f45bf6f0b494a1f89a97853a8b4c6",
+        "memory.py": "d6062f1dde275b9611d1b631f8151eac567314c603a533dad8751eede3fa2a38",
+        "sci.py": "6f3b4b38ae6e12ac75d5101c767f10b106e9676c322eac3a0e39a67a9c0030c1",
+        "self_echo.py": "87896f45a074fcff5132a6faa57af48f5444de13fdf67f00a4f1304ea583da5d",
+        "__init__.py": "8e8b1da117fdc2ba4fe06edfc32b9c8d67176ab69a9470ee21151018bc85fbd8"
+      },
+      "kernel_terminal": null,
+      "kernel_exchanges": 19,
+      "completed_TX_characters": 8911,
+      "self_echo_characters_ignored_RE0": 8911
+    },
+    "rx_empty": {
+      "status": "PASS",
+      "result": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_rx_empty_01\\RESULT.json",
+        "sha256": "3c19b02e9672f59121db39b3a86676fefaf8b23427e9a2de80f6bb3b870827de",
+        "bytes": 17757
+      },
+      "fixed_TX_prefix_replay": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_rx_empty_01\\FIXED_TX_PREFIX_REPLAY.json",
+        "sha256": "209e0d53c4b64accc5412f961eef38ff495b5ed2c7ecf15947c2af3f32db64ab",
+        "bytes": 755
+      },
+      "host_sha256": "4b681bcdb3c178b89382b37b207b4a7679f0a1e87ab13c7051e8cf8019c094ec",
+      "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+      "terminal": true,
+      "physical": false,
+      "execution_coverage": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_rx_empty_01\\execution_coverage.json",
+        "sha256": "8117df808e0d9419337110df5981001ed6c42014b039e0527291841f53ceff30",
+        "bytes": 47653
+      },
+      "receiver_self_echo": true,
+      "model_sources": {
+        "core.py": "caf6571a836676b82bec8f8a5eaa356590532e15931fae2da4b5822fe8ef0f90",
+        "cpu.py": "5043dafdfe59447cb8d906f7570907c472e1d638deb507dc4af8546e9b0f1980",
+        "fast_step.py": "029bb2b484911289b19e5cdbad35bbbbdc80af05420e91dad6884e0ff0484cfa",
+        "harness.py": "0496579da46daf66eb3be3847da0f3e94f8f45bf6f0b494a1f89a97853a8b4c6",
+        "memory.py": "d6062f1dde275b9611d1b631f8151eac567314c603a533dad8751eede3fa2a38",
+        "sci.py": "6f3b4b38ae6e12ac75d5101c767f10b106e9676c322eac3a0e39a67a9c0030c1",
+        "self_echo.py": "87896f45a074fcff5132a6faa57af48f5444de13fdf67f00a4f1304ea583da5d",
+        "__init__.py": "8e8b1da117fdc2ba4fe06edfc32b9c8d67176ab69a9470ee21151018bc85fbd8"
+      },
+      "kernel_terminal": null,
+      "kernel_exchanges": 19,
+      "completed_TX_characters": 8911,
+      "self_echo_characters_ignored_RE0": 8911
+    },
+    "host_termination": {
+      "status": "PASS",
+      "result": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_host_termination_01\\RESULT.json",
+        "sha256": "7a40558e51ec2606f737d4840e9fac5bfa243edd25146cce82d084e8a7779393",
+        "bytes": 18129
+      },
+      "fixed_TX_prefix_replay": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_host_termination_01\\FIXED_TX_PREFIX_REPLAY.json",
+        "sha256": "10f3954b1203a607ca32d954fc659dbf9dbf2f2962bdfa5322abd3624ce8429d",
+        "bytes": 714
+      },
+      "host_sha256": "4b681bcdb3c178b89382b37b207b4a7679f0a1e87ab13c7051e8cf8019c094ec",
+      "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+      "terminal": true,
+      "physical": false,
+      "execution_coverage": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_host_termination_01\\execution_coverage.json",
+        "sha256": "a98e05145013a43b3723cc2f318537987840b9e624f0e3b3285abef07d0a2fa5",
+        "bytes": 43916
+      },
+      "receiver_self_echo": true,
+      "model_sources": {
+        "core.py": "caf6571a836676b82bec8f8a5eaa356590532e15931fae2da4b5822fe8ef0f90",
+        "cpu.py": "5043dafdfe59447cb8d906f7570907c472e1d638deb507dc4af8546e9b0f1980",
+        "fast_step.py": "029bb2b484911289b19e5cdbad35bbbbdc80af05420e91dad6884e0ff0484cfa",
+        "harness.py": "0496579da46daf66eb3be3847da0f3e94f8f45bf6f0b494a1f89a97853a8b4c6",
+        "memory.py": "d6062f1dde275b9611d1b631f8151eac567314c603a533dad8751eede3fa2a38",
+        "sci.py": "6f3b4b38ae6e12ac75d5101c767f10b106e9676c322eac3a0e39a67a9c0030c1",
+        "self_echo.py": "87896f45a074fcff5132a6faa57af48f5444de13fdf67f00a4f1304ea583da5d",
+        "__init__.py": "8e8b1da117fdc2ba4fe06edfc32b9c8d67176ab69a9470ee21151018bc85fbd8"
+      },
+      "kernel_terminal": null,
+      "kernel_exchanges": 5,
+      "completed_TX_characters": 1589,
+      "self_echo_characters_ignored_RE0": 1589
+    }
+  },
+  "failures": [],
+  "all_TX_prefixes_replayed": true,
+  "physical_provider_loaded": false,
+  "retained_harness_expectation_mismatch": {
+    "result": {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_read_extra_01\\RESULT.json",
+      "sha256": "3c5566051dc64f50ed1ab77bf5776678e5bb9daca6eaa44cd0494c9b14f3c3ff",
+      "bytes": 16136
+    },
+    "reason": "Fragmented oversized reply was correctly rejected as aggregate oversize; the old runner expected per-message oversize text. Repeated with complete-message profile at _02; native code unchanged."
+  },
+  "all_cases_executed_on_exact_final_native05": true,
+  "prior_version_applicability_used": false
+}

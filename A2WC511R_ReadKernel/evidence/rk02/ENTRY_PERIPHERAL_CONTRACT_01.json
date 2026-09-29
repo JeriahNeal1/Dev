@@ -1,0 +1,332 @@
+{
+  "schema": 2,
+  "artifact_class": "TEMP_RAM_ACQUISITION_TOOL",
+  "status": "DOCUMENTED_SOFTWARE_CONTRACT_WITH_EXPLICIT_PHYSICAL_ENTRY_ASSUMPTIONS",
+  "manual": {
+    "title": "Renesas SH-2E SH7058 F-ZTAT Hardware Manual",
+    "revision": "REJ09B0046-0300H Rev3 September 2004",
+    "url": "https://www.renesas.com/en/document/mah/sh-2e-sh7058-f-ztat-tm-hardware-manual",
+    "verified_online": "2026-09-27",
+    "page_numbering": "Zero-based PDF page indexes; printed page is index minus 42",
+    "references": [
+      {
+        "section": "2.1,6.1,6.3..6.8,7.2.1",
+        "pages": [
+          71,
+          72,
+          75,
+          130,
+          134,
+          135,
+          140,
+          141,
+          146
+        ],
+        "subject": "SP/VBR alignment, exception stack and NMI"
+      },
+      {
+        "section": "9.2.4",
+        "pages": [
+          185,
+          194,
+          195
+        ],
+        "subject": "RAMER address, RAMS and shadow mapping"
+      },
+      {
+        "section": "10.2.5,10.3.1,10.4",
+        "pages": [
+          209,
+          217,
+          218,
+          219,
+          235
+        ],
+        "subject": "DMAOR word access, DME master stop and prior/in-flight effects"
+      },
+      {
+        "section": "13.2.1..13.3.1",
+        "pages": [
+          481,
+          482,
+          483,
+          484,
+          485,
+          486
+        ],
+        "subject": "WDT keyed word writes, reserved bits, timer-disable and reset distinctions"
+      },
+      {
+        "section": "15.1.4,15.2.5..15.2.9,15.3.2",
+        "pages": [
+          508,
+          509,
+          511,
+          512,
+          514,
+          515,
+          518,
+          519,
+          520,
+          521,
+          526,
+          528,
+          529,
+          535,
+          536,
+          537
+        ],
+        "subject": "SCI2 register addresses, serial mode, baud formula, read-before-clear flags and init delay"
+      },
+      {
+        "section": "21.3.6,21.3.7",
+        "pages": [
+          799,
+          800,
+          801
+        ],
+        "subject": "PCIOR/PCCR, PC2 TxD2 and PC3 RxD2"
+      },
+      {
+        "section": "23.4.2,23.8.1,24",
+        "pages": [
+          886,
+          891,
+          892,
+          931,
+          983,
+          984,
+          1092
+        ],
+        "subject": "Flash register mapping, FMATS, prohibited E803, on-chip RAM and RAME"
+      }
+    ]
+  },
+  "registers": {
+    "SCI2_SMR": {
+      "address": "FFFFF010",
+      "width": 1,
+      "initialization": 0
+    },
+    "SCI2_BRR": {
+      "address": "FFFFF011",
+      "width": 1,
+      "initialization": 9
+    },
+    "SCI2_SCR": {
+      "address": "FFFFF012",
+      "width": 1,
+      "disable": 0,
+      "receive_only": 16,
+      "transmit_only": 32,
+      "combined_TE_RE_never_used_by_RK02": true
+    },
+    "SCI2_TDR": {
+      "address": "FFFFF013",
+      "width": 1,
+      "policy": "Write only after TDRE read1; byte is transmitted only after qualified TDRE-clear transition"
+    },
+    "SCI2_SSR": {
+      "address": "FFFFF014",
+      "width": 1,
+      "reset": 132,
+      "flags": {
+        "TDRE": 128,
+        "RDRF": 64,
+        "ORER": 32,
+        "FER": 16,
+        "PER": 8,
+        "TEND": 4,
+        "MPB": 2,
+        "MPBT": 1
+      }
+    },
+    "SCI2_RDR": {
+      "address": "FFFFF015",
+      "width": 1,
+      "policy": "Read only; read alone does not clear RDRF"
+    },
+    "SCI2_SDCR": {
+      "address": "FFFFF016",
+      "width": 1,
+      "initialization": 242,
+      "meaning": "DIR0, LSB first; high nibble1, bit2/0 zero, bit1 reads1"
+    },
+    "PCCR": {
+      "address": "FFFFF73C",
+      "width": 2,
+      "valid_mask": 341,
+      "set_mask": 80,
+      "preserving_operation": "(read16 & 0x0155) | 0x0050"
+    },
+    "WDT_TCSR": {
+      "address": "FFFFEC10",
+      "read_width": 1,
+      "write_width": 2,
+      "disable_word": 42264,
+      "disable_hex": "A518",
+      "meaning": "A5 key; reserved bits18; TME0, interval mode0, clock select0. Read before write also allows OVF clear."
+    },
+    "DMAOR": {
+      "address": "FFFFECB0",
+      "width": 2,
+      "disable_word": 0,
+      "verify_mask": 1,
+      "meaning": "Read then write0, readback DME0; zero also clears read AE/NMIF. Never re-enable."
+    },
+    "RAMER": {
+      "address": "FFFFEC26",
+      "width": 2,
+      "read_only": true,
+      "reject_mask": 8,
+      "meaning": "RAMS1 overlays4KiB RAM into low flash; lower3 select page only if RAMS1"
+    },
+    "FMATS": {
+      "address": "FFFFE805",
+      "width": 1,
+      "read_only": true,
+      "user_boot_value": 170,
+      "strict_admission_value": 0,
+      "meaning": "AA means user boot MAT; other values select user MAT. Accept0 only is a conservative additional constraint."
+    }
+  },
+  "sci": {
+    "channel": 2,
+    "not_channel1": "SCI1 is FFFFF008..FFFFF00E",
+    "format": "8 data bits, no parity, one stop bit, LSB first, asynchronous internal clock, polling, no SCI interrupts",
+    "baud_equation": "Pphi_Hz / (32 * 4^CKS * (BRR+1))",
+    "baud_with_Pphi20MHz_CKS0_BRR9": 62500,
+    "minimum_BRR_settle_microseconds": 16,
+    "initialization_order": [
+      "SCR=00 before mode/clock changes",
+      "PCCR only SCI2 function bits, preserving documented unrelated bits",
+      "SMR=00; SDCR=F2; BRR=09",
+      "Read SSR and optional RDR drain; clear observed receive/error flags without submitting TDR",
+      "Wait at least one new baud bit interval",
+      "SCR=10, receive-only; transmit remains disabled until a validated response"
+    ],
+    "status_rules": [
+      "TDRE/RDRF/ORER/FER/PER accept zero only after reading that bit1; software cannot set these flags1",
+      "SCR.TE0 forces TDRE/TEND1; receive errors survive RE0",
+      "Writing TDR alone is not a complete transmission trigger",
+      "TDRE read1 -> TDR write -> SSR TDRE0 submits one byte, clears TEND; shift-register load sets TDRE; final character completion sets TEND",
+      "Read SSR.RDRF1 -> read RDR -> clear RDRF; clearing without reading RDR discards current byte",
+      "SSR error bits20/10/08 require visible error handling, not accepting corrupt request bytes",
+      "TEND and MPB are read-only; write must not fabricate either bit"
+    ],
+    "selected_wait_contract": "RK02 bounds TX-ready and final TEND waits to65536 polling iterations with terminal failure. RX idle and partial-frame waits are deliberately unbounded read-only polling; the host deadline and independently verified physical power loss terminate a stalled session. No whole-session wall-clock bound is claimed. Initial16us lower bound follows final instruction count and explicit CPU<=80MHz assumption.",
+    "exit_transmit": "Drain final reply through TEND before intentional SCI quiet state; timeout means reply incomplete, never success.",
+    "response_order": [
+      "SCR20 before any response TDR write; RE0 prevents new receive-start admission",
+      "Read SSR; residual RDRF/ORER/FER/PER mask78 terminates with SCR0 before TDR",
+      "Read TDRE1, write TDR, clear observed TDRE per character",
+      "After final checksum submission, poll TEND within65536 iterations; both buffered and shifting TX must finish",
+      "Write SCR10 only after TEND; accept a new request under receive-only state",
+      "After two passes and canary checks, SCR0 terminal quiet"
+    ],
+    "echo_boundary": "An echo that starts under RE0 is ignored even if its completion would be after RX restoration. A genuinely new delayed start after RE1 is new input and may fail the parser; unbounded physical delay tolerance is not claimed.",
+    "failure_transmit": "Terminal failures may disable TE with an incomplete response. This is not success; host retains partial evidence and does not retry."
+  },
+  "entry": {
+    "stock_rom_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+    "loader_base": "FFFF3000",
+    "loader_entry": "FFFF3004",
+    "conditional_OEM_SP": "FFFFBFA0",
+    "OEM_VBR": "00001F44 from125C/12B2; not reset0",
+    "new_kernel_requirements": [
+      "Establish SR=F0 and private aligned SP before C or stack-consuming calls",
+      "Install fully initialized, four-byte-aligned private VBR table before accepting requests",
+      "No FPU or inherited register/RAM predicates; initialize every private mutable state before reading",
+      "Disable DMAC and on-chip WDT early; do not infer any initial peripheral value from reset defaults",
+      "Only read explicit ROM range0..FFFFF after RAMER and FMATS guards",
+      "Every exception vector used by the design reaches private fail-closed handler; no OEM return/resume"
+    ],
+    "exception_offsets": {
+      "CPU_address_error": "24",
+      "DMA_address_error": "28",
+      "NMI": "2C",
+      "user_break": "30",
+      "FPU_exception": "34",
+      "H_UDI": "38"
+    },
+    "hardware_exception_stack_bytes": 8,
+    "exception_limit": "NMI priority16 cannot be masked by SR.I15. Private handler can reset SP and halt; no claim covers an arbitrarily rapid sequence of NMIs before its first SP-reset instruction.",
+    "no_owned_ROM_needed": true,
+    "no_shared_OEM_RAM_needed": "Private RAM takeover is for a stopped programming session only; it does not preserve running OEM state. Successful restart requires real reset/power restoration, not a jump into clobbered RAM."
+  },
+  "forbidden": {
+    "all_ROM_writes": [
+      "00000000",
+      "00100000"
+    ],
+    "flash_control_all_stores": [
+      "FFFFE800",
+      "FFFFE807"
+    ],
+    "prohibited_system_byte": "FFFFE803 (no reads or writes)",
+    "known_flash_controls": {
+      "FCCS": "FFFFE800",
+      "FPCS": "FFFFE801",
+      "FECS": "FFFFE802",
+      "FKEY": "FFFFE804",
+      "FMATS": "FFFFE805",
+      "FTDAR": "FFFFE806"
+    },
+    "FKEY_forbidden_values": [
+      "A5 download authorization",
+      "5A erase/program authorization"
+    ],
+    "no_external_executable_targets": "No OEM calls, on-chip flash algorithm download, targetsFFFF0010/FFFF0020/FFFF1010/FFFF1020, arbitrary call/poke or code selected by host.",
+    "closed_world_MMIO": "Everything not specifically admitted is unsupported. GPIO PBDR/PDDR/FWE toggles, peripheral output control, MAT writes and RAMER writes are excluded."
+  },
+  "physical_or_entry_assumptions": [
+    "The exact selected ECU supports the fixed stock-loader contract; current-ROM identity is not inferred from a CAL ID alone.",
+    "Stable powered SH7058 with enabled on-chip RAM and compatible clock: Pphi20MHz is inferred from known BRR9/62500 behavior, not measured on this vehicle.",
+    "No asynchronous NMI/reset/address fault corrupts the prefix before private SP/VBR become active.",
+    "No prior or in-flight DMA/other bus master has corrupted upload/stack before DME0 takes effect; the kernel can stop future DMA but cannot undo prior writes.",
+    "External watchdog, power-management IC and board wiring are not controlled or qualified merely by disabling the on-chip WDT. DUAL toggles PBDR bit15; its board role is not proven.",
+    "UART virtual timing, fake provider success and instruction budgets do not prove actual baud/electrical/host timing.",
+    "No autonomous OEM restart. Ignition OFF alone is not yet evidence of ECU supply or RAM loss; verify actual power loss and subsequent reset/OEM identity."
+  ],
+  "physical_operations": 0,
+  "kernel_version": "A2WC511R-RK02",
+  "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+  "preserved_prior_contract": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\ENTRY_PERIPHERAL_CONTRACT.json",
+    "sha256": "4580309cb961130c92c87631f210af3a88c6ab8abb70585eeb5b51c1e3efdb6a",
+    "bytes": 8466
+  },
+  "changed_scope": "SCI receive-only initialization and per-response half-duplex sequencing. Other documented peripheral/entry assumptions retained; prior contract remains unchanged as RK01 evidence.",
+  "final_byte_ranges": {
+    "upload": [
+      "FFFF3000",
+      "FFFF3710"
+    ],
+    "private": [
+      "FFFF3710",
+      "FFFF3730"
+    ],
+    "stack": [
+      "FFFF371C",
+      "FFFF372C"
+    ],
+    "entry": "FFFF3004"
+  },
+  "independent_evidence": [
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\BINARY_REVIEW_rk02_01.json",
+      "sha256": "e422b29cf712ba531facae58e792a7721dab9537b8f582469f1687bed53b4b4b",
+      "bytes": 31922
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\sim\\SELF_ECHO_QUALIFICATION.json",
+      "sha256": "d6937cfb5c1c9c811235972f9db8b0ada4f96ca5e9c9f69ff0a52224d92a19ae",
+      "bytes": 55378
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\build\\ARTIFACT_REVIEW_FINAL.json",
+      "sha256": "030c6fd2d7bfb78fb58042ecf31fad0d80cae1d7ff0cc5292c7dde81279ad912",
+      "bytes": 3901
+    }
+  ]
+}

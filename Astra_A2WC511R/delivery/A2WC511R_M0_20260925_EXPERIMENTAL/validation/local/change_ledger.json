@@ -1,0 +1,115 @@
+{
+  "session_id": "01a0da26-addc-7fe1-84df-8c0baa8174f8",
+  "backups": [
+    {
+      "path": "backups\\run_01a0da26\\idb\\A2WC511R_STOCK_ROMRAIDER.bin",
+      "sha256": "a34c4ce8238bf28bdc18c191bbe73b2179130aa9846e952a6fa332bae442de96",
+      "size": 1048576
+    },
+    {
+      "path": "backups\\run_01a0da26\\idb\\A2WC511R_STOCK_ROMRAIDER.bin.i64",
+      "sha256": "913e1d217cbb0f3707251688b90d02b540333a89aae0c76fcf21bd24f8857e18",
+      "size": 7348537
+    },
+    {
+      "path": "backups\\run_01a0da26\\idb\\A2WC511R_STOCK_ROMRAIDER.bin.id0",
+      "sha256": "47b13710db5bd90644c5e06f4f47aa7c7499ab380b64028eab412d11649254f3",
+      "size": 2940928
+    },
+    {
+      "path": "backups\\run_01a0da26\\idb\\A2WC511R_STOCK_ROMRAIDER.bin.id1",
+      "sha256": "020369d50cfe887ffe8832cfe339c19de1437ec19dc59de79f8e8ad3bf390b96",
+      "size": 4399104
+    },
+    {
+      "path": "backups\\run_01a0da26\\idb\\A2WC511R_STOCK_ROMRAIDER.bin.nam",
+      "sha256": "ac509e7dd6a7875fffeb68b6f1f3a087ea5681597573ca2f401a82e6d1aaa5ae",
+      "size": 16384
+    },
+    {
+      "path": "backups\\run_01a0da26\\idb\\A2WC511R_STOCK_ROMRAIDER.bin.til",
+      "sha256": "513e9d059ab03cfc3088999d32eb2fb26a8a3f338a7f95720e81075256443d4b",
+      "size": 72
+    },
+    {
+      "path": "backups\\run_01a0da26\\state\\CHECKPOINT.json",
+      "sha256": "73ebe97f178ac0cf5fd4f1f7a9001e6f1dc04c959658d4709115a45c080cea0e",
+      "size": 379
+    },
+    {
+      "path": "backups\\run_01a0da26\\state\\CURRENT_STATE.md",
+      "sha256": "279c58d06e2653669b7a34e63e26867d996d1e5740d37e9fb7405ba0906dd147",
+      "size": 3742
+    },
+    {
+      "path": "backups\\run_01a0da26\\state\\DECISIONS.md",
+      "sha256": "78ac32486d28d50fac46216314fb9e971f92bd0db52ec5a2412bcdbc1346d5ad",
+      "size": 1981
+    },
+    {
+      "path": "backups\\run_01a0da26\\state\\ENVIRONMENT_LOCK.json",
+      "sha256": "1825c1471bf2b375ed4c37a7760c598bb9ac0d8f3fcb7de9de640ec070424ea1",
+      "size": 2520
+    },
+    {
+      "path": "backups\\run_01a0da26\\state\\EVIDENCE_MANIFEST.json",
+      "sha256": "aede68561fe797297ffd4d956a7a3a20a0c66b96004662429c636aba5eb49326",
+      "size": 45823
+    },
+    {
+      "path": "backups\\run_01a0da26\\state\\NEXT_ACTIONS.md",
+      "sha256": "3e56e5ca6fcceba92d59991b0c8b2a023db889cf7bc2d74374154309d8da2ca0",
+      "size": 1112
+    },
+    {
+      "path": "backups\\run_01a0da26\\state\\RUN_CONTRACT.md",
+      "sha256": "90a9b45955c6d13c041f342726ade7366470600693b94e2f339446f75040408e",
+      "size": 8419
+    },
+    {
+      "path": "backups\\run_01a0da26\\state\\SESSION_LOG.md",
+      "sha256": "f6c84e8b128f1d650a4bb7a4e4334db8cdfd3416672dd53558397436ec415335",
+      "size": 1788
+    },
+    {
+      "path": "backups\\run_01a0da26\\state\\SYMBOLS.json",
+      "sha256": "5f34c302fc3a53e28d4eceadf8df532fe2525c8a881c2877ae60246eeb9857a9",
+      "size": 28627
+    }
+  ],
+  "changes": [
+    {
+      "kind": "side_by_side_install",
+      "path": "work/ida_env",
+      "details": "Official PyPI ida-mcp20260924.0.3, ida-nexus0.13.0, ida-domain0.5.1, ida-hcli0.26.0; full install log work/ida_install.log. No global IDA/plugin/config replacement."
+    },
+    {
+      "kind": "new_client",
+      "path": "tools/ida_vendor_client.py",
+      "details": "Loopback HTTP MCP transport client; no custom IDA server or ROM writer."
+    },
+    {
+      "kind": "test_correction",
+      "path": "tests/test_handoff.py",
+      "old": "root=Path(td);self.assertEqual(core.resolve_inside(root,'data.txt'),root/'data.txt')",
+      "new": "root=Path(td).resolve();self.assertEqual(core.resolve_inside(root,'data.txt'),root/'data.txt')",
+      "reason": "Windows83 short-name path equivalence; implementation unchanged;64 tests pass."
+    },
+    {
+      "kind": "state_checkpoint",
+      "path": "state",
+      "details": "Original state files backed up; current run appended/updated with exact session and local evidence."
+    },
+    {
+      "kind": "source_build_branch",
+      "path": "work/MerpMod_M0",
+      "details": "Build agent maintains separate MerpMod/SharpTune worktrees and manifests; original source and copied SharpTune trees preserved."
+    },
+    {
+      "kind": "simulator",
+      "path": "C:/Dev/A2WC511R_Sim",
+      "details": "Separate new narrow auditable interpreter; ROM read-only; no global device/provider changes."
+    }
+  ],
+  "physical_actions": []
+}

@@ -1,0 +1,17 @@
+--- C:\Dev\A2WC511R_ReadKernel\evidence\rk02\input_snapshot\host\run.py
++++ C:\Dev\A2WC511R_ReadKernel\host\run.py
+@@ -59,11 +59,14 @@
+         require(raw==machine.images[pass_number]==expected and len(raw)==0x100000,'Every output byte must come from corresponding CPU RX and match fixture')
+         (folder/f'pass{pass_number}.bin').write_bytes(raw)
+     coverage=json.loads((folder/'execution_coverage.json').read_text())
++    require(coverage['identity']['receiver_self_echo'] is True,'RK02 requires explicit ECU receiver self-echo model')
++    require(coverage['identity']['kernel_sha256']==binding['kernel_sha256'],'CPU coverage kernel association')
+     require(coverage['terminal']=='COMPLETE' and len(coverage['exchanges'])==4098,'Actual compiled startup/version/two passes must complete')
+     require(all(item['status']=='PASS' for item in coverage['exchanges']),'Every compiled exchange must pass')
+     return {'status':'PASS_NATIVE_FAKE_COMPILED_KERNEL_TWO_FULL_READS','host_replay':machine.summary(),
+             'native_calls':len(native),'native_ESP_equal_calls':len(native),'CPU_kernel_executed':True,
+             'kernel_terminal':coverage['terminal'],'kernel_exchanges':len(coverage['exchanges']),
++            'receiver_self_echo':True,
+             'fixture_sha256':fixture['sha256'],'full_bytes_per_pass':0x100000,
+             'returned_files':[record(folder/f'pass{i}.bin') for i in (0,1)],
+             'execution_coverage':record(folder/'execution_coverage.json')}

@@ -1,0 +1,49 @@
+
+C:\Dev\SubaruRoms\OEM\A2WC511R.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0000d1ac <.data+0xd1ac>:
+    d1ac:	2f e6       	mov.l	r14,@-r15
+    d1ae:	4f 22       	sts.l	pr,@-r15
+    d1b0:	95 19       	mov.w	0xd1e6,r5	! e0
+    d1b2:	7f fc       	add	#-4,r15
+    d1b4:	d3 0e       	mov.l	0xd1f0,r3	! 2088
+    d1b6:	43 0b       	jsr	@r3
+    d1b8:	64 f3       	mov	r15,r4
+    d1ba:	9e 16       	mov.w	0xd1ea,r14	! f738
+    d1bc:	d3 0e       	mov.l	0xd1f8,r3	! 8000
+    d1be:	62 e1       	mov.w	@r14,r2
+    d1c0:	22 3b       	or	r3,r2
+    d1c2:	94 13       	mov.w	0xd1ec,r4	! 12c
+    d1c4:	d1 0d       	mov.l	0xd1fc,r1	! 2410
+    d1c6:	41 0b       	jsr	@r1
+    d1c8:	2e 21       	mov.w	r2,@r14
+    d1ca:	93 0d       	mov.w	0xd1e8,r3	! 7fff
+    d1cc:	62 e1       	mov.w	@r14,r2
+    d1ce:	22 39       	and	r3,r2
+    d1d0:	94 0c       	mov.w	0xd1ec,r4	! 12c
+    d1d2:	d1 0a       	mov.l	0xd1fc,r1	! 2410
+    d1d4:	41 0b       	jsr	@r1
+    d1d6:	2e 21       	mov.w	r2,@r14
+    d1d8:	d3 06       	mov.l	0xd1f4,r3	! 2098
+    d1da:	43 0b       	jsr	@r3
+    d1dc:	64 f2       	mov.l	@r15,r4
+    d1de:	7f 04       	add	#4,r15
+    d1e0:	4f 26       	lds.l	@r15+,pr
+    d1e2:	00 0b       	rts	
+    d1e4:	6e f6       	mov.l	@r15+,r14
+    d1e6:	00 e0       	.word 0x00e0
+    d1e8:	7f ff       	add	#-1,r15
+    d1ea:	f7 38       	fmov	@r3,fr7
+    d1ec:	01 2c       	mov.b	@(r0,r2),r1
+    d1ee:	ff ff       	.word 0xffff
+    d1f0:	00 00       	.word 0x0000
+    d1f2:	20 88       	tst	r8,r0
+    d1f4:	00 00       	.word 0x0000
+    d1f6:	20 98       	tst	r9,r0
+    d1f8:	00 00       	.word 0x0000
+    d1fa:	80 00       	mov.b	r0,@(0,r0)
+    d1fc:	00 00       	.word 0x0000
+    d1fe:	24 10       	mov.b	r1,@r4

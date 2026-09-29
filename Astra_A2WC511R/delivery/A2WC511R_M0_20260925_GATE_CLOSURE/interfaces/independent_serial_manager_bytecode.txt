@@ -1,0 +1,350 @@
+public final class com.romraider.io.serial.connection.SerialConnectionManager implements com.romraider.io.connection.ConnectionManager {
+  private static final org.apache.log4j.Logger LOGGER;
+
+  private final com.romraider.io.serial.connection.SerialConnection connection;
+
+  private final com.romraider.io.connection.ConnectionProperties connectionProperties;
+
+  private byte[] lastResponse;
+
+  private final long timeout;
+
+  private long readTimeout;
+
+  public com.romraider.io.serial.connection.SerialConnectionManager(java.lang.String, com.romraider.io.connection.ConnectionProperties);
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: aload_1
+       5: ldc           #2                  // String portName
+       7: invokestatic  #3                  // Method com/romraider/util/ParamChecker.checkNotNullOrEmpty:(Ljava/lang/String;Ljava/lang/String;)V
+      10: aload_2
+      11: ldc           #4                  // String connectionProperties
+      13: invokestatic  #5                  // Method com/romraider/util/ParamChecker.checkNotNull:(Ljava/lang/Object;Ljava/lang/String;)V
+      16: aload_0
+      17: aload_2
+      18: putfield      #6                  // Field connectionProperties:Lcom/romraider/io/connection/ConnectionProperties;
+      21: aload_0
+      22: aload_2
+      23: invokeinterface #7,  1            // InterfaceMethod com/romraider/io/connection/ConnectionProperties.getConnectTimeout:()I
+      28: i2l
+      29: putfield      #8                  // Field timeout:J
+      32: aload_0
+      33: aload_0
+      34: getfield      #8                  // Field timeout:J
+      37: putfield      #9                  // Field readTimeout:J
+      40: aload_0
+      41: new           #10                 // class com/romraider/io/serial/connection/SerialConnectionImpl
+      44: dup
+      45: aload_1
+      46: aload_2
+      47: invokespecial #11                 // Method com/romraider/io/serial/connection/SerialConnectionImpl."<init>":(Ljava/lang/String;Lcom/romraider/io/connection/ConnectionProperties;)V
+      50: putfield      #12                 // Field connection:Lcom/romraider/io/serial/connection/SerialConnection;
+      53: return
+
+  public void open(byte[], byte[]);
+    Code:
+       0: return
+
+  public void send(byte[], byte[], com.romraider.logger.ecu.comms.manager.PollingState);
+    Code:
+       0: aload_1
+       1: ldc           #13                 // String request
+       3: invokestatic  #5                  // Method com/romraider/util/ParamChecker.checkNotNull:(Ljava/lang/Object;Ljava/lang/String;)V
+       6: aload_2
+       7: ldc           #14                 // String response
+       9: invokestatic  #5                  // Method com/romraider/util/ParamChecker.checkNotNull:(Ljava/lang/Object;Ljava/lang/String;)V
+      12: aload_3
+      13: ldc           #15                 // String pollState
+      15: invokestatic  #5                  // Method com/romraider/util/ParamChecker.checkNotNull:(Ljava/lang/Object;Ljava/lang/String;)V
+      18: aload_3
+      19: invokeinterface #16,  1           // InterfaceMethod com/romraider/logger/ecu/comms/manager/PollingState.getCurrentState:()Lcom/romraider/logger/ecu/comms/manager/PollingState$State;
+      24: getstatic     #17                 // Field com/romraider/logger/ecu/comms/manager/PollingState$State.STATE_0:Lcom/romraider/logger/ecu/comms/manager/PollingState$State;
+      27: if_acmpne     46
+      30: aload_3
+      31: invokeinterface #18,  1           // InterfaceMethod com/romraider/logger/ecu/comms/manager/PollingState.getLastState:()Lcom/romraider/logger/ecu/comms/manager/PollingState$State;
+      36: getstatic     #19                 // Field com/romraider/logger/ecu/comms/manager/PollingState$State.STATE_1:Lcom/romraider/logger/ecu/comms/manager/PollingState$State;
+      39: if_acmpne     46
+      42: aload_0
+      43: invokevirtual #20                 // Method clearLine:()V
+      46: aload_3
+      47: invokeinterface #16,  1           // InterfaceMethod com/romraider/logger/ecu/comms/manager/PollingState.getCurrentState:()Lcom/romraider/logger/ecu/comms/manager/PollingState$State;
+      52: getstatic     #17                 // Field com/romraider/logger/ecu/comms/manager/PollingState$State.STATE_0:Lcom/romraider/logger/ecu/comms/manager/PollingState$State;
+      55: if_acmpne     77
+      58: aload_0
+      59: getfield      #12                 // Field connection:Lcom/romraider/io/serial/connection/SerialConnection;
+      62: invokeinterface #21,  1           // InterfaceMethod com/romraider/io/serial/connection/SerialConnection.readStaleData:()V
+      67: aload_0
+      68: getfield      #12                 // Field connection:Lcom/romraider/io/serial/connection/SerialConnection;
+      71: aload_1
+      72: invokeinterface #22,  2           // InterfaceMethod com/romraider/io/serial/connection/SerialConnection.write:([B)V
+      77: aload_0
+      78: getfield      #12                 // Field connection:Lcom/romraider/io/serial/connection/SerialConnection;
+      81: invokeinterface #23,  1           // InterfaceMethod com/romraider/io/serial/connection/SerialConnection.available:()I
+      86: aload_2
+      87: arraylength
+      88: if_icmpge     164
+      91: lconst_1
+      92: invokestatic  #24                 // Method com/romraider/util/ThreadUtil.sleep:(J)V
+      95: aload_0
+      96: dup
+      97: getfield      #9                  // Field readTimeout:J
+     100: lconst_1
+     101: lsub
+     102: putfield      #9                  // Field readTimeout:J
+     105: aload_0
+     106: getfield      #9                  // Field readTimeout:J
+     109: lconst_0
+     110: lcmp
+     111: ifgt          77
+     114: aload_0
+     115: getfield      #12                 // Field connection:Lcom/romraider/io/serial/connection/SerialConnection;
+     118: invokeinterface #25,  1           // InterfaceMethod com/romraider/io/serial/connection/SerialConnection.readAvailable:()[B
+     123: astore        4
+     125: getstatic     #26                 // Field LOGGER:Lorg/apache/log4j/Logger;
+     128: invokevirtual #27                 // Method org/apache/log4j/Logger.isDebugEnabled:()Z
+     131: ifeq          163
+     134: getstatic     #26                 // Field LOGGER:Lorg/apache/log4j/Logger;
+     137: new           #28                 // class java/lang/StringBuilder
+     140: dup
+     141: invokespecial #29                 // Method java/lang/StringBuilder."<init>":()V
+     144: ldc           #30                 // String Serial Bad Read response (read timeout):
+     146: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     149: aload         4
+     151: invokestatic  #32                 // Method com/romraider/util/HexUtil.asHex:([B)Ljava/lang/String;
+     154: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     157: invokevirtual #33                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+     160: invokevirtual #34                 // Method org/apache/log4j/Logger.debug:(Ljava/lang/Object;)V
+     163: return
+     164: aload_0
+     165: aload_0
+     166: getfield      #8                  // Field timeout:J
+     169: putfield      #9                  // Field readTimeout:J
+     172: aload_0
+     173: getfield      #12                 // Field connection:Lcom/romraider/io/serial/connection/SerialConnection;
+     176: aload_2
+     177: invokeinterface #35,  2           // InterfaceMethod com/romraider/io/serial/connection/SerialConnection.read:([B)V
+     182: aload_3
+     183: invokeinterface #16,  1           // InterfaceMethod com/romraider/logger/ecu/comms/manager/PollingState.getCurrentState:()Lcom/romraider/logger/ecu/comms/manager/PollingState$State;
+     188: getstatic     #19                 // Field com/romraider/logger/ecu/comms/manager/PollingState$State.STATE_1:Lcom/romraider/logger/ecu/comms/manager/PollingState$State;
+     191: if_acmpne     319
+     194: aload_2
+     195: iconst_0
+     196: baload
+     197: bipush        -128
+     199: if_icmpne     272
+     202: aload_2
+     203: iconst_1
+     204: baload
+     205: bipush        -16
+     207: if_icmpne     272
+     210: aload_2
+     211: iconst_2
+     212: baload
+     213: bipush        16
+     215: if_icmpeq     226
+     218: aload_2
+     219: iconst_2
+     220: baload
+     221: bipush        24
+     223: if_icmpne     272
+     226: aload_2
+     227: iconst_3
+     228: baload
+     229: aload_2
+     230: arraylength
+     231: iconst_5
+     232: isub
+     233: if_icmpne     272
+     236: aload_2
+     237: aload_2
+     238: arraylength
+     239: iconst_1
+     240: isub
+     241: baload
+     242: aload_2
+     243: invokestatic  #36                 // Method com/romraider/io/protocol/ssm/iso9141/SSMChecksumCalculator.calculateChecksum:([B)B
+     246: if_icmpne     272
+     249: aload_0
+     250: aload_2
+     251: arraylength
+     252: newarray       byte
+     254: putfield      #37                 // Field lastResponse:[B
+     257: aload_2
+     258: iconst_0
+     259: aload_0
+     260: getfield      #37                 // Field lastResponse:[B
+     263: iconst_0
+     264: aload_2
+     265: arraylength
+     266: invokestatic  #38                 // Method java/lang/System.arraycopy:(Ljava/lang/Object;ILjava/lang/Object;II)V
+     269: goto          319
+     272: getstatic     #26                 // Field LOGGER:Lorg/apache/log4j/Logger;
+     275: new           #28                 // class java/lang/StringBuilder
+     278: dup
+     279: invokespecial #29                 // Method java/lang/StringBuilder."<init>":()V
+     282: ldc           #39                 // String Serial Bad Data response:
+     284: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     287: aload_2
+     288: invokestatic  #32                 // Method com/romraider/util/HexUtil.asHex:([B)Ljava/lang/String;
+     291: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     294: invokevirtual #33                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+     297: invokevirtual #40                 // Method org/apache/log4j/Logger.error:(Ljava/lang/Object;)V
+     300: aload_0
+     301: getfield      #37                 // Field lastResponse:[B
+     304: iconst_0
+     305: aload_2
+     306: iconst_0
+     307: aload_2
+     308: arraylength
+     309: invokestatic  #38                 // Method java/lang/System.arraycopy:(Ljava/lang/Object;ILjava/lang/Object;II)V
+     312: aload_3
+     313: iconst_1
+     314: invokeinterface #41,  2           // InterfaceMethod com/romraider/logger/ecu/comms/manager/PollingState.setNewQuery:(Z)V
+     319: return
+
+  public byte[] send(byte[]);
+    Code:
+       0: aload_1
+       1: ldc           #42                 // String bytes
+       3: invokestatic  #5                  // Method com/romraider/util/ParamChecker.checkNotNull:(Ljava/lang/Object;Ljava/lang/String;)V
+       6: getstatic     #26                 // Field LOGGER:Lorg/apache/log4j/Logger;
+       9: invokevirtual #43                 // Method org/apache/log4j/Logger.isTraceEnabled:()Z
+      12: ifeq          23
+      15: getstatic     #26                 // Field LOGGER:Lorg/apache/log4j/Logger;
+      18: ldc           #44                 // String Reading stale data
+      20: invokevirtual #45                 // Method org/apache/log4j/Logger.trace:(Ljava/lang/Object;)V
+      23: aload_0
+      24: getfield      #12                 // Field connection:Lcom/romraider/io/serial/connection/SerialConnection;
+      27: invokeinterface #21,  1           // InterfaceMethod com/romraider/io/serial/connection/SerialConnection.readStaleData:()V
+      32: getstatic     #26                 // Field LOGGER:Lorg/apache/log4j/Logger;
+      35: invokevirtual #43                 // Method org/apache/log4j/Logger.isTraceEnabled:()Z
+      38: ifeq          49
+      41: getstatic     #26                 // Field LOGGER:Lorg/apache/log4j/Logger;
+      44: ldc           #46                 // String Writing bytes
+      46: invokevirtual #45                 // Method org/apache/log4j/Logger.trace:(Ljava/lang/Object;)V
+      49: aload_0
+      50: getfield      #12                 // Field connection:Lcom/romraider/io/serial/connection/SerialConnection;
+      53: aload_1
+      54: invokeinterface #22,  2           // InterfaceMethod com/romraider/io/serial/connection/SerialConnection.write:([B)V
+      59: iconst_0
+      60: istore_2
+      61: iconst_1
+      62: istore_3
+      63: invokestatic  #47                 // Method java/lang/System.currentTimeMillis:()J
+      66: lstore        4
+      68: iload_3
+      69: ifeq          129
+      72: ldc2_w        #48                 // long 2l
+      75: invokestatic  #24                 // Method com/romraider/util/ThreadUtil.sleep:(J)V
+      78: aload_0
+      79: getfield      #12                 // Field connection:Lcom/romraider/io/serial/connection/SerialConnection;
+      82: invokeinterface #23,  1           // InterfaceMethod com/romraider/io/serial/connection/SerialConnection.available:()I
+      87: iload_2
+      88: if_icmpeq     106
+      91: aload_0
+      92: getfield      #12                 // Field connection:Lcom/romraider/io/serial/connection/SerialConnection;
+      95: invokeinterface #23,  1           // InterfaceMethod com/romraider/io/serial/connection/SerialConnection.available:()I
+     100: istore_2
+     101: invokestatic  #47                 // Method java/lang/System.currentTimeMillis:()J
+     104: lstore        4
+     106: invokestatic  #47                 // Method java/lang/System.currentTimeMillis:()J
+     109: lload         4
+     111: lsub
+     112: aload_0
+     113: getfield      #8                  // Field timeout:J
+     116: lcmp
+     117: ifge          124
+     120: iconst_1
+     121: goto          125
+     124: iconst_0
+     125: istore_3
+     126: goto          68
+     129: aload_0
+     130: getfield      #12                 // Field connection:Lcom/romraider/io/serial/connection/SerialConnection;
+     133: invokeinterface #25,  1           // InterfaceMethod com/romraider/io/serial/connection/SerialConnection.readAvailable:()[B
+     138: areturn
+
+  public void clearLine();
+    Code:
+       0: sipush        10000
+       3: aload_0
+       4: getfield      #6                  // Field connectionProperties:Lcom/romraider/io/connection/ConnectionProperties;
+       7: invokeinterface #50,  1           // InterfaceMethod com/romraider/io/connection/ConnectionProperties.getBaudRate:()I
+      12: idiv
+      13: aload_0
+      14: getfield      #6                  // Field connectionProperties:Lcom/romraider/io/connection/ConnectionProperties;
+      17: invokeinterface #51,  1           // InterfaceMethod com/romraider/io/connection/ConnectionProperties.getDataBits:()I
+      22: aload_0
+      23: getfield      #6                  // Field connectionProperties:Lcom/romraider/io/connection/ConnectionProperties;
+      26: invokeinterface #52,  1           // InterfaceMethod com/romraider/io/connection/ConnectionProperties.getStopBits:()I
+      31: iadd
+      32: aload_0
+      33: getfield      #6                  // Field connectionProperties:Lcom/romraider/io/connection/ConnectionProperties;
+      36: invokeinterface #53,  1           // InterfaceMethod com/romraider/io/connection/ConnectionProperties.getParity:()I
+      41: iadd
+      42: iconst_1
+      43: iadd
+      44: imul
+      45: istore_1
+      46: getstatic     #26                 // Field LOGGER:Lorg/apache/log4j/Logger;
+      49: invokevirtual #27                 // Method org/apache/log4j/Logger.isDebugEnabled:()Z
+      52: ifeq          85
+      55: getstatic     #26                 // Field LOGGER:Lorg/apache/log4j/Logger;
+      58: new           #28                 // class java/lang/StringBuilder
+      61: dup
+      62: invokespecial #29                 // Method java/lang/StringBuilder."<init>":()V
+      65: ldc           #54                 // String Serial sending line break of duration:
+      67: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      70: iload_1
+      71: invokevirtual #55                 // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+      74: ldc           #56                 // String  msec
+      76: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      79: invokevirtual #33                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      82: invokevirtual #34                 // Method org/apache/log4j/Logger.debug:(Ljava/lang/Object;)V
+      85: aload_0
+      86: getfield      #12                 // Field connection:Lcom/romraider/io/serial/connection/SerialConnection;
+      89: iload_1
+      90: invokeinterface #57,  2           // InterfaceMethod com/romraider/io/serial/connection/SerialConnection.sendBreak:(I)V
+      95: ldc2_w        #48                 // long 2l
+      98: invokestatic  #24                 // Method com/romraider/util/ThreadUtil.sleep:(J)V
+     101: aload_0
+     102: getfield      #12                 // Field connection:Lcom/romraider/io/serial/connection/SerialConnection;
+     105: invokeinterface #25,  1           // InterfaceMethod com/romraider/io/serial/connection/SerialConnection.readAvailable:()[B
+     110: astore_2
+     111: getstatic     #26                 // Field LOGGER:Lorg/apache/log4j/Logger;
+     114: invokevirtual #27                 // Method org/apache/log4j/Logger.isDebugEnabled:()Z
+     117: ifeq          148
+     120: getstatic     #26                 // Field LOGGER:Lorg/apache/log4j/Logger;
+     123: new           #28                 // class java/lang/StringBuilder
+     126: dup
+     127: invokespecial #29                 // Method java/lang/StringBuilder."<init>":()V
+     130: ldc           #58                 // String Serial clearing line (stale data):
+     132: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     135: aload_2
+     136: invokestatic  #32                 // Method com/romraider/util/HexUtil.asHex:([B)Ljava/lang/String;
+     139: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     142: invokevirtual #33                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+     145: invokevirtual #34                 // Method org/apache/log4j/Logger.debug:(Ljava/lang/Object;)V
+     148: ldc2_w        #59                 // long 10l
+     151: invokestatic  #24                 // Method com/romraider/util/ThreadUtil.sleep:(J)V
+     154: aload_0
+     155: getfield      #12                 // Field connection:Lcom/romraider/io/serial/connection/SerialConnection;
+     158: invokeinterface #23,  1           // InterfaceMethod com/romraider/io/serial/connection/SerialConnection.available:()I
+     163: ifgt          95
+     166: return
+
+  public void close();
+    Code:
+       0: aload_0
+       1: getfield      #12                 // Field connection:Lcom/romraider/io/serial/connection/SerialConnection;
+       4: invokeinterface #61,  1           // InterfaceMethod com/romraider/io/serial/connection/SerialConnection.close:()V
+       9: return
+
+  static {};
+    Code:
+       0: ldc           #62                 // class com/romraider/io/serial/connection/SerialConnectionManager
+       2: invokestatic  #63                 // Method org/apache/log4j/Logger.getLogger:(Ljava/lang/Class;)Lorg/apache/log4j/Logger;
+       5: putstatic     #26                 // Field LOGGER:Lorg/apache/log4j/Logger;
+       8: return
+}

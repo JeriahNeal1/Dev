@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "status": "PASS",
+  "classification": "SYNTHETIC_FINALIZER_FILE_AND_READ_RACE_TESTS_ONLY",
+  "current_finalizer": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\finalize.py",
+    "sha256": "b55d0c85e6f3e6026a12c1360a77ad8bac892ed16891e69ddef4b18cfc1666ef",
+    "bytes": 9782
+  },
+  "source": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\sim\\finalizer_review\\retest_files.py",
+    "sha256": "42749a939eebda0d575ea5f81060ca3ffb1c8a1887c279c3c99bfef79b37199b",
+    "bytes": 3635
+  },
+  "cases": [
+    {
+      "case": "partial_raw_pass",
+      "status": "PASS",
+      "outcome": "REJECTED_BEFORE_PUBLICATION",
+      "reason": "Raw file not exactly reconstructed from actual RX"
+    },
+    {
+      "case": "wrong_raw_pass",
+      "status": "PASS",
+      "outcome": "REJECTED_BEFORE_PUBLICATION",
+      "reason": "Raw file not exactly reconstructed from actual RX"
+    },
+    {
+      "case": "wrong_capture_executable",
+      "status": "PASS",
+      "outcome": "REJECTED_BEFORE_PUBLICATION",
+      "reason": "Capture executable differs from fixed release"
+    },
+    {
+      "case": "journal_changed_before_publication",
+      "status": "PASS",
+      "outcome": "REJECTED_BEFORE_PUBLICATION",
+      "reason": "Capture input changed during validation: native_api.jsonl"
+    },
+    {
+      "case": "mutation_after_prepublication_check",
+      "status": "PASS",
+      "outcome": "REPORT_RETAINS_EXACT_PREVIOUSLY_VALIDATED_HASH_NOT_REPLACEMENT_HASH",
+      "reported_journal": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\sim\\finalizer_review\\SYNTHETIC_LATE_RACE_02\\native_api.jsonl",
+        "sha256": "81b5525afe7278edbdcd70a9cfcf3d00bab324be7b5006a3f97ea7f7b183fb37",
+        "bytes": 7138507
+      },
+      "later_source": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\sim\\finalizer_review\\SYNTHETIC_LATE_RACE_02\\native_api.jsonl",
+        "sha256": "dc047cf499a8358727a2648f220d76ed80b635f23a30484347f673bd36707465",
+        "bytes": 37
+      },
+      "scope": "Later alteration is detected by downstream hash verification; no claim files cannot change after checking."
+    }
+  ],
+  "physical_operations": 0,
+  "provider_loaded": false,
+  "not_evidence_of": [
+    "native04 execution",
+    "physical acquisition",
+    "current ECU ROM"
+  ]
+}

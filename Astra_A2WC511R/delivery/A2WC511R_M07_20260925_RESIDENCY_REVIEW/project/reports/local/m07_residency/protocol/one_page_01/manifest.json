@@ -1,0 +1,76 @@
+{
+  "status": "RESEARCH_PAYLOAD_NOT_OWNERSHIP_APPROVED",
+  "bytes": 100,
+  "VMA": 17060,
+  "no_persistent_ram": true,
+  "added_stack_bytes": 8,
+  "no_refill_hook": true,
+  "request_without_checksum_hex": "8010F014BE10FF4C75FF4C8DFF4CA1FF4C50FF4BC1FF4BC2",
+  "response_opcode": 252,
+  "version": 1,
+  "page": 0,
+  "raw_response_bytes": 6,
+  "control_flow_contract": "Only OEM default484B0, T=0, R13=request,R14=flags,R12=len,R11=response;R2/R3 dead until484BC/C0",
+  "commands": [
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-as.exe",
+        "-big",
+        "-renesas",
+        "--isa=sh2e",
+        "C:\\Dev\\Astra_A2WC511R\\work\\M07\\protocol\\one_page.s",
+        "-o",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\protocol\\one_page_01\\payload.o"
+      ],
+      "exit": 0
+    },
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-ld.exe",
+        "-EB",
+        "-T",
+        "C:\\Dev\\Astra_A2WC511R\\work\\M07\\protocol\\one_page.ld",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\protocol\\one_page_01\\payload.o",
+        "-o",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\protocol\\one_page_01\\payload.elf"
+      ],
+      "exit": 0
+    },
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-objcopy.exe",
+        "-O",
+        "binary",
+        "-j",
+        ".m07",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\protocol\\one_page_01\\payload.elf",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\protocol\\one_page_01\\payload.bin"
+      ],
+      "exit": 0
+    },
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-objdump.exe",
+        "-d",
+        "-t",
+        "-h",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\protocol\\one_page_01\\payload.elf"
+      ],
+      "exit": 0
+    }
+  ],
+  "sources": {
+    "build_one_page.py": "dfc352b318227149c341ec40849189b698948224822c60ee78bee9bd9af9ef65",
+    "one_page.ld": "f4d76c91f11ce788786dec59e344c72fe80d70511e04ebe31eb5d5c9ed7925b0",
+    "one_page.s": "a10537057faca962ed71931a33580afdde291f35df6bd3819035cdb885928385"
+  },
+  "artifacts": {
+    "assemble.log": "89f995fa602e45157ab35d6f55e581ca4254b6e0de701df0b9c48d2c8db1f579",
+    "disassembly.log": "7e3609a31d4641dbf2c67020da8b642224279c3d0b26955bcf0303802a0aeeb4",
+    "extract.log": "cec4db548c855f3465dac930ad1d889795783419142cfec5dc34d741766f227a",
+    "link.log": "11e45e486cf188e3ef2cc3de9aeda21e6adfead8c1ed1e01035c34217b901048",
+    "payload.bin": "99fc9436af0c418bf07d61f135048508f32c8842666c115423badaa2e39214fc",
+    "payload.elf": "84d1dca35bc0cb60274b56d47f222f0cbc5a0646da024aaa4ba68a4523b1d32e",
+    "payload.o": "0c3daee336c40d76c4ad58927308ddbe993124169ac568a50f0a076ec206db72"
+  }
+}

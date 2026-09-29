@@ -1,0 +1,828 @@
+{
+  "classification": "BOUNDED_STATIC_TARGET_DOMAIN_CLOSURE_NOT_GLOBAL_OWNERSHIP",
+  "stock_rom_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+  "no_simulation_scenarios": true,
+  "descriptor_callback": {
+    "site": "0000DE3E",
+    "bounded_literal_caller_contract": "PASS",
+    "complete_domain": "FAIL",
+    "raw_PC_relative_load_count": 33,
+    "all_aligned_literal_pool_count": 16,
+    "callers": [
+      {
+        "load_pc": "0000D538",
+        "literal_pool": "0000D644",
+        "transfer_pc": "0000D540",
+        "transfer": "JSR",
+        "selector": 1,
+        "index": 6,
+        "selector_definitions": [
+          "0000D542"
+        ],
+        "index_definitions": [
+          "0000D536"
+        ],
+        "local_slice_start": "0000D536",
+        "local_slice_hex": "e506d2427ffc2f4266f3420be401",
+        "descriptor": "000102A0",
+        "descriptor_hex": "00030000000067c0",
+        "argument_words": 0,
+        "callback": null,
+        "noncallback_path": "DC3C",
+        "encoded_external_direct_entries_to_slice": []
+      },
+      {
+        "load_pc": "0000D550",
+        "literal_pool": "0000D644",
+        "transfer_pc": "0000D558",
+        "transfer": "JSR",
+        "selector": 1,
+        "index": 7,
+        "selector_definitions": [
+          "0000D55A"
+        ],
+        "index_definitions": [
+          "0000D54E"
+        ],
+        "local_slice_start": "0000D54E",
+        "local_slice_hex": "e507d23c7ffc2f4266f3420be401",
+        "descriptor": "000102A8",
+        "descriptor_hex": "00030000000067c6",
+        "argument_words": 0,
+        "callback": null,
+        "noncallback_path": "DC3C",
+        "encoded_external_direct_entries_to_slice": []
+      },
+      {
+        "load_pc": "0000D568",
+        "literal_pool": "0000D644",
+        "transfer_pc": "0000D570",
+        "transfer": "JSR",
+        "selector": 1,
+        "index": 4,
+        "selector_definitions": [
+          "0000D572"
+        ],
+        "index_definitions": [
+          "0000D566"
+        ],
+        "local_slice_start": "0000D566",
+        "local_slice_hex": "e504d2367ffc2f4266f3420be401",
+        "descriptor": "00010290",
+        "descriptor_hex": "000200000000677e",
+        "argument_words": 0,
+        "callback": null,
+        "noncallback_path": "DC3C",
+        "encoded_external_direct_entries_to_slice": []
+      },
+      {
+        "load_pc": "0000D580",
+        "literal_pool": "0000D644",
+        "transfer_pc": "0000D588",
+        "transfer": "JSR",
+        "selector": 1,
+        "index": 5,
+        "selector_definitions": [
+          "0000D58A"
+        ],
+        "index_definitions": [
+          "0000D57E"
+        ],
+        "local_slice_start": "0000D57E",
+        "local_slice_hex": "e505d2307ffc2f4266f3420be401",
+        "descriptor": "00010298",
+        "descriptor_hex": "0000000100006798",
+        "argument_words": 1,
+        "callback": null,
+        "noncallback_path": "DC3C",
+        "encoded_external_direct_entries_to_slice": []
+      },
+      {
+        "load_pc": "0000D598",
+        "literal_pool": "0000D644",
+        "transfer_pc": "0000D5A0",
+        "transfer": "JSR",
+        "selector": 1,
+        "index": 8,
+        "selector_definitions": [
+          "0000D5A2"
+        ],
+        "index_definitions": [
+          "0000D596"
+        ],
+        "local_slice_start": "0000D596",
+        "local_slice_hex": "e508d22a7ffc2f4266f3420be401",
+        "descriptor": "000102B0",
+        "descriptor_hex": "000200010001299a",
+        "argument_words": 1,
+        "callback": null,
+        "noncallback_path": "DC3C",
+        "encoded_external_direct_entries_to_slice": []
+      },
+      {
+        "load_pc": "0000D5B0",
+        "literal_pool": "0000D644",
+        "transfer_pc": "0000D5B8",
+        "transfer": "JSR",
+        "selector": 1,
+        "index": 9,
+        "selector_definitions": [
+          "0000D5BA"
+        ],
+        "index_definitions": [
+          "0000D5AE"
+        ],
+        "local_slice_start": "0000D5AE",
+        "local_slice_hex": "e509d2247ffc2f4266f3420be401",
+        "descriptor": "000102B8",
+        "descriptor_hex": "0002000000012986",
+        "argument_words": 0,
+        "callback": null,
+        "noncallback_path": "DC3C",
+        "encoded_external_direct_entries_to_slice": []
+      },
+      {
+        "load_pc": "0000D5D0",
+        "literal_pool": "0000D644",
+        "transfer_pc": "0000D5D8",
+        "transfer": "JSR",
+        "selector": 1,
+        "index": 0,
+        "selector_definitions": [
+          "0000D5DA"
+        ],
+        "index_definitions": [
+          "0000D5CE"
+        ],
+        "local_slice_start": "0000D5CE",
+        "local_slice_hex": "e500d21c7ffc2f4266f3420be401",
+        "descriptor": "00010270",
+        "descriptor_hex": "0000000100006756",
+        "argument_words": 1,
+        "callback": null,
+        "noncallback_path": "DC3C",
+        "encoded_external_direct_entries_to_slice": []
+      },
+      {
+        "load_pc": "0000D5E8",
+        "literal_pool": "0000D644",
+        "transfer_pc": "0000D5F0",
+        "transfer": "JSR",
+        "selector": 1,
+        "index": 1,
+        "selector_definitions": [
+          "0000D5E6",
+          "0000D5F2"
+        ],
+        "index_definitions": [
+          "0000D5E6"
+        ],
+        "local_slice_start": "0000D5E6",
+        "local_slice_hex": "e501d2167ffc2f4266f3420b6453",
+        "descriptor": "00010278",
+        "descriptor_hex": "0001000100006760",
+        "argument_words": 1,
+        "callback": null,
+        "noncallback_path": "DC3C",
+        "encoded_external_direct_entries_to_slice": []
+      },
+      {
+        "load_pc": "0000D600",
+        "literal_pool": "0000D644",
+        "transfer_pc": "0000D608",
+        "transfer": "JSR",
+        "selector": 1,
+        "index": 2,
+        "selector_definitions": [
+          "0000D60A"
+        ],
+        "index_definitions": [
+          "0000D5FE"
+        ],
+        "local_slice_start": "0000D5FE",
+        "local_slice_hex": "e502d2107ffc2f4266f3420be401",
+        "descriptor": "00010280",
+        "descriptor_hex": "000200010000676a",
+        "argument_words": 1,
+        "callback": null,
+        "noncallback_path": "DC3C",
+        "encoded_external_direct_entries_to_slice": []
+      },
+      {
+        "load_pc": "0000D618",
+        "literal_pool": "0000D644",
+        "transfer_pc": "0000D620",
+        "transfer": "JSR",
+        "selector": 1,
+        "index": 3,
+        "selector_definitions": [
+          "0000D622"
+        ],
+        "index_definitions": [
+          "0000D616"
+        ],
+        "local_slice_start": "0000D616",
+        "local_slice_hex": "e503d20a7ffc2f4266f3420be401",
+        "descriptor": "00010288",
+        "descriptor_hex": "0003000100006774",
+        "argument_words": 1,
+        "callback": null,
+        "noncallback_path": "DC3C",
+        "encoded_external_direct_entries_to_slice": []
+      },
+      {
+        "load_pc": "00025188",
+        "literal_pool": "000252A8",
+        "transfer_pc": "00025190",
+        "transfer": "JSR",
+        "selector": 0,
+        "index": 2,
+        "selector_definitions": [
+          "00025186",
+          "00025192"
+        ],
+        "index_definitions": [
+          "0002518E"
+        ],
+        "local_slice_start": "00025186",
+        "local_slice_hex": "e000d34766f32f02e502430b6403",
+        "descriptor": "00010310",
+        "descriptor_hex": "ffff0000000129d4",
+        "argument_words": 0,
+        "callback": "000129D4",
+        "noncallback_path": null,
+        "encoded_external_direct_entries_to_slice": []
+      },
+      {
+        "load_pc": "000251B8",
+        "literal_pool": "000252A8",
+        "transfer_pc": "000251C2",
+        "transfer": "JSR",
+        "selector": 0,
+        "index": 3,
+        "selector_definitions": [
+          "000251BA",
+          "000251C4"
+        ],
+        "index_definitions": [
+          "000251C0"
+        ],
+        "local_slice_start": "000251B8",
+        "local_slice_hex": "d33be2002f2266f3e503430b6423",
+        "descriptor": "00010318",
+        "descriptor_hex": "ffff0000000129da",
+        "argument_words": 0,
+        "callback": "000129DA",
+        "noncallback_path": null,
+        "encoded_external_direct_entries_to_slice": []
+      },
+      {
+        "load_pc": "000270F0",
+        "literal_pool": "00027278",
+        "transfer_pc": "000270F6",
+        "transfer": "JSR",
+        "selector": 0,
+        "index": 2,
+        "selector_definitions": [
+          "000270F8"
+        ],
+        "index_definitions": [
+          "000270F2"
+        ],
+        "local_slice_start": "000270F0",
+        "local_slice_hex": "d361e5022fc2430be400",
+        "descriptor": "00010310",
+        "descriptor_hex": "ffff0000000129d4",
+        "argument_words": 0,
+        "callback": "000129D4",
+        "noncallback_path": null,
+        "encoded_external_direct_entries_to_slice": []
+      },
+      {
+        "load_pc": "000271E4",
+        "literal_pool": "00027278",
+        "transfer_pc": "000271EA",
+        "transfer": "JSR",
+        "selector": 0,
+        "index": 3,
+        "selector_definitions": [
+          "000271EC"
+        ],
+        "index_definitions": [
+          "000271E6"
+        ],
+        "local_slice_start": "000271E4",
+        "local_slice_hex": "d224e5032fc2420be400",
+        "descriptor": "00010318",
+        "descriptor_hex": "ffff0000000129da",
+        "argument_words": 0,
+        "callback": "000129DA",
+        "noncallback_path": null,
+        "encoded_external_direct_entries_to_slice": []
+      },
+      {
+        "load_pc": "00027F7C",
+        "literal_pool": "00028048",
+        "transfer_pc": "00027F80",
+        "transfer": "JSR",
+        "selector": 0,
+        "index": 2,
+        "selector_definitions": [
+          "00027F82"
+        ],
+        "index_definitions": [
+          "00027F7E"
+        ],
+        "local_slice_start": "00027F7C",
+        "local_slice_hex": "d332e502430be400",
+        "descriptor": "00010310",
+        "descriptor_hex": "ffff0000000129d4",
+        "argument_words": 0,
+        "callback": "000129D4",
+        "noncallback_path": null,
+        "encoded_external_direct_entries_to_slice": []
+      },
+      {
+        "load_pc": "000280DC",
+        "literal_pool": "00028188",
+        "transfer_pc": "000280E0",
+        "transfer": "JSR",
+        "selector": 0,
+        "index": 3,
+        "selector_definitions": [
+          "000280E2"
+        ],
+        "index_definitions": [
+          "000280DE"
+        ],
+        "local_slice_start": "000280DC",
+        "local_slice_hex": "d32ae503430be400",
+        "descriptor": "00010318",
+        "descriptor_hex": "ffff0000000129da",
+        "argument_words": 0,
+        "callback": "000129DA",
+        "noncallback_path": null,
+        "encoded_external_direct_entries_to_slice": []
+      },
+      {
+        "load_pc": "00029478",
+        "literal_pool": "000295A8",
+        "transfer_pc": "0002947E",
+        "transfer": "JSR",
+        "selector": 0,
+        "index": 2,
+        "selector_definitions": [
+          "00029480"
+        ],
+        "index_definitions": [
+          "0002947A"
+        ],
+        "local_slice_start": "00029478",
+        "local_slice_hex": "d34be5022fb2430be400",
+        "descriptor": "00010310",
+        "descriptor_hex": "ffff0000000129d4",
+        "argument_words": 0,
+        "callback": "000129D4",
+        "noncallback_path": null,
+        "encoded_external_direct_entries_to_slice": []
+      },
+      {
+        "load_pc": "000294A4",
+        "literal_pool": "000295A8",
+        "transfer_pc": "000294A8",
+        "transfer": "JSR",
+        "selector": 0,
+        "index": 3,
+        "selector_definitions": [
+          "000294AA"
+        ],
+        "index_definitions": [
+          "000294A6"
+        ],
+        "local_slice_start": "000294A4",
+        "local_slice_hex": "d340e503430be400",
+        "descriptor": "00010318",
+        "descriptor_hex": "ffff0000000129da",
+        "argument_words": 0,
+        "callback": "000129DA",
+        "noncallback_path": null,
+        "encoded_external_direct_entries_to_slice": []
+      },
+      {
+        "load_pc": "00029B60",
+        "literal_pool": "00029C2C",
+        "transfer_pc": "00029B68",
+        "transfer": "JSR",
+        "selector": 0,
+        "index": 4,
+        "selector_definitions": [
+          "00029B6A"
+        ],
+        "index_definitions": [
+          "00029B5E"
+        ],
+        "local_slice_start": "00029B5E",
+        "local_slice_hex": "e504d332ffd2ff42fdfa430be400",
+        "descriptor": "00010320",
+        "descriptor_hex": "ffff0001000129e0",
+        "argument_words": 1,
+        "callback": "000129E0",
+        "noncallback_path": null,
+        "encoded_external_direct_entries_to_slice": []
+      },
+      {
+        "load_pc": "000309D4",
+        "literal_pool": "00030B98",
+        "transfer_pc": "000309E8",
+        "transfer": "JSR",
+        "selector": 0,
+        "index": 4,
+        "selector_definitions": [
+          "000309EA"
+        ],
+        "index_definitions": [
+          "000309D2"
+        ],
+        "local_slice_start": "000309D2",
+        "local_slice_hex": "e504d1702f02d46cd36dd26d6643f338f43af3f0f23a410be400",
+        "descriptor": "00010320",
+        "descriptor_hex": "ffff0001000129e0",
+        "argument_words": 1,
+        "callback": "000129E0",
+        "noncallback_path": null,
+        "encoded_external_direct_entries_to_slice": []
+      },
+      {
+        "load_pc": "00030B04",
+        "literal_pool": "00030B98",
+        "transfer_pc": "00030B16",
+        "transfer": "JSR",
+        "selector": 0,
+        "index": 4,
+        "selector_definitions": [
+          "00030B18"
+        ],
+        "index_definitions": [
+          "00030B02"
+        ],
+        "local_slice_start": "00030B02",
+        "local_slice_hex": "e504d224d43bf3b86643d33af23cf43af2c0f32a420be400",
+        "descriptor": "00010320",
+        "descriptor_hex": "ffff0001000129e0",
+        "argument_words": 1,
+        "callback": "000129E0",
+        "noncallback_path": null,
+        "encoded_external_direct_entries_to_slice": []
+      },
+      {
+        "load_pc": "00046EE4",
+        "literal_pool": "00046F5C",
+        "transfer_pc": "00046EE8",
+        "transfer": "JSR",
+        "selector": 0,
+        "index": 2,
+        "selector_definitions": [
+          "00046EEA"
+        ],
+        "index_definitions": [
+          "00046EE6"
+        ],
+        "local_slice_start": "00046EE4",
+        "local_slice_hex": "d31de502430be400",
+        "descriptor": "00010310",
+        "descriptor_hex": "ffff0000000129d4",
+        "argument_words": 0,
+        "callback": "000129D4",
+        "noncallback_path": null,
+        "encoded_external_direct_entries_to_slice": []
+      },
+      {
+        "load_pc": "00046F14",
+        "literal_pool": "00046F5C",
+        "transfer_pc": "00046F18",
+        "transfer": "JSR",
+        "selector": 0,
+        "index": 3,
+        "selector_definitions": [
+          "00046F1A"
+        ],
+        "index_definitions": [
+          "00046F16"
+        ],
+        "local_slice_start": "00046F14",
+        "local_slice_hex": "d311e503430be400",
+        "descriptor": "00010318",
+        "descriptor_hex": "ffff0000000129da",
+        "argument_words": 0,
+        "callback": "000129DA",
+        "noncallback_path": null,
+        "encoded_external_direct_entries_to_slice": []
+      },
+      {
+        "load_pc": "00046FDE",
+        "literal_pool": "0004707C",
+        "transfer_pc": "00046FE0",
+        "transfer": "JSR",
+        "selector": 0,
+        "index": 2,
+        "selector_definitions": [
+          "00046FD6",
+          "00046FDC"
+        ],
+        "index_definitions": [
+          "00046FE2"
+        ],
+        "local_slice_start": "00046FD6",
+        "local_slice_hex": "e3002f3266f36433d327430be502",
+        "descriptor": "00010310",
+        "descriptor_hex": "ffff0000000129d4",
+        "argument_words": 0,
+        "callback": "000129D4",
+        "noncallback_path": null,
+        "encoded_external_direct_entries_to_slice": []
+      },
+      {
+        "load_pc": "0004700A",
+        "literal_pool": "0004707C",
+        "transfer_pc": "0004700C",
+        "transfer": "JSR",
+        "selector": 0,
+        "index": 3,
+        "selector_definitions": [
+          "00047002",
+          "00047008"
+        ],
+        "index_definitions": [
+          "0004700E"
+        ],
+        "local_slice_start": "00047002",
+        "local_slice_hex": "e3002f3266f36433d31c430be503",
+        "descriptor": "00010318",
+        "descriptor_hex": "ffff0000000129da",
+        "argument_words": 0,
+        "callback": "000129DA",
+        "noncallback_path": null,
+        "encoded_external_direct_entries_to_slice": []
+      },
+      {
+        "load_pc": "0004B0E4",
+        "literal_pool": "0004B19C",
+        "transfer_pc": "0004B0EE",
+        "transfer": "JSR",
+        "selector": 0,
+        "index": 2,
+        "selector_definitions": [
+          "0004B0E2",
+          "0004B0F0"
+        ],
+        "index_definitions": [
+          "0004B0EA"
+        ],
+        "local_slice_start": "0004B0E2",
+        "local_slice_hex": "e100d32d66f31f15e5027614430b6413",
+        "descriptor": "00010310",
+        "descriptor_hex": "ffff0000000129d4",
+        "argument_words": 0,
+        "callback": "000129D4",
+        "noncallback_path": null,
+        "encoded_external_direct_entries_to_slice": []
+      },
+      {
+        "load_pc": "0004B118",
+        "literal_pool": "0004B19C",
+        "transfer_pc": "0004B122",
+        "transfer": "JSR",
+        "selector": 0,
+        "index": 3,
+        "selector_definitions": [
+          "0004B116",
+          "0004B124"
+        ],
+        "index_definitions": [
+          "0004B11E"
+        ],
+        "local_slice_start": "0004B116",
+        "local_slice_hex": "e200d32066f31f25e5037614430b6423",
+        "descriptor": "00010318",
+        "descriptor_hex": "ffff0000000129da",
+        "argument_words": 0,
+        "callback": "000129DA",
+        "noncallback_path": null,
+        "encoded_external_direct_entries_to_slice": []
+      },
+      {
+        "load_pc": "00071CA8",
+        "literal_pool": "00071CF4",
+        "transfer_pc": "00071CAA",
+        "transfer": "JSR",
+        "selector": 0,
+        "index": 1,
+        "selector_definitions": [
+          "00071CAC"
+        ],
+        "index_definitions": [
+          "00071C9A",
+          "00071CA6"
+        ],
+        "local_slice_start": "00071C9A",
+        "local_slice_hex": "e201d314e104232066f32f126523d212420be400",
+        "descriptor": "00010308",
+        "descriptor_hex": "000300010007a2d0",
+        "argument_words": 1,
+        "callback": null,
+        "noncallback_path": "DC3C",
+        "encoded_external_direct_entries_to_slice": []
+      },
+      {
+        "load_pc": "00075E64",
+        "literal_pool": "00075EB4",
+        "transfer_pc": "00075E68",
+        "transfer": "JSR",
+        "selector": 2,
+        "index": 0,
+        "selector_definitions": [
+          "00075E6A"
+        ],
+        "index_definitions": [
+          "00075E66"
+        ],
+        "local_slice_start": "00075E64",
+        "local_slice_hex": "d213e500420be402",
+        "descriptor": "000748FC",
+        "descriptor_hex": "00020003000762b0",
+        "argument_words": 3,
+        "callback": null,
+        "noncallback_path": "DC3C",
+        "encoded_external_direct_entries_to_slice": []
+      },
+      {
+        "load_pc": "00076388",
+        "literal_pool": "000763A0",
+        "transfer_pc": "0007638E",
+        "transfer": "JMP",
+        "selector": 2,
+        "index": 1,
+        "selector_definitions": [
+          "0007638C"
+        ],
+        "index_definitions": [
+          "0007638A"
+        ],
+        "local_slice_start": "00076388",
+        "local_slice_hex": "d305e501e402432b7f04",
+        "descriptor": "00074904",
+        "descriptor_hex": "0001000400075bb0",
+        "argument_words": 4,
+        "callback": null,
+        "noncallback_path": "DC3C",
+        "encoded_external_direct_entries_to_slice": []
+      },
+      {
+        "load_pc": "0007BBB4",
+        "literal_pool": "0007BC98",
+        "transfer_pc": "0007BBBE",
+        "transfer": "JSR",
+        "selector": 0,
+        "index": 2,
+        "selector_definitions": [
+          "0007BBB6",
+          "0007BBC0"
+        ],
+        "index_definitions": [
+          "0007BBBC"
+        ],
+        "local_slice_start": "0007BBB4",
+        "local_slice_hex": "d338e1002f1266f3e502430b6413",
+        "descriptor": "00010310",
+        "descriptor_hex": "ffff0000000129d4",
+        "argument_words": 0,
+        "callback": "000129D4",
+        "noncallback_path": null,
+        "encoded_external_direct_entries_to_slice": []
+      },
+      {
+        "load_pc": "0007BBF6",
+        "literal_pool": "0007BC98",
+        "transfer_pc": "0007BBF8",
+        "transfer": "JSR",
+        "selector": 0,
+        "index": 3,
+        "selector_definitions": [
+          "0007BBEE",
+          "0007BBF4"
+        ],
+        "index_definitions": [
+          "0007BBFA"
+        ],
+        "local_slice_start": "0007BBEE",
+        "local_slice_hex": "e3002f3266f36433d328430be503",
+        "descriptor": "00010318",
+        "descriptor_hex": "ffff0000000129da",
+        "argument_words": 0,
+        "callback": "000129DA",
+        "noncallback_path": null,
+        "encoded_external_direct_entries_to_slice": []
+      },
+      {
+        "load_pc": "0007E7B4",
+        "literal_pool": "0007E928",
+        "transfer_pc": "0007E7C0",
+        "transfer": "JSR",
+        "selector": 0,
+        "index": 0,
+        "selector_definitions": [
+          "0007E7BA",
+          "0007E7C2"
+        ],
+        "index_definitions": [
+          "0007E7BA"
+        ],
+        "local_slice_start": "0007E7B4",
+        "local_slice_hex": "d35c66f32fe2e5001fc11f42430b6453",
+        "descriptor": "00010300",
+        "descriptor_hex": "000300030007e824",
+        "argument_words": 3,
+        "callback": null,
+        "noncallback_path": "DC3C",
+        "encoded_external_direct_entries_to_slice": []
+      }
+    ],
+    "selector_index_domains": {
+      "0": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "1": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "2": [
+        0,
+        1
+      ]
+    },
+    "callback_targets": [
+      "000129D4",
+      "000129DA",
+      "000129E0"
+    ],
+    "candidate_object_intersection": [],
+    "residuals": [
+      "No proof that every incoming DDF4 path uses one of these ordinary local call slices.",
+      "Calculated pointers, arbitrary interior entry, RAM-built targets and unknown broad-analysis paths remain outside this literal search.",
+      "Local argument slices are conditional on entry through their recorded definitions; recorded external direct entries, if any, need separate predecessor contracts.",
+      "Immutable descriptor ROM and ordinary noncorrupt stack/arguments are assumed. Other descriptor types go toDC3C, whose transitive behavior is not analyzed here."
+    ]
+  },
+  "caller_R4_trampoline": {
+    "site": "00000042",
+    "complete_target_exclusion": "FAIL",
+    "fixed_ROM_transition": {
+      "caller": "000471BE",
+      "target_source": "BE32(ROM[1004])",
+      "target": "0000125C",
+      "target_specific_exclusion": "PASS"
+    },
+    "boot_transition": {
+      "caller": "00000700",
+      "visible_target_definitions": [
+        "constant00000868",
+        "BE32(ROM[1000])=00001150",
+        "BE32(ROM[FFFF8])=0000F60C"
+      ],
+      "scope": "Local boot target assignments only; no new whole-reset/callee/hardware theorem."
+    },
+    "boot_protocol_transition": {
+      "dispatch": "00000900 -> handler000000B4 -> trampoline00000040",
+      "target_source": "BE32(RAM[FFFFBFA0]) loaded in00BE JMPdelay at00C0",
+      "producer": "00000978 handler -> byte assembler0000012C -> write0000099A toFFFFBFA0",
+      "formula": "(u8(b0)<<24)|(u8(b1)<<16)|(u8(b2)<<8)|u8(b3)",
+      "range": "All32-bit words from unconstrained four input bytes; aligned words include both proposed tails.",
+      "constraint": "Observed header-length/type checks do not whitelist this assembled target address.",
+      "interpretation": "Caller-directed boot execution is an explicit external-control boundary, not evidence that normal task firmware enters reclaimed interiors. Excluding it requires a stated operating/entry contract."
+    },
+    "RTOS_transitive_residual": {
+      "source": "3980 source-word superset includes4AA4=00000040",
+      "example_index_relation": "sign8(state)=40,zero8(index)=0 gives4A7C+40=4AA4",
+      "interpretation": "Existing3980PASS excludes a direct hit only. It does not prove that a subsequent0042JMP cannot target an object; valid context invariants are required."
+    }
+  },
+  "final_gate": "FAIL",
+  "exact_residual_unknowns": [
+    "Caller-directed RAM target at0042 is not bounded to ordinary function entries.",
+    "All other incoming computed paths toDDF4 and0040 are not exhaustively enumerated.",
+    "RTOS state/context validity, exceptions/interrupts, flash mutation and broader calculated control remain outside this static slice."
+  ],
+  "source_sha256": "78733d1c70588c99688d8c6eead9e081ce9c8279edf299d0565b3f29c96dcf6e"
+}

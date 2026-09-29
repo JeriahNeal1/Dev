@@ -1,0 +1,73 @@
+
+C:\Dev\SubaruRoms\OEM\A2WC511R.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00010198 <.data+0x10198>:
+   10198:	00 00       	.word 0x0000
+   1019a:	01 01       	.word 0x0101
+   1019c:	00 00       	.word 0x0000
+   1019e:	d3 b4       	mov.l	0x10470,r3	! 13730
+   101a0:	00 00       	.word 0x0000
+   101a2:	d3 d0       	mov.l	0x104e4,r3	! 4055ffff
+   101a4:	00 00       	.word 0x0000
+   101a6:	d3 ec       	mov.l	0x10558,r3	! d28a420b
+   101a8:	00 00       	.word 0x0000
+   101aa:	d4 08       	mov.l	0x101cc,r4	! d50e
+   101ac:	00 00       	.word 0x0000
+   101ae:	d4 24       	mov.l	0x10240,r4	! 10270
+   101b0:	00 00       	.word 0x0000
+   101b2:	d4 40       	mov.l	0x102b4,r4	! 1299a
+   101b4:	00 00       	.word 0x0000
+   101b6:	d4 5c       	mov.l	0x10328,r4	! 2fe6ee00
+   101b8:	00 00       	.word 0x0000
+   101ba:	d4 78       	mov.l	0x1039c,r4	! 8d020009
+   101bc:	00 00       	.word 0x0000
+   101be:	d4 94       	mov.l	0x10410,r4	! 430b0009
+   101c0:	00 00       	.word 0x0000
+   101c2:	d4 b0       	mov.l	0x10484,r4	! 26b78
+   101c4:	00 00       	.word 0x0000
+   101c6:	d4 cc       	mov.l	0x104f8,r4	! 451e0
+   101c8:	00 00       	.word 0x0000
+   101ca:	d4 e8       	mov.l	0x1056c,r4	! 430b0009
+   101cc:	00 00       	.word 0x0000
+   101ce:	d5 0e       	mov.l	0x10208,r5	! affffff
+   101d0:	00 00       	.word 0x0000
+   101d2:	d5 34       	mov.l	0x102a4,r5	! 67c0
+   101d4:	00 00       	.word 0x0000
+   101d6:	d5 4c       	mov.l	0x10308,r5	! 30001
+   101d8:	00 00       	.word 0x0000
+   101da:	d5 64       	mov.l	0x1036c,r5	! 9d340
+   101dc:	00 00       	.word 0x0000
+   101de:	d5 7c       	mov.l	0x103d0,r5	! 20088f72
+   101e0:	00 00       	.word 0x0000
+   101e2:	d5 94       	mov.l	0x10434,r5	! 8f410009
+   101e4:	00 00       	.word 0x0000
+   101e6:	d5 ac       	mov.l	0x10498,r5	! 44cbc
+   101e8:	00 00       	.word 0x0000
+   101ea:	d5 c4       	mov.l	0x104fc,r5	! 4f22d392
+   101ec:	00 00       	.word 0x0000
+   101ee:	d5 c8       	mov.l	0x10510,r5	! d290420b
+   101f0:	00 00       	.word 0x0000
+   101f2:	d5 cc       	mov.l	0x10524,r5	! 430b0009
+   101f4:	00 00       	.word 0x0000
+   101f6:	d5 e4       	mov.l	0x10588,r5	! d286420b
+   101f8:	00 00       	.word 0x0000
+   101fa:	d5 fc       	mov.l	0x105ec,r5	! 9d37e
+   101fc:	00 00       	.word 0x0000
+   101fe:	d6 14       	mov.l	0x10250,r6	! 8ff0000
+   10200:	01 02       	stc	sr,r1
+   10202:	04 05       	mov.w	r0,@(r0,r4)
+   10204:	06 07       	mul.l	r0,r6
+   10206:	08 09       	.word 0x0809
+   10208:	0a ff       	mac.l	@r15+,@r10+
+   1020a:	ff ff       	.word 0xffff
+   1020c:	00 00       	.word 0x0000
+   1020e:	00 15       	mov.w	r1,@(r0,r0)
+   10210:	00 00       	.word 0x0000
+   10212:	00 03       	bsrf	r0
+   10214:	00 00       	.word 0x0000
+   10216:	00 17       	mul.l	r1,r0
+   10218:	00 00       	.word 0x0000
+   1021a:	00 01       	.word 0x0001

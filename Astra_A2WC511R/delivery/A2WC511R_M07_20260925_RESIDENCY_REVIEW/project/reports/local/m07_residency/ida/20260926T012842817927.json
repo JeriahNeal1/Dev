@@ -1,0 +1,34 @@
+{
+  "request": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "tools/call",
+    "params": {
+      "name": "execute_python",
+      "arguments": {
+        "code": "from pathlib import Path\nfrom hashlib import sha256\nimport json\nimport ida_bytes,ida_funcs,ida_ua,idautils,idc\nroot=Path('C:/Dev/Astra_A2WC511R');out=root/'reports/local/m07_residency/ida'\nraw=ida_bytes.get_bytes(0,0x100000);stock=Path('C:/Dev/SubaruRoms/OEM/A2WC511R.bin').read_bytes()\nspans=[(0x4260,0x430A),(0x1473C,0x147AC),(0x484B0,0x484BC)]\nassert all(raw[a:b]==stock[a:b] for a,b in spans)\nsites=[]\nfor a in (0x4260,0x42A4,0x430A,0x1466E,0x1473A,0x1473C,0x14770,0x147AC,0x4828C,0x484B0):\n f=ida_funcs.get_func(a);insn=ida_ua.insn_t();decoded=ida_ua.decode_insn(insn,a)\n sites.append({'address':a,'name':idc.get_name(a),'decoded_size':decoded,'bytes':raw[a:a+8].hex(),\n  'function':None if f is None else {'entry':f.start_ea,'end_exclusive':f.end_ea,'chunks':list(idautils.Chunks(f.start_ea))},\n  'xrefs':[{'from':x.frm,'to':x.to,'type':x.type,'code':bool(x.iscode)} for x in idautils.XrefsTo(a)]})\nresult={'status':'PASS_LOCAL_IDB_BYTES_AND_METADATA_READ','rom_sha256':sha256(raw).hexdigest(),\n 'stock_sha256':sha256(stock).hexdigest(),'equal_spans':spans,'sites':sites,'metadata_changed':False,\n 'scope':'Existing IDB function boundaries/xrefs are evidence, not a complete computed-entry theorem.'}\n(out/'current_candidate_idb.json').write_text(json.dumps(result,indent=2)+'\\n')\nprint(json.dumps({'status':result['status'],'sites':len(sites),'rom_sha256':result['rom_sha256']}))\n",
+        "instance_id": "03e1b74a4e7b",
+        "timeout": 60
+      }
+    }
+  },
+  "http_status": 200,
+  "response": {
+    "jsonrpc": "2.0",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"result\": null,\n  \"stdout\": \"{\\\"status\\\": \\\"PASS_LOCAL_IDB_BYTES_AND_METADATA_READ\\\", \\\"sites\\\": 10, \\\"rom_sha256\\\": \\\"a34c4ce8238bf28bdc18c191bbe73b2179130aa9846e952a6fa332bae442de96\\\"}\\n\",\n  \"stderr\": \"\"\n}"
+        }
+      ],
+      "isError": false,
+      "structuredContent": {
+        "result": null,
+        "stdout": "{\"status\": \"PASS_LOCAL_IDB_BYTES_AND_METADATA_READ\", \"sites\": 10, \"rom_sha256\": \"a34c4ce8238bf28bdc18c191bbe73b2179130aa9846e952a6fa332bae442de96\"}\n",
+        "stderr": ""
+      }
+    },
+    "id": 1
+  }
+}

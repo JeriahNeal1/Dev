@@ -1,0 +1,181 @@
+{
+  "schema": 1,
+  "status": "PASS",
+  "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+  "final_fake_host_sha256": "4b681bcdb3c178b89382b37b207b4a7679f0a1e87ab13c7051e8cf8019c094ec",
+  "fixed_only": true,
+  "all_TX_prefixes_replayed": true,
+  "physical_provider_loaded": false,
+  "receiver_self_echo": true,
+  "final_native_full_run": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_composite_01\\RESULT.json",
+    "sha256": "a2b08f21cce5053867476b06853cb0c22da286928846bbd1855d1a1cbcaec8ea",
+    "bytes": 17740
+  },
+  "faults": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\host\\HOST_FAULTS.json",
+    "sha256": "b246909478093e43c7f9dc2ac548f444e3c3dc54ce4368786a4ac8f1da19d4fb",
+    "bytes": 38616
+  },
+  "full_fixtures": [
+    {
+      "result": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_composite_01\\RESULT.json",
+        "sha256": "a2b08f21cce5053867476b06853cb0c22da286928846bbd1855d1a1cbcaec8ea",
+        "bytes": 17740
+      },
+      "execution_coverage": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_composite_01\\execution_coverage.json",
+        "sha256": "353317bde3f270d00209ddd6673f98502f3994290dbb81a23d129bf8d3894a76",
+        "bytes": 1044457
+      },
+      "receiver_self_echo": true,
+      "model_sources": {
+        "core.py": "caf6571a836676b82bec8f8a5eaa356590532e15931fae2da4b5822fe8ef0f90",
+        "cpu.py": "5043dafdfe59447cb8d906f7570907c472e1d638deb507dc4af8546e9b0f1980",
+        "fast_step.py": "029bb2b484911289b19e5cdbad35bbbbdc80af05420e91dad6884e0ff0484cfa",
+        "harness.py": "0496579da46daf66eb3be3847da0f3e94f8f45bf6f0b494a1f89a97853a8b4c6",
+        "memory.py": "d6062f1dde275b9611d1b631f8151eac567314c603a533dad8751eede3fa2a38",
+        "sci.py": "6f3b4b38ae6e12ac75d5101c767f10b106e9676c322eac3a0e39a67a9c0030c1",
+        "self_echo.py": "87896f45a074fcff5132a6faa57af48f5444de13fdf67f00a4f1304ea583da5d",
+        "__init__.py": "8e8b1da117fdc2ba4fe06edfc32b9c8d67176ab69a9470ee21151018bc85fbd8"
+      },
+      "kernel_terminal": "COMPLETE",
+      "kernel_exchanges": 4098,
+      "completed_TX_characters": 2142228,
+      "self_echo_characters_ignored_RE0": 2142228
+    },
+    {
+      "result": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_random_01\\RESULT.json",
+        "sha256": "038e09f7692843ebac7f68bd534243002d37e2a0857e52a2b009c3ac54037fb5",
+        "bytes": 17565
+      },
+      "execution_coverage": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_random_01\\execution_coverage.json",
+        "sha256": "1d18090cadb0b38bbbe4d786563ffe1f13b048dcb68ef7f933d8caf4cd559b25",
+        "bytes": 1044461
+      },
+      "receiver_self_echo": true,
+      "model_sources": {
+        "core.py": "caf6571a836676b82bec8f8a5eaa356590532e15931fae2da4b5822fe8ef0f90",
+        "cpu.py": "5043dafdfe59447cb8d906f7570907c472e1d638deb507dc4af8546e9b0f1980",
+        "fast_step.py": "029bb2b484911289b19e5cdbad35bbbbdc80af05420e91dad6884e0ff0484cfa",
+        "harness.py": "0496579da46daf66eb3be3847da0f3e94f8f45bf6f0b494a1f89a97853a8b4c6",
+        "memory.py": "d6062f1dde275b9611d1b631f8151eac567314c603a533dad8751eede3fa2a38",
+        "sci.py": "6f3b4b38ae6e12ac75d5101c767f10b106e9676c322eac3a0e39a67a9c0030c1",
+        "self_echo.py": "87896f45a074fcff5132a6faa57af48f5444de13fdf67f00a4f1304ea583da5d",
+        "__init__.py": "8e8b1da117fdc2ba4fe06edfc32b9c8d67176ab69a9470ee21151018bc85fbd8"
+      },
+      "kernel_terminal": "COMPLETE",
+      "kernel_exchanges": 4098,
+      "completed_TX_characters": 2142228,
+      "self_echo_characters_ignored_RE0": 2142228
+    }
+  ],
+  "native_journal_only_finalization": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_composite_01\\finalized\\FINALIZATION.json",
+    "sha256": "3af941e89e443c7b466733be6dd6e2aa8a89a5eb35f7cf59204c574f89b2cd22",
+    "bytes": 3467
+  },
+  "tests": {
+    "CONTRACT_TESTS": {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\host\\tests\\CONTRACT_TESTS.json",
+      "sha256": "d27da27f9a71a0f74b895eec1afe5b028463bd6b31474a08ba350cb23ced622a",
+      "bytes": 1382
+    },
+    "STREAM_TESTS": {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\host\\tests\\STREAM_TESTS.json",
+      "sha256": "b5bc6ecb88b2944a169c567b37a4e999f24e4b9e89656311508a0a75b3bfbd9c",
+      "bytes": 606
+    },
+    "FINALIZER_TESTS": {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\host\\tests\\FINALIZER_TESTS.json",
+      "sha256": "da7f264898deb839f8ceaf9448c0c6ba0e37a915ec673ec7b75f364aa137fee0",
+      "bytes": 2944
+    }
+  },
+  "finalizer_adversarial_tests": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\host\\tests\\FINALIZER_TESTS.json",
+    "sha256": "da7f264898deb839f8ceaf9448c0c6ba0e37a915ec673ec7b75f364aa137fee0",
+    "bytes": 2944
+  },
+  "pure_host_contract_tests": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\host\\tests\\CONTRACT_TESTS.json",
+    "sha256": "d27da27f9a71a0f74b895eec1afe5b028463bd6b31474a08ba350cb23ced622a",
+    "bytes": 1382
+  },
+  "pure_stream_tests": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\host\\tests\\STREAM_TESTS.json",
+    "sha256": "b5bc6ecb88b2944a169c567b37a4e999f24e4b9e89656311508a0a75b3bfbd9c",
+    "bytes": 606
+  },
+  "final_build": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\build\\native_05\\BUILD_MANIFEST.json",
+    "sha256": "0bfe0b866c6575f1146b49b6b2b671ebaf34848191171d49bbffe4fbf07d15bd",
+    "bytes": 3031
+  },
+  "native_toolchain": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\host\\NATIVE_TOOLCHAIN.json",
+    "sha256": "cd89948c59d927252810e7e5ebd4d7c0f8845cc88fcf5415fe185792c2d8d36a",
+    "bytes": 4726
+  },
+  "source_transition": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\host\\SOURCE_TRANSITION.json",
+    "sha256": "34574b58b3be8101ab6eb676212e635e072f1e3837d889ea5f987a386cfdbf50",
+    "bytes": 10109
+  },
+  "all_faults_executed_on_exact_final_binary": true,
+  "prior_version_applicability_used": false,
+  "OEM_scope": "Explicit boot model independently constrained by actual stock parser/serializer/loader contracts; physical UART/session/reset not asserted",
+  "no_CRC_substitution": true,
+  "two_full_reads": true,
+  "close_is_ECU_reset": false,
+  "source_files": [
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\native.cpp",
+      "sha256": "3e6b2e3b72697db9a7ed8143c47f706d4fa1ffa4125e341e8d24d6f89cf3e177",
+      "bytes": 15997
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\protocol.py",
+      "sha256": "d7909dc2026fae0545d94d048c2c71ab366e804df84c5ee563d656d3774dbf38",
+      "bytes": 4623
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\state.py",
+      "sha256": "f25e179632e2635236450c7d74aa067db3ac77d398cc88401879d56b058b3d06",
+      "bytes": 4489
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\stream.py",
+      "sha256": "f5eea7776b7e641378df94187ca59440cf3ab26853b747bd164810d56d5a6887",
+      "bytes": 1863
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\run.py",
+      "sha256": "172786a594214d86b34a945e90625b995003102e661d6cc47124bec8fad0f31e",
+      "bytes": 15039
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\finalize.py",
+      "sha256": "b55d0c85e6f3e6026a12c1360a77ad8bac892ed16891e69ddef4b18cfc1666ef",
+      "bytes": 9782
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\report_rk02.py",
+      "sha256": "c9609edf995d1230037f8da2d8f1b5709e59cdc3d78c4ef4fdac81471e58fd1c",
+      "bytes": 7060
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\model.py",
+      "sha256": "5539e0038f0a6a030ae7c580ee9c38f643411f28f7ef3e2c5d3bce79cbe09196",
+      "bytes": 6396
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\server.py",
+      "sha256": "5755a864b37a23218cf07711d0e6699d323fcb00d6e68d08636804b508b55294",
+      "bytes": 13204
+    }
+  ]
+}

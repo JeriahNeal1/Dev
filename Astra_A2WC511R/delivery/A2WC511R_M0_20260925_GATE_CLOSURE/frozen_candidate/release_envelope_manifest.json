@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "target_calid": "A2WC511R",
+  "target_ecuid": "2F12515306",
+  "scope": "diagnostic_only",
+  "status": "EXPERIMENTAL_NOT_RELEASED",
+  "production_release_allowed": false,
+  "baseline": {
+    "path": "artifacts/A2WC511R.analysis_baseline.bin",
+    "sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218"
+  },
+  "candidate": {
+    "path": "artifacts/A2WC511R.M0.EXPERIMENTAL_UNAPPROVED.checksum_corrected.bin",
+    "sha256": "6e556dd084e69af47c230a1787d229aee7b49d957d2848bb14a39a48a69042af"
+  },
+  "expected_output_identity": {
+    "calid": "A2WC511R",
+    "ecuid": "2F12515306"
+  },
+  "allowed_changes": [
+    {
+      "start": "0x11adc",
+      "end_exclusive": "0x11ae0",
+      "review_key": "hook_abi_and_timing",
+      "purpose": "Experimental OEM-first decoder pointer",
+      "baseline_range_sha256": "1aa1ae7342b833ae4068afee94731c91c364c95d777cbd7056e0e553405e4ba9"
+    },
+    {
+      "start": "0xe1000",
+      "end_exclusive": "0xe1364",
+      "review_key": "rom_allocation",
+      "purpose": "Experimental diagnostic payload; ownership gate OPEN",
+      "baseline_range_sha256": "5e816d2db16a2c79e0054901ab35e7fd62c9dba3708df48b0fa0488e5db85a86"
+    },
+    {
+      "start": "0xffb88",
+      "end_exclusive": "0xffb8c",
+      "review_key": "checksum_verification",
+      "purpose": "Native-matched checksum correction",
+      "baseline_range_sha256": "cc387164f5ae7772c653c25a0b2597526312e0c40d9d3c076a858be8c28131d3"
+    }
+  ],
+  "reviews": {
+    "baseline_provenance": {
+      "path": "reviews/baseline_provenance.md",
+      "sha256": "29098282ce79db76013253e832f1022dcc4d6a7b06f46bef2a939f3eeacb8668"
+    },
+    "calibration_compatibility": {
+      "path": "reviews/calibration_compatibility.md",
+      "sha256": "8e4fd7c4b2c8b8f67e9cb5ff142e775065812351cf68e3c6a2beb3c44d76e00f"
+    },
+    "rom_allocation": {
+      "path": "reviews/rom_allocation.md",
+      "sha256": "bda1f42e6c7f83a0df1e4b9a8e5977c38a1e949288257b8f344fcae452ead5f8"
+    },
+    "ram_allocation": {
+      "path": "reviews/ram_allocation.md",
+      "sha256": "cd4c6c65db6f0af9324de25288232c688493eba1ed3ea5313575bf2fedf601c5"
+    },
+    "hook_abi_and_timing": {
+      "path": "reviews/hook_abi_and_timing.md",
+      "sha256": "646108a4966f382f21929c217fafccf44a4bcac63b199b769ce1998fcd4c13d3"
+    },
+    "feature_closure": {
+      "path": "reviews/feature_closure.md",
+      "sha256": "6372bc4f12a5e39c80dd5d2bfd202daf957c6a5f14d9c354be44bfb2a7587ce6"
+    },
+    "checksum_verification": {
+      "path": "reviews/checksum_verification.md",
+      "sha256": "4f0c8c64027583ef13bbf0171b609e93c41c6f6d0bfe21cea4e616df3f906f6a"
+    },
+    "reproducible_build": {
+      "path": "reviews/reproducible_build.md",
+      "sha256": "65c7d166b4fc09d41e33682f952a332ce8d066cb9bd9958c846a478f359ec212"
+    },
+    "human_test_plan": {
+      "path": "reviews/human_test_plan.md",
+      "sha256": "c56a3d44bb60ccd4655e45b99306ac208bdeb2288941b9cf5a7743e297fbab7b"
+    }
+  }
+}

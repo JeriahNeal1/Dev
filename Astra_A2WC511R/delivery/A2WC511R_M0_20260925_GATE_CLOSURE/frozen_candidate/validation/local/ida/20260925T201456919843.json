@@ -1,0 +1,31 @@
+{
+  "request": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "tools/call",
+    "params": {
+      "name": "execute_python",
+      "arguments": {
+        "code": "import json\nfrom pathlib import Path\nimport ida_bytes, ida_ua, ida_funcs, idautils, idc\nrom=ida_bytes.get_bytes(0,0x100000)\nout={'windows':{},'pointer_refs':{},'rtos_table':rom[0x4880:0x4a50].hex()}\nfor start,end in [(0x11110,0x11194),(0x128e0,0x12946),(0x6320,0x6390),(0xde62,0xdea8),\n                  (0xdeb6,0xdefc),(0x3dd0,0x3fe4),(0x3fe4,0x40b0)]:\n    lines=[]\n    for ea in range(start,end,2):\n        i=ida_ua.insn_t();s=ida_ua.decode_insn(i,ea)\n        lines.append({'ea':hex(ea),'bytes':rom[ea:ea+2].hex(),'code':ida_bytes.is_code(ida_bytes.get_flags(ea)),\n            'text':idc.generate_disasm_line(ea,idc.GENDSM_FORCE_CODE) if s else None})\n    out['windows'][hex(start)]=lines\nfor value in [0x11130,0x11134,0x1112c,0xffff12d8,0x4880,0x48d8]:\n    refs=[]\n    for ea in range(0,len(rom)-3,4):\n        if int.from_bytes(rom[ea:ea+4],'big')==value:\n            refs.append({'ea':hex(ea),'xrefs':[{'from':hex(x.frm),'type':x.type} for x in idautils.XrefsTo(ea)]})\n    out['pointer_refs'][hex(value)]=refs\np=Path('C:/Dev/Astra_A2WC511R/reports/local/ida/task_stack_audit.json')\np.write_text(json.dumps(out,indent=2),encoding='utf-8')\nprint('Task-stack windows and raw pool references exported to '+str(p))\n"
+      }
+    }
+  },
+  "response": {
+    "jsonrpc": "2.0",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"result\": null,\n  \"stdout\": \"Task-stack windows and raw pool references exported to C:\\\\Dev\\\\Astra_A2WC511R\\\\reports\\\\local\\\\ida\\\\task_stack_audit.json\\n\",\n  \"stderr\": \"\"\n}"
+        }
+      ],
+      "isError": false,
+      "structuredContent": {
+        "result": null,
+        "stdout": "Task-stack windows and raw pool references exported to C:\\Dev\\Astra_A2WC511R\\reports\\local\\ida\\task_stack_audit.json\n",
+        "stderr": ""
+      }
+    },
+    "id": 1
+  }
+}

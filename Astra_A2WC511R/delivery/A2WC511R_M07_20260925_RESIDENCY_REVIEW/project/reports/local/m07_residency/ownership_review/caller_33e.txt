@@ -1,0 +1,41 @@
+
+C:\Dev\SubaruRoms\OEM\A2WC511R.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00033e4c <.data+0x33e4c>:
+   33e4c:	72 28       	add	#40,r2
+   33e4e:	34 22       	cmp/hs	r2,r4
+   33e50:	8f f5       	bf.s	0x33e3e
+   33e52:	00 09       	nop	
+   33e54:	38 93       	cmp/ge	r9,r8
+   33e56:	8f 14       	bf.s	0x33e82
+   33e58:	00 09       	nop	
+   33e5a:	d3 16       	mov.l	0x33eb4,r3	! 2d00000
+   33e5c:	38 33       	cmp/ge	r3,r8
+   33e5e:	8d 10       	bt.s	0x33e82
+   33e60:	00 09       	nop	
+   33e62:	e5 01       	mov	#1,r5
+   33e64:	d3 1c       	mov.l	0x33ed8,r3	! 251c
+   33e66:	43 0b       	jsr	@r3
+   33e68:	64 c1       	mov.w	@r12,r4
+   33e6a:	38 98       	sub	r9,r8
+   33e6c:	d2 1c       	mov.l	0x33ee0,r2	! 4260
+   33e6e:	2c 01       	mov.w	r0,@r12
+   33e70:	d0 1a       	mov.l	0x33edc,r0	! b40000
+   33e72:	42 0b       	jsr	@r2
+   33e74:	61 83       	mov	r8,r1
+   33e76:	70 01       	add	#1,r0
+   33e78:	81 d2       	mov.w	r0,@(4,r13)
+   33e7a:	60 b3       	mov	r11,r0
+   33e7c:	80 d3       	mov.b	r0,@(3,r13)
+   33e7e:	a0 04       	bra	0x33e8a
+   33e80:	60 e3       	mov	r14,r0
+   33e82:	60 e3       	mov	r14,r0
+   33e84:	81 d2       	mov.w	r0,@(4,r13)
+   33e86:	80 d3       	mov.b	r0,@(3,r13)
+   33e88:	e0 02       	mov	#2,r0
+   33e8a:	80 d2       	mov.b	r0,@(2,r13)
+   33e8c:	7d 28       	add	#40,r13
+   33e8e:	53 f1       	mov.l	@(4,r15),r3

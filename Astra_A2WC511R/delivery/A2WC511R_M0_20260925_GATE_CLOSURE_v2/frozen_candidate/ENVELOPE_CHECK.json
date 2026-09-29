@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "envelope_passed": true,
+  "errors": [],
+  "evidence": [
+    {
+      "key": "baseline_provenance",
+      "path": "reviews/baseline_provenance.md",
+      "sha256": "29098282ce79db76013253e832f1022dcc4d6a7b06f46bef2a939f3eeacb8668"
+    },
+    {
+      "key": "calibration_compatibility",
+      "path": "reviews/calibration_compatibility.md",
+      "sha256": "8e4fd7c4b2c8b8f67e9cb5ff142e775065812351cf68e3c6a2beb3c44d76e00f"
+    },
+    {
+      "key": "rom_allocation",
+      "path": "reviews/rom_allocation.md",
+      "sha256": "bda1f42e6c7f83a0df1e4b9a8e5977c38a1e949288257b8f344fcae452ead5f8"
+    },
+    {
+      "key": "ram_allocation",
+      "path": "reviews/ram_allocation.md",
+      "sha256": "cd4c6c65db6f0af9324de25288232c688493eba1ed3ea5313575bf2fedf601c5"
+    },
+    {
+      "key": "hook_abi_and_timing",
+      "path": "reviews/hook_abi_and_timing.md",
+      "sha256": "646108a4966f382f21929c217fafccf44a4bcac63b199b769ce1998fcd4c13d3"
+    },
+    {
+      "key": "feature_closure",
+      "path": "reviews/feature_closure.md",
+      "sha256": "6372bc4f12a5e39c80dd5d2bfd202daf957c6a5f14d9c354be44bfb2a7587ce6"
+    },
+    {
+      "key": "checksum_verification",
+      "path": "reviews/checksum_verification.md",
+      "sha256": "4f0c8c64027583ef13bbf0171b609e93c41c6f6d0bfe21cea4e616df3f906f6a"
+    },
+    {
+      "key": "reproducible_build",
+      "path": "reviews/reproducible_build.md",
+      "sha256": "65c7d166b4fc09d41e33682f952a332ce8d066cb9bd9958c846a478f359ec212"
+    },
+    {
+      "key": "human_test_plan",
+      "path": "reviews/human_test_plan.md",
+      "sha256": "c56a3d44bb60ccd4655e45b99306ac208bdeb2288941b9cf5a7743e297fbab7b"
+    }
+  ],
+  "baseline_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+  "candidate_sha256": "6e556dd084e69af47c230a1787d229aee7b49d957d2848bb14a39a48a69042af",
+  "changed_bytes": 863,
+  "outside_allowlist": 0,
+  "status": "OFFLINE_ENVELOPE_CHECKS_PASSED_HUMAN_REVIEW_REQUIRED",
+  "not_checked_here": [
+    "Actual SH execution on ECU",
+    "Engineering truth of review conclusions",
+    "Runtime RAM/stack coexistence",
+    "Physical vehicle readiness"
+  ],
+  "warning": "Passing this tool is not permission to flash and does not prove checksum correctness; it only hash-links the separate checksum review."
+}

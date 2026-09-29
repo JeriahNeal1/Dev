@@ -1,0 +1,84 @@
+{
+  "events": [
+    {
+      "address": "FFFF4C8D",
+      "address_sources": [
+        "rom:0001480C"
+      ],
+      "call_context": [
+        "000147AC"
+      ],
+      "control_sources": [],
+      "delay_slot": false,
+      "mode": "r",
+      "pc": "000147AE",
+      "size": 1,
+      "value": "00000021",
+      "value_sources": [
+        "ram:FFFF4C8D"
+      ],
+      "watchpoints": [
+        "packed input"
+      ]
+    },
+    {
+      "address": "FFFF4BC1",
+      "address_sources": [
+        "rom:00014810"
+      ],
+      "call_context": [
+        "000147AC"
+      ],
+      "control_sources": [
+        "ram:FFFF4C8D",
+        "rom:00014802",
+        "rom:00014804"
+      ],
+      "delay_slot": false,
+      "mode": "w",
+      "pc": "000147DA",
+      "size": 1,
+      "value": "00000002",
+      "value_sources": [
+        "instruction:000147D6",
+        "ram:FFFF4C8D",
+        "rom:00014804"
+      ],
+      "watchpoints": [
+        "decoded target/current"
+      ]
+    },
+    {
+      "address": "FFFF4BC2",
+      "address_sources": [
+        "rom:00014814"
+      ],
+      "call_context": [
+        "000147AC"
+      ],
+      "control_sources": [
+        "instruction:000147DE",
+        "instruction:000147E6",
+        "instruction:000147F2",
+        "ram:FFFF4C8D",
+        "rom:00014802",
+        "rom:00014804"
+      ],
+      "delay_slot": false,
+      "mode": "w",
+      "pc": "000147FC",
+      "size": 1,
+      "value": "00000001",
+      "value_sources": [
+        "instruction:000147DE",
+        "ram:FFFF4C8D"
+      ],
+      "watchpoints": [
+        "decoded target/current"
+      ]
+    }
+  ],
+  "rom_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+  "sample": "0x21 with prior AA/BB; actual stock decoder instructions",
+  "semantics": "Value-source union plus effective-address origins and conservative executed-path condition origins; not static alias analysis or physical freshness evidence."
+}

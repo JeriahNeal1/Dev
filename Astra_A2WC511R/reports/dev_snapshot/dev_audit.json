@@ -1,0 +1,772 @@
+{
+  "schema": 1,
+  "generated_at": "2026-09-25T18:37:41.676519+00:00",
+  "root": "/mnt/data/v3_work/input/Dev",
+  "vehicle": "2005 USDM Outback XT 5EAT",
+  "calid": "A2WC511R",
+  "ecu_id": "2F12515306",
+  "repositories": {
+    "MerpMod": {
+      "present": true,
+      "head": {
+        "rc": 0,
+        "text": "8720d209df107a81fd171131cfba96d8cae1f118",
+        "stderr": ""
+      },
+      "describe": {
+        "rc": 0,
+        "text": "v0.1-73-g8720d20",
+        "stderr": ""
+      },
+      "semantic_diff_names": {
+        "rc": 0,
+        "text": "MerpMod/DefaultSession.hsf\nMerpMod/MerpMod.tps\nMerpMod/Targets/A8DH202X.h",
+        "stderr": ""
+      },
+      "semantic_diff_stat": {
+        "rc": 0,
+        "text": "MerpMod/DefaultSession.hsf | 14 +++++++-------\n MerpMod/MerpMod.tps        |  2 +-\n MerpMod/Targets/A8DH202X.h |  8 ++++----\n 3 files changed, 12 insertions(+), 12 deletions(-)",
+        "stderr": ""
+      },
+      "untracked": {
+        "rc": 0,
+        "text": "DONATE.md\nPatchingAPI.md\nProperties/AssemblyInfo.cs\nSharpTune.sln\nSharpTune.userprefs\nSharpTune/AvailableDevices.cs\nSharpTune/Core/Checksum/ChecksumSubaruDBW.cs\nSharpTune/Core/Checksum/IChecksumModule.cs\nSharpTune/Core/ECU.cs\nSharpTune/Core/ECUIdentifier.cs\nSharpTune/Core/ECUMetaData.cs\nSharpTune/Core/ExpressionEvaluator.cs\nSharpTune/Core/FlashMethod/IFlashMethod.cs\nSharpTune/Core/MemoryModel/IMemoryModel.cs\nSharpTune/Core/Plugin.cs\nSharpTune/Core/ResourceUtil.cs\nSharpTune/Core/Table/Axis.cs\nSharpTune/Core/Table/ITableReader.cs\nSharpTune/Core/Table/ITableWriter.cs\nSharpTune/Core/Table/LookupTable.cs\nSharpTune/Core/Table/RamTableReader.cs\nSharpTune/Core/Table/RamTableWriter.cs\nSharpTune/Core/Table/Range.cs\nSharpTune/Core/Table/RomTableReader.cs\nSharpTune/Core/Table/RomTableWriter.cs\nSharpTune/Core/Table/Scaling.cs\nSharpTune/Core/TableMetaData/Table1DMetaData.cs\nSharpTune/Core/TableMetaData/Table2DMetaData.cs\nSharpTune/Core/TableMetaData/Table3DMetaData.cs\nSharpTune/Core/TableMetaData/TableMetaData.cs\nSharpTune/Core/TableTree.cs\nSharpTune/DumpXML.cs\nSharpTune/EcuMapTools/EcuLoc.cs\nSharpTune/EcuMapTools/EcuLocCandidate.cs\nSharpTune/EcuMapTools/EcuMap.cs\nSharpTune/EcuMapTools/EcuMapTool.cs\nSharpTune/EcuMapTools/SSMBase.cs\nSharpTune/EcuMapTools/XMLtoIDC.cs\nSharpTune/ExpressionEvaluator.cs\nSharpTune/GUI/AboutWindow.Designer.cs\nSharpTune/GUI/AboutWindow.cs\nSharpTune/GUI/AboutWindow.resx\nSharpTune/GUI/CalidUtility.Designer.cs\nSharpTune/GUI/CalidUtility.cs\nSharpTune/GUI/CalidUtility.resx\nSharpTune/GUI/CustomGrid.cs\nSharpTune/GUI/DefinitionEditor.Designer.cs\nSharpTune/GUI/DefinitionEditor.cs\nSharpTune/GUI/DefinitionEditor.resx\nSharpTune/GUI/IDAtoHEW.Designer.cs\nSharpTune/GUI/IDAtoHEW.cs\nSharpTune/GUI/IDAtoHEW.resx\nSharpTune/GUI/License.Designer.cs\nSharpTune/GUI/License.cs\nSharpTune/GUI/License.resx\nSharpTune/GUI/MainWindow.Designer.cs\nSharpTune/GUI/MainWindow.cs\nSharpTune/GUI/MainWindow.resx\nSharpTune/GUI/MapToDef.Designer.cs\nSharpTune/GUI/MapToDef.cs\nSharpTune/GUI/MapToDef.resx\nSharpTune/GUI/SSMTestApp.Designer.cs\nSharpTune/GUI/SSMTestApp.cs\nSharpTune/GUI/SSMTestApp.resx\nSharpTune/GUI/SimpleCombo.cs\nSharpTune/GUI/SimplePrompt.cs\nSharpTune/GUI/TableView.Designer.cs\nSharpTune/GUI/TableView.cs\nSharpTune/GUI/TableView.resx\nSharpTune/GUI/UndefinedWindow.Designer.cs\nSharpTune/GUI/UndefinedWindow.cs\nSharpTune/GUI/UndefinedWindow.resx\nSharpTune/GUI/XMLtoIDC.Designer.cs\nSharpTune/GUI/XMLtoIDC.cs\nSharpTune/GUI/XMLtoIDC.resx\nSharpTune/GitVersionUpdate.bat\nSharpTune/ObjectCopier.cs\nSharpTune/Program.cs\nSharpTune/Properties/AssemblyInfoTemplate.cs\nSharpTune/Properties/Resources.Designer.cs\nSharpTune/Properties/Resources.resx\nSharpTune/Properties/Settings.Designer.cs\nSharpTune/Properties/Settings.settings\nSharpTune/PropertyBag.cs\nSharpTune/RAMDump.cs\nSharpTune/Resources/beer1.png\nSharpTune/RomMod.csproj\nSharpTune/RomMod/Blob.cs\nSharpTune/RomMod/BlobList.cs\nSharpTune/RomMod/Mod.cs\nSharpTune/RomMod/ModDefinition.cs\nSharpTune/RomMod/Patch.cs\nSharpTune/RomMod/RomMod.cs\nSharpTune/RomMod/SRecord.cs\nSharpTune/RomMod/SRecordReader.cs\nSharpTune/RomMod/SRecordWriter.cs\nSharpTune/RomMod/Verifier.cs\nSharpTune/SharpTuner.cs\nSharpTune/Tables/Axis.cs\nSharpTune/Tables/Category.cs\nSharpTune/Tables/PropertyBag.cs\nSharpTune/Tables/Range.cs\nSharpTune/Tables/Table.cs\nSharpTune/Tables/Table2D.cs\nSharpTune/TextBoxStreamWriter.cs\nSharpTune/Utils.cs\nSharpTune/app.config\nSharpTune/dump.xml\nlogger.dtd",
+        "stderr": ""
+      },
+      "note": "core.autocrlf override avoids treating the Windows CRLF checkout as a wholesale code rewrite. No git reset/clean is used.",
+      "upload_expected_head": "8720d209df107a81fd171131cfba96d8cae1f118",
+      "matches_upload_head": true
+    },
+    "SharpTune": {
+      "present": true,
+      "head": {
+        "rc": 0,
+        "text": "ecabea89615132dac2de37c05f72adae16d966d1",
+        "stderr": ""
+      },
+      "describe": {
+        "rc": 0,
+        "text": "0.1.9-RC2-12-gecabea8",
+        "stderr": ""
+      },
+      "semantic_diff_names": {
+        "rc": 0,
+        "text": "",
+        "stderr": ""
+      },
+      "semantic_diff_stat": {
+        "rc": 0,
+        "text": "",
+        "stderr": ""
+      },
+      "untracked": {
+        "rc": 0,
+        "text": "",
+        "stderr": ""
+      },
+      "note": "core.autocrlf override avoids treating the Windows CRLF checkout as a wholesale code rewrite. No git reset/clean is used.",
+      "upload_expected_head": "ecabea89615132dac2de37c05f72adae16d966d1",
+      "matches_upload_head": true
+    },
+    "SubaruDefs": {
+      "present": true,
+      "head": {
+        "rc": 0,
+        "text": "9b2992eba8133fe5338b89aa77b22c1bb14d6507",
+        "stderr": ""
+      },
+      "describe": {
+        "rc": 0,
+        "text": "9b2992e",
+        "stderr": ""
+      },
+      "semantic_diff_names": {
+        "rc": 0,
+        "text": "",
+        "stderr": ""
+      },
+      "semantic_diff_stat": {
+        "rc": 0,
+        "text": "",
+        "stderr": ""
+      },
+      "untracked": {
+        "rc": 0,
+        "text": "",
+        "stderr": ""
+      },
+      "note": "core.autocrlf override avoids treating the Windows CRLF checkout as a wholesale code rewrite. No git reset/clean is used.",
+      "upload_expected_head": "9b2992eba8133fe5338b89aa77b22c1bb14d6507",
+      "matches_upload_head": true
+    }
+  },
+  "roms": [
+    {
+      "file": "SubaruRoms/Backup/A2WC511R_STOCK_ROMRAIDER.bin",
+      "size": 1048576,
+      "sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+      "calid_at_2000": "A2WC511R",
+      "ecuid_at_CDAD8": "2F12515306",
+      "identity_matches": true,
+      "reset_pc": "0xaac",
+      "reset_sp": "0xffffbfa0",
+      "rom_tail": "00 00 f6 0c 00 00 20 00",
+      "hook_old_values": [
+        {
+          "offset": "0x7a04",
+          "role": "MAF interpolation pointer",
+          "expected": "0x209c",
+          "actual": "0x209c",
+          "matches": true
+        },
+        {
+          "offset": "0x122b4",
+          "role": "WGDC routine pointer",
+          "expected": "0x14b20",
+          "actual": "0x14b20",
+          "matches": true
+        },
+        {
+          "offset": "0x127e8",
+          "role": "rev-limit routine pointer",
+          "expected": "0x317d8",
+          "actual": "0x317d8",
+          "matches": true
+        },
+        {
+          "offset": "0xd324",
+          "role": "memory reset routine pointer",
+          "expected": "0xf928",
+          "actual": "0xf928",
+          "matches": true
+        },
+        {
+          "offset": "0xfff8",
+          "role": "memory reset upper limit",
+          "expected": "0xffffbffb",
+          "actual": "0xffffbffb",
+          "matches": true
+        },
+        {
+          "offset": "0x114e0",
+          "role": "base timing pointer; semantics still need audit",
+          "expected": "0x35b96",
+          "actual": "0x35b96",
+          "matches": true
+        },
+        {
+          "offset": "0x1281c",
+          "role": "POLF pointer; semantics still need audit",
+          "expected": "0x2e2e8",
+          "actual": "0x2e2e8",
+          "matches": true
+        },
+        {
+          "offset": "0x35c3c",
+          "role": "timing interpolation pointer candidate",
+          "expected": "0x2150",
+          "actual": "0x2150",
+          "matches": true
+        },
+        {
+          "offset": "0x35c40",
+          "role": "base timing descriptor pointer candidate",
+          "expected": "0x84944",
+          "actual": "0x84944",
+          "matches": true
+        },
+        {
+          "offset": "0x2e538",
+          "role": "POLF interpolation pointer candidate",
+          "expected": "0x2150",
+          "actual": "0x2150",
+          "matches": true
+        },
+        {
+          "offset": "0x2e544",
+          "role": "POLF descriptor pointer candidate",
+          "expected": "0x842e4",
+          "actual": "0x842e4",
+          "matches": true
+        }
+      ],
+      "ff_runs": [
+        {
+          "start": "0xe14",
+          "end_exclusive": "0xfe0",
+          "length": 460
+        },
+        {
+          "start": "0x859bc",
+          "end_exclusive": "0xc0000",
+          "length": 239172
+        },
+        {
+          "start": "0xce754",
+          "end_exclusive": "0xffaf8",
+          "length": 201636
+        }
+      ],
+      "warning": "Identity and matching pointers do NOT establish stock provenance, compatibility, checksum validity, unused memory, or flash safety."
+    },
+    {
+      "file": "SubaruRoms/OEM/A2WC511R.bin",
+      "size": 1048576,
+      "sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+      "calid_at_2000": "A2WC511R",
+      "ecuid_at_CDAD8": "2F12515306",
+      "identity_matches": true,
+      "reset_pc": "0xaac",
+      "reset_sp": "0xffffbfa0",
+      "rom_tail": "00 00 f6 0c 00 00 20 00",
+      "hook_old_values": [
+        {
+          "offset": "0x7a04",
+          "role": "MAF interpolation pointer",
+          "expected": "0x209c",
+          "actual": "0x209c",
+          "matches": true
+        },
+        {
+          "offset": "0x122b4",
+          "role": "WGDC routine pointer",
+          "expected": "0x14b20",
+          "actual": "0x14b20",
+          "matches": true
+        },
+        {
+          "offset": "0x127e8",
+          "role": "rev-limit routine pointer",
+          "expected": "0x317d8",
+          "actual": "0x317d8",
+          "matches": true
+        },
+        {
+          "offset": "0xd324",
+          "role": "memory reset routine pointer",
+          "expected": "0xf928",
+          "actual": "0xf928",
+          "matches": true
+        },
+        {
+          "offset": "0xfff8",
+          "role": "memory reset upper limit",
+          "expected": "0xffffbffb",
+          "actual": "0xffffbffb",
+          "matches": true
+        },
+        {
+          "offset": "0x114e0",
+          "role": "base timing pointer; semantics still need audit",
+          "expected": "0x35b96",
+          "actual": "0x35b96",
+          "matches": true
+        },
+        {
+          "offset": "0x1281c",
+          "role": "POLF pointer; semantics still need audit",
+          "expected": "0x2e2e8",
+          "actual": "0x2e2e8",
+          "matches": true
+        },
+        {
+          "offset": "0x35c3c",
+          "role": "timing interpolation pointer candidate",
+          "expected": "0x2150",
+          "actual": "0x2150",
+          "matches": true
+        },
+        {
+          "offset": "0x35c40",
+          "role": "base timing descriptor pointer candidate",
+          "expected": "0x84944",
+          "actual": "0x84944",
+          "matches": true
+        },
+        {
+          "offset": "0x2e538",
+          "role": "POLF interpolation pointer candidate",
+          "expected": "0x2150",
+          "actual": "0x2150",
+          "matches": true
+        },
+        {
+          "offset": "0x2e544",
+          "role": "POLF descriptor pointer candidate",
+          "expected": "0x842e4",
+          "actual": "0x842e4",
+          "matches": true
+        }
+      ],
+      "ff_runs": [
+        {
+          "start": "0xe14",
+          "end_exclusive": "0xfe0",
+          "length": 460
+        },
+        {
+          "start": "0x859bc",
+          "end_exclusive": "0xc0000",
+          "length": 239172
+        },
+        {
+          "start": "0xce754",
+          "end_exclusive": "0xffaf8",
+          "length": 201636
+        }
+      ],
+      "warning": "Identity and matching pointers do NOT establish stock provenance, compatibility, checksum validity, unused memory, or flash safety."
+    },
+    {
+      "file": "SubaruRoms/OEM/A2WC511R_STOCK_ROMRAIDER.bin",
+      "size": 1048576,
+      "sha256": "a34c4ce8238bf28bdc18c191bbe73b2179130aa9846e952a6fa332bae442de96",
+      "calid_at_2000": "A2WC511R",
+      "ecuid_at_CDAD8": "2F12515306",
+      "identity_matches": true,
+      "reset_pc": "0xaac",
+      "reset_sp": "0xffffbfa0",
+      "rom_tail": "00 00 f6 0c 00 00 20 00",
+      "hook_old_values": [
+        {
+          "offset": "0x7a04",
+          "role": "MAF interpolation pointer",
+          "expected": "0x209c",
+          "actual": "0x209c",
+          "matches": true
+        },
+        {
+          "offset": "0x122b4",
+          "role": "WGDC routine pointer",
+          "expected": "0x14b20",
+          "actual": "0x14b20",
+          "matches": true
+        },
+        {
+          "offset": "0x127e8",
+          "role": "rev-limit routine pointer",
+          "expected": "0x317d8",
+          "actual": "0x317d8",
+          "matches": true
+        },
+        {
+          "offset": "0xd324",
+          "role": "memory reset routine pointer",
+          "expected": "0xf928",
+          "actual": "0xf928",
+          "matches": true
+        },
+        {
+          "offset": "0xfff8",
+          "role": "memory reset upper limit",
+          "expected": "0xffffbffb",
+          "actual": "0xffffbffb",
+          "matches": true
+        },
+        {
+          "offset": "0x114e0",
+          "role": "base timing pointer; semantics still need audit",
+          "expected": "0x35b96",
+          "actual": "0x35b96",
+          "matches": true
+        },
+        {
+          "offset": "0x1281c",
+          "role": "POLF pointer; semantics still need audit",
+          "expected": "0x2e2e8",
+          "actual": "0x2e2e8",
+          "matches": true
+        },
+        {
+          "offset": "0x35c3c",
+          "role": "timing interpolation pointer candidate",
+          "expected": "0x2150",
+          "actual": "0x2150",
+          "matches": true
+        },
+        {
+          "offset": "0x35c40",
+          "role": "base timing descriptor pointer candidate",
+          "expected": "0x84944",
+          "actual": "0x84944",
+          "matches": true
+        },
+        {
+          "offset": "0x2e538",
+          "role": "POLF interpolation pointer candidate",
+          "expected": "0x2150",
+          "actual": "0x2150",
+          "matches": true
+        },
+        {
+          "offset": "0x2e544",
+          "role": "POLF descriptor pointer candidate",
+          "expected": "0x842e4",
+          "actual": "0x842e4",
+          "matches": true
+        }
+      ],
+      "ff_runs": [
+        {
+          "start": "0xe14",
+          "end_exclusive": "0xfe0",
+          "length": 460
+        },
+        {
+          "start": "0x859bc",
+          "end_exclusive": "0xc0000",
+          "length": 239172
+        },
+        {
+          "start": "0xce754",
+          "end_exclusive": "0xffaf8",
+          "length": 201636
+        }
+      ],
+      "warning": "Identity and matching pointers do NOT establish stock provenance, compatibility, checksum validity, unused memory, or flash safety."
+    }
+  ],
+  "executables": [
+    {
+      "path": "MerpMod/SharpTune.exe",
+      "size": 19368960,
+      "sha256": "248eb7f012d0edcb84048ee01f99f7fa49094942c25a3b53e75fbfcb957de8af"
+    },
+    {
+      "path": "SharpTune/SharpTune.exe",
+      "size": 19368960,
+      "sha256": "248eb7f012d0edcb84048ee01f99f7fa49094942c25a3b53e75fbfcb957de8af"
+    }
+  ],
+  "idb_files": [
+    {
+      "path": "SubaruRoms/OEM/A2WC511R_STOCK_ROMRAIDER.bin.i64",
+      "size": 7348537,
+      "sha256": "913e1d217cbb0f3707251688b90d02b540333a89aae0c76fcf21bd24f8857e18"
+    },
+    {
+      "path": "SubaruRoms/OEM/A2WC511R_STOCK_ROMRAIDER.bin.id0",
+      "size": 2940928,
+      "sha256": "47b13710db5bd90644c5e06f4f47aa7c7499ab380b64028eab412d11649254f3"
+    },
+    {
+      "path": "SubaruRoms/OEM/A2WC511R_STOCK_ROMRAIDER.bin.id1",
+      "size": 4399104,
+      "sha256": "020369d50cfe887ffe8832cfe339c19de1437ec19dc59de79f8e8ad3bf390b96"
+    },
+    {
+      "path": "SubaruRoms/OEM/A2WC511R_STOCK_ROMRAIDER.bin.nam",
+      "size": 16384,
+      "sha256": "ac509e7dd6a7875fffeb68b6f1f3a087ea5681597573ca2f401a82e6d1aaa5ae"
+    },
+    {
+      "path": "SubaruRoms/OEM/A2WC511R_STOCK_ROMRAIDER.bin.til",
+      "size": 72,
+      "sha256": "513e9d059ab03cfc3088999d32eb2fb26a8a3f338a7f95720e81075256443d4b"
+    }
+  ],
+  "generated_build": {
+    "TargetHeader.h": {
+      "MOD_ECUID": "CC3BFECC69",
+      "MOD_DATE": "23.08.26.13.08",
+      "MOD_CONFIG": "Gratis",
+      "MOD_BUILD": "Debug",
+      "MOD_RELEASE": "0",
+      "ECU_CALIBRATION_ID": "A8DH202X",
+      "ECU_IDENTIFIER": "4312584206",
+      "dCalId": "(0x00002000)",
+      "dEcuId": "(0x000CFB8C)",
+      "dRomHoleStart": "(0x000E1400)",
+      "pRamHoleStart": "(0xFFFF96C0)",
+      "sPull2DFloat": "(0x0000209C)",
+      "sPull3DFloat": "(0x00002150)",
+      "pTGVLeftVoltage": "((unsigned short*)0xFFFF5C0A)",
+      "pTGVRightVoltage": "((unsigned short*)0xFFFF5C0C)",
+      "sShortToFloat": "(0x00002594)",
+      "tTipInEnrich": "(0x0009508C)",
+      "tCrankingFuelA": "(0x00094CD0)",
+      "tCrankingFuelB": "(0x00094CE4)",
+      "tCrankingFuelC": "(0x00094CF8)",
+      "tCrankingFuelD": "(0x00094D0C)",
+      "tCrankingFuelE": "(0x00094D20)",
+      "tCrankingFuelF": "(0x00094D34)",
+      "tStartupEnrich2_1A": "(0x00094D98)",
+      "tStartupEnrich2_1B": "(0x00094DC0)",
+      "tStartupEnrich2_2A": "(0x00094DAC)",
+      "tStartupEnrich2_2B": "(0x00094DD4)",
+      "tStartupEnrich3_1A": "(0x00094D48)",
+      "tStartupEnrich3_1B": "(0x00094D5C)",
+      "tStartupEnrich3_2A": "(0x00094D70)",
+      "tStartupEnrich3_2B": "(0x00094D84)",
+      "hRevLimDelete": "(0x00014EB4)",
+      "sRevLimStart": "(0x00033D68)",
+      "sRevLimEnd": "(0x00033D9E)",
+      "pFlagsRevLim": "((unsigned char*)0xFFFF74EC)",
+      "RevLimBitMask": "(0x80)",
+      "hMafCalc": "(0x00008314)",
+      "sMafCalc": "(0x000082B8)",
+      "dInjectorScaling": "((float*)0x000C82E8)",
+      "hInjectorScaling": "(0x0002B738)",
+      "sCelTrigger": "(0x0008C1FC)",
+      "hCelSignal": "(0x0008C314)",
+      "pCelSignalOem": "((unsigned char*)0xFFFF930E)",
+      "hPullTargetBoost": "(0x00017750)",
+      "hTableTargetBoost": "(0x00017764)",
+      "tTargetBoost": "(0x000939C4)",
+      "hTableTargetBoostAlt": "(0x00017758)",
+      "tTargetBoostAlt": "(0x000939A8)",
+      "hPullWgdc": "(0x00017BCC)",
+      "hWgdc": "(0x00014964)",
+      "sWgdc": "(0x00017260)",
+      "sJsrWgdcInitial": "(0x00017AC2)",
+      "hTableWgdcInitial": "(0x00017BD4)",
+      "tWgdcInitial": "(0x0009391C)",
+      "tTableWgdcInitialAlt": "(0x00017BDC)",
+      "hJsrWgdcMax": "(0x00017B24)",
+      "hTableWgdcMax": "(0x00017C10)",
+      "tWgdcMax": "(0x00093954)",
+      "tWgdcMaxAlt": "(0x00093938)",
+      "pPolf4Byte": "(0xFFFF7324)",
+      "hPull3DPolf": "(0x000306A0)",
+      "tPolf": "(0x00095420)",
+      "hTablePolf": "(0x000306AC)",
+      "hJsrPolf": "(0x00030518)",
+      "hPolf": "(0x00014EE0)",
+      "sPolf": "(0x0003046C)",
+      "pPolfEnrich": "(0xFFFF7324)",
+      "hBaseTiming": "(0x00014F9C)",
+      "hTableBaseTiming": "(0x00037DE0)",
+      "tBaseTiming": "(0x00095B28)",
+      "pBaseTiming": "(0xFFFF76A4)",
+      "sBaseTiming": "(0x00037C72)",
+      "hPull3DTiming": "(0x00037DDC)",
+      "hSubKca": "(0x00037654)",
+      "pKcaIam": "(0xFFFF7840)",
+      "sSparkCutOcrStart": "(0x0000A756)",
+      "sSparkCutOcrEnd": "(0x0000A76C)",
+      "sSparkCutGrStart": "(0x0000A7C6)",
+      "sSparkCutGrEnd": "(0x0000A7CE)",
+      "pResumeFlags": "((unsigned char*)0xFFFF64B0)",
+      "ResumeBitMask": "((unsigned char)0x04)",
+      "pCoastFlags": "((unsigned char*)0xFFFF64B0)",
+      "CoastBitMask": "((unsigned char)0x02)",
+      "pBrakeFlags": "((unsigned char*)0xFFFF64B0)",
+      "BrakeBitMask": "((unsigned char)0x80)",
+      "pClutchFlags": "((unsigned char*)0xFFFF69F1)",
+      "ClutchBitMask": "((unsigned char)0x80)",
+      "pTestModeFlags": "((unsigned char*)0xFFFF69EC)",
+      "TestModeBitMask": "((unsigned char)0x20)",
+      "pDefogFlags": "((unsigned char*)0xFFFF69EF)",
+      "DefogBitMask": "((unsigned char)0x20)",
+      "pSSMResetByte": "((unsigned char*)0xFFFF2D8E)",
+      "pFbkc1": "((unsigned char*)0xFFFF6B6C)",
+      "pFbkc4": "((float*)0xFFFF77FC)",
+      "pIam1": "((unsigned char*)0xFFFF6B71)",
+      "pIam4": "((float*)0xFFFF2B3C)",
+      "pEngineSpeed": "((float*)0xFFFF6A18)",
+      "pVehicleSpeed": "((float*)0xFFFF6A10)",
+      "pCoolantTemp": "((float*)0xFFFF67C4)",
+      "pAtmoPress": "((float*)0xFFFF5CD4)",
+      "pManifoldAbsolutePressure": "((float*)0xFFFF6698)",
+      "pIntakeAirTemp": "((float*)0xFFFF5C9C)",
+      "pMassAirFlow": "((float*)0xFFFF5CD0)",
+      "pMafSensorVoltage": "((short*)0xFFFF5BFE)",
+      "pEngineLoad": "((float*)0xFFFF6848)",
+      "pReqTorque": "((float*)0xFFFF7AF0)",
+      "pThrottlePlate": "((float*)0xFFFF673C)",
+      "pWgdc4": "((float*)0xFFFF63A0)",
+      "pCurrentGear": "((unsigned char*)0xFFFF6B21)",
+      "pAf1Res": "((float*)0xFFFF5F08)",
+      "pDeltaMap": "((float*)0xFFFF668C)",
+      "pObdVinDirect": "((unsigned char*)0xFFFF2004)",
+      "dLoadSmoothingA": "(0x000C23B8)",
+      "dLoadSmoothingB": "(0x000C23BC)",
+      "dLoadSmoothingFinal": "(0x000C23C8)",
+      "sMemoryReset": "(0x0000FCAC)",
+      "hMemoryReset": "(0x0000DBC8)",
+      "pMemoryResetLimit": "(0xFFFFBFBB)",
+      "hMemoryResetLimit": "(0x00012038)"
+    },
+    "TargetHeader.h_file": {
+      "path": "MerpMod/MerpMod/TargetHeader.h",
+      "size": 5767,
+      "sha256": "3d321443bbe4c555b99513db698d283373f7b72e30e1a69d52d6cae5dcaa05ff"
+    },
+    "TargetConfig.h": {
+      "AUTO_TRANS": "0",
+      "SD_DMAP": "0",
+      "ECU_IDENTIFIER_CHARS": "(10)",
+      "ECU_CALIBRATION_CHARS": "(8)",
+      "MOD_CALIBRATION_ID": "FFFFFFFF",
+      "MOD_ECU_IDENTIFIER": "FFFFFFFFFF //TODO change back when testing is complete!!",
+      "EXPECTED_MAF_SENSOR": "3.301016f",
+      "EXPECTED_MAF_SD": "3.73053f"
+    },
+    "TargetConfig.h_file": {
+      "path": "MerpMod/MerpMod/TargetConfig.h",
+      "size": 390,
+      "sha256": "c7ca1883d469d7ff151a4e73d407e8ffece95ad18cc8b4b56a146a3aa863642a"
+    },
+    "GitVersion.h": {
+      "GITVERSION": "v0.1-73-g8720d20"
+    },
+    "GitVersion.h_file": {
+      "path": "MerpMod/MerpMod/GitVersion.h",
+      "size": 38,
+      "sha256": "00b70baf2d3084267a669dcd57c4b87d5ed463df580aa606ef905bd0a1cb1b7c"
+    },
+    "Gratis_Debug/EcuHacks.gcc": "-c -x c\n-m2e\n-mrenesas\n-mieee\n-I \"c:\\program files (x86)\\renesas\\hew\\tools\\kpit\\gnush-elf\\v13.01\\sh-elf\\sh-elf\\optlibinc\"\n-I \"c:\\program files (x86)\\renesas\\hew\\tools\\kpit\\gnush-elf\\v13.01\\sh-elf\\lib\\gcc\\sh-elf\\4.7-GNUSH_v13.01\\optlibinc\"\n-D DEBUG\n-D TARGET_ECU=A8DH202X\n-nostdinc\n\"C:\\Dev\\MerpMod\\MerpMod\\EcuHacks.c\"\n-g\n-g2\n-S -o \"C:\\Dev\\MerpMod\\MerpMod\\Gratis_Debug\\EcuHacks.s\"\n",
+    "Gratis_Debug/EcuHacks.gas": "\"C:\\Dev\\MerpMod\\MerpMod\\Gratis_Debug\\EcuHacks.s\"\n-renesas\n--gdwarf2\n-o \"C:\\Dev\\MerpMod\\MerpMod\\Gratis_Debug\\EcuHacks.o\"\n",
+    "Gratis_Debug/MerpMod.gld": "-T \"C:\\Dev\\MerpMod\\MerpMod\\Gratis_Debug\\MerpMod_Gratis_Debug_auto.gsi\"\n-T \"C:\\Dev\\MerpMod\\MerpMod\\Gratis_Debug\\MerpMod_input.tmp\" \n-L \"c:\\program files (x86)\\renesas\\hew\\tools\\kpit\\gnush-elf\\v13.01\\sh-elf\\lib\\gcc\\sh-elf\\4.7-GNUSH_v13.01\\mrenesas\\m2e\"\n-L \"C:\\Dev\\MerpMod\\MerpMod\\Gratis_Debug\"\n-renesas\n--start-group -l \"MerpMod\" -l \"gcc-Os-4-200\" -l \"gcc\" --end-group\n-o \"C:\\Dev\\MerpMod\\MerpMod\\Gratis_Debug\\MerpMod.x\"\n-e _ResetHandler\n\n\n\n-T \"C:\\Dev\\MerpMod\\MerpMod\\LinkerScript.txt\"\n",
+    "LinkerScript.txt": "SECTIONS\n{\n\tREVLIM_START 0x00033D68 : AT (0x00033D68)\n\t{\n\t\t*(RevLimit)\n\t}\n\tSPARK_CUT_OCR_START 0x0000A756 : AT (0x0000A756)\n\t{\n\t\t*(SparkCutOCRhook)\n\t}\n\tSPARK_CUT_GR_START 0x0000A7C6 : AT (0x0000A7C6)\n\t{\n\t\t*(SparkCutGRhook)\n\t}\n\tROMHOLE_START 0x000E1400 : AT (0x000E1400)\n\t{\n\t\t*(RomHole_Identifier)\n\t\t*(RomHole_Misc)\n\t\t*(RomHole_SpeedDensityTables)\n\t\t*(RomHole_RevLimTables)\n\t\t*(RomHole_CelFlashTables)\n\t\t*(RomHole_POLFHackTables)\n\t\t*(RomHole_BoostHackTables)\n\t\t*(RomHole_TimingHackTables)\n\t\t*(RomHole_MapSwitchTables)\n\t\t*(RomHole_ProgModeTables)\n\t\t*(RomHole_PortLoggerTables)\n\t\t*(RomHole_Vin)\n\t\t*(RomHole_Code)\n\t\t*(RomHole_Functions)\n\t\t*(RomHole_RomHoleEndMarker)\n\t}\n\tRAMHOLE_START 0xFFFF96C0 : AT (0xFFFF96C0)\n\t{\n\t\t*(RamHole)\n\t}\n}\n",
+    "Gratis_Debug/MerpMod.x": {
+      "file": {
+        "path": "MerpMod/MerpMod/Gratis_Debug/MerpMod.x",
+        "size": 72098,
+        "sha256": "26cb60b16a3541bb8128125dfd997a66c89a639b049a76da75a7edf40a4e310e"
+      },
+      "header": {
+        "elf": true,
+        "class_bits": 32,
+        "byte_order": "big",
+        "type": 2,
+        "machine": 42,
+        "entry": "0xe00000",
+        "flags": "0xb",
+        "sh_machine_nibble": 11,
+        "program_headers": 7,
+        "section_headers": 22,
+        "warning": "Architecture metadata only. Metadata/simulator sections are not a 1MiB flash image."
+      }
+    },
+    "Gratis_Debug/EcuHacks.o": {
+      "file": {
+        "path": "MerpMod/MerpMod/Gratis_Debug/EcuHacks.o",
+        "size": 3868,
+        "sha256": "034de5c4804a1408ec5e1fef0d499b4707726c13ecaebe35988000419ab9d8ae"
+      },
+      "header": {
+        "elf": true,
+        "class_bits": 32,
+        "byte_order": "big",
+        "type": 1,
+        "machine": 42,
+        "entry": "0x0",
+        "flags": "0x1",
+        "sh_machine_nibble": 1,
+        "program_headers": 0,
+        "section_headers": 25,
+        "warning": "Architecture metadata only. Metadata/simulator sections are not a 1MiB flash image."
+      }
+    },
+    "A2WC511R_target_files": [],
+    "Gratis.h": {
+      "MEMORY_HACKS": "1\t\t//",
+      "SD_HACKS": "1\t\t//",
+      "REVLIM_HACKS": "1\t\t//",
+      "LC_ADJ_HACKS": "0\t\t//",
+      "PROG_MODE": "0\t\t\t//",
+      "SPARK_HACKS": "0\t\t//",
+      "CEL_HACKS": "0\t\t\t//",
+      "BOOST_HACKS": "0\t\t//",
+      "TIMING_HACKS": "0\t\t//",
+      "POLF_HACKS": "0\t\t//",
+      "PGWG_HACKS": "0\t\t//",
+      "INJECTOR_HACKS": "0\t//"
+    },
+    "Flash.h": {
+      "MEMORY_HACKS": "1\t\t//",
+      "SD_HACKS": "1\t\t//",
+      "REVLIM_HACKS": "1\t\t//",
+      "LC_ADJ_HACKS": "0\t\t//",
+      "PROG_MODE": "0\t\t\t//",
+      "SPARK_HACKS": "0\t\t//",
+      "CEL_HACKS": "1\t\t\t//",
+      "BOOST_HACKS": "0\t\t//",
+      "TIMING_HACKS": "0\t\t//",
+      "POLF_HACKS": "0\t\t//",
+      "PGWG_HACKS": "0\t\t//",
+      "INJECTOR_HACKS": "0\t//"
+    },
+    "Switch.h": {
+      "MEMORY_HACKS": "1\t\t//",
+      "VIN_HACKS": "0\t\t\t//",
+      "VIN_TEST_LOG": "0\t\t//",
+      "SWITCH_HACKS": "1\t\t//",
+      "SD_HACKS": "1\t\t//",
+      "REVLIM_HACKS": "1\t\t//",
+      "LC_ADJ_HACKS": "1\t\t//",
+      "PROG_MODE": "1\t\t\t//",
+      "SPARK_HACKS": "0\t\t//",
+      "CEL_HACKS": "1\t\t\t//",
+      "BOOST_HACKS": "1\t\t//",
+      "TIMING_HACKS": "1\t\t//",
+      "POLF_HACKS": "1\t\t//",
+      "PGWG_HACKS": "1\t\t//",
+      "INJECTOR_HACKS": "1\t//",
+      "RAM_PERSIST": "1\t\t//",
+      "VE_RAMTUNING": "0\t\t//",
+      "POLF_RAMTUNING": "0\t//",
+      "TIMING_RAMTUNING": "0\t//",
+      "PGWG_RAMTUNING": "0\t//",
+      "WGDC_RAMTUNING": "0\t//"
+    }
+  },
+  "findings": [
+    {
+      "id": "WRONG_TARGET",
+      "severity": "build_blocker",
+      "actual": "A8DH202X",
+      "required": "A2WC511R"
+    },
+    {
+      "id": "AUTO_TRANS_NOT_SET",
+      "severity": "build_blocker",
+      "actual": "0",
+      "required": "verify 5EAT config then set AUTO_TRANS=1 in port configuration"
+    },
+    {
+      "id": "MISSING_TARGET_FILES",
+      "severity": "port_work",
+      "detail": "No A2WC511R target header/map/linker/config in uploaded MerpMod/Targets."
+    },
+    {
+      "id": "RAM_HOLE_UNPROVEN",
+      "severity": "integration_blocker",
+      "detail": "FFFF7400 is a prior candidate, not an allocation. No absence-of-xref proof accepted."
+    },
+    {
+      "id": "CURRENT_FLASH_UNKNOWN",
+      "severity": "vehicle_test_blocker",
+      "detail": "The uploaded baseline identity does not identify the current modified calibration in the car."
+    },
+    {
+      "id": "FRESHNESS_UNPROVEN",
+      "severity": "active_control_blocker",
+      "detail": "4CA1 and 4C50:02 have not been proven to exclude stale gear data under communication failure."
+    }
+  ],
+  "named_stock_comparison": {
+    "a": "SubaruRoms/OEM/A2WC511R.bin",
+    "b": "SubaruRoms/OEM/A2WC511R_STOCK_ROMRAIDER.bin",
+    "a_size": 1048576,
+    "b_size": 1048576,
+    "a_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+    "b_sha256": "a34c4ce8238bf28bdc18c191bbe73b2179130aa9846e952a6fa332bae442de96",
+    "identical": false,
+    "changed_byte_positions": 4,
+    "total_ranges": 1,
+    "ranges": [
+      {
+        "start": "0xffc4c",
+        "end_exclusive": "0xffc50",
+        "length": 4,
+        "a_first16": "ff ff ff ff",
+        "b_first16": "26 08 23 01"
+      }
+    ],
+    "truncated": false,
+    "warning": "A diff is not a semantic, checksum, relocation, RAM-allocation, or flash-safety validation."
+  },
+  "baseline_hash_seen": true
+}

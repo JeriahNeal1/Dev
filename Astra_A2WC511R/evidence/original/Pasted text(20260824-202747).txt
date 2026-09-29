@@ -1,0 +1,712 @@
+Python>print("=== BEFORE FUNCTION RECOVERY ===")
+=== BEFORE FUNCTION RECOVERY ===
+Python>show_func_state(0x24950)
+
+EA 00024950
+  name      = sUpdateNormalizedGearState
+  is_head   = False
+  is_code   = False
+  function  = <none>
+Python>show_func_state(0x24A9C)
+
+EA 00024A9C
+  name      = sSetGearStateE8To6
+  is_head   = False
+  is_code   = False
+  function  = <none>
+Python>print("\n=== OVERLAPPING FUNCTION CHECK ===")
+
+=== OVERLAPPING FUNCTION CHECK ===
+Python>seen = set()
+Python>for ea in range(0x24940, 0x24AA4, 2):
+    f = ida_funcs.get_func(ea)
+
+    if not f:
+        continue
+
+    key = (f.start_ea, f.end_ea)
+
+    if key in seen:
+        continue
+
+    seen.add(key)
+
+    print(
+        f"{f.start_ea:08X}-{f.end_ea:08X}",
+        ida_funcs.get_func_name(f.start_ea)
+    )
+Python>
+Python>print("\n=== CREATE START INSTRUCTIONS IF NEEDED ===")
+
+=== CREATE START INSTRUCTIONS IF NEEDED ===
+Python>for ea in (0x24950, 0x24A9C):
+    flags = ida_bytes.get_flags(ea)
+
+    if not ida_bytes.is_code(flags):
+        result = ida_ua.create_insn(ea)
+        print(
+            f"{ea:08X}: create_insn -> {result}"
+        )
+    else:
+        print(
+            f"{ea:08X}: already persistent code"
+        )
+Flushing buffers, please wait...ok
+Python>
+00024950: create_insn -> 2
+00024A9C: create_insn -> 2
+Python>ida_auto.auto_wait()
+True
+Python>
+Python>for ea in (0x24950, 0x24A9C):
+    f = ida_funcs.get_func(ea)
+
+    if f:
+        print(
+            f"{ea:08X}: already in function "
+            f"{f.start_ea:08X}-{f.end_ea:08X}"
+        )
+    else:
+        result = ida_funcs.add_func(ea)
+
+        print(
+            f"{ea:08X}: add_func(auto-end) -> "
+            f"{result}"
+        )
+Python>
+00024950: add_func(auto-end) -> True
+00024A9C: add_func(auto-end) -> True
+Python>ida_auto.auto_wait()
+True
+Python>
+Python>print("\n=== FINAL STATE ===")
+
+=== FINAL STATE ===
+Python>show_func_state(0x24950)
+
+EA 00024950
+  name      = sUpdateNormalizedGearState
+  is_head   = True
+  is_code   = True
+  function  = 00024950-00024A9C sUpdateNormalizedGearState
+Python>
+Python>show_func_state(0x24A9C)
+
+EA 00024A9C
+  name      = sSetGearStateE8To6
+  is_head   = True
+  is_code   = True
+  function  = 00024A9C-00024AA4 sSetGearStateE8To6
+Python>
+Flushing buffers, please wait...ok
+Database has been saved
+Python>import ida_bytes
+Python>import ida_ua
+Python>import idc
+Python>ROM_START = 0x00000000
+Python>ROM_END   = 0x00100000
+Python>def rom_bytes():
+    data = ida_bytes.get_bytes(
+        ROM_START,
+        ROM_END - ROM_START
+    )
+
+    if not data:
+        raise RuntimeError(
+            "Could not read ROM segment"
+        )
+
+    return data
+Python>
+Python>def find_u32_literals(value):
+    data = rom_bytes()
+    needle = value.to_bytes(4, "big")
+
+    hits = []
+    pos = 0
+
+    while True:
+        pos = data.find(needle, pos)
+
+        if pos < 0:
+            break
+
+        hits.append(ROM_START + pos)
+        pos += 1
+
+    return hits
+Python>
+Python>def find_sh_movl_users(lit):
+    users = []
+
+    start = max(
+        ROM_START,
+        lit - 0x404
+    )
+
+    for ea in range(start & ~1, lit, 2):
+        raw = ida_bytes.get_bytes(ea, 2)
+
+        if not raw:
+            continue
+
+        word = int.from_bytes(raw, "big")
+
+        # SH:
+        # MOV.L @(disp,PC),Rn
+        if (word & 0xF000) != 0xD000:
+            continue
+
+        reg = (word >> 8) & 0xF
+        disp = word & 0xFF
+
+        target = (
+            ((ea + 4) & ~3)
+            + (disp << 2)
+        )
+
+        if target == lit:
+            users.append((ea, reg))
+
+    return users
+Python>
+Python>def find_bsr_callers(target):
+    callers = []
+
+    for ea in range(
+        ROM_START,
+        ROM_END - 1,
+        2
+    ):
+        raw = ida_bytes.get_bytes(ea, 2)
+
+        if not raw:
+            continue
+
+        word = int.from_bytes(raw, "big")
+
+        # BSR disp12
+        if (word & 0xF000) != 0xB000:
+            continue
+
+        disp = word & 0x0FFF
+
+        if disp & 0x0800:
+            disp -= 0x1000
+
+        dest = ea + 4 + (disp << 1)
+
+        if dest == target:
+            callers.append(ea)
+
+    return callers
+Python>
+Python>for target in (
+    0x24950,
+    0x24A9C
+):
+    print(
+        "\n" + "=" * 72
+    )
+    print(
+        f"TARGET {target:08X}"
+    )
+
+    bsr = find_bsr_callers(target)
+
+    print("Direct BSR callers:")
+
+    if not bsr:
+        print("  <none>")
+
+    for ea in bsr:
+        print(
+            f"  {ea:08X}:",
+            idc.generate_disasm_line(
+                ea,
+                idc.GENDSM_FORCE_CODE
+            )
+        )
+
+    literals = find_u32_literals(target)
+
+    print("32-bit pointer literals:")
+
+    if not literals:
+        print("  <none>")
+
+    for lit in literals:
+        print(
+            f"  literal @ {lit:08X}"
+        )
+
+        users = find_sh_movl_users(lit)
+
+        for ea, reg in users:
+            print(
+                f"    MOV.L user "
+                f"{ea:08X} -> R{reg}"
+            )
+Python>
+
+========================================================================
+TARGET 00024950
+Direct BSR callers:
+  <none>
+32-bit pointer literals:
+  literal @ 00011CBC
+    MOV.L user 00011BDE -> R3
+
+========================================================================
+TARGET 00024A9C
+Direct BSR callers:
+  <none>
+32-bit pointer literals:
+  literal @ 00010814
+    MOV.L user 00010630 -> R2
+Python>
+Python>print(
+    "\n=== ALL FFFF4BC2 POINTER LITERALS ==="
+)
+
+=== ALL FFFF4BC2 POINTER LITERALS ===
+Python>raw_literals = find_u32_literals(
+    0xFFFF4BC2
+)
+Python>for lit in raw_literals:
+    print(
+        f"\nLITERAL @ {lit:08X}"
+    )
+
+    users = find_sh_movl_users(lit)
+
+    if not users:
+        print(
+            "  no PC-relative MOV.L users found"
+        )
+        continue
+
+    for ea, reg in users:
+        print(
+            f"  user {ea:08X} "
+            f"loads into R{reg}"
+        )
+
+        start = max(0, ea - 12)
+        end = ea + 30
+
+        for cur in range(
+            start & ~1,
+            end,
+            2
+        ):
+            line = idc.generate_disasm_line(
+                cur,
+                idc.GENDSM_FORCE_CODE
+            )
+
+            marker = ">>" if cur == ea else "  "
+
+            print(
+                f"{marker} {cur:08X}: "
+                f"{line or '<undecoded>'}"
+            )
+Python>
+
+LITERAL @ 00014814
+  user 000147DC loads into R6
+   000147D0: shar    r4
+   000147D2: shar    r4
+   000147D4: shar    r4
+   000147D6: mov     #h'F, r3
+   000147D8: and     r3, r4
+   000147DA: mov.b   r4, @r1
+>> 000147DC: mov.l   #h'FFFF4BC2, r6
+   000147DE: mov     #h'F, r3
+   000147E0: and     r3, r5
+   000147E2: extu.b  r5, r4
+   000147E4: mov     r4, r0
+   000147E6: cmp/eq  #8, r0
+   000147E8: bf/s    unk_147F2
+   000147EA: nop
+   000147EC: mov     #0, r1
+   000147EE: bra     unk_147FE
+   000147F0: mov.b   r1, @r6
+   000147F2: mov     #8, r0
+   000147F4: tst     r0, r4
+   000147F6: bf/s    unk_147FE
+   000147F8: nop
+
+LITERAL @ 00024AAC
+  user 00024972 loads into R3
+   00024966: add     #-h'C, r15
+   00024968: mov.l   #sub_2663C, r2
+   0002496A: fmov.s  @r3, fr3
+   0002496C: jsr     @r2 ; sub_2663C
+   0002496E: fmov.s  fr3, @r15
+   00024970: mov.b   r0, @(h'24+var_20,r15)
+>> 00024972: mov.l   #pRawGearRangeCode_candidate, r3; Raw byte loaded into R10 at 0x24978 before OEM normalization into FFFF52E8/FFFF52E9. Exact address verified; numeric range/gear semantics pending live validation.
+   00024974: mov.l   #sub_16652, r2
+   00024976: jsr     @r2 ; sub_16652
+   00024978: mov.b   @r3, r10
+   0002497A: mov     r0, r4
+   0002497C: extu.b  r4, r0
+   0002497E: cmp/eq  #1, r0
+   00024980: bf/s    loc_2499C
+   00024982: nop
+   00024984: mov.l   #unk_C25DC, r3
+   00024986: mov     #8, r0
+   00024988: mov.l   #unk_C25E0, r2
+   0002498A: fmov.s  @r3, fr3
+   0002498C: fmov.s  fr3, @(r0,r15)
+   0002498E: fmov.s  @r2, fr15
+
+LITERAL @ 0002E958
+  user 0002E7C6 loads into R3
+   0002E7BA: mov.b   @r3, r0
+   0002E7BC: mov.l   #h'FFFF4BC1, r2
+   0002E7BE: mov.b   r0, @(8,r15)
+   0002E7C0: mov.b   @r1, r6
+   0002E7C2: mov     #h'10, r0
+   0002E7C4: mov.b   @r2, r4
+>> 0002E7C6: mov.l   #h'FFFF4BC2, r3
+   0002E7C8: mov.b   @(r0,r15), r12
+   0002E7CA: mov.b   @r3, r5
+   0002E7CC: mov.l   #h'C6FD8, r1
+   0002E7CE: extu.b  r12, r12
+   0002E7D0: mov.l   #h'C6FDC, r2
+   0002E7D2: mov     r12, r0
+   0002E7D4: fmov.s  @r1, fr4
+   0002E7D6: cmp/eq  #1, r0
+   0002E7D8: bf/s    unk_2E830
+   0002E7DA: fmov.s  @r2, fr6
+   0002E7DC: extu.b  r6, r0
+   0002E7DE: cmp/eq  #1, r0
+   0002E7E0: bt/s    unk_2E800
+   0002E7E2: nop
+Python>
+Python>ida_name.set_name(
+    0xFFFF4BC2,
+    "pRawGearRangeCode",
+    ida_name.SN_FORCE
+)
+True
+Python>
+Python>idc.set_cmt(
+    0xFFFF4BC2,
+    "Live-verified A2WC511R 5EAT raw gear/range byte. "
+    "Observed: 0=P/N/no selected forward gear, "
+    "1..5=forward gears 1..5, 7=Reverse. "
+    "Value 6 not observed in current live testing. "
+    "OEM normalization maps 0/6 to E8=6,E9=0 and 7 to E8=1,E9=1.",
+    1
+)
+True
+Python>
+Python>print("=== RAW GEAR CODE PRODUCER ===")
+=== RAW GEAR CODE PRODUCER ===
+Python>dump_range(0x147B0, 0x14820)
+000147B0: mov.w   #h'F0, r6
+000147B2: and     r5, r6
+000147B4: mov.w   #h'80, r7
+000147B6: extu.b  r6, r4
+000147B8: cmp/eq  r7, r4
+000147BA: bf/s    unk_147C6
+000147BC: nop
+000147BE: mov     #0, r1
+000147C0: mov.l   #h'FFFF4BC1, r3
+000147C2: bra     unk_147DC
+000147C4: mov.b   r1, @r3
+000147C6: tst     r4, r7
+000147C8: bf/s    unk_147DC
+000147CA: nop
+000147CC: mov.l   #h'FFFF4BC1, r1
+000147CE: shar    r4
+000147D0: shar    r4
+000147D2: shar    r4
+000147D4: shar    r4
+000147D6: mov     #h'F, r3
+000147D8: and     r3, r4
+000147DA: mov.b   r4, @r1
+000147DC: mov.l   #h'FFFF4BC2, r6
+000147DE: mov     #h'F, r3
+000147E0: and     r3, r5
+000147E2: extu.b  r5, r4
+000147E4: mov     r4, r0
+000147E6: cmp/eq  #8, r0
+000147E8: bf/s    unk_147F2
+000147EA: nop
+000147EC: mov     #0, r1
+000147EE: bra     unk_147FE
+000147F0: mov.b   r1, @r6
+000147F2: mov     #8, r0
+000147F4: tst     r0, r4
+000147F6: bf/s    unk_147FE
+000147F8: nop
+000147FA: and     r3, r5
+000147FC: mov.b   r5, @r6
+000147FE: rts
+00014800: nop
+00014802: <decode failed> 00 80
+00014804: <decode failed> 00 f0
+00014806: <decode failed> ff ff
+00014808: <decode failed> ff ff
+0001480A: <decode failed> 4b c0
+0001480C: <decode failed> ff ff
+0001480E: shld    r8, r12
+00014810: <decode failed> ff ff
+00014812: <decode failed> 4b c1
+00014814: <decode failed> ff ff
+00014816: <decode failed> 4b c2
+00014818: mov.l   r14, @-r15
+0001481A: sts.l   pr, @-r15
+0001481C: mov.l   #h'FFFF4C8C, r3
+0001481E: add     #-4, r15
+Python>f = ida_funcs.get_func(0x147DC)
+Python>if f:
+    print(
+        f"Function containing 147DC: "
+        f"{f.start_ea:08X}-{f.end_ea:08X} "
+        f"{ida_funcs.get_func_name(f.start_ea)}"
+    )
+else:
+    print("No function currently contains 147DC")
+Python>
+No function currently contains 147DC
+Python>print("=== RAW GEAR CONSUMER / ADJACENT TCU STATE ===")
+=== RAW GEAR CONSUMER / ADJACENT TCU STATE ===
+Python>dump_range(0x2E780, 0x2E880)
+0002E780: fmov.s  fr15, @-r15
+0002E782: fmov.s  fr14, @-r15
+0002E784: fmov.s  fr13, @-r15
+0002E786: fmov.s  fr12, @-r15
+0002E788: mov.l   #h'FFFF4FC0, r2
+0002E78A: sts.l   pr, @-r15
+0002E78C: mov.l   #h'FFFF502C, r1
+0002E78E: add     #-h'14, r15
+0002E790: fmov.s  @r3, fr14
+0002E792: fmov.s  @r2, fr15
+0002E794: fmov.s  @r1, fr3
+0002E796: fmov.s  fr3, @(r0,r15)
+0002E798: mov.l   #h'FFFF51D4, r3
+0002E79A: fmov.s  @r3, fr3
+0002E79C: fmov.s  fr3, @r15
+0002E79E: mov.l   #h'FFFF50E0, r2
+0002E7A0: mov.l   #h'FFFF5028, r1
+0002E7A2: fmov.s  @r2, fr12
+0002E7A4: mov.l   #h'23A20, r3
+0002E7A6: jsr     @r3
+0002E7A8: fmov.s  @r1, fr13
+0002E7AA: mov     r15, r2
+0002E7AC: mov.l   #h'1DAEC, r3
+0002E7AE: add     #h'10, r2
+0002E7B0: jsr     @r3
+0002E7B2: mov.b   r0, @r2
+0002E7B4: mov.b   r0, @(4,r15)
+0002E7B6: mov.l   #h'FFFF4BC3, r3
+0002E7B8: mov.l   #h'FFFF52E8, r1
+0002E7BA: mov.b   @r3, r0
+0002E7BC: mov.l   #h'FFFF4BC1, r2
+0002E7BE: mov.b   r0, @(8,r15)
+0002E7C0: mov.b   @r1, r6
+0002E7C2: mov     #h'10, r0
+0002E7C4: mov.b   @r2, r4
+0002E7C6: mov.l   #h'FFFF4BC2, r3
+0002E7C8: mov.b   @(r0,r15), r12
+0002E7CA: mov.b   @r3, r5
+0002E7CC: mov.l   #h'C6FD8, r1
+0002E7CE: extu.b  r12, r12
+0002E7D0: mov.l   #h'C6FDC, r2
+0002E7D2: mov     r12, r0
+0002E7D4: fmov.s  @r1, fr4
+0002E7D6: cmp/eq  #1, r0
+0002E7D8: bf/s    unk_2E830
+0002E7DA: fmov.s  @r2, fr6
+0002E7DC: extu.b  r6, r0
+0002E7DE: cmp/eq  #1, r0
+0002E7E0: bt/s    unk_2E800
+0002E7E2: nop
+0002E7E4: cmp/eq  #2, r0
+0002E7E6: bt/s    unk_2E808
+0002E7E8: nop
+0002E7EA: cmp/eq  #3, r0
+0002E7EC: bt/s    unk_2E810
+0002E7EE: nop
+0002E7F0: cmp/eq  #4, r0
+0002E7F2: bt/s    unk_2E818
+0002E7F4: nop
+0002E7F6: cmp/eq  #5, r0
+0002E7F8: bt/s    unk_2E820
+0002E7FA: nop
+0002E7FC: bra     unk_2E82A
+0002E7FE: nop
+0002E800: mov.l   #h'C6FB0, r1
+0002E802: mov.l   #h'C6FB4, r3
+0002E804: bra     unk_2E826
+0002E806: fmov.s  @r1, fr5
+0002E808: mov.l   #h'C6FB8, r1
+0002E80A: mov.l   #h'C6FBC, r3
+0002E80C: bra     unk_2E826
+0002E80E: fmov.s  @r1, fr5
+0002E810: mov.l   #h'C6FC0, r1
+0002E812: mov.l   #h'C6FC4, r3
+0002E814: bra     unk_2E826
+0002E816: fmov.s  @r1, fr5
+0002E818: mov.l   #h'C6FC8, r1
+0002E81A: mov.l   #h'C6FCC, r3
+0002E81C: bra     unk_2E826
+0002E81E: fmov.s  @r1, fr5
+0002E820: mov.l   #h'C6FD0, r1
+0002E822: fmov.s  @r1, fr5
+0002E824: mov.l   #h'C6FD4, r3
+0002E826: bra     unk_2E892
+0002E828: fmov.s  @r3, fr4
+0002E82A: fmov    fr4, fr5
+0002E82C: bra     unk_2E892
+0002E82E: fmov    fr6, fr4
+0002E830: extu.b  r4, r3
+0002E832: extu.b  r5, r0
+0002E834: cmp/ge  r0, r3
+0002E836: bt/s    unk_2E83E
+0002E838: nop
+0002E83A: bra     unk_2E840
+0002E83C: mov     r4, r6
+0002E83E: mov     r5, r6
+0002E840: extu.b  r6, r0
+0002E842: cmp/eq  #1, r0
+0002E844: bt/s    unk_2E864
+0002E846: nop
+0002E848: cmp/eq  #2, r0
+0002E84A: bt/s    unk_2E86C
+0002E84C: nop
+0002E84E: cmp/eq  #3, r0
+0002E850: bt/s    unk_2E874
+0002E852: nop
+0002E854: cmp/eq  #4, r0
+0002E856: bt/s    unk_2E87C
+0002E858: nop
+0002E85A: cmp/eq  #5, r0
+0002E85C: bt/s    unk_2E884
+0002E85E: nop
+0002E860: bra     unk_2E88E
+0002E862: nop
+0002E864: mov.l   #h'C6F88, r3
+0002E866: mov.l   #h'C6F8C, r2
+0002E868: bra     unk_2E88A
+0002E86A: fmov.s  @r3, fr5
+0002E86C: mov.l   #h'C6F90, r3
+0002E86E: mov.l   #h'C6F94, r2
+0002E870: bra     unk_2E88A
+0002E872: fmov.s  @r3, fr5
+0002E874: mov.l   #h'C6F98, r3
+0002E876: mov.l   #h'C6F9C, r2
+0002E878: bra     unk_2E88A
+0002E87A: fmov.s  @r3, fr5
+0002E87C: mov.l   #h'C6FA0, r3
+0002E87E: mov.l   #h'C6FA4, r2
+Python>
+Python>print("=== CALLER OF NORMALIZED GEAR UPDATE ===")
+dump_range(0x11BB0, 0x11C10)
+=== CALLER OF NORMALIZED GEAR UPDATE ===
+00011BB0: <decode failed> 00 01
+00011BB2: bsr     unk_1152E
+00011BB4: bsrf    r0
+00011BB6: bsr     unk_12782
+00011BB8: stc     sr, r0
+00011BBA: <decode failed> 86 06
+00011BBC: stc     sr, r0
+00011BBE: add     #h'48, r15 ; 'H'
+00011BC0: stc     sr, r0
+00011BC2: add     #-h'44, r0
+00011BC4: sts.l   pr, @-r15
+00011BC6: mov.l   #h'20564, r3
+00011BC8: jsr     @r3
+00011BCA: nop
+00011BCC: mov.l   #h'20608, r2
+00011BCE: jsr     @r2
+00011BD0: nop
+00011BD2: mov.l   #h'212EC, r3
+00011BD4: jsr     @r3
+00011BD6: nop
+00011BD8: mov.l   #h'22E46, r2
+00011BDA: jsr     @r2
+00011BDC: nop
+00011BDE: mov.l   #h'24950, r3
+00011BE0: jsr     @r3
+00011BE2: nop
+00011BE4: mov.l   #h'30CC2, r2
+00011BE6: jsr     @r2
+00011BE8: nop
+00011BEA: mov.l   #h'30D72, r3
+00011BEC: jsr     @r3
+00011BEE: nop
+00011BF0: mov.l   #h'31814, r2
+00011BF2: jsr     @r2
+00011BF4: nop
+00011BF6: mov.l   #h'2AD38, r3
+00011BF8: jsr     @r3
+00011BFA: nop
+00011BFC: mov.l   #h'35034, r2
+00011BFE: jsr     @r2
+00011C00: nop
+00011C02: mov.l   #h'13D70, r3
+00011C04: jsr     @r3
+00011C06: nop
+00011C08: mov.l   #h'4CD9A, r2
+00011C0A: jsr     @r2
+00011C0C: nop
+00011C0E: mov.l   #h'4CF68, r3
+Python>
+Python>print("\n=== CALLER OF E8 SENTINEL ROUTINE ===")
+dump_range(0x10600, 0x10660)
+
+=== CALLER OF E8 SENTINEL ROUTINE ===
+00010600: mov.l   #h'20784, r2
+00010602: jsr     @r2
+00010604: nop
+00010606: mov.l   #h'208B0, r3
+00010608: jsr     @r3
+0001060A: nop
+0001060C: mov.l   #h'209C2, r2
+0001060E: jsr     @r2
+00010610: nop
+00010612: mov.l   #h'20FA6, r3
+00010614: jsr     @r3
+00010616: nop
+00010618: mov.l   #h'21154, r2
+0001061A: jsr     @r2
+0001061C: nop
+0001061E: mov.l   #h'212C4, r3
+00010620: jsr     @r3
+00010622: nop
+00010624: mov.l   #h'21778, r2
+00010626: jsr     @r2
+00010628: nop
+0001062A: mov.l   #h'230B4, r3
+0001062C: jsr     @r3
+0001062E: nop
+00010630: mov.l   #h'24A9C, r2
+00010632: jsr     @r2
+00010634: nop
+00010636: mov.l   #h'24BF4, r3
+00010638: jsr     @r3
+0001063A: nop
+0001063C: mov.l   #h'25286, r2
+0001063E: jsr     @r2
+00010640: nop
+00010642: mov.l   #h'23E96, r3
+00010644: jsr     @r3
+00010646: nop
+00010648: mov.l   #h'45304, r2
+0001064A: jsr     @r2
+0001064C: nop
+0001064E: mov.l   #h'7BA54, r3
+00010650: jsr     @r3
+00010652: nop
+00010654: mov.l   #h'7A8CC, r2
+00010656: jsr     @r2
+00010658: nop
+0001065A: mov.l   #h'77CC4, r3
+0001065C: jsr     @r3
+0001065E: nop
+Python>

@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "C:\Dev\Astra_A2WC511R\work\gate_closure\romraider_gui\run_gui.py", line 79, in <module>
+    p3=preview();record('stale_during_confirmation',commit_ui(p3,'stale',mutate=True));assert command('undo')['sha256']==original['sha256']
+                                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Dev\Astra_A2WC511R\work\gate_closure\romraider_gui\run_gui.py", line 56, in commit_ui
+    record(label+'_native_button',command('click_dialog',button=button))
+                                  ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Dev\Astra_A2WC511R\work\gate_closure\romraider_gui\run_gui.py", line 33, in command
+    v=json.loads(result.read_text())
+  File "C:\Program Files\Python314\Lib\json\__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Program Files\Python314\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)

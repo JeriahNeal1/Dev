@@ -1,0 +1,67 @@
+{
+  "status": "PASS_SCOPED_OFFLINE_REVIEW_PHYSICAL_USE_UNVALIDATED",
+  "provider_loaded": false,
+  "physical_device_calls": false,
+  "collector_main_invoked_by_this_review": false,
+  "reviewed_artifact_hashes": 107,
+  "exact_runtime_directories": [
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\work\\gate_closure\\virtual_rr\\classes",
+      "files": 5,
+      "reparse_points": 0
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n",
+      "files": 78,
+      "reparse_points": 0
+    }
+  ],
+  "policy_checks": 285,
+  "manifest_sha256": "53275a23d23a01ac8aa3b0df1bc4efd2b7cbac392bade076ffd731960f5d0e84",
+  "issues_resolved": [
+    "unlisted class/resource input accepted",
+    "constructor/cleanup evidence loss",
+    "full image CALID not compared with pilot",
+    "unbounded BF initialization quiet wait"
+  ],
+  "review_files": [
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\integrations\\romraider\\virtual\\src\\a2wc\\virtualrr\\ReadOnlySSMCollector.java",
+      "sha256": "81d5a8d31d881c805ceb4f7a51e5d6369c4d25161687716cf6bd176e18ecee12"
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\integrations\\romraider\\virtual\\Invoke-ReadOnlySSM.ps1",
+      "sha256": "a94e1b4a124a5ddcf9c07114ea91f12dcab5fccbe3e2b18c2c1b8d7c3ec407a4"
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\integrations\\romraider\\virtual\\collector_runtime_manifest.json",
+      "sha256": "53275a23d23a01ac8aa3b0df1bc4efd2b7cbac392bade076ffd731960f5d0e84"
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\gate_closure\\interfaces\\independent_j2534_iso9141_bytecode.txt",
+      "sha256": "e01f1f795dfea129ae86b54369eb3744a9ecf43495cf299298aaad3026c4005f"
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\gate_closure\\interfaces\\independent_serial_manager_bytecode.txt",
+      "sha256": "24acdc89d5c18769cfb66d22296bcb0394cba538d3e5fd0465e60f424bac37fa"
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\gate_closure\\interfaces\\IndependentCollectorGateCheck.java",
+      "sha256": "908e6462d7a1428547c266a9f104e2cf3e613f45819f743945a4619d475f9a6f"
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\gate_closure\\interfaces\\independent_collector_gate_test.log",
+      "sha256": "026d1fc68770246f8e60efeff55f03344ff8038ad3eb036e64ae69cd7c3f8bd3"
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\work\\gate_closure\\virtual_rr\\classes\\a2wc\\virtualrr\\ReadOnlySSMCollector$ReadOnlyGate.class",
+      "sha256": "7782b570f5609f72a561c2be57469d27da9d168c1af2edba2ea12bd1956b98e3"
+    }
+  ],
+  "limitations": [
+    "Native DLL and actual device behavior untested.",
+    "OEM A0 support, valid RAM addressing and physical response timing are still unproven.",
+    "Native provider cleanup hang/forced process termination are not a graceful-abort guarantee.",
+    "Read acquisition success is not firmware checksum/flash/release acceptance."
+  ]
+}

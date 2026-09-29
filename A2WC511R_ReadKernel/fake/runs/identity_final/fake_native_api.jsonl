@@ -1,0 +1,10 @@
+{"phase":"REQUEST_BEFORE_DISPATCH","request":{"function":"PassThruOpen","monotonic_counter":1810708975280,"monotonic_frequency":10000000,"name":"","name_hex":"","name_pointer":0,"pid":12684,"thread":21648,"utc_filetime":134350128966729273},"sequence":0}
+{"phase":"RETURN","response":{"device":1,"status":0},"sequence":0}
+{"phase":"REQUEST_BEFORE_DISPATCH","request":{"baud":4800,"device":1,"flags":512,"function":"PassThruConnect","monotonic_counter":1810709035654,"monotonic_frequency":10000000,"pid":12684,"protocol":3,"thread":21648,"utc_filetime":134350128966789648},"sequence":1}
+{"phase":"RETURN","response":{"channel":100,"status":0},"sequence":1}
+{"phase":"REQUEST_BEFORE_DISPATCH","request":{"channel":100,"filter_type":1,"flow":null,"function":"PassThruStartMsgFilter","mask":{"data_hex":"ffffff","extra":0,"protocol":3,"rx_status":0,"timestamp":0,"tx_flags":0},"monotonic_counter":1810709059422,"monotonic_frequency":10000000,"pattern":{"data_hex":"80f010","extra":0,"protocol":3,"rx_status":0,"timestamp":0,"tx_flags":0},"pid":12684,"thread":21648,"utc_filetime":134350128966813415},"sequence":2}
+{"phase":"RETURN","response":{"id":1,"status":0},"sequence":2}
+{"phase":"REQUEST_BEFORE_DISPATCH","request":{"channel":100,"count":1,"function":"PassThruWriteMsgs","messages":[{"data_hex":"8010f001bf40","extra":0,"protocol":3,"rx_status":0,"timestamp":0,"tx_flags":0}],"monotonic_counter":1810709081102,"monotonic_frequency":10000000,"pid":12684,"thread":21648,"timeout":1000,"utc_filetime":134350128966835097},"sequence":3}
+{"phase":"RETURN","response":{"count":1,"injected_fault":"identity","status":0},"sequence":3}
+{"phase":"REQUEST_BEFORE_DISPATCH","request":{"channel":100,"count":1,"function":"PassThruReadMsgs","monotonic_counter":1810709101739,"monotonic_frequency":10000000,"pid":12684,"thread":21648,"timeout":1000,"utc_filetime":134350128966855733},"sequence":4}
+{"phase":"RETURN","response":{"messages":[{"data_hex":"80f01039ffa210112e1251530673facba62b81fea800000060ce54f9b1e4000c200000000000dc00005d1f3080f226000043fb00e1000000000000c1f0c1","extra":62,"protocol":3,"rx_status":0,"timestamp":3,"tx_flags":0}],"status":0},"sequence":4}

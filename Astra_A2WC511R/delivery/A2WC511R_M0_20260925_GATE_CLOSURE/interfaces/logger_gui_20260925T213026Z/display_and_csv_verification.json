@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "classification": "VIRTUAL_SOFTWARE_SCENARIO_NOT_VEHICLE_TELEMETRY",
+  "native_GUI_display_checks": 300,
+  "native_CSV_rows": 6667,
+  "every_CSV_row_equals_one_compiled_snapshot": true,
+  "compiled_samples_seen": 15,
+  "native_CSV_sha256": "e066732717e0d7701341982c6996dd03fef7c1788109614574612b20796c7b55",
+  "snapshot_sha256": "fee2ff989929917ee55823cf3584c92bcfa1ff8984bee1232373a0fc8f5c1632",
+  "time_semantics": "CSV timestamps are host logger milliseconds; simulator10ms scenario indexes are explicitly virtual, neither is measured ECU cadence. Repeated rows are not independent physical observations."
+}

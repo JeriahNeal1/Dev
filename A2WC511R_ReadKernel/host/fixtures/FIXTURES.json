@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "artifact_class": "SYNTHETIC_EXECUTION_FIXTURES_NOT_FLASH_IMAGES",
+  "physical": false,
+  "fixtures": {
+    "composite": {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\fixtures\\composite.bin",
+      "sha256": "b91ad3e88637bfae6a15871761c288f914fe10fe74c78cbc53e963c4fe80e545",
+      "bytes": 1048576
+    },
+    "random_705827": {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\fixtures\\random_705827.bin",
+      "sha256": "988a6d620df4396bd5b6d72572ecaba99006b891110dba6a8ad9b32ba1444b9b",
+      "bytes": 1048576
+    }
+  },
+  "composite_classes": {
+    "zero_page": "10000..10FFF",
+    "FF_page": "11000..11FFF",
+    "random_pages": "12000..15FFF",
+    "FF_CRC_collision": "86000..86FFF",
+    "gap_sentinels": [
+      "86000..BFFFF",
+      "CF000..FEFFF"
+    ],
+    "other": "address-derived with first/last markers each512bytes"
+  }
+}

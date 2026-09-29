@@ -1,0 +1,359 @@
+{
+  "schema": 1,
+  "status": "PASS",
+  "artifact_class": "TEMP_RAM_ACQUISITION_TOOL",
+  "software_scope": "Compiled temporary RAM kernel on strict explicitly scheduled virtual SH7058 peripherals",
+  "kernel_sha256": "3d70abfb8617b87e1b9c52724fd27ed4066ba231818994e780c8ba3006de273f",
+  "kernel_bytes": 1776,
+  "manifest": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\build\\attempt_03\\manifest.json",
+    "sha256": "5c71466e4a53c03c3e16b56a9df9d71ed1b64fd40f49cc5a17a7938d04e0bdb2"
+  },
+  "coverage": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\sim\\coverage.json",
+    "sha256": "049265b84f53a4307614fec9d058df84ef98e73f8df538ddca4aa23b6dfc000b"
+  },
+  "instruction_covered": 319,
+  "instruction_total": 319,
+  "instruction_missing": [],
+  "branches_total": 39,
+  "branch_directions_covered": 78,
+  "software_stack_bytes": 0,
+  "stack_max_bytes": 8,
+  "private_stack_bytes": 16,
+  "fixtures": [
+    {
+      "name": "exact A2WC511R stock",
+      "report": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\sim\\stock_full_01\\FULL_READ.json",
+        "sha256": "ea85d312369e225f3f2e5afee304d1acdff6cd4a361439b9eec500dfca691ec9"
+      },
+      "full_passes": 2,
+      "blocks": 4096,
+      "bytes_per_pass": 1048576,
+      "instructions_executed": 42230431,
+      "passes": [
+        {
+          "pass": 0,
+          "bytes": 1048576,
+          "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\sim\\stock_full_01\\pass_0.bin",
+          "sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218"
+        },
+        {
+          "pass": 1,
+          "bytes": 1048576,
+          "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\sim\\stock_full_01\\pass_1.bin",
+          "sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218"
+        }
+      ],
+      "executed_model_snapshot": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\sim\\model_v1\\FILES.json",
+        "sha256": "6a1d2476f1e7c8ab0afb1e4de51aee307f208c8354a907d0a902b9acd008a655"
+      },
+      "applicability_to_final_model": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\sim\\model_projection_01.json",
+        "sha256": "1c3c9eb85a3e9db0358f8125d79d2f2fe271fc90021b2b82318d7d0f328fa682"
+      }
+    }
+  ],
+  "faults": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\sim\\faults_02\\FAULTS.json",
+    "sha256": "0a61fda3bbefaca5a3a2e4e9be8612bb33866c0798831261a35daf721e20d052"
+  },
+  "compiled_fault_and_fuzz_cases": 535,
+  "closed_world_negative_controls": 14,
+  "unit_models": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\sim\\unit_models.json",
+    "sha256": "754088230dd9167f263600ac75735f070b2c8a6fc022430f94b242675616486d"
+  },
+  "frozen_step_parity": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\sim\\fast_parity_03.json",
+    "sha256": "cfa9f25b057a46254cf0d11ce2dbcf7cbd44e397e364013f938db46f34f6641c"
+  },
+  "model_projection": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\sim\\model_projection_01.json",
+    "sha256": "1c3c9eb85a3e9db0358f8125d79d2f2fe271fc90021b2b82318d7d0f328fa682"
+  },
+  "saved_model_snapshots": [
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\sim\\model_v1\\FILES.json",
+      "sha256": "6a1d2476f1e7c8ab0afb1e4de51aee307f208c8354a907d0a902b9acd008a655"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\sim\\model_v2\\FILES.json",
+      "sha256": "ede87e2f2a0dbb09382f868fa554e46bb3b1d5de7f0f7d209f0a6bf88f8f895c"
+    }
+  ],
+  "final_model_sources": {
+    "core.py": {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\core.py",
+      "sha256": "caf6571a836676b82bec8f8a5eaa356590532e15931fae2da4b5822fe8ef0f90"
+    },
+    "cpu.py": {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\cpu.py",
+      "sha256": "5043dafdfe59447cb8d906f7570907c472e1d638deb507dc4af8546e9b0f1980"
+    },
+    "fast_step.py": {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\fast_step.py",
+      "sha256": "029bb2b484911289b19e5cdbad35bbbbdc80af05420e91dad6884e0ff0484cfa"
+    },
+    "full_read.py": {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\full_read.py",
+      "sha256": "02704688254cff485ea933eae7966c5ff1cea97c0a26366460fab4ea6b4822c4"
+    },
+    "generate_fast.py": {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\generate_fast.py",
+      "sha256": "4e53e3703d876b8f06fba4b24b112cf29a6749d7acda294ad6cf1c1f4ebcb76f"
+    },
+    "harness.py": {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\harness.py",
+      "sha256": "30dd6a92729cd54772a10e5f28a584818707b413eb4235f82df04cde8b44e3a3"
+    },
+    "memory.py": {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\memory.py",
+      "sha256": "fbce26a55a2cce274394fa436c1e36e2342d0635c68c5b6dfeba59672f00d638"
+    },
+    "package_qualification.py": {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\package_qualification.py",
+      "sha256": "795a537eb7c44056c4cf358db9d47e8fbb3e22b14aa63f4050b442e07d07c87d"
+    },
+    "qualify_faults.py": {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\qualify_faults.py",
+      "sha256": "ed82f63d026e6fa4fd3cc396c2ca5db3a3dd91b68e553e702f81788a9f45e7f1"
+    },
+    "sci.py": {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\sci.py",
+      "sha256": "87a2eda0af0c535a519a165ce8b8aec517cfefe0305df136761aa91b8f768760"
+    },
+    "test_model.py": {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\test_model.py",
+      "sha256": "4edeaf66ec89e1bfad0f266cf4a6af46c1411b1077d28c0aff1ef63bb58720e7"
+    },
+    "verify_fast.py": {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\verify_fast.py",
+      "sha256": "97edf72701413acc1b43ef26d328fa63bf68b68d4c4d227386d76406b49e0ca2"
+    },
+    "verify_model_projection.py": {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\verify_model_projection.py",
+      "sha256": "7ff90d8ccc8d950c58ce85bb2cb37e684d28ec7dfbf09c2abcf90ec4559102d1"
+    },
+    "__init__.py": {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\__init__.py",
+      "sha256": "8e8b1da117fdc2ba4fe06edfc32b9c8d67176ab69a9470ee21151018bc85fbd8"
+    }
+  },
+  "frozen_core": {
+    "path": "C:\\Dev\\A2WC511R_Sim\\sh2e.py",
+    "sha256": "b47ac261634c116c3ffcdf19da9ec73e7014c034cd349ea8867f5f54895cdfff",
+    "modified": false
+  },
+  "unsupported_executed_instruction_count": 0,
+  "unsupported_executed_MMIO_count": 0,
+  "allowed_MMIO": [
+    {
+      "mode": "r",
+      "address": "FFFFE805",
+      "size": 1,
+      "pc": "FFFF3042"
+    },
+    {
+      "mode": "r",
+      "address": "FFFFEC10",
+      "size": 1,
+      "pc": "FFFF3024"
+    },
+    {
+      "mode": "r",
+      "address": "FFFFEC10",
+      "size": 1,
+      "pc": "FFFF302A"
+    },
+    {
+      "mode": "r",
+      "address": "FFFFEC26",
+      "size": 2,
+      "pc": "FFFF3036"
+    },
+    {
+      "mode": "r",
+      "address": "FFFFECB0",
+      "size": 2,
+      "pc": "FFFF3012"
+    },
+    {
+      "mode": "r",
+      "address": "FFFFECB0",
+      "size": 2,
+      "pc": "FFFF3018"
+    },
+    {
+      "mode": "r",
+      "address": "FFFFF014",
+      "size": 1,
+      "pc": "FFFF308E"
+    },
+    {
+      "mode": "r",
+      "address": "FFFFF014",
+      "size": 1,
+      "pc": "FFFF3094"
+    },
+    {
+      "mode": "r",
+      "address": "FFFFF014",
+      "size": 1,
+      "pc": "FFFF309C"
+    },
+    {
+      "mode": "r",
+      "address": "FFFFF014",
+      "size": 1,
+      "pc": "FFFF3196"
+    },
+    {
+      "mode": "r",
+      "address": "FFFFF014",
+      "size": 1,
+      "pc": "FFFF31CE"
+    },
+    {
+      "mode": "r",
+      "address": "FFFFF014",
+      "size": 1,
+      "pc": "FFFF31EC"
+    },
+    {
+      "mode": "r",
+      "address": "FFFFF014",
+      "size": 1,
+      "pc": "FFFF31FE"
+    },
+    {
+      "mode": "r",
+      "address": "FFFFF015",
+      "size": 1,
+      "pc": "FFFF309A"
+    },
+    {
+      "mode": "r",
+      "address": "FFFFF015",
+      "size": 1,
+      "pc": "FFFF31DA"
+    },
+    {
+      "mode": "r",
+      "address": "FFFFF73C",
+      "size": 2,
+      "pc": "FFFF307E"
+    },
+    {
+      "mode": "w",
+      "address": "FFFFEC10",
+      "size": 2,
+      "pc": "FFFF3028"
+    },
+    {
+      "mode": "w",
+      "address": "FFFFECB0",
+      "size": 2,
+      "pc": "FFFF3016"
+    },
+    {
+      "mode": "w",
+      "address": "FFFFF010",
+      "size": 1,
+      "pc": "FFFF3072"
+    },
+    {
+      "mode": "w",
+      "address": "FFFFF011",
+      "size": 1,
+      "pc": "FFFF307A"
+    },
+    {
+      "mode": "w",
+      "address": "FFFFF012",
+      "size": 1,
+      "pc": "FFFF3070"
+    },
+    {
+      "mode": "w",
+      "address": "FFFFF012",
+      "size": 1,
+      "pc": "FFFF30A4"
+    },
+    {
+      "mode": "w",
+      "address": "FFFFF012",
+      "size": 1,
+      "pc": "FFFF31A6"
+    },
+    {
+      "mode": "w",
+      "address": "FFFFF012",
+      "size": 1,
+      "pc": "FFFF31B0"
+    },
+    {
+      "mode": "w",
+      "address": "FFFFF012",
+      "size": 1,
+      "pc": "FFFF327C"
+    },
+    {
+      "mode": "w",
+      "address": "FFFFF013",
+      "size": 1,
+      "pc": "FFFF31FC"
+    },
+    {
+      "mode": "w",
+      "address": "FFFFF014",
+      "size": 1,
+      "pc": "FFFF3092"
+    },
+    {
+      "mode": "w",
+      "address": "FFFFF014",
+      "size": 1,
+      "pc": "FFFF30A0"
+    },
+    {
+      "mode": "w",
+      "address": "FFFFF014",
+      "size": 1,
+      "pc": "FFFF31E2"
+    },
+    {
+      "mode": "w",
+      "address": "FFFFF014",
+      "size": 1,
+      "pc": "FFFF3202"
+    },
+    {
+      "mode": "w",
+      "address": "FFFFF016",
+      "size": 1,
+      "pc": "FFFF3076"
+    },
+    {
+      "mode": "w",
+      "address": "FFFFF73C",
+      "size": 2,
+      "pc": "FFFF3086"
+    }
+  ],
+  "physical_status": "PHYSICAL_REQUIRED",
+  "physical_operations": 0,
+  "limitations": [
+    "No physical ECU, provider, electrical waveform, baud tolerance or silicon cycle timing has been exercised.",
+    "SCI input bytes arrive under a declared schedule; explicit error flags test the error path. This is not an analog line or autonomous overrun model.",
+    "TDR/TSR timing is parameterized in virtual instruction ticks. The full fixtures used the saved collapsed one-tick schedule, not the later model source; projection evidence states the exact admitted equivalence.",
+    "The NMI fixture covers one hardware frame at an established non-delay RX boundary. Prefix-before-private-SP/VBR and rapid repeated/nested NMIs remain unproven physical assumptions.",
+    "Private stack bound is zero software bytes plus one eight-byte hardware exception frame; no claim admits arbitrarily many pre-handler exceptions.",
+    "Clock, RAM enable, prior/in-flight DMA, external watchdog and actual power/reset restoration remain entry/physical contracts.",
+    "Partial requests remain pending RX without a fabricated response; host deadlines and close policy are required.",
+    "Host native composite/random fixture qualification is reported separately and joined by the root validator.",
+    "Full stock evidence retains compact hashes/control counters rather than every individual data-event row. Exact output equality is checked per block; the compiled fixed-range loop defines the ROM byte addresses."
+  ]
+}

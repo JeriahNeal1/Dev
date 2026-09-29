@@ -1,0 +1,63 @@
+{
+  "file": "definitions/ecu_defs.xml",
+  "sha256": "bda3c17445954341537a77d4afe6b4dddaba82036ae79a41c2fdfd13da33af5d",
+  "chain": [
+    {
+      "xmlid": "A2WC511R",
+      "base": "A2WC510C",
+      "table_count_direct": 0,
+      "romid": {
+        "xmlid": "A2WC511R",
+        "internalidaddress": "2000",
+        "internalidstring": "A2WC511R",
+        "ecuid": "2F12515306",
+        "year": "05",
+        "market": "USDM",
+        "make": "Subaru",
+        "model": "Outback",
+        "submodel": "XT",
+        "transmission": "AT",
+        "memmodel": "SH7058",
+        "flashmethod": "sti05",
+        "filesize": "1024kb"
+      }
+    },
+    {
+      "xmlid": "A2WC510C",
+      "base": "32BITBASE",
+      "table_count_direct": 297,
+      "romid": {
+        "xmlid": "A2WC510C",
+        "internalidaddress": "2000",
+        "internalidstring": "A2WC510C",
+        "ecuid": "2F12505206",
+        "year": "05",
+        "market": "USDM",
+        "make": "Subaru",
+        "model": "Legacy",
+        "submodel": "GT",
+        "transmission": "AT",
+        "memmodel": "SH7058",
+        "flashmethod": "sti05",
+        "filesize": "1024kb"
+      }
+    },
+    {
+      "xmlid": "32BITBASE",
+      "base": null,
+      "table_count_direct": 807,
+      "romid": {
+        "xmlid": "32BITBASE",
+        "market": "USDM",
+        "make": "Subaru",
+        "model": "Impreza",
+        "submodel": "STi",
+        "transmission": "MT",
+        "filesize": "512kb",
+        "memmodel": "SH7055",
+        "flashmethod": "sti04"
+      }
+    }
+  ],
+  "warning": "Inheritance chain and direct table counts only; not a flattened calibration or applicability proof."
+}

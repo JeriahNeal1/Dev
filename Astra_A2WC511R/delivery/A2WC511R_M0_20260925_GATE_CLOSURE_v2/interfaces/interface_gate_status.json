@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "captured_utc": "2026-09-25T21:45:38.447438+00:00",
+  "scope": "Offline native interfaces and prepared read-only collection; no physical acceptance",
+  "gates": [
+    {
+      "id": "NATIVE_ROMRAIDER_GUI",
+      "status": "PASS",
+      "reason": "Installed RomRaider 1.1.0 passed actual visible approval, edit/display/compare/undo, cancellation, postapproval stale rejection, approval timeout, raw export/reopen and native Save As/reopen on disposable copies. No callback bypass; all 488 table/axis records matched after excluding the expected original_raw reset.",
+      "evidence": [
+        "interfaces/gui_run11/events.json",
+        "interfaces/gui_run11/positive_dialog.png",
+        "interfaces/gui_run11/edited_display.png",
+        "interfaces/gui_run11/native_save_chooser.png",
+        "interfaces/gui_run11/protected_after.json"
+      ]
+    },
+    {
+      "id": "NATIVE_ROMRAIDER_HTTP_TRANSPORT",
+      "status": "PASS",
+      "reason": "A serialized persistent loopback client resolved repeated Connection:close resets observed on Windows/JVM. Final actual GUI run11 had no resets. All 31 Python tests passed, including six real transport tests. Failed commits are never automatically replayed.",
+      "evidence": [
+        "interfaces/romraider_python_tests.log",
+        "interfaces/gui_run11/events.json"
+      ]
+    },
+    {
+      "id": "VIRTUAL_NATIVE_SSM",
+      "status": "PASS",
+      "reason": "8,599 checks passed using the installed native loader, queries, conversions and SSM connection. All 17 unchanged final05 fields cover the 32-byte state, alongside three unchanged historical channels and 15 compiled samples. Unsigned limits, big-endian words and full virtual ROM reconstruction passed.",
+      "evidence": [
+        "interfaces/virtual_20260925T213711Z/result.json",
+        "interfaces/virtual_20260925T213711Z/native_loaded_definitions.json",
+        "interfaces/virtual_20260925T213711Z/native_virtual_samples.json"
+      ]
+    },
+    {
+      "id": "NATIVE_VIRTUAL_LOGGER_GUI",
+      "status": "PASS",
+      "reason": "The installed native logger GUI displayed 20 channels and wrote CSV through its actual Log To File action. All 300 displayed values and all 6,667 CSV rows matched compiled snapshots. An isolated factory allowed only the virtual endpoint; provider discovery was suppressed.",
+      "evidence": [
+        "interfaces/logger_gui_20260925T213026Z/display_and_csv_verification.json",
+        "interfaces/logger_gui_20260925T213026Z/native_logger_sample_14.png",
+        "interfaces/logger_gui_20260925T213026Z/native_gui_views.json"
+      ]
+    },
+    {
+      "id": "READ_ONLY_COLLECTOR_OFFLINE",
+      "status": "PASS",
+      "reason": "The exact sealed PowerShell launcher passed 9,002 virtual requests on installed 32-bit Java, two identical 1 MiB reads and 260 six-byte samples, including initial/final bursts of 60. Independent review passed 285 policy checks and verified 107 artifact hashes and exact runtime inventories.",
+      "evidence": [
+        "interfaces/collector_launcher_final03/acquisition_result.json",
+        "interfaces/collector_launcher_final03/raw_six_channel_samples.json",
+        "interfaces/collector_20260925T213714Z/negative_constructor_hash/acquisition_result.json",
+        "interfaces/independent_collector_review.json",
+        "interfaces/runtime_guard_test.json"
+      ]
+    },
+    {
+      "id": "READ_ONLY_COLLECTOR_PHYSICAL",
+      "status": "PHYSICAL/BENCH REQUIRED",
+      "reason": "No provider DLL was loaded and no physical connection occurred. The prepared native J2534 ISO9141 path is bound to existing 32-bit Java and the registered OpenPort DLL. OEM A0 access, physical timing, response echo and fault behavior remain unproven.",
+      "evidence": [
+        "interfaces/independent_collector_review.json",
+        "interfaces/independent_j2534_iso9141_bytecode.txt",
+        "interfaces/final_interface_identities.json"
+      ],
+      "remaining": "Human-only one-connection BF identity and CALID pilot, initial 60-sample A8 burst, two full ROM reads with interleaved samples, and final 60-sample burst. Abort denied, malformed or mismatched responses. Follow the root engine-off stable bench-power procedure; roughly 80 minutes at 4800 baud, with no kernel fallback."
+    }
+  ],
+  "verification_limitations": [
+    {
+      "status": "NOT_EXECUTED_AUTOMATIC_APPROVAL_REJECTION",
+      "action": "Create and remove a project-local junction to test the runtime inventory guard",
+      "reason_returned": "blocked by policy",
+      "execution": "Tool rejected the command before process creation; no junction was created",
+      "current_coverage": "Launcher and manifest sealer reject reparse points in root and descendants by source inspection; all real runtime entries were checked, no reparse points found. Hidden-file guard was executed successfully.",
+      "requires_user_action_for_original_interface_task": false
+    }
+  ],
+  "final_manifest_sha256": "53275a23d23a01ac8aa3b0df1bc4efd2b7cbac392bade076ffd731960f5d0e84"
+}

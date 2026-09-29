@@ -1,0 +1,2861 @@
+Python>ROM_START = 0x00000000
+Python>ROM_END   = 0x00100000
+Python>def rom_bytes():
+    data = ida_bytes.get_bytes(
+        ROM_START,
+        ROM_END - ROM_START
+    )
+
+    if not data:
+        raise RuntimeError("Could not read ROM")
+
+    return data
+Python>
+Python>def find_sh_movl_users(lit):
+    users = []
+
+    start = max(
+        ROM_START,
+        lit - 0x404
+    )
+
+    for ea in range(start & ~1, lit, 2):
+        raw = ida_bytes.get_bytes(ea, 2)
+
+        if not raw:
+            continue
+
+        word = int.from_bytes(raw, "big")
+
+        # MOV.L @(disp,PC),Rn
+        if (word & 0xF000) != 0xD000:
+            continue
+
+        reg = (word >> 8) & 0xF
+        disp = word & 0xFF
+
+        target = (
+            ((ea + 4) & ~3)
+            + (disp << 2)
+        )
+
+        if target == lit:
+            users.append((ea, reg))
+
+    return users
+Python>
+Python>def decode_line(ea):
+    insn = ida_ua.insn_t()
+
+    if ida_ua.decode_insn(insn, ea) <= 0:
+        return None
+
+    return idc.generate_disasm_line(
+        ea,
+        idc.GENDSM_FORCE_CODE
+    )
+Python>
+Python>def dump_context(ea, before=16, after=40):
+    start = max(0, ea - before) & ~1
+    end = ea + after
+
+    for cur in range(start, end, 2):
+        line = decode_line(cur)
+        marker = ">>" if cur == ea else "  "
+
+        if line:
+            print(
+                f"{marker} {cur:08X}: {line}"
+            )
+        else:
+            raw = ida_bytes.get_bytes(cur, 2)
+
+            print(
+                f"{marker} {cur:08X}: "
+                f"<undecoded> "
+                f"{raw.hex(' ') if raw else ''}"
+            )
+Python>
+Python>data = rom_bytes()
+Python>ranges = [
+    (
+        "PACKED TCU SOURCE AREA",
+        0xFFFF4C80,
+        0xFFFF4CA0
+    ),
+    (
+        "DECODED TCU STATE AREA",
+        0xFFFF4BC0,
+        0xFFFF4BD0
+    )
+]
+Python>
+Python>for title, lo, hi in ranges:
+    print(
+        "\n" + "=" * 78
+    )
+    print(title)
+    print(
+        f"{lo:08X}-{hi-1:08X}"
+    )
+
+    found = []
+
+    # Search every aligned 32-bit ROM literal
+    # whose VALUE points into the RAM range.
+    for off in range(0, len(data) - 3, 4):
+        value = int.from_bytes(
+            data[off:off + 4],
+            "big"
+        )
+
+        if lo <= value < hi:
+            found.append(
+                (ROM_START + off, value)
+            )
+
+    if not found:
+        print("<no pointer literals found>")
+        continue
+
+    for lit, value in found:
+        print(
+            f"\nRAM {value:08X} "
+            f"literal @ ROM {lit:08X}"
+        )
+
+        users = find_sh_movl_users(lit)
+
+        if not users:
+            print(
+                "  no PC-relative MOV.L users"
+            )
+            continue
+
+        for ea, reg in users:
+            f = ida_funcs.get_func(ea)
+
+            print(
+                f"\n  USER {ea:08X} -> R{reg}"
+            )
+
+            if f:
+                print(
+                    f"  function "
+                    f"{f.start_ea:08X}-"
+                    f"{f.end_ea:08X} "
+                    f"{ida_funcs.get_func_name(
+                        f.start_ea
+                    )}"
+                )
+            else:
+                print(
+                    "  function <none>"
+                )
+
+            dump_context(
+                ea,
+                before=18,
+                after=46
+            )
+Python>
+
+==============================================================================
+PACKED TCU SOURCE AREA
+FFFF4C80-FFFF4C9F
+
+RAM FFFF4C8C literal @ ROM 0001472C
+
+  USER 00014672 -> R3
+  function <none>
+   00014660: mov.b   @r4, r0
+   00014662: and     #h'FD, r0
+   00014664: mov.b   r0, @r4
+   00014666: add     #8, r15
+   00014668: lds.l   @r15+, pr
+   0001466A: rts
+   0001466C: mov.l   @r15+, r14
+   0001466E: mov     #h'40, r6 ; '@'
+   00014670: mov.l   #h'FFFF4BA4, r4
+>> 00014672: mov.l   #h'FFFF4C8C, r3
+   00014674: mov.b   @r3, r7
+   00014676: extu.b  r7, r5
+   00014678: mov     r5, r2
+   0001467A: tst     r6, r2
+   0001467C: bf/s    unk_14688
+   0001467E: nop
+   00014680: mov.b   @r4, r0
+   00014682: and     #h'DF, r0
+   00014684: bra     unk_1468E
+   00014686: mov.b   r0, @r4
+   00014688: mov.b   @r4, r0
+   0001468A: or      #h'20, r0 ; ' '
+   0001468C: mov.b   r0, @r4
+   0001468E: mov     #h'20, r3 ; ' '
+   00014690: tst     r5, r3
+   00014692: bf/s    unk_1469E
+   00014694: nop
+   00014696: mov.b   @r4, r0
+   00014698: and     #h'BF, r0
+   0001469A: bra     unk_146A4
+   0001469C: mov.b   r0, @r4
+   0001469E: mov.b   @r4, r0
+
+RAM FFFF4C8D literal @ ROM 0001480C
+
+  USER 000147AC -> R2
+  function 000147AC-00014802 sDecodePackedGearRangeByte
+   0001479A: mov     #h'20, r4 ; ' '
+   0001479C: bra     unk_147A6
+   0001479E: mov     r6, r4
+   000147A0: bra     unk_147A6
+   000147A2: mov     #h'F, r4
+   000147A4: mov     r7, r4
+   000147A6: mov.l   #h'FFFF4BC0, r3
+   000147A8: rts
+   000147AA: mov.b   r4, @r3
+>> 000147AC: mov.l   #pPackedTargetCurrentGearRange, r2; Live-verified packed 5EAT gear/range byte. Upper nibble = target/requested gear/range; lower nibble = current gear/range. Observed stable encoding: 8=Park, 7=Reverse, 0=Neutral/no forward gear, 1..5=forward gears 1..5. Examples: 0x21=target 2/current 1, 0x45=target 4/current 5.
+   000147AE: mov.b   @r2, r5
+   000147B0: mov.w   #h'F0, r6
+   000147B2: and     r5, r6
+   000147B4: mov.w   #h'80, r7
+   000147B6: extu.b  r6, r4
+   000147B8: cmp/eq  r7, r4
+   000147BA: bf/s    loc_147C6
+   000147BC: nop
+   000147BE: mov     #0, r1
+   000147C0: mov.l   #pTargetGearRangeCode, r3; Decoded target/requested gear/range from upper nibble of FFFF4C8D. Decoder maps encoded 8 to 0.
+   000147C2: bra     loc_147DC
+   000147C4: mov.b   r1, @r3
+   000147C6: tst     r4, r7
+   000147C8: bf/s    loc_147DC
+   000147CA: nop
+   000147CC: mov.l   #pTargetGearRangeCode, r1; Decoded target/requested gear/range from upper nibble of FFFF4C8D. Decoder maps encoded 8 to 0.
+   000147CE: shar    r4
+   000147D0: shar    r4
+   000147D2: shar    r4
+   000147D4: shar    r4
+   000147D6: mov     #h'F, r3
+   000147D8: and     r3, r4
+
+RAM FFFF4C8C literal @ ROM 000148FC
+
+  USER 0001481C -> R3
+  function <none>
+   0001480A: <undecoded> 4b c0
+   0001480C: <undecoded> ff ff
+   0001480E: shld    r8, r12
+   00014810: <undecoded> ff ff
+   00014812: <undecoded> 4b c1
+   00014814: <undecoded> ff ff
+   00014816: <undecoded> 4b c2
+   00014818: mov.l   r14, @-r15
+   0001481A: sts.l   pr, @-r15
+>> 0001481C: mov.l   #h'FFFF4C8C, r3
+   0001481E: add     #-4, r15
+   00014820: mov.l   #h'23A20, r2
+   00014822: jsr     @r2
+   00014824: mov.b   @r3, r14
+   00014826: mov.l   #h'22BFE, r3
+   00014828: jsr     @r3
+   0001482A: mov.b   r0, @r15
+   0001482C: mov.w   #h'80, r2
+   0001482E: and     r2, r14
+   00014830: mov.l   #h'FFFF4BC6, r4
+   00014832: extu.b  r14, r14
+   00014834: tst     r14, r14
+   00014836: bf/s    unk_14842
+   00014838: mov     r0, r5
+   0001483A: mov.b   @r4, r0
+   0001483C: and     #h'EF, r0
+   0001483E: bra     unk_14848
+   00014840: mov.b   r0, @r4
+   00014842: mov.b   @r4, r0
+   00014844: or      #h'10, r0
+   00014846: mov.b   r0, @r4
+   00014848: mov.l   #h'FFFF4BA4, r4
+
+RAM FFFF4C8E literal @ ROM 00014910
+
+  USER 00014882 -> R3
+  function <none>
+   00014870: bra     unk_1487A
+   00014872: mov.b   r0, @r4
+   00014874: mov.b   @r4, r0
+   00014876: and     #h'FB, r0
+   00014878: mov.b   r0, @r4
+   0001487A: add     #4, r15
+   0001487C: lds.l   @r15+, pr
+   0001487E: rts
+   00014880: mov.l   @r15+, r14
+>> 00014882: mov.l   #h'FFFF4C8E, r3
+   00014884: mov.l   #h'FFFF4BA4, r4
+   00014886: mov.b   @r3, r5
+   00014888: extu.b  r5, r0
+   0001488A: tst     #h'80, r0
+   0001488C: bf/s    unk_14898
+   0001488E: nop
+   00014890: mov.b   @r4, r0
+   00014892: and     #h'F7, r0
+   00014894: bra     unk_1489E
+   00014896: mov.b   r0, @r4
+   00014898: mov.b   @r4, r0
+   0001489A: or      #8, r0
+   0001489C: mov.b   r0, @r4
+   0001489E: rts
+   000148A0: nop
+   000148A2: mov.l   #h'FFFF4C8E, r3
+   000148A4: mov.l   #h'FFFF4BC6, r4
+   000148A6: mov.b   @r3, r5
+   000148A8: extu.b  r5, r0
+   000148AA: tst     #h'40, r0 ; '@'
+   000148AC: bf/s    unk_148B8
+   000148AE: nop
+
+  USER 000148A2 -> R3
+  function <none>
+   00014890: mov.b   @r4, r0
+   00014892: and     #h'F7, r0
+   00014894: bra     unk_1489E
+   00014896: mov.b   r0, @r4
+   00014898: mov.b   @r4, r0
+   0001489A: or      #8, r0
+   0001489C: mov.b   r0, @r4
+   0001489E: rts
+   000148A0: nop
+>> 000148A2: mov.l   #h'FFFF4C8E, r3
+   000148A4: mov.l   #h'FFFF4BC6, r4
+   000148A6: mov.b   @r3, r5
+   000148A8: extu.b  r5, r0
+   000148AA: tst     #h'40, r0 ; '@'
+   000148AC: bf/s    unk_148B8
+   000148AE: nop
+   000148B0: mov.b   @r4, r0
+   000148B2: and     #h'7F, r0
+   000148B4: bra     unk_148BE
+   000148B6: mov.b   r0, @r4
+   000148B8: mov.b   @r4, r0
+   000148BA: or      #h'80, r0
+   000148BC: mov.b   r0, @r4
+   000148BE: rts
+   000148C0: nop
+   000148C2: mov     #1, r0
+   000148C4: mov.l   #h'FFFF4C8E, r3
+   000148C6: mov.b   @r3, r7
+   000148C8: mov.l   #h'FFFF4BC3, r4
+   000148CA: extu.b  r7, r5
+   000148CC: and     r5, r0
+   000148CE: cmp/eq  #1, r0
+
+  USER 000148C4 -> R3
+  function <none>
+   000148B2: and     #h'7F, r0
+   000148B4: bra     unk_148BE
+   000148B6: mov.b   r0, @r4
+   000148B8: mov.b   @r4, r0
+   000148BA: or      #h'80, r0
+   000148BC: mov.b   r0, @r4
+   000148BE: rts
+   000148C0: nop
+   000148C2: mov     #1, r0
+>> 000148C4: mov.l   #h'FFFF4C8E, r3
+   000148C6: mov.b   @r3, r7
+   000148C8: mov.l   #h'FFFF4BC3, r4
+   000148CA: extu.b  r7, r5
+   000148CC: and     r5, r0
+   000148CE: cmp/eq  #1, r0
+   000148D0: bf/s    unk_148D8
+   000148D2: mov     #0, r6
+   000148D4: bra     unk_148F6
+   000148D6: mov.b   r6, @r4
+   000148D8: mov     #2, r7
+   000148DA: mov     r5, r0
+   000148DC: and     r7, r0
+   000148DE: cmp/eq  #2, r0
+   000148E0: bt/s    unk_148F0
+   000148E2: nop
+   000148E4: mov     #4, r7
+   000148E6: mov     r5, r0
+   000148E8: and     r7, r0
+   000148EA: cmp/eq  #4, r0
+   000148EC: bf/s    unk_148F4
+   000148EE: nop
+   000148F0: bra     unk_148F6
+
+RAM FFFF4C94 literal @ ROM 00014AE8
+
+  USER 00014918 -> R3
+  function <none>
+   00014906: mulu    r15, r11
+   00014908: <undecoded> ff ff
+   0001490A: <undecoded> 4b c6
+   0001490C: <undecoded> ff ff
+   0001490E: <undecoded> 4b a4
+   00014910: <undecoded> ff ff
+   00014912: ldc     r12, r0_bank
+   00014914: <undecoded> ff ff
+   00014916: stc.l   r4_bank, @-r11
+>> 00014918: mov.l   #h'FFFF4C94, r3
+   0001491A: mov     #h'F, r2
+   0001491C: mov.b   @r3, r4
+   0001491E: mov     #8, r5
+   00014920: and     r2, r4
+   00014922: and     r2, r4
+   00014924: extu.b  r4, r1
+   00014926: cmp/gt  r5, r1
+   00014928: bf/s    unk_1492E
+   0001492A: nop
+   0001492C: mov     r5, r4
+   0001492E: mov.l   #h'FFFF4BC4, r5
+   00014930: mov.b   r4, @r5
+   00014932: mov.l   #h'FFFF4BC6, r4
+   00014934: mov.b   @r5, r0
+   00014936: extu.b  r0, r0
+   00014938: cmp/eq  #5, r0
+   0001493A: bf/s    unk_14946
+   0001493C: nop
+   0001493E: mov.b   @r4, r0
+   00014940: or      #h'20, r0 ; ' '
+   00014942: bra     unk_1494C
+   00014944: mov.b   r0, @r4
+
+RAM FFFF4C9E literal @ ROM 00015C7C
+
+  USER 00015A94 -> R10
+  function <none>
+   00015A82: tst     r0, r0
+   00015A84: bt/s    unk_15A92
+   00015A86: nop
+   00015A88: mov.l   #h'24DC, r3
+   00015A8A: jsr     @r3
+   00015A8C: mov     #0, r4
+   00015A8E: mov.l   #h'FFFF4C62, r2
+   00015A90: mov.w   r0, @r2
+   00015A92: mov.l   #h'FFFF4CA1, r8
+>> 00015A94: mov.l   #h'FFFF4C9E, r10
+   00015A96: mov.l   #h'FFFF4C9D, r11
+   00015A98: mov.l   #h'FFFF4C9F, r12
+   00015A9A: mov.l   #h'FFFF4C9C, r13
+   00015A9C: mov.l   #h'15828, r3
+   00015A9E: jsr     @r3
+   00015AA0: mov     #0, r14
+   00015AA2: extu.b  r0, r0
+   00015AA4: tst     r0, r0
+   00015AA6: bt/s    unk_15AAE
+   00015AA8: nop
+   00015AAA: bra     unk_15D1C
+   00015AAC: nop
+   00015AAE: mov.b   @r15, r3
+   00015AB0: tst     r3, r3
+   00015AB2: bt/s    unk_15ABA
+   00015AB4: nop
+   00015AB6: bra     unk_15D1C
+   00015AB8: nop
+   00015ABA: mov.b   @(4,r15), r0
+   00015ABC: extu.b  r0, r0
+   00015ABE: cmp/eq  #1, r0
+   00015AC0: bf/s    unk_15AC8
+
+  USER 00015BFA -> R3
+  function <none>
+   00015BE8: cmp/ge  r11, r3
+   00015BEA: bt/s    unk_15C06
+   00015BEC: nop
+   00015BEE: mov.l   #h'FFFF4C9D, r2
+   00015BF0: mov.b   @r2, r3
+   00015BF2: extu.b  r3, r3
+   00015BF4: cmp/ge  r11, r3
+   00015BF6: bt/s    unk_15C06
+   00015BF8: nop
+>> 00015BFA: mov.l   #h'FFFF4C9E, r3
+   00015BFC: mov.b   @r3, r1
+   00015BFE: extu.b  r1, r1
+   00015C00: cmp/ge  r11, r1
+   00015C02: bf/s    unk_15C14
+   00015C04: nop
+   00015C06: bsr     loc_15D5E
+   00015C08: nop
+   00015C0A: mov.l   #h'24DC, r2
+   00015C0C: jsr     @r2
+   00015C0E: mov     #1, r4
+   00015C10: mov.l   #h'FFFF4C60, r3
+   00015C12: mov.w   r0, @r3
+   00015C14: mov.b   @r8, r0
+   00015C16: extu.b  r0, r0
+   00015C18: cmp/eq  #1, r0
+   00015C1A: bt/s    unk_15C22
+   00015C1C: nop
+   00015C1E: bra     unk_15D28
+   00015C20: nop
+   00015C22: mov     #1, r5
+   00015C24: jsr     @r9
+   00015C26: mov.b   @r12, r4
+
+RAM FFFF4C9D literal @ ROM 00015C80
+
+  USER 00015A96 -> R11
+  function <none>
+   00015A84: bt/s    unk_15A92
+   00015A86: nop
+   00015A88: mov.l   #h'24DC, r3
+   00015A8A: jsr     @r3
+   00015A8C: mov     #0, r4
+   00015A8E: mov.l   #h'FFFF4C62, r2
+   00015A90: mov.w   r0, @r2
+   00015A92: mov.l   #h'FFFF4CA1, r8
+   00015A94: mov.l   #h'FFFF4C9E, r10
+>> 00015A96: mov.l   #h'FFFF4C9D, r11
+   00015A98: mov.l   #h'FFFF4C9F, r12
+   00015A9A: mov.l   #h'FFFF4C9C, r13
+   00015A9C: mov.l   #h'15828, r3
+   00015A9E: jsr     @r3
+   00015AA0: mov     #0, r14
+   00015AA2: extu.b  r0, r0
+   00015AA4: tst     r0, r0
+   00015AA6: bt/s    unk_15AAE
+   00015AA8: nop
+   00015AAA: bra     unk_15D1C
+   00015AAC: nop
+   00015AAE: mov.b   @r15, r3
+   00015AB0: tst     r3, r3
+   00015AB2: bt/s    unk_15ABA
+   00015AB4: nop
+   00015AB6: bra     unk_15D1C
+   00015AB8: nop
+   00015ABA: mov.b   @(4,r15), r0
+   00015ABC: extu.b  r0, r0
+   00015ABE: cmp/eq  #1, r0
+   00015AC0: bf/s    unk_15AC8
+   00015AC2: nop
+
+  USER 00015BEE -> R2
+  function <none>
+   00015BDC: bra     unk_15BE2
+   00015BDE: mov.b   r0, @r10
+   00015BE0: mov.b   r14, @r10
+   00015BE2: mov     #h'3F, r11 ; '?'
+   00015BE4: mov.b   @r13, r3
+   00015BE6: extu.b  r3, r3
+   00015BE8: cmp/ge  r11, r3
+   00015BEA: bt/s    unk_15C06
+   00015BEC: nop
+>> 00015BEE: mov.l   #h'FFFF4C9D, r2
+   00015BF0: mov.b   @r2, r3
+   00015BF2: extu.b  r3, r3
+   00015BF4: cmp/ge  r11, r3
+   00015BF6: bt/s    unk_15C06
+   00015BF8: nop
+   00015BFA: mov.l   #h'FFFF4C9E, r3
+   00015BFC: mov.b   @r3, r1
+   00015BFE: extu.b  r1, r1
+   00015C00: cmp/ge  r11, r1
+   00015C02: bf/s    unk_15C14
+   00015C04: nop
+   00015C06: bsr     loc_15D5E
+   00015C08: nop
+   00015C0A: mov.l   #h'24DC, r2
+   00015C0C: jsr     @r2
+   00015C0E: mov     #1, r4
+   00015C10: mov.l   #h'FFFF4C60, r3
+   00015C12: mov.w   r0, @r3
+   00015C14: mov.b   @r8, r0
+   00015C16: extu.b  r0, r0
+   00015C18: cmp/eq  #1, r0
+   00015C1A: bt/s    unk_15C22
+
+RAM FFFF4C9F literal @ ROM 00015C84
+
+  USER 00015A98 -> R12
+  function <none>
+   00015A86: nop
+   00015A88: mov.l   #h'24DC, r3
+   00015A8A: jsr     @r3
+   00015A8C: mov     #0, r4
+   00015A8E: mov.l   #h'FFFF4C62, r2
+   00015A90: mov.w   r0, @r2
+   00015A92: mov.l   #h'FFFF4CA1, r8
+   00015A94: mov.l   #h'FFFF4C9E, r10
+   00015A96: mov.l   #h'FFFF4C9D, r11
+>> 00015A98: mov.l   #h'FFFF4C9F, r12
+   00015A9A: mov.l   #h'FFFF4C9C, r13
+   00015A9C: mov.l   #h'15828, r3
+   00015A9E: jsr     @r3
+   00015AA0: mov     #0, r14
+   00015AA2: extu.b  r0, r0
+   00015AA4: tst     r0, r0
+   00015AA6: bt/s    unk_15AAE
+   00015AA8: nop
+   00015AAA: bra     unk_15D1C
+   00015AAC: nop
+   00015AAE: mov.b   @r15, r3
+   00015AB0: tst     r3, r3
+   00015AB2: bt/s    unk_15ABA
+   00015AB4: nop
+   00015AB6: bra     unk_15D1C
+   00015AB8: nop
+   00015ABA: mov.b   @(4,r15), r0
+   00015ABC: extu.b  r0, r0
+   00015ABE: cmp/eq  #1, r0
+   00015AC0: bf/s    unk_15AC8
+   00015AC2: nop
+   00015AC4: bra     unk_15D1C
+
+RAM FFFF4C9C literal @ ROM 00015C88
+
+  USER 00015A9A -> R13
+  function <none>
+   00015A88: mov.l   #h'24DC, r3
+   00015A8A: jsr     @r3
+   00015A8C: mov     #0, r4
+   00015A8E: mov.l   #h'FFFF4C62, r2
+   00015A90: mov.w   r0, @r2
+   00015A92: mov.l   #h'FFFF4CA1, r8
+   00015A94: mov.l   #h'FFFF4C9E, r10
+   00015A96: mov.l   #h'FFFF4C9D, r11
+   00015A98: mov.l   #h'FFFF4C9F, r12
+>> 00015A9A: mov.l   #h'FFFF4C9C, r13
+   00015A9C: mov.l   #h'15828, r3
+   00015A9E: jsr     @r3
+   00015AA0: mov     #0, r14
+   00015AA2: extu.b  r0, r0
+   00015AA4: tst     r0, r0
+   00015AA6: bt/s    unk_15AAE
+   00015AA8: nop
+   00015AAA: bra     unk_15D1C
+   00015AAC: nop
+   00015AAE: mov.b   @r15, r3
+   00015AB0: tst     r3, r3
+   00015AB2: bt/s    unk_15ABA
+   00015AB4: nop
+   00015AB6: bra     unk_15D1C
+   00015AB8: nop
+   00015ABA: mov.b   @(4,r15), r0
+   00015ABC: extu.b  r0, r0
+   00015ABE: cmp/eq  #1, r0
+   00015AC0: bf/s    unk_15AC8
+   00015AC2: nop
+   00015AC4: bra     unk_15D1C
+   00015AC6: nop
+
+RAM FFFF4C8C literal @ ROM 00015CA0
+
+  USER 00015AE8 -> R1
+  function <none>
+   00015AD6: extu.b  r4, r4
+   00015AD8: mov     r4, r3
+   00015ADA: tst     r3, r3
+   00015ADC: bf/s    unk_15B1A
+   00015ADE: mov.l   r4, @(4,r15)
+   00015AE0: mov.l   #h'FFFF4C74, r3
+   00015AE2: fmov    fr15, fr5
+   00015AE4: mov.l   #h'FFFF4C78, r4
+   00015AE6: mov.b   @r3, r2
+>> 00015AE8: mov.l   #h'FFFF4C8C, r1
+   00015AEA: mov.b   r2, @r1
+   00015AEC: mov.l   #h'FFFF4C75, r0
+   00015AEE: mov.b   @r0, r3
+   00015AF0: mov.l   #h'FFFF4C8D, r2
+   00015AF2: mov.b   r3, @r2
+   00015AF4: mov.l   #h'FFFF4C76, r1
+   00015AF6: mov.b   @r1, r3
+   00015AF8: mov.l   #h'FFFF4C8E, r2
+   00015AFA: mov.b   r3, @r2
+   00015AFC: mova    h'15CB4, r0
+   00015AFE: fmov.s  @r0, fr4
+   00015B00: jsr     @r9
+   00015B02: mov.b   @r4, r4
+   00015B04: mov.l   #h'FFFF4C90, r3
+   00015B06: fmov.s  fr0, @r3
+   00015B08: mov.l   #h'FFFF4C7A, r4
+   00015B0A: mov.b   @r4, r4
+   00015B0C: mova    h'15CC4, r0
+   00015B0E: lds     r4, fpul
+   00015B10: mov.l   #h'FFFF4C64, r2
+   00015B12: float   fpul, fr3
+   00015B14: fmov.s  @r0, fr2
+
+RAM FFFF4C8D literal @ ROM 00015CA8
+
+  USER 00015AF0 -> R2
+  function <none>
+   00015ADE: mov.l   r4, @(4,r15)
+   00015AE0: mov.l   #h'FFFF4C74, r3
+   00015AE2: fmov    fr15, fr5
+   00015AE4: mov.l   #h'FFFF4C78, r4
+   00015AE6: mov.b   @r3, r2
+   00015AE8: mov.l   #h'FFFF4C8C, r1
+   00015AEA: mov.b   r2, @r1
+   00015AEC: mov.l   #h'FFFF4C75, r0
+   00015AEE: mov.b   @r0, r3
+>> 00015AF0: mov.l   #h'FFFF4C8D, r2
+   00015AF2: mov.b   r3, @r2
+   00015AF4: mov.l   #h'FFFF4C76, r1
+   00015AF6: mov.b   @r1, r3
+   00015AF8: mov.l   #h'FFFF4C8E, r2
+   00015AFA: mov.b   r3, @r2
+   00015AFC: mova    h'15CB4, r0
+   00015AFE: fmov.s  @r0, fr4
+   00015B00: jsr     @r9
+   00015B02: mov.b   @r4, r4
+   00015B04: mov.l   #h'FFFF4C90, r3
+   00015B06: fmov.s  fr0, @r3
+   00015B08: mov.l   #h'FFFF4C7A, r4
+   00015B0A: mov.b   @r4, r4
+   00015B0C: mova    h'15CC4, r0
+   00015B0E: lds     r4, fpul
+   00015B10: mov.l   #h'FFFF4C64, r2
+   00015B12: float   fpul, fr3
+   00015B14: fmov.s  @r0, fr2
+   00015B16: fmul    fr2, fr3
+   00015B18: fmov.s  fr3, @r2
+   00015B1A: mov.l   #h'4E540, r4
+   00015B1C: mov.l   #h'CB62, r3
+
+RAM FFFF4C8E literal @ ROM 00015CB0
+
+  USER 00015AF8 -> R2
+  function <none>
+   00015AE6: mov.b   @r3, r2
+   00015AE8: mov.l   #h'FFFF4C8C, r1
+   00015AEA: mov.b   r2, @r1
+   00015AEC: mov.l   #h'FFFF4C75, r0
+   00015AEE: mov.b   @r0, r3
+   00015AF0: mov.l   #h'FFFF4C8D, r2
+   00015AF2: mov.b   r3, @r2
+   00015AF4: mov.l   #h'FFFF4C76, r1
+   00015AF6: mov.b   @r1, r3
+>> 00015AF8: mov.l   #h'FFFF4C8E, r2
+   00015AFA: mov.b   r3, @r2
+   00015AFC: mova    h'15CB4, r0
+   00015AFE: fmov.s  @r0, fr4
+   00015B00: jsr     @r9
+   00015B02: mov.b   @r4, r4
+   00015B04: mov.l   #h'FFFF4C90, r3
+   00015B06: fmov.s  fr0, @r3
+   00015B08: mov.l   #h'FFFF4C7A, r4
+   00015B0A: mov.b   @r4, r4
+   00015B0C: mova    h'15CC4, r0
+   00015B0E: lds     r4, fpul
+   00015B10: mov.l   #h'FFFF4C64, r2
+   00015B12: float   fpul, fr3
+   00015B14: fmov.s  @r0, fr2
+   00015B16: fmul    fr2, fr3
+   00015B18: fmov.s  fr3, @r2
+   00015B1A: mov.l   #h'4E540, r4
+   00015B1C: mov.l   #h'CB62, r3
+   00015B1E: jsr     @r3
+   00015B20: nop
+   00015B22: extu.b  r0, r4
+   00015B24: mov     r4, r3
+
+RAM FFFF4C90 literal @ ROM 00015CBC
+
+  USER 00015B04 -> R3
+  function <none>
+   00015AF2: mov.b   r3, @r2
+   00015AF4: mov.l   #h'FFFF4C76, r1
+   00015AF6: mov.b   @r1, r3
+   00015AF8: mov.l   #h'FFFF4C8E, r2
+   00015AFA: mov.b   r3, @r2
+   00015AFC: mova    h'15CB4, r0
+   00015AFE: fmov.s  @r0, fr4
+   00015B00: jsr     @r9
+   00015B02: mov.b   @r4, r4
+>> 00015B04: mov.l   #h'FFFF4C90, r3
+   00015B06: fmov.s  fr0, @r3
+   00015B08: mov.l   #h'FFFF4C7A, r4
+   00015B0A: mov.b   @r4, r4
+   00015B0C: mova    h'15CC4, r0
+   00015B0E: lds     r4, fpul
+   00015B10: mov.l   #h'FFFF4C64, r2
+   00015B12: float   fpul, fr3
+   00015B14: fmov.s  @r0, fr2
+   00015B16: fmul    fr2, fr3
+   00015B18: fmov.s  fr3, @r2
+   00015B1A: mov.l   #h'4E540, r4
+   00015B1C: mov.l   #h'CB62, r3
+   00015B1E: jsr     @r3
+   00015B20: nop
+   00015B22: extu.b  r0, r4
+   00015B24: mov     r4, r3
+   00015B26: tst     r3, r3
+   00015B28: bf/s    unk_15B68
+   00015B2A: mov.l   r4, @(8,r15)
+   00015B2C: mov.l   #h'FFFF4C7C, r4
+   00015B2E: fmov    fr15, fr5
+   00015B30: fldi1   fr4
+
+RAM FFFF4C98 literal @ ROM 00015CEC
+
+  USER 00015B58 -> R3
+  function <none>
+   00015B46: mov.b   @r4, r4
+   00015B48: mov.l   #h'FFFF4C68, r3
+   00015B4A: fmov    fr15, fr5
+   00015B4C: mova    h'15CE4, r0
+   00015B4E: fmov.s  fr0, @r3
+   00015B50: fmov.s  @r0, fr4
+   00015B52: mov.l   #h'FFFF4C7E, r4
+   00015B54: jsr     @r9
+   00015B56: mov.b   @r4, r4
+>> 00015B58: mov.l   #h'FFFF4C98, r3
+   00015B5A: fmov.s  fr0, @r3
+   00015B5C: mov.l   #h'FFFF4C7F, r2
+   00015B5E: mov     #1, r3
+   00015B60: mov.l   #h'FFFF4C95, r0
+   00015B62: mov.b   @r2, r1
+   00015B64: mov.b   r1, @r0
+   00015B66: mov.b   r3, @r8
+   00015B68: mov.l   #h'4E530, r4
+   00015B6A: mov.l   #h'CB62, r2
+   00015B6C: jsr     @r2
+   00015B6E: nop
+   00015B70: extu.b  r0, r4
+   00015B72: mov     r4, r3
+   00015B74: tst     r3, r3
+   00015B76: bf/s    unk_15B92
+   00015B78: mov.l   r4, @r15
+   00015B7A: fmov    fr15, fr5
+   00015B7C: mova    h'15D04, r0
+   00015B7E: mov.l   #h'FFFF4C86, r3
+   00015B80: mov.l   #h'FFFF4C94, r1
+   00015B82: mov.b   @r3, r2
+   00015B84: mov.l   #h'FFFF4C8B, r4
+
+RAM FFFF4C95 literal @ ROM 00015CF4
+
+  USER 00015B60 -> R0
+  function <none>
+   00015B4E: fmov.s  fr0, @r3
+   00015B50: fmov.s  @r0, fr4
+   00015B52: mov.l   #h'FFFF4C7E, r4
+   00015B54: jsr     @r9
+   00015B56: mov.b   @r4, r4
+   00015B58: mov.l   #h'FFFF4C98, r3
+   00015B5A: fmov.s  fr0, @r3
+   00015B5C: mov.l   #h'FFFF4C7F, r2
+   00015B5E: mov     #1, r3
+>> 00015B60: mov.l   #h'FFFF4C95, r0
+   00015B62: mov.b   @r2, r1
+   00015B64: mov.b   r1, @r0
+   00015B66: mov.b   r3, @r8
+   00015B68: mov.l   #h'4E530, r4
+   00015B6A: mov.l   #h'CB62, r2
+   00015B6C: jsr     @r2
+   00015B6E: nop
+   00015B70: extu.b  r0, r4
+   00015B72: mov     r4, r3
+   00015B74: tst     r3, r3
+   00015B76: bf/s    unk_15B92
+   00015B78: mov.l   r4, @r15
+   00015B7A: fmov    fr15, fr5
+   00015B7C: mova    h'15D04, r0
+   00015B7E: mov.l   #h'FFFF4C86, r3
+   00015B80: mov.l   #h'FFFF4C94, r1
+   00015B82: mov.b   @r3, r2
+   00015B84: mov.l   #h'FFFF4C8B, r4
+   00015B86: mov.b   r2, @r1
+   00015B88: fmov.s  @r0, fr4
+   00015B8A: jsr     @r9
+   00015B8C: mov.b   @r4, r4
+
+  USER 00015C2C -> R0
+  function <none>
+   00015C1A: bt/s    unk_15C22
+   00015C1C: nop
+   00015C1E: bra     unk_15D28
+   00015C20: nop
+   00015C22: mov     #1, r5
+   00015C24: jsr     @r9
+   00015C26: mov.b   @r12, r4
+   00015C28: mov.b   r0, @r12
+   00015C2A: mov.l   #h'FFFF4CA0, r3
+>> 00015C2C: mov.l   #h'FFFF4C95, r0
+   00015C2E: mov.b   @r3, r2
+   00015C30: mov.b   @r0, r1
+   00015C32: cmp/eq  r1, r2
+   00015C34: bt/s    unk_15C3A
+   00015C36: nop
+   00015C38: mov.b   r14, @r12
+   00015C3A: mov.b   @r12, r3
+   00015C3C: extu.b  r3, r3
+   00015C3E: cmp/ge  r11, r3
+   00015C40: bf/s    unk_15D28
+   00015C42: nop
+   00015C44: mov.l   #h'24DC, r3
+   00015C46: jsr     @r3
+   00015C48: mov     #1, r4
+   00015C4A: mov.l   #h'FFFF4C62, r2
+   00015C4C: bra     unk_15D28
+   00015C4E: mov.w   r0, @r2
+   00015C50: mov.b   r14, @r13
+   00015C52: mov.b   r14, @r11
+   00015C54: mov.b   r14, @r10
+   00015C56: mov.b   r14, @r12
+   00015C58: bra     unk_15D28
+
+RAM FFFF4C86 literal @ ROM 00015CFC
+
+  USER 00015B7E -> R3
+  function <none>
+   00015B6C: jsr     @r2
+   00015B6E: nop
+   00015B70: extu.b  r0, r4
+   00015B72: mov     r4, r3
+   00015B74: tst     r3, r3
+   00015B76: bf/s    unk_15B92
+   00015B78: mov.l   r4, @r15
+   00015B7A: fmov    fr15, fr5
+   00015B7C: mova    h'15D04, r0
+>> 00015B7E: mov.l   #h'FFFF4C86, r3
+   00015B80: mov.l   #h'FFFF4C94, r1
+   00015B82: mov.b   @r3, r2
+   00015B84: mov.l   #h'FFFF4C8B, r4
+   00015B86: mov.b   r2, @r1
+   00015B88: fmov.s  @r0, fr4
+   00015B8A: jsr     @r9
+   00015B8C: mov.b   @r4, r4
+   00015B8E: mov.l   #h'FFFF4C70, r3
+   00015B90: fmov.s  fr0, @r3
+   00015B92: mov.l   #h'FFFF4C50, r0
+   00015B94: mov.b   @r0, r0
+   00015B96: tst     #2, r0
+   00015B98: movt    r0
+   00015B9A: add     #-1, r0
+   00015B9C: neg     r0, r0
+   00015B9E: cmp/eq  #1, r0
+   00015BA0: bf/s    unk_15C50
+   00015BA2: nop
+   00015BA4: mov.l   #h'2534, r9
+   00015BA6: mov.l   @(4,r15), r0
+   00015BA8: cmp/eq  #1, r0
+   00015BAA: bf/s    unk_15BB8
+
+RAM FFFF4C94 literal @ ROM 00015D00
+
+  USER 00015B80 -> R1
+  function <none>
+   00015B6E: nop
+   00015B70: extu.b  r0, r4
+   00015B72: mov     r4, r3
+   00015B74: tst     r3, r3
+   00015B76: bf/s    unk_15B92
+   00015B78: mov.l   r4, @r15
+   00015B7A: fmov    fr15, fr5
+   00015B7C: mova    h'15D04, r0
+   00015B7E: mov.l   #h'FFFF4C86, r3
+>> 00015B80: mov.l   #h'FFFF4C94, r1
+   00015B82: mov.b   @r3, r2
+   00015B84: mov.l   #h'FFFF4C8B, r4
+   00015B86: mov.b   r2, @r1
+   00015B88: fmov.s  @r0, fr4
+   00015B8A: jsr     @r9
+   00015B8C: mov.b   @r4, r4
+   00015B8E: mov.l   #h'FFFF4C70, r3
+   00015B90: fmov.s  fr0, @r3
+   00015B92: mov.l   #h'FFFF4C50, r0
+   00015B94: mov.b   @r0, r0
+   00015B96: tst     #2, r0
+   00015B98: movt    r0
+   00015B9A: add     #-1, r0
+   00015B9C: neg     r0, r0
+   00015B9E: cmp/eq  #1, r0
+   00015BA0: bf/s    unk_15C50
+   00015BA2: nop
+   00015BA4: mov.l   #h'2534, r9
+   00015BA6: mov.l   @(4,r15), r0
+   00015BA8: cmp/eq  #1, r0
+   00015BAA: bf/s    unk_15BB8
+   00015BAC: nop
+
+RAM FFFF4C8B literal @ ROM 00015D08
+
+  USER 00015B84 -> R4
+  function <none>
+   00015B72: mov     r4, r3
+   00015B74: tst     r3, r3
+   00015B76: bf/s    unk_15B92
+   00015B78: mov.l   r4, @r15
+   00015B7A: fmov    fr15, fr5
+   00015B7C: mova    h'15D04, r0
+   00015B7E: mov.l   #h'FFFF4C86, r3
+   00015B80: mov.l   #h'FFFF4C94, r1
+   00015B82: mov.b   @r3, r2
+>> 00015B84: mov.l   #h'FFFF4C8B, r4
+   00015B86: mov.b   r2, @r1
+   00015B88: fmov.s  @r0, fr4
+   00015B8A: jsr     @r9
+   00015B8C: mov.b   @r4, r4
+   00015B8E: mov.l   #h'FFFF4C70, r3
+   00015B90: fmov.s  fr0, @r3
+   00015B92: mov.l   #h'FFFF4C50, r0
+   00015B94: mov.b   @r0, r0
+   00015B96: tst     #2, r0
+   00015B98: movt    r0
+   00015B9A: add     #-1, r0
+   00015B9C: neg     r0, r0
+   00015B9E: cmp/eq  #1, r0
+   00015BA0: bf/s    unk_15C50
+   00015BA2: nop
+   00015BA4: mov.l   #h'2534, r9
+   00015BA6: mov.l   @(4,r15), r0
+   00015BA8: cmp/eq  #1, r0
+   00015BAA: bf/s    unk_15BB8
+   00015BAC: nop
+   00015BAE: mov     #1, r5
+   00015BB0: jsr     @r9
+
+RAM FFFF4C95 literal @ ROM 00015DB0
+
+  USER 00015D28 -> R3
+  function <none>
+   00015D16: mov.b   r3, @-r5
+   00015D18: <undecoded> ff ff
+   00015D1A: <undecoded> 4c a0
+   00015D1C: mov.b   r14, @r13
+   00015D1E: mov.b   r14, @r11
+   00015D20: mov.b   r14, @r10
+   00015D22: mov.b   r14, @r12
+   00015D24: bsr     loc_15D5E
+   00015D26: mov.b   r14, @r8
+>> 00015D28: mov.l   #h'FFFF4C95, r3
+   00015D2A: mov.b   @r3, r2
+   00015D2C: mov.l   #h'FFFF4CA0, r1
+   00015D2E: mov.b   r2, @r1
+   00015D30: add     #h'C, r15
+   00015D32: lds.l   @r15+, pr
+   00015D34: fmov.s  @r15+, fr15
+   00015D36: mov.l   @r15+, r8
+   00015D38: mov.l   @r15+, r9
+   00015D3A: mov.l   @r15+, r10
+   00015D3C: mov.l   @r15+, r11
+   00015D3E: mov.l   @r15+, r12
+   00015D40: mov.l   @r15+, r13
+   00015D42: rts
+   00015D44: mov.l   @r15+, r14
+   00015D46: sts.l   pr, @-r15
+   00015D48: mov.l   #sub_24DC, r3
+   00015D4A: jsr     @r3 ; sub_24DC
+   00015D4C: mov     #0, r4
+   00015D4E: mov.l   #unk_FFFF4C60, r2
+   00015D50: mov.l   #sub_24DC, r3
+   00015D52: mov.w   r0, @r2
+   00015D54: jsr     @r3 ; sub_24DC
+
+RAM FFFF4C8C literal @ ROM 00015DD4
+
+  USER 00015D74 -> R1
+  function 00015D46-00015D92 sub_15D46
+   00015D62: mov     #0, r4
+   00015D64: mov.l   #unk_FFFF4C94, r0
+   00015D66: mov.l   #unk_CA7E4, r3
+   00015D68: mov.l   #unk_FFFF4C6C, r1
+   00015D6A: fmov.s  @r3, fr3
+   00015D6C: fmov.s  fr3, @r1
+   00015D6E: fmov.s  fr4, @r2
+   00015D70: mov.l   #unk_FFFF4C68, r3
+   00015D72: fmov.s  fr4, @r3
+>> 00015D74: mov.l   #unk_FFFF4C8C, r1
+   00015D76: mov.b   r4, @r1
+   00015D78: mov.l   #pPackedTargetCurrentGearRange, r2; Live-verified packed 5EAT gear/range byte. Upper nibble = target/requested gear/range; lower nibble = current gear/range. Observed stable encoding: 8=Park, 7=Reverse, 0=Neutral/no forward gear, 1..5=forward gears 1..5. Examples: 0x21=target 2/current 1, 0x45=target 4/current 5.
+   00015D7A: mov.b   r4, @r2
+   00015D7C: mov.l   #unk_FFFF4C8E, r3
+   00015D7E: mov.b   r4, @r3
+   00015D80: mov.l   #unk_FFFF4C90, r1
+   00015D82: mov     #8, r3
+   00015D84: mov.l   #unk_FFFF4C64, r2
+   00015D86: fmov.s  fr4, @r1
+   00015D88: fmov.s  fr4, @r2
+   00015D8A: mov.b   r3, @r0
+   00015D8C: mov.l   #unk_FFFF4C98, r1
+   00015D8E: rts
+   00015D90: fmov.s  fr4, @r1
+   00015D92: mov.l   #h'FFFF4C60, r3
+   00015D94: mov.b   @r3, r0
+   00015D96: extu.b  r0, r0
+   00015D98: cmp/eq  #1, r0
+   00015D9A: movt    r0
+   00015D9C: rts
+   00015D9E: nop
+   00015DA0: mov.l   #h'FFFF4C62, r3
+
+RAM FFFF4C8D literal @ ROM 00015DD8
+
+  USER 00015D78 -> R2
+  function 00015D46-00015D92 sub_15D46
+   00015D66: mov.l   #unk_CA7E4, r3
+   00015D68: mov.l   #unk_FFFF4C6C, r1
+   00015D6A: fmov.s  @r3, fr3
+   00015D6C: fmov.s  fr3, @r1
+   00015D6E: fmov.s  fr4, @r2
+   00015D70: mov.l   #unk_FFFF4C68, r3
+   00015D72: fmov.s  fr4, @r3
+   00015D74: mov.l   #unk_FFFF4C8C, r1
+   00015D76: mov.b   r4, @r1
+>> 00015D78: mov.l   #pPackedTargetCurrentGearRange, r2; Live-verified packed 5EAT gear/range byte. Upper nibble = target/requested gear/range; lower nibble = current gear/range. Observed stable encoding: 8=Park, 7=Reverse, 0=Neutral/no forward gear, 1..5=forward gears 1..5. Examples: 0x21=target 2/current 1, 0x45=target 4/current 5.
+   00015D7A: mov.b   r4, @r2
+   00015D7C: mov.l   #unk_FFFF4C8E, r3
+   00015D7E: mov.b   r4, @r3
+   00015D80: mov.l   #unk_FFFF4C90, r1
+   00015D82: mov     #8, r3
+   00015D84: mov.l   #unk_FFFF4C64, r2
+   00015D86: fmov.s  fr4, @r1
+   00015D88: fmov.s  fr4, @r2
+   00015D8A: mov.b   r3, @r0
+   00015D8C: mov.l   #unk_FFFF4C98, r1
+   00015D8E: rts
+   00015D90: fmov.s  fr4, @r1
+   00015D92: mov.l   #h'FFFF4C60, r3
+   00015D94: mov.b   @r3, r0
+   00015D96: extu.b  r0, r0
+   00015D98: cmp/eq  #1, r0
+   00015D9A: movt    r0
+   00015D9C: rts
+   00015D9E: nop
+   00015DA0: mov.l   #h'FFFF4C62, r3
+   00015DA2: mov.b   @r3, r0
+   00015DA4: extu.b  r0, r0
+
+RAM FFFF4C8E literal @ ROM 00015DDC
+
+  USER 00015D7C -> R3
+  function 00015D46-00015D92 sub_15D46
+   00015D6A: fmov.s  @r3, fr3
+   00015D6C: fmov.s  fr3, @r1
+   00015D6E: fmov.s  fr4, @r2
+   00015D70: mov.l   #unk_FFFF4C68, r3
+   00015D72: fmov.s  fr4, @r3
+   00015D74: mov.l   #unk_FFFF4C8C, r1
+   00015D76: mov.b   r4, @r1
+   00015D78: mov.l   #pPackedTargetCurrentGearRange, r2; Live-verified packed 5EAT gear/range byte. Upper nibble = target/requested gear/range; lower nibble = current gear/range. Observed stable encoding: 8=Park, 7=Reverse, 0=Neutral/no forward gear, 1..5=forward gears 1..5. Examples: 0x21=target 2/current 1, 0x45=target 4/current 5.
+   00015D7A: mov.b   r4, @r2
+>> 00015D7C: mov.l   #unk_FFFF4C8E, r3
+   00015D7E: mov.b   r4, @r3
+   00015D80: mov.l   #unk_FFFF4C90, r1
+   00015D82: mov     #8, r3
+   00015D84: mov.l   #unk_FFFF4C64, r2
+   00015D86: fmov.s  fr4, @r1
+   00015D88: fmov.s  fr4, @r2
+   00015D8A: mov.b   r3, @r0
+   00015D8C: mov.l   #unk_FFFF4C98, r1
+   00015D8E: rts
+   00015D90: fmov.s  fr4, @r1
+   00015D92: mov.l   #h'FFFF4C60, r3
+   00015D94: mov.b   @r3, r0
+   00015D96: extu.b  r0, r0
+   00015D98: cmp/eq  #1, r0
+   00015D9A: movt    r0
+   00015D9C: rts
+   00015D9E: nop
+   00015DA0: mov.l   #h'FFFF4C62, r3
+   00015DA2: mov.b   @r3, r0
+   00015DA4: extu.b  r0, r0
+   00015DA6: cmp/eq  #1, r0
+   00015DA8: movt    r0
+
+RAM FFFF4C90 literal @ ROM 00015DE0
+
+  USER 00015D80 -> R1
+  function 00015D46-00015D92 sub_15D46
+   00015D6E: fmov.s  fr4, @r2
+   00015D70: mov.l   #unk_FFFF4C68, r3
+   00015D72: fmov.s  fr4, @r3
+   00015D74: mov.l   #unk_FFFF4C8C, r1
+   00015D76: mov.b   r4, @r1
+   00015D78: mov.l   #pPackedTargetCurrentGearRange, r2; Live-verified packed 5EAT gear/range byte. Upper nibble = target/requested gear/range; lower nibble = current gear/range. Observed stable encoding: 8=Park, 7=Reverse, 0=Neutral/no forward gear, 1..5=forward gears 1..5. Examples: 0x21=target 2/current 1, 0x45=target 4/current 5.
+   00015D7A: mov.b   r4, @r2
+   00015D7C: mov.l   #unk_FFFF4C8E, r3
+   00015D7E: mov.b   r4, @r3
+>> 00015D80: mov.l   #unk_FFFF4C90, r1
+   00015D82: mov     #8, r3
+   00015D84: mov.l   #unk_FFFF4C64, r2
+   00015D86: fmov.s  fr4, @r1
+   00015D88: fmov.s  fr4, @r2
+   00015D8A: mov.b   r3, @r0
+   00015D8C: mov.l   #unk_FFFF4C98, r1
+   00015D8E: rts
+   00015D90: fmov.s  fr4, @r1
+   00015D92: mov.l   #h'FFFF4C60, r3
+   00015D94: mov.b   @r3, r0
+   00015D96: extu.b  r0, r0
+   00015D98: cmp/eq  #1, r0
+   00015D9A: movt    r0
+   00015D9C: rts
+   00015D9E: nop
+   00015DA0: mov.l   #h'FFFF4C62, r3
+   00015DA2: mov.b   @r3, r0
+   00015DA4: extu.b  r0, r0
+   00015DA6: cmp/eq  #1, r0
+   00015DA8: movt    r0
+   00015DAA: rts
+   00015DAC: nop
+
+RAM FFFF4C94 literal @ ROM 00015DE8
+
+  USER 00015D64 -> R0
+  function 00015D46-00015D92 sub_15D46
+   00015D52: mov.w   r0, @r2
+   00015D54: jsr     @r3 ; sub_24DC
+   00015D56: mov     #0, r4
+   00015D58: mov.l   #unk_FFFF4C62, r2
+   00015D5A: mov.w   r0, @r2
+   00015D5C: lds.l   @r15+, pr
+   00015D5E: fldi0   fr4
+   00015D60: mov.l   #unk_FFFF4C70, r2
+   00015D62: mov     #0, r4
+>> 00015D64: mov.l   #unk_FFFF4C94, r0
+   00015D66: mov.l   #unk_CA7E4, r3
+   00015D68: mov.l   #unk_FFFF4C6C, r1
+   00015D6A: fmov.s  @r3, fr3
+   00015D6C: fmov.s  fr3, @r1
+   00015D6E: fmov.s  fr4, @r2
+   00015D70: mov.l   #unk_FFFF4C68, r3
+   00015D72: fmov.s  fr4, @r3
+   00015D74: mov.l   #unk_FFFF4C8C, r1
+   00015D76: mov.b   r4, @r1
+   00015D78: mov.l   #pPackedTargetCurrentGearRange, r2; Live-verified packed 5EAT gear/range byte. Upper nibble = target/requested gear/range; lower nibble = current gear/range. Observed stable encoding: 8=Park, 7=Reverse, 0=Neutral/no forward gear, 1..5=forward gears 1..5. Examples: 0x21=target 2/current 1, 0x45=target 4/current 5.
+   00015D7A: mov.b   r4, @r2
+   00015D7C: mov.l   #unk_FFFF4C8E, r3
+   00015D7E: mov.b   r4, @r3
+   00015D80: mov.l   #unk_FFFF4C90, r1
+   00015D82: mov     #8, r3
+   00015D84: mov.l   #unk_FFFF4C64, r2
+   00015D86: fmov.s  fr4, @r1
+   00015D88: fmov.s  fr4, @r2
+   00015D8A: mov.b   r3, @r0
+   00015D8C: mov.l   #unk_FFFF4C98, r1
+   00015D8E: rts
+   00015D90: fmov.s  fr4, @r1
+
+RAM FFFF4C98 literal @ ROM 00015DEC
+
+  USER 00015D8C -> R1
+  function 00015D46-00015D92 sub_15D46
+   00015D7A: mov.b   r4, @r2
+   00015D7C: mov.l   #unk_FFFF4C8E, r3
+   00015D7E: mov.b   r4, @r3
+   00015D80: mov.l   #unk_FFFF4C90, r1
+   00015D82: mov     #8, r3
+   00015D84: mov.l   #unk_FFFF4C64, r2
+   00015D86: fmov.s  fr4, @r1
+   00015D88: fmov.s  fr4, @r2
+   00015D8A: mov.b   r3, @r0
+>> 00015D8C: mov.l   #unk_FFFF4C98, r1
+   00015D8E: rts
+   00015D90: fmov.s  fr4, @r1
+   00015D92: mov.l   #h'FFFF4C60, r3
+   00015D94: mov.b   @r3, r0
+   00015D96: extu.b  r0, r0
+   00015D98: cmp/eq  #1, r0
+   00015D9A: movt    r0
+   00015D9C: rts
+   00015D9E: nop
+   00015DA0: mov.l   #h'FFFF4C62, r3
+   00015DA2: mov.b   @r3, r0
+   00015DA4: extu.b  r0, r0
+   00015DA6: cmp/eq  #1, r0
+   00015DA8: movt    r0
+   00015DAA: rts
+   00015DAC: nop
+   00015DAE: <undecoded> ff ff
+   00015DB0: <undecoded> ff ff
+   00015DB2: <undecoded> 4c 95
+   00015DB4: <undecoded> ff ff
+   00015DB6: <undecoded> 4c a0
+   00015DB8: <undecoded> 00 00
+
+RAM FFFF4C90 literal @ ROM 00041C94
+
+  USER 00041AF8 -> R3
+  function <none>
+   00041AE6: mov     r15, r2
+   00041AE8: mov.l   #h'FFFF4BC1, r1
+   00041AEA: fldi0   fr15
+   00041AEC: add     #h'34, r2 ; '4'
+   00041AEE: mov.b   r0, @r2
+   00041AF0: mov.b   @r1, r3
+   00041AF2: mov     #h'44, r0 ; 'D'
+   00041AF4: mov.l   #h'FFFF5028, r2
+   00041AF6: mov.b   r3, @(r0,r15)
+>> 00041AF8: mov.l   #h'FFFF4C90, r3
+   00041AFA: mov     #h'48, r0 ; 'H'
+   00041AFC: mov.l   #h'26A7A, r1
+   00041AFE: fmov.s  fr15, @(r0,r15)
+   00041B00: fmov.s  @r3, fr3
+   00041B02: mov     #4, r0
+   00041B04: fmov.s  fr3, @(r0,r15)
+   00041B06: mov     #h'24, r0 ; '$'
+   00041B08: fmov.s  @r2, fr3
+   00041B0A: jsr     @r1
+   00041B0C: fmov.s  fr3, @(r0,r15)
+   00041B0E: mov     r15, r1
+   00041B10: mov.l   #h'FFFF52D4, r2
+   00041B12: add     #h'3C, r1 ; '<'
+   00041B14: mov.b   r0, @r1
+   00041B16: mov     #h'38, r0 ; '8'
+   00041B18: mov.l   #h'239A6, r1
+   00041B1A: mov.w   @r2, r3
+   00041B1C: jsr     @r1
+   00041B1E: mov.w   r3, @(r0,r15)
+   00041B20: mov.l   #h'FFFF60E4, r3
+   00041B22: mov     r15, r1
+   00041B24: add     #h'40, r1 ; '@'
+
+RAM FFFF4C84 literal @ ROM 0004E538
+  no PC-relative MOV.L users
+
+==============================================================================
+DECODED TCU STATE AREA
+FFFF4BC0-FFFF4BCF
+
+RAM FFFF4BC1 literal @ ROM 00013634
+
+  USER 00013490 -> R2
+  function <none>
+   0001347E: mov.l   #h'1803A, r3
+   00013480: jsr     @r3
+   00013482: mov.w   @r1, r11
+   00013484: mov.l   #h'16550, r2
+   00013486: jsr     @r2
+   00013488: mov     r0, r8
+   0001348A: mov.l   #h'23A20, r3
+   0001348C: jsr     @r3
+   0001348E: mov     r0, r9
+>> 00013490: mov.l   #h'FFFF4BC1, r2
+   00013492: mov     r0, r5
+   00013494: mov.l   #h'C0178, r3
+   00013496: fmov.s  @r3, fr3
+   00013498: fcmp/gt fr15, fr3
+   0001349A: bt/s    unk_134A4
+   0001349C: mov.b   @r2, r6
+   0001349E: mov.l   #h'C016C, r0
+   000134A0: bra     unk_134B0
+   000134A2: nop
+   000134A4: mov.l   #h'C017C, r1
+   000134A6: fmov.s  @r1, fr2
+   000134A8: fcmp/gt fr15, fr2
+   000134AA: bt/s    unk_134B4
+   000134AC: nop
+   000134AE: mov.l   #h'C0170, r0
+   000134B0: bra     unk_134B8
+   000134B2: fmov.s  @r0, fr15
+   000134B4: mov.l   #h'C0174, r2
+   000134B6: fmov.s  @r2, fr15
+   000134B8: mov.l   #h'FFFF4B45, r2
+   000134BA: mov.b   @r2, r3
+   000134BC: tst     r3, r3
+
+RAM FFFF4BCC literal @ ROM 0001445C
+
+  USER 000142CC -> R5
+  function 00014260-00014324 sub_14260
+   000142BA: fmov    fr0, fr15
+   000142BC: jsr     @r14 ; sPull2DFloat
+   000142BE: fmov    fr12, fr4
+   000142C0: mov.l   #unk_85500, r4
+   000142C2: fmov    fr0, fr14
+   000142C4: mov     #h'10, r0
+   000142C6: jsr     @r14 ; sPull2DFloat
+   000142C8: fmov.s  @(r0,r15), fr4
+   000142CA: fmov    fr0, fr4
+>> 000142CC: mov.l   #unk_FFFF4BCC, r5
+   000142CE: fldi1   fr5
+   000142D0: mov.l   #unk_FFFF4BC8, r6
+   000142D2: mov     #4, r0
+   000142D4: mov.l   #unk_FFFF4BD0, r4
+   000142D6: fsub    fr13, fr5
+   000142D8: fmov.s  @r15, fr0
+   000142DA: fmov.s  @(r0,r15), fr3
+   000142DC: fmul    fr13, fr3
+   000142DE: mov     #8, r0
+   000142E0: fmov.s  @(r0,r15), fr2
+   000142E2: fmac    fr0, fr5, fr3
+   000142E4: fmov    fr4, fr0
+   000142E6: fmac    fr0, fr2, fr3
+   000142E8: fmov.s  fr3, @r5
+   000142EA: fmul    fr13, fr14
+   000142EC: fmov    fr15, fr0
+   000142EE: fmac    fr0, fr5, fr14
+   000142F0: fmov.s  fr14, @r6
+   000142F2: mov.b   @(h'1C+var_10,r15), r0
+   000142F4: extu.b  r0, r0
+   000142F6: cmp/eq  #1, r0
+   000142F8: bf/s    loc_14302
+
+RAM FFFF4BC8 literal @ ROM 00014460
+
+  USER 000142D0 -> R6
+  function 00014260-00014324 sub_14260
+   000142BE: fmov    fr12, fr4
+   000142C0: mov.l   #unk_85500, r4
+   000142C2: fmov    fr0, fr14
+   000142C4: mov     #h'10, r0
+   000142C6: jsr     @r14 ; sPull2DFloat
+   000142C8: fmov.s  @(r0,r15), fr4
+   000142CA: fmov    fr0, fr4
+   000142CC: mov.l   #unk_FFFF4BCC, r5
+   000142CE: fldi1   fr5
+>> 000142D0: mov.l   #unk_FFFF4BC8, r6
+   000142D2: mov     #4, r0
+   000142D4: mov.l   #unk_FFFF4BD0, r4
+   000142D6: fsub    fr13, fr5
+   000142D8: fmov.s  @r15, fr0
+   000142DA: fmov.s  @(r0,r15), fr3
+   000142DC: fmul    fr13, fr3
+   000142DE: mov     #8, r0
+   000142E0: fmov.s  @(r0,r15), fr2
+   000142E2: fmac    fr0, fr5, fr3
+   000142E4: fmov    fr4, fr0
+   000142E6: fmac    fr0, fr2, fr3
+   000142E8: fmov.s  fr3, @r5
+   000142EA: fmul    fr13, fr14
+   000142EC: fmov    fr15, fr0
+   000142EE: fmac    fr0, fr5, fr14
+   000142F0: fmov.s  fr14, @r6
+   000142F2: mov.b   @(h'1C+var_10,r15), r0
+   000142F4: extu.b  r0, r0
+   000142F6: cmp/eq  #1, r0
+   000142F8: bf/s    loc_14302
+   000142FA: nop
+   000142FC: mov.l   #unk_C13B8, r3
+
+RAM FFFF4BC7 literal @ ROM 00014494
+
+  USER 0001437A -> R4
+  function <none>
+   00014368: fmov.s  @r15+, fr15
+   0001436A: rts
+   0001436C: mov.l   @r15+, r14
+   0001436E: mov.l   r14, @-r15
+   00014370: sts.l   pr, @-r15
+   00014372: mov.l   #h'FFFF502C, r3
+   00014374: mov.l   #h'FFFF5030, r2
+   00014376: fmov.s  @r3, fr5
+   00014378: mov.l   #h'FFFF4BD8, r14
+>> 0001437A: mov.l   #h'FFFF4BC7, r4
+   0001437C: mov     r4, r0
+   0001437E: mov.b   @r0, r0
+   00014380: tst     #1, r0
+   00014382: bf/s    unk_1439E
+   00014384: fmov.s  @r2, fr4
+   00014386: mov.l   #h'C1404, r1
+   00014388: fmov.s  @r1, fr3
+   0001438A: fcmp/gt fr4, fr3
+   0001438C: bf/s    unk_1439E
+   0001438E: nop
+   00014390: mov.b   @r4, r0
+   00014392: or      #2, r0
+   00014394: mov.b   r0, @r4
+   00014396: mov.b   @r4, r0
+   00014398: or      #1, r0
+   0001439A: bra     unk_143DE
+   0001439C: mov.b   r0, @r4
+   0001439E: mov.w   @r14, r3
+   000143A0: mov.l   #h'C13A4, r1
+   000143A2: mov.w   @r1, r2
+   000143A4: cmp/hs  r2, r3
+   000143A6: bf/s    unk_143B2
+
+  USER 000143FC -> R4
+  function <none>
+   000143EA: mov     #1, r5
+   000143EC: mov.l   #h'251C, r3
+   000143EE: jsr     @r3
+   000143F0: mov.w   @r14, r4
+   000143F2: mov.w   r0, @r14
+   000143F4: lds.l   @r15+, pr
+   000143F6: rts
+   000143F8: mov.l   @r15+, r14
+   000143FA: mov.l   #h'FFFF502C, r3
+>> 000143FC: mov.l   #h'FFFF4BC7, r4
+   000143FE: fmov.s  @r3, fr4
+   00014400: mov.l   #h'C1414, r2
+   00014402: fmov.s  @r2, fr3
+   00014404: fcmp/gt fr4, fr3
+   00014406: bf/s    unk_144B4
+   00014408: nop
+   0001440A: mov.b   @r4, r0
+   0001440C: or      #4, r0
+   0001440E: mov.b   r0, @r4
+   00014410: bra     unk_144C4
+   00014412: nop
+   00014414: <undecoded> ff ff
+   00014416: mov.l   @(h'30,r2), r0
+   00014418: stc     sr, r0
+   0001441A: cmp/eq  r2, r10
+   0001441C: <undecoded> ff ff
+   0001441E: <undecoded> 4b a4
+   00014420: mov.b   @(r0,r0), r0
+   00014422: mov.l   r11, @(h'10,r3)
+   00014424: stc     sr, r0
+   00014426: negc    r7, r10
+   00014428: <undecoded> ff ff
+
+RAM FFFF4BC7 literal @ ROM 000146DC
+
+  USER 00014504 -> R4
+  function <none>
+   000144F2: fmul    fr14, fr4
+   000144F4: mov.l   #h'FFFF4BB8, r2
+   000144F6: fmov.s  fr0, @r2
+   000144F8: lds.l   @r15+, pr
+   000144FA: fmov.s  @r15+, fr14
+   000144FC: rts
+   000144FE: fmov.s  @r15+, fr15
+   00014500: mov.l   #h'FFFF4FF0, r3
+   00014502: fmov.s  @r3, fr4
+>> 00014504: mov.l   #h'FFFF4BC7, r4
+   00014506: mova    h'146E0, r0
+   00014508: fmov.s  @r0, fr3
+   0001450A: fcmp/gt fr4, fr3
+   0001450C: bt/s    unk_14518
+   0001450E: nop
+   00014510: mov.b   @r4, r0
+   00014512: or      #8, r0
+   00014514: bra     unk_1451E
+   00014516: mov.b   r0, @r4
+   00014518: mov.b   @r4, r0
+   0001451A: and     #h'F7, r0
+   0001451C: mov.b   r0, @r4
+   0001451E: rts
+   00014520: nop
+   00014522: sts.l   pr, @-r15
+   00014524: mov.l   #h'FFFF209C, r3
+   00014526: fmov.s  @r3, fr4
+   00014528: mov.l   #h'FFFF4E98, r2
+   0001452A: fmov.s  @r2, fr5
+   0001452C: mov.l   #h'FFFF4E9C, r1
+   0001452E: mov.l   #h'24C0, r3
+   00014530: jsr     @r3
+
+RAM FFFF4BC5 literal @ ROM 000146FC
+
+  USER 0001454C -> R5
+  function <none>
+   0001453A: fmov.s  fr0, @r2
+   0001453C: sts.l   pr, @-r15
+   0001453E: add     #-4, r15
+   00014540: mov.l   #h'FFFF52E8, r1
+   00014542: mov.b   @r1, r3
+   00014544: mov.l   #h'23A20, r2
+   00014546: jsr     @r2
+   00014548: mov.b   r3, @r15
+   0001454A: mov     r0, r4
+>> 0001454C: mov.l   #h'FFFF4BC5, r5
+   0001454E: extu.b  r4, r0
+   00014550: cmp/eq  #1, r0
+   00014552: bf/s    unk_1455C
+   00014554: nop
+   00014556: mov.b   @r15, r2
+   00014558: bra     unk_14560
+   0001455A: mov.b   r2, @r5
+   0001455C: mov     #0, r1
+   0001455E: mov.b   r1, @r5
+   00014560: add     #4, r15
+   00014562: lds.l   @r15+, pr
+   00014564: rts
+   00014566: nop
+   00014568: fmov.s  fr15, @-r15
+   0001456A: sts.l   pr, @-r15
+   0001456C: mov.l   #h'FFFF4C68, r3
+   0001456E: fmov.s  @r3, fr3
+   00014570: mova    h'146CC, r0
+   00014572: fmov.s  @r0, fr15
+   00014574: mov.l   #h'2458, r2
+   00014576: fmov    fr15, fr4
+   00014578: fsub    fr3, fr4
+
+RAM FFFF4BC0 literal @ ROM 00014808
+
+  USER 000147A6 -> R3
+  function <none>
+   00014794: bra     unk_147A6
+   00014796: mov     #h'10, r4
+   00014798: bra     unk_147A6
+   0001479A: mov     #h'20, r4 ; ' '
+   0001479C: bra     unk_147A6
+   0001479E: mov     r6, r4
+   000147A0: bra     unk_147A6
+   000147A2: mov     #h'F, r4
+   000147A4: mov     r7, r4
+>> 000147A6: mov.l   #h'FFFF4BC0, r3
+   000147A8: rts
+   000147AA: mov.b   r4, @r3
+   000147AC: mov.l   #pPackedTargetCurrentGearRange, r2; Live-verified packed 5EAT gear/range byte. Upper nibble = target/requested gear/range; lower nibble = current gear/range. Observed stable encoding: 8=Park, 7=Reverse, 0=Neutral/no forward gear, 1..5=forward gears 1..5. Examples: 0x21=target 2/current 1, 0x45=target 4/current 5.
+   000147AE: mov.b   @r2, r5
+   000147B0: mov.w   #h'F0, r6
+   000147B2: and     r5, r6
+   000147B4: mov.w   #h'80, r7
+   000147B6: extu.b  r6, r4
+   000147B8: cmp/eq  r7, r4
+   000147BA: bf/s    loc_147C6
+   000147BC: nop
+   000147BE: mov     #0, r1
+   000147C0: mov.l   #pTargetGearRangeCode, r3; Decoded target/requested gear/range from upper nibble of FFFF4C8D. Decoder maps encoded 8 to 0.
+   000147C2: bra     loc_147DC
+   000147C4: mov.b   r1, @r3
+   000147C6: tst     r4, r7
+   000147C8: bf/s    loc_147DC
+   000147CA: nop
+   000147CC: mov.l   #pTargetGearRangeCode, r1; Decoded target/requested gear/range from upper nibble of FFFF4C8D. Decoder maps encoded 8 to 0.
+   000147CE: shar    r4
+   000147D0: shar    r4
+   000147D2: shar    r4
+
+RAM FFFF4BC1 literal @ ROM 00014810
+
+  USER 000147C0 -> R3
+  function 000147AC-00014802 sDecodePackedGearRangeByte
+   000147AE: mov.b   @r2, r5
+   000147B0: mov.w   #h'F0, r6
+   000147B2: and     r5, r6
+   000147B4: mov.w   #h'80, r7
+   000147B6: extu.b  r6, r4
+   000147B8: cmp/eq  r7, r4
+   000147BA: bf/s    loc_147C6
+   000147BC: nop
+   000147BE: mov     #0, r1
+>> 000147C0: mov.l   #pTargetGearRangeCode, r3; Decoded target/requested gear/range from upper nibble of FFFF4C8D. Decoder maps encoded 8 to 0.
+   000147C2: bra     loc_147DC
+   000147C4: mov.b   r1, @r3
+   000147C6: tst     r4, r7
+   000147C8: bf/s    loc_147DC
+   000147CA: nop
+   000147CC: mov.l   #pTargetGearRangeCode, r1; Decoded target/requested gear/range from upper nibble of FFFF4C8D. Decoder maps encoded 8 to 0.
+   000147CE: shar    r4
+   000147D0: shar    r4
+   000147D2: shar    r4
+   000147D4: shar    r4
+   000147D6: mov     #h'F, r3
+   000147D8: and     r3, r4
+   000147DA: mov.b   r4, @r1
+   000147DC: mov.l   #pCurrentGearRangeCode, r6; Decoded current 5EAT gear/range from lower nibble of FFFF4C8D. Live observed 0=N/no forward gear, 1..5=forward gears, 7=Reverse. Decoder maps Park code 8 to 0.
+   000147DE: mov     #h'F, r3
+   000147E0: and     r3, r5
+   000147E2: extu.b  r5, r4
+   000147E4: mov     r4, r0
+   000147E6: cmp/eq  #8, r0
+   000147E8: bf/s    loc_147F2
+   000147EA: nop
+   000147EC: mov     #0, r1
+
+  USER 000147CC -> R1
+  function 000147AC-00014802 sDecodePackedGearRangeByte
+   000147BA: bf/s    loc_147C6
+   000147BC: nop
+   000147BE: mov     #0, r1
+   000147C0: mov.l   #pTargetGearRangeCode, r3; Decoded target/requested gear/range from upper nibble of FFFF4C8D. Decoder maps encoded 8 to 0.
+   000147C2: bra     loc_147DC
+   000147C4: mov.b   r1, @r3
+   000147C6: tst     r4, r7
+   000147C8: bf/s    loc_147DC
+   000147CA: nop
+>> 000147CC: mov.l   #pTargetGearRangeCode, r1; Decoded target/requested gear/range from upper nibble of FFFF4C8D. Decoder maps encoded 8 to 0.
+   000147CE: shar    r4
+   000147D0: shar    r4
+   000147D2: shar    r4
+   000147D4: shar    r4
+   000147D6: mov     #h'F, r3
+   000147D8: and     r3, r4
+   000147DA: mov.b   r4, @r1
+   000147DC: mov.l   #pCurrentGearRangeCode, r6; Decoded current 5EAT gear/range from lower nibble of FFFF4C8D. Live observed 0=N/no forward gear, 1..5=forward gears, 7=Reverse. Decoder maps Park code 8 to 0.
+   000147DE: mov     #h'F, r3
+   000147E0: and     r3, r5
+   000147E2: extu.b  r5, r4
+   000147E4: mov     r4, r0
+   000147E6: cmp/eq  #8, r0
+   000147E8: bf/s    loc_147F2
+   000147EA: nop
+   000147EC: mov     #0, r1
+   000147EE: bra     locret_147FE
+   000147F0: mov.b   r1, @r6
+   000147F2: mov     #8, r0
+   000147F4: tst     r0, r4
+   000147F6: bf/s    locret_147FE
+   000147F8: nop
+
+RAM FFFF4BC2 literal @ ROM 00014814
+
+  USER 000147DC -> R6
+  function 000147AC-00014802 sDecodePackedGearRangeByte
+   000147CA: nop
+   000147CC: mov.l   #pTargetGearRangeCode, r1; Decoded target/requested gear/range from upper nibble of FFFF4C8D. Decoder maps encoded 8 to 0.
+   000147CE: shar    r4
+   000147D0: shar    r4
+   000147D2: shar    r4
+   000147D4: shar    r4
+   000147D6: mov     #h'F, r3
+   000147D8: and     r3, r4
+   000147DA: mov.b   r4, @r1
+>> 000147DC: mov.l   #pCurrentGearRangeCode, r6; Decoded current 5EAT gear/range from lower nibble of FFFF4C8D. Live observed 0=N/no forward gear, 1..5=forward gears, 7=Reverse. Decoder maps Park code 8 to 0.
+   000147DE: mov     #h'F, r3
+   000147E0: and     r3, r5
+   000147E2: extu.b  r5, r4
+   000147E4: mov     r4, r0
+   000147E6: cmp/eq  #8, r0
+   000147E8: bf/s    loc_147F2
+   000147EA: nop
+   000147EC: mov     #0, r1
+   000147EE: bra     locret_147FE
+   000147F0: mov.b   r1, @r6
+   000147F2: mov     #8, r0
+   000147F4: tst     r0, r4
+   000147F6: bf/s    locret_147FE
+   000147F8: nop
+   000147FA: and     r3, r5
+   000147FC: mov.b   r5, @r6
+   000147FE: rts
+   00014800: nop
+   00014802: <undecoded> 00 80
+   00014804: <undecoded> 00 f0
+   00014806: <undecoded> ff ff
+   00014808: <undecoded> ff ff
+
+RAM FFFF4BC6 literal @ ROM 00014908
+
+  USER 00014830 -> R4
+  function <none>
+   0001481E: add     #-4, r15
+   00014820: mov.l   #h'23A20, r2
+   00014822: jsr     @r2
+   00014824: mov.b   @r3, r14
+   00014826: mov.l   #h'22BFE, r3
+   00014828: jsr     @r3
+   0001482A: mov.b   r0, @r15
+   0001482C: mov.w   #h'80, r2
+   0001482E: and     r2, r14
+>> 00014830: mov.l   #h'FFFF4BC6, r4
+   00014832: extu.b  r14, r14
+   00014834: tst     r14, r14
+   00014836: bf/s    unk_14842
+   00014838: mov     r0, r5
+   0001483A: mov.b   @r4, r0
+   0001483C: and     #h'EF, r0
+   0001483E: bra     unk_14848
+   00014840: mov.b   r0, @r4
+   00014842: mov.b   @r4, r0
+   00014844: or      #h'10, r0
+   00014846: mov.b   r0, @r4
+   00014848: mov.l   #h'FFFF4BA4, r4
+   0001484A: mov.b   @r15, r2
+   0001484C: tst     r2, r2
+   0001484E: bf/s    unk_14874
+   00014850: nop
+   00014852: mov.l   #h'FFFF4BC6, r0
+   00014854: mov.b   @r0, r0
+   00014856: tst     #h'10, r0
+   00014858: movt    r0
+   0001485A: add     #-1, r0
+   0001485C: neg     r0, r0
+
+  USER 00014852 -> R0
+  function <none>
+   00014840: mov.b   r0, @r4
+   00014842: mov.b   @r4, r0
+   00014844: or      #h'10, r0
+   00014846: mov.b   r0, @r4
+   00014848: mov.l   #h'FFFF4BA4, r4
+   0001484A: mov.b   @r15, r2
+   0001484C: tst     r2, r2
+   0001484E: bf/s    unk_14874
+   00014850: nop
+>> 00014852: mov.l   #h'FFFF4BC6, r0
+   00014854: mov.b   @r0, r0
+   00014856: tst     #h'10, r0
+   00014858: movt    r0
+   0001485A: add     #-1, r0
+   0001485C: neg     r0, r0
+   0001485E: cmp/eq  #1, r0
+   00014860: bf/s    unk_14874
+   00014862: nop
+   00014864: extu.b  r5, r0
+   00014866: cmp/eq  #1, r0
+   00014868: bf/s    unk_14874
+   0001486A: nop
+   0001486C: mov.b   @r4, r0
+   0001486E: or      #4, r0
+   00014870: bra     unk_1487A
+   00014872: mov.b   r0, @r4
+   00014874: mov.b   @r4, r0
+   00014876: and     #h'FB, r0
+   00014878: mov.b   r0, @r4
+   0001487A: add     #4, r15
+   0001487C: lds.l   @r15+, pr
+   0001487E: rts
+
+  USER 000148A4 -> R4
+  function <none>
+   00014892: and     #h'F7, r0
+   00014894: bra     unk_1489E
+   00014896: mov.b   r0, @r4
+   00014898: mov.b   @r4, r0
+   0001489A: or      #8, r0
+   0001489C: mov.b   r0, @r4
+   0001489E: rts
+   000148A0: nop
+   000148A2: mov.l   #h'FFFF4C8E, r3
+>> 000148A4: mov.l   #h'FFFF4BC6, r4
+   000148A6: mov.b   @r3, r5
+   000148A8: extu.b  r5, r0
+   000148AA: tst     #h'40, r0 ; '@'
+   000148AC: bf/s    unk_148B8
+   000148AE: nop
+   000148B0: mov.b   @r4, r0
+   000148B2: and     #h'7F, r0
+   000148B4: bra     unk_148BE
+   000148B6: mov.b   r0, @r4
+   000148B8: mov.b   @r4, r0
+   000148BA: or      #h'80, r0
+   000148BC: mov.b   r0, @r4
+   000148BE: rts
+   000148C0: nop
+   000148C2: mov     #1, r0
+   000148C4: mov.l   #h'FFFF4C8E, r3
+   000148C6: mov.b   @r3, r7
+   000148C8: mov.l   #h'FFFF4BC3, r4
+   000148CA: extu.b  r7, r5
+   000148CC: and     r5, r0
+   000148CE: cmp/eq  #1, r0
+   000148D0: bf/s    unk_148D8
+
+RAM FFFF4BC3 literal @ ROM 00014914
+
+  USER 000148C8 -> R4
+  function <none>
+   000148B6: mov.b   r0, @r4
+   000148B8: mov.b   @r4, r0
+   000148BA: or      #h'80, r0
+   000148BC: mov.b   r0, @r4
+   000148BE: rts
+   000148C0: nop
+   000148C2: mov     #1, r0
+   000148C4: mov.l   #h'FFFF4C8E, r3
+   000148C6: mov.b   @r3, r7
+>> 000148C8: mov.l   #h'FFFF4BC3, r4
+   000148CA: extu.b  r7, r5
+   000148CC: and     r5, r0
+   000148CE: cmp/eq  #1, r0
+   000148D0: bf/s    unk_148D8
+   000148D2: mov     #0, r6
+   000148D4: bra     unk_148F6
+   000148D6: mov.b   r6, @r4
+   000148D8: mov     #2, r7
+   000148DA: mov     r5, r0
+   000148DC: and     r7, r0
+   000148DE: cmp/eq  #2, r0
+   000148E0: bt/s    unk_148F0
+   000148E2: nop
+   000148E4: mov     #4, r7
+   000148E6: mov     r5, r0
+   000148E8: and     r7, r0
+   000148EA: cmp/eq  #4, r0
+   000148EC: bf/s    unk_148F4
+   000148EE: nop
+   000148F0: bra     unk_148F6
+   000148F2: mov.b   r7, @r4
+   000148F4: mov.b   r6, @r4
+
+RAM FFFF4BC4 literal @ ROM 00014AEC
+
+  USER 0001492E -> R5
+  function <none>
+   0001491C: mov.b   @r3, r4
+   0001491E: mov     #8, r5
+   00014920: and     r2, r4
+   00014922: and     r2, r4
+   00014924: extu.b  r4, r1
+   00014926: cmp/gt  r5, r1
+   00014928: bf/s    unk_1492E
+   0001492A: nop
+   0001492C: mov     r5, r4
+>> 0001492E: mov.l   #h'FFFF4BC4, r5
+   00014930: mov.b   r4, @r5
+   00014932: mov.l   #h'FFFF4BC6, r4
+   00014934: mov.b   @r5, r0
+   00014936: extu.b  r0, r0
+   00014938: cmp/eq  #5, r0
+   0001493A: bf/s    unk_14946
+   0001493C: nop
+   0001493E: mov.b   @r4, r0
+   00014940: or      #h'20, r0 ; ' '
+   00014942: bra     unk_1494C
+   00014944: mov.b   r0, @r4
+   00014946: mov.b   @r4, r0
+   00014948: and     #h'DF, r0
+   0001494A: mov.b   r0, @r4
+   0001494C: mov.b   @r5, r0
+   0001494E: extu.b  r0, r0
+   00014950: cmp/eq  #7, r0
+   00014952: bf/s    unk_1495E
+   00014954: nop
+   00014956: mov.b   @r4, r0
+   00014958: or      #h'40, r0 ; '@'
+   0001495A: bra     unk_14964
+
+  USER 000149D4 -> R2
+  function 00014982-000149E2 sub_14982
+   000149C2: cmp/eq  #1, r0
+   000149C4: bf/s    loc_149CE
+   000149C6: nop
+   000149C8: mov.b   @r4, r0
+   000149CA: bra     loc_149D2
+   000149CC: or      #2, r0
+   000149CE: mov.b   @r4, r0
+   000149D0: and     #h'FD, r0
+   000149D2: mov     #8, r3
+>> 000149D4: mov.l   #unk_FFFF4BC4, r2
+   000149D6: mov.b   r0, @r4
+   000149D8: mov.b   r3, @r2
+   000149DA: add     #8, r15
+   000149DC: lds.l   @r15+, pr
+   000149DE: rts
+   000149E0: nop
+   000149E2: mov.l   r14, @-r15
+   000149E4: sts.l   pr, @-r15
+   000149E6: mov.l   #h'FFFF208C, r4
+   000149E8: mov.l   #h'2078, r3
+   000149EA: jsr     @r3
+   000149EC: mov     #0, r14
+   000149EE: extu.b  r0, r0
+   000149F0: tst     r0, r0
+   000149F2: bf/s    unk_14A06
+   000149F4: nop
+   000149F6: mov.l   #h'FFFF208E, r4
+   000149F8: mov.l   #h'2078, r3
+   000149FA: jsr     @r3
+   000149FC: nop
+   000149FE: extu.b  r0, r0
+   00014A00: tst     r0, r0
+
+RAM FFFF4BC6 literal @ ROM 00014AF0
+
+  USER 00014932 -> R4
+  function <none>
+   00014920: and     r2, r4
+   00014922: and     r2, r4
+   00014924: extu.b  r4, r1
+   00014926: cmp/gt  r5, r1
+   00014928: bf/s    unk_1492E
+   0001492A: nop
+   0001492C: mov     r5, r4
+   0001492E: mov.l   #h'FFFF4BC4, r5
+   00014930: mov.b   r4, @r5
+>> 00014932: mov.l   #h'FFFF4BC6, r4
+   00014934: mov.b   @r5, r0
+   00014936: extu.b  r0, r0
+   00014938: cmp/eq  #5, r0
+   0001493A: bf/s    unk_14946
+   0001493C: nop
+   0001493E: mov.b   @r4, r0
+   00014940: or      #h'20, r0 ; ' '
+   00014942: bra     unk_1494C
+   00014944: mov.b   r0, @r4
+   00014946: mov.b   @r4, r0
+   00014948: and     #h'DF, r0
+   0001494A: mov.b   r0, @r4
+   0001494C: mov.b   @r5, r0
+   0001494E: extu.b  r0, r0
+   00014950: cmp/eq  #7, r0
+   00014952: bf/s    unk_1495E
+   00014954: nop
+   00014956: mov.b   @r4, r0
+   00014958: or      #h'40, r0 ; '@'
+   0001495A: bra     unk_14964
+   0001495C: mov.b   r0, @r4
+   0001495E: mov.b   @r4, r0
+
+  USER 00014AAA -> R0
+  function <none>
+   00014A98: mov.b   @r0, r0
+   00014A9A: tst     #8, r0
+   00014A9C: movt    r0
+   00014A9E: add     #-1, r0
+   00014AA0: neg     r0, r0
+   00014AA2: cmp/eq  #1, r0
+   00014AA4: movt    r0
+   00014AA6: rts
+   00014AA8: nop
+>> 00014AAA: mov.l   #h'FFFF4BC6, r0
+   00014AAC: mov.b   @r0, r0
+   00014AAE: tst     #h'80, r0
+   00014AB0: movt    r0
+   00014AB2: add     #-1, r0
+   00014AB4: neg     r0, r0
+   00014AB6: cmp/eq  #1, r0
+   00014AB8: movt    r0
+   00014ABA: rts
+   00014ABC: nop
+   00014ABE: mov.l   #h'FFFF4BC6, r0
+   00014AC0: mov.b   @r0, r0
+   00014AC2: tst     #h'20, r0 ; ' '
+   00014AC4: movt    r0
+   00014AC6: add     #-1, r0
+   00014AC8: neg     r0, r0
+   00014ACA: cmp/eq  #1, r0
+   00014ACC: movt    r0
+   00014ACE: rts
+   00014AD0: nop
+   00014AD2: mov.l   #h'FFFF4BC6, r0
+   00014AD4: mov.b   @r0, r0
+   00014AD6: tst     #h'40, r0 ; '@'
+
+  USER 00014ABE -> R0
+  function <none>
+   00014AAC: mov.b   @r0, r0
+   00014AAE: tst     #h'80, r0
+   00014AB0: movt    r0
+   00014AB2: add     #-1, r0
+   00014AB4: neg     r0, r0
+   00014AB6: cmp/eq  #1, r0
+   00014AB8: movt    r0
+   00014ABA: rts
+   00014ABC: nop
+>> 00014ABE: mov.l   #h'FFFF4BC6, r0
+   00014AC0: mov.b   @r0, r0
+   00014AC2: tst     #h'20, r0 ; ' '
+   00014AC4: movt    r0
+   00014AC6: add     #-1, r0
+   00014AC8: neg     r0, r0
+   00014ACA: cmp/eq  #1, r0
+   00014ACC: movt    r0
+   00014ACE: rts
+   00014AD0: nop
+   00014AD2: mov.l   #h'FFFF4BC6, r0
+   00014AD4: mov.b   @r0, r0
+   00014AD6: tst     #h'40, r0 ; '@'
+   00014AD8: movt    r0
+   00014ADA: add     #-1, r0
+   00014ADC: neg     r0, r0
+   00014ADE: cmp/eq  #1, r0
+   00014AE0: movt    r0
+   00014AE2: rts
+   00014AE4: nop
+   00014AE6: <undecoded> ff ff
+   00014AE8: <undecoded> ff ff
+   00014AEA: <undecoded> 4c 94
+
+  USER 00014AD2 -> R0
+  function <none>
+   00014AC0: mov.b   @r0, r0
+   00014AC2: tst     #h'20, r0 ; ' '
+   00014AC4: movt    r0
+   00014AC6: add     #-1, r0
+   00014AC8: neg     r0, r0
+   00014ACA: cmp/eq  #1, r0
+   00014ACC: movt    r0
+   00014ACE: rts
+   00014AD0: nop
+>> 00014AD2: mov.l   #h'FFFF4BC6, r0
+   00014AD4: mov.b   @r0, r0
+   00014AD6: tst     #h'40, r0 ; '@'
+   00014AD8: movt    r0
+   00014ADA: add     #-1, r0
+   00014ADC: neg     r0, r0
+   00014ADE: cmp/eq  #1, r0
+   00014AE0: movt    r0
+   00014AE2: rts
+   00014AE4: nop
+   00014AE6: <undecoded> ff ff
+   00014AE8: <undecoded> ff ff
+   00014AEA: <undecoded> 4c 94
+   00014AEC: <undecoded> ff ff
+   00014AEE: <undecoded> 4b c4
+   00014AF0: <undecoded> ff ff
+   00014AF2: <undecoded> 4b c6
+   00014AF4: <undecoded> 00 00
+   00014AF6: cmp/str r13, r4
+   00014AF8: <undecoded> ff ff
+   00014AFA: cmp/str r8, r0
+   00014AFC: <undecoded> ff ff
+   00014AFE: mulu    r8, r0
+
+RAM FFFF4BC7 literal @ ROM 00014B10
+
+  USER 0001499E -> R4
+  function 00014982-000149E2 sub_14982
+   0001498C: mov.b   r0, @(h'C+var_8,r15)
+   0001498E: mov.b   @r1, r2
+   00014990: mov.b   r2, @r15
+   00014992: bsr     sub_14260
+   00014994: nop
+   00014996: mov.l   #unk_FFFF4BA8, r3
+   00014998: mov.l   #unk_FFFF4BDC, r2
+   0001499A: fmov.s  @r3, fr3
+   0001499C: fmov.s  fr3, @r2
+>> 0001499E: mov.l   #unk_FFFF4BC7, r4
+   000149A0: mov.b   @r4, r0
+   000149A2: or      #4, r0
+   000149A4: mov.b   r0, @r4
+   000149A6: mov.l   #unk_FFFF4BA5, r4
+   000149A8: mov.b   @(h'C+var_8,r15), r0
+   000149AA: extu.b  r0, r0
+   000149AC: cmp/eq  #1, r0
+   000149AE: bf/s    loc_149B8
+   000149B0: nop
+   000149B2: mov.b   @r4, r0
+   000149B4: bra     loc_149BC
+   000149B6: or      #1, r0
+   000149B8: mov.b   @r4, r0
+   000149BA: and     #h'FE, r0
+   000149BC: mov.b   r0, @r4
+   000149BE: mov.b   @r15, r0
+   000149C0: extu.b  r0, r0
+   000149C2: cmp/eq  #1, r0
+   000149C4: bf/s    loc_149CE
+   000149C6: nop
+   000149C8: mov.b   @r4, r0
+   000149CA: bra     loc_149D2
+
+  USER 00014A32 -> R0
+  function <none>
+   00014A20: mov.b   @r0, r0
+   00014A22: tst     #2, r0
+   00014A24: movt    r0
+   00014A26: add     #-1, r0
+   00014A28: neg     r0, r0
+   00014A2A: cmp/eq  #1, r0
+   00014A2C: movt    r0
+   00014A2E: rts
+   00014A30: nop
+>> 00014A32: mov.l   #h'FFFF4BC7, r0
+   00014A34: mov.b   @r0, r0
+   00014A36: tst     #2, r0
+   00014A38: movt    r0
+   00014A3A: add     #-1, r0
+   00014A3C: neg     r0, r0
+   00014A3E: cmp/eq  #1, r0
+   00014A40: movt    r0
+   00014A42: rts
+   00014A44: nop
+   00014A46: mov.l   #h'FFFF4BC7, r0
+   00014A48: mov.b   @r0, r0
+   00014A4A: tst     #4, r0
+   00014A4C: movt    r0
+   00014A4E: add     #-1, r0
+   00014A50: neg     r0, r0
+   00014A52: cmp/eq  #1, r0
+   00014A54: movt    r0
+   00014A56: rts
+   00014A58: nop
+   00014A5A: mov.l   #h'FFFF4BC7, r0
+   00014A5C: mov.b   @r0, r0
+   00014A5E: tst     #8, r0
+
+  USER 00014A46 -> R0
+  function <none>
+   00014A34: mov.b   @r0, r0
+   00014A36: tst     #2, r0
+   00014A38: movt    r0
+   00014A3A: add     #-1, r0
+   00014A3C: neg     r0, r0
+   00014A3E: cmp/eq  #1, r0
+   00014A40: movt    r0
+   00014A42: rts
+   00014A44: nop
+>> 00014A46: mov.l   #h'FFFF4BC7, r0
+   00014A48: mov.b   @r0, r0
+   00014A4A: tst     #4, r0
+   00014A4C: movt    r0
+   00014A4E: add     #-1, r0
+   00014A50: neg     r0, r0
+   00014A52: cmp/eq  #1, r0
+   00014A54: movt    r0
+   00014A56: rts
+   00014A58: nop
+   00014A5A: mov.l   #h'FFFF4BC7, r0
+   00014A5C: mov.b   @r0, r0
+   00014A5E: tst     #8, r0
+   00014A60: movt    r0
+   00014A62: add     #-1, r0
+   00014A64: neg     r0, r0
+   00014A66: cmp/eq  #1, r0
+   00014A68: movt    r0
+   00014A6A: rts
+   00014A6C: nop
+   00014A6E: mov.l   #h'FFFF4BA4, r0
+   00014A70: mov.b   @r0, r0
+   00014A72: tst     #h'40, r0 ; '@'
+
+  USER 00014A5A -> R0
+  function <none>
+   00014A48: mov.b   @r0, r0
+   00014A4A: tst     #4, r0
+   00014A4C: movt    r0
+   00014A4E: add     #-1, r0
+   00014A50: neg     r0, r0
+   00014A52: cmp/eq  #1, r0
+   00014A54: movt    r0
+   00014A56: rts
+   00014A58: nop
+>> 00014A5A: mov.l   #h'FFFF4BC7, r0
+   00014A5C: mov.b   @r0, r0
+   00014A5E: tst     #8, r0
+   00014A60: movt    r0
+   00014A62: add     #-1, r0
+   00014A64: neg     r0, r0
+   00014A66: cmp/eq  #1, r0
+   00014A68: movt    r0
+   00014A6A: rts
+   00014A6C: nop
+   00014A6E: mov.l   #h'FFFF4BA4, r0
+   00014A70: mov.b   @r0, r0
+   00014A72: tst     #h'40, r0 ; '@'
+   00014A74: movt    r0
+   00014A76: add     #-1, r0
+   00014A78: neg     r0, r0
+   00014A7A: cmp/eq  #1, r0
+   00014A7C: movt    r0
+   00014A7E: rts
+   00014A80: nop
+   00014A82: mov.l   #h'FFFF4BA4, r0
+   00014A84: mov.b   @r0, r0
+   00014A86: tst     #4, r0
+
+RAM FFFF4BC3 literal @ ROM 0001535C
+
+  USER 0001528C -> R0
+  function 000151DC-00015748 sWgdc_loc
+   0001527A: mov.b   r0, @r2
+   0001527C: fmov.s  @r3, fr3
+   0001527E: mov     #h'40, r0 ; '@'
+   00015280: mov.l   #unk_FFFF5D24, r2
+   00015282: fmov.s  fr3, @(r0,r15)
+   00015284: fmov.s  @r2, fr3
+   00015286: mov     #h'3C, r0 ; '<'
+   00015288: mov.l   #unk_FFFF4C3C, r14
+   0001528A: fmov.s  fr3, @(r0,r15)
+>> 0001528C: mov.l   #unk_FFFF4BC3, r0
+   0001528E: fldi1   fr3
+   00015290: mov.l   #sPull3DFloat, r13
+   00015292: mov.b   @r0, r1
+   00015294: mov.b   r1, @r15
+   00015296: mov     #8, r0
+   00015298: fmov.s  fr3, @(r0,r15)
+   0001529A: mov.b   @(h'90+var_8C,r15), r0
+   0001529C: mov     r0, r10
+   0001529E: extu.b  r10, r10
+   000152A0: mov     r10, r0
+   000152A2: cmp/eq  #1, r0
+   000152A4: bf/s    loc_15374
+   000152A6: nop
+   000152A8: mov.l   #unk_82BFC, r4
+   000152AA: fmov    fr15, fr5
+   000152AC: jsr     @r13 ; sPull3DFloat
+   000152AE: fmov    fr14, fr4
+   000152B0: fmov.s  fr0, @r14
+   000152B2: fmov    fr15, fr5
+   000152B4: mov.l   #unk_82C18, r4
+   000152B6: bra     loc_15384
+   000152B8: fmov    fr14, fr4
+
+RAM FFFF4BC5 literal @ ROM 00017330
+
+  USER 000171DE -> R3
+  function <none>
+   000171CC: mov.l   #h'258C, r2
+   000171CE: mov.b   r0, @(2,r14)
+   000171D0: fmov.s  @r1, fr4
+   000171D2: mova    h'17328, r0
+   000171D4: jsr     @r2
+   000171D6: fmov.s  @r0, fr5
+   000171D8: mov.b   r0, @(3,r14)
+   000171DA: fmov    fr15, fr6
+   000171DC: mov.l   #h'258C, r1
+>> 000171DE: mov.l   #h'FFFF4BC5, r3
+   000171E0: mov.l   #h'FFFF4BBC, r2
+   000171E2: mov.b   @r3, r4
+   000171E4: mov     r4, r0
+   000171E6: mov.b   r0, @(4,r14)
+   000171E8: fmov.s  @r2, fr4
+   000171EA: jsr     @r1
+   000171EC: fldi1   fr5
+   000171EE: mov.b   r0, @(5,r14)
+   000171F0: mov.l   #h'FFFF4D4E, r3
+   000171F2: mov     #h'18, r0
+   000171F4: mov.b   r13, @r3
+   000171F6: mov.b   @(r0,r15), r0
+   000171F8: extu.b  r0, r0
+   000171FA: cmp/eq  #1, r0
+   000171FC: bf/s    unk_17208
+   000171FE: mov     r3, r4
+   00017200: mov.b   @r4, r0
+   00017202: or      #h'80, r0
+   00017204: bra     unk_1720E
+   00017206: mov.b   r0, @r4
+   00017208: mov.b   @r4, r0
+   0001720A: and     #h'7F, r0
+
+RAM FFFF4BC3 literal @ ROM 00020BE4
+
+  USER 00020A68 -> R2
+  function <none>
+   00020A56: fmov.s  @r3, fr12
+   00020A58: mov.b   @r0, r0
+   00020A5A: tst     #h'40, r0 ; '@'
+   00020A5C: mov.l   #h'20288, r2
+   00020A5E: movt    r12
+   00020A60: add     #-1, r12
+   00020A62: jsr     @r2
+   00020A64: neg     r12, r12
+   00020A66: mov     r15, r1
+>> 00020A68: mov.l   #h'FFFF4BC3, r2
+   00020A6A: add     #h'10, r1
+   00020A6C: mov.l   #h'FFFF508C, r7
+   00020A6E: mov.b   r0, @r1
+   00020A70: mov.b   @r2, r3
+   00020A72: mov     #h'18, r0
+   00020A74: mov.l   #h'FFFF50D0, r6
+   00020A76: mov.b   r3, @(r0,r15)
+   00020A78: fmov.s  @r6, fr3
+   00020A7A: mov     #h'2C, r0 ; ','
+   00020A7C: mov.l   #h'FFFF5094, r14
+   00020A7E: fmov.s  fr3, @r7
+   00020A80: mov.l   #h'FFFF5090, r5
+   00020A82: mov.l   #h'FFFF50D4, r4
+   00020A84: mov.l   #h'FFFF5038, r3
+   00020A86: fmov.s  @r4, fr2
+   00020A88: fmov.s  fr2, @r5
+   00020A8A: fmov.s  @(r0,r15), fr3
+   00020A8C: fmov.s  fr3, @r4
+   00020A8E: fmov.s  fr3, @r6
+   00020A90: fmov.s  @r5, fr3
+   00020A92: fmov.s  @r7, fr2
+   00020A94: mova    h'20BFC, r0
+
+RAM FFFF4BC3 literal @ ROM 000223B0
+
+  USER 000222BE -> R3
+  function <none>
+   000222AC: bra     unk_222B6
+   000222AE: mov.b   r0, @r4
+   000222B0: mov.b   @r4, r0
+   000222B2: and     #h'F7, r0
+   000222B4: mov.b   r0, @r4
+   000222B6: rts
+   000222B8: nop
+   000222BA: mov.l   r14, @-r15
+   000222BC: sts.l   pr, @-r15
+>> 000222BE: mov.l   #h'FFFF4BC3, r3
+   000222C0: mov.l   #h'FFFF5184, r14
+   000222C2: mov.b   @r3, r4
+   000222C4: extu.b  r4, r4
+   000222C6: tst     r4, r4
+   000222C8: bt/s    unk_222D2
+   000222CA: nop
+   000222CC: mov     #0, r1
+   000222CE: bra     unk_222DC
+   000222D0: mov.w   r1, @r14
+   000222D2: mov     #1, r5
+   000222D4: mov.l   #h'251C, r1
+   000222D6: jsr     @r1
+   000222D8: mov.w   @r14, r4
+   000222DA: mov.w   r0, @r14
+   000222DC: lds.l   @r15+, pr
+   000222DE: rts
+   000222E0: mov.l   @r15+, r14
+   000222E2: mov.l   #h'FFFF51B6, r4
+   000222E4: mov     r4, r0
+   000222E6: mov.b   @r0, r0
+   000222E8: and     #1, r0
+   000222EA: mov     r0, r5
+
+RAM FFFF4BC2 literal @ ROM 00024AAC
+
+  USER 00024972 -> R3
+  function 00024950-00024A9C sUpdateNormalizedGearState
+   00024960: fmov.s  fr12, @-r15
+   00024962: sts.l   pr, @-r15
+   00024964: mov.l   #pEngineSpeed, r3
+   00024966: add     #-h'C, r15
+   00024968: mov.l   #sub_2663C, r2
+   0002496A: fmov.s  @r3, fr3
+   0002496C: jsr     @r2 ; sub_2663C
+   0002496E: fmov.s  fr3, @r15
+   00024970: mov.b   r0, @(h'24+var_20,r15)
+>> 00024972: mov.l   #pCurrentGearRangeCode, r3; Decoded current 5EAT gear/range from lower nibble of FFFF4C8D. Live observed 0=N/no forward gear, 1..5=forward gears, 7=Reverse. Decoder maps Park code 8 to 0.
+   00024974: mov.l   #sub_16652, r2
+   00024976: jsr     @r2 ; sub_16652
+   00024978: mov.b   @r3, r10
+   0002497A: mov     r0, r4
+   0002497C: extu.b  r4, r0
+   0002497E: cmp/eq  #1, r0
+   00024980: bf/s    loc_2499C
+   00024982: nop
+   00024984: mov.l   #unk_C25DC, r3
+   00024986: mov     #8, r0
+   00024988: mov.l   #unk_C25E0, r2
+   0002498A: fmov.s  @r3, fr3
+   0002498C: fmov.s  fr3, @(r0,r15)
+   0002498E: fmov.s  @r2, fr15
+   00024990: mov.l   #unk_C25E4, r1
+   00024992: fmov.s  @r1, fr14
+   00024994: mov.l   #unk_C25E8, r3
+   00024996: mov.l   #unk_C25EC, r2
+   00024998: bra     loc_249B2
+   0002499A: fmov.s  @r3, fr13
+   0002499C: mov.l   #unk_C25C8, r3
+   0002499E: mov     #8, r0
+
+RAM FFFF4BC3 literal @ ROM 0002E94C
+
+  USER 0002E7B6 -> R3
+  function 0002E778-0002EB4E sub_2E778
+   0002E7A4: mov.l   #sub_23A20, r3
+   0002E7A6: jsr     @r3 ; sub_23A20
+   0002E7A8: fmov.s  @r1, fr13
+   0002E7AA: mov     r15, r2
+   0002E7AC: mov.l   #sub_1DAEC, r3
+   0002E7AE: add     #h'10, r2
+   0002E7B0: jsr     @r3 ; sub_1DAEC
+   0002E7B2: mov.b   r0, @r2
+   0002E7B4: mov.b   r0, @(h'20+var_1C,r15)
+>> 0002E7B6: mov.l   #unk_FFFF4BC3, r3
+   0002E7B8: mov.l   #pNormalizedCurrentGearState, r1; Live A2WC511R 5EAT observation: P/N=6, R=1, forward gears 1..5=1..5. Reverse is normalized to 1.
+   0002E7BA: mov.b   @r3, r0
+   0002E7BC: mov.l   #pTargetGearRangeCode, r2; Decoded target/requested gear/range from upper nibble of FFFF4C8D. Decoder maps encoded 8 to 0.
+   0002E7BE: mov.b   r0, @(h'20+var_18,r15)
+   0002E7C0: mov.b   @r1, r6
+   0002E7C2: mov     #h'10, r0
+   0002E7C4: mov.b   @r2, r4
+   0002E7C6: mov.l   #pCurrentGearRangeCode, r3; Decoded current 5EAT gear/range from lower nibble of FFFF4C8D. Live observed 0=N/no forward gear, 1..5=forward gears, 7=Reverse. Decoder maps Park code 8 to 0.
+   0002E7C8: mov.b   @(r0,r15), r12
+   0002E7CA: mov.b   @r3, r5
+   0002E7CC: mov.l   #unk_C6FD8, r1
+   0002E7CE: extu.b  r12, r12
+   0002E7D0: mov.l   #unk_C6FDC, r2
+   0002E7D2: mov     r12, r0
+   0002E7D4: fmov.s  @r1, fr4
+   0002E7D6: cmp/eq  #1, r0
+   0002E7D8: bf/s    loc_2E830
+   0002E7DA: fmov.s  @r2, fr6
+   0002E7DC: extu.b  r6, r0
+   0002E7DE: cmp/eq  #1, r0
+   0002E7E0: bt/s    loc_2E800
+   0002E7E2: nop
+
+RAM FFFF4BC1 literal @ ROM 0002E954
+
+  USER 0002E7BC -> R2
+  function 0002E778-0002EB4E sub_2E778
+   0002E7AA: mov     r15, r2
+   0002E7AC: mov.l   #sub_1DAEC, r3
+   0002E7AE: add     #h'10, r2
+   0002E7B0: jsr     @r3 ; sub_1DAEC
+   0002E7B2: mov.b   r0, @r2
+   0002E7B4: mov.b   r0, @(h'20+var_1C,r15)
+   0002E7B6: mov.l   #unk_FFFF4BC3, r3
+   0002E7B8: mov.l   #pNormalizedCurrentGearState, r1; Live A2WC511R 5EAT observation: P/N=6, R=1, forward gears 1..5=1..5. Reverse is normalized to 1.
+   0002E7BA: mov.b   @r3, r0
+>> 0002E7BC: mov.l   #pTargetGearRangeCode, r2; Decoded target/requested gear/range from upper nibble of FFFF4C8D. Decoder maps encoded 8 to 0.
+   0002E7BE: mov.b   r0, @(h'20+var_18,r15)
+   0002E7C0: mov.b   @r1, r6
+   0002E7C2: mov     #h'10, r0
+   0002E7C4: mov.b   @r2, r4
+   0002E7C6: mov.l   #pCurrentGearRangeCode, r3; Decoded current 5EAT gear/range from lower nibble of FFFF4C8D. Live observed 0=N/no forward gear, 1..5=forward gears, 7=Reverse. Decoder maps Park code 8 to 0.
+   0002E7C8: mov.b   @(r0,r15), r12
+   0002E7CA: mov.b   @r3, r5
+   0002E7CC: mov.l   #unk_C6FD8, r1
+   0002E7CE: extu.b  r12, r12
+   0002E7D0: mov.l   #unk_C6FDC, r2
+   0002E7D2: mov     r12, r0
+   0002E7D4: fmov.s  @r1, fr4
+   0002E7D6: cmp/eq  #1, r0
+   0002E7D8: bf/s    loc_2E830
+   0002E7DA: fmov.s  @r2, fr6
+   0002E7DC: extu.b  r6, r0
+   0002E7DE: cmp/eq  #1, r0
+   0002E7E0: bt/s    loc_2E800
+   0002E7E2: nop
+   0002E7E4: cmp/eq  #2, r0
+   0002E7E6: bt/s    loc_2E808
+   0002E7E8: nop
+
+RAM FFFF4BC2 literal @ ROM 0002E958
+
+  USER 0002E7C6 -> R3
+  function 0002E778-0002EB4E sub_2E778
+   0002E7B4: mov.b   r0, @(h'20+var_1C,r15)
+   0002E7B6: mov.l   #unk_FFFF4BC3, r3
+   0002E7B8: mov.l   #pNormalizedCurrentGearState, r1; Live A2WC511R 5EAT observation: P/N=6, R=1, forward gears 1..5=1..5. Reverse is normalized to 1.
+   0002E7BA: mov.b   @r3, r0
+   0002E7BC: mov.l   #pTargetGearRangeCode, r2; Decoded target/requested gear/range from upper nibble of FFFF4C8D. Decoder maps encoded 8 to 0.
+   0002E7BE: mov.b   r0, @(h'20+var_18,r15)
+   0002E7C0: mov.b   @r1, r6
+   0002E7C2: mov     #h'10, r0
+   0002E7C4: mov.b   @r2, r4
+>> 0002E7C6: mov.l   #pCurrentGearRangeCode, r3; Decoded current 5EAT gear/range from lower nibble of FFFF4C8D. Live observed 0=N/no forward gear, 1..5=forward gears, 7=Reverse. Decoder maps Park code 8 to 0.
+   0002E7C8: mov.b   @(r0,r15), r12
+   0002E7CA: mov.b   @r3, r5
+   0002E7CC: mov.l   #unk_C6FD8, r1
+   0002E7CE: extu.b  r12, r12
+   0002E7D0: mov.l   #unk_C6FDC, r2
+   0002E7D2: mov     r12, r0
+   0002E7D4: fmov.s  @r1, fr4
+   0002E7D6: cmp/eq  #1, r0
+   0002E7D8: bf/s    loc_2E830
+   0002E7DA: fmov.s  @r2, fr6
+   0002E7DC: extu.b  r6, r0
+   0002E7DE: cmp/eq  #1, r0
+   0002E7E0: bt/s    loc_2E800
+   0002E7E2: nop
+   0002E7E4: cmp/eq  #2, r0
+   0002E7E6: bt/s    loc_2E808
+   0002E7E8: nop
+   0002E7EA: cmp/eq  #3, r0
+   0002E7EC: bt/s    loc_2E810
+   0002E7EE: nop
+   0002E7F0: cmp/eq  #4, r0
+   0002E7F2: bt/s    loc_2E818
+
+RAM FFFF4BC3 literal @ ROM 00030698
+
+  USER 000304A8 -> R3
+  function <none>
+   00030496: fmov.s  @r3, fr14
+   00030498: fmov.s  @r2, fr12
+   0003049A: fmov.s  @r1, fr15
+   0003049C: mov.l   #h'FFFF50B0, r3
+   0003049E: fmov.s  @r3, fr13
+   000304A0: mov.l   #h'FFFF502C, r2
+   000304A2: fmov.s  @r2, fr3
+   000304A4: fmov.s  fr3, @r15
+   000304A6: mov.l   #h'FFFF5038, r1
+>> 000304A8: mov.l   #h'FFFF4BC3, r3
+   000304AA: fmov.s  @r1, fr3
+   000304AC: fmov.s  fr3, @(r0,r15)
+   000304AE: mov.b   @r3, r0
+   000304B0: mov.l   #h'FFFF52E8, r2
+   000304B2: mov.b   r0, @(8,r15)
+   000304B4: mov.l   #h'23A20, r1
+   000304B6: jsr     @r1
+   000304B8: mov.b   @r2, r14
+   000304BA: mov.l   #h'1CE2A, r3
+   000304BC: jsr     @r3
+   000304BE: mov     r0, r12
+   000304C0: mov.b   r0, @(4,r15)
+   000304C2: fldi0   fr5
+   000304C4: mov.l   #h'2450, r2
+   000304C6: mov.l   #h'FFFF5D3F, r3
+   000304C8: mov.b   @r3, r13
+   000304CA: jsr     @r2
+   000304CC: fmov    fr12, fr4
+   000304CE: fmov    fr0, fr4
+   000304D0: mov.l   #h'FFFF59CC, r4
+   000304D2: mov.l   #h'C7300, r3
+   000304D4: fmov.s  @r3, fr5
+
+RAM FFFF4BC3 literal @ ROM 00031374
+
+  USER 000312E6 -> R3
+  function <none>
+   000312D4: mov.l   #h'FFFF51E8, r3
+   000312D6: add     #-8, r15
+   000312D8: mov.l   #h'23956, r2
+   000312DA: jsr     @r2
+   000312DC: fmov.s  @r3, fr15
+   000312DE: mov.l   #h'23A20, r3
+   000312E0: jsr     @r3
+   000312E2: mov.b   r0, @(4,r15)
+   000312E4: mov.b   r0, @r15
+>> 000312E6: mov.l   #h'FFFF4BC3, r3
+   000312E8: mov.l   #h'FFFF52E8, r2
+   000312EA: mov.b   @r3, r6
+   000312EC: mov.b   @r2, r7
+   000312EE: mov.l   #h'FFFF5A1E, r11
+   000312F0: mov.l   #h'FFFF5A20, r12
+   000312F2: mov.l   #h'FFFF5A1C, r13
+   000312F4: mov.b   @(4,r15), r0
+   000312F6: extu.b  r0, r0
+   000312F8: cmp/eq  #1, r0
+   000312FA: bf/s    unk_3130A
+   000312FC: mov     #0, r5
+   000312FE: mov.l   #h'C6BF0, r1
+   00031300: mov.w   @r1, r0
+   00031302: mov.w   r0, @r13
+   00031304: mov.w   r5, @r11
+   00031306: bra     unk_31490
+   00031308: mov.w   r5, @r12
+   0003130A: mov.l   #h'C7128, r1
+   0003130C: fmov.s  @r1, fr3
+   0003130E: fcmp/gt fr15, fr3
+   00031310: bf/s    unk_31318
+   00031312: nop
+
+RAM FFFF4BC3 literal @ ROM 00035220
+
+  USER 00035054 -> R2
+  function 00035034-000350EC sub_35034
+   00035042: add     #-4, r15
+   00035044: mov.l   #pNormalizedCurrentGearState, r0; Live A2WC511R 5EAT observation: P/N=6, R=1, forward gears 1..5=1..5. Reverse is normalized to 1.
+   00035046: fmov.s  @r3, fr14
+   00035048: fmov.s  @r2, fr13
+   0003504A: mov.b   @r0, r1
+   0003504C: mov.l   #sub_23A20, r3
+   0003504E: jsr     @r3 ; sub_23A20
+   00035050: mov.b   r1, @r15
+   00035052: mov     r0, r4
+>> 00035054: mov.l   #unk_FFFF4BC3, r2
+   00035056: extu.b  r4, r4
+   00035058: mov.l   #sPull2DFloat, r14
+   0003505A: tst     r4, r4
+   0003505C: bf/s    loc_3507C
+   0003505E: mov.b   @r2, r5
+   00035060: extu.b  r5, r0
+   00035062: cmp/eq  #4, r0
+   00035064: bf/s    loc_35072
+   00035066: nop
+   00035068: mov.l   #unk_84514, r4
+   0003506A: jsr     @r14 ; sPull2DFloat
+   0003506C: fmov    fr14, fr4
+   0003506E: bra     loc_35076
+   00035070: fmov    fr0, fr15
+   00035072: mova    h'3522C, r0
+   00035074: fmov.s  @r0, fr15
+   00035076: mov.l   #unk_8453C, r4
+   00035078: bra     loc_350CE
+   0003507A: fmov    fr13, fr4
+   0003507C: mov.b   @r15, r0
+   0003507E: extu.b  r0, r0
+   00035080: cmp/eq  #1, r0
+
+RAM FFFF4BC3 literal @ ROM 00036740
+
+  USER 00036690 -> R0
+  function <none>
+   0003667E: nop
+   00036680: mov.l   r14, @-r15
+   00036682: fmov.s  fr15, @-r15
+   00036684: fmov.s  fr14, @-r15
+   00036686: fmov.s  fr13, @-r15
+   00036688: mov.l   #h'FFFF51F0, r3
+   0003668A: sts.l   pr, @-r15
+   0003668C: mov.l   #h'FFFF502C, r2
+   0003668E: add     #-h'C, r15
+>> 00036690: mov.l   #h'FFFF4BC3, r0
+   00036692: fmov.s  @r3, fr14
+   00036694: fmov.s  @r2, fr13
+   00036696: mov.b   @r0, r1
+   00036698: mov.l   #h'FFFF52E8, r3
+   0003669A: mov.b   r1, @r15
+   0003669C: mov.b   @r3, r0
+   0003669E: mov.b   r0, @(4,r15)
+   000366A0: mov.l   #h'20288, r1
+   000366A2: jsr     @r1
+   000366A4: nop
+   000366A6: mov.l   #h'31782, r3
+   000366A8: jsr     @r3
+   000366AA: mov.b   r0, @(8,r15)
+   000366AC: mov.l   #h'23A20, r2
+   000366AE: jsr     @r2
+   000366B0: mov     r0, r14
+   000366B2: mov     r0, r4
+   000366B4: extu.b  r4, r4
+   000366B6: tst     r4, r4
+   000366B8: bf/s    unk_366D0
+   000366BA: fldi0   fr15
+   000366BC: mov.b   @r15, r0
+
+RAM FFFF4BC3 literal @ ROM 0003E918
+
+  USER 0003E798 -> R0
+  function <none>
+   0003E786: mov.l   #h'FFFF5128, r1
+   0003E788: fmov.s  @r1, fr3
+   0003E78A: mov     #h'20, r0 ; ' '
+   0003E78C: mov.l   #h'FFFF4FF4, r2
+   0003E78E: fmov.s  fr3, @(r0,r15)
+   0003E790: fmov.s  @r2, fr3
+   0003E792: mov     #h'2C, r0 ; ','
+   0003E794: mov.l   #h'FFFF52E8, r1
+   0003E796: fmov.s  fr3, @(r0,r15)
+>> 0003E798: mov.l   #h'FFFF4BC3, r0
+   0003E79A: mov.b   @r0, r3
+   0003E79C: mov     #h'18, r0
+   0003E79E: mov.b   r3, @(r0,r15)
+   0003E7A0: mov.b   @r1, r0
+   0003E7A2: mov.b   r0, @(h'C,r15)
+   0003E7A4: mov.l   #h'23B12, r3
+   0003E7A6: jsr     @r3
+   0003E7A8: nop
+   0003E7AA: mov     r15, r2
+   0003E7AC: mov.l   #h'22BFE, r3
+   0003E7AE: add     #h'10, r2
+   0003E7B0: jsr     @r3
+   0003E7B2: mov.b   r0, @r2
+   0003E7B4: mov.l   #h'22C26, r2
+   0003E7B6: jsr     @r2
+   0003E7B8: mov     r0, r11
+   0003E7BA: mov.l   #h'22C74, r3
+   0003E7BC: jsr     @r3
+   0003E7BE: mov.b   r0, @(8,r15)
+   0003E7C0: mov.l   #h'26A7A, r3
+   0003E7C2: jsr     @r3
+   0003E7C4: mov.b   r0, @(4,r15)
+
+RAM FFFF4BC1 literal @ ROM 00041C90
+
+  USER 00041AE8 -> R1
+  function <none>
+   00041AD6: fmov.s  fr3, @(r0,r15)
+   00041AD8: fmov.s  @r2, fr3
+   00041ADA: mov     #h'5C, r0 ; '\'
+   00041ADC: jsr     @r1
+   00041ADE: fmov.s  fr3, @(r0,r15)
+   00041AE0: mov.l   #h'136F6, r3
+   00041AE2: jsr     @r3
+   00041AE4: mov.b   r0, @r15
+   00041AE6: mov     r15, r2
+>> 00041AE8: mov.l   #h'FFFF4BC1, r1
+   00041AEA: fldi0   fr15
+   00041AEC: add     #h'34, r2 ; '4'
+   00041AEE: mov.b   r0, @r2
+   00041AF0: mov.b   @r1, r3
+   00041AF2: mov     #h'44, r0 ; 'D'
+   00041AF4: mov.l   #h'FFFF5028, r2
+   00041AF6: mov.b   r3, @(r0,r15)
+   00041AF8: mov.l   #h'FFFF4C90, r3
+   00041AFA: mov     #h'48, r0 ; 'H'
+   00041AFC: mov.l   #h'26A7A, r1
+   00041AFE: fmov.s  fr15, @(r0,r15)
+   00041B00: fmov.s  @r3, fr3
+   00041B02: mov     #4, r0
+   00041B04: fmov.s  fr3, @(r0,r15)
+   00041B06: mov     #h'24, r0 ; '$'
+   00041B08: fmov.s  @r2, fr3
+   00041B0A: jsr     @r1
+   00041B0C: fmov.s  fr3, @(r0,r15)
+   00041B0E: mov     r15, r1
+   00041B10: mov.l   #h'FFFF52D4, r2
+   00041B12: add     #h'3C, r1 ; '<'
+   00041B14: mov.b   r0, @r1
+
+RAM FFFF4BC3 literal @ ROM 0006267C
+
+  USER 000624F0 -> R2
+  function <none>
+   000624DE: mov.l   r14, @-r15
+   000624E0: mov.l   r13, @-r15
+   000624E2: mov.l   r12, @-r15
+   000624E4: fmov.s  fr15, @-r15
+   000624E6: fmov.s  fr14, @-r15
+   000624E8: fmov.s  fr13, @-r15
+   000624EA: sts.l   pr, @-r15
+   000624EC: mov.l   #h'FFFF6D10, r3
+   000624EE: add     #-h'C, r15
+>> 000624F0: mov.l   #h'FFFF4BC3, r2
+   000624F2: fmov.s  @r3, fr13
+   000624F4: mov.b   @r2, r0
+   000624F6: mov.b   r0, @(4,r15)
+   000624F8: mov.l   #h'23A12, r1
+   000624FA: jsr     @r1
+   000624FC: nop
+   000624FE: mov.l   #h'23A20, r2
+   00062500: jsr     @r2
+   00062502: mov.b   r0, @(8,r15)
+   00062504: mov.b   r0, @r15
+   00062506: mov.l   #h'FFFF6AD0, r3
+   00062508: mov.b   @(8,r15), r0
+   0006250A: extu.b  r0, r0
+   0006250C: cmp/eq  #1, r0
+   0006250E: bf/s    unk_6251A
+   00062510: fmov.s  @r3, fr15
+   00062512: mov.l   #h'C339C, r1
+   00062514: mov.l   #h'C30C8, r2
+   00062516: bra     unk_62520
+   00062518: fmov.s  @r1, fr14
+   0006251A: mov.l   #h'C33A0, r1
+   0006251C: mov.l   #h'C30C9, r2
+
+RAM FFFF4BC3 literal @ ROM 00062DD4
+
+  USER 00062D6C -> R3
+  function <none>
+   00062D5A: fmov.s  fr14, @-r15
+   00062D5C: mov.l   #h'FFFF51D4, r3
+   00062D5E: sts.l   pr, @-r15
+   00062D60: mov.l   #h'FFFF6D10, r2
+   00062D62: add     #-4, r15
+   00062D64: mov.l   #h'23A12, r1
+   00062D66: fmov.s  @r3, fr14
+   00062D68: jsr     @r1
+   00062D6A: fmov.s  @r2, fr15
+>> 00062D6C: mov.l   #h'FFFF4BC3, r3
+   00062D6E: mov     r0, r4
+   00062D70: mov.l   #h'FFFF6D60, r1
+   00062D72: extu.b  r4, r6
+   00062D74: mov.b   @r3, r7
+   00062D76: mov     r6, r0
+   00062D78: mov.b   @r1, r2
+   00062D7A: cmp/eq  #1, r0
+   00062D7C: mov.l   #h'FFFF6AD4, r5
+   00062D7E: mov.b   r2, @r15
+   00062D80: mov.l   #h'FFFF6B3C, r2
+   00062D82: fmov.s  @r2, fr3
+   00062D84: fmov.s  @r5, fr4
+   00062D86: fmul    fr3, fr4
+   00062D88: mov.l   #h'FFFF6B40, r3
+   00062D8A: fmov.s  @r3, fr2
+   00062D8C: fmov.s  @r5, fr5
+   00062D8E: mov.l   #h'FFFF6D24, r5
+   00062D90: bf/s    unk_62DEC
+   00062D92: fmul    fr2, fr5
+   00062D94: mov.l   #h'C33C4, r1
+   00062D96: bra     unk_62DF0
+   00062D98: fmov.s  @r1, fr1
+
+RAM FFFF4BC4 literal @ ROM 00067840
+
+  USER 000677D4 -> R2
+  function <none>
+   000677C2: add     #h'14, r15
+   000677C4: lds.l   @r15+, pr
+   000677C6: rts
+   000677C8: fmov.s  @r15+, fr15
+   000677CA: mov.l   r14, @-r15
+   000677CC: sts.l   pr, @-r15
+   000677CE: mov.l   #h'23A6A, r3
+   000677D0: jsr     @r3
+   000677D2: nop
+>> 000677D4: mov.l   #h'FFFF4BC4, r2
+   000677D6: mov     r0, r6
+   000677D8: mov.l   #h'FFFF6DBC, r4
+   000677DA: mov.b   @r2, r5
+   000677DC: mov     r4, r0
+   000677DE: mov.b   @r0, r0
+   000677E0: tst     #h'80, r0
+   000677E2: movt    r0
+   000677E4: add     #-1, r0
+   000677E6: neg     r0, r0
+   000677E8: cmp/eq  #1, r0
+   000677EA: bf/s    unk_67884
+   000677EC: extu.b  r6, r14
+   000677EE: mov     r14, r0
+   000677F0: cmp/eq  #1, r0
+   000677F2: bf/s    unk_67808
+   000677F4: nop
+   000677F6: mov.l   #h'FFFF6DBD, r0
+   000677F8: mov.b   @r0, r0
+   000677FA: tst     #h'80, r0
+   000677FC: movt    r3
+   000677FE: add     #-1, r3
+   00067800: neg     r3, r3
+Python>print(
+    "\n=== EXACT FFFF4C8D SEARCH COMPLETE ==="
+)
+
+=== EXACT FFFF4C8D SEARCH COMPLETE ===
+Python>print(
+    "Review especially any context that WRITES "
+    "to the register loaded with FFFF4C8D, "
+    "or accesses nearby 4C8C/4C8E/4C8F."
+)
+Review especially any context that WRITES to the register loaded with FFFF4C8D, or accesses nearby 4C8C/4C8E/4C8F.
+Flushing buffers, please wait...ok
+Python>
+Python>print(
+    "\nSave the IDA database manually "
+    "if you make any persistent changes."
+)
+
+Save the IDA database manually if you make any persistent changes.
+Python>

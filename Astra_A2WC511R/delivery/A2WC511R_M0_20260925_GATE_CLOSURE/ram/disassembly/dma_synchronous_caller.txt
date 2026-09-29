@@ -1,0 +1,100 @@
+
+C:\Dev\SubaruRoms\OEM\A2WC511R.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00045d3a <.data+0x45d3a>:
+   45d3a:	4f 22       	sts.l	pr,@-r15
+   45d3c:	b0 5a       	bsr	0x45df4
+   45d3e:	00 09       	nop	
+   45d40:	d5 24       	mov.l	0x45dd4,r5	! ffff6390
+   45d42:	d4 25       	mov.l	0x45dd8,r4	! ffff6368
+   45d44:	d3 25       	mov.l	0x45ddc,r3	! c5ca
+   45d46:	43 0b       	jsr	@r3
+   45d48:	e6 14       	mov	#20,r6
+   45d4a:	65 03       	mov	r0,r5
+   45d4c:	d3 1f       	mov.l	0x45dcc,r3	! ffff6322
+   45d4e:	e2 00       	mov	#0,r2
+   45d50:	23 20       	mov.b	r2,@r3
+   45d52:	64 5c       	extu.b	r5,r4
+   45d54:	60 43       	mov	r4,r0
+   45d56:	88 01       	cmp/eq	#1,r0
+   45d58:	8f 04       	bf.s	0x45d64
+   45d5a:	00 09       	nop	
+   45d5c:	d2 20       	mov.l	0x45de0,r2	! ffff63c4
+   45d5e:	e1 01       	mov	#1,r1
+   45d60:	a0 08       	bra	0x45d74
+   45d62:	22 10       	mov.b	r1,@r2
+   45d64:	24 48       	tst	r4,r4
+   45d66:	8f 05       	bf.s	0x45d74
+   45d68:	00 09       	nop	
+   45d6a:	b2 45       	bsr	0x461f8
+   45d6c:	00 09       	nop	
+   45d6e:	e3 01       	mov	#1,r3
+   45d70:	d0 16       	mov.l	0x45dcc,r0	! ffff6322
+   45d72:	20 30       	mov.b	r3,@r0
+   45d74:	4f 26       	lds.l	@r15+,pr
+   45d76:	00 0b       	rts	
+   45d78:	00 09       	nop	
+   45d7a:	2f e6       	mov.l	r14,@-r15
+   45d7c:	4f 22       	sts.l	pr,@-r15
+   45d7e:	b0 39       	bsr	0x45df4
+   45d80:	00 09       	nop	
+   45d82:	d4 15       	mov.l	0x45dd8,r4	! ffff6368
+   45d84:	d3 17       	mov.l	0x45de4,r3	! c4b4
+   45d86:	43 0b       	jsr	@r3
+   45d88:	e5 14       	mov	#20,r5
+   45d8a:	de 17       	mov.l	0x45de8,r14	! ffff6349
+   45d8c:	d0 17       	mov.l	0x45dec,r0	! ffff634a
+   45d8e:	60 00       	mov.b	@r0,r0
+   45d90:	c9 01       	and	#1,r0
+   45d92:	88 01       	cmp/eq	#1,r0
+   45d94:	8f 06       	bf.s	0x45da4
+   45d96:	00 09       	nop	
+   45d98:	d3 15       	mov.l	0x45df0,r3	! 2534
+   45d9a:	e5 01       	mov	#1,r5
+   45d9c:	43 0b       	jsr	@r3
+   45d9e:	64 e0       	mov.b	@r14,r4
+   45da0:	a0 02       	bra	0x45da8
+   45da2:	2e 00       	mov.b	r0,@r14
+   45da4:	e3 00       	mov	#0,r3
+   45da6:	2e 30       	mov.b	r3,@r14
+   45da8:	4f 26       	lds.l	@r15+,pr
+   45daa:	00 0b       	rts	
+   45dac:	6e f6       	mov.l	@r15+,r14
+   45dae:	ff ff       	.word 0xffff
+   45db0:	00 02       	stc	sr,r0
+   45db2:	6a d0       	mov.b	@r13,r10
+   45db4:	00 02       	stc	sr,r0
+   45db6:	70 74       	add	#116,r0
+   45db8:	00 02       	stc	sr,r0
+   45dba:	70 1c       	add	#28,r0
+   45dbc:	00 02       	stc	sr,r0
+   45dbe:	65 d6       	mov.l	@r13+,r5
+   45dc0:	00 02       	stc	sr,r0
+   45dc2:	6f f8       	swap.b	r15,r15
+   45dc4:	ff ff       	.word 0xffff
+   45dc6:	63 66       	mov.l	@r6+,r3
+   45dc8:	00 00       	.word 0x0000
+   45dca:	3a f4       	div1	r15,r10
+   45dcc:	ff ff       	.word 0xffff
+   45dce:	63 22       	mov.l	@r2,r3
+   45dd0:	00 00       	.word 0x0000
+   45dd2:	3b 08       	sub	r0,r11
+   45dd4:	ff ff       	.word 0xffff
+   45dd6:	63 90       	mov.b	@r9,r3
+   45dd8:	ff ff       	.word 0xffff
+   45dda:	63 68       	swap.b	r6,r3
+   45ddc:	00 00       	.word 0x0000
+   45dde:	c5 ca       	mov.w	@(404,gbr),r0
+   45de0:	ff ff       	.word 0xffff
+   45de2:	63 c4       	mov.b	@r12+,r3
+   45de4:	00 00       	.word 0x0000
+   45de6:	c4 b4       	mov.b	@(180,gbr),r0
+   45de8:	ff ff       	.word 0xffff
+   45dea:	63 49       	swap.w	r4,r3
+   45dec:	ff ff       	.word 0xffff
+   45dee:	63 4a       	negc	r4,r3
+   45df0:	00 00       	.word 0x0000
+   45df2:	25 34       	mov.b	r3,@-r5

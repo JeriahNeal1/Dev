@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "status": "OFFLINE_AUDIT_COMPLETE_EXACT_ACQUISITION_UNAPPROVED",
+  "gates": {
+    "installed_target_inventory": "PASS",
+    "historical_RAM_kernel_upload": "PASS",
+    "protector_identification": "PASS_BOUNDED",
+    "static_loader_recovery": "PASS_BOUNDED_NOT_APPLICATION",
+    "exact_installed_kernel_identity": "FAIL",
+    "complete_read_control_flow": "FAIL",
+    "no_flash_side_effect_theorem": "FAIL",
+    "exact_1MiB_coverage": "FAIL",
+    "cleanup_and_reset_contract": "FAIL",
+    "current_physical_ROM_attestation": "FAIL"
+  },
+  "frozen_M06": "UNCHANGED_HASH_VERIFIED",
+  "reference_commits": {
+    "FastECU": "d7198f1c47791e67738576015789ebc2d740e55e",
+    "FastECU-kernels": "d185a3e160a83e78425593c4c6450175bfa711e1",
+    "subaru-ecu-flashing": "332a4858e2cc82f4d6131f4e94b633ced99a3a7b"
+  },
+  "reference_sources_not_installed_implementation": true,
+  "static_extraction_manifest": {
+    "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\ecuflash_read\\static_extraction\\extraction_manifest.json",
+    "sha256": "8b2b2e6f67344e687b6efdf9ace683d2f12b017926be6b74bada4c60faf99531"
+  },
+  "files": {
+    "audit_logs.py": "220d9768f42821c28d94f4cc7aaab14cbecca6d6f38f510176adbcd04aacfaa3",
+    "binary_boundaries.json": "6fd13e320bc97324f422edc5753cabef54f1a409b471fdce3bfe71e92e024a56",
+    "binary_boundaries.py": "a673c00ec3dda7025b557687a1f975c5d38c63942690317ddc5eb829d7021fde",
+    "ECUFLASH_READ_AUDIT.md": "5e7bad1b9203a4367357c6c6da4a4c6ceb258cdee505508640071387e91eeca7",
+    "historical_log_audit.json": "d2e19c2c55f6444a9cf191737ed01bfe7df2d0ce4f6d4877f02f63f2554e5e4f",
+    "installed_entry_disassembly.json": "d365e87215056efa74fb5c138673da94af33a2d1b1b7e4b51b95fbdf3a8ca230",
+    "installed_signature.json": "9ed620017781f86e6579f5c45bc103b6bd489c980a26bc2a59c951bb02ed6532",
+    "inventory.json": "1799bccfa50947340b10d041d7158b7fb1fde1935e4bd661b0052c20ca5cdde5",
+    "inventory.py": "be35004c6a1a2c26384485009b77844f8ee1a26b3d163856f2b745e3daaa8fc3",
+    "reference_kernel.disassembly.txt": "291d9bdde7c49ae8d153832da762f29ae6af661d8d992dd2942185b743f9b245",
+    "verification.json": "a9602b53faf85ad2180ff9cd920b75aff374c9bd5cb9a6092763983c10d1be77",
+    "verify_evidence.py": "13e4ecd55dcda2c8e577a2a86f760171b604b844d3d249d1a787ea5de56d8691"
+  }
+}

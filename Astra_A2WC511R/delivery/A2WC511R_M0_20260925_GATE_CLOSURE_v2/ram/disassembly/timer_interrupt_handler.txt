@@ -1,0 +1,135 @@
+
+C:\Dev\SubaruRoms\OEM\A2WC511R.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00005e84 <.data+0x5e84>:
+    5e84:	93 61       	mov.w	0x5f4a,r3	! f712
+    5e86:	d2 39       	mov.l	0x5f6c,r2	! ff7f
+    5e88:	61 31       	mov.w	@r3,r1
+    5e8a:	21 29       	and	r2,r1
+    5e8c:	23 11       	mov.w	r1,@r3
+    5e8e:	94 5d       	mov.w	0x5f4c,r4	! bc
+    5e90:	aa 1a       	bra	0x52c8
+    5e92:	00 09       	nop	
+    5e94:	93 5b       	mov.w	0x5f4e,r3	! f818
+    5e96:	60 30       	mov.b	@r3,r0
+    5e98:	c9 7f       	and	#127,r0
+    5e9a:	d2 35       	mov.l	0x5f70,r2	! 6c9a
+    5e9c:	42 2b       	jmp	@r2
+    5e9e:	23 00       	mov.b	r0,@r3
+    5ea0:	93 56       	mov.w	0x5f50,r3	! f718
+    5ea2:	d2 32       	mov.l	0x5f6c,r2	! ff7f
+    5ea4:	61 31       	mov.w	@r3,r1
+    5ea6:	21 29       	and	r2,r1
+    5ea8:	23 11       	mov.w	r1,@r3
+    5eaa:	d3 32       	mov.l	0x5f74,r3	! d936
+    5eac:	43 2b       	jmp	@r3
+    5eae:	00 09       	nop	
+    5eb0:	93 4f       	mov.w	0x5f52,r3	! f838
+    5eb2:	60 30       	mov.b	@r3,r0
+    5eb4:	c9 7f       	and	#127,r0
+    5eb6:	d2 30       	mov.l	0x5f78,r2	! 6c9e
+    5eb8:	42 2b       	jmp	@r2
+    5eba:	23 00       	mov.b	r0,@r3
+    5ebc:	93 4a       	mov.w	0x5f54,r3	! f858
+    5ebe:	60 30       	mov.b	@r3,r0
+    5ec0:	c9 7f       	and	#127,r0
+    5ec2:	d2 2e       	mov.l	0x5f7c,r2	! 6cce
+    5ec4:	42 2b       	jmp	@r2
+    5ec6:	23 00       	mov.b	r0,@r3
+    5ec8:	94 45       	mov.w	0x5f56,r4	! f004
+    5eca:	60 40       	mov.b	@r4,r0
+    5ecc:	c9 07       	and	#7,r0
+    5ece:	cb c0       	or	#-64,r0
+    5ed0:	24 00       	mov.b	r0,@r4
+    5ed2:	94 41       	mov.w	0x5f58,r4	! c8
+    5ed4:	a9 f8       	bra	0x52c8
+    5ed6:	00 09       	nop	
+    5ed8:	94 3d       	mov.w	0x5f56,r4	! f004
+    5eda:	60 40       	mov.b	@r4,r0
+    5edc:	c9 07       	and	#7,r0
+    5ede:	cb b8       	or	#-72,r0
+    5ee0:	24 00       	mov.b	r0,@r4
+    5ee2:	94 3a       	mov.w	0x5f5a,r4	! c9
+    5ee4:	a9 f0       	bra	0x52c8
+    5ee6:	00 09       	nop	
+    5ee8:	94 38       	mov.w	0x5f5c,r4	! ca
+    5eea:	a9 ed       	bra	0x52c8
+    5eec:	00 09       	nop	
+    5eee:	94 32       	mov.w	0x5f56,r4	! f004
+    5ef0:	60 40       	mov.b	@r4,r0
+    5ef2:	c9 07       	and	#7,r0
+    5ef4:	cb f8       	or	#-8,r0
+    5ef6:	24 00       	mov.b	r0,@r4
+    5ef8:	94 31       	mov.w	0x5f5e,r4	! cb
+    5efa:	a9 e5       	bra	0x52c8
+    5efc:	00 09       	nop	
+    5efe:	94 2f       	mov.w	0x5f60,r4	! f00c
+    5f00:	60 40       	mov.b	@r4,r0
+    5f02:	c9 07       	and	#7,r0
+    5f04:	cb c0       	or	#-64,r0
+    5f06:	24 00       	mov.b	r0,@r4
+    5f08:	94 2b       	mov.w	0x5f62,r4	! cc
+    5f0a:	a9 dd       	bra	0x52c8
+    5f0c:	00 09       	nop	
+    5f0e:	94 27       	mov.w	0x5f60,r4	! f00c
+    5f10:	60 40       	mov.b	@r4,r0
+    5f12:	c9 07       	and	#7,r0
+    5f14:	cb b8       	or	#-72,r0
+    5f16:	24 00       	mov.b	r0,@r4
+    5f18:	94 24       	mov.w	0x5f64,r4	! cd
+    5f1a:	a9 d5       	bra	0x52c8
+    5f1c:	00 09       	nop	
+    5f1e:	94 22       	mov.w	0x5f66,r4	! ce
+    5f20:	a9 d2       	bra	0x52c8
+    5f22:	00 09       	nop	
+    5f24:	94 1c       	mov.w	0x5f60,r4	! f00c
+    5f26:	60 40       	mov.b	@r4,r0
+    5f28:	c9 07       	and	#7,r0
+    5f2a:	cb f8       	or	#-8,r0
+    5f2c:	24 00       	mov.b	r0,@r4
+    5f2e:	94 1b       	mov.w	0x5f68,r4	! cf
+    5f30:	a9 ca       	bra	0x52c8
+    5f32:	00 09       	nop	
+    5f34:	94 19       	mov.w	0x5f6a,r4	! f014
+    5f36:	60 40       	mov.b	@r4,r0
+    5f38:	c9 07       	and	#7,r0
+    5f3a:	cb c0       	or	#-64,r0
+    5f3c:	d3 10       	mov.l	0x5f80,r3	! 470cc
+    5f3e:	43 2b       	jmp	@r3
+    5f40:	24 00       	mov.b	r0,@r4
+    5f42:	f5 ca       	fmov	fr12,@r5
+    5f44:	01 01       	.word 0x0101
+    5f46:	00 ba       	.word 0x00ba
+    5f48:	00 bb       	.word 0x00bb
+    5f4a:	f7 12       	fmul	fr1,fr7
+    5f4c:	00 bc       	mov.b	@(r0,r11),r0
+    5f4e:	f8 18       	fmov	@r1,fr8
+    5f50:	f7 18       	fmov	@r1,fr7
+    5f52:	f8 38       	fmov	@r3,fr8
+    5f54:	f8 58       	fmov	@r5,fr8
+    5f56:	f0 04       	fcmp/eq	fr0,fr0
+    5f58:	00 c8       	.word 0x00c8
+    5f5a:	00 c9       	.word 0x00c9
+    5f5c:	00 ca       	.word 0x00ca
+    5f5e:	00 cb       	.word 0x00cb
+    5f60:	f0 0c       	fmov	fr0,fr0
+    5f62:	00 cc       	mov.b	@(r0,r12),r0
+    5f64:	00 cd       	mov.w	@(r0,r12),r0
+    5f66:	00 ce       	mov.l	@(r0,r12),r0
+    5f68:	00 cf       	mac.l	@r12+,@r0+
+    5f6a:	f0 14       	fcmp/eq	fr1,fr0
+    5f6c:	00 00       	.word 0x0000
+    5f6e:	ff 7f       	.word 0xff7f
+    5f70:	00 00       	.word 0x0000
+    5f72:	6c 9a       	negc	r9,r12
+    5f74:	00 00       	.word 0x0000
+    5f76:	d9 36       	mov.l	0x6050,r9	! 23019321
+    5f78:	00 00       	.word 0x0000
+    5f7a:	6c 9e       	exts.b	r9,r12
+    5f7c:	00 00       	.word 0x0000
+    5f7e:	6c ce       	exts.b	r12,r12
+    5f80:	00 04       	mov.b	r0,@(r0,r0)
+    5f82:	70 cc       	add	#-52,r0

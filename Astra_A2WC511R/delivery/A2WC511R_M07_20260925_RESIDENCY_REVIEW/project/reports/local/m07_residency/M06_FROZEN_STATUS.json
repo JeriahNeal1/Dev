@@ -1,0 +1,22 @@
+{
+  "checkpoint": "M06_ARCHITECTURAL_RESEARCH_FROZEN_FOR_M07",
+  "raw_sha256": "11c92f72d7b3623d52956ecdc069d1c554aefe296cd653f3676d591cd5626fd4",
+  "code_bytes": 536,
+  "persistent_ram_bytes": 0,
+  "max_added_stack": 36,
+  "periodic_hook": false,
+  "ROM_ownership": "FAIL",
+  "strict_original_ROM_read_response_identity": "FAIL_CONCRETE_COUNTEREXAMPLE",
+  "full_OEM_RX_TX_BE_and_fixed_A8": "PASS_EXPLICIT_SOFTWARE_SCI_EVENTS",
+  "extended_OEM_B0_B8_wire_test": "FAIL_UNSUPPORTED_MMIO_FFFFEC0A_WORD_NO_STUB",
+  "lookup_all_u16_domains": "PASS_131072_PAIRS",
+  "ABI_frames": "PASS_BOUNDED_COMPILER_PROOF",
+  "silicon_timing": "PHYSICAL/BENCH REQUIRED",
+  "current_image": "PHYSICAL/BENCH REQUIRED",
+  "A0_full_image_attestation": "FAIL_WITHDRAWN_MASKED_READ_ADMISSION",
+  "host_A8_service": "PREFERRED_BY_USER_M07",
+  "new_m07_objective": "Provable executable-function tail residency; raw-only discriminated ECU protocol; durable host observations; offline ECUFlashRead/kernel audit",
+  "frozen_manifest_sha256": "577853392c842f75aca92a5902f1d0d50f0ee81e99c4f4f863cca80cb4cccaff",
+  "physical_actions": false,
+  "release_allowed": false
+}

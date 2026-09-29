@@ -1,0 +1,15 @@
+
+C:\Dev\SubaruRoms\OEM\A2WC511R.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000051dc <.data+0x51dc>:
+    51dc:	92 5a       	mov.w	0x5294,r2	! ec26
+    51de:	e3 00       	mov	#0,r3
+    51e0:	00 0b       	rts	
+    51e2:	22 31       	mov.w	r3,@r2
+    51e4:	af fa       	bra	0x51dc
+    51e6:	00 09       	nop	
+    51e8:	2f e6       	mov.l	r14,@-r15
+    51ea:	e1 01       	mov	#1,r1

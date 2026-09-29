@@ -1,0 +1,8105 @@
+{
+  "status": "PASS",
+  "contracts": [
+    {
+      "name": "division_nonzero",
+      "version": "stock",
+      "inclusion": {
+        "status": "PASS",
+        "checked": {
+          "memory_events": 4,
+          "branch_edges": 2,
+          "fetches": 79
+        },
+        "failures": []
+      },
+      "analysis": {
+        "schema": 1,
+        "rom": {
+          "source": "C:\\Dev\\SubaruRoms\\OEM\\A2WC511R.bin",
+          "sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+          "base_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+          "overlays": [],
+          "size": 1048576
+        },
+        "steps": 79,
+        "states": 80,
+        "run_started": true,
+        "seed_count": 1,
+        "worklist_complete": true,
+        "global_exclusion_gate": "PASS",
+        "contract": "Global means only explicit seeds/initial-state/hardware assumptions. Whole-firmware acceptance additionally requires exhaustive entry/hardware manifests.",
+        "unknowns": [],
+        "decoded": {
+          "tst_reg": 1,
+          "movl_predec": 2,
+          "bt": 1,
+          "mov_imm": 1,
+          "div0s": 2,
+          "subc": 2,
+          "rotcl": 33,
+          "div1": 32,
+          "addc": 1,
+          "mov_reg": 1,
+          "movl_postinc": 2,
+          "rts": 1
+        },
+        "observations": [
+          {
+            "pc": "00004260",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004260"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00002008"
+              ]
+            }
+          },
+          {
+            "pc": "00004262",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004262"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00002F26"
+              ]
+            }
+          },
+          {
+            "pc": "00004262",
+            "mode": "write",
+            "size": 4,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFFBF9C"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0369D035"
+              ]
+            }
+          },
+          {
+            "pc": "00004264",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004264"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000894B"
+              ]
+            }
+          },
+          {
+            "pc": "00004264",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004266"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "00004266",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004266"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00002F36"
+              ]
+            }
+          },
+          {
+            "pc": "00004266",
+            "mode": "write",
+            "size": 4,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFFBF98"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "048D159C"
+              ]
+            }
+          },
+          {
+            "pc": "00004268",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004268"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000E200"
+              ]
+            }
+          },
+          {
+            "pc": "0000426A",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0000426A"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00002127"
+              ]
+            }
+          },
+          {
+            "pc": "0000426C",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0000426C"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000333A"
+              ]
+            }
+          },
+          {
+            "pc": "0000426E",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0000426E"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000312A"
+              ]
+            }
+          },
+          {
+            "pc": "00004270",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004270"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00002307"
+              ]
+            }
+          },
+          {
+            "pc": "00004272",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004272"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00004124"
+              ]
+            }
+          },
+          {
+            "pc": "00004274",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004274"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00003304"
+              ]
+            }
+          },
+          {
+            "pc": "00004276",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004276"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00004124"
+              ]
+            }
+          },
+          {
+            "pc": "00004278",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004278"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00003304"
+              ]
+            }
+          },
+          {
+            "pc": "0000427A",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0000427A"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00004124"
+              ]
+            }
+          },
+          {
+            "pc": "0000427C",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0000427C"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00003304"
+              ]
+            }
+          },
+          {
+            "pc": "0000427E",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0000427E"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00004124"
+              ]
+            }
+          },
+          {
+            "pc": "00004280",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004280"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00003304"
+              ]
+            }
+          },
+          {
+            "pc": "00004282",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004282"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00004124"
+              ]
+            }
+          },
+          {
+            "pc": "00004284",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004284"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00003304"
+              ]
+            }
+          },
+          {
+            "pc": "00004286",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004286"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00004124"
+              ]
+            }
+          },
+          {
+            "pc": "00004288",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004288"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00003304"
+              ]
+            }
+          },
+          {
+            "pc": "0000428A",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0000428A"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00004124"
+              ]
+            }
+          },
+          {
+            "pc": "0000428C",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0000428C"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00003304"
+              ]
+            }
+          },
+          {
+            "pc": "0000428E",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0000428E"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00004124"
+              ]
+            }
+          },
+          {
+            "pc": "00004290",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004290"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00003304"
+              ]
+            }
+          },
+          {
+            "pc": "00004292",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004292"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00004124"
+              ]
+            }
+          },
+          {
+            "pc": "00004294",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004294"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00003304"
+              ]
+            }
+          },
+          {
+            "pc": "00004296",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004296"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00004124"
+              ]
+            }
+          },
+          {
+            "pc": "00004298",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004298"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00003304"
+              ]
+            }
+          },
+          {
+            "pc": "0000429A",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0000429A"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00004124"
+              ]
+            }
+          },
+          {
+            "pc": "0000429C",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0000429C"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00003304"
+              ]
+            }
+          },
+          {
+            "pc": "0000429E",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0000429E"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00004124"
+              ]
+            }
+          },
+          {
+            "pc": "000042A0",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000042A0"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00003304"
+              ]
+            }
+          },
+          {
+            "pc": "000042A2",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000042A2"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00004124"
+              ]
+            }
+          },
+          {
+            "pc": "000042A4",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000042A4"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00003304"
+              ]
+            }
+          },
+          {
+            "pc": "000042A6",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000042A6"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00004124"
+              ]
+            }
+          },
+          {
+            "pc": "000042A8",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000042A8"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00003304"
+              ]
+            }
+          },
+          {
+            "pc": "000042AA",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000042AA"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00004124"
+              ]
+            }
+          },
+          {
+            "pc": "000042AC",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000042AC"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00003304"
+              ]
+            }
+          },
+          {
+            "pc": "000042AE",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000042AE"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00004124"
+              ]
+            }
+          },
+          {
+            "pc": "000042B0",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000042B0"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00003304"
+              ]
+            }
+          },
+          {
+            "pc": "000042B2",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000042B2"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00004124"
+              ]
+            }
+          },
+          {
+            "pc": "000042B4",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000042B4"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00003304"
+              ]
+            }
+          },
+          {
+            "pc": "000042B6",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000042B6"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00004124"
+              ]
+            }
+          },
+          {
+            "pc": "000042B8",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000042B8"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00003304"
+              ]
+            }
+          },
+          {
+            "pc": "000042BA",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000042BA"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00004124"
+              ]
+            }
+          },
+          {
+            "pc": "000042BC",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000042BC"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00003304"
+              ]
+            }
+          },
+          {
+            "pc": "000042BE",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000042BE"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00004124"
+              ]
+            }
+          },
+          {
+            "pc": "000042C0",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000042C0"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00003304"
+              ]
+            }
+          },
+          {
+            "pc": "000042C2",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000042C2"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00004124"
+              ]
+            }
+          },
+          {
+            "pc": "000042C4",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000042C4"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00003304"
+              ]
+            }
+          },
+          {
+            "pc": "000042C6",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000042C6"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00004124"
+              ]
+            }
+          },
+          {
+            "pc": "000042C8",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000042C8"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00003304"
+              ]
+            }
+          },
+          {
+            "pc": "000042CA",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000042CA"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00004124"
+              ]
+            }
+          },
+          {
+            "pc": "000042CC",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000042CC"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00003304"
+              ]
+            }
+          },
+          {
+            "pc": "000042CE",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000042CE"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00004124"
+              ]
+            }
+          },
+          {
+            "pc": "000042D0",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000042D0"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00003304"
+              ]
+            }
+          },
+          {
+            "pc": "000042D2",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000042D2"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00004124"
+              ]
+            }
+          },
+          {
+            "pc": "000042D4",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000042D4"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00003304"
+              ]
+            }
+          },
+          {
+            "pc": "000042D6",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000042D6"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00004124"
+              ]
+            }
+          },
+          {
+            "pc": "000042D8",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000042D8"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00003304"
+              ]
+            }
+          },
+          {
+            "pc": "000042DA",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000042DA"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00004124"
+              ]
+            }
+          },
+          {
+            "pc": "000042DC",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000042DC"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00003304"
+              ]
+            }
+          },
+          {
+            "pc": "000042DE",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000042DE"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00004124"
+              ]
+            }
+          },
+          {
+            "pc": "000042E0",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000042E0"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00003304"
+              ]
+            }
+          },
+          {
+            "pc": "000042E2",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000042E2"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00004124"
+              ]
+            }
+          },
+          {
+            "pc": "000042E4",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000042E4"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00003304"
+              ]
+            }
+          },
+          {
+            "pc": "000042E6",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000042E6"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00004124"
+              ]
+            }
+          },
+          {
+            "pc": "000042E8",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000042E8"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00003304"
+              ]
+            }
+          },
+          {
+            "pc": "000042EA",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000042EA"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00004124"
+              ]
+            }
+          },
+          {
+            "pc": "000042EC",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000042EC"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00003304"
+              ]
+            }
+          },
+          {
+            "pc": "000042EE",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000042EE"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00004124"
+              ]
+            }
+          },
+          {
+            "pc": "000042F0",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000042F0"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00003304"
+              ]
+            }
+          },
+          {
+            "pc": "000042F2",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000042F2"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00004124"
+              ]
+            }
+          },
+          {
+            "pc": "000042F4",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000042F4"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000312E"
+              ]
+            }
+          },
+          {
+            "pc": "000042F6",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000042F6"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00006013"
+              ]
+            }
+          },
+          {
+            "pc": "000042F8",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000042F8"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "000063F6"
+              ]
+            }
+          },
+          {
+            "pc": "000042F8",
+            "mode": "read",
+            "size": 4,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFFBF98"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "048D159C"
+              ]
+            }
+          },
+          {
+            "pc": "000042FA",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000042FA"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000000B"
+              ]
+            }
+          },
+          {
+            "pc": "000042FA",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFFFFFC"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "000042FC",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000042FC"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "000062F6"
+              ]
+            }
+          },
+          {
+            "pc": "000042FC",
+            "mode": "read",
+            "size": 4,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFFBF9C"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0369D035"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "division_nonzero",
+      "version": "replacement",
+      "inclusion": {
+        "status": "PASS",
+        "checked": {
+          "memory_events": 6,
+          "branch_edges": 4,
+          "fetches": 210
+        },
+        "failures": []
+      },
+      "analysis": {
+        "schema": 1,
+        "rom": {
+          "source": "C:\\Dev\\SubaruRoms\\OEM\\A2WC511R.bin",
+          "sha256": "23988a669ae82a61a2db9b1ea93d31b62ad6c67403d2d48be02d1402a31f7f43",
+          "base_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+          "overlays": [
+            [
+              "00004260",
+              "20082f2689142f362f46e2002127333a312a2307e22041243304042942108ffa44214124312e601364f663f6000b62f6d102d203e0002122000b62f6ffff130c0000044e",
+              "M07 experimental semantic replacement division"
+            ],
+            [
+              "0001473C",
+              "970e2059e30833028900880fd402044c644cd302000b23400001475effff4bc000800001020408102040808080808080800f0009",
+              "M07 experimental semantic replacement range_tail"
+            ]
+          ],
+          "size": 1048576
+        },
+        "steps": 453,
+        "states": 26,
+        "run_started": true,
+        "seed_count": 1,
+        "worklist_complete": true,
+        "global_exclusion_gate": "PASS",
+        "contract": "Global means only explicit seeds/initial-state/hardware assumptions. Whole-firmware acceptance additionally requires exhaustive entry/hardware manifests.",
+        "unknowns": [],
+        "decoded": {
+          "tst_reg": 1,
+          "movl_predec": 3,
+          "bt": 1,
+          "mov_imm": 2,
+          "div0s": 2,
+          "subc": 2,
+          "rotcl": 64,
+          "div1": 34,
+          "movt": 34,
+          "dt": 34,
+          "bf_s": 33,
+          "shar": 63,
+          "addc": 30,
+          "mov_reg": 30,
+          "movl_postinc": 90,
+          "rts": 30
+        },
+        "observations": [
+          {
+            "pc": "00004260",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004260"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00002008"
+              ]
+            }
+          },
+          {
+            "pc": "00004262",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004262"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00002F26"
+              ]
+            }
+          },
+          {
+            "pc": "00004262",
+            "mode": "write",
+            "size": 4,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFFBF9C"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0369D035"
+              ]
+            }
+          },
+          {
+            "pc": "00004264",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004264"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00008914"
+              ]
+            }
+          },
+          {
+            "pc": "00004264",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004266"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "00004266",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004266"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00002F36"
+              ]
+            }
+          },
+          {
+            "pc": "00004266",
+            "mode": "write",
+            "size": 4,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFFBF98"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "048D159C"
+              ]
+            }
+          },
+          {
+            "pc": "00004268",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004268"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00002F46"
+              ]
+            }
+          },
+          {
+            "pc": "00004268",
+            "mode": "write",
+            "size": 4,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFFBF94"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "05B05B03"
+              ]
+            }
+          },
+          {
+            "pc": "0000426A",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0000426A"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000E200"
+              ]
+            }
+          },
+          {
+            "pc": "0000426C",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0000426C"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00002127"
+              ]
+            }
+          },
+          {
+            "pc": "0000426E",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0000426E"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000333A"
+              ]
+            }
+          },
+          {
+            "pc": "00004270",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004270"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000312A"
+              ]
+            }
+          },
+          {
+            "pc": "00004272",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004272"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00002307"
+              ]
+            }
+          },
+          {
+            "pc": "00004274",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004274"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000E220"
+              ]
+            }
+          },
+          {
+            "pc": "00004276",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004276"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00004124"
+              ]
+            }
+          },
+          {
+            "pc": "00004278",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004278"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00003304"
+              ]
+            }
+          },
+          {
+            "pc": "0000427A",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0000427A"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000429"
+              ]
+            }
+          },
+          {
+            "pc": "0000427C",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0000427C"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00004210"
+              ]
+            }
+          },
+          {
+            "pc": "0000427E",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0000427E"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00008FFA"
+              ]
+            }
+          },
+          {
+            "pc": "0000427E",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004276",
+                "00004280"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "00004280",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004280"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00004421"
+              ]
+            }
+          },
+          {
+            "pc": "00004282",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004282"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00004124"
+              ]
+            }
+          },
+          {
+            "pc": "00004284",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004284"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000312E"
+              ]
+            }
+          },
+          {
+            "pc": "00004286",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004286"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00006013"
+              ]
+            }
+          },
+          {
+            "pc": "00004288",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004288"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "000064F6"
+              ]
+            }
+          },
+          {
+            "pc": "00004288",
+            "mode": "read",
+            "size": 4,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFFBF94"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "05B05B03"
+              ]
+            }
+          },
+          {
+            "pc": "0000428A",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0000428A"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "000063F6"
+              ]
+            }
+          },
+          {
+            "pc": "0000428A",
+            "mode": "read",
+            "size": 4,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFFBF98"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "048D159C"
+              ]
+            }
+          },
+          {
+            "pc": "0000428C",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0000428C"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000000B"
+              ]
+            }
+          },
+          {
+            "pc": "0000428C",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFFFFFC"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "0000428E",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0000428E"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "000062F6"
+              ]
+            }
+          },
+          {
+            "pc": "0000428E",
+            "mode": "read",
+            "size": 4,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFFBF9C"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0369D035"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "division_zero",
+      "version": "stock",
+      "inclusion": {
+        "status": "PASS",
+        "checked": {
+          "memory_events": 5,
+          "branch_edges": 2,
+          "fetches": 9
+        },
+        "failures": []
+      },
+      "analysis": {
+        "schema": 1,
+        "rom": {
+          "source": "C:\\Dev\\SubaruRoms\\OEM\\A2WC511R.bin",
+          "sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+          "base_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+          "overlays": [],
+          "size": 1048576
+        },
+        "steps": 9,
+        "states": 10,
+        "run_started": true,
+        "seed_count": 1,
+        "worklist_complete": true,
+        "global_exclusion_gate": "PASS",
+        "contract": "Global means only explicit seeds/initial-state/hardware assumptions. Whole-firmware acceptance additionally requires exhaustive entry/hardware manifests.",
+        "unknowns": [],
+        "decoded": {
+          "tst_reg": 1,
+          "movl_predec": 1,
+          "bt": 1,
+          "movl_pc": 2,
+          "mov_imm": 1,
+          "movl_store": 1,
+          "rts": 1,
+          "movl_postinc": 1
+        },
+        "observations": [
+          {
+            "pc": "00004260",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004260"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00002008"
+              ]
+            }
+          },
+          {
+            "pc": "00004262",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004262"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00002F26"
+              ]
+            }
+          },
+          {
+            "pc": "00004262",
+            "mode": "write",
+            "size": 4,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFFBF9C"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0369D035"
+              ]
+            }
+          },
+          {
+            "pc": "00004264",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004264"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000894B"
+              ]
+            }
+          },
+          {
+            "pc": "00004264",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000042FE"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "000042FE",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000042FE"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000D103"
+              ]
+            }
+          },
+          {
+            "pc": "000042FE",
+            "mode": "read",
+            "size": 4,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0000430C"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "FFFF130C"
+              ]
+            }
+          },
+          {
+            "pc": "00004300",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004300"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000D203"
+              ]
+            }
+          },
+          {
+            "pc": "00004300",
+            "mode": "read",
+            "size": 4,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004310"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000044E"
+              ]
+            }
+          },
+          {
+            "pc": "00004302",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004302"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000E000"
+              ]
+            }
+          },
+          {
+            "pc": "00004304",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004304"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00002122"
+              ]
+            }
+          },
+          {
+            "pc": "00004304",
+            "mode": "write",
+            "size": 4,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFF130C"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000044E"
+              ]
+            }
+          },
+          {
+            "pc": "00004306",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004306"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000000B"
+              ]
+            }
+          },
+          {
+            "pc": "00004306",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFFFFFC"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "00004308",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004308"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "000062F6"
+              ]
+            }
+          },
+          {
+            "pc": "00004308",
+            "mode": "read",
+            "size": 4,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFFBF9C"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0369D035"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "division_zero",
+      "version": "replacement",
+      "inclusion": {
+        "status": "PASS",
+        "checked": {
+          "memory_events": 5,
+          "branch_edges": 2,
+          "fetches": 9
+        },
+        "failures": []
+      },
+      "analysis": {
+        "schema": 1,
+        "rom": {
+          "source": "C:\\Dev\\SubaruRoms\\OEM\\A2WC511R.bin",
+          "sha256": "23988a669ae82a61a2db9b1ea93d31b62ad6c67403d2d48be02d1402a31f7f43",
+          "base_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+          "overlays": [
+            [
+              "00004260",
+              "20082f2689142f362f46e2002127333a312a2307e22041243304042942108ffa44214124312e601364f663f6000b62f6d102d203e0002122000b62f6ffff130c0000044e",
+              "M07 experimental semantic replacement division"
+            ],
+            [
+              "0001473C",
+              "970e2059e30833028900880fd402044c644cd302000b23400001475effff4bc000800001020408102040808080808080800f0009",
+              "M07 experimental semantic replacement range_tail"
+            ]
+          ],
+          "size": 1048576
+        },
+        "steps": 9,
+        "states": 10,
+        "run_started": true,
+        "seed_count": 1,
+        "worklist_complete": true,
+        "global_exclusion_gate": "PASS",
+        "contract": "Global means only explicit seeds/initial-state/hardware assumptions. Whole-firmware acceptance additionally requires exhaustive entry/hardware manifests.",
+        "unknowns": [],
+        "decoded": {
+          "tst_reg": 1,
+          "movl_predec": 1,
+          "bt": 1,
+          "movl_pc": 2,
+          "mov_imm": 1,
+          "movl_store": 1,
+          "rts": 1,
+          "movl_postinc": 1
+        },
+        "observations": [
+          {
+            "pc": "00004260",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004260"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00002008"
+              ]
+            }
+          },
+          {
+            "pc": "00004262",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004262"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00002F26"
+              ]
+            }
+          },
+          {
+            "pc": "00004262",
+            "mode": "write",
+            "size": 4,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFFBF9C"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0369D035"
+              ]
+            }
+          },
+          {
+            "pc": "00004264",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004264"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00008914"
+              ]
+            }
+          },
+          {
+            "pc": "00004264",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004290"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "00004290",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004290"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000D102"
+              ]
+            }
+          },
+          {
+            "pc": "00004290",
+            "mode": "read",
+            "size": 4,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0000429C"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "FFFF130C"
+              ]
+            }
+          },
+          {
+            "pc": "00004292",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004292"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000D203"
+              ]
+            }
+          },
+          {
+            "pc": "00004292",
+            "mode": "read",
+            "size": 4,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000042A0"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000044E"
+              ]
+            }
+          },
+          {
+            "pc": "00004294",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004294"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000E000"
+              ]
+            }
+          },
+          {
+            "pc": "00004296",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004296"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00002122"
+              ]
+            }
+          },
+          {
+            "pc": "00004296",
+            "mode": "write",
+            "size": 4,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFF130C"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000044E"
+              ]
+            }
+          },
+          {
+            "pc": "00004298",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00004298"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000000B"
+              ]
+            }
+          },
+          {
+            "pc": "00004298",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFFFFFC"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "0000429A",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0000429A"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "000062F6"
+              ]
+            }
+          },
+          {
+            "pc": "0000429A",
+            "mode": "read",
+            "size": 4,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFFBF9C"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0369D035"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "range_low",
+      "version": "stock",
+      "inclusion": {
+        "status": "PASS",
+        "checked": {
+          "memory_events": 12,
+          "branch_edges": 16,
+          "fetches": 61
+        },
+        "failures": []
+      },
+      "analysis": {
+        "schema": 1,
+        "rom": {
+          "source": "C:\\Dev\\SubaruRoms\\OEM\\A2WC511R.bin",
+          "sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+          "base_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+          "overlays": [],
+          "size": 1048576
+        },
+        "steps": 61,
+        "states": 62,
+        "run_started": true,
+        "seed_count": 1,
+        "worklist_complete": true,
+        "global_exclusion_gate": "PASS",
+        "contract": "Global means only explicit seeds/initial-state/hardware assumptions. Whole-firmware acceptance additionally requires exhaustive entry/hardware manifests.",
+        "unknowns": [],
+        "decoded": {
+          "mov_imm": 4,
+          "movl_pc": 3,
+          "movb_load": 4,
+          "extub": 1,
+          "mov_reg": 2,
+          "tst_reg": 3,
+          "bf_s": 3,
+          "nop": 11,
+          "and_imm": 3,
+          "bra": 4,
+          "movb_store": 4,
+          "movw_pc": 1,
+          "and_reg": 1,
+          "cmpeq_imm": 8,
+          "bt_s": 8,
+          "rts": 1
+        },
+        "observations": [
+          {
+            "pc": "0001466E",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001466E"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000E640"
+              ]
+            }
+          },
+          {
+            "pc": "00014670",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014670"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000D42F"
+              ]
+            }
+          },
+          {
+            "pc": "00014670",
+            "mode": "read",
+            "size": 4,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014730"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "FFFF4BA4"
+              ]
+            }
+          },
+          {
+            "pc": "00014672",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014672"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000D32E"
+              ]
+            }
+          },
+          {
+            "pc": "00014672",
+            "mode": "read",
+            "size": 4,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001472C"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "FFFF4C8C"
+              ]
+            }
+          },
+          {
+            "pc": "00014674",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014674"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00006730"
+              ]
+            }
+          },
+          {
+            "pc": "00014674",
+            "mode": "read",
+            "size": 1,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFF4C8C"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000007"
+              ]
+            }
+          },
+          {
+            "pc": "00014676",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014676"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000657C"
+              ]
+            }
+          },
+          {
+            "pc": "00014678",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014678"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00006253"
+              ]
+            }
+          },
+          {
+            "pc": "0001467A",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001467A"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00002268"
+              ]
+            }
+          },
+          {
+            "pc": "0001467C",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001467C"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00008F04"
+              ]
+            }
+          },
+          {
+            "pc": "0001467C",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001467E"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "0001467E",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001467E"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000009"
+              ]
+            }
+          },
+          {
+            "pc": "00014680",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014680"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00006040"
+              ]
+            }
+          },
+          {
+            "pc": "00014680",
+            "mode": "read",
+            "size": 1,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFF4BA4"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "000000FF"
+              ]
+            }
+          },
+          {
+            "pc": "00014682",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014682"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000C9DF"
+              ]
+            }
+          },
+          {
+            "pc": "00014684",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014684"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000A003"
+              ]
+            }
+          },
+          {
+            "pc": "00014684",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001468E"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "00014686",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014686"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00002400"
+              ]
+            }
+          },
+          {
+            "pc": "00014686",
+            "mode": "write",
+            "size": 1,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFF4BA4"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "000000DF"
+              ]
+            }
+          },
+          {
+            "pc": "0001468E",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001468E"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000E320"
+              ]
+            }
+          },
+          {
+            "pc": "00014690",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014690"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00002358"
+              ]
+            }
+          },
+          {
+            "pc": "00014692",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014692"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00008F04"
+              ]
+            }
+          },
+          {
+            "pc": "00014692",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014694"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "00014694",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014694"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000009"
+              ]
+            }
+          },
+          {
+            "pc": "00014696",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014696"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00006040"
+              ]
+            }
+          },
+          {
+            "pc": "00014696",
+            "mode": "read",
+            "size": 1,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFF4BA4"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "000000DF"
+              ]
+            }
+          },
+          {
+            "pc": "00014698",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014698"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000C9BF"
+              ]
+            }
+          },
+          {
+            "pc": "0001469A",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001469A"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000A003"
+              ]
+            }
+          },
+          {
+            "pc": "0001469A",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000146A4"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "0001469C",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001469C"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00002400"
+              ]
+            }
+          },
+          {
+            "pc": "0001469C",
+            "mode": "write",
+            "size": 1,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFF4BA4"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000009F"
+              ]
+            }
+          },
+          {
+            "pc": "000146A4",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000146A4"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000E210"
+              ]
+            }
+          },
+          {
+            "pc": "000146A6",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000146A6"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00002258"
+              ]
+            }
+          },
+          {
+            "pc": "000146A8",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000146A8"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00008F44"
+              ]
+            }
+          },
+          {
+            "pc": "000146A8",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000146AA"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "000146AA",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000146AA"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000009"
+              ]
+            }
+          },
+          {
+            "pc": "000146AC",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000146AC"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00006040"
+              ]
+            }
+          },
+          {
+            "pc": "000146AC",
+            "mode": "read",
+            "size": 1,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFF4BA4"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000009F"
+              ]
+            }
+          },
+          {
+            "pc": "000146AE",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000146AE"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000C97F"
+              ]
+            }
+          },
+          {
+            "pc": "000146B0",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000146B0"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000A043"
+              ]
+            }
+          },
+          {
+            "pc": "000146B0",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001473A"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "000146B2",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000146B2"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00002400"
+              ]
+            }
+          },
+          {
+            "pc": "000146B2",
+            "mode": "write",
+            "size": 1,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFF4BA4"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000001F"
+              ]
+            }
+          },
+          {
+            "pc": "0001473A",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001473A"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000E00F"
+              ]
+            }
+          },
+          {
+            "pc": "0001473C",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001473C"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00009761"
+              ]
+            }
+          },
+          {
+            "pc": "0001473C",
+            "mode": "read",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014802"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000080"
+              ]
+            }
+          },
+          {
+            "pc": "0001473E",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001473E"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00002059"
+              ]
+            }
+          },
+          {
+            "pc": "00014740",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014740"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00008800"
+              ]
+            }
+          },
+          {
+            "pc": "00014742",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014742"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00008D1D"
+              ]
+            }
+          },
+          {
+            "pc": "00014742",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014744"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "00014744",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014744"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000009"
+              ]
+            }
+          },
+          {
+            "pc": "00014746",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014746"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00008801"
+              ]
+            }
+          },
+          {
+            "pc": "00014748",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014748"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00008D1C"
+              ]
+            }
+          },
+          {
+            "pc": "00014748",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001474A"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "0001474A",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001474A"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000009"
+              ]
+            }
+          },
+          {
+            "pc": "0001474C",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001474C"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00008802"
+              ]
+            }
+          },
+          {
+            "pc": "0001474E",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001474E"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00008D1B"
+              ]
+            }
+          },
+          {
+            "pc": "0001474E",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014750"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "00014750",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014750"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000009"
+              ]
+            }
+          },
+          {
+            "pc": "00014752",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014752"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00008803"
+              ]
+            }
+          },
+          {
+            "pc": "00014754",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014754"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00008D1A"
+              ]
+            }
+          },
+          {
+            "pc": "00014754",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014756"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "00014756",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014756"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000009"
+              ]
+            }
+          },
+          {
+            "pc": "00014758",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014758"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00008804"
+              ]
+            }
+          },
+          {
+            "pc": "0001475A",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001475A"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00008D19"
+              ]
+            }
+          },
+          {
+            "pc": "0001475A",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001475C"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "0001475C",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001475C"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000009"
+              ]
+            }
+          },
+          {
+            "pc": "0001475E",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001475E"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00008805"
+              ]
+            }
+          },
+          {
+            "pc": "00014760",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014760"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00008D18"
+              ]
+            }
+          },
+          {
+            "pc": "00014760",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014762"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "00014762",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014762"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000009"
+              ]
+            }
+          },
+          {
+            "pc": "00014764",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014764"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00008806"
+              ]
+            }
+          },
+          {
+            "pc": "00014766",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014766"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00008D17"
+              ]
+            }
+          },
+          {
+            "pc": "00014766",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014768"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "00014768",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014768"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000009"
+              ]
+            }
+          },
+          {
+            "pc": "0001476A",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001476A"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00008807"
+              ]
+            }
+          },
+          {
+            "pc": "0001476C",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001476C"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00008D16"
+              ]
+            }
+          },
+          {
+            "pc": "0001476C",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001479C"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "0001476E",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001476E"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000009"
+              ]
+            }
+          },
+          {
+            "pc": "0001479C",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001479C"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000A003"
+              ]
+            }
+          },
+          {
+            "pc": "0001479C",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000147A6"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "0001479E",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001479E"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00006463"
+              ]
+            }
+          },
+          {
+            "pc": "000147A6",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000147A6"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000D318"
+              ]
+            }
+          },
+          {
+            "pc": "000147A6",
+            "mode": "read",
+            "size": 4,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014808"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "FFFF4BC0"
+              ]
+            }
+          },
+          {
+            "pc": "000147A8",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000147A8"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000000B"
+              ]
+            }
+          },
+          {
+            "pc": "000147A8",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFFFFFC"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "000147AA",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000147AA"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00002340"
+              ]
+            }
+          },
+          {
+            "pc": "000147AA",
+            "mode": "write",
+            "size": 1,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFF4BC0"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000040"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "range_low",
+      "version": "replacement",
+      "inclusion": {
+        "status": "PASS",
+        "checked": {
+          "memory_events": 14,
+          "branch_edges": 8,
+          "fetches": 41
+        },
+        "failures": []
+      },
+      "analysis": {
+        "schema": 1,
+        "rom": {
+          "source": "C:\\Dev\\SubaruRoms\\OEM\\A2WC511R.bin",
+          "sha256": "23988a669ae82a61a2db9b1ea93d31b62ad6c67403d2d48be02d1402a31f7f43",
+          "base_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+          "overlays": [
+            [
+              "00004260",
+              "20082f2689142f362f46e2002127333a312a2307e22041243304042942108ffa44214124312e601364f663f6000b62f6d102d203e0002122000b62f6ffff130c0000044e",
+              "M07 experimental semantic replacement division"
+            ],
+            [
+              "0001473C",
+              "970e2059e30833028900880fd402044c644cd302000b23400001475effff4bc000800001020408102040808080808080800f0009",
+              "M07 experimental semantic replacement range_tail"
+            ]
+          ],
+          "size": 1048576
+        },
+        "steps": 41,
+        "states": 42,
+        "run_started": true,
+        "seed_count": 1,
+        "worklist_complete": true,
+        "global_exclusion_gate": "PASS",
+        "contract": "Global means only explicit seeds/initial-state/hardware assumptions. Whole-firmware acceptance additionally requires exhaustive entry/hardware manifests.",
+        "unknowns": [],
+        "decoded": {
+          "mov_imm": 5,
+          "movl_pc": 4,
+          "movb_load": 4,
+          "extub": 2,
+          "mov_reg": 1,
+          "tst_reg": 3,
+          "bf_s": 3,
+          "nop": 3,
+          "and_imm": 3,
+          "bra": 3,
+          "movb_store": 4,
+          "movw_pc": 1,
+          "and_reg": 1,
+          "cmphs": 1,
+          "bt": 1,
+          "movb_indexed_load": 1,
+          "rts": 1
+        },
+        "observations": [
+          {
+            "pc": "0001466E",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001466E"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000E640"
+              ]
+            }
+          },
+          {
+            "pc": "00014670",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014670"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000D42F"
+              ]
+            }
+          },
+          {
+            "pc": "00014670",
+            "mode": "read",
+            "size": 4,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014730"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "FFFF4BA4"
+              ]
+            }
+          },
+          {
+            "pc": "00014672",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014672"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000D32E"
+              ]
+            }
+          },
+          {
+            "pc": "00014672",
+            "mode": "read",
+            "size": 4,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001472C"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "FFFF4C8C"
+              ]
+            }
+          },
+          {
+            "pc": "00014674",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014674"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00006730"
+              ]
+            }
+          },
+          {
+            "pc": "00014674",
+            "mode": "read",
+            "size": 1,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFF4C8C"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000007"
+              ]
+            }
+          },
+          {
+            "pc": "00014676",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014676"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000657C"
+              ]
+            }
+          },
+          {
+            "pc": "00014678",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014678"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00006253"
+              ]
+            }
+          },
+          {
+            "pc": "0001467A",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001467A"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00002268"
+              ]
+            }
+          },
+          {
+            "pc": "0001467C",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001467C"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00008F04"
+              ]
+            }
+          },
+          {
+            "pc": "0001467C",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001467E"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "0001467E",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001467E"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000009"
+              ]
+            }
+          },
+          {
+            "pc": "00014680",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014680"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00006040"
+              ]
+            }
+          },
+          {
+            "pc": "00014680",
+            "mode": "read",
+            "size": 1,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFF4BA4"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "000000FF"
+              ]
+            }
+          },
+          {
+            "pc": "00014682",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014682"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000C9DF"
+              ]
+            }
+          },
+          {
+            "pc": "00014684",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014684"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000A003"
+              ]
+            }
+          },
+          {
+            "pc": "00014684",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001468E"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "00014686",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014686"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00002400"
+              ]
+            }
+          },
+          {
+            "pc": "00014686",
+            "mode": "write",
+            "size": 1,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFF4BA4"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "000000DF"
+              ]
+            }
+          },
+          {
+            "pc": "0001468E",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001468E"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000E320"
+              ]
+            }
+          },
+          {
+            "pc": "00014690",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014690"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00002358"
+              ]
+            }
+          },
+          {
+            "pc": "00014692",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014692"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00008F04"
+              ]
+            }
+          },
+          {
+            "pc": "00014692",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014694"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "00014694",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014694"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000009"
+              ]
+            }
+          },
+          {
+            "pc": "00014696",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014696"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00006040"
+              ]
+            }
+          },
+          {
+            "pc": "00014696",
+            "mode": "read",
+            "size": 1,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFF4BA4"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "000000DF"
+              ]
+            }
+          },
+          {
+            "pc": "00014698",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014698"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000C9BF"
+              ]
+            }
+          },
+          {
+            "pc": "0001469A",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001469A"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000A003"
+              ]
+            }
+          },
+          {
+            "pc": "0001469A",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000146A4"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "0001469C",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001469C"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00002400"
+              ]
+            }
+          },
+          {
+            "pc": "0001469C",
+            "mode": "write",
+            "size": 1,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFF4BA4"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000009F"
+              ]
+            }
+          },
+          {
+            "pc": "000146A4",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000146A4"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000E210"
+              ]
+            }
+          },
+          {
+            "pc": "000146A6",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000146A6"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00002258"
+              ]
+            }
+          },
+          {
+            "pc": "000146A8",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000146A8"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00008F44"
+              ]
+            }
+          },
+          {
+            "pc": "000146A8",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000146AA"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "000146AA",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000146AA"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000009"
+              ]
+            }
+          },
+          {
+            "pc": "000146AC",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000146AC"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00006040"
+              ]
+            }
+          },
+          {
+            "pc": "000146AC",
+            "mode": "read",
+            "size": 1,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFF4BA4"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000009F"
+              ]
+            }
+          },
+          {
+            "pc": "000146AE",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000146AE"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000C97F"
+              ]
+            }
+          },
+          {
+            "pc": "000146B0",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000146B0"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000A043"
+              ]
+            }
+          },
+          {
+            "pc": "000146B0",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001473A"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "000146B2",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000146B2"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00002400"
+              ]
+            }
+          },
+          {
+            "pc": "000146B2",
+            "mode": "write",
+            "size": 1,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFF4BA4"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000001F"
+              ]
+            }
+          },
+          {
+            "pc": "0001473A",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001473A"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000E00F"
+              ]
+            }
+          },
+          {
+            "pc": "0001473C",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001473C"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000970E"
+              ]
+            }
+          },
+          {
+            "pc": "0001473C",
+            "mode": "read",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001475C"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000080"
+              ]
+            }
+          },
+          {
+            "pc": "0001473E",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001473E"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00002059"
+              ]
+            }
+          },
+          {
+            "pc": "00014740",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014740"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000E308"
+              ]
+            }
+          },
+          {
+            "pc": "00014742",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014742"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00003302"
+              ]
+            }
+          },
+          {
+            "pc": "00014744",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014744"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00008900"
+              ]
+            }
+          },
+          {
+            "pc": "00014744",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014748"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "00014748",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014748"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000D402"
+              ]
+            }
+          },
+          {
+            "pc": "00014748",
+            "mode": "read",
+            "size": 4,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014754"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0001475E"
+              ]
+            }
+          },
+          {
+            "pc": "0001474A",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001474A"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000044C"
+              ]
+            }
+          },
+          {
+            "pc": "0001474A",
+            "mode": "read",
+            "size": 1,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014765"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000040"
+              ]
+            }
+          },
+          {
+            "pc": "0001474C",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001474C"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000644C"
+              ]
+            }
+          },
+          {
+            "pc": "0001474E",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001474E"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000D302"
+              ]
+            }
+          },
+          {
+            "pc": "0001474E",
+            "mode": "read",
+            "size": 4,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014758"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "FFFF4BC0"
+              ]
+            }
+          },
+          {
+            "pc": "00014750",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014750"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000000B"
+              ]
+            }
+          },
+          {
+            "pc": "00014750",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFFFFFC"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "00014752",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014752"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00002340"
+              ]
+            }
+          },
+          {
+            "pc": "00014752",
+            "mode": "write",
+            "size": 1,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFF4BC0"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000040"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "range_invalid",
+      "version": "stock",
+      "inclusion": {
+        "status": "PASS",
+        "checked": {
+          "memory_events": 12,
+          "branch_edges": 16,
+          "fetches": 66
+        },
+        "failures": []
+      },
+      "analysis": {
+        "schema": 1,
+        "rom": {
+          "source": "C:\\Dev\\SubaruRoms\\OEM\\A2WC511R.bin",
+          "sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+          "base_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+          "overlays": [],
+          "size": 1048576
+        },
+        "steps": 66,
+        "states": 67,
+        "run_started": true,
+        "seed_count": 1,
+        "worklist_complete": true,
+        "global_exclusion_gate": "PASS",
+        "contract": "Global means only explicit seeds/initial-state/hardware assumptions. Whole-firmware acceptance additionally requires exhaustive entry/hardware manifests.",
+        "unknowns": [],
+        "decoded": {
+          "mov_imm": 4,
+          "movl_pc": 3,
+          "movb_load": 4,
+          "extub": 1,
+          "mov_reg": 2,
+          "tst_reg": 3,
+          "bf_s": 3,
+          "nop": 14,
+          "or_imm": 2,
+          "movb_store": 4,
+          "and_imm": 1,
+          "bra": 2,
+          "movw_pc": 1,
+          "and_reg": 1,
+          "cmpeq_imm": 10,
+          "bt_s": 10,
+          "rts": 1
+        },
+        "observations": [
+          {
+            "pc": "0001466E",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001466E"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000E640"
+              ]
+            }
+          },
+          {
+            "pc": "00014670",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014670"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000D42F"
+              ]
+            }
+          },
+          {
+            "pc": "00014670",
+            "mode": "read",
+            "size": 4,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014730"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "FFFF4BA4"
+              ]
+            }
+          },
+          {
+            "pc": "00014672",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014672"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000D32E"
+              ]
+            }
+          },
+          {
+            "pc": "00014672",
+            "mode": "read",
+            "size": 4,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001472C"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "FFFF4C8C"
+              ]
+            }
+          },
+          {
+            "pc": "00014674",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014674"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00006730"
+              ]
+            }
+          },
+          {
+            "pc": "00014674",
+            "mode": "read",
+            "size": 1,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFF4C8C"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "000000EA"
+              ]
+            }
+          },
+          {
+            "pc": "00014676",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014676"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000657C"
+              ]
+            }
+          },
+          {
+            "pc": "00014678",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014678"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00006253"
+              ]
+            }
+          },
+          {
+            "pc": "0001467A",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001467A"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00002268"
+              ]
+            }
+          },
+          {
+            "pc": "0001467C",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001467C"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00008F04"
+              ]
+            }
+          },
+          {
+            "pc": "0001467C",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014688"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "0001467E",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001467E"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000009"
+              ]
+            }
+          },
+          {
+            "pc": "00014688",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014688"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00006040"
+              ]
+            }
+          },
+          {
+            "pc": "00014688",
+            "mode": "read",
+            "size": 1,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFF4BA4"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000055"
+              ]
+            }
+          },
+          {
+            "pc": "0001468A",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001468A"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000CB20"
+              ]
+            }
+          },
+          {
+            "pc": "0001468C",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001468C"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00002400"
+              ]
+            }
+          },
+          {
+            "pc": "0001468C",
+            "mode": "write",
+            "size": 1,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFF4BA4"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000075"
+              ]
+            }
+          },
+          {
+            "pc": "0001468E",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001468E"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000E320"
+              ]
+            }
+          },
+          {
+            "pc": "00014690",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014690"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00002358"
+              ]
+            }
+          },
+          {
+            "pc": "00014692",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014692"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00008F04"
+              ]
+            }
+          },
+          {
+            "pc": "00014692",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001469E"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "00014694",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014694"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000009"
+              ]
+            }
+          },
+          {
+            "pc": "0001469E",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001469E"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00006040"
+              ]
+            }
+          },
+          {
+            "pc": "0001469E",
+            "mode": "read",
+            "size": 1,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFF4BA4"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000075"
+              ]
+            }
+          },
+          {
+            "pc": "000146A0",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000146A0"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000CB40"
+              ]
+            }
+          },
+          {
+            "pc": "000146A2",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000146A2"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00002400"
+              ]
+            }
+          },
+          {
+            "pc": "000146A2",
+            "mode": "write",
+            "size": 1,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFF4BA4"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000075"
+              ]
+            }
+          },
+          {
+            "pc": "000146A4",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000146A4"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000E210"
+              ]
+            }
+          },
+          {
+            "pc": "000146A6",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000146A6"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00002258"
+              ]
+            }
+          },
+          {
+            "pc": "000146A8",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000146A8"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00008F44"
+              ]
+            }
+          },
+          {
+            "pc": "000146A8",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000146AA"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "000146AA",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000146AA"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000009"
+              ]
+            }
+          },
+          {
+            "pc": "000146AC",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000146AC"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00006040"
+              ]
+            }
+          },
+          {
+            "pc": "000146AC",
+            "mode": "read",
+            "size": 1,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFF4BA4"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000075"
+              ]
+            }
+          },
+          {
+            "pc": "000146AE",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000146AE"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000C97F"
+              ]
+            }
+          },
+          {
+            "pc": "000146B0",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000146B0"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000A043"
+              ]
+            }
+          },
+          {
+            "pc": "000146B0",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001473A"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "000146B2",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000146B2"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00002400"
+              ]
+            }
+          },
+          {
+            "pc": "000146B2",
+            "mode": "write",
+            "size": 1,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFF4BA4"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000075"
+              ]
+            }
+          },
+          {
+            "pc": "0001473A",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001473A"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000E00F"
+              ]
+            }
+          },
+          {
+            "pc": "0001473C",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001473C"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00009761"
+              ]
+            }
+          },
+          {
+            "pc": "0001473C",
+            "mode": "read",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014802"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000080"
+              ]
+            }
+          },
+          {
+            "pc": "0001473E",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001473E"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00002059"
+              ]
+            }
+          },
+          {
+            "pc": "00014740",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014740"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00008800"
+              ]
+            }
+          },
+          {
+            "pc": "00014742",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014742"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00008D1D"
+              ]
+            }
+          },
+          {
+            "pc": "00014742",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014744"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "00014744",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014744"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000009"
+              ]
+            }
+          },
+          {
+            "pc": "00014746",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014746"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00008801"
+              ]
+            }
+          },
+          {
+            "pc": "00014748",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014748"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00008D1C"
+              ]
+            }
+          },
+          {
+            "pc": "00014748",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001474A"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "0001474A",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001474A"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000009"
+              ]
+            }
+          },
+          {
+            "pc": "0001474C",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001474C"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00008802"
+              ]
+            }
+          },
+          {
+            "pc": "0001474E",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001474E"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00008D1B"
+              ]
+            }
+          },
+          {
+            "pc": "0001474E",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014750"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "00014750",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014750"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000009"
+              ]
+            }
+          },
+          {
+            "pc": "00014752",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014752"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00008803"
+              ]
+            }
+          },
+          {
+            "pc": "00014754",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014754"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00008D1A"
+              ]
+            }
+          },
+          {
+            "pc": "00014754",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014756"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "00014756",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014756"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000009"
+              ]
+            }
+          },
+          {
+            "pc": "00014758",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014758"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00008804"
+              ]
+            }
+          },
+          {
+            "pc": "0001475A",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001475A"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00008D19"
+              ]
+            }
+          },
+          {
+            "pc": "0001475A",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001475C"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "0001475C",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001475C"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000009"
+              ]
+            }
+          },
+          {
+            "pc": "0001475E",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001475E"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00008805"
+              ]
+            }
+          },
+          {
+            "pc": "00014760",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014760"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00008D18"
+              ]
+            }
+          },
+          {
+            "pc": "00014760",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014762"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "00014762",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014762"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000009"
+              ]
+            }
+          },
+          {
+            "pc": "00014764",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014764"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00008806"
+              ]
+            }
+          },
+          {
+            "pc": "00014766",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014766"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00008D17"
+              ]
+            }
+          },
+          {
+            "pc": "00014766",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014768"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "00014768",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014768"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000009"
+              ]
+            }
+          },
+          {
+            "pc": "0001476A",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001476A"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00008807"
+              ]
+            }
+          },
+          {
+            "pc": "0001476C",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001476C"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00008D16"
+              ]
+            }
+          },
+          {
+            "pc": "0001476C",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001476E"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "0001476E",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001476E"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000009"
+              ]
+            }
+          },
+          {
+            "pc": "00014770",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014770"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00008808"
+              ]
+            }
+          },
+          {
+            "pc": "00014772",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014772"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00008D17"
+              ]
+            }
+          },
+          {
+            "pc": "00014772",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014774"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "00014774",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014774"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000009"
+              ]
+            }
+          },
+          {
+            "pc": "00014776",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014776"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000880F"
+              ]
+            }
+          },
+          {
+            "pc": "00014778",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014778"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00008D12"
+              ]
+            }
+          },
+          {
+            "pc": "00014778",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001477A"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "0001477A",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001477A"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000009"
+              ]
+            }
+          },
+          {
+            "pc": "0001477C",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001477C"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000A012"
+              ]
+            }
+          },
+          {
+            "pc": "0001477C",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000147A4"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "0001477E",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001477E"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000009"
+              ]
+            }
+          },
+          {
+            "pc": "000147A4",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000147A4"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00006473"
+              ]
+            }
+          },
+          {
+            "pc": "000147A6",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000147A6"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000D318"
+              ]
+            }
+          },
+          {
+            "pc": "000147A6",
+            "mode": "read",
+            "size": 4,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014808"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "FFFF4BC0"
+              ]
+            }
+          },
+          {
+            "pc": "000147A8",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000147A8"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000000B"
+              ]
+            }
+          },
+          {
+            "pc": "000147A8",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFFFFFC"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "000147AA",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000147AA"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00002340"
+              ]
+            }
+          },
+          {
+            "pc": "000147AA",
+            "mode": "write",
+            "size": 1,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFF4BC0"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000080"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "range_invalid",
+      "version": "replacement",
+      "inclusion": {
+        "status": "PASS",
+        "checked": {
+          "memory_events": 14,
+          "branch_edges": 6,
+          "fetches": 40
+        },
+        "failures": []
+      },
+      "analysis": {
+        "schema": 1,
+        "rom": {
+          "source": "C:\\Dev\\SubaruRoms\\OEM\\A2WC511R.bin",
+          "sha256": "23988a669ae82a61a2db9b1ea93d31b62ad6c67403d2d48be02d1402a31f7f43",
+          "base_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+          "overlays": [
+            [
+              "00004260",
+              "20082f2689142f362f46e2002127333a312a2307e22041243304042942108ffa44214124312e601364f663f6000b62f6d102d203e0002122000b62f6ffff130c0000044e",
+              "M07 experimental semantic replacement division"
+            ],
+            [
+              "0001473C",
+              "970e2059e30833028900880fd402044c644cd302000b23400001475effff4bc000800001020408102040808080808080800f0009",
+              "M07 experimental semantic replacement range_tail"
+            ]
+          ],
+          "size": 1048576
+        },
+        "steps": 40,
+        "states": 41,
+        "run_started": true,
+        "seed_count": 1,
+        "worklist_complete": true,
+        "global_exclusion_gate": "PASS",
+        "contract": "Global means only explicit seeds/initial-state/hardware assumptions. Whole-firmware acceptance additionally requires exhaustive entry/hardware manifests.",
+        "unknowns": [],
+        "decoded": {
+          "mov_imm": 5,
+          "movl_pc": 4,
+          "movb_load": 4,
+          "extub": 2,
+          "mov_reg": 1,
+          "tst_reg": 3,
+          "bf_s": 3,
+          "nop": 3,
+          "or_imm": 2,
+          "movb_store": 4,
+          "and_imm": 1,
+          "bra": 1,
+          "movw_pc": 1,
+          "and_reg": 1,
+          "cmphs": 1,
+          "bt": 1,
+          "cmpeq_imm": 1,
+          "movb_indexed_load": 1,
+          "rts": 1
+        },
+        "observations": [
+          {
+            "pc": "0001466E",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001466E"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000E640"
+              ]
+            }
+          },
+          {
+            "pc": "00014670",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014670"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000D42F"
+              ]
+            }
+          },
+          {
+            "pc": "00014670",
+            "mode": "read",
+            "size": 4,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014730"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "FFFF4BA4"
+              ]
+            }
+          },
+          {
+            "pc": "00014672",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014672"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000D32E"
+              ]
+            }
+          },
+          {
+            "pc": "00014672",
+            "mode": "read",
+            "size": 4,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001472C"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "FFFF4C8C"
+              ]
+            }
+          },
+          {
+            "pc": "00014674",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014674"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00006730"
+              ]
+            }
+          },
+          {
+            "pc": "00014674",
+            "mode": "read",
+            "size": 1,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFF4C8C"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "000000EA"
+              ]
+            }
+          },
+          {
+            "pc": "00014676",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014676"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000657C"
+              ]
+            }
+          },
+          {
+            "pc": "00014678",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014678"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00006253"
+              ]
+            }
+          },
+          {
+            "pc": "0001467A",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001467A"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00002268"
+              ]
+            }
+          },
+          {
+            "pc": "0001467C",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001467C"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00008F04"
+              ]
+            }
+          },
+          {
+            "pc": "0001467C",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014688"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "0001467E",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001467E"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000009"
+              ]
+            }
+          },
+          {
+            "pc": "00014688",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014688"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00006040"
+              ]
+            }
+          },
+          {
+            "pc": "00014688",
+            "mode": "read",
+            "size": 1,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFF4BA4"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000055"
+              ]
+            }
+          },
+          {
+            "pc": "0001468A",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001468A"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000CB20"
+              ]
+            }
+          },
+          {
+            "pc": "0001468C",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001468C"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00002400"
+              ]
+            }
+          },
+          {
+            "pc": "0001468C",
+            "mode": "write",
+            "size": 1,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFF4BA4"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000075"
+              ]
+            }
+          },
+          {
+            "pc": "0001468E",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001468E"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000E320"
+              ]
+            }
+          },
+          {
+            "pc": "00014690",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014690"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00002358"
+              ]
+            }
+          },
+          {
+            "pc": "00014692",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014692"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00008F04"
+              ]
+            }
+          },
+          {
+            "pc": "00014692",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001469E"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "00014694",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014694"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000009"
+              ]
+            }
+          },
+          {
+            "pc": "0001469E",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001469E"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00006040"
+              ]
+            }
+          },
+          {
+            "pc": "0001469E",
+            "mode": "read",
+            "size": 1,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFF4BA4"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000075"
+              ]
+            }
+          },
+          {
+            "pc": "000146A0",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000146A0"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000CB40"
+              ]
+            }
+          },
+          {
+            "pc": "000146A2",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000146A2"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00002400"
+              ]
+            }
+          },
+          {
+            "pc": "000146A2",
+            "mode": "write",
+            "size": 1,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFF4BA4"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000075"
+              ]
+            }
+          },
+          {
+            "pc": "000146A4",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000146A4"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000E210"
+              ]
+            }
+          },
+          {
+            "pc": "000146A6",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000146A6"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00002258"
+              ]
+            }
+          },
+          {
+            "pc": "000146A8",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000146A8"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00008F44"
+              ]
+            }
+          },
+          {
+            "pc": "000146A8",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000146AA"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "000146AA",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000146AA"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000009"
+              ]
+            }
+          },
+          {
+            "pc": "000146AC",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000146AC"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00006040"
+              ]
+            }
+          },
+          {
+            "pc": "000146AC",
+            "mode": "read",
+            "size": 1,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFF4BA4"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000075"
+              ]
+            }
+          },
+          {
+            "pc": "000146AE",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000146AE"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000C97F"
+              ]
+            }
+          },
+          {
+            "pc": "000146B0",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000146B0"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000A043"
+              ]
+            }
+          },
+          {
+            "pc": "000146B0",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001473A"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "000146B2",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "000146B2"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00002400"
+              ]
+            }
+          },
+          {
+            "pc": "000146B2",
+            "mode": "write",
+            "size": 1,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFF4BA4"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000075"
+              ]
+            }
+          },
+          {
+            "pc": "0001473A",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001473A"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000E00F"
+              ]
+            }
+          },
+          {
+            "pc": "0001473C",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001473C"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000970E"
+              ]
+            }
+          },
+          {
+            "pc": "0001473C",
+            "mode": "read",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001475C"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000080"
+              ]
+            }
+          },
+          {
+            "pc": "0001473E",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001473E"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00002059"
+              ]
+            }
+          },
+          {
+            "pc": "00014740",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014740"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000E308"
+              ]
+            }
+          },
+          {
+            "pc": "00014742",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014742"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00003302"
+              ]
+            }
+          },
+          {
+            "pc": "00014744",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014744"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00008900"
+              ]
+            }
+          },
+          {
+            "pc": "00014744",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014746"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "00014746",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014746"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000880F"
+              ]
+            }
+          },
+          {
+            "pc": "00014748",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014748"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000D402"
+              ]
+            }
+          },
+          {
+            "pc": "00014748",
+            "mode": "read",
+            "size": 4,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014754"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0001475E"
+              ]
+            }
+          },
+          {
+            "pc": "0001474A",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001474A"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000044C"
+              ]
+            }
+          },
+          {
+            "pc": "0001474A",
+            "mode": "read",
+            "size": 1,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014768"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000080"
+              ]
+            }
+          },
+          {
+            "pc": "0001474C",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001474C"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000644C"
+              ]
+            }
+          },
+          {
+            "pc": "0001474E",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "0001474E"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000D302"
+              ]
+            }
+          },
+          {
+            "pc": "0001474E",
+            "mode": "read",
+            "size": 4,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014758"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "FFFF4BC0"
+              ]
+            }
+          },
+          {
+            "pc": "00014750",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014750"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "0000000B"
+              ]
+            }
+          },
+          {
+            "pc": "00014750",
+            "mode": "target",
+            "size": 0,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFFFFFC"
+              ]
+            },
+            "value": {
+              "kind": "top",
+              "values": []
+            }
+          },
+          {
+            "pc": "00014752",
+            "mode": "fetch",
+            "size": 2,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "00014752"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00002340"
+              ]
+            }
+          },
+          {
+            "pc": "00014752",
+            "mode": "write",
+            "size": 1,
+            "addresses": {
+              "kind": "set",
+              "values": [
+                "FFFF4BC0"
+              ]
+            },
+            "value": {
+              "kind": "set",
+              "values": [
+                "00000080"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "negative_controls": [
+    {
+      "name": "omitted_loop_T_save",
+      "detected": true,
+      "failure": "('architectural_state', 'r', [4115, 4115, 57266229, 76354972, 95443715, 114532458, 133621201, 152709944, 171798687, 190887430, 209976173, 229064916, 248153659, 267242402, 286331145, 4294950816], [3235515808, 3235515808, 57266229, 76354972, 95443715, 114532458, 133621201, 152709944, 171798687, 190887430, 209976173, 229064916, 248153659, 267242402, 286331145, 4294950816])"
+    },
+    {
+      "name": "corrupted_range_mapping",
+      "detected": true,
+      "failure": "('architectural_state', 'r', [7, 38177486, 16, 4294921152, 64, 7, 64, 128, 171798687, 190887430, 209976173, 229064916, 248153659, 267242402, 286331145, 4294950816], [7, 38177486, 16, 4294921152, 65, 7, 64, 128, 171798687, 190887430, 209976173, 229064916, 248153659, 267242402, 286331145, 4294950816])"
+    },
+    {
+      "name": "missing_extra_four_stack_bytes",
+      "detected": true,
+      "failure": "Stack pointer outside declared aligned bounds: 0xffffbf94"
+    }
+  ],
+  "interpretation": "Concrete observed accesses and targets lie inside modeled predictions for these explicit fixtures. Any abstraction unknown or cutoff blocks that contract exclusion; this is not whole-firmware ownership.",
+  "source_sha256": "b80b8e700d3f18ce714dfd53bcef4704033a720257882b744fbae4da033b968a",
+  "abstract_source_sha256": "227f6aed76def57ac9551d35367f748f8205b8e5691b47109511a7bf20dcd74b"
+}

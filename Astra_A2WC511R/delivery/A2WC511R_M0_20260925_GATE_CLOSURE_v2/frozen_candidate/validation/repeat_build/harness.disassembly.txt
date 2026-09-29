@@ -1,0 +1,461 @@
+
+C:\Dev\Astra_A2WC511R\work\builds\m0_final_repeat_06\A2WC511R_DiagnosticM0.EXPERIMENTAL_UNAPPROVED.elf:     file format elf32-sh
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .m0           00000364  000e1000  000e1000  00000080  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+SYMBOL TABLE:
+000e1000 l    d  .m0	00000000 .m0
+00000000 l    df *ABS*	00000000 Diagnostic.c
+00000000 l    df *ABS*	00000000 Bindings.c
+00000000 l    df *ABS*	00000000 Identifier.c
+00000000 l    df *ABS*	00000000 
+000e1114 g     F .m0	0000012c _m0_observe
+000e10bc g     F .m0	00000058 _m0_init
+000e1240 g     F .m0	0000009c _m0_sample_hardware
+000e1000 g     F .m0	0000001a _m0_decode
+000e12dc g       .m0	00000000 _m0_decoder_hook
+000e101c g     F .m0	0000009e _m0_reasons
+ffff7400 g       *ABS*	00000000 _m0_state
+000e1348 g     O .m0	0000001c _m0_identifier
+
+
+
+Disassembly of section .m0:
+
+000e1000 <_m0_decode>:
+   e1000:	60 4c       	extu.b	r4,r0
+   e1002:	e1 07       	mov	#7,r1
+   e1004:	30 16       	cmp/hi	r1,r0
+   e1006:	8f 06       	bf.s	e1016 <_m0_decode+0x16>
+   e1008:	65 5c       	extu.b	r5,r5
+   e100a:	88 08       	cmp/eq	#8,r0
+   e100c:	8f 02       	bf.s	e1014 <_m0_decode+0x14>
+   e100e:	00 09       	nop	
+   e1010:	00 0b       	rts	
+   e1012:	e0 00       	mov	#0,r0
+   e1014:	60 53       	mov	r5,r0
+   e1016:	00 0b       	rts	
+   e1018:	00 09       	nop	
+   e101a:	00 09       	nop	
+
+000e101c <_m0_reasons>:
+   e101c:	61 43       	mov	r4,r1
+   e101e:	71 01       	add	#1,r1
+   e1020:	61 10       	mov.b	@r1,r1
+   e1022:	61 1c       	extu.b	r1,r1
+   e1024:	60 13       	mov	r1,r0
+   e1026:	88 11       	cmp/eq	#17,r0
+   e1028:	8f 03       	bf.s	e1032 <_m0_reasons+0x16>
+   e102a:	62 43       	mov	r4,r2
+   e102c:	97 41       	mov.w	e10b2 <_m0_reasons+0x96>,r7	! 200
+   e102e:	a0 02       	bra	e1036 <_m0_reasons+0x1a>
+   e1030:	72 02       	add	#2,r2
+   e1032:	97 3f       	mov.w	e10b4 <_m0_reasons+0x98>,r7	! 201
+   e1034:	72 02       	add	#2,r2
+   e1036:	62 20       	mov.b	@r2,r2
+   e1038:	60 23       	mov	r2,r0
+   e103a:	88 01       	cmp/eq	#1,r0
+   e103c:	8d 01       	bt.s	e1042 <_m0_reasons+0x26>
+   e103e:	e2 02       	mov	#2,r2
+   e1040:	27 2b       	or	r2,r7
+   e1042:	62 43       	mov	r4,r2
+   e1044:	72 03       	add	#3,r2
+   e1046:	62 20       	mov.b	@r2,r2
+   e1048:	60 23       	mov	r2,r0
+   e104a:	c8 02       	tst	#2,r0
+   e104c:	8f 03       	bf.s	e1056 <_m0_reasons+0x3a>
+   e104e:	62 43       	mov	r4,r2
+   e1050:	e2 04       	mov	#4,r2
+   e1052:	27 2b       	or	r2,r7
+   e1054:	62 43       	mov	r4,r2
+   e1056:	72 04       	add	#4,r2
+   e1058:	62 20       	mov.b	@r2,r2
+   e105a:	62 2c       	extu.b	r2,r2
+   e105c:	22 28       	tst	r2,r2
+   e105e:	8f 03       	bf.s	e1068 <_m0_reasons+0x4c>
+   e1060:	60 23       	mov	r2,r0
+   e1062:	e3 08       	mov	#8,r3
+   e1064:	a0 09       	bra	e107a <_m0_reasons+0x5e>
+   e1066:	27 3b       	or	r3,r7
+   e1068:	88 02       	cmp/eq	#2,r0
+   e106a:	8f 02       	bf.s	e1072 <_m0_reasons+0x56>
+   e106c:	60 23       	mov	r2,r0
+   e106e:	a0 03       	bra	e1078 <_m0_reasons+0x5c>
+   e1070:	e2 10       	mov	#16,r2
+   e1072:	88 01       	cmp/eq	#1,r0
+   e1074:	8d 01       	bt.s	e107a <_m0_reasons+0x5e>
+   e1076:	e2 40       	mov	#64,r2
+   e1078:	27 2b       	or	r2,r7
+   e107a:	62 40       	mov.b	@r4,r2
+   e107c:	62 2c       	extu.b	r2,r2
+   e107e:	32 10       	cmp/eq	r1,r2
+   e1080:	8d 01       	bt.s	e1086 <_m0_reasons+0x6a>
+   e1082:	e3 20       	mov	#32,r3
+   e1084:	27 3b       	or	r3,r7
+   e1086:	63 13       	mov	r1,r3
+   e1088:	43 09       	shlr2	r3
+   e108a:	43 09       	shlr2	r3
+   e108c:	e2 08       	mov	#8,r2
+   e108e:	33 26       	cmp/hi	r2,r3
+   e1090:	8d 04       	bt.s	e109c <_m0_reasons+0x80>
+   e1092:	e0 0f       	mov	#15,r0
+   e1094:	21 09       	and	r0,r1
+   e1096:	31 26       	cmp/hi	r2,r1
+   e1098:	8f 02       	bf.s	e10a0 <_m0_reasons+0x84>
+   e109a:	00 09       	nop	
+   e109c:	91 0b       	mov.w	e10b6 <_m0_reasons+0x9a>,r1	! 80
+   e109e:	27 1b       	or	r1,r7
+   e10a0:	74 05       	add	#5,r4
+   e10a2:	61 40       	mov.b	@r4,r1
+   e10a4:	21 18       	tst	r1,r1
+   e10a6:	8d 02       	bt.s	e10ae <_m0_reasons+0x92>
+   e10a8:	00 09       	nop	
+   e10aa:	91 05       	mov.w	e10b8 <_m0_reasons+0x9c>,r1	! 100
+   e10ac:	27 1b       	or	r1,r7
+   e10ae:	00 0b       	rts	
+   e10b0:	60 73       	mov	r7,r0
+   e10b2:	02 00       	.word 0x0200
+   e10b4:	02 01       	.word 0x0201
+   e10b6:	00 80       	.word 0x0080
+   e10b8:	01 00       	.word 0x0100
+   e10ba:	00 09       	nop	
+
+000e10bc <_m0_init>:
+   e10bc:	52 41       	mov.l	@(4,r4),r2
+   e10be:	d1 14       	mov.l	e1110 <_m0_init+0x54>,r1	! 4d304431
+   e10c0:	32 10       	cmp/eq	r1,r2
+   e10c2:	8f 0c       	bf.s	e10de <_m0_init+0x22>
+   e10c4:	e1 00       	mov	#0,r1
+   e10c6:	61 43       	mov	r4,r1
+   e10c8:	71 1e       	add	#30,r1
+   e10ca:	60 10       	mov.b	@r1,r0
+   e10cc:	60 0c       	extu.b	r0,r0
+   e10ce:	88 01       	cmp/eq	#1,r0
+   e10d0:	8f 04       	bf.s	e10dc <_m0_init+0x20>
+   e10d2:	00 09       	nop	
+   e10d4:	61 42       	mov.l	@r4,r1
+   e10d6:	e2 fe       	mov	#-2,r2
+   e10d8:	a0 01       	bra	e10de <_m0_init+0x22>
+   e10da:	21 29       	and	r2,r1
+   e10dc:	e1 00       	mov	#0,r1
+   e10de:	62 13       	mov	r1,r2
+   e10e0:	72 01       	add	#1,r2
+   e10e2:	24 22       	mov.l	r2,@r4
+   e10e4:	e3 04       	mov	#4,r3
+   e10e6:	e6 00       	mov	#0,r6
+   e10e8:	e2 1c       	mov	#28,r2
+   e10ea:	67 43       	mov	r4,r7
+   e10ec:	37 3c       	add	r3,r7
+   e10ee:	27 60       	mov.b	r6,@r7
+   e10f0:	42 10       	dt	r2
+   e10f2:	8f fa       	bf.s	e10ea <_m0_init+0x2e>
+   e10f4:	73 01       	add	#1,r3
+   e10f6:	d2 06       	mov.l	e1110 <_m0_init+0x54>,r2	! 4d304431
+   e10f8:	e3 01       	mov	#1,r3
+   e10fa:	71 02       	add	#2,r1
+   e10fc:	14 21       	mov.l	r2,@(4,r4)
+   e10fe:	92 06       	mov.w	e110e <_m0_init+0x52>,r2	! 208
+   e1100:	14 23       	mov.l	r2,@(12,r4)
+   e1102:	62 43       	mov	r4,r2
+   e1104:	72 1e       	add	#30,r2
+   e1106:	22 30       	mov.b	r3,@r2
+   e1108:	24 12       	mov.l	r1,@r4
+   e110a:	00 0b       	rts	
+   e110c:	00 09       	nop	
+   e110e:	02 08       	.word 0x0208
+   e1110:	4d 30       	.word 0x4d30
+   e1112:	44 31       	.word 0x4431
+
+000e1114 <_m0_observe>:
+   e1114:	2f 86       	mov.l	r8,@-r15
+   e1116:	62 53       	mov	r5,r2
+   e1118:	2f 96       	mov.l	r9,@-r15
+   e111a:	72 01       	add	#1,r2
+   e111c:	2f a6       	mov.l	r10,@-r15
+   e111e:	ea 0f       	mov	#15,r10
+   e1120:	2f b6       	mov.l	r11,@-r15
+   e1122:	68 43       	mov	r4,r8
+   e1124:	2f c6       	mov.l	r12,@-r15
+   e1126:	69 53       	mov	r5,r9
+   e1128:	4f 22       	sts.l	pr,@-r15
+   e112a:	60 20       	mov.b	@r2,r0
+   e112c:	61 42       	mov.l	@r4,r1
+   e112e:	60 0c       	extu.b	r0,r0
+   e1130:	53 41       	mov.l	@(4,r4),r3
+   e1132:	6b 03       	mov	r0,r11
+   e1134:	d2 3f       	mov.l	e1234 <_m0_observe+0x120>,r2	! 4d304431
+   e1136:	4b 09       	shlr2	r11
+   e1138:	4b 09       	shlr2	r11
+   e113a:	33 20       	cmp/eq	r2,r3
+   e113c:	8f 07       	bf.s	e114e <_m0_observe+0x3a>
+   e113e:	2a 09       	and	r0,r10
+   e1140:	62 43       	mov	r4,r2
+   e1142:	72 1e       	add	#30,r2
+   e1144:	60 20       	mov.b	@r2,r0
+   e1146:	60 0c       	extu.b	r0,r0
+   e1148:	88 01       	cmp/eq	#1,r0
+   e114a:	8d 05       	bt.s	e1158 <_m0_observe+0x44>
+   e114c:	ec fe       	mov	#-2,r12
+   e114e:	d1 3a       	mov.l	e1238 <_m0_observe+0x124>,r1	! e10bc <_m0_init>
+   e1150:	41 0b       	jsr	@r1
+   e1152:	64 83       	mov	r8,r4
+   e1154:	61 82       	mov.l	@r8,r1
+   e1156:	ec fe       	mov	#-2,r12
+   e1158:	2c 19       	and	r1,r12
+   e115a:	61 c3       	mov	r12,r1
+   e115c:	71 01       	add	#1,r1
+   e115e:	28 12       	mov.l	r1,@r8
+   e1160:	51 82       	mov.l	@(8,r8),r1
+   e1162:	21 18       	tst	r1,r1
+   e1164:	8d 0f       	bt.s	e1186 <_m0_observe+0x72>
+   e1166:	61 93       	mov	r9,r1
+   e1168:	61 83       	mov	r8,r1
+   e116a:	62 93       	mov	r9,r2
+   e116c:	71 1d       	add	#29,r1
+   e116e:	72 01       	add	#1,r2
+   e1170:	61 10       	mov.b	@r1,r1
+   e1172:	62 20       	mov.b	@r2,r2
+   e1174:	61 1c       	extu.b	r1,r1
+   e1176:	62 2c       	extu.b	r2,r2
+   e1178:	32 10       	cmp/eq	r1,r2
+   e117a:	8d 04       	bt.s	e1186 <_m0_observe+0x72>
+   e117c:	61 93       	mov	r9,r1
+   e117e:	51 84       	mov.l	@(16,r8),r1
+   e1180:	71 01       	add	#1,r1
+   e1182:	18 14       	mov.l	r1,@(16,r8)
+   e1184:	61 93       	mov	r9,r1
+   e1186:	63 14       	mov.b	@r1+,r3
+   e1188:	62 83       	mov	r8,r2
+   e118a:	72 14       	add	#20,r2
+   e118c:	22 30       	mov.b	r3,@r2
+   e118e:	e3 07       	mov	#7,r3
+   e1190:	62 10       	mov.b	@r1,r2
+   e1192:	61 83       	mov	r8,r1
+   e1194:	71 15       	add	#21,r1
+   e1196:	21 20       	mov.b	r2,@r1
+   e1198:	61 93       	mov	r9,r1
+   e119a:	71 02       	add	#2,r1
+   e119c:	62 10       	mov.b	@r1,r2
+   e119e:	61 83       	mov	r8,r1
+   e11a0:	71 16       	add	#22,r1
+   e11a2:	21 20       	mov.b	r2,@r1
+   e11a4:	61 93       	mov	r9,r1
+   e11a6:	71 03       	add	#3,r1
+   e11a8:	62 10       	mov.b	@r1,r2
+   e11aa:	61 83       	mov	r8,r1
+   e11ac:	71 17       	add	#23,r1
+   e11ae:	21 20       	mov.b	r2,@r1
+   e11b0:	71 01       	add	#1,r1
+   e11b2:	21 b0       	mov.b	r11,@r1
+   e11b4:	71 01       	add	#1,r1
+   e11b6:	21 a0       	mov.b	r10,@r1
+   e11b8:	71 01       	add	#1,r1
+   e11ba:	62 10       	mov.b	@r1,r2
+   e11bc:	3b 36       	cmp/hi	r3,r11
+   e11be:	8f 05       	bf.s	e11cc <_m0_observe+0xb8>
+   e11c0:	62 2c       	extu.b	r2,r2
+   e11c2:	60 b3       	mov	r11,r0
+   e11c4:	88 08       	cmp/eq	#8,r0
+   e11c6:	8d 01       	bt.s	e11cc <_m0_observe+0xb8>
+   e11c8:	eb 00       	mov	#0,r11
+   e11ca:	6b 23       	mov	r2,r11
+   e11cc:	21 b0       	mov.b	r11,@r1
+   e11ce:	61 83       	mov	r8,r1
+   e11d0:	71 1b       	add	#27,r1
+   e11d2:	62 10       	mov.b	@r1,r2
+   e11d4:	e3 07       	mov	#7,r3
+   e11d6:	3a 36       	cmp/hi	r3,r10
+   e11d8:	8f 07       	bf.s	e11ea <_m0_observe+0xd6>
+   e11da:	62 2c       	extu.b	r2,r2
+   e11dc:	60 a3       	mov	r10,r0
+   e11de:	88 08       	cmp/eq	#8,r0
+   e11e0:	8f 02       	bf.s	e11e8 <_m0_observe+0xd4>
+   e11e2:	00 09       	nop	
+   e11e4:	a0 01       	bra	e11ea <_m0_observe+0xd6>
+   e11e6:	ea 00       	mov	#0,r10
+   e11e8:	6a 23       	mov	r2,r10
+   e11ea:	21 a0       	mov.b	r10,@r1
+   e11ec:	61 93       	mov	r9,r1
+   e11ee:	71 04       	add	#4,r1
+   e11f0:	62 10       	mov.b	@r1,r2
+   e11f2:	61 83       	mov	r8,r1
+   e11f4:	71 1c       	add	#28,r1
+   e11f6:	21 20       	mov.b	r2,@r1
+   e11f8:	61 93       	mov	r9,r1
+   e11fa:	71 05       	add	#5,r1
+   e11fc:	d0 0f       	mov.l	e123c <_m0_observe+0x128>,r0	! e101c <_m0_reasons>
+   e11fe:	64 93       	mov	r9,r4
+   e1200:	62 10       	mov.b	@r1,r2
+   e1202:	61 83       	mov	r8,r1
+   e1204:	71 1f       	add	#31,r1
+   e1206:	21 20       	mov.b	r2,@r1
+   e1208:	40 0b       	jsr	@r0
+   e120a:	00 09       	nop	
+   e120c:	18 03       	mov.l	r0,@(12,r8)
+   e120e:	79 01       	add	#1,r9
+   e1210:	62 90       	mov.b	@r9,r2
+   e1212:	61 83       	mov	r8,r1
+   e1214:	71 1d       	add	#29,r1
+   e1216:	21 20       	mov.b	r2,@r1
+   e1218:	7c 02       	add	#2,r12
+   e121a:	51 82       	mov.l	@(8,r8),r1
+   e121c:	71 01       	add	#1,r1
+   e121e:	18 12       	mov.l	r1,@(8,r8)
+   e1220:	28 c2       	mov.l	r12,@r8
+   e1222:	4f 26       	lds.l	@r15+,pr
+   e1224:	6c f6       	mov.l	@r15+,r12
+   e1226:	6b f6       	mov.l	@r15+,r11
+   e1228:	6a f6       	mov.l	@r15+,r10
+   e122a:	69 f6       	mov.l	@r15+,r9
+   e122c:	68 f6       	mov.l	@r15+,r8
+   e122e:	00 0b       	rts	
+   e1230:	00 09       	nop	
+   e1232:	00 09       	nop	
+   e1234:	4d 30       	.word 0x4d30
+   e1236:	44 31       	.word 0x4431
+   e1238:	00 0e       	mov.l	@(r0,r0),r0
+   e123a:	10 bc       	mov.l	r11,@(48,r0)
+   e123c:	00 0e       	mov.l	@(r0,r0),r0
+   e123e:	10 1c       	mov.l	r1,@(48,r0)
+
+000e1240 <_m0_sample_hardware>:
+   e1240:	2f 86       	mov.l	r8,@-r15
+   e1242:	2f 96       	mov.l	r9,@-r15
+   e1244:	2f a6       	mov.l	r10,@-r15
+   e1246:	d7 20       	mov.l	e12c8 <_m0_sample_hardware+0x88>,r7	! ffff4c75
+   e1248:	4f 22       	sts.l	pr,@-r15
+   e124a:	61 70       	mov.b	@r7,r1
+   e124c:	7f f8       	add	#-8,r15
+   e124e:	d3 1f       	mov.l	e12cc <_m0_sample_hardware+0x8c>,r3	! ffff4c8d
+   e1250:	68 1c       	extu.b	r1,r8
+   e1252:	2f 10       	mov.b	r1,@r15
+   e1254:	62 f3       	mov	r15,r2
+   e1256:	61 30       	mov.b	@r3,r1
+   e1258:	72 01       	add	#1,r2
+   e125a:	22 10       	mov.b	r1,@r2
+   e125c:	69 1c       	extu.b	r1,r9
+   e125e:	d2 1c       	mov.l	e12d0 <_m0_sample_hardware+0x90>,r2	! ffff4ca1
+   e1260:	66 f3       	mov	r15,r6
+   e1262:	76 02       	add	#2,r6
+   e1264:	61 20       	mov.b	@r2,r1
+   e1266:	6a f3       	mov	r15,r10
+   e1268:	26 10       	mov.b	r1,@r6
+   e126a:	60 1c       	extu.b	r1,r0
+   e126c:	d1 19       	mov.l	e12d4 <_m0_sample_hardware+0x94>,r1	! ffff4c50
+   e126e:	7a 03       	add	#3,r10
+   e1270:	66 10       	mov.b	@r1,r6
+   e1272:	2a 60       	mov.b	r6,@r10
+   e1274:	65 6c       	extu.b	r6,r5
+   e1276:	67 70       	mov.b	@r7,r7
+   e1278:	63 30       	mov.b	@r3,r3
+   e127a:	67 7c       	extu.b	r7,r7
+   e127c:	62 20       	mov.b	@r2,r2
+   e127e:	38 70       	cmp/eq	r7,r8
+   e1280:	61 10       	mov.b	@r1,r1
+   e1282:	63 3c       	extu.b	r3,r3
+   e1284:	62 2c       	extu.b	r2,r2
+   e1286:	8f 09       	bf.s	e129c <_m0_sample_hardware+0x5c>
+   e1288:	61 1c       	extu.b	r1,r1
+   e128a:	39 30       	cmp/eq	r3,r9
+   e128c:	8f 06       	bf.s	e129c <_m0_sample_hardware+0x5c>
+   e128e:	30 20       	cmp/eq	r2,r0
+   e1290:	8f 04       	bf.s	e129c <_m0_sample_hardware+0x5c>
+   e1292:	35 10       	cmp/eq	r1,r5
+   e1294:	e1 ff       	mov	#-1,r1
+   e1296:	61 1a       	negc	r1,r1
+   e1298:	a0 01       	bra	e129e <_m0_sample_hardware+0x5e>
+   e129a:	61 1c       	extu.b	r1,r1
+   e129c:	e1 01       	mov	#1,r1
+   e129e:	62 f3       	mov	r15,r2
+   e12a0:	72 05       	add	#5,r2
+   e12a2:	22 10       	mov.b	r1,@r2
+   e12a4:	e1 00       	mov	#0,r1
+   e12a6:	72 ff       	add	#-1,r2
+   e12a8:	22 10       	mov.b	r1,@r2
+   e12aa:	72 02       	add	#2,r2
+   e12ac:	22 10       	mov.b	r1,@r2
+   e12ae:	72 01       	add	#1,r2
+   e12b0:	22 10       	mov.b	r1,@r2
+   e12b2:	d1 09       	mov.l	e12d8 <_m0_sample_hardware+0x98>,r1	! e1114 <_m0_observe>
+   e12b4:	41 0b       	jsr	@r1
+   e12b6:	65 f3       	mov	r15,r5
+   e12b8:	7f 08       	add	#8,r15
+   e12ba:	4f 26       	lds.l	@r15+,pr
+   e12bc:	6a f6       	mov.l	@r15+,r10
+   e12be:	69 f6       	mov.l	@r15+,r9
+   e12c0:	68 f6       	mov.l	@r15+,r8
+   e12c2:	00 0b       	rts	
+   e12c4:	00 09       	nop	
+   e12c6:	00 09       	nop	
+   e12c8:	ff ff       	.word 0xffff
+   e12ca:	4c 75       	.word 0x4c75
+   e12cc:	ff ff       	.word 0xffff
+   e12ce:	4c 8d       	.word 0x4c8d
+   e12d0:	ff ff       	.word 0xffff
+   e12d2:	4c a1       	.word 0x4ca1
+   e12d4:	ff ff       	.word 0xffff
+   e12d6:	4c 50       	.word 0x4c50
+   e12d8:	00 0e       	mov.l	@(r0,r0),r0
+   e12da:	11 14       	mov.l	r1,@(16,r1)
+
+000e12dc <_m0_decoder_hook>:
+   e12dc:	4f 22       	sts.l	pr,@-r15
+   e12de:	2f 06       	mov.l	r0,@-r15
+   e12e0:	d0 16       	mov.l	e133c <_m0_decoder_hook+0x60>,r0	! 147ac
+   e12e2:	40 0b       	jsr	@r0
+   e12e4:	60 f6       	mov.l	@r15+,r0
+   e12e6:	2f 06       	mov.l	r0,@-r15
+   e12e8:	2f 16       	mov.l	r1,@-r15
+   e12ea:	2f 26       	mov.l	r2,@-r15
+   e12ec:	2f 36       	mov.l	r3,@-r15
+   e12ee:	2f 46       	mov.l	r4,@-r15
+   e12f0:	2f 56       	mov.l	r5,@-r15
+   e12f2:	2f 66       	mov.l	r6,@-r15
+   e12f4:	2f 76       	mov.l	r7,@-r15
+   e12f6:	2f 86       	mov.l	r8,@-r15
+   e12f8:	2f 96       	mov.l	r9,@-r15
+   e12fa:	2f a6       	mov.l	r10,@-r15
+   e12fc:	2f b6       	mov.l	r11,@-r15
+   e12fe:	2f c6       	mov.l	r12,@-r15
+   e1300:	2f d6       	mov.l	r13,@-r15
+   e1302:	2f e6       	mov.l	r14,@-r15
+   e1304:	4f 03       	stc.l	sr,@-r15
+   e1306:	4f 02       	sts.l	mach,@-r15
+   e1308:	4f 12       	sts.l	macl,@-r15
+   e130a:	d4 0d       	mov.l	e1340 <_m0_decoder_hook+0x64>,r4	! ffff7400 <_m0_state>
+   e130c:	d0 0d       	mov.l	e1344 <_m0_decoder_hook+0x68>,r0	! e1240 <_m0_sample_hardware>
+   e130e:	40 0b       	jsr	@r0
+   e1310:	00 09       	nop	
+   e1312:	4f 16       	lds.l	@r15+,macl
+   e1314:	4f 06       	lds.l	@r15+,mach
+   e1316:	4f 07       	ldc.l	@r15+,sr
+   e1318:	6e f6       	mov.l	@r15+,r14
+   e131a:	6d f6       	mov.l	@r15+,r13
+   e131c:	6c f6       	mov.l	@r15+,r12
+   e131e:	6b f6       	mov.l	@r15+,r11
+   e1320:	6a f6       	mov.l	@r15+,r10
+   e1322:	69 f6       	mov.l	@r15+,r9
+   e1324:	68 f6       	mov.l	@r15+,r8
+   e1326:	67 f6       	mov.l	@r15+,r7
+   e1328:	66 f6       	mov.l	@r15+,r6
+   e132a:	65 f6       	mov.l	@r15+,r5
+   e132c:	64 f6       	mov.l	@r15+,r4
+   e132e:	63 f6       	mov.l	@r15+,r3
+   e1330:	62 f6       	mov.l	@r15+,r2
+   e1332:	61 f6       	mov.l	@r15+,r1
+   e1334:	60 f6       	mov.l	@r15+,r0
+   e1336:	4f 26       	lds.l	@r15+,pr
+   e1338:	00 0b       	rts	
+   e133a:	00 09       	nop	
+   e133c:	00 01       	.word 0x0001
+   e133e:	47 ac       	.word 0x47ac
+   e1340:	ff ff       	.word 0xffff
+   e1342:	74 00       	add	#0,r4
+   e1344:	00 0e       	mov.l	@(r0,r0),r0
+   e1346:	12 40       	mov.l	r4,@(0,r2)
+
+000e1348 <_m0_identifier>:
+   e1348:	41 32 57 43 35 31 31 52 2e 4d 30 2e 45 58 50 45     A2WC511R.M0.EXPE
+   e1358:	52 49 4d 45 4e 54 41 4c 2e 76 31 00                 RIMENTAL.v1.

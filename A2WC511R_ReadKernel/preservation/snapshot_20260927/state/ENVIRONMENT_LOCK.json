@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "source": "uploaded Dev.zip inspected in this preparation",
+  "repositories": {
+    "MerpMod": "8720d209df107a81fd171131cfba96d8cae1f118",
+    "SharpTune": "ecabea89615132dac2de37c05f72adae16d966d1",
+    "SubaruDefs": "9b2992eba8133fe5338b89aa77b22c1bb14d6507"
+  },
+  "executables": [
+    {
+      "path": "MerpMod/SharpTune.exe",
+      "size": 19368960,
+      "sha256": "248eb7f012d0edcb84048ee01f99f7fa49094942c25a3b53e75fbfcb957de8af"
+    },
+    {
+      "path": "SharpTune/SharpTune.exe",
+      "size": 19368960,
+      "sha256": "248eb7f012d0edcb84048ee01f99f7fa49094942c25a3b53e75fbfcb957de8af"
+    }
+  ],
+  "roms": [
+    {
+      "file": "SubaruRoms/Backup/A2WC511R_STOCK_ROMRAIDER.bin",
+      "sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+      "size": 1048576
+    },
+    {
+      "file": "SubaruRoms/OEM/A2WC511R.bin",
+      "sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+      "size": 1048576
+    },
+    {
+      "file": "SubaruRoms/OEM/A2WC511R_STOCK_ROMRAIDER.bin",
+      "sha256": "a34c4ce8238bf28bdc18c191bbe73b2179130aa9846e952a6fa332bae442de96",
+      "size": 1048576
+    }
+  ],
+  "idb_files": [
+    {
+      "path": "SubaruRoms/OEM/A2WC511R_STOCK_ROMRAIDER.bin.i64",
+      "size": 7348537,
+      "sha256": "913e1d217cbb0f3707251688b90d02b540333a89aae0c76fcf21bd24f8857e18"
+    },
+    {
+      "path": "SubaruRoms/OEM/A2WC511R_STOCK_ROMRAIDER.bin.id0",
+      "size": 2940928,
+      "sha256": "47b13710db5bd90644c5e06f4f47aa7c7499ab380b64028eab412d11649254f3"
+    },
+    {
+      "path": "SubaruRoms/OEM/A2WC511R_STOCK_ROMRAIDER.bin.id1",
+      "size": 4399104,
+      "sha256": "020369d50cfe887ffe8832cfe339c19de1437ec19dc59de79f8e8ad3bf390b96"
+    },
+    {
+      "path": "SubaruRoms/OEM/A2WC511R_STOCK_ROMRAIDER.bin.nam",
+      "size": 16384,
+      "sha256": "ac509e7dd6a7875fffeb68b6f1f3a087ea5681597573ca2f401a82e6d1aaa5ae"
+    },
+    {
+      "path": "SubaruRoms/OEM/A2WC511R_STOCK_ROMRAIDER.bin.til",
+      "size": 72,
+      "sha256": "513e9d059ab03cfc3088999d32eb2fb26a8a3f338a7f95720e81075256443d4b"
+    }
+  ],
+  "compile_abi": {
+    "cpu": "SH2E",
+    "endianness": "big",
+    "flags": [
+      "-m2e",
+      "-mrenesas",
+      "-mieee"
+    ],
+    "compiler": "KPIT GNUSH13.01 / GCC4.7; actual host smoke pending"
+  },
+  "current_flashed_calibration": "UNCONFIRMED",
+  "model": {
+    "requested": "gpt-6-astra",
+    "requested_effort": "ultra",
+    "availability": "must be returned by current authenticated model/list"
+  }
+}

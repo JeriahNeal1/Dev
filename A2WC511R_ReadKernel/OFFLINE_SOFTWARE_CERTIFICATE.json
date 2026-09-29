@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "artifact_class": "TEMP_RAM_ACQUISITION_TOOL",
+  "eligible": true,
+  "eligibility": "OFFLINE_SOFTWARE_ONLY_PHYSICAL_ACCEPTANCE_REQUIRED",
+  "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+  "fake_host_sha256": "4b681bcdb3c178b89382b37b207b4a7679f0a1e87ab13c7051e8cf8019c094ec",
+  "evidence": [
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\SOFTWARE_01_INPUTS.json",
+      "sha256": "3a06e60991d6768cff8bc3f34a82365259770dc436e255f697b3dcfa32a91753",
+      "bytes": 3528728
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\SOFTWARE_01_VALIDATION.json",
+      "sha256": "4348c8f19d69be79b3911aac7af0ca37b34f8b1796a23576ea6603454e79899e",
+      "bytes": 2277890
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\LOSSLESS_FIXTURES.json",
+      "sha256": "713fd85da5be9eaee47fc919405be16963abc2b1d3e17e1ee5146884548070c5",
+      "bytes": 4714
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\FINAL_PRESERVATION.json",
+      "sha256": "dd70d8e7c27fe5b12f7d6c116a0761ea4315cee776b3e9d08f96a13475c65bd1",
+      "bytes": 635
+    }
+  ],
+  "load_address": "FFFF3000",
+  "entry": "FFFF3004",
+  "kernel_version": "A2WC511R-RK02",
+  "ROM_range": [
+    "000000",
+    "100000"
+  ],
+  "fixed_block_bytes": 512,
+  "passes": 2,
+  "ECU_identity": "2F12515306",
+  "physical_operations_performed": false,
+  "not_an_ECU_ROM_release": true,
+  "remaining_physical": [
+    {
+      "id": "ACTUAL_CURRENT_ECU_LOADER_ACCEPTANCE",
+      "status": "PHYSICAL_REQUIRED"
+    },
+    {
+      "id": "ACTUAL_OPENPORT_ELECTRICAL_UART",
+      "status": "PHYSICAL_REQUIRED"
+    },
+    {
+      "id": "CLOCK_RAM_UPLOAD_AND_ENTRY",
+      "status": "PHYSICAL_REQUIRED"
+    },
+    {
+      "id": "EXTERNAL_WATCHDOG_AND_NMI",
+      "status": "PHYSICAL_REQUIRED"
+    },
+    {
+      "id": "PHYSICAL_CAPTURE_CURRENT_ROM_ASSOCIATION",
+      "status": "PHYSICAL_REQUIRED"
+    },
+    {
+      "id": "POWER_DOWN_OEM_RESTART",
+      "status": "PHYSICAL_REQUIRED"
+    }
+  ]
+}

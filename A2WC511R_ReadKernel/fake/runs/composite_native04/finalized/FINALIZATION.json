@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "status": "PASS_RAW_CAPTURE_INTEGRITY",
+  "classification": "VIRTUAL_FIXTURE_CAPTURE_NOT_CURRENT_ECU_ROM",
+  "provider_loaded_by_finalizer": false,
+  "physical_transport_used_by_finalizer": false,
+  "capture_declared_physical": false,
+  "physical_session_association_proven": false,
+  "current_ROM_identified": false,
+  "kernel_sha256": "3d70abfb8617b87e1b9c52724fd27ed4066ba231818994e780c8ba3006de273f",
+  "client_sha256": "9ca8941960f64a1cb2931c18889e77fb8c3a0cd42840bff5422e05e1a363addc",
+  "native_journal": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\composite_native04\\native_api.jsonl",
+    "sha256": "3a77db1f308ed970bfe8cff5fc0fa3d7229e4ce2ed9939facf0e0aabeb6c3e61",
+    "bytes": 13263082
+  },
+  "native_banner": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\composite_native04\\native.log",
+    "sha256": "bbf3136e44ce21200ff3dd9a862e6eaa52edf4e2ea74a50c45a4f3f40b4c6b3c",
+    "bytes": 144
+  },
+  "proof": {
+    "status": "PASS_NATIVE_JOURNAL_ONLY",
+    "API_calls": 28821,
+    "TX_frames": 4119,
+    "RX_messages": 24692,
+    "assembled_responses_with_multiple_messages": 4119,
+    "host_replay": {
+      "status": "PASS",
+      "failure": null,
+      "steps": 4119,
+      "kernel_sha256": "3d70abfb8617b87e1b9c52724fd27ed4066ba231818994e780c8ba3006de273f",
+      "physical": false,
+      "passes": [
+        {
+          "bytes": 1048576,
+          "sha256": "b91ad3e88637bfae6a15871761c288f914fe10fe74c78cbc53e963c4fe80e545",
+          "complete": true
+        },
+        {
+          "bytes": 1048576,
+          "sha256": "b91ad3e88637bfae6a15871761c288f914fe10fe74c78cbc53e963c4fe80e545",
+          "complete": true
+        }
+      ]
+    },
+    "native_ESP_equal_calls": 28821,
+    "timestamps_retained": true,
+    "timing_scope": "Timestamps retained; exact GetTickCount64 receive-deadline start is not reconstructed from QPC log, and no physical timing claim is made"
+  },
+  "raw_copies": [
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\composite_native04\\finalized\\raw_pass0.bin",
+      "sha256": "b91ad3e88637bfae6a15871761c288f914fe10fe74c78cbc53e963c4fe80e545",
+      "bytes": 1048576
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\composite_native04\\finalized\\raw_pass1.bin",
+      "sha256": "b91ad3e88637bfae6a15871761c288f914fe10fe74c78cbc53e963c4fe80e545",
+      "bytes": 1048576
+    }
+  ],
+  "copies_windows_readonly_bit": true,
+  "input_raw_files": [
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\composite_native04\\pass0.partial.bin",
+      "sha256": "b91ad3e88637bfae6a15871761c288f914fe10fe74c78cbc53e963c4fe80e545",
+      "bytes": 1048576
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\composite_native04\\pass1.partial.bin",
+      "sha256": "b91ad3e88637bfae6a15871761c288f914fe10fe74c78cbc53e963c4fe80e545",
+      "bytes": 1048576
+    }
+  ],
+  "provenance_hashes_derived_from_exact_validated_buffers": true,
+  "inputs_rechecked_before_publication": true,
+  "current_ROM_attestation": "Conditional on independent physical session association; never inferred for a virtual fixture",
+  "CAL_ID_literal_offsets": [],
+  "close_is_ECU_reset": false,
+  "source": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\finalize.py",
+    "sha256": "b55d0c85e6f3e6026a12c1360a77ad8bac892ed16891e69ddef4b18cfc1666ef",
+    "bytes": 9782
+  }
+}

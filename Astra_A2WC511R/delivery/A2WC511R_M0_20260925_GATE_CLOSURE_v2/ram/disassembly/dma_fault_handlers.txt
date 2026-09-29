@@ -1,0 +1,179 @@
+
+C:\Dev\SubaruRoms\OEM\A2WC511R.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000052c8 <.data+0x52c8>:
+    52c8:	95 7b       	mov.w	0x53c2,r5	! e0
+    52ca:	7f f8       	add	#-8,r15
+    52cc:	d3 44       	mov.l	0x53e0,r3	! 2088
+    52ce:	1f 41       	mov.l	r4,@(4,r15)
+    52d0:	43 0b       	jsr	@r3
+    52d2:	64 f3       	mov	r15,r4
+    52d4:	d3 43       	mov.l	0x53e4,r3	! d744
+    52d6:	43 0b       	jsr	@r3
+    52d8:	54 f1       	mov.l	@(4,r15),r4
+    52da:	af fe       	bra	0x52da
+    52dc:	00 09       	nop	
+    52de:	2f 46       	mov.l	r4,@-r15
+    52e0:	2f 36       	mov.l	r3,@-r15
+    52e2:	2f 26       	mov.l	r2,@-r15
+    52e4:	2f 16       	mov.l	r1,@-r15
+    52e6:	2f 06       	mov.l	r0,@-r15
+    52e8:	94 6c       	mov.w	0x53c4,r4	! c8
+    52ea:	44 10       	dt	r4
+    52ec:	8f fd       	bf.s	0x52ea
+    52ee:	00 09       	nop	
+    52f0:	93 69       	mov.w	0x53c6,r3	! ed18
+    52f2:	62 31       	mov.w	@r3,r2
+    52f4:	62 2d       	extu.w	r2,r2
+    52f6:	d1 3c       	mov.l	0x53e8,r1	! 8000
+    52f8:	22 18       	tst	r1,r2
+    52fa:	8f 06       	bf.s	0x530a
+    52fc:	00 09       	nop	
+    52fe:	92 63       	mov.w	0x53c8,r2	! f708
+    5300:	60 20       	mov.b	@r2,r0
+    5302:	c9 fe       	and	#-2,r0
+    5304:	22 00       	mov.b	r0,@r2
+    5306:	af fe       	bra	0x5306
+    5308:	00 09       	nop	
+    530a:	94 5e       	mov.w	0x53ca,r4	! ecb0
+    530c:	63 41       	mov.w	@r4,r3
+    530e:	e2 01       	mov	#1,r2
+    5310:	24 21       	mov.w	r2,@r4
+    5312:	60 f6       	mov.l	@r15+,r0
+    5314:	61 f6       	mov.l	@r15+,r1
+    5316:	62 f6       	mov.l	@r15+,r2
+    5318:	63 f6       	mov.l	@r15+,r3
+    531a:	64 f6       	mov.l	@r15+,r4
+    531c:	00 2b       	rte	
+    531e:	00 09       	nop	
+    5320:	d4 32       	mov.l	0x53ec,r4	! 10000
+    5322:	af d1       	bra	0x52c8
+    5324:	00 09       	nop	
+    5326:	af cf       	bra	0x52c8
+    5328:	e4 04       	mov	#4,r4
+    532a:	af cd       	bra	0x52c8
+    532c:	e4 06       	mov	#6,r4
+    532e:	af cb       	bra	0x52c8
+    5330:	e4 09       	mov	#9,r4
+    5332:	af c9       	bra	0x52c8
+    5334:	e4 0a       	mov	#10,r4
+    5336:	af c7       	bra	0x52c8
+    5338:	e4 0c       	mov	#12,r4
+    533a:	af c5       	bra	0x52c8
+    533c:	e4 0d       	mov	#13,r4
+    533e:	af c3       	bra	0x52c8
+    5340:	e4 0e       	mov	#14,r4
+    5342:	af c1       	bra	0x52c8
+    5344:	e4 20       	mov	#32,r4
+    5346:	94 41       	mov.w	0x53cc,r4	! ed1a
+    5348:	63 41       	mov.w	@r4,r3
+    534a:	e2 7f       	mov	#127,r2
+    534c:	24 21       	mov.w	r2,@r4
+    534e:	af bb       	bra	0x52c8
+    5350:	e4 40       	mov	#64,r4
+    5352:	94 3b       	mov.w	0x53cc,r4	! ed1a
+    5354:	63 41       	mov.w	@r4,r3
+    5356:	92 3a       	mov.w	0x53ce,r2	! bf
+    5358:	24 21       	mov.w	r2,@r4
+    535a:	af b5       	bra	0x52c8
+    535c:	e4 41       	mov	#65,r4
+    535e:	94 35       	mov.w	0x53cc,r4	! ed1a
+    5360:	63 41       	mov.w	@r4,r3
+    5362:	92 35       	mov.w	0x53d0,r2	! df
+    5364:	24 21       	mov.w	r2,@r4
+    5366:	af af       	bra	0x52c8
+    5368:	e4 42       	mov	#66,r4
+    536a:	94 2f       	mov.w	0x53cc,r4	! ed1a
+    536c:	63 41       	mov.w	@r4,r3
+    536e:	92 30       	mov.w	0x53d2,r2	! ef
+    5370:	24 21       	mov.w	r2,@r4
+    5372:	af a9       	bra	0x52c8
+    5374:	e4 43       	mov	#67,r4
+    5376:	94 29       	mov.w	0x53cc,r4	! ed1a
+    5378:	63 41       	mov.w	@r4,r3
+    537a:	92 2b       	mov.w	0x53d4,r2	! f7
+    537c:	d3 1c       	mov.l	0x53f0,r3	! c2de
+    537e:	43 2b       	jmp	@r3
+    5380:	24 21       	mov.w	r2,@r4
+    5382:	94 23       	mov.w	0x53cc,r4	! ed1a
+    5384:	63 41       	mov.w	@r4,r3
+    5386:	92 26       	mov.w	0x53d6,r2	! fb
+    5388:	24 21       	mov.w	r2,@r4
+    538a:	af 9d       	bra	0x52c8
+    538c:	e4 45       	mov	#69,r4
+    538e:	94 1d       	mov.w	0x53cc,r4	! ed1a
+    5390:	63 41       	mov.w	@r4,r3
+    5392:	92 21       	mov.w	0x53d8,r2	! fd
+    5394:	24 21       	mov.w	r2,@r4
+    5396:	af 97       	bra	0x52c8
+    5398:	e4 46       	mov	#70,r4
+    539a:	94 17       	mov.w	0x53cc,r4	! ed1a
+    539c:	63 41       	mov.w	@r4,r3
+    539e:	92 1c       	mov.w	0x53da,r2	! fe
+    53a0:	24 21       	mov.w	r2,@r4
+    53a2:	af 91       	bra	0x52c8
+    53a4:	e4 47       	mov	#71,r4
+    53a6:	e2 fd       	mov	#-3,r2
+    53a8:	93 18       	mov.w	0x53dc,r3	! eccc
+    53aa:	61 32       	mov.l	@r3,r1
+    53ac:	21 29       	and	r2,r1
+    53ae:	23 12       	mov.l	r1,@r3
+    53b0:	af 8a       	bra	0x52c8
+    53b2:	e4 48       	mov	#72,r4
+    53b4:	93 13       	mov.w	0x53de,r3	! ecdc
+    53b6:	e2 fd       	mov	#-3,r2
+    53b8:	61 32       	mov.l	@r3,r1
+    53ba:	21 29       	and	r2,r1
+    53bc:	23 12       	mov.l	r1,@r3
+    53be:	af 83       	bra	0x52c8
+    53c0:	e4 4a       	mov	#74,r4
+    53c2:	00 e0       	.word 0x00e0
+    53c4:	00 c8       	.word 0x00c8
+    53c6:	ed 18       	mov	#24,r13
+    53c8:	f7 08       	fmov	@r0,fr7
+    53ca:	ec b0       	mov	#-80,r12
+    53cc:	ed 1a       	mov	#26,r13
+    53ce:	00 bf       	mac.l	@r11+,@r0+
+    53d0:	00 df       	mac.l	@r13+,@r0+
+    53d2:	00 ef       	mac.l	@r14+,@r0+
+    53d4:	00 f7       	mul.l	r15,r0
+    53d6:	00 fb       	.word 0x00fb
+    53d8:	00 fd       	mov.w	@(r0,r15),r0
+    53da:	00 fe       	mov.l	@(r0,r15),r0
+    53dc:	ec cc       	mov	#-52,r12
+    53de:	ec dc       	mov	#-36,r12
+    53e0:	00 00       	.word 0x0000
+    53e2:	20 88       	tst	r8,r0
+    53e4:	00 00       	.word 0x0000
+    53e6:	d7 44       	mov.l	0x54f8,r7	! ecfcf42c
+    53e8:	00 00       	.word 0x0000
+    53ea:	80 00       	mov.b	r0,@(0,r0)
+    53ec:	00 01       	.word 0x0001
+    53ee:	00 00       	.word 0x0000
+    53f0:	00 00       	.word 0x0000
+    53f2:	c2 de       	mov.l	r0,@(888,gbr)
+    53f4:	93 7f       	mov.w	0x54f6,r3	! ecec
+    53f6:	e2 fd       	mov	#-3,r2
+    53f8:	61 32       	mov.l	@r3,r1
+    53fa:	21 29       	and	r2,r1
+    53fc:	23 12       	mov.l	r1,@r3
+    53fe:	af 63       	bra	0x52c8
+    5400:	e4 4c       	mov	#76,r4
+    5402:	e2 fd       	mov	#-3,r2
+    5404:	93 78       	mov.w	0x54f8,r3	! ecfc
+    5406:	61 32       	mov.l	@r3,r1
+    5408:	21 29       	and	r2,r1
+    540a:	23 12       	mov.l	r1,@r3
+    540c:	af 5c       	bra	0x52c8
+    540e:	e4 4e       	mov	#78,r4
+    5410:	92 73       	mov.w	0x54fa,r2	! f42c
+    5412:	e3 1f       	mov	#31,r3
+    5414:	22 31       	mov.w	r3,@r2
+    5416:	af 57       	bra	0x52c8
+    5418:	e4 50       	mov	#80,r4
+    541a:	94 6e       	mov.w	0x54fa,r4	! f42c
+    541c:	63 41       	mov.w	@r4,r3
+    541e:	92 6d       	mov.w	0x54fc,r2	! fe

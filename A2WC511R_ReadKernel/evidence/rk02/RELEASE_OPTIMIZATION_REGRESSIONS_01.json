@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "status": "PASS",
+  "python_optimization_level": 1,
+  "inputs": [
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\test_release_optimization_rk02.py",
+      "sha256": "1bbc70b6987f2538e5bac04f9b14ddd9c591375acf1c9106a3f97b5290ef6e2a",
+      "bytes": 4419
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\tools\\release_rk02.py",
+      "sha256": "1620df744d31ce64f479d5daa34d24b4c7e9729ca8d5a338484b014684ac0ed7",
+      "bytes": 9080
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\tools\\validate.py",
+      "sha256": "038d98508dd0b6b8c3a0a43f1cdf915314daa54343dac79d0739098a1a44c083",
+      "bytes": 29676
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\tools\\artifact_review.py",
+      "sha256": "a17be84cb7a9fb035e5dc1eb87578f710f9f3a0f9f9f14143099003d22afceab",
+      "bytes": 6414
+    }
+  ],
+  "cases": [
+    {
+      "case": "regression_FAIL",
+      "status": "PASS",
+      "caught": {
+        "type": "ValueError",
+        "message": "Validator regression suite required"
+      },
+      "virtual_write_paths": [],
+      "validator_calls": 0,
+      "certificate_writes": 0
+    },
+    {
+      "case": "regression_cases_empty",
+      "status": "PASS",
+      "caught": {
+        "type": "ValueError",
+        "message": "Validator regression suite required"
+      },
+      "virtual_write_paths": [],
+      "validator_calls": 0,
+      "certificate_writes": 0
+    },
+    {
+      "case": "regression_validator_stale",
+      "status": "PASS",
+      "caught": {
+        "type": "ValueError",
+        "message": "Changed validator needs fresh regressions"
+      },
+      "virtual_write_paths": [],
+      "validator_calls": 0,
+      "certificate_writes": 0
+    },
+    {
+      "case": "software_validation_FAIL",
+      "status": "PASS",
+      "caught": {
+        "type": "ValueError",
+        "message": "['probe_validation_fail']"
+      },
+      "virtual_write_paths": [
+        "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\IN_MEMORY_OPTIMIZATION_NEGATIVE_INPUTS.json",
+        "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\IN_MEMORY_OPTIMIZATION_NEGATIVE_VALIDATION.json"
+      ],
+      "validator_calls": 1,
+      "certificate_writes": 0
+    },
+    {
+      "case": "final_validation_FAIL",
+      "status": "PASS",
+      "caught": {
+        "type": "ValueError",
+        "message": "['probe_validation_fail']"
+      },
+      "virtual_write_paths": [
+        "C:\\Dev\\A2WC511R_ReadKernel\\QUALIFICATION_INPUTS.json"
+      ],
+      "validator_calls": 1,
+      "certificate_writes": 0
+    }
+  ],
+  "case_count": 5,
+  "real_certificate_and_index_files_unchanged": true,
+  "real_release_writes": 0,
+  "provider_loaded": false,
+  "physical_operations": 0,
+  "method": "Actual release_rk02.software/final invoked under Python -O. Only regression-document read, input generation, validator result and release.write are process-local test doubles. All would-be release writes are retained in memory; the required ValueError must occur before any certificate issuance.",
+  "limits": [
+    "These tests prove the explicit release failure gates survive optimization; they do not replace full unchanged-index validation or native/simulator qualification."
+  ]
+}

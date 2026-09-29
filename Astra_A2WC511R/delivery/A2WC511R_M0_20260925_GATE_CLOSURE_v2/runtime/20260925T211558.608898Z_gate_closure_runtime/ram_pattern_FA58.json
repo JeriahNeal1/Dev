@@ -1,0 +1,1022 @@
+[
+  {
+    "candidate_hex": "a55a5aa5a55a5aa5a55a5aa5a55a5aa5a55a5aa5a55a5aa5a55a5aa5a55a5aa5",
+    "control_provenance_note": "Cumulative branch-origin decoration disabled explicitly for bulk loop; all value/address origins, data accesses and instruction PCs retained",
+    "end_parameter": "FFFFBFFB",
+    "final_r4": "FFFFBFFC",
+    "lower_boundary_sentinel_hex": "11223344",
+    "read_count": 18816,
+    "result": {
+      "base_rom_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+      "completion": "function return",
+      "control_provenance_enabled": false,
+      "entry": "0000FA58",
+      "memory_trace_sha256": "30feb76adae0ac2fc603f3473dc80a70502e420d0b8eebc03bd1c0ba7960a49e",
+      "pr_matches_boundary": true,
+      "pr_preserved": true,
+      "preserved_registers": [
+        "r8",
+        "r9",
+        "r10",
+        "r11",
+        "r12",
+        "r13",
+        "r14",
+        "r15"
+      ],
+      "registers": [
+        "00000000",
+        "00000000",
+        "A55A5AA5",
+        "13233343",
+        "FFFFBFFC",
+        "FFFFBFFB",
+        "5AA5A55A",
+        "A55A5AA5",
+        "18283848",
+        "19293949",
+        "1A2A3A4A",
+        "1B2B3B4B",
+        "1C2C3C4C",
+        "1D2D3D4D",
+        "1E2E3E4E",
+        "FFFF2000"
+      ],
+      "rom_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+      "stack_pointer_restored": true,
+      "steps": 112892,
+      "system_registers": {
+        "mach": "89ABCDEF",
+        "macl": "12345678",
+        "pr": "FFFFFFFC",
+        "sr": "000003F3"
+      },
+      "trace_sha256": "27fadbfc628b46249dc8000ffb14f9f0b6cad44a78075bc523efb493aa2938fe"
+    },
+    "start": "FFFF2D00",
+    "upper_boundary_sentinel_hex": "55667788",
+    "watchpoint_hits": [
+      {
+        "address": "FFFF73FC",
+        "address_sources": [
+          "fixture:register:r4",
+          "instruction:0000FA76"
+        ],
+        "call_context": [
+          "0000FA58"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "0000FA64",
+        "size": 4,
+        "value": "5AA5A55A",
+        "value_sources": [
+          "rom:0000FAB0"
+        ],
+        "watchpoints": [
+          "adjacent before candidate"
+        ]
+      },
+      {
+        "address": "FFFF73FC",
+        "address_sources": [
+          "fixture:register:r4",
+          "instruction:0000FA76"
+        ],
+        "call_context": [
+          "0000FA58"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000FA66",
+        "size": 4,
+        "value": "5AA5A55A",
+        "value_sources": [
+          "ram:FFFF73FC",
+          "ram:FFFF73FD",
+          "ram:FFFF73FE",
+          "ram:FFFF73FF",
+          "rom:0000FAB0"
+        ],
+        "watchpoints": [
+          "adjacent before candidate"
+        ]
+      },
+      {
+        "address": "FFFF73FC",
+        "address_sources": [
+          "fixture:register:r4",
+          "instruction:0000FA76"
+        ],
+        "call_context": [
+          "0000FA58"
+        ],
+        "control_sources": [],
+        "delay_slot": true,
+        "mode": "w",
+        "pc": "0000FA6C",
+        "size": 4,
+        "value": "A55A5AA5",
+        "value_sources": [
+          "rom:0000FAAC"
+        ],
+        "watchpoints": [
+          "adjacent before candidate"
+        ]
+      },
+      {
+        "address": "FFFF73FC",
+        "address_sources": [
+          "fixture:register:r4",
+          "instruction:0000FA76"
+        ],
+        "call_context": [
+          "0000FA58"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000FA70",
+        "size": 4,
+        "value": "A55A5AA5",
+        "value_sources": [
+          "ram:FFFF73FC",
+          "ram:FFFF73FD",
+          "ram:FFFF73FE",
+          "ram:FFFF73FF",
+          "rom:0000FAAC"
+        ],
+        "watchpoints": [
+          "adjacent before candidate"
+        ]
+      },
+      {
+        "address": "FFFF7400",
+        "address_sources": [
+          "fixture:register:r4",
+          "instruction:0000FA76"
+        ],
+        "call_context": [
+          "0000FA58"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "0000FA64",
+        "size": 4,
+        "value": "5AA5A55A",
+        "value_sources": [
+          "rom:0000FAB0"
+        ],
+        "watchpoints": [
+          "candidate diagnostic RAM"
+        ]
+      },
+      {
+        "address": "FFFF7400",
+        "address_sources": [
+          "fixture:register:r4",
+          "instruction:0000FA76"
+        ],
+        "call_context": [
+          "0000FA58"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000FA66",
+        "size": 4,
+        "value": "5AA5A55A",
+        "value_sources": [
+          "ram:FFFF7400",
+          "ram:FFFF7401",
+          "ram:FFFF7402",
+          "ram:FFFF7403",
+          "rom:0000FAB0"
+        ],
+        "watchpoints": [
+          "candidate diagnostic RAM"
+        ]
+      },
+      {
+        "address": "FFFF7400",
+        "address_sources": [
+          "fixture:register:r4",
+          "instruction:0000FA76"
+        ],
+        "call_context": [
+          "0000FA58"
+        ],
+        "control_sources": [],
+        "delay_slot": true,
+        "mode": "w",
+        "pc": "0000FA6C",
+        "size": 4,
+        "value": "A55A5AA5",
+        "value_sources": [
+          "rom:0000FAAC"
+        ],
+        "watchpoints": [
+          "candidate diagnostic RAM"
+        ]
+      },
+      {
+        "address": "FFFF7400",
+        "address_sources": [
+          "fixture:register:r4",
+          "instruction:0000FA76"
+        ],
+        "call_context": [
+          "0000FA58"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000FA70",
+        "size": 4,
+        "value": "A55A5AA5",
+        "value_sources": [
+          "ram:FFFF7400",
+          "ram:FFFF7401",
+          "ram:FFFF7402",
+          "ram:FFFF7403",
+          "rom:0000FAAC"
+        ],
+        "watchpoints": [
+          "candidate diagnostic RAM"
+        ]
+      },
+      {
+        "address": "FFFF7404",
+        "address_sources": [
+          "fixture:register:r4",
+          "instruction:0000FA76"
+        ],
+        "call_context": [
+          "0000FA58"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "0000FA64",
+        "size": 4,
+        "value": "5AA5A55A",
+        "value_sources": [
+          "rom:0000FAB0"
+        ],
+        "watchpoints": [
+          "candidate diagnostic RAM"
+        ]
+      },
+      {
+        "address": "FFFF7404",
+        "address_sources": [
+          "fixture:register:r4",
+          "instruction:0000FA76"
+        ],
+        "call_context": [
+          "0000FA58"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000FA66",
+        "size": 4,
+        "value": "5AA5A55A",
+        "value_sources": [
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "rom:0000FAB0"
+        ],
+        "watchpoints": [
+          "candidate diagnostic RAM"
+        ]
+      },
+      {
+        "address": "FFFF7404",
+        "address_sources": [
+          "fixture:register:r4",
+          "instruction:0000FA76"
+        ],
+        "call_context": [
+          "0000FA58"
+        ],
+        "control_sources": [],
+        "delay_slot": true,
+        "mode": "w",
+        "pc": "0000FA6C",
+        "size": 4,
+        "value": "A55A5AA5",
+        "value_sources": [
+          "rom:0000FAAC"
+        ],
+        "watchpoints": [
+          "candidate diagnostic RAM"
+        ]
+      },
+      {
+        "address": "FFFF7404",
+        "address_sources": [
+          "fixture:register:r4",
+          "instruction:0000FA76"
+        ],
+        "call_context": [
+          "0000FA58"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000FA70",
+        "size": 4,
+        "value": "A55A5AA5",
+        "value_sources": [
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "rom:0000FAAC"
+        ],
+        "watchpoints": [
+          "candidate diagnostic RAM"
+        ]
+      },
+      {
+        "address": "FFFF7408",
+        "address_sources": [
+          "fixture:register:r4",
+          "instruction:0000FA76"
+        ],
+        "call_context": [
+          "0000FA58"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "0000FA64",
+        "size": 4,
+        "value": "5AA5A55A",
+        "value_sources": [
+          "rom:0000FAB0"
+        ],
+        "watchpoints": [
+          "candidate diagnostic RAM"
+        ]
+      },
+      {
+        "address": "FFFF7408",
+        "address_sources": [
+          "fixture:register:r4",
+          "instruction:0000FA76"
+        ],
+        "call_context": [
+          "0000FA58"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000FA66",
+        "size": 4,
+        "value": "5AA5A55A",
+        "value_sources": [
+          "ram:FFFF7408",
+          "ram:FFFF7409",
+          "ram:FFFF740A",
+          "ram:FFFF740B",
+          "rom:0000FAB0"
+        ],
+        "watchpoints": [
+          "candidate diagnostic RAM"
+        ]
+      },
+      {
+        "address": "FFFF7408",
+        "address_sources": [
+          "fixture:register:r4",
+          "instruction:0000FA76"
+        ],
+        "call_context": [
+          "0000FA58"
+        ],
+        "control_sources": [],
+        "delay_slot": true,
+        "mode": "w",
+        "pc": "0000FA6C",
+        "size": 4,
+        "value": "A55A5AA5",
+        "value_sources": [
+          "rom:0000FAAC"
+        ],
+        "watchpoints": [
+          "candidate diagnostic RAM"
+        ]
+      },
+      {
+        "address": "FFFF7408",
+        "address_sources": [
+          "fixture:register:r4",
+          "instruction:0000FA76"
+        ],
+        "call_context": [
+          "0000FA58"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000FA70",
+        "size": 4,
+        "value": "A55A5AA5",
+        "value_sources": [
+          "ram:FFFF7408",
+          "ram:FFFF7409",
+          "ram:FFFF740A",
+          "ram:FFFF740B",
+          "rom:0000FAAC"
+        ],
+        "watchpoints": [
+          "candidate diagnostic RAM"
+        ]
+      },
+      {
+        "address": "FFFF740C",
+        "address_sources": [
+          "fixture:register:r4",
+          "instruction:0000FA76"
+        ],
+        "call_context": [
+          "0000FA58"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "0000FA64",
+        "size": 4,
+        "value": "5AA5A55A",
+        "value_sources": [
+          "rom:0000FAB0"
+        ],
+        "watchpoints": [
+          "candidate diagnostic RAM"
+        ]
+      },
+      {
+        "address": "FFFF740C",
+        "address_sources": [
+          "fixture:register:r4",
+          "instruction:0000FA76"
+        ],
+        "call_context": [
+          "0000FA58"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000FA66",
+        "size": 4,
+        "value": "5AA5A55A",
+        "value_sources": [
+          "ram:FFFF740C",
+          "ram:FFFF740D",
+          "ram:FFFF740E",
+          "ram:FFFF740F",
+          "rom:0000FAB0"
+        ],
+        "watchpoints": [
+          "candidate diagnostic RAM"
+        ]
+      },
+      {
+        "address": "FFFF740C",
+        "address_sources": [
+          "fixture:register:r4",
+          "instruction:0000FA76"
+        ],
+        "call_context": [
+          "0000FA58"
+        ],
+        "control_sources": [],
+        "delay_slot": true,
+        "mode": "w",
+        "pc": "0000FA6C",
+        "size": 4,
+        "value": "A55A5AA5",
+        "value_sources": [
+          "rom:0000FAAC"
+        ],
+        "watchpoints": [
+          "candidate diagnostic RAM"
+        ]
+      },
+      {
+        "address": "FFFF740C",
+        "address_sources": [
+          "fixture:register:r4",
+          "instruction:0000FA76"
+        ],
+        "call_context": [
+          "0000FA58"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000FA70",
+        "size": 4,
+        "value": "A55A5AA5",
+        "value_sources": [
+          "ram:FFFF740C",
+          "ram:FFFF740D",
+          "ram:FFFF740E",
+          "ram:FFFF740F",
+          "rom:0000FAAC"
+        ],
+        "watchpoints": [
+          "candidate diagnostic RAM"
+        ]
+      },
+      {
+        "address": "FFFF7410",
+        "address_sources": [
+          "fixture:register:r4",
+          "instruction:0000FA76"
+        ],
+        "call_context": [
+          "0000FA58"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "0000FA64",
+        "size": 4,
+        "value": "5AA5A55A",
+        "value_sources": [
+          "rom:0000FAB0"
+        ],
+        "watchpoints": [
+          "candidate diagnostic RAM"
+        ]
+      },
+      {
+        "address": "FFFF7410",
+        "address_sources": [
+          "fixture:register:r4",
+          "instruction:0000FA76"
+        ],
+        "call_context": [
+          "0000FA58"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000FA66",
+        "size": 4,
+        "value": "5AA5A55A",
+        "value_sources": [
+          "ram:FFFF7410",
+          "ram:FFFF7411",
+          "ram:FFFF7412",
+          "ram:FFFF7413",
+          "rom:0000FAB0"
+        ],
+        "watchpoints": [
+          "candidate diagnostic RAM"
+        ]
+      },
+      {
+        "address": "FFFF7410",
+        "address_sources": [
+          "fixture:register:r4",
+          "instruction:0000FA76"
+        ],
+        "call_context": [
+          "0000FA58"
+        ],
+        "control_sources": [],
+        "delay_slot": true,
+        "mode": "w",
+        "pc": "0000FA6C",
+        "size": 4,
+        "value": "A55A5AA5",
+        "value_sources": [
+          "rom:0000FAAC"
+        ],
+        "watchpoints": [
+          "candidate diagnostic RAM"
+        ]
+      },
+      {
+        "address": "FFFF7410",
+        "address_sources": [
+          "fixture:register:r4",
+          "instruction:0000FA76"
+        ],
+        "call_context": [
+          "0000FA58"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000FA70",
+        "size": 4,
+        "value": "A55A5AA5",
+        "value_sources": [
+          "ram:FFFF7410",
+          "ram:FFFF7411",
+          "ram:FFFF7412",
+          "ram:FFFF7413",
+          "rom:0000FAAC"
+        ],
+        "watchpoints": [
+          "candidate diagnostic RAM"
+        ]
+      },
+      {
+        "address": "FFFF7414",
+        "address_sources": [
+          "fixture:register:r4",
+          "instruction:0000FA76"
+        ],
+        "call_context": [
+          "0000FA58"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "0000FA64",
+        "size": 4,
+        "value": "5AA5A55A",
+        "value_sources": [
+          "rom:0000FAB0"
+        ],
+        "watchpoints": [
+          "candidate diagnostic RAM"
+        ]
+      },
+      {
+        "address": "FFFF7414",
+        "address_sources": [
+          "fixture:register:r4",
+          "instruction:0000FA76"
+        ],
+        "call_context": [
+          "0000FA58"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000FA66",
+        "size": 4,
+        "value": "5AA5A55A",
+        "value_sources": [
+          "ram:FFFF7414",
+          "ram:FFFF7415",
+          "ram:FFFF7416",
+          "ram:FFFF7417",
+          "rom:0000FAB0"
+        ],
+        "watchpoints": [
+          "candidate diagnostic RAM"
+        ]
+      },
+      {
+        "address": "FFFF7414",
+        "address_sources": [
+          "fixture:register:r4",
+          "instruction:0000FA76"
+        ],
+        "call_context": [
+          "0000FA58"
+        ],
+        "control_sources": [],
+        "delay_slot": true,
+        "mode": "w",
+        "pc": "0000FA6C",
+        "size": 4,
+        "value": "A55A5AA5",
+        "value_sources": [
+          "rom:0000FAAC"
+        ],
+        "watchpoints": [
+          "candidate diagnostic RAM"
+        ]
+      },
+      {
+        "address": "FFFF7414",
+        "address_sources": [
+          "fixture:register:r4",
+          "instruction:0000FA76"
+        ],
+        "call_context": [
+          "0000FA58"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000FA70",
+        "size": 4,
+        "value": "A55A5AA5",
+        "value_sources": [
+          "ram:FFFF7414",
+          "ram:FFFF7415",
+          "ram:FFFF7416",
+          "ram:FFFF7417",
+          "rom:0000FAAC"
+        ],
+        "watchpoints": [
+          "candidate diagnostic RAM"
+        ]
+      },
+      {
+        "address": "FFFF7418",
+        "address_sources": [
+          "fixture:register:r4",
+          "instruction:0000FA76"
+        ],
+        "call_context": [
+          "0000FA58"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "0000FA64",
+        "size": 4,
+        "value": "5AA5A55A",
+        "value_sources": [
+          "rom:0000FAB0"
+        ],
+        "watchpoints": [
+          "candidate diagnostic RAM"
+        ]
+      },
+      {
+        "address": "FFFF7418",
+        "address_sources": [
+          "fixture:register:r4",
+          "instruction:0000FA76"
+        ],
+        "call_context": [
+          "0000FA58"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000FA66",
+        "size": 4,
+        "value": "5AA5A55A",
+        "value_sources": [
+          "ram:FFFF7418",
+          "ram:FFFF7419",
+          "ram:FFFF741A",
+          "ram:FFFF741B",
+          "rom:0000FAB0"
+        ],
+        "watchpoints": [
+          "candidate diagnostic RAM"
+        ]
+      },
+      {
+        "address": "FFFF7418",
+        "address_sources": [
+          "fixture:register:r4",
+          "instruction:0000FA76"
+        ],
+        "call_context": [
+          "0000FA58"
+        ],
+        "control_sources": [],
+        "delay_slot": true,
+        "mode": "w",
+        "pc": "0000FA6C",
+        "size": 4,
+        "value": "A55A5AA5",
+        "value_sources": [
+          "rom:0000FAAC"
+        ],
+        "watchpoints": [
+          "candidate diagnostic RAM"
+        ]
+      },
+      {
+        "address": "FFFF7418",
+        "address_sources": [
+          "fixture:register:r4",
+          "instruction:0000FA76"
+        ],
+        "call_context": [
+          "0000FA58"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000FA70",
+        "size": 4,
+        "value": "A55A5AA5",
+        "value_sources": [
+          "ram:FFFF7418",
+          "ram:FFFF7419",
+          "ram:FFFF741A",
+          "ram:FFFF741B",
+          "rom:0000FAAC"
+        ],
+        "watchpoints": [
+          "candidate diagnostic RAM"
+        ]
+      },
+      {
+        "address": "FFFF741C",
+        "address_sources": [
+          "fixture:register:r4",
+          "instruction:0000FA76"
+        ],
+        "call_context": [
+          "0000FA58"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "0000FA64",
+        "size": 4,
+        "value": "5AA5A55A",
+        "value_sources": [
+          "rom:0000FAB0"
+        ],
+        "watchpoints": [
+          "candidate diagnostic RAM"
+        ]
+      },
+      {
+        "address": "FFFF741C",
+        "address_sources": [
+          "fixture:register:r4",
+          "instruction:0000FA76"
+        ],
+        "call_context": [
+          "0000FA58"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000FA66",
+        "size": 4,
+        "value": "5AA5A55A",
+        "value_sources": [
+          "ram:FFFF741C",
+          "ram:FFFF741D",
+          "ram:FFFF741E",
+          "ram:FFFF741F",
+          "rom:0000FAB0"
+        ],
+        "watchpoints": [
+          "candidate diagnostic RAM"
+        ]
+      },
+      {
+        "address": "FFFF741C",
+        "address_sources": [
+          "fixture:register:r4",
+          "instruction:0000FA76"
+        ],
+        "call_context": [
+          "0000FA58"
+        ],
+        "control_sources": [],
+        "delay_slot": true,
+        "mode": "w",
+        "pc": "0000FA6C",
+        "size": 4,
+        "value": "A55A5AA5",
+        "value_sources": [
+          "rom:0000FAAC"
+        ],
+        "watchpoints": [
+          "candidate diagnostic RAM"
+        ]
+      },
+      {
+        "address": "FFFF741C",
+        "address_sources": [
+          "fixture:register:r4",
+          "instruction:0000FA76"
+        ],
+        "call_context": [
+          "0000FA58"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000FA70",
+        "size": 4,
+        "value": "A55A5AA5",
+        "value_sources": [
+          "ram:FFFF741C",
+          "ram:FFFF741D",
+          "ram:FFFF741E",
+          "ram:FFFF741F",
+          "rom:0000FAAC"
+        ],
+        "watchpoints": [
+          "candidate diagnostic RAM"
+        ]
+      },
+      {
+        "address": "FFFF7420",
+        "address_sources": [
+          "fixture:register:r4",
+          "instruction:0000FA76"
+        ],
+        "call_context": [
+          "0000FA58"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "0000FA64",
+        "size": 4,
+        "value": "5AA5A55A",
+        "value_sources": [
+          "rom:0000FAB0"
+        ],
+        "watchpoints": [
+          "adjacent after candidate"
+        ]
+      },
+      {
+        "address": "FFFF7420",
+        "address_sources": [
+          "fixture:register:r4",
+          "instruction:0000FA76"
+        ],
+        "call_context": [
+          "0000FA58"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000FA66",
+        "size": 4,
+        "value": "5AA5A55A",
+        "value_sources": [
+          "ram:FFFF7420",
+          "ram:FFFF7421",
+          "ram:FFFF7422",
+          "ram:FFFF7423",
+          "rom:0000FAB0"
+        ],
+        "watchpoints": [
+          "adjacent after candidate"
+        ]
+      },
+      {
+        "address": "FFFF7420",
+        "address_sources": [
+          "fixture:register:r4",
+          "instruction:0000FA76"
+        ],
+        "call_context": [
+          "0000FA58"
+        ],
+        "control_sources": [],
+        "delay_slot": true,
+        "mode": "w",
+        "pc": "0000FA6C",
+        "size": 4,
+        "value": "A55A5AA5",
+        "value_sources": [
+          "rom:0000FAAC"
+        ],
+        "watchpoints": [
+          "adjacent after candidate"
+        ]
+      },
+      {
+        "address": "FFFF7420",
+        "address_sources": [
+          "fixture:register:r4",
+          "instruction:0000FA76"
+        ],
+        "call_context": [
+          "0000FA58"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000FA70",
+        "size": 4,
+        "value": "A55A5AA5",
+        "value_sources": [
+          "ram:FFFF7420",
+          "ram:FFFF7421",
+          "ram:FFFF7422",
+          "ram:FFFF7423",
+          "rom:0000FAAC"
+        ],
+        "watchpoints": [
+          "adjacent after candidate"
+        ]
+      }
+    ],
+    "write_count": 18814
+  }
+]

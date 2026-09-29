@@ -1,0 +1,117 @@
+{
+  "status": "PASS",
+  "input_report_sha256": "acdbdd54fa57bf30fcf6af22079483360bac5f321696eaba09784bc21bf97de3",
+  "code_overlay_sha256": "9dc63ee19afaef524755e00e1da3ca958b12f76ceeaf8e36c70cd3a9e3bf57a1",
+  "frame_before_instruction": {
+    "000042A4": 8,
+    "000042A6": 8,
+    "000042A8": 8,
+    "000042AA": 8,
+    "000042AC": 8,
+    "000042B0": 8,
+    "000042B2": 8,
+    "000042B4": 8,
+    "000042B6": 8,
+    "000042B8": 8,
+    "000042BA": 8,
+    "000042BC": 8,
+    "000042BE": 8,
+    "000042C0": 8,
+    "000042C2": 8,
+    "000042C4": 8,
+    "000042C6": 8,
+    "000042CA": 8,
+    "00014770": 0,
+    "00014772": 4,
+    "00014774": 8,
+    "00014776": 8,
+    "0001477A": 8,
+    "0001477C": 4,
+    "0001477E": 0,
+    "00014780": 0,
+    "00014782": 0,
+    "00014784": 0,
+    "00014786": 0,
+    "00014788": 0,
+    "0001478A": 0,
+    "0001478C": 0,
+    "00014790": 0,
+    "00014792": 0,
+    "00014794": 0,
+    "00014796": 0,
+    "00014798": 0,
+    "0001479A": 0,
+    "0001479C": 0,
+    "0001479E": 0,
+    "000147A0": 0,
+    "000484B0": 0,
+    "000484B2": 0,
+    "000484BC": 0
+  },
+  "added_stack_peak": 8,
+  "OEM_frame": 28,
+  "full_dispatcher_peak": 36,
+  "every_frame_join_equal": true,
+  "balanced_at_continuation": true,
+  "known_writes": [
+    {
+      "pc": "00014770",
+      "destination": "private stack",
+      "size": 4
+    },
+    {
+      "pc": "00014772",
+      "destination": "private stack",
+      "size": 4
+    },
+    {
+      "pc": "00014780",
+      "destination": "existing response lengthFFFF6405",
+      "size": 1
+    },
+    {
+      "pc": "00014788",
+      "destination": "existing response opcodeFFFF6401",
+      "size": 1
+    },
+    {
+      "pc": "00014794",
+      "destination": "existing error flagsFFFF649B",
+      "size": 1
+    },
+    {
+      "pc": "0001479A",
+      "destination": "existing flagsFFFF649A",
+      "size": 1
+    }
+  ],
+  "preserved_GPR": "R1/R4 saved/restored;R5-R14 untouched bypayload;R15 balanced;R2/R3 overwritten by original484BC/484C0beforeuse;R0originalscratch.",
+  "PR": "HelperJSR overwritesPR;existingdispatcherstackslotrestoresPRat484C4beforeRTS. No claimPRidentical at484BC.",
+  "SR": "Original finalCMP/EQ9F false fixesT0at484B0;matcher usesT;commonCLRT restoresT0onbothpaths;allotherSRbits unaffected.",
+  "FPU_MAC_control": "No reachable payload operation accesses FPU,MACH,MACL,GBR,VBR or loads/stores SR.",
+  "finite_counter": "OnlyMOV#12/#18andDTwriteR4inmatcher. Loopbackoccurswhilepostdecrementnonzero; atmost18iterations.",
+  "cycles": {
+    "accepted_page0": {
+      "instructions": 142,
+      "data_accesses": 50,
+      "conditional_F2_D2_cycles": 902
+    },
+    "rejected": {
+      "instructions": 136,
+      "data_accesses": 49,
+      "conditional_F2_D2_cycles": 865
+    },
+    "accepted_page1": {
+      "instructions": 107,
+      "data_accesses": 38,
+      "conditional_F2_D2_cycles": 680
+    }
+  },
+  "cycle_assumptions": "5*N+(F-1)*N+(D-1)*A; illustrativeF=D=2; excludesentry/externalstalls,OEMbaseline,interruptdelivery and actualbusclock.",
+  "gates": {
+    "compiled_frame_and_live_state": "PASS",
+    "whole_object_ownership": "FAIL",
+    "silicon_timing_stack_margin": "PHYSICAL/BENCH REQUIRED"
+  },
+  "source_sha256": "267d7fa537a3e971cb793b7e93b87fcc8742ae08317d7db722749ff13b9b62f3"
+}

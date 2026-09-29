@@ -1,0 +1,8 @@
+{
+  "status": "NOT_EXECUTED_AUTOMATIC_APPROVAL_REJECTION",
+  "action": "Create and remove a project-local junction to test the runtime inventory guard",
+  "reason_returned": "blocked by policy",
+  "execution": "Tool rejected the command before process creation; no junction was created",
+  "current_coverage": "Launcher and manifest sealer reject reparse points in root and descendants by source inspection; all real runtime entries were checked, no reparse points found. Hidden-file guard was executed successfully.",
+  "requires_user_action_for_original_interface_task": false
+}

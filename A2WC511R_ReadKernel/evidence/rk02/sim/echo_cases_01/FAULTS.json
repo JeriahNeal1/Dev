@@ -1,0 +1,374 @@
+{
+  "schema": 1,
+  "status": "PASS",
+  "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+  "physical": false,
+  "classification": "COMPILED_INSTRUCTION_NEGATIVE_AND_BOUNDED_FAULT_FIXTURES",
+  "cases": [
+    {
+      "case": "no_echo",
+      "status": "PASS",
+      "classification": "COMPILED_ECHO_SCHEDULE",
+      "expected_kernel_outcome": "RX_WAIT",
+      "observed_status": "PASS",
+      "observed_reason": "RX_WAIT",
+      "transmitted_bytes": 523,
+      "transmitted_sha256": "796f64cefcd2b81c5c7662b2bdacad828c0a948c55bfdc5d002ac5c8da7f898e",
+      "instructions": 15105,
+      "memory_event_sha256": "8d0494b7495cc6fcc0ed546d99d36afa5de29dd8b228561efd42119e90a7c398",
+      "execution_sha256": "a6210b3f63caeee17d6b37b1f20d9ced7f2c5a886fabd453b949fc39e9a0a6be",
+      "stack_max_bytes": 0,
+      "injection": null,
+      "result_evidence": {
+        "sequence": 2,
+        "terminal_pc": "FFFF31BE",
+        "terminal_sp": "FFFF372C",
+        "min_sp": "FFFF372C",
+        "memory_event_sha256": "8d0494b7495cc6fcc0ed546d99d36afa5de29dd8b228561efd42119e90a7c398",
+        "execution_sha256": "a6210b3f63caeee17d6b37b1f20d9ced7f2c5a886fabd453b949fc39e9a0a6be",
+        "SCI_schedule_sha256": "f73c67a6c2e490a205d18010a3387d29d56a7558a61326ca0fe64ae74fea5f3a",
+        "physical": false
+      }
+    },
+    {
+      "case": "every_byte_echo",
+      "status": "PASS",
+      "classification": "COMPILED_ECHO_SCHEDULE",
+      "expected_kernel_outcome": "RX_WAIT",
+      "observed_status": "PASS",
+      "observed_reason": "RX_WAIT",
+      "transmitted_bytes": 523,
+      "transmitted_sha256": "796f64cefcd2b81c5c7662b2bdacad828c0a948c55bfdc5d002ac5c8da7f898e",
+      "instructions": 15105,
+      "memory_event_sha256": "8d0494b7495cc6fcc0ed546d99d36afa5de29dd8b228561efd42119e90a7c398",
+      "execution_sha256": "a6210b3f63caeee17d6b37b1f20d9ced7f2c5a886fabd453b949fc39e9a0a6be",
+      "stack_max_bytes": 0,
+      "injection": null,
+      "result_evidence": {
+        "sequence": 2,
+        "terminal_pc": "FFFF31BE",
+        "terminal_sp": "FFFF372C",
+        "min_sp": "FFFF372C",
+        "memory_event_sha256": "8d0494b7495cc6fcc0ed546d99d36afa5de29dd8b228561efd42119e90a7c398",
+        "execution_sha256": "a6210b3f63caeee17d6b37b1f20d9ced7f2c5a886fabd453b949fc39e9a0a6be",
+        "SCI_schedule_sha256": "ad05f48b4bce37f0795a17a0cfd3c620c6794fc50080a5979db6ca307c1b2a18",
+        "physical": false
+      }
+    },
+    {
+      "case": "delayed_completion_after_RX_restore",
+      "status": "PASS",
+      "classification": "COMPILED_ECHO_SCHEDULE",
+      "expected_kernel_outcome": "RX_WAIT",
+      "observed_status": "PASS",
+      "observed_reason": "RX_WAIT",
+      "transmitted_bytes": 523,
+      "transmitted_sha256": "796f64cefcd2b81c5c7662b2bdacad828c0a948c55bfdc5d002ac5c8da7f898e",
+      "instructions": 17840,
+      "memory_event_sha256": "f7232c9f6969069c42f719bc846b22816590cf687849e14bf75909c2ef1afec2",
+      "execution_sha256": "8e440ea709e9ba69597ffedc58853e065676689562d6b93b0e1ab38260f6c901",
+      "stack_max_bytes": 0,
+      "injection": null,
+      "result_evidence": {
+        "sequence": 2,
+        "terminal_pc": "FFFF31BE",
+        "terminal_sp": "FFFF372C",
+        "min_sp": "FFFF372C",
+        "memory_event_sha256": "f7232c9f6969069c42f719bc846b22816590cf687849e14bf75909c2ef1afec2",
+        "execution_sha256": "8e440ea709e9ba69597ffedc58853e065676689562d6b93b0e1ab38260f6c901",
+        "SCI_schedule_sha256": "bc5321d4312ad03b501b8b2b311dda46d1436eb96c5d8182c335522871751b38",
+        "physical": false
+      }
+    },
+    {
+      "case": "only_final_bytes_echo",
+      "status": "PASS",
+      "classification": "COMPILED_ECHO_SCHEDULE",
+      "expected_kernel_outcome": "RX_WAIT",
+      "observed_status": "PASS",
+      "observed_reason": "RX_WAIT",
+      "transmitted_bytes": 523,
+      "transmitted_sha256": "796f64cefcd2b81c5c7662b2bdacad828c0a948c55bfdc5d002ac5c8da7f898e",
+      "instructions": 17840,
+      "memory_event_sha256": "f7232c9f6969069c42f719bc846b22816590cf687849e14bf75909c2ef1afec2",
+      "execution_sha256": "8e440ea709e9ba69597ffedc58853e065676689562d6b93b0e1ab38260f6c901",
+      "stack_max_bytes": 0,
+      "injection": null,
+      "result_evidence": {
+        "sequence": 2,
+        "terminal_pc": "FFFF31BE",
+        "terminal_sp": "FFFF372C",
+        "min_sp": "FFFF372C",
+        "memory_event_sha256": "f7232c9f6969069c42f719bc846b22816590cf687849e14bf75909c2ef1afec2",
+        "execution_sha256": "8e440ea709e9ba69597ffedc58853e065676689562d6b93b0e1ab38260f6c901",
+        "SCI_schedule_sha256": "9dcc829c8199053a298bbc78290a03e254da36edeb0fede4b2fdb4e6a188be79",
+        "physical": false
+      }
+    },
+    {
+      "case": "fragmented_requests_every_byte_echo",
+      "status": "PASS",
+      "classification": "COMPILED_ECHO_SCHEDULE",
+      "expected_kernel_outcome": "RX_WAIT",
+      "observed_status": "PASS",
+      "observed_reason": "RX_WAIT",
+      "transmitted_bytes": 523,
+      "transmitted_sha256": "796f64cefcd2b81c5c7662b2bdacad828c0a948c55bfdc5d002ac5c8da7f898e",
+      "instructions": 15309,
+      "memory_event_sha256": "98f41f38d24663946ed87a1586c4409460a558e534f68834e0bc56e12ff88a3f",
+      "execution_sha256": "57326240b302839498756e856d4d903579c33c63d4939baa583158c9d098222b",
+      "stack_max_bytes": 0,
+      "injection": null,
+      "result_evidence": {
+        "sequence": 19,
+        "terminal_pc": "FFFF31BE",
+        "terminal_sp": "FFFF372C",
+        "min_sp": "FFFF372C",
+        "memory_event_sha256": "98f41f38d24663946ed87a1586c4409460a558e534f68834e0bc56e12ff88a3f",
+        "execution_sha256": "57326240b302839498756e856d4d903579c33c63d4939baa583158c9d098222b",
+        "SCI_schedule_sha256": "25e84963867e65d67cf6bae4f846dcd2edfbf405477451132bbf410c575f86f5",
+        "physical": false
+      }
+    },
+    {
+      "case": "entry_stale_RDRF_and_error_flags_cleared",
+      "status": "PASS",
+      "classification": "COMPILED_ECHO_SCHEDULE",
+      "expected_kernel_outcome": "RX_WAIT",
+      "observed_status": "PASS",
+      "observed_reason": "RX_WAIT",
+      "transmitted_bytes": 20,
+      "transmitted_sha256": "fb5086239a113723af33d75418d0dd0f18767360bdbbd7b4ac30077e5bcdcae0",
+      "instructions": 4782,
+      "memory_event_sha256": "39a09a521046096ec6bca215143da87e6fc7322c5d78183c846931832aefceea",
+      "execution_sha256": "59e02d5964a02fde3fe5aa631e17713beb840b4e6cd216a5b433fbd314af03d6",
+      "stack_max_bytes": 0,
+      "injection": null,
+      "result_evidence": {
+        "sequence": 1,
+        "terminal_pc": "FFFF31BE",
+        "terminal_sp": "FFFF372C",
+        "min_sp": "FFFF372C",
+        "memory_event_sha256": "39a09a521046096ec6bca215143da87e6fc7322c5d78183c846931832aefceea",
+        "execution_sha256": "59e02d5964a02fde3fe5aa631e17713beb840b4e6cd216a5b433fbd314af03d6",
+        "SCI_schedule_sha256": "27b4d2ed507d44c92ce04ecd2108e22cf79741c17407ac9c824266bd6bf74d12",
+        "physical": false
+      }
+    },
+    {
+      "case": "pre_TX_residual_SSR_40",
+      "status": "PASS",
+      "classification": "COMPILED_ECHO_SCHEDULE",
+      "expected_kernel_outcome": "KERNEL_REJECT",
+      "observed_status": "FAIL",
+      "observed_reason": "KERNEL_REJECT",
+      "transmitted_bytes": 0,
+      "transmitted_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "instructions": 4365,
+      "memory_event_sha256": "e880ea7d941bcf5486f61fae3470257c2b47ffc5bdd182b8f07a8f160ca1a97b",
+      "execution_sha256": "a102c66b08591c6aefeb24ea25762ee5d239ba32bcf98ce495ea7de33806bc62",
+      "stack_max_bytes": 0,
+      "injection": {
+        "explicit_peripheral_fault_bits": 64
+      },
+      "result_evidence": {
+        "sequence": 1,
+        "terminal_pc": "FFFF31A2",
+        "terminal_sp": "FFFF372C",
+        "min_sp": "FFFF372C",
+        "memory_event_sha256": "e880ea7d941bcf5486f61fae3470257c2b47ffc5bdd182b8f07a8f160ca1a97b",
+        "execution_sha256": "a102c66b08591c6aefeb24ea25762ee5d239ba32bcf98ce495ea7de33806bc62",
+        "SCI_schedule_sha256": "5adc5ff6b709d101f2189dac12675a4aa560217172aa0e02c10d028901583545",
+        "physical": false
+      }
+    },
+    {
+      "case": "pre_TX_residual_SSR_20",
+      "status": "PASS",
+      "classification": "COMPILED_ECHO_SCHEDULE",
+      "expected_kernel_outcome": "KERNEL_REJECT",
+      "observed_status": "FAIL",
+      "observed_reason": "KERNEL_REJECT",
+      "transmitted_bytes": 0,
+      "transmitted_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "instructions": 4365,
+      "memory_event_sha256": "61e2b9992c61a28b5544827e84217fdf1d1c346df87dcaf3b2597eb3943c2aee",
+      "execution_sha256": "a102c66b08591c6aefeb24ea25762ee5d239ba32bcf98ce495ea7de33806bc62",
+      "stack_max_bytes": 0,
+      "injection": {
+        "explicit_peripheral_fault_bits": 32
+      },
+      "result_evidence": {
+        "sequence": 1,
+        "terminal_pc": "FFFF31A2",
+        "terminal_sp": "FFFF372C",
+        "min_sp": "FFFF372C",
+        "memory_event_sha256": "61e2b9992c61a28b5544827e84217fdf1d1c346df87dcaf3b2597eb3943c2aee",
+        "execution_sha256": "a102c66b08591c6aefeb24ea25762ee5d239ba32bcf98ce495ea7de33806bc62",
+        "SCI_schedule_sha256": "5adc5ff6b709d101f2189dac12675a4aa560217172aa0e02c10d028901583545",
+        "physical": false
+      }
+    },
+    {
+      "case": "pre_TX_residual_SSR_10",
+      "status": "PASS",
+      "classification": "COMPILED_ECHO_SCHEDULE",
+      "expected_kernel_outcome": "KERNEL_REJECT",
+      "observed_status": "FAIL",
+      "observed_reason": "KERNEL_REJECT",
+      "transmitted_bytes": 0,
+      "transmitted_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "instructions": 4365,
+      "memory_event_sha256": "0901fc32b69646ea46022622f97199f092dff807bccb6deba133f8b363120598",
+      "execution_sha256": "a102c66b08591c6aefeb24ea25762ee5d239ba32bcf98ce495ea7de33806bc62",
+      "stack_max_bytes": 0,
+      "injection": {
+        "explicit_peripheral_fault_bits": 16
+      },
+      "result_evidence": {
+        "sequence": 1,
+        "terminal_pc": "FFFF31A2",
+        "terminal_sp": "FFFF372C",
+        "min_sp": "FFFF372C",
+        "memory_event_sha256": "0901fc32b69646ea46022622f97199f092dff807bccb6deba133f8b363120598",
+        "execution_sha256": "a102c66b08591c6aefeb24ea25762ee5d239ba32bcf98ce495ea7de33806bc62",
+        "SCI_schedule_sha256": "5adc5ff6b709d101f2189dac12675a4aa560217172aa0e02c10d028901583545",
+        "physical": false
+      }
+    },
+    {
+      "case": "pre_TX_residual_SSR_08",
+      "status": "PASS",
+      "classification": "COMPILED_ECHO_SCHEDULE",
+      "expected_kernel_outcome": "KERNEL_REJECT",
+      "observed_status": "FAIL",
+      "observed_reason": "KERNEL_REJECT",
+      "transmitted_bytes": 0,
+      "transmitted_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "instructions": 4365,
+      "memory_event_sha256": "7b8e770f4e7ecfe205251c2fa28168978f2aaca4c7ee8649fe480f17c0ca5bb2",
+      "execution_sha256": "a102c66b08591c6aefeb24ea25762ee5d239ba32bcf98ce495ea7de33806bc62",
+      "stack_max_bytes": 0,
+      "injection": {
+        "explicit_peripheral_fault_bits": 8
+      },
+      "result_evidence": {
+        "sequence": 1,
+        "terminal_pc": "FFFF31A2",
+        "terminal_sp": "FFFF372C",
+        "min_sp": "FFFF372C",
+        "memory_event_sha256": "7b8e770f4e7ecfe205251c2fa28168978f2aaca4c7ee8649fe480f17c0ca5bb2",
+        "execution_sha256": "a102c66b08591c6aefeb24ea25762ee5d239ba32bcf98ce495ea7de33806bc62",
+        "SCI_schedule_sha256": "5adc5ff6b709d101f2189dac12675a4aa560217172aa0e02c10d028901583545",
+        "physical": false
+      }
+    },
+    {
+      "case": "pre_TX_residual_SSR_78",
+      "status": "PASS",
+      "classification": "COMPILED_ECHO_SCHEDULE",
+      "expected_kernel_outcome": "KERNEL_REJECT",
+      "observed_status": "FAIL",
+      "observed_reason": "KERNEL_REJECT",
+      "transmitted_bytes": 0,
+      "transmitted_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "instructions": 4365,
+      "memory_event_sha256": "52ca544ca2bf31842f675b2b0ac3646e3a7531f2bae41fa35d88c2da85ae9d08",
+      "execution_sha256": "a102c66b08591c6aefeb24ea25762ee5d239ba32bcf98ce495ea7de33806bc62",
+      "stack_max_bytes": 0,
+      "injection": {
+        "explicit_peripheral_fault_bits": 120
+      },
+      "result_evidence": {
+        "sequence": 1,
+        "terminal_pc": "FFFF31A2",
+        "terminal_sp": "FFFF372C",
+        "min_sp": "FFFF372C",
+        "memory_event_sha256": "52ca544ca2bf31842f675b2b0ac3646e3a7531f2bae41fa35d88c2da85ae9d08",
+        "execution_sha256": "a102c66b08591c6aefeb24ea25762ee5d239ba32bcf98ce495ea7de33806bc62",
+        "SCI_schedule_sha256": "5adc5ff6b709d101f2189dac12675a4aa560217172aa0e02c10d028901583545",
+        "physical": false
+      }
+    },
+    {
+      "case": "new_post_RX_noise_start_rejected",
+      "status": "PASS",
+      "classification": "COMPILED_ECHO_SCHEDULE",
+      "expected_kernel_outcome": "KERNEL_REJECT",
+      "observed_status": "FAIL",
+      "observed_reason": "KERNEL_REJECT",
+      "transmitted_bytes": 0,
+      "transmitted_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "instructions": 4808,
+      "memory_event_sha256": "7651f3c9e3a90c75beb8db4fe92ff57b710717a5c421d2c788246fa8cb4377c8",
+      "execution_sha256": "d1a02d8464f2e1ddc92998cc7c97ee8098335f905a7cc2704276682a6d286a80",
+      "stack_max_bytes": 0,
+      "injection": {
+        "scope": "A genuine new character after RX enable; not an ignored RE0 start"
+      },
+      "result_evidence": {
+        "sequence": 2,
+        "terminal_pc": "FFFF31A2",
+        "terminal_sp": "FFFF372C",
+        "min_sp": "FFFF372C",
+        "memory_event_sha256": "7651f3c9e3a90c75beb8db4fe92ff57b710717a5c421d2c788246fa8cb4377c8",
+        "execution_sha256": "d1a02d8464f2e1ddc92998cc7c97ee8098335f905a7cc2704276682a6d286a80",
+        "SCI_schedule_sha256": "f3434a8acbf753b430ead4ed6b2c6be262fac0dd4ee093ecb0152be18bc998f3",
+        "physical": false
+      }
+    },
+    {
+      "case": "genuinely_late_echo_start_rejected",
+      "status": "PASS",
+      "classification": "COMPILED_ECHO_SCHEDULE",
+      "expected_kernel_outcome": "KERNEL_REJECT",
+      "observed_status": "FAIL",
+      "observed_reason": "KERNEL_REJECT",
+      "transmitted_bytes": 20,
+      "transmitted_sha256": "fb5086239a113723af33d75418d0dd0f18767360bdbbd7b4ac30077e5bcdcae0",
+      "instructions": 5762,
+      "memory_event_sha256": "551173e7a632f02c73b33cc696d28f14ec7ffd9f25686beeab43705bb5af1fd1",
+      "execution_sha256": "e09624d417a7767b6a5f5c97af9453e72c79e7eda6ca5bc4c62ebe26e5700a30",
+      "stack_max_bytes": 0,
+      "injection": {
+        "scope": "A declared new start after RX enable; expected fail-closed outcome, not successful protocol"
+      },
+      "result_evidence": {
+        "sequence": 1,
+        "terminal_pc": "FFFF31A2",
+        "terminal_sp": "FFFF372C",
+        "min_sp": "FFFF372C",
+        "memory_event_sha256": "551173e7a632f02c73b33cc696d28f14ec7ffd9f25686beeab43705bb5af1fd1",
+        "execution_sha256": "e09624d417a7767b6a5f5c97af9453e72c79e7eda6ca5bc4c62ebe26e5700a30",
+        "SCI_schedule_sha256": "6cb0225510c582c1b1056cd12b111844cbb2cb02a41741e680f38a20cab4bef4",
+        "physical": false
+      }
+    }
+  ],
+  "closed_world_negative_controls": [],
+  "seconds": 0,
+  "case_count": 13,
+  "negative_control_count": 0,
+  "coverage": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\sim\\echo_cases_01\\coverage.json",
+    "sha256": "86f5b6af4d782a13ece8bc60b8d78d97755e52acad13967b0ac4774751141707"
+  },
+  "fuzz_seed": "51170001",
+  "unsupported_executed_paths": [],
+  "model_sources": {
+    "core.py": "caf6571a836676b82bec8f8a5eaa356590532e15931fae2da4b5822fe8ef0f90",
+    "cpu.py": "5043dafdfe59447cb8d906f7570907c472e1d638deb507dc4af8546e9b0f1980",
+    "fast_step.py": "029bb2b484911289b19e5cdbad35bbbbdc80af05420e91dad6884e0ff0484cfa",
+    "harness.py": "0496579da46daf66eb3be3847da0f3e94f8f45bf6f0b494a1f89a97853a8b4c6",
+    "memory.py": "d6062f1dde275b9611d1b631f8151eac567314c603a533dad8751eede3fa2a38",
+    "sci.py": "6f3b4b38ae6e12ac75d5101c767f10b106e9676c322eac3a0e39a67a9c0030c1",
+    "self_echo.py": "87896f45a074fcff5132a6faa57af48f5444de13fdf67f00a4f1304ea583da5d",
+    "__init__.py": "8e8b1da117fdc2ba4fe06edfc32b9c8d67176ab69a9470ee21151018bc85fbd8"
+  },
+  "limitations": [
+    "NMI tested only at established non-delay RX boundary; hardware entry itself explicitly injected",
+    "No prefix-before-private-SP/VBR or rapid repeated/nested NMI guarantee",
+    "Virtual SCI instruction ticks are not silicon cycles, baud or electrical timing",
+    "Terminal-state fixtures do not replace independent two-full-pass execution"
+  ]
+}

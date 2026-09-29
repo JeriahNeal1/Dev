@@ -1,0 +1,630 @@
+diff --git a/MerpMod/DiagnosticM0/A2WC511R.h b/MerpMod/DiagnosticM0/A2WC511R.h
+new file mode 100644
+index 0000000..3960f16
+--- /dev/null
++++ b/MerpMod/DiagnosticM0/A2WC511R.h
+@@ -0,0 +1,16 @@
++#ifndef A2WC511R_M0_TARGET_H
++#define A2WC511R_M0_TARGET_H
++/* Actual target identity and read-only input addresses.
++ * Addresses derive from handoff state/SYMBOLS.json and existing A2WC511R IDB.
++ * 4CA1 and 4C50:02 retain raw meanings; neither proves communications freshness. */
++#define TARGET_ECU A2WC511R
++#define ECU_CALIBRATION_ID "A2WC511R"
++#define ECU_IDENTIFIER "2F12515306"
++#define AUTO_TRANS 1
++#define M0_PACKED_SOURCE 0xFFFF4C75u
++#define M0_PACKED_SNAPSHOT 0xFFFF4C8Du
++#define M0_UPDATE_LATCH 0xFFFF4CA1u
++#define M0_STATUS_FLAGS 0xFFFF4C50u
++/* No default code address, RAM hole, hook pointer or reset change is supplied.
++ * Linker allocation and wrapper must be accepted before integration. */
++#endif
+diff --git a/MerpMod/DiagnosticM0/Bindings.c b/MerpMod/DiagnosticM0/Bindings.c
+new file mode 100644
+index 0000000..3de6e4a
+--- /dev/null
++++ b/MerpMod/DiagnosticM0/Bindings.c
+@@ -0,0 +1,28 @@
++#include "Diagnostic.h"
++#include "A2WC511R.h"
++#include "DiagnosticConfig.h"
++/* Caller supplies RAM: synthetic for harness, UNAPPROVED candidate for the
++ * explicitly experimental link. This sampler never selects the allocation. */
++static m0_u8 read8(m0_u32 address)
++{
++ return *(const volatile m0_u8 *)address;
++}
++M0_API void m0_sample_hardware(volatile M0State *state)
++{
++ M0Input in;
++ m0_u8 source2, snapshot2, latch2, flags2;
++ in.source = read8(M0_PACKED_SOURCE);
++ in.snapshot = read8(M0_PACKED_SNAPSHOT);
++ in.latch = read8(M0_UPDATE_LATCH);
++ in.flags = read8(M0_STATUS_FLAGS);
++ source2 = read8(M0_PACKED_SOURCE);
++ snapshot2 = read8(M0_PACKED_SNAPSHOT);
++ latch2 = read8(M0_UPDATE_LATCH);
++ flags2 = read8(M0_STATUS_FLAGS);
++ in.capture_changed = (in.source != source2 || in.snapshot != snapshot2 ||
++                       in.latch != latch2 || in.flags != flags2) ? 1u : 0u;
++ in.freshness = M0_UNKNOWN; /* Never infer freshness from status/latch or gear. */
++ in.reserved0 = 0u;
++ in.reserved1 = 0u;
++ m0_observe(state, &in);
++}
+diff --git a/MerpMod/DiagnosticM0/DecoderHook.s b/MerpMod/DiagnosticM0/DecoderHook.s
+new file mode 100644
+index 0000000..bf52f51
+--- /dev/null
++++ b/MerpMod/DiagnosticM0/DecoderHook.s
+@@ -0,0 +1,61 @@
++/* GPL-3.0-or-later. A2WC511R 0x147AC decoder observer wrapper.
++ * Linked in a non-flash harness or explicitly UNAPPROVED experimental artifact.
++ * Original decoder is a stack-independent leaf; preserve its observable result.
++ * No SR/FPU/GBR writes precede original execution. Integer-only C follows it. */
++ .section .m0.code,"ax"
++ .align 2
++ .global _m0_decoder_hook
++_m0_decoder_hook:
++ sts.l pr,@-r15
++ mov.l r0,@-r15
++ mov.l .Loriginal,r0
++ jsr @r0
++ mov.l @r15+,r0
++ /* OEM result now exists. Save every GPR except SP, plus SR and MAC state. */
++ mov.l r0,@-r15
++ mov.l r1,@-r15
++ mov.l r2,@-r15
++ mov.l r3,@-r15
++ mov.l r4,@-r15
++ mov.l r5,@-r15
++ mov.l r6,@-r15
++ mov.l r7,@-r15
++ mov.l r8,@-r15
++ mov.l r9,@-r15
++ mov.l r10,@-r15
++ mov.l r11,@-r15
++ mov.l r12,@-r15
++ mov.l r13,@-r15
++ mov.l r14,@-r15
++ stc.l sr,@-r15
++ sts.l mach,@-r15
++ sts.l macl,@-r15
++ mov.l .Lstate,r4
++ mov.l .Lsample,r0
++ jsr @r0
++ nop
++ lds.l @r15+,macl
++ lds.l @r15+,mach
++ ldc.l @r15+,sr
++ mov.l @r15+,r14
++ mov.l @r15+,r13
++ mov.l @r15+,r12
++ mov.l @r15+,r11
++ mov.l @r15+,r10
++ mov.l @r15+,r9
++ mov.l @r15+,r8
++ mov.l @r15+,r7
++ mov.l @r15+,r6
++ mov.l @r15+,r5
++ mov.l @r15+,r4
++ mov.l @r15+,r3
++ mov.l @r15+,r2
++ mov.l @r15+,r1
++ mov.l @r15+,r0
++ lds.l @r15+,pr
++ rts
++ nop
++ .align 2
++.Loriginal: .long 0x000147AC
++.Lstate: .long _m0_state
++.Lsample: .long _m0_sample_hardware
+diff --git a/MerpMod/DiagnosticM0/Diagnostic.c b/MerpMod/DiagnosticM0/Diagnostic.c
+new file mode 100644
+index 0000000..82a0fb3
+--- /dev/null
++++ b/MerpMod/DiagnosticM0/Diagnostic.c
+@@ -0,0 +1,64 @@
++#include "Diagnostic.h"
++M0_API m0_u8 m0_decode(m0_u8 nibble, m0_u8 previous)
++{
++ if (nibble < 8u) return nibble;
++ if (nibble == 8u) return 0u;
++ return previous;
++}
++M0_API m0_u32 m0_reasons(const M0Input *in)
++{
++ /* Double reads cannot prove atomic/coherent CAN data. Retain this reason. */
++ m0_u32 reasons = M0_CAPTURE_COHERENCE_UNPROVEN;
++ if (in->snapshot != 0x11u) reasons |= M0_NOT_FIRST;
++ if (in->latch != 1u) reasons |= M0_LATCH_NOT_ONE;
++ if ((in->flags & 2u) == 0u) reasons |= M0_STATUS02_CLEAR;
++ if (in->freshness == M0_UNKNOWN) reasons |= M0_FRESHNESS_UNKNOWN;
++ else if (in->freshness == M0_KNOWN_STALE) reasons |= M0_STALE;
++ else if (in->freshness != M0_FRESH) reasons |= M0_INVALID_FRESHNESS;
++ if (in->source != in->snapshot) reasons |= M0_SOURCE_DISAGREES;
++ if ((in->snapshot >> 4) > 8u || (in->snapshot & 15u) > 8u)
++  reasons |= M0_UNSUPPORTED_NIBBLE;
++ if (in->capture_changed != 0u) reasons |= M0_CAPTURE_CHANGED;
++ return reasons;
++}
++M0_API void m0_init(volatile M0State *state)
++{
++ volatile m0_u8 *p = (volatile m0_u8 *)state;
++ m0_u32 i, seq = 0u;
++ if (state->magic == M0_MAGIC && state->initialized == 1u)
++  seq = state->sequence & ~1u;
++ state->sequence = seq + 1u;
++ for (i = sizeof(state->sequence); i < sizeof(*state); ++i) p[i] = 0;
++ state->magic = M0_MAGIC;
++ state->reasons = M0_FRESHNESS_UNKNOWN | M0_CAPTURE_COHERENCE_UNPROVEN;
++ state->initialized = 1u;
++ state->sequence = seq + 2u;
++}
++M0_API void m0_observe(volatile M0State *state, const M0Input *in)
++{
++ m0_u32 seq = state->sequence;
++ m0_u8 target = (m0_u8)(in->snapshot >> 4);
++ m0_u8 current = (m0_u8)(in->snapshot & 15u);
++ /* This is an explicit software-observer prerequisite, not a boot detector. */
++ if (state->magic != M0_MAGIC || state->initialized != 1u) {
++  m0_init(state);
++  seq = state->sequence;
++ }
++ state->sequence = (seq & ~1u) + 1u;
++ if (state->samples != 0u && state->previous_snapshot != in->snapshot)
++  state->transitions = state->transitions + 1u;
++ state->source = in->source;
++ state->snapshot = in->snapshot;
++ state->latch = in->latch;
++ state->flags = in->flags;
++ state->target_nibble = target;
++ state->current_nibble = current;
++ state->decoded_target = m0_decode(target, state->decoded_target);
++ state->decoded_current = m0_decode(current, state->decoded_current);
++ state->freshness = in->freshness;
++ state->capture_changed = in->capture_changed;
++ state->reasons = m0_reasons(in);
++ state->previous_snapshot = in->snapshot;
++ state->samples = state->samples + 1u;
++ state->sequence = (seq & ~1u) + 2u;
++}
+diff --git a/MerpMod/DiagnosticM0/Diagnostic.h b/MerpMod/DiagnosticM0/Diagnostic.h
+new file mode 100644
+index 0000000..265c32a
+--- /dev/null
++++ b/MerpMod/DiagnosticM0/Diagnostic.h
+@@ -0,0 +1,48 @@
++#ifndef A2WC511R_DIAGNOSTIC_M0_H
++#define A2WC511R_DIAGNOSTIC_M0_H
++/* GPL-3.0-or-later. A2WC511R source-port diagnostic closure.
++ * No output authority, peripheral writes, active controls or freshness inference.
++ * Fixed-width types avoid dependency on HEW's generated headers or host libc. */
++typedef unsigned char m0_u8;
++typedef unsigned short m0_u16;
++typedef unsigned int m0_u32;
++typedef char m0_require_uint32[(sizeof(m0_u32) == 4) ? 1 : -1];
++typedef char m0_require_uint16[(sizeof(m0_u16) == 2) ? 1 : -1];
++#if defined(M0_HOST_TEST) && defined(_WIN32)
++#define M0_API __declspec(dllexport)
++#else
++#define M0_API __attribute__((section(".m0.code"), aligned(4)))
++#endif
++enum m0_reason {
++ M0_NOT_FIRST=1u, M0_LATCH_NOT_ONE=2u, M0_STATUS02_CLEAR=4u,
++ M0_FRESHNESS_UNKNOWN=8u, M0_STALE=16u, M0_SOURCE_DISAGREES=32u,
++ M0_INVALID_FRESHNESS=64u, M0_UNSUPPORTED_NIBBLE=128u,
++ M0_CAPTURE_CHANGED=256u, M0_CAPTURE_COHERENCE_UNPROVEN=512u
++};
++enum m0_freshness { M0_UNKNOWN=0, M0_FRESH=1, M0_KNOWN_STALE=2 };
++typedef struct {
++ m0_u8 source, snapshot, latch, flags;
++ m0_u8 freshness, capture_changed, reserved0, reserved1;
++} M0Input;
++/* All fields describe observations; matching first gear never permits outputs.
++ * sequence protects publication only. It is not ECU/TCU communication freshness.
++ * Reader contract: read sequence-before; reject odd; read all32 bytes; reread
++ * sequence-after; require equal even sequences plus magic and initialized==1.
++ * Requires one nonreentrant writer. No claim that separate logger samples are
++ * atomic or that the CAN snapshot is fresh/coherent. Counter wrap can cause ABA.
++ * decoded_* are local reconstructions, NOT reads of OEM4BC1/4BC2.
++ * Explicit init or guarded lazy init; no warm-reset/power-cycle identification. */
++typedef struct {
++ m0_u32 sequence, magic, samples, reasons;
++ m0_u32 transitions;
++ m0_u8 source, snapshot, latch, flags;
++ m0_u8 target_nibble, current_nibble, decoded_target, decoded_current;
++ m0_u8 freshness, previous_snapshot, initialized, capture_changed;
++} M0State;
++typedef char m0_require_state32[(sizeof(M0State) == 32) ? 1 : -1];
++#define M0_MAGIC 0x4D304431u
++M0_API m0_u8 m0_decode(m0_u8 nibble, m0_u8 previous);
++M0_API m0_u32 m0_reasons(const M0Input *input);
++M0_API void m0_init(volatile M0State *state);
++M0_API void m0_observe(volatile M0State *state, const M0Input *input);
++#endif
+diff --git a/MerpMod/DiagnosticM0/DiagnosticConfig.h b/MerpMod/DiagnosticM0/DiagnosticConfig.h
+new file mode 100644
+index 0000000..5058a76
+--- /dev/null
++++ b/MerpMod/DiagnosticM0/DiagnosticConfig.h
+@@ -0,0 +1,31 @@
++#ifndef A2WC511R_M0_CONFIG_H
++#define A2WC511R_M0_CONFIG_H
++#define M0_DIAGNOSTIC_ONLY 1
++#define MEMORY_HACKS 0
++#define RAM_PERSIST 0
++#define SD_HACKS 0
++#define REVLIM_HACKS 0
++#define LC_ADJ_HACKS 0
++#define PROG_MODE 0
++#define PROG_HACKS 0
++#define SPARK_HACKS 0
++#define SPARK_CUT 0
++#define CEL_HACKS 0
++#define BOOST_HACKS 0
++#define TIMING_HACKS 0
++#define POLF_HACKS 0
++#define PGWG_HACKS 0
++#define INJECTOR_HACKS 0
++#define INJ_HACKS 0
++#define VIN_HACKS 0
++#define SWITCH_HACKS 0
++#define E85_HACKS 0
++#define SUB_KCA_HACKS 0
++#define VE_RAMTUNING 0
++#define POLF_RAMTUNING 0
++#define TIMING_RAMTUNING 0
++#define PGWG_RAMTUNING 0
++#define WGDC_RAMTUNING 0
++#define PORT_LOGGER 0
++#define RAM_HOLE_SCANNER 0
++#endif
+diff --git a/MerpMod/DiagnosticM0/Identifier.c b/MerpMod/DiagnosticM0/Identifier.c
+new file mode 100644
+index 0000000..69f035e
+--- /dev/null
++++ b/MerpMod/DiagnosticM0/Identifier.c
+@@ -0,0 +1,4 @@
++#include "A2WC511R.h"
++/* Useful artifact identity; never a release or physical validation claim. */
++const char m0_identifier[] __attribute__((section(".m0.identity"), aligned(4))) =
++ "A2WC511R.M0.EXPERIMENTAL.v1";
+diff --git a/MerpMod/DiagnosticM0/build.py b/MerpMod/DiagnosticM0/build.py
+new file mode 100644
+index 0000000..63d973c
+--- /dev/null
++++ b/MerpMod/DiagnosticM0/build.py
+@@ -0,0 +1,86 @@
++"""Pinned SH-2E build: non-flash harness or explicitly unapproved experimental ELF."""
++from pathlib import Path
++import argparse, hashlib, json, struct, subprocess
++
++ROOT = Path(__file__).resolve().parent
++GNUSH = Path(r'C:\Program Files (x86)\Renesas\Hew\Tools\KPIT\GNUSH-ELF\v13.01\sh-elf\bin')
++
++def digest(path):
++    return hashlib.sha256(path.read_bytes()).hexdigest()
++
++def parse_elf(path):
++    data=path.read_bytes()
++    assert data[:6]==b'\x7fELF\x01\x02' and struct.unpack_from('>H',data,18)[0]==42
++    assert struct.unpack_from('>I',data,36)[0]&15==11
++    shoff=struct.unpack_from('>I',data,32)[0]
++    size,count,stridx=struct.unpack_from('>HHH',data,46)
++    assert size==40
++    sections=[struct.unpack_from('>10I',data,shoff+i*size) for i in range(count)]
++    names=data[sections[stridx][4]:sections[stridx][4]+sections[stridx][5]]
++    def name(table,off):return table[off:table.index(0,off)].decode('ascii')
++    byname={name(names,s[0]):s for s in sections}
++    m0=byname['.m0'];payload=data[m0[4]:m0[4]+m0[5]]
++    symtab=byname['.symtab'];strings=sections[symtab[6]]
++    symnames=data[strings[4]:strings[4]+strings[5]];symbols={}
++    for off in range(symtab[4],symtab[4]+symtab[5],symtab[9]):
++        n,val,length,info,other,idx=struct.unpack_from('>IIIBBH',data,off)
++        nm=name(symnames,n)
++        if nm.startswith('_m0_'):symbols[nm]=val
++    return {'base':m0[3],'payload':payload,'symbols':symbols}
++
++def build(out, experimental=False):
++    out = out.resolve()
++    if out.exists() and any(out.iterdir()):
++        raise SystemExit('Use a fresh output directory; no stale artifact reuse allowed')
++    out.mkdir(parents=True, exist_ok=True)
++    commands = []
++    def run(argv, name):
++        p = subprocess.run([str(a) for a in argv], cwd=out, capture_output=True, text=True, timeout=60)
++        (out / (name+'.log')).write_text('ARGV '+json.dumps([str(a) for a in argv])+'\nEXIT '+str(p.returncode)+'\n'+p.stdout+'\nSTDERR\n'+p.stderr)
++        commands.append({'argv':[str(a) for a in argv], 'returncode':p.returncode})
++        if p.returncode:
++            raise RuntimeError(name+' failed: '+p.stderr)
++        return p.stdout
++    cc, assembler, ld = (GNUSH / ('sh-elf-'+x+'.exe') for x in ('gcc','as','ld'))
++    flags=['-m2e','-mb','-mrenesas','-mieee','-ffreestanding','-fno-builtin','-nostdinc','-Os','-fno-common','-fno-strict-aliasing','-fstack-usage','-Wall','-Wextra','-Werror','-std=c99','-I',str(ROOT),'-DTARGET_ECU=A2WC511R']
++    objects=[]
++    run([cc,'--version'],'compiler_version')
++    for name in ('Diagnostic','Bindings','Identifier'):
++        args=flags+['-S',str(ROOT/(name+'.c')),'-o',str(out/(name+'.s'))]
++        response_args=[a.replace('\\','/') for a in args]
++        (out/(name+'.gcc')).write_text('\n'.join('"'+a+'"' if ' ' in a else a for a in response_args)+'\n')
++        run([cc,'@'+str(out/(name+'.gcc'))],name+'_compile')
++        run([assembler,'-big','-renesas','--isa=sh2e',str(out/(name+'.s')),'-o',str(out/(name+'.o'))],name+'_assemble')
++        objects.append(out/(name+'.o'))
++    run([assembler,'-big','-renesas','--isa=sh2e',str(ROOT/'DecoderHook.s'),'-o',str(out/'DecoderHook.o')],'hook_assemble')
++    objects.append(out/'DecoderHook.o')
++    run([ld,'-EB','-r',*objects,'-o',str(out/'A2WC511R_DiagnosticM0.relocatable.o')],'relocatable_link')
++    label='EXPERIMENTAL_UNAPPROVED' if experimental else 'HARNESS_ONLY'
++    linker=ROOT/('experimental_only.ld' if experimental else 'harness_only.ld')
++    elf=out/('A2WC511R_DiagnosticM0.'+label+'.elf')
++    run([ld,'-EB','-T',str(linker),'-Map='+str(out/'harness.map'),*objects,'-o',str(elf)],'harness_link')
++    dis=run([GNUSH/'sh-elf-objdump.exe','-d','-r','-t','-h',str(elf)],'disassembly')
++    (out/'harness.disassembly.txt').write_text(dis)
++    payload=out/('m0.'+label+'.code.bin')
++    run([GNUSH/'sh-elf-objcopy.exe','-O','binary','-j','.m0',str(elf),str(payload)],'extract_harness_code')
++    run([cc,*flags,'-E','-dM',str(ROOT/'Bindings.c')], 'effective_macros')
++    header=elf.read_bytes()[:52]
++    assert header[:6] == b'\x7fELF\x01\x02' and struct.unpack_from('>H',header,18)[0] == 42
++    assert struct.unpack_from('>I',header,36)[0] & 15 == 11
++    report={'target':'A2WC511R','ecuid':'2F12515306','auto_trans':1,'status':'COMPILED_'+label,
++            'real_rom_allocation_accepted':False,'real_ram_allocation_accepted':False,'hook_abi_accepted':False,
++            'ram_bytes':32,'code_base':'0x000E1000' if experimental else '0x07001000','ram_base':'0xFFFF7400' if experimental else '0x70000000',
++            'code_bytes':payload.stat().st_size,'flags':flags,'commands':commands,
++            'sources':{p.name:digest(p) for p in ROOT.iterdir() if p.suffix in ('.c','.h','.s','.ld','.py')},
++            'tools':{str(p):digest(p) for p in (cc,assembler,ld,GNUSH/'sh-elf-objcopy.exe',GNUSH/'sh-elf-objdump.exe')},
++            'artifacts':{p.name:digest(p) for p in out.iterdir() if p.suffix in ('.o','.elf','.bin','.map','.s','.su')}}
++    parsed=parse_elf(elf);symbols=parsed['symbols']
++    assert parsed['payload']==payload.read_bytes()
++    assert all(k in symbols for k in ('_m0_decoder_hook','_m0_identifier','_m0_state','_m0_sample_hardware'))
++    report['symbols']={k:hex(v) for k,v in symbols.items()}
++    (out/'manifest.json').write_text(json.dumps(report,indent=2)+'\n')
++    print(json.dumps({k:report[k] for k in ('status','code_bytes','ram_bytes')}))
++if __name__=='__main__':
++    p=argparse.ArgumentParser(); p.add_argument('--out',type=Path,required=True)
++    p.add_argument('--experimental-unapproved-allocation',action='store_true',help='Only static/emulator engineering; never release approval')
++    args=p.parse_args();build(args.out,args.experimental_unapproved_allocation)
+diff --git a/MerpMod/DiagnosticM0/experimental_only.ld b/MerpMod/DiagnosticM0/experimental_only.ld
+new file mode 100644
+index 0000000..e3c5bac
+--- /dev/null
++++ b/MerpMod/DiagnosticM0/experimental_only.ld
+@@ -0,0 +1,13 @@
++/* UNAPPROVED allocations, root-authorized static/emulator engineering artifact.
++ * ROM FF content and lack of exact pointer matches do NOT prove these are free.
++ * This file must not be used to approve or label a firmware release. */
++OUTPUT_ARCH(sh)
++ENTRY(_m0_decoder_hook)
++SECTIONS {
++ .m0 0x000E1000 : { *(.m0.code) *(.text) *(.text.*) *(.rodata*) *(.m0.identity) }
++ _m0_state = 0xFFFF7400;
++ .forbidden 0x71000000 : { *(.data*) *(.bss*) *(COMMON) }
++ /DISCARD/ : { *(.comment) *(.note*) }
++}
++ASSERT(SIZEOF(.forbidden) == 0, "Unexpected global writable state")
++ASSERT(SIZEOF(.m0) <= 4096, "Diagnostic code exceeds provisional audit budget")
+diff --git a/MerpMod/DiagnosticM0/experimental_roundtrip.py b/MerpMod/DiagnosticM0/experimental_roundtrip.py
+new file mode 100644
+index 0000000..2ff6663
+--- /dev/null
++++ b/MerpMod/DiagnosticM0/experimental_roundtrip.py
+@@ -0,0 +1,124 @@
++"""Generate and verify a STRICT, unapproved M0 experimental offline patch.
++
++This program only edits fresh disposable copies. It emits no release approval.
++All actual application/removal uses the source-built SharpTune implementation.
++"""
++from pathlib import Path
++import argparse, hashlib, importlib.util, json, os, shutil, struct, subprocess, xml.etree.ElementTree as ET
++from build import parse_elf
++ROOT=Path(__file__).resolve().parent
++BASE=Path(r'C:\Dev\Astra_A2WC511R')
++BASELINE=Path(r'C:\Dev\SubaruRoms\OEM\A2WC511R.bin')
++BASESHA='22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218'
++IDENT='A2WC511R.M0.EXPERIMENTAL.v1'
++EXE=BASE/'work/tooling/sharptune_offline_ecabea8/SharpTune.exe'
++def sha(data):return hashlib.sha256(data).hexdigest()
++def u32(*args):return struct.pack('>'+'I'*len(args),*args)
++def string(s):
++    b=s.encode('ascii')+b'\0';return b+b'\0'*((-len(b))%4)
++def srecords(address,data):
++    lines=[]
++    for off in range(0,len(data),32):
++        chunk=data[off:off+32];raw=bytes([len(chunk)+5])+u32(address+off)+chunk
++        lines.append('S3'+raw.hex().upper()+('%02X'%((~sum(raw))&255)))
++    return lines
++def diffranges(a,b):
++    spans=[];start=None
++    for i,(x,y) in enumerate(zip(a,b)):
++        if x!=y and start is None:start=i
++        if x==y and start is not None:spans.append((start,i));start=None
++    if start is not None:spans.append((start,len(a)))
++    return spans
++def logger_fragment(out):
++    fields=[('sequence',0,4,'Software publication sequence, even when complete; NOT a TCU heartbeat. Wraps modulo 2^32.'),
++      ('magic',4,4,'M0D1 observer cookie. Does not establish power-cycle identity.'),('samples',8,4,'Observer-call count modulo 2^32, NOT a CAN receive count.'),
++      ('reasons',12,4,'Diagnostic rejection bits; freshness and coherence remain unproven.'),('transitions',16,4,'Observed packed-snapshot changes, modulo 2^32. No physical gear-engagement claim.'),
++      ('source',20,1,'Raw FFFF4C75 sampled byte.'),('snapshot',21,1,'Raw FFFF4C8D sampled byte.'),('latch',22,1,'Raw FFFF4CA1; not a freshness guarantee.'),('flags',23,1,'Raw FFFF4C50; bit02 not a CAN-health guarantee.'),
++      ('target_nibble',24,1,'High nibble of snapshot, requested working interpretation.'),('current_nibble',25,1,'Low nibble of snapshot, reported working interpretation.'),
++      ('decoded_target',26,1,'Observer reconstruction with local hold behavior. NOT direct OEM FFFF4BC1; first invalid nibble can differ from OEM retained value.'),
++      ('decoded_current',27,1,'Observer reconstruction with local hold behavior. NOT direct OEM FFFF4BC2; first invalid nibble can differ from OEM retained value.'),
++      ('freshness',28,1,'Hardware binding always 0 UNKNOWN. Does not authorize controls.'),('previous_snapshot',29,1,'Observer previous snapshot, same as latest after publication.'),
++      ('initialized',30,1,'Observer initialized cookie flag; lazy init does not prove warm-reset detection.'),('capture_changed',31,1,'Raw values differed between two reads. Zero does not prove coherent sampling.')]
++    root=ET.Element('ecuparams')
++    root.append(ET.Comment('EXPERIMENTAL UNAPPROVED RAM allocation FFFF7400..741F. Fragment only; not installed. SSM addresses are low 24 bits.'))
++    for ix,(name,off,size,desc) in enumerate(fields,9100):
++        p=ET.SubElement(root,'ecuparam',id='E'+str(ix),name='M0 Experimental '+name,desc=desc+' Allocation unapproved; offline emulator review only.')
++        e=ET.SubElement(p,'ecu',id='2F12515306');ET.SubElement(e,'address',length=str(size)).text='0x%06X'%((0xffff7400+off)&0xffffff)
++        c=ET.SubElement(p,'conversions');ET.SubElement(c,'conversion',units='raw',expr='x',format='0')
++    ET.indent(root);ET.ElementTree(root).write(out/'A2WC511R_M0.EXPERIMENTAL.logger.fragment.xml',encoding='utf-8',xml_declaration=True)
++    (out/'logger_offsets.json').write_text(json.dumps([{'field':n,'offset':o,'bytes':z,'cpu_address':hex(0xffff7400+o),'description':d} for n,o,z,d in fields],indent=2)+'\n')
++def main(build,out):
++    build=build.resolve();out=out.resolve();out.mkdir(parents=True,exist_ok=False)
++    baseline=BASELINE.read_bytes();assert sha(baseline)==BASESHA and len(baseline)==0x100000
++    manifest=json.loads((build/'manifest.json').read_text());assert manifest['status']=='COMPILED_EXPERIMENTAL_UNAPPROVED'
++    for filename,expected_sha in manifest['artifacts'].items():
++        assert sha((build/filename).read_bytes())==expected_sha, 'Build artifact hash mismatch: '+filename
++    for filename,expected_sha in manifest['sources'].items():
++        assert sha((ROOT/filename).read_bytes())==expected_sha, 'Current source differs from built input: '+filename
++    elf=parse_elf(build/'A2WC511R_DiagnosticM0.EXPERIMENTAL_UNAPPROVED.elf')
++    payload=(build/'m0.EXPERIMENTAL_UNAPPROVED.code.bin').read_bytes()
++    assert payload==elf['payload'], 'Extracted payload differs from actual ELF .m0 section'
++    assert {n:hex(v) for n,v in elf['symbols'].items()}==manifest['symbols'], 'Manifest differs from ELF symbols'
++    start=int(manifest['code_base'],16);end=start+len(payload);hook=0x11adc
++    entry=int(manifest['symbols']['_m0_decoder_hook'],16);identaddr=int(manifest['symbols']['_m0_identifier'],16)
++    assert start==elf['base']==0xe1000 and int(manifest['ram_base'],16)==elf['symbols']['_m0_state']==0xffff7400
++    assert len(payload)==manifest['code_bytes'] and payload[identaddr-start:].startswith(IDENT.encode()+b'\0')
++    assert baseline[start:end]==b'\xff'*len(payload) and baseline[hook:hook+4]==u32(0x147ac)
++    assert baseline[0x2000:0x2008]==b'A2WC511R' and baseline[0xcdad8:0xcdadd]==bytes.fromhex('2F12515306')
++    meta=u32(0x12340000,9,0x12340001,0x2000,8)+b'A2WC511R'+b'\0'*8+b'A2WC511R'+b'\0'*8
++    meta+=u32(0x1234000f,identaddr)+string(IDENT)
++    meta+=u32(0x1234000b,0xcdad8,10)+string('2F12515306')+u32(0x1234000c)+string('2F12515306')
++    meta+=u32(0x12340008)+string('M0 source port')+u32(0x12340009)+string('M0_Offline_Debug')
++    meta+=u32(0x1234000d)+string('EXPERIMENTAL diagnostic observer; allocation/stack/cadence unapproved; NEVER FLASH')
++    meta+=u32(0x12340003,hook,0x147ac,entry)+string('OEM decoder observer pointer')
++    meta+=u32(0x12340002,start,end-1)+string('M0 experimental strict code payload')+u32(0x00090009,0x00090009)
++    patch=out/(IDENT+'.patch')
++    # Strict OpPatch embeds expected original bytes; no permissive NewPatch removal.
++    lines=srecords(start,payload)+srecords(0x80001000,meta)+srecords(start+0xff000000,baseline[start:end])
++    patch.write_text('\n'.join(lines)+'\n',encoding='ascii')
++    env=os.environ.copy();env['SHARPTUNE_OFFLINE_HOME']=str(out);env['SHARPTUNE_OFFLINE_LOCAL_APPLY']='1'
++    commands=[]
++    def run(args,label,expected=0):
++        cmd=[str(EXE),*map(str,args)]
++        p=subprocess.run(cmd,cwd=out,env=env,capture_output=True,text=True,timeout=60)
++        (out/(label+'.log')).write_text('ARGV '+json.dumps(cmd)+'\nEXIT '+str(p.returncode)+'\n'+p.stdout+p.stderr)
++        commands.append({'argv':cmd,'exit':p.returncode,'expected':expected,'log':label+'.log'})
++        if p.returncode!=expected:raise RuntimeError(label+' exit='+str(p.returncode)+' '+p.stdout[-2000:]+p.stderr)
++    candidate=out/'A2WC511R.M0.EXPERIMENTAL_UNAPPROVED.raw.bin';candidate.write_bytes(baseline)
++    run(['rommod','dump','MISSING.intentional'],'negative_missing_file',1)
++    run(['rommod','test',patch,candidate],'validate_before')
++    run(['rommod','apply',patch,candidate],'apply')
++    actual=candidate.read_bytes();expected=bytearray(baseline);expected[start:end]=payload;expected[hook:hook+4]=u32(entry)
++    assert actual==expected, 'SharpTune output differs from independently built exact-byte expectation'
++    run(['rommod','applied',patch,candidate],'validate_applied')
++    reverted=out/'A2WC511R.M0.EXPERIMENTAL.reverted.bin';reverted.write_bytes(actual)
++    run(['rommod','remove',patch,reverted],'remove')
++    assert reverted.read_bytes()==baseline
++    bad=out/'negative_bad_hook.bin';bad_data=bytearray(baseline);bad_data[hook]^=1;bad.write_bytes(bad_data)
++    run(['rommod','apply',patch,bad],'negative_bad_hook',1);assert bad.read_bytes()==bad_data
++    bad_payload=out/'negative_bad_payload.bin';bp=bytearray(actual);bp[start]^=1;bad_payload.write_bytes(bp)
++    run(['rommod','remove',patch,bad_payload],'negative_bad_payload',1);assert bad_payload.read_bytes()==bp
++    spec=importlib.util.spec_from_file_location('checksum_audit',BASE/'reports/local/interfaces/checksum_audit.py');checksum=importlib.util.module_from_spec(spec);spec.loader.exec_module(checksum)
++    fixed=checksum.correction(actual);fixedpath=out/'A2WC511R.M0.EXPERIMENTAL_UNAPPROVED.checksum_corrected.bin';fixedpath.write_bytes(fixed)
++    assert [x for x in diffranges(actual,fixed) if not (0xffb88<=x[0]<x[1]<=0xffb8c)]==[]
++    assert fixed[0xffc4c:0xffc50]==baseline[0xffc4c:0xffc50]
++    fixed_reverted=out/'A2WC511R.M0.EXPERIMENTAL.corrected_then_removed.bin';fixed_reverted.write_bytes(fixed)
++    run(['rommod','remove',patch,fixed_reverted],'remove_corrected')
++    assert checksum.correction(fixed_reverted.read_bytes())==baseline
++    normalized=out/'A2WC511R.M0.EXPERIMENTAL.corrected_roundtrip_baseline.bin';normalized.write_bytes(checksum.correction(fixed_reverted.read_bytes()))
++    logger_fragment(out)
++    spans=[{'start':hex(a),'end_exclusive':hex(b),'bytes':b-a,'class':'hook_pointer' if a>=hook and b<=hook+4 else 'diagnostic_payload' if a>=start and b<=end else 'UNEXPECTED','before_sha256':sha(baseline[a:b]),'after_sha256':sha(actual[a:b])} for a,b in diffranges(baseline,actual)]
++    assert all(s['class']!='UNEXPECTED' for s in spans)
++    report={'status':'EXPERIMENTAL_UNAPPROVED_OFFLINE_ONLY','production_release_allowed':False,'flash_or_vehicle_actions':False,'input_baseline_sha256':BASESHA,
++      'code_allocation_accepted':False,'ram_allocation_accepted':False,'abi_timing_accepted':False,'code_span':[hex(start),hex(end)],'ram_span':['0xffff7400','0xffff7420'],'hook':{'address':hex(hook),'before':'000147ac','after':u32(entry).hex()},
++      'commands':commands,'sharpTune_sha256':sha(EXE.read_bytes()),'build_manifest_sha256':sha((build/'manifest.json').read_bytes()),'changed_ranges':spans,'changed_bytes':sum(s['bytes'] for s in spans),
++      'strict_roundtrip':'PASS exact raw baseline bytes','checksum_policy':'Raw and corrected derivatives distinct. Removal from corrected derivative leaves corrected checksum; applying checksum.correction after removal restores exact baseline. No editor stamp normalized or added.',
++      'raw_checksums_valid':all(r['valid'] for r in checksum.records(actual)),'corrected_checksums_valid':all(r['valid'] for r in checksum.records(fixed)),
++      'output_hashes':{p.name:sha(p.read_bytes()) for p in out.iterdir() if p.suffix in ('.bin','.patch','.xml')},
++      'counter_notes':'samples/transitions/sequence wrap modulo2^32. One transition check is skipped when samples is0 after wrap. Cookie-based lazy init is not power-cycle detection; a warm reset preserving valid cookie preserves counters and reconstructed holds.',
++      'decoder_notes':'decoded_target/current are observer reconstructions, not OEM4BC1/4BC2 reads; initial invalid nibbles can differ from OEM held values.',
++      'publication_reader_contract':'One nonreentrant writer. Read sequence-before, reject odd; read all32 state bytes; read sequence-after. Require equal even sequence values plus magic4D304431 and initialized1. Counter wrap can cause ABA. Individual logger parameters alone do not provide this aggregate check.',
++      'blocking_gates':['code/RAM indirect and DMA ownership','task stack headroom and ISR nesting','hook call cadence and added latency','current installed tune identity','physical validation']}
++    (out/'roundtrip_review.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps({k:report[k] for k in ('status','changed_bytes','strict_roundtrip','raw_checksums_valid','corrected_checksums_valid')}))
++if __name__=='__main__':
++    p=argparse.ArgumentParser();p.add_argument('--build',type=Path,required=True);p.add_argument('--out',type=Path,required=True);a=p.parse_args();main(a.build,a.out)
+diff --git a/MerpMod/DiagnosticM0/harness_only.ld b/MerpMod/DiagnosticM0/harness_only.ld
+new file mode 100644
+index 0000000..c09b770
+--- /dev/null
++++ b/MerpMod/DiagnosticM0/harness_only.ld
+@@ -0,0 +1,13 @@
++/* Synthetic addresses deliberately outside 1 MiB ECU flash and real ECU RAM.
++ * For callable execution/allocation sizing only. NEVER flatten into a ROM.
++ * No OEM hook word, boot vector, checksum or target definition is emitted. */
++OUTPUT_ARCH(sh)
++ENTRY(_m0_decoder_hook)
++SECTIONS {
++ .m0 0x07001000 : { *(.m0.code) *(.text) *(.text.*) *(.rodata*) *(.m0.identity) }
++ _m0_state = 0x70000000;
++ .forbidden 0x71000000 : { *(.data*) *(.bss*) *(COMMON) }
++ /DISCARD/ : { *(.comment) *(.note*) }
++}
++ASSERT(SIZEOF(.forbidden) == 0, "Unexpected global writable state")
++ASSERT(SIZEOF(.m0) <= 4096, "Diagnostic code exceeds provisional audit budget")
+diff --git a/MerpMod/DiagnosticM0/test_host.py b/MerpMod/DiagnosticM0/test_host.py
+new file mode 100644
+index 0000000..f8d55f5
+--- /dev/null
++++ b/MerpMod/DiagnosticM0/test_host.py
+@@ -0,0 +1,70 @@
++"""Execute the real portable C observer as a private no-CRT Windows DLL."""
++from pathlib import Path
++import ctypes as C, hashlib, json, subprocess, argparse
++ROOT=Path(__file__).resolve().parent
++MSVC=Path(r'C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64')
++class Input(C.Structure):
++    _fields_=[(x,C.c_uint8) for x in ('source','snapshot','latch','flags','freshness','capture_changed','reserved0','reserved1')]
++class State(C.Structure):
++    _fields_=[(x,C.c_uint32) for x in ('sequence','magic','samples','reasons','transitions')]+[(x,C.c_uint8) for x in ('source','snapshot','latch','flags','target_nibble','current_nibble','decoded_target','decoded_current','freshness','previous_snapshot','initialized','capture_changed')]
++def main(out):
++    out.mkdir(parents=True,exist_ok=False)
++    commands=[[str(MSVC/'cl.exe'),'/nologo','/c','/O2','/GS-','/DM0_HOST_TEST','/Fo'+str(out/'Diagnostic.obj'),str(ROOT/'Diagnostic.c')],
++              [str(MSVC/'link.exe'),'/NOLOGO','/DLL','/NOENTRY','/NODEFAULTLIB','/OUT:'+str(out/'Diagnostic.dll'),str(out/'Diagnostic.obj')]]
++    for i,cmd in enumerate(commands):
++        p=subprocess.run(cmd,cwd=out,capture_output=True,text=True,timeout=60)
++        (out/f'build_{i}.log').write_text(json.dumps(cmd)+'\n'+p.stdout+p.stderr)
++        if p.returncode: raise RuntimeError(p.stdout+p.stderr)
++    lib=C.CDLL(str(out/'Diagnostic.dll'))
++    lib.m0_decode.argtypes=[C.c_uint8,C.c_uint8];lib.m0_decode.restype=C.c_uint8
++    lib.m0_reasons.argtypes=[C.POINTER(Input)];lib.m0_reasons.restype=C.c_uint32
++    lib.m0_init.argtypes=[C.POINTER(State)];lib.m0_observe.argtypes=[C.POINTER(State),C.POINTER(Input)]
++    assert C.sizeof(State)==32
++    checks=0
++    for raw in range(256):
++        for previous in range(256):
++            assert lib.m0_decode(raw,previous)==(raw if raw<8 else 0 if raw==8 else previous)
++            checks+=1
++    for snapshot in range(256):
++        for source in range(256):
++            for fresh in (0,1,2,3,255):
++                inp=Input(source,snapshot,1,2,fresh,0,0,0)
++                expected=512 | (1 if snapshot!=17 else 0) | (32 if source!=snapshot else 0)
++                expected|=(8 if fresh==0 else 0 if fresh==1 else 16 if fresh==2 else 64)
++                expected|=128 if snapshot>>4>8 or snapshot&15>8 else 0
++                assert lib.m0_reasons(C.byref(inp))==expected
++                checks+=1
++    for latch in range(256):
++        for flags in range(256):
++            inp=Input(17,17,latch,flags,0,0,0,0)
++            assert lib.m0_reasons(C.byref(inp))==520|(2 if latch!=1 else 0)|(4 if not flags&2 else 0)
++            checks+=1
++    for fill in range(256):
++        arena=(C.c_uint8*64)(*[fill]*64)
++        st=C.cast(C.byref(arena,16),C.POINTER(State))
++        lib.m0_init(st)
++        assert st.contents.magic==0x4d304431 and st.contents.initialized==1
++        assert st.contents.samples==0 and st.contents.reasons==520
++        prev_target=prev_current=0
++        for ix,snapshot in enumerate((0x88,0x11,0x22,0xe8,0xe9,0xff,0x00,0x77,0x55)):
++            inp=Input(snapshot,snapshot,1,2,0,ix&1,0,0)
++            lib.m0_observe(st,C.byref(inp))
++            t,c=snapshot>>4,snapshot&15
++            prev_target=t if t<8 else 0 if t==8 else prev_target
++            prev_current=c if c<8 else 0 if c==8 else prev_current
++            assert st.contents.decoded_target==prev_target and st.contents.decoded_current==prev_current
++            assert st.contents.samples==ix+1 and st.contents.transitions==ix and st.contents.sequence==(ix+2)*2
++            assert bool(st.contents.reasons&256)==bool(ix&1)
++            assert bytes(arena[:16])==bytes([fill]*16) and bytes(arena[48:])==bytes([fill]*16)
++            checks+=1
++    state=State();lib.m0_init(C.byref(state));state.samples=0xffffffff;state.sequence=0xfffffffe;state.transitions=0xffffffff;state.previous_snapshot=0
++    inp=Input(17,17,1,2,0,0,0,0);lib.m0_observe(C.byref(state),C.byref(inp))
++    assert state.samples==state.sequence==state.transitions==0
++    state.magic=0;lib.m0_observe(C.byref(state),C.byref(inp));assert state.samples==1 and state.magic==0x4d304431 and state.sequence==4
++    prior=state.sequence;lib.m0_init(C.byref(state));assert state.sequence==prior+2 and state.samples==0
++    report={'result':'PASS','checks':checks+3,'state_bytes':C.sizeof(State),'coverage':['all 256 raw decode inputs x all 256 previous values','all 256 packed snapshot x all 256 source values x 5 freshness states','all latch/status bytes','initialization from 256 fill patterns','transitions/hold/reverse/neutral','publication sequence and counter wrap','explicit reinitialization advances sequence','32-byte write boundary canaries'],
++            'source_sha256':hashlib.sha256((ROOT/'Diagnostic.c').read_bytes()).hexdigest(),'dll_sha256':hashlib.sha256((out/'Diagnostic.dll').read_bytes()).hexdigest(),
++            'limitation':'Host C semantics only; no CPU/ABI/vehicle/timing/freshness proof'}
++    (out/'result.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report))
++if __name__=='__main__':
++    p=argparse.ArgumentParser();p.add_argument('--out',type=Path,required=True);main(p.parse_args().out.resolve())

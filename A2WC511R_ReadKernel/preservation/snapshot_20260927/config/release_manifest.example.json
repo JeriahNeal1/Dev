@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "target_calid": "A2WC511R",
+  "target_ecuid": "2F12515306",
+  "scope": "diagnostic_only",
+  "baseline": {
+    "path": "NOT_SELECTED",
+    "sha256": ""
+  },
+  "candidate": {
+    "path": "NOT_BUILT",
+    "sha256": ""
+  },
+  "expected_output_identity": {
+    "calid": "A2WC511R",
+    "ecuid": "2F12515306"
+  },
+  "allowed_changes": [],
+  "reviews": {},
+  "instructions": "This intentionally fails. Populate actual file hashes, reviewed ranges/original-byte range hashes and the nine engineering review documents required by tools/release_check.py."
+}

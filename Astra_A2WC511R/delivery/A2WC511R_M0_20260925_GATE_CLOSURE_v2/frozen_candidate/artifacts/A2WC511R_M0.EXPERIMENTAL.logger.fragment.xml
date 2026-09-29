@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ecuparams>
+  <!--EXPERIMENTAL UNAPPROVED RAM allocation FFFF7400..741F. Fragment only; not installed. SSM addresses are low 24 bits.-->
+  <ecuparam id="E9100" name="M0 Experimental sequence" desc="Software publication sequence, even when complete; NOT a TCU heartbeat. Wraps modulo 2^32. Allocation unapproved; offline emulator review only.">
+    <ecu id="2F12515306">
+      <address length="4">0xFF7400</address>
+    </ecu>
+    <conversions>
+      <conversion units="raw" expr="x" format="0" />
+    </conversions>
+  </ecuparam>
+  <ecuparam id="E9101" name="M0 Experimental magic" desc="M0D1 observer cookie. Does not establish power-cycle identity. Allocation unapproved; offline emulator review only.">
+    <ecu id="2F12515306">
+      <address length="4">0xFF7404</address>
+    </ecu>
+    <conversions>
+      <conversion units="raw" expr="x" format="0" />
+    </conversions>
+  </ecuparam>
+  <ecuparam id="E9102" name="M0 Experimental samples" desc="Observer-call count modulo 2^32, NOT a CAN receive count. Allocation unapproved; offline emulator review only.">
+    <ecu id="2F12515306">
+      <address length="4">0xFF7408</address>
+    </ecu>
+    <conversions>
+      <conversion units="raw" expr="x" format="0" />
+    </conversions>
+  </ecuparam>
+  <ecuparam id="E9103" name="M0 Experimental reasons" desc="Diagnostic rejection bits; freshness and coherence remain unproven. Allocation unapproved; offline emulator review only.">
+    <ecu id="2F12515306">
+      <address length="4">0xFF740C</address>
+    </ecu>
+    <conversions>
+      <conversion units="raw" expr="x" format="0" />
+    </conversions>
+  </ecuparam>
+  <ecuparam id="E9104" name="M0 Experimental transitions" desc="Observed packed-snapshot changes, modulo 2^32. No physical gear-engagement claim. Allocation unapproved; offline emulator review only.">
+    <ecu id="2F12515306">
+      <address length="4">0xFF7410</address>
+    </ecu>
+    <conversions>
+      <conversion units="raw" expr="x" format="0" />
+    </conversions>
+  </ecuparam>
+  <ecuparam id="E9105" name="M0 Experimental source" desc="Raw FFFF4C75 sampled byte. Allocation unapproved; offline emulator review only.">
+    <ecu id="2F12515306">
+      <address length="1">0xFF7414</address>
+    </ecu>
+    <conversions>
+      <conversion units="raw" expr="x" format="0" />
+    </conversions>
+  </ecuparam>
+  <ecuparam id="E9106" name="M0 Experimental snapshot" desc="Raw FFFF4C8D sampled byte. Allocation unapproved; offline emulator review only.">
+    <ecu id="2F12515306">
+      <address length="1">0xFF7415</address>
+    </ecu>
+    <conversions>
+      <conversion units="raw" expr="x" format="0" />
+    </conversions>
+  </ecuparam>
+  <ecuparam id="E9107" name="M0 Experimental latch" desc="Raw FFFF4CA1; not a freshness guarantee. Allocation unapproved; offline emulator review only.">
+    <ecu id="2F12515306">
+      <address length="1">0xFF7416</address>
+    </ecu>
+    <conversions>
+      <conversion units="raw" expr="x" format="0" />
+    </conversions>
+  </ecuparam>
+  <ecuparam id="E9108" name="M0 Experimental flags" desc="Raw FFFF4C50; bit02 not a CAN-health guarantee. Allocation unapproved; offline emulator review only.">
+    <ecu id="2F12515306">
+      <address length="1">0xFF7417</address>
+    </ecu>
+    <conversions>
+      <conversion units="raw" expr="x" format="0" />
+    </conversions>
+  </ecuparam>
+  <ecuparam id="E9109" name="M0 Experimental target_nibble" desc="High nibble of snapshot, requested working interpretation. Allocation unapproved; offline emulator review only.">
+    <ecu id="2F12515306">
+      <address length="1">0xFF7418</address>
+    </ecu>
+    <conversions>
+      <conversion units="raw" expr="x" format="0" />
+    </conversions>
+  </ecuparam>
+  <ecuparam id="E9110" name="M0 Experimental current_nibble" desc="Low nibble of snapshot, reported working interpretation. Allocation unapproved; offline emulator review only.">
+    <ecu id="2F12515306">
+      <address length="1">0xFF7419</address>
+    </ecu>
+    <conversions>
+      <conversion units="raw" expr="x" format="0" />
+    </conversions>
+  </ecuparam>
+  <ecuparam id="E9111" name="M0 Experimental decoded_target" desc="Observer reconstruction with local hold behavior. NOT direct OEM FFFF4BC1; first invalid nibble can differ from OEM retained value. Allocation unapproved; offline emulator review only.">
+    <ecu id="2F12515306">
+      <address length="1">0xFF741A</address>
+    </ecu>
+    <conversions>
+      <conversion units="raw" expr="x" format="0" />
+    </conversions>
+  </ecuparam>
+  <ecuparam id="E9112" name="M0 Experimental decoded_current" desc="Observer reconstruction with local hold behavior. NOT direct OEM FFFF4BC2; first invalid nibble can differ from OEM retained value. Allocation unapproved; offline emulator review only.">
+    <ecu id="2F12515306">
+      <address length="1">0xFF741B</address>
+    </ecu>
+    <conversions>
+      <conversion units="raw" expr="x" format="0" />
+    </conversions>
+  </ecuparam>
+  <ecuparam id="E9113" name="M0 Experimental freshness" desc="Hardware binding always 0 UNKNOWN. Does not authorize controls. Allocation unapproved; offline emulator review only.">
+    <ecu id="2F12515306">
+      <address length="1">0xFF741C</address>
+    </ecu>
+    <conversions>
+      <conversion units="raw" expr="x" format="0" />
+    </conversions>
+  </ecuparam>
+  <ecuparam id="E9114" name="M0 Experimental previous_snapshot" desc="Observer previous snapshot, same as latest after publication. Allocation unapproved; offline emulator review only.">
+    <ecu id="2F12515306">
+      <address length="1">0xFF741D</address>
+    </ecu>
+    <conversions>
+      <conversion units="raw" expr="x" format="0" />
+    </conversions>
+  </ecuparam>
+  <ecuparam id="E9115" name="M0 Experimental initialized" desc="Observer initialized cookie flag; lazy init does not prove warm-reset detection. Allocation unapproved; offline emulator review only.">
+    <ecu id="2F12515306">
+      <address length="1">0xFF741E</address>
+    </ecu>
+    <conversions>
+      <conversion units="raw" expr="x" format="0" />
+    </conversions>
+  </ecuparam>
+  <ecuparam id="E9116" name="M0 Experimental capture_changed" desc="Raw values differed between two reads. Zero does not prove coherent sampling. Allocation unapproved; offline emulator review only.">
+    <ecu id="2F12515306">
+      <address length="1">0xFF741F</address>
+    </ecu>
+    <conversions>
+      <conversion units="raw" expr="x" format="0" />
+    </conversions>
+  </ecuparam>
+</ecuparams>

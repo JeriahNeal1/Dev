@@ -1,0 +1,100 @@
+{
+  "build": "C:\\Dev\\Astra_A2WC511R\\work\\builds\\m0_experimental_03",
+  "elf": "C:\\Dev\\Astra_A2WC511R\\work\\builds\\m0_experimental_03\\A2WC511R_DiagnosticM0.EXPERIMENTAL_UNAPPROVED.elf",
+  "elf_sha256": "39de4598a5149347052d5773f7bc179f3a21fde9ad4b571fe23a0bbe6e1e9eed",
+  "elf32_big_endian": true,
+  "machine": "EM_SH",
+  "sh_flags": 11,
+  "entry": 922332,
+  "alloc_sections": [
+    {
+      "name": ".m0",
+      "address": 921600,
+      "size": 868,
+      "flags": 6
+    }
+  ],
+  "symbols": [
+    {
+      "name": "Diagnostic.c",
+      "value": 0,
+      "size": 0,
+      "kind": 4,
+      "section": 65521
+    },
+    {
+      "name": "Bindings.c",
+      "value": 0,
+      "size": 0,
+      "kind": 4,
+      "section": 65521
+    },
+    {
+      "name": "Identifier.c",
+      "value": 0,
+      "size": 0,
+      "kind": 4,
+      "section": 65521
+    },
+    {
+      "name": "_m0_observe",
+      "value": 921876,
+      "size": 300,
+      "kind": 2,
+      "section": 1
+    },
+    {
+      "name": "_m0_init",
+      "value": 921788,
+      "size": 88,
+      "kind": 2,
+      "section": 1
+    },
+    {
+      "name": "_m0_sample_hardware",
+      "value": 922176,
+      "size": 156,
+      "kind": 2,
+      "section": 1
+    },
+    {
+      "name": "_m0_decode",
+      "value": 921600,
+      "size": 26,
+      "kind": 2,
+      "section": 1
+    },
+    {
+      "name": "_m0_decoder_hook",
+      "value": 922332,
+      "size": 0,
+      "kind": 0,
+      "section": 1
+    },
+    {
+      "name": "_m0_reasons",
+      "value": 921628,
+      "size": 158,
+      "kind": 2,
+      "section": 1
+    },
+    {
+      "name": "_m0_state",
+      "value": 4294931456,
+      "size": 0,
+      "kind": 0,
+      "section": 65521
+    },
+    {
+      "name": "_m0_identifier",
+      "value": 922440,
+      "size": 28,
+      "kind": 1,
+      "section": 1
+    }
+  ],
+  "undefined_symbols": [],
+  "payload_exact_m0": true,
+  "all_manifest_artifacts_match": true,
+  "limit": "Section/symbol envelope and bytes only; does not prove address ownership or interrupt/timing safety"
+}

@@ -1,0 +1,16 @@
+LIBRARY a2wc_ecuflash_virtual32
+EXPORTS
+PassThruOpen=_PassThruOpen@8
+PassThruClose=_PassThruClose@4
+PassThruConnect=_PassThruConnect@20
+PassThruDisconnect=_PassThruDisconnect@4
+PassThruWriteMsgs=_PassThruWriteMsgs@16
+PassThruReadMsgs=_PassThruReadMsgs@16
+PassThruStartPeriodicMsg=_PassThruStartPeriodicMsg@16
+PassThruStopPeriodicMsg=_PassThruStopPeriodicMsg@8
+PassThruStartMsgFilter=_PassThruStartMsgFilter@24
+PassThruStopMsgFilter=_PassThruStopMsgFilter@8
+PassThruSetProgrammingVoltage=_PassThruSetProgrammingVoltage@12
+PassThruReadVersion=_PassThruReadVersion@16
+PassThruGetLastError=_PassThruGetLastError@4
+PassThruIoctl=_PassThruIoctl@16

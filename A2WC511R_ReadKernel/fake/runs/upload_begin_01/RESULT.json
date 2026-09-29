@@ -1,0 +1,259 @@
+{
+  "schema": 1,
+  "status": "PASS_EXPECTED_TERMINAL_FAULT",
+  "artifact_class": "TEMP_RAM_ACQUISITION_TOOL_VIRTUAL_TEST",
+  "physical": false,
+  "label": "upload_begin_01",
+  "fault": "upload_begin",
+  "binding": {
+    "schema": 1,
+    "kernel_path": "C:\\Dev\\A2WC511R_ReadKernel\\build\\attempt_03\\kernel.bin",
+    "kernel_sha256": "3d70abfb8617b87e1b9c52724fd27ed4066ba231818994e780c8ba3006de273f",
+    "manifest_path": "C:\\Dev\\A2WC511R_ReadKernel\\build\\attempt_03\\manifest.json",
+    "manifest_sha256": "5c71466e4a53c03c3e16b56a9df9d71ed1b64fd40f49cc5a17a7938d04e0bdb2",
+    "client_path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\build\\native_02\\owned_read32.exe",
+    "client_sha256": "8c7df15fee68ba5eaf7b7038e421d2ddb1e57e68cfd115983e3ba7fb10b74951",
+    "fake_path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\native\\a2wc_readkernel_fake32.dll",
+    "fake_sha256": "58be9aaad8e004eb5bd04a600e53394a1139752f1b698ca1832124dbbb4d5cc0",
+    "kernel_bytes": 1776,
+    "load_address": "FFFF3000",
+    "entry_address": "FFFF3004",
+    "version_hex": "41325743353131522d524b303100",
+    "physical": false,
+    "physical_provider_supported": false
+  },
+  "fixture": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\fixtures\\composite.bin",
+    "sha256": "b91ad3e88637bfae6a15871761c288f914fe10fe74c78cbc53e963c4fe80e545",
+    "bytes": 1048576
+  },
+  "sources": [
+    {
+      "original": "C:\\Dev\\A2WC511R_ReadKernel\\host\\__init__.py",
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\upload_begin_01\\executed_sources\\host___init__.py",
+      "sha256": "19891087e3d3f09eadbd6535914e59bb738c97671ab135811f5a4185c91ea050",
+      "bytes": 63
+    },
+    {
+      "original": "C:\\Dev\\A2WC511R_ReadKernel\\host\\build.py",
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\upload_begin_01\\executed_sources\\host_build.py",
+      "sha256": "af5eef536c9aab5d767fd53e3fcc39cdc7ba66226854ac267cf4101643345f8d",
+      "bytes": 5191
+    },
+    {
+      "original": "C:\\Dev\\A2WC511R_ReadKernel\\host\\fixtures.py",
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\upload_begin_01\\executed_sources\\host_fixtures.py",
+      "sha256": "eb7021dd61dc734d1ab3fad45bc349bab51857fc36ba9000651bfdb84f0ff1db",
+      "bytes": 2268
+    },
+    {
+      "original": "C:\\Dev\\A2WC511R_ReadKernel\\host\\owned_job.py",
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\upload_begin_01\\executed_sources\\host_owned_job.py",
+      "sha256": "071f8ceb8212e7b092ee9c6660d6be6b473b6f524695679fdd84167a39018322",
+      "bytes": 6056
+    },
+    {
+      "original": "C:\\Dev\\A2WC511R_ReadKernel\\host\\protocol.py",
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\upload_begin_01\\executed_sources\\host_protocol.py",
+      "sha256": "7d53db478813ea3a5f96deb46b740844abc1446906f572eb50b71f4e5f31c8f9",
+      "bytes": 4623
+    },
+    {
+      "original": "C:\\Dev\\A2WC511R_ReadKernel\\host\\run.py",
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\upload_begin_01\\executed_sources\\host_run.py",
+      "sha256": "11fa7c9c41286e8e17446e6843a1d1d7f0fdec834ffdb5cf2a533f57479ef560",
+      "bytes": 11471
+    },
+    {
+      "original": "C:\\Dev\\A2WC511R_ReadKernel\\host\\state.py",
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\upload_begin_01\\executed_sources\\host_state.py",
+      "sha256": "bab923b67de027e8175b2657802e00f1c1e57898025cd9a7b3aba13f72875543",
+      "bytes": 4435
+    },
+    {
+      "original": "C:\\Dev\\A2WC511R_ReadKernel\\host\\test_contracts.py",
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\upload_begin_01\\executed_sources\\host_test_contracts.py",
+      "sha256": "fc652fcc8be844afb657d5f1e4c3c5eb3eca1e9dc7eb50cf931a3487a4948ccc",
+      "bytes": 3561
+    },
+    {
+      "original": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\__init__.py",
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\upload_begin_01\\executed_sources\\fake___init__.py",
+      "sha256": "b9dc2bf8183e1cfd937c360f409aba5aafa160a7accf8c6c44c57318615d9a82",
+      "bytes": 81
+    },
+    {
+      "original": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\model.py",
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\upload_begin_01\\executed_sources\\fake_model.py",
+      "sha256": "4c17b123092cbdd2ea1e499711c98398ef9c94aa450b4ff15fa6bc3d45e753d4",
+      "bytes": 6318
+    },
+    {
+      "original": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\server.py",
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\upload_begin_01\\executed_sources\\fake_server.py",
+      "sha256": "0c87c8af178e0c31e3e85fdf79462eb4652948e93d16e0a4c99d7def0de79036",
+      "bytes": 11833
+    },
+    {
+      "original": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\__init__.py",
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\upload_begin_01\\executed_sources\\sim___init__.py",
+      "sha256": "8e8b1da117fdc2ba4fe06edfc32b9c8d67176ab69a9470ee21151018bc85fbd8",
+      "bytes": 76
+    },
+    {
+      "original": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\core.py",
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\upload_begin_01\\executed_sources\\sim_core.py",
+      "sha256": "caf6571a836676b82bec8f8a5eaa356590532e15931fae2da4b5822fe8ef0f90",
+      "bytes": 658
+    },
+    {
+      "original": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\cpu.py",
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\upload_begin_01\\executed_sources\\sim_cpu.py",
+      "sha256": "5043dafdfe59447cb8d906f7570907c472e1d638deb507dc4af8546e9b0f1980",
+      "bytes": 3943
+    },
+    {
+      "original": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\fast_step.py",
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\upload_begin_01\\executed_sources\\sim_fast_step.py",
+      "sha256": "029bb2b484911289b19e5cdbad35bbbbdc80af05420e91dad6884e0ff0484cfa",
+      "bytes": 11167
+    },
+    {
+      "original": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\generate_fast.py",
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\upload_begin_01\\executed_sources\\sim_generate_fast.py",
+      "sha256": "4e53e3703d876b8f06fba4b24b112cf29a6749d7acda294ad6cf1c1f4ebcb76f",
+      "bytes": 2348
+    },
+    {
+      "original": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\harness.py",
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\upload_begin_01\\executed_sources\\sim_harness.py",
+      "sha256": "3686cee51a1b4f366737b84ba9aebecbf4747227545213d36aad2267e06785bd",
+      "bytes": 11151
+    },
+    {
+      "original": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\memory.py",
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\upload_begin_01\\executed_sources\\sim_memory.py",
+      "sha256": "fbce26a55a2cce274394fa436c1e36e2342d0635c68c5b6dfeba59672f00d638",
+      "bytes": 5787
+    },
+    {
+      "original": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\sci.py",
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\upload_begin_01\\executed_sources\\sim_sci.py",
+      "sha256": "fba8fa3e78e17ac926149a314cd8f0b34837c126a83f03906af007502cf884ba",
+      "bytes": 6402
+    },
+    {
+      "original": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\test_model.py",
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\upload_begin_01\\executed_sources\\sim_test_model.py",
+      "sha256": "e472d1849d0c72b34fb03b84621cd8ab515b84d007f4e66ff9d37d5ce81b7c90",
+      "bytes": 4432
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\upload_begin_01\\executed_sources\\native.cpp",
+      "sha256": "8a62ce6208ea730be40ffcadbc3cd298a3df20b597b712c146afaba31068d539",
+      "bytes": 12609
+    }
+  ],
+  "OEM_negotiation": "EXPLICIT_MODEL;NOT_FULL_OEM_PARSER_EXECUTION",
+  "real_provider_loaded": false,
+  "physical_backend_qualified": false,
+  "close_is_ECU_reset": false,
+  "owned_server_pid": 9212,
+  "owned_client_lifetime": {
+    "exit_code": 1,
+    "timed_out": false,
+    "launcher_pid": 21868,
+    "active_processes_before_cleanup": 0,
+    "active_processes_after_cleanup": 0,
+    "assigned_before_resume": true,
+    "kill_on_job_close": true,
+    "timeout_seconds": 7200
+  },
+  "observed_native_failure": true,
+  "native_requests": 20,
+  "wire_requests": 8,
+  "injected_fault_sequences": [
+    18
+  ],
+  "incomplete_files": [
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\upload_begin_01\\pass0.partial.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\upload_begin_01\\pass1.partial.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  ],
+  "owned_server_stopped": true,
+  "private_session_credentials_retained_locally": true,
+  "evidence_files": [
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\upload_begin_01\\fake_native_api.jsonl",
+      "sha256": "eecd471dbd2f3fa17ebbb3469d337174f511d19570c2fbb2460657817ee286a8",
+      "bytes": 8781
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\upload_begin_01\\model_events.json",
+      "sha256": "0d88068857c89182684b500ef820af14bf40ac90be85cbbe0c93b161c9b6f923",
+      "bytes": 2411
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\upload_begin_01\\native.log",
+      "sha256": "8b633a75b8d8f02af88163d85bf72dd1c11a66e8353f99037f682990042a7474",
+      "bytes": 71
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\upload_begin_01\\native_api.jsonl",
+      "sha256": "9b4cb3d67dc0fc54c7aa5e359235e3559ade711390e3667f63216be80c3b57e3",
+      "bytes": 3445
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\upload_begin_01\\owned_read32.exe",
+      "sha256": "8c7df15fee68ba5eaf7b7038e421d2ddb1e57e68cfd115983e3ba7fb10b74951",
+      "bytes": 164864
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\upload_begin_01\\pass0.partial.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\upload_begin_01\\pass1.partial.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\upload_begin_01\\provider.jsonl",
+      "sha256": "d8f756089a6415e640be3e9f1c27949c9526f74f8778f84390dd177c97f39956",
+      "bytes": 8968
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\upload_begin_01\\provider_intents.jsonl",
+      "sha256": "bfbe1b01912a6e98bbf202ce531bd960325c2f261f1e01526bf6770e0b74f914",
+      "bytes": 7356
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\upload_begin_01\\provider_state.json",
+      "sha256": "5f8308640cd3ab72a809dc783afbc197062d20016a949a5c076e5f49a2c28724",
+      "bytes": 253
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\upload_begin_01\\ready.json",
+      "sha256": "acbeca84b97b47ca98696f013b301990fb73982fc1713b83d5b933e8ea68c939",
+      "bytes": 34
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\upload_begin_01\\server.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\upload_begin_01\\server_errors.log",
+      "sha256": "78654649803ed8e385af0b400c5bab289edcc820edc313f9fccd668e279219c5",
+      "bytes": 435
+    }
+  ]
+}

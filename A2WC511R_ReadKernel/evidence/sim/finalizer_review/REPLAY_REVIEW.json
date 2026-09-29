@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "status": "PASS",
+  "classification": "OFFLINE_SYNTHETIC_METADATA_PARSER_NEGATIVES_ONLY",
+  "wire_bytes_source": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\random_01\\native_api.jsonl",
+    "sha256": "d0d1c0af05699969db52d886d76e1d9020f91711ad86830a103ea57399289cd9"
+  },
+  "test_metadata": "Locally generated canonical numeric fields; not native04 evidence",
+  "prior_finalizer": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\sim\\finalizer_review\\input_01\\finalize.py",
+    "sha256": "10a4075d040a272373b094137d1473c6fe1755d8ed74b1d533fc8bfbda2be3ed"
+  },
+  "current_finalizer": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\finalize.py",
+    "sha256": "0ad501a50296e3acb84f24fd44e876c039713c502e7827a57ada0d834778c290"
+  },
+  "baseline_reconstructed_image_sha256": "988a6d620df4396bd5b6d72572ecaba99006b891110dba6a8ad9b32ba1444b9b",
+  "cases": [
+    {
+      "case": "control_count",
+      "prior": "INCORRECTLY_ACCEPTED",
+      "current": "REJECTED",
+      "reason": "Non-message API must have exact zero message shape"
+    },
+    {
+      "case": "control_protocol",
+      "prior": "INCORRECTLY_ACCEPTED",
+      "current": "REJECTED",
+      "reason": "Non-message API must have exact zero message shape"
+    },
+    {
+      "case": "control_rx_status",
+      "prior": "INCORRECTLY_ACCEPTED",
+      "current": "REJECTED",
+      "reason": "Non-message API must have exact zero message shape"
+    },
+    {
+      "case": "control_tx_flags",
+      "prior": "INCORRECTLY_ACCEPTED",
+      "current": "REJECTED",
+      "reason": "Non-message API must have exact zero message shape"
+    },
+    {
+      "case": "control_timestamp",
+      "prior": "INCORRECTLY_ACCEPTED",
+      "current": "REJECTED",
+      "reason": "Non-message API must have exact zero message shape"
+    },
+    {
+      "case": "control_extra",
+      "prior": "INCORRECTLY_ACCEPTED",
+      "current": "REJECTED",
+      "reason": "Non-message API must have exact zero message shape"
+    },
+    {
+      "case": "partial_journal_missing_close",
+      "current": "REJECTED",
+      "reason": "Wrong/missing fixed API step PassThruClose"
+    },
+    {
+      "case": "fake_flags_cannot_replay_as_physical",
+      "current": "REJECTED",
+      "reason": "Native sequence/status/provenance"
+    },
+    {
+      "case": "unexpected_API",
+      "current": "REJECTED",
+      "reason": "Wrong/missing fixed API step PassThruConnect"
+    },
+    {
+      "case": "wrong_pass_valid_checksum",
+      "current": "REJECTED",
+      "reason": "Wrong read length/opcode/pass/address"
+    },
+    {
+      "case": "wrong_address_valid_checksum",
+      "current": "REJECTED",
+      "reason": "Wrong read length/opcode/pass/address"
+    },
+    {
+      "case": "unsupported_protocol",
+      "current": "REJECTED",
+      "reason": "Protocol/flags"
+    },
+    {
+      "case": "unsupported_status",
+      "current": "REJECTED",
+      "reason": "Unknown/error RX status"
+    },
+    {
+      "case": "unexpected_extra_data",
+      "current": "REJECTED",
+      "reason": "RX extra-data bounds"
+    }
+  ],
+  "physical_operations": 0,
+  "provider_loaded": false,
+  "limitations": [
+    "No native04 or physical acquisition claim from this test fixture",
+    "Full native04 journal positive review remains pending run completion",
+    "Integrity-only finalization does not independently qualify which virtual fixture or physically associate an ECU"
+  ]
+}

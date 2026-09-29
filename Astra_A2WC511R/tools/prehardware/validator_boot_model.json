@@ -1,0 +1,17 @@
+{
+  "entry": "C:\\Dev\\A2WC511R_Sim\\preflash_boot\\boot.py",
+  "model_id": "SH7058_power_on_prefix_v1",
+  "files": {
+    "C:\\Dev\\A2WC511R_Sim\\sh2e.py": "b47ac261634c116c3ffcdf19da9ec73e7014c034cd349ea8867f5f54895cdfff",
+    "C:\\Dev\\A2WC511R_Sim\\preflash_boot\\boot.py": "cea90b24165a33acbc161d873f14d80cbfe71832ab72158c8091a402c1d0b5ee",
+    "C:\\Dev\\A2WC511R_Sim\\preflash_boot\\manual_evidence.json": "0717bb43dceffa787cf0a297589de7b13497c47644ad992abb137f35613bf4e6"
+  },
+  "contract": {
+    "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\prehardware\\boot\\BOOT_CONTRACT.json",
+    "sha256": "6fe89b70cc243fc3ece98f5eaab8f6dfcfcc7f947fd7dec24eeadb407cec7f7c"
+  },
+  "explicit_write_allowlist": [],
+  "requires_equal_frontier": true,
+  "requires_equal_terminal_state": true,
+  "scope": "Reset-prefix execution, ordered writes/control and terminal integer/system state; known model frontier and unproved SSM startup remain CONDITIONAL."
+}

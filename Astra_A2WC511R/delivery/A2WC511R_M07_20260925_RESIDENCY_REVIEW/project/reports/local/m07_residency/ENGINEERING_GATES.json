@@ -1,0 +1,672 @@
+{
+  "schema": 2,
+  "architecture": "M07_HOST_NATIVE_A8_PREFERRED_AND_UNAPPROVED_EXECUTABLE_TAIL_RESEARCH",
+  "evidence_base_in_workspace": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency",
+  "evidence_base_in_review_bundle": "project/reports/local/m07_residency",
+  "generated_utc": "2026-09-26T01:58:07.318577+00:00",
+  "session_id": "01a0da26-addc-7fe1-84df-8c0baa8174f8",
+  "release_allowed": false,
+  "physical_actions_performed": false,
+  "host_offline_tool_supported": true,
+  "current_rom_plus_bench_only_sufficient_for_ECU_candidate": false,
+  "all_purely_offline_ECU_gates_pass": false,
+  "provably_owned_bytes": 0,
+  "conditional_saved_bytes": 162,
+  "old_failures_eliminated": [
+    "32-byte persistent project RAM allocation",
+    "new diagnostic single-writer publication invariant",
+    "task9 background publishing",
+    "diagnostic periodic cadence"
+  ],
+  "old_failure_remaining": [
+    "ROM ownership replaced with explicit executable-object obligation, not declared solved"
+  ],
+  "gates": [
+    {
+      "id": "FROZEN_M0_M06_PRESERVATION",
+      "status": "PASS",
+      "scope": "Immutable historical artifacts",
+      "reason": "All 211 frozen M0.6 and 1522 M0 delivery hashes unchanged; M0.7 files are separate.",
+      "evidence": [
+        {
+          "path": "M06_FROZEN_MANIFEST.json",
+          "sha256": "577853392c842f75aca92a5902f1d0d50f0ee81e99c4f4f863cca80cb4cccaff"
+        },
+        {
+          "path": "build_audit_02/BUILD_AUDIT.json",
+          "sha256": "afc1ed229e957d6f3abcfe445f42ee55e19f1212d25c720995aee6ff1f28760b"
+        }
+      ],
+      "remaining": null,
+      "depends_on": []
+    },
+    {
+      "id": "HOST_A8_OBSERVATION_SERVICE",
+      "status": "PASS",
+      "scope": "Supported offline host tool",
+      "reason": "Six raw observations, host predicates, full frames, UTC/monotonic timestamps, serialization, terminal failure, provenance and finite replay; 15 regression groups.",
+      "evidence": [
+        {
+          "path": "host/HOST_SERVICE_REVIEW.md",
+          "sha256": "ab1fcf32412456180e88ad2606cc607f352d0804c3b04c6a7f5cfc05b9d7ad1b"
+        },
+        {
+          "path": "host/host_evidence_manifest.json",
+          "sha256": "b2971d7c32be8441c469315274da8f8a54f512eb4ffad47d8bf875c531e04128"
+        },
+        {
+          "path": "host/INDEPENDENT_HOST_REVIEW.md",
+          "sha256": "78aa1f2751d7e43756cceb2c1bc93d31c32432efae5350ab528a88e29bf2c86d"
+        }
+      ],
+      "remaining": null,
+      "depends_on": []
+    },
+    {
+      "id": "HOST_NATIVE_ROMRAIDER_INTEGRATION",
+      "status": "PASS",
+      "scope": "Installed native codec over isolated virtual transport",
+      "reason": "Eight stock-OEM executed fixtures through actual RomRaider encoder/parser plus eight replay captures. No physical provider.",
+      "evidence": [
+        {
+          "path": "host/capture_native_final.jsonl",
+          "sha256": "6e075e29bd92869c83e5e39d33bdfec0691c32feaacc9985848b59f2f24f9060"
+        },
+        {
+          "path": "host/capture_replay_final.jsonl",
+          "sha256": "6ad7003a4f72a7b02e76af5c6dad2d5739c2794e2947b218eea812f5c51a6278"
+        },
+        {
+          "path": "host/host_evidence_manifest.json",
+          "sha256": "b2971d7c32be8441c469315274da8f8a54f512eb4ffad47d8bf875c531e04128"
+        }
+      ],
+      "remaining": null,
+      "depends_on": []
+    },
+    {
+      "id": "PROJECT_PERSISTENT_RAM",
+      "status": "PASS",
+      "scope": "Architecturally eliminated",
+      "reason": "Zero new persistent RAM; no 32-byte reservation and no publication buffer. Private stack is a separate obligation.",
+      "evidence": [
+        {
+          "path": "protocol/one_page_01/manifest.json",
+          "sha256": "a69589a230a9de0b75530cfa867feaef48ac1fd438f2029d20dd32695e5a8f21"
+        },
+        {
+          "path": "protocol/two_pages_01/manifest.json",
+          "sha256": "cd2f4267c0f4e09a43fe9e89785cce566917713d84dd65362b80e91211321a53"
+        },
+        {
+          "path": "host/HOST_SERVICE_REVIEW.md",
+          "sha256": "ab1fcf32412456180e88ad2606cc607f352d0804c3b04c6a7f5cfc05b9d7ad1b"
+        }
+      ],
+      "remaining": null,
+      "depends_on": []
+    },
+    {
+      "id": "NEW_BACKGROUND_WRITER_AND_SINGLE_WRITER",
+      "status": "PASS",
+      "scope": "Architecturally eliminated",
+      "reason": "No background M0 writer/publication lifecycle. Observations use OEM synchronous response storage and stack-local saved registers.",
+      "evidence": [
+        {
+          "path": "protocol/PROTOCOL_TRADEOFFS.md",
+          "sha256": "f0a687fe0cbf4f32529b6a5a25f40a44ad44c7ae26719ed53f52ea908026da70"
+        },
+        {
+          "path": "build_audit_02/BUILD_AUDIT.json",
+          "sha256": "afc1ed229e957d6f3abcfe445f42ee55e19f1212d25c720995aee6ff1f28760b"
+        }
+      ],
+      "remaining": null,
+      "depends_on": []
+    },
+    {
+      "id": "TASK9_PUBLICATION_AND_PERIODIC_CADENCE",
+      "status": "PASS",
+      "scope": "Architecturally eliminated",
+      "reason": "Task9 pointers unchanged; no diagnostic work without a project request. OEM replacement timing remains a separate gate.",
+      "evidence": [
+        {
+          "path": "protocol/PROTOCOL_TRADEOFFS.md",
+          "sha256": "f0a687fe0cbf4f32529b6a5a25f40a44ad44c7ae26719ed53f52ea908026da70"
+        },
+        {
+          "path": "build_audit_02/BUILD_AUDIT.json",
+          "sha256": "afc1ed229e957d6f3abcfe445f42ee55e19f1212d25c720995aee6ff1f28760b"
+        }
+      ],
+      "remaining": null,
+      "depends_on": []
+    },
+    {
+      "id": "RAW_PROTOCOL_DISCRIMINATION",
+      "status": "PASS",
+      "scope": "Exact compiled v1 profiles",
+      "reason": "100-byte one-page or148-byte two-page adapter, fixed address/version/page requests, FC/FD plus length distinction; wrong-page valid responses rejected.",
+      "evidence": [
+        {
+          "path": "protocol/CODEC_REVIEW.md",
+          "sha256": "32b3b2ca45dadc911e1d036b61d51e66f9831bd22c3ea6a05162f350acae7f90"
+        },
+        {
+          "path": "protocol/codec_evidence_manifest.json",
+          "sha256": "3a72f1c3a53ba24252668f5864b0f10ab7468cffaf4147b7853409258d329fdd"
+        },
+        {
+          "path": "protocol/execution_01/compiled_protocol_fixtures.json",
+          "sha256": "8f1bf4e238e1b4e604d33ae16fcb14e76e8b969bd74ebc065600b9d061fd7868"
+        }
+      ],
+      "remaining": null,
+      "depends_on": []
+    },
+    {
+      "id": "DISCARDED_REFILL_SUPPRESSION",
+      "status": "PASS",
+      "scope": "Existing OEM A8 progress contract",
+      "reason": "No custom refill hook; each source read once per accepted exchange, including the discarded post-four-byte callback.",
+      "evidence": [
+        {
+          "path": "protocol/PROTOCOL_TRADEOFFS.md",
+          "sha256": "f0a687fe0cbf4f32529b6a5a25f40a44ad44c7ae26719ed53f52ea908026da70"
+        },
+        {
+          "path": "protocol/execution_01/compiled_protocol_fixtures.json",
+          "sha256": "8f1bf4e238e1b4e604d33ae16fcb14e76e8b969bd74ebc065600b9d061fd7868"
+        }
+      ],
+      "remaining": null,
+      "depends_on": []
+    },
+    {
+      "id": "OEM_DIAGNOSTIC_BEHAVIOR_SCOPED",
+      "status": "PASS",
+      "scope": "Declared dispatcher/function-entry and private-stack contracts",
+      "reason": "Exact project ingress is the only intended protocol change; OEM validation/classifier unchanged. Full dispatcher ABI and selected stock/native wire comparisons pass. Transparent ROM readback may expose new code bytes.",
+      "evidence": [
+        {
+          "path": "semantic/one_page_dispatch_abi.json",
+          "sha256": "1f2918a90f6dcc8ff78f80a680e05572e8ed5d34390dac84006ec8f846b9bc7b"
+        },
+        {
+          "path": "semantic/two_page_dispatch_abi.json",
+          "sha256": "acdbdd54fa57bf30fcf6af22079483360bac5f321696eaba09784bc21bf97de3"
+        },
+        {
+          "path": "protocol/DEFAULT_STUB_REFERENCES.json",
+          "sha256": "209f445a7461def859a20dc235055d4ca02a8576491004c20ffb3238b87b7501"
+        },
+        {
+          "path": "protocol/execution_01/compiled_protocol_fixtures.json",
+          "sha256": "8f1bf4e238e1b4e604d33ae16fcb14e76e8b969bd74ebc065600b9d061fd7868"
+        }
+      ],
+      "remaining": "Not a universal interrupt/MMIO or every-session proof; existing B0/B8 MMIO paths are not silently stubbed.",
+      "depends_on": []
+    },
+    {
+      "id": "NO_ACTIVE_CONTROL_FEATURES",
+      "status": "PASS",
+      "scope": "Project feature closure",
+      "reason": "No new timing/fuel/boost/MAF/DBW/rev-limit/launch/ALS/transmission-torque control. Only observational SSM output and bounded OEM-equivalence replacements.",
+      "evidence": [
+        {
+          "path": "protocol/PROTOCOL_TRADEOFFS.md",
+          "sha256": "f0a687fe0cbf4f32529b6a5a25f40a44ad44c7ae26719ed53f52ea908026da70"
+        },
+        {
+          "path": "semantic/SEMANTIC_REPLACEMENTS.md",
+          "sha256": "08cda005d9032204c08e83ff03f4ac14edd6b142bd91386080c147b7891b92e0"
+        },
+        {
+          "path": "build_audit_02/BUILD_AUDIT.json",
+          "sha256": "afc1ed229e957d6f3abcfe445f42ee55e19f1212d25c720995aee6ff1f28760b"
+        }
+      ],
+      "remaining": null,
+      "depends_on": []
+    },
+    {
+      "id": "SEMANTIC_EXECUTABLE_COMPRESSION",
+      "status": "PASS",
+      "scope": "Bounded entry/private-stack/noninterleaving contracts",
+      "reason": "Division32-step projection and complete nibble partition proof; registers, SR/PR/SP, RAM/MMIO writes and calls compared. Extra4-byte division stack traffic explicit.",
+      "evidence": [
+        {
+          "path": "semantic/semantic_structural_proof.json",
+          "sha256": "3ccb19ea564fc4a4fbc2e2344cfab3622f5df8c1ac1a6501400f4b2b7b88f0e9"
+        },
+        {
+          "path": "semantic/semantic_differential.json",
+          "sha256": "31d8d0cec0c85c6c0a0a6ccf6f23820e4d141770191a5a1af99f748dd1d5ec6b"
+        },
+        {
+          "path": "ownership_review/ownership_peer_review.json",
+          "sha256": "68c45930a964c7dfdb41db33410c1addbd7a3bd4b5577041d3fdb680852bd9be"
+        }
+      ],
+      "remaining": null,
+      "depends_on": []
+    },
+    {
+      "id": "COMPILED_ABI_FRAME_AND_INSTRUCTION_BOUNDS",
+      "status": "PASS",
+      "scope": "Local compiled paths; no silicon or whole-interrupt claim",
+      "reason": "Adapter8-byte frame, dispatcher36 total; division12 total; no FPU operations. Fixed-loop CFG and instruction bounds retained with timing assumptions.",
+      "evidence": [
+        {
+          "path": "semantic/one_page_CFG_frame_proof.json",
+          "sha256": "a23995a639b879be250dcb2dc7ca8efe40a9c396337dec0a8d3f46f9f86921a2"
+        },
+        {
+          "path": "semantic/two_page_CFG_frame_proof.json",
+          "sha256": "5f425c232cec4325573b68d150728884826acb788f1f95350da2c047cd162c2e"
+        },
+        {
+          "path": "semantic/SEMANTIC_REPLACEMENTS.md",
+          "sha256": "08cda005d9032204c08e83ff03f4ac14edd6b142bd91386080c147b7891b92e0"
+        }
+      ],
+      "remaining": null,
+      "depends_on": []
+    },
+    {
+      "id": "SIMULATOR_SEMANTIC_AND_OWNERSHIP_UTILITY",
+      "status": "PASS",
+      "scope": "Reverse-engineering tool contracts",
+      "reason": "Strict75-form core preserved; bounded abstract/concrete cross-check, semantic comparison, negative controls, computed-target reports and unknown-frontier failure.",
+      "evidence": [
+        {
+          "path": "semantic/abstract_concrete_crosscheck.json",
+          "sha256": "30902579b5030ddd0d39a8262c6bb6c428455f3f9876a394e18c63dc3635f1a9"
+        },
+        {
+          "path": "semantic/simulator_freeze_manifest.json",
+          "sha256": "2f3f773a1476f1c4fa006534e8e24f124d50ac72034a9c1e9937060a8b470e67"
+        },
+        {
+          "path": "semantic/TARGET_DOMAIN_CLOSURE.json",
+          "sha256": "fe06f22d6d8de4b2c5f43db3fcebefc7baa158c214d5ece0f670a6e9482a0bb1"
+        },
+        {
+          "path": "ownership_review/ownership_peer_review.json",
+          "sha256": "68c45930a964c7dfdb41db33410c1addbd7a3bd4b5577041d3fdb680852bd9be"
+        }
+      ],
+      "remaining": null,
+      "depends_on": []
+    },
+    {
+      "id": "BUILD_DIFF_INVERSE_AND_NATIVE_CHECKSUM",
+      "status": "PASS",
+      "scope": "Reproducible research artifacts only",
+      "reason": "All executable sections reproduce; sole range-ELF FILE-path difference explained. Both raw/fixed images reverse exactly; actual installed RomRaider checksum agrees.",
+      "evidence": [
+        {
+          "path": "build_audit_02/BUILD_AUDIT.json",
+          "sha256": "afc1ed229e957d6f3abcfe445f42ee55e19f1212d25c720995aee6ff1f28760b"
+        },
+        {
+          "path": "build_audit_02/one_page.native_checksum.json",
+          "sha256": "b60be3f1dabc961c741167458bb401e16ed3239437de0b5f2ac1865a462e1710"
+        },
+        {
+          "path": "build_audit_02/two_pages.native_checksum.json",
+          "sha256": "945c577148f118ebe0d8225cbd641fa7d312c25cd74cdf17f8b02a3df1143862"
+        }
+      ],
+      "remaining": null,
+      "depends_on": []
+    },
+    {
+      "id": "LIVE_IDA_METADATA_PRESERVATION",
+      "status": "PASS",
+      "scope": "Official existing database",
+      "reason": "Backup, three qualified comments, unchanged mapped ROM bytes, supported save/close; helper stopped.",
+      "evidence": [
+        {
+          "path": "ida/M07_METADATA_WRITES.json",
+          "sha256": "2368fa8f09576c8e02b248446810ff24aa809e4fbba985a31ed49470669ab280"
+        },
+        {
+          "path": "ida/FINAL_IDB_IDENTITY.json",
+          "sha256": "b644fcfbbde8ecdc4e1f7bb0c39bbac83cd053ef305cd3303d7ce7105ee02bfa"
+        },
+        {
+          "path": "ida/stopped_server.json",
+          "sha256": "a77c2428b6960c106a1666c968a32b059a6ad934d53b8b482d6eb97985080de2"
+        }
+      ],
+      "remaining": null,
+      "depends_on": []
+    },
+    {
+      "id": "EXECUTABLE_TAIL_ROM_OWNERSHIP",
+      "status": "FAIL",
+      "scope": "Complete requested ownership standard",
+      "reason": "162 conditional saved bytes, zero accepted. Direct/literal inbound facts pass; computed entries and internal consumers remain unclosed. Boot path admits caller-directed R4 target.",
+      "evidence": [
+        {
+          "path": "OWNERSHIP_FRAGMENTS.json",
+          "sha256": "d09c1e641175c40e11b286e53df3fcefa3c5bbac3817aadd0c616ce01300daab"
+        },
+        {
+          "path": "ownership_review/OWNERSHIP_PEER_REVIEW.md",
+          "sha256": "d99931e2be90b55aa267da3393890fa3620eaaa93bea75685b270d469611751f"
+        },
+        {
+          "path": "semantic/TARGET_DOMAIN_CLOSURE.json",
+          "sha256": "fe06f22d6d8de4b2c5f43db3fcebefc7baa158c214d5ece0f670a6e9482a0bb1"
+        }
+      ],
+      "remaining": "Establish complete admissible entry and internal data-consumer contracts, or use host-only diagnostics. More finite cases cannot prove this.",
+      "depends_on": []
+    },
+    {
+      "id": "WHOLE_FIRMWARE_VALUE_SET_EXCLUSION",
+      "status": "FAIL",
+      "scope": "Conservative fallback, not required if object ownership closes",
+      "reason": "2585 candidate roots, unfinished100000-transfer worklist,80601 unknown frontiers. Opaque/data seeds are not certified reachability; no unknown is discarded to claim exclusion.",
+      "evidence": [
+        {
+          "path": "static_analysis/20260926T011704.827676Z/summary.json",
+          "sha256": "5d736e61d46214a7553f5144a3fa6a913a8114d96b92245de48a911a22be1085"
+        },
+        {
+          "path": "semantic/TARGET_DOMAIN_CLOSURE.json",
+          "sha256": "fe06f22d6d8de4b2c5f43db3fcebefc7baa158c214d5ece0f670a6e9482a0bb1"
+        }
+      ],
+      "remaining": "Close relevant unknown domains with admissible-entry/descriptor/consumer contracts; no universal anonymous-area ownership claim.",
+      "depends_on": []
+    },
+    {
+      "id": "GLOBAL_EXECUTION_CONTEXT_CONTRACT",
+      "status": "FAIL",
+      "scope": "Complete firmware software contract",
+      "reason": "Additional private stack and legitimate entry/preemption assumptions are explicit but not globally established. Caller-directed boot execution prevents unconditional target exclusion.",
+      "evidence": [
+        {
+          "path": "semantic/TARGET_DOMAIN_CLOSURE.json",
+          "sha256": "fe06f22d6d8de4b2c5f43db3fcebefc7baa158c214d5ece0f670a6e9482a0bb1"
+        },
+        {
+          "path": "ownership_review/ownership_peer_review.json",
+          "sha256": "68c45930a964c7dfdb41db33410c1addbd7a3bd4b5577041d3fdb680852bd9be"
+        }
+      ],
+      "remaining": "Prove context/stack exclusivity and relevant interrupt behavior in addition to later bench margin.",
+      "depends_on": []
+    },
+    {
+      "id": "SUFFICIENT_PROVABLY_OWNED_M07_BYTES",
+      "status": "FAIL",
+      "scope": "ECU-resident integration",
+      "reason": "100 and148 payload bytes fit102 and162 conditional capacity, respectively; accepted capacity is0.",
+      "evidence": [
+        {
+          "path": "OWNERSHIP_FRAGMENTS.json",
+          "sha256": "d09c1e641175c40e11b286e53df3fcefa3c5bbac3817aadd0c616ce01300daab"
+        }
+      ],
+      "remaining": null,
+      "depends_on": [
+        "EXECUTABLE_TAIL_ROM_OWNERSHIP",
+        "GLOBAL_EXECUTION_CONTEXT_CONTRACT"
+      ]
+    },
+    {
+      "id": "A0_FULL_IMAGE_ATTESTATION",
+      "status": "FAIL",
+      "scope": "Withdrawn acquisition claim",
+      "reason": "OEM masking means equal1MiB views need not equal actual flash. Frozen old collector is not approved for exact-image acquisition.",
+      "evidence": [
+        {
+          "path": "host/HOST_SERVICE_REVIEW.md",
+          "sha256": "ab1fcf32412456180e88ad2606cc607f352d0804c3b04c6a7f5cfc05b9d7ad1b"
+        },
+        {
+          "path": "ecuflash_read/ECUFLASH_READ_AUDIT.md",
+          "sha256": "5e7bad1b9203a4367357c6c6da4a4c6ceb258cdee505508640071387e91eeca7"
+        }
+      ],
+      "remaining": "Replace with independently qualified exact-coverage mechanism; no80-minute A0 procedure.",
+      "depends_on": []
+    },
+    {
+      "id": "ECUFLASH_INSTALLED_KERNEL_IDENTITY",
+      "status": "FAIL",
+      "scope": "Installed acquisition implementation, offline software gap",
+      "reason": "Exact installed DUAL kernel and full temporary RAM/MMIO effects not recovered; historical4660-byte upload is not complete execution footprint.",
+      "evidence": [
+        {
+          "path": "ecuflash_read/ECUFLASH_READ_AUDIT.md",
+          "sha256": "5e7bad1b9203a4367357c6c6da4a4c6ceb258cdee505508640071387e91eeca7"
+        },
+        {
+          "path": "ecuflash_read/static_extraction/STATIC_EXTRACTION_REVIEW.md",
+          "sha256": "2b3c06452a74059965a931937fa161c5e988bb50058e6035d45b5eb5d2920c8a"
+        },
+        {
+          "path": "ecuflash_read/manifest.json",
+          "sha256": "a56580f6f3e04b729d4afb20b46390de7010cfa71bd5045a7fc28901a7c393c5"
+        }
+      ],
+      "remaining": "Recover hash-matched kernel/application Read path or vendor evidence.",
+      "depends_on": []
+    },
+    {
+      "id": "ECUFLASH_EXACT_READ_COVERAGE",
+      "status": "FAIL",
+      "scope": "Installed acquisition implementation, offline software gap",
+      "reason": "Historical logs explicitly cover614400bytes;434176 lack read-area evidence. SynthesizedFF cannot attest exact live contents.",
+      "evidence": [
+        {
+          "path": "ecuflash_read/ECUFLASH_READ_AUDIT.md",
+          "sha256": "5e7bad1b9203a4367357c6c6da4a4c6ceb258cdee505508640071387e91eeca7"
+        },
+        {
+          "path": "ecuflash_read/static_extraction/STATIC_EXTRACTION_REVIEW.md",
+          "sha256": "2b3c06452a74059965a931937fa161c5e988bb50058e6035d45b5eb5d2920c8a"
+        },
+        {
+          "path": "ecuflash_read/manifest.json",
+          "sha256": "a56580f6f3e04b729d4afb20b46390de7010cfa71bd5045a7fc28901a7c393c5"
+        }
+      ],
+      "remaining": "Prove/read every byte under documented exact coverage semantics.",
+      "depends_on": []
+    },
+    {
+      "id": "ECUFLASH_READ_FLASH_WRITE_EXCLUSION",
+      "status": "FAIL",
+      "scope": "Installed acquisition implementation, offline software gap",
+      "reason": "Separate Read/Write log events do not prove all installed initialization/error branches exclude flash operations.",
+      "evidence": [
+        {
+          "path": "ecuflash_read/ECUFLASH_READ_AUDIT.md",
+          "sha256": "5e7bad1b9203a4367357c6c6da4a4c6ceb258cdee505508640071387e91eeca7"
+        },
+        {
+          "path": "ecuflash_read/static_extraction/STATIC_EXTRACTION_REVIEW.md",
+          "sha256": "2b3c06452a74059965a931937fa161c5e988bb50058e6035d45b5eb5d2920c8a"
+        },
+        {
+          "path": "ecuflash_read/manifest.json",
+          "sha256": "a56580f6f3e04b729d4afb20b46390de7010cfa71bd5045a7fc28901a7c393c5"
+        }
+      ],
+      "remaining": "Recover complete command/host/kernel boundaries; Read is a RAM-upload execution workflow.",
+      "depends_on": []
+    },
+    {
+      "id": "ECUFLASH_EXIT_RESET_CLEANUP",
+      "status": "FAIL",
+      "scope": "Installed acquisition implementation, offline software gap",
+      "reason": "Interface close logs do not establish kernel exit, reset or restored OEM RAM/peripheral state.",
+      "evidence": [
+        {
+          "path": "ecuflash_read/ECUFLASH_READ_AUDIT.md",
+          "sha256": "5e7bad1b9203a4367357c6c6da4a4c6ceb258cdee505508640071387e91eeca7"
+        },
+        {
+          "path": "ecuflash_read/static_extraction/STATIC_EXTRACTION_REVIEW.md",
+          "sha256": "2b3c06452a74059965a931937fa161c5e988bb50058e6035d45b5eb5d2920c8a"
+        },
+        {
+          "path": "ecuflash_read/manifest.json",
+          "sha256": "a56580f6f3e04b729d4afb20b46390de7010cfa71bd5045a7fc28901a7c393c5"
+        }
+      ],
+      "remaining": "Qualify success/failure cleanup and reinitialization sequence.",
+      "depends_on": []
+    },
+    {
+      "id": "LIVE_HOST_TRANSPORT_IMPLEMENTATION",
+      "status": "FAIL",
+      "scope": "Future live-host capability, deferred and not required for offline tool",
+      "reason": "Current supported service intentionally has no physical backend; offline acceptance does not imply provider integration.",
+      "evidence": [
+        {
+          "path": "host/HOST_SERVICE_REVIEW.md",
+          "sha256": "ab1fcf32412456180e88ad2606cc607f352d0804c3b04c6a7f5cfc05b9d7ad1b"
+        }
+      ],
+      "remaining": "A separately authorized fixed-read adapter implementation and qualification are needed for live use.",
+      "depends_on": []
+    },
+    {
+      "id": "CURRENT_ROM_IDENTIFICATION",
+      "status": "PHYSICAL/BENCH REQUIRED",
+      "scope": "Deferred physical evidence",
+      "reason": "No physical acquisition this run; stock and historical matches do not identify exact current flash.",
+      "evidence": [
+        {
+          "path": "ecuflash_read/ECUFLASH_READ_AUDIT.md",
+          "sha256": "5e7bad1b9203a4367357c6c6da4a4c6ceb258cdee505508640071387e91eeca7"
+        }
+      ],
+      "remaining": "Obtain exact untouched image through a software-qualified mechanism.",
+      "depends_on": []
+    },
+    {
+      "id": "SILICON_TIMING_AND_INTERRUPT_STACK_MARGIN",
+      "status": "PHYSICAL/BENCH REQUIRED",
+      "scope": "Deferred physical evidence",
+      "reason": "Wait states, ISR interference, actual stack high water/watchdog and transport timing are not software-event or cycle-model results.",
+      "evidence": [
+        {
+          "path": "semantic/SEMANTIC_REPLACEMENTS.md",
+          "sha256": "08cda005d9032204c08e83ff03f4ac14edd6b142bd91386080c147b7891b92e0"
+        },
+        {
+          "path": "semantic/one_page_CFG_frame_proof.json",
+          "sha256": "a23995a639b879be250dcb2dc7ca8efe40a9c396337dec0a8d3f46f9f86921a2"
+        },
+        {
+          "path": "semantic/two_page_CFG_frame_proof.json",
+          "sha256": "5f425c232cec4325573b68d150728884826acb788f1f95350da2c047cd162c2e"
+        }
+      ],
+      "remaining": "After ownership/context closure, measure all affected OEM callers including slower division/range routines; not just request cadence.",
+      "depends_on": []
+    },
+    {
+      "id": "TCU_VALIDITY_AND_FRESHNESS",
+      "status": "PHYSICAL/BENCH REQUIRED",
+      "scope": "Deferred physical evidence",
+      "reason": "Raw predicates do not prove physical clutch/gear, freshness, CAN health or fault validity.",
+      "evidence": [
+        {
+          "path": "host/HOST_SERVICE_REVIEW.md",
+          "sha256": "ab1fcf32412456180e88ad2606cc607f352d0804c3b04c6a7f5cfc05b9d7ad1b"
+        }
+      ],
+      "remaining": "Retain unknown status; eventual passive pre-kernel six-byte capture and separately scoped physical interpretation.",
+      "depends_on": []
+    },
+    {
+      "id": "PHYSICAL_TRANSPORT_ACCEPTANCE",
+      "status": "PHYSICAL/BENCH REQUIRED",
+      "scope": "Deferred physical evidence",
+      "reason": "No hardware, electrical/echo/interrupt or live adapter acceptance performed.",
+      "evidence": [
+        {
+          "path": "host/HOST_SERVICE_REVIEW.md",
+          "sha256": "ab1fcf32412456180e88ad2606cc607f352d0804c3b04c6a7f5cfc05b9d7ad1b"
+        },
+        {
+          "path": "protocol/PROTOCOL_TRADEOFFS.md",
+          "sha256": "f0a687fe0cbf4f32529b6a5a25f40a44ad44c7ae26719ed53f52ea908026da70"
+        }
+      ],
+      "remaining": "Only after a separately implemented/reviewed live transport; no physical action requested now.",
+      "depends_on": []
+    },
+    {
+      "id": "ECU_PHYSICAL_TEST_CANDIDATE",
+      "status": "FAIL",
+      "scope": "Release readiness",
+      "reason": "Current-ROM identification and bench timing alone do not resolve software ownership/context failures.",
+      "evidence": [
+        {
+          "path": "OWNERSHIP_FRAGMENTS.json",
+          "sha256": "d09c1e641175c40e11b286e53df3fcefa3c5bbac3817aadd0c616ce01300daab"
+        },
+        {
+          "path": "M07_REVIEW.md",
+          "sha256": "5c50374cdd76377178229bfdb2205a9c6be3baa1a4863e52fed63302f186ffdc"
+        }
+      ],
+      "remaining": null,
+      "depends_on": [
+        "SUFFICIENT_PROVABLY_OWNED_M07_BYTES",
+        "GLOBAL_EXECUTION_CONTEXT_CONTRACT",
+        "CURRENT_ROM_IDENTIFICATION",
+        "SILICON_TIMING_AND_INTERRUPT_STACK_MARGIN"
+      ]
+    }
+  ],
+  "summary": {
+    "PASS": [
+      "FROZEN_M0_M06_PRESERVATION",
+      "HOST_A8_OBSERVATION_SERVICE",
+      "HOST_NATIVE_ROMRAIDER_INTEGRATION",
+      "PROJECT_PERSISTENT_RAM",
+      "NEW_BACKGROUND_WRITER_AND_SINGLE_WRITER",
+      "TASK9_PUBLICATION_AND_PERIODIC_CADENCE",
+      "RAW_PROTOCOL_DISCRIMINATION",
+      "DISCARDED_REFILL_SUPPRESSION",
+      "OEM_DIAGNOSTIC_BEHAVIOR_SCOPED",
+      "NO_ACTIVE_CONTROL_FEATURES",
+      "SEMANTIC_EXECUTABLE_COMPRESSION",
+      "COMPILED_ABI_FRAME_AND_INSTRUCTION_BOUNDS",
+      "SIMULATOR_SEMANTIC_AND_OWNERSHIP_UTILITY",
+      "BUILD_DIFF_INVERSE_AND_NATIVE_CHECKSUM",
+      "LIVE_IDA_METADATA_PRESERVATION"
+    ],
+    "FAIL": [
+      "EXECUTABLE_TAIL_ROM_OWNERSHIP",
+      "WHOLE_FIRMWARE_VALUE_SET_EXCLUSION",
+      "GLOBAL_EXECUTION_CONTEXT_CONTRACT",
+      "SUFFICIENT_PROVABLY_OWNED_M07_BYTES",
+      "A0_FULL_IMAGE_ATTESTATION",
+      "ECUFLASH_INSTALLED_KERNEL_IDENTITY",
+      "ECUFLASH_EXACT_READ_COVERAGE",
+      "ECUFLASH_READ_FLASH_WRITE_EXCLUSION",
+      "ECUFLASH_EXIT_RESET_CLEANUP",
+      "LIVE_HOST_TRANSPORT_IMPLEMENTATION",
+      "ECU_PHYSICAL_TEST_CANDIDATE"
+    ],
+    "PHYSICAL/BENCH REQUIRED": [
+      "CURRENT_ROM_IDENTIFICATION",
+      "SILICON_TIMING_AND_INTERRUPT_STACK_MARGIN",
+      "TCU_VALIDITY_AND_FRESHNESS",
+      "PHYSICAL_TRANSPORT_ACCEPTANCE"
+    ]
+  }
+}

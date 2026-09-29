@@ -1,0 +1,29 @@
+{
+  "folder": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_fault_read_extra_01",
+  "binding": {
+    "schema": 1,
+    "kernel_path": "C:\\Dev\\A2WC511R_ReadKernel\\build\\rk02_01\\kernel.bin",
+    "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+    "manifest_path": "C:\\Dev\\A2WC511R_ReadKernel\\build\\rk02_01\\manifest.json",
+    "manifest_sha256": "a35562a19f21d4a2815e88fb729d21dd2cc08bf702c0d866f88ffc9e3ddb659e",
+    "client_path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\build\\native_05\\owned_read32.exe",
+    "client_sha256": "4b681bcdb3c178b89382b37b207b4a7679f0a1e87ab13c7051e8cf8019c094ec",
+    "fake_path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\native\\a2wc_readkernel_fake32.dll",
+    "fake_sha256": "58be9aaad8e004eb5bd04a600e53394a1139752f1b698ca1832124dbbb4d5cc0",
+    "kernel_bytes": 1808,
+    "load_address": "FFFF3000",
+    "entry_address": "FFFF3004",
+    "version_hex": "41325743353131522d524b303200",
+    "physical": false,
+    "physical_provider_supported": false
+  },
+  "fixture": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\fixtures\\composite.bin",
+    "sha256": "b91ad3e88637bfae6a15871761c288f914fe10fe74c78cbc53e963c4fe80e545",
+    "bytes": 1048576
+  },
+  "token": "9a6ceaaa45584cafb20aca51eb17497e496589aa2287afd2722c0927c552a4c0",
+  "fault": "read_extra",
+  "transport": "fragmented_status",
+  "physical": false
+}

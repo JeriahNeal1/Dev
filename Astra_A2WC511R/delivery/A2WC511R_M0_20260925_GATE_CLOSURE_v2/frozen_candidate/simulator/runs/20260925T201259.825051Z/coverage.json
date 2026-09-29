@@ -1,0 +1,105 @@
+{
+  "architectural_reference": "https://www.renesas.com/en/document/mah/sh-2e-software-manual",
+  "classification": "OFFLINE FUNCTION VALIDATION ONLY; NOT A FLASH CANDIDATE OR PHYSICAL SAFETY ACCEPTANCE",
+  "command": "py -3.14 run_validation.py",
+  "coverage_limitations": [
+    "P/R/N/forward naming comes from historical interpretation, not mechanical simulation",
+    "8 maps to zero and 9..F holds are verified for the decoder only",
+    "No global freshness or CAN-health conclusion follows from the status helper",
+    "No reset-code execution; vectors decoded only",
+    "No full ROM or calibration acceptance",
+    "No patched candidate tested in this anchor report"
+  ],
+  "determinism": "same stock fixture produces identical registers, memory bytes, instruction trace and data-access trace",
+  "host_python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+  "local_static_reference": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\ida\\initial_static_audit.json",
+  "memory": {
+    "big_endian": true,
+    "ram_uninitialized_reads_fail": true,
+    "reset_vector_decode": {
+      "pc": "00000AAC",
+      "sp": "FFFFBFA0"
+    },
+    "rom_readonly": true,
+    "stack_policy": "Harness virtual stack FFFFBBA0..FFFFBF9F; 16-byte guards either side; not proof of real allocation"
+  },
+  "platform": "Windows-10-10.0.17763-SP0",
+  "rom": {
+    "base_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+    "overlays": [],
+    "sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+    "size": 1048576,
+    "source": "C:\\Dev\\SubaruRoms\\OEM\\A2WC511R.bin"
+  },
+  "run_directory": "C:\\Dev\\A2WC511R_Sim\\runs\\20260925T201259.825051Z",
+  "scenario_seed": "No random generator; exhaustive packed/status values and explicit prior-pair enumeration",
+  "schema": 1,
+  "source_hashes": {
+    "run_validation.py": "600e50374cb9c5c63a0ff3fc7736632ec9fc611104899cc72da8c7db9f22e7b4",
+    "sh2e.py": "449e551de08d1cc8ec6ab2a77a3994a2cee67cd1d53398e202ab06f4827c370e",
+    "tests\\test_sim.py": "48d3152cc7e3d19b7333b1cb7bbd099446b43e56ce76b2a19222b3fc2e743441"
+  },
+  "status": "PASS",
+  "stock_decoder": {
+    "cases": 1792,
+    "code_sha256": "2a1edd1b7ed8036f7a5e0607799a094c2c2a2e67f894a05b48750f22fd1ff248",
+    "conditional_branch_outcomes": "8/8",
+    "end_exclusive": "00014802",
+    "entry": "000147AC",
+    "instruction_pc_coverage": "43/43",
+    "instruction_pcs": 43,
+    "packed_values": "all 0..255",
+    "prior_pairs": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        8,
+        7
+      ],
+      [
+        15,
+        128
+      ],
+      [
+        128,
+        15
+      ],
+      [
+        255,
+        255
+      ]
+    ],
+    "writes_only": [
+      "FFFF4BC1",
+      "FFFF4BC2"
+    ]
+  },
+  "stock_status": {
+    "cases": 256,
+    "code_sha256": "37a66d10df8d5396fa1b55f8adb21697d09d970ad25f200e5e390035e60738c3",
+    "end_exclusive": "00015A16",
+    "entry": "00015A02",
+    "instruction_pc_coverage": "10/10",
+    "result": "R0 = bool(FFFF4C50 & 0x02)",
+    "writes": 0
+  },
+  "tests": {
+    "errors": 0,
+    "failures": 0,
+    "run": 31,
+    "skipped": 0,
+    "supported_forms": 51,
+    "supported_forms_exercised": 51,
+    "unexercised_forms": []
+  }
+}

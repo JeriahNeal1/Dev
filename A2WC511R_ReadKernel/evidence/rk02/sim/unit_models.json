@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "groups": 16,
+  "local_ISA_value_T_delay_checks": 144,
+  "sources": [
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\test_model.py",
+      "sha256": "4edeaf66ec89e1bfad0f266cf4a6af46c1411b1077d28c0aff1ef63bb58720e7"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\test_echo.py",
+      "sha256": "b2131c6187ba38bd2d7bb524147cb856ef6db66465a79d449d4220dbfa6c3571"
+    }
+  ],
+  "log": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\sim\\unit_models.log",
+    "sha256": "5a0ef662da35f5afcdb34b397e933bcd99ba45471043f4151a8a1ddea93c1f03"
+  },
+  "includes": [
+    "TDR/TSR buffering and TEND",
+    "TE0 abort pending/buffered bytes",
+    "receive admission at start vs completion",
+    "all 256 echo values under RE0",
+    "RDR retention, ORER and subsequent receive disable",
+    "strict opcode/MMIO/private-memory failures"
+  ]
+}

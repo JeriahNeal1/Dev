@@ -1,0 +1,754 @@
+{
+  "status": "PASS",
+  "code_overlay_sha256": "005861f92771fc6b84e8e747faf5998130c12a528e3d73d2d35213d596de0513",
+  "scope": "Exact one-page division-only raw research image; exhaustive compiled control-predicate partition, no new scenario collection.",
+  "frame_before_instruction": {
+    "000042A4": 0,
+    "000042A6": 4,
+    "000042A8": 8,
+    "000042AA": 8,
+    "000042AC": 8,
+    "000042AE": 8,
+    "000042B0": 8,
+    "000042B2": 8,
+    "000042B4": 8,
+    "000042B6": 8,
+    "000042B8": 8,
+    "000042BA": 8,
+    "000042BC": 4,
+    "000042BE": 0,
+    "000042C0": 0,
+    "000042C2": 0,
+    "000042C4": 0,
+    "000042C6": 0,
+    "000042C8": 0,
+    "000042CA": 0,
+    "000042CC": 0,
+    "000042CE": 0,
+    "000042D0": 8,
+    "000042D2": 4,
+    "000042D4": 0,
+    "000042D6": 0,
+    "000042D8": 0,
+    "000042DA": 0,
+    "000042DC": 0,
+    "000042DE": 0,
+    "000042E0": 0,
+    "000042E2": 0,
+    "000042E4": 0,
+    "000484B0": 0,
+    "000484B2": 0,
+    "000484B4": 0
+  },
+  "compiled_instructions": {
+    "000042A4": {
+      "word": "2F16",
+      "form": "movl_predec",
+      "delay_slot": false
+    },
+    "000042A6": {
+      "word": "2F46",
+      "form": "movl_predec",
+      "delay_slot": false
+    },
+    "000042A8": {
+      "word": "62D3",
+      "form": "mov_reg",
+      "delay_slot": false
+    },
+    "000042AA": {
+      "word": "D30F",
+      "form": "movl_pc",
+      "delay_slot": false
+    },
+    "000042AC": {
+      "word": "E406",
+      "form": "mov_imm",
+      "delay_slot": false
+    },
+    "000042AE": {
+      "word": "6026",
+      "form": "movl_postinc",
+      "delay_slot": false
+    },
+    "000042B0": {
+      "word": "6136",
+      "form": "movl_postinc",
+      "delay_slot": false
+    },
+    "000042B2": {
+      "word": "3010",
+      "form": "cmpeq_reg",
+      "delay_slot": false
+    },
+    "000042B4": {
+      "word": "8B0C",
+      "form": "bf",
+      "delay_slot": false
+    },
+    "000042B6": {
+      "word": "4410",
+      "form": "dt",
+      "delay_slot": false
+    },
+    "000042B8": {
+      "word": "8BF9",
+      "form": "bf",
+      "delay_slot": false
+    },
+    "000042BA": {
+      "word": "64F6",
+      "form": "movl_postinc",
+      "delay_slot": false
+    },
+    "000042BC": {
+      "word": "61F6",
+      "form": "movl_postinc",
+      "delay_slot": false
+    },
+    "000042BE": {
+      "word": "E007",
+      "form": "mov_imm",
+      "delay_slot": false
+    },
+    "000042C0": {
+      "word": "2C00",
+      "form": "movb_store",
+      "delay_slot": false
+    },
+    "000042C2": {
+      "word": "E0FC",
+      "form": "mov_imm",
+      "delay_slot": false
+    },
+    "000042C4": {
+      "word": "2B00",
+      "form": "movb_store",
+      "delay_slot": false
+    },
+    "000042C6": {
+      "word": "60E0",
+      "form": "movb_load",
+      "delay_slot": false
+    },
+    "000042C8": {
+      "word": "CB10",
+      "form": "or_imm",
+      "delay_slot": false
+    },
+    "000042CA": {
+      "word": "2E00",
+      "form": "movb_store",
+      "delay_slot": false
+    },
+    "000042CC": {
+      "word": "A005",
+      "form": "bra",
+      "delay_slot": false
+    },
+    "000042CE": {
+      "word": "0008",
+      "form": "clrt",
+      "delay_slot": true
+    },
+    "000042D0": {
+      "word": "64F6",
+      "form": "movl_postinc",
+      "delay_slot": false
+    },
+    "000042D2": {
+      "word": "61F6",
+      "form": "movl_postinc",
+      "delay_slot": false
+    },
+    "000042D4": {
+      "word": "84E1",
+      "form": "movb_disp_load",
+      "delay_slot": false
+    },
+    "000042D6": {
+      "word": "CB01",
+      "form": "or_imm",
+      "delay_slot": false
+    },
+    "000042D8": {
+      "word": "80E1",
+      "form": "movb_disp_store",
+      "delay_slot": false
+    },
+    "000042DA": {
+      "word": "60E0",
+      "form": "movb_load",
+      "delay_slot": false
+    },
+    "000042DC": {
+      "word": "C97F",
+      "form": "and_imm",
+      "delay_slot": false
+    },
+    "000042DE": {
+      "word": "2E00",
+      "form": "movb_store",
+      "delay_slot": false
+    },
+    "000042E0": {
+      "word": "D202",
+      "form": "movl_pc",
+      "delay_slot": false
+    },
+    "000042E2": {
+      "word": "422B",
+      "form": "jmp",
+      "delay_slot": false
+    },
+    "000042E4": {
+      "word": "0009",
+      "form": "nop",
+      "delay_slot": true
+    },
+    "000484B0": {
+      "word": "D201",
+      "form": "movl_pc",
+      "delay_slot": false
+    },
+    "000484B2": {
+      "word": "422B",
+      "form": "jmp",
+      "delay_slot": false
+    },
+    "000484B4": {
+      "word": "0009",
+      "form": "nop",
+      "delay_slot": true
+    }
+  },
+  "CFG_edges": [
+    [
+      "000042A4",
+      "000042A6"
+    ],
+    [
+      "000042A6",
+      "000042A8"
+    ],
+    [
+      "000042A8",
+      "000042AA"
+    ],
+    [
+      "000042AA",
+      "000042AC"
+    ],
+    [
+      "000042AC",
+      "000042AE"
+    ],
+    [
+      "000042AE",
+      "000042B0"
+    ],
+    [
+      "000042B0",
+      "000042B2"
+    ],
+    [
+      "000042B2",
+      "000042B4"
+    ],
+    [
+      "000042B4",
+      "000042B6"
+    ],
+    [
+      "000042B4",
+      "000042D0"
+    ],
+    [
+      "000042B6",
+      "000042B8"
+    ],
+    [
+      "000042B8",
+      "000042AE"
+    ],
+    [
+      "000042B8",
+      "000042BA"
+    ],
+    [
+      "000042BA",
+      "000042BC"
+    ],
+    [
+      "000042BC",
+      "000042BE"
+    ],
+    [
+      "000042BE",
+      "000042C0"
+    ],
+    [
+      "000042C0",
+      "000042C2"
+    ],
+    [
+      "000042C2",
+      "000042C4"
+    ],
+    [
+      "000042C4",
+      "000042C6"
+    ],
+    [
+      "000042C6",
+      "000042C8"
+    ],
+    [
+      "000042C8",
+      "000042CA"
+    ],
+    [
+      "000042CA",
+      "000042CC"
+    ],
+    [
+      "000042CC",
+      "000042DA"
+    ],
+    [
+      "000042D0",
+      "000042D2"
+    ],
+    [
+      "000042D2",
+      "000042D4"
+    ],
+    [
+      "000042D4",
+      "000042D6"
+    ],
+    [
+      "000042D6",
+      "000042D8"
+    ],
+    [
+      "000042D8",
+      "000042DA"
+    ],
+    [
+      "000042DA",
+      "000042DC"
+    ],
+    [
+      "000042DC",
+      "000042DE"
+    ],
+    [
+      "000042DE",
+      "000042E0"
+    ],
+    [
+      "000042E0",
+      "000042E2"
+    ],
+    [
+      "000042E2",
+      "000484BC"
+    ],
+    [
+      "000484B0",
+      "000484B2"
+    ],
+    [
+      "000484B2",
+      "000042A4"
+    ]
+  ],
+  "paths": [
+    {
+      "partition": "first mismatch at longword0",
+      "accepted": false,
+      "instructions_including_entry": 23,
+      "data_accesses_including_entry": 13,
+      "additional_stack_peak": 8,
+      "trace": [
+        "000484B0",
+        "000484B2",
+        "000484B4",
+        "000042A4",
+        "000042A6",
+        "000042A8",
+        "000042AA",
+        "000042AC",
+        "000042AE",
+        "000042B0",
+        "000042B2",
+        "000042B4",
+        "000042D0",
+        "000042D2",
+        "000042D4",
+        "000042D6",
+        "000042D8",
+        "000042DA",
+        "000042DC",
+        "000042DE",
+        "000042E0",
+        "000042E2",
+        "000042E4"
+      ]
+    },
+    {
+      "partition": "first mismatch at longword1",
+      "accepted": false,
+      "instructions_including_entry": 29,
+      "data_accesses_including_entry": 15,
+      "additional_stack_peak": 8,
+      "trace": [
+        "000484B0",
+        "000484B2",
+        "000484B4",
+        "000042A4",
+        "000042A6",
+        "000042A8",
+        "000042AA",
+        "000042AC",
+        "000042AE",
+        "000042B0",
+        "000042B2",
+        "000042B4",
+        "000042B6",
+        "000042B8",
+        "000042AE",
+        "000042B0",
+        "000042B2",
+        "000042B4",
+        "000042D0",
+        "000042D2",
+        "000042D4",
+        "000042D6",
+        "000042D8",
+        "000042DA",
+        "000042DC",
+        "000042DE",
+        "000042E0",
+        "000042E2",
+        "000042E4"
+      ]
+    },
+    {
+      "partition": "first mismatch at longword2",
+      "accepted": false,
+      "instructions_including_entry": 35,
+      "data_accesses_including_entry": 17,
+      "additional_stack_peak": 8,
+      "trace": [
+        "000484B0",
+        "000484B2",
+        "000484B4",
+        "000042A4",
+        "000042A6",
+        "000042A8",
+        "000042AA",
+        "000042AC",
+        "000042AE",
+        "000042B0",
+        "000042B2",
+        "000042B4",
+        "000042B6",
+        "000042B8",
+        "000042AE",
+        "000042B0",
+        "000042B2",
+        "000042B4",
+        "000042B6",
+        "000042B8",
+        "000042AE",
+        "000042B0",
+        "000042B2",
+        "000042B4",
+        "000042D0",
+        "000042D2",
+        "000042D4",
+        "000042D6",
+        "000042D8",
+        "000042DA",
+        "000042DC",
+        "000042DE",
+        "000042E0",
+        "000042E2",
+        "000042E4"
+      ]
+    },
+    {
+      "partition": "first mismatch at longword3",
+      "accepted": false,
+      "instructions_including_entry": 41,
+      "data_accesses_including_entry": 19,
+      "additional_stack_peak": 8,
+      "trace": [
+        "000484B0",
+        "000484B2",
+        "000484B4",
+        "000042A4",
+        "000042A6",
+        "000042A8",
+        "000042AA",
+        "000042AC",
+        "000042AE",
+        "000042B0",
+        "000042B2",
+        "000042B4",
+        "000042B6",
+        "000042B8",
+        "000042AE",
+        "000042B0",
+        "000042B2",
+        "000042B4",
+        "000042B6",
+        "000042B8",
+        "000042AE",
+        "000042B0",
+        "000042B2",
+        "000042B4",
+        "000042B6",
+        "000042B8",
+        "000042AE",
+        "000042B0",
+        "000042B2",
+        "000042B4",
+        "000042D0",
+        "000042D2",
+        "000042D4",
+        "000042D6",
+        "000042D8",
+        "000042DA",
+        "000042DC",
+        "000042DE",
+        "000042E0",
+        "000042E2",
+        "000042E4"
+      ]
+    },
+    {
+      "partition": "first mismatch at longword4",
+      "accepted": false,
+      "instructions_including_entry": 47,
+      "data_accesses_including_entry": 21,
+      "additional_stack_peak": 8,
+      "trace": [
+        "000484B0",
+        "000484B2",
+        "000484B4",
+        "000042A4",
+        "000042A6",
+        "000042A8",
+        "000042AA",
+        "000042AC",
+        "000042AE",
+        "000042B0",
+        "000042B2",
+        "000042B4",
+        "000042B6",
+        "000042B8",
+        "000042AE",
+        "000042B0",
+        "000042B2",
+        "000042B4",
+        "000042B6",
+        "000042B8",
+        "000042AE",
+        "000042B0",
+        "000042B2",
+        "000042B4",
+        "000042B6",
+        "000042B8",
+        "000042AE",
+        "000042B0",
+        "000042B2",
+        "000042B4",
+        "000042B6",
+        "000042B8",
+        "000042AE",
+        "000042B0",
+        "000042B2",
+        "000042B4",
+        "000042D0",
+        "000042D2",
+        "000042D4",
+        "000042D6",
+        "000042D8",
+        "000042DA",
+        "000042DC",
+        "000042DE",
+        "000042E0",
+        "000042E2",
+        "000042E4"
+      ]
+    },
+    {
+      "partition": "first mismatch at longword5",
+      "accepted": false,
+      "instructions_including_entry": 53,
+      "data_accesses_including_entry": 23,
+      "additional_stack_peak": 8,
+      "trace": [
+        "000484B0",
+        "000484B2",
+        "000484B4",
+        "000042A4",
+        "000042A6",
+        "000042A8",
+        "000042AA",
+        "000042AC",
+        "000042AE",
+        "000042B0",
+        "000042B2",
+        "000042B4",
+        "000042B6",
+        "000042B8",
+        "000042AE",
+        "000042B0",
+        "000042B2",
+        "000042B4",
+        "000042B6",
+        "000042B8",
+        "000042AE",
+        "000042B0",
+        "000042B2",
+        "000042B4",
+        "000042B6",
+        "000042B8",
+        "000042AE",
+        "000042B0",
+        "000042B2",
+        "000042B4",
+        "000042B6",
+        "000042B8",
+        "000042AE",
+        "000042B0",
+        "000042B2",
+        "000042B4",
+        "000042B6",
+        "000042B8",
+        "000042AE",
+        "000042B0",
+        "000042B2",
+        "000042B4",
+        "000042D0",
+        "000042D2",
+        "000042D4",
+        "000042D6",
+        "000042D8",
+        "000042DA",
+        "000042DC",
+        "000042DE",
+        "000042E0",
+        "000042E2",
+        "000042E4"
+      ]
+    },
+    {
+      "partition": "all six equal",
+      "accepted": true,
+      "instructions_including_entry": 61,
+      "data_accesses_including_entry": 25,
+      "additional_stack_peak": 8,
+      "trace": [
+        "000484B0",
+        "000484B2",
+        "000484B4",
+        "000042A4",
+        "000042A6",
+        "000042A8",
+        "000042AA",
+        "000042AC",
+        "000042AE",
+        "000042B0",
+        "000042B2",
+        "000042B4",
+        "000042B6",
+        "000042B8",
+        "000042AE",
+        "000042B0",
+        "000042B2",
+        "000042B4",
+        "000042B6",
+        "000042B8",
+        "000042AE",
+        "000042B0",
+        "000042B2",
+        "000042B4",
+        "000042B6",
+        "000042B8",
+        "000042AE",
+        "000042B0",
+        "000042B2",
+        "000042B4",
+        "000042B6",
+        "000042B8",
+        "000042AE",
+        "000042B0",
+        "000042B2",
+        "000042B4",
+        "000042B6",
+        "000042B8",
+        "000042AE",
+        "000042B0",
+        "000042B2",
+        "000042B4",
+        "000042B6",
+        "000042B8",
+        "000042BA",
+        "000042BC",
+        "000042BE",
+        "000042C0",
+        "000042C2",
+        "000042C4",
+        "000042C6",
+        "000042C8",
+        "000042CA",
+        "000042CC",
+        "000042CE",
+        "000042DA",
+        "000042DC",
+        "000042DE",
+        "000042E0",
+        "000042E2",
+        "000042E4"
+      ]
+    }
+  ],
+  "added_stack_peak": 8,
+  "OEM_frame": 28,
+  "full_dispatcher_peak": 36,
+  "every_frame_join_equal": true,
+  "balanced_at_continuation": true,
+  "called_functions": [],
+  "preserved_GPR": "R1/R4 saved/restored; R5-R14 untouched; R15 balanced; R2/R3 overwritten by original484BC/C0. R0 scratch.",
+  "PR": "No adapter call or PR instruction; original OEM dispatcher restores caller PR.",
+  "SR": "All-six success explicitly CLRT; first mismatch CMP supplies T0. DT reaches zero after exactly six matching words. Other SR bits unchanged.",
+  "FPU_MAC_control": "No reachable FPU, MACH/MACL, GBR/VBR, SR-transfer or interrupt-mask operation.",
+  "write_contract": "Two private stack words; existing OEM response length/opcode/flags/reject byte only, under unchanged dispatcher register setup.",
+  "bound_argument": "First differing aligned longword among six, or all equal, partitions every24-byte request value. Each successful comparison decreases R4; no other loop or counter writer.",
+  "cycles": {
+    "accepted": {
+      "instructions": 61,
+      "data_accesses": 25,
+      "conditional_F2_D2_cycles": 391
+    },
+    "rejected": {
+      "instructions": 53,
+      "data_accesses": 23,
+      "conditional_F2_D2_cycles": 341
+    }
+  },
+  "cycle_assumptions": "5*N+(F-1)*N+(D-1)*A, illustrative F=D=2. Excludes OEM baseline, external/entry stalls, interrupt delivery and actual silicon wait states.",
+  "limitations": [
+    "Private ordinary stack and valid dispatcher entry required.",
+    "OEM upstream parser/SCI timing remains separate.",
+    "Full RAM request reads are sequential, not atomic.",
+    "Residency and global execution-context gates remain FAIL."
+  ],
+  "source_sha256": "4334e855182bc96470ca85579f59fd46dd0161f0f92fb267fb25b792e393cd98",
+  "core_sha256": "b47ac261634c116c3ffcdf19da9ec73e7014c034cd349ea8867f5f54895cdfff"
+}

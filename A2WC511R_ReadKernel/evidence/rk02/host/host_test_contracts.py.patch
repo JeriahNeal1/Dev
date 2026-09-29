@@ -1,0 +1,35 @@
+--- C:\Dev\A2WC511R_ReadKernel\evidence\rk02\input_snapshot\host\test_contracts.py
++++ C:\Dev\A2WC511R_ReadKernel\host\test_contracts.py
+@@ -9,7 +9,7 @@
+ from host.state import HostState
+ from fake.model import OwnedKernelECU,BF_PAYLOAD
+ 
+-def main():
++def main(output_dir=None):
+     checks=[]
+     def reject(name,call):
+         try:call()
+@@ -47,8 +47,21 @@
+     assert ecu.state=='UPLOAD'
+     reject('duplicate34 rejected before any byte',lambda:ecu.exchange(declaration(len(kernel)),15625));assert ecu.state=='FAIL'
+     checks.append('exact modeled bootstrap reaches upload with matched ACKs')
+-    out=ROOT/'host/tests';out.mkdir(parents=True,exist_ok=True)
++    def version_ready():
++        machine=HostState(kernel,digest)
++        positives={'identity':BF_PAYLOAD,'communication':bytes.fromhex('C1EF8F'),'timings':bytes.fromhex('C30000FF00FF00'),
++                   'seed':bytes.fromhex('670112345678'),'key':bytes.fromhex('670234'),'session':bytes.fromhex('5085'),
++                   'declaration':bytes.fromhex('7484'),'upload':bytes.fromhex('76'),'entry':bytes.fromhex('710101')}
++        while machine.pending.kind!='version':machine.accept(ssm(positives[machine.pending.kind],True))
++        return machine
++    h=version_ready();reject('RK01 identity rejected by RK02 host',lambda:h.accept(beef(b'\x81A2WC511R-RK01\0')))
++    assert h.status=='FAIL' and h.pending is None
++    h=version_ready();h.accept(beef(b'\x81A2WC511R-RK02\0'));assert h.pending.kind=='read'
++    checks.append('RK02 exact identity permits first fixed raw request')
++    out=Path(output_dir) if output_dir is not None else ROOT/'host/tests';out.mkdir(parents=True,exist_ok=True)
+     report={'schema':1,'status':'PASS','checks':checks,'count':len(checks),'scope':'PURE_HOST_POLICY_AND_MODELED_BOOT_ONLY','kernel_executed':False,'DLLs_loaded':0,'RPC_calls':0,'physical':False}
+     (out/'CONTRACT_TESTS.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2))
+ 
+-if __name__=='__main__':main()
++if __name__=='__main__':
++    import argparse
++    parser=argparse.ArgumentParser();parser.add_argument('--output-dir');args=parser.parse_args();main(args.output_dir)

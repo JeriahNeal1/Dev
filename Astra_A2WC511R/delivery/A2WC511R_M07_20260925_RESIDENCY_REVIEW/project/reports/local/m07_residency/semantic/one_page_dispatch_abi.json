@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "scope": "Prototype one-page only; full4828C return boundary, pending final two-page artifact.",
+  "rejected_pairs": 137,
+  "accepted_cases": 1,
+  "dispatcher_frame_bytes": 28,
+  "extra_adapter_frame_bytes": 8,
+  "maximum_observed_frame_bytes": 36,
+  "initial_T_requirement": "GuaranteedT=0 at OEM default484B0 from finalCMP/EQ9F false and48314BRA.",
+  "PR_contract": "Dispatcher savesPR at4829A and restores it at484C4; the adapter may useJSR internally ifSPbalanced and no earlierPR use occurs.",
+  "original_SR_other_preserved": true,
+  "root_manifest_sha256": "a69589a230a9de0b75530cfa867feaef48ac1fd438f2029d20dd32695e5a8f21",
+  "source_sha256": "ca5abcfa7895b204b9e51b41073bcd0dd3ab943b060a43b5fd4c9080d399d613"
+}

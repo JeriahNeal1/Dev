@@ -1,0 +1,27 @@
+{
+  "status": "PASS_FIXED_TX_PREFIX",
+  "TX_checked": 4119,
+  "native_completed_calls": 8245,
+  "provider_completed_calls": 8245,
+  "allowed_inflight_call": false,
+  "independent_rejection": "J2534_STATUS_9",
+  "host_summary": {
+    "status": "FAIL",
+    "failure": "J2534_STATUS_9",
+    "steps": 4118,
+    "kernel_sha256": "3d70abfb8617b87e1b9c52724fd27ed4066ba231818994e780c8ba3006de273f",
+    "physical": false,
+    "passes": [
+      {
+        "bytes": 1048576,
+        "sha256": "b91ad3e88637bfae6a15871761c288f914fe10fe74c78cbc53e963c4fe80e545",
+        "complete": true
+      },
+      {
+        "bytes": 1048064,
+        "sha256": "c664f96cd90426041a2e79e0bc77421a46552afd4ec6e108d65c852e83edb195",
+        "complete": false
+      }
+    ]
+  }
+}

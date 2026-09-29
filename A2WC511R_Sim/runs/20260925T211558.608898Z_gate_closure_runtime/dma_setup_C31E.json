@@ -1,0 +1,6912 @@
+[
+  {
+    "accesses": [
+      {
+        "address": "0000C3B2",
+        "address_sources": [
+          "instruction:0000C31E"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C31E",
+        "size": 2,
+        "value": "0000ECF8",
+        "value_sources": [
+          "rom:0000C3B2"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFFECF8",
+        "address_sources": [
+          "rom:0000C3B2"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "0000C320",
+        "size": 4,
+        "value": "00000002",
+        "value_sources": [
+          "fixture:register:r9"
+        ],
+        "watchpoints": [
+          "explicit DMA2/3 configuration-storage fixture"
+        ]
+      },
+      {
+        "address": "0000C3B4",
+        "address_sources": [
+          "instruction:0000C322"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C322",
+        "size": 2,
+        "value": "0000F00D",
+        "value_sources": [
+          "rom:0000C3B4"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "0000C3B6",
+        "address_sources": [
+          "instruction:0000C324"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C324",
+        "size": 2,
+        "value": "0000ECF0",
+        "value_sources": [
+          "rom:0000C3B6"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFFECF0",
+        "address_sources": [
+          "rom:0000C3B6"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "0000C326",
+        "size": 4,
+        "value": "FFFFF00D",
+        "value_sources": [
+          "rom:0000C3B4"
+        ],
+        "watchpoints": [
+          "explicit DMA2/3 configuration-storage fixture"
+        ]
+      },
+      {
+        "address": "FFFF31AE",
+        "address_sources": [
+          "fixture:register:r14"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C328",
+        "size": 1,
+        "value": "00000000",
+        "value_sources": [
+          "ram:FFFF31AE"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "0000C3F0",
+        "address_sources": [
+          "instruction:0000C32C"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C32C",
+        "size": 4,
+        "value": "FFFF315A",
+        "value_sources": [
+          "rom:0000C3F0"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFFECF4",
+        "address_sources": [
+          "instruction:0000C32A",
+          "rom:0000C3B2"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "0000C334",
+        "size": 4,
+        "value": "FFFF315A",
+        "value_sources": [
+          "ram:FFFF31AE",
+          "rom:0000C3F0"
+        ],
+        "watchpoints": [
+          "explicit DMA2/3 configuration-storage fixture"
+        ]
+      },
+      {
+        "address": "0000C3B8",
+        "address_sources": [
+          "instruction:0000C336"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C336",
+        "size": 2,
+        "value": "00000100",
+        "value_sources": [
+          "rom:0000C3B8"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "0000C3BA",
+        "address_sources": [
+          "instruction:0000C338"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C338",
+        "size": 2,
+        "value": "0000ECFE",
+        "value_sources": [
+          "rom:0000C3BA"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFFECFE",
+        "address_sources": [
+          "rom:0000C3BA"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "0000C33A",
+        "size": 2,
+        "value": "00000100",
+        "value_sources": [
+          "rom:0000C3B8"
+        ],
+        "watchpoints": [
+          "explicit DMA2/3 configuration-storage fixture"
+        ]
+      },
+      {
+        "address": "0000C3BC",
+        "address_sources": [
+          "instruction:0000C33C"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C33C",
+        "size": 2,
+        "value": "0000ECFC",
+        "value_sources": [
+          "rom:0000C3BC"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "0000C3F4",
+        "address_sources": [
+          "instruction:0000C33E"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C33E",
+        "size": 4,
+        "value": "00040100",
+        "value_sources": [
+          "rom:0000C3F4"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFFECFC",
+        "address_sources": [
+          "rom:0000C3BC"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "0000C340",
+        "size": 4,
+        "value": "00040100",
+        "value_sources": [
+          "rom:0000C3F4"
+        ],
+        "watchpoints": [
+          "explicit DMA2/3 configuration-storage fixture"
+        ]
+      },
+      {
+        "address": "0000C3BE",
+        "address_sources": [
+          "instruction:0000C342"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C342",
+        "size": 2,
+        "value": "0000ECE8",
+        "value_sources": [
+          "rom:0000C3BE"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFFECE8",
+        "address_sources": [
+          "rom:0000C3BE"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "0000C344",
+        "size": 4,
+        "value": "00000002",
+        "value_sources": [
+          "fixture:register:r9"
+        ],
+        "watchpoints": [
+          "explicit DMA2/3 configuration-storage fixture"
+        ]
+      },
+      {
+        "address": "FFFF31AC",
+        "address_sources": [
+          "fixture:register:r12"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C346",
+        "size": 1,
+        "value": "00000000",
+        "value_sources": [
+          "ram:FFFF31AC"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "0000C3F8",
+        "address_sources": [
+          "instruction:0000C348"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C348",
+        "size": 4,
+        "value": "FFFF310A",
+        "value_sources": [
+          "rom:0000C3F8"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFF31AE",
+        "address_sources": [
+          "fixture:register:r14"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C354",
+        "size": 1,
+        "value": "00000000",
+        "value_sources": [
+          "ram:FFFF31AE"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "0000C3C0",
+        "address_sources": [
+          "instruction:0000C360"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C360",
+        "size": 2,
+        "value": "0000ECE0",
+        "value_sources": [
+          "rom:0000C3C0"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFFECE0",
+        "address_sources": [
+          "rom:0000C3C0"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "0000C362",
+        "size": 4,
+        "value": "FFFF310A",
+        "value_sources": [
+          "ram:FFFF31AC",
+          "ram:FFFF31AE",
+          "rom:0000C3F8"
+        ],
+        "watchpoints": [
+          "explicit DMA2/3 configuration-storage fixture"
+        ]
+      },
+      {
+        "address": "0000C3C2",
+        "address_sources": [
+          "instruction:0000C364"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C364",
+        "size": 2,
+        "value": "0000F00B",
+        "value_sources": [
+          "rom:0000C3C2"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "0000C3C4",
+        "address_sources": [
+          "instruction:0000C366"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C366",
+        "size": 2,
+        "value": "0000ECE4",
+        "value_sources": [
+          "rom:0000C3C4"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFFECE4",
+        "address_sources": [
+          "rom:0000C3C4"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "0000C368",
+        "size": 4,
+        "value": "FFFFF00B",
+        "value_sources": [
+          "rom:0000C3C2"
+        ],
+        "watchpoints": [
+          "explicit DMA2/3 configuration-storage fixture"
+        ]
+      },
+      {
+        "address": "0000C3C6",
+        "address_sources": [
+          "instruction:0000C36A"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C36A",
+        "size": 2,
+        "value": "00001000",
+        "value_sources": [
+          "rom:0000C3C6"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "0000C3C8",
+        "address_sources": [
+          "instruction:0000C36C"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C36C",
+        "size": 2,
+        "value": "0000ECEE",
+        "value_sources": [
+          "rom:0000C3C8"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFFECEE",
+        "address_sources": [
+          "rom:0000C3C8"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "0000C36E",
+        "size": 2,
+        "value": "00001000",
+        "value_sources": [
+          "rom:0000C3C6"
+        ],
+        "watchpoints": [
+          "explicit DMA2/3 configuration-storage fixture"
+        ]
+      },
+      {
+        "address": "0000C3CA",
+        "address_sources": [
+          "instruction:0000C370"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C370",
+        "size": 2,
+        "value": "0000ECEC",
+        "value_sources": [
+          "rom:0000C3CA"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "0000C3FC",
+        "address_sources": [
+          "instruction:0000C372"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C372",
+        "size": 4,
+        "value": "00031000",
+        "value_sources": [
+          "rom:0000C3FC"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFFECEC",
+        "address_sources": [
+          "rom:0000C3CA"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "0000C374",
+        "size": 4,
+        "value": "00031000",
+        "value_sources": [
+          "rom:0000C3FC"
+        ],
+        "watchpoints": [
+          "explicit DMA2/3 configuration-storage fixture"
+        ]
+      }
+    ],
+    "classification": "ACTUAL_ROM_CONFIGURATION_STORES_IN_EXPLICIT_FINITE_FIXTURE_NO_DMA_EXECUTION",
+    "index_i": 0,
+    "index_j": 0,
+    "instruction_count": 44,
+    "registers": {
+      "rx_chcr": 262400,
+      "rx_dar": 4294914394,
+      "rx_sar": 4294963213,
+      "rx_tcr": 2,
+      "tx_chcr": 200704,
+      "tx_dar": 4294963211,
+      "tx_sar": 4294914314,
+      "tx_tcr": 2
+    },
+    "trace": [
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "9148",
+        "pc": "0000C31E",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r1": "FFFFECF8"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_store",
+        "opcode": "2192",
+        "pc": "0000C320",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "9347",
+        "pc": "0000C322",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r3": "FFFFF00D"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "9247",
+        "pc": "0000C324",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r2": "FFFFECF0"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_store",
+        "opcode": "2232",
+        "pc": "0000C326",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movb_load",
+        "opcode": "60E0",
+        "pc": "0000C328",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "add_imm",
+        "opcode": "71FC",
+        "pc": "0000C32A",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r1": "FFFFECF4"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_pc",
+        "opcode": "D330",
+        "pc": "0000C32C",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r3": "FFFF315A"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "extub",
+        "opcode": "600C",
+        "pc": "0000C32E",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "shll",
+        "opcode": "4000",
+        "pc": "0000C330",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "add_reg",
+        "opcode": "303C",
+        "pc": "0000C332",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r0": "FFFF315A"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_store",
+        "opcode": "2102",
+        "pc": "0000C334",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "923F",
+        "pc": "0000C336",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r2": "00000100"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "903F",
+        "pc": "0000C338",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r0": "FFFFECFE"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_store",
+        "opcode": "2021",
+        "pc": "0000C33A",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "953E",
+        "pc": "0000C33C",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r5": "FFFFECFC"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_pc",
+        "opcode": "D32D",
+        "pc": "0000C33E",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r3": "00040100"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_store",
+        "opcode": "2532",
+        "pc": "0000C340",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "923C",
+        "pc": "0000C342",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r2": "FFFFECE8"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_store",
+        "opcode": "2292",
+        "pc": "0000C344",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movb_load",
+        "opcode": "63C0",
+        "pc": "0000C346",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r3": "00000000"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_pc",
+        "opcode": "D02B",
+        "pc": "0000C348",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r0": "FFFF310A"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "extub",
+        "opcode": "633C",
+        "pc": "0000C34A",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "mov_reg",
+        "opcode": "6133",
+        "pc": "0000C34C",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r1": "00000000"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "shll2",
+        "opcode": "4308",
+        "pc": "0000C34E",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "add_reg",
+        "opcode": "331C",
+        "pc": "0000C350",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "shll2",
+        "opcode": "4308",
+        "pc": "0000C352",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movb_load",
+        "opcode": "61E0",
+        "pc": "0000C354",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "shll",
+        "opcode": "4300",
+        "pc": "0000C356",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "extub",
+        "opcode": "611C",
+        "pc": "0000C358",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "shll",
+        "opcode": "4100",
+        "pc": "0000C35A",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "add_reg",
+        "opcode": "330C",
+        "pc": "0000C35C",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r3": "FFFF310A"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "add_reg",
+        "opcode": "313C",
+        "pc": "0000C35E",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r1": "FFFF310A"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "932E",
+        "pc": "0000C360",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r3": "FFFFECE0"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_store",
+        "opcode": "2312",
+        "pc": "0000C362",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "922D",
+        "pc": "0000C364",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r2": "FFFFF00B"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "912D",
+        "pc": "0000C366",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r1": "FFFFECE4"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_store",
+        "opcode": "2122",
+        "pc": "0000C368",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "932C",
+        "pc": "0000C36A",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r3": "00001000"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "922C",
+        "pc": "0000C36C",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r2": "FFFFECEE"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_store",
+        "opcode": "2231",
+        "pc": "0000C36E",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "942B",
+        "pc": "0000C370",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r4": "FFFFECEC"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_pc",
+        "opcode": "D322",
+        "pc": "0000C372",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r3": "00031000"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_store",
+        "opcode": "2432",
+        "pc": "0000C374",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      }
+    ]
+  },
+  {
+    "accesses": [
+      {
+        "address": "0000C3B2",
+        "address_sources": [
+          "instruction:0000C31E"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C31E",
+        "size": 2,
+        "value": "0000ECF8",
+        "value_sources": [
+          "rom:0000C3B2"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFFECF8",
+        "address_sources": [
+          "rom:0000C3B2"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "0000C320",
+        "size": 4,
+        "value": "00000002",
+        "value_sources": [
+          "fixture:register:r9"
+        ],
+        "watchpoints": [
+          "explicit DMA2/3 configuration-storage fixture"
+        ]
+      },
+      {
+        "address": "0000C3B4",
+        "address_sources": [
+          "instruction:0000C322"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C322",
+        "size": 2,
+        "value": "0000F00D",
+        "value_sources": [
+          "rom:0000C3B4"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "0000C3B6",
+        "address_sources": [
+          "instruction:0000C324"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C324",
+        "size": 2,
+        "value": "0000ECF0",
+        "value_sources": [
+          "rom:0000C3B6"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFFECF0",
+        "address_sources": [
+          "rom:0000C3B6"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "0000C326",
+        "size": 4,
+        "value": "FFFFF00D",
+        "value_sources": [
+          "rom:0000C3B4"
+        ],
+        "watchpoints": [
+          "explicit DMA2/3 configuration-storage fixture"
+        ]
+      },
+      {
+        "address": "FFFF31AE",
+        "address_sources": [
+          "fixture:register:r14"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C328",
+        "size": 1,
+        "value": "000000FF",
+        "value_sources": [
+          "ram:FFFF31AE"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "0000C3F0",
+        "address_sources": [
+          "instruction:0000C32C"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C32C",
+        "size": 4,
+        "value": "FFFF315A",
+        "value_sources": [
+          "rom:0000C3F0"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFFECF4",
+        "address_sources": [
+          "instruction:0000C32A",
+          "rom:0000C3B2"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "0000C334",
+        "size": 4,
+        "value": "FFFF3358",
+        "value_sources": [
+          "ram:FFFF31AE",
+          "rom:0000C3F0"
+        ],
+        "watchpoints": [
+          "explicit DMA2/3 configuration-storage fixture"
+        ]
+      },
+      {
+        "address": "0000C3B8",
+        "address_sources": [
+          "instruction:0000C336"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C336",
+        "size": 2,
+        "value": "00000100",
+        "value_sources": [
+          "rom:0000C3B8"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "0000C3BA",
+        "address_sources": [
+          "instruction:0000C338"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C338",
+        "size": 2,
+        "value": "0000ECFE",
+        "value_sources": [
+          "rom:0000C3BA"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFFECFE",
+        "address_sources": [
+          "rom:0000C3BA"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "0000C33A",
+        "size": 2,
+        "value": "00000100",
+        "value_sources": [
+          "rom:0000C3B8"
+        ],
+        "watchpoints": [
+          "explicit DMA2/3 configuration-storage fixture"
+        ]
+      },
+      {
+        "address": "0000C3BC",
+        "address_sources": [
+          "instruction:0000C33C"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C33C",
+        "size": 2,
+        "value": "0000ECFC",
+        "value_sources": [
+          "rom:0000C3BC"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "0000C3F4",
+        "address_sources": [
+          "instruction:0000C33E"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C33E",
+        "size": 4,
+        "value": "00040100",
+        "value_sources": [
+          "rom:0000C3F4"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFFECFC",
+        "address_sources": [
+          "rom:0000C3BC"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "0000C340",
+        "size": 4,
+        "value": "00040100",
+        "value_sources": [
+          "rom:0000C3F4"
+        ],
+        "watchpoints": [
+          "explicit DMA2/3 configuration-storage fixture"
+        ]
+      },
+      {
+        "address": "0000C3BE",
+        "address_sources": [
+          "instruction:0000C342"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C342",
+        "size": 2,
+        "value": "0000ECE8",
+        "value_sources": [
+          "rom:0000C3BE"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFFECE8",
+        "address_sources": [
+          "rom:0000C3BE"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "0000C344",
+        "size": 4,
+        "value": "00000002",
+        "value_sources": [
+          "fixture:register:r9"
+        ],
+        "watchpoints": [
+          "explicit DMA2/3 configuration-storage fixture"
+        ]
+      },
+      {
+        "address": "FFFF31AC",
+        "address_sources": [
+          "fixture:register:r12"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C346",
+        "size": 1,
+        "value": "00000000",
+        "value_sources": [
+          "ram:FFFF31AC"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "0000C3F8",
+        "address_sources": [
+          "instruction:0000C348"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C348",
+        "size": 4,
+        "value": "FFFF310A",
+        "value_sources": [
+          "rom:0000C3F8"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFF31AE",
+        "address_sources": [
+          "fixture:register:r14"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C354",
+        "size": 1,
+        "value": "000000FF",
+        "value_sources": [
+          "ram:FFFF31AE"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "0000C3C0",
+        "address_sources": [
+          "instruction:0000C360"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C360",
+        "size": 2,
+        "value": "0000ECE0",
+        "value_sources": [
+          "rom:0000C3C0"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFFECE0",
+        "address_sources": [
+          "rom:0000C3C0"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "0000C362",
+        "size": 4,
+        "value": "FFFF3308",
+        "value_sources": [
+          "ram:FFFF31AC",
+          "ram:FFFF31AE",
+          "rom:0000C3F8"
+        ],
+        "watchpoints": [
+          "explicit DMA2/3 configuration-storage fixture"
+        ]
+      },
+      {
+        "address": "0000C3C2",
+        "address_sources": [
+          "instruction:0000C364"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C364",
+        "size": 2,
+        "value": "0000F00B",
+        "value_sources": [
+          "rom:0000C3C2"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "0000C3C4",
+        "address_sources": [
+          "instruction:0000C366"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C366",
+        "size": 2,
+        "value": "0000ECE4",
+        "value_sources": [
+          "rom:0000C3C4"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFFECE4",
+        "address_sources": [
+          "rom:0000C3C4"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "0000C368",
+        "size": 4,
+        "value": "FFFFF00B",
+        "value_sources": [
+          "rom:0000C3C2"
+        ],
+        "watchpoints": [
+          "explicit DMA2/3 configuration-storage fixture"
+        ]
+      },
+      {
+        "address": "0000C3C6",
+        "address_sources": [
+          "instruction:0000C36A"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C36A",
+        "size": 2,
+        "value": "00001000",
+        "value_sources": [
+          "rom:0000C3C6"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "0000C3C8",
+        "address_sources": [
+          "instruction:0000C36C"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C36C",
+        "size": 2,
+        "value": "0000ECEE",
+        "value_sources": [
+          "rom:0000C3C8"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFFECEE",
+        "address_sources": [
+          "rom:0000C3C8"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "0000C36E",
+        "size": 2,
+        "value": "00001000",
+        "value_sources": [
+          "rom:0000C3C6"
+        ],
+        "watchpoints": [
+          "explicit DMA2/3 configuration-storage fixture"
+        ]
+      },
+      {
+        "address": "0000C3CA",
+        "address_sources": [
+          "instruction:0000C370"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C370",
+        "size": 2,
+        "value": "0000ECEC",
+        "value_sources": [
+          "rom:0000C3CA"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "0000C3FC",
+        "address_sources": [
+          "instruction:0000C372"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C372",
+        "size": 4,
+        "value": "00031000",
+        "value_sources": [
+          "rom:0000C3FC"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFFECEC",
+        "address_sources": [
+          "rom:0000C3CA"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "0000C374",
+        "size": 4,
+        "value": "00031000",
+        "value_sources": [
+          "rom:0000C3FC"
+        ],
+        "watchpoints": [
+          "explicit DMA2/3 configuration-storage fixture"
+        ]
+      }
+    ],
+    "classification": "ACTUAL_ROM_CONFIGURATION_STORES_IN_EXPLICIT_FINITE_FIXTURE_NO_DMA_EXECUTION",
+    "index_i": 255,
+    "index_j": 0,
+    "instruction_count": 44,
+    "registers": {
+      "rx_chcr": 262400,
+      "rx_dar": 4294914904,
+      "rx_sar": 4294963213,
+      "rx_tcr": 2,
+      "tx_chcr": 200704,
+      "tx_dar": 4294963211,
+      "tx_sar": 4294914824,
+      "tx_tcr": 2
+    },
+    "trace": [
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "9148",
+        "pc": "0000C31E",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r1": "FFFFECF8"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_store",
+        "opcode": "2192",
+        "pc": "0000C320",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "9347",
+        "pc": "0000C322",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r3": "FFFFF00D"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "9247",
+        "pc": "0000C324",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r2": "FFFFECF0"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_store",
+        "opcode": "2232",
+        "pc": "0000C326",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movb_load",
+        "opcode": "60E0",
+        "pc": "0000C328",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r0": "FFFFFFFF"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "add_imm",
+        "opcode": "71FC",
+        "pc": "0000C32A",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r1": "FFFFECF4"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_pc",
+        "opcode": "D330",
+        "pc": "0000C32C",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r3": "FFFF315A"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "extub",
+        "opcode": "600C",
+        "pc": "0000C32E",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r0": "000000FF"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "shll",
+        "opcode": "4000",
+        "pc": "0000C330",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r0": "000001FE"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "add_reg",
+        "opcode": "303C",
+        "pc": "0000C332",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r0": "FFFF3358"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_store",
+        "opcode": "2102",
+        "pc": "0000C334",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "923F",
+        "pc": "0000C336",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r2": "00000100"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "903F",
+        "pc": "0000C338",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r0": "FFFFECFE"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_store",
+        "opcode": "2021",
+        "pc": "0000C33A",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "953E",
+        "pc": "0000C33C",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r5": "FFFFECFC"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_pc",
+        "opcode": "D32D",
+        "pc": "0000C33E",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r3": "00040100"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_store",
+        "opcode": "2532",
+        "pc": "0000C340",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "923C",
+        "pc": "0000C342",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r2": "FFFFECE8"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_store",
+        "opcode": "2292",
+        "pc": "0000C344",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movb_load",
+        "opcode": "63C0",
+        "pc": "0000C346",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r3": "00000000"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_pc",
+        "opcode": "D02B",
+        "pc": "0000C348",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r0": "FFFF310A"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "extub",
+        "opcode": "633C",
+        "pc": "0000C34A",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "mov_reg",
+        "opcode": "6133",
+        "pc": "0000C34C",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r1": "00000000"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "shll2",
+        "opcode": "4308",
+        "pc": "0000C34E",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "add_reg",
+        "opcode": "331C",
+        "pc": "0000C350",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "shll2",
+        "opcode": "4308",
+        "pc": "0000C352",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movb_load",
+        "opcode": "61E0",
+        "pc": "0000C354",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r1": "FFFFFFFF"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "shll",
+        "opcode": "4300",
+        "pc": "0000C356",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "extub",
+        "opcode": "611C",
+        "pc": "0000C358",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r1": "000000FF"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "shll",
+        "opcode": "4100",
+        "pc": "0000C35A",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r1": "000001FE"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "add_reg",
+        "opcode": "330C",
+        "pc": "0000C35C",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r3": "FFFF310A"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "add_reg",
+        "opcode": "313C",
+        "pc": "0000C35E",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r1": "FFFF3308"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "932E",
+        "pc": "0000C360",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r3": "FFFFECE0"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_store",
+        "opcode": "2312",
+        "pc": "0000C362",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "922D",
+        "pc": "0000C364",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r2": "FFFFF00B"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "912D",
+        "pc": "0000C366",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r1": "FFFFECE4"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_store",
+        "opcode": "2122",
+        "pc": "0000C368",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "932C",
+        "pc": "0000C36A",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r3": "00001000"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "922C",
+        "pc": "0000C36C",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r2": "FFFFECEE"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_store",
+        "opcode": "2231",
+        "pc": "0000C36E",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "942B",
+        "pc": "0000C370",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r4": "FFFFECEC"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_pc",
+        "opcode": "D322",
+        "pc": "0000C372",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r3": "00031000"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_store",
+        "opcode": "2432",
+        "pc": "0000C374",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      }
+    ]
+  },
+  {
+    "accesses": [
+      {
+        "address": "0000C3B2",
+        "address_sources": [
+          "instruction:0000C31E"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C31E",
+        "size": 2,
+        "value": "0000ECF8",
+        "value_sources": [
+          "rom:0000C3B2"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFFECF8",
+        "address_sources": [
+          "rom:0000C3B2"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "0000C320",
+        "size": 4,
+        "value": "00000002",
+        "value_sources": [
+          "fixture:register:r9"
+        ],
+        "watchpoints": [
+          "explicit DMA2/3 configuration-storage fixture"
+        ]
+      },
+      {
+        "address": "0000C3B4",
+        "address_sources": [
+          "instruction:0000C322"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C322",
+        "size": 2,
+        "value": "0000F00D",
+        "value_sources": [
+          "rom:0000C3B4"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "0000C3B6",
+        "address_sources": [
+          "instruction:0000C324"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C324",
+        "size": 2,
+        "value": "0000ECF0",
+        "value_sources": [
+          "rom:0000C3B6"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFFECF0",
+        "address_sources": [
+          "rom:0000C3B6"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "0000C326",
+        "size": 4,
+        "value": "FFFFF00D",
+        "value_sources": [
+          "rom:0000C3B4"
+        ],
+        "watchpoints": [
+          "explicit DMA2/3 configuration-storage fixture"
+        ]
+      },
+      {
+        "address": "FFFF31AE",
+        "address_sources": [
+          "fixture:register:r14"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C328",
+        "size": 1,
+        "value": "00000000",
+        "value_sources": [
+          "ram:FFFF31AE"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "0000C3F0",
+        "address_sources": [
+          "instruction:0000C32C"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C32C",
+        "size": 4,
+        "value": "FFFF315A",
+        "value_sources": [
+          "rom:0000C3F0"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFFECF4",
+        "address_sources": [
+          "instruction:0000C32A",
+          "rom:0000C3B2"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "0000C334",
+        "size": 4,
+        "value": "FFFF315A",
+        "value_sources": [
+          "ram:FFFF31AE",
+          "rom:0000C3F0"
+        ],
+        "watchpoints": [
+          "explicit DMA2/3 configuration-storage fixture"
+        ]
+      },
+      {
+        "address": "0000C3B8",
+        "address_sources": [
+          "instruction:0000C336"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C336",
+        "size": 2,
+        "value": "00000100",
+        "value_sources": [
+          "rom:0000C3B8"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "0000C3BA",
+        "address_sources": [
+          "instruction:0000C338"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C338",
+        "size": 2,
+        "value": "0000ECFE",
+        "value_sources": [
+          "rom:0000C3BA"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFFECFE",
+        "address_sources": [
+          "rom:0000C3BA"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "0000C33A",
+        "size": 2,
+        "value": "00000100",
+        "value_sources": [
+          "rom:0000C3B8"
+        ],
+        "watchpoints": [
+          "explicit DMA2/3 configuration-storage fixture"
+        ]
+      },
+      {
+        "address": "0000C3BC",
+        "address_sources": [
+          "instruction:0000C33C"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C33C",
+        "size": 2,
+        "value": "0000ECFC",
+        "value_sources": [
+          "rom:0000C3BC"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "0000C3F4",
+        "address_sources": [
+          "instruction:0000C33E"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C33E",
+        "size": 4,
+        "value": "00040100",
+        "value_sources": [
+          "rom:0000C3F4"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFFECFC",
+        "address_sources": [
+          "rom:0000C3BC"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "0000C340",
+        "size": 4,
+        "value": "00040100",
+        "value_sources": [
+          "rom:0000C3F4"
+        ],
+        "watchpoints": [
+          "explicit DMA2/3 configuration-storage fixture"
+        ]
+      },
+      {
+        "address": "0000C3BE",
+        "address_sources": [
+          "instruction:0000C342"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C342",
+        "size": 2,
+        "value": "0000ECE8",
+        "value_sources": [
+          "rom:0000C3BE"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFFECE8",
+        "address_sources": [
+          "rom:0000C3BE"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "0000C344",
+        "size": 4,
+        "value": "00000002",
+        "value_sources": [
+          "fixture:register:r9"
+        ],
+        "watchpoints": [
+          "explicit DMA2/3 configuration-storage fixture"
+        ]
+      },
+      {
+        "address": "FFFF31AC",
+        "address_sources": [
+          "fixture:register:r12"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C346",
+        "size": 1,
+        "value": "000000FF",
+        "value_sources": [
+          "ram:FFFF31AC"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "0000C3F8",
+        "address_sources": [
+          "instruction:0000C348"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C348",
+        "size": 4,
+        "value": "FFFF310A",
+        "value_sources": [
+          "rom:0000C3F8"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFF31AE",
+        "address_sources": [
+          "fixture:register:r14"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C354",
+        "size": 1,
+        "value": "00000000",
+        "value_sources": [
+          "ram:FFFF31AE"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "0000C3C0",
+        "address_sources": [
+          "instruction:0000C360"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C360",
+        "size": 2,
+        "value": "0000ECE0",
+        "value_sources": [
+          "rom:0000C3C0"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFFECE0",
+        "address_sources": [
+          "rom:0000C3C0"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "0000C362",
+        "size": 4,
+        "value": "FFFF58E2",
+        "value_sources": [
+          "ram:FFFF31AC",
+          "ram:FFFF31AE",
+          "rom:0000C3F8"
+        ],
+        "watchpoints": [
+          "explicit DMA2/3 configuration-storage fixture"
+        ]
+      },
+      {
+        "address": "0000C3C2",
+        "address_sources": [
+          "instruction:0000C364"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C364",
+        "size": 2,
+        "value": "0000F00B",
+        "value_sources": [
+          "rom:0000C3C2"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "0000C3C4",
+        "address_sources": [
+          "instruction:0000C366"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C366",
+        "size": 2,
+        "value": "0000ECE4",
+        "value_sources": [
+          "rom:0000C3C4"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFFECE4",
+        "address_sources": [
+          "rom:0000C3C4"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "0000C368",
+        "size": 4,
+        "value": "FFFFF00B",
+        "value_sources": [
+          "rom:0000C3C2"
+        ],
+        "watchpoints": [
+          "explicit DMA2/3 configuration-storage fixture"
+        ]
+      },
+      {
+        "address": "0000C3C6",
+        "address_sources": [
+          "instruction:0000C36A"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C36A",
+        "size": 2,
+        "value": "00001000",
+        "value_sources": [
+          "rom:0000C3C6"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "0000C3C8",
+        "address_sources": [
+          "instruction:0000C36C"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C36C",
+        "size": 2,
+        "value": "0000ECEE",
+        "value_sources": [
+          "rom:0000C3C8"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFFECEE",
+        "address_sources": [
+          "rom:0000C3C8"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "0000C36E",
+        "size": 2,
+        "value": "00001000",
+        "value_sources": [
+          "rom:0000C3C6"
+        ],
+        "watchpoints": [
+          "explicit DMA2/3 configuration-storage fixture"
+        ]
+      },
+      {
+        "address": "0000C3CA",
+        "address_sources": [
+          "instruction:0000C370"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C370",
+        "size": 2,
+        "value": "0000ECEC",
+        "value_sources": [
+          "rom:0000C3CA"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "0000C3FC",
+        "address_sources": [
+          "instruction:0000C372"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C372",
+        "size": 4,
+        "value": "00031000",
+        "value_sources": [
+          "rom:0000C3FC"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFFECEC",
+        "address_sources": [
+          "rom:0000C3CA"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "0000C374",
+        "size": 4,
+        "value": "00031000",
+        "value_sources": [
+          "rom:0000C3FC"
+        ],
+        "watchpoints": [
+          "explicit DMA2/3 configuration-storage fixture"
+        ]
+      }
+    ],
+    "classification": "ACTUAL_ROM_CONFIGURATION_STORES_IN_EXPLICIT_FINITE_FIXTURE_NO_DMA_EXECUTION",
+    "index_i": 0,
+    "index_j": 255,
+    "instruction_count": 44,
+    "registers": {
+      "rx_chcr": 262400,
+      "rx_dar": 4294914394,
+      "rx_sar": 4294963213,
+      "rx_tcr": 2,
+      "tx_chcr": 200704,
+      "tx_dar": 4294963211,
+      "tx_sar": 4294924514,
+      "tx_tcr": 2
+    },
+    "trace": [
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "9148",
+        "pc": "0000C31E",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r1": "FFFFECF8"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_store",
+        "opcode": "2192",
+        "pc": "0000C320",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "9347",
+        "pc": "0000C322",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r3": "FFFFF00D"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "9247",
+        "pc": "0000C324",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r2": "FFFFECF0"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_store",
+        "opcode": "2232",
+        "pc": "0000C326",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movb_load",
+        "opcode": "60E0",
+        "pc": "0000C328",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "add_imm",
+        "opcode": "71FC",
+        "pc": "0000C32A",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r1": "FFFFECF4"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_pc",
+        "opcode": "D330",
+        "pc": "0000C32C",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r3": "FFFF315A"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "extub",
+        "opcode": "600C",
+        "pc": "0000C32E",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "shll",
+        "opcode": "4000",
+        "pc": "0000C330",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "add_reg",
+        "opcode": "303C",
+        "pc": "0000C332",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r0": "FFFF315A"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_store",
+        "opcode": "2102",
+        "pc": "0000C334",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "923F",
+        "pc": "0000C336",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r2": "00000100"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "903F",
+        "pc": "0000C338",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r0": "FFFFECFE"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_store",
+        "opcode": "2021",
+        "pc": "0000C33A",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "953E",
+        "pc": "0000C33C",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r5": "FFFFECFC"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_pc",
+        "opcode": "D32D",
+        "pc": "0000C33E",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r3": "00040100"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_store",
+        "opcode": "2532",
+        "pc": "0000C340",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "923C",
+        "pc": "0000C342",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r2": "FFFFECE8"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_store",
+        "opcode": "2292",
+        "pc": "0000C344",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movb_load",
+        "opcode": "63C0",
+        "pc": "0000C346",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r3": "FFFFFFFF"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_pc",
+        "opcode": "D02B",
+        "pc": "0000C348",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r0": "FFFF310A"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "extub",
+        "opcode": "633C",
+        "pc": "0000C34A",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r3": "000000FF"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "mov_reg",
+        "opcode": "6133",
+        "pc": "0000C34C",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r1": "000000FF"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "shll2",
+        "opcode": "4308",
+        "pc": "0000C34E",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r3": "000003FC"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "add_reg",
+        "opcode": "331C",
+        "pc": "0000C350",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r3": "000004FB"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "shll2",
+        "opcode": "4308",
+        "pc": "0000C352",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r3": "000013EC"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movb_load",
+        "opcode": "61E0",
+        "pc": "0000C354",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r1": "00000000"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "shll",
+        "opcode": "4300",
+        "pc": "0000C356",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r3": "000027D8"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "extub",
+        "opcode": "611C",
+        "pc": "0000C358",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "shll",
+        "opcode": "4100",
+        "pc": "0000C35A",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "add_reg",
+        "opcode": "330C",
+        "pc": "0000C35C",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r3": "FFFF58E2"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "add_reg",
+        "opcode": "313C",
+        "pc": "0000C35E",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r1": "FFFF58E2"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "932E",
+        "pc": "0000C360",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r3": "FFFFECE0"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_store",
+        "opcode": "2312",
+        "pc": "0000C362",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "922D",
+        "pc": "0000C364",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r2": "FFFFF00B"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "912D",
+        "pc": "0000C366",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r1": "FFFFECE4"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_store",
+        "opcode": "2122",
+        "pc": "0000C368",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "932C",
+        "pc": "0000C36A",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r3": "00001000"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "922C",
+        "pc": "0000C36C",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r2": "FFFFECEE"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_store",
+        "opcode": "2231",
+        "pc": "0000C36E",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "942B",
+        "pc": "0000C370",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r4": "FFFFECEC"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_pc",
+        "opcode": "D322",
+        "pc": "0000C372",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r3": "00031000"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_store",
+        "opcode": "2432",
+        "pc": "0000C374",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      }
+    ]
+  },
+  {
+    "accesses": [
+      {
+        "address": "0000C3B2",
+        "address_sources": [
+          "instruction:0000C31E"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C31E",
+        "size": 2,
+        "value": "0000ECF8",
+        "value_sources": [
+          "rom:0000C3B2"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFFECF8",
+        "address_sources": [
+          "rom:0000C3B2"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "0000C320",
+        "size": 4,
+        "value": "00000002",
+        "value_sources": [
+          "fixture:register:r9"
+        ],
+        "watchpoints": [
+          "explicit DMA2/3 configuration-storage fixture"
+        ]
+      },
+      {
+        "address": "0000C3B4",
+        "address_sources": [
+          "instruction:0000C322"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C322",
+        "size": 2,
+        "value": "0000F00D",
+        "value_sources": [
+          "rom:0000C3B4"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "0000C3B6",
+        "address_sources": [
+          "instruction:0000C324"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C324",
+        "size": 2,
+        "value": "0000ECF0",
+        "value_sources": [
+          "rom:0000C3B6"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFFECF0",
+        "address_sources": [
+          "rom:0000C3B6"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "0000C326",
+        "size": 4,
+        "value": "FFFFF00D",
+        "value_sources": [
+          "rom:0000C3B4"
+        ],
+        "watchpoints": [
+          "explicit DMA2/3 configuration-storage fixture"
+        ]
+      },
+      {
+        "address": "FFFF31AE",
+        "address_sources": [
+          "fixture:register:r14"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C328",
+        "size": 1,
+        "value": "000000FF",
+        "value_sources": [
+          "ram:FFFF31AE"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "0000C3F0",
+        "address_sources": [
+          "instruction:0000C32C"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C32C",
+        "size": 4,
+        "value": "FFFF315A",
+        "value_sources": [
+          "rom:0000C3F0"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFFECF4",
+        "address_sources": [
+          "instruction:0000C32A",
+          "rom:0000C3B2"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "0000C334",
+        "size": 4,
+        "value": "FFFF3358",
+        "value_sources": [
+          "ram:FFFF31AE",
+          "rom:0000C3F0"
+        ],
+        "watchpoints": [
+          "explicit DMA2/3 configuration-storage fixture"
+        ]
+      },
+      {
+        "address": "0000C3B8",
+        "address_sources": [
+          "instruction:0000C336"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C336",
+        "size": 2,
+        "value": "00000100",
+        "value_sources": [
+          "rom:0000C3B8"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "0000C3BA",
+        "address_sources": [
+          "instruction:0000C338"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C338",
+        "size": 2,
+        "value": "0000ECFE",
+        "value_sources": [
+          "rom:0000C3BA"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFFECFE",
+        "address_sources": [
+          "rom:0000C3BA"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "0000C33A",
+        "size": 2,
+        "value": "00000100",
+        "value_sources": [
+          "rom:0000C3B8"
+        ],
+        "watchpoints": [
+          "explicit DMA2/3 configuration-storage fixture"
+        ]
+      },
+      {
+        "address": "0000C3BC",
+        "address_sources": [
+          "instruction:0000C33C"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C33C",
+        "size": 2,
+        "value": "0000ECFC",
+        "value_sources": [
+          "rom:0000C3BC"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "0000C3F4",
+        "address_sources": [
+          "instruction:0000C33E"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C33E",
+        "size": 4,
+        "value": "00040100",
+        "value_sources": [
+          "rom:0000C3F4"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFFECFC",
+        "address_sources": [
+          "rom:0000C3BC"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "0000C340",
+        "size": 4,
+        "value": "00040100",
+        "value_sources": [
+          "rom:0000C3F4"
+        ],
+        "watchpoints": [
+          "explicit DMA2/3 configuration-storage fixture"
+        ]
+      },
+      {
+        "address": "0000C3BE",
+        "address_sources": [
+          "instruction:0000C342"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C342",
+        "size": 2,
+        "value": "0000ECE8",
+        "value_sources": [
+          "rom:0000C3BE"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFFECE8",
+        "address_sources": [
+          "rom:0000C3BE"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "0000C344",
+        "size": 4,
+        "value": "00000002",
+        "value_sources": [
+          "fixture:register:r9"
+        ],
+        "watchpoints": [
+          "explicit DMA2/3 configuration-storage fixture"
+        ]
+      },
+      {
+        "address": "FFFF31AC",
+        "address_sources": [
+          "fixture:register:r12"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C346",
+        "size": 1,
+        "value": "000000FF",
+        "value_sources": [
+          "ram:FFFF31AC"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "0000C3F8",
+        "address_sources": [
+          "instruction:0000C348"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C348",
+        "size": 4,
+        "value": "FFFF310A",
+        "value_sources": [
+          "rom:0000C3F8"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFF31AE",
+        "address_sources": [
+          "fixture:register:r14"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C354",
+        "size": 1,
+        "value": "000000FF",
+        "value_sources": [
+          "ram:FFFF31AE"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "0000C3C0",
+        "address_sources": [
+          "instruction:0000C360"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C360",
+        "size": 2,
+        "value": "0000ECE0",
+        "value_sources": [
+          "rom:0000C3C0"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFFECE0",
+        "address_sources": [
+          "rom:0000C3C0"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "0000C362",
+        "size": 4,
+        "value": "FFFF5AE0",
+        "value_sources": [
+          "ram:FFFF31AC",
+          "ram:FFFF31AE",
+          "rom:0000C3F8"
+        ],
+        "watchpoints": [
+          "explicit DMA2/3 configuration-storage fixture"
+        ]
+      },
+      {
+        "address": "0000C3C2",
+        "address_sources": [
+          "instruction:0000C364"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C364",
+        "size": 2,
+        "value": "0000F00B",
+        "value_sources": [
+          "rom:0000C3C2"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "0000C3C4",
+        "address_sources": [
+          "instruction:0000C366"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C366",
+        "size": 2,
+        "value": "0000ECE4",
+        "value_sources": [
+          "rom:0000C3C4"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFFECE4",
+        "address_sources": [
+          "rom:0000C3C4"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "0000C368",
+        "size": 4,
+        "value": "FFFFF00B",
+        "value_sources": [
+          "rom:0000C3C2"
+        ],
+        "watchpoints": [
+          "explicit DMA2/3 configuration-storage fixture"
+        ]
+      },
+      {
+        "address": "0000C3C6",
+        "address_sources": [
+          "instruction:0000C36A"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C36A",
+        "size": 2,
+        "value": "00001000",
+        "value_sources": [
+          "rom:0000C3C6"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "0000C3C8",
+        "address_sources": [
+          "instruction:0000C36C"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C36C",
+        "size": 2,
+        "value": "0000ECEE",
+        "value_sources": [
+          "rom:0000C3C8"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFFECEE",
+        "address_sources": [
+          "rom:0000C3C8"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "0000C36E",
+        "size": 2,
+        "value": "00001000",
+        "value_sources": [
+          "rom:0000C3C6"
+        ],
+        "watchpoints": [
+          "explicit DMA2/3 configuration-storage fixture"
+        ]
+      },
+      {
+        "address": "0000C3CA",
+        "address_sources": [
+          "instruction:0000C370"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C370",
+        "size": 2,
+        "value": "0000ECEC",
+        "value_sources": [
+          "rom:0000C3CA"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "0000C3FC",
+        "address_sources": [
+          "instruction:0000C372"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "0000C372",
+        "size": 4,
+        "value": "00031000",
+        "value_sources": [
+          "rom:0000C3FC"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFFECEC",
+        "address_sources": [
+          "rom:0000C3CA"
+        ],
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "0000C374",
+        "size": 4,
+        "value": "00031000",
+        "value_sources": [
+          "rom:0000C3FC"
+        ],
+        "watchpoints": [
+          "explicit DMA2/3 configuration-storage fixture"
+        ]
+      }
+    ],
+    "classification": "ACTUAL_ROM_CONFIGURATION_STORES_IN_EXPLICIT_FINITE_FIXTURE_NO_DMA_EXECUTION",
+    "index_i": 255,
+    "index_j": 255,
+    "instruction_count": 44,
+    "registers": {
+      "rx_chcr": 262400,
+      "rx_dar": 4294914904,
+      "rx_sar": 4294963213,
+      "rx_tcr": 2,
+      "tx_chcr": 200704,
+      "tx_dar": 4294963211,
+      "tx_sar": 4294925024,
+      "tx_tcr": 2
+    },
+    "trace": [
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "9148",
+        "pc": "0000C31E",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r1": "FFFFECF8"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_store",
+        "opcode": "2192",
+        "pc": "0000C320",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "9347",
+        "pc": "0000C322",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r3": "FFFFF00D"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "9247",
+        "pc": "0000C324",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r2": "FFFFECF0"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_store",
+        "opcode": "2232",
+        "pc": "0000C326",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movb_load",
+        "opcode": "60E0",
+        "pc": "0000C328",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r0": "FFFFFFFF"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "add_imm",
+        "opcode": "71FC",
+        "pc": "0000C32A",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r1": "FFFFECF4"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_pc",
+        "opcode": "D330",
+        "pc": "0000C32C",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r3": "FFFF315A"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "extub",
+        "opcode": "600C",
+        "pc": "0000C32E",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r0": "000000FF"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "shll",
+        "opcode": "4000",
+        "pc": "0000C330",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r0": "000001FE"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "add_reg",
+        "opcode": "303C",
+        "pc": "0000C332",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r0": "FFFF3358"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_store",
+        "opcode": "2102",
+        "pc": "0000C334",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "923F",
+        "pc": "0000C336",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r2": "00000100"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "903F",
+        "pc": "0000C338",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r0": "FFFFECFE"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_store",
+        "opcode": "2021",
+        "pc": "0000C33A",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "953E",
+        "pc": "0000C33C",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r5": "FFFFECFC"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_pc",
+        "opcode": "D32D",
+        "pc": "0000C33E",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r3": "00040100"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_store",
+        "opcode": "2532",
+        "pc": "0000C340",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "923C",
+        "pc": "0000C342",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r2": "FFFFECE8"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_store",
+        "opcode": "2292",
+        "pc": "0000C344",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movb_load",
+        "opcode": "63C0",
+        "pc": "0000C346",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r3": "FFFFFFFF"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_pc",
+        "opcode": "D02B",
+        "pc": "0000C348",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r0": "FFFF310A"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "extub",
+        "opcode": "633C",
+        "pc": "0000C34A",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r3": "000000FF"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "mov_reg",
+        "opcode": "6133",
+        "pc": "0000C34C",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r1": "000000FF"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "shll2",
+        "opcode": "4308",
+        "pc": "0000C34E",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r3": "000003FC"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "add_reg",
+        "opcode": "331C",
+        "pc": "0000C350",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r3": "000004FB"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "shll2",
+        "opcode": "4308",
+        "pc": "0000C352",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r3": "000013EC"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movb_load",
+        "opcode": "61E0",
+        "pc": "0000C354",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r1": "FFFFFFFF"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "shll",
+        "opcode": "4300",
+        "pc": "0000C356",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r3": "000027D8"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "extub",
+        "opcode": "611C",
+        "pc": "0000C358",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r1": "000000FF"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "shll",
+        "opcode": "4100",
+        "pc": "0000C35A",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r1": "000001FE"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "add_reg",
+        "opcode": "330C",
+        "pc": "0000C35C",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r3": "FFFF58E2"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "add_reg",
+        "opcode": "313C",
+        "pc": "0000C35E",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r1": "FFFF5AE0"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "932E",
+        "pc": "0000C360",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r3": "FFFFECE0"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_store",
+        "opcode": "2312",
+        "pc": "0000C362",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "922D",
+        "pc": "0000C364",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r2": "FFFFF00B"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "912D",
+        "pc": "0000C366",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r1": "FFFFECE4"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_store",
+        "opcode": "2122",
+        "pc": "0000C368",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "932C",
+        "pc": "0000C36A",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r3": "00001000"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "922C",
+        "pc": "0000C36C",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r2": "FFFFECEE"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_store",
+        "opcode": "2231",
+        "pc": "0000C36E",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "942B",
+        "pc": "0000C370",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r4": "FFFFECEC"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_pc",
+        "opcode": "D322",
+        "pc": "0000C372",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {
+          "r3": "00031000"
+        },
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "0000C31E_SETUP_FRAGMENT"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_store",
+        "opcode": "2432",
+        "pc": "0000C374",
+        "pr_after": "11223344",
+        "pr_before": "11223344",
+        "registers": {},
+        "system_after": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "system_before": {
+          "mach": "00000000",
+          "macl": "00000000",
+          "sr": "00000000"
+        },
+        "t_after": 0,
+        "t_before": 0
+      }
+    ]
+  }
+]

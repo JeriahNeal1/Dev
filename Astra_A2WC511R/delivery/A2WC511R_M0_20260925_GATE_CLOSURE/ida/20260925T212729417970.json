@@ -1,0 +1,32 @@
+{
+  "request": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "tools/call",
+    "params": {
+      "name": "execute_python",
+      "arguments": {
+        "code": "import hashlib,ida_bytes,ida_name; print(hashlib.sha256(ida_bytes.get_bytes(0,0x100000)).hexdigest()); print(ida_name.get_name(0xFA84))"
+      }
+    }
+  },
+  "http_status": 200,
+  "response": {
+    "jsonrpc": "2.0",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"result\": null,\n  \"stdout\": \"a34c4ce8238bf28bdc18c191bbe73b2179130aa9846e952a6fa332bae442de96\\noem_validate_rom_checksum_range\\n\",\n  \"stderr\": \"\"\n}"
+        }
+      ],
+      "isError": false,
+      "structuredContent": {
+        "result": null,
+        "stdout": "a34c4ce8238bf28bdc18c191bbe73b2179130aa9846e952a6fa332bae442de96\noem_validate_rom_checksum_range\n",
+        "stderr": ""
+      }
+    },
+    "id": 1
+  }
+}

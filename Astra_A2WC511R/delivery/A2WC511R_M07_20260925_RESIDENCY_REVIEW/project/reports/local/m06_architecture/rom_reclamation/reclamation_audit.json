@@ -1,0 +1,3656 @@
+{
+  "status": "PASS_SCOPED_REPRESENTATION_MODEL_OWNERSHIP_PENDING",
+  "baseline": {
+    "path": "C:\\Dev\\SubaruRoms\\OEM\\A2WC511R.bin",
+    "sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218"
+  },
+  "defined_export": {
+    "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\gate_closure\\ida\\defined_code_export.json",
+    "sha256": "db77bfa6d563df046d58fd666b6ccf90ddcbb53c171c2f96d2076eee0a3f7578"
+  },
+  "firmware_modified": false,
+  "physical_actions": false,
+  "dispatch": {
+    "start": 295564,
+    "end": 296148,
+    "span_bytes": 584,
+    "command_map": {
+      "A0": 295772,
+      "A8": 295862,
+      "B0": 295894,
+      "B8": 295966,
+      "BF": 296032,
+      "9F": 296050,
+      "default": 296112
+    },
+    "shared_literal_interval": [
+      295704,
+      295772
+    ],
+    "internal_literal_interval": [
+      296070,
+      296112
+    ],
+    "warning": "Default is a live 12-byte reject-state update, not dead space. Shared literals serve previous routines."
+  },
+  "setter_table": {
+    "start": 324368,
+    "end": 325968,
+    "entries": 400,
+    "bytes": 1600,
+    "default_handler": 303254,
+    "default_count": 383,
+    "distinct_targets": [
+      303248,
+      303254,
+      303258,
+      303264,
+      303282,
+      303304,
+      303326,
+      303332,
+      303338,
+      303342,
+      303346,
+      303366,
+      303380,
+      303416,
+      303422,
+      303428,
+      303434,
+      303584
+    ],
+    "handler_code_spans": [
+      {
+        "start": 303248,
+        "end": 303254,
+        "code_span_bytes": 6,
+        "sha256": "108ef649f5c2d5e2fcd531b07964eecdf59e343101aee424591746413ba529b3",
+        "table_indices": [
+          0
+        ],
+        "extra_behavior": null
+      },
+      {
+        "start": 303254,
+        "end": 303258,
+        "code_span_bytes": 4,
+        "sha256": "704184eb9e71f4e826447372d3600fc64337ca3cf22fbb65ef453c06676132b0",
+        "table_indices": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          133,
+          134,
+          135,
+          136,
+          139,
+          140,
+          141,
+          142,
+          143,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          150,
+          151,
+          152,
+          153,
+          154,
+          155,
+          156,
+          157,
+          158,
+          159,
+          160,
+          161,
+          162,
+          163,
+          164,
+          165,
+          166,
+          167,
+          168,
+          169,
+          170,
+          171,
+          172,
+          173,
+          174,
+          175,
+          176,
+          177,
+          178,
+          179,
+          180,
+          181,
+          182,
+          183,
+          184,
+          185,
+          186,
+          187,
+          188,
+          189,
+          190,
+          191,
+          192,
+          193,
+          194,
+          195,
+          196,
+          197,
+          198,
+          199,
+          200,
+          201,
+          202,
+          203,
+          204,
+          205,
+          206,
+          207,
+          208,
+          209,
+          210,
+          211,
+          212,
+          213,
+          214,
+          215,
+          216,
+          217,
+          218,
+          219,
+          220,
+          229,
+          230,
+          231,
+          233,
+          234,
+          235,
+          236,
+          237,
+          238,
+          239,
+          240,
+          241,
+          242,
+          243,
+          244,
+          245,
+          246,
+          247,
+          248,
+          249,
+          250,
+          251,
+          252,
+          253,
+          254,
+          255,
+          256,
+          257,
+          258,
+          259,
+          260,
+          261,
+          262,
+          263,
+          264,
+          265,
+          266,
+          267,
+          268,
+          269,
+          270,
+          271,
+          272,
+          273,
+          274,
+          275,
+          276,
+          277,
+          278,
+          279,
+          280,
+          281,
+          282,
+          283,
+          284,
+          285,
+          286,
+          287,
+          289,
+          290,
+          291,
+          292,
+          293,
+          294,
+          295,
+          296,
+          297,
+          298,
+          299,
+          300,
+          301,
+          302,
+          303,
+          304,
+          305,
+          306,
+          307,
+          308,
+          309,
+          310,
+          311,
+          312,
+          313,
+          314,
+          315,
+          316,
+          317,
+          318,
+          319,
+          320,
+          321,
+          322,
+          323,
+          324,
+          325,
+          326,
+          327,
+          328,
+          329,
+          330,
+          331,
+          332,
+          333,
+          334,
+          335,
+          336,
+          337,
+          338,
+          339,
+          340,
+          341,
+          342,
+          343,
+          344,
+          345,
+          346,
+          347,
+          348,
+          349,
+          350,
+          351,
+          352,
+          353,
+          354,
+          355,
+          356,
+          357,
+          358,
+          359,
+          360,
+          361,
+          362,
+          363,
+          364,
+          365,
+          366,
+          367,
+          368,
+          369,
+          370,
+          371,
+          372,
+          373,
+          374,
+          375,
+          376,
+          377,
+          378,
+          379,
+          380,
+          381,
+          382,
+          383,
+          384,
+          385,
+          386,
+          387,
+          388,
+          389,
+          390,
+          391,
+          392,
+          393,
+          394,
+          395,
+          396,
+          397,
+          398,
+          399
+        ],
+        "extra_behavior": null
+      },
+      {
+        "start": 303258,
+        "end": 303264,
+        "code_span_bytes": 6,
+        "sha256": "eed3ad737c7fb4295a9b91d88163edcf37600ab933ef8ae6c49863db538f7856",
+        "table_indices": [
+          96
+        ],
+        "extra_behavior": null
+      },
+      {
+        "start": 303264,
+        "end": 303282,
+        "code_span_bytes": 18,
+        "sha256": "de1c2ac2ebbf49b456da9ad5dfa25b8c5331c6f942a0dd8684c8c6d3eb7c4cd7",
+        "table_indices": [
+          111
+        ],
+        "extra_behavior": null
+      },
+      {
+        "start": 303282,
+        "end": 303304,
+        "code_span_bytes": 22,
+        "sha256": "aaee0091611e27fa51bf19bff80a4245d4a05b9c6f6e08a46b3d3b39de45063f",
+        "table_indices": [
+          112
+        ],
+        "extra_behavior": null
+      },
+      {
+        "start": 303304,
+        "end": 303326,
+        "code_span_bytes": 22,
+        "sha256": "f4bbfce255c39c8456cb19e84a0e62e79fbb4bfc84b94793768aa48b757a7212",
+        "table_indices": [
+          113
+        ],
+        "extra_behavior": null
+      },
+      {
+        "start": 303326,
+        "end": 303332,
+        "code_span_bytes": 6,
+        "sha256": "af0d4a365c87c4d78ba39af9821b824dfd9b3c11f5721ead61ee0ae6deca0e27",
+        "table_indices": [
+          137
+        ],
+        "extra_behavior": null
+      },
+      {
+        "start": 303332,
+        "end": 303338,
+        "code_span_bytes": 6,
+        "sha256": "14d38313e5ad209163f2fd86b89a471f2de118d60272507bdac0d22521fae6f5",
+        "table_indices": [
+          138
+        ],
+        "extra_behavior": null
+      },
+      {
+        "start": 303338,
+        "end": 303342,
+        "code_span_bytes": 4,
+        "sha256": "704184eb9e71f4e826447372d3600fc64337ca3cf22fbb65ef453c06676132b0",
+        "table_indices": [
+          221
+        ],
+        "extra_behavior": null
+      },
+      {
+        "start": 303342,
+        "end": 303346,
+        "code_span_bytes": 4,
+        "sha256": "704184eb9e71f4e826447372d3600fc64337ca3cf22fbb65ef453c06676132b0",
+        "table_indices": [
+          222
+        ],
+        "extra_behavior": null
+      },
+      {
+        "start": 303346,
+        "end": 303366,
+        "code_span_bytes": 20,
+        "sha256": "05b01bdbe6a94b3460d383eb056469c278fae24f1f2cca4ebd78c5ab845583bf",
+        "table_indices": [
+          223
+        ],
+        "extra_behavior": null
+      },
+      {
+        "start": 303366,
+        "end": 303372,
+        "code_span_bytes": 6,
+        "sha256": "886dbb11fd8e00dbb0306e01b735fadf79114daf4b42bf499299a4f8548e1d75",
+        "table_indices": [
+          224
+        ],
+        "extra_behavior": null
+      },
+      {
+        "start": 303380,
+        "end": 303416,
+        "code_span_bytes": 36,
+        "sha256": "380d4db935c8e19a12acbb7b535a0e6b0eff22419c0f2a27fed83050ee9d7161",
+        "table_indices": [
+          225
+        ],
+        "extra_behavior": null
+      },
+      {
+        "start": 303416,
+        "end": 303422,
+        "code_span_bytes": 6,
+        "sha256": "829dad1ffa77899b63a02448c91f41596f165b52c2402b5f6d5a2fed45294ce8",
+        "table_indices": [
+          226
+        ],
+        "extra_behavior": null
+      },
+      {
+        "start": 303422,
+        "end": 303428,
+        "code_span_bytes": 6,
+        "sha256": "5f11909a7a453593b2fa004bad162332a19a95d39b0b2270949e9a73047df3bf",
+        "table_indices": [
+          227
+        ],
+        "extra_behavior": null
+      },
+      {
+        "start": 303428,
+        "end": 303434,
+        "code_span_bytes": 6,
+        "sha256": "c8e7b2edb068f95bd51c6d92d061f5a29174eea2b8c4ba4bb56253e30802eae5",
+        "table_indices": [
+          228
+        ],
+        "extra_behavior": null
+      },
+      {
+        "start": 303434,
+        "end": 303450,
+        "code_span_bytes": 16,
+        "sha256": "1394fd095f094b57a55bd3020663fb5fbf84449a6d5d9bcbdae2aef46b680dd4",
+        "table_indices": [
+          232
+        ],
+        "extra_behavior": null
+      },
+      {
+        "start": 303584,
+        "end": 303632,
+        "code_span_bytes": 48,
+        "sha256": "49e35e62fa3759cf41c271d95513ecd2a8fae4c5e08e453cf65216fac803e817",
+        "table_indices": [
+          288
+        ],
+        "extra_behavior": "tail calls OEM helpers 285DC/285EC; optional call285FC"
+      }
+    ],
+    "nondefault_entries": [
+      {
+        "index": 0,
+        "pointer_ea": 324368,
+        "handler": 303248,
+        "first_8_bytes": "d342000b2340000b"
+      },
+      {
+        "index": 96,
+        "pointer_ea": 324752,
+        "handler": 303258,
+        "first_8_bytes": "d241000b22404f22"
+      },
+      {
+        "index": 111,
+        "pointer_ea": 324812,
+        "handler": 303264,
+        "first_8_bytes": "4f22f58dd33f430b"
+      },
+      {
+        "index": 112,
+        "pointer_ea": 324816,
+        "handler": 303282,
+        "first_8_bytes": "4f22c73df508c73d"
+      },
+      {
+        "index": 113,
+        "pointer_ea": 324820,
+        "handler": 303304,
+        "first_8_bytes": "4f22c738d335f508"
+      },
+      {
+        "index": 137,
+        "pointer_ea": 324916,
+        "handler": 303326,
+        "first_8_bytes": "d337000b2340d336"
+      },
+      {
+        "index": 138,
+        "pointer_ea": 324920,
+        "handler": 303332,
+        "first_8_bytes": "d336000b2340000b"
+      },
+      {
+        "index": 221,
+        "pointer_ea": 325252,
+        "handler": 303338,
+        "first_8_bytes": "000b0009000b0009"
+      },
+      {
+        "index": 222,
+        "pointer_ea": 325256,
+        "handler": 303342,
+        "first_8_bytes": "000b00097ffc63f3"
+      },
+      {
+        "index": 223,
+        "pointer_ea": 325260,
+        "handler": 303346,
+        "first_8_bytes": "7ffc63f373032340"
+      },
+      {
+        "index": 224,
+        "pointer_ea": 325264,
+        "handler": 303366,
+        "first_8_bytes": "d12f000b2140d22d"
+      },
+      {
+        "index": 225,
+        "pointer_ea": 325268,
+        "handler": 303380,
+        "first_8_bytes": "4f227ffc61f37103"
+      },
+      {
+        "index": 226,
+        "pointer_ea": 325272,
+        "handler": 303416,
+        "first_8_bytes": "d324000b2340d224"
+      },
+      {
+        "index": 227,
+        "pointer_ea": 325276,
+        "handler": 303422,
+        "first_8_bytes": "d224000b2240d323"
+      },
+      {
+        "index": 228,
+        "pointer_ea": 325280,
+        "handler": 303428,
+        "first_8_bytes": "d323000b23404f22"
+      },
+      {
+        "index": 232,
+        "pointer_ea": 325296,
+        "handler": 303434,
+        "first_8_bytes": "4f22d322430b0009"
+      },
+      {
+        "index": 288,
+        "pointer_ea": 325520,
+        "handler": 303584,
+        "first_8_bytes": "2fe6e0024f226e4c"
+      }
+    ],
+    "source_sha256": "b49a50665f5da43369b099900945bb8d916fd36df60cd5eb87fb7e3c272bca1b",
+    "compact_index_bytes": 400,
+    "compact_target_bytes": 72,
+    "compact_total_bytes": 472,
+    "available_before_helper_bytes": 1128,
+    "exact_u16_mappings_checked_per_resolver": 65536,
+    "total_exact_u16_mappings_checked": 131072,
+    "out_of_range_fallback_required": true,
+    "getter_alias_indices": [
+      400,
+      800
+    ],
+    "known_definition_overlaps": [],
+    "known_definition_extents_checked": 412,
+    "index_array_sha256": "0f8c21576d1285bf392172b6d5e6a79f0ebb81ee643df74c569fa1a93c68e7dd",
+    "target_array_sha256": "6860c5f205a5848dfb0ee0f7a2e5c9980f7d62d79288d6cd37637ef4167332b9"
+  },
+  "regression": {
+    "result": "PASS",
+    "expected_instruction_count": 37,
+    "all_saved_code_bytes_checked": 63588,
+    "negative_tests": [
+      "corrupted dictionary index changes exact handler and is rejected",
+      "corrupted target changes exact handler and is rejected",
+      {
+        "missing_out_of_range_fallback_counterexample": 400,
+        "original_target": 66051
+      },
+      {
+        "unpatched_getter_alias_counterexample": 400,
+        "original_target": 303248,
+        "incorrect_dense_read_of_compact_index": 65793
+      }
+    ]
+  },
+  "scans": {
+    "dispatcher": {
+      "literal32_all_byte_alignments": [
+        {
+          "at": 479707,
+          "value": 295682,
+          "aligned": false
+        }
+      ],
+      "raw_pc_literal_loads": [],
+      "raw_relative_branches": [
+        {
+          "at": 294936,
+          "to": 295564,
+          "kind": "bsr",
+          "defined_code": false,
+          "within_interval": false
+        },
+        {
+          "at": 295208,
+          "to": 295564,
+          "kind": "bsr",
+          "defined_code": false,
+          "within_interval": false
+        },
+        {
+          "at": 295644,
+          "to": 295772,
+          "kind": "conditional",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 295652,
+          "to": 295862,
+          "kind": "conditional",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 295660,
+          "to": 295894,
+          "kind": "conditional",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 295668,
+          "to": 295676,
+          "kind": "conditional",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 295672,
+          "to": 295966,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 295680,
+          "to": 295688,
+          "kind": "conditional",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 295684,
+          "to": 296032,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 295692,
+          "to": 295700,
+          "kind": "conditional",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 295696,
+          "to": 296050,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 295700,
+          "to": 296112,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 295782,
+          "to": 295790,
+          "kind": "conditional",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 295786,
+          "to": 295792,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 295840,
+          "to": 295846,
+          "kind": "conditional",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 295858,
+          "to": 296124,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 295890,
+          "to": 296124,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 295900,
+          "to": 295908,
+          "kind": "conditional",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 295904,
+          "to": 295910,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 295962,
+          "to": 296124,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 295992,
+          "to": 296018,
+          "kind": "conditional",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 296014,
+          "to": 296124,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 296028,
+          "to": 296124,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 296046,
+          "to": 296124,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 296066,
+          "to": 296124,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 297998,
+          "to": 295950,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": false
+        }
+      ],
+      "warning": "Raw opcode matches can be data. No absence claim covers computed base+offset consumers."
+    },
+    "setter_table": {
+      "literal32_all_byte_alignments": [
+        {
+          "at": 297644,
+          "value": 324368,
+          "aligned": true
+        }
+      ],
+      "raw_pc_literal_loads": [
+        {
+          "at": 297520,
+          "pool": 297644,
+          "value": 324368,
+          "defined_code": false
+        }
+      ],
+      "raw_relative_branches": [
+        {
+          "at": 324158,
+          "to": 324374,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": false
+        },
+        {
+          "at": 324162,
+          "to": 324390,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": false
+        },
+        {
+          "at": 324166,
+          "to": 324406,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": false
+        },
+        {
+          "at": 324170,
+          "to": 324422,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": false
+        },
+        {
+          "at": 324174,
+          "to": 324438,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": false
+        },
+        {
+          "at": 324258,
+          "to": 324534,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": false
+        },
+        {
+          "at": 324286,
+          "to": 324570,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": false
+        },
+        {
+          "at": 324370,
+          "to": 324662,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324374,
+          "to": 324678,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324378,
+          "to": 324682,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324382,
+          "to": 324686,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324386,
+          "to": 324690,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324390,
+          "to": 324694,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324394,
+          "to": 324698,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324398,
+          "to": 324702,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324402,
+          "to": 324706,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324406,
+          "to": 324710,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324410,
+          "to": 324714,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324414,
+          "to": 324718,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324418,
+          "to": 324722,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324422,
+          "to": 324726,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324426,
+          "to": 324730,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324430,
+          "to": 324734,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324434,
+          "to": 324738,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324438,
+          "to": 324742,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324442,
+          "to": 324746,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324446,
+          "to": 324750,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324450,
+          "to": 324754,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324454,
+          "to": 324758,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324458,
+          "to": 324762,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324462,
+          "to": 324766,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324466,
+          "to": 324770,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324470,
+          "to": 324774,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324474,
+          "to": 324778,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324478,
+          "to": 324782,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324482,
+          "to": 324786,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324486,
+          "to": 324790,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324490,
+          "to": 324794,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324494,
+          "to": 324798,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324498,
+          "to": 324802,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324502,
+          "to": 324806,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324506,
+          "to": 324810,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324510,
+          "to": 324814,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324514,
+          "to": 324818,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324518,
+          "to": 324822,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324522,
+          "to": 324826,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324526,
+          "to": 324830,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324530,
+          "to": 324834,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324534,
+          "to": 324838,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324538,
+          "to": 324842,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324542,
+          "to": 324846,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324546,
+          "to": 324850,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324550,
+          "to": 324854,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324554,
+          "to": 324858,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324558,
+          "to": 324862,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324562,
+          "to": 324866,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324566,
+          "to": 324870,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324570,
+          "to": 324874,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324574,
+          "to": 324878,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324578,
+          "to": 324882,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324582,
+          "to": 324886,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324586,
+          "to": 324890,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324590,
+          "to": 324894,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324594,
+          "to": 324898,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324598,
+          "to": 324902,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324602,
+          "to": 324906,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324606,
+          "to": 324910,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324610,
+          "to": 324914,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324614,
+          "to": 324918,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324618,
+          "to": 324922,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324622,
+          "to": 324926,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324626,
+          "to": 324930,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324630,
+          "to": 324934,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324634,
+          "to": 324938,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324638,
+          "to": 324942,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324642,
+          "to": 324946,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324646,
+          "to": 324950,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324650,
+          "to": 324954,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324654,
+          "to": 324958,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324658,
+          "to": 324962,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324662,
+          "to": 324966,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324666,
+          "to": 324970,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324670,
+          "to": 324974,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324674,
+          "to": 324978,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324678,
+          "to": 324982,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324682,
+          "to": 324986,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324686,
+          "to": 324990,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324690,
+          "to": 324994,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324694,
+          "to": 324998,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324698,
+          "to": 325002,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324702,
+          "to": 325006,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324706,
+          "to": 325010,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324710,
+          "to": 325014,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324714,
+          "to": 325018,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324718,
+          "to": 325022,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324722,
+          "to": 325026,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324726,
+          "to": 325030,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324730,
+          "to": 325034,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324734,
+          "to": 325038,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324738,
+          "to": 325042,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324742,
+          "to": 325046,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324746,
+          "to": 325050,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324750,
+          "to": 325054,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324754,
+          "to": 325066,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324758,
+          "to": 325062,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324762,
+          "to": 325066,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324766,
+          "to": 325070,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324770,
+          "to": 325074,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324774,
+          "to": 325078,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324778,
+          "to": 325082,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324782,
+          "to": 325086,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324786,
+          "to": 325090,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324790,
+          "to": 325094,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324794,
+          "to": 325098,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324798,
+          "to": 325102,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324802,
+          "to": 325106,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324806,
+          "to": 325110,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324810,
+          "to": 325114,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324814,
+          "to": 325138,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324818,
+          "to": 325178,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324822,
+          "to": 325226,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324826,
+          "to": 325130,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324830,
+          "to": 325134,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324834,
+          "to": 325138,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324838,
+          "to": 325142,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324842,
+          "to": 325146,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324846,
+          "to": 325150,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324850,
+          "to": 325154,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324854,
+          "to": 325158,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324858,
+          "to": 325162,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324862,
+          "to": 325166,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324866,
+          "to": 325170,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324870,
+          "to": 325174,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324874,
+          "to": 325178,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324878,
+          "to": 325182,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324882,
+          "to": 325186,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324886,
+          "to": 325190,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324890,
+          "to": 325194,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324894,
+          "to": 325198,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324898,
+          "to": 325202,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324902,
+          "to": 325206,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324906,
+          "to": 325210,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324910,
+          "to": 325214,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324914,
+          "to": 325218,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324918,
+          "to": 325366,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324922,
+          "to": 325382,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324926,
+          "to": 325230,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324930,
+          "to": 325234,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324934,
+          "to": 325238,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324938,
+          "to": 325242,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324942,
+          "to": 325246,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324946,
+          "to": 325250,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324950,
+          "to": 325254,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324954,
+          "to": 325258,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324958,
+          "to": 325262,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324962,
+          "to": 325266,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324966,
+          "to": 325270,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324970,
+          "to": 325274,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324974,
+          "to": 325278,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324978,
+          "to": 325282,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324982,
+          "to": 325286,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324986,
+          "to": 325290,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324990,
+          "to": 325294,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324994,
+          "to": 325298,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 324998,
+          "to": 325302,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325002,
+          "to": 325306,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325006,
+          "to": 325310,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325010,
+          "to": 325314,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325014,
+          "to": 325318,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325018,
+          "to": 325322,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325022,
+          "to": 325326,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325026,
+          "to": 325330,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325030,
+          "to": 325334,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325034,
+          "to": 325338,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325038,
+          "to": 325342,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325042,
+          "to": 325346,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325046,
+          "to": 325350,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325050,
+          "to": 325354,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325054,
+          "to": 325358,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325058,
+          "to": 325362,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325062,
+          "to": 325366,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325066,
+          "to": 325370,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325070,
+          "to": 325374,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325074,
+          "to": 325378,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325078,
+          "to": 325382,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325082,
+          "to": 325386,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325086,
+          "to": 325390,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325090,
+          "to": 325394,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325094,
+          "to": 325398,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325098,
+          "to": 325402,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325102,
+          "to": 325406,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325106,
+          "to": 325410,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325110,
+          "to": 325414,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325114,
+          "to": 325418,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325118,
+          "to": 325422,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325122,
+          "to": 325426,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325126,
+          "to": 325430,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325130,
+          "to": 325434,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325134,
+          "to": 325438,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325138,
+          "to": 325442,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325142,
+          "to": 325446,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325146,
+          "to": 325450,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325150,
+          "to": 325454,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325154,
+          "to": 325458,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325158,
+          "to": 325462,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325162,
+          "to": 325466,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325166,
+          "to": 325470,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325170,
+          "to": 325474,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325174,
+          "to": 325478,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325178,
+          "to": 325482,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325182,
+          "to": 325486,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325186,
+          "to": 325490,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325190,
+          "to": 325494,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325194,
+          "to": 325498,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325198,
+          "to": 325502,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325202,
+          "to": 325506,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325206,
+          "to": 325510,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325210,
+          "to": 325514,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325214,
+          "to": 325518,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325218,
+          "to": 325522,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325222,
+          "to": 325526,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325226,
+          "to": 325530,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325230,
+          "to": 325534,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325234,
+          "to": 325538,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325238,
+          "to": 325542,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325242,
+          "to": 325546,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325246,
+          "to": 325550,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325250,
+          "to": 325554,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325254,
+          "to": 325726,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325258,
+          "to": 325738,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325262,
+          "to": 325750,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325266,
+          "to": 325794,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325270,
+          "to": 325826,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325274,
+          "to": 325902,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325278,
+          "to": 325918,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325282,
+          "to": 325934,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325286,
+          "to": 325590,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325290,
+          "to": 325594,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325294,
+          "to": 325598,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325298,
+          "to": 325962,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325302,
+          "to": 325606,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325306,
+          "to": 325610,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325310,
+          "to": 325614,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325314,
+          "to": 325618,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325318,
+          "to": 325622,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325322,
+          "to": 325626,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325326,
+          "to": 325630,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325330,
+          "to": 325634,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325334,
+          "to": 325638,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325338,
+          "to": 325642,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325342,
+          "to": 325646,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325346,
+          "to": 325650,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325350,
+          "to": 325654,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325354,
+          "to": 325658,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325358,
+          "to": 325662,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325362,
+          "to": 325666,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325366,
+          "to": 325670,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325370,
+          "to": 325674,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325374,
+          "to": 325678,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325378,
+          "to": 325682,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325382,
+          "to": 325686,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325386,
+          "to": 325690,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325390,
+          "to": 325694,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325394,
+          "to": 325698,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325398,
+          "to": 325702,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325402,
+          "to": 325706,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325406,
+          "to": 325710,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325410,
+          "to": 325714,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325414,
+          "to": 325718,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325418,
+          "to": 325722,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325422,
+          "to": 325726,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325426,
+          "to": 325730,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325430,
+          "to": 325734,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325434,
+          "to": 325738,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325438,
+          "to": 325742,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325442,
+          "to": 325746,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325446,
+          "to": 325750,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325450,
+          "to": 325754,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325454,
+          "to": 325758,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325458,
+          "to": 325762,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325462,
+          "to": 325766,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325466,
+          "to": 325770,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325470,
+          "to": 325774,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325474,
+          "to": 325778,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325478,
+          "to": 325782,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325482,
+          "to": 325786,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325486,
+          "to": 325790,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325490,
+          "to": 325794,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325494,
+          "to": 325798,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325498,
+          "to": 325802,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325502,
+          "to": 325806,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325506,
+          "to": 325810,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325510,
+          "to": 325814,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325514,
+          "to": 325818,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325518,
+          "to": 325822,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325526,
+          "to": 325830,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325530,
+          "to": 325834,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325534,
+          "to": 325838,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325538,
+          "to": 325842,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325542,
+          "to": 325846,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325546,
+          "to": 325850,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325550,
+          "to": 325854,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325554,
+          "to": 325858,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325558,
+          "to": 325862,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325562,
+          "to": 325866,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325566,
+          "to": 325870,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325570,
+          "to": 325874,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325574,
+          "to": 325878,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325578,
+          "to": 325882,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325582,
+          "to": 325886,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325586,
+          "to": 325890,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325590,
+          "to": 325894,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325594,
+          "to": 325898,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325598,
+          "to": 325902,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325602,
+          "to": 325906,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325606,
+          "to": 325910,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325610,
+          "to": 325914,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325614,
+          "to": 325918,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325618,
+          "to": 325922,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325622,
+          "to": 325926,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325626,
+          "to": 325930,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325630,
+          "to": 325934,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325634,
+          "to": 325938,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325638,
+          "to": 325942,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325642,
+          "to": 325946,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325646,
+          "to": 325950,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325650,
+          "to": 325954,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325654,
+          "to": 325958,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325658,
+          "to": 325962,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 325662,
+          "to": 325966,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        }
+      ],
+      "warning": "Raw opcode matches can be data. No absence claim covers computed base+offset consumers."
+    },
+    "setter_resolver": {
+      "literal32_all_byte_alignments": [],
+      "raw_pc_literal_loads": [],
+      "raw_relative_branches": [
+        {
+          "at": 296604,
+          "to": 297456,
+          "kind": "bsr",
+          "defined_code": false,
+          "within_interval": false
+        },
+        {
+          "at": 296696,
+          "to": 297456,
+          "kind": "bsr",
+          "defined_code": false,
+          "within_interval": false
+        },
+        {
+          "at": 297484,
+          "to": 297496,
+          "kind": "conditional",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 297512,
+          "to": 297536,
+          "kind": "conditional",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 297532,
+          "to": 297560,
+          "kind": "bra",
+          "defined_code": false,
+          "within_interval": true
+        },
+        {
+          "at": 297550,
+          "to": 297560,
+          "kind": "conditional",
+          "defined_code": false,
+          "within_interval": true
+        }
+      ],
+      "warning": "Raw opcode matches can be data. No absence claim covers computed base+offset consumers."
+    },
+    "duplicate_boolean_leaves": {
+      "literal32_all_byte_alignments": [
+        {
+          "at": 302000,
+          "value": 297584,
+          "aligned": true
+        },
+        {
+          "at": 302004,
+          "value": 297598,
+          "aligned": true
+        }
+      ],
+      "raw_pc_literal_loads": [
+        {
+          "at": 301344,
+          "pool": 302000,
+          "value": 297584,
+          "defined_code": false
+        },
+        {
+          "at": 301350,
+          "pool": 302004,
+          "value": 297598,
+          "defined_code": false
+        }
+      ],
+      "raw_relative_branches": [],
+      "warning": "Raw opcode matches can be data. No absence claim covers computed base+offset consumers."
+    }
+  },
+  "raw_branch_classification": {
+    "setter_table_raw_matches": 330,
+    "all_are_low_halfwords_of_identified_pointer_tables": true,
+    "executable_branch_entries_identified": 0
+  },
+  "neighboring_map_consumers": [
+    {
+      "handler": 301166,
+      "all_getter_u16_indices": [
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        172,
+        173,
+        240,
+        241,
+        242,
+        243,
+        291,
+        292,
+        293,
+        294,
+        295,
+        296,
+        297,
+        298,
+        336,
+        337,
+        338,
+        339,
+        340,
+        352,
+        353,
+        354,
+        355,
+        356,
+        373,
+        374,
+        375,
+        376,
+        377,
+        378
+      ],
+      "all_setter_u16_indices": [],
+      "all_literal_pointer_sources": [
+        323336,
+        323340,
+        323344,
+        323348,
+        323352,
+        323356,
+        323360,
+        323364,
+        323368,
+        323372,
+        323376,
+        323380,
+        323384,
+        323388,
+        323392,
+        323396,
+        323400,
+        323404,
+        323408,
+        323412,
+        323416,
+        323420,
+        323424,
+        323428,
+        323432,
+        323436,
+        323440,
+        323444,
+        323448,
+        323456,
+        323460,
+        323728,
+        323732,
+        323736,
+        323740,
+        323932,
+        323936,
+        323940,
+        323944,
+        323948,
+        323952,
+        323956,
+        323960,
+        324112,
+        324116,
+        324120,
+        324124,
+        324128,
+        324176,
+        324180,
+        324184,
+        324188,
+        324192,
+        324260,
+        324264,
+        324268,
+        324272,
+        324276,
+        324280
+      ],
+      "identified_byte_read_span": [
+        325968,
+        326205
+      ],
+      "arbitrary_argument_counterexample": {
+        "r4": 0,
+        "address": 325826
+      },
+      "scope": "Exact source index must still be supplied at handler call; arbitrary direct arguments are not bounded by this function."
+    },
+    {
+      "handler": 301194,
+      "all_getter_u16_indices": [
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202,
+        204,
+        205,
+        244,
+        245,
+        246,
+        247,
+        299,
+        300,
+        301,
+        302,
+        303,
+        304,
+        305,
+        306,
+        341,
+        342,
+        343,
+        344,
+        345,
+        357,
+        358,
+        359,
+        360,
+        361,
+        380,
+        381,
+        382,
+        383,
+        384,
+        385
+      ],
+      "all_setter_u16_indices": [],
+      "all_literal_pointer_sources": [
+        323464,
+        323468,
+        323472,
+        323476,
+        323480,
+        323484,
+        323488,
+        323492,
+        323496,
+        323500,
+        323504,
+        323508,
+        323512,
+        323516,
+        323520,
+        323524,
+        323528,
+        323532,
+        323536,
+        323540,
+        323544,
+        323548,
+        323552,
+        323556,
+        323560,
+        323564,
+        323568,
+        323572,
+        323576,
+        323584,
+        323588,
+        323744,
+        323748,
+        323752,
+        323756,
+        323964,
+        323968,
+        323972,
+        323976,
+        323980,
+        323984,
+        323988,
+        323992,
+        324132,
+        324136,
+        324140,
+        324144,
+        324148,
+        324196,
+        324200,
+        324204,
+        324208,
+        324212,
+        324288,
+        324292,
+        324296,
+        324300,
+        324304,
+        324308
+      ],
+      "identified_byte_read_span": [
+        326000,
+        326212
+      ],
+      "arbitrary_argument_counterexample": {
+        "r4": 0,
+        "address": 325826
+      },
+      "scope": "Exact source index must still be supplied at handler call; arbitrary direct arguments are not bounded by this function."
+    }
+  ],
+  "ownership_obligations": [
+    "Establish all semantic consumers of setter table, including computed references and full-ROM checksums/readback.",
+    "Verify exact compiled helper and both hooks for every u16 index, arbitrary SR and scratch registers, fallback and stack boundaries.",
+    "Preserve resolver security gates, MMIO ordering, original handlers and return continuation.",
+    "Document raw A0 ROM-read byte changes as candidate identity changes; never claim table bytes unchanged.",
+    "Keep unknown computed consumer paths explicit; raw pointer absence is not exclusive ownership."
+  ]
+}

@@ -1,0 +1,497 @@
+{
+  "schema": 2,
+  "target": "A2WC511R",
+  "ecuid": "2F12515306",
+  "updated_utc": "2026-09-25T21:47:57.972178+00:00",
+  "session_id": "01a0da26-addc-7fe1-84df-8c0baa8174f8",
+  "artifact": "frozen m0_final_05 diagnostic only",
+  "build_complete": true,
+  "offline_reviewed_candidate": false,
+  "physical_validation": false,
+  "production_release_allowed": false,
+  "all_purely_offline_gates_passed": false,
+  "current_calibration_ready_build_procedure_prepared": false,
+  "build_procedure_reason": "Conditional user prerequisite not met: exclusive ROM/RAM ownership and OEM single-writer invariant remain FAIL. Acquisition tooling is prepared separately.",
+  "interface_summary": {
+    "path": "interfaces/interface_gate_status.json",
+    "sha256": "fa128bde9c88c5afb6e7bbd43777555e2ebf207f4678fc18f97f9b66c87cf682"
+  },
+  "verification_limitations": [
+    {
+      "status": "NOT_EXECUTED_AUTOMATIC_APPROVAL_REJECTION",
+      "action": "Create and remove a project-local junction to test the runtime inventory guard",
+      "reason_returned": "blocked by policy",
+      "execution": "Tool rejected the command before process creation; no junction was created",
+      "current_coverage": "Launcher and manifest sealer reject reparse points in root and descendants by source inspection; all real runtime entries were checked, no reparse points found. Hidden-file guard was executed successfully.",
+      "requires_user_action_for_original_interface_task": false
+    }
+  ],
+  "dependency_scope": "Dependencies describe the prepared acquisition and candidate path. Another independently reviewed current-image attestation would require a revised evidence decision; historical file identity alone is insufficient.",
+  "gates": [
+    {
+      "id": "FROZEN_BUILD_PROVENANCE",
+      "status": "PASS",
+      "reason": "Original final05 payload, ELF, patches, checksums and all625 prior package entries remain hash-identical. No firmware rebuild or active-output feature changes.",
+      "evidence": [
+        {
+          "path": "frozen_verification.json",
+          "sha256": "8e737070d327888ebdf3b50377cd865e838e2c4be16a2bad1c2c2d570c41ae4e"
+        }
+      ],
+      "depends_on": [],
+      "remaining": null
+    },
+    {
+      "id": "ROM_IDENTIFIED_ACCESS_PATHS",
+      "status": "PASS",
+      "reason": "WholeFF runs, all raw literal/PC-relative/direct-branch matches, definition extents, vector/checksum constraints and actual bounded reader regressions reviewed. This is scoped access evidence.",
+      "evidence": [
+        {
+          "path": "rom/ROM_ALLOCATION_REVIEW.md",
+          "sha256": "013cf9d223e0037e90c2eae3dc8fee8c076ec7475fb11084ab126dc860db4a2f"
+        },
+        {
+          "path": "rom/static_audit.json",
+          "sha256": "053e9f112a48173650dbcac58e4a2eb04a8f13800359214c904e49fdcb519023"
+        },
+        {
+          "path": "rom/definition_overlap.json",
+          "sha256": "62c2f3d7408583052a61791db856aebc1c2a42b718b0dfa5a297e054a3b60e24"
+        },
+        {
+          "path": "rom/routine_regression.json",
+          "sha256": "65302a7c1ea2e38b79a3f896cf5022a44eb8441b9260afd20b261ee53f6951c0"
+        },
+        {
+          "path": "rom/analysis_regression.json",
+          "sha256": "2cd7d67ac1857dff4d76d31025424a09eb0d353b7fcb90d84c2610ff236aa2d6"
+        }
+      ],
+      "depends_on": [],
+      "remaining": null
+    },
+    {
+      "id": "ROM_OWNERSHIP",
+      "status": "FAIL",
+      "reason": "Exclusive ownership of[E1000,E1364) was not established. No demonstrated collision, but remaining computed access/context paths and undocumented extents prevent approval. Alternative[859BC,C0000) is also unproved.",
+      "evidence": [
+        {
+          "path": "rom/ROM_ALLOCATION_REVIEW.md",
+          "sha256": "013cf9d223e0037e90c2eae3dc8fee8c076ec7475fb11084ab126dc860db4a2f"
+        },
+        {
+          "path": "rom/reachability.json",
+          "sha256": "f5158dc497e7b8a2fdb1c04f2276e1d4b31fc3f355e24e3fe14b961731f4d2d0"
+        },
+        {
+          "path": "runtime/independent_review.json",
+          "sha256": "242bb43c880d4906215d7f01849d097c05b797a39bf77696b508f87e67a84cb6"
+        }
+      ],
+      "depends_on": [],
+      "remaining": "Close remaining computed control/data extents or supply a trustworthy original allocation contract. Finite bench observation alone cannot prove absence of an unexecuted access."
+    },
+    {
+      "id": "RAM_IDENTIFIED_ACCESS_PATHS",
+      "status": "PASS",
+      "reason": "Actual required persistent span is32bytes. Identified reset patterns/clear, DMA buffers, shared task stack, boot stack/ring, alias and timer paths have concrete bounds and regressions.",
+      "evidence": [
+        {
+          "path": "ram/RAM_OWNERSHIP_REVIEW.md",
+          "sha256": "70a19b5d41a620602967f9bf31699ce9834a9c354e6a85021e3c33abaa4e26c1"
+        },
+        {
+          "path": "ram/ram_path_audit.json",
+          "sha256": "f9160fbb359508181a6cdbbd9e44a71236345742b2e6a7d01190206fdedecea5"
+        },
+        {
+          "path": "runtime/20260925T211558.608898Z_gate_closure_runtime/ram_pattern_FA58.json",
+          "sha256": "53949cb338a91bfaca38ef2a924e346c8c5d1858762ff1309527f97361d479d5"
+        },
+        {
+          "path": "runtime/20260925T211558.608898Z_gate_closure_runtime/dma_setup_C31E.json",
+          "sha256": "50730e9e72f7ab11468af099cce57b2eec6397bcc10af1782789d5daecb7e7d9"
+        }
+      ],
+      "depends_on": [],
+      "remaining": null
+    },
+    {
+      "id": "RAM_OWNERSHIP",
+      "status": "FAIL",
+      "reason": "Exclusive lifetime ownership of[FFFF7400,FFFF7420) was not established against remaining indirect CPU writers and full context/interrupt invariants. No better location is justified.",
+      "evidence": [
+        {
+          "path": "ram/RAM_OWNERSHIP_REVIEW.md",
+          "sha256": "70a19b5d41a620602967f9bf31699ce9834a9c354e6a85021e3c33abaa4e26c1"
+        },
+        {
+          "path": "ram/ram_gate_status.json",
+          "sha256": "7e71156d737301b2f57dfd4c6e5e18d65a80fae0cad77bb4f35d94656e5d13d9"
+        }
+      ],
+      "depends_on": [],
+      "remaining": "Finish CPU pointer/context proof. Then observe only candidate32+boundaries, stack high-water, actual DMA destinations and qualified reset/interrupt modes on bench; observation does not erase the software gap."
+    },
+    {
+      "id": "INJECTED_ABI_AND_STACK",
+      "status": "PASS",
+      "reason": "Final compiler output has a complete injected call graph, balanced all-path frames and an exact 124-byte extra peak. The wrapper preserves the OEM decoder return state, with no FPU/GBR/VBR accesses. Proof assumes a private valid stack disjoint from state.",
+      "evidence": [
+        {
+          "path": "runtime/20260925T211558.608898Z_gate_closure_runtime/RUNTIME_HANDOFF.md",
+          "sha256": "f8451f380629a036c3290ac4945aa8c9ed16b4da56fcdf52a6750bb07c5d9c9a"
+        },
+        {
+          "path": "runtime/20260925T211558.608898Z_gate_closure_runtime/runtime_gate_report.json",
+          "sha256": "9965fa9036521751747a8c7da0ce07f56b5cbc36051d4f115fce7cf518c6c5d1"
+        }
+      ],
+      "depends_on": [],
+      "remaining": null
+    },
+    {
+      "id": "OEM_SINGLE_WRITER_INVARIANT",
+      "status": "FAIL",
+      "reason": "M0 is intentionally nonreentrant. Actual nested-writer negative test demonstrates publication failure. Identified task priority/state guards are insufficient for the full OEM context invariant.",
+      "evidence": [
+        {
+          "path": "runtime/20260925T211558.608898Z_gate_closure_runtime/runtime_gate_report.json",
+          "sha256": "9965fa9036521751747a8c7da0ce07f56b5cbc36051d4f115fce7cf518c6c5d1"
+        },
+        {
+          "path": "runtime/runtime_source_addendum.md",
+          "sha256": "f3ee03893021554b0f1060c0a702c5e9ad851381e7a265f28c6fdf9172f56d00"
+        },
+        {
+          "path": "ram/RAM_OWNERSHIP_REVIEW.md",
+          "sha256": "70a19b5d41a620602967f9bf31699ce9834a9c354e6a85021e3c33abaa4e26c1"
+        }
+      ],
+      "depends_on": [],
+      "remaining": "Complete task9 activation/preemption/resume invariant proving no concurrent M0 writer; do not fix this by enabling active features or assuming timing."
+    },
+    {
+      "id": "INSTRUCTION_BUDGET_AND_CADENCE_MODEL",
+      "status": "PASS",
+      "reason": "Conservative full-hook bound562instructions/178dataaccesses; additional bound526instructions. Nominal task9 enqueue every8CMT1 service calls/160000Pphi cycles. Conditional serialized cycle envelope is explicit.",
+      "evidence": [
+        {
+          "path": "runtime/20260925T211558.608898Z_gate_closure_runtime/runtime_gate_report.json",
+          "sha256": "9965fa9036521751747a8c7da0ce07f56b5cbc36051d4f115fce7cf518c6c5d1"
+        },
+        {
+          "path": "runtime/runtime_source_addendum.md",
+          "sha256": "f3ee03893021554b0f1060c0a702c5e9ad851381e7a265f28c6fdf9172f56d00"
+        },
+        {
+          "path": "ram/ram_path_audit.json",
+          "sha256": "f9160fbb359508181a6cdbbd9e44a71236345742b2e6a7d01190206fdedecea5"
+        }
+      ],
+      "depends_on": [],
+      "remaining": null
+    },
+    {
+      "id": "TASK_STACK_TIMING",
+      "status": "PHYSICAL/BENCH REQUIRED",
+      "reason": "Absolute clock, memory/entry stalls, interrupt interference, total shared-stack occupancy and scheduling margin have not been measured on the ECU. Simulated cycle examples are conditional, not verified silicon timing.",
+      "evidence": [
+        {
+          "path": "runtime/20260925T211558.608898Z_gate_closure_runtime/RUNTIME_HANDOFF.md",
+          "sha256": "f8451f380629a036c3290ac4945aa8c9ed16b4da56fcdf52a6750bb07c5d9c9a"
+        },
+        {
+          "path": "ram/RAM_OWNERSHIP_REVIEW.md",
+          "sha256": "70a19b5d41a620602967f9bf31699ce9834a9c354e6a85021e3c33abaa4e26c1"
+        }
+      ],
+      "depends_on": [
+        "RAM_OWNERSHIP",
+        "OEM_SINGLE_WRITER_INVARIANT"
+      ],
+      "remaining": "After software prerequisites pass, measure clock/tick/enqueue/service intervals, worst observed latency, nesting and stack high-water on the exact ECU/build."
+    },
+    {
+      "id": "SIMULATOR_REVERSE_ENGINEERING_UTILITY",
+      "status": "PASS",
+      "reason": "52focusedtests/56forms and1024stock-v-patch pairs PASS; watchpoints, pointer/value origins, deterministic replay, full-hole accounting and negative controls are usable from Codex.",
+      "evidence": [
+        {
+          "path": "runtime/20260925T211558.608898Z_gate_closure_runtime/runtime_gate_report.json",
+          "sha256": "9965fa9036521751747a8c7da0ce07f56b5cbc36051d4f115fce7cf518c6c5d1"
+        },
+        {
+          "path": "runtime/20260925T211558.608898Z_gate_closure_runtime/whole_hole_dynamic_summary.json",
+          "sha256": "25c1f2e7235bd6e72874329361536e81e05098c007a1cad2825d898b0d1ac2f2"
+        },
+        {
+          "path": "rom/routine_regression.json",
+          "sha256": "65302a7c1ea2e38b79a3f896cf5022a44eb8441b9260afd20b261ee53f6951c0"
+        }
+      ],
+      "depends_on": [],
+      "remaining": null
+    },
+    {
+      "id": "LOCAL_CALIBRATION_SEARCH",
+      "status": "PASS",
+      "reason": "All readable requested roots, ECUFlash registry/history/work paths,1MiB files regardless extension and archive/SRF images inventoried and classified. One saved tune uniquely matches all16 historical flash pageCRCs; no current identity inferred.",
+      "evidence": [
+        {
+          "path": "calibration/inventory.json",
+          "sha256": "0d81f057d303cd611748f3009eca2c02c3776ea2454414db1dbcb1aab8b63534"
+        },
+        {
+          "path": "calibration/history_comparison.json",
+          "sha256": "15bfc195a1b74c33e62a2304bb7e4b00b7158a45cc51118791d747bfb1910cd0"
+        },
+        {
+          "path": "calibration/CURRENT_CALIBRATION_REVIEW.md",
+          "sha256": "da4333726b5979b2c7961fbf472997388b65487c8ee81220b2e8ff318ead48f5"
+        }
+      ],
+      "depends_on": [],
+      "remaining": null
+    },
+    {
+      "id": "CURRENT_CALIBRATION",
+      "status": "PHYSICAL/BENCH REQUIRED",
+      "reason": "No fresh fullROM read or complete attestation establishes the exact presently flashed image. The historical fullCRC match is not current byte identity.",
+      "evidence": [
+        {
+          "path": "calibration/CURRENT_CALIBRATION_REVIEW.md",
+          "sha256": "da4333726b5979b2c7961fbf472997388b65487c8ee81220b2e8ff318ead48f5"
+        },
+        {
+          "path": "calibration/ONE_CONNECTION_READ_ONLY_ACQUISITION.md",
+          "sha256": "521733f1c6be7ff363bf6a30cd806f14c8f50d9bf28f69a800f623eafcdb969e"
+        }
+      ],
+      "depends_on": [
+        "READ_ONLY_COLLECTOR_PHYSICAL"
+      ],
+      "remaining": "Human performs one read-only connection using the prepared collector: two full images + pendingTCU bytes. Abort unsupported or inconsistent read; no ECUFlash kernel fallback or flash command."
+    },
+    {
+      "id": "TCU_VALIDITY_SEMANTICS",
+      "status": "PHYSICAL/BENCH REQUIRED",
+      "reason": "Raw/source/snapshot/latch/flags interpretations do not establish global freshness or physical clutch engagement. M0 continues to report unknown coherence/freshness.",
+      "evidence": [
+        {
+          "path": "calibration/ONE_CONNECTION_READ_ONLY_ACQUISITION.md",
+          "sha256": "521733f1c6be7ff363bf6a30cd806f14c8f50d9bf28f69a800f623eafcdb969e"
+        }
+      ],
+      "depends_on": [],
+      "remaining": "Collect named six raw bytes with timestamped startup/communication-state labels. A normal trace alone cannot prove fault behavior; any missing fault mode remains an explicit bench gate."
+    },
+    {
+      "id": "NATIVE_ROMRAIDER_GUI",
+      "status": "PASS",
+      "reason": "Installed RomRaider 1.1.0 passed actual visible approval, edit/display/compare/undo, cancellation, postapproval stale rejection, approval timeout, raw export/reopen and native Save As/reopen on disposable copies. No callback bypass; all 488 table/axis records matched after excluding the expected original_raw reset.",
+      "evidence": [
+        {
+          "path": "interfaces/gui_run11/events.json",
+          "sha256": "8c9c4d285fab23d82531e9f48b031e309448fd1be6d1822c7b0c6c52f084190d"
+        },
+        {
+          "path": "interfaces/gui_run11/positive_dialog.png",
+          "sha256": "2874786ded3c6752ff4212e05cee146bcd053f3050fed08d0e3328b2357fefb7"
+        },
+        {
+          "path": "interfaces/gui_run11/edited_display.png",
+          "sha256": "5afbebd039b666481d83c88ee214b54c012fe4ec09f8e3aadd1d58e151d04522"
+        },
+        {
+          "path": "interfaces/gui_run11/native_save_chooser.png",
+          "sha256": "50bc824890caf5800c1b64a885f3de38421df0722f96bfab11210589f5633692"
+        },
+        {
+          "path": "interfaces/gui_run11/protected_after.json",
+          "sha256": "b9da829a47536fb34926b85a5d9aa5bd9b1cbca9fcd254d84e24189540634309"
+        }
+      ],
+      "depends_on": [],
+      "remaining": null
+    },
+    {
+      "id": "NATIVE_ROMRAIDER_HTTP_TRANSPORT",
+      "status": "PASS",
+      "reason": "A serialized persistent loopback client resolved repeated Connection:close resets observed on Windows/JVM. Final actual GUI run11 had no resets. All 31 Python tests passed, including six real transport tests. Failed commits are never automatically replayed.",
+      "evidence": [
+        {
+          "path": "interfaces/romraider_python_tests.log",
+          "sha256": "138035e5d5abe48457141ec4f41cb29dc266a5c793a46af6ac37492cd93a4142"
+        },
+        {
+          "path": "interfaces/gui_run11/events.json",
+          "sha256": "8c9c4d285fab23d82531e9f48b031e309448fd1be6d1822c7b0c6c52f084190d"
+        }
+      ],
+      "depends_on": [],
+      "remaining": null
+    },
+    {
+      "id": "VIRTUAL_NATIVE_SSM",
+      "status": "PASS",
+      "reason": "8,599 checks passed using the installed native loader, queries, conversions and SSM connection. All 17 unchanged final05 fields cover the 32-byte state, alongside three unchanged historical channels and 15 compiled samples. Unsigned limits, big-endian words and full virtual ROM reconstruction passed.",
+      "evidence": [
+        {
+          "path": "interfaces/virtual_20260925T213711Z/result.json",
+          "sha256": "74272ff00d08f76fb112260a24a894260f7da1536ee25d6bcbc955f58bf5a350"
+        },
+        {
+          "path": "interfaces/virtual_20260925T213711Z/native_loaded_definitions.json",
+          "sha256": "29dbb2170987010bc6fdff84ad9ae2edd035dbdd4cd59d84c3b587735a1e7e43"
+        },
+        {
+          "path": "interfaces/virtual_20260925T213711Z/native_virtual_samples.json",
+          "sha256": "d21ca87e72f874e0d56b444c81b337a48f5570b5a21190e06a654d7d7dda7c62"
+        }
+      ],
+      "depends_on": [],
+      "remaining": null
+    },
+    {
+      "id": "NATIVE_VIRTUAL_LOGGER_GUI",
+      "status": "PASS",
+      "reason": "The installed native logger GUI displayed 20 channels and wrote CSV through its actual Log To File action. All 300 displayed values and all 6,667 CSV rows matched compiled snapshots. An isolated factory allowed only the virtual endpoint; provider discovery was suppressed.",
+      "evidence": [
+        {
+          "path": "interfaces/logger_gui_20260925T213026Z/display_and_csv_verification.json",
+          "sha256": "16fc0a867a53cfcf3f64ec74e433c31a74412bec3d329137fb471cc62dc49271"
+        },
+        {
+          "path": "interfaces/logger_gui_20260925T213026Z/native_logger_sample_14.png",
+          "sha256": "e6bc604bea0be2ea62d982b3ac670c070a39ed402ac459573241c319e073a8d2"
+        },
+        {
+          "path": "interfaces/logger_gui_20260925T213026Z/native_gui_views.json",
+          "sha256": "277a9f970181dce3e533ffee41fd325e8b862cfef3181584919d3ef1440f9d8c"
+        }
+      ],
+      "depends_on": [],
+      "remaining": null
+    },
+    {
+      "id": "READ_ONLY_COLLECTOR_OFFLINE",
+      "status": "PASS",
+      "reason": "The exact sealed PowerShell launcher passed 9,002 virtual requests on installed 32-bit Java, two identical 1 MiB reads and 260 six-byte samples, including initial/final bursts of 60. Independent review passed 285 policy checks and verified 107 artifact hashes and exact runtime inventories.",
+      "evidence": [
+        {
+          "path": "interfaces/collector_launcher_final03/acquisition_result.json",
+          "sha256": "5e349ac036d68b9c22883a7ec7f9c4b7de4a324daacd59ad301d9b11b61ce29e"
+        },
+        {
+          "path": "interfaces/collector_launcher_final03/raw_six_channel_samples.json",
+          "sha256": "7a76ed61a57f9062f64f7b9687c16b544c19b5d5b93f34640ed328765e6af1d4"
+        },
+        {
+          "path": "interfaces/collector_20260925T213714Z/negative_constructor_hash/acquisition_result.json",
+          "sha256": "cd5aea2b24289a62b8c96d3e8ad364857eb2490a252227855656fbbb9d8f4ff2"
+        },
+        {
+          "path": "interfaces/independent_collector_review.json",
+          "sha256": "7b689cfa0d397985e8488028fd59b47fda9b31fc86c1d7b31433eb0137d65a3d"
+        },
+        {
+          "path": "interfaces/runtime_guard_test.json",
+          "sha256": "4355aad261ddb3588b16dcb8140873d630bc926226cd6ddd26f209280a5d0d8e"
+        }
+      ],
+      "depends_on": [],
+      "remaining": null
+    },
+    {
+      "id": "READ_ONLY_COLLECTOR_PHYSICAL",
+      "status": "PHYSICAL/BENCH REQUIRED",
+      "reason": "No provider DLL was loaded and no physical connection occurred. The prepared native J2534 ISO9141 path is bound to existing 32-bit Java and the registered OpenPort DLL. OEM A0 access, physical timing, response echo and fault behavior remain unproven.",
+      "evidence": [
+        {
+          "path": "interfaces/independent_collector_review.json",
+          "sha256": "7b689cfa0d397985e8488028fd59b47fda9b31fc86c1d7b31433eb0137d65a3d"
+        },
+        {
+          "path": "interfaces/independent_j2534_iso9141_bytecode.txt",
+          "sha256": "e01f1f795dfea129ae86b54369eb3744a9ecf43495cf299298aaad3026c4005f"
+        },
+        {
+          "path": "interfaces/final_interface_identities.json",
+          "sha256": "967760e3cf3e6c8c3ab4431370826d4c0a52cb410208ae74e1280153f9cfb404"
+        }
+      ],
+      "depends_on": [
+        "READ_ONLY_COLLECTOR_OFFLINE"
+      ],
+      "remaining": "Human-only one-connection BF identity and CALID pilot, initial 60-sample A8 burst, two full ROM reads with interleaved samples, and final 60-sample burst. Abort denied, malformed or mismatched responses. Follow the root engine-off stable bench-power procedure; roughly 80 minutes at 4800 baud, with no kernel fallback."
+    },
+    {
+      "id": "PHYSICAL_TEST_CANDIDATE",
+      "status": "FAIL",
+      "reason": "Not eligible: software ownership/single-writer gates failed and current identity/timing remain unvalidated.",
+      "evidence": [
+        {
+          "path": "rom/ROM_ALLOCATION_REVIEW.md",
+          "sha256": "013cf9d223e0037e90c2eae3dc8fee8c076ec7475fb11084ab126dc860db4a2f"
+        },
+        {
+          "path": "ram/RAM_OWNERSHIP_REVIEW.md",
+          "sha256": "70a19b5d41a620602967f9bf31699ce9834a9c354e6a85021e3c33abaa4e26c1"
+        }
+      ],
+      "depends_on": [
+        "ROM_OWNERSHIP",
+        "RAM_OWNERSHIP",
+        "OEM_SINGLE_WRITER_INVARIANT",
+        "TASK_STACK_TIMING",
+        "CURRENT_CALIBRATION"
+      ],
+      "remaining": null
+    },
+    {
+      "id": "VEHICLE_VALIDATED",
+      "status": "PHYSICAL/BENCH REQUIRED",
+      "reason": "No ECU/TCU flash, live memory write, actuator command or driving test was performed.",
+      "evidence": [
+        {
+          "path": "EVIDENCE_PLAN.md",
+          "sha256": "5f49bb677af1267df88405cc144d505e65b44af89b740b5ae3365780424bb8e6"
+        }
+      ],
+      "depends_on": [
+        "PHYSICAL_TEST_CANDIDATE"
+      ],
+      "remaining": null
+    }
+  ],
+  "summary": {
+    "PASS": [
+      "FROZEN_BUILD_PROVENANCE",
+      "ROM_IDENTIFIED_ACCESS_PATHS",
+      "RAM_IDENTIFIED_ACCESS_PATHS",
+      "INJECTED_ABI_AND_STACK",
+      "INSTRUCTION_BUDGET_AND_CADENCE_MODEL",
+      "SIMULATOR_REVERSE_ENGINEERING_UTILITY",
+      "LOCAL_CALIBRATION_SEARCH",
+      "NATIVE_ROMRAIDER_GUI",
+      "NATIVE_ROMRAIDER_HTTP_TRANSPORT",
+      "VIRTUAL_NATIVE_SSM",
+      "NATIVE_VIRTUAL_LOGGER_GUI",
+      "READ_ONLY_COLLECTOR_OFFLINE"
+    ],
+    "FAIL": [
+      "ROM_OWNERSHIP",
+      "RAM_OWNERSHIP",
+      "OEM_SINGLE_WRITER_INVARIANT",
+      "PHYSICAL_TEST_CANDIDATE"
+    ],
+    "PHYSICAL/BENCH REQUIRED": [
+      "TASK_STACK_TIMING",
+      "CURRENT_CALIBRATION",
+      "TCU_VALIDITY_SEMANTICS",
+      "READ_ONLY_COLLECTOR_PHYSICAL",
+      "VEHICLE_VALIDATED"
+    ]
+  }
+}

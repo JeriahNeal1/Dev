@@ -1,0 +1,64 @@
+{
+    "detects": [
+        {
+            "filetype": "PE32",
+            "info": "",
+            "offset": "0",
+            "parentfilepart": "Header",
+            "size": "7840904",
+            "values": [
+                {
+                    "info": "",
+                    "name": "Microsoft Linker",
+                    "string": "Linker: Microsoft Linker(12.00.31101)",
+                    "type": "linker",
+                    "version": "12.00.31101"
+                },
+                {
+                    "info": "C++",
+                    "name": "Microsoft Visual C/C++",
+                    "string": "Compiler: Microsoft Visual C/C++(18.00.31101)[C++]",
+                    "type": "compiler",
+                    "version": "18.00.31101"
+                },
+                {
+                    "info": "",
+                    "name": "Microsoft Visual Studio",
+                    "string": "Tool: Microsoft Visual Studio(2013)",
+                    "type": "tool",
+                    "version": "2013"
+                },
+                {
+                    "info": "PKCS #7",
+                    "name": "Windows Authenticode",
+                    "string": "Sign tool: Windows Authenticode(2.0)[PKCS #7]",
+                    "type": "sign tool",
+                    "version": "2.0"
+                },
+                {
+                    "info": "",
+                    "name": "Themida/Winlicense",
+                    "string": "Protector: Themida/Winlicense(1.XX-2.XX)",
+                    "type": "protector",
+                    "version": "1.XX-2.XX"
+                },
+                {
+                    "info": "",
+                    "name": "Generic",
+                    "string": "(Heur)Protection: Generic",
+                    "type": "~protection",
+                    "version": ""
+                },
+                {
+                    "info": "",
+                    "name": "Generic",
+                    "string": "(Heur)Packer: Generic",
+                    "type": "~packer",
+                    "version": ""
+                }
+            ]
+        }
+    ]
+}
+
+

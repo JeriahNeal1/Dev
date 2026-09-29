@@ -1,0 +1,294 @@
+"""RomRaider model adapter, immutable history, and explicitly associated CSV analysis.
+No J2534, no flashing, no automatic optimization claims. Python 3.10+ / stdlib.
+"""
+from __future__ import annotations
+import ast, bisect, csv, hashlib, html, io, json, math, operator, re, statistics, time, urllib.request, urllib.error
+from pathlib import Path
+from datetime import datetime, timezone
+
+MAX_FILE=64*1024*1024
+
+def utc(): return datetime.now(timezone.utc).isoformat()
+def digest(data:bytes)->str:return hashlib.sha256(data).hexdigest()
+def encoded(value)->bytes:return json.dumps(value,sort_keys=True,ensure_ascii=False,allow_nan=False,separators=(',',':')).encode('utf-8')
+def finite(x):
+    if isinstance(x,bool) or not isinstance(x,(float,int)) or not math.isfinite(x):raise ValueError('Expected finite number')
+    return float(x)
+
+def read_json(path):
+    data=path.read_bytes()
+    if len(data)>MAX_FILE:raise ValueError('File too large')
+    return json.loads(data)
+
+class NoRedirect(urllib.request.HTTPRedirectHandler):
+    def redirect_request(self,*args,**kwargs):raise ValueError('Bridge redirects forbidden')
+
+class Bridge:
+    def __init__(self,connection:Path):self.connection=connection
+    def request(self,op,args):
+        from urllib.parse import urlsplit
+        c=read_json(self.connection);u=urlsplit(c['url']);token=c['token']
+        if u.scheme!='http' or u.hostname!='127.0.0.1' or not u.port or u.username or u.password or u.path!='/rpc' or u.query or u.fragment:raise ValueError('Bridge must use explicit HTTP loopback /rpc')
+        if not isinstance(token,str) or len(token)<48:raise ValueError('Invalid bridge token')
+        req=urllib.request.Request(c['url'],encoded({'op':op,'args':args}),{'Authorization':'Bearer '+token,'Content-Type':'application/json'},method='POST')
+        opener=urllib.request.build_opener(urllib.request.ProxyHandler({}),NoRedirect())
+        try:
+            with opener.open(req,timeout=260) as r:data=r.read(MAX_FILE+1)
+        except urllib.error.HTTPError as e:
+            body=e.read(4096).decode('utf-8',errors='replace');raise RuntimeError('Bridge rejected request: '+body) from e
+        if len(data)>MAX_FILE:raise ValueError('Bridge response too large')
+        out=json.loads(data)
+        if not out.get('ok'):raise RuntimeError(out.get('error','Bridge failure'))
+        return out['result']
+
+class Store:
+    def __init__(self,root:Path,bridge=None):
+        self.root=root.resolve();self.home=self.root/'work'/'rr_history';self.home.mkdir(parents=True,exist_ok=True);self.bridge=bridge
+    def inside(self,path):
+        p=(self.root/path).resolve()
+        if not p.is_relative_to(self.root) or any(v in {'.runtime','.git','.codex'} for v in p.relative_to(self.root).parts):raise ValueError('Path outside project or private directory')
+        if not p.is_file() or p.stat().st_size>MAX_FILE:raise ValueError('Input missing or too large')
+        return p
+    def put(self,kind,value):
+        if kind not in {'snapshots','logs','overlays','proposals','comparisons','events'}:raise ValueError('Invalid record kind')
+        data=encoded(value);key=digest(data);folder=self.home/kind;folder.mkdir(exist_ok=True);p=folder/(key+'.json')
+        if p.exists():
+            if p.read_bytes()!=data:raise RuntimeError('Immutable record conflict')
+        else:
+            with p.open('xb') as f:f.write(data)
+        return key
+    def get(self,kind,key):
+        if kind not in {'snapshots','logs','overlays','proposals','comparisons','events'} or not re.fullmatch('[a-f0-9]{64}',key):raise ValueError('Invalid record identifier')
+        p=self.home/kind/(key+'.json');raw=p.read_bytes()
+        if digest(raw)!=key:raise ValueError('History integrity failure')
+        return json.loads(raw)
+    def capture(self,rom_id,label):
+        s=self.bridge.request('snapshot',{'rom_id':rom_id});s['label']=label
+        if s.get('schema')!='rr-model-snapshot-v1':raise ValueError('Unsupported model snapshot schema')
+        key=self.put('snapshots',s)
+        return {'snapshot_id':key,'label':label,'rom':s['rom'],'tables_and_axes':len(s['tables']),'captured_utc':s['captured_utc'],'model_sha256':s['model_sha256']}
+    def history(self,kind='snapshots',limit=30):
+        if kind not in {'snapshots','logs','overlays','proposals','comparisons','events'}:raise ValueError('Invalid record kind')
+        out=[]
+        for p in sorted((self.home/kind).glob('*.json'),key=lambda p:p.stat().st_mtime,reverse=True)[:max(1,min(limit,100))]:
+            v=self.get(kind,p.stem);out.append({'id':p.stem,'label':v.get('label'),'captured_utc':v.get('captured_utc'),'table':v.get('table'),'rom_sha256':v.get('rom',{}).get('binary_sha256'),'association':v.get('association')})
+        return out
+    def table(self,snapshot_id,key):
+        s=self.get('snapshots',snapshot_id)
+        found=[t for t in s['tables'] if t['key']==key]
+        if len(found)!=1:raise ValueError('Table key missing or ambiguous')
+        return s,found[0]
+    def compare(self,a,b,table=None):
+        sa=self.get('snapshots',a);sb=self.get('snapshots',b);aa={t['key']:t for t in sa['tables']};bb={t['key']:t for t in sb['tables']};results=[]
+        for key in sorted(set(aa)|set(bb)):
+            if table is not None and table!=key:continue
+            if key not in aa or key not in bb:results.append({'table':key,'status':'added' if key in bb else 'removed'});continue
+            ta,tb=aa[key],bb[key]
+            metadata=lambda t:{k:v for k,v in t.items() if k not in {'cells','presets'}}
+            same_meta=metadata(ta)==metadata(tb)
+            axes=[key+s for s in ('::axis','::x','::y')]
+            same_axes=all(aa.get(k,{}).get('cells')==bb.get(k,{}).get('cells') for k in axes)
+            if (ta['rows'],ta['columns'])!=(tb['rows'],tb['columns']):results.append({'table':key,'status':'shape_changed_no_cellwise_comparison'});continue
+            changes=[]
+            for y in range(ta['rows']):
+                for x in range(ta['columns']):
+                    ca,cb=ta['cells'][y][x],tb['cells'][y][x]
+                    if ca.get('raw')!=cb.get('raw') or ca.get('real')!=cb.get('real') or ca.get('static_text')!=cb.get('static_text'):
+                        va,vb=ca.get('real'),cb.get('real');delta=finite(vb)-finite(va) if va is not None and vb is not None else None
+                        changes.append({'row':y,'column':x,'old_raw':ca.get('raw'),'new_raw':cb.get('raw'),'old':va,'new':vb,'delta':delta})
+            if changes or not same_meta or not same_axes:results.append({'table':key,'metadata_equal':same_meta,'axes_equal':same_axes,'cellwise_meaning_comparable':same_meta and same_axes,'changes':changes})
+        report={'captured_utc':utc(),'old_snapshot':a,'new_snapshot':b,'same_calid':sa['rom']['calid']==sb['rom']['calid'],'tables':results,'note':'Changed axes/scales are explicitly flagged; matching row index need not be the same operating point.'}
+        key=self.put('comparisons',report);return {'comparison_id':key,'changed_table_records':len(results),'report_path':str(self.home/'comparisons'/(key+'.json')),'preview':results[:3]}
+    def ingest_log(self,path,snapshot_id,association,note):
+        self.get('snapshots',snapshot_id)
+        if association not in {'user_attested_applied_rom','unverified_candidate_association'}:raise ValueError('Explicit ROM association required; file times do not prove flashed ROM')
+        p=self.inside(path);raw=p.read_bytes();h=digest(raw);data=self.home/'log_bytes';data.mkdir(exist_ok=True);dest=data/(h+'.csv')
+        if dest.exists():
+            if digest(dest.read_bytes())!=h:raise ValueError('Log integrity mismatch')
+        else:dest.write_bytes(raw)
+        headers,rows,partial=csv_rows(raw)
+        meta={'captured_utc':utc(),'source_path':str(p),'csv_sha256':h,'snapshot_id':snapshot_id,'association':association,'note':note,'columns':headers,'rows':len(rows),'partial_final_row_dropped':partial}
+        key=self.put('logs',meta);return {'log_id':key,**meta}
+    def overlay(self,log_id,table_key,bindings,metric_column,time_column,time_unit,filters,active_table_evidence,metric_delay_ms=0,max_alignment_gap_ms=100):
+        if not active_table_evidence.strip():raise ValueError('Describe active table selection evidence or explicitly mark it unverified')
+        lm=self.get('logs',log_id);s,t=self.table(lm['snapshot_id'],table_key);data=self.home/'log_bytes'/(lm['csv_sha256']+'.csv');raw=data.read_bytes()
+        if digest(raw)!=lm['csv_sha256']:raise ValueError('Log bytes changed')
+        headers,rows,_=csv_rows(raw)
+        if time_column not in headers or metric_column not in headers:raise ValueError('Unknown time/metric column')
+        if time_unit not in {'ms','s'}:raise ValueError('Time unit must be explicit ms or s')
+        metric_delay_ms=finite(metric_delay_ms);max_alignment_gap_ms=finite(max_alignment_gap_ms)
+        if abs(metric_delay_ms)>10000 or not 0<=max_alignment_gap_ms<=10000:raise ValueError('Alignment parameters out of bounds')
+        all_t={x['key']:x for x in s['tables']}
+        axis_keys={'x':table_key+'::x','y':table_key+'::y'} if table_key+'::x' in all_t else {'x':table_key+'::axis'} if table_key+'::axis' in all_t else {}
+        if not axis_keys and (t['rows']!=1 or t['columns']!=1):raise ValueError('Vector without defined axis: use explicit cell calculations, not inferred log mapping')
+        if set(bindings)!=set(axis_keys):raise ValueError('Bindings must match table axes '+str(sorted(axis_keys)))
+        axes={}
+        for axis,key in axis_keys.items():
+            b=bindings[axis]
+            if set(b)!={'column','unit','factor','offset'}:raise ValueError('Each binding needs column,unit,factor,offset')
+            if b['column'] not in headers:raise ValueError('Unknown axis channel')
+            at=all_t[key];unit=(at.get('scale') or {}).get('units') or ''
+            if b['unit']!=unit:raise ValueError('Axis unit mismatch: expected '+unit)
+            vals=[finite(c.get('real')) for row in at['cells'] for c in row];validate_axis(vals);axes[axis]=vals;finite(b['factor']);finite(b['offset'])
+        for f in filters:
+            if set(f) not in ({'column','min','max'},{'column','equals'}):raise ValueError('Filter needs explicit min/max or equals')
+            if f['column'] not in headers:raise ValueError('Unknown filter column')
+            if 'equals' in f:finite(f['equals'])
+            else:
+                if finite(f['min'])>finite(f['max']):raise ValueError('Invalid filter bounds')
+        times=[]
+        for row in rows:
+            try:times.append(float(row[time_column])*(1000 if time_unit=='s' else 1))
+            except (ValueError,TypeError):raise ValueError('Non-numeric time column')
+        if not all(math.isfinite(x) for x in times) or any(b<a for a,b in zip(times,times[1:])):raise ValueError('Time resets/nonfinite: split log into sessions first')
+        accum={};timeline=[];skipped={'filters_or_missing':0,'axis_outside':0,'alignment':0}
+        for i,row in enumerate(rows):
+            try:
+                if not filter_row(row,filters):skipped['filters_or_missing']+=1;continue
+                vals={k:float(row[v['column']])*finite(v['factor'])+finite(v['offset']) for k,v in bindings.items()}
+                if any(not math.isfinite(v) for v in vals.values()):raise ValueError('Missing axis')
+                xw=bracket(axes['x'],vals['x']) if 'x'in axes else [(0,1.)];yw=bracket(axes['y'],vals['y']) if 'y'in axes else [(0,1.)]
+                if xw is None or yw is None:skipped['axis_outside']+=1;continue
+                mt=times[i]+metric_delay_ms;j=bisect.bisect_left(times,mt);candidates=[k for k in (j-1,j) if 0<=k<len(times)];j=min(candidates,key=lambda k:abs(times[k]-mt)) if candidates else -1
+                if j<0 or abs(times[j]-mt)>max_alignment_gap_ms:skipped['alignment']+=1;continue
+                metric=float(rows[j][metric_column]);finite(metric)
+                weights=[(y,x,wy*wx) for y,wy in yw for x,wx in xw if wy*wx>0];lookup=0.
+                for y,x,w in weights:
+                    v=finite(t['cells'][y][x].get('real'));lookup+=w*v
+                    a=accum.setdefault((y,x),{'count':0,'weight':0.,'sum':0.,'sum2':0.,'min':metric,'max':metric});a['count']+=1;a['weight']+=w;a['sum']+=w*metric;a['sum2']+=w*metric*metric;a['min']=min(a['min'],metric);a['max']=max(a['max'],metric)
+                timeline.append({'time_ms':times[i],'metric_time_ms':times[j],'x':vals.get('x'),'y':vals.get('y'),'table_lookup_estimate':lookup,'metric':metric,'cell_weights':weights})
+            except (ValueError,KeyError,TypeError,IndexError):skipped['filters_or_missing']+=1
+        cells=[]
+        for (y,x),a in sorted(accum.items()):
+            mean=a['sum']/a['weight'];cells.append({'row':y,'column':x,'count':a['count'],'weight':a['weight'],'mean':mean,'std':math.sqrt(max(0,a['sum2']/a['weight']-mean*mean)),'min':a['min'],'max':a['max']})
+        report={'captured_utc':utc(),'log_id':log_id,'snapshot_id':lm['snapshot_id'],'association':lm['association'],'table':table_key,'metric_column':metric_column,'time_column':time_column,'time_unit':time_unit,'bindings':bindings,'filters':filters,'active_table_evidence':active_table_evidence,'metric_delay_ms':metric_delay_ms,'max_alignment_gap_ms':max_alignment_gap_ms,'accepted_samples':len(timeline),'skipped':skipped,'cells':cells,'timeline':timeline,'interpolation':'analysis-side linear/bilinear estimate; not proof of ECU lookup, activation, sensor delay, or total compensation','independent_samples':'Counts are logger rows, NOT independent trials.'}
+        key=self.put('overlays',report);export=self.home/'exports';export.mkdir(exist_ok=True);csvpath=export/(key+'_timeline.csv')
+        with csvpath.open('w',newline='',encoding='utf-8') as f:
+            writer=csv.DictWriter(f,fieldnames=['time_ms','metric_time_ms','x','y','table_lookup_estimate','metric','cell_weights']);writer.writeheader();writer.writerows(timeline)
+        htmlpath=export/(key+'_report.html');htmlpath.write_text(render_report(report),encoding='utf-8')
+        return {'overlay_id':key,'accepted_samples':len(timeline),'skipped':skipped,'occupied_cells':len(cells),'timeline_csv':str(csvpath),'html_report':str(htmlpath),'association':lm['association']}
+    def calculate(self,snapshot_id,table_key,expression,cells,constants,constraints,reason,evidence,overlay_id=None):
+        s,t=self.table(snapshot_id,table_key)
+        if not reason.strip() or not evidence:raise ValueError('Reason and evidence required')
+        if t.get('static') or t.get('locked') or t.get('edit_capability')=='checksum_special_read_only':raise ValueError('Read-only/static/special table')
+        if set(constraints)!={'minimum','maximum','max_abs_delta','min_samples','tolerance'}:raise ValueError('Explicit constraints required')
+        lo,hi=finite(constraints['minimum']),finite(constraints['maximum']);delta=finite(constraints['max_abs_delta']);tol=finite(constraints['tolerance']);minn=finite(constraints['min_samples'])
+        if lo>hi or min(delta,tol,minn)<0 or not minn.is_integer():raise ValueError('Invalid bounds')
+        reserved={'old','row','column','mean','std','count','weight','metric_min','metric_max'}
+        if set(constants)&reserved:raise ValueError('Constant shadows evidence variable')
+        for k,v in constants.items():
+            if not re.fullmatch('[a-zA-Z][a-zA-Z0-9_]*',k):raise ValueError('Invalid variable name')
+            finite(v)
+        obs={};overlay=None
+        if overlay_id:
+            overlay=self.get('overlays',overlay_id)
+            if overlay['snapshot_id']!=snapshot_id or overlay['table']!=table_key:raise ValueError('Overlay snapshot/table mismatch')
+            obs={(c['row'],c['column']):c for c in overlay['cells']}
+        if not cells or len(cells)>65536:raise ValueError('Choose bounded explicit cells')
+        seen=set();changes=[];rejected=[];calcs=[]
+        for item in cells:
+            if set(item)!={'row','column'}:raise ValueError('Cell needs row,column')
+            y,x=item['row'],item['column']
+            if type(y)is not int or type(x)is not int or not 0<=y<t['rows'] or not 0<=x<t['columns']:raise ValueError('Invalid cell coordinates')
+            if (y,x)in seen:raise ValueError('Duplicate cell');
+            seen.add((y,x));old=finite(t['cells'][y][x].get('real'));o=obs.get((y,x));n=o['count'] if o else 0
+            if n<minn:rejected.append({'row':y,'column':x,'reason':'insufficient_samples','count':n});continue
+            variables={'old':old,'row':y,'column':x,**constants,'count':n}
+            if o:variables.update(mean=o['mean'],std=o['std'],weight=o['weight'],metric_min=o['min'],metric_max=o['max'])
+            value=safe_expression(expression,variables)
+            if not lo<=value<=hi or abs(value-old)>delta:rejected.append({'row':y,'column':x,'reason':'constraint_violation','calculated':value});continue
+            if value==old:continue
+            changes.append({'table':table_key,'row':y,'column':x,'expected_raw':finite(t['cells'][y][x]['raw']),'value':value,'tolerance':tol,'mode':'real'})
+            calcs.append({'row':y,'column':x,'variables':variables,'expression':expression,'requested':value})
+        proposal={'schema':'rr-proposal-v1','captured_utc':utc(),'snapshot_id':snapshot_id,'bridge_session':s['bridge_session'],'rom_id':s['rom']['rom_id'],'expected_rom_sha256':s['rom']['binary_sha256'],'expected_model_sha256':s['model_sha256'],'table':table_key,'reason':reason,'evidence':evidence,'constraints':constraints,'overlay_id':overlay_id,'calculations':calcs,'changes':changes,'rejected':rejected,'status':'CALCULATED_PROPOSAL_NOT_OPTIMUM_OR_FLASH_APPROVAL'}
+        pid=self.put('proposals',proposal);return {'proposal_id':pid,'changed_cells':len(changes),'rejected_cells':rejected,'path':str(self.home/'proposals'/(pid+'.json')),'status':proposal['status']}
+    def preset_proposal(self,snapshot_id,table_key,preset_name,reason,evidence):
+        s,t=self.table(snapshot_id,table_key);ps=[p for p in t.get('presets',[]) if p['name']==preset_name]
+        if len(ps)!=1:raise ValueError('Unknown/ambiguous native preset')
+        if t['rows']!=1 or t.get('static') or t.get('locked') or t.get('edit_capability')=='checksum_special_read_only':raise ValueError('Preset table is not editable')
+        if not reason.strip() or not evidence:raise ValueError('Reason and evidence required')
+        p=ps[0];changes=[]
+        for i,value in enumerate(p['data']):
+            col=p['offset']+i
+            if not 0<=col<t['columns']:raise ValueError('Preset index invalid')
+            changes.append({'table':table_key,'row':0,'column':col,'expected_raw':finite(t['cells'][0][col]['raw']),'value':value,'tolerance':0,'mode':'raw'})
+        proposal={'schema':'rr-proposal-v1','captured_utc':utc(),'snapshot_id':snapshot_id,'bridge_session':s['bridge_session'],'rom_id':s['rom']['rom_id'],'expected_rom_sha256':s['rom']['binary_sha256'],'expected_model_sha256':s['model_sha256'],'table':table_key,'reason':reason,'evidence':evidence,'changes':changes,'native_preset':preset_name,'status':'PRESET_PROPOSAL_REVIEW_REQUIRED'}
+        pid=self.put('proposals',proposal);return {'proposal_id':pid,'changed_cells':len(changes),'native_preset':preset_name}
+    def preview(self,proposal_id):
+        p=self.get('proposals',proposal_id);status=self.bridge.request('status',{})
+        if status['session']!=p['bridge_session']:raise ValueError('Editor session changed: recapture model and regenerate proposal')
+        q={k:p[k] for k in ('rom_id','expected_rom_sha256','expected_model_sha256','changes','reason','evidence')};result=self.bridge.request('preview',q)
+        key=self.put('events',{'captured_utc':utc(),'kind':'preview','proposal_id':proposal_id,'result':result});return {'event_id':key,**result}
+
+def csv_rows(raw):
+    text=raw.decode('utf-8-sig');reader=csv.reader(io.StringIO(text));headers=next(reader,[])
+    if not headers or len(set(headers))!=len(headers):raise ValueError('Missing or duplicate CSV headers')
+    rows=[];partial=False
+    all_rows=list(reader)
+    if len(all_rows)>500000:raise ValueError('CSV row limit exceeded; split file')
+    for i,row in enumerate(all_rows):
+        if not row:continue
+        if len(row)!=len(headers):
+            if i==len(all_rows)-1 and not text.endswith(('\n','\r')):partial=True;continue
+            raise ValueError('Malformed CSV row '+str(i+2))
+        rows.append(dict(zip(headers,row)))
+    return headers,rows,partial
+
+def validate_axis(a):
+    if not a or not all(math.isfinite(v) for v in a):raise ValueError('Invalid axis')
+    if len(a)>1 and not (all(x<y for x,y in zip(a,a[1:])) or all(x>y for x,y in zip(a,a[1:]))):raise ValueError('Axis must be strictly monotonic')
+
+def bracket(a,v):
+    validate_axis(a);finite(v)
+    if len(a)==1:return [(0,1.)] if v==a[0] else None
+    if a[0]>a[-1]:
+        r=bracket(a[::-1],v);return None if r is None else [(len(a)-1-i,w)for i,w in r]
+    if v<a[0] or v>a[-1]:return None
+    i=bisect.bisect_left(a,v)
+    if i<len(a) and a[i]==v:return [(i,1.)]
+    f=(v-a[i-1])/(a[i]-a[i-1]);return [(i-1,1-f),(i,f)]
+
+def filter_row(row,filters):
+    for f in filters:
+        v=float(row[f['column']]);finite(v)
+        if 'equals'in f:
+            if v!=finite(f['equals']):return False
+        elif not finite(f['min'])<=v<=finite(f['max']):return False
+    return True
+
+OPS={ast.Add:operator.add,ast.Sub:operator.sub,ast.Mult:operator.mul,ast.Div:operator.truediv}
+FUNCS={'abs':abs,'min':min,'max':max,'sqrt':math.sqrt,'log':math.log,'exp':math.exp}
+def safe_expression(expression,variables):
+    if not isinstance(expression,str) or len(expression)>2000:raise ValueError('Expression too long')
+    tree=ast.parse(expression,mode='eval')
+    if sum(1 for _ in ast.walk(tree))>128:raise ValueError('Expression too complex')
+    def visit(n,depth=0):
+        if depth>24:raise ValueError('Expression too deep')
+        if isinstance(n,ast.Expression):return visit(n.body,depth+1)
+        if isinstance(n,ast.Constant):return finite(n.value)
+        if isinstance(n,ast.Name):
+            if n.id not in variables:raise ValueError('Missing variable '+n.id)
+            return finite(variables[n.id])
+        if isinstance(n,ast.UnaryOp) and isinstance(n.op,(ast.USub,ast.UAdd)):return finite((-1 if isinstance(n.op,ast.USub) else 1)*visit(n.operand,depth+1))
+        if isinstance(n,ast.BinOp):
+            a,b=visit(n.left,depth+1),visit(n.right,depth+1)
+            if isinstance(n.op,ast.Pow):
+                if abs(b)>16:raise ValueError('Exponent out of bounds')
+                return finite(a**b)
+            if type(n.op)in OPS:return finite(OPS[type(n.op)](a,b))
+        if isinstance(n,ast.Call) and isinstance(n.func,ast.Name) and n.func.id in FUNCS and not n.keywords and 1<=len(n.args)<=8:return finite(FUNCS[n.func.id](*(visit(a,depth+1)for a in n.args)))
+        raise ValueError('Disallowed expression syntax')
+    return finite(visit(tree))
+
+def render_report(r):
+    esc=lambda s:html.escape(str(s),quote=True)
+    tr=''.join('<tr>'+''.join('<td>'+esc(c[k])+'</td>'for k in ('row','column','count','weight','mean','std','min','max'))+'</tr>'for c in r['cells'])
+    # Independent scales and units: never make unlike quantities look directly comparable.
+    points=r['timeline'][::max(1,len(r['timeline'])//1500)]
+    points_json=json.dumps([[p['time_ms'],p['table_lookup_estimate'],p['metric']] for p in points],allow_nan=False)
+    return '''<!doctype html><html><meta charset="utf-8"><title>RomRaider timeline evidence</title>
+<style>body{font:16px system-ui;max-width:1150px;margin:36px auto;padding:20px}table{border-collapse:collapse}td,th{padding:7px 12px;border-bottom:1px solid #bbb}canvas{width:100%;height:230px;border:1px solid #bbb}code{overflow-wrap:anywhere}</style>
+<h1>RomRaider table / logger timeline</h1>'''+f'''<h2>{esc(r['table'])}</h2><p>Association: <b>{esc(r['association'])}</b>. {esc(r['interpolation'])}</p><p>Active-table evidence: {esc(r['active_table_evidence'])}</p><p>Accepted rows: {r['accepted_samples']}. Skipped: {esc(r['skipped'])}. Delay: {r['metric_delay_ms']} ms.</p><p>Plot data are decimated for display; the companion CSV retains every accepted row. Separate vertical scales, not equal units.</p><h3>Table lookup estimate versus time</h3><canvas id="lookup" width="1100" height="230"></canvas><h3>Logger metric: {esc(r['metric_column'])}</h3><canvas id="metric" width="1100" height="230"></canvas><h2>Weighted cell evidence</h2><p>{esc(r['independent_samples'])}</p><table><tr><th>Row</th><th>Column</th><th>Rows</th><th>Weight</th><th>Mean</th><th>Std</th><th>Min</th><th>Max</th></tr>{tr}</table>'''+'''<script>
+const points='''+points_json+''';
+function plot(id,col){const c=document.getElementById(id),g=c.getContext('2d');if(!points.length)return;const xs=points.map(p=>p[0]/1000),ys=points.map(p=>p[col]),xmin=Math.min(...xs),xmax=Math.max(...xs),ymin=Math.min(...ys),ymax=Math.max(...ys);g.clearRect(0,0,1100,230);g.beginPath();points.forEach((p,i)=>{const x=60+1000*(p[0]/1000-xmin)/(xmax-xmin||1),y=195-165*(p[col]-ymin)/(ymax-ymin||1);if(i===0)g.moveTo(x,y);else g.lineTo(x,y)});g.stroke();g.fillText('min '+ymin.toPrecision(5)+' / max '+ymax.toPrecision(5),60,16);g.fillText(xmin.toFixed(2)+' s',60,220);g.fillText(xmax.toFixed(2)+' s',995,220)}plot('lookup',1);plot('metric',2);
+</script></html>'''

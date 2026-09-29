@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "status": "FINDINGS_REPRODUCED",
+  "reviewed_source": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\sim\\validator_review_01\\validate_reviewed.py",
+    "sha256": "09fc2641e59c1a9573d5b916dbc6700fb95693dd5180b9510e67129c9a7c462c",
+    "bytes": 8262
+  },
+  "classification": "CONSTRUCTED_IN_MEMORY_INDEX_NEGATIVES_NOT_ACTUAL_PROJECT_RELEASE_INDEX",
+  "cases": [
+    {
+      "negative": "All gate IDs redirected to an unrelated schema assertion; all three fixture IDs alias stock",
+      "observed_status": "CONDITIONAL",
+      "software_status": "PASS",
+      "failed_checks": []
+    },
+    {
+      "negative": "Wrong coverage kernel, empty writes and unreviewed unreachable actual entry instruction",
+      "observed_status": "CONDITIONAL",
+      "software_status": "PASS",
+      "failed_checks": []
+    }
+  ],
+  "physical_operations": 0,
+  "provider_loaded": false
+}

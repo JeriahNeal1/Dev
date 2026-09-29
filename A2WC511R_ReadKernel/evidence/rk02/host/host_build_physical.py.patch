@@ -1,0 +1,44 @@
+--- C:\Dev\A2WC511R_ReadKernel\evidence\rk02\input_snapshot\host\build_physical.py
++++ C:\Dev\A2WC511R_ReadKernel\host\build_physical.py
+@@ -24,6 +24,12 @@
+     tested=json.loads(tested_build.read_text());tested_files={Path(item['path']):item['sha256'] for item in tested['files']}
+     for path in (ROOT/'host/native.cpp',ROOT/'host/vendor/j2534_tactrix.h',ROOT/'host/build'/fake_label/'owned_artifact.h'):
+         require(path in tested_files and sha256(path.read_bytes())==tested_files[path],'Exact tested source/header association before physical derivation: '+str(path))
++    toolchain_path=ROOT/'evidence/rk02/host/NATIVE_TOOLCHAIN.json';toolchain=json.loads(toolchain_path.read_text())
++    require(toolchain['status']=='PASS_COMPILE_ONLY_TOOLCHAIN_IDENTIFICATION','Recorded native toolchain required')
++    def verify_tools():
++        for key in ('compiler','linker','vcvars32'):
++            item=toolchain[key];require(sha256(Path(item['path']).read_bytes())==item['sha256'],'Pinned native tool changed: '+key)
++    verify_tools()
+     require(sha256(REAL_DLL.read_bytes())==REAL_SHA,'Installed provider read-only hash mismatch; never loaded')
+     snapshot=ROOT/'preservation/snapshot_20260927/MANIFEST.json'
+     entries=json.loads(snapshot.read_text())['files'];entry=[v for v in entries if Path(v['source'])==REAL_DLL]
+@@ -69,21 +75,26 @@
+     header+='static const char CERTIFICATE_SHA[]="'+cert_sha+'";\nstatic const wchar_t CERTIFICATE_SHA_W[]=L"'+cert_sha+'";\n'
+     (out/'owned_artifact.h').write_text(header)
+     setup=Path(r'C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\Build\vcvars32.bat')
++    require(Path(toolchain['vcvars32']['path'])==setup,'Same vcvars32 environment as native05')
++    compiler=Path(toolchain['compiler']['path'])
+     command=out/'compile_only.cmd'
+-    command.write_text('@echo off\ncall "'+str(setup)+'"\nif errorlevel 1 exit /b 1\ncl /nologo /W4 /WX /EHsc /std:c++17 /MT /O2 /Brepro /I"'+str(out)+'" /I"'+str(ROOT/'host')+'" "'+str(source)+'" /Fonative_physical.obj /Feowned_physical_read32.exe /link /Brepro bcrypt.lib\nif errorlevel 1 exit /b 1\n')
++    command.write_text('@echo off\ncall "'+str(setup)+'"\nif errorlevel 1 exit /b 1\nwhere.exe link.exe > resolved_linker.txt\n"'+str(compiler)+'" /nologo /W4 /WX /EHsc /std:c++17 /MT /O2 /Brepro /I"'+str(out)+'" /I"'+str(ROOT/'host')+'" "'+str(source)+'" /Fonative_physical.obj /Feowned_physical_read32.exe /link /Brepro bcrypt.lib\nif errorlevel 1 exit /b 1\n')
+     result=subprocess.run(['cmd.exe','/d','/c',str(command)],cwd=out,capture_output=True,text=True)
+     (out/'compile_only.log').write_text(result.stdout+result.stderr)
+     require(result.returncode==0,'Physical compile failed; no executable launched')
++    require(Path((out/'resolved_linker.txt').read_text().splitlines()[0])==Path(toolchain['linker']['path']),'Exact recorded linker selection')
++    verify_tools()
+     binary=out/'owned_physical_read32.exe'
+     report={'schema':1,'status':'COMPILED_NEVER_EXECUTED_PHYSICAL_REQUIRED','artifact_class':'TEMP_RAM_ACQUISITION_TOOL',
+             'target_physical':True,'executed':False,'provider_loaded_during_build':False,
+             'certificate':{'path':str(CERTIFICATE),'sha256':cert_sha,'bytes':len(certificate_bytes)},'tested_fake_binding':binding,'real_provider_path':str(REAL_DLL),'real_provider_sha256':REAL_SHA,
+             'tested_build_manifest':record(tested_build),'provider_binding_evidence':record(ROOT/'host/PHYSICAL_BINDING_PLAN.json'),
++            'native_toolchain':record(toolchain_path),'compiler':toolchain['compiler'],'linker':toolchain['linker'],
+             'native_binary':record(binary),'source':record(source),'source_roundtrip_to_tested_fake_exact':True,
+             'allowed_source_differences':changes,'protocol_payload_and_ciphertext_unchanged':True,
+             'never_executed_not_even_selftest':True,
+             'remaining':'Actual provider/electrical/ECU acceptance, timing, power-cycle/OEM restoration require human bench review',
+-            'files':[record(p) for p in (Path(__file__),source,out/'owned_artifact.h',command,out/'compile_only.log',binary,out/'SOURCE_DIFF.patch')]}
++            'files':[record(p) for p in (Path(__file__),source,out/'owned_artifact.h',command,out/'compile_only.log',out/'resolved_linker.txt',binary,out/'SOURCE_DIFF.patch')]}
+     (out/'BUILD_MANIFEST.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2))
+     return report
+ 

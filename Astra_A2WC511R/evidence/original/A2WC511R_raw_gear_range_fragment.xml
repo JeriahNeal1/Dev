@@ -1,0 +1,9 @@
+<!-- Add inside the SSM <ecuparams> block -->
+<ecuparam id="E_A2WC511R_RAW_GEAR_RANGE" name="A2WC511R Raw Gear Range Code*" desc="Raw uint8 ECU RAM byte at physical address 0xFFFF4BC2; loaded into R10 before OEM gear-state normalization." target="1">
+                    <ecu id="2F12515306">
+                        <address>0xFF4BC2</address>
+                    </ecu>
+                    <conversions>
+                        <conversion units="raw" storagetype="uint8" expr="x" format="0" />
+                    </conversions>
+                </ecuparam>

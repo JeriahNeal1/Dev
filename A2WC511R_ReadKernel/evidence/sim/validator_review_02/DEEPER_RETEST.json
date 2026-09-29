@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "status": "PASS",
+  "validator_source": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\tools\\validate.py",
+    "sha256": "5536a0f989a7f43b3d07f9f3d0d2d432e463b3ea1fe0362026d6490e22b0be58",
+    "bytes": 11869
+  },
+  "genuine_coverage_gates": [
+    {
+      "gate": "COVERAGE_BINARY_IDENTITY",
+      "status": "PASS"
+    },
+    {
+      "gate": "COVERAGE_AGGREGATE_RECONCILIATION",
+      "status": "PASS"
+    },
+    {
+      "gate": "ALL_EMITTED_INSTRUCTIONS",
+      "status": "PASS",
+      "details": {
+        "executed": 319,
+        "total": 319,
+        "missing": []
+      }
+    },
+    {
+      "gate": "ALL_CONDITIONAL_DIRECTIONS",
+      "status": "PASS",
+      "details": []
+    },
+    {
+      "gate": "EXACT_STACK_BOUND",
+      "status": "PASS"
+    },
+    {
+      "gate": "EVERY_OBSERVED_STORE_DECLARED",
+      "status": "PASS",
+      "details": []
+    }
+  ],
+  "altered_coverage_rejection_gates": [
+    {
+      "gate": "COVERAGE_BINARY_IDENTITY",
+      "status": "FAIL"
+    },
+    {
+      "gate": "COVERAGE_AGGREGATE_RECONCILIATION",
+      "status": "FAIL"
+    },
+    {
+      "gate": "ALL_EMITTED_INSTRUCTIONS",
+      "status": "FAIL",
+      "details": {
+        "executed": 318,
+        "total": 319,
+        "missing": [
+          4294914052
+        ]
+      }
+    },
+    {
+      "gate": "EVERY_OBSERVED_STORE_DECLARED",
+      "status": "FAIL",
+      "details": []
+    }
+  ],
+  "scope": "Coverage-only positive and mutated negative; complete release index remains separately pending.",
+  "physical_operations": 0,
+  "provider_loaded": false
+}

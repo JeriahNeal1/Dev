@@ -1,0 +1,111 @@
+{
+  "schema": 1,
+  "status": "PASS_BOUNDED_SOURCE_AND_MUTATION_REVIEW",
+  "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+  "inputs": [
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\tools\\validate.py",
+      "bytes": 31363,
+      "sha256": "87b782bf387bf41e796d8586f106a8c256873ef0eb701a1f760bbc42db562e2b"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\tools\\artifact_review.py",
+      "bytes": 6414,
+      "sha256": "a17be84cb7a9fb035e5dc1eb87578f710f9f3a0f9f9f14143099003d22afceab"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\tools\\release_rk02.py",
+      "bytes": 9080,
+      "sha256": "1620df744d31ce64f479d5daa34d24b4c7e9729ca8d5a338484b014684ac0ed7"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\review_physical_derivation_rk02.py",
+      "bytes": 17661,
+      "sha256": "c3069ed41d7a2e00b00fc4ab24457ba8ea1d650002a6ebe426b7ccd53252d17f"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\VALIDATOR_REGRESSIONS.json",
+      "bytes": 16511,
+      "sha256": "1c03ec1efb7e7641698c0df8cb1036055fc5dc85c2c8c22053957a8ac8e760c2"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\RELEASE_OPTIMIZATION_REGRESSIONS.json",
+      "bytes": 3319,
+      "sha256": "eb1d89ccccb9620f2d1fd31cad68dad3f1ab2514713493cb3dc27eb0439cf6fe"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\PHYSICAL_DERIVATION_REGRESSIONS_01.json",
+      "bytes": 8824,
+      "sha256": "3ff4fa3769ba863bee2f8e211bbd9dfd6148483b127735f7b8dbf599dc2ed0ec"
+    }
+  ],
+  "closed_findings": [
+    {
+      "issue": "Reproducibility alias accepted",
+      "closure": "Distinct fixed rk02_01 and rk02_repro_01 manifests/binaries/ELFs are mandatory."
+    },
+    {
+      "issue": "Vacuous build source/toolchain sets",
+      "closure": "Exact source and tool-name sets, current source hashes and both build associations are required."
+    },
+    {
+      "issue": "Missing or duplicate static store domains",
+      "closure": "Exactly22 unique store sites must equal the decoded final opcode store set; dynamic writes must fit each declared width/domain."
+    },
+    {
+      "issue": "Empty native source manifest and substituted executable",
+      "closure": "Exact native05 path/SHA, complete11-file manifest and binding equality are required."
+    },
+    {
+      "issue": "Missing simulator/core source associations",
+      "closure": "Exact8 model sources, fixed original core, kernel and build manifest are checked for fixtures and contributing coverage."
+    },
+    {
+      "issue": "Stale or omitted branch/fault coverage",
+      "closure": "Exact3 coverage inputs, source provenance, recomputed aggregate maps,335 instruction addresses and80 directions are required."
+    },
+    {
+      "issue": "Insufficient half-duplex report checks",
+      "closure": "All13 named cases, current model/core and coverage references, TEND-before-RX transitions and excluded RK01 control are checked."
+    },
+    {
+      "issue": "Empty RK01 preservation subset",
+      "closure": "Fixed permanent supersession-document hash and every retained directory-file hash are required."
+    },
+    {
+      "issue": "Arbitrary physical gate labels",
+      "closure": "Six exact physical gate IDs remain PHYSICAL_REQUIRED."
+    },
+    {
+      "issue": "Incomplete physical manifest source association",
+      "closure": "Exact8 physical files, tested binding, certificate and toolchain references are required."
+    },
+    {
+      "issue": "Release assertions disabled by Python optimization",
+      "closure": "Explicit require/ValueError guards; five actual software/final gate negatives pass under Python -O with virtual writes only."
+    },
+    {
+      "issue": "Missing native finalizer/source references",
+      "closure": "Exact9 source paths, two nested composite/random fixtures, finalizer/contract/stream counts and hashes are checked."
+    },
+    {
+      "issue": "Physical source/header booleans trusted without reconstruction",
+      "closure": "Independent sealed pure checker reconstructs fixed11 source substitutions, header/provider/certificate constants, source diff and compile command;15 self-consistently rehashed negatives reject."
+    }
+  ],
+  "validation": {
+    "complete_draft_baseline": "PASS",
+    "validator_negative_cases": 29,
+    "optimization_negative_cases": 5,
+    "physical_derivation_synthetic_negative_cases": 15,
+    "reviewer_index_adjustment_in_final_run": false,
+    "real_artifact_mutations": 0
+  },
+  "boundaries": [
+    "This is a bounded review of the pinned checker and tests, not an adversarial guarantee against replacing the checker and all evidence.",
+    "The physical derivative has not yet been built at the time of this source review; its actual bytes must pass the independent checker after compile-only generation.",
+    "No native host/provider/vehicle is executed by the independent checker or these negative tests. Current-ROM identity and physical timing/entry/reset conditions remain unproven."
+  ],
+  "provider_loaded": false,
+  "physical_operations": 0
+}

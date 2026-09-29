@@ -1,0 +1,122 @@
+{
+  "status": "INSTALLED_INTERNAL_READ_IMPLEMENTATION_UNRESOLVED",
+  "installed_hashes": {
+    "C:\\Program Files (x86)\\OpenECU\\EcuFlash\\ecuflash.exe": "5e1b1729446d306487bb7ed358b1ee050b11e440902bb23a05663d8575346115",
+    "C:\\Program Files (x86)\\OpenECU\\EcuFlash\\rommetadata\\read templates\\read_sti05.xml": "a3b5a1b27a9d984f73f885173980986ca22ece4ace45e65aeb10c2be4c26ce9e",
+    "C:\\Program Files (x86)\\OpenECU\\EcuFlash\\rommetadata\\subaru\\Outback XT\\A2WC511R.xml": "042937deb9f945027944912fdca6c66238da5caa24fcb1c3522d13d9e570b0be",
+    "C:\\Program Files (x86)\\OpenECU\\EcuFlash\\drivers\\openport 2.0\\op20pt32.dll": "f432084801762d919a3c31974616e097562424470003edc4f4fb843df34103cf"
+  },
+  "PE_entry_rva": "011D9000",
+  "entry_disassembly_sha256": "d365e87215056efa74fb5c138673da94af33a2d1b1b7e4b51b95fbdf3a8ca230",
+  "sections": [
+    {
+      "name": "2020200020202020",
+      "raw_size": 5956608,
+      "entropy": 7.992384273336415
+    },
+    {
+      "name": "2e72737263000000",
+      "raw_size": 2048,
+      "entropy": 6.455185695097557
+    },
+    {
+      "name": "2e69646174612020",
+      "raw_size": 512,
+      "entropy": 1.3087225765280863
+    },
+    {
+      "name": "2020202020202020",
+      "raw_size": 512,
+      "entropy": 0.26077127604825584
+    },
+    {
+      "name": "797a78637a78746e",
+      "raw_size": 1869824,
+      "entropy": 7.953304039419447
+    },
+    {
+      "name": "6979756f6b687a64",
+      "raw_size": 512,
+      "entropy": 3.905377724087248
+    }
+  ],
+  "packed_inference": "High-entropy executable content, irregular expanded sections, two imports, and absent application/kernel strings support packed/obfuscated representation. Exact packer not established.",
+  "reference_kernel": {
+    "path": "C:\\Dev\\Astra_A2WC511R\\work\\M07_reference\\FastECU\\kernels\\ssmk_kline_sh7058.bin",
+    "sha256": "101fb08e033db71f68c69ecbd9a133b9abef91cd10127d706ae52f0b8c373aaf",
+    "size": 6056,
+    "version_strings": [
+      "FastECU Subaru SH7058 K-Line Kernel v1.00"
+    ],
+    "bounded_entry_regression": "PASS",
+    "stack": "FFFFBFFC",
+    "main": "FFFF3FE4",
+    "BSS_clear_halfopen": [
+      "FFFF47A8",
+      "FFFF6CF8"
+    ],
+    "BSS_clear_bytes": 9552,
+    "six_TCU_addresses_cleared": [
+      "FFFF4C75",
+      "FFFF4C8D",
+      "FFFF4CA1",
+      "FFFF4C50",
+      "FFFF4BC1",
+      "FFFF4BC2"
+    ],
+    "provenance_limit": "Different kernel from installed historical DUAL V1.07, different length; no installed-kernel equivalence claimed. Current FastECU-kernels source was not rebuilt or matched to this binary."
+  },
+  "reference_source_hashes": {
+    "C:\\Dev\\Astra_A2WC511R\\work\\M07_reference\\FastECU\\modules\\ecu\\flash_ecu_subaru_denso_sh705x_kline.cpp": "88e654aebeb5ffbd4123369180d43d8997c34316115a2f761ae71c1a326329ea",
+    "C:\\Dev\\Astra_A2WC511R\\work\\M07_reference\\FastECU\\kernelcomms.h": "2dbae4b7621ccde315911b6b67fa52c615f87201e4f07d74c1acbb11462a0335",
+    "C:\\Dev\\Astra_A2WC511R\\work\\M07_reference\\FastECU\\config\\protocols.cfg": "8fd591d520ff70f498f98d6d3e1fb524f47ae632f2cfeab2892793d4832cf3f3",
+    "C:\\Dev\\Astra_A2WC511R\\work\\M07_reference\\FastECU-kernels\\main.c": "bb87ae7e9be89d73383b084d436b2811ddf6a882647f4f589cb87f51aec78cab",
+    "C:\\Dev\\Astra_A2WC511R\\work\\M07_reference\\FastECU-kernels\\start_ssm.s": "6220801ae4f217252fa7f5761ed65e95c7781b30827627aebff0221a500f4f2a",
+    "C:\\Dev\\Astra_A2WC511R\\work\\M07_reference\\FastECU-kernels\\mfg_ssm.c": "58f58ebb627ae3fd0dbea51edd9cde4a96cfbd915a7aa86fdee4d184fb8dfb71",
+    "C:\\Dev\\Astra_A2WC511R\\work\\M07_reference\\FastECU-kernels\\cmd_parser.c": "ccc440756a22543271c80a22619c92f31cfd0d56ce2fb3c8daa6b3cdf961548d",
+    "C:\\Dev\\Astra_A2WC511R\\work\\M07_reference\\FastECU-kernels\\pl_flash_705x_180nm.c": "3be3ebe6844792736f05d082085c138959ae7ed0d7f758261ec894c5b83e3927"
+  },
+  "historical_images": [
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\evidence\\original\\ECUFlashReadRaw(1).bin",
+      "size": 1048576,
+      "sha256": "1aac3214ec276822f1343e66fc1b8af83be8e61866d2d182882beb88317b4920",
+      "gap_checks": [
+        {
+          "start": "086000",
+          "end": "0C0000",
+          "all_FF": true
+        },
+        {
+          "start": "0CF000",
+          "end": "0FF000",
+          "all_FF": true
+        }
+      ]
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\evidence\\original\\ECUFlashReadRR(1).bin",
+      "size": 1048576,
+      "sha256": "2f9c2f8af56e337e9fa31fd5efd4b1f01d3474f78396065ad3fc9a0bd132cbdc",
+      "gap_checks": [
+        {
+          "start": "086000",
+          "end": "0C0000",
+          "all_FF": true
+        },
+        {
+          "start": "0CF000",
+          "end": "0FF000",
+          "all_FF": true
+        }
+      ]
+    }
+  ],
+  "no_execution": [
+    "No EcuFlash process launched",
+    "No provider DLL loaded",
+    "No kernel executed",
+    "No hardware connection",
+    "No flash or RAM device write"
+  ]
+}

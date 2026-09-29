@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "C:\Dev\Astra_A2WC511R\work\gate_closure\romraider_gui\run_gui.py", line 119, in <module>
+    command('open_export',path=export['path']);wait(lambda:len(b.request('status',{})['roms'])==2,45)
+                                               ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Dev\Astra_A2WC511R\work\gate_closure\romraider_gui\run_gui.py", line 60, in wait
+    raise TimeoutError('Wait expired')
+TimeoutError: Wait expired

@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "manual": "Renesas SH-2E SH7058 F-ZTAT Hardware Manual REJ09B0046-0300H Rev3 September2004",
+  "url": "https://www.renesas.com/en/document/mah/sh-2e-sh7058-f-ztat-tm-hardware-manual",
+  "verified_date": "2026-09-26",
+  "local_search": "No matching hardware-manual PDF found in C:/Dev or user Downloads before official Renesas lookup; existing pinned RAM audit cited the same manual.",
+  "references": [
+    {"section": "6.1.3,6.2.2", "pdf_pages": [129,130,132], "supports": "Power-on vector fetch, SP fetch, VBR=0, SR.I=15; unspecified GPRs are scenario poison, not reset zero claims."},
+    {"section": "7.1.3,7.3.2,7.4", "pdf_pages": [145,159,161], "supports": "ICR NMIL read-only reflects explicit NMI pin; priority and exception boundary."},
+    {"section": "9.2", "pdf_pages": [185,194], "supports": "BCR1,BCR2,WCR,RAMER addresses/reset; RAMER nonzero remains a frontier."},
+    {"section": "5.2.2,5.2.3", "pdf_pages": [118], "supports": "SYSCR2 word key3C and clock selector; no implicit oscillator timing."},
+    {"section": "13.1.3,13.2.1..13.2.4", "pdf_pages": [481,482,483,484,485,486], "supports": "WDT keyed writes, reserved read bits, TCNT divisors, interval versus watchdog. Header prose TCSR00 conflicts with register table18 only in reserved read-as-one bits; model uses architectural read18."},
+    {"section": "16.3,16.4.2..16.4.7,16.5.1..16.5.8", "pdf_pages": [568,569,570,574,584,590,591,592,596,597,600,601,602,603,604,605,619,620], "supports": "Both HCAN MCR reset1 and GSR reset0C; explicit idle/no-traffic configuration permits register reset release. Finite flags and mailbox writes only; no transmitted frame or timed synchronization claim."},
+    {"section": "3.2.3", "pdf_pages": [104,105,106], "supports": "SH7058 FPSCR read-only DN/RM=40001 and writable-mask18C60. Device-defined fixed bits are retained despite truncated software-manual mask pseudocode."},
+    {"section": "21.2,22.2..22.12", "pdf_pages": [786,787,846,848,851,853,856,859,861,864,866,869], "supports": "Finite PFC/port word-write addresses; no read latch/pin equivalence and no electrical model."}
+  ],
+  "page_numbering": "Zero-based PDF page indexes as returned by official-source browser, printed page approximately index-42",
+  "software_manual": {"url":"https://www.renesas.com/en/document/mah/sh-2e-software-manual","id":"REJ09B0316-0200 Rev2 May31 2006","sections":["7.2 CMP/PZ,CMP/PL,NOT,MULU.W,STS,SHLR16,MOV.W,XOR,LDC","7.3.16 LDS FPSCR"],"limits":"No FPU arithmetic, exceptions or invented opcode semantics. LDC interrupt-inhibition honored."},
+  "license": "Original interpreter/model; no proprietary simulator code, no manual redistribution. Manual cited only."
+}

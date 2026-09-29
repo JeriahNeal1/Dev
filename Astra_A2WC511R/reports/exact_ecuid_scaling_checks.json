@@ -1,0 +1,86 @@
+[
+  {
+    "id": "E38",
+    "name": "Throttle Plate Opening Angle (4-byte)*",
+    "description": "E38-Actual throttle plate opening percentage. More accurate than the standard Throttle Opening Angle % SSM parameter.",
+    "address": "0xFF4FC0",
+    "length": "4",
+    "conversions": [
+      {
+        "units": "%",
+        "storagetype": "float",
+        "expr": "x/.84",
+        "format": "0.00"
+      }
+    ]
+  },
+  {
+    "id": "E51",
+    "name": "Manifold Absolute Pressure (4-byte)*",
+    "description": "E51-MAP is limited to about 37 psi absolute (about 22 psig at sea level). This parameter has no effective limit.",
+    "address": "0xFF4F30",
+    "length": "4",
+    "conversions": [
+      {
+        "units": "psi absolute",
+        "storagetype": "float",
+        "expr": "x*0.01933677",
+        "format": "0.00"
+      },
+      {
+        "units": "bar absolute",
+        "storagetype": "float",
+        "expr": "x*0.001333224",
+        "format": "0.000"
+      },
+      {
+        "units": "mmHg absolute",
+        "storagetype": "float",
+        "expr": "x",
+        "format": "0"
+      },
+      {
+        "units": "kPa absolute",
+        "storagetype": "float",
+        "expr": "x*0.1333224",
+        "format": "0.00"
+      },
+      {
+        "units": "inHg absolute",
+        "storagetype": "float",
+        "expr": "x*0.03937",
+        "format": "0.00",
+        "gauge_min": "-40",
+        "gauge_max": "60",
+        "gauge_step": "10"
+      }
+    ]
+  },
+  {
+    "id": "E52",
+    "name": "Manifold Relative Sea Level Pressure (4-byte)*",
+    "description": "E52-Same as Manifold Absolute Pressure (Direct) except represented as relative pressure with the assumption of sea level.",
+    "address": "0xFF4F30",
+    "length": "4",
+    "conversions": [
+      {
+        "units": "psi relative sea level",
+        "storagetype": "float",
+        "expr": "(x-760)*0.01933677",
+        "format": "0.00"
+      },
+      {
+        "units": "bar relative sea level",
+        "storagetype": "float",
+        "expr": "(x-760)*0.001333224",
+        "format": "0.000"
+      },
+      {
+        "units": "mmHg relative sea level",
+        "storagetype": "float",
+        "expr": "(x-760)",
+        "format": "0"
+      }
+    ]
+  }
+]

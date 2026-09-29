@@ -1,0 +1,909 @@
+{
+  "schema": 1,
+  "calid": "A2WC511R",
+  "ecuid": "2F12515306",
+  "warning": "Descriptive evidence ledger, NOT a generated MerpMod target header. Names may differ from current IDB; compare before editing.",
+  "symbols": [
+    {
+      "address": "0x000147AC",
+      "name": "sDecodePackedGearRangeByte",
+      "kind": "function",
+      "confidence": "LOCAL_IDB_BYTES_AND_SAVED_BOUNDARIES_VERIFIED",
+      "evidence": [
+        "evidence/original/Pasted text(20260824-214919).txt",
+        "evidence/original/Pasted text(20260824-220054).txt",
+        "docs/CHRONOLOGY.md",
+        "reports/local/ida/initial_static_audit.json"
+      ],
+      "notes": "Expected end-exclusive0x00014802. Re-read the current IDB; reported boundaries are not an exported database.",
+      "units": null,
+      "prior_confidence": "USER_REPORTED_RECOVERED_AND_SAVED"
+    },
+    {
+      "address": "0x00024950",
+      "name": "sUpdateNormalizedGearState",
+      "kind": "function",
+      "confidence": "LOCAL_IDB_BYTES_AND_SAVED_BOUNDARIES_VERIFIED",
+      "evidence": [
+        "evidence/original/Pasted text(20260824-214919).txt",
+        "evidence/original/Pasted text(20260824-220054).txt",
+        "docs/CHRONOLOGY.md",
+        "reports/local/ida/initial_static_audit.json"
+      ],
+      "notes": "Expected end-exclusive0x00024A9C. Re-read the current IDB; reported boundaries are not an exported database.",
+      "units": null,
+      "prior_confidence": "USER_REPORTED_RECOVERED_AND_SAVED"
+    },
+    {
+      "address": "0x00024A9C",
+      "name": "sSetGearStateE8To6",
+      "kind": "function",
+      "confidence": "USER_REPORTED_RECOVERED_AND_SAVED",
+      "evidence": [
+        "evidence/original/Pasted text(20260824-214919).txt",
+        "evidence/original/Pasted text(20260824-220054).txt",
+        "docs/CHRONOLOGY.md"
+      ],
+      "notes": "Expected end-exclusive0x00024AA4. Re-read the current IDB; reported boundaries are not an exported database.",
+      "units": null
+    },
+    {
+      "address": "0x00015A02",
+      "name": "sTestTcuStatusMask02",
+      "kind": "function",
+      "confidence": "LOCAL_IDB_BYTES_AND_SAVED_BOUNDARIES_VERIFIED",
+      "evidence": [
+        "evidence/original/Pasted text(20260824-214919).txt",
+        "evidence/original/Pasted text(20260824-220054).txt",
+        "docs/CHRONOLOGY.md",
+        "reports/local/ida/initial_static_audit.json"
+      ],
+      "notes": "Expected end-exclusive0x00015A16. Re-read the current IDB; reported boundaries are not an exported database.",
+      "units": null,
+      "prior_confidence": "USER_REPORTED_RECOVERED_AND_SAVED"
+    },
+    {
+      "address": "0x00015A2C",
+      "name": "sUpdateTcuDerivedSnapshot",
+      "kind": "function",
+      "confidence": "LOCAL_IDB_BYTES_AND_SAVED_BOUNDARIES_VERIFIED",
+      "evidence": [
+        "evidence/original/Pasted text(20260824-214919).txt",
+        "evidence/original/Pasted text(20260824-220054).txt",
+        "docs/CHRONOLOGY.md",
+        "reports/local/ida/initial_static_audit.json"
+      ],
+      "notes": "Expected end-exclusive0x00015D46. Re-read the current IDB; reported boundaries are not an exported database.",
+      "units": null,
+      "prior_confidence": "USER_REPORTED_RECOVERED_AND_SAVED"
+    },
+    {
+      "address": "0x00015D46",
+      "name": "sResetTcuDerivedSnapshot",
+      "kind": "function",
+      "confidence": "STATIC_SUPPORTED",
+      "evidence": [
+        "evidence/original/Pasted text(20260824-214919).txt",
+        "evidence/original/Pasted text(20260824-220054).txt"
+      ],
+      "notes": "Reset entry has a shared/fall-through block at15D5E; inspect chunks before splitting. Does not itself clear4CA1 in shown path.",
+      "units": null
+    },
+    {
+      "address": "0xFFFF4C8D",
+      "name": "pPackedTargetCurrentGearRange",
+      "kind": "RAM:uint8",
+      "confidence": "STATIC_AND_LIVE_SUPPORTED",
+      "evidence": [
+        "evidence/original/romraiderlog_20260824_143124.csv",
+        "evidence/original/Pasted text(20260824-214919).txt"
+      ],
+      "notes": "Upper nibble target/requested; lower nibble reported current; strong shift-log interpretation, not mechanical engagement proof. 88=P,77=R,00=N;0x11..0x55 stable forward. Snapshot can be stale.",
+      "units": "raw code"
+    },
+    {
+      "address": "0xFFFF4BC1",
+      "name": "pTargetGearRangeCode",
+      "kind": "RAM:uint8",
+      "confidence": "STATIC_AND_LIVE_SUPPORTED",
+      "evidence": [
+        "evidence/original/romraiderlog_20260824_143124.csv",
+        "evidence/original/Pasted text(20260824-214919).txt"
+      ],
+      "notes": "Decoded upper nibble;8 maps0;9..15 hold prior. Target semantics supported by shift timing.",
+      "units": "raw code"
+    },
+    {
+      "address": "0xFFFF4BC2",
+      "name": "pCurrentGearRangeCode",
+      "kind": "RAM:uint8",
+      "confidence": "STATIC_AND_LIVE_SUPPORTED",
+      "evidence": [
+        "evidence/original/romraiderlog_20260824_143124.csv",
+        "evidence/original/Pasted text(20260824-214919).txt"
+      ],
+      "notes": "Decoded lower nibble;0P/N,7Reverse,1..5forward. Code6 accepted by decoder but not observed in provided live logs.",
+      "units": "raw code"
+    },
+    {
+      "address": "0xFFFF52E8",
+      "name": "pNormalizedCurrentGearState",
+      "kind": "RAM:uint8",
+      "confidence": "STATIC_AND_LIVE_SUPPORTED",
+      "evidence": [
+        "evidence/original/romraiderlog_20260824_143124.csv",
+        "evidence/original/Pasted text(20260824-214919).txt"
+      ],
+      "notes": "P/N6,Reverse1,forward1..5. Cannot distinguish reverse from first. Computed branch caps to5 while E9 can6.",
+      "units": "raw code"
+    },
+    {
+      "address": "0xFFFF52E9",
+      "name": "pNormalizedCurrentGearIndex",
+      "kind": "RAM:uint8",
+      "confidence": "STATIC_AND_LIVE_SUPPORTED",
+      "evidence": [
+        "evidence/original/romraiderlog_20260824_143124.csv",
+        "evidence/original/Pasted text(20260824-214919).txt"
+      ],
+      "notes": "P/N0,Reverse1,forward1..5. Other calculated path can6; not a forward-range interlock.",
+      "units": "raw code"
+    },
+    {
+      "address": "0xFFFF4C75",
+      "name": "pPackedTargetCurrentGearRangeSource",
+      "kind": "RAM:uint8",
+      "confidence": "STATIC_COPY_VERIFIED",
+      "evidence": [
+        "evidence/original/Pasted text(20260824-214919).txt",
+        "evidence/original/Pasted text(20260824-220054).txt"
+      ],
+      "notes": "Copied directly to4C8D at15AEC..15AF2. Upstream buffer freshness not proven.",
+      "units": "raw packed code"
+    },
+    {
+      "address": "0xFFFF4CA1",
+      "name": "pTcuDerivedDataValid",
+      "kind": "RAM:uint8",
+      "confidence": "SEMANTICS_UNRESOLVED",
+      "evidence": [
+        "evidence/original/Pasted text(20260824-214919).txt",
+        "evidence/original/Pasted text(20260824-220054).txt"
+      ],
+      "notes": "Historical IDA/logger name retained. Set1 at15B66; tested15C14; cleared15C5A/15D26. Could be monitor-armed/received latch for a particular packet/sequence path. NOT proven global gear freshness.",
+      "units": "raw"
+    },
+    {
+      "address": "0xFFFF4C50",
+      "name": "pTcuStatusFlags_candidate",
+      "kind": "RAM:uint8",
+      "confidence": "BIT_TEST_VERIFIED_MEANING_UNRESOLVED",
+      "evidence": [
+        "evidence/original/Pasted text(20260824-220054).txt"
+      ],
+      "notes": "Mask0x02 tested by15A02; gates monitoring later in updater. Not proven gate for all earlier snapshot copies.",
+      "units": "bitfield"
+    },
+    {
+      "address": "0xFFFF4C74",
+      "name": "pTcuSourceByte74",
+      "kind": "RAM:candidate",
+      "confidence": "STATIC_ACCESS_VERIFIED_SEMANTICS_UNRESOLVED",
+      "evidence": [
+        "evidence/original/Pasted text(20260824-214919).txt",
+        "evidence/original/Pasted text(20260824-220054).txt"
+      ],
+      "notes": "Copied to4C8C.",
+      "units": null
+    },
+    {
+      "address": "0xFFFF4C76",
+      "name": "pTcuSourceByte76",
+      "kind": "RAM:candidate",
+      "confidence": "STATIC_ACCESS_VERIFIED_SEMANTICS_UNRESOLVED",
+      "evidence": [
+        "evidence/original/Pasted text(20260824-214919).txt",
+        "evidence/original/Pasted text(20260824-220054).txt"
+      ],
+      "notes": "Copied to4C8E.",
+      "units": null
+    },
+    {
+      "address": "0xFFFF4C8C",
+      "name": "pTcuSnapshotByte8C",
+      "kind": "RAM:candidate",
+      "confidence": "STATIC_ACCESS_VERIFIED_SEMANTICS_UNRESOLVED",
+      "evidence": [
+        "evidence/original/Pasted text(20260824-214919).txt",
+        "evidence/original/Pasted text(20260824-220054).txt"
+      ],
+      "notes": "Bits consumed by1466E and14818; do not assign all flag semantics.",
+      "units": null
+    },
+    {
+      "address": "0xFFFF4C8E",
+      "name": "pTcuSnapshotByte8E",
+      "kind": "RAM:candidate",
+      "confidence": "STATIC_ACCESS_VERIFIED_SEMANTICS_UNRESOLVED",
+      "evidence": [
+        "evidence/original/Pasted text(20260824-214919).txt",
+        "evidence/original/Pasted text(20260824-220054).txt"
+      ],
+      "notes": "Bits consumed by14882/148A2/148C2; BC3 is derived from it.",
+      "units": null
+    },
+    {
+      "address": "0xFFFF4BC0",
+      "name": "pTcuStateBC0_unknown",
+      "kind": "RAM:candidate",
+      "confidence": "STATIC_ACCESS_VERIFIED_SEMANTICS_UNRESOLVED",
+      "evidence": [
+        "evidence/original/Pasted text(20260824-214919).txt",
+        "evidence/original/Pasted text(20260824-220054).txt"
+      ],
+      "notes": "Constant in one log is not proof it is unused.",
+      "units": null
+    },
+    {
+      "address": "0xFFFF4BC3",
+      "name": "pTcuStateBC3_unknown",
+      "kind": "RAM:candidate",
+      "confidence": "STATIC_ACCESS_VERIFIED_SEMANTICS_UNRESOLVED",
+      "evidence": [
+        "evidence/original/Pasted text(20260824-214919).txt",
+        "evidence/original/Pasted text(20260824-220054).txt"
+      ],
+      "notes": "Derived from4C8E; observed occasional4; consumed by several control routines.",
+      "units": null
+    },
+    {
+      "address": "0xFFFF4C95",
+      "name": "pTcuCopiedSequenceCandidate",
+      "kind": "RAM:candidate",
+      "confidence": "STATIC_ACCESS_VERIFIED_SEMANTICS_UNRESOLVED",
+      "evidence": [
+        "evidence/original/Pasted text(20260824-214919).txt",
+        "evidence/original/Pasted text(20260824-220054).txt"
+      ],
+      "notes": "Copied4C7F; compared with4CA0. Sequence semantics candidate.",
+      "units": null
+    },
+    {
+      "address": "0xFFFF4CA0",
+      "name": "pTcuPreviousByteCandidate",
+      "kind": "RAM:candidate",
+      "confidence": "STATIC_ACCESS_VERIFIED_SEMANTICS_UNRESOLVED",
+      "evidence": [
+        "evidence/original/Pasted text(20260824-214919).txt",
+        "evidence/original/Pasted text(20260824-220054).txt"
+      ],
+      "notes": "End of updater copies4C95 here.",
+      "units": null
+    },
+    {
+      "address": "0xFFFF4C9C",
+      "name": "pTcuCounter9C_candidate",
+      "kind": "RAM:candidate",
+      "confidence": "STATIC_ACCESS_VERIFIED_SEMANTICS_UNRESOLVED",
+      "evidence": [
+        "evidence/original/Pasted text(20260824-214919).txt",
+        "evidence/original/Pasted text(20260824-220054).txt"
+      ],
+      "notes": "Updated/reset and compared with0x3F; timing units unproven.",
+      "units": null
+    },
+    {
+      "address": "0xFFFF4C9D",
+      "name": "pTcuCounter9D_candidate",
+      "kind": "RAM:candidate",
+      "confidence": "STATIC_ACCESS_VERIFIED_SEMANTICS_UNRESOLVED",
+      "evidence": [
+        "evidence/original/Pasted text(20260824-214919).txt",
+        "evidence/original/Pasted text(20260824-220054).txt"
+      ],
+      "notes": "As above; resolve packet association.",
+      "units": null
+    },
+    {
+      "address": "0xFFFF4C9E",
+      "name": "pTcuCounter9E_candidate",
+      "kind": "RAM:candidate",
+      "confidence": "STATIC_ACCESS_VERIFIED_SEMANTICS_UNRESOLVED",
+      "evidence": [
+        "evidence/original/Pasted text(20260824-214919).txt",
+        "evidence/original/Pasted text(20260824-220054).txt"
+      ],
+      "notes": "As above; resolve packet association.",
+      "units": null
+    },
+    {
+      "address": "0xFFFF4C9F",
+      "name": "pTcuCounter9F_candidate",
+      "kind": "RAM:candidate",
+      "confidence": "STATIC_ACCESS_VERIFIED_SEMANTICS_UNRESOLVED",
+      "evidence": [
+        "evidence/original/Pasted text(20260824-214919).txt",
+        "evidence/original/Pasted text(20260824-220054).txt"
+      ],
+      "notes": "Related to4C95/4CA0 comparison; not automatically heartbeat age.",
+      "units": null
+    },
+    {
+      "address": "0xFFFF4C60",
+      "name": "pTcuStatusWord60_candidate",
+      "kind": "RAM:candidate",
+      "confidence": "STATIC_ACCESS_VERIFIED_SEMANTICS_UNRESOLVED",
+      "evidence": [
+        "evidence/original/Pasted text(20260824-214919).txt",
+        "evidence/original/Pasted text(20260824-220054).txt"
+      ],
+      "notes": "Written via24DC and mov.w; helpers read byte. Need representation and polarity.",
+      "units": null
+    },
+    {
+      "address": "0xFFFF4C62",
+      "name": "pTcuStatusWord62_candidate",
+      "kind": "RAM:candidate",
+      "confidence": "STATIC_ACCESS_VERIFIED_SEMANTICS_UNRESOLVED",
+      "evidence": [
+        "evidence/original/Pasted text(20260824-214919).txt",
+        "evidence/original/Pasted text(20260824-220054).txt"
+      ],
+      "notes": "Written via24DC and mov.w; verify meaning and width.",
+      "units": null
+    },
+    {
+      "address": "0xFFFF51E8",
+      "name": "pEngineSpeed",
+      "kind": "RAM:float",
+      "confidence": "PRIOR_IDENTIFICATION_REQUIRES_HOST_RECHECK",
+      "evidence": [
+        "docs/CHRONOLOGY.md",
+        "evidence/legacy_unvalidated/A2WC511R.h.template",
+        "definitions/logger_STD_EN_v370_A2WC511R_tcu_validity_test.xml"
+      ],
+      "notes": "Prior IDA identification. Verify direct scaling against standardP8 before thresholds.",
+      "units": "rpm reported; verify"
+    },
+    {
+      "address": "0xFFFF51D8",
+      "name": "pVehicleSpeed",
+      "kind": "RAM:float",
+      "confidence": "PRIOR_IDENTIFICATION_REQUIRES_HOST_RECHECK",
+      "evidence": [
+        "docs/CHRONOLOGY.md",
+        "evidence/legacy_unvalidated/A2WC511R.h.template",
+        "definitions/logger_STD_EN_v370_A2WC511R_tcu_validity_test.xml"
+      ],
+      "notes": "Prior identification; do not assume mph or km/h from a channel display.",
+      "units": "unproven direct units"
+    },
+    {
+      "address": "0xFFFF4F30",
+      "name": "pManifoldAbsolutePressure",
+      "kind": "RAM:float",
+      "confidence": "PRIOR_IDENTIFICATION_REQUIRES_HOST_RECHECK",
+      "evidence": [
+        "docs/CHRONOLOGY.md",
+        "evidence/legacy_unvalidated/A2WC511R.h.template",
+        "definitions/logger_STD_EN_v370_A2WC511R_tcu_validity_test.xml"
+      ],
+      "notes": "Existing exact-ECUID logger entries use x mmHg absolute; psi=x*0.01933677. Revalidate physical signal.",
+      "units": "mmHg absolute per logger definition"
+    },
+    {
+      "address": "0xFFFF4FC0",
+      "name": "pThrottlePlate",
+      "kind": "RAM:float",
+      "confidence": "PRIOR_IDENTIFICATION_REQUIRES_HOST_RECHECK",
+      "evidence": [
+        "docs/CHRONOLOGY.md",
+        "evidence/legacy_unvalidated/A2WC511R.h.template",
+        "definitions/logger_STD_EN_v370_A2WC511R_tcu_validity_test.xml"
+      ],
+      "notes": "Bundled exact-ECUID E38 calls this actual throttle plate and converts percent=x/0.84. Do not confuse raw value with percent or accelerator request. Prior simple60.0 threshold is not approved.",
+      "units": "percent=raw/0.84 per E38"
+    },
+    {
+      "address": "0xFFFF4D54",
+      "name": "pBrakeCruiseFlags",
+      "kind": "RAM:uint8",
+      "confidence": "PRIOR_IDENTIFICATION_REQUIRES_HOST_RECHECK",
+      "evidence": [
+        "docs/CHRONOLOGY.md",
+        "evidence/legacy_unvalidated/A2WC511R.h.template",
+        "definitions/logger_STD_EN_v370_A2WC511R_tcu_validity_test.xml"
+      ],
+      "notes": "Prior getter decoding:brake08,coast02,resume04. Validate live polarity/use before control.",
+      "units": "bitfield"
+    },
+    {
+      "address": "0x00018012",
+      "name": "sGetCruiseCoastFlags",
+      "kind": "function",
+      "confidence": "PRIOR_IDENTIFICATION_REQUIRES_HOST_RECHECK",
+      "evidence": [
+        "docs/CHRONOLOGY.md",
+        "evidence/legacy_unvalidated/A2WC511R.h.template",
+        "definitions/logger_STD_EN_v370_A2WC511R_tcu_validity_test.xml"
+      ],
+      "notes": "Testsmask02 in4D54.",
+      "units": "boolean"
+    },
+    {
+      "address": "0x00018026",
+      "name": "sGetCruiseResumeFlags",
+      "kind": "function",
+      "confidence": "PRIOR_IDENTIFICATION_REQUIRES_HOST_RECHECK",
+      "evidence": [
+        "docs/CHRONOLOGY.md",
+        "evidence/legacy_unvalidated/A2WC511R.h.template",
+        "definitions/logger_STD_EN_v370_A2WC511R_tcu_validity_test.xml"
+      ],
+      "notes": "Testsmask04 in4D54.",
+      "units": "boolean"
+    },
+    {
+      "address": "0x0001804E",
+      "name": "sGetBrakeFlags",
+      "kind": "function",
+      "confidence": "PRIOR_IDENTIFICATION_REQUIRES_HOST_RECHECK",
+      "evidence": [
+        "docs/CHRONOLOGY.md",
+        "evidence/legacy_unvalidated/A2WC511R.h.template",
+        "definitions/logger_STD_EN_v370_A2WC511R_tcu_validity_test.xml"
+      ],
+      "notes": "Testsmask08 in4D54.",
+      "units": "boolean"
+    },
+    {
+      "address": "0x0000209C",
+      "name": "sPull2DFloat",
+      "kind": "function",
+      "confidence": "PRIOR_IDENTIFICATION_REQUIRES_HOST_RECHECK",
+      "evidence": [
+        "docs/CHRONOLOGY.md",
+        "evidence/legacy_unvalidated/A2WC511R.h.template",
+        "definitions/logger_STD_EN_v370_A2WC511R_tcu_validity_test.xml"
+      ],
+      "notes": "MAF interpolation calltarget verified; audit ABI.",
+      "units": ""
+    },
+    {
+      "address": "0x00002150",
+      "name": "sPull3DFloat",
+      "kind": "function",
+      "confidence": "PRIOR_IDENTIFICATION_REQUIRES_HOST_RECHECK",
+      "evidence": [
+        "docs/CHRONOLOGY.md",
+        "evidence/legacy_unvalidated/A2WC511R.h.template",
+        "definitions/logger_STD_EN_v370_A2WC511R_tcu_validity_test.xml"
+      ],
+      "notes": "Prior 3D interpolation identification; audit ABI.",
+      "units": ""
+    },
+    {
+      "address": "0x000079A8",
+      "name": "sMafCalc",
+      "kind": "function",
+      "confidence": "PRIOR_IDENTIFICATION_REQUIRES_HOST_RECHECK",
+      "evidence": [
+        "docs/CHRONOLOGY.md",
+        "evidence/legacy_unvalidated/A2WC511R.h.template",
+        "definitions/logger_STD_EN_v370_A2WC511R_tcu_validity_test.xml"
+      ],
+      "notes": "Prior user function recovery.",
+      "units": ""
+    },
+    {
+      "address": "0x00014B20",
+      "name": "sWgdc",
+      "kind": "function",
+      "confidence": "PRIOR_IDENTIFICATION_REQUIRES_HOST_RECHECK",
+      "evidence": [
+        "docs/CHRONOLOGY.md",
+        "evidence/legacy_unvalidated/A2WC511R.h.template",
+        "definitions/logger_STD_EN_v370_A2WC511R_tcu_validity_test.xml"
+      ],
+      "notes": "Corrected from erroneous earlier rev-limit label.",
+      "units": ""
+    },
+    {
+      "address": "0x00014DC6",
+      "name": "sTargetBoost",
+      "kind": "function",
+      "confidence": "PRIOR_IDENTIFICATION_REQUIRES_HOST_RECHECK",
+      "evidence": [
+        "docs/CHRONOLOGY.md",
+        "evidence/legacy_unvalidated/A2WC511R.h.template",
+        "definitions/logger_STD_EN_v370_A2WC511R_tcu_validity_test.xml"
+      ],
+      "notes": "Prior family/call-context-supported name; verify complete function.",
+      "units": ""
+    },
+    {
+      "address": "0x000151DC",
+      "name": "sWgdc_loc",
+      "kind": "function",
+      "confidence": "PRIOR_IDENTIFICATION_REQUIRES_HOST_RECHECK",
+      "evidence": [
+        "docs/CHRONOLOGY.md",
+        "evidence/legacy_unvalidated/A2WC511R.h.template",
+        "definitions/logger_STD_EN_v370_A2WC511R_tcu_validity_test.xml"
+      ],
+      "notes": "Prior context-supported name; verify effective hook distinction.",
+      "units": ""
+    },
+    {
+      "address": "0x000317D8",
+      "name": "sRevLimStart",
+      "kind": "function",
+      "confidence": "PRIOR_IDENTIFICATION_REQUIRES_HOST_RECHECK",
+      "evidence": [
+        "docs/CHRONOLOGY.md",
+        "evidence/legacy_unvalidated/A2WC511R.h.template",
+        "definitions/logger_STD_EN_v370_A2WC511R_tcu_validity_test.xml"
+      ],
+      "notes": "Hook oldvalue matches.",
+      "units": ""
+    },
+    {
+      "address": "0x0003180E",
+      "name": "sRevLimEnd",
+      "kind": "patch_marker",
+      "confidence": "PRIOR_IDENTIFICATION_REQUIRES_HOST_RECHECK",
+      "evidence": [
+        "docs/CHRONOLOGY.md",
+        "evidence/legacy_unvalidated/A2WC511R.h.template",
+        "definitions/logger_STD_EN_v370_A2WC511R_tcu_validity_test.xml"
+      ],
+      "notes": "Candidate last branch marker; NOT end-exclusive function bound.",
+      "units": ""
+    },
+    {
+      "address": "0xFFFF5A30",
+      "name": "pFlagsRevLim_candidate",
+      "kind": "RAM:uint8",
+      "confidence": "PRIOR_IDENTIFICATION_REQUIRES_HOST_RECHECK",
+      "evidence": [
+        "docs/CHRONOLOGY.md",
+        "evidence/legacy_unvalidated/A2WC511R.h.template",
+        "definitions/logger_STD_EN_v370_A2WC511R_tcu_validity_test.xml"
+      ],
+      "notes": "Starter mask0x80; exact flag/write behavior not finally verified here.",
+      "units": "bitfield"
+    },
+    {
+      "address": "0x0000F928",
+      "name": "sMemoryReset",
+      "kind": "function",
+      "confidence": "PRIOR_IDENTIFICATION_REQUIRES_HOST_RECHECK",
+      "evidence": [
+        "docs/CHRONOLOGY.md",
+        "evidence/legacy_unvalidated/A2WC511R.h.template",
+        "definitions/logger_STD_EN_v370_A2WC511R_tcu_validity_test.xml"
+      ],
+      "notes": "PointerD324verified; inspect complete initialization bounds.",
+      "units": ""
+    },
+    {
+      "address": "0x00000AAC",
+      "name": "ResetEntry",
+      "kind": "function",
+      "confidence": "PRIOR_IDENTIFICATION_REQUIRES_HOST_RECHECK",
+      "evidence": [
+        "docs/CHRONOLOGY.md",
+        "evidence/legacy_unvalidated/A2WC511R.h.template",
+        "definitions/logger_STD_EN_v370_A2WC511R_tcu_validity_test.xml"
+      ],
+      "notes": "Resetvectorspoint here.",
+      "units": ""
+    },
+    {
+      "address": "0x00007A04",
+      "name": "hMafCalc",
+      "kind": "ROM:pointer32be",
+      "confidence": "OLD_VALUE_MATCHES_HISTORICAL_READS",
+      "evidence": [
+        "reports/rom_audit_raw.json",
+        "reports/rom_audit_rr.json"
+      ],
+      "notes": "Expected oldvalue0x0000209C; matching pointer does not validate replacing it. Recheck against actual stock/working baseline.",
+      "units": null
+    },
+    {
+      "address": "0x000122B4",
+      "name": "hWgdc",
+      "kind": "ROM:pointer32be",
+      "confidence": "OLD_VALUE_MATCHES_HISTORICAL_READS",
+      "evidence": [
+        "reports/rom_audit_raw.json",
+        "reports/rom_audit_rr.json"
+      ],
+      "notes": "Expected oldvalue0x00014B20; matching pointer does not validate replacing it. Recheck against actual stock/working baseline.",
+      "units": null
+    },
+    {
+      "address": "0x000127E8",
+      "name": "hRevLimDelete",
+      "kind": "ROM:pointer32be",
+      "confidence": "OLD_VALUE_MATCHES_HISTORICAL_READS",
+      "evidence": [
+        "reports/rom_audit_raw.json",
+        "reports/rom_audit_rr.json"
+      ],
+      "notes": "Expected oldvalue0x000317D8; matching pointer does not validate replacing it. Recheck against actual stock/working baseline.",
+      "units": null
+    },
+    {
+      "address": "0x0000D324",
+      "name": "hMemoryReset",
+      "kind": "ROM:pointer32be",
+      "confidence": "OLD_VALUE_MATCHES_HISTORICAL_READS",
+      "evidence": [
+        "reports/rom_audit_raw.json",
+        "reports/rom_audit_rr.json"
+      ],
+      "notes": "Expected oldvalue0x0000F928; matching pointer does not validate replacing it. Recheck against actual stock/working baseline.",
+      "units": null
+    },
+    {
+      "address": "0x0000FFF8",
+      "name": "hMemoryResetLimit",
+      "kind": "ROM:pointer32be",
+      "confidence": "OLD_VALUE_MATCHES_HISTORICAL_READS",
+      "evidence": [
+        "reports/rom_audit_raw.json",
+        "reports/rom_audit_rr.json"
+      ],
+      "notes": "Expected oldvalue0xFFFFBFFB; matching pointer does not validate replacing it. Recheck against actual stock/working baseline.",
+      "units": null
+    },
+    {
+      "address": "0x000114E0",
+      "name": "hTiming_candidate",
+      "kind": "ROM:pointer32be",
+      "confidence": "OLD_VALUE_MATCHES_HISTORICAL_READS",
+      "evidence": [
+        "reports/rom_audit_raw.json",
+        "reports/rom_audit_rr.json"
+      ],
+      "notes": "Expected oldvalue0x00035B96; matching pointer does not validate replacing it. Recheck against actual stock/working baseline.",
+      "units": null
+    },
+    {
+      "address": "0x0001281C",
+      "name": "hPolf_candidate",
+      "kind": "ROM:pointer32be",
+      "confidence": "OLD_VALUE_MATCHES_HISTORICAL_READS",
+      "evidence": [
+        "reports/rom_audit_raw.json",
+        "reports/rom_audit_rr.json"
+      ],
+      "notes": "Expected oldvalue0x0002E2E8; matching pointer does not validate replacing it. Recheck against actual stock/working baseline.",
+      "units": null
+    },
+    {
+      "address": "0x00035C3C",
+      "name": "hTimingPull3D_candidate",
+      "kind": "ROM:pointer32be",
+      "confidence": "OLD_VALUE_MATCHES_HISTORICAL_READS",
+      "evidence": [
+        "reports/rom_audit_raw.json",
+        "reports/rom_audit_rr.json"
+      ],
+      "notes": "Expected oldvalue0x00002150; matching pointer does not validate replacing it. Recheck against actual stock/working baseline.",
+      "units": null
+    },
+    {
+      "address": "0x00035C40",
+      "name": "hBaseTimingTable_candidate",
+      "kind": "ROM:pointer32be",
+      "confidence": "OLD_VALUE_MATCHES_HISTORICAL_READS",
+      "evidence": [
+        "reports/rom_audit_raw.json",
+        "reports/rom_audit_rr.json"
+      ],
+      "notes": "Expected oldvalue0x00084944; matching pointer does not validate replacing it. Recheck against actual stock/working baseline.",
+      "units": null
+    },
+    {
+      "address": "0x0002E538",
+      "name": "hPolfPull3D_candidate",
+      "kind": "ROM:pointer32be",
+      "confidence": "OLD_VALUE_MATCHES_HISTORICAL_READS",
+      "evidence": [
+        "reports/rom_audit_raw.json",
+        "reports/rom_audit_rr.json"
+      ],
+      "notes": "Expected oldvalue0x00002150; matching pointer does not validate replacing it. Recheck against actual stock/working baseline.",
+      "units": null
+    },
+    {
+      "address": "0x0002E544",
+      "name": "hPolfTable_candidate",
+      "kind": "ROM:pointer32be",
+      "confidence": "OLD_VALUE_MATCHES_HISTORICAL_READS",
+      "evidence": [
+        "reports/rom_audit_raw.json",
+        "reports/rom_audit_rr.json"
+      ],
+      "notes": "Expected oldvalue0x000842E4; matching pointer does not validate replacing it. Recheck against actual stock/working baseline.",
+      "units": null
+    },
+    {
+      "address": "0x00002000",
+      "name": "dCalId",
+      "kind": "ROM:string",
+      "confidence": "IDENTITY_VERIFIED_IN_ARCHIVED_READS",
+      "evidence": [
+        "reports/rom_audit_raw.json"
+      ],
+      "notes": "9bytes A2WC511R followed by NUL.",
+      "units": null
+    },
+    {
+      "address": "0x000CDAD8",
+      "name": "dEcuId",
+      "kind": "ROM:5bytes",
+      "confidence": "IDENTITY_VERIFIED_IN_ARCHIVED_READS",
+      "evidence": [
+        "reports/rom_audit_raw.json"
+      ],
+      "notes": "2F12515306. Position verified only for these matching binaries.",
+      "units": null
+    },
+    {
+      "address": "0x000FFFF8",
+      "name": "RomEndPointer_F60C",
+      "kind": "ROM:pointer32be",
+      "confidence": "PRIOR_RAW_BYTES_VERIFIED",
+      "evidence": [
+        "docs/CHRONOLOGY.md"
+      ],
+      "notes": "Value0xF60C. This is ROM0x0FFFF8, NOT reset-limit literal0x0FFF8.",
+      "units": null
+    },
+    {
+      "address": "0x000FFFFC",
+      "name": "CalIdPointer",
+      "kind": "ROM:pointer32be",
+      "confidence": "PRIOR_RAW_BYTES_VERIFIED",
+      "evidence": [
+        "docs/CHRONOLOGY.md"
+      ],
+      "notes": "Value0x2000.",
+      "units": null
+    },
+    {
+      "address": "0x000E1000",
+      "name": "pRomHole_candidate",
+      "kind": "ROM:allocation_candidate",
+      "confidence": "NOT_PROVEN_FREE",
+      "evidence": [
+        "evidence/legacy_unvalidated/A2WC511R.h.template",
+        "reports/local/ABI_ALLOCATION_REVIEW.md"
+      ],
+      "notes": "No approved end/size; FFscan is discovery only. Main run: experimental linking only; allocation, runtime task-stack and indirect/DMA coexistence still unproven.",
+      "units": null
+    },
+    {
+      "address": "0xFFFF7400",
+      "name": "pRamHole_candidate",
+      "kind": "RAM:allocation_candidate",
+      "confidence": "NOT_PROVEN_FREE",
+      "evidence": [
+        "docs/CHRONOLOGY.md",
+        "reports/local/ABI_ALLOCATION_REVIEW.md"
+      ],
+      "notes": "Related-family precedent. No approved end/size; may be indirectly used. Never write testpatterns here before allocation proof. Main run: experimental linking only; allocation, runtime task-stack and indirect/DMA coexistence still unproven.",
+      "units": null
+    },
+    {
+      "address": "0x00011ADC",
+      "name": "hPackedDecoderDiagnostic_candidate",
+      "kind": "ROM:pointer32be",
+      "confidence": "LOCAL_OLD_BYTES_AND_SINGLE_POOL_LOAD_VERIFIED_NOT_TIMING_ACCEPTED",
+      "evidence": [
+        "reports/local/ida/hook_ownership.json",
+        "reports/local/ABI_ALLOCATION_REVIEW.md"
+      ],
+      "notes": "Old000147AC; one raw PC-relative pool load1193A into r2, jsr1193C, nop1193E, continuation11940. Experimental OEM-first wrapper only; allocation/stack/cadence gates open.",
+      "units": null
+    },
+    {
+      "address": "0x0000FA84",
+      "name": "oem_validate_rom_checksum_range",
+      "kind": "function",
+      "confidence": "LOCAL_OPCODE_AND_SCOPED_EXECUTION_VERIFIED",
+      "evidence": [
+        "reports/local/gate_closure/rom/routine_regression.json",
+        "reports/local/gate_closure/ida/metadata_changes.json"
+      ],
+      "notes": "Exact range predicate and7boundarycases verified; name persisted inIDB.",
+      "units": null
+    },
+    {
+      "address": "0x0000F75E",
+      "name": "oem_additive_checksum_inner_loop",
+      "kind": "instruction_fragment",
+      "confidence": "LOCAL_OPCODE_AND_SCOPED_EXECUTION_VERIFIED",
+      "evidence": [
+        "reports/local/gate_closure/rom/routine_regression.json",
+        "reports/local/gate_closure/ida/metadata_changes.json"
+      ],
+      "notes": "Actual32-bitBE loop tested onstock/payload/endchunks. Descriptor0 reads throughFFAF4. Commentonly persisted; label descriptive.",
+      "units": null
+    },
+    {
+      "address": "0x0007A79C",
+      "name": "calibration_scan_exclusive_end_load",
+      "kind": "instruction",
+      "confidence": "LOCAL_OPCODE_AND_SCOPED_EXECUTION_VERIFIED",
+      "evidence": [
+        "reports/local/gate_closure/rom/routine_regression.json",
+        "reports/local/gate_closure/ida/metadata_changes.json"
+      ],
+      "notes": "LoadsCE754 from7A820. Boundedrolling-sum cases andwrong-boundnegativecontrol verified. Commentonly persisted; finishingFPUhelper notverified.",
+      "units": null
+    }
+  ],
+  "v3_note": "Exact stock-candidate binary and saved IDB now included in original Dev snapshot. User-reported symbol recovery remains reported until official IDA MCP reads the current DB; no metadata confidence upgraded solely from the file existing.",
+  "local_idb_verified_utc": "2026-09-25T20:11:28.111985+00:00",
+  "local_idb_rom_sha256": "a34c4ce8238bf28bdc18c191bbe73b2179130aa9846e952a6fa332bae442de96",
+  "M07_research_ledger": {
+    "scope": "Qualified evidence, not generated addresses or ownership acceptance",
+    "evidence": "reports/local/m07_residency/OWNERSHIP_FRAGMENTS.json",
+    "division": {
+      "entry": "0x4260",
+      "candidate_tail": [
+        "0x42A4",
+        "0x430A"
+      ],
+      "conditional_bytes": 102,
+      "owned_bytes": 0
+    },
+    "range_switch": {
+      "entry": "0x1466E",
+      "changed_start": "0x1473C",
+      "candidate_tail": [
+        "0x14770",
+        "0x147AC"
+      ],
+      "conditional_bytes": 60,
+      "owned_bytes": 0
+    },
+    "default_live_path": "0x484B0; project extension point, not unused code",
+    "caller_directed_boot_target": "0x0042 JMP @R4; incomplete admissible target restriction",
+    "IDA_metadata_report": "reports/local/m07_residency/ida/M07_METADATA_WRITES.json",
+    "host_observation_addresses": [
+      "0xFFFF4C75",
+      "0xFFFF4C8D",
+      "0xFFFF4CA1",
+      "0xFFFF4C50",
+      "0xFFFF4BC1",
+      "0xFFFF4BC2"
+    ]
+  },
+  "comparative_evidence": {
+    "registry": "reports/local/diaphora/correspondence_final_01/FUNCTION_CORRESPONDENCE.sqlite",
+    "review_queue": "reports/local/diaphora/correspondence_final_01/METADATA_IMPORT_REVIEW_QUEUE.json",
+    "automatic_imports": false,
+    "ownership_status": "FAIL_ECU_RESIDENCY_FROZEN",
+    "authoritative_IDB": "C:\\Dev\\SubaruRoms\\OEM\\A2WC511R_STOCK_ROMRAIDER_RECOVERED_20260926.i64",
+    "healthy_candidate": "work/diaphora/idbs/recovery_candidate_01.i64",
+    "candidate_not_promoted": false
+  },
+  "prehardware_evidence": {
+    "IDB_promotion": "reports/local/prehardware/IDB_PROMOTION.json",
+    "unqualified_function_queue": "reports/local/prehardware/UNQUALIFIED_FUNCTION_REVIEW_QUEUE.json",
+    "new_persisted_names_or_function_boundaries": 0,
+    "ordinary_SSM_identity_evidence": "reports/local/prehardware/acquisition/NATIVE_SSM_ATTESTATION.json",
+    "BF_response_length": 62,
+    "BF_ECU_ID_frame_offsets": [
+      8,
+      13
+    ],
+    "ROM_residency_status": "FAIL_FROZEN"
+  }
+}

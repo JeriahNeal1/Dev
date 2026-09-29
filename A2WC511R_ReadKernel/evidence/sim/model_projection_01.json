@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "status": "PASS",
+  "classification": "SCOPED_OBSERVATIONAL_REFINEMENT_OF_SAVED_FULL_RUN_MODELS",
+  "kernel_sha256": "3d70abfb8617b87e1b9c52724fd27ed4066ba231818994e780c8ba3006de273f",
+  "final_model_sources": {
+    "core.py": "caf6571a836676b82bec8f8a5eaa356590532e15931fae2da4b5822fe8ef0f90",
+    "cpu.py": "5043dafdfe59447cb8d906f7570907c472e1d638deb507dc4af8546e9b0f1980",
+    "fast_step.py": "029bb2b484911289b19e5cdbad35bbbbdc80af05420e91dad6884e0ff0484cfa",
+    "harness.py": "30dd6a92729cd54772a10e5f28a584818707b413eb4235f82df04cde8b44e3a3",
+    "memory.py": "fbce26a55a2cce274394fa436c1e36e2342d0635c68c5b6dfeba59672f00d638",
+    "sci.py": "87a2eda0af0c535a519a165ce8b8aec517cfefe0305df136761aa91b8f768760",
+    "__init__.py": "8e8b1da117fdc2ba4fe06edfc32b9c8d67176ab69a9470ee21151018bc85fbd8"
+  },
+  "assumptions": [
+    "tx_load_ticks=tx_complete_ticks=rx_gap_ticks=1, as in saved full-run profiles",
+    "CPU executes one instruction then one peripheral tick; no asynchronous fault injected into a half instruction",
+    "Kernel has at most one MMIO transaction per instruction; TX actions happen only through actual TDR/SSR stores",
+    "No source mutation relabeling: original full runs retain their saved source hashes"
+  ],
+  "inductive_argument": [
+    "At an instruction boundary both TX stages are empty under the collapsed one-tick profile.",
+    "A TDR store changes the same TDR byte and tdr_written flag in both versions.",
+    "A qualified SSR.TDRE-clear changes the same visible SSR bits; the old model holds a pending character and the new model holds a submitted buffer byte.",
+    "The immediately following peripheral tick completes that byte in both versions. The new model performs TDR-to-TSR load and completion in that one declared abstract tick.",
+    "Both append the same byte, set TDRE/TEND, and are empty again before the next instruction. Non-TX transitions and RX scheduling are unchanged.",
+    "Therefore every CPU-visible value, memory event, control edge and transmitted byte is identical by induction for arbitrary request/ROM bytes under this profile.",
+    "The new internal shift-register-loaded event is intentionally additional evidence; its internal scheduling digest is not asserted equal.",
+    "Old-model TE0-while-pending unsupported path is unreachable at instruction boundaries in this collapsed profile. Explicit delayed-pipeline abort tests use the new model."
+  ],
+  "concrete_per_step_crosschecks": [
+    {
+      "status": "PASS",
+      "saved_SCI_source": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\sim\\model_v1\\sci.py",
+      "saved_SCI_sha256": "fba8fa3e78e17ac926149a314cd8f0b34837c126a83f03906af007502cf884ba",
+      "scenario": "ordinary_then_reject",
+      "instruction_steps_compared": 25516,
+      "memory_event_sha256": "b9e5a2ebabd8d5cdb6e914034818a9f772e2d9c520ce09bcd3407bea249667b1",
+      "execution_sha256": "8ce78142757334e7cc2fa51f5d430b26162fbe89ec08e347e849506974f5c6c5",
+      "transmitted_sha256": "70e4335f3f15499f4ec2c6bbc2f0370a2d347f9537f9a1a3783b97d0037b3c74"
+    },
+    {
+      "status": "PASS",
+      "saved_SCI_source": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\sim\\model_v1\\sci.py",
+      "saved_SCI_sha256": "fba8fa3e78e17ac926149a314cd8f0b34837c126a83f03906af007502cf884ba",
+      "scenario": "terminal_complete",
+      "instruction_steps_compared": 15071,
+      "memory_event_sha256": "3bcbd6980d9203b912ea180c5a65bbd0f9a393d86c87bbfd3c7d8847d1f95344",
+      "execution_sha256": "b05aedca3d340f2e337946527c05337804af3dcae0e8f4f933aee174f241d82a",
+      "transmitted_sha256": "02d9c4a9889790357860fbb307d1d0ccb104bb23a07871364bda31cc03d1c04b"
+    },
+    {
+      "status": "PASS",
+      "saved_SCI_source": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\sim\\model_v2\\sci.py",
+      "saved_SCI_sha256": "6f3484612edc1dbfa91fe6114d97ca01eb9984fb295e74f32151e35c2db19032",
+      "scenario": "ordinary_then_reject",
+      "instruction_steps_compared": 25516,
+      "memory_event_sha256": "b9e5a2ebabd8d5cdb6e914034818a9f772e2d9c520ce09bcd3407bea249667b1",
+      "execution_sha256": "8ce78142757334e7cc2fa51f5d430b26162fbe89ec08e347e849506974f5c6c5",
+      "transmitted_sha256": "70e4335f3f15499f4ec2c6bbc2f0370a2d347f9537f9a1a3783b97d0037b3c74"
+    },
+    {
+      "status": "PASS",
+      "saved_SCI_source": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\sim\\model_v2\\sci.py",
+      "saved_SCI_sha256": "6f3484612edc1dbfa91fe6114d97ca01eb9984fb295e74f32151e35c2db19032",
+      "scenario": "terminal_complete",
+      "instruction_steps_compared": 15071,
+      "memory_event_sha256": "3bcbd6980d9203b912ea180c5a65bbd0f9a393d86c87bbfd3c7d8847d1f95344",
+      "execution_sha256": "b05aedca3d340f2e337946527c05337804af3dcae0e8f4f933aee174f241d82a",
+      "transmitted_sha256": "02d9c4a9889790357860fbb307d1d0ccb104bb23a07871364bda31cc03d1c04b"
+    }
+  ],
+  "not_claimed": [
+    "Cycle/baud/electrical timing",
+    "Equivalence for arbitrary delayed schedules",
+    "That saved full runs used the newer model",
+    "That the terminal-state fixture exercised preceding ROM blocks"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "target": "A2WC511R",
+  "exact_required_span": [
+    4294931456,
+    4294931488
+  ],
+  "required_bytes": 32,
+  "frozen_build": "m0_final_05",
+  "identified_software_paths": "PASS_SCOPED",
+  "exclusive_ram_ownership": "FAIL_TO_ESTABLISH",
+  "physical_validation": "NOT_PERFORMED",
+  "production_release_allowed": false,
+  "approved_alternative_ram_location": null,
+  "software_gap": "Unresolved CPU indirect control/address paths and full interrupt/context invariants; literal/DMA bounds are insufficient for exclusive ownership.",
+  "smallest_physical_observation": "Candidate32 and boundary access/writer-PC observation after boot/lazy-init across qualified operating/reset modes, plus actual stack nesting, DMA destinations and timer service intervals; finite observation does not close software gaps.",
+  "artifacts": [
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\gate_closure\\ram\\ram_path_audit.json",
+      "sha256": "f9160fbb359508181a6cdbbd9e44a71236345742b2e6a7d01190206fdedecea5"
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\gate_closure\\ram\\ram_path_audit.py",
+      "sha256": "17eb2fcd844fd2b6c8a5c9b44240294ce4a1e644585a7da5ad00fcbf2d04d8cb"
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\gate_closure\\ram\\static_inventory.json",
+      "sha256": "5f59daa34b2418919cd393bd141b5a8ec069287a8a268884bdf3407de882618c"
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\gate_closure\\ram\\ram_static_inventory.py",
+      "sha256": "960134c186677012905e907f86c3308ff190d8c4a4e6e408a6159c01f8aa91bb"
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\gate_closure\\ram\\RAM_OWNERSHIP_REVIEW.md",
+      "sha256": "70a19b5d41a620602967f9bf31699ce9834a9c354e6a85021e3c33abaa4e26c1"
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\gate_closure\\rom\\reachability.json",
+      "sha256": "f5158dc497e7b8a2fdb1c04f2276e1d4b31fc3f355e24e3fe14b961731f4d2d0"
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\gate_closure\\runtime\\20260925T211558.608898Z_gate_closure_runtime\\ram_pattern_FA58.json",
+      "sha256": "53949cb338a91bfaca38ef2a924e346c8c5d1858762ff1309527f97361d479d5"
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\gate_closure\\runtime\\20260925T211558.608898Z_gate_closure_runtime\\dma_setup_C31E.json",
+      "sha256": "50730e9e72f7ab11468af099cce57b2eec6397bcc10af1782789d5daecb7e7d9"
+    }
+  ]
+}

@@ -1,0 +1,726 @@
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+   524288    64 8192 allocating memory for b-tree...
+  4399104   537 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+  5185536            total memory allocated
+
+Loading processor module C:\Program Files\IDA Professional 9.4\procs\sh3.dll for SH4B...OK
+Loading type libraries...
+Autoanalysis subsystem has been initialized.
+Database for file 'A2WC511R_STOCK_ROMRAIDER.bin' has been loaded.
+Using type parser: legacy
+NOTE: The current processor does not have full support of the type system
+Some function prototypes and other things may be wrong.
+---------------------------------------------------------------------------------------------
+Python 3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)] 
+IDAPython 64-bit v9.4.0 (c) The IDAPython Team <https://github.com/HexRaysSA/ida-sdk/issues>
+---------------------------------------------------------------------------------------------
+Python>import ida_bytes
+Python>import ida_name
+Python>import ida_funcs
+Python>import idc
+Python>import ida_auto
+Python>ida_name.set_name(
+    0x14B20,
+    "sWgdc",
+    ida_name.SN_FORCE
+)
+True
+Python>ida_bytes.del_items(
+    0x14B20,
+    ida_bytes.DELIT_SIMPLE,
+    2
+)
+True
+Python>print("WGDC first insn:", idc.create_insn(0x14B20))
+WGDC first insn: 2
+Python>ida_auto.plan_and_wait(0x14B20, 0x15200)
+0x1
+Python>if not ida_funcs.get_func(0x14B20):
+    print("Create WGDC function:", ida_funcs.add_func(0x14B20))
+Python>ida_bytes.del_items(
+    0x317D8,
+    ida_bytes.DELIT_SIMPLE,
+    2
+)
+<string>:1: DeprecationWarning: get_func() is deprecated, use get_func_start or get_func_entry_info()
+Create WGDC function: True
+Python>print("Rev limiter first insn:", idc.create_insn(0x317D8))
+Rev limiter first insn: 2
+Python>ida_auto.plan_and_wait(0x317D8, 0x31840)
+0x1
+Python>ida_name.set_name(
+    0x317D8,
+    "sRevLimStart",
+    ida_name.SN_FORCE
+)
+True
+Python>ida_name.set_name(
+    0x3180E,
+    "sRevLimEnd",
+    ida_name.SN_FORCE
+)
+True
+Python>if not ida_funcs.get_func(0x317D8):
+    print("Create rev-limit function:", ida_funcs.add_func(0x317D8))
+Python>for ea in [0x209C, 0x2150, 0x79A8, 0x14B20, 0x317D8]:
+    f = ida_funcs.get_func(ea)
+    print(
+        f"{ea:08X}",
+        ida_name.get_name(ea),
+        "FUNCTION" if f else "NOT FUNCTION"
+    )
+Python>import ida_bytes
+Create rev-limit function: True
+0000209C sPull2DFloat FUNCTION
+00002150 sPull3DFloat FUNCTION
+000079A8 sMafCalc FUNCTION
+00014B20 sWgdc FUNCTION
+000317D8 sRevLimStart FUNCTION
+Python>def be32(ea):
+    return int.from_bytes(
+        ida_bytes.get_bytes(ea, 4),
+        "big"
+    )
+Python>tests = {
+    0x07A04: 0x0000209C,   # MAF calc -> Pull2DFloat
+    0x122B4: 0x00014B20,   # WGDC hook -> sWgdc
+    0x127E8: 0x000317D8,   # Rev limiter hook -> sRevLimStart
+    0x0D324: 0x0000F928,   # Memory-reset hook
+    0x0FFF8: 0xFFFFBFFB,   # Memory-reset upper limit
+}
+Python>for ea, expected in tests.items():
+    actual = be32(ea)
+    print(
+        f"{ea:08X}: "
+        f"{actual:08X} "
+        f"expected {expected:08X} "
+        f"{'OK' if actual == expected else 'MISMATCH'}"
+    )
+Python>
+00007A04: 0000209C expected 0000209C OK
+000122B4: 00014B20 expected 00014B20 OK
+000127E8: 000317D8 expected 000317D8 OK
+0000D324: 0000F928 expected 0000F928 OK
+0000FFF8: FFFFBFFB expected FFFFBFFB OK
+Python>import ida_bytes
+Python>import ida_name
+Python>import ida_auto
+Python>import ida_ua
+Python>import idc
+Python>flag_funcs = {
+    0x18012: "sGetCruiseCoastFlags",
+    0x18026: "sGetCruiseResumeFlags",
+    0x1804E: "sGetBrakeFlags",
+}
+Python>for ea, name in flag_funcs.items():
+    ida_bytes.del_items(ea, ida_bytes.DELIT_SIMPLE, 2)
+
+    print(
+        name,
+        hex(ea),
+        "create_insn =",
+        idc.create_insn(ea)
+    )
+
+    ida_auto.plan_and_wait(ea, ea + 0x30)
+
+    ida_name.set_name(
+        ea,
+        name,
+        ida_name.SN_FORCE
+    )
+Python>
+sGetCruiseCoastFlags 0x18012 create_insn = 2
+sGetCruiseResumeFlags 0x18026 create_insn = 2
+sGetBrakeFlags 0x1804e create_insn = 2
+Python>for ea, name in flag_funcs.items():
+    print("\n============================")
+    print(name, f"@ {ea:08X}")
+    print("RAW:", ida_bytes.get_bytes(ea, 0x20).hex(" "))
+
+    cur = ea
+    for i in range(10):
+        size = ida_ua.decode_insn(ida_ua.insn_t(), cur)
+
+        if size <= 0:
+            print(f"{cur:08X}: <decode failed>")
+            break
+
+        print(
+            f"{cur:08X}:",
+            idc.generate_disasm_line(
+                cur,
+                idc.GENDSM_FORCE_CODE
+            )
+        )
+
+        cur += size
+Python>
+
+============================
+sGetCruiseCoastFlags @ 00018012
+RAW: d0 5b 60 00 c8 02 00 29 70 ff 60 0b 88 01 00 29 00 0b 00 09 d0 56 60 00 c8 04 00 29 70 ff 60 0b
+00018012: mov.l   #unk_FFFF4D54, r0
+00018014: mov.b   @r0, r0
+00018016: tst     #2, r0
+00018018: movt    r0
+0001801A: add     #-1, r0
+0001801C: neg     r0, r0
+0001801E: cmp/eq  #1, r0
+00018020: movt    r0
+00018022: rts
+00018024: nop
+
+============================
+sGetCruiseResumeFlags @ 00018026
+RAW: d0 56 60 00 c8 04 00 29 70 ff 60 0b 88 01 00 29 00 0b 00 09 d0 4e 60 00 c8 10 00 29 70 ff 60 0b
+00018026: mov.l   #unk_FFFF4D54, r0
+00018028: mov.b   @r0, r0
+0001802A: tst     #4, r0
+0001802C: movt    r0
+0001802E: add     #-1, r0
+00018030: neg     r0, r0
+00018032: cmp/eq  #1, r0
+00018034: movt    r0
+00018036: rts
+00018038: nop
+
+============================
+sGetBrakeFlags @ 0001804E
+RAW: d0 4c 60 00 c8 08 00 29 70 ff 60 0b 88 01 00 29 00 0b 00 09 d0 44 60 00 c8 20 00 29 70 ff 60 0b
+0001804E: mov.l   #unk_FFFF4D54, r0
+00018050: mov.b   @r0, r0
+00018052: tst     #8, r0
+00018054: movt    r0
+00018056: add     #-1, r0
+00018058: neg     r0, r0
+0001805A: cmp/eq  #1, r0
+0001805C: movt    r0
+0001805E: rts
+00018060: nop
+Python>for ea in [0x18016, 0x1802A, 0x18052]:
+    print(
+        f"{ea:08X}:",
+        ida_bytes.get_bytes(ea, 4).hex(" ")
+    )
+Python>
+00018016: c8 02 00 29
+0001802A: c8 04 00 29
+00018052: c8 08 00 29
+Python>needle = bytes.fromhex("FF FF 4D 54")
+Python>hits = []
+Python>start = 0
+Python>end = 0x100000
+Python>while start < end:
+    pos = ida_bytes.bin_search(
+        start,
+        end,
+        needle,
+        None,
+        ida_bytes.BIN_SEARCH_FORWARD
+    )
+
+    if pos == idc.BADADDR:
+        break
+
+    hits.append(pos)
+    start = pos + 1
+Python>print("FFFF4D54 occurrences:")
+Traceback (most recent call last):
+  File "<string>", line 2, in <module>
+  File "C:\Program Files\IDA Professional 9.4\python\ida_bytes.py", line 2803, in bin_search
+    return _ida_bytes.bin_search(*args)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+TypeError: Wrong number or type of arguments for overloaded function 'bin_search'.
+  Possible C/C++ prototypes are:
+    bin_search(ea_t,ea_t,compiled_binpat_vec_t const &,int,size_t *)
+    bin_search(ea_t,ea_t,uchar const *,uchar const *,size_t,int)
+
+Python>print("FFFF4D54 occurrences:")
+for x in hits:
+    print(f"  {x:08X}")
+Python>
+FFFF4D54 occurrences:
+Python>def find_rom_bytes(pattern):
+    rom = ida_bytes.get_bytes(0, 0x100000)
+    pos = 0
+    hits = []
+
+    while True:
+        pos = rom.find(pattern, pos)
+        if pos == -1:
+            break
+
+        hits.append(pos)
+        pos += 1
+
+    return hits
+Python>
+Python>for ea in find_rom_bytes(bytes.fromhex("FF FF 4D 54")):
+    print(f"{ea:08X}")
+Python>
+00017744
+00017994
+00017C20
+00018180
+00019650
+00019944
+0001A5A8
+0001B7A8
+0001BEA0
+Python>import ida_name
+Python>import ida_bytes
+Python>ida_name.set_name(
+    0xFFFF4D54,
+    "CruiseBrakeFlags",
+    ida_name.SN_FORCE
+)
+True
+Python>ida_name.set_name(
+    0x18016,
+    "CoastBitMask_0x02",
+    ida_name.SN_FORCE
+)
+True
+Python>ida_name.set_name(
+    0x1802A,
+    "ResumeBitMask_0x04",
+    ida_name.SN_FORCE
+)
+True
+Python>ida_name.set_name(
+    0x18052,
+    "BrakeBitMask_0x08",
+    ida_name.SN_FORCE
+)
+True
+Python>import ida_funcs
+Python>for start, end in [
+    (0x18012, 0x18026),
+    (0x18026, 0x1803A),
+    (0x1804E, 0x18062),
+]:
+    if ida_funcs.get_func_start(start) == idc.BADADDR:
+        print(hex(start), ida_funcs.add_func(start, end))
+Python>
+0x18012 True
+0x18026 True
+0x1804e True
+Flushing buffers, please wait...ok
+Database has been saved
+
+SsmGet_ManifoldAbsolutePressure @ 00048D0E: create_insn=2
+00048D0E: fldi0   fr6
+00048D10: mova    h'48EBC, r0
+00048D12: mov.l   #unk_FFFF4F30, r3
+00048D14: mov.l   #unk_258C, r2
+00048D16: fmov.s  @r3, fr4
+00048D18: jmp     @r2 ; unk_258C
+00048D1A: fmov.s  @r0, fr5
+00048D1C: sts.l   pr, @-r15
+00048D1E: fldi0   fr6
+00048D20: mova    h'48EC4, r0
+00048D22: mov.l   #unk_FFFF51E8, r3
+00048D24: mov.l   #unk_254C, r2
+
+SsmGet_EngineSpeed @ 00048D1C: create_insn=2
+00048D1C: sts.l   pr, @-r15
+00048D1E: fldi0   fr6
+00048D20: mova    h'48EC4, r0
+00048D22: mov.l   #unk_FFFF51E8, r3
+00048D24: mov.l   #unk_254C, r2
+00048D26: fmov.s  @r3, fr4
+00048D28: jsr     @r2 ; unk_254C
+00048D2A: fmov.s  @r0, fr5
+00048D2C: lds.l   @r15+, pr
+00048D2E: extu.w  r0, r0
+00048D30: rts
+00048D32: shlr8   r0
+
+SsmGet_VehicleSpeed @ 00048D4A: create_insn=2
+00048D4A: fldi0   fr6
+00048D4C: mov.l   #loc_258C, r2
+00048D4E: mov.l   #unk_FFFF51D8, r3
+00048D50: fmov.s  @r3, fr4
+00048D52: jmp     @r2 ; loc_258C
+00048D54: fldi1   fr5
+00048D56: mov.l   #unk_FFFF5B94, r3
+00048D58: mova    h'48ED4, r0
+00048D5A: fmov.s  @r3, fr4
+00048D5C: fmov.s  @r0, fr6
+00048D5E: mova    h'48ED8, r0
+00048D60: mov.l   #loc_258C, r2
+
+SsmGet_ThrottleOpeningAngle @ 00048DA2: create_insn=2
+00048DA2: fldi0   fr6
+00048DA4: mova    h'48EEC, r0
+00048DA6: mov.l   #unk_FFFF4FBC, r3
+00048DA8: mov.l   #loc_258C, r2
+00048DAA: fmov.s  @r3, fr4
+00048DAC: jmp     @r2 ; loc_258C
+00048DAE: fmov.s  @r0, fr5
+00048DB0: sts.l   pr, @-r15
+00048DB2: fldi0   fr6
+00048DB4: mova    h'48EF4, r0
+00048DB6: mov.l   #unk_FFFF2DE0, r3
+00048DB8: mov.l   #unk_254C, r2
+
+========================================
+SSM_ThrottleOpening_candidate FFFF4FBC
+XREFS:
+  00048DA6 <no function>  ::  mov.l   #unk_FFFF4FBC, r3
+  00048EE8 <no function>  ::  .data.l unk_FFFF4FBC
+
+========================================
+MerpMod_ThrottlePlate_candidate FFFF4FC0
+XREFS:
+  00014DD8 <no function>  ::  mov.l   #unk_FFFF4FC0, r3
+  00014FD8 sub_14F80  ::  .data.l unk_FFFF4FC0
+  000151F8 sub_151DC  ::  mov.l   #unk_FFFF4FC0, r2
+  00015318 sub_151DC  ::  .data.l unk_FFFF4FC0
+
+========================================
+CurrentGear_candidate FFFF52E9
+XREFS:
+  <no IDA xrefs currently defined>
+Python>def find_ptr(value):
+    rom = ida_bytes.get_bytes(0, 0x100000)
+    needle = value.to_bytes(4, "big")
+
+    pos = 0
+    hits = []
+
+    while True:
+        pos = rom.find(needle, pos)
+
+        if pos < 0:
+            break
+
+        hits.append(pos)
+        pos += 1
+
+    return hits
+Python>
+Python>for value in [
+    0xFFFF4FBC,
+    0xFFFF4FC0,
+    0xFFFF52E9,
+]:
+    print(f"\nPointer {value:08X}:")
+
+    for hit in find_ptr(value):
+        print(f"  ROM literal @ {hit:08X}")
+Python>
+
+Pointer FFFF4FBC:
+  ROM literal @ 0001FE5C
+  ROM literal @ 00020268
+  ROM literal @ 00048EE8
+
+Pointer FFFF4FC0:
+  ROM literal @ 00014FD8
+  ROM literal @ 00015318
+  ROM literal @ 0001FE60
+  ROM literal @ 0001FFB8
+  ROM literal @ 00020BD8
+  ROM literal @ 00024FE4
+  ROM literal @ 0002E4FC
+  ROM literal @ 0002E930
+  ROM literal @ 0002F000
+  ROM literal @ 00032608
+  ROM literal @ 0003525C
+  ROM literal @ 000365D8
+  ROM literal @ 00051818
+  ROM literal @ 00051A98
+  ROM literal @ 0006A494
+
+Pointer FFFF52E9:
+  ROM literal @ 000189C8
+  ROM literal @ 00018C58
+  ROM literal @ 00018F00
+  ROM literal @ 00019E60
+  ROM literal @ 0001C554
+  ROM literal @ 0001C7C8
+  ROM literal @ 0001CA54
+  ROM literal @ 00024AE0
+Python>verified_ram = {
+    0xFFFF4D54: "CruiseBrakeFlags",
+    0xFFFF4F30: "pManifoldAbsolutePressure",
+    0xFFFF51E8: "pEngineSpeed",
+    0xFFFF51D8: "pVehicleSpeed",
+    0xFFFF4FBC: "pSsmThrottleOpening",
+}
+Python>
+Python>for ea, name in verified_ram.items():
+    print(
+        f"{ea:08X}",
+        ida_name.set_name(
+            ea,
+            name,
+            ida_name.SN_FORCE
+        )
+    )
+Python>
+FFFF4D54 True
+FFFF4F30 True
+FFFF51E8 True
+FFFF51D8 True
+FFFF4FBC True
+Python>clear
+Traceback (most recent call last):
+  File "<string>", line 2, in <module>
+NameError: name 'clear' is not defined
+
+======================================================================
+LITERAL POOL @ 000189C8
+  <no xrefs>
+
+======================================================================
+LITERAL POOL @ 00018C58
+  <no xrefs>
+
+======================================================================
+LITERAL POOL @ 00018F00
+  <no xrefs>
+
+======================================================================
+LITERAL POOL @ 00019E60
+  <no xrefs>
+
+======================================================================
+LITERAL POOL @ 0001C554
+  <no xrefs>
+
+======================================================================
+LITERAL POOL @ 0001C7C8
+  <no xrefs>
+
+======================================================================
+LITERAL POOL @ 0001CA54
+  <no xrefs>
+
+======================================================================
+LITERAL POOL @ 00024AE0
+  <no xrefs>
+Python>import idautils
+Python>import ida_funcs
+Python>import idc
+Python>def dump_literal_users(literals, before=3, after=12):
+    for lit in literals:
+        print("\n" + "=" * 70)
+        print(f"LITERAL POOL @ {lit:08X}")
+
+        refs = list(idautils.XrefsTo(lit, 0))
+
+        if not refs:
+            print("  <no xrefs>")
+            continue
+
+        for xr in refs:
+            frm = xr.frm
+            fn = ida_funcs.get_func_name(frm)
+
+            print(
+                f"\nXREF FROM {frm:08X}",
+                fn if fn else "<no function>"
+            )
+
+            cur = frm
+
+            for _ in range(before):
+                prev = idc.prev_head(cur)
+
+                if prev == idc.BADADDR:
+                    break
+
+                cur = prev
+
+            for _ in range(before + after + 1):
+                print(
+                    f"{cur:08X}:",
+                    idc.generate_disasm_line(
+                        cur,
+                        idc.GENDSM_FORCE_CODE
+                    )
+                )
+
+                nxt = idc.next_head(cur)
+
+                if nxt == idc.BADADDR:
+                    break
+
+                cur = nxt
+Python>
+Python>gear_literals = [
+    0x189C8,
+    0x18C58,
+    0x18F00,
+    0x19E60,
+    0x1C554,
+    0x1C7C8,
+    0x1CA54,
+    0x24AE0,
+]
+Python>
+Python>dump_literal_users(gear_literals)
+
+======================================================================
+LITERAL POOL @ 000189C8
+  <no xrefs>
+
+======================================================================
+LITERAL POOL @ 00018C58
+  <no xrefs>
+
+======================================================================
+LITERAL POOL @ 00018F00
+  <no xrefs>
+
+======================================================================
+LITERAL POOL @ 00019E60
+  <no xrefs>
+
+======================================================================
+LITERAL POOL @ 0001C554
+  <no xrefs>
+
+======================================================================
+LITERAL POOL @ 0001C7C8
+  <no xrefs>
+
+======================================================================
+LITERAL POOL @ 0001CA54
+  <no xrefs>
+
+======================================================================
+LITERAL POOL @ 00024AE0
+  <no xrefs>
+Python>
+Python>def dump_insns(start, count=30):
+    cur = start
+
+    for _ in range(count):
+        print(
+            f"{cur:08X}:",
+            idc.generate_disasm_line(
+                cur,
+                idc.GENDSM_FORCE_CODE
+            )
+        )
+
+        nxt = idc.next_head(cur)
+
+        if nxt == idc.BADADDR:
+            break
+
+        cur = nxt
+Python>
+Python>print("\n=== THROTTLE USE NEAR TARGET BOOST ===")
+dump_insns(0x14DC6, 35)
+
+=== THROTTLE USE NEAR TARGET BOOST ===
+00014DC6: mov.l   r14, @-r15
+00014DC8: mov.l   r13, @-r15
+00014DCA: mov.l   r12, @-r15
+00014DCC: mov.l   r11, @-r15
+00014DCE: fmov.s  fr15, @-r15
+00014DD0: fmov.s  fr14, @-r15
+00014DD2: fmov.s  fr13, @-r15
+00014DD4: fmov.s  fr12, @-r15
+00014DD6: sts.l   pr, @-r15
+00014DD8: mov.l   #unk_FFFF4FC0, r3
+00014DDA: add     #-4, r15
+00014DDC: mov.l   #pEngineSpeed, r2
+00014DDE: fmov.s  @r3, fr15
+00014DE0: fmov.s  @r2, fr14
+00014DE2: mov.l   #unk_FFFF502C, r1
+00014DE4: mov.l   #sub_23A20, r3
+00014DE6: jsr     @r3 ; sub_23A20
+00014DE8: fmov.s  @r1, fr13
+00014DEA: mov     r0, r4
+00014DEC: mov.l   #unk_FFFF6614, r3
+00014DEE: fmov.s  @r3, fr3
+00014DF0: fmov.s  fr3, @r15
+00014DF2: mov.l   #unk_FFFF5D24, r2
+00014DF4: mov.l   #unk_FFFF4C2F, r1
+00014DF6: mov.b   @r1, r0
+00014DF8: extu.b  r0, r0
+00014DFA: cmp/eq  #h'5A, r0 ; 'Z'
+00014DFC: bf/s    loc_14E0A
+00014DFE: fmov.s  @r2, fr12
+00014E00: mov.l   #unk_C05A0, r3
+00014E02: fmov.s  @r3, fr3
+00014E04: mov.l   #unk_FFFF4BF0, r2
+00014E06: bra     loc_14E88
+00014E08: fmov.s  fr3, @r2
+00014E0A: extu.b  r4, r4
+Python>
+Python>print("\n=== THROTTLE USE NEAR WGDC ===")
+dump_insns(0x151DC, 45)
+
+=== THROTTLE USE NEAR WGDC ===
+000151DC: mov.l   r14, @-r15
+000151DE: mov.l   r13, @-r15
+000151E0: mov.l   r12, @-r15
+000151E2: mov.l   r11, @-r15
+000151E4: mov.l   r10, @-r15
+000151E6: mov.l   r9, @-r15
+000151E8: mov.l   r8, @-r15
+000151EA: fmov.s  fr15, @-r15
+000151EC: fmov.s  fr14, @-r15
+000151EE: fmov.s  fr13, @-r15
+000151F0: fmov.s  fr12, @-r15
+000151F2: sts.l   pr, @-r15
+000151F4: mov.l   #pEngineSpeed, r3
+000151F6: add     #-h'70, r15
+000151F8: mov.l   #unk_FFFF4FC0, r2
+000151FA: fmov.s  @r3, fr15
+000151FC: mov.l   #sub_22BFE, r1
+000151FE: jsr     @r1 ; sub_22BFE
+00015200: fmov.s  @r2, fr14
+00015202: mov     r15, r1
+00015204: mov.l   #sub_23EE0, r3
+00015206: add     #h'30, r1 ; '0'
+00015208: jsr     @r3 ; sub_23EE0
+0001520A: mov.b   r0, @r1
+0001520C: mov.l   #sub_26854, r3
+0001520E: mov     r15, r2
+00015210: add     #h'34, r2 ; '4'
+00015212: jsr     @r3 ; sub_26854
+00015214: mov.b   r0, @r2
+00015216: mov     r15, r1
+00015218: mov.l   #sub_26F4C, r3
+0001521A: add     #h'28, r1 ; '('
+0001521C: jsr     @r3 ; sub_26F4C
+0001521E: mov.b   r0, @r1
+00015220: mov.l   #sub_26868, r3
+00015222: mov     r15, r2
+00015224: add     #h'24, r2 ; '$'
+00015226: jsr     @r3 ; sub_26868
+00015228: mov.b   r0, @r2
+0001522A: mov     r15, r1
+0001522C: mov.l   #sub_26678, r3
+0001522E: add     #h'1C, r1
+00015230: jsr     @r3 ; sub_26678
+00015232: mov.b   r0, @r1
+00015234: mov.l   #unk_FFFF5028, r3
+Python>
+Python>import ida_name
+Python>
+Python>ida_name.set_name(
+    0xFFFF4FC0,
+    "pThrottlePlate_candidate",
+    ida_name.SN_FORCE
+)
+True
+Python>
+Python>ida_name.set_name(
+    0xFFFF52E9,
+    "pCurrentGear_candidate",
+    ida_name.SN_FORCE
+)
+True
+Python>

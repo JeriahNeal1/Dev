@@ -1,0 +1,23 @@
+{
+  "status": "PASS_ENCODED_REFERENCE_SCOPE_ONLY",
+  "changed_span": [
+    296112,
+    296124
+  ],
+  "branches": [
+    {
+      "from": 295700,
+      "target": 296112,
+      "kind": "BRA",
+      "encoded_word": 41164
+    }
+  ],
+  "external_PC_relative_read_encodings": [],
+  "external_manufactured_return_PC": [],
+  "aligned_pointer_literals": [],
+  "fallthrough": "Original preceding address484AE is a decoded literal inside the dispatcher pool, not an entry contract; calculated entry is unclosed.",
+  "complete_ownership_status": "FAIL",
+  "remaining": "Caller-directed or otherwise unresolved computed entries/internal data consumers are not excluded by this scan.",
+  "intentional_behavior": "Exact project requests extend live default behavior. All other default requests execute the original flag/reject operations then rejoin484BC.",
+  "stock_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218"
+}

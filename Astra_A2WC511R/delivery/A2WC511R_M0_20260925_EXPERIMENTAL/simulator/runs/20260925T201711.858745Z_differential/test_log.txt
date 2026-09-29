@@ -1,0 +1,10 @@
+Command: py -3.14 run_differential.py
+test_all_packed_bytes_cold_warm_direct_and_real_callsite (test_differential.ExperimentalDifferentialTests.test_all_packed_bytes_cold_warm_direct_and_real_callsite) ... ok
+test_identical_patched_replay (test_differential.ExperimentalDifferentialTests.test_identical_patched_replay) ... ok
+test_mutated_register_restore_is_detected (test_differential.ExperimentalDifferentialTests.test_mutated_register_restore_is_detected) ... ok
+test_mutated_unsupported_instruction_is_detected (test_differential.ExperimentalDifferentialTests.test_mutated_unsupported_instruction_is_detected) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 11.411s
+
+OK

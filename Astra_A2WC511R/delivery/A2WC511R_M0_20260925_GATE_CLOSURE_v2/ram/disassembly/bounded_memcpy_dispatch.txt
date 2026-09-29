@@ -1,0 +1,103 @@
+
+C:\Dev\SubaruRoms\OEM\A2WC511R.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000043dc <.data+0x43dc>:
+    43dc:	2f 36       	mov.l	r3,@-r15
+    43de:	e3 40       	mov	#64,r3
+    43e0:	33 02       	cmp/hs	r0,r3
+    43e2:	8b 4b       	bf	0x447c
+    43e4:	d3 01       	mov.l	0x43ec,r3	! 4438
+    43e6:	03 3e       	mov.l	@(r0,r3),r3
+    43e8:	43 2b       	jmp	@r3
+    43ea:	00 09       	nop	
+    43ec:	00 00       	.word 0x0000
+    43ee:	44 38       	.word 0x4438
+    43f0:	00 09       	nop	
+    43f2:	50 2f       	mov.l	@(60,r2),r0
+    43f4:	11 0f       	mov.l	r0,@(60,r1)
+    43f6:	50 2e       	mov.l	@(56,r2),r0
+    43f8:	11 0e       	mov.l	r0,@(56,r1)
+    43fa:	50 2d       	mov.l	@(52,r2),r0
+    43fc:	11 0d       	mov.l	r0,@(52,r1)
+    43fe:	50 2c       	mov.l	@(48,r2),r0
+    4400:	11 0c       	mov.l	r0,@(48,r1)
+    4402:	50 2b       	mov.l	@(44,r2),r0
+    4404:	11 0b       	mov.l	r0,@(44,r1)
+    4406:	50 2a       	mov.l	@(40,r2),r0
+    4408:	11 0a       	mov.l	r0,@(40,r1)
+    440a:	50 29       	mov.l	@(36,r2),r0
+    440c:	11 09       	mov.l	r0,@(36,r1)
+    440e:	50 28       	mov.l	@(32,r2),r0
+    4410:	11 08       	mov.l	r0,@(32,r1)
+    4412:	50 27       	mov.l	@(28,r2),r0
+    4414:	11 07       	mov.l	r0,@(28,r1)
+    4416:	50 26       	mov.l	@(24,r2),r0
+    4418:	11 06       	mov.l	r0,@(24,r1)
+    441a:	50 25       	mov.l	@(20,r2),r0
+    441c:	11 05       	mov.l	r0,@(20,r1)
+    441e:	50 24       	mov.l	@(16,r2),r0
+    4420:	11 04       	mov.l	r0,@(16,r1)
+    4422:	50 23       	mov.l	@(12,r2),r0
+    4424:	11 03       	mov.l	r0,@(12,r1)
+    4426:	50 22       	mov.l	@(8,r2),r0
+    4428:	11 02       	mov.l	r0,@(8,r1)
+    442a:	50 21       	mov.l	@(4,r2),r0
+    442c:	11 01       	mov.l	r0,@(4,r1)
+    442e:	60 22       	mov.l	@r2,r0
+    4430:	21 02       	mov.l	r0,@r1
+    4432:	00 0b       	rts	
+    4434:	63 f6       	mov.l	@r15+,r3
+    4436:	00 09       	nop	
+    4438:	00 00       	.word 0x0000
+    443a:	44 32       	.word 0x4432
+    443c:	00 00       	.word 0x0000
+    443e:	44 2e       	ldc	r4,vbr
+    4440:	00 00       	.word 0x0000
+    4442:	44 2a       	lds	r4,pr
+    4444:	00 00       	.word 0x0000
+    4446:	44 26       	lds.l	@r4+,pr
+    4448:	00 00       	.word 0x0000
+    444a:	44 22       	sts.l	pr,@-r4
+    444c:	00 00       	.word 0x0000
+    444e:	44 1e       	ldc	r4,gbr
+    4450:	00 00       	.word 0x0000
+    4452:	44 1a       	lds	r4,macl
+    4454:	00 00       	.word 0x0000
+    4456:	44 16       	lds.l	@r4+,macl
+    4458:	00 00       	.word 0x0000
+    445a:	44 12       	sts.l	macl,@-r4
+    445c:	00 00       	.word 0x0000
+    445e:	44 0e       	ldc	r4,sr
+    4460:	00 00       	.word 0x0000
+    4462:	44 0a       	lds	r4,mach
+    4464:	00 00       	.word 0x0000
+    4466:	44 06       	lds.l	@r4+,mach
+    4468:	00 00       	.word 0x0000
+    446a:	44 02       	sts.l	mach,@-r4
+    446c:	00 00       	.word 0x0000
+    446e:	43 fe       	.word 0x43fe
+    4470:	00 00       	.word 0x0000
+    4472:	43 fa       	.word 0x43fa
+    4474:	00 00       	.word 0x0000
+    4476:	43 f6       	.word 0x43f6
+    4478:	00 00       	.word 0x0000
+    447a:	43 f2       	.word 0x43f2
+    447c:	2f 26       	mov.l	r2,@-r15
+    447e:	63 23       	mov	r2,r3
+    4480:	33 0c       	add	r0,r3
+    4482:	60 26       	mov.l	@r2+,r0
+    4484:	33 22       	cmp/hs	r2,r3
+    4486:	8b 06       	bf	0x4496
+    4488:	21 02       	mov.l	r0,@r1
+    448a:	60 26       	mov.l	@r2+,r0
+    448c:	33 22       	cmp/hs	r2,r3
+    448e:	8b 02       	bf	0x4496
+    4490:	11 01       	mov.l	r0,@(4,r1)
+    4492:	af f6       	bra	0x4482
+    4494:	71 08       	add	#8,r1
+    4496:	62 f6       	mov.l	@r15+,r2
+    4498:	00 0b       	rts	
+    449a:	63 f6       	mov.l	@r15+,r3

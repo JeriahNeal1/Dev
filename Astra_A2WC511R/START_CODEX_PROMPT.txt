@@ -1,0 +1,121 @@
+Work from C:\Dev. This is the main authorized A2WC511R MerpMod porting run, not a request for a plan or a few next-step commands.
+
+Read C:\Dev\Astra_A2WC511R\AGENTS.md and state\CURRENT_STATE.md, state\RUN_CONTRACT.md, docs\DEV_SNAPSHOT_AUDIT.md first. Use the actual local files and existing IDA database. This new chat has no earlier history; the handoff supplies it. The original uploaded Dev snapshot is preserved inside evidence\Dev_2026-09-25_original.zip, but do not extract it over my live C:\Dev.
+
+I authorize full local development access and internet: install lawful vendor-sourced dependencies, repair configuration, create staged branches/worktrees, edit source/build scripts, make backed-up IDA metadata changes, run tests and compile for as long as useful. Do not repeatedly ask for the same permission or stop at inventory if a setup problem is fixable. Preserve my existing working tools and data and log changes. I do not authorize unattended physical ECU/TCU flash, erase, live writes, actuation or driving; produce the exact artifact and test instructions for me to carry out those steps.
+
+Use the Astra model and Ultra effort verified by the launcher. Do not silently change models or activate Fast. Full-access CLI is not a claim that GUI tools, UAC elevation, licenses or vehicle access exist: inspect actual capabilities and use native APIs/MCP/CLI before desktop clicks. Use the official Hex-Rays IDA MCP, not a new custom IDA server. The RomRaider Java/MCP integration has model-double tests but still needs actual local acceptance on disposable copies.
+
+Primary deliverable: a complete, reproducibly compiled, diagnostic-only A2WC511R source-port integration, with a candidate ROM/patch only if its identity, original-byte hooks, ABI/timing, exact ROM/RAM allocation, initialization, feature closure, patch round-trip, checksum handling and calibration compatibility are established. Also provide matching definitions/diagnostic logger configuration, source and tool revisions, full changed-byte allowlist, hash manifest, test results and a minimal human installation/observation plan. This is not a mandate to enable unvalidated launch/ALS, tune every map, or call an unproven file safe. Future feature modules may be implemented/tested separately with outputs disabled, but the first vehicle-test artifact must not alter OEM timing, fuel, boost/WGDC, MAF, rev limits, sensor control or transmission torque interventions.
+
+Important audited facts you must not rediscover inefficiently:
+- MerpMod HEAD 8720d209df107a81fd171131cfba96d8cae1f118.
+- Current generated TargetHeader/TargetConfig and existing objects are A8DH202X, Gratis_Debug, AUTO_TRANS 0. No A2WC511R target header/map/linker/config exists in the uploaded Targets tree. Correct the actual generation inputs, not only one generated header.
+- The real historical compiler settings are SH-2E big-endian, -m2e -mrenesas -mieee, KPIT GNUSH 13.01/GCC4.7. Use response files and HEW project settings as build evidence. Preserve ABI and verify emitted instructions. IDA's SH4B preset is not permission to compile SH-4.
+- SharpTune source HEAD ecabea89615132dac2de37c05f72adae16d966d1; copied exes hash 248eb7f012d0edcb84048ee01f99f7fa49094942c25a3b53e75fbfcb957de8af, historical banner RC2-10-gfcf9fdb. Reconcile before trusting patch generation. SubaruDefs HEAD 9b2992eba8133fe5338b89aa77b22c1bb14d6507.
+- OEM A2WC511R.bin and the Backup stock copy match 22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218. The separately named OEM stock file differs only at 0xFFC4C..0xFFC4F (26 08 23 01 instead of FF). The current modified calibration in the actual car is NOT thereby identified. Preserve the compatible current calibration for any running-car candidate; a nominal stock map is not automatically suitable for my VF52/3-port/3-inch-MAF hardware.
+- C:\Dev contains the saved .i64 and sidecars. Locate the latest live database and back it up; do not replace it with the archive.
+- Gear decoding and function recovery already succeeded. FFFF4C75 -> FFFF4C8D; packed upper target/requested, lower current/reported; 88 Park,77 Reverse,00 Neutral,11..55 forward. Decoded 52E8/E9 collapse Reverse to1. Decoder9..F holds stale decoded values. Packed11 alone does not prove freshness or actual mechanical engagement.
+- 4CA1 and 4C50:02 remain candidates for part of status handling, not certified communication-fault guards. Search local logs for the pending six-channel test. Missing live validation need not stop unrelated offline M0 implementation.
+- Candidate holes E1000 and FFFF7400 are not allocations. Prove all indirect/reset/stack/DMA interactions and exact spans. No false unused-memory inference from no literal xref.
+- Manual IDA save works; ida_kernwin.save_database() does not exist. Persist code items before functions/xrefs; don't dump data pools as instructions and call them callers.
+
+MAJOR PARALLEL DELIVERABLE — A2WC511R SOFTWARE ECU/5EAT EMULATOR
+
+Build, during this same run, the most useful emulator/simulator that is feasible without turning the project into a full physical engine/transmission simulation. Its purpose is software and memory validation: execute or model A2WC511R code paths, verify RAM/ROM addresses, hooks, tables, sensors, switches, transmission-derived state, logger definitions, and interactions between variables so future reverse-engineering work does not require connecting the laptop to the Subaru for every address check.
+
+Treat this as an engineering product, not a throwaway mock. Put it in a clearly isolated tree such as C:\Dev\A2WC511R_Sim and keep simulator artifacts out of the 1MiB ECU image. It may install or build lawful open-source dependencies after source/licensing review. First survey existing SH-2/SH-2E/SH7058-capable emulation/simulation libraries and any usable Renesas/HEW simulator components. Reuse a trustworthy CPU core if practical; otherwise implement only the verified SH-2E instruction subset needed by the targeted A2WC511R routines, with explicit unsupported-opcode failures. Do not silently execute SH-4 semantics because IDA uses SH4B for analysis.
+
+The simulator does NOT need realistic combustion, turbo, hydraulic, tire, vehicle, knock, AFR, EGT or torque-converter physics. Synthetic sensor values and deterministic behavioral models are preferred. It must never imply that passing software simulation proves physical engine/transmission safety.
+
+Required emulator architecture, in priority order:
+
+1. Exact ECU memory/execution model
+   - Load a 1MiB A2WC511R ROM and optionally a patched overlay without modifying the source file.
+   - Model ROM 00000000..000FFFFF and SH7058 internal RAM FFFF0000..FFFFBFFF, with stack bounds and configurable protected/unmapped regions.
+   - Honor big-endian data, SH-2E delay-slot/control-flow behavior, register state, PR/SR/GBR/VBR as needed by exercised code, and alignment rules.
+   - Use actual reset-vector facts already established (reset PC 00000AAC, initial SP FFFFBFA0) as regression checks, not assumptions for unrelated peripherals.
+   - Provide single-step, run-until, breakpoints, memory watchpoints, call/return tracing, register snapshots, memory read/write traces, branch coverage and deterministic replay.
+   - Detect writes outside declared RAM, stack collisions, execution into data/0xFF, unsupported opcodes/peripherals and ROM-hole overflow as hard test failures.
+   - Model only MMIO/timers/interrupt behavior needed by exercised paths; use deterministic stubs with visible assumptions rather than fake completeness.
+
+2. Function-harness mode
+   - Permit bounded invocation of selected OEM routines with controlled registers, stack and RAM inputs, sentinel preservation checks and before/after memory diffs.
+   - Cross-check known routines first, including sPull2DFloat 0x209C, sPull3DFloat 0x2150, sMafCalc 0x79A8, sWgdc 0x14B20, sDecodePackedGearRangeByte 0x147AC..0x14802, sTestTcuStatusMask02 0x15A02..0x15A16, sUpdateTcuDerivedSnapshot 0x15A2C..0x15D46, sResetTcuDerivedSnapshot 0x15D46..0x15D92, and sRevLimStart 0x317D8 once its remaining flags are proven.
+   - Do not hard-code a routine's expected result into the emulator implementation merely to make the test pass. Tests may use expected vectors; execution logic must remain generic.
+
+3. Virtual vehicle/ECU state provider
+   - Expose a stable API/CLI/MCP for setting and reading virtual inputs and RAM: engine RPM, vehicle speed, accelerator/throttle, brake/stop-light, cruise switches, MAP, MAF, barometric pressure, coolant, IAT, front/rear O2 placeholders, IAM/knock placeholders, battery voltage, and any additional verified inputs needed by a tested routine.
+   - Keep values in native ECU representation where known and provide explicit conversion metadata rather than hidden unit conversions.
+   - Support scenario files (JSON/YAML/TOML is acceptable) describing timestamped state changes and assertions.
+   - Support both direct RAM injection for isolated tests and higher-level virtual-sensor injection where the corresponding OEM conversion path is implemented.
+
+4. 5EAT behavioral state model
+   - Model software-visible transmission state rather than hydraulic physics.
+   - Encode the verified packed target/current gear states: 0x88 Park, 0x77 Reverse, 0x00 Neutral, 0x11..0x55 stable forward gears, and transitional combinations such as 0x21,0x32,0x43,0x54 and downshift equivalents.
+   - Preserve the distinction between source FFFF4C75, snapshot FFFF4C8D, decoded FFFF4BC1/FFFF4BC2, normalized FFFF52E8/FFFF52E9, and adjacent/candidate status variables.
+   - Provide scenarios for P/R/N/D, automatic 1?2?3?4?5, manual requests, active shift, rapid request changes, invalid nibble 8/9..F behavior, stale snapshot, source/snapshot disagreement, TCU-valid/status-candidate changes and simulated communication loss.
+   - Do not rename 4CA1 or 4C50:02 as certified freshness/communication guards without new evidence.
+
+5. Address-discovery and IDA-assistance mode
+   - Make the emulator useful for reverse engineering unknown RAM/functions: watch who reads/writes a candidate address, record access PCs/call stacks, compare static IDA xrefs with dynamic traces, and export compact reports.
+   - Add a controlled experiment mode: set candidate variables to distinctive sentinel values, run a bounded routine/scenario, and report propagation into other RAM/registers/outputs.
+   - Never treat absence of an access in one scenario as proof an address is unused.
+   - Use the official Hex-Rays IDA MCP for names/disassembly/xrefs and simulator traces for dynamic evidence. Store discovered claims with confidence/provenance.
+
+6. Stock-vs-patched differential execution
+   - Run identical deterministic scenarios against the verified stock ROM and each diagnostic-only patched candidate.
+   - Compare registers, selected RAM, writes, calls/branches and externally visible ECU state.
+   - For the first diagnostic-only port, any difference outside the explicit patch/code/RAM/diagnostic allowlist is a regression requiring explanation or rejection.
+   - Later feature tests must declare their expected differences (for example a diagnostic state bit) and fail on undeclared fuel/timing/WGDC/DBW/rev-limit/transmission-torque differences.
+
+7. Table/definition validation
+   - Use actual ROM bytes and Subaru/RomRaider definitions to verify table addresses, dimensions, axes, endianness, storage/scaling and interpolation.
+   - Where feasible, execute the OEM Pull2D/Pull3D routines and compare their results with the RomRaider-native model and an independent reference implementation over randomized in-range/boundary inputs.
+   - Detect axis transposition, scaling errors, wrong inherited definitions and changed-address assumptions.
+   - Maintain history by ROM hash so results cannot silently mix stock/current/patched calibrations.
+
+8. Virtual logging interface without changing logger definitions
+   - Goal: use the existing A2WC511R RomRaider logger definitions unchanged against a virtual ECU whenever practical.
+   - Emulate the ECU identity 2F12515306 and standard/direct-memory SSM reads used by our definitions.
+   - Prefer a side-by-side, reversible user-mode interface: extend the existing RomRaider Java/MCP integration with a simulator backend, or provide an isolated fake J2534/SSM transport if that is cleaner. Do not overwrite or globally replace the real Tactrix/OpenPort driver/provider.
+   - If a fake J2534 provider is used, register it under a unique simulator name and document exact install/uninstall/selection steps; no physical PassThru operations may occur in simulator mode.
+   - RomRaider should be able to display existing standard and custom A2WC511R channels from the simulator without editing the logger XML merely to test a new RAM address that is already defined.
+   - For newly discovered addresses that are not yet defined, the simulator's direct memory inspector must allow validation before a logger-definition edit is considered.
+   - Provide deterministic CSV export compatible with our timeline tooling even if direct RomRaider transport integration proves blocked by the installed version.
+
+9. Regression/scenario suite
+   - Create repeatable tests for reset/basic execution, gear decoder vectors, TCU snapshot copy/reset, brake/cruise switches, representative SSM getters, Pull2D/Pull3D, and every MerpMod hook introduced by the A2WC511R port.
+   - Include randomized/fuzz scenarios for RAM inputs and transitions, but bound them deterministically with recorded seeds.
+   - Save a compact expected-results corpus derived from independently verified behavior, not from the implementation under test.
+   - Make one command run the simulator regression suite and produce machine-readable + human-readable reports.
+
+Simulator acceptance gates before relying on it to replace a vehicle address-check:
+A. It executes verified known A2WC511R routines correctly on independent test vectors and reports unsupported behavior rather than guessing.
+B. Gear decoder behavior matches static disassembly and prior live logs for known states/transitions.
+C. ROM/RAM access traces and function effects agree with independently verified IDA evidence for selected routines.
+D. Pull/table tests agree with native RomRaider or independently decoded values within exact storage/quantization expectations.
+E. The stock-vs-stock deterministic replay is exactly reproducible; stock-vs-diagnostic-patch differences are confined to the declared allowlist.
+F. Existing logger definitions can consume simulator state directly, or a documented simulator transport/backend provides equivalent unchanged-definition behavior.
+G. Simulator assumptions, unimplemented peripherals/opcodes and confidence limits are reported prominently.
+
+Do not make completion of a perfect whole-ECU emulator a blocker for the primary diagnostic-only MerpMod build. Build the highest-value layers first and use them immediately. Parallelize emulator work with independent porting work when safe. A useful partial emulator with known coverage is preferable to an enormous inaccurate "complete" emulator.
+
+Required simulator deliverables at end of run:
+- Source tree, dependency/license manifest and build instructions.
+- Exact supported CPU instructions/peripherals/routines and unsupported list.
+- Scenario schema and representative scenario library.
+- Regression command and test report.
+- Stock/patched differential trace report.
+- Dynamic address-access/propagation report tooling.
+- RomRaider/SSM/J2534 simulator-backend instructions if achieved.
+- Hashes of the ROM(s) used by every test.
+- A short "when simulator evidence is sufficient vs when the real car/bench ECU is still required" document.
+
+Treat the simulator as a long-term acceleration tool: once a routine/address has been independently anchored, add a regression test so it does not need to be re-proven manually in later sessions.
+
+Execute the full run contract. Repair build-phase error propagation so a failed copy/SharpTune phase cannot produce a false success banner. Stage all builds, inspect preprocessed feature closure and generated patch sections, audit outputs, repeat a clean build, and keep provenance. Do not flatten simulator/metadata S-record sections into the 1MiB ECU image. A successful host unit test or simulator test is not successful physical ECU execution.
+
+Use bounded queries and local parsers, cache by hashes, keep full logs on disk, and parallelize only independent bounded work. Keep a single writer for IDA/RomRaider/release state. Never dump whole XMLs/ROMs/logs into context or repeat an already-passed task without changed inputs. Continue beyond the first milestone as long as useful offline work remains. No recurring re-prompt loop and no unnecessary model benchmark/test tasks.
+
+At each milestone save a compact checkpoint and explicit next action. At the end return the source/artifact paths and hashes, exactly what compiled, exactly what passed, emulator coverage and limits, remaining physical tests and any real blocker. A compilation failure is a problem to investigate and fix, not the requested final result. An unresolved architectural or physical dependency is not permission to fabricate completion. Proceed now.

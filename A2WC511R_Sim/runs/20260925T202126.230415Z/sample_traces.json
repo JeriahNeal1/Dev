@@ -1,0 +1,7399 @@
+[
+  {
+    "fixture": {
+      "packed": 136,
+      "prior": [
+        170,
+        187
+      ]
+    },
+    "instructions": [
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_pc",
+        "opcode": "D217",
+        "pc": "000147AC",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r2": "FFFF4C8D"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "movb_load",
+        "opcode": "6520",
+        "pc": "000147AE",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r5": "FFFFFF88"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "9628",
+        "pc": "000147B0",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r6": "000000F0"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "and_reg",
+        "opcode": "2659",
+        "pc": "000147B2",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r6": "00000080"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "9725",
+        "pc": "000147B4",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r7": "00000080"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "extub",
+        "opcode": "646C",
+        "pc": "000147B6",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r4": "00000080"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "cmpeq_reg",
+        "opcode": "3470",
+        "pc": "000147B8",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 1,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "bf_s",
+        "opcode": "8F04",
+        "pc": "000147BA",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "nop",
+        "opcode": "0009",
+        "pc": "000147BC",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "mov_imm",
+        "opcode": "E100",
+        "pc": "000147BE",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r1": "00000000"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_pc",
+        "opcode": "D313",
+        "pc": "000147C0",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r3": "FFFF4BC1"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "bra",
+        "opcode": "A00B",
+        "pc": "000147C2",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": true,
+        "instruction": "movb_store",
+        "opcode": "2310",
+        "pc": "000147C4",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_pc",
+        "opcode": "D60D",
+        "pc": "000147DC",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r6": "FFFF4BC2"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "mov_imm",
+        "opcode": "E30F",
+        "pc": "000147DE",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r3": "0000000F"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "and_reg",
+        "opcode": "2539",
+        "pc": "000147E0",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r5": "00000008"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "extub",
+        "opcode": "645C",
+        "pc": "000147E2",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r4": "00000008"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "mov_reg",
+        "opcode": "6043",
+        "pc": "000147E4",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r0": "00000008"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "cmpeq_imm",
+        "opcode": "8808",
+        "pc": "000147E6",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "bf_s",
+        "opcode": "8F03",
+        "pc": "000147E8",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "nop",
+        "opcode": "0009",
+        "pc": "000147EA",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "mov_imm",
+        "opcode": "E100",
+        "pc": "000147EC",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "bra",
+        "opcode": "A006",
+        "pc": "000147EE",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": true,
+        "instruction": "movb_store",
+        "opcode": "2610",
+        "pc": "000147F0",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "rts",
+        "opcode": "000B",
+        "pc": "000147FE",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": true,
+        "instruction": "nop",
+        "opcode": "0009",
+        "pc": "00014800",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      }
+    ],
+    "label": "modeled Park",
+    "memory": [
+      {
+        "address": "0001480C",
+        "address_sources": [
+          "instruction:000147AC"
+        ],
+        "call_context": [
+          "000147AC"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000147AC",
+        "size": 4,
+        "value": "FFFF4C8D",
+        "value_sources": [
+          "rom:0001480C"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFF4C8D",
+        "address_sources": [
+          "rom:0001480C"
+        ],
+        "call_context": [
+          "000147AC"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000147AE",
+        "size": 1,
+        "value": "00000088",
+        "value_sources": [
+          "ram:FFFF4C8D"
+        ],
+        "watchpoints": [
+          "packed input"
+        ]
+      },
+      {
+        "address": "00014804",
+        "address_sources": [
+          "instruction:000147B0"
+        ],
+        "call_context": [
+          "000147AC"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000147B0",
+        "size": 2,
+        "value": "000000F0",
+        "value_sources": [
+          "rom:00014804"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "00014802",
+        "address_sources": [
+          "instruction:000147B4"
+        ],
+        "call_context": [
+          "000147AC"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000147B4",
+        "size": 2,
+        "value": "00000080",
+        "value_sources": [
+          "rom:00014802"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "00014810",
+        "address_sources": [
+          "instruction:000147C0"
+        ],
+        "call_context": [
+          "000147AC"
+        ],
+        "control_sources": [
+          "ram:FFFF4C8D",
+          "rom:00014802",
+          "rom:00014804"
+        ],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000147C0",
+        "size": 4,
+        "value": "FFFF4BC1",
+        "value_sources": [
+          "rom:00014810"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFF4BC1",
+        "address_sources": [
+          "rom:00014810"
+        ],
+        "call_context": [
+          "000147AC"
+        ],
+        "control_sources": [
+          "ram:FFFF4C8D",
+          "rom:00014802",
+          "rom:00014804"
+        ],
+        "delay_slot": true,
+        "mode": "w",
+        "pc": "000147C4",
+        "size": 1,
+        "value": "00000000",
+        "value_sources": [
+          "instruction:000147BE"
+        ],
+        "watchpoints": [
+          "decoded target/current"
+        ]
+      },
+      {
+        "address": "00014814",
+        "address_sources": [
+          "instruction:000147DC"
+        ],
+        "call_context": [
+          "000147AC"
+        ],
+        "control_sources": [
+          "ram:FFFF4C8D",
+          "rom:00014802",
+          "rom:00014804"
+        ],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000147DC",
+        "size": 4,
+        "value": "FFFF4BC2",
+        "value_sources": [
+          "rom:00014814"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFF4BC2",
+        "address_sources": [
+          "rom:00014814"
+        ],
+        "call_context": [
+          "000147AC"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "ram:FFFF4C8D",
+          "rom:00014802",
+          "rom:00014804"
+        ],
+        "delay_slot": true,
+        "mode": "w",
+        "pc": "000147F0",
+        "size": 1,
+        "value": "00000000",
+        "value_sources": [
+          "instruction:000147EC"
+        ],
+        "watchpoints": [
+          "decoded target/current"
+        ]
+      }
+    ],
+    "output": [
+      0,
+      0
+    ],
+    "result": {
+      "base_rom_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+      "completion": "function return",
+      "entry": "000147AC",
+      "memory_trace_sha256": "f735ed703e154ca62306bd54afcd7d632172d1ae2344ff27b3120658c988b986",
+      "pr_matches_boundary": true,
+      "pr_preserved": true,
+      "preserved_registers": [
+        "r8",
+        "r9",
+        "r10",
+        "r11",
+        "r12",
+        "r13",
+        "r14",
+        "r15"
+      ],
+      "registers": [
+        "00000008",
+        "00000000",
+        "FFFF4C8D",
+        "0000000F",
+        "00000008",
+        "00000008",
+        "FFFF4BC2",
+        "00000080",
+        "18283848",
+        "19293949",
+        "1A2A3A4A",
+        "1B2B3B4B",
+        "1C2C3C4C",
+        "1D2D3D4D",
+        "1E2E3E4E",
+        "FFFFBFA0"
+      ],
+      "rom_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+      "stack_pointer_restored": true,
+      "steps": 26,
+      "system_registers": {
+        "mach": "89ABCDEF",
+        "macl": "12345678",
+        "pr": "FFFFFFFC",
+        "sr": "000003F3"
+      },
+      "trace_sha256": "4318dede817a19f016e10019c85f01d267b13302f6c52e3aafd048d8ba7fee07"
+    }
+  },
+  {
+    "fixture": {
+      "packed": 119,
+      "prior": [
+        170,
+        187
+      ]
+    },
+    "instructions": [
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_pc",
+        "opcode": "D217",
+        "pc": "000147AC",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r2": "FFFF4C8D"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "movb_load",
+        "opcode": "6520",
+        "pc": "000147AE",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r5": "00000077"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "9628",
+        "pc": "000147B0",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r6": "000000F0"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "and_reg",
+        "opcode": "2659",
+        "pc": "000147B2",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r6": "00000070"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "9725",
+        "pc": "000147B4",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r7": "00000080"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "extub",
+        "opcode": "646C",
+        "pc": "000147B6",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r4": "00000070"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "cmpeq_reg",
+        "opcode": "3470",
+        "pc": "000147B8",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "bf_s",
+        "opcode": "8F04",
+        "pc": "000147BA",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": true,
+        "instruction": "nop",
+        "opcode": "0009",
+        "pc": "000147BC",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "tst_reg",
+        "opcode": "2748",
+        "pc": "000147C6",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 1,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "bf_s",
+        "opcode": "8F08",
+        "pc": "000147C8",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "nop",
+        "opcode": "0009",
+        "pc": "000147CA",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_pc",
+        "opcode": "D110",
+        "pc": "000147CC",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r1": "FFFF4BC1"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "shar",
+        "opcode": "4421",
+        "pc": "000147CE",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r4": "00000038"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 0,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "shar",
+        "opcode": "4421",
+        "pc": "000147D0",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r4": "0000001C"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "shar",
+        "opcode": "4421",
+        "pc": "000147D2",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r4": "0000000E"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "shar",
+        "opcode": "4421",
+        "pc": "000147D4",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r4": "00000007"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "mov_imm",
+        "opcode": "E30F",
+        "pc": "000147D6",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r3": "0000000F"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "and_reg",
+        "opcode": "2439",
+        "pc": "000147D8",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "movb_store",
+        "opcode": "2140",
+        "pc": "000147DA",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_pc",
+        "opcode": "D60D",
+        "pc": "000147DC",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r6": "FFFF4BC2"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "mov_imm",
+        "opcode": "E30F",
+        "pc": "000147DE",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "and_reg",
+        "opcode": "2539",
+        "pc": "000147E0",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r5": "00000007"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "extub",
+        "opcode": "645C",
+        "pc": "000147E2",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "mov_reg",
+        "opcode": "6043",
+        "pc": "000147E4",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r0": "00000007"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "cmpeq_imm",
+        "opcode": "8808",
+        "pc": "000147E6",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "bf_s",
+        "opcode": "8F03",
+        "pc": "000147E8",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": true,
+        "instruction": "nop",
+        "opcode": "0009",
+        "pc": "000147EA",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "mov_imm",
+        "opcode": "E008",
+        "pc": "000147F2",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r0": "00000008"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "tst_reg",
+        "opcode": "2408",
+        "pc": "000147F4",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 1,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "bf_s",
+        "opcode": "8F02",
+        "pc": "000147F6",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "nop",
+        "opcode": "0009",
+        "pc": "000147F8",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "and_reg",
+        "opcode": "2539",
+        "pc": "000147FA",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "movb_store",
+        "opcode": "2650",
+        "pc": "000147FC",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "rts",
+        "opcode": "000B",
+        "pc": "000147FE",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": true,
+        "instruction": "nop",
+        "opcode": "0009",
+        "pc": "00014800",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      }
+    ],
+    "label": "modeled Reverse",
+    "memory": [
+      {
+        "address": "0001480C",
+        "address_sources": [
+          "instruction:000147AC"
+        ],
+        "call_context": [
+          "000147AC"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000147AC",
+        "size": 4,
+        "value": "FFFF4C8D",
+        "value_sources": [
+          "rom:0001480C"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFF4C8D",
+        "address_sources": [
+          "rom:0001480C"
+        ],
+        "call_context": [
+          "000147AC"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000147AE",
+        "size": 1,
+        "value": "00000077",
+        "value_sources": [
+          "ram:FFFF4C8D"
+        ],
+        "watchpoints": [
+          "packed input"
+        ]
+      },
+      {
+        "address": "00014804",
+        "address_sources": [
+          "instruction:000147B0"
+        ],
+        "call_context": [
+          "000147AC"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000147B0",
+        "size": 2,
+        "value": "000000F0",
+        "value_sources": [
+          "rom:00014804"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "00014802",
+        "address_sources": [
+          "instruction:000147B4"
+        ],
+        "call_context": [
+          "000147AC"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000147B4",
+        "size": 2,
+        "value": "00000080",
+        "value_sources": [
+          "rom:00014802"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "00014810",
+        "address_sources": [
+          "instruction:000147CC"
+        ],
+        "call_context": [
+          "000147AC"
+        ],
+        "control_sources": [
+          "ram:FFFF4C8D",
+          "rom:00014802",
+          "rom:00014804"
+        ],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000147CC",
+        "size": 4,
+        "value": "FFFF4BC1",
+        "value_sources": [
+          "rom:00014810"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFF4BC1",
+        "address_sources": [
+          "rom:00014810"
+        ],
+        "call_context": [
+          "000147AC"
+        ],
+        "control_sources": [
+          "ram:FFFF4C8D",
+          "rom:00014802",
+          "rom:00014804"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000147DA",
+        "size": 1,
+        "value": "00000007",
+        "value_sources": [
+          "instruction:000147D6",
+          "ram:FFFF4C8D",
+          "rom:00014804"
+        ],
+        "watchpoints": [
+          "decoded target/current"
+        ]
+      },
+      {
+        "address": "00014814",
+        "address_sources": [
+          "instruction:000147DC"
+        ],
+        "call_context": [
+          "000147AC"
+        ],
+        "control_sources": [
+          "ram:FFFF4C8D",
+          "rom:00014802",
+          "rom:00014804"
+        ],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000147DC",
+        "size": 4,
+        "value": "FFFF4BC2",
+        "value_sources": [
+          "rom:00014814"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFF4BC2",
+        "address_sources": [
+          "rom:00014814"
+        ],
+        "call_context": [
+          "000147AC"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "ram:FFFF4C8D",
+          "rom:00014802",
+          "rom:00014804"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000147FC",
+        "size": 1,
+        "value": "00000007",
+        "value_sources": [
+          "instruction:000147DE",
+          "ram:FFFF4C8D"
+        ],
+        "watchpoints": [
+          "decoded target/current"
+        ]
+      }
+    ],
+    "output": [
+      7,
+      7
+    ],
+    "result": {
+      "base_rom_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+      "completion": "function return",
+      "entry": "000147AC",
+      "memory_trace_sha256": "b62e7e0749af98703dfe7d6063321e199aa1f3fe0c36745c97c557e7d6de7735",
+      "pr_matches_boundary": true,
+      "pr_preserved": true,
+      "preserved_registers": [
+        "r8",
+        "r9",
+        "r10",
+        "r11",
+        "r12",
+        "r13",
+        "r14",
+        "r15"
+      ],
+      "registers": [
+        "00000008",
+        "FFFF4BC1",
+        "FFFF4C8D",
+        "0000000F",
+        "00000007",
+        "00000007",
+        "FFFF4BC2",
+        "00000080",
+        "18283848",
+        "19293949",
+        "1A2A3A4A",
+        "1B2B3B4B",
+        "1C2C3C4C",
+        "1D2D3D4D",
+        "1E2E3E4E",
+        "FFFFBFA0"
+      ],
+      "rom_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+      "stack_pointer_restored": true,
+      "steps": 36,
+      "system_registers": {
+        "mach": "89ABCDEF",
+        "macl": "12345678",
+        "pr": "FFFFFFFC",
+        "sr": "000003F3"
+      },
+      "trace_sha256": "a91c436b822546a710eeb7e33a22d354b8b4eaaa88a2ed69443a7b42ce2c255b"
+    }
+  },
+  {
+    "fixture": {
+      "packed": 0,
+      "prior": [
+        170,
+        187
+      ]
+    },
+    "instructions": [
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_pc",
+        "opcode": "D217",
+        "pc": "000147AC",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r2": "FFFF4C8D"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "movb_load",
+        "opcode": "6520",
+        "pc": "000147AE",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r5": "00000000"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "9628",
+        "pc": "000147B0",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r6": "000000F0"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "and_reg",
+        "opcode": "2659",
+        "pc": "000147B2",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r6": "00000000"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "9725",
+        "pc": "000147B4",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r7": "00000080"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "extub",
+        "opcode": "646C",
+        "pc": "000147B6",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r4": "00000000"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "cmpeq_reg",
+        "opcode": "3470",
+        "pc": "000147B8",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "bf_s",
+        "opcode": "8F04",
+        "pc": "000147BA",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": true,
+        "instruction": "nop",
+        "opcode": "0009",
+        "pc": "000147BC",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "tst_reg",
+        "opcode": "2748",
+        "pc": "000147C6",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 1,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "bf_s",
+        "opcode": "8F08",
+        "pc": "000147C8",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "nop",
+        "opcode": "0009",
+        "pc": "000147CA",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_pc",
+        "opcode": "D110",
+        "pc": "000147CC",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r1": "FFFF4BC1"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "shar",
+        "opcode": "4421",
+        "pc": "000147CE",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 0,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "shar",
+        "opcode": "4421",
+        "pc": "000147D0",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "shar",
+        "opcode": "4421",
+        "pc": "000147D2",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "shar",
+        "opcode": "4421",
+        "pc": "000147D4",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "mov_imm",
+        "opcode": "E30F",
+        "pc": "000147D6",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r3": "0000000F"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "and_reg",
+        "opcode": "2439",
+        "pc": "000147D8",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "movb_store",
+        "opcode": "2140",
+        "pc": "000147DA",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_pc",
+        "opcode": "D60D",
+        "pc": "000147DC",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r6": "FFFF4BC2"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "mov_imm",
+        "opcode": "E30F",
+        "pc": "000147DE",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "and_reg",
+        "opcode": "2539",
+        "pc": "000147E0",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "extub",
+        "opcode": "645C",
+        "pc": "000147E2",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "mov_reg",
+        "opcode": "6043",
+        "pc": "000147E4",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r0": "00000000"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "cmpeq_imm",
+        "opcode": "8808",
+        "pc": "000147E6",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "bf_s",
+        "opcode": "8F03",
+        "pc": "000147E8",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": true,
+        "instruction": "nop",
+        "opcode": "0009",
+        "pc": "000147EA",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "mov_imm",
+        "opcode": "E008",
+        "pc": "000147F2",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r0": "00000008"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "tst_reg",
+        "opcode": "2408",
+        "pc": "000147F4",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 1,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "bf_s",
+        "opcode": "8F02",
+        "pc": "000147F6",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "nop",
+        "opcode": "0009",
+        "pc": "000147F8",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "and_reg",
+        "opcode": "2539",
+        "pc": "000147FA",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "movb_store",
+        "opcode": "2650",
+        "pc": "000147FC",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "rts",
+        "opcode": "000B",
+        "pc": "000147FE",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": true,
+        "instruction": "nop",
+        "opcode": "0009",
+        "pc": "00014800",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      }
+    ],
+    "label": "modeled Neutral",
+    "memory": [
+      {
+        "address": "0001480C",
+        "address_sources": [
+          "instruction:000147AC"
+        ],
+        "call_context": [
+          "000147AC"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000147AC",
+        "size": 4,
+        "value": "FFFF4C8D",
+        "value_sources": [
+          "rom:0001480C"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFF4C8D",
+        "address_sources": [
+          "rom:0001480C"
+        ],
+        "call_context": [
+          "000147AC"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000147AE",
+        "size": 1,
+        "value": "00000000",
+        "value_sources": [
+          "ram:FFFF4C8D"
+        ],
+        "watchpoints": [
+          "packed input"
+        ]
+      },
+      {
+        "address": "00014804",
+        "address_sources": [
+          "instruction:000147B0"
+        ],
+        "call_context": [
+          "000147AC"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000147B0",
+        "size": 2,
+        "value": "000000F0",
+        "value_sources": [
+          "rom:00014804"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "00014802",
+        "address_sources": [
+          "instruction:000147B4"
+        ],
+        "call_context": [
+          "000147AC"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000147B4",
+        "size": 2,
+        "value": "00000080",
+        "value_sources": [
+          "rom:00014802"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "00014810",
+        "address_sources": [
+          "instruction:000147CC"
+        ],
+        "call_context": [
+          "000147AC"
+        ],
+        "control_sources": [
+          "ram:FFFF4C8D",
+          "rom:00014802",
+          "rom:00014804"
+        ],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000147CC",
+        "size": 4,
+        "value": "FFFF4BC1",
+        "value_sources": [
+          "rom:00014810"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFF4BC1",
+        "address_sources": [
+          "rom:00014810"
+        ],
+        "call_context": [
+          "000147AC"
+        ],
+        "control_sources": [
+          "ram:FFFF4C8D",
+          "rom:00014802",
+          "rom:00014804"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000147DA",
+        "size": 1,
+        "value": "00000000",
+        "value_sources": [
+          "instruction:000147D6",
+          "ram:FFFF4C8D",
+          "rom:00014804"
+        ],
+        "watchpoints": [
+          "decoded target/current"
+        ]
+      },
+      {
+        "address": "00014814",
+        "address_sources": [
+          "instruction:000147DC"
+        ],
+        "call_context": [
+          "000147AC"
+        ],
+        "control_sources": [
+          "ram:FFFF4C8D",
+          "rom:00014802",
+          "rom:00014804"
+        ],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000147DC",
+        "size": 4,
+        "value": "FFFF4BC2",
+        "value_sources": [
+          "rom:00014814"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFF4BC2",
+        "address_sources": [
+          "rom:00014814"
+        ],
+        "call_context": [
+          "000147AC"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "ram:FFFF4C8D",
+          "rom:00014802",
+          "rom:00014804"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000147FC",
+        "size": 1,
+        "value": "00000000",
+        "value_sources": [
+          "instruction:000147DE",
+          "ram:FFFF4C8D"
+        ],
+        "watchpoints": [
+          "decoded target/current"
+        ]
+      }
+    ],
+    "output": [
+      0,
+      0
+    ],
+    "result": {
+      "base_rom_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+      "completion": "function return",
+      "entry": "000147AC",
+      "memory_trace_sha256": "c239253266fdbbd2683437e869eb8322c4cf572f753dd45a5a5c828949e951ef",
+      "pr_matches_boundary": true,
+      "pr_preserved": true,
+      "preserved_registers": [
+        "r8",
+        "r9",
+        "r10",
+        "r11",
+        "r12",
+        "r13",
+        "r14",
+        "r15"
+      ],
+      "registers": [
+        "00000008",
+        "FFFF4BC1",
+        "FFFF4C8D",
+        "0000000F",
+        "00000000",
+        "00000000",
+        "FFFF4BC2",
+        "00000080",
+        "18283848",
+        "19293949",
+        "1A2A3A4A",
+        "1B2B3B4B",
+        "1C2C3C4C",
+        "1D2D3D4D",
+        "1E2E3E4E",
+        "FFFFBFA0"
+      ],
+      "rom_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+      "stack_pointer_restored": true,
+      "steps": 36,
+      "system_registers": {
+        "mach": "89ABCDEF",
+        "macl": "12345678",
+        "pr": "FFFFFFFC",
+        "sr": "000003F3"
+      },
+      "trace_sha256": "f1bdb2225acb2276ec3e939725b5b157875e74653dec4fe59ff6f3937cfaa371"
+    }
+  },
+  {
+    "fixture": {
+      "packed": 17,
+      "prior": [
+        170,
+        187
+      ]
+    },
+    "instructions": [
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_pc",
+        "opcode": "D217",
+        "pc": "000147AC",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r2": "FFFF4C8D"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "movb_load",
+        "opcode": "6520",
+        "pc": "000147AE",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r5": "00000011"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "9628",
+        "pc": "000147B0",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r6": "000000F0"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "and_reg",
+        "opcode": "2659",
+        "pc": "000147B2",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r6": "00000010"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "9725",
+        "pc": "000147B4",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r7": "00000080"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "extub",
+        "opcode": "646C",
+        "pc": "000147B6",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r4": "00000010"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "cmpeq_reg",
+        "opcode": "3470",
+        "pc": "000147B8",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "bf_s",
+        "opcode": "8F04",
+        "pc": "000147BA",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": true,
+        "instruction": "nop",
+        "opcode": "0009",
+        "pc": "000147BC",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "tst_reg",
+        "opcode": "2748",
+        "pc": "000147C6",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 1,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "bf_s",
+        "opcode": "8F08",
+        "pc": "000147C8",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "nop",
+        "opcode": "0009",
+        "pc": "000147CA",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_pc",
+        "opcode": "D110",
+        "pc": "000147CC",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r1": "FFFF4BC1"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "shar",
+        "opcode": "4421",
+        "pc": "000147CE",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r4": "00000008"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 0,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "shar",
+        "opcode": "4421",
+        "pc": "000147D0",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r4": "00000004"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "shar",
+        "opcode": "4421",
+        "pc": "000147D2",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r4": "00000002"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "shar",
+        "opcode": "4421",
+        "pc": "000147D4",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r4": "00000001"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "mov_imm",
+        "opcode": "E30F",
+        "pc": "000147D6",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r3": "0000000F"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "and_reg",
+        "opcode": "2439",
+        "pc": "000147D8",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "movb_store",
+        "opcode": "2140",
+        "pc": "000147DA",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_pc",
+        "opcode": "D60D",
+        "pc": "000147DC",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r6": "FFFF4BC2"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "mov_imm",
+        "opcode": "E30F",
+        "pc": "000147DE",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "and_reg",
+        "opcode": "2539",
+        "pc": "000147E0",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r5": "00000001"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "extub",
+        "opcode": "645C",
+        "pc": "000147E2",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "mov_reg",
+        "opcode": "6043",
+        "pc": "000147E4",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r0": "00000001"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "cmpeq_imm",
+        "opcode": "8808",
+        "pc": "000147E6",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "bf_s",
+        "opcode": "8F03",
+        "pc": "000147E8",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": true,
+        "instruction": "nop",
+        "opcode": "0009",
+        "pc": "000147EA",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "mov_imm",
+        "opcode": "E008",
+        "pc": "000147F2",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r0": "00000008"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "tst_reg",
+        "opcode": "2408",
+        "pc": "000147F4",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 1,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "bf_s",
+        "opcode": "8F02",
+        "pc": "000147F6",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "nop",
+        "opcode": "0009",
+        "pc": "000147F8",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "and_reg",
+        "opcode": "2539",
+        "pc": "000147FA",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "movb_store",
+        "opcode": "2650",
+        "pc": "000147FC",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "rts",
+        "opcode": "000B",
+        "pc": "000147FE",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": true,
+        "instruction": "nop",
+        "opcode": "0009",
+        "pc": "00014800",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      }
+    ],
+    "label": "modeled stable first",
+    "memory": [
+      {
+        "address": "0001480C",
+        "address_sources": [
+          "instruction:000147AC"
+        ],
+        "call_context": [
+          "000147AC"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000147AC",
+        "size": 4,
+        "value": "FFFF4C8D",
+        "value_sources": [
+          "rom:0001480C"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFF4C8D",
+        "address_sources": [
+          "rom:0001480C"
+        ],
+        "call_context": [
+          "000147AC"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000147AE",
+        "size": 1,
+        "value": "00000011",
+        "value_sources": [
+          "ram:FFFF4C8D"
+        ],
+        "watchpoints": [
+          "packed input"
+        ]
+      },
+      {
+        "address": "00014804",
+        "address_sources": [
+          "instruction:000147B0"
+        ],
+        "call_context": [
+          "000147AC"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000147B0",
+        "size": 2,
+        "value": "000000F0",
+        "value_sources": [
+          "rom:00014804"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "00014802",
+        "address_sources": [
+          "instruction:000147B4"
+        ],
+        "call_context": [
+          "000147AC"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000147B4",
+        "size": 2,
+        "value": "00000080",
+        "value_sources": [
+          "rom:00014802"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "00014810",
+        "address_sources": [
+          "instruction:000147CC"
+        ],
+        "call_context": [
+          "000147AC"
+        ],
+        "control_sources": [
+          "ram:FFFF4C8D",
+          "rom:00014802",
+          "rom:00014804"
+        ],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000147CC",
+        "size": 4,
+        "value": "FFFF4BC1",
+        "value_sources": [
+          "rom:00014810"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFF4BC1",
+        "address_sources": [
+          "rom:00014810"
+        ],
+        "call_context": [
+          "000147AC"
+        ],
+        "control_sources": [
+          "ram:FFFF4C8D",
+          "rom:00014802",
+          "rom:00014804"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000147DA",
+        "size": 1,
+        "value": "00000001",
+        "value_sources": [
+          "instruction:000147D6",
+          "ram:FFFF4C8D",
+          "rom:00014804"
+        ],
+        "watchpoints": [
+          "decoded target/current"
+        ]
+      },
+      {
+        "address": "00014814",
+        "address_sources": [
+          "instruction:000147DC"
+        ],
+        "call_context": [
+          "000147AC"
+        ],
+        "control_sources": [
+          "ram:FFFF4C8D",
+          "rom:00014802",
+          "rom:00014804"
+        ],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000147DC",
+        "size": 4,
+        "value": "FFFF4BC2",
+        "value_sources": [
+          "rom:00014814"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFF4BC2",
+        "address_sources": [
+          "rom:00014814"
+        ],
+        "call_context": [
+          "000147AC"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "ram:FFFF4C8D",
+          "rom:00014802",
+          "rom:00014804"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000147FC",
+        "size": 1,
+        "value": "00000001",
+        "value_sources": [
+          "instruction:000147DE",
+          "ram:FFFF4C8D"
+        ],
+        "watchpoints": [
+          "decoded target/current"
+        ]
+      }
+    ],
+    "output": [
+      1,
+      1
+    ],
+    "result": {
+      "base_rom_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+      "completion": "function return",
+      "entry": "000147AC",
+      "memory_trace_sha256": "40eda429e0947934117edd9bd11e51c7c695a1ba4bab03fc0180dd9d062043bd",
+      "pr_matches_boundary": true,
+      "pr_preserved": true,
+      "preserved_registers": [
+        "r8",
+        "r9",
+        "r10",
+        "r11",
+        "r12",
+        "r13",
+        "r14",
+        "r15"
+      ],
+      "registers": [
+        "00000008",
+        "FFFF4BC1",
+        "FFFF4C8D",
+        "0000000F",
+        "00000001",
+        "00000001",
+        "FFFF4BC2",
+        "00000080",
+        "18283848",
+        "19293949",
+        "1A2A3A4A",
+        "1B2B3B4B",
+        "1C2C3C4C",
+        "1D2D3D4D",
+        "1E2E3E4E",
+        "FFFFBFA0"
+      ],
+      "rom_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+      "stack_pointer_restored": true,
+      "steps": 36,
+      "system_registers": {
+        "mach": "89ABCDEF",
+        "macl": "12345678",
+        "pr": "FFFFFFFC",
+        "sr": "000003F3"
+      },
+      "trace_sha256": "6fa75d68884f9a2cea6cb4fb469c169c17fbf8a0ccbcf2c399cc53b71d5f1bba"
+    }
+  },
+  {
+    "fixture": {
+      "packed": 33,
+      "prior": [
+        170,
+        187
+      ]
+    },
+    "instructions": [
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_pc",
+        "opcode": "D217",
+        "pc": "000147AC",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r2": "FFFF4C8D"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "movb_load",
+        "opcode": "6520",
+        "pc": "000147AE",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r5": "00000021"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "9628",
+        "pc": "000147B0",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r6": "000000F0"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "and_reg",
+        "opcode": "2659",
+        "pc": "000147B2",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r6": "00000020"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "9725",
+        "pc": "000147B4",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r7": "00000080"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "extub",
+        "opcode": "646C",
+        "pc": "000147B6",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r4": "00000020"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "cmpeq_reg",
+        "opcode": "3470",
+        "pc": "000147B8",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "bf_s",
+        "opcode": "8F04",
+        "pc": "000147BA",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": true,
+        "instruction": "nop",
+        "opcode": "0009",
+        "pc": "000147BC",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "tst_reg",
+        "opcode": "2748",
+        "pc": "000147C6",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 1,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "bf_s",
+        "opcode": "8F08",
+        "pc": "000147C8",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "nop",
+        "opcode": "0009",
+        "pc": "000147CA",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_pc",
+        "opcode": "D110",
+        "pc": "000147CC",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r1": "FFFF4BC1"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "shar",
+        "opcode": "4421",
+        "pc": "000147CE",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r4": "00000010"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 0,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "shar",
+        "opcode": "4421",
+        "pc": "000147D0",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r4": "00000008"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "shar",
+        "opcode": "4421",
+        "pc": "000147D2",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r4": "00000004"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "shar",
+        "opcode": "4421",
+        "pc": "000147D4",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r4": "00000002"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "mov_imm",
+        "opcode": "E30F",
+        "pc": "000147D6",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r3": "0000000F"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "and_reg",
+        "opcode": "2439",
+        "pc": "000147D8",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "movb_store",
+        "opcode": "2140",
+        "pc": "000147DA",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_pc",
+        "opcode": "D60D",
+        "pc": "000147DC",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r6": "FFFF4BC2"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "mov_imm",
+        "opcode": "E30F",
+        "pc": "000147DE",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "and_reg",
+        "opcode": "2539",
+        "pc": "000147E0",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r5": "00000001"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "extub",
+        "opcode": "645C",
+        "pc": "000147E2",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r4": "00000001"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "mov_reg",
+        "opcode": "6043",
+        "pc": "000147E4",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r0": "00000001"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "cmpeq_imm",
+        "opcode": "8808",
+        "pc": "000147E6",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "bf_s",
+        "opcode": "8F03",
+        "pc": "000147E8",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": true,
+        "instruction": "nop",
+        "opcode": "0009",
+        "pc": "000147EA",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "mov_imm",
+        "opcode": "E008",
+        "pc": "000147F2",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r0": "00000008"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "tst_reg",
+        "opcode": "2408",
+        "pc": "000147F4",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 1,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "bf_s",
+        "opcode": "8F02",
+        "pc": "000147F6",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "nop",
+        "opcode": "0009",
+        "pc": "000147F8",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "and_reg",
+        "opcode": "2539",
+        "pc": "000147FA",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "movb_store",
+        "opcode": "2650",
+        "pc": "000147FC",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "rts",
+        "opcode": "000B",
+        "pc": "000147FE",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": true,
+        "instruction": "nop",
+        "opcode": "0009",
+        "pc": "00014800",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      }
+    ],
+    "label": "modeled upshift",
+    "memory": [
+      {
+        "address": "0001480C",
+        "address_sources": [
+          "instruction:000147AC"
+        ],
+        "call_context": [
+          "000147AC"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000147AC",
+        "size": 4,
+        "value": "FFFF4C8D",
+        "value_sources": [
+          "rom:0001480C"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFF4C8D",
+        "address_sources": [
+          "rom:0001480C"
+        ],
+        "call_context": [
+          "000147AC"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000147AE",
+        "size": 1,
+        "value": "00000021",
+        "value_sources": [
+          "ram:FFFF4C8D"
+        ],
+        "watchpoints": [
+          "packed input"
+        ]
+      },
+      {
+        "address": "00014804",
+        "address_sources": [
+          "instruction:000147B0"
+        ],
+        "call_context": [
+          "000147AC"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000147B0",
+        "size": 2,
+        "value": "000000F0",
+        "value_sources": [
+          "rom:00014804"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "00014802",
+        "address_sources": [
+          "instruction:000147B4"
+        ],
+        "call_context": [
+          "000147AC"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000147B4",
+        "size": 2,
+        "value": "00000080",
+        "value_sources": [
+          "rom:00014802"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "00014810",
+        "address_sources": [
+          "instruction:000147CC"
+        ],
+        "call_context": [
+          "000147AC"
+        ],
+        "control_sources": [
+          "ram:FFFF4C8D",
+          "rom:00014802",
+          "rom:00014804"
+        ],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000147CC",
+        "size": 4,
+        "value": "FFFF4BC1",
+        "value_sources": [
+          "rom:00014810"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFF4BC1",
+        "address_sources": [
+          "rom:00014810"
+        ],
+        "call_context": [
+          "000147AC"
+        ],
+        "control_sources": [
+          "ram:FFFF4C8D",
+          "rom:00014802",
+          "rom:00014804"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000147DA",
+        "size": 1,
+        "value": "00000002",
+        "value_sources": [
+          "instruction:000147D6",
+          "ram:FFFF4C8D",
+          "rom:00014804"
+        ],
+        "watchpoints": [
+          "decoded target/current"
+        ]
+      },
+      {
+        "address": "00014814",
+        "address_sources": [
+          "instruction:000147DC"
+        ],
+        "call_context": [
+          "000147AC"
+        ],
+        "control_sources": [
+          "ram:FFFF4C8D",
+          "rom:00014802",
+          "rom:00014804"
+        ],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000147DC",
+        "size": 4,
+        "value": "FFFF4BC2",
+        "value_sources": [
+          "rom:00014814"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFF4BC2",
+        "address_sources": [
+          "rom:00014814"
+        ],
+        "call_context": [
+          "000147AC"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "ram:FFFF4C8D",
+          "rom:00014802",
+          "rom:00014804"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000147FC",
+        "size": 1,
+        "value": "00000001",
+        "value_sources": [
+          "instruction:000147DE",
+          "ram:FFFF4C8D"
+        ],
+        "watchpoints": [
+          "decoded target/current"
+        ]
+      }
+    ],
+    "output": [
+      2,
+      1
+    ],
+    "result": {
+      "base_rom_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+      "completion": "function return",
+      "entry": "000147AC",
+      "memory_trace_sha256": "f2bcccff5283e7f6d19414ef0299bb7958c87c1a639030878f2002b27c055885",
+      "pr_matches_boundary": true,
+      "pr_preserved": true,
+      "preserved_registers": [
+        "r8",
+        "r9",
+        "r10",
+        "r11",
+        "r12",
+        "r13",
+        "r14",
+        "r15"
+      ],
+      "registers": [
+        "00000008",
+        "FFFF4BC1",
+        "FFFF4C8D",
+        "0000000F",
+        "00000001",
+        "00000001",
+        "FFFF4BC2",
+        "00000080",
+        "18283848",
+        "19293949",
+        "1A2A3A4A",
+        "1B2B3B4B",
+        "1C2C3C4C",
+        "1D2D3D4D",
+        "1E2E3E4E",
+        "FFFFBFA0"
+      ],
+      "rom_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+      "stack_pointer_restored": true,
+      "steps": 36,
+      "system_registers": {
+        "mach": "89ABCDEF",
+        "macl": "12345678",
+        "pr": "FFFFFFFC",
+        "sr": "000003F3"
+      },
+      "trace_sha256": "3502c9617dd59c57e355332c3dc8b15bc057d9d28e9270c4f72ab7118e68eb1f"
+    }
+  },
+  {
+    "fixture": {
+      "packed": 18,
+      "prior": [
+        170,
+        187
+      ]
+    },
+    "instructions": [
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_pc",
+        "opcode": "D217",
+        "pc": "000147AC",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r2": "FFFF4C8D"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "movb_load",
+        "opcode": "6520",
+        "pc": "000147AE",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r5": "00000012"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "9628",
+        "pc": "000147B0",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r6": "000000F0"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "and_reg",
+        "opcode": "2659",
+        "pc": "000147B2",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r6": "00000010"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "9725",
+        "pc": "000147B4",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r7": "00000080"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "extub",
+        "opcode": "646C",
+        "pc": "000147B6",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r4": "00000010"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "cmpeq_reg",
+        "opcode": "3470",
+        "pc": "000147B8",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "bf_s",
+        "opcode": "8F04",
+        "pc": "000147BA",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": true,
+        "instruction": "nop",
+        "opcode": "0009",
+        "pc": "000147BC",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "tst_reg",
+        "opcode": "2748",
+        "pc": "000147C6",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 1,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "bf_s",
+        "opcode": "8F08",
+        "pc": "000147C8",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "nop",
+        "opcode": "0009",
+        "pc": "000147CA",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_pc",
+        "opcode": "D110",
+        "pc": "000147CC",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r1": "FFFF4BC1"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "shar",
+        "opcode": "4421",
+        "pc": "000147CE",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r4": "00000008"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 0,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "shar",
+        "opcode": "4421",
+        "pc": "000147D0",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r4": "00000004"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "shar",
+        "opcode": "4421",
+        "pc": "000147D2",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r4": "00000002"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "shar",
+        "opcode": "4421",
+        "pc": "000147D4",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r4": "00000001"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "mov_imm",
+        "opcode": "E30F",
+        "pc": "000147D6",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r3": "0000000F"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "and_reg",
+        "opcode": "2439",
+        "pc": "000147D8",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "movb_store",
+        "opcode": "2140",
+        "pc": "000147DA",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_pc",
+        "opcode": "D60D",
+        "pc": "000147DC",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r6": "FFFF4BC2"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "mov_imm",
+        "opcode": "E30F",
+        "pc": "000147DE",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "and_reg",
+        "opcode": "2539",
+        "pc": "000147E0",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r5": "00000002"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "extub",
+        "opcode": "645C",
+        "pc": "000147E2",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r4": "00000002"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "mov_reg",
+        "opcode": "6043",
+        "pc": "000147E4",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r0": "00000002"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "cmpeq_imm",
+        "opcode": "8808",
+        "pc": "000147E6",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "bf_s",
+        "opcode": "8F03",
+        "pc": "000147E8",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": true,
+        "instruction": "nop",
+        "opcode": "0009",
+        "pc": "000147EA",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "mov_imm",
+        "opcode": "E008",
+        "pc": "000147F2",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r0": "00000008"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "tst_reg",
+        "opcode": "2408",
+        "pc": "000147F4",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 1,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "bf_s",
+        "opcode": "8F02",
+        "pc": "000147F6",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "nop",
+        "opcode": "0009",
+        "pc": "000147F8",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "and_reg",
+        "opcode": "2539",
+        "pc": "000147FA",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "movb_store",
+        "opcode": "2650",
+        "pc": "000147FC",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "rts",
+        "opcode": "000B",
+        "pc": "000147FE",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": true,
+        "instruction": "nop",
+        "opcode": "0009",
+        "pc": "00014800",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F3"
+        },
+        "t_after": 1,
+        "t_before": 1
+      }
+    ],
+    "label": "modeled downshift",
+    "memory": [
+      {
+        "address": "0001480C",
+        "address_sources": [
+          "instruction:000147AC"
+        ],
+        "call_context": [
+          "000147AC"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000147AC",
+        "size": 4,
+        "value": "FFFF4C8D",
+        "value_sources": [
+          "rom:0001480C"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFF4C8D",
+        "address_sources": [
+          "rom:0001480C"
+        ],
+        "call_context": [
+          "000147AC"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000147AE",
+        "size": 1,
+        "value": "00000012",
+        "value_sources": [
+          "ram:FFFF4C8D"
+        ],
+        "watchpoints": [
+          "packed input"
+        ]
+      },
+      {
+        "address": "00014804",
+        "address_sources": [
+          "instruction:000147B0"
+        ],
+        "call_context": [
+          "000147AC"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000147B0",
+        "size": 2,
+        "value": "000000F0",
+        "value_sources": [
+          "rom:00014804"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "00014802",
+        "address_sources": [
+          "instruction:000147B4"
+        ],
+        "call_context": [
+          "000147AC"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000147B4",
+        "size": 2,
+        "value": "00000080",
+        "value_sources": [
+          "rom:00014802"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "00014810",
+        "address_sources": [
+          "instruction:000147CC"
+        ],
+        "call_context": [
+          "000147AC"
+        ],
+        "control_sources": [
+          "ram:FFFF4C8D",
+          "rom:00014802",
+          "rom:00014804"
+        ],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000147CC",
+        "size": 4,
+        "value": "FFFF4BC1",
+        "value_sources": [
+          "rom:00014810"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFF4BC1",
+        "address_sources": [
+          "rom:00014810"
+        ],
+        "call_context": [
+          "000147AC"
+        ],
+        "control_sources": [
+          "ram:FFFF4C8D",
+          "rom:00014802",
+          "rom:00014804"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000147DA",
+        "size": 1,
+        "value": "00000001",
+        "value_sources": [
+          "instruction:000147D6",
+          "ram:FFFF4C8D",
+          "rom:00014804"
+        ],
+        "watchpoints": [
+          "decoded target/current"
+        ]
+      },
+      {
+        "address": "00014814",
+        "address_sources": [
+          "instruction:000147DC"
+        ],
+        "call_context": [
+          "000147AC"
+        ],
+        "control_sources": [
+          "ram:FFFF4C8D",
+          "rom:00014802",
+          "rom:00014804"
+        ],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000147DC",
+        "size": 4,
+        "value": "FFFF4BC2",
+        "value_sources": [
+          "rom:00014814"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFF4BC2",
+        "address_sources": [
+          "rom:00014814"
+        ],
+        "call_context": [
+          "000147AC"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "ram:FFFF4C8D",
+          "rom:00014802",
+          "rom:00014804"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000147FC",
+        "size": 1,
+        "value": "00000002",
+        "value_sources": [
+          "instruction:000147DE",
+          "ram:FFFF4C8D"
+        ],
+        "watchpoints": [
+          "decoded target/current"
+        ]
+      }
+    ],
+    "output": [
+      1,
+      2
+    ],
+    "result": {
+      "base_rom_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+      "completion": "function return",
+      "entry": "000147AC",
+      "memory_trace_sha256": "912e05734e72bd77dcefca1e26fd422f33ab9ede131a0a8f675103d0b8cc1517",
+      "pr_matches_boundary": true,
+      "pr_preserved": true,
+      "preserved_registers": [
+        "r8",
+        "r9",
+        "r10",
+        "r11",
+        "r12",
+        "r13",
+        "r14",
+        "r15"
+      ],
+      "registers": [
+        "00000008",
+        "FFFF4BC1",
+        "FFFF4C8D",
+        "0000000F",
+        "00000002",
+        "00000002",
+        "FFFF4BC2",
+        "00000080",
+        "18283848",
+        "19293949",
+        "1A2A3A4A",
+        "1B2B3B4B",
+        "1C2C3C4C",
+        "1D2D3D4D",
+        "1E2E3E4E",
+        "FFFFBFA0"
+      ],
+      "rom_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+      "stack_pointer_restored": true,
+      "steps": 36,
+      "system_registers": {
+        "mach": "89ABCDEF",
+        "macl": "12345678",
+        "pr": "FFFFFFFC",
+        "sr": "000003F3"
+      },
+      "trace_sha256": "572e21c416fd51beb374379a1eb6f514298792388952276853e8bd86f40a7907"
+    }
+  },
+  {
+    "fixture": {
+      "packed": 159,
+      "prior": [
+        170,
+        187
+      ]
+    },
+    "instructions": [
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_pc",
+        "opcode": "D217",
+        "pc": "000147AC",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r2": "FFFF4C8D"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "movb_load",
+        "opcode": "6520",
+        "pc": "000147AE",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r5": "FFFFFF9F"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "9628",
+        "pc": "000147B0",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r6": "000000F0"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "and_reg",
+        "opcode": "2659",
+        "pc": "000147B2",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r6": "00000090"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "movw_pc",
+        "opcode": "9725",
+        "pc": "000147B4",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r7": "00000080"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "extub",
+        "opcode": "646C",
+        "pc": "000147B6",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r4": "00000090"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "cmpeq_reg",
+        "opcode": "3470",
+        "pc": "000147B8",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "bf_s",
+        "opcode": "8F04",
+        "pc": "000147BA",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": true,
+        "instruction": "nop",
+        "opcode": "0009",
+        "pc": "000147BC",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "tst_reg",
+        "opcode": "2748",
+        "pc": "000147C6",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "bf_s",
+        "opcode": "8F08",
+        "pc": "000147C8",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": true,
+        "instruction": "nop",
+        "opcode": "0009",
+        "pc": "000147CA",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "movl_pc",
+        "opcode": "D60D",
+        "pc": "000147DC",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r6": "FFFF4BC2"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "mov_imm",
+        "opcode": "E30F",
+        "pc": "000147DE",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r3": "0000000F"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "and_reg",
+        "opcode": "2539",
+        "pc": "000147E0",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r5": "0000000F"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "extub",
+        "opcode": "645C",
+        "pc": "000147E2",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r4": "0000000F"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "mov_reg",
+        "opcode": "6043",
+        "pc": "000147E4",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r0": "0000000F"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "cmpeq_imm",
+        "opcode": "8808",
+        "pc": "000147E6",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "bf_s",
+        "opcode": "8F03",
+        "pc": "000147E8",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": true,
+        "instruction": "nop",
+        "opcode": "0009",
+        "pc": "000147EA",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "mov_imm",
+        "opcode": "E008",
+        "pc": "000147F2",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {
+          "r0": "00000008"
+        },
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "tst_reg",
+        "opcode": "2408",
+        "pc": "000147F4",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "bf_s",
+        "opcode": "8F02",
+        "pc": "000147F6",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": true,
+        "instruction": "nop",
+        "opcode": "0009",
+        "pc": "000147F8",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": false,
+        "instruction": "rts",
+        "opcode": "000B",
+        "pc": "000147FE",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      },
+      {
+        "call_context": [
+          "000147AC"
+        ],
+        "delay_slot": true,
+        "instruction": "nop",
+        "opcode": "0009",
+        "pc": "00014800",
+        "pr_after": "FFFFFFFC",
+        "pr_before": "FFFFFFFC",
+        "registers": {},
+        "system_after": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "system_before": {
+          "mach": "89ABCDEF",
+          "macl": "12345678",
+          "sr": "000003F2"
+        },
+        "t_after": 0,
+        "t_before": 0
+      }
+    ],
+    "label": "out-of-range hold previous",
+    "memory": [
+      {
+        "address": "0001480C",
+        "address_sources": [
+          "instruction:000147AC"
+        ],
+        "call_context": [
+          "000147AC"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000147AC",
+        "size": 4,
+        "value": "FFFF4C8D",
+        "value_sources": [
+          "rom:0001480C"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "FFFF4C8D",
+        "address_sources": [
+          "rom:0001480C"
+        ],
+        "call_context": [
+          "000147AC"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000147AE",
+        "size": 1,
+        "value": "0000009F",
+        "value_sources": [
+          "ram:FFFF4C8D"
+        ],
+        "watchpoints": [
+          "packed input"
+        ]
+      },
+      {
+        "address": "00014804",
+        "address_sources": [
+          "instruction:000147B0"
+        ],
+        "call_context": [
+          "000147AC"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000147B0",
+        "size": 2,
+        "value": "000000F0",
+        "value_sources": [
+          "rom:00014804"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "00014802",
+        "address_sources": [
+          "instruction:000147B4"
+        ],
+        "call_context": [
+          "000147AC"
+        ],
+        "control_sources": [],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000147B4",
+        "size": 2,
+        "value": "00000080",
+        "value_sources": [
+          "rom:00014802"
+        ],
+        "watchpoints": []
+      },
+      {
+        "address": "00014814",
+        "address_sources": [
+          "instruction:000147DC"
+        ],
+        "call_context": [
+          "000147AC"
+        ],
+        "control_sources": [
+          "ram:FFFF4C8D",
+          "rom:00014802",
+          "rom:00014804"
+        ],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000147DC",
+        "size": 4,
+        "value": "FFFF4BC2",
+        "value_sources": [
+          "rom:00014814"
+        ],
+        "watchpoints": []
+      }
+    ],
+    "output": [
+      170,
+      187
+    ],
+    "result": {
+      "base_rom_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+      "completion": "function return",
+      "entry": "000147AC",
+      "memory_trace_sha256": "3661a656c5353ab87d9c8c22001e6464d94d8e9e0dc8c812aa31fad832bde7df",
+      "pr_matches_boundary": true,
+      "pr_preserved": true,
+      "preserved_registers": [
+        "r8",
+        "r9",
+        "r10",
+        "r11",
+        "r12",
+        "r13",
+        "r14",
+        "r15"
+      ],
+      "registers": [
+        "00000008",
+        "11213141",
+        "FFFF4C8D",
+        "0000000F",
+        "0000000F",
+        "0000000F",
+        "FFFF4BC2",
+        "00000080",
+        "18283848",
+        "19293949",
+        "1A2A3A4A",
+        "1B2B3B4B",
+        "1C2C3C4C",
+        "1D2D3D4D",
+        "1E2E3E4E",
+        "FFFFBFA0"
+      ],
+      "rom_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+      "stack_pointer_restored": true,
+      "steps": 26,
+      "system_registers": {
+        "mach": "89ABCDEF",
+        "macl": "12345678",
+        "pr": "FFFFFFFC",
+        "sr": "000003F2"
+      },
+      "trace_sha256": "fb0225ca1d30bc63ec30a530922304705568c5177f5b6b4693477e9afb14db06"
+    }
+  }
+]

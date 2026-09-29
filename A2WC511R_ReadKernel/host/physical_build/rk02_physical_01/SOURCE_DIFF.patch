@@ -1,0 +1,65 @@
+--- tested_fake/native.cpp
++++ never_executed_physical/native_physical.cpp
+@@ -1,4 +1,4 @@
+-// Fixed purpose, native x86 host for ONE pinned project-local FAKE J2534 DLL.
++// COMPILE-ONLY PHYSICAL TARGET: fixed pinned OpenPort DLL; never executed during qualification.
+ // No physical provider paths, arbitrary kernel/address/opcode or retry arguments.
+ #define WIN32_LEAN_AND_MEAN
+ #define NOMINMAX
+@@ -74,7 +74,7 @@
+  std::string wire=msg&&msg->DataSize<=4128?hex(msg->Data,msg->DataSize):"";
+  FILETIME utc;GetSystemTimePreciseAsFileTime(&utc);LARGE_INTEGER counter,frequency;QueryPerformanceCounter(&counter);QueryPerformanceFrequency(&frequency);
+  const unsigned long long utc_value=(static_cast<unsigned long long>(utc.dwHighDateTime)<<32)|utc.dwLowDateTime;
+- fprintf(journal,"{\"sequence\":%u,\"function\":\"%s\",\"status\":%lu,\"count\":%lu,\"esp_before\":%u,\"esp_after\":%u,\"wire_hex\":\"%s\",\"physical\":false,\"protocol\":%lu,\"rx_status\":%lu,\"tx_flags\":%lu,\"timestamp\":%lu,\"data_size\":%lu,\"extra\":%lu,\"utc_filetime\":%llu,\"counter\":%lld,\"frequency\":%lld}\n",calls++,fn,status,count,(unsigned)before,(unsigned)after,wire.c_str(),msg?msg->ProtocolID:0,msg?msg->RxStatus:0,msg?msg->TxFlags:0,msg?msg->Timestamp:0,msg?msg->DataSize:0,msg?msg->ExtraDataIndex:0,utc_value,counter.QuadPart,frequency.QuadPart);
++ fprintf(journal,"{\"sequence\":%u,\"function\":\"%s\",\"status\":%lu,\"count\":%lu,\"esp_before\":%u,\"esp_after\":%u,\"wire_hex\":\"%s\",\"physical\":true,\"protocol\":%lu,\"rx_status\":%lu,\"tx_flags\":%lu,\"timestamp\":%lu,\"data_size\":%lu,\"extra\":%lu,\"utc_filetime\":%llu,\"counter\":%lld,\"frequency\":%lld}\n",calls++,fn,status,count,(unsigned)before,(unsigned)after,wire.c_str(),msg?msg->ProtocolID:0,msg?msg->RxStatus:0,msg?msg->TxFlags:0,msg?msg->Timestamp:0,msg?msg->DataSize:0,msg?msg->ExtraDataIndex:0,utc_value,counter.QuadPart,frequency.QuadPart);
+  need(fflush(journal)==0,"Journal flush");need(before==after,"stdcall stack imbalance");need(status==0,"J2534 status failure; no retry");
+ }
+ #define FN(name) auto name=reinterpret_cast<PF_##name*>(GetProcAddress(dll,#name));need(name!=nullptr,"Missing exact fake export " #name)
+@@ -84,7 +84,7 @@
+  log_api(name,result,count,before,after,msg);
+ }
+ #define CALL(name,expr,count,msg) tracked(#name,[&](){return (expr);},count,msg)
+-static int selftest(){
++int uninvoked_offline_selftest(){
+  unsigned n=0;need(key_for_seed({0x12,0x34,0x56,0x78})==Bytes({0xE7,0x8F,0x1F,0x21}),"Seed known vector");n++;
+  need(key_for_seed({0,0,0,0})==Bytes({0x2A,0x52,0xF9,0x63}),"Zero seed vector");n++;
+  Bytes payload(518,0);payload[0]=0x83;auto good=beef(payload);need(raw_reply(good,0,0).size()==512,"Raw positive");n++;
+@@ -103,9 +103,11 @@
+ int wmain(int argc,wchar_t** argv){
+  HANDLE output[2]={INVALID_HANDLE_VALUE,INVALID_HANDLE_VALUE};
+  try{
+-  if(argc==2&&wcscmp(argv[1],L"--selftest")==0)return selftest();
+-  need(argc==1,"No provider/kernel/address/opcode arguments accepted");
+-  // The only DLL path is a compile-time new-project path; no registration search.
++  need(argc==4&&wcscmp(argv[1],L"--acquire-owned-readkernel")==0&&wcscmp(argv[2],L"--certificate-sha256")==0&&wcscmp(argv[3],CERTIFICATE_SHA_W)==0,"Explicit acquisition flag and exact offline certificate SHA required before provider load");
++  HANDLE certificateLock=CreateFileW(CERTIFICATE_PATH,GENERIC_READ,FILE_SHARE_READ,nullptr,OPEN_EXISTING,FILE_ATTRIBUTE_NORMAL,nullptr);
++  need(certificateLock!=INVALID_HANDLE_VALUE,"Offline certificate file lock");
++  need(sha_file(certificateLock)==CERTIFICATE_SHA,"Offline certificate changed; provider not loaded");
++  // Exact installed OpenPort path only after eligible certificate; no registration search.
+   HANDLE locked=CreateFileW(FAKE_DLL_PATH,GENERIC_READ,FILE_SHARE_READ,nullptr,OPEN_EXISTING,FILE_ATTRIBUTE_NORMAL,nullptr);
+   need(locked!=INVALID_HANDLE_VALUE,"Fake DLL lock");need(sha_file(locked)==FAKE_DLL_SHA,"Fake DLL hash pin before load");
+   HMODULE dll=LoadLibraryExW(FAKE_DLL_PATH,nullptr,LOAD_LIBRARY_SEARCH_DLL_LOAD_DIR|LOAD_LIBRARY_SEARCH_SYSTEM32);need(dll!=nullptr,"Exact fake DLL load");
+@@ -114,9 +116,9 @@
+   need(_wfopen_s(&journal,(folder+L"\\native_api.jsonl").c_str(),L"wx")==0&&journal,"Exclusive native journal");
+   for(unsigned i=0;i<2;i++){auto name=folder+(i?L"\\pass1.partial.bin":L"\\pass0.partial.bin");output[i]=CreateFileW(name.c_str(),GENERIC_WRITE,FILE_SHARE_READ,nullptr,CREATE_NEW,FILE_ATTRIBUTE_NORMAL,nullptr);need(output[i]!=INVALID_HANDLE_VALUE,"Exclusive raw partial file");}
+   unsigned long device=0,channel=0,filter=0;
+-  CALL(PassThruOpen,PassThruOpen(nullptr,&device),0,nullptr);need(device==1,"Fixed fake device");
+-  CALL(PassThruConnect,PassThruConnect(device,3,0x200,4800,&channel),0,nullptr);need(channel==100,"Fixed fake channel");
+-  auto start_filter=[&](bool kernel){Message mask,pattern;set(mask.msg,kernel?Bytes({0xFF,0xFF}):Bytes({0xFF,0xFF,0xFF}));set(pattern.msg,kernel?Bytes({0xBE,0xEF}):Bytes({0x80,0xF0,0x10}));CALL(PassThruStartMsgFilter,PassThruStartMsgFilter(channel,1,&mask.msg,&pattern.msg,nullptr,&filter),0,nullptr);need(mask.intact()&&pattern.intact()&&filter==1,"Filter ABI");};
++  CALL(PassThruOpen,PassThruOpen(nullptr,&device),0,nullptr);/* Successful API supplies opaque device ID. */
++  CALL(PassThruConnect,PassThruConnect(device,3,0x200,4800,&channel),0,nullptr);/* Successful API supplies opaque channel ID. */
++  auto start_filter=[&](bool kernel){Message mask,pattern;set(mask.msg,kernel?Bytes({0xFF,0xFF}):Bytes({0xFF,0xFF,0xFF}));set(pattern.msg,kernel?Bytes({0xBE,0xEF}):Bytes({0x80,0xF0,0x10}));CALL(PassThruStartMsgFilter,PassThruStartMsgFilter(channel,1,&mask.msg,&pattern.msg,nullptr,&filter),0,nullptr);need(mask.intact()&&pattern.intact(),"Filter ABI");};
+   start_filter(false);
+   auto exchange=[&](const Bytes& wire){
+    Message tx;set(tx.msg,wire);unsigned long count=1;
+@@ -151,8 +153,8 @@
+   }
+   CALL(PassThruStopMsgFilter,PassThruStopMsgFilter(channel,filter),0,nullptr);CALL(PassThruDisconnect,PassThruDisconnect(channel),0,nullptr);CALL(PassThruClose,PassThruClose(device),0,nullptr);
+   for(auto h:output)CloseHandle(h);output[0]=output[1]=INVALID_HANDLE_VALUE;
+-  fclose(journal);journal=nullptr;FreeLibrary(dll);CloseHandle(locked);
+-  printf("PASS_NATIVE_FAKE_TWO_FULL_READS frames=%u calls=%u kernel=%s physical=false\n",frames,calls,KERNEL_SHA);return 0;
++  fclose(journal);journal=nullptr;FreeLibrary(dll);CloseHandle(locked);CloseHandle(certificateLock);
++  printf("PASS_NATIVE_FIXED_PHYSICAL_TWO_FULL_READS frames=%u calls=%u kernel=%s physical=true\n",frames,calls,KERNEL_SHA);return 0;
+  }catch(const std::exception& error){
+   if(journal){fprintf(journal,"{\"terminal_error\":true,\"frames\":%u,\"calls\":%u}\n",frames,calls);fflush(journal);fclose(journal);}
+   for(auto h:output)if(h!=INVALID_HANDLE_VALUE)CloseHandle(h);

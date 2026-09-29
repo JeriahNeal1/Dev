@@ -1,0 +1,166 @@
+
+C:\Dev\SubaruRoms\OEM\A2WC511R.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001466e <.data+0x1466e>:
+   1466e:	e6 40       	mov	#64,r6
+   14670:	d4 2f       	mov.l	0x14730,r4	! ffff4ba4
+   14672:	d3 2e       	mov.l	0x1472c,r3	! ffff4c8c
+   14674:	67 30       	mov.b	@r3,r7
+   14676:	65 7c       	extu.b	r7,r5
+   14678:	62 53       	mov	r5,r2
+   1467a:	22 68       	tst	r6,r2
+   1467c:	8f 04       	bf.s	0x14688
+   1467e:	00 09       	nop	
+   14680:	60 40       	mov.b	@r4,r0
+   14682:	c9 df       	and	#-33,r0
+   14684:	a0 03       	bra	0x1468e
+   14686:	24 00       	mov.b	r0,@r4
+   14688:	60 40       	mov.b	@r4,r0
+   1468a:	cb 20       	or	#32,r0
+   1468c:	24 00       	mov.b	r0,@r4
+   1468e:	e3 20       	mov	#32,r3
+   14690:	23 58       	tst	r5,r3
+   14692:	8f 04       	bf.s	0x1469e
+   14694:	00 09       	nop	
+   14696:	60 40       	mov.b	@r4,r0
+   14698:	c9 bf       	and	#-65,r0
+   1469a:	a0 03       	bra	0x146a4
+   1469c:	24 00       	mov.b	r0,@r4
+   1469e:	60 40       	mov.b	@r4,r0
+   146a0:	cb 40       	or	#64,r0
+   146a2:	24 00       	mov.b	r0,@r4
+   146a4:	e2 10       	mov	#16,r2
+   146a6:	22 58       	tst	r5,r2
+   146a8:	8f 44       	bf.s	0x14734
+   146aa:	00 09       	nop	
+   146ac:	60 40       	mov.b	@r4,r0
+   146ae:	c9 7f       	and	#127,r0
+   146b0:	a0 43       	bra	0x1473a
+   146b2:	24 00       	mov.b	r0,@r4
+   146b4:	00 0c       	mov.b	@(r0,r0),r0
+   146b6:	14 18       	mov.l	r1,@(32,r4)
+   146b8:	ff ff       	.word 0xffff
+   146ba:	4f f4       	.word 0x4ff4
+   146bc:	ff ff       	.word 0xffff
+   146be:	4b d4       	.word 0x4bd4
+   146c0:	00 0c       	mov.b	@(r0,r0),r0
+   146c2:	13 fc       	mov.l	r15,@(48,r3)
+   146c4:	42 a8       	.word 0x42a8
+   146c6:	00 00       	.word 0x0000
+   146c8:	00 00       	.word 0x0000
+   146ca:	24 58       	tst	r5,r4
+   146cc:	42 c8       	.word 0x42c8
+   146ce:	00 00       	.word 0x0000
+   146d0:	00 00       	.word 0x0000
+   146d2:	24 c0       	mov.b	r12,@r4
+   146d4:	ff ff       	.word 0xffff
+   146d6:	4b b8       	.word 0x4bb8
+   146d8:	ff ff       	.word 0xffff
+   146da:	4f f0       	.word 0x4ff0
+   146dc:	ff ff       	.word 0xffff
+   146de:	4b c7       	.word 0x4bc7
+   146e0:	42 48       	.word 0x4248
+   146e2:	00 00       	.word 0x0000
+   146e4:	ff ff       	.word 0xffff
+   146e6:	20 9c       	cmp/str	r9,r0
+   146e8:	ff ff       	.word 0xffff
+   146ea:	4e 98       	.word 0x4e98
+   146ec:	ff ff       	.word 0xffff
+   146ee:	4e 9c       	.word 0x4e9c
+   146f0:	ff ff       	.word 0xffff
+   146f2:	4b bc       	.word 0x4bbc
+   146f4:	ff ff       	.word 0xffff
+   146f6:	52 e8       	mov.l	@(32,r14),r2
+   146f8:	00 02       	stc	sr,r0
+   146fa:	3a 20       	cmp/eq	r2,r10
+   146fc:	ff ff       	.word 0xffff
+   146fe:	4b c5       	.word 0x4bc5
+   14700:	ff ff       	.word 0xffff
+   14702:	4c 68       	.word 0x4c68
+   14704:	ff ff       	.word 0xffff
+   14706:	4b b0       	.word 0x4bb0
+   14708:	ff ff       	.word 0xffff
+   1470a:	4b b4       	.word 0x4bb4
+   1470c:	ff ff       	.word 0xffff
+   1470e:	71 63       	add	#99,r1
+   14710:	00 04       	mov.b	r0,@(r0,r0)
+   14712:	4f f0       	.word 0x4ff0
+   14714:	00 02       	stc	sr,r0
+   14716:	6a 7a       	negc	r7,r10
+   14718:	ff ff       	.word 0xffff
+   1471a:	20 8c       	cmp/str	r8,r0
+   1471c:	ff ff       	.word 0xffff
+   1471e:	4b a5       	.word 0x4ba5
+   14720:	00 00       	.word 0x0000
+   14722:	24 dc       	cmp/str	r13,r4
+   14724:	ff ff       	.word 0xffff
+   14726:	71 64       	add	#100,r1
+   14728:	ff ff       	.word 0xffff
+   1472a:	20 8e       	mulu.w	r8,r0
+   1472c:	ff ff       	.word 0xffff
+   1472e:	4c 8c       	.word 0x4c8c
+   14730:	ff ff       	.word 0xffff
+   14732:	4b a4       	.word 0x4ba4
+   14734:	60 40       	mov.b	@r4,r0
+   14736:	cb 80       	or	#-128,r0
+   14738:	24 00       	mov.b	r0,@r4
+   1473a:	e0 0f       	mov	#15,r0
+   1473c:	97 61       	mov.w	0x14802,r7	! 80
+   1473e:	20 59       	and	r5,r0
+   14740:	88 00       	cmp/eq	#0,r0
+   14742:	8d 1d       	bt.s	0x14780
+   14744:	00 09       	nop	
+   14746:	88 01       	cmp/eq	#1,r0
+   14748:	8d 1c       	bt.s	0x14784
+   1474a:	00 09       	nop	
+   1474c:	88 02       	cmp/eq	#2,r0
+   1474e:	8d 1b       	bt.s	0x14788
+   14750:	00 09       	nop	
+   14752:	88 03       	cmp/eq	#3,r0
+   14754:	8d 1a       	bt.s	0x1478c
+   14756:	00 09       	nop	
+   14758:	88 04       	cmp/eq	#4,r0
+   1475a:	8d 19       	bt.s	0x14790
+   1475c:	00 09       	nop	
+   1475e:	88 05       	cmp/eq	#5,r0
+   14760:	8d 18       	bt.s	0x14794
+   14762:	00 09       	nop	
+   14764:	88 06       	cmp/eq	#6,r0
+   14766:	8d 17       	bt.s	0x14798
+   14768:	00 09       	nop	
+   1476a:	88 07       	cmp/eq	#7,r0
+   1476c:	8d 16       	bt.s	0x1479c
+   1476e:	00 09       	nop	
+   14770:	88 08       	cmp/eq	#8,r0
+   14772:	8d 17       	bt.s	0x147a4
+   14774:	00 09       	nop	
+   14776:	88 0f       	cmp/eq	#15,r0
+   14778:	8d 12       	bt.s	0x147a0
+   1477a:	00 09       	nop	
+   1477c:	a0 12       	bra	0x147a4
+   1477e:	00 09       	nop	
+   14780:	a0 11       	bra	0x147a6
+   14782:	e4 00       	mov	#0,r4
+   14784:	a0 0f       	bra	0x147a6
+   14786:	e4 01       	mov	#1,r4
+   14788:	a0 0d       	bra	0x147a6
+   1478a:	e4 02       	mov	#2,r4
+   1478c:	a0 0b       	bra	0x147a6
+   1478e:	e4 04       	mov	#4,r4
+   14790:	a0 09       	bra	0x147a6
+   14792:	e4 08       	mov	#8,r4
+   14794:	a0 07       	bra	0x147a6
+   14796:	e4 10       	mov	#16,r4
+   14798:	a0 05       	bra	0x147a6
+   1479a:	e4 20       	mov	#32,r4
+   1479c:	a0 03       	bra	0x147a6
+   1479e:	64 63       	mov	r6,r4
+   147a0:	a0 01       	bra	0x147a6
+   147a2:	e4 0f       	mov	#15,r4
+   147a4:	64 73       	mov	r7,r4
+   147a6:	d3 18       	mov.l	0x14808,r3	! ffff4bc0
+   147a8:	00 0b       	rts	
+   147aa:	23 40       	mov.b	r4,@r3

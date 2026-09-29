@@ -1,0 +1,11 @@
+--- C:\Dev\A2WC511R_ReadKernel\evidence\rk02\input_snapshot\host\protocol.py
++++ C:\Dev\A2WC511R_ReadKernel\host\protocol.py
+@@ -13,7 +13,7 @@
+ FLASH_SIZE = 0x100000
+ BLOCK_SIZE = 512
+ UPLOAD_BLOCK = 128
+-VERSION = b'A2WC511R-RK01\0'
++VERSION = b'A2WC511R-RK02\0'
+ TABLE = (5,6,7,1,9,12,13,8,10,13,2,11,15,4,0,3,
+          11,4,6,0,15,2,13,9,5,12,1,10,3,13,14,8)
+ UPLOAD_KEYS = (0x7856,0xCE22,0xF513,0x6E86)

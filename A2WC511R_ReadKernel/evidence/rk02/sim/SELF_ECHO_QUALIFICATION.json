@@ -1,0 +1,1428 @@
+{
+  "schema": 1,
+  "status": "PASS",
+  "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+  "physical": false,
+  "classification": "ACTUAL_COMPILED_RK02_HALF_DUPLEX_UNDER_EXPLICIT_RECEIVE_START_SCHEDULES",
+  "receiver_self_echo_default": true,
+  "cases": [
+    {
+      "case": "no_echo",
+      "identity": {
+        "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+        "kernel_bytes": 1808,
+        "rom": {
+          "source": "C:\\Dev\\SubaruRoms\\OEM\\A2WC511R.bin",
+          "sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+          "base_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+          "overlays": [],
+          "size": 1048576
+        },
+        "core_path": "C:\\Dev\\A2WC511R_Sim\\sh2e.py",
+        "core_sha256": "b47ac261634c116c3ffcdf19da9ec73e7014c034cd349ea8867f5f54895cdfff",
+        "manifest_sha256": "a35562a19f21d4a2815e88fb729d21dd2cc08bf702c0d866f88ffc9e3ddb659e",
+        "model_sources": {
+          "core.py": "caf6571a836676b82bec8f8a5eaa356590532e15931fae2da4b5822fe8ef0f90",
+          "cpu.py": "5043dafdfe59447cb8d906f7570907c472e1d638deb507dc4af8546e9b0f1980",
+          "fast_step.py": "029bb2b484911289b19e5cdbad35bbbbdc80af05420e91dad6884e0ff0484cfa",
+          "harness.py": "0496579da46daf66eb3be3847da0f3e94f8f45bf6f0b494a1f89a97853a8b4c6",
+          "memory.py": "d6062f1dde275b9611d1b631f8151eac567314c603a533dad8751eede3fa2a38",
+          "sci.py": "6f3b4b38ae6e12ac75d5101c767f10b106e9676c322eac3a0e39a67a9c0030c1",
+          "self_echo.py": "87896f45a074fcff5132a6faa57af48f5444de13fdf67f00a4f1304ea583da5d",
+          "__init__.py": "8e8b1da117fdc2ba4fe06edfc32b9c8d67176ab69a9470ee21151018bc85fbd8"
+        },
+        "peripheral_initial": {
+          "sci2": {
+            "FFFFF010": 0,
+            "FFFFF011": 255,
+            "FFFFF012": 0,
+            "FFFFF013": 255,
+            "FFFFF014": 132,
+            "FFFFF015": 0,
+            "FFFFF016": 242
+          },
+          "pccr": 0,
+          "dmaor": 0,
+          "wdt_tcsr": 24,
+          "ramer": 0,
+          "fmats": 0
+        },
+        "schedule": {
+          "rx_gap_ticks": 1,
+          "tx_complete_ticks": 1,
+          "brr_settle_ticks": 1,
+          "tx_load_ticks": 1
+        },
+        "optimized": true,
+        "receiver_self_echo": false,
+        "echo_profile": null,
+        "model": "DECLARED_INSTRUCTION_TICK_SCI2_NOT_PHYSICAL_TIMING"
+      },
+      "expected_outcome": "RX_WAIT",
+      "response_hex": "beef020683000000000000000aacffffbfa000000aacffffbfa000000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa8ffffffffffffffffdf01442b00090000ffffbfa0df01000b00090000ffffbfa0e5f74518750a8451e3ff4318620c737f2239324ce13c622c4118321c25210009000900090009000b0009ffff8441600c937f20388b04d643947c917c412be506000b00098441600c937320388b04d63e94729170412be506000b0009d33b7402d23b2342d13b412b6422634392614f227ff81f418431600c202988048b0c6433b0287402d3326503b03764322f0066f394539350430be5017f084f26000b00098441600c934520388b04d62b94469142412be506000b00098441600c933920388b060002913b2019cbf0400eaffe0009000b00098441600c624040286303622c84424228600c4018330c42188443332c600c6433340c000b60432fe62fd66d432fc66c532fb63dc24f229b198d0aee0062d4622c3e2c64ed441934ec4b0b6e4c3dc28bf54f2660e36bf66cf66df6000b6ef6ff07008804e0009000b000c0ff0f04c4ffff00000fec00000ff8ffffbfa4ffffbfa00000004000000fe42fe62fd62fc62fb62fa62f962f864f2295ab6453d361430b74fed26193a62321de6092a422e1d15e90a22011730623e1721222e1919d21e1731223e1720622e1711a21e1730e23e172c022e1e7",
+      "SCI_event_counts": {
+        "register_write": 1115,
+        "register_read": 1135,
+        "host_rx_enqueued": 2,
+        "rx_character_ready": 19,
+        "tx_character_start": 543,
+        "tx_shift_register_loaded": 543,
+        "tx_character_complete": 543
+      },
+      "SCR_writes": [
+        {
+          "tick": 74,
+          "value": 0,
+          "SSR_before": 132,
+          "pending_before": null,
+          "buffer_before": null
+        },
+        {
+          "tick": 4190,
+          "value": 16,
+          "SSR_before": 132,
+          "pending_before": null,
+          "buffer_before": null
+        },
+        {
+          "tick": 4354,
+          "value": 32,
+          "SSR_before": 132,
+          "pending_before": null,
+          "buffer_before": null
+        },
+        {
+          "tick": 4749,
+          "value": 16,
+          "SSR_before": 132,
+          "pending_before": null,
+          "buffer_before": null
+        },
+        {
+          "tick": 5109,
+          "value": 32,
+          "SSR_before": 132,
+          "pending_before": null,
+          "buffer_before": null
+        },
+        {
+          "tick": 15071,
+          "value": 16,
+          "SSR_before": 132,
+          "pending_before": null,
+          "buffer_before": null
+        }
+      ],
+      "notes": {}
+    },
+    {
+      "case": "every_byte_echo",
+      "identity": {
+        "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+        "kernel_bytes": 1808,
+        "rom": {
+          "source": "C:\\Dev\\SubaruRoms\\OEM\\A2WC511R.bin",
+          "sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+          "base_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+          "overlays": [],
+          "size": 1048576
+        },
+        "core_path": "C:\\Dev\\A2WC511R_Sim\\sh2e.py",
+        "core_sha256": "b47ac261634c116c3ffcdf19da9ec73e7014c034cd349ea8867f5f54895cdfff",
+        "manifest_sha256": "a35562a19f21d4a2815e88fb729d21dd2cc08bf702c0d866f88ffc9e3ddb659e",
+        "model_sources": {
+          "core.py": "caf6571a836676b82bec8f8a5eaa356590532e15931fae2da4b5822fe8ef0f90",
+          "cpu.py": "5043dafdfe59447cb8d906f7570907c472e1d638deb507dc4af8546e9b0f1980",
+          "fast_step.py": "029bb2b484911289b19e5cdbad35bbbbdc80af05420e91dad6884e0ff0484cfa",
+          "harness.py": "0496579da46daf66eb3be3847da0f3e94f8f45bf6f0b494a1f89a97853a8b4c6",
+          "memory.py": "d6062f1dde275b9611d1b631f8151eac567314c603a533dad8751eede3fa2a38",
+          "sci.py": "6f3b4b38ae6e12ac75d5101c767f10b106e9676c322eac3a0e39a67a9c0030c1",
+          "self_echo.py": "87896f45a074fcff5132a6faa57af48f5444de13fdf67f00a4f1304ea583da5d",
+          "__init__.py": "8e8b1da117fdc2ba4fe06edfc32b9c8d67176ab69a9470ee21151018bc85fbd8"
+        },
+        "peripheral_initial": {
+          "sci2": {
+            "FFFFF010": 0,
+            "FFFFF011": 255,
+            "FFFFF012": 0,
+            "FFFFF013": 255,
+            "FFFFF014": 132,
+            "FFFFF015": 0,
+            "FFFFF016": 242
+          },
+          "pccr": 0,
+          "dmaor": 0,
+          "wdt_tcsr": 24,
+          "ramer": 0,
+          "fmats": 0
+        },
+        "schedule": {
+          "rx_gap_ticks": 1,
+          "tx_complete_ticks": 1,
+          "brr_settle_ticks": 1,
+          "tx_load_ticks": 1
+        },
+        "optimized": true,
+        "receiver_self_echo": true,
+        "echo_profile": {
+          "start_delay_ticks": 0,
+          "ordinals": null
+        },
+        "model": "DECLARED_INSTRUCTION_TICK_SCI2_NOT_PHYSICAL_TIMING"
+      },
+      "expected_outcome": "RX_WAIT",
+      "response_hex": "beef020683000000000000000aacffffbfa000000aacffffbfa000000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa8ffffffffffffffffdf01442b00090000ffffbfa0df01000b00090000ffffbfa0e5f74518750a8451e3ff4318620c737f2239324ce13c622c4118321c25210009000900090009000b0009ffff8441600c937f20388b04d643947c917c412be506000b00098441600c937320388b04d63e94729170412be506000b0009d33b7402d23b2342d13b412b6422634392614f227ff81f418431600c202988048b0c6433b0287402d3326503b03764322f0066f394539350430be5017f084f26000b00098441600c934520388b04d62b94469142412be506000b00098441600c933920388b060002913b2019cbf0400eaffe0009000b00098441600c624040286303622c84424228600c4018330c42188443332c600c6433340c000b60432fe62fd66d432fc66c532fb63dc24f229b198d0aee0062d4622c3e2c64ed441934ec4b0b6e4c3dc28bf54f2660e36bf66cf66df6000b6ef6ff07008804e0009000b000c0ff0f04c4ffff00000fec00000ff8ffffbfa4ffffbfa00000004000000fe42fe62fd62fc62fb62fa62f962f864f2295ab6453d361430b74fed26193a62321de6092a422e1d15e90a22011730623e1721222e1919d21e1731223e1720622e1711a21e1730e23e172c022e1e7",
+      "SCI_event_counts": {
+        "register_write": 1115,
+        "register_read": 1135,
+        "host_rx_enqueued": 2,
+        "rx_character_ready": 19,
+        "tx_character_start": 543,
+        "tx_shift_register_loaded": 543,
+        "ECU_self_echo_start_RE0": 543,
+        "tx_character_complete": 543,
+        "ECU_self_echo_ignored_RE0": 543
+      },
+      "SCR_writes": [
+        {
+          "tick": 74,
+          "value": 0,
+          "SSR_before": 132,
+          "pending_before": null,
+          "buffer_before": null
+        },
+        {
+          "tick": 4190,
+          "value": 16,
+          "SSR_before": 132,
+          "pending_before": null,
+          "buffer_before": null
+        },
+        {
+          "tick": 4354,
+          "value": 32,
+          "SSR_before": 132,
+          "pending_before": null,
+          "buffer_before": null
+        },
+        {
+          "tick": 4749,
+          "value": 16,
+          "SSR_before": 132,
+          "pending_before": null,
+          "buffer_before": null
+        },
+        {
+          "tick": 5109,
+          "value": 32,
+          "SSR_before": 132,
+          "pending_before": null,
+          "buffer_before": null
+        },
+        {
+          "tick": 15071,
+          "value": 16,
+          "SSR_before": 132,
+          "pending_before": null,
+          "buffer_before": null
+        }
+      ],
+      "notes": {}
+    },
+    {
+      "case": "delayed_completion_after_RX_restore",
+      "identity": {
+        "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+        "kernel_bytes": 1808,
+        "rom": {
+          "source": "C:\\Dev\\SubaruRoms\\OEM\\A2WC511R.bin",
+          "sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+          "base_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+          "overlays": [],
+          "size": 1048576
+        },
+        "core_path": "C:\\Dev\\A2WC511R_Sim\\sh2e.py",
+        "core_sha256": "b47ac261634c116c3ffcdf19da9ec73e7014c034cd349ea8867f5f54895cdfff",
+        "manifest_sha256": "a35562a19f21d4a2815e88fb729d21dd2cc08bf702c0d866f88ffc9e3ddb659e",
+        "model_sources": {
+          "core.py": "caf6571a836676b82bec8f8a5eaa356590532e15931fae2da4b5822fe8ef0f90",
+          "cpu.py": "5043dafdfe59447cb8d906f7570907c472e1d638deb507dc4af8546e9b0f1980",
+          "fast_step.py": "029bb2b484911289b19e5cdbad35bbbbdc80af05420e91dad6884e0ff0484cfa",
+          "harness.py": "0496579da46daf66eb3be3847da0f3e94f8f45bf6f0b494a1f89a97853a8b4c6",
+          "memory.py": "d6062f1dde275b9611d1b631f8151eac567314c603a533dad8751eede3fa2a38",
+          "sci.py": "6f3b4b38ae6e12ac75d5101c767f10b106e9676c322eac3a0e39a67a9c0030c1",
+          "self_echo.py": "87896f45a074fcff5132a6faa57af48f5444de13fdf67f00a4f1304ea583da5d",
+          "__init__.py": "8e8b1da117fdc2ba4fe06edfc32b9c8d67176ab69a9470ee21151018bc85fbd8"
+        },
+        "peripheral_initial": {
+          "sci2": {
+            "FFFFF010": 0,
+            "FFFFF011": 255,
+            "FFFFF012": 0,
+            "FFFFF013": 255,
+            "FFFFF014": 132,
+            "FFFFF015": 0,
+            "FFFFF016": 242
+          },
+          "pccr": 0,
+          "dmaor": 0,
+          "wdt_tcsr": 24,
+          "ramer": 0,
+          "fmats": 0
+        },
+        "schedule": {
+          "rx_gap_ticks": 1,
+          "tx_complete_ticks": 25,
+          "brr_settle_ticks": 1,
+          "tx_load_ticks": 1
+        },
+        "optimized": true,
+        "receiver_self_echo": true,
+        "echo_profile": {
+          "start_delay_ticks": 12,
+          "ordinals": null
+        },
+        "model": "DECLARED_INSTRUCTION_TICK_SCI2_NOT_PHYSICAL_TIMING"
+      },
+      "expected_outcome": "RX_WAIT",
+      "response_hex": "beef020683000000000000000aacffffbfa000000aacffffbfa000000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa8ffffffffffffffffdf01442b00090000ffffbfa0df01000b00090000ffffbfa0e5f74518750a8451e3ff4318620c737f2239324ce13c622c4118321c25210009000900090009000b0009ffff8441600c937f20388b04d643947c917c412be506000b00098441600c937320388b04d63e94729170412be506000b0009d33b7402d23b2342d13b412b6422634392614f227ff81f418431600c202988048b0c6433b0287402d3326503b03764322f0066f394539350430be5017f084f26000b00098441600c934520388b04d62b94469142412be506000b00098441600c933920388b060002913b2019cbf0400eaffe0009000b00098441600c624040286303622c84424228600c4018330c42188443332c600c6433340c000b60432fe62fd66d432fc66c532fb63dc24f229b198d0aee0062d4622c3e2c64ed441934ec4b0b6e4c3dc28bf54f2660e36bf66cf66df6000b6ef6ff07008804e0009000b000c0ff0f04c4ffff00000fec00000ff8ffffbfa4ffffbfa00000004000000fe42fe62fd62fc62fb62fa62f962f864f2295ab6453d361430b74fed26193a62321de6092a422e1d15e90a22011730623e1721222e1919d21e1731223e1720622e1711a21e1730e23e172c022e1e7",
+      "SCI_event_counts": {
+        "register_write": 1115,
+        "register_read": 1682,
+        "host_rx_enqueued": 2,
+        "rx_character_ready": 19,
+        "tx_character_start": 543,
+        "tx_shift_register_loaded": 543,
+        "ECU_self_echo_start_RE0": 543,
+        "tx_character_complete": 543,
+        "ECU_self_echo_ignored_RE0": 543,
+        "ECU_self_echo_RE0_start_completed_after_RX_restore": 2
+      },
+      "SCR_writes": [
+        {
+          "tick": 74,
+          "value": 0,
+          "SSR_before": 132,
+          "pending_before": null,
+          "buffer_before": null
+        },
+        {
+          "tick": 4190,
+          "value": 16,
+          "SSR_before": 132,
+          "pending_before": null,
+          "buffer_before": null
+        },
+        {
+          "tick": 4354,
+          "value": 32,
+          "SSR_before": 132,
+          "pending_before": null,
+          "buffer_before": null
+        },
+        {
+          "tick": 4864,
+          "value": 16,
+          "SSR_before": 132,
+          "pending_before": null,
+          "buffer_before": null
+        },
+        {
+          "tick": 5224,
+          "value": 32,
+          "SSR_before": 132,
+          "pending_before": null,
+          "buffer_before": null
+        },
+        {
+          "tick": 17806,
+          "value": 16,
+          "SSR_before": 132,
+          "pending_before": null,
+          "buffer_before": null
+        }
+      ],
+      "notes": {}
+    },
+    {
+      "case": "only_final_bytes_echo",
+      "identity": {
+        "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+        "kernel_bytes": 1808,
+        "rom": {
+          "source": "C:\\Dev\\SubaruRoms\\OEM\\A2WC511R.bin",
+          "sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+          "base_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+          "overlays": [],
+          "size": 1048576
+        },
+        "core_path": "C:\\Dev\\A2WC511R_Sim\\sh2e.py",
+        "core_sha256": "b47ac261634c116c3ffcdf19da9ec73e7014c034cd349ea8867f5f54895cdfff",
+        "manifest_sha256": "a35562a19f21d4a2815e88fb729d21dd2cc08bf702c0d866f88ffc9e3ddb659e",
+        "model_sources": {
+          "core.py": "caf6571a836676b82bec8f8a5eaa356590532e15931fae2da4b5822fe8ef0f90",
+          "cpu.py": "5043dafdfe59447cb8d906f7570907c472e1d638deb507dc4af8546e9b0f1980",
+          "fast_step.py": "029bb2b484911289b19e5cdbad35bbbbdc80af05420e91dad6884e0ff0484cfa",
+          "harness.py": "0496579da46daf66eb3be3847da0f3e94f8f45bf6f0b494a1f89a97853a8b4c6",
+          "memory.py": "d6062f1dde275b9611d1b631f8151eac567314c603a533dad8751eede3fa2a38",
+          "sci.py": "6f3b4b38ae6e12ac75d5101c767f10b106e9676c322eac3a0e39a67a9c0030c1",
+          "self_echo.py": "87896f45a074fcff5132a6faa57af48f5444de13fdf67f00a4f1304ea583da5d",
+          "__init__.py": "8e8b1da117fdc2ba4fe06edfc32b9c8d67176ab69a9470ee21151018bc85fbd8"
+        },
+        "peripheral_initial": {
+          "sci2": {
+            "FFFFF010": 0,
+            "FFFFF011": 255,
+            "FFFFF012": 0,
+            "FFFFF013": 255,
+            "FFFFF014": 132,
+            "FFFFF015": 0,
+            "FFFFF016": 242
+          },
+          "pccr": 0,
+          "dmaor": 0,
+          "wdt_tcsr": 24,
+          "ramer": 0,
+          "fmats": 0
+        },
+        "schedule": {
+          "rx_gap_ticks": 1,
+          "tx_complete_ticks": 25,
+          "brr_settle_ticks": 1,
+          "tx_load_ticks": 1
+        },
+        "optimized": true,
+        "receiver_self_echo": true,
+        "echo_profile": {
+          "start_delay_ticks": 12,
+          "ordinals": [
+            20,
+            543
+          ]
+        },
+        "model": "DECLARED_INSTRUCTION_TICK_SCI2_NOT_PHYSICAL_TIMING"
+      },
+      "expected_outcome": "RX_WAIT",
+      "response_hex": "beef020683000000000000000aacffffbfa000000aacffffbfa000000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa8ffffffffffffffffdf01442b00090000ffffbfa0df01000b00090000ffffbfa0e5f74518750a8451e3ff4318620c737f2239324ce13c622c4118321c25210009000900090009000b0009ffff8441600c937f20388b04d643947c917c412be506000b00098441600c937320388b04d63e94729170412be506000b0009d33b7402d23b2342d13b412b6422634392614f227ff81f418431600c202988048b0c6433b0287402d3326503b03764322f0066f394539350430be5017f084f26000b00098441600c934520388b04d62b94469142412be506000b00098441600c933920388b060002913b2019cbf0400eaffe0009000b00098441600c624040286303622c84424228600c4018330c42188443332c600c6433340c000b60432fe62fd66d432fc66c532fb63dc24f229b198d0aee0062d4622c3e2c64ed441934ec4b0b6e4c3dc28bf54f2660e36bf66cf66df6000b6ef6ff07008804e0009000b000c0ff0f04c4ffff00000fec00000ff8ffffbfa4ffffbfa00000004000000fe42fe62fd62fc62fb62fa62f962f864f2295ab6453d361430b74fed26193a62321de6092a422e1d15e90a22011730623e1721222e1919d21e1731223e1720622e1711a21e1730e23e172c022e1e7",
+      "SCI_event_counts": {
+        "register_write": 1115,
+        "register_read": 1682,
+        "host_rx_enqueued": 2,
+        "rx_character_ready": 19,
+        "tx_character_start": 543,
+        "tx_shift_register_loaded": 543,
+        "tx_character_complete": 543,
+        "ECU_self_echo_start_RE0": 2,
+        "ECU_self_echo_ignored_RE0": 2,
+        "ECU_self_echo_RE0_start_completed_after_RX_restore": 2
+      },
+      "SCR_writes": [
+        {
+          "tick": 74,
+          "value": 0,
+          "SSR_before": 132,
+          "pending_before": null,
+          "buffer_before": null
+        },
+        {
+          "tick": 4190,
+          "value": 16,
+          "SSR_before": 132,
+          "pending_before": null,
+          "buffer_before": null
+        },
+        {
+          "tick": 4354,
+          "value": 32,
+          "SSR_before": 132,
+          "pending_before": null,
+          "buffer_before": null
+        },
+        {
+          "tick": 4864,
+          "value": 16,
+          "SSR_before": 132,
+          "pending_before": null,
+          "buffer_before": null
+        },
+        {
+          "tick": 5224,
+          "value": 32,
+          "SSR_before": 132,
+          "pending_before": null,
+          "buffer_before": null
+        },
+        {
+          "tick": 17806,
+          "value": 16,
+          "SSR_before": 132,
+          "pending_before": null,
+          "buffer_before": null
+        }
+      ],
+      "notes": {}
+    },
+    {
+      "case": "fragmented_requests_every_byte_echo",
+      "identity": {
+        "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+        "kernel_bytes": 1808,
+        "rom": {
+          "source": "C:\\Dev\\SubaruRoms\\OEM\\A2WC511R.bin",
+          "sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+          "base_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+          "overlays": [],
+          "size": 1048576
+        },
+        "core_path": "C:\\Dev\\A2WC511R_Sim\\sh2e.py",
+        "core_sha256": "b47ac261634c116c3ffcdf19da9ec73e7014c034cd349ea8867f5f54895cdfff",
+        "manifest_sha256": "a35562a19f21d4a2815e88fb729d21dd2cc08bf702c0d866f88ffc9e3ddb659e",
+        "model_sources": {
+          "core.py": "caf6571a836676b82bec8f8a5eaa356590532e15931fae2da4b5822fe8ef0f90",
+          "cpu.py": "5043dafdfe59447cb8d906f7570907c472e1d638deb507dc4af8546e9b0f1980",
+          "fast_step.py": "029bb2b484911289b19e5cdbad35bbbbdc80af05420e91dad6884e0ff0484cfa",
+          "harness.py": "0496579da46daf66eb3be3847da0f3e94f8f45bf6f0b494a1f89a97853a8b4c6",
+          "memory.py": "d6062f1dde275b9611d1b631f8151eac567314c603a533dad8751eede3fa2a38",
+          "sci.py": "6f3b4b38ae6e12ac75d5101c767f10b106e9676c322eac3a0e39a67a9c0030c1",
+          "self_echo.py": "87896f45a074fcff5132a6faa57af48f5444de13fdf67f00a4f1304ea583da5d",
+          "__init__.py": "8e8b1da117fdc2ba4fe06edfc32b9c8d67176ab69a9470ee21151018bc85fbd8"
+        },
+        "peripheral_initial": {
+          "sci2": {
+            "FFFFF010": 0,
+            "FFFFF011": 255,
+            "FFFFF012": 0,
+            "FFFFF013": 255,
+            "FFFFF014": 132,
+            "FFFFF015": 0,
+            "FFFFF016": 242
+          },
+          "pccr": 0,
+          "dmaor": 0,
+          "wdt_tcsr": 24,
+          "ramer": 0,
+          "fmats": 0
+        },
+        "schedule": {
+          "rx_gap_ticks": 1,
+          "tx_complete_ticks": 1,
+          "brr_settle_ticks": 1,
+          "tx_load_ticks": 1
+        },
+        "optimized": true,
+        "receiver_self_echo": true,
+        "echo_profile": {
+          "start_delay_ticks": 0,
+          "ordinals": null
+        },
+        "model": "DECLARED_INSTRUCTION_TICK_SCI2_NOT_PHYSICAL_TIMING"
+      },
+      "expected_outcome": "RX_WAIT",
+      "response_hex": "beef020683000000000000000aacffffbfa000000aacffffbfa000000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa8ffffffffffffffffdf01442b00090000ffffbfa0df01000b00090000ffffbfa0e5f74518750a8451e3ff4318620c737f2239324ce13c622c4118321c25210009000900090009000b0009ffff8441600c937f20388b04d643947c917c412be506000b00098441600c937320388b04d63e94729170412be506000b0009d33b7402d23b2342d13b412b6422634392614f227ff81f418431600c202988048b0c6433b0287402d3326503b03764322f0066f394539350430be5017f084f26000b00098441600c934520388b04d62b94469142412be506000b00098441600c933920388b060002913b2019cbf0400eaffe0009000b00098441600c624040286303622c84424228600c4018330c42188443332c600c6433340c000b60432fe62fd66d432fc66c532fb63dc24f229b198d0aee0062d4622c3e2c64ed441934ec4b0b6e4c3dc28bf54f2660e36bf66cf66df6000b6ef6ff07008804e0009000b000c0ff0f04c4ffff00000fec00000ff8ffffbfa4ffffbfa00000004000000fe42fe62fd62fc62fb62fa62f962f864f2295ab6453d361430b74fed26193a62321de6092a422e1d15e90a22011730623e1721222e1919d21e1731223e1720622e1711a21e1730e23e172c022e1e7",
+      "SCI_event_counts": {
+        "register_write": 1115,
+        "register_read": 1169,
+        "host_rx_enqueued": 19,
+        "rx_character_ready": 19,
+        "tx_character_start": 543,
+        "tx_shift_register_loaded": 543,
+        "ECU_self_echo_start_RE0": 543,
+        "tx_character_complete": 543,
+        "ECU_self_echo_ignored_RE0": 543
+      },
+      "SCR_writes": [
+        {
+          "tick": 74,
+          "value": 0,
+          "SSR_before": 132,
+          "pending_before": null,
+          "buffer_before": null
+        },
+        {
+          "tick": 4190,
+          "value": 16,
+          "SSR_before": 132,
+          "pending_before": null,
+          "buffer_before": null
+        },
+        {
+          "tick": 4414,
+          "value": 32,
+          "SSR_before": 132,
+          "pending_before": null,
+          "buffer_before": null
+        },
+        {
+          "tick": 4809,
+          "value": 16,
+          "SSR_before": 132,
+          "pending_before": null,
+          "buffer_before": null
+        },
+        {
+          "tick": 5313,
+          "value": 32,
+          "SSR_before": 132,
+          "pending_before": null,
+          "buffer_before": null
+        },
+        {
+          "tick": 15275,
+          "value": 16,
+          "SSR_before": 132,
+          "pending_before": null,
+          "buffer_before": null
+        }
+      ],
+      "notes": {}
+    },
+    {
+      "case": "entry_stale_RDRF_and_error_flags_cleared",
+      "identity": {
+        "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+        "kernel_bytes": 1808,
+        "rom": {
+          "source": "C:\\Dev\\SubaruRoms\\OEM\\A2WC511R.bin",
+          "sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+          "base_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+          "overlays": [],
+          "size": 1048576
+        },
+        "core_path": "C:\\Dev\\A2WC511R_Sim\\sh2e.py",
+        "core_sha256": "b47ac261634c116c3ffcdf19da9ec73e7014c034cd349ea8867f5f54895cdfff",
+        "manifest_sha256": "a35562a19f21d4a2815e88fb729d21dd2cc08bf702c0d866f88ffc9e3ddb659e",
+        "model_sources": {
+          "core.py": "caf6571a836676b82bec8f8a5eaa356590532e15931fae2da4b5822fe8ef0f90",
+          "cpu.py": "5043dafdfe59447cb8d906f7570907c472e1d638deb507dc4af8546e9b0f1980",
+          "fast_step.py": "029bb2b484911289b19e5cdbad35bbbbdc80af05420e91dad6884e0ff0484cfa",
+          "harness.py": "0496579da46daf66eb3be3847da0f3e94f8f45bf6f0b494a1f89a97853a8b4c6",
+          "memory.py": "d6062f1dde275b9611d1b631f8151eac567314c603a533dad8751eede3fa2a38",
+          "sci.py": "6f3b4b38ae6e12ac75d5101c767f10b106e9676c322eac3a0e39a67a9c0030c1",
+          "self_echo.py": "87896f45a074fcff5132a6faa57af48f5444de13fdf67f00a4f1304ea583da5d",
+          "__init__.py": "8e8b1da117fdc2ba4fe06edfc32b9c8d67176ab69a9470ee21151018bc85fbd8"
+        },
+        "peripheral_initial": {
+          "sci2": {
+            "FFFFF010": 0,
+            "FFFFF011": 255,
+            "FFFFF012": 0,
+            "FFFFF013": 255,
+            "FFFFF014": 252,
+            "FFFFF015": 165,
+            "FFFFF016": 242
+          },
+          "pccr": 0,
+          "dmaor": 0,
+          "wdt_tcsr": 24,
+          "ramer": 0,
+          "fmats": 0
+        },
+        "schedule": {
+          "rx_gap_ticks": 1,
+          "tx_complete_ticks": 1,
+          "brr_settle_ticks": 1,
+          "tx_load_ticks": 1
+        },
+        "optimized": true,
+        "receiver_self_echo": true,
+        "echo_profile": {
+          "start_delay_ticks": 0,
+          "ordinals": null
+        },
+        "model": "DECLARED_INSTRUCTION_TICK_SCI2_NOT_PHYSICAL_TIMING"
+      },
+      "expected_outcome": "RX_WAIT",
+      "response_hex": "beef000f8141325743353131522d524b3032005f",
+      "SCI_event_counts": {
+        "register_write": 55,
+        "register_read": 61,
+        "host_rx_enqueued": 1,
+        "rx_character_ready": 6,
+        "tx_character_start": 20,
+        "tx_shift_register_loaded": 20,
+        "ECU_self_echo_start_RE0": 20,
+        "tx_character_complete": 20,
+        "ECU_self_echo_ignored_RE0": 20
+      },
+      "SCR_writes": [
+        {
+          "tick": 74,
+          "value": 0,
+          "SSR_before": 252,
+          "pending_before": null,
+          "buffer_before": null
+        },
+        {
+          "tick": 4194,
+          "value": 16,
+          "SSR_before": 132,
+          "pending_before": null,
+          "buffer_before": null
+        },
+        {
+          "tick": 4358,
+          "value": 32,
+          "SSR_before": 132,
+          "pending_before": null,
+          "buffer_before": null
+        },
+        {
+          "tick": 4753,
+          "value": 16,
+          "SSR_before": 132,
+          "pending_before": null,
+          "buffer_before": null
+        }
+      ],
+      "notes": {}
+    },
+    {
+      "case": "pre_TX_residual_SSR_40",
+      "identity": {
+        "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+        "kernel_bytes": 1808,
+        "rom": {
+          "source": "C:\\Dev\\SubaruRoms\\OEM\\A2WC511R.bin",
+          "sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+          "base_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+          "overlays": [],
+          "size": 1048576
+        },
+        "core_path": "C:\\Dev\\A2WC511R_Sim\\sh2e.py",
+        "core_sha256": "b47ac261634c116c3ffcdf19da9ec73e7014c034cd349ea8867f5f54895cdfff",
+        "manifest_sha256": "a35562a19f21d4a2815e88fb729d21dd2cc08bf702c0d866f88ffc9e3ddb659e",
+        "model_sources": {
+          "core.py": "caf6571a836676b82bec8f8a5eaa356590532e15931fae2da4b5822fe8ef0f90",
+          "cpu.py": "5043dafdfe59447cb8d906f7570907c472e1d638deb507dc4af8546e9b0f1980",
+          "fast_step.py": "029bb2b484911289b19e5cdbad35bbbbdc80af05420e91dad6884e0ff0484cfa",
+          "harness.py": "0496579da46daf66eb3be3847da0f3e94f8f45bf6f0b494a1f89a97853a8b4c6",
+          "memory.py": "d6062f1dde275b9611d1b631f8151eac567314c603a533dad8751eede3fa2a38",
+          "sci.py": "6f3b4b38ae6e12ac75d5101c767f10b106e9676c322eac3a0e39a67a9c0030c1",
+          "self_echo.py": "87896f45a074fcff5132a6faa57af48f5444de13fdf67f00a4f1304ea583da5d",
+          "__init__.py": "8e8b1da117fdc2ba4fe06edfc32b9c8d67176ab69a9470ee21151018bc85fbd8"
+        },
+        "peripheral_initial": {
+          "sci2": {
+            "FFFFF010": 0,
+            "FFFFF011": 255,
+            "FFFFF012": 0,
+            "FFFFF013": 255,
+            "FFFFF014": 132,
+            "FFFFF015": 0,
+            "FFFFF016": 242
+          },
+          "pccr": 0,
+          "dmaor": 0,
+          "wdt_tcsr": 24,
+          "ramer": 0,
+          "fmats": 0
+        },
+        "schedule": {
+          "rx_gap_ticks": 1,
+          "tx_complete_ticks": 1,
+          "brr_settle_ticks": 1,
+          "tx_load_ticks": 1
+        },
+        "optimized": true,
+        "receiver_self_echo": true,
+        "echo_profile": {
+          "start_delay_ticks": 0,
+          "ordinals": null
+        },
+        "model": "DECLARED_INSTRUCTION_TICK_SCI2_NOT_PHYSICAL_TIMING"
+      },
+      "expected_outcome": "KERNEL_REJECT",
+      "response_hex": "",
+      "SCI_event_counts": {
+        "register_write": 14,
+        "register_read": 17,
+        "host_rx_enqueued": 1,
+        "rx_character_ready": 6
+      },
+      "SCR_writes": [
+        {
+          "tick": 74,
+          "value": 0,
+          "SSR_before": 132,
+          "pending_before": null,
+          "buffer_before": null
+        },
+        {
+          "tick": 4190,
+          "value": 16,
+          "SSR_before": 132,
+          "pending_before": null,
+          "buffer_before": null
+        },
+        {
+          "tick": 4354,
+          "value": 32,
+          "SSR_before": 196,
+          "pending_before": null,
+          "buffer_before": null
+        },
+        {
+          "tick": 4362,
+          "value": 0,
+          "SSR_before": 196,
+          "pending_before": null,
+          "buffer_before": null
+        }
+      ],
+      "notes": {
+        "explicit_peripheral_fault_bits": 64
+      }
+    },
+    {
+      "case": "pre_TX_residual_SSR_20",
+      "identity": {
+        "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+        "kernel_bytes": 1808,
+        "rom": {
+          "source": "C:\\Dev\\SubaruRoms\\OEM\\A2WC511R.bin",
+          "sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+          "base_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+          "overlays": [],
+          "size": 1048576
+        },
+        "core_path": "C:\\Dev\\A2WC511R_Sim\\sh2e.py",
+        "core_sha256": "b47ac261634c116c3ffcdf19da9ec73e7014c034cd349ea8867f5f54895cdfff",
+        "manifest_sha256": "a35562a19f21d4a2815e88fb729d21dd2cc08bf702c0d866f88ffc9e3ddb659e",
+        "model_sources": {
+          "core.py": "caf6571a836676b82bec8f8a5eaa356590532e15931fae2da4b5822fe8ef0f90",
+          "cpu.py": "5043dafdfe59447cb8d906f7570907c472e1d638deb507dc4af8546e9b0f1980",
+          "fast_step.py": "029bb2b484911289b19e5cdbad35bbbbdc80af05420e91dad6884e0ff0484cfa",
+          "harness.py": "0496579da46daf66eb3be3847da0f3e94f8f45bf6f0b494a1f89a97853a8b4c6",
+          "memory.py": "d6062f1dde275b9611d1b631f8151eac567314c603a533dad8751eede3fa2a38",
+          "sci.py": "6f3b4b38ae6e12ac75d5101c767f10b106e9676c322eac3a0e39a67a9c0030c1",
+          "self_echo.py": "87896f45a074fcff5132a6faa57af48f5444de13fdf67f00a4f1304ea583da5d",
+          "__init__.py": "8e8b1da117fdc2ba4fe06edfc32b9c8d67176ab69a9470ee21151018bc85fbd8"
+        },
+        "peripheral_initial": {
+          "sci2": {
+            "FFFFF010": 0,
+            "FFFFF011": 255,
+            "FFFFF012": 0,
+            "FFFFF013": 255,
+            "FFFFF014": 132,
+            "FFFFF015": 0,
+            "FFFFF016": 242
+          },
+          "pccr": 0,
+          "dmaor": 0,
+          "wdt_tcsr": 24,
+          "ramer": 0,
+          "fmats": 0
+        },
+        "schedule": {
+          "rx_gap_ticks": 1,
+          "tx_complete_ticks": 1,
+          "brr_settle_ticks": 1,
+          "tx_load_ticks": 1
+        },
+        "optimized": true,
+        "receiver_self_echo": true,
+        "echo_profile": {
+          "start_delay_ticks": 0,
+          "ordinals": null
+        },
+        "model": "DECLARED_INSTRUCTION_TICK_SCI2_NOT_PHYSICAL_TIMING"
+      },
+      "expected_outcome": "KERNEL_REJECT",
+      "response_hex": "",
+      "SCI_event_counts": {
+        "register_write": 14,
+        "register_read": 17,
+        "host_rx_enqueued": 1,
+        "rx_character_ready": 6
+      },
+      "SCR_writes": [
+        {
+          "tick": 74,
+          "value": 0,
+          "SSR_before": 132,
+          "pending_before": null,
+          "buffer_before": null
+        },
+        {
+          "tick": 4190,
+          "value": 16,
+          "SSR_before": 132,
+          "pending_before": null,
+          "buffer_before": null
+        },
+        {
+          "tick": 4354,
+          "value": 32,
+          "SSR_before": 164,
+          "pending_before": null,
+          "buffer_before": null
+        },
+        {
+          "tick": 4362,
+          "value": 0,
+          "SSR_before": 164,
+          "pending_before": null,
+          "buffer_before": null
+        }
+      ],
+      "notes": {
+        "explicit_peripheral_fault_bits": 32
+      }
+    },
+    {
+      "case": "pre_TX_residual_SSR_10",
+      "identity": {
+        "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+        "kernel_bytes": 1808,
+        "rom": {
+          "source": "C:\\Dev\\SubaruRoms\\OEM\\A2WC511R.bin",
+          "sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+          "base_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+          "overlays": [],
+          "size": 1048576
+        },
+        "core_path": "C:\\Dev\\A2WC511R_Sim\\sh2e.py",
+        "core_sha256": "b47ac261634c116c3ffcdf19da9ec73e7014c034cd349ea8867f5f54895cdfff",
+        "manifest_sha256": "a35562a19f21d4a2815e88fb729d21dd2cc08bf702c0d866f88ffc9e3ddb659e",
+        "model_sources": {
+          "core.py": "caf6571a836676b82bec8f8a5eaa356590532e15931fae2da4b5822fe8ef0f90",
+          "cpu.py": "5043dafdfe59447cb8d906f7570907c472e1d638deb507dc4af8546e9b0f1980",
+          "fast_step.py": "029bb2b484911289b19e5cdbad35bbbbdc80af05420e91dad6884e0ff0484cfa",
+          "harness.py": "0496579da46daf66eb3be3847da0f3e94f8f45bf6f0b494a1f89a97853a8b4c6",
+          "memory.py": "d6062f1dde275b9611d1b631f8151eac567314c603a533dad8751eede3fa2a38",
+          "sci.py": "6f3b4b38ae6e12ac75d5101c767f10b106e9676c322eac3a0e39a67a9c0030c1",
+          "self_echo.py": "87896f45a074fcff5132a6faa57af48f5444de13fdf67f00a4f1304ea583da5d",
+          "__init__.py": "8e8b1da117fdc2ba4fe06edfc32b9c8d67176ab69a9470ee21151018bc85fbd8"
+        },
+        "peripheral_initial": {
+          "sci2": {
+            "FFFFF010": 0,
+            "FFFFF011": 255,
+            "FFFFF012": 0,
+            "FFFFF013": 255,
+            "FFFFF014": 132,
+            "FFFFF015": 0,
+            "FFFFF016": 242
+          },
+          "pccr": 0,
+          "dmaor": 0,
+          "wdt_tcsr": 24,
+          "ramer": 0,
+          "fmats": 0
+        },
+        "schedule": {
+          "rx_gap_ticks": 1,
+          "tx_complete_ticks": 1,
+          "brr_settle_ticks": 1,
+          "tx_load_ticks": 1
+        },
+        "optimized": true,
+        "receiver_self_echo": true,
+        "echo_profile": {
+          "start_delay_ticks": 0,
+          "ordinals": null
+        },
+        "model": "DECLARED_INSTRUCTION_TICK_SCI2_NOT_PHYSICAL_TIMING"
+      },
+      "expected_outcome": "KERNEL_REJECT",
+      "response_hex": "",
+      "SCI_event_counts": {
+        "register_write": 14,
+        "register_read": 17,
+        "host_rx_enqueued": 1,
+        "rx_character_ready": 6
+      },
+      "SCR_writes": [
+        {
+          "tick": 74,
+          "value": 0,
+          "SSR_before": 132,
+          "pending_before": null,
+          "buffer_before": null
+        },
+        {
+          "tick": 4190,
+          "value": 16,
+          "SSR_before": 132,
+          "pending_before": null,
+          "buffer_before": null
+        },
+        {
+          "tick": 4354,
+          "value": 32,
+          "SSR_before": 148,
+          "pending_before": null,
+          "buffer_before": null
+        },
+        {
+          "tick": 4362,
+          "value": 0,
+          "SSR_before": 148,
+          "pending_before": null,
+          "buffer_before": null
+        }
+      ],
+      "notes": {
+        "explicit_peripheral_fault_bits": 16
+      }
+    },
+    {
+      "case": "pre_TX_residual_SSR_08",
+      "identity": {
+        "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+        "kernel_bytes": 1808,
+        "rom": {
+          "source": "C:\\Dev\\SubaruRoms\\OEM\\A2WC511R.bin",
+          "sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+          "base_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+          "overlays": [],
+          "size": 1048576
+        },
+        "core_path": "C:\\Dev\\A2WC511R_Sim\\sh2e.py",
+        "core_sha256": "b47ac261634c116c3ffcdf19da9ec73e7014c034cd349ea8867f5f54895cdfff",
+        "manifest_sha256": "a35562a19f21d4a2815e88fb729d21dd2cc08bf702c0d866f88ffc9e3ddb659e",
+        "model_sources": {
+          "core.py": "caf6571a836676b82bec8f8a5eaa356590532e15931fae2da4b5822fe8ef0f90",
+          "cpu.py": "5043dafdfe59447cb8d906f7570907c472e1d638deb507dc4af8546e9b0f1980",
+          "fast_step.py": "029bb2b484911289b19e5cdbad35bbbbdc80af05420e91dad6884e0ff0484cfa",
+          "harness.py": "0496579da46daf66eb3be3847da0f3e94f8f45bf6f0b494a1f89a97853a8b4c6",
+          "memory.py": "d6062f1dde275b9611d1b631f8151eac567314c603a533dad8751eede3fa2a38",
+          "sci.py": "6f3b4b38ae6e12ac75d5101c767f10b106e9676c322eac3a0e39a67a9c0030c1",
+          "self_echo.py": "87896f45a074fcff5132a6faa57af48f5444de13fdf67f00a4f1304ea583da5d",
+          "__init__.py": "8e8b1da117fdc2ba4fe06edfc32b9c8d67176ab69a9470ee21151018bc85fbd8"
+        },
+        "peripheral_initial": {
+          "sci2": {
+            "FFFFF010": 0,
+            "FFFFF011": 255,
+            "FFFFF012": 0,
+            "FFFFF013": 255,
+            "FFFFF014": 132,
+            "FFFFF015": 0,
+            "FFFFF016": 242
+          },
+          "pccr": 0,
+          "dmaor": 0,
+          "wdt_tcsr": 24,
+          "ramer": 0,
+          "fmats": 0
+        },
+        "schedule": {
+          "rx_gap_ticks": 1,
+          "tx_complete_ticks": 1,
+          "brr_settle_ticks": 1,
+          "tx_load_ticks": 1
+        },
+        "optimized": true,
+        "receiver_self_echo": true,
+        "echo_profile": {
+          "start_delay_ticks": 0,
+          "ordinals": null
+        },
+        "model": "DECLARED_INSTRUCTION_TICK_SCI2_NOT_PHYSICAL_TIMING"
+      },
+      "expected_outcome": "KERNEL_REJECT",
+      "response_hex": "",
+      "SCI_event_counts": {
+        "register_write": 14,
+        "register_read": 17,
+        "host_rx_enqueued": 1,
+        "rx_character_ready": 6
+      },
+      "SCR_writes": [
+        {
+          "tick": 74,
+          "value": 0,
+          "SSR_before": 132,
+          "pending_before": null,
+          "buffer_before": null
+        },
+        {
+          "tick": 4190,
+          "value": 16,
+          "SSR_before": 132,
+          "pending_before": null,
+          "buffer_before": null
+        },
+        {
+          "tick": 4354,
+          "value": 32,
+          "SSR_before": 140,
+          "pending_before": null,
+          "buffer_before": null
+        },
+        {
+          "tick": 4362,
+          "value": 0,
+          "SSR_before": 140,
+          "pending_before": null,
+          "buffer_before": null
+        }
+      ],
+      "notes": {
+        "explicit_peripheral_fault_bits": 8
+      }
+    },
+    {
+      "case": "pre_TX_residual_SSR_78",
+      "identity": {
+        "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+        "kernel_bytes": 1808,
+        "rom": {
+          "source": "C:\\Dev\\SubaruRoms\\OEM\\A2WC511R.bin",
+          "sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+          "base_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+          "overlays": [],
+          "size": 1048576
+        },
+        "core_path": "C:\\Dev\\A2WC511R_Sim\\sh2e.py",
+        "core_sha256": "b47ac261634c116c3ffcdf19da9ec73e7014c034cd349ea8867f5f54895cdfff",
+        "manifest_sha256": "a35562a19f21d4a2815e88fb729d21dd2cc08bf702c0d866f88ffc9e3ddb659e",
+        "model_sources": {
+          "core.py": "caf6571a836676b82bec8f8a5eaa356590532e15931fae2da4b5822fe8ef0f90",
+          "cpu.py": "5043dafdfe59447cb8d906f7570907c472e1d638deb507dc4af8546e9b0f1980",
+          "fast_step.py": "029bb2b484911289b19e5cdbad35bbbbdc80af05420e91dad6884e0ff0484cfa",
+          "harness.py": "0496579da46daf66eb3be3847da0f3e94f8f45bf6f0b494a1f89a97853a8b4c6",
+          "memory.py": "d6062f1dde275b9611d1b631f8151eac567314c603a533dad8751eede3fa2a38",
+          "sci.py": "6f3b4b38ae6e12ac75d5101c767f10b106e9676c322eac3a0e39a67a9c0030c1",
+          "self_echo.py": "87896f45a074fcff5132a6faa57af48f5444de13fdf67f00a4f1304ea583da5d",
+          "__init__.py": "8e8b1da117fdc2ba4fe06edfc32b9c8d67176ab69a9470ee21151018bc85fbd8"
+        },
+        "peripheral_initial": {
+          "sci2": {
+            "FFFFF010": 0,
+            "FFFFF011": 255,
+            "FFFFF012": 0,
+            "FFFFF013": 255,
+            "FFFFF014": 132,
+            "FFFFF015": 0,
+            "FFFFF016": 242
+          },
+          "pccr": 0,
+          "dmaor": 0,
+          "wdt_tcsr": 24,
+          "ramer": 0,
+          "fmats": 0
+        },
+        "schedule": {
+          "rx_gap_ticks": 1,
+          "tx_complete_ticks": 1,
+          "brr_settle_ticks": 1,
+          "tx_load_ticks": 1
+        },
+        "optimized": true,
+        "receiver_self_echo": true,
+        "echo_profile": {
+          "start_delay_ticks": 0,
+          "ordinals": null
+        },
+        "model": "DECLARED_INSTRUCTION_TICK_SCI2_NOT_PHYSICAL_TIMING"
+      },
+      "expected_outcome": "KERNEL_REJECT",
+      "response_hex": "",
+      "SCI_event_counts": {
+        "register_write": 14,
+        "register_read": 17,
+        "host_rx_enqueued": 1,
+        "rx_character_ready": 6
+      },
+      "SCR_writes": [
+        {
+          "tick": 74,
+          "value": 0,
+          "SSR_before": 132,
+          "pending_before": null,
+          "buffer_before": null
+        },
+        {
+          "tick": 4190,
+          "value": 16,
+          "SSR_before": 132,
+          "pending_before": null,
+          "buffer_before": null
+        },
+        {
+          "tick": 4354,
+          "value": 32,
+          "SSR_before": 252,
+          "pending_before": null,
+          "buffer_before": null
+        },
+        {
+          "tick": 4362,
+          "value": 0,
+          "SSR_before": 252,
+          "pending_before": null,
+          "buffer_before": null
+        }
+      ],
+      "notes": {
+        "explicit_peripheral_fault_bits": 120
+      }
+    },
+    {
+      "case": "new_post_RX_noise_start_rejected",
+      "identity": {
+        "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+        "kernel_bytes": 1808,
+        "rom": {
+          "source": "C:\\Dev\\SubaruRoms\\OEM\\A2WC511R.bin",
+          "sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+          "base_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+          "overlays": [],
+          "size": 1048576
+        },
+        "core_path": "C:\\Dev\\A2WC511R_Sim\\sh2e.py",
+        "core_sha256": "b47ac261634c116c3ffcdf19da9ec73e7014c034cd349ea8867f5f54895cdfff",
+        "manifest_sha256": "a35562a19f21d4a2815e88fb729d21dd2cc08bf702c0d866f88ffc9e3ddb659e",
+        "model_sources": {
+          "core.py": "caf6571a836676b82bec8f8a5eaa356590532e15931fae2da4b5822fe8ef0f90",
+          "cpu.py": "5043dafdfe59447cb8d906f7570907c472e1d638deb507dc4af8546e9b0f1980",
+          "fast_step.py": "029bb2b484911289b19e5cdbad35bbbbdc80af05420e91dad6884e0ff0484cfa",
+          "harness.py": "0496579da46daf66eb3be3847da0f3e94f8f45bf6f0b494a1f89a97853a8b4c6",
+          "memory.py": "d6062f1dde275b9611d1b631f8151eac567314c603a533dad8751eede3fa2a38",
+          "sci.py": "6f3b4b38ae6e12ac75d5101c767f10b106e9676c322eac3a0e39a67a9c0030c1",
+          "self_echo.py": "87896f45a074fcff5132a6faa57af48f5444de13fdf67f00a4f1304ea583da5d",
+          "__init__.py": "8e8b1da117fdc2ba4fe06edfc32b9c8d67176ab69a9470ee21151018bc85fbd8"
+        },
+        "peripheral_initial": {
+          "sci2": {
+            "FFFFF010": 0,
+            "FFFFF011": 255,
+            "FFFFF012": 0,
+            "FFFFF013": 255,
+            "FFFFF014": 132,
+            "FFFFF015": 0,
+            "FFFFF016": 242
+          },
+          "pccr": 0,
+          "dmaor": 0,
+          "wdt_tcsr": 24,
+          "ramer": 0,
+          "fmats": 0
+        },
+        "schedule": {
+          "rx_gap_ticks": 1,
+          "tx_complete_ticks": 1,
+          "brr_settle_ticks": 1,
+          "tx_load_ticks": 1
+        },
+        "optimized": true,
+        "receiver_self_echo": true,
+        "echo_profile": {
+          "start_delay_ticks": 0,
+          "ordinals": null
+        },
+        "model": "DECLARED_INSTRUCTION_TICK_SCI2_NOT_PHYSICAL_TIMING"
+      },
+      "expected_outcome": "KERNEL_REJECT",
+      "response_hex": "",
+      "SCI_event_counts": {
+        "register_write": 56,
+        "register_read": 62,
+        "host_rx_enqueued": 2,
+        "rx_character_ready": 7,
+        "tx_character_start": 20,
+        "tx_shift_register_loaded": 20,
+        "ECU_self_echo_start_RE0": 20,
+        "tx_character_complete": 20,
+        "ECU_self_echo_ignored_RE0": 20
+      },
+      "SCR_writes": [
+        {
+          "tick": 74,
+          "value": 0,
+          "SSR_before": 132,
+          "pending_before": null,
+          "buffer_before": null
+        },
+        {
+          "tick": 4190,
+          "value": 16,
+          "SSR_before": 132,
+          "pending_before": null,
+          "buffer_before": null
+        },
+        {
+          "tick": 4354,
+          "value": 32,
+          "SSR_before": 132,
+          "pending_before": null,
+          "buffer_before": null
+        },
+        {
+          "tick": 4749,
+          "value": 16,
+          "SSR_before": 132,
+          "pending_before": null,
+          "buffer_before": null
+        },
+        {
+          "tick": 4805,
+          "value": 0,
+          "SSR_before": 132,
+          "pending_before": null,
+          "buffer_before": null
+        }
+      ],
+      "notes": {
+        "scope": "A genuine new character after RX enable; not an ignored RE0 start"
+      }
+    },
+    {
+      "case": "genuinely_late_echo_start_rejected",
+      "identity": {
+        "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+        "kernel_bytes": 1808,
+        "rom": {
+          "source": "C:\\Dev\\SubaruRoms\\OEM\\A2WC511R.bin",
+          "sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+          "base_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+          "overlays": [],
+          "size": 1048576
+        },
+        "core_path": "C:\\Dev\\A2WC511R_Sim\\sh2e.py",
+        "core_sha256": "b47ac261634c116c3ffcdf19da9ec73e7014c034cd349ea8867f5f54895cdfff",
+        "manifest_sha256": "a35562a19f21d4a2815e88fb729d21dd2cc08bf702c0d866f88ffc9e3ddb659e",
+        "model_sources": {
+          "core.py": "caf6571a836676b82bec8f8a5eaa356590532e15931fae2da4b5822fe8ef0f90",
+          "cpu.py": "5043dafdfe59447cb8d906f7570907c472e1d638deb507dc4af8546e9b0f1980",
+          "fast_step.py": "029bb2b484911289b19e5cdbad35bbbbdc80af05420e91dad6884e0ff0484cfa",
+          "harness.py": "0496579da46daf66eb3be3847da0f3e94f8f45bf6f0b494a1f89a97853a8b4c6",
+          "memory.py": "d6062f1dde275b9611d1b631f8151eac567314c603a533dad8751eede3fa2a38",
+          "sci.py": "6f3b4b38ae6e12ac75d5101c767f10b106e9676c322eac3a0e39a67a9c0030c1",
+          "self_echo.py": "87896f45a074fcff5132a6faa57af48f5444de13fdf67f00a4f1304ea583da5d",
+          "__init__.py": "8e8b1da117fdc2ba4fe06edfc32b9c8d67176ab69a9470ee21151018bc85fbd8"
+        },
+        "peripheral_initial": {
+          "sci2": {
+            "FFFFF010": 0,
+            "FFFFF011": 255,
+            "FFFFF012": 0,
+            "FFFFF013": 255,
+            "FFFFF014": 132,
+            "FFFFF015": 0,
+            "FFFFF016": 242
+          },
+          "pccr": 0,
+          "dmaor": 0,
+          "wdt_tcsr": 24,
+          "ramer": 0,
+          "fmats": 0
+        },
+        "schedule": {
+          "rx_gap_ticks": 1,
+          "tx_complete_ticks": 1,
+          "brr_settle_ticks": 1,
+          "tx_load_ticks": 1
+        },
+        "optimized": true,
+        "receiver_self_echo": true,
+        "echo_profile": {
+          "start_delay_ticks": 1000,
+          "ordinals": [
+            20
+          ]
+        },
+        "model": "DECLARED_INSTRUCTION_TICK_SCI2_NOT_PHYSICAL_TIMING"
+      },
+      "expected_outcome": "KERNEL_REJECT",
+      "response_hex": "beef000f8141325743353131522d524b3032005f",
+      "SCI_event_counts": {
+        "register_write": 56,
+        "register_read": 221,
+        "host_rx_enqueued": 1,
+        "rx_character_ready": 6,
+        "tx_character_start": 20,
+        "tx_shift_register_loaded": 20,
+        "tx_character_complete": 20,
+        "ECU_self_echo_start_admitted": 1,
+        "ECU_self_echo_received": 1
+      },
+      "SCR_writes": [
+        {
+          "tick": 74,
+          "value": 0,
+          "SSR_before": 132,
+          "pending_before": null,
+          "buffer_before": null
+        },
+        {
+          "tick": 4190,
+          "value": 16,
+          "SSR_before": 132,
+          "pending_before": null,
+          "buffer_before": null
+        },
+        {
+          "tick": 4354,
+          "value": 32,
+          "SSR_before": 132,
+          "pending_before": null,
+          "buffer_before": null
+        },
+        {
+          "tick": 4749,
+          "value": 16,
+          "SSR_before": 132,
+          "pending_before": null,
+          "buffer_before": null
+        },
+        {
+          "tick": 5759,
+          "value": 0,
+          "SSR_before": 132,
+          "pending_before": null,
+          "buffer_before": null
+        }
+      ],
+      "notes": {
+        "scope": "A declared new start after RX enable; expected fail-closed outcome, not successful protocol"
+      }
+    }
+  ],
+  "case_count": 13,
+  "coverage": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\sim\\echo_cases_01\\coverage.json",
+    "sha256": "86f5b6af4d782a13ece8bc60b8d78d97755e52acad13967b0ac4774751141707"
+  },
+  "RK01_negative_control": {
+    "kernel_sha256": "3d70abfb8617b87e1b9c52724fd27ed4066ba231818994e780c8ba3006de273f",
+    "expected_outcome": "KERNEL_REJECT",
+    "observed_outcome": "KERNEL_REJECT",
+    "response_hex": "beef000f8141325743353131522d524b3031005e",
+    "SCI_event_counts": {
+      "register_write": 53,
+      "register_read": 57,
+      "host_rx_enqueued": 1,
+      "rx_character_ready": 6,
+      "tx_character_start": 20,
+      "tx_shift_register_loaded": 20,
+      "ECU_self_echo_start_admitted": 2,
+      "tx_character_complete": 20,
+      "ECU_self_echo_received": 1,
+      "ECU_self_echo_overrun": 1,
+      "ECU_self_echo_start_receiver_error_disabled": 18,
+      "ECU_self_echo_receiver_error_disabled": 18
+    },
+    "included_in_RK02_coverage": false
+  },
+  "model_sources": {
+    "core.py": "caf6571a836676b82bec8f8a5eaa356590532e15931fae2da4b5822fe8ef0f90",
+    "cpu.py": "5043dafdfe59447cb8d906f7570907c472e1d638deb507dc4af8546e9b0f1980",
+    "fast_step.py": "029bb2b484911289b19e5cdbad35bbbbdc80af05420e91dad6884e0ff0484cfa",
+    "harness.py": "0496579da46daf66eb3be3847da0f3e94f8f45bf6f0b494a1f89a97853a8b4c6",
+    "memory.py": "d6062f1dde275b9611d1b631f8151eac567314c603a533dad8751eede3fa2a38",
+    "sci.py": "6f3b4b38ae6e12ac75d5101c767f10b106e9676c322eac3a0e39a67a9c0030c1",
+    "self_echo.py": "87896f45a074fcff5132a6faa57af48f5444de13fdf67f00a4f1304ea583da5d",
+    "__init__.py": "8e8b1da117fdc2ba4fe06edfc32b9c8d67176ab69a9470ee21151018bc85fbd8"
+  },
+  "limits": [
+    "Receive admission is captured at start, not re-evaluated merely because RE is enabled at completion.",
+    "No arbitrary maximum physical self-echo delay is asserted; a genuine new start after RX enable may enter the parser and must fail closed.",
+    "ECU-side line loopback is separate from host J2534 transmit-echo filtering.",
+    "Virtual instruction ticks are not silicon timing, baud tolerance or electrical waveform proof.",
+    "These bounded communication cases do not substitute for full two-pass fixture execution."
+  ]
+}

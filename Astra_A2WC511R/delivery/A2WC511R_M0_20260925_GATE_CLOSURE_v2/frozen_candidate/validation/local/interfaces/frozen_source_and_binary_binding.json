@@ -1,0 +1,58 @@
+{
+  "all_current_source_hashes_match": true,
+  "all_artifact_hashes_match": true,
+  "repeat_functional_bytes_identical": true,
+  "native_tested_03_equals_frozen_05": {
+    "A2WC511R.M0.EXPERIMENTAL_UNAPPROVED.raw.bin": true,
+    "A2WC511R.M0.EXPERIMENTAL_UNAPPROVED.checksum_corrected.bin": true,
+    "A2WC511R.M0.EXPERIMENTAL.v1.patch": true
+  },
+  "sources": {
+    "A2WC511R.h": true,
+    "Bindings.c": true,
+    "build.py": true,
+    "DecoderHook.s": true,
+    "Diagnostic.c": true,
+    "Diagnostic.h": true,
+    "DiagnosticConfig.h": true,
+    "experimental_only.ld": true,
+    "experimental_roundtrip.py": true,
+    "harness_only.ld": true,
+    "Identifier.c": true,
+    "test_host.py": true
+  },
+  "artifacts": {
+    "A2WC511R_DiagnosticM0.EXPERIMENTAL_UNAPPROVED.elf": true,
+    "A2WC511R_DiagnosticM0.relocatable.o": true,
+    "Bindings.o": true,
+    "Bindings.s": true,
+    "Bindings.su": true,
+    "DecoderHook.o": true,
+    "Diagnostic.o": true,
+    "Diagnostic.s": true,
+    "Diagnostic.su": true,
+    "harness.map": true,
+    "Identifier.o": true,
+    "Identifier.s": true,
+    "Identifier.su": true,
+    "m0.EXPERIMENTAL_UNAPPROVED.code.bin": true
+  },
+  "repeat": {
+    "A2WC511R_DiagnosticM0.EXPERIMENTAL_UNAPPROVED.elf": true,
+    "A2WC511R_DiagnosticM0.relocatable.o": true,
+    "Bindings.o": true,
+    "Bindings.s": true,
+    "Bindings.su": true,
+    "DecoderHook.o": true,
+    "Diagnostic.o": true,
+    "Diagnostic.s": true,
+    "Diagnostic.su": true,
+    "Identifier.o": true,
+    "Identifier.s": true,
+    "Identifier.su": true,
+    "m0.EXPERIMENTAL_UNAPPROVED.code.bin": true
+  },
+  "native_evidence": "native_checksum_final.json",
+  "frozen_build": "C:\\Dev\\Astra_A2WC511R\\work\\builds\\m0_final_05",
+  "frozen_patch": "C:\\Dev\\Astra_A2WC511R\\work\\patches\\m0_final_05"
+}

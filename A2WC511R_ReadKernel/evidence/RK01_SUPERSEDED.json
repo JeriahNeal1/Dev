@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "identity": "A2WC511R-RK01",
+  "status": "SUPERSEDED_NOT_FOR_HARDWARE",
+  "permanent": true,
+  "kernel_sha256": "3d70abfb8617b87e1b9c52724fd27ed4066ba231818994e780c8ba3006de273f",
+  "reason": "RX remained enabled during TX. Explicit SCI2 self-echo receives one byte, then raises ORER and prevents the next request.",
+  "old_positive_scope": "Old no-self-echo fixture equality is retained evidence, not communication qualification.",
+  "no_requalification_of_RK01_permitted": true,
+  "negative_control": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\sim\\echo_audit_02\\CURRENT_KERNEL_ECHO_FAILURE.json",
+    "sha256": "90257fe5f7b22bfa002628f22b86da0c6e61700bcd9ca101a102a5909723d9c8",
+    "bytes": 3477
+  },
+  "manual_OEM_contract": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\SCI_SELF_ECHO_CONTRACT.json",
+    "sha256": "9c2ef9244fb7a68bfd6033574538578c8f9ed0aaecc139056c5b858531bdb08f",
+    "bytes": 3042
+  },
+  "preserved_source_snapshot": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk01_superseded\\SOURCE_SNAPSHOT.json",
+    "sha256": "da4bb66a54db8dfd162aede141d5a936cffdeb8bb3c768a75a00e54cb7d810c5",
+    "bytes": 2555
+  },
+  "preserved_directory_files": [
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk01_superseded\\ARCHITECTURE.md",
+      "sha256": "6b167e982cfebcc95b2256cda531bee0cfd98c152ba3882b470e4c1739c1e3f6"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk01_superseded\\linker\\kernel.ld",
+      "sha256": "269d8b6de2edfa84afabad1080b6c7f4baefedd60bdd7ec2d75b5d7240e7dbef"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk01_superseded\\README.md",
+      "sha256": "81202dae4114f113f097fd5651f5c63601117359779c4e37c4d8d164bd7e6b4a"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk01_superseded\\RUN_CONTRACT.md",
+      "sha256": "8091e0d1aa439d1029d3dc76806a42fdb90f5ad01042b45d7675ed60e6732208"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk01_superseded\\SOURCE_SNAPSHOT.json",
+      "sha256": "da4bb66a54db8dfd162aede141d5a936cffdeb8bb3c768a75a00e54cb7d810c5"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk01_superseded\\src\\kernel.S",
+      "sha256": "b6792259014435562d6f127b8bd1782eba3d54cf585967620b0d4540a40fda09"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk01_superseded\\tools\\artifact_review.py",
+      "sha256": "4e0bba1100775d36251665385ecadd537649423e3ac36a9782178bb5e9c312db"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk01_superseded\\tools\\build.py",
+      "sha256": "8c731a82c815e45f43b9ba2c0603af49912da77fb185da42d587cc74f4afa942"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk01_superseded\\tools\\build_checked.py",
+      "sha256": "7baab391048e3d0e9b21fd0c6fde86a7b652d89d575b972f6aec2afae2621b97"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk01_superseded\\tools\\prepare_release.py",
+      "sha256": "052a79286dade79a2556d1171aa8761e1d76f838971c552fde2a6713c1be487e"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk01_superseded\\tools\\validate.py",
+      "sha256": "6b122295e98da7ed0f93fc8f15a4613920cdc7f69bf2f0b79318b53a4ae171e5"
+    }
+  ],
+  "physical_operations": false
+}

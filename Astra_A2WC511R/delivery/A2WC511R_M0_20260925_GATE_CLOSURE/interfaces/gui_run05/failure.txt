@@ -1,0 +1,38 @@
+Traceback (most recent call last):
+  File "C:\Dev\Astra_A2WC511R\work\gate_closure\romraider_gui\run_gui.py", line 106, in <module>
+    command('open_export',path=export['path']);wait(lambda:len(b.request('status',{})['roms'])==2,45)
+                                               ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Dev\Astra_A2WC511R\work\gate_closure\romraider_gui\run_gui.py", line 44, in wait
+    if test():return
+       ~~~~^^
+  File "C:\Dev\Astra_A2WC511R\work\gate_closure\romraider_gui\run_gui.py", line 106, in <lambda>
+    command('open_export',path=export['path']);wait(lambda:len(b.request('status',{})['roms'])==2,45)
+                                                               ~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Dev\Astra_A2WC511R\integrations\romraider_mcp\core.py", line 36, in request
+    with opener.open(req,timeout=260) as r:data=r.read(MAX_FILE+1)
+         ~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\urllib\request.py", line 487, in open
+    response = self._open(req, data)
+  File "C:\Program Files\Python314\Lib\urllib\request.py", line 504, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "C:\Program Files\Python314\Lib\urllib\request.py", line 464, in _call_chain
+    result = func(*args)
+  File "C:\Program Files\Python314\Lib\urllib\request.py", line 1349, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\urllib\request.py", line 1324, in do_open
+    r = h.getresponse()
+  File "C:\Program Files\Python314\Lib\http\client.py", line 1478, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Program Files\Python314\Lib\http\client.py", line 343, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Program Files\Python314\Lib\http\client.py", line 304, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\socket.py", line 729, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host

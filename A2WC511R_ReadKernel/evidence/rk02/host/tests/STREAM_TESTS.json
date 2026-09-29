@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "status": "PASS",
+  "checks": [
+    "32 deterministic arbitrary fragment boundaries and allowed status indications",
+    "metadata/replay negative 0",
+    "metadata/replay negative 1",
+    "metadata/replay negative 2",
+    "metadata/replay negative 3",
+    "metadata/replay negative 4",
+    "metadata/replay negative 5",
+    "metadata/replay negative 6",
+    "metadata/replay negative 7",
+    "new-start after partial data rejected",
+    "status-only flood bounded"
+  ],
+  "fragmented_positive_cases": 32,
+  "DLLs_loaded": 0,
+  "RPC_calls": 0,
+  "physical": false
+}

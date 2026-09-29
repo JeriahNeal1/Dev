@@ -1,0 +1,6442 @@
+{
+  "additional_known_oem_frames": 8,
+  "bound_note": "Instruction bound chooses both branch outcomes independently; conservative and possibly infeasible combinations, not claimed exact observed maximum",
+  "build": "C:\\Dev\\Astra_A2WC511R\\work\\builds\\m0_final_05",
+  "classification": "CONDITIONAL_STATIC_INJECTED_CLOSURE_PROOF",
+  "complete_injected_call_graph": "hook -> OEM decoder; hook -> sample -> observe -> init (conditional), reasons",
+  "exact_added_stack_peak_bytes": 124,
+  "functions": {
+    "000147AC": {
+      "calls": [],
+      "cfg": [
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000147AE"
+          ],
+          "pc": "000147AC"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000147B0"
+          ],
+          "pc": "000147AE"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000147B2"
+          ],
+          "pc": "000147B0"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000147B4"
+          ],
+          "pc": "000147B2"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000147B6"
+          ],
+          "pc": "000147B4"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000147B8"
+          ],
+          "pc": "000147B6"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000147BA"
+          ],
+          "pc": "000147B8"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000147BE",
+            "000147C6"
+          ],
+          "pc": "000147BA"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000147C0"
+          ],
+          "pc": "000147BE"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000147C2"
+          ],
+          "pc": "000147C0"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000147DC"
+          ],
+          "pc": "000147C2"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000147C8"
+          ],
+          "pc": "000147C6"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000147CC",
+            "000147DC"
+          ],
+          "pc": "000147C8"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000147CE"
+          ],
+          "pc": "000147CC"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000147D0"
+          ],
+          "pc": "000147CE"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000147D2"
+          ],
+          "pc": "000147D0"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000147D4"
+          ],
+          "pc": "000147D2"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000147D6"
+          ],
+          "pc": "000147D4"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000147D8"
+          ],
+          "pc": "000147D6"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000147DA"
+          ],
+          "pc": "000147D8"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000147DC"
+          ],
+          "pc": "000147DA"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000147DE"
+          ],
+          "pc": "000147DC"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000147E0"
+          ],
+          "pc": "000147DE"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000147E2"
+          ],
+          "pc": "000147E0"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000147E4"
+          ],
+          "pc": "000147E2"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000147E6"
+          ],
+          "pc": "000147E4"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000147E8"
+          ],
+          "pc": "000147E6"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000147EC",
+            "000147F2"
+          ],
+          "pc": "000147E8"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000147EE"
+          ],
+          "pc": "000147EC"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000147FE"
+          ],
+          "pc": "000147EE"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000147F4"
+          ],
+          "pc": "000147F2"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000147F6"
+          ],
+          "pc": "000147F4"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000147FA",
+            "000147FE"
+          ],
+          "pc": "000147F6"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000147FC"
+          ],
+          "pc": "000147FA"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000147FE"
+          ],
+          "pc": "000147FC"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [],
+          "pc": "000147FE"
+        }
+      ],
+      "code_sha256": "2a1edd1b7ed8036f7a5e0607799a094c2c2a2e67f894a05b48750f22fd1ff248",
+      "fpu_or_gbr_vbr_accesses": 0,
+      "instruction_table": [
+        {
+          "form": "movl_pc",
+          "opcode": "D217",
+          "pc": "000147AC"
+        },
+        {
+          "form": "movb_load",
+          "opcode": "6520",
+          "pc": "000147AE"
+        },
+        {
+          "form": "movw_pc",
+          "opcode": "9628",
+          "pc": "000147B0"
+        },
+        {
+          "form": "and_reg",
+          "opcode": "2659",
+          "pc": "000147B2"
+        },
+        {
+          "form": "movw_pc",
+          "opcode": "9725",
+          "pc": "000147B4"
+        },
+        {
+          "form": "extub",
+          "opcode": "646C",
+          "pc": "000147B6"
+        },
+        {
+          "form": "cmpeq_reg",
+          "opcode": "3470",
+          "pc": "000147B8"
+        },
+        {
+          "form": "bf_s",
+          "opcode": "8F04",
+          "pc": "000147BA"
+        },
+        {
+          "form": "nop",
+          "opcode": "0009",
+          "pc": "000147BC"
+        },
+        {
+          "form": "mov_imm",
+          "opcode": "E100",
+          "pc": "000147BE"
+        },
+        {
+          "form": "movl_pc",
+          "opcode": "D313",
+          "pc": "000147C0"
+        },
+        {
+          "form": "bra",
+          "opcode": "A00B",
+          "pc": "000147C2"
+        },
+        {
+          "form": "movb_store",
+          "opcode": "2310",
+          "pc": "000147C4"
+        },
+        {
+          "form": "tst_reg",
+          "opcode": "2748",
+          "pc": "000147C6"
+        },
+        {
+          "form": "bf_s",
+          "opcode": "8F08",
+          "pc": "000147C8"
+        },
+        {
+          "form": "nop",
+          "opcode": "0009",
+          "pc": "000147CA"
+        },
+        {
+          "form": "movl_pc",
+          "opcode": "D110",
+          "pc": "000147CC"
+        },
+        {
+          "form": "shar",
+          "opcode": "4421",
+          "pc": "000147CE"
+        },
+        {
+          "form": "shar",
+          "opcode": "4421",
+          "pc": "000147D0"
+        },
+        {
+          "form": "shar",
+          "opcode": "4421",
+          "pc": "000147D2"
+        },
+        {
+          "form": "shar",
+          "opcode": "4421",
+          "pc": "000147D4"
+        },
+        {
+          "form": "mov_imm",
+          "opcode": "E30F",
+          "pc": "000147D6"
+        },
+        {
+          "form": "and_reg",
+          "opcode": "2439",
+          "pc": "000147D8"
+        },
+        {
+          "form": "movb_store",
+          "opcode": "2140",
+          "pc": "000147DA"
+        },
+        {
+          "form": "movl_pc",
+          "opcode": "D60D",
+          "pc": "000147DC"
+        },
+        {
+          "form": "mov_imm",
+          "opcode": "E30F",
+          "pc": "000147DE"
+        },
+        {
+          "form": "and_reg",
+          "opcode": "2539",
+          "pc": "000147E0"
+        },
+        {
+          "form": "extub",
+          "opcode": "645C",
+          "pc": "000147E2"
+        },
+        {
+          "form": "mov_reg",
+          "opcode": "6043",
+          "pc": "000147E4"
+        },
+        {
+          "form": "cmpeq_imm",
+          "opcode": "8808",
+          "pc": "000147E6"
+        },
+        {
+          "form": "bf_s",
+          "opcode": "8F03",
+          "pc": "000147E8"
+        },
+        {
+          "form": "nop",
+          "opcode": "0009",
+          "pc": "000147EA"
+        },
+        {
+          "form": "mov_imm",
+          "opcode": "E100",
+          "pc": "000147EC"
+        },
+        {
+          "form": "bra",
+          "opcode": "A006",
+          "pc": "000147EE"
+        },
+        {
+          "form": "movb_store",
+          "opcode": "2610",
+          "pc": "000147F0"
+        },
+        {
+          "form": "mov_imm",
+          "opcode": "E008",
+          "pc": "000147F2"
+        },
+        {
+          "form": "tst_reg",
+          "opcode": "2408",
+          "pc": "000147F4"
+        },
+        {
+          "form": "bf_s",
+          "opcode": "8F02",
+          "pc": "000147F6"
+        },
+        {
+          "form": "nop",
+          "opcode": "0009",
+          "pc": "000147F8"
+        },
+        {
+          "form": "and_reg",
+          "opcode": "2539",
+          "pc": "000147FA"
+        },
+        {
+          "form": "movb_store",
+          "opcode": "2650",
+          "pc": "000147FC"
+        },
+        {
+          "form": "rts",
+          "opcode": "000B",
+          "pc": "000147FE"
+        },
+        {
+          "form": "nop",
+          "opcode": "0009",
+          "pc": "00014800"
+        }
+      ],
+      "instruction_upper_bound": 36,
+      "local_frame_peak": 0,
+      "memory_access_upper_bound": 8,
+      "name": "OEM decoder",
+      "nonzero_return_frames": 0,
+      "opcode_forms": [
+        "and_reg",
+        "bf_s",
+        "bra",
+        "cmpeq_imm",
+        "cmpeq_reg",
+        "extub",
+        "mov_imm",
+        "mov_reg",
+        "movb_load",
+        "movb_store",
+        "movl_pc",
+        "movw_pc",
+        "nop",
+        "rts",
+        "shar",
+        "tst_reg"
+      ],
+      "reachable_instruction_count": 43,
+      "reachable_pcs": [
+        "000147AC",
+        "000147AE",
+        "000147B0",
+        "000147B2",
+        "000147B4",
+        "000147B6",
+        "000147B8",
+        "000147BA",
+        "000147BC",
+        "000147BE",
+        "000147C0",
+        "000147C2",
+        "000147C4",
+        "000147C6",
+        "000147C8",
+        "000147CA",
+        "000147CC",
+        "000147CE",
+        "000147D0",
+        "000147D2",
+        "000147D4",
+        "000147D6",
+        "000147D8",
+        "000147DA",
+        "000147DC",
+        "000147DE",
+        "000147E0",
+        "000147E2",
+        "000147E4",
+        "000147E6",
+        "000147E8",
+        "000147EA",
+        "000147EC",
+        "000147EE",
+        "000147F0",
+        "000147F2",
+        "000147F4",
+        "000147F6",
+        "000147F8",
+        "000147FA",
+        "000147FC",
+        "000147FE",
+        "00014800"
+      ],
+      "return_pcs": [
+        "000147FE"
+      ],
+      "system_writes": [],
+      "transitive_frame_peak": 0,
+      "unequal_frame_depth_joins": 0,
+      "write_access_upper_bound": 2
+    },
+    "000E1000": {
+      "calls": [],
+      "cfg": [
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E1002"
+          ],
+          "pc": "000E1000"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E1004"
+          ],
+          "pc": "000E1002"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E1006"
+          ],
+          "pc": "000E1004"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E100A",
+            "000E1016"
+          ],
+          "pc": "000E1006"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E100C"
+          ],
+          "pc": "000E100A"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E1010",
+            "000E1014"
+          ],
+          "pc": "000E100C"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [],
+          "pc": "000E1010"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E1016"
+          ],
+          "pc": "000E1014"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [],
+          "pc": "000E1016"
+        }
+      ],
+      "code_sha256": "6e9ebefd90c65195e00bf2c6f19a6a6b9aae349af9519a58dc2444c32614aed2",
+      "fpu_or_gbr_vbr_accesses": 0,
+      "instruction_table": [
+        {
+          "form": "extub",
+          "opcode": "604C",
+          "pc": "000E1000"
+        },
+        {
+          "form": "mov_imm",
+          "opcode": "E107",
+          "pc": "000E1002"
+        },
+        {
+          "form": "cmphi",
+          "opcode": "3016",
+          "pc": "000E1004"
+        },
+        {
+          "form": "bf_s",
+          "opcode": "8F06",
+          "pc": "000E1006"
+        },
+        {
+          "form": "extub",
+          "opcode": "655C",
+          "pc": "000E1008"
+        },
+        {
+          "form": "cmpeq_imm",
+          "opcode": "8808",
+          "pc": "000E100A"
+        },
+        {
+          "form": "bf_s",
+          "opcode": "8F02",
+          "pc": "000E100C"
+        },
+        {
+          "form": "nop",
+          "opcode": "0009",
+          "pc": "000E100E"
+        },
+        {
+          "form": "rts",
+          "opcode": "000B",
+          "pc": "000E1010"
+        },
+        {
+          "form": "mov_imm",
+          "opcode": "E000",
+          "pc": "000E1012"
+        },
+        {
+          "form": "mov_reg",
+          "opcode": "6053",
+          "pc": "000E1014"
+        },
+        {
+          "form": "rts",
+          "opcode": "000B",
+          "pc": "000E1016"
+        },
+        {
+          "form": "nop",
+          "opcode": "0009",
+          "pc": "000E1018"
+        }
+      ],
+      "instruction_upper_bound": 11,
+      "local_frame_peak": 0,
+      "memory_access_upper_bound": 0,
+      "name": "m0_decode",
+      "nonzero_return_frames": 0,
+      "opcode_forms": [
+        "bf_s",
+        "cmpeq_imm",
+        "cmphi",
+        "extub",
+        "mov_imm",
+        "mov_reg",
+        "nop",
+        "rts"
+      ],
+      "reachable_instruction_count": 13,
+      "reachable_pcs": [
+        "000E1000",
+        "000E1002",
+        "000E1004",
+        "000E1006",
+        "000E1008",
+        "000E100A",
+        "000E100C",
+        "000E100E",
+        "000E1010",
+        "000E1012",
+        "000E1014",
+        "000E1016",
+        "000E1018"
+      ],
+      "return_pcs": [
+        "000E1016",
+        "000E1010"
+      ],
+      "system_writes": [],
+      "transitive_frame_peak": 0,
+      "unequal_frame_depth_joins": 0,
+      "write_access_upper_bound": 0
+    },
+    "000E101C": {
+      "calls": [],
+      "cfg": [
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E101E"
+          ],
+          "pc": "000E101C"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E1020"
+          ],
+          "pc": "000E101E"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E1022"
+          ],
+          "pc": "000E1020"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E1024"
+          ],
+          "pc": "000E1022"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E1026"
+          ],
+          "pc": "000E1024"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E1028"
+          ],
+          "pc": "000E1026"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E102C",
+            "000E1032"
+          ],
+          "pc": "000E1028"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E102E"
+          ],
+          "pc": "000E102C"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E1036"
+          ],
+          "pc": "000E102E"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E1034"
+          ],
+          "pc": "000E1032"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E1036"
+          ],
+          "pc": "000E1034"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E1038"
+          ],
+          "pc": "000E1036"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E103A"
+          ],
+          "pc": "000E1038"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E103C"
+          ],
+          "pc": "000E103A"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E1040",
+            "000E1042"
+          ],
+          "pc": "000E103C"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E1042"
+          ],
+          "pc": "000E1040"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E1044"
+          ],
+          "pc": "000E1042"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E1046"
+          ],
+          "pc": "000E1044"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E1048"
+          ],
+          "pc": "000E1046"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E104A"
+          ],
+          "pc": "000E1048"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E104C"
+          ],
+          "pc": "000E104A"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E1050",
+            "000E1056"
+          ],
+          "pc": "000E104C"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E1052"
+          ],
+          "pc": "000E1050"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E1054"
+          ],
+          "pc": "000E1052"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E1056"
+          ],
+          "pc": "000E1054"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E1058"
+          ],
+          "pc": "000E1056"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E105A"
+          ],
+          "pc": "000E1058"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E105C"
+          ],
+          "pc": "000E105A"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E105E"
+          ],
+          "pc": "000E105C"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E1062",
+            "000E1068"
+          ],
+          "pc": "000E105E"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E1064"
+          ],
+          "pc": "000E1062"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E107A"
+          ],
+          "pc": "000E1064"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E106A"
+          ],
+          "pc": "000E1068"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E106E",
+            "000E1072"
+          ],
+          "pc": "000E106A"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E1078"
+          ],
+          "pc": "000E106E"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E1074"
+          ],
+          "pc": "000E1072"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E1078",
+            "000E107A"
+          ],
+          "pc": "000E1074"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E107A"
+          ],
+          "pc": "000E1078"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E107C"
+          ],
+          "pc": "000E107A"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E107E"
+          ],
+          "pc": "000E107C"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E1080"
+          ],
+          "pc": "000E107E"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E1084",
+            "000E1086"
+          ],
+          "pc": "000E1080"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E1086"
+          ],
+          "pc": "000E1084"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E1088"
+          ],
+          "pc": "000E1086"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E108A"
+          ],
+          "pc": "000E1088"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E108C"
+          ],
+          "pc": "000E108A"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E108E"
+          ],
+          "pc": "000E108C"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E1090"
+          ],
+          "pc": "000E108E"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E1094",
+            "000E109C"
+          ],
+          "pc": "000E1090"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E1096"
+          ],
+          "pc": "000E1094"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E1098"
+          ],
+          "pc": "000E1096"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E109C",
+            "000E10A0"
+          ],
+          "pc": "000E1098"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E109E"
+          ],
+          "pc": "000E109C"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E10A0"
+          ],
+          "pc": "000E109E"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E10A2"
+          ],
+          "pc": "000E10A0"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E10A4"
+          ],
+          "pc": "000E10A2"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E10A6"
+          ],
+          "pc": "000E10A4"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E10AA",
+            "000E10AE"
+          ],
+          "pc": "000E10A6"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E10AC"
+          ],
+          "pc": "000E10AA"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E10AE"
+          ],
+          "pc": "000E10AC"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [],
+          "pc": "000E10AE"
+        }
+      ],
+      "code_sha256": "4f48b411fe855bb531447d2063ecb75dfa03d4079c7d23e890f5053b001eb562",
+      "fpu_or_gbr_vbr_accesses": 0,
+      "instruction_table": [
+        {
+          "form": "mov_reg",
+          "opcode": "6143",
+          "pc": "000E101C"
+        },
+        {
+          "form": "add_imm",
+          "opcode": "7101",
+          "pc": "000E101E"
+        },
+        {
+          "form": "movb_load",
+          "opcode": "6110",
+          "pc": "000E1020"
+        },
+        {
+          "form": "extub",
+          "opcode": "611C",
+          "pc": "000E1022"
+        },
+        {
+          "form": "mov_reg",
+          "opcode": "6013",
+          "pc": "000E1024"
+        },
+        {
+          "form": "cmpeq_imm",
+          "opcode": "8811",
+          "pc": "000E1026"
+        },
+        {
+          "form": "bf_s",
+          "opcode": "8F03",
+          "pc": "000E1028"
+        },
+        {
+          "form": "mov_reg",
+          "opcode": "6243",
+          "pc": "000E102A"
+        },
+        {
+          "form": "movw_pc",
+          "opcode": "9741",
+          "pc": "000E102C"
+        },
+        {
+          "form": "bra",
+          "opcode": "A002",
+          "pc": "000E102E"
+        },
+        {
+          "form": "add_imm",
+          "opcode": "7202",
+          "pc": "000E1030"
+        },
+        {
+          "form": "movw_pc",
+          "opcode": "973F",
+          "pc": "000E1032"
+        },
+        {
+          "form": "add_imm",
+          "opcode": "7202",
+          "pc": "000E1034"
+        },
+        {
+          "form": "movb_load",
+          "opcode": "6220",
+          "pc": "000E1036"
+        },
+        {
+          "form": "mov_reg",
+          "opcode": "6023",
+          "pc": "000E1038"
+        },
+        {
+          "form": "cmpeq_imm",
+          "opcode": "8801",
+          "pc": "000E103A"
+        },
+        {
+          "form": "bt_s",
+          "opcode": "8D01",
+          "pc": "000E103C"
+        },
+        {
+          "form": "mov_imm",
+          "opcode": "E202",
+          "pc": "000E103E"
+        },
+        {
+          "form": "or_reg",
+          "opcode": "272B",
+          "pc": "000E1040"
+        },
+        {
+          "form": "mov_reg",
+          "opcode": "6243",
+          "pc": "000E1042"
+        },
+        {
+          "form": "add_imm",
+          "opcode": "7203",
+          "pc": "000E1044"
+        },
+        {
+          "form": "movb_load",
+          "opcode": "6220",
+          "pc": "000E1046"
+        },
+        {
+          "form": "mov_reg",
+          "opcode": "6023",
+          "pc": "000E1048"
+        },
+        {
+          "form": "tst_imm",
+          "opcode": "C802",
+          "pc": "000E104A"
+        },
+        {
+          "form": "bf_s",
+          "opcode": "8F03",
+          "pc": "000E104C"
+        },
+        {
+          "form": "mov_reg",
+          "opcode": "6243",
+          "pc": "000E104E"
+        },
+        {
+          "form": "mov_imm",
+          "opcode": "E204",
+          "pc": "000E1050"
+        },
+        {
+          "form": "or_reg",
+          "opcode": "272B",
+          "pc": "000E1052"
+        },
+        {
+          "form": "mov_reg",
+          "opcode": "6243",
+          "pc": "000E1054"
+        },
+        {
+          "form": "add_imm",
+          "opcode": "7204",
+          "pc": "000E1056"
+        },
+        {
+          "form": "movb_load",
+          "opcode": "6220",
+          "pc": "000E1058"
+        },
+        {
+          "form": "extub",
+          "opcode": "622C",
+          "pc": "000E105A"
+        },
+        {
+          "form": "tst_reg",
+          "opcode": "2228",
+          "pc": "000E105C"
+        },
+        {
+          "form": "bf_s",
+          "opcode": "8F03",
+          "pc": "000E105E"
+        },
+        {
+          "form": "mov_reg",
+          "opcode": "6023",
+          "pc": "000E1060"
+        },
+        {
+          "form": "mov_imm",
+          "opcode": "E308",
+          "pc": "000E1062"
+        },
+        {
+          "form": "bra",
+          "opcode": "A009",
+          "pc": "000E1064"
+        },
+        {
+          "form": "or_reg",
+          "opcode": "273B",
+          "pc": "000E1066"
+        },
+        {
+          "form": "cmpeq_imm",
+          "opcode": "8802",
+          "pc": "000E1068"
+        },
+        {
+          "form": "bf_s",
+          "opcode": "8F02",
+          "pc": "000E106A"
+        },
+        {
+          "form": "mov_reg",
+          "opcode": "6023",
+          "pc": "000E106C"
+        },
+        {
+          "form": "bra",
+          "opcode": "A003",
+          "pc": "000E106E"
+        },
+        {
+          "form": "mov_imm",
+          "opcode": "E210",
+          "pc": "000E1070"
+        },
+        {
+          "form": "cmpeq_imm",
+          "opcode": "8801",
+          "pc": "000E1072"
+        },
+        {
+          "form": "bt_s",
+          "opcode": "8D01",
+          "pc": "000E1074"
+        },
+        {
+          "form": "mov_imm",
+          "opcode": "E240",
+          "pc": "000E1076"
+        },
+        {
+          "form": "or_reg",
+          "opcode": "272B",
+          "pc": "000E1078"
+        },
+        {
+          "form": "movb_load",
+          "opcode": "6240",
+          "pc": "000E107A"
+        },
+        {
+          "form": "extub",
+          "opcode": "622C",
+          "pc": "000E107C"
+        },
+        {
+          "form": "cmpeq_reg",
+          "opcode": "3210",
+          "pc": "000E107E"
+        },
+        {
+          "form": "bt_s",
+          "opcode": "8D01",
+          "pc": "000E1080"
+        },
+        {
+          "form": "mov_imm",
+          "opcode": "E320",
+          "pc": "000E1082"
+        },
+        {
+          "form": "or_reg",
+          "opcode": "273B",
+          "pc": "000E1084"
+        },
+        {
+          "form": "mov_reg",
+          "opcode": "6313",
+          "pc": "000E1086"
+        },
+        {
+          "form": "shlr2",
+          "opcode": "4309",
+          "pc": "000E1088"
+        },
+        {
+          "form": "shlr2",
+          "opcode": "4309",
+          "pc": "000E108A"
+        },
+        {
+          "form": "mov_imm",
+          "opcode": "E208",
+          "pc": "000E108C"
+        },
+        {
+          "form": "cmphi",
+          "opcode": "3326",
+          "pc": "000E108E"
+        },
+        {
+          "form": "bt_s",
+          "opcode": "8D04",
+          "pc": "000E1090"
+        },
+        {
+          "form": "mov_imm",
+          "opcode": "E00F",
+          "pc": "000E1092"
+        },
+        {
+          "form": "and_reg",
+          "opcode": "2109",
+          "pc": "000E1094"
+        },
+        {
+          "form": "cmphi",
+          "opcode": "3126",
+          "pc": "000E1096"
+        },
+        {
+          "form": "bf_s",
+          "opcode": "8F02",
+          "pc": "000E1098"
+        },
+        {
+          "form": "nop",
+          "opcode": "0009",
+          "pc": "000E109A"
+        },
+        {
+          "form": "movw_pc",
+          "opcode": "910B",
+          "pc": "000E109C"
+        },
+        {
+          "form": "or_reg",
+          "opcode": "271B",
+          "pc": "000E109E"
+        },
+        {
+          "form": "add_imm",
+          "opcode": "7405",
+          "pc": "000E10A0"
+        },
+        {
+          "form": "movb_load",
+          "opcode": "6140",
+          "pc": "000E10A2"
+        },
+        {
+          "form": "tst_reg",
+          "opcode": "2118",
+          "pc": "000E10A4"
+        },
+        {
+          "form": "bt_s",
+          "opcode": "8D02",
+          "pc": "000E10A6"
+        },
+        {
+          "form": "nop",
+          "opcode": "0009",
+          "pc": "000E10A8"
+        },
+        {
+          "form": "movw_pc",
+          "opcode": "9105",
+          "pc": "000E10AA"
+        },
+        {
+          "form": "or_reg",
+          "opcode": "271B",
+          "pc": "000E10AC"
+        },
+        {
+          "form": "rts",
+          "opcode": "000B",
+          "pc": "000E10AE"
+        },
+        {
+          "form": "mov_reg",
+          "opcode": "6073",
+          "pc": "000E10B0"
+        }
+      ],
+      "instruction_upper_bound": 68,
+      "local_frame_peak": 0,
+      "memory_access_upper_bound": 9,
+      "name": "m0_reasons",
+      "nonzero_return_frames": 0,
+      "opcode_forms": [
+        "add_imm",
+        "and_reg",
+        "bf_s",
+        "bra",
+        "bt_s",
+        "cmpeq_imm",
+        "cmpeq_reg",
+        "cmphi",
+        "extub",
+        "mov_imm",
+        "mov_reg",
+        "movb_load",
+        "movw_pc",
+        "nop",
+        "or_reg",
+        "rts",
+        "shlr2",
+        "tst_imm",
+        "tst_reg"
+      ],
+      "reachable_instruction_count": 75,
+      "reachable_pcs": [
+        "000E101C",
+        "000E101E",
+        "000E1020",
+        "000E1022",
+        "000E1024",
+        "000E1026",
+        "000E1028",
+        "000E102A",
+        "000E102C",
+        "000E102E",
+        "000E1030",
+        "000E1032",
+        "000E1034",
+        "000E1036",
+        "000E1038",
+        "000E103A",
+        "000E103C",
+        "000E103E",
+        "000E1040",
+        "000E1042",
+        "000E1044",
+        "000E1046",
+        "000E1048",
+        "000E104A",
+        "000E104C",
+        "000E104E",
+        "000E1050",
+        "000E1052",
+        "000E1054",
+        "000E1056",
+        "000E1058",
+        "000E105A",
+        "000E105C",
+        "000E105E",
+        "000E1060",
+        "000E1062",
+        "000E1064",
+        "000E1066",
+        "000E1068",
+        "000E106A",
+        "000E106C",
+        "000E106E",
+        "000E1070",
+        "000E1072",
+        "000E1074",
+        "000E1076",
+        "000E1078",
+        "000E107A",
+        "000E107C",
+        "000E107E",
+        "000E1080",
+        "000E1082",
+        "000E1084",
+        "000E1086",
+        "000E1088",
+        "000E108A",
+        "000E108C",
+        "000E108E",
+        "000E1090",
+        "000E1092",
+        "000E1094",
+        "000E1096",
+        "000E1098",
+        "000E109A",
+        "000E109C",
+        "000E109E",
+        "000E10A0",
+        "000E10A2",
+        "000E10A4",
+        "000E10A6",
+        "000E10A8",
+        "000E10AA",
+        "000E10AC",
+        "000E10AE",
+        "000E10B0"
+      ],
+      "return_pcs": [
+        "000E10AE"
+      ],
+      "system_writes": [],
+      "transitive_frame_peak": 0,
+      "unequal_frame_depth_joins": 0,
+      "write_access_upper_bound": 0
+    },
+    "000E10BC": {
+      "calls": [],
+      "cfg": [
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E10BE"
+          ],
+          "pc": "000E10BC"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E10C0"
+          ],
+          "pc": "000E10BE"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E10C2"
+          ],
+          "pc": "000E10C0"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E10C6",
+            "000E10DE"
+          ],
+          "pc": "000E10C2"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E10C8"
+          ],
+          "pc": "000E10C6"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E10CA"
+          ],
+          "pc": "000E10C8"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E10CC"
+          ],
+          "pc": "000E10CA"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E10CE"
+          ],
+          "pc": "000E10CC"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E10D0"
+          ],
+          "pc": "000E10CE"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E10D4",
+            "000E10DC"
+          ],
+          "pc": "000E10D0"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E10D6"
+          ],
+          "pc": "000E10D4"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E10D8"
+          ],
+          "pc": "000E10D6"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E10DE"
+          ],
+          "pc": "000E10D8"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E10DE"
+          ],
+          "pc": "000E10DC"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E10E0"
+          ],
+          "pc": "000E10DE"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E10E2"
+          ],
+          "pc": "000E10E0"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E10E4"
+          ],
+          "pc": "000E10E2"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E10E6"
+          ],
+          "pc": "000E10E4"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E10E8"
+          ],
+          "pc": "000E10E6"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E10EA"
+          ],
+          "pc": "000E10E8"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E10EC"
+          ],
+          "pc": "000E10EA"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E10EE"
+          ],
+          "pc": "000E10EC"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E10F0"
+          ],
+          "pc": "000E10EE"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E10F2"
+          ],
+          "pc": "000E10F0"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E10F6",
+            "000E10EA"
+          ],
+          "pc": "000E10F2"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E10F8"
+          ],
+          "pc": "000E10F6"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E10FA"
+          ],
+          "pc": "000E10F8"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E10FC"
+          ],
+          "pc": "000E10FA"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E10FE"
+          ],
+          "pc": "000E10FC"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E1100"
+          ],
+          "pc": "000E10FE"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E1102"
+          ],
+          "pc": "000E1100"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E1104"
+          ],
+          "pc": "000E1102"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E1106"
+          ],
+          "pc": "000E1104"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E1108"
+          ],
+          "pc": "000E1106"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [
+            "000E110A"
+          ],
+          "pc": "000E1108"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [],
+          "pc": "000E110A"
+        }
+      ],
+      "code_sha256": "7cd7a85373e9d6903e9381cc60d8e717cddc9b0d8fa78b75539209d9ddfd5316",
+      "fpu_or_gbr_vbr_accesses": 0,
+      "instruction_table": [
+        {
+          "form": "movl_load_disp",
+          "opcode": "5241",
+          "pc": "000E10BC"
+        },
+        {
+          "form": "movl_pc",
+          "opcode": "D114",
+          "pc": "000E10BE"
+        },
+        {
+          "form": "cmpeq_reg",
+          "opcode": "3210",
+          "pc": "000E10C0"
+        },
+        {
+          "form": "bf_s",
+          "opcode": "8F0C",
+          "pc": "000E10C2"
+        },
+        {
+          "form": "mov_imm",
+          "opcode": "E100",
+          "pc": "000E10C4"
+        },
+        {
+          "form": "mov_reg",
+          "opcode": "6143",
+          "pc": "000E10C6"
+        },
+        {
+          "form": "add_imm",
+          "opcode": "711E",
+          "pc": "000E10C8"
+        },
+        {
+          "form": "movb_load",
+          "opcode": "6010",
+          "pc": "000E10CA"
+        },
+        {
+          "form": "extub",
+          "opcode": "600C",
+          "pc": "000E10CC"
+        },
+        {
+          "form": "cmpeq_imm",
+          "opcode": "8801",
+          "pc": "000E10CE"
+        },
+        {
+          "form": "bf_s",
+          "opcode": "8F04",
+          "pc": "000E10D0"
+        },
+        {
+          "form": "nop",
+          "opcode": "0009",
+          "pc": "000E10D2"
+        },
+        {
+          "form": "movl_load",
+          "opcode": "6142",
+          "pc": "000E10D4"
+        },
+        {
+          "form": "mov_imm",
+          "opcode": "E2FE",
+          "pc": "000E10D6"
+        },
+        {
+          "form": "bra",
+          "opcode": "A001",
+          "pc": "000E10D8"
+        },
+        {
+          "form": "and_reg",
+          "opcode": "2129",
+          "pc": "000E10DA"
+        },
+        {
+          "form": "mov_imm",
+          "opcode": "E100",
+          "pc": "000E10DC"
+        },
+        {
+          "form": "mov_reg",
+          "opcode": "6213",
+          "pc": "000E10DE"
+        },
+        {
+          "form": "add_imm",
+          "opcode": "7201",
+          "pc": "000E10E0"
+        },
+        {
+          "form": "movl_store",
+          "opcode": "2422",
+          "pc": "000E10E2"
+        },
+        {
+          "form": "mov_imm",
+          "opcode": "E304",
+          "pc": "000E10E4"
+        },
+        {
+          "form": "mov_imm",
+          "opcode": "E600",
+          "pc": "000E10E6"
+        },
+        {
+          "form": "mov_imm",
+          "opcode": "E21C",
+          "pc": "000E10E8"
+        },
+        {
+          "form": "mov_reg",
+          "opcode": "6743",
+          "pc": "000E10EA"
+        },
+        {
+          "form": "add_reg",
+          "opcode": "373C",
+          "pc": "000E10EC"
+        },
+        {
+          "form": "movb_store",
+          "opcode": "2760",
+          "pc": "000E10EE"
+        },
+        {
+          "form": "dt",
+          "opcode": "4210",
+          "pc": "000E10F0"
+        },
+        {
+          "form": "bf_s",
+          "opcode": "8FFA",
+          "pc": "000E10F2"
+        },
+        {
+          "form": "add_imm",
+          "opcode": "7301",
+          "pc": "000E10F4"
+        },
+        {
+          "form": "movl_pc",
+          "opcode": "D206",
+          "pc": "000E10F6"
+        },
+        {
+          "form": "mov_imm",
+          "opcode": "E301",
+          "pc": "000E10F8"
+        },
+        {
+          "form": "add_imm",
+          "opcode": "7102",
+          "pc": "000E10FA"
+        },
+        {
+          "form": "movl_store_disp",
+          "opcode": "1421",
+          "pc": "000E10FC"
+        },
+        {
+          "form": "movw_pc",
+          "opcode": "9206",
+          "pc": "000E10FE"
+        },
+        {
+          "form": "movl_store_disp",
+          "opcode": "1423",
+          "pc": "000E1100"
+        },
+        {
+          "form": "mov_reg",
+          "opcode": "6243",
+          "pc": "000E1102"
+        },
+        {
+          "form": "add_imm",
+          "opcode": "721E",
+          "pc": "000E1104"
+        },
+        {
+          "form": "movb_store",
+          "opcode": "2230",
+          "pc": "000E1106"
+        },
+        {
+          "form": "movl_store",
+          "opcode": "2412",
+          "pc": "000E1108"
+        },
+        {
+          "form": "rts",
+          "opcode": "000B",
+          "pc": "000E110A"
+        },
+        {
+          "form": "nop",
+          "opcode": "0009",
+          "pc": "000E110C"
+        }
+      ],
+      "instruction_upper_bound": 202,
+      "local_frame_peak": 0,
+      "memory_access_upper_bound": 39,
+      "name": "m0_init",
+      "nonzero_return_frames": 0,
+      "opcode_forms": [
+        "add_imm",
+        "add_reg",
+        "and_reg",
+        "bf_s",
+        "bra",
+        "cmpeq_imm",
+        "cmpeq_reg",
+        "dt",
+        "extub",
+        "mov_imm",
+        "mov_reg",
+        "movb_load",
+        "movb_store",
+        "movl_load",
+        "movl_load_disp",
+        "movl_pc",
+        "movl_store",
+        "movl_store_disp",
+        "movw_pc",
+        "nop",
+        "rts"
+      ],
+      "reachable_instruction_count": 41,
+      "reachable_pcs": [
+        "000E10BC",
+        "000E10BE",
+        "000E10C0",
+        "000E10C2",
+        "000E10C4",
+        "000E10C6",
+        "000E10C8",
+        "000E10CA",
+        "000E10CC",
+        "000E10CE",
+        "000E10D0",
+        "000E10D2",
+        "000E10D4",
+        "000E10D6",
+        "000E10D8",
+        "000E10DA",
+        "000E10DC",
+        "000E10DE",
+        "000E10E0",
+        "000E10E2",
+        "000E10E4",
+        "000E10E6",
+        "000E10E8",
+        "000E10EA",
+        "000E10EC",
+        "000E10EE",
+        "000E10F0",
+        "000E10F2",
+        "000E10F4",
+        "000E10F6",
+        "000E10F8",
+        "000E10FA",
+        "000E10FC",
+        "000E10FE",
+        "000E1100",
+        "000E1102",
+        "000E1104",
+        "000E1106",
+        "000E1108",
+        "000E110A",
+        "000E110C"
+      ],
+      "return_pcs": [
+        "000E110A"
+      ],
+      "system_writes": [],
+      "transitive_frame_peak": 0,
+      "unequal_frame_depth_joins": 0,
+      "write_access_upper_bound": 33
+    },
+    "000E1114": {
+      "calls": [
+        {
+          "literal": "000E1238",
+          "load_pc": "000E114E",
+          "pc": "000E1150",
+          "target": "000E10BC"
+        },
+        {
+          "literal": "000E123C",
+          "load_pc": "000E11FC",
+          "pc": "000E1208",
+          "target": "000E101C"
+        }
+      ],
+      "cfg": [
+        {
+          "call": null,
+          "depth_after": 4,
+          "depth_before": 0,
+          "next": [
+            "000E1116"
+          ],
+          "pc": "000E1114"
+        },
+        {
+          "call": null,
+          "depth_after": 4,
+          "depth_before": 4,
+          "next": [
+            "000E1118"
+          ],
+          "pc": "000E1116"
+        },
+        {
+          "call": null,
+          "depth_after": 8,
+          "depth_before": 4,
+          "next": [
+            "000E111A"
+          ],
+          "pc": "000E1118"
+        },
+        {
+          "call": null,
+          "depth_after": 8,
+          "depth_before": 8,
+          "next": [
+            "000E111C"
+          ],
+          "pc": "000E111A"
+        },
+        {
+          "call": null,
+          "depth_after": 12,
+          "depth_before": 8,
+          "next": [
+            "000E111E"
+          ],
+          "pc": "000E111C"
+        },
+        {
+          "call": null,
+          "depth_after": 12,
+          "depth_before": 12,
+          "next": [
+            "000E1120"
+          ],
+          "pc": "000E111E"
+        },
+        {
+          "call": null,
+          "depth_after": 16,
+          "depth_before": 12,
+          "next": [
+            "000E1122"
+          ],
+          "pc": "000E1120"
+        },
+        {
+          "call": null,
+          "depth_after": 16,
+          "depth_before": 16,
+          "next": [
+            "000E1124"
+          ],
+          "pc": "000E1122"
+        },
+        {
+          "call": null,
+          "depth_after": 20,
+          "depth_before": 16,
+          "next": [
+            "000E1126"
+          ],
+          "pc": "000E1124"
+        },
+        {
+          "call": null,
+          "depth_after": 20,
+          "depth_before": 20,
+          "next": [
+            "000E1128"
+          ],
+          "pc": "000E1126"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 20,
+          "next": [
+            "000E112A"
+          ],
+          "pc": "000E1128"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E112C"
+          ],
+          "pc": "000E112A"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E112E"
+          ],
+          "pc": "000E112C"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1130"
+          ],
+          "pc": "000E112E"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1132"
+          ],
+          "pc": "000E1130"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1134"
+          ],
+          "pc": "000E1132"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1136"
+          ],
+          "pc": "000E1134"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1138"
+          ],
+          "pc": "000E1136"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E113A"
+          ],
+          "pc": "000E1138"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E113C"
+          ],
+          "pc": "000E113A"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1140",
+            "000E114E"
+          ],
+          "pc": "000E113C"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1142"
+          ],
+          "pc": "000E1140"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1144"
+          ],
+          "pc": "000E1142"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1146"
+          ],
+          "pc": "000E1144"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1148"
+          ],
+          "pc": "000E1146"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E114A"
+          ],
+          "pc": "000E1148"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E114E",
+            "000E1158"
+          ],
+          "pc": "000E114A"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1150"
+          ],
+          "pc": "000E114E"
+        },
+        {
+          "call": "000E10BC",
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1154"
+          ],
+          "pc": "000E1150"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1156"
+          ],
+          "pc": "000E1154"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1158"
+          ],
+          "pc": "000E1156"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E115A"
+          ],
+          "pc": "000E1158"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E115C"
+          ],
+          "pc": "000E115A"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E115E"
+          ],
+          "pc": "000E115C"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1160"
+          ],
+          "pc": "000E115E"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1162"
+          ],
+          "pc": "000E1160"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1164"
+          ],
+          "pc": "000E1162"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1168",
+            "000E1186"
+          ],
+          "pc": "000E1164"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E116A"
+          ],
+          "pc": "000E1168"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E116C"
+          ],
+          "pc": "000E116A"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E116E"
+          ],
+          "pc": "000E116C"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1170"
+          ],
+          "pc": "000E116E"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1172"
+          ],
+          "pc": "000E1170"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1174"
+          ],
+          "pc": "000E1172"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1176"
+          ],
+          "pc": "000E1174"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1178"
+          ],
+          "pc": "000E1176"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E117A"
+          ],
+          "pc": "000E1178"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E117E",
+            "000E1186"
+          ],
+          "pc": "000E117A"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1180"
+          ],
+          "pc": "000E117E"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1182"
+          ],
+          "pc": "000E1180"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1184"
+          ],
+          "pc": "000E1182"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1186"
+          ],
+          "pc": "000E1184"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1188"
+          ],
+          "pc": "000E1186"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E118A"
+          ],
+          "pc": "000E1188"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E118C"
+          ],
+          "pc": "000E118A"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E118E"
+          ],
+          "pc": "000E118C"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1190"
+          ],
+          "pc": "000E118E"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1192"
+          ],
+          "pc": "000E1190"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1194"
+          ],
+          "pc": "000E1192"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1196"
+          ],
+          "pc": "000E1194"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1198"
+          ],
+          "pc": "000E1196"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E119A"
+          ],
+          "pc": "000E1198"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E119C"
+          ],
+          "pc": "000E119A"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E119E"
+          ],
+          "pc": "000E119C"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E11A0"
+          ],
+          "pc": "000E119E"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E11A2"
+          ],
+          "pc": "000E11A0"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E11A4"
+          ],
+          "pc": "000E11A2"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E11A6"
+          ],
+          "pc": "000E11A4"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E11A8"
+          ],
+          "pc": "000E11A6"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E11AA"
+          ],
+          "pc": "000E11A8"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E11AC"
+          ],
+          "pc": "000E11AA"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E11AE"
+          ],
+          "pc": "000E11AC"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E11B0"
+          ],
+          "pc": "000E11AE"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E11B2"
+          ],
+          "pc": "000E11B0"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E11B4"
+          ],
+          "pc": "000E11B2"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E11B6"
+          ],
+          "pc": "000E11B4"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E11B8"
+          ],
+          "pc": "000E11B6"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E11BA"
+          ],
+          "pc": "000E11B8"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E11BC"
+          ],
+          "pc": "000E11BA"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E11BE"
+          ],
+          "pc": "000E11BC"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E11C2",
+            "000E11CC"
+          ],
+          "pc": "000E11BE"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E11C4"
+          ],
+          "pc": "000E11C2"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E11C6"
+          ],
+          "pc": "000E11C4"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E11CA",
+            "000E11CC"
+          ],
+          "pc": "000E11C6"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E11CC"
+          ],
+          "pc": "000E11CA"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E11CE"
+          ],
+          "pc": "000E11CC"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E11D0"
+          ],
+          "pc": "000E11CE"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E11D2"
+          ],
+          "pc": "000E11D0"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E11D4"
+          ],
+          "pc": "000E11D2"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E11D6"
+          ],
+          "pc": "000E11D4"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E11D8"
+          ],
+          "pc": "000E11D6"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E11DC",
+            "000E11EA"
+          ],
+          "pc": "000E11D8"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E11DE"
+          ],
+          "pc": "000E11DC"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E11E0"
+          ],
+          "pc": "000E11DE"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E11E4",
+            "000E11E8"
+          ],
+          "pc": "000E11E0"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E11EA"
+          ],
+          "pc": "000E11E4"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E11EA"
+          ],
+          "pc": "000E11E8"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E11EC"
+          ],
+          "pc": "000E11EA"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E11EE"
+          ],
+          "pc": "000E11EC"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E11F0"
+          ],
+          "pc": "000E11EE"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E11F2"
+          ],
+          "pc": "000E11F0"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E11F4"
+          ],
+          "pc": "000E11F2"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E11F6"
+          ],
+          "pc": "000E11F4"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E11F8"
+          ],
+          "pc": "000E11F6"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E11FA"
+          ],
+          "pc": "000E11F8"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E11FC"
+          ],
+          "pc": "000E11FA"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E11FE"
+          ],
+          "pc": "000E11FC"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1200"
+          ],
+          "pc": "000E11FE"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1202"
+          ],
+          "pc": "000E1200"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1204"
+          ],
+          "pc": "000E1202"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1206"
+          ],
+          "pc": "000E1204"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1208"
+          ],
+          "pc": "000E1206"
+        },
+        {
+          "call": "000E101C",
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E120C"
+          ],
+          "pc": "000E1208"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E120E"
+          ],
+          "pc": "000E120C"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1210"
+          ],
+          "pc": "000E120E"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1212"
+          ],
+          "pc": "000E1210"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1214"
+          ],
+          "pc": "000E1212"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1216"
+          ],
+          "pc": "000E1214"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1218"
+          ],
+          "pc": "000E1216"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E121A"
+          ],
+          "pc": "000E1218"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E121C"
+          ],
+          "pc": "000E121A"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E121E"
+          ],
+          "pc": "000E121C"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1220"
+          ],
+          "pc": "000E121E"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1222"
+          ],
+          "pc": "000E1220"
+        },
+        {
+          "call": null,
+          "depth_after": 20,
+          "depth_before": 24,
+          "next": [
+            "000E1224"
+          ],
+          "pc": "000E1222"
+        },
+        {
+          "call": null,
+          "depth_after": 16,
+          "depth_before": 20,
+          "next": [
+            "000E1226"
+          ],
+          "pc": "000E1224"
+        },
+        {
+          "call": null,
+          "depth_after": 12,
+          "depth_before": 16,
+          "next": [
+            "000E1228"
+          ],
+          "pc": "000E1226"
+        },
+        {
+          "call": null,
+          "depth_after": 8,
+          "depth_before": 12,
+          "next": [
+            "000E122A"
+          ],
+          "pc": "000E1228"
+        },
+        {
+          "call": null,
+          "depth_after": 4,
+          "depth_before": 8,
+          "next": [
+            "000E122C"
+          ],
+          "pc": "000E122A"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 4,
+          "next": [
+            "000E122E"
+          ],
+          "pc": "000E122C"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [],
+          "pc": "000E122E"
+        }
+      ],
+      "code_sha256": "37f5b32e43aaf12235221dadd4d3221bd1b443c7d36368be86a4bd3cd1faa6f6",
+      "fpu_or_gbr_vbr_accesses": 0,
+      "instruction_table": [
+        {
+          "form": "movl_predec",
+          "opcode": "2F86",
+          "pc": "000E1114"
+        },
+        {
+          "form": "mov_reg",
+          "opcode": "6253",
+          "pc": "000E1116"
+        },
+        {
+          "form": "movl_predec",
+          "opcode": "2F96",
+          "pc": "000E1118"
+        },
+        {
+          "form": "add_imm",
+          "opcode": "7201",
+          "pc": "000E111A"
+        },
+        {
+          "form": "movl_predec",
+          "opcode": "2FA6",
+          "pc": "000E111C"
+        },
+        {
+          "form": "mov_imm",
+          "opcode": "EA0F",
+          "pc": "000E111E"
+        },
+        {
+          "form": "movl_predec",
+          "opcode": "2FB6",
+          "pc": "000E1120"
+        },
+        {
+          "form": "mov_reg",
+          "opcode": "6843",
+          "pc": "000E1122"
+        },
+        {
+          "form": "movl_predec",
+          "opcode": "2FC6",
+          "pc": "000E1124"
+        },
+        {
+          "form": "mov_reg",
+          "opcode": "6953",
+          "pc": "000E1126"
+        },
+        {
+          "form": "sts_pr_push",
+          "opcode": "4F22",
+          "pc": "000E1128"
+        },
+        {
+          "form": "movb_load",
+          "opcode": "6020",
+          "pc": "000E112A"
+        },
+        {
+          "form": "movl_load",
+          "opcode": "6142",
+          "pc": "000E112C"
+        },
+        {
+          "form": "extub",
+          "opcode": "600C",
+          "pc": "000E112E"
+        },
+        {
+          "form": "movl_load_disp",
+          "opcode": "5341",
+          "pc": "000E1130"
+        },
+        {
+          "form": "mov_reg",
+          "opcode": "6B03",
+          "pc": "000E1132"
+        },
+        {
+          "form": "movl_pc",
+          "opcode": "D23F",
+          "pc": "000E1134"
+        },
+        {
+          "form": "shlr2",
+          "opcode": "4B09",
+          "pc": "000E1136"
+        },
+        {
+          "form": "shlr2",
+          "opcode": "4B09",
+          "pc": "000E1138"
+        },
+        {
+          "form": "cmpeq_reg",
+          "opcode": "3320",
+          "pc": "000E113A"
+        },
+        {
+          "form": "bf_s",
+          "opcode": "8F07",
+          "pc": "000E113C"
+        },
+        {
+          "form": "and_reg",
+          "opcode": "2A09",
+          "pc": "000E113E"
+        },
+        {
+          "form": "mov_reg",
+          "opcode": "6243",
+          "pc": "000E1140"
+        },
+        {
+          "form": "add_imm",
+          "opcode": "721E",
+          "pc": "000E1142"
+        },
+        {
+          "form": "movb_load",
+          "opcode": "6020",
+          "pc": "000E1144"
+        },
+        {
+          "form": "extub",
+          "opcode": "600C",
+          "pc": "000E1146"
+        },
+        {
+          "form": "cmpeq_imm",
+          "opcode": "8801",
+          "pc": "000E1148"
+        },
+        {
+          "form": "bt_s",
+          "opcode": "8D05",
+          "pc": "000E114A"
+        },
+        {
+          "form": "mov_imm",
+          "opcode": "ECFE",
+          "pc": "000E114C"
+        },
+        {
+          "form": "movl_pc",
+          "opcode": "D13A",
+          "pc": "000E114E"
+        },
+        {
+          "form": "jsr",
+          "opcode": "410B",
+          "pc": "000E1150"
+        },
+        {
+          "form": "mov_reg",
+          "opcode": "6483",
+          "pc": "000E1152"
+        },
+        {
+          "form": "movl_load",
+          "opcode": "6182",
+          "pc": "000E1154"
+        },
+        {
+          "form": "mov_imm",
+          "opcode": "ECFE",
+          "pc": "000E1156"
+        },
+        {
+          "form": "and_reg",
+          "opcode": "2C19",
+          "pc": "000E1158"
+        },
+        {
+          "form": "mov_reg",
+          "opcode": "61C3",
+          "pc": "000E115A"
+        },
+        {
+          "form": "add_imm",
+          "opcode": "7101",
+          "pc": "000E115C"
+        },
+        {
+          "form": "movl_store",
+          "opcode": "2812",
+          "pc": "000E115E"
+        },
+        {
+          "form": "movl_load_disp",
+          "opcode": "5182",
+          "pc": "000E1160"
+        },
+        {
+          "form": "tst_reg",
+          "opcode": "2118",
+          "pc": "000E1162"
+        },
+        {
+          "form": "bt_s",
+          "opcode": "8D0F",
+          "pc": "000E1164"
+        },
+        {
+          "form": "mov_reg",
+          "opcode": "6193",
+          "pc": "000E1166"
+        },
+        {
+          "form": "mov_reg",
+          "opcode": "6183",
+          "pc": "000E1168"
+        },
+        {
+          "form": "mov_reg",
+          "opcode": "6293",
+          "pc": "000E116A"
+        },
+        {
+          "form": "add_imm",
+          "opcode": "711D",
+          "pc": "000E116C"
+        },
+        {
+          "form": "add_imm",
+          "opcode": "7201",
+          "pc": "000E116E"
+        },
+        {
+          "form": "movb_load",
+          "opcode": "6110",
+          "pc": "000E1170"
+        },
+        {
+          "form": "movb_load",
+          "opcode": "6220",
+          "pc": "000E1172"
+        },
+        {
+          "form": "extub",
+          "opcode": "611C",
+          "pc": "000E1174"
+        },
+        {
+          "form": "extub",
+          "opcode": "622C",
+          "pc": "000E1176"
+        },
+        {
+          "form": "cmpeq_reg",
+          "opcode": "3210",
+          "pc": "000E1178"
+        },
+        {
+          "form": "bt_s",
+          "opcode": "8D04",
+          "pc": "000E117A"
+        },
+        {
+          "form": "mov_reg",
+          "opcode": "6193",
+          "pc": "000E117C"
+        },
+        {
+          "form": "movl_load_disp",
+          "opcode": "5184",
+          "pc": "000E117E"
+        },
+        {
+          "form": "add_imm",
+          "opcode": "7101",
+          "pc": "000E1180"
+        },
+        {
+          "form": "movl_store_disp",
+          "opcode": "1814",
+          "pc": "000E1182"
+        },
+        {
+          "form": "mov_reg",
+          "opcode": "6193",
+          "pc": "000E1184"
+        },
+        {
+          "form": "movb_postinc",
+          "opcode": "6314",
+          "pc": "000E1186"
+        },
+        {
+          "form": "mov_reg",
+          "opcode": "6283",
+          "pc": "000E1188"
+        },
+        {
+          "form": "add_imm",
+          "opcode": "7214",
+          "pc": "000E118A"
+        },
+        {
+          "form": "movb_store",
+          "opcode": "2230",
+          "pc": "000E118C"
+        },
+        {
+          "form": "mov_imm",
+          "opcode": "E307",
+          "pc": "000E118E"
+        },
+        {
+          "form": "movb_load",
+          "opcode": "6210",
+          "pc": "000E1190"
+        },
+        {
+          "form": "mov_reg",
+          "opcode": "6183",
+          "pc": "000E1192"
+        },
+        {
+          "form": "add_imm",
+          "opcode": "7115",
+          "pc": "000E1194"
+        },
+        {
+          "form": "movb_store",
+          "opcode": "2120",
+          "pc": "000E1196"
+        },
+        {
+          "form": "mov_reg",
+          "opcode": "6193",
+          "pc": "000E1198"
+        },
+        {
+          "form": "add_imm",
+          "opcode": "7102",
+          "pc": "000E119A"
+        },
+        {
+          "form": "movb_load",
+          "opcode": "6210",
+          "pc": "000E119C"
+        },
+        {
+          "form": "mov_reg",
+          "opcode": "6183",
+          "pc": "000E119E"
+        },
+        {
+          "form": "add_imm",
+          "opcode": "7116",
+          "pc": "000E11A0"
+        },
+        {
+          "form": "movb_store",
+          "opcode": "2120",
+          "pc": "000E11A2"
+        },
+        {
+          "form": "mov_reg",
+          "opcode": "6193",
+          "pc": "000E11A4"
+        },
+        {
+          "form": "add_imm",
+          "opcode": "7103",
+          "pc": "000E11A6"
+        },
+        {
+          "form": "movb_load",
+          "opcode": "6210",
+          "pc": "000E11A8"
+        },
+        {
+          "form": "mov_reg",
+          "opcode": "6183",
+          "pc": "000E11AA"
+        },
+        {
+          "form": "add_imm",
+          "opcode": "7117",
+          "pc": "000E11AC"
+        },
+        {
+          "form": "movb_store",
+          "opcode": "2120",
+          "pc": "000E11AE"
+        },
+        {
+          "form": "add_imm",
+          "opcode": "7101",
+          "pc": "000E11B0"
+        },
+        {
+          "form": "movb_store",
+          "opcode": "21B0",
+          "pc": "000E11B2"
+        },
+        {
+          "form": "add_imm",
+          "opcode": "7101",
+          "pc": "000E11B4"
+        },
+        {
+          "form": "movb_store",
+          "opcode": "21A0",
+          "pc": "000E11B6"
+        },
+        {
+          "form": "add_imm",
+          "opcode": "7101",
+          "pc": "000E11B8"
+        },
+        {
+          "form": "movb_load",
+          "opcode": "6210",
+          "pc": "000E11BA"
+        },
+        {
+          "form": "cmphi",
+          "opcode": "3B36",
+          "pc": "000E11BC"
+        },
+        {
+          "form": "bf_s",
+          "opcode": "8F05",
+          "pc": "000E11BE"
+        },
+        {
+          "form": "extub",
+          "opcode": "622C",
+          "pc": "000E11C0"
+        },
+        {
+          "form": "mov_reg",
+          "opcode": "60B3",
+          "pc": "000E11C2"
+        },
+        {
+          "form": "cmpeq_imm",
+          "opcode": "8808",
+          "pc": "000E11C4"
+        },
+        {
+          "form": "bt_s",
+          "opcode": "8D01",
+          "pc": "000E11C6"
+        },
+        {
+          "form": "mov_imm",
+          "opcode": "EB00",
+          "pc": "000E11C8"
+        },
+        {
+          "form": "mov_reg",
+          "opcode": "6B23",
+          "pc": "000E11CA"
+        },
+        {
+          "form": "movb_store",
+          "opcode": "21B0",
+          "pc": "000E11CC"
+        },
+        {
+          "form": "mov_reg",
+          "opcode": "6183",
+          "pc": "000E11CE"
+        },
+        {
+          "form": "add_imm",
+          "opcode": "711B",
+          "pc": "000E11D0"
+        },
+        {
+          "form": "movb_load",
+          "opcode": "6210",
+          "pc": "000E11D2"
+        },
+        {
+          "form": "mov_imm",
+          "opcode": "E307",
+          "pc": "000E11D4"
+        },
+        {
+          "form": "cmphi",
+          "opcode": "3A36",
+          "pc": "000E11D6"
+        },
+        {
+          "form": "bf_s",
+          "opcode": "8F07",
+          "pc": "000E11D8"
+        },
+        {
+          "form": "extub",
+          "opcode": "622C",
+          "pc": "000E11DA"
+        },
+        {
+          "form": "mov_reg",
+          "opcode": "60A3",
+          "pc": "000E11DC"
+        },
+        {
+          "form": "cmpeq_imm",
+          "opcode": "8808",
+          "pc": "000E11DE"
+        },
+        {
+          "form": "bf_s",
+          "opcode": "8F02",
+          "pc": "000E11E0"
+        },
+        {
+          "form": "nop",
+          "opcode": "0009",
+          "pc": "000E11E2"
+        },
+        {
+          "form": "bra",
+          "opcode": "A001",
+          "pc": "000E11E4"
+        },
+        {
+          "form": "mov_imm",
+          "opcode": "EA00",
+          "pc": "000E11E6"
+        },
+        {
+          "form": "mov_reg",
+          "opcode": "6A23",
+          "pc": "000E11E8"
+        },
+        {
+          "form": "movb_store",
+          "opcode": "21A0",
+          "pc": "000E11EA"
+        },
+        {
+          "form": "mov_reg",
+          "opcode": "6193",
+          "pc": "000E11EC"
+        },
+        {
+          "form": "add_imm",
+          "opcode": "7104",
+          "pc": "000E11EE"
+        },
+        {
+          "form": "movb_load",
+          "opcode": "6210",
+          "pc": "000E11F0"
+        },
+        {
+          "form": "mov_reg",
+          "opcode": "6183",
+          "pc": "000E11F2"
+        },
+        {
+          "form": "add_imm",
+          "opcode": "711C",
+          "pc": "000E11F4"
+        },
+        {
+          "form": "movb_store",
+          "opcode": "2120",
+          "pc": "000E11F6"
+        },
+        {
+          "form": "mov_reg",
+          "opcode": "6193",
+          "pc": "000E11F8"
+        },
+        {
+          "form": "add_imm",
+          "opcode": "7105",
+          "pc": "000E11FA"
+        },
+        {
+          "form": "movl_pc",
+          "opcode": "D00F",
+          "pc": "000E11FC"
+        },
+        {
+          "form": "mov_reg",
+          "opcode": "6493",
+          "pc": "000E11FE"
+        },
+        {
+          "form": "movb_load",
+          "opcode": "6210",
+          "pc": "000E1200"
+        },
+        {
+          "form": "mov_reg",
+          "opcode": "6183",
+          "pc": "000E1202"
+        },
+        {
+          "form": "add_imm",
+          "opcode": "711F",
+          "pc": "000E1204"
+        },
+        {
+          "form": "movb_store",
+          "opcode": "2120",
+          "pc": "000E1206"
+        },
+        {
+          "form": "jsr",
+          "opcode": "400B",
+          "pc": "000E1208"
+        },
+        {
+          "form": "nop",
+          "opcode": "0009",
+          "pc": "000E120A"
+        },
+        {
+          "form": "movl_store_disp",
+          "opcode": "1803",
+          "pc": "000E120C"
+        },
+        {
+          "form": "add_imm",
+          "opcode": "7901",
+          "pc": "000E120E"
+        },
+        {
+          "form": "movb_load",
+          "opcode": "6290",
+          "pc": "000E1210"
+        },
+        {
+          "form": "mov_reg",
+          "opcode": "6183",
+          "pc": "000E1212"
+        },
+        {
+          "form": "add_imm",
+          "opcode": "711D",
+          "pc": "000E1214"
+        },
+        {
+          "form": "movb_store",
+          "opcode": "2120",
+          "pc": "000E1216"
+        },
+        {
+          "form": "add_imm",
+          "opcode": "7C02",
+          "pc": "000E1218"
+        },
+        {
+          "form": "movl_load_disp",
+          "opcode": "5182",
+          "pc": "000E121A"
+        },
+        {
+          "form": "add_imm",
+          "opcode": "7101",
+          "pc": "000E121C"
+        },
+        {
+          "form": "movl_store_disp",
+          "opcode": "1812",
+          "pc": "000E121E"
+        },
+        {
+          "form": "movl_store",
+          "opcode": "28C2",
+          "pc": "000E1220"
+        },
+        {
+          "form": "lds_pr_pop",
+          "opcode": "4F26",
+          "pc": "000E1222"
+        },
+        {
+          "form": "movl_postinc",
+          "opcode": "6CF6",
+          "pc": "000E1224"
+        },
+        {
+          "form": "movl_postinc",
+          "opcode": "6BF6",
+          "pc": "000E1226"
+        },
+        {
+          "form": "movl_postinc",
+          "opcode": "6AF6",
+          "pc": "000E1228"
+        },
+        {
+          "form": "movl_postinc",
+          "opcode": "69F6",
+          "pc": "000E122A"
+        },
+        {
+          "form": "movl_postinc",
+          "opcode": "68F6",
+          "pc": "000E122C"
+        },
+        {
+          "form": "rts",
+          "opcode": "000B",
+          "pc": "000E122E"
+        },
+        {
+          "form": "nop",
+          "opcode": "0009",
+          "pc": "000E1230"
+        }
+      ],
+      "instruction_upper_bound": 412,
+      "local_frame_peak": 24,
+      "memory_access_upper_bound": 98,
+      "name": "m0_observe",
+      "nonzero_return_frames": 0,
+      "opcode_forms": [
+        "add_imm",
+        "and_reg",
+        "bf_s",
+        "bra",
+        "bt_s",
+        "cmpeq_imm",
+        "cmpeq_reg",
+        "cmphi",
+        "extub",
+        "jsr",
+        "lds_pr_pop",
+        "mov_imm",
+        "mov_reg",
+        "movb_load",
+        "movb_postinc",
+        "movb_store",
+        "movl_load",
+        "movl_load_disp",
+        "movl_pc",
+        "movl_postinc",
+        "movl_predec",
+        "movl_store",
+        "movl_store_disp",
+        "nop",
+        "rts",
+        "shlr2",
+        "sts_pr_push",
+        "tst_reg"
+      ],
+      "reachable_instruction_count": 143,
+      "reachable_pcs": [
+        "000E1114",
+        "000E1116",
+        "000E1118",
+        "000E111A",
+        "000E111C",
+        "000E111E",
+        "000E1120",
+        "000E1122",
+        "000E1124",
+        "000E1126",
+        "000E1128",
+        "000E112A",
+        "000E112C",
+        "000E112E",
+        "000E1130",
+        "000E1132",
+        "000E1134",
+        "000E1136",
+        "000E1138",
+        "000E113A",
+        "000E113C",
+        "000E113E",
+        "000E1140",
+        "000E1142",
+        "000E1144",
+        "000E1146",
+        "000E1148",
+        "000E114A",
+        "000E114C",
+        "000E114E",
+        "000E1150",
+        "000E1152",
+        "000E1154",
+        "000E1156",
+        "000E1158",
+        "000E115A",
+        "000E115C",
+        "000E115E",
+        "000E1160",
+        "000E1162",
+        "000E1164",
+        "000E1166",
+        "000E1168",
+        "000E116A",
+        "000E116C",
+        "000E116E",
+        "000E1170",
+        "000E1172",
+        "000E1174",
+        "000E1176",
+        "000E1178",
+        "000E117A",
+        "000E117C",
+        "000E117E",
+        "000E1180",
+        "000E1182",
+        "000E1184",
+        "000E1186",
+        "000E1188",
+        "000E118A",
+        "000E118C",
+        "000E118E",
+        "000E1190",
+        "000E1192",
+        "000E1194",
+        "000E1196",
+        "000E1198",
+        "000E119A",
+        "000E119C",
+        "000E119E",
+        "000E11A0",
+        "000E11A2",
+        "000E11A4",
+        "000E11A6",
+        "000E11A8",
+        "000E11AA",
+        "000E11AC",
+        "000E11AE",
+        "000E11B0",
+        "000E11B2",
+        "000E11B4",
+        "000E11B6",
+        "000E11B8",
+        "000E11BA",
+        "000E11BC",
+        "000E11BE",
+        "000E11C0",
+        "000E11C2",
+        "000E11C4",
+        "000E11C6",
+        "000E11C8",
+        "000E11CA",
+        "000E11CC",
+        "000E11CE",
+        "000E11D0",
+        "000E11D2",
+        "000E11D4",
+        "000E11D6",
+        "000E11D8",
+        "000E11DA",
+        "000E11DC",
+        "000E11DE",
+        "000E11E0",
+        "000E11E2",
+        "000E11E4",
+        "000E11E6",
+        "000E11E8",
+        "000E11EA",
+        "000E11EC",
+        "000E11EE",
+        "000E11F0",
+        "000E11F2",
+        "000E11F4",
+        "000E11F6",
+        "000E11F8",
+        "000E11FA",
+        "000E11FC",
+        "000E11FE",
+        "000E1200",
+        "000E1202",
+        "000E1204",
+        "000E1206",
+        "000E1208",
+        "000E120A",
+        "000E120C",
+        "000E120E",
+        "000E1210",
+        "000E1212",
+        "000E1214",
+        "000E1216",
+        "000E1218",
+        "000E121A",
+        "000E121C",
+        "000E121E",
+        "000E1220",
+        "000E1222",
+        "000E1224",
+        "000E1226",
+        "000E1228",
+        "000E122A",
+        "000E122C",
+        "000E122E",
+        "000E1230"
+      ],
+      "return_pcs": [
+        "000E122E"
+      ],
+      "system_writes": [
+        "PR"
+      ],
+      "transitive_frame_peak": 24,
+      "unequal_frame_depth_joins": 0,
+      "write_access_upper_bound": 55
+    },
+    "000E1240": {
+      "calls": [
+        {
+          "literal": "000E12D8",
+          "load_pc": "000E12B2",
+          "pc": "000E12B4",
+          "target": "000E1114"
+        }
+      ],
+      "cfg": [
+        {
+          "call": null,
+          "depth_after": 4,
+          "depth_before": 0,
+          "next": [
+            "000E1242"
+          ],
+          "pc": "000E1240"
+        },
+        {
+          "call": null,
+          "depth_after": 8,
+          "depth_before": 4,
+          "next": [
+            "000E1244"
+          ],
+          "pc": "000E1242"
+        },
+        {
+          "call": null,
+          "depth_after": 12,
+          "depth_before": 8,
+          "next": [
+            "000E1246"
+          ],
+          "pc": "000E1244"
+        },
+        {
+          "call": null,
+          "depth_after": 12,
+          "depth_before": 12,
+          "next": [
+            "000E1248"
+          ],
+          "pc": "000E1246"
+        },
+        {
+          "call": null,
+          "depth_after": 16,
+          "depth_before": 12,
+          "next": [
+            "000E124A"
+          ],
+          "pc": "000E1248"
+        },
+        {
+          "call": null,
+          "depth_after": 16,
+          "depth_before": 16,
+          "next": [
+            "000E124C"
+          ],
+          "pc": "000E124A"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 16,
+          "next": [
+            "000E124E"
+          ],
+          "pc": "000E124C"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1250"
+          ],
+          "pc": "000E124E"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1252"
+          ],
+          "pc": "000E1250"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1254"
+          ],
+          "pc": "000E1252"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1256"
+          ],
+          "pc": "000E1254"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1258"
+          ],
+          "pc": "000E1256"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E125A"
+          ],
+          "pc": "000E1258"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E125C"
+          ],
+          "pc": "000E125A"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E125E"
+          ],
+          "pc": "000E125C"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1260"
+          ],
+          "pc": "000E125E"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1262"
+          ],
+          "pc": "000E1260"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1264"
+          ],
+          "pc": "000E1262"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1266"
+          ],
+          "pc": "000E1264"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1268"
+          ],
+          "pc": "000E1266"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E126A"
+          ],
+          "pc": "000E1268"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E126C"
+          ],
+          "pc": "000E126A"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E126E"
+          ],
+          "pc": "000E126C"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1270"
+          ],
+          "pc": "000E126E"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1272"
+          ],
+          "pc": "000E1270"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1274"
+          ],
+          "pc": "000E1272"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1276"
+          ],
+          "pc": "000E1274"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1278"
+          ],
+          "pc": "000E1276"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E127A"
+          ],
+          "pc": "000E1278"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E127C"
+          ],
+          "pc": "000E127A"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E127E"
+          ],
+          "pc": "000E127C"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1280"
+          ],
+          "pc": "000E127E"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1282"
+          ],
+          "pc": "000E1280"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1284"
+          ],
+          "pc": "000E1282"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1286"
+          ],
+          "pc": "000E1284"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E128A",
+            "000E129C"
+          ],
+          "pc": "000E1286"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E128C"
+          ],
+          "pc": "000E128A"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1290",
+            "000E129C"
+          ],
+          "pc": "000E128C"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1294",
+            "000E129C"
+          ],
+          "pc": "000E1290"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1296"
+          ],
+          "pc": "000E1294"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E1298"
+          ],
+          "pc": "000E1296"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E129E"
+          ],
+          "pc": "000E1298"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E129E"
+          ],
+          "pc": "000E129C"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E12A0"
+          ],
+          "pc": "000E129E"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E12A2"
+          ],
+          "pc": "000E12A0"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E12A4"
+          ],
+          "pc": "000E12A2"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E12A6"
+          ],
+          "pc": "000E12A4"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E12A8"
+          ],
+          "pc": "000E12A6"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E12AA"
+          ],
+          "pc": "000E12A8"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E12AC"
+          ],
+          "pc": "000E12AA"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E12AE"
+          ],
+          "pc": "000E12AC"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E12B0"
+          ],
+          "pc": "000E12AE"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E12B2"
+          ],
+          "pc": "000E12B0"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E12B4"
+          ],
+          "pc": "000E12B2"
+        },
+        {
+          "call": "000E1114",
+          "depth_after": 24,
+          "depth_before": 24,
+          "next": [
+            "000E12B8"
+          ],
+          "pc": "000E12B4"
+        },
+        {
+          "call": null,
+          "depth_after": 16,
+          "depth_before": 24,
+          "next": [
+            "000E12BA"
+          ],
+          "pc": "000E12B8"
+        },
+        {
+          "call": null,
+          "depth_after": 12,
+          "depth_before": 16,
+          "next": [
+            "000E12BC"
+          ],
+          "pc": "000E12BA"
+        },
+        {
+          "call": null,
+          "depth_after": 8,
+          "depth_before": 12,
+          "next": [
+            "000E12BE"
+          ],
+          "pc": "000E12BC"
+        },
+        {
+          "call": null,
+          "depth_after": 4,
+          "depth_before": 8,
+          "next": [
+            "000E12C0"
+          ],
+          "pc": "000E12BE"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 4,
+          "next": [
+            "000E12C2"
+          ],
+          "pc": "000E12C0"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [],
+          "pc": "000E12C2"
+        }
+      ],
+      "code_sha256": "b077a9524351290daecc1ad385b6c580984b5f29c2be5441085b834f38760d6e",
+      "fpu_or_gbr_vbr_accesses": 0,
+      "instruction_table": [
+        {
+          "form": "movl_predec",
+          "opcode": "2F86",
+          "pc": "000E1240"
+        },
+        {
+          "form": "movl_predec",
+          "opcode": "2F96",
+          "pc": "000E1242"
+        },
+        {
+          "form": "movl_predec",
+          "opcode": "2FA6",
+          "pc": "000E1244"
+        },
+        {
+          "form": "movl_pc",
+          "opcode": "D720",
+          "pc": "000E1246"
+        },
+        {
+          "form": "sts_pr_push",
+          "opcode": "4F22",
+          "pc": "000E1248"
+        },
+        {
+          "form": "movb_load",
+          "opcode": "6170",
+          "pc": "000E124A"
+        },
+        {
+          "form": "add_imm",
+          "opcode": "7FF8",
+          "pc": "000E124C"
+        },
+        {
+          "form": "movl_pc",
+          "opcode": "D31F",
+          "pc": "000E124E"
+        },
+        {
+          "form": "extub",
+          "opcode": "681C",
+          "pc": "000E1250"
+        },
+        {
+          "form": "movb_store",
+          "opcode": "2F10",
+          "pc": "000E1252"
+        },
+        {
+          "form": "mov_reg",
+          "opcode": "62F3",
+          "pc": "000E1254"
+        },
+        {
+          "form": "movb_load",
+          "opcode": "6130",
+          "pc": "000E1256"
+        },
+        {
+          "form": "add_imm",
+          "opcode": "7201",
+          "pc": "000E1258"
+        },
+        {
+          "form": "movb_store",
+          "opcode": "2210",
+          "pc": "000E125A"
+        },
+        {
+          "form": "extub",
+          "opcode": "691C",
+          "pc": "000E125C"
+        },
+        {
+          "form": "movl_pc",
+          "opcode": "D21C",
+          "pc": "000E125E"
+        },
+        {
+          "form": "mov_reg",
+          "opcode": "66F3",
+          "pc": "000E1260"
+        },
+        {
+          "form": "add_imm",
+          "opcode": "7602",
+          "pc": "000E1262"
+        },
+        {
+          "form": "movb_load",
+          "opcode": "6120",
+          "pc": "000E1264"
+        },
+        {
+          "form": "mov_reg",
+          "opcode": "6AF3",
+          "pc": "000E1266"
+        },
+        {
+          "form": "movb_store",
+          "opcode": "2610",
+          "pc": "000E1268"
+        },
+        {
+          "form": "extub",
+          "opcode": "601C",
+          "pc": "000E126A"
+        },
+        {
+          "form": "movl_pc",
+          "opcode": "D119",
+          "pc": "000E126C"
+        },
+        {
+          "form": "add_imm",
+          "opcode": "7A03",
+          "pc": "000E126E"
+        },
+        {
+          "form": "movb_load",
+          "opcode": "6610",
+          "pc": "000E1270"
+        },
+        {
+          "form": "movb_store",
+          "opcode": "2A60",
+          "pc": "000E1272"
+        },
+        {
+          "form": "extub",
+          "opcode": "656C",
+          "pc": "000E1274"
+        },
+        {
+          "form": "movb_load",
+          "opcode": "6770",
+          "pc": "000E1276"
+        },
+        {
+          "form": "movb_load",
+          "opcode": "6330",
+          "pc": "000E1278"
+        },
+        {
+          "form": "extub",
+          "opcode": "677C",
+          "pc": "000E127A"
+        },
+        {
+          "form": "movb_load",
+          "opcode": "6220",
+          "pc": "000E127C"
+        },
+        {
+          "form": "cmpeq_reg",
+          "opcode": "3870",
+          "pc": "000E127E"
+        },
+        {
+          "form": "movb_load",
+          "opcode": "6110",
+          "pc": "000E1280"
+        },
+        {
+          "form": "extub",
+          "opcode": "633C",
+          "pc": "000E1282"
+        },
+        {
+          "form": "extub",
+          "opcode": "622C",
+          "pc": "000E1284"
+        },
+        {
+          "form": "bf_s",
+          "opcode": "8F09",
+          "pc": "000E1286"
+        },
+        {
+          "form": "extub",
+          "opcode": "611C",
+          "pc": "000E1288"
+        },
+        {
+          "form": "cmpeq_reg",
+          "opcode": "3930",
+          "pc": "000E128A"
+        },
+        {
+          "form": "bf_s",
+          "opcode": "8F06",
+          "pc": "000E128C"
+        },
+        {
+          "form": "cmpeq_reg",
+          "opcode": "3020",
+          "pc": "000E128E"
+        },
+        {
+          "form": "bf_s",
+          "opcode": "8F04",
+          "pc": "000E1290"
+        },
+        {
+          "form": "cmpeq_reg",
+          "opcode": "3510",
+          "pc": "000E1292"
+        },
+        {
+          "form": "mov_imm",
+          "opcode": "E1FF",
+          "pc": "000E1294"
+        },
+        {
+          "form": "negc",
+          "opcode": "611A",
+          "pc": "000E1296"
+        },
+        {
+          "form": "bra",
+          "opcode": "A001",
+          "pc": "000E1298"
+        },
+        {
+          "form": "extub",
+          "opcode": "611C",
+          "pc": "000E129A"
+        },
+        {
+          "form": "mov_imm",
+          "opcode": "E101",
+          "pc": "000E129C"
+        },
+        {
+          "form": "mov_reg",
+          "opcode": "62F3",
+          "pc": "000E129E"
+        },
+        {
+          "form": "add_imm",
+          "opcode": "7205",
+          "pc": "000E12A0"
+        },
+        {
+          "form": "movb_store",
+          "opcode": "2210",
+          "pc": "000E12A2"
+        },
+        {
+          "form": "mov_imm",
+          "opcode": "E100",
+          "pc": "000E12A4"
+        },
+        {
+          "form": "add_imm",
+          "opcode": "72FF",
+          "pc": "000E12A6"
+        },
+        {
+          "form": "movb_store",
+          "opcode": "2210",
+          "pc": "000E12A8"
+        },
+        {
+          "form": "add_imm",
+          "opcode": "7202",
+          "pc": "000E12AA"
+        },
+        {
+          "form": "movb_store",
+          "opcode": "2210",
+          "pc": "000E12AC"
+        },
+        {
+          "form": "add_imm",
+          "opcode": "7201",
+          "pc": "000E12AE"
+        },
+        {
+          "form": "movb_store",
+          "opcode": "2210",
+          "pc": "000E12B0"
+        },
+        {
+          "form": "movl_pc",
+          "opcode": "D109",
+          "pc": "000E12B2"
+        },
+        {
+          "form": "jsr",
+          "opcode": "410B",
+          "pc": "000E12B4"
+        },
+        {
+          "form": "mov_reg",
+          "opcode": "65F3",
+          "pc": "000E12B6"
+        },
+        {
+          "form": "add_imm",
+          "opcode": "7F08",
+          "pc": "000E12B8"
+        },
+        {
+          "form": "lds_pr_pop",
+          "opcode": "4F26",
+          "pc": "000E12BA"
+        },
+        {
+          "form": "movl_postinc",
+          "opcode": "6AF6",
+          "pc": "000E12BC"
+        },
+        {
+          "form": "movl_postinc",
+          "opcode": "69F6",
+          "pc": "000E12BE"
+        },
+        {
+          "form": "movl_postinc",
+          "opcode": "68F6",
+          "pc": "000E12C0"
+        },
+        {
+          "form": "rts",
+          "opcode": "000B",
+          "pc": "000E12C2"
+        },
+        {
+          "form": "nop",
+          "opcode": "0009",
+          "pc": "000E12C4"
+        }
+      ],
+      "instruction_upper_bound": 478,
+      "local_frame_peak": 24,
+      "memory_access_upper_bound": 127,
+      "name": "m0_sample_hardware",
+      "nonzero_return_frames": 0,
+      "opcode_forms": [
+        "add_imm",
+        "bf_s",
+        "bra",
+        "cmpeq_reg",
+        "extub",
+        "jsr",
+        "lds_pr_pop",
+        "mov_imm",
+        "mov_reg",
+        "movb_load",
+        "movb_store",
+        "movl_pc",
+        "movl_postinc",
+        "movl_predec",
+        "negc",
+        "nop",
+        "rts",
+        "sts_pr_push"
+      ],
+      "reachable_instruction_count": 67,
+      "reachable_pcs": [
+        "000E1240",
+        "000E1242",
+        "000E1244",
+        "000E1246",
+        "000E1248",
+        "000E124A",
+        "000E124C",
+        "000E124E",
+        "000E1250",
+        "000E1252",
+        "000E1254",
+        "000E1256",
+        "000E1258",
+        "000E125A",
+        "000E125C",
+        "000E125E",
+        "000E1260",
+        "000E1262",
+        "000E1264",
+        "000E1266",
+        "000E1268",
+        "000E126A",
+        "000E126C",
+        "000E126E",
+        "000E1270",
+        "000E1272",
+        "000E1274",
+        "000E1276",
+        "000E1278",
+        "000E127A",
+        "000E127C",
+        "000E127E",
+        "000E1280",
+        "000E1282",
+        "000E1284",
+        "000E1286",
+        "000E1288",
+        "000E128A",
+        "000E128C",
+        "000E128E",
+        "000E1290",
+        "000E1292",
+        "000E1294",
+        "000E1296",
+        "000E1298",
+        "000E129A",
+        "000E129C",
+        "000E129E",
+        "000E12A0",
+        "000E12A2",
+        "000E12A4",
+        "000E12A6",
+        "000E12A8",
+        "000E12AA",
+        "000E12AC",
+        "000E12AE",
+        "000E12B0",
+        "000E12B2",
+        "000E12B4",
+        "000E12B6",
+        "000E12B8",
+        "000E12BA",
+        "000E12BC",
+        "000E12BE",
+        "000E12C0",
+        "000E12C2",
+        "000E12C4"
+      ],
+      "return_pcs": [
+        "000E12C2"
+      ],
+      "system_writes": [
+        "PR"
+      ],
+      "transitive_frame_peak": 48,
+      "unequal_frame_depth_joins": 0,
+      "write_access_upper_bound": 67
+    },
+    "000E12DC": {
+      "calls": [
+        {
+          "literal": "000E133C",
+          "load_pc": "000E12E0",
+          "pc": "000E12E2",
+          "target": "000147AC"
+        },
+        {
+          "literal": "000E1344",
+          "load_pc": "000E130C",
+          "pc": "000E130E",
+          "target": "000E1240"
+        }
+      ],
+      "cfg": [
+        {
+          "call": null,
+          "depth_after": 4,
+          "depth_before": 0,
+          "next": [
+            "000E12DE"
+          ],
+          "pc": "000E12DC"
+        },
+        {
+          "call": null,
+          "depth_after": 8,
+          "depth_before": 4,
+          "next": [
+            "000E12E0"
+          ],
+          "pc": "000E12DE"
+        },
+        {
+          "call": null,
+          "depth_after": 8,
+          "depth_before": 8,
+          "next": [
+            "000E12E2"
+          ],
+          "pc": "000E12E0"
+        },
+        {
+          "call": "000147AC",
+          "depth_after": 4,
+          "depth_before": 8,
+          "next": [
+            "000E12E6"
+          ],
+          "pc": "000E12E2"
+        },
+        {
+          "call": null,
+          "depth_after": 8,
+          "depth_before": 4,
+          "next": [
+            "000E12E8"
+          ],
+          "pc": "000E12E6"
+        },
+        {
+          "call": null,
+          "depth_after": 12,
+          "depth_before": 8,
+          "next": [
+            "000E12EA"
+          ],
+          "pc": "000E12E8"
+        },
+        {
+          "call": null,
+          "depth_after": 16,
+          "depth_before": 12,
+          "next": [
+            "000E12EC"
+          ],
+          "pc": "000E12EA"
+        },
+        {
+          "call": null,
+          "depth_after": 20,
+          "depth_before": 16,
+          "next": [
+            "000E12EE"
+          ],
+          "pc": "000E12EC"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 20,
+          "next": [
+            "000E12F0"
+          ],
+          "pc": "000E12EE"
+        },
+        {
+          "call": null,
+          "depth_after": 28,
+          "depth_before": 24,
+          "next": [
+            "000E12F2"
+          ],
+          "pc": "000E12F0"
+        },
+        {
+          "call": null,
+          "depth_after": 32,
+          "depth_before": 28,
+          "next": [
+            "000E12F4"
+          ],
+          "pc": "000E12F2"
+        },
+        {
+          "call": null,
+          "depth_after": 36,
+          "depth_before": 32,
+          "next": [
+            "000E12F6"
+          ],
+          "pc": "000E12F4"
+        },
+        {
+          "call": null,
+          "depth_after": 40,
+          "depth_before": 36,
+          "next": [
+            "000E12F8"
+          ],
+          "pc": "000E12F6"
+        },
+        {
+          "call": null,
+          "depth_after": 44,
+          "depth_before": 40,
+          "next": [
+            "000E12FA"
+          ],
+          "pc": "000E12F8"
+        },
+        {
+          "call": null,
+          "depth_after": 48,
+          "depth_before": 44,
+          "next": [
+            "000E12FC"
+          ],
+          "pc": "000E12FA"
+        },
+        {
+          "call": null,
+          "depth_after": 52,
+          "depth_before": 48,
+          "next": [
+            "000E12FE"
+          ],
+          "pc": "000E12FC"
+        },
+        {
+          "call": null,
+          "depth_after": 56,
+          "depth_before": 52,
+          "next": [
+            "000E1300"
+          ],
+          "pc": "000E12FE"
+        },
+        {
+          "call": null,
+          "depth_after": 60,
+          "depth_before": 56,
+          "next": [
+            "000E1302"
+          ],
+          "pc": "000E1300"
+        },
+        {
+          "call": null,
+          "depth_after": 64,
+          "depth_before": 60,
+          "next": [
+            "000E1304"
+          ],
+          "pc": "000E1302"
+        },
+        {
+          "call": null,
+          "depth_after": 68,
+          "depth_before": 64,
+          "next": [
+            "000E1306"
+          ],
+          "pc": "000E1304"
+        },
+        {
+          "call": null,
+          "depth_after": 72,
+          "depth_before": 68,
+          "next": [
+            "000E1308"
+          ],
+          "pc": "000E1306"
+        },
+        {
+          "call": null,
+          "depth_after": 76,
+          "depth_before": 72,
+          "next": [
+            "000E130A"
+          ],
+          "pc": "000E1308"
+        },
+        {
+          "call": null,
+          "depth_after": 76,
+          "depth_before": 76,
+          "next": [
+            "000E130C"
+          ],
+          "pc": "000E130A"
+        },
+        {
+          "call": null,
+          "depth_after": 76,
+          "depth_before": 76,
+          "next": [
+            "000E130E"
+          ],
+          "pc": "000E130C"
+        },
+        {
+          "call": "000E1240",
+          "depth_after": 76,
+          "depth_before": 76,
+          "next": [
+            "000E1312"
+          ],
+          "pc": "000E130E"
+        },
+        {
+          "call": null,
+          "depth_after": 72,
+          "depth_before": 76,
+          "next": [
+            "000E1314"
+          ],
+          "pc": "000E1312"
+        },
+        {
+          "call": null,
+          "depth_after": 68,
+          "depth_before": 72,
+          "next": [
+            "000E1316"
+          ],
+          "pc": "000E1314"
+        },
+        {
+          "call": null,
+          "depth_after": 64,
+          "depth_before": 68,
+          "next": [
+            "000E1318"
+          ],
+          "pc": "000E1316"
+        },
+        {
+          "call": null,
+          "depth_after": 60,
+          "depth_before": 64,
+          "next": [
+            "000E131A"
+          ],
+          "pc": "000E1318"
+        },
+        {
+          "call": null,
+          "depth_after": 56,
+          "depth_before": 60,
+          "next": [
+            "000E131C"
+          ],
+          "pc": "000E131A"
+        },
+        {
+          "call": null,
+          "depth_after": 52,
+          "depth_before": 56,
+          "next": [
+            "000E131E"
+          ],
+          "pc": "000E131C"
+        },
+        {
+          "call": null,
+          "depth_after": 48,
+          "depth_before": 52,
+          "next": [
+            "000E1320"
+          ],
+          "pc": "000E131E"
+        },
+        {
+          "call": null,
+          "depth_after": 44,
+          "depth_before": 48,
+          "next": [
+            "000E1322"
+          ],
+          "pc": "000E1320"
+        },
+        {
+          "call": null,
+          "depth_after": 40,
+          "depth_before": 44,
+          "next": [
+            "000E1324"
+          ],
+          "pc": "000E1322"
+        },
+        {
+          "call": null,
+          "depth_after": 36,
+          "depth_before": 40,
+          "next": [
+            "000E1326"
+          ],
+          "pc": "000E1324"
+        },
+        {
+          "call": null,
+          "depth_after": 32,
+          "depth_before": 36,
+          "next": [
+            "000E1328"
+          ],
+          "pc": "000E1326"
+        },
+        {
+          "call": null,
+          "depth_after": 28,
+          "depth_before": 32,
+          "next": [
+            "000E132A"
+          ],
+          "pc": "000E1328"
+        },
+        {
+          "call": null,
+          "depth_after": 24,
+          "depth_before": 28,
+          "next": [
+            "000E132C"
+          ],
+          "pc": "000E132A"
+        },
+        {
+          "call": null,
+          "depth_after": 20,
+          "depth_before": 24,
+          "next": [
+            "000E132E"
+          ],
+          "pc": "000E132C"
+        },
+        {
+          "call": null,
+          "depth_after": 16,
+          "depth_before": 20,
+          "next": [
+            "000E1330"
+          ],
+          "pc": "000E132E"
+        },
+        {
+          "call": null,
+          "depth_after": 12,
+          "depth_before": 16,
+          "next": [
+            "000E1332"
+          ],
+          "pc": "000E1330"
+        },
+        {
+          "call": null,
+          "depth_after": 8,
+          "depth_before": 12,
+          "next": [
+            "000E1334"
+          ],
+          "pc": "000E1332"
+        },
+        {
+          "call": null,
+          "depth_after": 4,
+          "depth_before": 8,
+          "next": [
+            "000E1336"
+          ],
+          "pc": "000E1334"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 4,
+          "next": [
+            "000E1338"
+          ],
+          "pc": "000E1336"
+        },
+        {
+          "call": null,
+          "depth_after": 0,
+          "depth_before": 0,
+          "next": [],
+          "pc": "000E1338"
+        }
+      ],
+      "code_sha256": "22c6bfe3c68a494d5d8e8315ac7477d852d0085bb8751517cbc310199eb420ae",
+      "fpu_or_gbr_vbr_accesses": 0,
+      "instruction_table": [
+        {
+          "form": "sts_pr_push",
+          "opcode": "4F22",
+          "pc": "000E12DC"
+        },
+        {
+          "form": "movl_predec",
+          "opcode": "2F06",
+          "pc": "000E12DE"
+        },
+        {
+          "form": "movl_pc",
+          "opcode": "D016",
+          "pc": "000E12E0"
+        },
+        {
+          "form": "jsr",
+          "opcode": "400B",
+          "pc": "000E12E2"
+        },
+        {
+          "form": "movl_postinc",
+          "opcode": "60F6",
+          "pc": "000E12E4"
+        },
+        {
+          "form": "movl_predec",
+          "opcode": "2F06",
+          "pc": "000E12E6"
+        },
+        {
+          "form": "movl_predec",
+          "opcode": "2F16",
+          "pc": "000E12E8"
+        },
+        {
+          "form": "movl_predec",
+          "opcode": "2F26",
+          "pc": "000E12EA"
+        },
+        {
+          "form": "movl_predec",
+          "opcode": "2F36",
+          "pc": "000E12EC"
+        },
+        {
+          "form": "movl_predec",
+          "opcode": "2F46",
+          "pc": "000E12EE"
+        },
+        {
+          "form": "movl_predec",
+          "opcode": "2F56",
+          "pc": "000E12F0"
+        },
+        {
+          "form": "movl_predec",
+          "opcode": "2F66",
+          "pc": "000E12F2"
+        },
+        {
+          "form": "movl_predec",
+          "opcode": "2F76",
+          "pc": "000E12F4"
+        },
+        {
+          "form": "movl_predec",
+          "opcode": "2F86",
+          "pc": "000E12F6"
+        },
+        {
+          "form": "movl_predec",
+          "opcode": "2F96",
+          "pc": "000E12F8"
+        },
+        {
+          "form": "movl_predec",
+          "opcode": "2FA6",
+          "pc": "000E12FA"
+        },
+        {
+          "form": "movl_predec",
+          "opcode": "2FB6",
+          "pc": "000E12FC"
+        },
+        {
+          "form": "movl_predec",
+          "opcode": "2FC6",
+          "pc": "000E12FE"
+        },
+        {
+          "form": "movl_predec",
+          "opcode": "2FD6",
+          "pc": "000E1300"
+        },
+        {
+          "form": "movl_predec",
+          "opcode": "2FE6",
+          "pc": "000E1302"
+        },
+        {
+          "form": "stc_sr_push",
+          "opcode": "4F03",
+          "pc": "000E1304"
+        },
+        {
+          "form": "sts_mach_push",
+          "opcode": "4F02",
+          "pc": "000E1306"
+        },
+        {
+          "form": "sts_macl_push",
+          "opcode": "4F12",
+          "pc": "000E1308"
+        },
+        {
+          "form": "movl_pc",
+          "opcode": "D40D",
+          "pc": "000E130A"
+        },
+        {
+          "form": "movl_pc",
+          "opcode": "D00D",
+          "pc": "000E130C"
+        },
+        {
+          "form": "jsr",
+          "opcode": "400B",
+          "pc": "000E130E"
+        },
+        {
+          "form": "nop",
+          "opcode": "0009",
+          "pc": "000E1310"
+        },
+        {
+          "form": "lds_macl_pop",
+          "opcode": "4F16",
+          "pc": "000E1312"
+        },
+        {
+          "form": "lds_mach_pop",
+          "opcode": "4F06",
+          "pc": "000E1314"
+        },
+        {
+          "form": "ldc_sr_pop",
+          "opcode": "4F07",
+          "pc": "000E1316"
+        },
+        {
+          "form": "movl_postinc",
+          "opcode": "6EF6",
+          "pc": "000E1318"
+        },
+        {
+          "form": "movl_postinc",
+          "opcode": "6DF6",
+          "pc": "000E131A"
+        },
+        {
+          "form": "movl_postinc",
+          "opcode": "6CF6",
+          "pc": "000E131C"
+        },
+        {
+          "form": "movl_postinc",
+          "opcode": "6BF6",
+          "pc": "000E131E"
+        },
+        {
+          "form": "movl_postinc",
+          "opcode": "6AF6",
+          "pc": "000E1320"
+        },
+        {
+          "form": "movl_postinc",
+          "opcode": "69F6",
+          "pc": "000E1322"
+        },
+        {
+          "form": "movl_postinc",
+          "opcode": "68F6",
+          "pc": "000E1324"
+        },
+        {
+          "form": "movl_postinc",
+          "opcode": "67F6",
+          "pc": "000E1326"
+        },
+        {
+          "form": "movl_postinc",
+          "opcode": "66F6",
+          "pc": "000E1328"
+        },
+        {
+          "form": "movl_postinc",
+          "opcode": "65F6",
+          "pc": "000E132A"
+        },
+        {
+          "form": "movl_postinc",
+          "opcode": "64F6",
+          "pc": "000E132C"
+        },
+        {
+          "form": "movl_postinc",
+          "opcode": "63F6",
+          "pc": "000E132E"
+        },
+        {
+          "form": "movl_postinc",
+          "opcode": "62F6",
+          "pc": "000E1330"
+        },
+        {
+          "form": "movl_postinc",
+          "opcode": "61F6",
+          "pc": "000E1332"
+        },
+        {
+          "form": "movl_postinc",
+          "opcode": "60F6",
+          "pc": "000E1334"
+        },
+        {
+          "form": "lds_pr_pop",
+          "opcode": "4F26",
+          "pc": "000E1336"
+        },
+        {
+          "form": "rts",
+          "opcode": "000B",
+          "pc": "000E1338"
+        },
+        {
+          "form": "nop",
+          "opcode": "0009",
+          "pc": "000E133A"
+        }
+      ],
+      "instruction_upper_bound": 562,
+      "local_frame_peak": 76,
+      "memory_access_upper_bound": 178,
+      "name": "m0_decoder_hook",
+      "nonzero_return_frames": 0,
+      "opcode_forms": [
+        "jsr",
+        "ldc_sr_pop",
+        "lds_mach_pop",
+        "lds_macl_pop",
+        "lds_pr_pop",
+        "movl_pc",
+        "movl_postinc",
+        "movl_predec",
+        "nop",
+        "rts",
+        "stc_sr_push",
+        "sts_mach_push",
+        "sts_macl_push",
+        "sts_pr_push"
+      ],
+      "reachable_instruction_count": 48,
+      "reachable_pcs": [
+        "000E12DC",
+        "000E12DE",
+        "000E12E0",
+        "000E12E2",
+        "000E12E4",
+        "000E12E6",
+        "000E12E8",
+        "000E12EA",
+        "000E12EC",
+        "000E12EE",
+        "000E12F0",
+        "000E12F2",
+        "000E12F4",
+        "000E12F6",
+        "000E12F8",
+        "000E12FA",
+        "000E12FC",
+        "000E12FE",
+        "000E1300",
+        "000E1302",
+        "000E1304",
+        "000E1306",
+        "000E1308",
+        "000E130A",
+        "000E130C",
+        "000E130E",
+        "000E1310",
+        "000E1312",
+        "000E1314",
+        "000E1316",
+        "000E1318",
+        "000E131A",
+        "000E131C",
+        "000E131E",
+        "000E1320",
+        "000E1322",
+        "000E1324",
+        "000E1326",
+        "000E1328",
+        "000E132A",
+        "000E132C",
+        "000E132E",
+        "000E1330",
+        "000E1332",
+        "000E1334",
+        "000E1336",
+        "000E1338",
+        "000E133A"
+      ],
+      "return_pcs": [
+        "000E1338"
+      ],
+      "system_writes": [
+        "MACH",
+        "MACL",
+        "PR",
+        "SR"
+      ],
+      "transitive_frame_peak": 124,
+      "unequal_frame_depth_joins": 0,
+      "write_access_upper_bound": 89
+    }
+  },
+  "gates": {
+    "cadence_and_reentry": "PHYSICAL/BENCH REQUIRED",
+    "injected_call_graph": "PASS",
+    "injected_stack_and_register_proof": "PASS",
+    "silicon_timing_and_task_budget": "PHYSICAL/BENCH REQUIRED"
+  },
+  "instruction_bound": 562,
+  "loop_proof": "Only injected backward edge is init E10F2 -> E10EA: MOV#28,R2 then one DT per iteration, no calls/other R2 writes; exactly28 iterations",
+  "memory_access_bound": 178,
+  "payload_sha256": "b5004baa2863bf571eb1ab014f93f0316b3500c5b154e47de2e42f904234b2ff",
+  "preserved_state_proof": {
+    "FPU": "FR0..FR15,FPUL,FPSCR have no architectural read/write instruction anywhere in reachable closure",
+    "R15": "Restored exactly by balanced constant stack movements on every CFG path",
+    "SR_note": "LDC.L restores SR after observer; no numeric bit-mask modification is added. Its interrupt-suppression timing remains a physical scheduling effect.",
+    "assumptions": [
+      "Stack is writable, private and disjoint from32-byte state and observer inputs",
+      "No exception, DMA, corrupting ISR or reentrant writer modifies saved frame",
+      "Comparison is architectural return-boundary state; interrupt-latency and pending asynchronous FPU completion are separate timing questions"
+    ],
+    "matched_instruction_words": 45,
+    "original_call": "R0 restored in JSR delay slot; R1..R14/SR/MAC/FPU untouched before original entry; PR and R15 intentionally use wrapper frame",
+    "other_controls": "GBR and VBR have no read/write instruction in reachable closure",
+    "restored_tokens": {
+      "MACH": "OEM_MACH",
+      "MACL": "OEM_MACL",
+      "PR": "caller_PR",
+      "R0": "OEM_R0",
+      "R1": "OEM_R1",
+      "R10": "OEM_R10",
+      "R11": "OEM_R11",
+      "R12": "OEM_R12",
+      "R13": "OEM_R13",
+      "R14": "OEM_R14",
+      "R2": "OEM_R2",
+      "R3": "OEM_R3",
+      "R4": "OEM_R4",
+      "R5": "OEM_R5",
+      "R6": "OEM_R6",
+      "R7": "OEM_R7",
+      "R8": "OEM_R8",
+      "R9": "OEM_R9",
+      "SR": "OEM_SR"
+    },
+    "status": "PASS"
+  },
+  "timing_assumptions": [
+    "All covered instructions have at most five stages in the SH-2E manual; no multiply/FPU/exception opcodes",
+    "Serializing stages, instruction fetch and data access removes overlap benefits and bounds internal dependencies",
+    "F bounds each flash instruction-fetch service; D bounds each data-access service; neither bound was measured here",
+    "No DMA/AUD/bus-release stall or interrupt/preemption unless separately added as a bounded term",
+    "Entry pipeline/multiplier/FPU outstanding work is bounded separately; example sets entry/external terms to zero",
+    "80 MHz is the SH7058 maximum documented frequency, not established ECU clock"
+  ],
+  "timing_examples": [
+    {
+      "assumed_flash_fetch_states": 1,
+      "assumed_max_data_access_states": 2,
+      "serialized_model_cycles_upper": 2988,
+      "time_us_at_assumed_40MHz": 74.7,
+      "time_us_at_assumed_80MHz": 37.35
+    },
+    {
+      "assumed_flash_fetch_states": 2,
+      "assumed_max_data_access_states": 2,
+      "serialized_model_cycles_upper": 3550,
+      "time_us_at_assumed_40MHz": 88.75,
+      "time_us_at_assumed_80MHz": 44.375
+    },
+    {
+      "assumed_flash_fetch_states": 4,
+      "assumed_max_data_access_states": 4,
+      "serialized_model_cycles_upper": 5030,
+      "time_us_at_assumed_40MHz": 125.75,
+      "time_us_at_assumed_80MHz": 62.875
+    }
+  ],
+  "timing_formula": "C <= 5*N + (F-1)*N + (D-1)*A + entry_stalls + external_interference",
+  "unused_standalone_function": "m0_decode is compiled but not called; compiler inlined equivalent logic in observe"
+}

@@ -1,0 +1,182 @@
+{
+  "schema": 1,
+  "checkpoint": "RK02_SOFTWARE_QUALIFIED_PHYSICAL_ACQUISITION_ONLY",
+  "updated_utc": "2026-09-28T22:42:27.461908+00:00",
+  "artifact_class": "TEMP_RAM_ACQUISITION_TOOL",
+  "status": "CONDITIONAL",
+  "software_status": "PASS",
+  "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+  "kernel_bytes": 1808,
+  "physical_host_sha256": "58d0867b85162e6fa4ccd3ac7fe0413c40e4054cbc416d12e39e29f926e60862",
+  "fake_host_sha256": "4b681bcdb3c178b89382b37b207b4a7679f0a1e87ab13c7051e8cf8019c094ec",
+  "physical_host_executed": false,
+  "real_provider_loaded_this_run": false,
+  "current_ROM_identified": false,
+  "ECU_flash_image_release": false,
+  "new_MerpMod_firmware": false,
+  "next_rational_action": "B_SINGLE_HUMAN_ACQUISITION_ONLY_SUBJECT_TO_PHYSICAL_PREFLIGHT",
+  "software_gates": [
+    {
+      "id": "CLEAN_REPRODUCIBLE_RK02_BINARY",
+      "status": "PASS",
+      "report": "evidence/rk02/build/ARTIFACT_REVIEW_FINAL.json",
+      "sha256": "030c6fd2d7bfb78fb58042ecf31fad0d80cae1d7ff0cc5292c7dde81279ad912"
+    },
+    {
+      "id": "INDEPENDENT_BINARY_STORE_CONTROL_REVIEW",
+      "status": "PASS",
+      "report": "evidence/contracts/BINARY_REVIEW_rk02_01.json",
+      "sha256": "e422b29cf712ba531facae58e792a7721dab9537b8f582469f1687bed53b4b4b"
+    },
+    {
+      "id": "UNREACHABLE_HEADER_AND_ALIGNMENT_PADDING",
+      "status": "PASS",
+      "report": "evidence/contracts/UNREACHABLE_PADDING_RK02.json",
+      "sha256": "2276f8ee7510d74c4e0112f65f4b445655b876270d7c92ab0c0e9a542d46e67c"
+    },
+    {
+      "id": "ACTUAL_STOCK_LOADER_UPLOAD_RECONSTRUCTION_ENTRY",
+      "status": "PASS",
+      "report": "evidence/contracts/UPLOAD_WIRE_CONTRACT_RK02.json",
+      "sha256": "b1c5431141f9b249b16dd15938c290f20b99593e7ab8512caebcde1906c37f50"
+    },
+    {
+      "id": "OEM_SESSION_SECURITY_AND_QUIESCENCE_CONTRACT",
+      "status": "PASS",
+      "report": "evidence/contracts/OEM_ACQUISITION_CONTRACT_RK02.json",
+      "sha256": "7b9dec51df688866d527f89b823ac611f06781fcab2c988f4ae92a284d71a329"
+    },
+    {
+      "id": "SCI2_HALF_DUPLEX_SELF_ECHO",
+      "status": "PASS",
+      "report": "evidence/rk02/sim/SELF_ECHO_QUALIFICATION.json",
+      "sha256": "d6937cfb5c1c9c811235972f9db8b0ada4f96ca5e9c9f69ff0a52224d92a19ae"
+    },
+    {
+      "id": "RK02_ENTRY_RAM_AND_PERIPHERAL_CONTRACT",
+      "status": "PASS",
+      "report": "evidence/rk02/ENTRY_PERIPHERAL_CONTRACT.json",
+      "sha256": "a5836a4c2b874564792b412d9b3b2ba909fd381116ed0e8eb24b55a2e136951b"
+    },
+    {
+      "id": "COMPLETE_INSTRUCTION_BRANCH_STORE_STACK_COVERAGE",
+      "status": "PASS",
+      "report": "evidence/rk02/sim/QUALIFICATION.json",
+      "sha256": "c774eda259e696d5c1358962031e48de7c2ccaf28e6fd2bf90a655dde0ad0096"
+    },
+    {
+      "id": "LOSSLESS_TWO_FULL_READS_ALL_FIXTURE_CLASSES",
+      "status": "PASS",
+      "report": "evidence/rk02/LOSSLESS_FIXTURES.json",
+      "sha256": "713fd85da5be9eaee47fc919405be16963abc2b1d3e17e1ee5146884548070c5"
+    },
+    {
+      "id": "FIXED_NATIVE_HOST_ABI_ALLOWLIST",
+      "status": "PASS",
+      "report": "evidence/rk02/host/HOST_QUALIFICATION.json",
+      "sha256": "98c5280a670daddc2aee4568d144621023066e1a0fc47baba48bcd2841d4c50e"
+    },
+    {
+      "id": "TERMINAL_HOST_FAULTS",
+      "status": "PASS",
+      "report": "evidence/rk02/host/HOST_FAULTS.json",
+      "sha256": "b246909478093e43c7f9dc2ac548f444e3c3dc54ce4368786a4ac8f1da19d4fb"
+    },
+    {
+      "id": "FINALIZER_ADVERSARIAL_CONTROLS",
+      "status": "PASS",
+      "report": "evidence/rk02/host/tests/FINALIZER_TESTS.json",
+      "sha256": "da7f264898deb839f8ceaf9448c0c6ba0e37a915ec673ec7b75f364aa137fee0"
+    },
+    {
+      "id": "VALIDATOR_FAIL_CLOSED_NEGATIVE_CONTROLS",
+      "status": "PASS",
+      "report": "evidence/rk02/VALIDATOR_REGRESSIONS.json",
+      "sha256": "1c03ec1efb7e7641698c0df8cb1036055fc5dc85c2c8c22053957a8ac8e760c2"
+    },
+    {
+      "id": "RELEASE_GATES_SURVIVE_PYTHON_OPTIMIZATION",
+      "status": "PASS",
+      "report": "evidence/rk02/RELEASE_OPTIMIZATION_REGRESSIONS.json",
+      "sha256": "eb1d89ccccb9620f2d1fd31cad68dad3f1ab2514713493cb3dc27eb0439cf6fe"
+    },
+    {
+      "id": "INDEPENDENT_COMPILE_ONLY_PHYSICAL_HOST_DERIVATION",
+      "status": "PASS",
+      "report": "evidence/rk02/PHYSICAL_DERIVATION_REVIEW.json",
+      "sha256": "6a66912695a461c78f19bc11c4e1698505fbf91322d568470825db376274f07c"
+    },
+    {
+      "id": "PRIOR_ARTIFACT_INSTALLATION_REGISTRY_PRESERVATION",
+      "status": "PASS",
+      "report": "evidence/rk02/FINAL_PRESERVATION.json",
+      "sha256": "dd70d8e7c27fe5b12f7d6c116a0761ea4315cee776b3e9d08f96a13475c65bd1"
+    },
+    {
+      "id": "RK01_PERMANENT_SUPERSESSION",
+      "status": "PASS",
+      "report": "evidence/RK01_SUPERSEDED.json",
+      "sha256": "45fe930a4bd97cd34cf1e4c81d0e27926a2871fda7d9a8ea6f7c8486aff5f85b"
+    }
+  ],
+  "physical_gates": [
+    {
+      "id": "ACTUAL_CURRENT_ECU_LOADER_ACCEPTANCE",
+      "status": "PHYSICAL_REQUIRED"
+    },
+    {
+      "id": "ACTUAL_OPENPORT_ELECTRICAL_UART",
+      "status": "PHYSICAL_REQUIRED"
+    },
+    {
+      "id": "CLOCK_RAM_UPLOAD_AND_ENTRY",
+      "status": "PHYSICAL_REQUIRED"
+    },
+    {
+      "id": "EXTERNAL_WATCHDOG_AND_NMI",
+      "status": "PHYSICAL_REQUIRED"
+    },
+    {
+      "id": "PHYSICAL_CAPTURE_CURRENT_ROM_ASSOCIATION",
+      "status": "PHYSICAL_REQUIRED"
+    },
+    {
+      "id": "POWER_DOWN_OEM_RESTART",
+      "status": "PHYSICAL_REQUIRED"
+    }
+  ],
+  "historical_excluded_paths": [
+    {
+      "id": "RK01",
+      "status": "SUPERSEDED_NOT_FOR_HARDWARE",
+      "permanent": true
+    },
+    {
+      "id": "ECUFLASH_UNIVERSAL_EXACT_IMAGE_ACQUISITION",
+      "status": "FAIL",
+      "permanent": true,
+      "reason": "Captured successful CRC substitution loses 37 nonblank bytes"
+    },
+    {
+      "id": "DUAL1_07_STARTUP_CONTRACT",
+      "status": "FAIL",
+      "reason": "Inherited FFFF5444 and prohibited FFFFE803 path; no dependency remains"
+    },
+    {
+      "id": "ECU_RESIDENT_BRANCH_OWNERSHIP",
+      "status": "FAIL",
+      "frozen": true,
+      "owned_bytes": 0
+    },
+    {
+      "id": "HISTORICAL_LOG_PRESERVATION",
+      "status": "FAIL",
+      "reason": "Earlier 7-log loss, 3 restored, 4 unrecovered; not erased by current preservation PASS"
+    }
+  ],
+  "scope": "PASS is limited to pinned offline software/model contracts. Real clock, entry, UART/electrical, watchdog, reset and current-vehicle association remain physical.",
+  "procedure": {
+    "path": "HUMAN_ACQUISITION_RK02.md",
+    "sha256": "d4add862135ad104ecc3c0145f09ddec879da8ef53775cb90c106f8221c67f81"
+  }
+}

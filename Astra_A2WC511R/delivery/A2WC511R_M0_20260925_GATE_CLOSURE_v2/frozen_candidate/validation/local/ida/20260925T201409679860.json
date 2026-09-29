@@ -1,0 +1,36 @@
+{
+  "request": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "tools/call",
+    "params": {
+      "name": "list_databases",
+      "arguments": {}
+    }
+  },
+  "response": {
+    "jsonrpc": "2.0",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"instances\": [\n    {\n      \"path\": \"C:\\\\Dev\\\\SubaruRoms\\\\OEM\\\\A2WC511R_STOCK_ROMRAIDER.bin\",\n      \"backend\": \"idalib\",\n      \"status\": \"current\",\n      \"instance_id\": \"b742fb7776da\",\n      \"error\": null\n    }\n  ],\n  \"hint\": \"To enable GUI database discovery: uvx ida-hcli plugin install https://github.com/HexRaysSA/ida-mcp\"\n}"
+        }
+      ],
+      "isError": false,
+      "structuredContent": {
+        "instances": [
+          {
+            "path": "C:\\Dev\\SubaruRoms\\OEM\\A2WC511R_STOCK_ROMRAIDER.bin",
+            "backend": "idalib",
+            "status": "current",
+            "instance_id": "b742fb7776da",
+            "error": null
+          }
+        ],
+        "hint": "To enable GUI database discovery: uvx ida-hcli plugin install https://github.com/HexRaysSA/ida-mcp"
+      }
+    },
+    "id": 1
+  }
+}

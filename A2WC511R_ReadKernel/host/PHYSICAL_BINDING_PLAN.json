@@ -1,0 +1,34 @@
+{
+  "schema": 1,
+  "status": "READ_ONLY_BINDING_VERIFIED_NO_PROVIDER_LOAD",
+  "chosen_fixed_provider": {
+    "path": "C:\\Windows\\SysWOW64\\op20pt32.dll",
+    "sha256": "f432084801762d919a3c31974616e097562424470003edc4f4fb843df34103cf",
+    "bytes": 1781896
+  },
+  "reason": "Reuse same registered provider path/hash already pinned by BF/A8 broker; avoid unrelated driver-package binary variant",
+  "prior_binding_evidence": [
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\integrations\\prehardware\\broker.cpp",
+      "sha256": "528a6bfdcc06ac2f8d46a7cd0d4421855d73e2a550e947af1ffd6583d7934c7f",
+      "bytes": 9918
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\integrations\\prehardware\\transport.py",
+      "sha256": "ad56f719f890630a214ce7010c444ae166058df30c43f79549bb5f20555fad04",
+      "bytes": 9973
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\integrations\\prehardware\\build\\BUILD_MANIFEST.json",
+      "sha256": "749126e5cc5aad1ec6c3e321ebe0ecde75927db964ff6b573276076c6c0f45f7",
+      "bytes": 1369
+    }
+  ],
+  "fresh_snapshot_manifest": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\preservation\\snapshot_20260927\\MANIFEST.json",
+    "sha256": "b37e221744f3268e1d9d7b7b7beb9dfc84e2c6e48b9d384a296bb29f7d77372c",
+    "bytes": 371406
+  },
+  "provider_loaded": false,
+  "physical_target_executed": false
+}

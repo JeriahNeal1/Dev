@@ -1,0 +1,500 @@
+{
+  "schema": 1,
+  "status": "PASS",
+  "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+  "validator_sha256": "87b782bf387bf41e796d8586f106a8c256873ef0eb701a1f760bbc42db562e2b",
+  "artifact_review_sha256": "a17be84cb7a9fb035e5dc1eb87578f710f9f3a0f9f9f14143099003d22afceab",
+  "inputs": [
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\DRAFT_INPUTS_05.json",
+      "bytes": 3527983,
+      "sha256": "83505894e06944081448b8b8fd4596a9c77842ee21a6cfebdd25ae16b698042d"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\test_release_validator_rk02.py",
+      "bytes": 15193,
+      "sha256": "ab11990e0a57da5b650f42771c7b99888dac340ca75f68d48daf804728f653e6"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\tools\\validate.py",
+      "bytes": 31363,
+      "sha256": "87b782bf387bf41e796d8586f106a8c256873ef0eb701a1f760bbc42db562e2b"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\tools\\artifact_review.py",
+      "bytes": 6414,
+      "sha256": "a17be84cb7a9fb035e5dc1eb87578f710f9f3a0f9f9f14143099003d22afceab"
+    }
+  ],
+  "baseline": {
+    "status": "CONDITIONAL",
+    "software_status": "PASS",
+    "failed_checks": []
+  },
+  "reviewer_script_index_adjustment": null,
+  "case_count": 29,
+  "cases": [
+    {
+      "case": "same_build_used_as_repro",
+      "status": "PASS",
+      "expected_failed_check": "PINNED_TOOLCHAIN_SOURCE_REPRODUCIBILITY_LAYOUT",
+      "overlay_paths": [],
+      "self_consistent_index_reseal": true,
+      "actual": {
+        "failed_checks": [
+          "PINNED_TOOLCHAIN_SOURCE_REPRODUCIBILITY_LAYOUT"
+        ],
+        "software_status": "FAIL"
+      }
+    },
+    {
+      "case": "empty_build_sources",
+      "status": "PASS",
+      "expected_failed_check": "PINNED_TOOLCHAIN_SOURCE_REPRODUCIBILITY_LAYOUT",
+      "overlay_paths": [
+        "c:\\dev\\a2wc511r_readkernel\\build\\rk02_01\\manifest.json"
+      ],
+      "self_consistent_index_reseal": true,
+      "actual": {
+        "failed_checks": [
+          "PINNED_TOOLCHAIN_SOURCE_REPRODUCIBILITY_LAYOUT",
+          "HALF_DUPLEX_CASES_AND_MODEL_ASSOCIATION",
+          "COMPILED_COVERAGE_CROSSCHECK",
+          "BYTE_FOR_BYTE_TWO_FULL_READS"
+        ],
+        "software_status": "FAIL"
+      }
+    },
+    {
+      "case": "empty_build_toolchain",
+      "status": "PASS",
+      "expected_failed_check": "PINNED_TOOLCHAIN_SOURCE_REPRODUCIBILITY_LAYOUT",
+      "overlay_paths": [
+        "c:\\dev\\a2wc511r_readkernel\\build\\rk02_01\\manifest.json"
+      ],
+      "self_consistent_index_reseal": true,
+      "actual": {
+        "failed_checks": [
+          "PINNED_TOOLCHAIN_SOURCE_REPRODUCIBILITY_LAYOUT",
+          "HALF_DUPLEX_CASES_AND_MODEL_ASSOCIATION",
+          "COMPILED_COVERAGE_CROSSCHECK",
+          "BYTE_FOR_BYTE_TWO_FULL_READS"
+        ],
+        "software_status": "FAIL"
+      }
+    },
+    {
+      "case": "native_files_empty",
+      "status": "PASS",
+      "expected_failed_check": "EXACT_TESTED_NATIVE_HOST_AND_SOURCE_ASSOCIATION",
+      "overlay_paths": [
+        "c:\\dev\\a2wc511r_readkernel\\host\\build\\native_05\\build_manifest.json"
+      ],
+      "self_consistent_index_reseal": true,
+      "actual": {
+        "failed_checks": [
+          "EXACT_TESTED_NATIVE_HOST_AND_SOURCE_ASSOCIATION",
+          "HOST_FINALIZER_AND_TERMINAL_TEST_ASSOCIATION"
+        ],
+        "software_status": "FAIL"
+      }
+    },
+    {
+      "case": "native_wrong_client_path",
+      "status": "PASS",
+      "expected_failed_check": "EXACT_TESTED_NATIVE_HOST_AND_SOURCE_ASSOCIATION",
+      "overlay_paths": [
+        "c:\\dev\\a2wc511r_readkernel\\host\\build\\native_05\\binding.json"
+      ],
+      "self_consistent_index_reseal": true,
+      "actual": {
+        "failed_checks": [
+          "EXACT_TESTED_NATIVE_HOST_AND_SOURCE_ASSOCIATION"
+        ],
+        "software_status": "FAIL"
+      }
+    },
+    {
+      "case": "host_source_files_empty",
+      "status": "PASS",
+      "expected_failed_check": "HOST_FINALIZER_AND_TERMINAL_TEST_ASSOCIATION",
+      "overlay_paths": [
+        "c:\\dev\\a2wc511r_readkernel\\evidence\\rk02\\host\\host_qualification.json"
+      ],
+      "self_consistent_index_reseal": true,
+      "actual": {
+        "failed_checks": [
+          "HOST_FINALIZER_AND_TERMINAL_TEST_ASSOCIATION"
+        ],
+        "software_status": "FAIL"
+      }
+    },
+    {
+      "case": "host_full_fixtures_empty",
+      "status": "PASS",
+      "expected_failed_check": "HOST_FINALIZER_AND_TERMINAL_TEST_ASSOCIATION",
+      "overlay_paths": [
+        "c:\\dev\\a2wc511r_readkernel\\evidence\\rk02\\host\\host_qualification.json"
+      ],
+      "self_consistent_index_reseal": true,
+      "actual": {
+        "failed_checks": [
+          "HOST_FINALIZER_AND_TERMINAL_TEST_ASSOCIATION"
+        ],
+        "software_status": "FAIL"
+      }
+    },
+    {
+      "case": "host_fault_wrong_executable",
+      "status": "PASS",
+      "expected_failed_check": "REQUIRED_NATIVE_FAULTS_AND_CLOSED_TX_PREFIXES",
+      "overlay_paths": [
+        "c:\\dev\\a2wc511r_readkernel\\evidence\\rk02\\host\\host_faults.json"
+      ],
+      "self_consistent_index_reseal": true,
+      "actual": {
+        "failed_checks": [
+          "HOST_FINALIZER_AND_TERMINAL_TEST_ASSOCIATION",
+          "REQUIRED_NATIVE_FAULTS_AND_CLOSED_TX_PREFIXES"
+        ],
+        "software_status": "FAIL"
+      }
+    },
+    {
+      "case": "fixture_model_set_empty",
+      "status": "PASS",
+      "expected_failed_check": "BYTE_FOR_BYTE_TWO_FULL_READS",
+      "overlay_paths": [
+        "c:\\dev\\a2wc511r_readkernel\\evidence\\rk02\\sim\\stock_full_01\\coverage.json"
+      ],
+      "self_consistent_index_reseal": true,
+      "actual": {
+        "failed_checks": [
+          "COMPILED_COVERAGE_CROSSCHECK",
+          "BYTE_FOR_BYTE_TWO_FULL_READS"
+        ],
+        "software_status": "FAIL"
+      }
+    },
+    {
+      "case": "fixture_core_identity_empty",
+      "status": "PASS",
+      "expected_failed_check": "BYTE_FOR_BYTE_TWO_FULL_READS",
+      "overlay_paths": [
+        "c:\\dev\\a2wc511r_readkernel\\evidence\\rk02\\sim\\stock_full_01\\coverage.json"
+      ],
+      "self_consistent_index_reseal": true,
+      "actual": {
+        "failed_checks": [
+          "COMPILED_COVERAGE_CROSSCHECK",
+          "BYTE_FOR_BYTE_TWO_FULL_READS"
+        ],
+        "software_status": "FAIL"
+      }
+    },
+    {
+      "case": "fixture_stale_RK01",
+      "status": "PASS",
+      "expected_failed_check": "BYTE_FOR_BYTE_TWO_FULL_READS",
+      "overlay_paths": [
+        "c:\\dev\\a2wc511r_readkernel\\evidence\\rk02\\sim\\stock_full_01\\coverage.json"
+      ],
+      "self_consistent_index_reseal": true,
+      "actual": {
+        "failed_checks": [
+          "COMPILED_COVERAGE_CROSSCHECK",
+          "BYTE_FOR_BYTE_TWO_FULL_READS"
+        ],
+        "software_status": "FAIL"
+      }
+    },
+    {
+      "case": "fixture_self_echo_disabled",
+      "status": "PASS",
+      "expected_failed_check": "BYTE_FOR_BYTE_TWO_FULL_READS",
+      "overlay_paths": [
+        "c:\\dev\\a2wc511r_readkernel\\evidence\\rk02\\sim\\stock_full_01\\coverage.json"
+      ],
+      "self_consistent_index_reseal": true,
+      "actual": {
+        "failed_checks": [
+          "COMPILED_COVERAGE_CROSSCHECK",
+          "BYTE_FOR_BYTE_TWO_FULL_READS"
+        ],
+        "software_status": "FAIL"
+      }
+    },
+    {
+      "case": "half_duplex_model_set_empty",
+      "status": "PASS",
+      "expected_failed_check": "HALF_DUPLEX_CASES_AND_MODEL_ASSOCIATION",
+      "overlay_paths": [
+        "c:\\dev\\a2wc511r_readkernel\\evidence\\rk02\\sim\\self_echo_qualification.json"
+      ],
+      "self_consistent_index_reseal": true,
+      "actual": {
+        "failed_checks": [
+          "HALF_DUPLEX_CASES_AND_MODEL_ASSOCIATION"
+        ],
+        "software_status": "FAIL"
+      }
+    },
+    {
+      "case": "half_duplex_required_case_missing",
+      "status": "PASS",
+      "expected_failed_check": "HALF_DUPLEX_CASES_AND_MODEL_ASSOCIATION",
+      "overlay_paths": [
+        "c:\\dev\\a2wc511r_readkernel\\evidence\\rk02\\sim\\self_echo_qualification.json"
+      ],
+      "self_consistent_index_reseal": true,
+      "actual": {
+        "failed_checks": [
+          "HALF_DUPLEX_CASES_AND_MODEL_ASSOCIATION"
+        ],
+        "software_status": "FAIL"
+      }
+    },
+    {
+      "case": "RK01_negative_included_as_RK02",
+      "status": "PASS",
+      "expected_failed_check": "HALF_DUPLEX_CASES_AND_MODEL_ASSOCIATION",
+      "overlay_paths": [
+        "c:\\dev\\a2wc511r_readkernel\\evidence\\rk02\\sim\\self_echo_qualification.json"
+      ],
+      "self_consistent_index_reseal": true,
+      "actual": {
+        "failed_checks": [
+          "HALF_DUPLEX_CASES_AND_MODEL_ASSOCIATION"
+        ],
+        "software_status": "FAIL"
+      }
+    },
+    {
+      "case": "executed_model_source_changed",
+      "status": "PASS",
+      "expected_failed_check": "HALF_DUPLEX_CASES_AND_MODEL_ASSOCIATION",
+      "overlay_paths": [
+        "c:\\dev\\a2wc511r_readkernel\\sim\\sci.py"
+      ],
+      "self_consistent_index_reseal": true,
+      "actual": {
+        "failed_checks": [
+          "HOST_FINALIZER_AND_TERMINAL_TEST_ASSOCIATION",
+          "HALF_DUPLEX_CASES_AND_MODEL_ASSOCIATION",
+          "COMPILED_COVERAGE_CROSSCHECK",
+          "BYTE_FOR_BYTE_TWO_FULL_READS"
+        ],
+        "software_status": "FAIL"
+      }
+    },
+    {
+      "case": "coverage_inputs_empty",
+      "status": "PASS",
+      "expected_failed_check": "FIXED_RK02_COVERAGE_INPUTS",
+      "overlay_paths": [
+        "c:\\dev\\a2wc511r_readkernel\\evidence\\rk02\\sim\\coverage.json"
+      ],
+      "self_consistent_index_reseal": true,
+      "actual": {
+        "failed_checks": [
+          "FIXED_RK02_COVERAGE_INPUTS",
+          "COVERAGE_AGGREGATE_RECONCILIATION"
+        ],
+        "software_status": "FAIL"
+      }
+    },
+    {
+      "case": "branch_fault_coverage_stale_RK01",
+      "status": "PASS",
+      "expected_failed_check": "COMPILED_COVERAGE_CROSSCHECK",
+      "overlay_paths": [
+        "c:\\dev\\a2wc511r_readkernel\\evidence\\rk02\\sim\\coverage.json",
+        "c:\\dev\\a2wc511r_readkernel\\evidence\\rk02\\sim\\faults_01\\coverage.json",
+        "c:\\dev\\a2wc511r_readkernel\\evidence\\rk02\\sim\\faults_01\\faults.json"
+      ],
+      "self_consistent_index_reseal": true,
+      "actual": {
+        "failed_checks": [
+          "COMPILED_COVERAGE_CROSSCHECK"
+        ],
+        "software_status": "FAIL"
+      }
+    },
+    {
+      "case": "compiled_branch_direction_missing",
+      "status": "PASS",
+      "expected_failed_check": "ALL_CONDITIONAL_DIRECTIONS",
+      "overlay_paths": [
+        "c:\\dev\\a2wc511r_readkernel\\evidence\\rk02\\sim\\coverage.json"
+      ],
+      "self_consistent_index_reseal": true,
+      "actual": {
+        "failed_checks": [
+          "COVERAGE_AGGREGATE_RECONCILIATION",
+          "ALL_CONDITIONAL_DIRECTIONS"
+        ],
+        "software_status": "FAIL"
+      }
+    },
+    {
+      "case": "static_store_duplicated",
+      "status": "PASS",
+      "expected_failed_check": "COMPLETE_UNIQUE_STATIC_STORE_DOMAINS",
+      "overlay_paths": [
+        "c:\\dev\\a2wc511r_readkernel\\evidence\\contracts\\binary_review_rk02_01.json"
+      ],
+      "self_consistent_index_reseal": true,
+      "actual": {
+        "failed_checks": [
+          "COMPLETE_UNIQUE_STATIC_STORE_DOMAINS",
+          "EVERY_OBSERVED_STORE_DECLARED"
+        ],
+        "software_status": "FAIL"
+      }
+    },
+    {
+      "case": "static_store_domains_empty",
+      "status": "PASS",
+      "expected_failed_check": "COMPLETE_UNIQUE_STATIC_STORE_DOMAINS",
+      "overlay_paths": [
+        "c:\\dev\\a2wc511r_readkernel\\evidence\\contracts\\binary_review_rk02_01.json"
+      ],
+      "self_consistent_index_reseal": true,
+      "actual": {
+        "failed_checks": [
+          "COMPLETE_UNIQUE_STATIC_STORE_DOMAINS",
+          "EVERY_OBSERVED_STORE_DECLARED"
+        ],
+        "software_status": "FAIL"
+      }
+    },
+    {
+      "case": "observed_flash_controller_write",
+      "status": "PASS",
+      "expected_failed_check": "EVERY_OBSERVED_STORE_DECLARED",
+      "overlay_paths": [
+        "c:\\dev\\a2wc511r_readkernel\\evidence\\rk02\\sim\\coverage.json"
+      ],
+      "self_consistent_index_reseal": true,
+      "actual": {
+        "failed_checks": [
+          "COVERAGE_AGGREGATE_RECONCILIATION",
+          "EVERY_OBSERVED_STORE_DECLARED"
+        ],
+        "software_status": "FAIL"
+      }
+    },
+    {
+      "case": "stack_bound_changed",
+      "status": "PASS",
+      "expected_failed_check": "EXACT_STACK_BOUND",
+      "overlay_paths": [
+        "c:\\dev\\a2wc511r_readkernel\\evidence\\rk02\\sim\\coverage.json"
+      ],
+      "self_consistent_index_reseal": true,
+      "actual": {
+        "failed_checks": [
+          "EXACT_STACK_BOUND"
+        ],
+        "software_status": "FAIL"
+      }
+    },
+    {
+      "case": "preservation_subset_empty",
+      "status": "PASS",
+      "expected_failed_check": "RK01_PRESERVED_BYTES",
+      "overlay_paths": [
+        "c:\\dev\\a2wc511r_readkernel\\evidence\\rk01_superseded.json"
+      ],
+      "self_consistent_index_reseal": true,
+      "actual": {
+        "failed_checks": [
+          "RK01_PRESERVED_BYTES"
+        ],
+        "software_status": "FAIL"
+      }
+    },
+    {
+      "case": "preserved_RK01_file_changed",
+      "status": "PASS",
+      "expected_failed_check": "RK01_PRESERVED_BYTES",
+      "overlay_paths": [
+        "c:\\dev\\a2wc511r_readkernel\\evidence\\rk01_superseded\\architecture.md"
+      ],
+      "self_consistent_index_reseal": true,
+      "actual": {
+        "failed_checks": [
+          "RK01_PRESERVED_BYTES"
+        ],
+        "software_status": "FAIL"
+      }
+    },
+    {
+      "case": "required_software_gate_missing",
+      "status": "PASS",
+      "expected_failed_check": "REQUIRED_SOFTWARE_GATES",
+      "overlay_paths": [],
+      "self_consistent_index_reseal": true,
+      "actual": {
+        "failed_checks": [
+          "REQUIRED_SOFTWARE_GATES"
+        ],
+        "software_status": "FAIL"
+      }
+    },
+    {
+      "case": "physical_gate_missing",
+      "status": "PASS",
+      "expected_failed_check": "PHYSICAL_CLAIMS_SEPARATE",
+      "overlay_paths": [],
+      "self_consistent_index_reseal": true,
+      "actual": {
+        "failed_checks": [
+          "PHYSICAL_CLAIMS_SEPARATE"
+        ],
+        "software_status": "FAIL"
+      }
+    },
+    {
+      "case": "physical_gate_replaced_by_unknown",
+      "status": "PASS",
+      "expected_failed_check": "PHYSICAL_CLAIMS_SEPARATE",
+      "overlay_paths": [],
+      "self_consistent_index_reseal": true,
+      "actual": {
+        "failed_checks": [
+          "PHYSICAL_CLAIMS_SEPARATE"
+        ],
+        "software_status": "FAIL"
+      }
+    },
+    {
+      "case": "sealed_file_byte_corruption",
+      "status": "PASS",
+      "expected_failed_check": "BYTE_FOR_BYTE_TWO_FULL_READS",
+      "overlay_paths": [
+        "c:\\dev\\subaruroms\\oem\\a2wc511r.bin"
+      ],
+      "self_consistent_index_reseal": false,
+      "actual": {
+        "failed_checks": [
+          "HASH:C:\\Dev\\SubaruRoms\\OEM\\A2WC511R.bin",
+          "BYTE_FOR_BYTE_TWO_FULL_READS"
+        ],
+        "software_status": "FAIL"
+      }
+    }
+  ],
+  "failures": [],
+  "changed_real_files": [],
+  "real_artifact_mutations": 0,
+  "physical_operations": 0,
+  "provider_loaded": false,
+  "elapsed_seconds": 257.255,
+  "real_hashes_checked": 16270,
+  "method": "In-memory Path/sha overlays only. Mutation records are rehashed into an isolated copied index except intentional corruption. Each case must fail its specific semantic check, not merely an unrelated seal. Real hashes and read-only preservation are rechecked after the suite.",
+  "limits": [
+    "This is a regression suite for the reviewed checker, not a proof against a party able to replace the checker and every evidence record.",
+    "No native host, provider, physical adapter or vehicle is loaded. Full simulator/host executions are prior sealed evidence consumed by the unchanged validator."
+  ]
+}

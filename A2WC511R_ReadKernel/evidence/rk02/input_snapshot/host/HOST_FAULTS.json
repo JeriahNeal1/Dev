@@ -1,0 +1,411 @@
+{
+  "schema": 1,
+  "status": "PASS",
+  "cases": {
+    "identity": {
+      "status": "PASS",
+      "result": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\identity_final\\RESULT.json",
+        "sha256": "7f3748657f365c4fb7c7f964e9928d1a2d1aa7cec1fe181b1aa544e5434a2d2d",
+        "bytes": 13984
+      },
+      "fixed_TX_prefix_replay": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\identity_final\\FIXED_TX_PREFIX_REPLAY.json",
+        "sha256": "18df52c393583f9cdcf7e2ad205e556d1de551fbc442aadd1110fc98bce74def",
+        "bytes": 754
+      },
+      "host_sha256": "fb890a5bd147aa8db27bb28ce43c3492a6587a872fa40dbb79b8ea44e111aab1",
+      "kernel_sha256": "3d70abfb8617b87e1b9c52724fd27ed4066ba231818994e780c8ba3006de273f",
+      "terminal": true,
+      "native_calls": 5,
+      "physical": false
+    },
+    "upload_begin": {
+      "status": "PASS",
+      "result": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\upload_begin_final\\RESULT.json",
+        "sha256": "bc0877336808118b7b082ced41f6596e33dfefef58554edf4156b98e2e7968c6",
+        "bytes": 14136
+      },
+      "fixed_TX_prefix_replay": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\upload_begin_final\\FIXED_TX_PREFIX_REPLAY.json",
+        "sha256": "edcbb6b701ba7c3e66f92c65dae421fce49732ad0fb95ec5fdc76a8c7a897a4b",
+        "bytes": 730
+      },
+      "host_sha256": "fb890a5bd147aa8db27bb28ce43c3492a6587a872fa40dbb79b8ea44e111aab1",
+      "kernel_sha256": "3d70abfb8617b87e1b9c52724fd27ed4066ba231818994e780c8ba3006de273f",
+      "terminal": true,
+      "native_calls": 20,
+      "physical": false
+    },
+    "upload_middle": {
+      "status": "PASS",
+      "result": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\upload_middle_final\\RESULT.json",
+        "sha256": "ac9060245f0955c98456b0c9bb4016ef4e2f5a051968569f863405d3ea8cbea1",
+        "bytes": 14184
+      },
+      "fixed_TX_prefix_replay": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\upload_middle_final\\FIXED_TX_PREFIX_REPLAY.json",
+        "sha256": "deb64814b8ce722ef23730752e0c23a9c6e5371e404a163cd95caa8377da9426",
+        "bytes": 732
+      },
+      "host_sha256": "fb890a5bd147aa8db27bb28ce43c3492a6587a872fa40dbb79b8ea44e111aab1",
+      "kernel_sha256": "3d70abfb8617b87e1b9c52724fd27ed4066ba231818994e780c8ba3006de273f",
+      "terminal": true,
+      "native_calls": 34,
+      "physical": false
+    },
+    "upload_final": {
+      "status": "PASS",
+      "result": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\upload_final_final\\RESULT.json",
+        "sha256": "dd730a4c4744094dbee3c08be1b601f3081e32c54ce4c32d6175fd8f78972045",
+        "bytes": 14143
+      },
+      "fixed_TX_prefix_replay": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\upload_final_final\\FIXED_TX_PREFIX_REPLAY.json",
+        "sha256": "896fd239166dde598af44592e3cb03d1853ce1ec33a6a92ce4619b44f8790237",
+        "bytes": 732
+      },
+      "host_sha256": "fb890a5bd147aa8db27bb28ce43c3492a6587a872fa40dbb79b8ea44e111aab1",
+      "kernel_sha256": "3d70abfb8617b87e1b9c52724fd27ed4066ba231818994e780c8ba3006de273f",
+      "terminal": true,
+      "native_calls": 46,
+      "physical": false
+    },
+    "entry": {
+      "status": "PASS",
+      "result": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\entry_final\\RESULT.json",
+        "sha256": "341a23ee1ee3028075bf6f64f2db89e29a776eadd7c9ccea6e53685638bdf337",
+        "bytes": 13843
+      },
+      "fixed_TX_prefix_replay": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\entry_final\\FIXED_TX_PREFIX_REPLAY.json",
+        "sha256": "a2a80434c7a94040af0fc3a1be221cddcc8cf2af7758c0a6fd1e668e0c3fed64",
+        "bytes": 732
+      },
+      "host_sha256": "fb890a5bd147aa8db27bb28ce43c3492a6587a872fa40dbb79b8ea44e111aab1",
+      "kernel_sha256": "3d70abfb8617b87e1b9c52724fd27ed4066ba231818994e780c8ba3006de273f",
+      "terminal": true,
+      "native_calls": 48,
+      "physical": false
+    },
+    "version": {
+      "status": "PASS",
+      "result": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\version_final\\RESULT.json",
+        "sha256": "90585dbd95f58f1858d3eae1bd160fce9b73c525ec70e4914af5b41796afbf2a",
+        "bytes": 14180
+      },
+      "fixed_TX_prefix_replay": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\version_final\\FIXED_TX_PREFIX_REPLAY.json",
+        "sha256": "1396475949b6b3898e51932f0a1757dcf3518c0d52ab492cd499d397e6b0e921",
+        "bytes": 762
+      },
+      "host_sha256": "fb890a5bd147aa8db27bb28ce43c3492a6587a872fa40dbb79b8ea44e111aab1",
+      "kernel_sha256": "3d70abfb8617b87e1b9c52724fd27ed4066ba231818994e780c8ba3006de273f",
+      "terminal": true,
+      "native_calls": 53,
+      "physical": false
+    },
+    "read_begin": {
+      "status": "PASS",
+      "result": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\read_begin_final\\RESULT.json",
+        "sha256": "104aafd86d5a8ea7d7b758ece092c0bce993a95d65eac326f9ecf64a29af8ec7",
+        "bytes": 14282
+      },
+      "fixed_TX_prefix_replay": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\read_begin_final\\FIXED_TX_PREFIX_REPLAY.json",
+        "sha256": "a2c849e005fbaf6c57843bed3463ade597c900129a0ec686d3b30813380bde32",
+        "bytes": 732
+      },
+      "host_sha256": "fb890a5bd147aa8db27bb28ce43c3492a6587a872fa40dbb79b8ea44e111aab1",
+      "kernel_sha256": "3d70abfb8617b87e1b9c52724fd27ed4066ba231818994e780c8ba3006de273f",
+      "terminal": true,
+      "native_calls": 55,
+      "physical": false
+    },
+    "read_middle": {
+      "status": "PASS",
+      "result": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\read_middle_01\\RESULT.json",
+        "sha256": "83c51a8b73720c408f8fbf4334613598646d754f09ec5fd5b9b3212b65d1be5a",
+        "bytes": 13393
+      },
+      "fixed_TX_prefix_replay": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\read_middle_01\\FIXED_TX_PREFIX_REPLAY.json",
+        "sha256": "50facd43147af6781a9b0e8cd1534fd2f9c83e6a5cf400029a7a40d332630e3c",
+        "bytes": 745
+      },
+      "host_sha256": "fb890a5bd147aa8db27bb28ce43c3492a6587a872fa40dbb79b8ea44e111aab1",
+      "kernel_sha256": "3d70abfb8617b87e1b9c52724fd27ed4066ba231818994e780c8ba3006de273f",
+      "terminal": true,
+      "native_calls": 4151,
+      "physical": false
+    },
+    "read_final": {
+      "status": "PASS",
+      "result": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\read_final_01\\RESULT.json",
+        "sha256": "a0e2482b16a0948fdc2da1994438c64f3a60fc10ab389f73ebc3bbb16720ced9",
+        "bytes": 13361
+      },
+      "fixed_TX_prefix_replay": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\read_final_01\\FIXED_TX_PREFIX_REPLAY.json",
+        "sha256": "72548c0cb24ce77f50f122a69f344045329ad1d6e2570701d82c93f863fc6e4e",
+        "bytes": 751
+      },
+      "host_sha256": "fb890a5bd147aa8db27bb28ce43c3492a6587a872fa40dbb79b8ea44e111aab1",
+      "kernel_sha256": "3d70abfb8617b87e1b9c52724fd27ed4066ba231818994e780c8ba3006de273f",
+      "terminal": true,
+      "native_calls": 8245,
+      "physical": false
+    },
+    "read_disconnect": {
+      "status": "PASS",
+      "result": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\read_disconnect_final\\RESULT.json",
+        "sha256": "87f80eb0ee2e1a43c18e3c89d29b1be3338d50b333cdc0809ebe05f4d38e9d62",
+        "bytes": 14511
+      },
+      "fixed_TX_prefix_replay": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\read_disconnect_final\\FIXED_TX_PREFIX_REPLAY.json",
+        "sha256": "217f2389e2a6800a4ca469112f26eb0f57e4d979c571bb8ec542c0987d1dd8b6",
+        "bytes": 735
+      },
+      "host_sha256": "fb890a5bd147aa8db27bb28ce43c3492a6587a872fa40dbb79b8ea44e111aab1",
+      "kernel_sha256": "3d70abfb8617b87e1b9c52724fd27ed4066ba231818994e780c8ba3006de273f",
+      "terminal": true,
+      "native_calls": 86,
+      "physical": false
+    },
+    "read_checksum": {
+      "status": "PASS",
+      "result": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\read_checksum_native04\\RESULT.json",
+        "sha256": "239bee0dfc3fca2eac5402824ae71b66b02ce153071fbc079db03c8142186bdb",
+        "bytes": 16211
+      },
+      "fixed_TX_prefix_replay": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\read_checksum_native04\\FIXED_TX_PREFIX_REPLAY.json",
+        "sha256": "a220263a179bd0002d1a79081fdac622b4fc7b61922439f38cd4a5f99636e2d4",
+        "bytes": 757
+      },
+      "host_sha256": "9ca8941960f64a1cb2931c18889e77fb8c3a0cd42840bff5422e05e1a363addc",
+      "kernel_sha256": "3d70abfb8617b87e1b9c52724fd27ed4066ba231818994e780c8ba3006de273f",
+      "terminal": true,
+      "native_calls": 265,
+      "physical": false
+    },
+    "read_address": {
+      "status": "PASS",
+      "result": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\read_address_final\\RESULT.json",
+        "sha256": "52a44407f7f3661d986d40a062687b2c70f82fb74916ef74c24ceefd6b64922e",
+        "bytes": 14425
+      },
+      "fixed_TX_prefix_replay": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\read_address_final\\FIXED_TX_PREFIX_REPLAY.json",
+        "sha256": "ede40c77293ad29375cce36465c71eb14e7e76709ebbe3728b4d6ee79d4096c4",
+        "bytes": 781
+      },
+      "host_sha256": "fb890a5bd147aa8db27bb28ce43c3492a6587a872fa40dbb79b8ea44e111aab1",
+      "kernel_sha256": "3d70abfb8617b87e1b9c52724fd27ed4066ba231818994e780c8ba3006de273f",
+      "terminal": true,
+      "native_calls": 87,
+      "physical": false
+    },
+    "read_duplicate": {
+      "status": "PASS",
+      "result": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\read_duplicate_final\\RESULT.json",
+        "sha256": "0a4a1fca96db4a2da9c01be7256926e5c1b928ca962adc08951caf230b3c1152",
+        "bytes": 14513
+      },
+      "fixed_TX_prefix_replay": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\read_duplicate_final\\FIXED_TX_PREFIX_REPLAY.json",
+        "sha256": "ede40c77293ad29375cce36465c71eb14e7e76709ebbe3728b4d6ee79d4096c4",
+        "bytes": 781
+      },
+      "host_sha256": "fb890a5bd147aa8db27bb28ce43c3492a6587a872fa40dbb79b8ea44e111aab1",
+      "kernel_sha256": "3d70abfb8617b87e1b9c52724fd27ed4066ba231818994e780c8ba3006de273f",
+      "terminal": true,
+      "native_calls": 87,
+      "physical": false
+    },
+    "read_pass": {
+      "status": "PASS",
+      "result": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\read_pass_final\\RESULT.json",
+        "sha256": "e66395be42b452380f1b734c2b0a53e9589967cb550e955812b765eddd4adc81",
+        "bytes": 14293
+      },
+      "fixed_TX_prefix_replay": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\read_pass_final\\FIXED_TX_PREFIX_REPLAY.json",
+        "sha256": "ede40c77293ad29375cce36465c71eb14e7e76709ebbe3728b4d6ee79d4096c4",
+        "bytes": 781
+      },
+      "host_sha256": "fb890a5bd147aa8db27bb28ce43c3492a6587a872fa40dbb79b8ea44e111aab1",
+      "kernel_sha256": "3d70abfb8617b87e1b9c52724fd27ed4066ba231818994e780c8ba3006de273f",
+      "terminal": true,
+      "native_calls": 87,
+      "physical": false
+    },
+    "read_truncate": {
+      "status": "PASS",
+      "result": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\read_truncate_final\\RESULT.json",
+        "sha256": "4e618b14268cd4a3c0a5d1ddd96be4d992dc39b32baa7e8a97bc479e0a1523dc",
+        "bytes": 14422
+      },
+      "fixed_TX_prefix_replay": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\read_truncate_final\\FIXED_TX_PREFIX_REPLAY.json",
+        "sha256": "1089507fd0d702aad42796bc9f636be1866278cd478ee3e337cdd25ae6b32d7d",
+        "bytes": 735
+      },
+      "host_sha256": "fb890a5bd147aa8db27bb28ce43c3492a6587a872fa40dbb79b8ea44e111aab1",
+      "kernel_sha256": "3d70abfb8617b87e1b9c52724fd27ed4066ba231818994e780c8ba3006de273f",
+      "terminal": true,
+      "native_calls": 88,
+      "physical": false
+    },
+    "read_extra": {
+      "status": "PASS",
+      "result": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\read_extra_final\\RESULT.json",
+        "sha256": "d1b7e35813c974b122ffb2f4e179fd7700e20f913fdeb6694dd0cb62cbdb91fc",
+        "bytes": 14302
+      },
+      "fixed_TX_prefix_replay": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\read_extra_final\\FIXED_TX_PREFIX_REPLAY.json",
+        "sha256": "b80a61748c6711f28c12f033fbac9a5908b1688df2434dbf980b5f81427a8fce",
+        "bytes": 747
+      },
+      "host_sha256": "fb890a5bd147aa8db27bb28ce43c3492a6587a872fa40dbb79b8ea44e111aab1",
+      "kernel_sha256": "3d70abfb8617b87e1b9c52724fd27ed4066ba231818994e780c8ba3006de273f",
+      "terminal": true,
+      "native_calls": 87,
+      "physical": false
+    },
+    "read_opcode": {
+      "status": "PASS",
+      "result": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\read_opcode_native04\\RESULT.json",
+        "sha256": "2baeb65d9e6e4dcca576adf67116bae735eda308dbed1eaee5b4065fa69d9874",
+        "bytes": 16128
+      },
+      "fixed_TX_prefix_replay": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\read_opcode_native04\\FIXED_TX_PREFIX_REPLAY.json",
+        "sha256": "4504422bfa0663a927f46c60d933157bfc4ebab8b5ce3a6a8a856b856e1d249a",
+        "bytes": 780
+      },
+      "host_sha256": "9ca8941960f64a1cb2931c18889e77fb8c3a0cd42840bff5422e05e1a363addc",
+      "kernel_sha256": "3d70abfb8617b87e1b9c52724fd27ed4066ba231818994e780c8ba3006de273f",
+      "terminal": true,
+      "native_calls": 153,
+      "physical": false
+    },
+    "rx_status": {
+      "status": "PASS",
+      "result": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rx_status_final\\RESULT.json",
+        "sha256": "6b4f15a5a59edde901f71d4f03df34423cfce566c47d4840f0afe2acd3cff24b",
+        "bytes": 14264
+      },
+      "fixed_TX_prefix_replay": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rx_status_final\\FIXED_TX_PREFIX_REPLAY.json",
+        "sha256": "0652b0f42cf68ba1402de5d1d3acaa40f03ef476128a7edcfaeda5adc3f0522f",
+        "bytes": 753
+      },
+      "host_sha256": "fb890a5bd147aa8db27bb28ce43c3492a6587a872fa40dbb79b8ea44e111aab1",
+      "kernel_sha256": "3d70abfb8617b87e1b9c52724fd27ed4066ba231818994e780c8ba3006de273f",
+      "terminal": true,
+      "native_calls": 87,
+      "physical": false
+    },
+    "rx_extra": {
+      "status": "PASS",
+      "result": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rx_extra_final\\RESULT.json",
+        "sha256": "5233ea4a3bc37324672a90515cf2b7debd4d1c393ac7119364aa39ca55771136",
+        "bytes": 14215
+      },
+      "fixed_TX_prefix_replay": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rx_extra_final\\FIXED_TX_PREFIX_REPLAY.json",
+        "sha256": "b80a61748c6711f28c12f033fbac9a5908b1688df2434dbf980b5f81427a8fce",
+        "bytes": 747
+      },
+      "host_sha256": "fb890a5bd147aa8db27bb28ce43c3492a6587a872fa40dbb79b8ea44e111aab1",
+      "kernel_sha256": "3d70abfb8617b87e1b9c52724fd27ed4066ba231818994e780c8ba3006de273f",
+      "terminal": true,
+      "native_calls": 87,
+      "physical": false
+    },
+    "rx_echo": {
+      "status": "PASS",
+      "result": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rx_echo_native04\\RESULT.json",
+        "sha256": "af4878c40699ef9be8f47c3c63fa2eeabbe30a5538af7714a463291de5e245b9",
+        "bytes": 15906
+      },
+      "fixed_TX_prefix_replay": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rx_echo_native04\\FIXED_TX_PREFIX_REPLAY.json",
+        "sha256": "1b80ed1453b83f78bc84f14e954266bf3cedd407eafd0a0fb55d36c551180a71",
+        "bytes": 745
+      },
+      "host_sha256": "9ca8941960f64a1cb2931c18889e77fb8c3a0cd42840bff5422e05e1a363addc",
+      "kernel_sha256": "3d70abfb8617b87e1b9c52724fd27ed4066ba231818994e780c8ba3006de273f",
+      "terminal": true,
+      "native_calls": 260,
+      "physical": false
+    },
+    "rx_empty": {
+      "status": "PASS",
+      "result": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rx_empty_final\\RESULT.json",
+        "sha256": "65308e46d8bbb498046ff0e67e465a23afd99eab2694c3b73b9fcd21551ed41f",
+        "bytes": 14221
+      },
+      "fixed_TX_prefix_replay": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rx_empty_final\\FIXED_TX_PREFIX_REPLAY.json",
+        "sha256": "58ec283334b73bbebdb554f1f8a3e3e848160642159fab20bf3907343f4f9bf8",
+        "bytes": 753
+      },
+      "host_sha256": "fb890a5bd147aa8db27bb28ce43c3492a6587a872fa40dbb79b8ea44e111aab1",
+      "kernel_sha256": "3d70abfb8617b87e1b9c52724fd27ed4066ba231818994e780c8ba3006de273f",
+      "terminal": true,
+      "native_calls": 87,
+      "physical": false
+    },
+    "host_termination": {
+      "status": "PASS",
+      "result": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\host_termination_native04\\RESULT.json",
+        "sha256": "b35f1536662eb9d5b2ac707c662ee1ec40177de2c777ae89dac0b53516655ec9",
+        "bytes": 16296
+      },
+      "fixed_TX_prefix_replay": {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\host_termination_native04\\FIXED_TX_PREFIX_REPLAY.json",
+        "sha256": "1c0f11e2d552480d0b4a661874c43d9570fb251f8ca4e191b90f9b00211dcfe2",
+        "bytes": 714
+      },
+      "host_sha256": "9ca8941960f64a1cb2931c18889e77fb8c3a0cd42840bff5422e05e1a363addc",
+      "kernel_sha256": "3d70abfb8617b87e1b9c52724fd27ed4066ba231818994e780c8ba3006de273f",
+      "terminal": true,
+      "native_calls": 161,
+      "physical": false
+    }
+  },
+  "failures": [],
+  "all_TX_prefixes_replayed": true,
+  "physical_provider_loaded": false,
+  "native03_to_04_applicability": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\build\\native_04\\SOURCE_TRANSITION.json",
+    "sha256": "3a6964fb21e6658b72a7e36d0dd8828981b2473397cc8416fb8d41edc1f51da5",
+    "bytes": 745
+  },
+  "scope": "Native03 fault wire/ABI path unchanged in04;04 repeated checksum/echo/termination/opcode faults with full metadata. Kernel malformed-request/unknown-opcode execution is in separate sim qualification."
+}

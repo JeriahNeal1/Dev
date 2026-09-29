@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "status": "PASS_NEGATIVE_CONTROLS",
+  "inputs": [
+    {
+      "path": "C:\\Dev\\SubaruRoms\\OEM\\A2WC511R.bin",
+      "bytes": 1048576,
+      "sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\verify_upload_negative.py",
+      "bytes": 3680,
+      "sha256": "738d1d2e16a1aea5d99841946102458fb7a3e7f435e6cbf028f7e2550c4efe75"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\verify_upload_wire.py",
+      "bytes": 5736,
+      "sha256": "7293834e6f28a624fc3cd9ffae4823cde73744961c5d163f3ba6440086f13477"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\build\\attempt_03\\kernel.bin",
+      "bytes": 1776,
+      "sha256": "3d70abfb8617b87e1b9c52724fd27ed4066ba231818994e780c8ba3006de273f"
+    }
+  ],
+  "cases": [
+    {
+      "case": "bad_declaration_checksum",
+      "request": "8010f00834ff300004000008f6",
+      "reply": "",
+      "steps": 1112,
+      "upload_stores": 0
+    },
+    {
+      "case": "bad_declaration_mode",
+      "request": "8010f00834ff300005000008f8",
+      "reply": "80f010037f341046",
+      "steps": 1606,
+      "upload_stores": 0
+    },
+    {
+      "case": "below_RAM_floor",
+      "request": "8010f00834ff2ffc04000008f2",
+      "reply": "80f010037f342258",
+      "steps": 1588,
+      "upload_stores": 0
+    },
+    {
+      "case": "beyond_RAM_ceiling",
+      "request": "8010f00834ff4ffc0400000812",
+      "reply": "80f010037f342258",
+      "steps": 1595,
+      "upload_stores": 0
+    },
+    {
+      "case": "wrong_entry_subcommand",
+      "reply": "80f010037f311043",
+      "steps": 1110,
+      "entered": false
+    },
+    {
+      "case": "bad_upload_low16_sum",
+      "reply": "80f010037f312255",
+      "steps": 2898,
+      "entered": false
+    },
+    {
+      "case": "bad36checksum_after_stream_store",
+      "reply": "",
+      "steps": 1959,
+      "upload_stores": 1,
+      "warning": "Actual OEM commits decrypted RAM words before validating trailing frame checksum; ACK failure must terminate acquisition. This is not a flash write."
+    }
+  ],
+  "physical_operations": 0
+}

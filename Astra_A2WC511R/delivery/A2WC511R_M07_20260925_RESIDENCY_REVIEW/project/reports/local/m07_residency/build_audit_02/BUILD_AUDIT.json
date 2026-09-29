@@ -1,0 +1,917 @@
+{
+  "status": "PASS",
+  "classification": "UNAPPROVED_RESEARCH_BINARY_AUDIT",
+  "created_utc": "2026-09-26T01:36:22.928044+00:00",
+  "stock_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+  "repeat_artifacts": {
+    "division": {
+      "division.elf": {
+        "repeat_sha256": "97963084a6f882a05a3979ebbc59cb4484c4d75c8a8151a2cdd5cd2028f57040",
+        "original_sha256": "97963084a6f882a05a3979ebbc59cb4484c4d75c8a8151a2cdd5cd2028f57040",
+        "byte_identical": true
+      },
+      "division.bin": {
+        "repeat_sha256": "d484207950dd46302e68a8d4f0d9cd9dfeeb9273ab565c6e2647b2ec23de39c5",
+        "original_sha256": "d484207950dd46302e68a8d4f0d9cd9dfeeb9273ab565c6e2647b2ec23de39c5",
+        "byte_identical": true
+      }
+    },
+    "range_tail": {
+      "range_tail.elf": {
+        "repeat_sha256": "078d47ff87eaf361904cf382dce937d18446c8e9502555a19e7fc262060c463c",
+        "original_sha256": "1153d68300e90a41c2963bd7661df57eb6d05fd1e17efe29a8dce3c6746dea25",
+        "byte_identical": false,
+        "difference": "STT_FILE absolute object path and dependent string-table metadata only",
+        "old_FILE_symbols": [
+          "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\semantic\\range_tail.o",
+          ""
+        ],
+        "new_FILE_symbols": [
+          "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\build_audit_02\\range_tail\\repeat.o",
+          ""
+        ],
+        "all_other_ELF_sections_symbols_and_program_headers_equal": true,
+        "normalized_elf_sha256": "ce2e1dd16d8654b39fe1569797fb7cb988579452b8d02fd69262ad4d52516589"
+      },
+      "range_tail.bin": {
+        "repeat_sha256": "6f89e419e01fb9c0b318f2e40b16a9d0f35ffc1af3c7f13c5d46679e173f3f4b",
+        "original_sha256": "6f89e419e01fb9c0b318f2e40b16a9d0f35ffc1af3c7f13c5d46679e173f3f4b",
+        "byte_identical": true
+      }
+    },
+    "one_page": {
+      "payload.elf": {
+        "repeat_sha256": "83e8dcc27d93c780534194e6300d30addaa77a42851a60d8e6af29d209d58898",
+        "original_sha256": "84d1dca35bc0cb60274b56d47f222f0cbc5a0646da024aaa4ba68a4523b1d32e",
+        "byte_identical": false,
+        "difference": "STT_FILE absolute object path and dependent string-table metadata only",
+        "old_FILE_symbols": [
+          "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\protocol\\one_page_01\\payload.o",
+          ""
+        ],
+        "new_FILE_symbols": [
+          "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\build_audit_02\\one_page\\repeat.o",
+          ""
+        ],
+        "all_other_ELF_sections_symbols_and_program_headers_equal": true,
+        "normalized_elf_sha256": "def6c3e08ad5c1cdc58e4db9ca6b6e163dd34806660a94ef6badd4728e62b78c"
+      },
+      "payload.bin": {
+        "repeat_sha256": "99fc9436af0c418bf07d61f135048508f32c8842666c115423badaa2e39214fc",
+        "original_sha256": "99fc9436af0c418bf07d61f135048508f32c8842666c115423badaa2e39214fc",
+        "byte_identical": true
+      }
+    },
+    "two_pages": {
+      "payload.elf": {
+        "repeat_sha256": "606642fc208bf7b2a6c17700f91103cf35a92bcde89c00e56dc38c9d4a25d2be",
+        "original_sha256": "b6d90afcdf15431eba4bf56ebc03790139f716515560caa96c372b42ec996cb1",
+        "byte_identical": false,
+        "difference": "STT_FILE absolute object path and dependent string-table metadata only",
+        "old_FILE_symbols": [
+          "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\protocol\\two_pages_01\\payload.o",
+          ""
+        ],
+        "new_FILE_symbols": [
+          "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\build_audit_02\\two_pages\\repeat.o",
+          ""
+        ],
+        "all_other_ELF_sections_symbols_and_program_headers_equal": true,
+        "normalized_elf_sha256": "32cc9b509d8bf03ad9dd3b89410a39be1ca5487af283efb67c6e0d4c070f2795"
+      },
+      "match.bin": {
+        "repeat_sha256": "31bfda410cbc399f24a360895e8dda3ce8facdd8b87162df85546a1bd463aa0d",
+        "original_sha256": "31bfda410cbc399f24a360895e8dda3ce8facdd8b87162df85546a1bd463aa0d",
+        "byte_identical": true
+      },
+      "main.bin": {
+        "repeat_sha256": "e1b87d3e683128c8b2ada9e18e8db85afe4b18ac9bc6d744677f24029820773e",
+        "original_sha256": "e1b87d3e683128c8b2ada9e18e8db85afe4b18ac9bc6d744677f24029820773e",
+        "byte_identical": true
+      }
+    }
+  },
+  "profiles": {
+    "one_page": {
+      "status": "PASS_BINARY_AUDIT_ONLY",
+      "raw_sha256": "005861f92771fc6b84e8e747faf5998130c12a528e3d73d2d35213d596de0513",
+      "corrected_sha256": "140736b11e14ed80290832ceef3ae67757f967a3751a6ddb2b6d8afa0cc9afbd",
+      "raw_changed_bytes": 166,
+      "raw_changed_ranges": [
+        [
+          16997,
+          16998
+        ],
+        [
+          17000,
+          17014
+        ],
+        [
+          17018,
+          17026
+        ],
+        [
+          17028,
+          17133
+        ],
+        [
+          17134,
+          17160
+        ],
+        [
+          296112,
+          296124
+        ]
+      ],
+      "overlay_spans": [
+        [
+          16992,
+          17060
+        ],
+        [
+          17060,
+          17160
+        ],
+        [
+          296112,
+          296124
+        ]
+      ],
+      "checksum_changed_addresses": [
+        1047432,
+        1047433,
+        1047434,
+        1047435
+      ],
+      "checksum_rows": [
+        {
+          "index": 0,
+          "descriptor_offset": 1047424,
+          "start": 8192,
+          "end_parameter": 1047287,
+          "effective_end_exclusive": 1047288,
+          "disabled": false,
+          "stored": 1332045190,
+          "expected": 1332045190,
+          "valid": true
+        },
+        {
+          "index": 1,
+          "descriptor_offset": 1047436,
+          "start": 0,
+          "end_parameter": 0,
+          "effective_end_exclusive": 0,
+          "disabled": true,
+          "stored": 1520805210,
+          "expected": 1520805210,
+          "valid": true
+        },
+        {
+          "index": 2,
+          "descriptor_offset": 1047448,
+          "start": 0,
+          "end_parameter": 0,
+          "effective_end_exclusive": 0,
+          "disabled": true,
+          "stored": 1520805210,
+          "expected": 1520805210,
+          "valid": true
+        },
+        {
+          "index": 3,
+          "descriptor_offset": 1047460,
+          "start": 0,
+          "end_parameter": 0,
+          "effective_end_exclusive": 0,
+          "disabled": true,
+          "stored": 1520805210,
+          "expected": 1520805210,
+          "valid": true
+        },
+        {
+          "index": 4,
+          "descriptor_offset": 1047472,
+          "start": 0,
+          "end_parameter": 0,
+          "effective_end_exclusive": 0,
+          "disabled": true,
+          "stored": 1520805210,
+          "expected": 1520805210,
+          "valid": true
+        },
+        {
+          "index": 5,
+          "descriptor_offset": 1047484,
+          "start": 0,
+          "end_parameter": 0,
+          "effective_end_exclusive": 0,
+          "disabled": true,
+          "stored": 1520805210,
+          "expected": 1520805210,
+          "valid": true
+        },
+        {
+          "index": 6,
+          "descriptor_offset": 1047496,
+          "start": 0,
+          "end_parameter": 0,
+          "effective_end_exclusive": 0,
+          "disabled": true,
+          "stored": 1520805210,
+          "expected": 1520805210,
+          "valid": true
+        },
+        {
+          "index": 7,
+          "descriptor_offset": 1047508,
+          "start": 0,
+          "end_parameter": 0,
+          "effective_end_exclusive": 0,
+          "disabled": true,
+          "stored": 1520805210,
+          "expected": 1520805210,
+          "valid": true
+        },
+        {
+          "index": 8,
+          "descriptor_offset": 1047520,
+          "start": 0,
+          "end_parameter": 0,
+          "effective_end_exclusive": 0,
+          "disabled": true,
+          "stored": 1520805210,
+          "expected": 1520805210,
+          "valid": true
+        },
+        {
+          "index": 9,
+          "descriptor_offset": 1047532,
+          "start": 0,
+          "end_parameter": 0,
+          "effective_end_exclusive": 0,
+          "disabled": true,
+          "stored": 1520805210,
+          "expected": 1520805210,
+          "valid": true
+        },
+        {
+          "index": 10,
+          "descriptor_offset": 1047544,
+          "start": 0,
+          "end_parameter": 0,
+          "effective_end_exclusive": 0,
+          "disabled": true,
+          "stored": 1520805210,
+          "expected": 1520805210,
+          "valid": true
+        },
+        {
+          "index": 11,
+          "descriptor_offset": 1047556,
+          "start": 0,
+          "end_parameter": 0,
+          "effective_end_exclusive": 0,
+          "disabled": true,
+          "stored": 1520805210,
+          "expected": 1520805210,
+          "valid": true
+        },
+        {
+          "index": 12,
+          "descriptor_offset": 1047568,
+          "start": 0,
+          "end_parameter": 0,
+          "effective_end_exclusive": 0,
+          "disabled": true,
+          "stored": 1520805210,
+          "expected": 1520805210,
+          "valid": true
+        },
+        {
+          "index": 13,
+          "descriptor_offset": 1047580,
+          "start": 0,
+          "end_parameter": 0,
+          "effective_end_exclusive": 0,
+          "disabled": true,
+          "stored": 1520805210,
+          "expected": 1520805210,
+          "valid": true
+        }
+      ],
+      "raw_and_corrected_inverse_exact": true,
+      "protected_spans_unchanged": [
+        [
+          0,
+          8192
+        ],
+        [
+          72408,
+          72416
+        ],
+        [
+          324368,
+          325968
+        ],
+        [
+          921600,
+          922468
+        ],
+        [
+          1047628,
+          1047632
+        ]
+      ],
+      "native_checksum_report_sha256": "b60be3f1dabc961c741167458bb401e16ed3239437de0b5f2ac1865a462e1710",
+      "residency_status": "FAIL",
+      "flash_ready": false
+    },
+    "two_pages": {
+      "status": "PASS_BINARY_AUDIT_ONLY",
+      "raw_sha256": "9dc63ee19afaef524755e00e1da3ca958b12f76ceeaf8e36c70cd3a9e3bf57a1",
+      "corrected_sha256": "17ce75b3514891f2c5c30f0ec10bc5b4e3bf50b9004959fd906c600f7fb8797e",
+      "raw_changed_bytes": 254,
+      "raw_changed_ranges": [
+        [
+          16997,
+          16998
+        ],
+        [
+          17000,
+          17014
+        ],
+        [
+          17018,
+          17026
+        ],
+        [
+          17028,
+          17069
+        ],
+        [
+          17070,
+          17083
+        ],
+        [
+          17084,
+          17146
+        ],
+        [
+          17147,
+          17148
+        ],
+        [
+          83773,
+          83774
+        ],
+        [
+          83776,
+          83782
+        ],
+        [
+          83783,
+          83792
+        ],
+        [
+          83793,
+          83804
+        ],
+        [
+          83805,
+          83822
+        ],
+        [
+          83824,
+          83852
+        ],
+        [
+          83853,
+          83880
+        ],
+        [
+          83881,
+          83884
+        ],
+        [
+          296112,
+          296124
+        ]
+      ],
+      "overlay_spans": [
+        [
+          16992,
+          17060
+        ],
+        [
+          83772,
+          83824
+        ],
+        [
+          17060,
+          17148
+        ],
+        [
+          83824,
+          83884
+        ],
+        [
+          296112,
+          296124
+        ]
+      ],
+      "checksum_changed_addresses": [
+        1047432,
+        1047433,
+        1047434,
+        1047435
+      ],
+      "checksum_rows": [
+        {
+          "index": 0,
+          "descriptor_offset": 1047424,
+          "start": 8192,
+          "end_parameter": 1047287,
+          "effective_end_exclusive": 1047288,
+          "disabled": false,
+          "stored": 622617547,
+          "expected": 622617547,
+          "valid": true
+        },
+        {
+          "index": 1,
+          "descriptor_offset": 1047436,
+          "start": 0,
+          "end_parameter": 0,
+          "effective_end_exclusive": 0,
+          "disabled": true,
+          "stored": 1520805210,
+          "expected": 1520805210,
+          "valid": true
+        },
+        {
+          "index": 2,
+          "descriptor_offset": 1047448,
+          "start": 0,
+          "end_parameter": 0,
+          "effective_end_exclusive": 0,
+          "disabled": true,
+          "stored": 1520805210,
+          "expected": 1520805210,
+          "valid": true
+        },
+        {
+          "index": 3,
+          "descriptor_offset": 1047460,
+          "start": 0,
+          "end_parameter": 0,
+          "effective_end_exclusive": 0,
+          "disabled": true,
+          "stored": 1520805210,
+          "expected": 1520805210,
+          "valid": true
+        },
+        {
+          "index": 4,
+          "descriptor_offset": 1047472,
+          "start": 0,
+          "end_parameter": 0,
+          "effective_end_exclusive": 0,
+          "disabled": true,
+          "stored": 1520805210,
+          "expected": 1520805210,
+          "valid": true
+        },
+        {
+          "index": 5,
+          "descriptor_offset": 1047484,
+          "start": 0,
+          "end_parameter": 0,
+          "effective_end_exclusive": 0,
+          "disabled": true,
+          "stored": 1520805210,
+          "expected": 1520805210,
+          "valid": true
+        },
+        {
+          "index": 6,
+          "descriptor_offset": 1047496,
+          "start": 0,
+          "end_parameter": 0,
+          "effective_end_exclusive": 0,
+          "disabled": true,
+          "stored": 1520805210,
+          "expected": 1520805210,
+          "valid": true
+        },
+        {
+          "index": 7,
+          "descriptor_offset": 1047508,
+          "start": 0,
+          "end_parameter": 0,
+          "effective_end_exclusive": 0,
+          "disabled": true,
+          "stored": 1520805210,
+          "expected": 1520805210,
+          "valid": true
+        },
+        {
+          "index": 8,
+          "descriptor_offset": 1047520,
+          "start": 0,
+          "end_parameter": 0,
+          "effective_end_exclusive": 0,
+          "disabled": true,
+          "stored": 1520805210,
+          "expected": 1520805210,
+          "valid": true
+        },
+        {
+          "index": 9,
+          "descriptor_offset": 1047532,
+          "start": 0,
+          "end_parameter": 0,
+          "effective_end_exclusive": 0,
+          "disabled": true,
+          "stored": 1520805210,
+          "expected": 1520805210,
+          "valid": true
+        },
+        {
+          "index": 10,
+          "descriptor_offset": 1047544,
+          "start": 0,
+          "end_parameter": 0,
+          "effective_end_exclusive": 0,
+          "disabled": true,
+          "stored": 1520805210,
+          "expected": 1520805210,
+          "valid": true
+        },
+        {
+          "index": 11,
+          "descriptor_offset": 1047556,
+          "start": 0,
+          "end_parameter": 0,
+          "effective_end_exclusive": 0,
+          "disabled": true,
+          "stored": 1520805210,
+          "expected": 1520805210,
+          "valid": true
+        },
+        {
+          "index": 12,
+          "descriptor_offset": 1047568,
+          "start": 0,
+          "end_parameter": 0,
+          "effective_end_exclusive": 0,
+          "disabled": true,
+          "stored": 1520805210,
+          "expected": 1520805210,
+          "valid": true
+        },
+        {
+          "index": 13,
+          "descriptor_offset": 1047580,
+          "start": 0,
+          "end_parameter": 0,
+          "effective_end_exclusive": 0,
+          "disabled": true,
+          "stored": 1520805210,
+          "expected": 1520805210,
+          "valid": true
+        }
+      ],
+      "raw_and_corrected_inverse_exact": true,
+      "protected_spans_unchanged": [
+        [
+          0,
+          8192
+        ],
+        [
+          72408,
+          72416
+        ],
+        [
+          324368,
+          325968
+        ],
+        [
+          921600,
+          922468
+        ],
+        [
+          1047628,
+          1047632
+        ]
+      ],
+      "native_checksum_report_sha256": "945c577148f118ebe0d8225cbd641fa7d312c25cd74cdf17f8b02a3df1143862",
+      "residency_status": "FAIL",
+      "flash_ready": false
+    }
+  },
+  "frozen_artifacts": [
+    {
+      "manifest": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\M06_FROZEN_MANIFEST.json",
+      "sha256": "577853392c842f75aca92a5902f1d0d50f0ee81e99c4f4f863cca80cb4cccaff",
+      "verified_files": 211
+    },
+    {
+      "manifest": "C:\\Dev\\Astra_A2WC511R\\delivery\\A2WC511R_M0_20260925_GATE_CLOSURE_v2\\SHA256SUMS.json",
+      "sha256": "b597dd48fd4f587f53c1bd9a7be3c915072f531e423d6aeb51bb7d497010d115",
+      "verified_files": 1522
+    }
+  ],
+  "commands": [
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-as.exe",
+        "-big",
+        "-renesas",
+        "--isa=sh2e",
+        "C:\\Dev\\Astra_A2WC511R\\work\\M07\\semantic\\division.s",
+        "-o",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\build_audit_02\\division\\repeat.o"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-ld.exe",
+        "-EB",
+        "-T",
+        "C:\\Dev\\Astra_A2WC511R\\work\\M07\\semantic\\division.ld",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\build_audit_02\\division\\repeat.o",
+        "-o",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\build_audit_02\\division\\division.elf"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-objcopy.exe",
+        "-O",
+        "binary",
+        "-j",
+        ".replacement",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\build_audit_02\\division\\division.elf",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\build_audit_02\\division\\division.bin"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-as.exe",
+        "-big",
+        "-renesas",
+        "--isa=sh2e",
+        "C:\\Dev\\Astra_A2WC511R\\work\\M07\\semantic\\range_tail.s",
+        "-o",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\build_audit_02\\range_tail\\repeat.o"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-ld.exe",
+        "-EB",
+        "-T",
+        "C:\\Dev\\Astra_A2WC511R\\work\\M07\\semantic\\range_tail.ld",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\build_audit_02\\range_tail\\repeat.o",
+        "-o",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\build_audit_02\\range_tail\\range_tail.elf"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-objcopy.exe",
+        "-O",
+        "binary",
+        "-j",
+        ".replacement",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\build_audit_02\\range_tail\\range_tail.elf",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\build_audit_02\\range_tail\\range_tail.bin"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-objcopy.exe",
+        "--strip-debug",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\semantic\\range_tail.elf",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\build_audit_02\\range_tail\\old.without_file_metadata.elf"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-readelf.exe",
+        "-Wa",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\semantic\\range_tail.elf"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-objcopy.exe",
+        "--strip-debug",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\build_audit_02\\range_tail\\range_tail.elf",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\build_audit_02\\range_tail\\repeat.without_file_metadata.elf"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-readelf.exe",
+        "-Wa",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\build_audit_02\\range_tail\\range_tail.elf"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-as.exe",
+        "-big",
+        "-renesas",
+        "--isa=sh2e",
+        "C:\\Dev\\Astra_A2WC511R\\work\\M07\\protocol\\one_page.s",
+        "-o",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\build_audit_02\\one_page\\repeat.o"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-ld.exe",
+        "-EB",
+        "-T",
+        "C:\\Dev\\Astra_A2WC511R\\work\\M07\\protocol\\one_page.ld",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\build_audit_02\\one_page\\repeat.o",
+        "-o",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\build_audit_02\\one_page\\payload.elf"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-objcopy.exe",
+        "-O",
+        "binary",
+        "-j",
+        ".m07",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\build_audit_02\\one_page\\payload.elf",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\build_audit_02\\one_page\\payload.bin"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-objcopy.exe",
+        "--strip-debug",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\protocol\\one_page_01\\payload.elf",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\build_audit_02\\one_page\\old.without_file_metadata.elf"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-readelf.exe",
+        "-Wa",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\protocol\\one_page_01\\payload.elf"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-objcopy.exe",
+        "--strip-debug",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\build_audit_02\\one_page\\payload.elf",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\build_audit_02\\one_page\\repeat.without_file_metadata.elf"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-readelf.exe",
+        "-Wa",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\build_audit_02\\one_page\\payload.elf"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-as.exe",
+        "-big",
+        "-renesas",
+        "--isa=sh2e",
+        "C:\\Dev\\Astra_A2WC511R\\work\\M07\\protocol\\two_pages.s",
+        "-o",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\build_audit_02\\two_pages\\repeat.o"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-ld.exe",
+        "-EB",
+        "-T",
+        "C:\\Dev\\Astra_A2WC511R\\work\\M07\\protocol\\two_pages.ld",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\build_audit_02\\two_pages\\repeat.o",
+        "-o",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\build_audit_02\\two_pages\\payload.elf"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-objcopy.exe",
+        "-O",
+        "binary",
+        "-j",
+        ".m07_match",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\build_audit_02\\two_pages\\payload.elf",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\build_audit_02\\two_pages\\match.bin"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-objcopy.exe",
+        "-O",
+        "binary",
+        "-j",
+        ".m07_main",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\build_audit_02\\two_pages\\payload.elf",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\build_audit_02\\two_pages\\main.bin"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-objcopy.exe",
+        "--strip-debug",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\protocol\\two_pages_01\\payload.elf",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\build_audit_02\\two_pages\\old.without_file_metadata.elf"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-readelf.exe",
+        "-Wa",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\protocol\\two_pages_01\\payload.elf"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-objcopy.exe",
+        "--strip-debug",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\build_audit_02\\two_pages\\payload.elf",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\build_audit_02\\two_pages\\repeat.without_file_metadata.elf"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-readelf.exe",
+        "-Wa",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\build_audit_02\\two_pages\\payload.elf"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "java",
+        "-Djava.awt.headless=true",
+        "-cp",
+        "C:\\Dev\\Astra_A2WC511R\\work\\romraider_acceptance\\classes;C:\\Dev\\Astra_A2WC511R\\integrations\\romraider\\dist\\romraider-bridge.jar;C:/Program Files/RomRaider/RomRaider.jar;C:/Program Files/RomRaider/lib/*",
+        "rombridge.NativeChecksumCheck",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\protocol\\execution_01\\one_page.RESEARCH_NOT_RESIDENCY_PROVEN.raw.bin",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\build_audit_02\\one_page.RESEARCH_NOT_RESIDENCY_PROVEN.checksum_corrected.bin",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\build_audit_02\\one_page.native_checksum.json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "java",
+        "-Djava.awt.headless=true",
+        "-cp",
+        "C:\\Dev\\Astra_A2WC511R\\work\\romraider_acceptance\\classes;C:\\Dev\\Astra_A2WC511R\\integrations\\romraider\\dist\\romraider-bridge.jar;C:/Program Files/RomRaider/RomRaider.jar;C:/Program Files/RomRaider/lib/*",
+        "rombridge.NativeChecksumCheck",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\protocol\\execution_01\\two_pages.RESEARCH_NOT_RESIDENCY_PROVEN.raw.bin",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\build_audit_02\\two_pages.RESEARCH_NOT_RESIDENCY_PROVEN.checksum_corrected.bin",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\build_audit_02\\two_pages.native_checksum.json"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "tools": {
+    "sh-elf-as.exe": "bd1ccb87f383922697746b8a99367b2c97ffa7c9b8806660aac9dfe297c7ec30",
+    "sh-elf-ld.exe": "2537899084cb274369003db6207c6ad081de423b3699ec0014c5c999e1d03117",
+    "sh-elf-objcopy.exe": "543209122ca71a0e6d09f7699a032e00d9299093250f96dcf9e41b9c8c849987"
+  },
+  "no_hardware_or_provider_access": true,
+  "no_ownership_or_silicon_claim": true
+}

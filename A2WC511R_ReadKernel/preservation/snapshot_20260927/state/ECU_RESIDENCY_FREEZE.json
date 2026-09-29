@@ -1,0 +1,113 @@
+{
+  "schema": 1,
+  "created_utc": "2026-09-26T09:23:13.532019+00:00",
+  "decision": "FREEZE_ECU_RESIDENT_BRANCH_RETAIN_HOST_NATIVE_A8",
+  "M08_payload_designed_or_built": false,
+  "physical_actions": false,
+  "active_control_changes": false,
+  "provably_owned_bytes": 0,
+  "conditional_M07_bytes": 162,
+  "smallest_existing_M07_raw_payload_bytes": 100,
+  "current_ROM_identification_and_bench_timing_alone_sufficient": false,
+  "candidates": [
+    {
+      "range": [
+        17060,
+        17162
+      ],
+      "conditional_bytes": 102,
+      "owned_bytes": 0,
+      "status": "FAIL",
+      "reason": "Complete admissible computed-entry, internal-consumer and extra-stack/context contracts remain unclosed; no smaller division found in existing acquired images."
+    },
+    {
+      "range": [
+        83824,
+        83884
+      ],
+      "conditional_bytes": 60,
+      "owned_bytes": 0,
+      "status": "FAIL",
+      "reason": "Range family has95 reachable instructions in all10 images; smaller span is pool layout. Arbitrary interior and computed entry domains not excluded."
+    },
+    {
+      "source": 103912,
+      "sibling": 97788,
+      "owned_bytes": 0,
+      "status": "FAIL",
+      "reason": "Full-entry simulator counterexample4 vs0; sibling drops behavior."
+    },
+    {
+      "source": [
+        12796,
+        12820
+      ],
+      "owned_bytes": 0,
+      "status": "FAIL",
+      "reason": "Apparent savings aggregate separated/shared interrupt chunks and changed callees/SR/MMIO behavior."
+    }
+  ],
+  "remaining_software_contracts": [
+    {
+      "site": 66,
+      "domain": "JMP@R4 after boot target atFFFFBFA0 is assembled from four input bytes",
+      "result": "Unconstrained32-bit domain includes both tails. Normal-operating-mode exclusion is not proved."
+    },
+    {
+      "site": 56894,
+      "domain": "Callback pointer at descriptor+4; descriptor selected via1023C +4*u8(R4), then8*u16(R5)",
+      "result": "33 bounded literal-caller slices are insufficient to close all selector/index/descriptor provenance and transitive dispatch."
+    },
+    {
+      "site": 14720,
+      "domain": "RTOS pointer source includesROM[4AA4]=40",
+      "result": "Direct tail exclusion does not exclude downstream R4 trampoline targets."
+    },
+    {
+      "domain": "Internal code-as-data and calculated reads, DMA/context restore",
+      "result": "Unknown ranges remain universal; broad analysis unfinished."
+    },
+    {
+      "domain": "Saved-PC/interrupt transparency and private division stack word atinitialSP-12..initialSP-8",
+      "result": "No global execution-context or hardware margin proof."
+    }
+  ],
+  "reopen_criterion": "A new independently checkable admissible-entry/data-consumer/context contract or exclusive executable object, not more finite ROM-family tests. Preserve OEM validation and request behavior.",
+  "supported_path": "integrations/m07 host-native A8 observation service; six raw OEM observations, host predicates, UTC/monotonic timestamps, virtual/native RomRaider integration; physical backend remains unqualified.",
+  "future_passive_fields_added": 0,
+  "A0_full_image_attestation": "WITHDRAWN",
+  "evidence": [
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\diaphora\\correspondence_final_01\\DETERMINISM.json",
+      "sha256": "bf46e31ecebc2e6085048ddb719253909a5f45341e495ecf38964bd84a6d7d26"
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\diaphora\\comparison_audit\\COMPARISON_SUMMARY.json",
+      "sha256": "75bcbfc0549d78fef9bda98753c2e5d933eed8725f38b61dd028db193b0b9be2"
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\diaphora\\correspondence_independent_review\\FINAL_CORRESPONDENCE_AUDIT.json",
+      "sha256": "0a579a90a9461f6a9090de5810b91c31904ae21aa4bfa255224fe5c2d6fc4538"
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\diaphora\\merpmod_mapping\\MERPMOD_MAPPING.json",
+      "sha256": "49c30ed6bb45f0957f9ee995901199f6c37d15d0c8e666418ca4cd3c4fdbe325"
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\diaphora\\range_ownership_review\\RANGE_OWNERSHIP.json",
+      "sha256": "c74e4aa50381a48825a48744ccc8c96a3ec55623dde7eba3d4d46ad837ae8bbd"
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\diaphora\\range_ownership_review\\SMALLER_CANDIDATE_FACTS.json",
+      "sha256": "48b034faa9e0245afba4376a21cfbe36a3cc0d13d3499a44585914b2e2e9f527"
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\diaphora\\idb_reopen_audit\\RECOVERY_CANDIDATE_HEALTH.json",
+      "sha256": "a84730a3853ab8b807d59e3763f1c943422fda357f0b25768547ef08ac653406"
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\diaphora\\PRESERVATION.json",
+      "sha256": "da16371d60976bcbc4788ed6b77844c09d5d402b4430ae567f5bfc45944ed4f9"
+    }
+  ]
+}

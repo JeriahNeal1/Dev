@@ -1,0 +1,37 @@
+{
+  "request": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "tools/call",
+    "params": {
+      "name": "open_database",
+      "arguments": {
+        "path": "C:/Dev/SubaruRoms/OEM/A2WC511R_STOCK_ROMRAIDER.bin.i64",
+        "set_current": true
+      }
+    }
+  },
+  "http_status": 200,
+  "response": {
+    "jsonrpc": "2.0",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"instance_id\": \"03e1b74a4e7b\",\n  \"backend\": \"idalib\",\n  \"status\": \"current\",\n  \"recovery\": \"none\",\n  \"log_path\": \"C:\\\\Users\\\\Jeriah Neal\\\\AppData\\\\Roaming\\\\Hex-Rays\\\\IDA Pro\\\\mcp\\\\sessions\\\\cfd55e128f97.jsonl\",\n  \"mcp_id\": null,\n  \"hint\": \"Call reference(query) to inspect the IDA Domain API before using execute_python; `db` and `ida_domain` are available globally.\"\n}"
+        }
+      ],
+      "isError": false,
+      "structuredContent": {
+        "instance_id": "03e1b74a4e7b",
+        "backend": "idalib",
+        "status": "current",
+        "recovery": "none",
+        "log_path": "C:\\Users\\Jeriah Neal\\AppData\\Roaming\\Hex-Rays\\IDA Pro\\mcp\\sessions\\cfd55e128f97.jsonl",
+        "mcp_id": null,
+        "hint": "Call reference(query) to inspect the IDA Domain API before using execute_python; `db` and `ida_domain` are available globally."
+      }
+    },
+    "id": 1
+  }
+}

@@ -1,0 +1,127 @@
+
+C:\Dev\SubaruRoms\OEM\A2WC511R.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00004240 <.data+0x4240>:
+    4240:	e0 08       	mov	#8,r0
+    4242:	30 18       	sub	r1,r0
+    4244:	20 08       	tst	r0,r0
+    4246:	89 06       	bt	0x4256
+    4248:	62 2c       	extu.b	r2,r2
+    424a:	40 10       	dt	r0
+    424c:	8d 03       	bt.s	0x4256
+    424e:	42 01       	shlr	r2
+    4250:	40 10       	dt	r0
+    4252:	8f fa       	bf.s	0x424a
+    4254:	42 01       	shlr	r2
+    4256:	60 2c       	extu.b	r2,r0
+    4258:	62 f6       	mov.l	@r15+,r2
+    425a:	00 0b       	rts	
+    425c:	61 f6       	mov.l	@r15+,r1
+    425e:	ff ff       	.word 0xffff
+    4260:	20 08       	tst	r0,r0
+    4262:	2f 26       	mov.l	r2,@-r15
+    4264:	89 4b       	bt	0x42fe
+    4266:	2f 36       	mov.l	r3,@-r15
+    4268:	e2 00       	mov	#0,r2
+    426a:	21 27       	div0s	r2,r1
+    426c:	33 3a       	subc	r3,r3
+    426e:	31 2a       	subc	r2,r1
+    4270:	23 07       	div0s	r0,r3
+    4272:	41 24       	rotcl	r1
+    4274:	33 04       	div1	r0,r3
+    4276:	41 24       	rotcl	r1
+    4278:	33 04       	div1	r0,r3
+    427a:	41 24       	rotcl	r1
+    427c:	33 04       	div1	r0,r3
+    427e:	41 24       	rotcl	r1
+    4280:	33 04       	div1	r0,r3
+    4282:	41 24       	rotcl	r1
+    4284:	33 04       	div1	r0,r3
+    4286:	41 24       	rotcl	r1
+    4288:	33 04       	div1	r0,r3
+    428a:	41 24       	rotcl	r1
+    428c:	33 04       	div1	r0,r3
+    428e:	41 24       	rotcl	r1
+    4290:	33 04       	div1	r0,r3
+    4292:	41 24       	rotcl	r1
+    4294:	33 04       	div1	r0,r3
+    4296:	41 24       	rotcl	r1
+    4298:	33 04       	div1	r0,r3
+    429a:	41 24       	rotcl	r1
+    429c:	33 04       	div1	r0,r3
+    429e:	41 24       	rotcl	r1
+    42a0:	33 04       	div1	r0,r3
+    42a2:	41 24       	rotcl	r1
+    42a4:	33 04       	div1	r0,r3
+    42a6:	41 24       	rotcl	r1
+    42a8:	33 04       	div1	r0,r3
+    42aa:	41 24       	rotcl	r1
+    42ac:	33 04       	div1	r0,r3
+    42ae:	41 24       	rotcl	r1
+    42b0:	33 04       	div1	r0,r3
+    42b2:	41 24       	rotcl	r1
+    42b4:	33 04       	div1	r0,r3
+    42b6:	41 24       	rotcl	r1
+    42b8:	33 04       	div1	r0,r3
+    42ba:	41 24       	rotcl	r1
+    42bc:	33 04       	div1	r0,r3
+    42be:	41 24       	rotcl	r1
+    42c0:	33 04       	div1	r0,r3
+    42c2:	41 24       	rotcl	r1
+    42c4:	33 04       	div1	r0,r3
+    42c6:	41 24       	rotcl	r1
+    42c8:	33 04       	div1	r0,r3
+    42ca:	41 24       	rotcl	r1
+    42cc:	33 04       	div1	r0,r3
+    42ce:	41 24       	rotcl	r1
+    42d0:	33 04       	div1	r0,r3
+    42d2:	41 24       	rotcl	r1
+    42d4:	33 04       	div1	r0,r3
+    42d6:	41 24       	rotcl	r1
+    42d8:	33 04       	div1	r0,r3
+    42da:	41 24       	rotcl	r1
+    42dc:	33 04       	div1	r0,r3
+    42de:	41 24       	rotcl	r1
+    42e0:	33 04       	div1	r0,r3
+    42e2:	41 24       	rotcl	r1
+    42e4:	33 04       	div1	r0,r3
+    42e6:	41 24       	rotcl	r1
+    42e8:	33 04       	div1	r0,r3
+    42ea:	41 24       	rotcl	r1
+    42ec:	33 04       	div1	r0,r3
+    42ee:	41 24       	rotcl	r1
+    42f0:	33 04       	div1	r0,r3
+    42f2:	41 24       	rotcl	r1
+    42f4:	31 2e       	addc	r2,r1
+    42f6:	60 13       	mov	r1,r0
+    42f8:	63 f6       	mov.l	@r15+,r3
+    42fa:	00 0b       	rts	
+    42fc:	62 f6       	mov.l	@r15+,r2
+    42fe:	d1 03       	mov.l	0x430c,r1	! ffff130c
+    4300:	d2 03       	mov.l	0x4310,r2	! 44e
+    4302:	e0 00       	mov	#0,r0
+    4304:	21 22       	mov.l	r2,@r1
+    4306:	00 0b       	rts	
+    4308:	62 f6       	mov.l	@r15+,r2
+    430a:	00 09       	nop	
+    430c:	ff ff       	.word 0xffff
+    430e:	13 0c       	mov.l	r0,@(48,r3)
+    4310:	00 00       	.word 0x0000
+    4312:	04 4e       	mov.l	@(r0,r4),r4
+    4314:	20 08       	tst	r0,r0
+    4316:	2f 26       	mov.l	r2,@-r15
+    4318:	89 55       	bt	0x43c6
+    431a:	2f 36       	mov.l	r3,@-r15
+    431c:	e2 00       	mov	#0,r2
+    431e:	2f 46       	mov.l	r4,@-r15
+    4320:	21 27       	div0s	r2,r1
+    4322:	04 29       	movt	r4
+    4324:	33 3a       	subc	r3,r3
+    4326:	31 2a       	subc	r2,r1
+    4328:	23 07       	div0s	r0,r3
+    432a:	41 24       	rotcl	r1
+    432c:	33 04       	div1	r0,r3
+    432e:	41 24       	rotcl	r1

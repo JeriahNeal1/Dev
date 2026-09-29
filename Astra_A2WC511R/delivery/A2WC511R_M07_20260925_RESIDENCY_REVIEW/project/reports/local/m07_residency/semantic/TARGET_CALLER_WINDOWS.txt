@@ -1,0 +1,526 @@
+
+C:/Dev/SubaruRoms/OEM/A2WC511R.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00025178 <.data+0x25178>:
+   25178:	8d 0c       	bt.s	0x25194
+   2517a:	00 09       	nop	
+   2517c:	d3 49       	mov.l	0x252a4,r3	! ffff5341
+   2517e:	61 30       	mov.b	@r3,r1
+   25180:	21 18       	tst	r1,r1
+   25182:	8f 07       	bf.s	0x25194
+   25184:	00 09       	nop	
+   25186:	e0 00       	mov	#0,r0
+   25188:	d3 47       	mov.l	0x252a8,r3	! ddf4
+   2518a:	66 f3       	mov	r15,r6
+   2518c:	2f 02       	mov.l	r0,@r15
+   2518e:	e5 02       	mov	#2,r5
+   25190:	43 0b       	jsr	@r3
+   25192:	64 03       	mov	r0,r4
+   25194:	60 e3       	mov	r14,r0
+   25196:	60 00       	mov.b	@r0,r0
+   25198:	c8 80       	tst	#-128,r0
+   2519a:	02 29       	movt	r2
+   2519c:	72 ff       	add	#-1,r2
+   2519e:	62 2b       	neg	r2,r2
+   251a0:	22 28       	tst	r2,r2
+   251a2:	8f 15       	bf.s	0x251d0
+   251a4:	00 09       	nop	
+
+
+C:/Dev/SubaruRoms/OEM/A2WC511R.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000251a8 <.data+0x251a8>:
+   251a8:	60 00       	mov.b	@r0,r0
+   251aa:	c8 80       	tst	#-128,r0
+   251ac:	00 29       	movt	r0
+   251ae:	70 ff       	add	#-1,r0
+   251b0:	60 0b       	neg	r0,r0
+   251b2:	88 01       	cmp/eq	#1,r0
+   251b4:	8f 0c       	bf.s	0x251d0
+   251b6:	00 09       	nop	
+   251b8:	d3 3b       	mov.l	0x252a8,r3	! ddf4
+   251ba:	e2 00       	mov	#0,r2
+   251bc:	2f 22       	mov.l	r2,@r15
+   251be:	66 f3       	mov	r15,r6
+   251c0:	e5 03       	mov	#3,r5
+   251c2:	43 0b       	jsr	@r3
+   251c4:	64 23       	mov	r2,r4
+   251c6:	a0 03       	bra	0x251d0
+   251c8:	00 09       	nop	
+   251ca:	60 e0       	mov.b	@r14,r0
+   251cc:	c9 7f       	and	#127,r0
+   251ce:	2e 00       	mov.b	r0,@r14
+   251d0:	d2 34       	mov.l	0x252a4,r2	! ffff5341
+   251d2:	60 e3       	mov	r14,r0
+   251d4:	d4 35       	mov.l	0x252ac,r4	! ffff5342
+
+
+C:/Dev/SubaruRoms/OEM/A2WC511R.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000270e0 <.data+0x270e0>:
+   270e0:	8d 1e       	bt.s	0x27120
+   270e2:	ee 01       	mov	#1,r14
+   270e4:	d2 63       	mov.l	0x27274,r2	! ffff5407
+   270e6:	61 20       	mov.b	@r2,r1
+   270e8:	21 18       	tst	r1,r1
+   270ea:	8f 19       	bf.s	0x27120
+   270ec:	00 09       	nop	
+   270ee:	66 f3       	mov	r15,r6
+   270f0:	d3 61       	mov.l	0x27278,r3	! ddf4
+   270f2:	e5 02       	mov	#2,r5
+   270f4:	2f c2       	mov.l	r12,@r15
+   270f6:	43 0b       	jsr	@r3
+   270f8:	e4 00       	mov	#0,r4
+   270fa:	d2 60       	mov.l	0x2727c,r2	! ffff5529
+   270fc:	d3 60       	mov.l	0x27280,r3	! ffff552a
+   270fe:	22 e0       	mov.b	r14,@r2
+   27100:	23 e0       	mov.b	r14,@r3
+   27102:	d4 60       	mov.l	0x27284,r4	! ffff552c
+   27104:	84 f4       	mov.b	@(4,r15),r0
+   27106:	60 0c       	extu.b	r0,r0
+   27108:	88 01       	cmp/eq	#1,r0
+   2710a:	8f 08       	bf.s	0x2711e
+   2710c:	00 09       	nop	
+
+
+C:/Dev/SubaruRoms/OEM/A2WC511R.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000271d4 <.data+0x271d4>:
+   271d4:	00 09       	nop	
+   271d6:	d3 33       	mov.l	0x272a4,r3	! ffff540d
+   271d8:	60 30       	mov.b	@r3,r0
+   271da:	60 0c       	extu.b	r0,r0
+   271dc:	88 01       	cmp/eq	#1,r0
+   271de:	8d 08       	bt.s	0x271f2
+   271e0:	00 09       	nop	
+   271e2:	66 f3       	mov	r15,r6
+   271e4:	d2 24       	mov.l	0x27278,r2	! ddf4
+   271e6:	e5 03       	mov	#3,r5
+   271e8:	2f c2       	mov.l	r12,@r15
+   271ea:	42 0b       	jsr	@r2
+   271ec:	e4 00       	mov	#0,r4
+   271ee:	d3 2d       	mov.l	0x272a4,r3	! ffff540d
+   271f0:	23 e0       	mov.b	r14,@r3
+   271f2:	d2 20       	mov.l	0x27274,r2	! ffff5407
+   271f4:	22 d0       	mov.b	r13,@r2
+   271f6:	7f 0c       	add	#12,r15
+   271f8:	4f 26       	lds.l	@r15+,pr
+   271fa:	6b f6       	mov.l	@r15+,r11
+   271fc:	6c f6       	mov.l	@r15+,r12
+   271fe:	6d f6       	mov.l	@r15+,r13
+   27200:	00 0b       	rts	
+
+
+C:/Dev/SubaruRoms/OEM/A2WC511R.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00027f6c <.data+0x27f6c>:
+   27f6c:	eb 00       	mov	#0,r11
+   27f6e:	d0 35       	mov.l	0x28044,r0	! ffff5530
+   27f70:	61 00       	mov.b	@r0,r1
+   27f72:	21 18       	tst	r1,r1
+   27f74:	8f 08       	bf.s	0x27f88
+   27f76:	00 09       	nop	
+   27f78:	2f b2       	mov.l	r11,@r15
+   27f7a:	66 f3       	mov	r15,r6
+   27f7c:	d3 32       	mov.l	0x28048,r3	! ddf4
+   27f7e:	e5 02       	mov	#2,r5
+   27f80:	43 0b       	jsr	@r3
+   27f82:	e4 00       	mov	#0,r4
+   27f84:	d2 31       	mov.l	0x2804c,r2	! ffff5531
+   27f86:	22 80       	mov.b	r8,@r2
+   27f88:	d9 31       	mov.l	0x28050,r9	! ffff5533
+   27f8a:	63 ec       	extu.b	r14,r3
+   27f8c:	23 38       	tst	r3,r3
+   27f8e:	8f 02       	bf.s	0x27f96
+   27f90:	00 09       	nop	
+   27f92:	a0 96       	bra	0x280c2
+   27f94:	00 09       	nop	
+   27f96:	e1 01       	mov	#1,r1
+   27f98:	d2 2c       	mov.l	0x2804c,r2	! ffff5531
+
+
+C:/Dev/SubaruRoms/OEM/A2WC511R.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000280cc <.data+0x280cc>:
+   280cc:	d3 2d       	mov.l	0x28184,r3	! ffff5534
+   280ce:	60 30       	mov.b	@r3,r0
+   280d0:	60 0c       	extu.b	r0,r0
+   280d2:	88 01       	cmp/eq	#1,r0
+   280d4:	8d 08       	bt.s	0x280e8
+   280d6:	00 09       	nop	
+   280d8:	2f b2       	mov.l	r11,@r15
+   280da:	66 f3       	mov	r15,r6
+   280dc:	d3 2a       	mov.l	0x28188,r3	! ddf4
+   280de:	e5 03       	mov	#3,r5
+   280e0:	43 0b       	jsr	@r3
+   280e2:	e4 00       	mov	#0,r4
+   280e4:	d2 27       	mov.l	0x28184,r2	! ffff5534
+   280e6:	22 80       	mov.b	r8,@r2
+   280e8:	d3 28       	mov.l	0x2818c,r3	! ffff5530
+   280ea:	23 e0       	mov.b	r14,@r3
+   280ec:	7f 04       	add	#4,r15
+   280ee:	4f 26       	lds.l	@r15+,pr
+   280f0:	ff f9       	fmov	@r15+,fr15
+   280f2:	68 f6       	mov.l	@r15+,r8
+   280f4:	69 f6       	mov.l	@r15+,r9
+   280f6:	6a f6       	mov.l	@r15+,r10
+   280f8:	6b f6       	mov.l	@r15+,r11
+
+
+C:/Dev/SubaruRoms/OEM/A2WC511R.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00029468 <.data+0x29468>:
+   29468:	00 09       	nop	
+   2946a:	d3 4e       	mov.l	0x295a4,r3	! ffff5582
+   2946c:	60 30       	mov.b	@r3,r0
+   2946e:	60 0c       	extu.b	r0,r0
+   29470:	88 01       	cmp/eq	#1,r0
+   29472:	8f 08       	bf.s	0x29486
+   29474:	00 09       	nop	
+   29476:	66 f3       	mov	r15,r6
+   29478:	d3 4b       	mov.l	0x295a8,r3	! ddf4
+   2947a:	e5 02       	mov	#2,r5
+   2947c:	2f b2       	mov.l	r11,@r15
+   2947e:	43 0b       	jsr	@r3
+   29480:	e4 00       	mov	#0,r4
+   29482:	a0 13       	bra	0x294ac
+   29484:	00 09       	nop	
+   29486:	60 c3       	mov	r12,r0
+   29488:	60 00       	mov.b	@r0,r0
+   2948a:	c8 40       	tst	#64,r0
+   2948c:	00 29       	movt	r0
+   2948e:	70 ff       	add	#-1,r0
+   29490:	60 0b       	neg	r0,r0
+   29492:	88 01       	cmp/eq	#1,r0
+   29494:	8f 0a       	bf.s	0x294ac
+
+
+C:/Dev/SubaruRoms/OEM/A2WC511R.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00029494 <.data+0x29494>:
+   29494:	8f 0a       	bf.s	0x294ac
+   29496:	00 09       	nop	
+   29498:	84 f4       	mov.b	@(4,r15),r0
+   2949a:	20 08       	tst	r0,r0
+   2949c:	8f 06       	bf.s	0x294ac
+   2949e:	00 09       	nop	
+   294a0:	2f b2       	mov.l	r11,@r15
+   294a2:	66 f3       	mov	r15,r6
+   294a4:	d3 40       	mov.l	0x295a8,r3	! ddf4
+   294a6:	e5 03       	mov	#3,r5
+   294a8:	43 0b       	jsr	@r3
+   294aa:	e4 00       	mov	#0,r4
+   294ac:	d2 3d       	mov.l	0x295a4,r2	! ffff5582
+   294ae:	22 d0       	mov.b	r13,@r2
+   294b0:	7f 08       	add	#8,r15
+   294b2:	4f 26       	lds.l	@r15+,pr
+   294b4:	fe f9       	fmov	@r15+,fr14
+   294b6:	ff f9       	fmov	@r15+,fr15
+   294b8:	6b f6       	mov.l	@r15+,r11
+   294ba:	6c f6       	mov.l	@r15+,r12
+   294bc:	6d f6       	mov.l	@r15+,r13
+   294be:	00 0b       	rts	
+   294c0:	6e f6       	mov.l	@r15+,r14
+
+
+C:/Dev/SubaruRoms/OEM/A2WC511R.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00046ed4 <.data+0x46ed4>:
+   46ed4:	d3 20       	mov.l	0x46f58,r3	! ffff63d8
+   46ed6:	60 30       	mov.b	@r3,r0
+   46ed8:	60 0c       	extu.b	r0,r0
+   46eda:	88 01       	cmp/eq	#1,r0
+   46edc:	8f 06       	bf.s	0x46eec
+   46ede:	00 09       	nop	
+   46ee0:	2f b2       	mov.l	r11,@r15
+   46ee2:	66 f3       	mov	r15,r6
+   46ee4:	d3 1d       	mov.l	0x46f5c,r3	! ddf4
+   46ee6:	e5 02       	mov	#2,r5
+   46ee8:	43 0b       	jsr	@r3
+   46eea:	e4 00       	mov	#0,r4
+   46eec:	60 e3       	mov	r14,r0
+   46eee:	60 00       	mov.b	@r0,r0
+   46ef0:	c8 80       	tst	#-128,r0
+   46ef2:	02 29       	movt	r2
+   46ef4:	72 ff       	add	#-1,r2
+   46ef6:	62 2b       	neg	r2,r2
+   46ef8:	22 28       	tst	r2,r2
+   46efa:	8f 14       	bf.s	0x46f26
+   46efc:	00 09       	nop	
+   46efe:	60 e3       	mov	r14,r0
+   46f00:	60 00       	mov.b	@r0,r0
+
+
+C:/Dev/SubaruRoms/OEM/A2WC511R.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00046f04 <.data+0x46f04>:
+   46f04:	00 29       	movt	r0
+   46f06:	70 ff       	add	#-1,r0
+   46f08:	60 0b       	neg	r0,r0
+   46f0a:	88 01       	cmp/eq	#1,r0
+   46f0c:	8f 0b       	bf.s	0x46f26
+   46f0e:	00 09       	nop	
+   46f10:	2f b2       	mov.l	r11,@r15
+   46f12:	66 f3       	mov	r15,r6
+   46f14:	d3 11       	mov.l	0x46f5c,r3	! ddf4
+   46f16:	e5 03       	mov	#3,r5
+   46f18:	43 0b       	jsr	@r3
+   46f1a:	e4 00       	mov	#0,r4
+   46f1c:	a0 03       	bra	0x46f26
+   46f1e:	00 09       	nop	
+   46f20:	60 e0       	mov.b	@r14,r0
+   46f22:	c9 7f       	and	#127,r0
+   46f24:	2e 00       	mov.b	r0,@r14
+   46f26:	60 e3       	mov	r14,r0
+   46f28:	d2 0b       	mov.l	0x46f58,r2	! ffff63d8
+   46f2a:	22 d0       	mov.b	r13,@r2
+   46f2c:	60 00       	mov.b	@r0,r0
+   46f2e:	c8 80       	tst	#-128,r0
+   46f30:	00 29       	movt	r0
+
+
+C:/Dev/SubaruRoms/OEM/A2WC511R.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00046fce <.data+0x46fce>:
+   46fce:	60 0c       	extu.b	r0,r0
+   46fd0:	88 01       	cmp/eq	#1,r0
+   46fd2:	8f 07       	bf.s	0x46fe4
+   46fd4:	00 09       	nop	
+   46fd6:	e3 00       	mov	#0,r3
+   46fd8:	2f 32       	mov.l	r3,@r15
+   46fda:	66 f3       	mov	r15,r6
+   46fdc:	64 33       	mov	r3,r4
+   46fde:	d3 27       	mov.l	0x4707c,r3	! ddf4
+   46fe0:	43 0b       	jsr	@r3
+   46fe2:	e5 02       	mov	#2,r5
+   46fe4:	60 e3       	mov	r14,r0
+   46fe6:	60 00       	mov.b	@r0,r0
+   46fe8:	c8 80       	tst	#-128,r0
+   46fea:	02 29       	movt	r2
+   46fec:	72 ff       	add	#-1,r2
+   46fee:	62 2b       	neg	r2,r2
+   46ff0:	22 28       	tst	r2,r2
+   46ff2:	8f 0d       	bf.s	0x47010
+   46ff4:	00 09       	nop	
+   46ff6:	60 e3       	mov	r14,r0
+   46ff8:	60 00       	mov.b	@r0,r0
+   46ffa:	c9 01       	and	#1,r0
+
+
+C:/Dev/SubaruRoms/OEM/A2WC511R.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00046ffa <.data+0x46ffa>:
+   46ffa:	c9 01       	and	#1,r0
+   46ffc:	88 01       	cmp/eq	#1,r0
+   46ffe:	8f 07       	bf.s	0x47010
+   47000:	00 09       	nop	
+   47002:	e3 00       	mov	#0,r3
+   47004:	2f 32       	mov.l	r3,@r15
+   47006:	66 f3       	mov	r15,r6
+   47008:	64 33       	mov	r3,r4
+   4700a:	d3 1c       	mov.l	0x4707c,r3	! ddf4
+   4700c:	43 0b       	jsr	@r3
+   4700e:	e5 03       	mov	#3,r5
+   47010:	d2 19       	mov.l	0x47078,r2	! ffff63dd
+   47012:	60 e3       	mov	r14,r0
+   47014:	22 d0       	mov.b	r13,@r2
+   47016:	60 00       	mov.b	@r0,r0
+   47018:	c8 80       	tst	#-128,r0
+   4701a:	00 29       	movt	r0
+   4701c:	70 ff       	add	#-1,r0
+   4701e:	60 0b       	neg	r0,r0
+   47020:	88 01       	cmp/eq	#1,r0
+   47022:	8f 03       	bf.s	0x4702c
+   47024:	00 09       	nop	
+   47026:	60 e0       	mov.b	@r14,r0
+
+
+C:/Dev/SubaruRoms/OEM/A2WC511R.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00071c98 <.data+0x71c98>:
+   71c98:	e4 04       	mov	#4,r4
+   71c9a:	e2 01       	mov	#1,r2
+   71c9c:	d3 14       	mov.l	0x71cf0,r3	! ffff736c
+   71c9e:	e1 04       	mov	#4,r1
+   71ca0:	23 20       	mov.b	r2,@r3
+   71ca2:	66 f3       	mov	r15,r6
+   71ca4:	2f 12       	mov.l	r1,@r15
+   71ca6:	65 23       	mov	r2,r5
+   71ca8:	d2 12       	mov.l	0x71cf4,r2	! ddf4
+   71caa:	42 0b       	jsr	@r2
+   71cac:	e4 00       	mov	#0,r4
+   71cae:	7f 08       	add	#8,r15
+   71cb0:	4f 26       	lds.l	@r15+,pr
+   71cb2:	00 0b       	rts	
+   71cb4:	00 09       	nop	
+   71cb6:	e6 00       	mov	#0,r6
+   71cb8:	d3 0d       	mov.l	0x71cf0,r3	! ffff736c
+   71cba:	e2 04       	mov	#4,r2
+   71cbc:	4f 22       	sts.l	pr,@-r15
+   71cbe:	e1 01       	mov	#1,r1
+   71cc0:	7f f0       	add	#-16,r15
+   71cc2:	65 f3       	mov	r15,r5
+   71cc4:	23 60       	mov.b	r6,@r3
+
+
+C:/Dev/SubaruRoms/OEM/A2WC511R.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00075e54 <.data+0x75e54>:
+   75e54:	75 08       	add	#8,r5
+   75e56:	26 68       	tst	r6,r6
+   75e58:	8f 02       	bf.s	0x75e60
+   75e5a:	00 09       	nop	
+   75e5c:	a0 01       	bra	0x75e62
+   75e5e:	25 92       	mov.l	r9,@r5
+   75e60:	25 d2       	mov.l	r13,@r5
+   75e62:	66 b3       	mov	r11,r6
+   75e64:	d2 13       	mov.l	0x75eb4,r2	! ddf4
+   75e66:	e5 00       	mov	#0,r5
+   75e68:	42 0b       	jsr	@r2
+   75e6a:	e4 02       	mov	#2,r4
+   75e6c:	e3 02       	mov	#2,r3
+   75e6e:	2a 30       	mov.b	r3,@r10
+   75e70:	d1 11       	mov.l	0x75eb8,r1	! ffff71e4
+   75e72:	21 d1       	mov.w	r13,@r1
+   75e74:	63 e0       	mov.b	@r14,r3
+   75e76:	73 01       	add	#1,r3
+   75e78:	2e 30       	mov.b	r3,@r14
+   75e7a:	62 e0       	mov.b	@r14,r2
+   75e7c:	62 2c       	extu.b	r2,r2
+   75e7e:	32 93       	cmp/ge	r9,r2
+   75e80:	8f 01       	bf.s	0x75e86
+
+
+C:/Dev/SubaruRoms/OEM/A2WC511R.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00076378 <.data+0x76378>:
+   76378:	4f 26       	lds.l	@r15+,pr
+   7637a:	6b f6       	mov.l	@r15+,r11
+   7637c:	6c f6       	mov.l	@r15+,r12
+   7637e:	6d f6       	mov.l	@r15+,r13
+   76380:	00 0b       	rts	
+   76382:	6e f6       	mov.l	@r15+,r14
+   76384:	2f 46       	mov.l	r4,@-r15
+   76386:	66 43       	mov	r4,r6
+   76388:	d3 05       	mov.l	0x763a0,r3	! ddf4
+   7638a:	e5 01       	mov	#1,r5
+   7638c:	e4 02       	mov	#2,r4
+   7638e:	43 2b       	jmp	@r3
+   76390:	7f 04       	add	#4,r15
+   76392:	d3 04       	mov.l	0x763a4,r3	! 748de
+   76394:	43 2b       	jmp	@r3
+   76396:	00 09       	nop	
+   76398:	ff ff       	.word 0xffff
+   7639a:	73 24       	add	#36,r3
+   7639c:	00 07       	mul.l	r0,r0
+   7639e:	60 54       	mov.b	@r5+,r0
+   763a0:	00 00       	.word 0x0000
+   763a2:	dd f4       	mov.l	0x76774,r13	! d3212340
+   763a4:	00 07       	mul.l	r0,r0
+
+
+C:/Dev/SubaruRoms/OEM/A2WC511R.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0007bba4 <.data+0x7bba4>:
+   7bba4:	23 38       	tst	r3,r3
+   7bba6:	8d 0c       	bt.s	0x7bbc2
+   7bba8:	00 09       	nop	
+   7bbaa:	d2 3a       	mov.l	0x7bc94,r2	! ffff7171
+   7bbac:	60 20       	mov.b	@r2,r0
+   7bbae:	20 08       	tst	r0,r0
+   7bbb0:	8f 07       	bf.s	0x7bbc2
+   7bbb2:	00 09       	nop	
+   7bbb4:	d3 38       	mov.l	0x7bc98,r3	! ddf4
+   7bbb6:	e1 00       	mov	#0,r1
+   7bbb8:	2f 12       	mov.l	r1,@r15
+   7bbba:	66 f3       	mov	r15,r6
+   7bbbc:	e5 02       	mov	#2,r5
+   7bbbe:	43 0b       	jsr	@r3
+   7bbc0:	64 13       	mov	r1,r4
+   7bbc2:	62 ec       	extu.b	r14,r2
+   7bbc4:	22 28       	tst	r2,r2
+   7bbc6:	8d 1c       	bt.s	0x7bc02
+   7bbc8:	00 09       	nop	
+   7bbca:	d3 34       	mov.l	0x7bc9c,r3	! ffff63ca
+   7bbcc:	d0 34       	mov.l	0x7bca0,r0	! ffff63c9
+   7bbce:	61 30       	mov.b	@r3,r1
+   7bbd0:	62 00       	mov.b	@r0,r2
+
+
+C:/Dev/SubaruRoms/OEM/A2WC511R.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0007bbe6 <.data+0x7bbe6>:
+   7bbe6:	8d 0c       	bt.s	0x7bc02
+   7bbe8:	00 09       	nop	
+   7bbea:	b0 10       	bsr	0x7bc0e
+   7bbec:	00 09       	nop	
+   7bbee:	e3 00       	mov	#0,r3
+   7bbf0:	2f 32       	mov.l	r3,@r15
+   7bbf2:	66 f3       	mov	r15,r6
+   7bbf4:	64 33       	mov	r3,r4
+   7bbf6:	d3 28       	mov.l	0x7bc98,r3	! ddf4
+   7bbf8:	43 0b       	jsr	@r3
+   7bbfa:	e5 03       	mov	#3,r5
+   7bbfc:	d3 29       	mov.l	0x7bca4,r3	! ffff7172
+   7bbfe:	e2 01       	mov	#1,r2
+   7bc00:	23 20       	mov.b	r2,@r3
+   7bc02:	d1 24       	mov.l	0x7bc94,r1	! ffff7171
+   7bc04:	21 e0       	mov.b	r14,@r1
+   7bc06:	7f 04       	add	#4,r15
+   7bc08:	4f 26       	lds.l	@r15+,pr
+   7bc0a:	00 0b       	rts	
+   7bc0c:	6e f6       	mov.l	@r15+,r14
+   7bc0e:	4f 22       	sts.l	pr,@-r15
+   7bc10:	d3 25       	mov.l	0x7bca8,r3	! ffff2a40
+   7bc12:	64 30       	mov.b	@r3,r4

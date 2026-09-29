@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "status": "PASS_ACTUAL_STOCK_PARSER_SERIALIZER_WITH_REGISTER_TRANSCRIPTS",
+  "inputs": [
+    {
+      "path": "C:\\Dev\\SubaruRoms\\OEM\\A2WC511R.bin",
+      "bytes": 1048576,
+      "sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\verify_kwp_wire.py",
+      "bytes": 6163,
+      "sha256": "dc4fc4c218f60ece9b0561fcd7c780ddfe16fa085abfc6751a34a075b8286772"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\verify_kwp_contract.py",
+      "bytes": 10190,
+      "sha256": "bc449cee55fc25c0a7975a2444bf3c8fe5124a9a4ae8cd73ccc7bd18cc628a58"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\verify_oem_contracts.py",
+      "bytes": 7414,
+      "sha256": "eb5fd8a5bdeeef214ac8c5f214c8d7637265643ae36bbf3571a2fe0452b8f191"
+    }
+  ],
+  "transactions": [
+    {
+      "request": "8010f0018103",
+      "result": "bad checksum rejected; no reply selected or TDR write"
+    },
+    {
+      "request": "8010f0018102",
+      "executed_TDR_reply": "80f01003c1ef8fc2",
+      "source": "stock instructions; explicit ready/TEND register input",
+      "physical_completion": false
+    },
+    {
+      "request": "8010f002830005",
+      "executed_TDR_reply": "80f01007c30000ff00ff0048",
+      "source": "stock instructions; explicit ready/TEND register input",
+      "physical_completion": false
+    },
+    {
+      "request": "8010f0022701aa",
+      "executed_TDR_reply": "80f0100667011234567802",
+      "source": "stock instructions; explicit ready/TEND register input",
+      "physical_completion": false
+    },
+    {
+      "request": "8010f0062702e78f1f2165",
+      "executed_TDR_reply": "80f0100367023420",
+      "source": "stock instructions; explicit ready/TEND register input",
+      "physical_completion": false
+    },
+    {
+      "request": "8010f0031085021a",
+      "executed_TDR_reply": "80f01002508557",
+      "source": "stock instructions; explicit ready/TEND register input",
+      "physical_completion": false
+    }
+  ],
+  "executed_instructions": 9644,
+  "trace_sha256": "6c1e03791eb1e52bb4d3efa5def5c956bf098d36e7cf915c6bf1a75f9623edff",
+  "post_session": {
+    "session_63E1": 32,
+    "unlocked_649C": 1,
+    "response_kind_63E0": 16
+  },
+  "limitations": [
+    "SCI status84 supplied as ready/TEND transcript; not cycle-accurate hardware.",
+    "RX bytes injected into actual parser input63F8, not actual SCI ISR/electrical timing.",
+    "Stops before OEM quiescence47AFC and boot jump; no ROM/MMIO effects inferred across that boundary."
+  ],
+  "physical_operations": 0
+}

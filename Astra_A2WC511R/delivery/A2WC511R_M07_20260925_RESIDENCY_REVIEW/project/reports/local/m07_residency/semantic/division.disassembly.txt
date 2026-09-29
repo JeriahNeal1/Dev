@@ -1,0 +1,41 @@
+
+C:\Dev\Astra_A2WC511R\reports\local\m07_residency\semantic\division.elf:     file format elf32-sh
+
+
+Disassembly of section .replacement:
+
+00004260 <replacement_start>:
+    4260:	20 08       	tst	r0,r0
+    4262:	2f 26       	mov.l	r2,@-r15
+    4264:	89 14       	bt	4290 <replacement_start+0x30>
+    4266:	2f 36       	mov.l	r3,@-r15
+    4268:	2f 46       	mov.l	r4,@-r15
+    426a:	e2 00       	mov	#0,r2
+    426c:	21 27       	div0s	r2,r1
+    426e:	33 3a       	subc	r3,r3
+    4270:	31 2a       	subc	r2,r1
+    4272:	23 07       	div0s	r0,r3
+    4274:	e2 20       	mov	#32,r2
+    4276:	41 24       	rotcl	r1
+    4278:	33 04       	div1	r0,r3
+    427a:	04 29       	movt	r4
+    427c:	42 10       	dt	r2
+    427e:	8f fa       	bf.s	4276 <replacement_start+0x16>
+    4280:	44 21       	shar	r4
+    4282:	41 24       	rotcl	r1
+    4284:	31 2e       	addc	r2,r1
+    4286:	60 13       	mov	r1,r0
+    4288:	64 f6       	mov.l	@r15+,r4
+    428a:	63 f6       	mov.l	@r15+,r3
+    428c:	00 0b       	rts	
+    428e:	62 f6       	mov.l	@r15+,r2
+    4290:	d1 02       	mov.l	429c <replacement_start+0x3c>,r1	! ffff130c
+    4292:	d2 03       	mov.l	42a0 <replacement_start+0x40>,r2	! 44e
+    4294:	e0 00       	mov	#0,r0
+    4296:	21 22       	mov.l	r2,@r1
+    4298:	00 0b       	rts	
+    429a:	62 f6       	mov.l	@r15+,r2
+    429c:	ff ff       	.word 0xffff
+    429e:	13 0c       	mov.l	r0,@(48,r3)
+    42a0:	00 00       	.word 0x0000
+    42a2:	04 4e       	mov.l	@(r0,r4),r4

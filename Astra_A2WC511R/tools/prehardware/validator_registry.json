@@ -1,0 +1,4383 @@
+{
+  "artifacts": {
+    "one_page": {
+      "active_control_evidence": {
+        "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\ENGINEERING_GATES.json",
+        "sha256": "3943c3d20c13a7f8b836c2758b1296b1fc4bfe6d37306c073237c30498855db3"
+      },
+      "adapter_stack_bytes": 8,
+      "cfg_edges": [
+        [
+          "000042A4",
+          "000042A6"
+        ],
+        [
+          "000042A6",
+          "000042A8"
+        ],
+        [
+          "000042A8",
+          "000042AA"
+        ],
+        [
+          "000042AA",
+          "000042AC"
+        ],
+        [
+          "000042AC",
+          "000042AE"
+        ],
+        [
+          "000042AE",
+          "000042B0"
+        ],
+        [
+          "000042B0",
+          "000042B2"
+        ],
+        [
+          "000042B2",
+          "000042B4"
+        ],
+        [
+          "000042B4",
+          "000042B6"
+        ],
+        [
+          "000042B4",
+          "000042D0"
+        ],
+        [
+          "000042B6",
+          "000042B8"
+        ],
+        [
+          "000042B8",
+          "000042AE"
+        ],
+        [
+          "000042B8",
+          "000042BA"
+        ],
+        [
+          "000042BA",
+          "000042BC"
+        ],
+        [
+          "000042BC",
+          "000042BE"
+        ],
+        [
+          "000042BE",
+          "000042C0"
+        ],
+        [
+          "000042C0",
+          "000042C2"
+        ],
+        [
+          "000042C2",
+          "000042C4"
+        ],
+        [
+          "000042C4",
+          "000042C6"
+        ],
+        [
+          "000042C6",
+          "000042C8"
+        ],
+        [
+          "000042C8",
+          "000042CA"
+        ],
+        [
+          "000042CA",
+          "000042CC"
+        ],
+        [
+          "000042CC",
+          "000042DA"
+        ],
+        [
+          "000042D0",
+          "000042D2"
+        ],
+        [
+          "000042D2",
+          "000042D4"
+        ],
+        [
+          "000042D4",
+          "000042D6"
+        ],
+        [
+          "000042D6",
+          "000042D8"
+        ],
+        [
+          "000042D8",
+          "000042DA"
+        ],
+        [
+          "000042DA",
+          "000042DC"
+        ],
+        [
+          "000042DC",
+          "000042DE"
+        ],
+        [
+          "000042DE",
+          "000042E0"
+        ],
+        [
+          "000042E0",
+          "000042E2"
+        ],
+        [
+          "000042E2",
+          "000484BC"
+        ],
+        [
+          "000484B0",
+          "000484B2"
+        ],
+        [
+          "000484B2",
+          "000042A4"
+        ]
+      ],
+      "code_words": {
+        "00004260": {
+          "delay_slot": false,
+          "form": "tst_reg",
+          "word": "2008"
+        },
+        "00004262": {
+          "delay_slot": false,
+          "form": "movl_predec",
+          "word": "2F26"
+        },
+        "00004264": {
+          "delay_slot": false,
+          "form": "bt",
+          "word": "8914"
+        },
+        "00004266": {
+          "delay_slot": false,
+          "form": "movl_predec",
+          "word": "2F36"
+        },
+        "00004268": {
+          "delay_slot": false,
+          "form": "movl_predec",
+          "word": "2F46"
+        },
+        "0000426A": {
+          "delay_slot": false,
+          "form": "mov_imm",
+          "word": "E200"
+        },
+        "0000426C": {
+          "delay_slot": false,
+          "form": "div0s",
+          "word": "2127"
+        },
+        "0000426E": {
+          "delay_slot": false,
+          "form": "subc",
+          "word": "333A"
+        },
+        "00004270": {
+          "delay_slot": false,
+          "form": "subc",
+          "word": "312A"
+        },
+        "00004272": {
+          "delay_slot": false,
+          "form": "div0s",
+          "word": "2307"
+        },
+        "00004274": {
+          "delay_slot": false,
+          "form": "mov_imm",
+          "word": "E220"
+        },
+        "00004276": {
+          "delay_slot": false,
+          "form": "rotcl",
+          "word": "4124"
+        },
+        "00004278": {
+          "delay_slot": false,
+          "form": "div1",
+          "word": "3304"
+        },
+        "0000427A": {
+          "delay_slot": false,
+          "form": "movt",
+          "word": "0429"
+        },
+        "0000427C": {
+          "delay_slot": false,
+          "form": "dt",
+          "word": "4210"
+        },
+        "0000427E": {
+          "delay_slot": false,
+          "form": "bf_s",
+          "word": "8FFA"
+        },
+        "00004280": {
+          "delay_slot": true,
+          "form": "shar",
+          "word": "4421"
+        },
+        "00004282": {
+          "delay_slot": false,
+          "form": "rotcl",
+          "word": "4124"
+        },
+        "00004284": {
+          "delay_slot": false,
+          "form": "addc",
+          "word": "312E"
+        },
+        "00004286": {
+          "delay_slot": false,
+          "form": "mov_reg",
+          "word": "6013"
+        },
+        "00004288": {
+          "delay_slot": false,
+          "form": "movl_postinc",
+          "word": "64F6"
+        },
+        "0000428A": {
+          "delay_slot": false,
+          "form": "movl_postinc",
+          "word": "63F6"
+        },
+        "0000428C": {
+          "delay_slot": false,
+          "form": "rts",
+          "word": "000B"
+        },
+        "0000428E": {
+          "delay_slot": true,
+          "form": "movl_postinc",
+          "word": "62F6"
+        },
+        "00004290": {
+          "delay_slot": false,
+          "form": "movl_pc",
+          "word": "D102"
+        },
+        "00004292": {
+          "delay_slot": false,
+          "form": "movl_pc",
+          "word": "D203"
+        },
+        "00004294": {
+          "delay_slot": false,
+          "form": "mov_imm",
+          "word": "E000"
+        },
+        "00004296": {
+          "delay_slot": false,
+          "form": "movl_store",
+          "word": "2122"
+        },
+        "00004298": {
+          "delay_slot": false,
+          "form": "rts",
+          "word": "000B"
+        },
+        "0000429A": {
+          "delay_slot": true,
+          "form": "movl_postinc",
+          "word": "62F6"
+        },
+        "000042A4": {
+          "delay_slot": false,
+          "form": "movl_predec",
+          "word": "2F16"
+        },
+        "000042A6": {
+          "delay_slot": false,
+          "form": "movl_predec",
+          "word": "2F46"
+        },
+        "000042A8": {
+          "delay_slot": false,
+          "form": "mov_reg",
+          "word": "62D3"
+        },
+        "000042AA": {
+          "delay_slot": false,
+          "form": "movl_pc",
+          "word": "D30F"
+        },
+        "000042AC": {
+          "delay_slot": false,
+          "form": "mov_imm",
+          "word": "E406"
+        },
+        "000042AE": {
+          "delay_slot": false,
+          "form": "movl_postinc",
+          "word": "6026"
+        },
+        "000042B0": {
+          "delay_slot": false,
+          "form": "movl_postinc",
+          "word": "6136"
+        },
+        "000042B2": {
+          "delay_slot": false,
+          "form": "cmpeq_reg",
+          "word": "3010"
+        },
+        "000042B4": {
+          "delay_slot": false,
+          "form": "bf",
+          "word": "8B0C"
+        },
+        "000042B6": {
+          "delay_slot": false,
+          "form": "dt",
+          "word": "4410"
+        },
+        "000042B8": {
+          "delay_slot": false,
+          "form": "bf",
+          "word": "8BF9"
+        },
+        "000042BA": {
+          "delay_slot": false,
+          "form": "movl_postinc",
+          "word": "64F6"
+        },
+        "000042BC": {
+          "delay_slot": false,
+          "form": "movl_postinc",
+          "word": "61F6"
+        },
+        "000042BE": {
+          "delay_slot": false,
+          "form": "mov_imm",
+          "word": "E007"
+        },
+        "000042C0": {
+          "delay_slot": false,
+          "form": "movb_store",
+          "word": "2C00"
+        },
+        "000042C2": {
+          "delay_slot": false,
+          "form": "mov_imm",
+          "word": "E0FC"
+        },
+        "000042C4": {
+          "delay_slot": false,
+          "form": "movb_store",
+          "word": "2B00"
+        },
+        "000042C6": {
+          "delay_slot": false,
+          "form": "movb_load",
+          "word": "60E0"
+        },
+        "000042C8": {
+          "delay_slot": false,
+          "form": "or_imm",
+          "word": "CB10"
+        },
+        "000042CA": {
+          "delay_slot": false,
+          "form": "movb_store",
+          "word": "2E00"
+        },
+        "000042CC": {
+          "delay_slot": false,
+          "form": "bra",
+          "word": "A005"
+        },
+        "000042CE": {
+          "delay_slot": true,
+          "form": "clrt",
+          "word": "0008"
+        },
+        "000042D0": {
+          "delay_slot": false,
+          "form": "movl_postinc",
+          "word": "64F6"
+        },
+        "000042D2": {
+          "delay_slot": false,
+          "form": "movl_postinc",
+          "word": "61F6"
+        },
+        "000042D4": {
+          "delay_slot": false,
+          "form": "movb_disp_load",
+          "word": "84E1"
+        },
+        "000042D6": {
+          "delay_slot": false,
+          "form": "or_imm",
+          "word": "CB01"
+        },
+        "000042D8": {
+          "delay_slot": false,
+          "form": "movb_disp_store",
+          "word": "80E1"
+        },
+        "000042DA": {
+          "delay_slot": false,
+          "form": "movb_load",
+          "word": "60E0"
+        },
+        "000042DC": {
+          "delay_slot": false,
+          "form": "and_imm",
+          "word": "C97F"
+        },
+        "000042DE": {
+          "delay_slot": false,
+          "form": "movb_store",
+          "word": "2E00"
+        },
+        "000042E0": {
+          "delay_slot": false,
+          "form": "movl_pc",
+          "word": "D202"
+        },
+        "000042E2": {
+          "delay_slot": false,
+          "form": "jmp",
+          "word": "422B"
+        },
+        "000042E4": {
+          "delay_slot": true,
+          "form": "nop",
+          "word": "0009"
+        },
+        "000484B0": {
+          "delay_slot": false,
+          "form": "movl_pc",
+          "word": "D201"
+        },
+        "000484B2": {
+          "delay_slot": false,
+          "form": "jmp",
+          "word": "422B"
+        },
+        "000484B4": {
+          "delay_slot": true,
+          "form": "nop",
+          "word": "0009"
+        }
+      },
+      "division_stack_bytes": 12,
+      "fragments": [
+        {
+          "address": 16992,
+          "after_hex": "20082f2689142f362f46e2002127333a312a2307e22041243304042942108ffa44214124312e601364f663f6000b62f6d102d203e0002122000b62f6ffff130c0000044e",
+          "before_hex": "20082f26894b2f36e2002127333a312a23074124330441243304412433044124330441243304412433044124330441243304412433044124330441243304412433044124",
+          "label": "experimental replacement division"
+        },
+        {
+          "address": 17060,
+          "after_hex": "2f162f4662d3d30fe4066026613630108b0c44108bf964f661f6e0072c00e0fc2b0060e0cb102e00a005000864f661f684e1cb0180e160e0c97f2e00d202422b00090009000042f0000484bc8010f014be10ff4c75ff4c8dff4ca1ff4c50ff4bc1ff4bc2",
+          "before_hex": "3304412433044124330441243304412433044124330441243304412433044124330441243304412433044124330441243304412433044124330441243304412433044124330441243304412433044124312e601363f6000b62f6d103d203e0002122000b",
+          "label": "raw six adapter"
+        },
+        {
+          "address": 296112,
+          "after_hex": "d201422b00090009000042a4",
+          "before_hex": "84e1cb0180e160e0c97f2e00",
+          "label": "project default adapter"
+        },
+        {
+          "address": 1047432,
+          "after_hex": "4f656586",
+          "before_hex": "0c5824a8",
+          "label": "checksum correction word"
+        }
+      ],
+      "image": {
+        "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\build_audit_02\\one_page.RESEARCH_NOT_RESIDENCY_PROVEN.checksum_corrected.bin",
+        "sha256": "140736b11e14ed80290832ceef3ae67757f967a3751a6ddb2b6d8afa0cc9afbd"
+      },
+      "kind": "FROZEN_UNAPPROVED_M07_RESEARCH",
+      "persistent_ram_declarations": [],
+      "protocol_manifest": {
+        "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\protocol\\one_page_01\\manifest.json",
+        "sha256": "a69589a230a9de0b75530cfa867feaef48ac1fd438f2029d20dd32695e5a8f21"
+      },
+      "repro_artifacts": [
+        {
+          "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\build_audit_02\\division\\division.bin",
+          "sha256": "d484207950dd46302e68a8d4f0d9cd9dfeeb9273ab565c6e2647b2ec23de39c5"
+        },
+        {
+          "path": "C:\\Dev\\Astra_A2WC511R\\work\\M07\\semantic\\division.s",
+          "sha256": "cc79624e95d7eb3a9036802df239764889ab59f942251d4a7967d3fb42f44b42"
+        },
+        {
+          "path": "C:\\Dev\\Astra_A2WC511R\\work\\M07\\semantic\\division.ld",
+          "sha256": "d952a96b95da077016bdc42cc680307d5ed04b7b9a3634a4a19c2fae34ad5857"
+        },
+        {
+          "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\build_audit_02\\one_page\\payload.bin",
+          "sha256": "99fc9436af0c418bf07d61f135048508f32c8842666c115423badaa2e39214fc"
+        },
+        {
+          "path": "C:\\Dev\\Astra_A2WC511R\\work\\M07\\protocol\\one_page.s",
+          "sha256": "a10537057faca962ed71931a33580afdde291f35df6bd3819035cdb885928385"
+        },
+        {
+          "path": "C:\\Dev\\Astra_A2WC511R\\work\\M07\\protocol\\one_page.ld",
+          "sha256": "f4d76c91f11ce788786dec59e344c72fe80d70511e04ebe31eb5d5c9ed7925b0"
+        }
+      ],
+      "reproducible_build": "PINNED_PREVIOUS_BYTE_IDENTICAL_RAW_SECTIONS",
+      "residency_evidence": {
+        "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\OWNERSHIP_FRAGMENTS.json",
+        "sha256": "d09c1e641175c40e11b286e53df3fcefa3c5bbac3817aadd0c616ce01300daab"
+      },
+      "residency_required": true,
+      "rom_declarations": [
+        [
+          16992,
+          17060
+        ],
+        [
+          17060,
+          17160
+        ],
+        [
+          296112,
+          296124
+        ]
+      ]
+    },
+    "stock": {
+      "cfg_edges": [],
+      "code_words": {},
+      "fragments": [],
+      "image": {
+        "path": "C:\\Dev\\SubaruRoms\\OEM\\A2WC511R.bin",
+        "sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218"
+      },
+      "kind": "unchanged_stock",
+      "persistent_ram_declarations": [],
+      "reproducible_build": "OEM_REFERENCE_NO_PROJECT_BUILD",
+      "residency_required": false,
+      "rom_declarations": []
+    },
+    "two_pages": {
+      "active_control_evidence": {
+        "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\ENGINEERING_GATES.json",
+        "sha256": "3943c3d20c13a7f8b836c2758b1296b1fc4bfe6d37306c073237c30498855db3"
+      },
+      "adapter_stack_bytes": 8,
+      "cfg_edges": [
+        [
+          "000042A4",
+          "000042A6"
+        ],
+        [
+          "000042A6",
+          "000042A8"
+        ],
+        [
+          "000042A8",
+          "000042AA"
+        ],
+        [
+          "000042A8",
+          "000042B0"
+        ],
+        [
+          "000042AA",
+          "000042AC"
+        ],
+        [
+          "000042AC",
+          "000042B8"
+        ],
+        [
+          "000042B0",
+          "000042B2"
+        ],
+        [
+          "000042B2",
+          "000042B4"
+        ],
+        [
+          "000042B2",
+          "000042CA"
+        ],
+        [
+          "000042B4",
+          "000042B6"
+        ],
+        [
+          "000042B6",
+          "000042B8"
+        ],
+        [
+          "000042B8",
+          "000042BA"
+        ],
+        [
+          "000042BA",
+          "000042BC"
+        ],
+        [
+          "000042BC",
+          "000042BE"
+        ],
+        [
+          "000042BE",
+          "000042C0"
+        ],
+        [
+          "000042C0",
+          "000042C2"
+        ],
+        [
+          "000042C0",
+          "000042CA"
+        ],
+        [
+          "000042C2",
+          "000042C4"
+        ],
+        [
+          "000042C4",
+          "000042BA"
+        ],
+        [
+          "000042C4",
+          "000042C6"
+        ],
+        [
+          "000042C6",
+          "0001477A"
+        ],
+        [
+          "000042CA",
+          "0001477A"
+        ],
+        [
+          "00014770",
+          "00014772"
+        ],
+        [
+          "00014772",
+          "00014774"
+        ],
+        [
+          "00014774",
+          "00014776"
+        ],
+        [
+          "00014776",
+          "000042A4"
+        ],
+        [
+          "00014776",
+          "0001477A"
+        ],
+        [
+          "0001477A",
+          "0001477C"
+        ],
+        [
+          "0001477C",
+          "0001477E"
+        ],
+        [
+          "0001477E",
+          "00014780"
+        ],
+        [
+          "0001477E",
+          "00014790"
+        ],
+        [
+          "00014780",
+          "00014782"
+        ],
+        [
+          "00014782",
+          "00014784"
+        ],
+        [
+          "00014784",
+          "00014786"
+        ],
+        [
+          "00014786",
+          "00014788"
+        ],
+        [
+          "00014788",
+          "0001478A"
+        ],
+        [
+          "0001478A",
+          "0001478C"
+        ],
+        [
+          "0001478C",
+          "00014798"
+        ],
+        [
+          "00014790",
+          "00014792"
+        ],
+        [
+          "00014792",
+          "00014794"
+        ],
+        [
+          "00014794",
+          "00014796"
+        ],
+        [
+          "00014796",
+          "00014798"
+        ],
+        [
+          "00014798",
+          "0001479A"
+        ],
+        [
+          "0001479A",
+          "0001479C"
+        ],
+        [
+          "0001479C",
+          "0001479E"
+        ],
+        [
+          "0001479E",
+          "000147A0"
+        ],
+        [
+          "000147A0",
+          "000484BC"
+        ],
+        [
+          "000484B0",
+          "000484B2"
+        ],
+        [
+          "000484B2",
+          "00014770"
+        ]
+      ],
+      "code_words": {
+        "00004260": {
+          "delay_slot": false,
+          "form": "tst_reg",
+          "word": "2008"
+        },
+        "00004262": {
+          "delay_slot": false,
+          "form": "movl_predec",
+          "word": "2F26"
+        },
+        "00004264": {
+          "delay_slot": false,
+          "form": "bt",
+          "word": "8914"
+        },
+        "00004266": {
+          "delay_slot": false,
+          "form": "movl_predec",
+          "word": "2F36"
+        },
+        "00004268": {
+          "delay_slot": false,
+          "form": "movl_predec",
+          "word": "2F46"
+        },
+        "0000426A": {
+          "delay_slot": false,
+          "form": "mov_imm",
+          "word": "E200"
+        },
+        "0000426C": {
+          "delay_slot": false,
+          "form": "div0s",
+          "word": "2127"
+        },
+        "0000426E": {
+          "delay_slot": false,
+          "form": "subc",
+          "word": "333A"
+        },
+        "00004270": {
+          "delay_slot": false,
+          "form": "subc",
+          "word": "312A"
+        },
+        "00004272": {
+          "delay_slot": false,
+          "form": "div0s",
+          "word": "2307"
+        },
+        "00004274": {
+          "delay_slot": false,
+          "form": "mov_imm",
+          "word": "E220"
+        },
+        "00004276": {
+          "delay_slot": false,
+          "form": "rotcl",
+          "word": "4124"
+        },
+        "00004278": {
+          "delay_slot": false,
+          "form": "div1",
+          "word": "3304"
+        },
+        "0000427A": {
+          "delay_slot": false,
+          "form": "movt",
+          "word": "0429"
+        },
+        "0000427C": {
+          "delay_slot": false,
+          "form": "dt",
+          "word": "4210"
+        },
+        "0000427E": {
+          "delay_slot": false,
+          "form": "bf_s",
+          "word": "8FFA"
+        },
+        "00004280": {
+          "delay_slot": true,
+          "form": "shar",
+          "word": "4421"
+        },
+        "00004282": {
+          "delay_slot": false,
+          "form": "rotcl",
+          "word": "4124"
+        },
+        "00004284": {
+          "delay_slot": false,
+          "form": "addc",
+          "word": "312E"
+        },
+        "00004286": {
+          "delay_slot": false,
+          "form": "mov_reg",
+          "word": "6013"
+        },
+        "00004288": {
+          "delay_slot": false,
+          "form": "movl_postinc",
+          "word": "64F6"
+        },
+        "0000428A": {
+          "delay_slot": false,
+          "form": "movl_postinc",
+          "word": "63F6"
+        },
+        "0000428C": {
+          "delay_slot": false,
+          "form": "rts",
+          "word": "000B"
+        },
+        "0000428E": {
+          "delay_slot": true,
+          "form": "movl_postinc",
+          "word": "62F6"
+        },
+        "00004290": {
+          "delay_slot": false,
+          "form": "movl_pc",
+          "word": "D102"
+        },
+        "00004292": {
+          "delay_slot": false,
+          "form": "movl_pc",
+          "word": "D203"
+        },
+        "00004294": {
+          "delay_slot": false,
+          "form": "mov_imm",
+          "word": "E000"
+        },
+        "00004296": {
+          "delay_slot": false,
+          "form": "movl_store",
+          "word": "2122"
+        },
+        "00004298": {
+          "delay_slot": false,
+          "form": "rts",
+          "word": "000B"
+        },
+        "0000429A": {
+          "delay_slot": true,
+          "form": "movl_postinc",
+          "word": "62F6"
+        },
+        "000042A4": {
+          "form": "movb_disp_load",
+          "word": "84D3"
+        },
+        "000042A6": {
+          "form": "cmpeq_imm",
+          "word": "880E"
+        },
+        "000042A8": {
+          "form": "bf",
+          "word": "8B02"
+        },
+        "000042AA": {
+          "form": "movl_pc",
+          "word": "D309"
+        },
+        "000042AC": {
+          "form": "bra",
+          "word": "A004"
+        },
+        "000042AE": {
+          "delay_slot": true,
+          "form": "mov_imm",
+          "word": "E412"
+        },
+        "000042B0": {
+          "form": "cmpeq_imm",
+          "word": "8808"
+        },
+        "000042B2": {
+          "form": "bf",
+          "word": "8B0A"
+        },
+        "000042B4": {
+          "form": "movl_pc",
+          "word": "D307"
+        },
+        "000042B6": {
+          "form": "mov_imm",
+          "word": "E40C"
+        },
+        "000042B8": {
+          "form": "mov_reg",
+          "word": "62D3"
+        },
+        "000042BA": {
+          "form": "movb_postinc",
+          "word": "6024"
+        },
+        "000042BC": {
+          "form": "movb_postinc",
+          "word": "6134"
+        },
+        "000042BE": {
+          "form": "cmpeq_reg",
+          "word": "3010"
+        },
+        "000042C0": {
+          "form": "bf",
+          "word": "8B03"
+        },
+        "000042C2": {
+          "form": "dt",
+          "word": "4410"
+        },
+        "000042C4": {
+          "form": "bf",
+          "word": "8BF9"
+        },
+        "000042C6": {
+          "form": "rts",
+          "word": "000B"
+        },
+        "000042C8": {
+          "delay_slot": true,
+          "form": "movb_load",
+          "word": "6030"
+        },
+        "000042CA": {
+          "form": "rts",
+          "word": "000B"
+        },
+        "000042CC": {
+          "delay_slot": true,
+          "form": "mov_imm",
+          "word": "E000"
+        },
+        "0001473C": {
+          "delay_slot": false,
+          "form": "movw_pc",
+          "word": "970E"
+        },
+        "0001473E": {
+          "delay_slot": false,
+          "form": "and_reg",
+          "word": "2059"
+        },
+        "00014740": {
+          "delay_slot": false,
+          "form": "mov_imm",
+          "word": "E308"
+        },
+        "00014742": {
+          "delay_slot": false,
+          "form": "cmphs",
+          "word": "3302"
+        },
+        "00014744": {
+          "delay_slot": false,
+          "form": "bt",
+          "word": "8900"
+        },
+        "00014746": {
+          "delay_slot": false,
+          "form": "cmpeq_imm",
+          "word": "880F"
+        },
+        "00014748": {
+          "delay_slot": false,
+          "form": "movl_pc",
+          "word": "D402"
+        },
+        "0001474A": {
+          "delay_slot": false,
+          "form": "movb_indexed_load",
+          "word": "044C"
+        },
+        "0001474C": {
+          "delay_slot": false,
+          "form": "extub",
+          "word": "644C"
+        },
+        "0001474E": {
+          "delay_slot": false,
+          "form": "movl_pc",
+          "word": "D302"
+        },
+        "00014750": {
+          "delay_slot": false,
+          "form": "rts",
+          "word": "000B"
+        },
+        "00014752": {
+          "delay_slot": true,
+          "form": "movb_store",
+          "word": "2340"
+        },
+        "00014770": {
+          "form": "movl_predec",
+          "word": "2F16"
+        },
+        "00014772": {
+          "form": "movl_predec",
+          "word": "2F46"
+        },
+        "00014774": {
+          "form": "movl_pc",
+          "word": "D30B"
+        },
+        "00014776": {
+          "form": "jsr",
+          "word": "430B"
+        },
+        "00014778": {
+          "delay_slot": true,
+          "form": "nop",
+          "word": "0009"
+        },
+        "0001477A": {
+          "form": "movl_postinc",
+          "word": "64F6"
+        },
+        "0001477C": {
+          "form": "movl_postinc",
+          "word": "61F6"
+        },
+        "0001477E": {
+          "form": "bf",
+          "word": "8B07"
+        },
+        "00014780": {
+          "form": "movb_store",
+          "word": "2C00"
+        },
+        "00014782": {
+          "form": "shar",
+          "word": "4021"
+        },
+        "00014784": {
+          "form": "neg",
+          "word": "600B"
+        },
+        "00014786": {
+          "form": "add_imm",
+          "word": "70FE"
+        },
+        "00014788": {
+          "form": "movb_store",
+          "word": "2B00"
+        },
+        "0001478A": {
+          "form": "movb_load",
+          "word": "60E0"
+        },
+        "0001478C": {
+          "form": "bra",
+          "word": "A004"
+        },
+        "0001478E": {
+          "delay_slot": true,
+          "form": "or_imm",
+          "word": "CB10"
+        },
+        "00014790": {
+          "form": "movb_disp_load",
+          "word": "84E1"
+        },
+        "00014792": {
+          "form": "or_imm",
+          "word": "CB01"
+        },
+        "00014794": {
+          "form": "movb_disp_store",
+          "word": "80E1"
+        },
+        "00014796": {
+          "form": "movb_load",
+          "word": "60E0"
+        },
+        "00014798": {
+          "form": "and_imm",
+          "word": "C97F"
+        },
+        "0001479A": {
+          "form": "movb_store",
+          "word": "2E00"
+        },
+        "0001479C": {
+          "form": "clrt",
+          "word": "0008"
+        },
+        "0001479E": {
+          "form": "movl_pc",
+          "word": "D202"
+        },
+        "000147A0": {
+          "form": "jmp",
+          "word": "422B"
+        },
+        "000147A2": {
+          "delay_slot": true,
+          "form": "nop",
+          "word": "0009"
+        },
+        "000484B0": {
+          "form": "movl_pc",
+          "word": "D201"
+        },
+        "000484B2": {
+          "form": "jmp",
+          "word": "422B"
+        },
+        "000484B4": {
+          "delay_slot": true,
+          "form": "nop",
+          "word": "0009"
+        }
+      },
+      "division_stack_bytes": 12,
+      "fragments": [
+        {
+          "address": 16992,
+          "after_hex": "20082f2689142f362f46e2002127333a312a2307e22041243304042942108ffa44214124312e601364f663f6000b62f6d102d203e0002122000b62f6ffff130c0000044e",
+          "before_hex": "20082f26894b2f36e2002127333a312a23074124330441243304412433044124330441243304412433044124330441243304412433044124330441243304412433044124",
+          "label": "experimental replacement division"
+        },
+        {
+          "address": 83772,
+          "after_hex": "970e2059e30833028900880fd402044c644cd302000b23400001475effff4bc000800001020408102040808080808080800f0009",
+          "before_hex": "9761205988008d1d000988018d1c000988028d1b000988038d1a000988048d19000988058d18000988068d17000988078d160009",
+          "label": "experimental replacement range_tail"
+        },
+        {
+          "address": 17060,
+          "after_hex": "84d3880e8b02d309a004e41288088b0ad307e40c62d36024613430108b0344108bf9000b6030000be0000009000042d8000042ec8010f00ebe10ff4c75ff4c8dff4ca1ff4c5005008010f008be11ff4bc1ff4bc203000009",
+          "before_hex": "3304412433044124330441243304412433044124330441243304412433044124330441243304412433044124330441243304412433044124330441243304412433044124330441243304412433044124312e601363f6000b",
+          "label": "two-page match"
+        },
+        {
+          "address": 83824,
+          "after_hex": "2f162f46d30b430b000964f661f68b072c004021600b70fe2b0060e0a004cb1084e1cb0180e160e0c97f2e000008d202422b0009000042a4000484bc",
+          "before_hex": "88088d170009880f8d120009a0120009a011e400a00fe401a00de402a00be404a009e408a007e410a005e420a0036463a001e40f6473d318000b2340",
+          "label": "two-page main"
+        },
+        {
+          "address": 296112,
+          "after_hex": "d201422b0009000900014770",
+          "before_hex": "84e1cb0180e160e0c97f2e00",
+          "label": "project default adapter"
+        },
+        {
+          "address": 1047432,
+          "after_hex": "251c63cb",
+          "before_hex": "0c5824a8",
+          "label": "checksum correction word"
+        }
+      ],
+      "image": {
+        "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\build_audit_02\\two_pages.RESEARCH_NOT_RESIDENCY_PROVEN.checksum_corrected.bin",
+        "sha256": "17ce75b3514891f2c5c30f0ec10bc5b4e3bf50b9004959fd906c600f7fb8797e"
+      },
+      "kind": "FROZEN_UNAPPROVED_M07_RESEARCH",
+      "persistent_ram_declarations": [],
+      "protocol_manifest": {
+        "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\protocol\\two_pages_01\\manifest.json",
+        "sha256": "cd2f4267c0f4e09a43fe9e89785cce566917713d84dd65362b80e91211321a53"
+      },
+      "repro_artifacts": [
+        {
+          "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\build_audit_02\\division\\division.bin",
+          "sha256": "d484207950dd46302e68a8d4f0d9cd9dfeeb9273ab565c6e2647b2ec23de39c5"
+        },
+        {
+          "path": "C:\\Dev\\Astra_A2WC511R\\work\\M07\\semantic\\division.s",
+          "sha256": "cc79624e95d7eb3a9036802df239764889ab59f942251d4a7967d3fb42f44b42"
+        },
+        {
+          "path": "C:\\Dev\\Astra_A2WC511R\\work\\M07\\semantic\\division.ld",
+          "sha256": "d952a96b95da077016bdc42cc680307d5ed04b7b9a3634a4a19c2fae34ad5857"
+        },
+        {
+          "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\build_audit_02\\two_pages\\match.bin",
+          "sha256": "31bfda410cbc399f24a360895e8dda3ce8facdd8b87162df85546a1bd463aa0d"
+        },
+        {
+          "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\build_audit_02\\two_pages\\main.bin",
+          "sha256": "e1b87d3e683128c8b2ada9e18e8db85afe4b18ac9bc6d744677f24029820773e"
+        },
+        {
+          "path": "C:\\Dev\\Astra_A2WC511R\\work\\M07\\protocol\\two_pages.s",
+          "sha256": "dfb5eb0a457cebcb4a1efd83afea530d238b093e597615fda106c17b254399a1"
+        },
+        {
+          "path": "C:\\Dev\\Astra_A2WC511R\\work\\M07\\protocol\\two_pages.ld",
+          "sha256": "142e5e921f20f428ba1335f18e407b29190ca9a17894490815c1975e7ecf78e3"
+        },
+        {
+          "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\build_audit_02\\range_tail\\range_tail.bin",
+          "sha256": "6f89e419e01fb9c0b318f2e40b16a9d0f35ffc1af3c7f13c5d46679e173f3f4b"
+        },
+        {
+          "path": "C:\\Dev\\Astra_A2WC511R\\work\\M07\\semantic\\range_tail.s",
+          "sha256": "5db875d1bc20dd7e32e341d0738a3fa2ebc978e92762e1835e897f0c96839e99"
+        },
+        {
+          "path": "C:\\Dev\\Astra_A2WC511R\\work\\M07\\semantic\\range_tail.ld",
+          "sha256": "51dfb2841ed7763418baa2fd18838805eab0f5e3c215aac2a08d47fe26ed8fd3"
+        }
+      ],
+      "reproducible_build": "PINNED_PREVIOUS_BYTE_IDENTICAL_RAW_SECTIONS",
+      "residency_evidence": {
+        "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\OWNERSHIP_FRAGMENTS.json",
+        "sha256": "d09c1e641175c40e11b286e53df3fcefa3c5bbac3817aadd0c616ce01300daab"
+      },
+      "residency_required": true,
+      "rom_declarations": [
+        [
+          16992,
+          17060
+        ],
+        [
+          83772,
+          83824
+        ],
+        [
+          17060,
+          17148
+        ],
+        [
+          83824,
+          83884
+        ],
+        [
+          296112,
+          296124
+        ]
+      ]
+    }
+  },
+  "boot_harness": {
+    "contract": {
+      "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\prehardware\\boot\\BOOT_CONTRACT.json",
+      "sha256": "6fe89b70cc243fc3ece98f5eaab8f6dfcfcc7f947fd7dec24eeadb407cec7f7c"
+    },
+    "entry": "C:\\Dev\\A2WC511R_Sim\\preflash_boot\\boot.py",
+    "explicit_write_allowlist": [],
+    "files": {
+      "C:\\Dev\\A2WC511R_Sim\\preflash_boot\\boot.py": "cea90b24165a33acbc161d873f14d80cbfe71832ab72158c8091a402c1d0b5ee",
+      "C:\\Dev\\A2WC511R_Sim\\preflash_boot\\manual_evidence.json": "0717bb43dceffa787cf0a297589de7b13497c47644ad992abb137f35613bf4e6",
+      "C:\\Dev\\A2WC511R_Sim\\sh2e.py": "b47ac261634c116c3ffcdf19da9ec73e7014c034cd349ea8867f5f54895cdfff"
+    },
+    "model_id": "SH7058_power_on_prefix_v1",
+    "requires_equal_frontier": true,
+    "requires_equal_terminal_state": true,
+    "scope": "Reset-prefix execution, ordered writes/control and terminal integer/system state; known model frontier and unproved SSM startup remain CONDITIONAL."
+  },
+  "common": {
+    "baseline": {
+      "path": "C:\\Dev\\SubaruRoms\\OEM\\A2WC511R.bin",
+      "sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218"
+    },
+    "calibration_extents": [
+      {
+        "count": 1,
+        "end": 478872,
+        "name": "(P0000) PASS CODE (NO DTC DETECTED)",
+        "start": 478871,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478873,
+        "name": "(P0000) PASS CODE (NO DTC DETECTED) ",
+        "start": 478872,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478846,
+        "name": "(P0011) CAMSHAFT POS. - TIMING OVER-ADVANCED 1",
+        "start": 478845,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478847,
+        "name": "(P0021) CAMSHAFT POS. - TIMING OVER-ADVANCED 2",
+        "start": 478846,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478909,
+        "name": "(P0030) FRONT O2 SENSOR RANGE/PERF",
+        "start": 478908,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478884,
+        "name": "(P0031) FRONT O2 SENSOR LOW INPUT",
+        "start": 478883,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478882,
+        "name": "(P0032) FRONT O2 SENSOR HIGH INPUT",
+        "start": 478881,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478883,
+        "name": "(P0037) REAR O2 SENSOR LOW INPUT",
+        "start": 478882,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478881,
+        "name": "(P0038) REAR O2 SENSOR HIGH INPUT",
+        "start": 478880,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478905,
+        "name": "(P0068) MAP SENSOR RANGE/PERF",
+        "start": 478904,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478907,
+        "name": "(P0101) MAF SENSOR RANGE/PERF",
+        "start": 478906,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478810,
+        "name": "(P0102) MAF SENSOR LOW INPUT",
+        "start": 478809,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478811,
+        "name": "(P0103) MAF SENSOR HIGH INPUT",
+        "start": 478810,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478885,
+        "name": "(P0107) MAP SENSOR LOW INPUT",
+        "start": 478884,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478886,
+        "name": "(P0108) MAP SENSOR HIGH INPUT",
+        "start": 478885,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478880,
+        "name": "(P0111) IAT SENSOR RANGE/PERF",
+        "start": 478879,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478878,
+        "name": "(P0112) IAT SENSOR LOW INPUT",
+        "start": 478877,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478879,
+        "name": "(P0113) IAT SENSOR HIGH INPUT",
+        "start": 478878,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478818,
+        "name": "(P0117) COOLANT TEMP SENSOR LOW INPUT",
+        "start": 478817,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478819,
+        "name": "(P0118) COOLANT TEMP SENSOR HIGH INPUT",
+        "start": 478818,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478815,
+        "name": "(P0122) TPS A LOW INPUT",
+        "start": 478814,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478816,
+        "name": "(P0123) TPS A HIGH INPUT",
+        "start": 478815,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478821,
+        "name": "(P0125) INSUFFICIENT COOLANT TEMP (FUELING)",
+        "start": 478820,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478950,
+        "name": "(P0126) INSUFFICIENT COOLANT TEMP (OPERATION)",
+        "start": 478949,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478887,
+        "name": "(P0128) THERMOSTAT MALFUNCTION",
+        "start": 478886,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478875,
+        "name": "(P0131) FRONT O2 SENSOR LOW INPUT",
+        "start": 478874,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478876,
+        "name": "(P0132) FRONT O2 SENSOR HIGH INPUT",
+        "start": 478875,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478857,
+        "name": "(P0133) FRONT O2 SENSOR SLOW RESPONSE",
+        "start": 478856,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478908,
+        "name": "(P0134) FRONT O2 SENSOR NO ACTIVITY",
+        "start": 478907,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478874,
+        "name": "(P0137) REAR O2 SENSOR LOW VOLTAGE",
+        "start": 478873,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478877,
+        "name": "(P0138) REAR O2 SENSOR HIGH VOLTAGE",
+        "start": 478876,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478858,
+        "name": "(P0139) REAR O2 SENSOR SLOW RESPONSE",
+        "start": 478857,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478864,
+        "name": "(P0171) SYSTEM TOO LEAN",
+        "start": 478863,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478865,
+        "name": "(P0172) SYSTEM TOO RICH",
+        "start": 478864,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478834,
+        "name": "(P0181) FUEL TEMP SENSOR A RANGE/PERF",
+        "start": 478833,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478832,
+        "name": "(P0182) FUEL TEMP SENSOR A LOW INPUT",
+        "start": 478831,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478833,
+        "name": "(P0183) FUEL TEMP SENSOR A HIGH INPUT",
+        "start": 478832,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478912,
+        "name": "(P0222) TPS B LOW INPUT",
+        "start": 478911,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478913,
+        "name": "(P0223) TPS B HIGH INPUT",
+        "start": 478912,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478904,
+        "name": "(P0230) FUEL PUMP PRIMARY CIRCUIT",
+        "start": 478903,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478894,
+        "name": "(P0244) WASTEGATE SOLENOID A RANGE/PERF",
+        "start": 478893,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478892,
+        "name": "(P0245) WASTEGATE SOLENOID A LOW",
+        "start": 478891,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478893,
+        "name": "(P0246) WASTEGATE SOLENOID A HIGH",
+        "start": 478892,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478866,
+        "name": "(P0301) MISFIRE CYLINDER 1",
+        "start": 478865,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478867,
+        "name": "(P0302) MISFIRE CYLINDER 2",
+        "start": 478866,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478868,
+        "name": "(P0303) MISFIRE CYLINDER 3",
+        "start": 478867,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478869,
+        "name": "(P0304) MISFIRE CYLINDER 4",
+        "start": 478868,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478813,
+        "name": "(P0327) KNOCK SENSOR 1 LOW INPUT",
+        "start": 478812,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478814,
+        "name": "(P0328) KNOCK SENSOR 1 HIGH INPUT",
+        "start": 478813,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478805,
+        "name": "(P0335) CRANKSHAFT POS. SENSOR A MALFUNCTION",
+        "start": 478804,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478806,
+        "name": "(P0336) CRANKSHAFT POS. SENSOR A RANGE/PERF",
+        "start": 478805,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478932,
+        "name": "(P0340) CAMSHAFT POS. SENSOR A MALFUNCTION ",
+        "start": 478931,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478931,
+        "name": "(P0345) CAMSHAFT POS. SENSOR A BANK 2",
+        "start": 478930,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478861,
+        "name": "(P0420) CAT EFFICIENCY BELOW THRESHOLD",
+        "start": 478860,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478862,
+        "name": "(P0442) EVAP LEAK DETECTED (SMALL)",
+        "start": 478861,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478855,
+        "name": "(P0447) EVAP VENT CONTROL CIRCUIT OPEN",
+        "start": 478854,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478856,
+        "name": "(P0448) EVAP VENT CONTROL CIRCUIT SHORTED",
+        "start": 478855,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478830,
+        "name": "(P0451) EVAP PRESSURE SENSOR RANGE/PERF",
+        "start": 478829,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478828,
+        "name": "(P0452) EVAP PRESSURE SENSOR LOW INPUT",
+        "start": 478827,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478829,
+        "name": "(P0453) EVAP PRESSURE SENSOR HIGH INPUT",
+        "start": 478828,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478863,
+        "name": "(P0456) EVAP LEAK DETECTED (VERY SMALL)",
+        "start": 478862,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478871,
+        "name": "(P0457) EVAP LEAK DETECTED (FUEL CAP)",
+        "start": 478870,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478850,
+        "name": "(P0458) EVAP PURGE VALVE CIRCUIT LOW",
+        "start": 478849,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478851,
+        "name": "(P0459) EVAP PURGE VALVE CIRCUIT HIGH",
+        "start": 478850,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478824,
+        "name": "(P0461) FUEL LEVEL SENSOR RANGE/PERF",
+        "start": 478823,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478822,
+        "name": "(P0462) FUEL LEVEL SENSOR LOW INPUT",
+        "start": 478821,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478823,
+        "name": "(P0463) FUEL LEVEL SENSOR HIGH INPUT",
+        "start": 478822,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478820,
+        "name": "(P0464) FUEL LEVEL SENSOR INTERMITTENT",
+        "start": 478819,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478842,
+        "name": "(P0483) RADIATOR FAN RATIONALITY CHECK",
+        "start": 478841,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478812,
+        "name": "(P0500) VEHICLE SPEED SENSOR A",
+        "start": 478811,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478838,
+        "name": "(P0506) IDLE CONTROL RPM LOWER THAN EXPECTED",
+        "start": 478837,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478839,
+        "name": "(P0507) IDLE CONTROL RPM HIGH THAN EXPECTED",
+        "start": 478838,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478827,
+        "name": "(P0512) STARTER REQUEST CIRCUIT",
+        "start": 478826,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478906,
+        "name": "(P0519) IDLE CONTROL MALFUNCTION (FAIL-SAFE)",
+        "start": 478905,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478899,
+        "name": "(P0545) EGT SENSOR CIRCUIT LOW",
+        "start": 478898,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478900,
+        "name": "(P0546) EGT SENSOR CIRCUIT HIGH",
+        "start": 478899,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478928,
+        "name": "(P0600) SERIAL COMMUNICATION LINK",
+        "start": 478927,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478809,
+        "name": "(P0604) CONTROL MODULE RAM ERROR",
+        "start": 478808,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478933,
+        "name": "(P0605) CONTROL MODULE ROM ERROR",
+        "start": 478932,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478920,
+        "name": "(P0607) CONTROL MODULE PERFORMANCE",
+        "start": 478919,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478919,
+        "name": "(P0638) THROTTLE ACTUATOR RANGE/PERF",
+        "start": 478918,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478840,
+        "name": "(P0691) RADIATOR FAN CIRCUIT LOW",
+        "start": 478839,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478841,
+        "name": "(P0692) RADIATOR FAN CIRCUIT HIGH",
+        "start": 478840,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478942,
+        "name": "(P0700) TRANSMISSION CONTROL SYSTEM",
+        "start": 478941,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478831,
+        "name": "(P0851) NEUTRAL SWITCH INPUT LOW",
+        "start": 478830,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478835,
+        "name": "(P0852) NEUTRAL SWITCH INPUT HIGH",
+        "start": 478834,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478859,
+        "name": "(P1152) FRONT O2 SENSOR RANGE/PERF LOW B1 S1",
+        "start": 478858,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478860,
+        "name": "(P1153) FRONT O2 SENSOR RANGE/PERF HIGH B1 S1",
+        "start": 478859,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478914,
+        "name": "(P1160) ABNORMAL RETURN SPRING",
+        "start": 478913,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478870,
+        "name": "(P1301) MISFIRE (HIGH TEMP EXHAUST GAS)",
+        "start": 478869,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478901,
+        "name": "(P1312) EGT SENSOR MALFUNCTION",
+        "start": 478900,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478848,
+        "name": "(P1400) FUEL TANK PRESSURE SOL. LOW",
+        "start": 478847,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478849,
+        "name": "(P1420) FUEL TANK PRESSURE SOL. HIGH INPUT",
+        "start": 478848,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478854,
+        "name": "(P1443) VENT CONTROL SOLENOID FUNCTION PROBLEM",
+        "start": 478853,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478888,
+        "name": "(P1491) PCV (BLOWBY) FUNCTION PROBLEM",
+        "start": 478887,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478826,
+        "name": "(P1518) STARTER SWITCH LOW INPUT",
+        "start": 478825,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478902,
+        "name": "(P1544) EGT TOO HIGH",
+        "start": 478901,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478889,
+        "name": "(P1560) BACK-UP VOLTAGE MALFUNCTION",
+        "start": 478888,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478945,
+        "name": "(P2004) TGV - INTAKE MANIFOLD RUNNER 1 STUCK OPEN",
+        "start": 478944,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478947,
+        "name": "(P2005) TGV - INTAKE MANIFOLD RUNNER 2 STUCK OPEN",
+        "start": 478946,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478946,
+        "name": "(P2006) TGV - INTAKE MANIFOLD RUNNER 1 STUCK CLOSED",
+        "start": 478945,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478948,
+        "name": "(P2007) TGV - INTAKE MANIFOLD RUNNER 2 STUCK CLOSED",
+        "start": 478947,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478959,
+        "name": "(P2008) TGV - INTAKE MANIFOLD RUNNER 1 CIRCUIT OPEN",
+        "start": 478958,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478957,
+        "name": "(P2009) TGV - INTAKE MANIFOLD RUNNER 1 CIRCUIT LOW",
+        "start": 478956,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478960,
+        "name": "(P2011) TGV - INTAKE MANIFOLD RUNNER 2 CIRCUIT OPEN",
+        "start": 478959,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478958,
+        "name": "(P2012) TGV - INTAKE MANIFOLD RUNNER 2 CIRCUIT LOW",
+        "start": 478957,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478953,
+        "name": "(P2016) TGV - INTAKE MANIFOLD RUNNER 1 POS. SENSOR LOW",
+        "start": 478952,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478954,
+        "name": "(P2017) TGV - INTAKE MANIFOLD RUNNER 1 POS. SENSOR HIGH",
+        "start": 478953,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478955,
+        "name": "(P2021) TGV - INTAKE MANIFOLD RUNNER 2 POS. SENSOR LOW",
+        "start": 478954,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478956,
+        "name": "(P2022) TGV - INTAKE MANIFOLD RUNNER 2 POS. SENSOR HIGH",
+        "start": 478955,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478941,
+        "name": "(P2088) OCV SOLENOID A1 CIRCUIT OPEN",
+        "start": 478940,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478940,
+        "name": "(P2089) OCV SOLENOID A1 CIRCUIT SHORT",
+        "start": 478939,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478939,
+        "name": "(P2092) OCV SOLENOID A2 CIRCUIT OPEN",
+        "start": 478938,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478938,
+        "name": "(P2093) OCV SOLENOID A2 CIRCUIT SHORT",
+        "start": 478937,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478918,
+        "name": "(P2096) POST CATALYST TOO LEAN B1",
+        "start": 478917,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478927,
+        "name": "(P2097) POST CATALYST TOO RICH B1",
+        "start": 478926,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478917,
+        "name": "(P2101) THROTTLE ACTUATOR CIRCUIT RANGE/PERF",
+        "start": 478916,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478915,
+        "name": "(P2102) THROTTLE ACTUATOR CIRCUIT LOW",
+        "start": 478914,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478916,
+        "name": "(P2103) THROTTLE ACTUATOR CIRCUIT HIGH",
+        "start": 478915,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478911,
+        "name": "(P2109) TPS A MINIMUM STOP PERF",
+        "start": 478910,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478924,
+        "name": "(P2122) TPS D CIRCUIT LOW INPUT",
+        "start": 478923,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478925,
+        "name": "(P2123) TPS D CIRCUIT HIGH INPUT",
+        "start": 478924,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478922,
+        "name": "(P2127) TPS E CIRCUIT LOW INPUT",
+        "start": 478921,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478923,
+        "name": "(P2128) TPS E CIRCUIT HIGH INPUT",
+        "start": 478922,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478926,
+        "name": "(P2135) TPS A/B VOLTAGE",
+        "start": 478925,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478921,
+        "name": "(P2138) TPS D/E VOLTAGE",
+        "start": 478920,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478949,
+        "name": "(P2227) BARO. PRESSURE CIRCUIT RANGE/PERF",
+        "start": 478948,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478952,
+        "name": "(P2228) BARO. PRESSURE CIRCUIT LOW INPUT",
+        "start": 478951,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 478951,
+        "name": "(P2229) BARO. PRESSURE CIRCUIT HIGH INPUT",
+        "start": 478950,
+        "width": 1
+      },
+      {
+        "count": 3,
+        "end": 814936,
+        "name": "A/F Learning #1 Airflow Ranges",
+        "start": 814924,
+        "width": 4
+      },
+      {
+        "count": 2,
+        "end": 814920,
+        "name": "A/F Learning #1 Limits",
+        "start": 814912,
+        "width": 4
+      },
+      {
+        "count": 1,
+        "end": 824876,
+        "name": "Advance Multiplier (Initial)",
+        "start": 824872,
+        "width": 4
+      },
+      {
+        "count": 1,
+        "end": 824916,
+        "name": "Advance Multiplier Step Value",
+        "start": 824912,
+        "width": 4
+      },
+      {
+        "count": 2,
+        "end": 786552,
+        "name": "Atmospheric Pressure Sensor Scaling",
+        "start": 786544,
+        "width": 4
+      },
+      {
+        "count": 288,
+        "end": 827996,
+        "name": "Base Timing",
+        "start": 827708,
+        "width": 1
+      },
+      {
+        "count": 16,
+        "end": 827636,
+        "name": "Engine Load",
+        "start": 827572,
+        "width": 4
+      },
+      {
+        "count": 18,
+        "end": 827708,
+        "name": "Engine Speed",
+        "start": 827636,
+        "width": 4
+      },
+      {
+        "count": 16,
+        "end": 825461,
+        "name": "Base Timing Idle",
+        "start": 825445,
+        "width": 1
+      },
+      {
+        "count": 16,
+        "end": 825160,
+        "name": "Coolant Temperature",
+        "start": 825096,
+        "width": 4
+      },
+      {
+        "count": 9,
+        "end": 825445,
+        "name": "Base Timing Idle Minimum",
+        "start": 825436,
+        "width": 1
+      },
+      {
+        "count": 9,
+        "end": 825436,
+        "name": "Engine Speed",
+        "start": 825400,
+        "width": 4
+      },
+      {
+        "count": 1,
+        "end": 824404,
+        "name": "Base Timing Idle Minimum Vehicle Speed Enable",
+        "start": 824400,
+        "width": 4
+      },
+      {
+        "count": 1,
+        "end": 787852,
+        "name": "Boost Control Disable (Fine Correction)",
+        "start": 787848,
+        "width": 4
+      },
+      {
+        "count": 2,
+        "end": 787860,
+        "name": "Boost Control Disable (IAM)",
+        "start": 787852,
+        "width": 4
+      },
+      {
+        "count": 1,
+        "end": 787766,
+        "name": "Boost Control Disable Delay (Fine Correction)",
+        "start": 787765,
+        "width": 1
+      },
+      {
+        "count": 6,
+        "end": 819260,
+        "name": "Boost Limit (Fuel Cut)",
+        "start": 819248,
+        "width": 2
+      },
+      {
+        "count": 6,
+        "end": 819248,
+        "name": "Atmospheric Pressure",
+        "start": 819224,
+        "width": 4
+      },
+      {
+        "count": 2,
+        "end": 815108,
+        "name": "CL Delay Maximum (EGT)",
+        "start": 815100,
+        "width": 4
+      },
+      {
+        "count": 2,
+        "end": 815080,
+        "name": "CL Delay Maximum (Throttle) (High Atm. Pressure)",
+        "start": 815072,
+        "width": 4
+      },
+      {
+        "count": 2,
+        "end": 815088,
+        "name": "CL Delay Maximum (Throttle) (Low Atm. Pressure)",
+        "start": 815080,
+        "width": 4
+      },
+      {
+        "count": 2,
+        "end": 815100,
+        "name": "CL Delay Maximum (Vehicle Speed)",
+        "start": 815092,
+        "width": 4
+      },
+      {
+        "count": 2,
+        "end": 815072,
+        "name": "CL Delay Maximum Engine Speed (Neutral)",
+        "start": 815064,
+        "width": 4
+      },
+      {
+        "count": 10,
+        "end": 815024,
+        "name": "CL Delay Maximum Engine Speed (Per Gear)",
+        "start": 814984,
+        "width": 4
+      },
+      {
+        "count": 1,
+        "end": 814984,
+        "name": "CL Delay Minimum (ECT)",
+        "start": 814980,
+        "width": 4
+      },
+      {
+        "count": 2,
+        "end": 815116,
+        "name": "CL Delay Throttle Atm. Pressure Thresholds",
+        "start": 815108,
+        "width": 4
+      },
+      {
+        "count": 132,
+        "end": 824068,
+        "name": "CL Fueling Target Compensation (Load)",
+        "start": 823804,
+        "width": 2
+      },
+      {
+        "count": 11,
+        "end": 823756,
+        "name": "Engine Load",
+        "start": 823712,
+        "width": 4
+      },
+      {
+        "count": 12,
+        "end": 823804,
+        "name": "Engine Speed",
+        "start": 823756,
+        "width": 4
+      },
+      {
+        "count": 48,
+        "end": 823460,
+        "name": "CL Fueling Target Compensation A (ECT)",
+        "start": 823364,
+        "width": 2
+      },
+      {
+        "count": 16,
+        "end": 815992,
+        "name": "Coolant Temperature",
+        "start": 815928,
+        "width": 4
+      },
+      {
+        "count": 3,
+        "end": 823364,
+        "name": "Engine Load",
+        "start": 823352,
+        "width": 4
+      },
+      {
+        "count": 48,
+        "end": 823640,
+        "name": "CL Fueling Target Compensation B (ECT)",
+        "start": 823544,
+        "width": 2
+      },
+      {
+        "count": 16,
+        "end": 815992,
+        "name": "Coolant Temperature",
+        "start": 815928,
+        "width": 4
+      },
+      {
+        "count": 3,
+        "end": 823544,
+        "name": "Engine Load",
+        "start": 823532,
+        "width": 4
+      },
+      {
+        "count": 9,
+        "end": 814034,
+        "name": "CL to OL Delay",
+        "start": 814016,
+        "width": 2
+      },
+      {
+        "count": 16,
+        "end": 818620,
+        "name": "CL to OL Transition with Delay A (Base Pulse Width)",
+        "start": 818588,
+        "width": 2
+      },
+      {
+        "count": 16,
+        "end": 818588,
+        "name": "Engine Speed",
+        "start": 818524,
+        "width": 4
+      },
+      {
+        "count": 16,
+        "end": 816632,
+        "name": "CL to OL Transition with Delay A (Throttle)",
+        "start": 816616,
+        "width": 1
+      },
+      {
+        "count": 16,
+        "end": 816616,
+        "name": "Engine Speed",
+        "start": 816552,
+        "width": 4
+      },
+      {
+        "count": 16,
+        "end": 818716,
+        "name": "CL to OL Transition with Delay B (Base Pulse Width)",
+        "start": 818684,
+        "width": 2
+      },
+      {
+        "count": 16,
+        "end": 818684,
+        "name": "Engine Speed",
+        "start": 818620,
+        "width": 4
+      },
+      {
+        "count": 16,
+        "end": 816712,
+        "name": "CL to OL Transition with Delay B (Throttle)",
+        "start": 816696,
+        "width": 1
+      },
+      {
+        "count": 16,
+        "end": 816696,
+        "name": "Engine Speed",
+        "start": 816632,
+        "width": 4
+      },
+      {
+        "count": 1,
+        "end": 814980,
+        "name": "CL to OL Transition with Delay BPW Hysteresis",
+        "start": 814976,
+        "width": 4
+      },
+      {
+        "count": 16,
+        "end": 818812,
+        "name": "CL to OL Transition with Delay C (Base Pulse Width)",
+        "start": 818780,
+        "width": 2
+      },
+      {
+        "count": 16,
+        "end": 818780,
+        "name": "Engine Speed",
+        "start": 818716,
+        "width": 4
+      },
+      {
+        "count": 16,
+        "end": 816792,
+        "name": "CL to OL Transition with Delay C (Throttle)",
+        "start": 816776,
+        "width": 1
+      },
+      {
+        "count": 16,
+        "end": 816776,
+        "name": "Engine Speed",
+        "start": 816712,
+        "width": 4
+      },
+      {
+        "count": 1,
+        "end": 814976,
+        "name": "CL to OL Transition with Delay Throttle Hysteresis",
+        "start": 814972,
+        "width": 4
+      },
+      {
+        "count": 168,
+        "end": 1047592,
+        "name": "Checksum Fix",
+        "start": 1047424,
+        "width": 1
+      },
+      {
+        "count": 28,
+        "end": 546752,
+        "name": "Coolant Temp Sensor Scaling",
+        "start": 546640,
+        "width": 4
+      },
+      {
+        "count": 28,
+        "end": 546640,
+        "name": "Coolant Temp Sensor",
+        "start": 546528,
+        "width": 4
+      },
+      {
+        "count": 6,
+        "end": 816186,
+        "name": "Cranking Fuel IPW Compensation (Accelerator)",
+        "start": 816180,
+        "width": 1
+      },
+      {
+        "count": 6,
+        "end": 816180,
+        "name": "Accelerator Pedal Angle",
+        "start": 816156,
+        "width": 4
+      },
+      {
+        "count": 35,
+        "end": 820739,
+        "name": "Cranking Fuel IPW Compensation (RPM)",
+        "start": 820704,
+        "width": 1
+      },
+      {
+        "count": 5,
+        "end": 820676,
+        "name": "Engine Speed",
+        "start": 820656,
+        "width": 4
+      },
+      {
+        "count": 7,
+        "end": 820704,
+        "name": "Coolant Temperature",
+        "start": 820676,
+        "width": 4
+      },
+      {
+        "count": 16,
+        "end": 817350,
+        "name": "Cranking Fuel Injector Pulse Width A (ECT)",
+        "start": 817318,
+        "width": 2
+      },
+      {
+        "count": 16,
+        "end": 815992,
+        "name": "Coolant Temperature",
+        "start": 815928,
+        "width": 4
+      },
+      {
+        "count": 16,
+        "end": 817382,
+        "name": "Cranking Fuel Injector Pulse Width B (ECT)",
+        "start": 817350,
+        "width": 2
+      },
+      {
+        "count": 16,
+        "end": 815992,
+        "name": "Coolant Temperature",
+        "start": 815928,
+        "width": 4
+      },
+      {
+        "count": 16,
+        "end": 817414,
+        "name": "Cranking Fuel Injector Pulse Width C (ECT)",
+        "start": 817382,
+        "width": 2
+      },
+      {
+        "count": 16,
+        "end": 815992,
+        "name": "Coolant Temperature",
+        "start": 815928,
+        "width": 4
+      },
+      {
+        "count": 16,
+        "end": 817446,
+        "name": "Cranking Fuel Injector Pulse Width D (ECT)",
+        "start": 817414,
+        "width": 2
+      },
+      {
+        "count": 16,
+        "end": 815992,
+        "name": "Coolant Temperature",
+        "start": 815928,
+        "width": 4
+      },
+      {
+        "count": 30,
+        "end": 840444,
+        "name": "EGT Sensor Scaling",
+        "start": 840324,
+        "width": 4
+      },
+      {
+        "count": 30,
+        "end": 840324,
+        "name": "Exhaust Gas Temperature Sensor",
+        "start": 840204,
+        "width": 4
+      },
+      {
+        "count": 88,
+        "end": 797560,
+        "name": "Engine Load Compensation (MP)",
+        "start": 797472,
+        "width": 1
+      },
+      {
+        "count": 11,
+        "end": 797440,
+        "name": "Manifold Pressure",
+        "start": 797396,
+        "width": 4
+      },
+      {
+        "count": 8,
+        "end": 797472,
+        "name": "Engine Speed",
+        "start": 797440,
+        "width": 4
+      },
+      {
+        "count": 1,
+        "end": 134800,
+        "name": "Engine Load Limit (Maximum)",
+        "start": 134796,
+        "width": 4
+      },
+      {
+        "count": 1,
+        "end": 824760,
+        "name": "Extended Feedback Correction High RPM Compensation",
+        "start": 824756,
+        "width": 4
+      },
+      {
+        "count": 2,
+        "end": 824756,
+        "name": "Feedback Correction Minimum Load",
+        "start": 824748,
+        "width": 4
+      },
+      {
+        "count": 1,
+        "end": 824190,
+        "name": "Feedback Correction Negative Advance Delay",
+        "start": 824188,
+        "width": 2
+      },
+      {
+        "count": 1,
+        "end": 824712,
+        "name": "Feedback Correction Negative Advance Value",
+        "start": 824708,
+        "width": 4
+      },
+      {
+        "count": 4,
+        "end": 824748,
+        "name": "Feedback Correction Range (RPM)",
+        "start": 824732,
+        "width": 4
+      },
+      {
+        "count": 1,
+        "end": 824700,
+        "name": "Feedback Correction Retard Limit",
+        "start": 824696,
+        "width": 4
+      },
+      {
+        "count": 1,
+        "end": 824704,
+        "name": "Feedback Correction Retard Value",
+        "start": 824700,
+        "width": 4
+      },
+      {
+        "count": 1,
+        "end": 824204,
+        "name": "Fine Correction Advance Delay",
+        "start": 824202,
+        "width": 2
+      },
+      {
+        "count": 1,
+        "end": 824972,
+        "name": "Fine Correction Advance Limit",
+        "start": 824968,
+        "width": 4
+      },
+      {
+        "count": 1,
+        "end": 824980,
+        "name": "Fine Correction Advance Value",
+        "start": 824976,
+        "width": 4
+      },
+      {
+        "count": 4,
+        "end": 825028,
+        "name": "Fine Correction Columns (Load)",
+        "start": 825012,
+        "width": 4
+      },
+      {
+        "count": 4,
+        "end": 825012,
+        "name": "Fine Correction Range (Load)",
+        "start": 824996,
+        "width": 4
+      },
+      {
+        "count": 4,
+        "end": 824996,
+        "name": "Fine Correction Range (RPM)",
+        "start": 824980,
+        "width": 4
+      },
+      {
+        "count": 1,
+        "end": 824976,
+        "name": "Fine Correction Retard Limit",
+        "start": 824972,
+        "width": 4
+      },
+      {
+        "count": 1,
+        "end": 825056,
+        "name": "Fine Correction Retard Value",
+        "start": 825052,
+        "width": 4
+      },
+      {
+        "count": 6,
+        "end": 825052,
+        "name": "Fine Correction Rows (RPM)",
+        "start": 825028,
+        "width": 4
+      },
+      {
+        "count": 2,
+        "end": 491848,
+        "name": "Force Pass Readiness Monitors",
+        "start": 491846,
+        "width": 1
+      },
+      {
+        "count": 4,
+        "end": 796656,
+        "name": "Front Oxygen Sensor Compensation (Atm. Pressure)",
+        "start": 796648,
+        "width": 2
+      },
+      {
+        "count": 4,
+        "end": 796648,
+        "name": "Atmospheric Pressure",
+        "start": 796632,
+        "width": 4
+      },
+      {
+        "count": 1,
+        "end": 142776,
+        "name": "Front Oxygen Sensor Rich Limit",
+        "start": 142772,
+        "width": 4
+      },
+      {
+        "count": 13,
+        "end": 840548,
+        "name": "Front Oxygen Sensor Scaling",
+        "start": 840496,
+        "width": 4
+      },
+      {
+        "count": 13,
+        "end": 840496,
+        "name": "Front Oxygen Sensor",
+        "start": 840444,
+        "width": 4
+      },
+      {
+        "count": 30,
+        "end": 839772,
+        "name": "Fuel Temp Sensor Scaling",
+        "start": 839652,
+        "width": 4
+      },
+      {
+        "count": 30,
+        "end": 839652,
+        "name": "Fuel Temp Sensor",
+        "start": 839532,
+        "width": 4
+      },
+      {
+        "count": 16,
+        "end": 832032,
+        "name": "Idle Speed Target A",
+        "start": 832000,
+        "width": 2
+      },
+      {
+        "count": 16,
+        "end": 830456,
+        "name": "Coolant Temperature",
+        "start": 830392,
+        "width": 4
+      },
+      {
+        "count": 16,
+        "end": 832096,
+        "name": "Idle Speed Target B",
+        "start": 832064,
+        "width": 2
+      },
+      {
+        "count": 16,
+        "end": 830456,
+        "name": "Coolant Temperature",
+        "start": 830392,
+        "width": 4
+      },
+      {
+        "count": 16,
+        "end": 832160,
+        "name": "Idle Speed Target C",
+        "start": 832128,
+        "width": 2
+      },
+      {
+        "count": 16,
+        "end": 830456,
+        "name": "Coolant Temperature",
+        "start": 830392,
+        "width": 4
+      },
+      {
+        "count": 88,
+        "end": 789100,
+        "name": "Initial Wastegate Duty A",
+        "start": 788924,
+        "width": 2
+      },
+      {
+        "count": 8,
+        "end": 788880,
+        "name": "Throttle Plate Opening Angle",
+        "start": 788848,
+        "width": 4
+      },
+      {
+        "count": 11,
+        "end": 788924,
+        "name": "Engine Speed",
+        "start": 788880,
+        "width": 4
+      },
+      {
+        "count": 88,
+        "end": 789352,
+        "name": "Initial Wastegate Duty B",
+        "start": 789176,
+        "width": 2
+      },
+      {
+        "count": 8,
+        "end": 789132,
+        "name": "Throttle Plate Opening Angle",
+        "start": 789100,
+        "width": 4
+      },
+      {
+        "count": 11,
+        "end": 789176,
+        "name": "Engine Speed",
+        "start": 789132,
+        "width": 4
+      },
+      {
+        "count": 16,
+        "end": 788200,
+        "name": "Initial/Max Wastegate Duty Alternate Compensation (IAT)",
+        "start": 788184,
+        "width": 1
+      },
+      {
+        "count": 16,
+        "end": 788184,
+        "name": "Intake Temperature",
+        "start": 788120,
+        "width": 4
+      },
+      {
+        "count": 24,
+        "end": 788784,
+        "name": "Initial/Max Wastegate Duty Compensation (Atm. Pressure)",
+        "start": 788760,
+        "width": 1
+      },
+      {
+        "count": 6,
+        "end": 788744,
+        "name": "Atmospheric Pressure",
+        "start": 788720,
+        "width": 4
+      },
+      {
+        "count": 4,
+        "end": 788760,
+        "name": "Engine Speed",
+        "start": 788744,
+        "width": 4
+      },
+      {
+        "count": 16,
+        "end": 788296,
+        "name": "Initial/Max Wastegate Duty Compensation (ECT)",
+        "start": 788280,
+        "width": 1
+      },
+      {
+        "count": 16,
+        "end": 787960,
+        "name": "Coolant Temperature",
+        "start": 787896,
+        "width": 4
+      },
+      {
+        "count": 16,
+        "end": 788040,
+        "name": "Initial/Max Wastegate Duty Compensation (IAT)",
+        "start": 788024,
+        "width": 1
+      },
+      {
+        "count": 16,
+        "end": 788024,
+        "name": "Intake Temperature",
+        "start": 787960,
+        "width": 4
+      },
+      {
+        "count": 1,
+        "end": 814356,
+        "name": "Injector Flow Scaling",
+        "start": 814352,
+        "width": 4
+      },
+      {
+        "count": 5,
+        "end": 839098,
+        "name": "Injector Latency",
+        "start": 839088,
+        "width": 2
+      },
+      {
+        "count": 5,
+        "end": 839088,
+        "name": "Battery Output",
+        "start": 839068,
+        "width": 4
+      },
+      {
+        "count": 100,
+        "end": 845624,
+        "name": "Intake Cam Advance Angle (AVCS)",
+        "start": 845424,
+        "width": 2
+      },
+      {
+        "count": 10,
+        "end": 845384,
+        "name": "Engine Load",
+        "start": 845344,
+        "width": 4
+      },
+      {
+        "count": 10,
+        "end": 845424,
+        "name": "Engine Speed",
+        "start": 845384,
+        "width": 4
+      },
+      {
+        "count": 30,
+        "end": 546992,
+        "name": "Intake Temp Sensor Scaling",
+        "start": 546872,
+        "width": 4
+      },
+      {
+        "count": 30,
+        "end": 546872,
+        "name": "Intake Temp Sensor",
+        "start": 546752,
+        "width": 4
+      },
+      {
+        "count": 288,
+        "end": 828864,
+        "name": "Knock Correction Advance Max",
+        "start": 828576,
+        "width": 1
+      },
+      {
+        "count": 16,
+        "end": 828504,
+        "name": "Engine Load",
+        "start": 828440,
+        "width": 4
+      },
+      {
+        "count": 18,
+        "end": 828576,
+        "name": "Engine Speed",
+        "start": 828504,
+        "width": 4
+      },
+      {
+        "count": 40,
+        "end": 797652,
+        "name": "MAF Compensation (IAT)",
+        "start": 797612,
+        "width": 1
+      },
+      {
+        "count": 5,
+        "end": 797580,
+        "name": "Intake Temperature",
+        "start": 797560,
+        "width": 4
+      },
+      {
+        "count": 8,
+        "end": 797612,
+        "name": "Mass Airflow",
+        "start": 797580,
+        "width": 4
+      },
+      {
+        "count": 1,
+        "end": 795544,
+        "name": "MAF Limit (Maximum)",
+        "start": 795540,
+        "width": 4
+      },
+      {
+        "count": 54,
+        "end": 840204,
+        "name": "MAF Sensor Scaling",
+        "start": 839988,
+        "width": 4
+      },
+      {
+        "count": 54,
+        "end": 839988,
+        "name": "MAF sensor",
+        "start": 839772,
+        "width": 4
+      },
+      {
+        "count": 2,
+        "end": 798981,
+        "name": "Manifold Pressure Sensor CEL Delays",
+        "start": 798979,
+        "width": 1
+      },
+      {
+        "count": 2,
+        "end": 838850,
+        "name": "Manifold Pressure Sensor Limits (CEL)",
+        "start": 838846,
+        "width": 2
+      },
+      {
+        "count": 2,
+        "end": 786632,
+        "name": "Manifold Pressure Sensor Scaling",
+        "start": 786624,
+        "width": 4
+      },
+      {
+        "count": 88,
+        "end": 790108,
+        "name": "Max Wastegate Duty",
+        "start": 789932,
+        "width": 2
+      },
+      {
+        "count": 8,
+        "end": 789888,
+        "name": "Throttle Plate Opening Angle",
+        "start": 789856,
+        "width": 4
+      },
+      {
+        "count": 11,
+        "end": 789932,
+        "name": "Engine Speed",
+        "start": 789888,
+        "width": 4
+      },
+      {
+        "count": 5,
+        "end": 788680,
+        "name": "Max Wastegate Duty Alternate A (RPM)",
+        "start": 788660,
+        "width": 4
+      },
+      {
+        "count": 5,
+        "end": 788660,
+        "name": "Engine Speed",
+        "start": 788640,
+        "width": 4
+      },
+      {
+        "count": 5,
+        "end": 788720,
+        "name": "Max Wastegate Duty Alternate B (RPM)",
+        "start": 788700,
+        "width": 4
+      },
+      {
+        "count": 5,
+        "end": 788700,
+        "name": "Engine Speed",
+        "start": 788680,
+        "width": 4
+      },
+      {
+        "count": 1,
+        "end": 787765,
+        "name": "Max Wastegate Duty Alternate Fix",
+        "start": 787764,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 87552,
+        "name": "Max Wastegate Duty Limit Post-Compensation",
+        "start": 87548,
+        "width": 4
+      },
+      {
+        "count": 16,
+        "end": 817734,
+        "name": "Min Primary Base Enrich 2 Decay Step 1",
+        "start": 817702,
+        "width": 2
+      },
+      {
+        "count": 16,
+        "end": 815992,
+        "name": "Coolant Temperature",
+        "start": 815928,
+        "width": 4
+      },
+      {
+        "count": 16,
+        "end": 817766,
+        "name": "Min Primary Base Enrich 2 Decay Step 2",
+        "start": 817734,
+        "width": 2
+      },
+      {
+        "count": 16,
+        "end": 815992,
+        "name": "Coolant Temperature",
+        "start": 815928,
+        "width": 4
+      },
+      {
+        "count": 16,
+        "end": 817606,
+        "name": "Min Primary Base Enrich 2 Initial Start 1A",
+        "start": 817574,
+        "width": 2
+      },
+      {
+        "count": 16,
+        "end": 815992,
+        "name": "Coolant Temperature",
+        "start": 815928,
+        "width": 4
+      },
+      {
+        "count": 16,
+        "end": 817670,
+        "name": "Min Primary Base Enrich 2 Initial Start 1B",
+        "start": 817638,
+        "width": 2
+      },
+      {
+        "count": 16,
+        "end": 815992,
+        "name": "Coolant Temperature",
+        "start": 815928,
+        "width": 4
+      },
+      {
+        "count": 16,
+        "end": 817638,
+        "name": "Min Primary Base Enrich 2 Initial Start 2A",
+        "start": 817606,
+        "width": 2
+      },
+      {
+        "count": 16,
+        "end": 815992,
+        "name": "Coolant Temperature",
+        "start": 815928,
+        "width": 4
+      },
+      {
+        "count": 16,
+        "end": 817702,
+        "name": "Min Primary Base Enrich 2 Initial Start 2B",
+        "start": 817670,
+        "width": 2
+      },
+      {
+        "count": 16,
+        "end": 815992,
+        "name": "Coolant Temperature",
+        "start": 815928,
+        "width": 4
+      },
+      {
+        "count": 16,
+        "end": 816218,
+        "name": "Min Primary Base Enrich 3 Decay Delay A",
+        "start": 816202,
+        "width": 1
+      },
+      {
+        "count": 16,
+        "end": 815992,
+        "name": "Coolant Temperature",
+        "start": 815928,
+        "width": 4
+      },
+      {
+        "count": 16,
+        "end": 816234,
+        "name": "Min Primary Base Enrich 3 Decay Delay B",
+        "start": 816218,
+        "width": 1
+      },
+      {
+        "count": 16,
+        "end": 815992,
+        "name": "Coolant Temperature",
+        "start": 815928,
+        "width": 4
+      },
+      {
+        "count": 1,
+        "end": 814360,
+        "name": "Min Primary Base Enrich 3 Decay Multiplier",
+        "start": 814356,
+        "width": 4
+      },
+      {
+        "count": 16,
+        "end": 817478,
+        "name": "Min Primary Base Enrich 3 Initial Start 1A",
+        "start": 817446,
+        "width": 2
+      },
+      {
+        "count": 16,
+        "end": 815992,
+        "name": "Coolant Temperature",
+        "start": 815928,
+        "width": 4
+      },
+      {
+        "count": 16,
+        "end": 817510,
+        "name": "Min Primary Base Enrich 3 Initial Start 1B",
+        "start": 817478,
+        "width": 2
+      },
+      {
+        "count": 16,
+        "end": 815992,
+        "name": "Coolant Temperature",
+        "start": 815928,
+        "width": 4
+      },
+      {
+        "count": 16,
+        "end": 817542,
+        "name": "Min Primary Base Enrich 3 Initial Start 2A",
+        "start": 817510,
+        "width": 2
+      },
+      {
+        "count": 16,
+        "end": 815992,
+        "name": "Coolant Temperature",
+        "start": 815928,
+        "width": 4
+      },
+      {
+        "count": 16,
+        "end": 817574,
+        "name": "Min Primary Base Enrich 3 Initial Start 2B",
+        "start": 817542,
+        "width": 2
+      },
+      {
+        "count": 16,
+        "end": 815992,
+        "name": "Coolant Temperature",
+        "start": 815928,
+        "width": 4
+      },
+      {
+        "count": 16,
+        "end": 816282,
+        "name": "Min Primary Base Enrichment 1",
+        "start": 816266,
+        "width": 1
+      },
+      {
+        "count": 16,
+        "end": 815992,
+        "name": "Coolant Temperature",
+        "start": 815928,
+        "width": 4
+      },
+      {
+        "count": 24,
+        "end": 821028,
+        "name": "Min Primary Base Enrichment 1 (Non-Primary OL)",
+        "start": 821004,
+        "width": 1
+      },
+      {
+        "count": 8,
+        "end": 820992,
+        "name": "Coolant Temperature",
+        "start": 820960,
+        "width": 4
+      },
+      {
+        "count": 3,
+        "end": 821004,
+        "name": "Engine Load",
+        "start": 820992,
+        "width": 4
+      },
+      {
+        "count": 1,
+        "end": 814972,
+        "name": "Minimum Active Primary Open Loop Enrichment",
+        "start": 814968,
+        "width": 4
+      },
+      {
+        "count": 6,
+        "end": 816822,
+        "name": "Minimum Primary Open Loop Enrichment (Throttle)",
+        "start": 816816,
+        "width": 1
+      },
+      {
+        "count": 6,
+        "end": 816816,
+        "name": "Throttle Plate Opening Angle",
+        "start": 816792,
+        "width": 4
+      },
+      {
+        "count": 1,
+        "end": 815368,
+        "name": "Minimum Tip-in Enrichment Activation",
+        "start": 815364,
+        "width": 4
+      },
+      {
+        "count": 1,
+        "end": 815364,
+        "name": "Minimum Tip-in Enrichment Activation (Throttle)",
+        "start": 815360,
+        "width": 4
+      },
+      {
+        "count": 112,
+        "end": 822116,
+        "name": "Per Injector Primary Fuel Offset Compensation A",
+        "start": 822004,
+        "width": 1
+      },
+      {
+        "count": 8,
+        "end": 821948,
+        "name": "Last Calculated Base Pulse Width",
+        "start": 821916,
+        "width": 4
+      },
+      {
+        "count": 14,
+        "end": 822004,
+        "name": "Engine Speed",
+        "start": 821948,
+        "width": 4
+      },
+      {
+        "count": 112,
+        "end": 822316,
+        "name": "Per Injector Primary Fuel Offset Compensation B",
+        "start": 822204,
+        "width": 1
+      },
+      {
+        "count": 8,
+        "end": 822148,
+        "name": "Last Calculated Base Pulse Width",
+        "start": 822116,
+        "width": 4
+      },
+      {
+        "count": 14,
+        "end": 822204,
+        "name": "Engine Speed",
+        "start": 822148,
+        "width": 4
+      },
+      {
+        "count": 112,
+        "end": 822516,
+        "name": "Per Injector Primary Fuel Offset Compensation C",
+        "start": 822404,
+        "width": 1
+      },
+      {
+        "count": 8,
+        "end": 822348,
+        "name": "Last Calculated Base Pulse Width",
+        "start": 822316,
+        "width": 4
+      },
+      {
+        "count": 14,
+        "end": 822404,
+        "name": "Engine Speed",
+        "start": 822348,
+        "width": 4
+      },
+      {
+        "count": 112,
+        "end": 822716,
+        "name": "Per Injector Primary Fuel Offset Compensation D",
+        "start": 822604,
+        "width": 1
+      },
+      {
+        "count": 8,
+        "end": 822548,
+        "name": "Last Calculated Base Pulse Width",
+        "start": 822516,
+        "width": 4
+      },
+      {
+        "count": 14,
+        "end": 822604,
+        "name": "Engine Speed",
+        "start": 822548,
+        "width": 4
+      },
+      {
+        "count": 1,
+        "end": 815128,
+        "name": "Primary Open Loop Fuel Map Switch (IAM)",
+        "start": 815124,
+        "width": 4
+      },
+      {
+        "count": 288,
+        "end": 821472,
+        "name": "Primary Open Loop Fueling",
+        "start": 821184,
+        "width": 1
+      },
+      {
+        "count": 16,
+        "end": 821112,
+        "name": "Engine Load",
+        "start": 821048,
+        "width": 4
+      },
+      {
+        "count": 18,
+        "end": 821184,
+        "name": "Engine Speed",
+        "start": 821112,
+        "width": 4
+      },
+      {
+        "count": 288,
+        "end": 821916,
+        "name": "Primary Open Loop Fueling (Failsafe)",
+        "start": 821628,
+        "width": 1
+      },
+      {
+        "count": 16,
+        "end": 821556,
+        "name": "Engine Load",
+        "start": 821492,
+        "width": 4
+      },
+      {
+        "count": 18,
+        "end": 821628,
+        "name": "Engine Speed",
+        "start": 821556,
+        "width": 4
+      },
+      {
+        "count": 16,
+        "end": 818844,
+        "name": "Primary Open Loop Fueling Compensation (ECT)",
+        "start": 818812,
+        "width": 2
+      },
+      {
+        "count": 16,
+        "end": 815992,
+        "name": "Coolant Temperature",
+        "start": 815928,
+        "width": 4
+      },
+      {
+        "count": 6,
+        "end": 816854,
+        "name": "Primary Open Loop Fueling Compensation (Timing Compensation)",
+        "start": 816848,
+        "width": 1
+      },
+      {
+        "count": 6,
+        "end": 816848,
+        "name": "'Timing Compensation (MRP)' + 'Timing Compensation (IAT)'",
+        "start": 816824,
+        "width": 4
+      },
+      {
+        "count": 4,
+        "end": 842396,
+        "name": "Radiator Fan Modes (ECT)",
+        "start": 842380,
+        "width": 4
+      },
+      {
+        "count": 6,
+        "end": 842420,
+        "name": "Radiator Fan Modes (Veh. Speed)",
+        "start": 842396,
+        "width": 4
+      },
+      {
+        "count": 225,
+        "end": 835834,
+        "name": "Requested Torque (Accelerator Pedal)",
+        "start": 835384,
+        "width": 2
+      },
+      {
+        "count": 15,
+        "end": 835324,
+        "name": "Accelerator Pedal Angle",
+        "start": 835264,
+        "width": 4
+      },
+      {
+        "count": 15,
+        "end": 835384,
+        "name": "Engine Speed",
+        "start": 835324,
+        "width": 4
+      },
+      {
+        "count": 2,
+        "end": 815456,
+        "name": "Rev Limit (Fuel Cut)",
+        "start": 815448,
+        "width": 4
+      },
+      {
+        "count": 1,
+        "end": 815460,
+        "name": "Rev Limit Fuel Resume (Boost)",
+        "start": 815456,
+        "width": 4
+      },
+      {
+        "count": 10,
+        "end": 826686,
+        "name": "Rough Correction Learning Delay (Increasing)",
+        "start": 826676,
+        "width": 1
+      },
+      {
+        "count": 10,
+        "end": 826676,
+        "name": "Engine Speed",
+        "start": 826636,
+        "width": 4
+      },
+      {
+        "count": 1,
+        "end": 824912,
+        "name": "Rough Correction Minimum KC Advance Map Value",
+        "start": 824908,
+        "width": 4
+      },
+      {
+        "count": 4,
+        "end": 824908,
+        "name": "Rough Correction Range (Load)",
+        "start": 824892,
+        "width": 4
+      },
+      {
+        "count": 4,
+        "end": 824892,
+        "name": "Rough Correction Range (RPM)",
+        "start": 824876,
+        "width": 4
+      },
+      {
+        "count": 2,
+        "end": 796244,
+        "name": "Speed Limiting (Throttle)",
+        "start": 796236,
+        "width": 4
+      },
+      {
+        "count": 1,
+        "end": 815536,
+        "name": "Speed Limiting Disable (Fuel Cut)",
+        "start": 815532,
+        "width": 4
+      },
+      {
+        "count": 1,
+        "end": 815528,
+        "name": "Speed Limiting Enable (Fuel Cut)",
+        "start": 815524,
+        "width": 4
+      },
+      {
+        "count": 2,
+        "end": 787828,
+        "name": "TD Activation Thresholds (RPM)",
+        "start": 787820,
+        "width": 4
+      },
+      {
+        "count": 2,
+        "end": 787784,
+        "name": "TD Activation Thresholds (Target Boost)",
+        "start": 787776,
+        "width": 4
+      },
+      {
+        "count": 2,
+        "end": 787844,
+        "name": "TD Integral Cumulative Range (WGDC Correction)",
+        "start": 787836,
+        "width": 4
+      },
+      {
+        "count": 1,
+        "end": 787796,
+        "name": "TD Integral Negative Activation (Boost Error)",
+        "start": 787792,
+        "width": 4
+      },
+      {
+        "count": 1,
+        "end": 787804,
+        "name": "TD Integral Positive Activation (Boost Error)",
+        "start": 787800,
+        "width": 4
+      },
+      {
+        "count": 1,
+        "end": 787812,
+        "name": "TD Integral Positive Activation (Wastegate Duty)",
+        "start": 787808,
+        "width": 4
+      },
+      {
+        "count": 96,
+        "end": 790632,
+        "name": "Target Boost A",
+        "start": 790440,
+        "width": 2
+      },
+      {
+        "count": 8,
+        "end": 790392,
+        "name": "Throttle Plate Opening Angle",
+        "start": 790360,
+        "width": 4
+      },
+      {
+        "count": 12,
+        "end": 790440,
+        "name": "Engine Speed",
+        "start": 790392,
+        "width": 4
+      },
+      {
+        "count": 96,
+        "end": 790904,
+        "name": "Target Boost B",
+        "start": 790712,
+        "width": 2
+      },
+      {
+        "count": 8,
+        "end": 790664,
+        "name": "Throttle Plate Opening Angle",
+        "start": 790632,
+        "width": 4
+      },
+      {
+        "count": 12,
+        "end": 790712,
+        "name": "Engine Speed",
+        "start": 790664,
+        "width": 4
+      },
+      {
+        "count": 1,
+        "end": 787896,
+        "name": "Target Boost Compensation (1st Gear)",
+        "start": 787892,
+        "width": 4
+      },
+      {
+        "count": 1,
+        "end": 787888,
+        "name": "Target Boost Compensation (1st Gear) Speed Disable",
+        "start": 787884,
+        "width": 4
+      },
+      {
+        "count": 4,
+        "end": 788576,
+        "name": "Target Boost Compensation (Atm. Pressure) Multiplier",
+        "start": 788568,
+        "width": 2
+      },
+      {
+        "count": 4,
+        "end": 788568,
+        "name": "Engine Speed",
+        "start": 788552,
+        "width": 4
+      },
+      {
+        "count": 4,
+        "end": 788364,
+        "name": "Target Boost Compensation (Atm. Pressure) Multiplier Offset",
+        "start": 788360,
+        "width": 1
+      },
+      {
+        "count": 4,
+        "end": 788360,
+        "name": "Engine Speed",
+        "start": 788344,
+        "width": 4
+      },
+      {
+        "count": 16,
+        "end": 788328,
+        "name": "Target Boost Compensation (ECT)",
+        "start": 788312,
+        "width": 1
+      },
+      {
+        "count": 16,
+        "end": 787960,
+        "name": "Coolant Temperature",
+        "start": 787896,
+        "width": 4
+      },
+      {
+        "count": 272,
+        "end": 835264,
+        "name": "Target Throttle Plate Position (Requested Torque)",
+        "start": 834720,
+        "width": 2
+      },
+      {
+        "count": 17,
+        "end": 834656,
+        "name": "Requested Torque",
+        "start": 834588,
+        "width": 4
+      },
+      {
+        "count": 16,
+        "end": 834720,
+        "name": "Engine Speed",
+        "start": 834656,
+        "width": 4
+      },
+      {
+        "count": 18,
+        "end": 819112,
+        "name": "Throttle Tip-in Enrichment",
+        "start": 819076,
+        "width": 2
+      },
+      {
+        "count": 18,
+        "end": 819076,
+        "name": "Throttle Angle Change",
+        "start": 819004,
+        "width": 4
+      },
+      {
+        "count": 1,
+        "end": 824676,
+        "name": "Timing Comp Maximum RPM (Per Cylinder)",
+        "start": 824672,
+        "width": 4
+      },
+      {
+        "count": 1,
+        "end": 824684,
+        "name": "Timing Comp Minimum Coolant Temp (Per Cylinder)",
+        "start": 824680,
+        "width": 4
+      },
+      {
+        "count": 1,
+        "end": 824680,
+        "name": "Timing Comp Minimum Load (Per Cylinder)",
+        "start": 824676,
+        "width": 4
+      },
+      {
+        "count": 16,
+        "end": 825493,
+        "name": "Timing Compensation (ECT)",
+        "start": 825477,
+        "width": 1
+      },
+      {
+        "count": 16,
+        "end": 825160,
+        "name": "Coolant Temperature",
+        "start": 825096,
+        "width": 4
+      },
+      {
+        "count": 15,
+        "end": 828931,
+        "name": "Timing Compensation (MRP)",
+        "start": 828916,
+        "width": 1
+      },
+      {
+        "count": 5,
+        "end": 828904,
+        "name": "Atmospheric Pressure",
+        "start": 828884,
+        "width": 4
+      },
+      {
+        "count": 3,
+        "end": 828916,
+        "name": "Manifold Relative Pressure",
+        "start": 828904,
+        "width": 4
+      },
+      {
+        "count": 16,
+        "end": 825576,
+        "name": "Timing Compensation A (IAT)",
+        "start": 825560,
+        "width": 1
+      },
+      {
+        "count": 16,
+        "end": 825560,
+        "name": "Intake Temperature",
+        "start": 825496,
+        "width": 4
+      },
+      {
+        "count": 64,
+        "end": 828124,
+        "name": "Timing Compensation A (IAT) Activation",
+        "start": 828060,
+        "width": 1
+      },
+      {
+        "count": 8,
+        "end": 828028,
+        "name": "Engine Speed",
+        "start": 827996,
+        "width": 4
+      },
+      {
+        "count": 8,
+        "end": 828060,
+        "name": "Engine Load",
+        "start": 828028,
+        "width": 4
+      },
+      {
+        "count": 16,
+        "end": 826768,
+        "name": "Timing Compensation B (IAT)",
+        "start": 826752,
+        "width": 1
+      },
+      {
+        "count": 16,
+        "end": 826752,
+        "name": "Intake Temperature",
+        "start": 826688,
+        "width": 4
+      },
+      {
+        "count": 1,
+        "end": 825096,
+        "name": "Timing Compensation B (IAT) IAM Activation",
+        "start": 825092,
+        "width": 4
+      },
+      {
+        "count": 1,
+        "end": 825068,
+        "name": "Timing Compensation B (IAT) Max Additive",
+        "start": 825064,
+        "width": 4
+      },
+      {
+        "count": 15,
+        "end": 826407,
+        "name": "Timing Compensation Per Cylinder A  ",
+        "start": 826392,
+        "width": 1
+      },
+      {
+        "count": 15,
+        "end": 826392,
+        "name": "Engine Speed",
+        "start": 826332,
+        "width": 4
+      },
+      {
+        "count": 15,
+        "end": 826483,
+        "name": "Timing Compensation Per Cylinder B  ",
+        "start": 826468,
+        "width": 1
+      },
+      {
+        "count": 15,
+        "end": 826468,
+        "name": "Engine Speed",
+        "start": 826408,
+        "width": 4
+      },
+      {
+        "count": 15,
+        "end": 826559,
+        "name": "Timing Compensation Per Cylinder C  ",
+        "start": 826544,
+        "width": 1
+      },
+      {
+        "count": 15,
+        "end": 826544,
+        "name": "Engine Speed",
+        "start": 826484,
+        "width": 4
+      },
+      {
+        "count": 15,
+        "end": 826635,
+        "name": "Timing Compensation Per Cylinder D  ",
+        "start": 826620,
+        "width": 1
+      },
+      {
+        "count": 15,
+        "end": 826620,
+        "name": "Engine Speed",
+        "start": 826560,
+        "width": 4
+      },
+      {
+        "count": 1,
+        "end": 813963,
+        "name": "Tip-in Enrichment Applied Counter Reset",
+        "start": 813962,
+        "width": 1
+      },
+      {
+        "count": 9,
+        "end": 816973,
+        "name": "Tip-in Enrichment Compensation (Boost Error)",
+        "start": 816964,
+        "width": 1
+      },
+      {
+        "count": 9,
+        "end": 816964,
+        "name": "Boost Error",
+        "start": 816928,
+        "width": 4
+      },
+      {
+        "count": 16,
+        "end": 819144,
+        "name": "Tip-in Enrichment Compensation (ECT)",
+        "start": 819112,
+        "width": 2
+      },
+      {
+        "count": 16,
+        "end": 815992,
+        "name": "Coolant Temperature",
+        "start": 815928,
+        "width": 4
+      },
+      {
+        "count": 1,
+        "end": 813962,
+        "name": "Tip-in Enrichment Disable Applied Counter Threshold",
+        "start": 813961,
+        "width": 1
+      },
+      {
+        "count": 1,
+        "end": 815372,
+        "name": "Tip-in Enrichment Disable Throttle Cumulative Threshold",
+        "start": 815368,
+        "width": 4
+      },
+      {
+        "count": 1,
+        "end": 813964,
+        "name": "Tip-in Throttle Cumulative Reset",
+        "start": 813963,
+        "width": 1
+      },
+      {
+        "count": 9,
+        "end": 788494,
+        "name": "Turbo Dynamics Integral Negative",
+        "start": 788476,
+        "width": 2
+      },
+      {
+        "count": 9,
+        "end": 788476,
+        "name": "Boost Error",
+        "start": 788440,
+        "width": 4
+      },
+      {
+        "count": 9,
+        "end": 788550,
+        "name": "Turbo Dynamics Integral Positive",
+        "start": 788532,
+        "width": 2
+      },
+      {
+        "count": 9,
+        "end": 788532,
+        "name": "Boost Error",
+        "start": 788496,
+        "width": 4
+      },
+      {
+        "count": 9,
+        "end": 788438,
+        "name": "Turbo Dynamics Proportional",
+        "start": 788420,
+        "width": 2
+      },
+      {
+        "count": 9,
+        "end": 788420,
+        "name": "Boost Error",
+        "start": 788384,
+        "width": 4
+      }
+    ],
+    "checksum_descriptors": [
+      {
+        "end_parameter": 1047287,
+        "offset": 1047424,
+        "start": 8192
+      },
+      {
+        "end_parameter": 0,
+        "offset": 1047436,
+        "start": 0
+      },
+      {
+        "end_parameter": 0,
+        "offset": 1047448,
+        "start": 0
+      },
+      {
+        "end_parameter": 0,
+        "offset": 1047460,
+        "start": 0
+      },
+      {
+        "end_parameter": 0,
+        "offset": 1047472,
+        "start": 0
+      },
+      {
+        "end_parameter": 0,
+        "offset": 1047484,
+        "start": 0
+      },
+      {
+        "end_parameter": 0,
+        "offset": 1047496,
+        "start": 0
+      },
+      {
+        "end_parameter": 0,
+        "offset": 1047508,
+        "start": 0
+      },
+      {
+        "end_parameter": 0,
+        "offset": 1047520,
+        "start": 0
+      },
+      {
+        "end_parameter": 0,
+        "offset": 1047532,
+        "start": 0
+      },
+      {
+        "end_parameter": 0,
+        "offset": 1047544,
+        "start": 0
+      },
+      {
+        "end_parameter": 0,
+        "offset": 1047556,
+        "start": 0
+      },
+      {
+        "end_parameter": 0,
+        "offset": 1047568,
+        "start": 0
+      },
+      {
+        "end_parameter": 0,
+        "offset": 1047580,
+        "start": 0
+      }
+    ],
+    "forbidden_spans": [
+      [
+        0,
+        8192
+      ],
+      [
+        1048320,
+        1048576
+      ]
+    ],
+    "identity": {
+      "calid_hex": "4132574335313152",
+      "calid_offset": 8192,
+      "ecuid_hex": "2f12515306",
+      "ecuid_offset": 842456,
+      "size": 1048576
+    },
+    "preserved_hook_words": {
+      "189752": 8528,
+      "189764": 541412,
+      "220220": 8528,
+      "220224": 543044,
+      "31236": 8348,
+      "54052": 63784,
+      "65528": 4294950907,
+      "70880": 220054,
+      "74420": 84768,
+      "75752": 202712,
+      "75804": 189160
+    },
+    "preserved_special_spans": [
+      [
+        72408,
+        72416
+      ],
+      [
+        324368,
+        325968
+      ],
+      [
+        921600,
+        922468
+      ],
+      [
+        1047628,
+        1047632
+      ]
+    ],
+    "reset_words": [
+      2732,
+      4294950816,
+      2732,
+      4294950816
+    ]
+  },
+  "evidence_files": {
+    "C:\\Dev\\Astra_A2WC511R\\reports\\local\\diaphora\\START_PRESERVATION.json": "46a90eff3fb1790c56671377d25110e316e8508cb4d722bec56d415b61b00e19",
+    "C:\\Dev\\Astra_A2WC511R\\reports\\local\\gate_closure\\rom\\definition_overlap.json": "62c2f3d7408583052a61791db856aebc1c2a42b718b0dfa5a297e054a3b60e24",
+    "C:\\Dev\\Astra_A2WC511R\\reports\\local\\interfaces\\checksum_audit.py": "00b868761261d819572a8e5a51655e7a526849d8d9ba4828dbd904d0bb9dc6bc",
+    "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\ENGINEERING_GATES.json": "3943c3d20c13a7f8b836c2758b1296b1fc4bfe6d37306c073237c30498855db3",
+    "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\OWNERSHIP_FRAGMENTS.json": "d09c1e641175c40e11b286e53df3fcefa3c5bbac3817aadd0c616ce01300daab",
+    "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\build_audit_02\\BUILD_AUDIT.json": "afc1ed229e957d6f3abcfe445f42ee55e19f1212d25c720995aee6ff1f28760b",
+    "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\build_audit_02\\one_page.native_checksum.json": "b60be3f1dabc961c741167458bb401e16ed3239437de0b5f2ac1865a462e1710",
+    "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\build_audit_02\\two_pages.native_checksum.json": "945c577148f118ebe0d8225cbd641fa7d312c25cd74cdf17f8b02a3df1143862",
+    "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\protocol\\execution_01\\compiled_protocol_fixtures.json": "8f1bf4e238e1b4e604d33ae16fcb14e76e8b969bd74ebc065600b9d061fd7868",
+    "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\protocol\\execution_01\\one_page_overlay.json": "0ad9d7115f19d9a928a870436a3cfb6ca5c9ff2d0d05084f5cb015c9a5058dae",
+    "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\protocol\\execution_01\\two_pages_overlay.json": "b15efa4a7a0f909529e368cae938e0f7f9258497bec6d4de10eb73f2576b98eb",
+    "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\protocol\\one_page_01\\manifest.json": "a69589a230a9de0b75530cfa867feaef48ac1fd438f2029d20dd32695e5a8f21",
+    "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\protocol\\two_pages_01\\manifest.json": "cd2f4267c0f4e09a43fe9e89785cce566917713d84dd65362b80e91211321a53",
+    "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\semantic\\TARGET_DOMAIN_CLOSURE.json": "fe06f22d6d8de4b2c5f43db3fcebefc7baa158c214d5ece0f670a6e9482a0bb1",
+    "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\semantic\\one_page_CFG_frame_proof.json": "a23995a639b879be250dcb2dc7ca8efe40a9c396337dec0a8d3f46f9f86921a2",
+    "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\semantic\\semantic_structural_proof.json": "3ccb19ea564fc4a4fbc2e2344cfab3622f5df8c1ac1a6501400f4b2b7b88f0e9",
+    "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\semantic\\two_page_dispatch_abi.json": "acdbdd54fa57bf30fcf6af22079483360bac5f321696eaba09784bc21bf97de3",
+    "C:\\Dev\\Astra_A2WC511R\\reports\\local\\prehardware\\boot\\BOOT_CONTRACT.json": "6fe89b70cc243fc3ece98f5eaab8f6dfcfcc7f947fd7dec24eeadb407cec7f7c",
+    "C:\\Dev\\Astra_A2WC511R\\tools\\prehardware\\validator_boot_model.json": "dc5dd0a50f763b352249b18f1ddac325144d0dc7c1b0b4d9bdda16c16d40082f"
+  },
+  "schema": 1,
+  "trust": "Maintainer reviewed project registry; hash pinned in validator.py. Not an external signature or caller-supplied approval."
+}

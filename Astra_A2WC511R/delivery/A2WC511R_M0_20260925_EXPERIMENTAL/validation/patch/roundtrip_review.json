@@ -1,0 +1,221 @@
+{
+  "status": "EXPERIMENTAL_UNAPPROVED_OFFLINE_ONLY",
+  "production_release_allowed": false,
+  "flash_or_vehicle_actions": false,
+  "input_baseline_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+  "code_allocation_accepted": false,
+  "ram_allocation_accepted": false,
+  "abi_timing_accepted": false,
+  "code_span": [
+    "0xe1000",
+    "0xe1364"
+  ],
+  "ram_span": [
+    "0xffff7400",
+    "0xffff7420"
+  ],
+  "hook": {
+    "address": "0x11adc",
+    "before": "000147ac",
+    "after": "000e12dc"
+  },
+  "commands": [
+    {
+      "argv": [
+        "C:\\Dev\\Astra_A2WC511R\\work\\tooling\\sharptune_offline_ecabea8\\SharpTune.exe",
+        "rommod",
+        "dump",
+        "MISSING.intentional"
+      ],
+      "exit": 1,
+      "expected": 1,
+      "log": "negative_missing_file.log"
+    },
+    {
+      "argv": [
+        "C:\\Dev\\Astra_A2WC511R\\work\\tooling\\sharptune_offline_ecabea8\\SharpTune.exe",
+        "rommod",
+        "test",
+        "C:\\Dev\\Astra_A2WC511R\\work\\patches\\m0_final_05\\A2WC511R.M0.EXPERIMENTAL.v1.patch",
+        "C:\\Dev\\Astra_A2WC511R\\work\\patches\\m0_final_05\\A2WC511R.M0.EXPERIMENTAL_UNAPPROVED.raw.bin"
+      ],
+      "exit": 0,
+      "expected": 0,
+      "log": "validate_before.log"
+    },
+    {
+      "argv": [
+        "C:\\Dev\\Astra_A2WC511R\\work\\tooling\\sharptune_offline_ecabea8\\SharpTune.exe",
+        "rommod",
+        "apply",
+        "C:\\Dev\\Astra_A2WC511R\\work\\patches\\m0_final_05\\A2WC511R.M0.EXPERIMENTAL.v1.patch",
+        "C:\\Dev\\Astra_A2WC511R\\work\\patches\\m0_final_05\\A2WC511R.M0.EXPERIMENTAL_UNAPPROVED.raw.bin"
+      ],
+      "exit": 0,
+      "expected": 0,
+      "log": "apply.log"
+    },
+    {
+      "argv": [
+        "C:\\Dev\\Astra_A2WC511R\\work\\tooling\\sharptune_offline_ecabea8\\SharpTune.exe",
+        "rommod",
+        "applied",
+        "C:\\Dev\\Astra_A2WC511R\\work\\patches\\m0_final_05\\A2WC511R.M0.EXPERIMENTAL.v1.patch",
+        "C:\\Dev\\Astra_A2WC511R\\work\\patches\\m0_final_05\\A2WC511R.M0.EXPERIMENTAL_UNAPPROVED.raw.bin"
+      ],
+      "exit": 0,
+      "expected": 0,
+      "log": "validate_applied.log"
+    },
+    {
+      "argv": [
+        "C:\\Dev\\Astra_A2WC511R\\work\\tooling\\sharptune_offline_ecabea8\\SharpTune.exe",
+        "rommod",
+        "remove",
+        "C:\\Dev\\Astra_A2WC511R\\work\\patches\\m0_final_05\\A2WC511R.M0.EXPERIMENTAL.v1.patch",
+        "C:\\Dev\\Astra_A2WC511R\\work\\patches\\m0_final_05\\A2WC511R.M0.EXPERIMENTAL.reverted.bin"
+      ],
+      "exit": 0,
+      "expected": 0,
+      "log": "remove.log"
+    },
+    {
+      "argv": [
+        "C:\\Dev\\Astra_A2WC511R\\work\\tooling\\sharptune_offline_ecabea8\\SharpTune.exe",
+        "rommod",
+        "apply",
+        "C:\\Dev\\Astra_A2WC511R\\work\\patches\\m0_final_05\\A2WC511R.M0.EXPERIMENTAL.v1.patch",
+        "C:\\Dev\\Astra_A2WC511R\\work\\patches\\m0_final_05\\negative_bad_hook.bin"
+      ],
+      "exit": 1,
+      "expected": 1,
+      "log": "negative_bad_hook.log"
+    },
+    {
+      "argv": [
+        "C:\\Dev\\Astra_A2WC511R\\work\\tooling\\sharptune_offline_ecabea8\\SharpTune.exe",
+        "rommod",
+        "remove",
+        "C:\\Dev\\Astra_A2WC511R\\work\\patches\\m0_final_05\\A2WC511R.M0.EXPERIMENTAL.v1.patch",
+        "C:\\Dev\\Astra_A2WC511R\\work\\patches\\m0_final_05\\negative_bad_payload.bin"
+      ],
+      "exit": 1,
+      "expected": 1,
+      "log": "negative_bad_payload.log"
+    },
+    {
+      "argv": [
+        "C:\\Dev\\Astra_A2WC511R\\work\\tooling\\sharptune_offline_ecabea8\\SharpTune.exe",
+        "rommod",
+        "remove",
+        "C:\\Dev\\Astra_A2WC511R\\work\\patches\\m0_final_05\\A2WC511R.M0.EXPERIMENTAL.v1.patch",
+        "C:\\Dev\\Astra_A2WC511R\\work\\patches\\m0_final_05\\A2WC511R.M0.EXPERIMENTAL.corrected_then_removed.bin"
+      ],
+      "exit": 0,
+      "expected": 0,
+      "log": "remove_corrected.log"
+    }
+  ],
+  "sharpTune_sha256": "99097ac4be20e9c4a22bee4ca0460e802689c97682212af7ba8a5fc16c37e7b4",
+  "build_manifest_sha256": "7f8b25c98a2849c1ee67403478f7fb8cb34971cdda88950dee1ebbe5ddf1456a",
+  "changed_ranges": [
+    {
+      "start": "0x11add",
+      "end_exclusive": "0x11ae0",
+      "bytes": 3,
+      "class": "hook_pointer",
+      "before_sha256": "ac771507cd3d61a5b5d6a766107bf621bce21dcb38249ae621e51aceaf05ef5f",
+      "after_sha256": "0e657cb607ace7a9463f75ebce9b83e408fce398e8cbe3f29f9e5f736917f3af"
+    },
+    {
+      "start": "0xe1000",
+      "end_exclusive": "0xe1295",
+      "bytes": 661,
+      "class": "diagnostic_payload",
+      "before_sha256": "8cd1847c33be56f791c11c3fb446c60dd571c13af46a583b1412c6b6d4a68f1b",
+      "after_sha256": "de780a22390a0717a242922257db0ab644742e2fd203c2c6bb3477d6cd48bf13"
+    },
+    {
+      "start": "0xe1296",
+      "end_exclusive": "0xe12a7",
+      "bytes": 17,
+      "class": "diagnostic_payload",
+      "before_sha256": "e840723f7901baf63bb89c6a95133e00c04e186487511bd3de638bcc27dde064",
+      "after_sha256": "dc29da819047215bd56fc99600db6deca518b0f7b1fd8c7cae0c6814e71326ef"
+    },
+    {
+      "start": "0xe12a8",
+      "end_exclusive": "0xe12c8",
+      "bytes": 32,
+      "class": "diagnostic_payload",
+      "before_sha256": "af9613760f72635fbdb44a5a0a63c39f12af30f950a6ee5c971be188e89c4051",
+      "after_sha256": "f51407aae43d7dd7179f14149d9094fb5055094379bcde0b3d8c1f49c4e2fb73"
+    },
+    {
+      "start": "0xe12ca",
+      "end_exclusive": "0xe12cc",
+      "bytes": 2,
+      "class": "diagnostic_payload",
+      "before_sha256": "ca2fd00fa001190744c15c317643ab092e7048ce086a243e2be9437c898de1bb",
+      "after_sha256": "1ce3fb2cb03a19b8fd1afdb0e0bd4aa977b8254805e1d4e15d52b6f94cfd21c7"
+    },
+    {
+      "start": "0xe12ce",
+      "end_exclusive": "0xe12d0",
+      "bytes": 2,
+      "class": "diagnostic_payload",
+      "before_sha256": "ca2fd00fa001190744c15c317643ab092e7048ce086a243e2be9437c898de1bb",
+      "after_sha256": "510aa41ded6ea3e1d88ea86f0b99a58b4cbe9ab3a4f179a8f5fd121f690dd20d"
+    },
+    {
+      "start": "0xe12d2",
+      "end_exclusive": "0xe12d4",
+      "bytes": 2,
+      "class": "diagnostic_payload",
+      "before_sha256": "ca2fd00fa001190744c15c317643ab092e7048ce086a243e2be9437c898de1bb",
+      "after_sha256": "1c42e09ba703150b09dd2e17eb90078eaa55b6ad8aba3db888de07161a539d6a"
+    },
+    {
+      "start": "0xe12d6",
+      "end_exclusive": "0xe1340",
+      "bytes": 106,
+      "class": "diagnostic_payload",
+      "before_sha256": "db4ef44d40b2412344fa8d8d5650890ff9af278d6b5c32a1918b836ce23192ad",
+      "after_sha256": "6c76025e0a80453161b72746346c181be30f8958073fc483cfc87e458b11ee2b"
+    },
+    {
+      "start": "0xe1342",
+      "end_exclusive": "0xe1364",
+      "bytes": 34,
+      "class": "diagnostic_payload",
+      "before_sha256": "e01290cc02826676ef9ff14b358edf96a17abba8cc5e5246415f8606001671bc",
+      "after_sha256": "2f07623b97e1bb5fa5ef8c9018b83172b2fc2296b8b1a7502684c95f4e6ef0af"
+    }
+  ],
+  "changed_bytes": 859,
+  "strict_roundtrip": "PASS exact raw baseline bytes",
+  "checksum_policy": "Raw and corrected derivatives distinct. Removal from corrected derivative leaves corrected checksum; applying checksum.correction after removal restores exact baseline. No editor stamp normalized or added.",
+  "raw_checksums_valid": false,
+  "corrected_checksums_valid": true,
+  "output_hashes": {
+    "A2WC511R.M0.EXPERIMENTAL.corrected_roundtrip_baseline.bin": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+    "A2WC511R.M0.EXPERIMENTAL.corrected_then_removed.bin": "a4218fcfb21f0c760b5347c98301fca66cd6b6a0bb8a2c3ca168a59f20b46646",
+    "A2WC511R.M0.EXPERIMENTAL.reverted.bin": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+    "A2WC511R.M0.EXPERIMENTAL.v1.patch": "806f0e61a8ff2bb4b2335e2586403de902f78c51fd19e4c10bc81b8836cba007",
+    "A2WC511R.M0.EXPERIMENTAL_UNAPPROVED.checksum_corrected.bin": "6e556dd084e69af47c230a1787d229aee7b49d957d2848bb14a39a48a69042af",
+    "A2WC511R.M0.EXPERIMENTAL_UNAPPROVED.raw.bin": "8092a20fd37f17dd351d18c805fdf195c2207af9adecca25e388146c7a9acc37",
+    "A2WC511R_M0.EXPERIMENTAL.logger.fragment.xml": "800398716df014a77ce06460d4aef54f3696f3789311f6b3f4bde92ce5b60be0",
+    "negative_bad_hook.bin": "f832ed27c51f749bc793ffc88b5515994e3801c95995ee703e7fc1230e28169e",
+    "negative_bad_payload.bin": "8220606b741fb5c1e927a3f0b5007d1a702e0cd4a9532f1854d2d52d8b323cd5"
+  },
+  "counter_notes": "samples/transitions/sequence wrap modulo2^32. One transition check is skipped when samples is0 after wrap. Cookie-based lazy init is not power-cycle detection; a warm reset preserving valid cookie preserves counters and reconstructed holds.",
+  "decoder_notes": "decoded_target/current are observer reconstructions, not OEM4BC1/4BC2 reads; initial invalid nibbles can differ from OEM held values.",
+  "publication_reader_contract": "One nonreentrant writer. Read sequence-before, reject odd; read all32 state bytes; read sequence-after. Require equal even sequence values plus magic4D304431 and initialized1. Counter wrap can cause ABA. Individual logger parameters alone do not provide this aggregate check.",
+  "blocking_gates": [
+    "code/RAM indirect and DMA ownership",
+    "task stack headroom and ISR nesting",
+    "hook call cadence and added latency",
+    "current installed tune identity",
+    "physical validation"
+  ]
+}

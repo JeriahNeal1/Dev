@@ -1,0 +1,28 @@
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 C:\Dev\Astra_A2WC511R\reports\local\m07_residency\semantic\division.o
+ .data          0x0000000000000000        0x0 C:\Dev\Astra_A2WC511R\reports\local\m07_residency\semantic\division.o
+ .bss           0x0000000000000000        0x0 C:\Dev\Astra_A2WC511R\reports\local\m07_residency\semantic\division.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+                0x0000000000004260                . = 0x4260
+
+.replacement    0x0000000000004260       0x44
+ *(.replacement)
+ .replacement   0x0000000000004260       0x44 C:\Dev\Astra_A2WC511R\reports\local\m07_residency\semantic\division.o
+                0x0000000000004260                replacement_start
+                0x00000000000042a4                replacement_end
+
+/DISCARD/
+ *(.text)
+ *(.data)
+ *(.bss)
+LOAD C:\Dev\Astra_A2WC511R\reports\local\m07_residency\semantic\division.o
+OUTPUT(C:\Dev\Astra_A2WC511R\reports\local\m07_residency\semantic\division.elf elf32-sh)

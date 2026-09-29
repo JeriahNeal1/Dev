@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "status": "PASS_COMPILE_ONLY_TOOLCHAIN_IDENTIFICATION",
+  "executable_run": false,
+  "provider_loaded": false,
+  "compiler": {
+    "path": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx86\\x86\\cl.exe",
+    "sha256": "fc26dcba228dd91cd09429670f298f4608833c84841a4ceca8c4955b4d495a7b",
+    "bytes": 598416
+  },
+  "linker": {
+    "path": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx86\\x86\\link.exe",
+    "sha256": "83d4fbff908e88be425898184d8470be1f139bf843190c24e041b019c9c69a78",
+    "bytes": 2782600
+  },
+  "vcvars32": {
+    "path": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Auxiliary\\Build\\vcvars32.bat",
+    "sha256": "e0f12ba374968f55ce898ee0384eb9c9b989cc3b499e3c0d553368ad223e28c8",
+    "bytes": 39
+  },
+  "native05_command": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\build\\native_05\\build.cmd",
+    "sha256": "9bdec218b9838f53a4509b31903a12c79090f2cfbc3073f228f45c69f0fd20d1",
+    "bytes": 377
+  },
+  "compiler_version_output": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\host\\toolchain\\compiler_version.txt",
+    "sha256": "5e0636cb09dc2bf414cd9e4f5233f3ef518e89a12253a91694eb81033967ec6c",
+    "bytes": 1192
+  },
+  "linker_version_output": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\host\\toolchain\\linker_version.txt",
+    "sha256": "6db8ecb278a6f39fcd9a5ca134729873e9456d2f4a1975a9cd346ee2034c7192",
+    "bytes": 3694
+  },
+  "compiler_version_text": "Compiler Passes:\n C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX86\\x86\\cl.exe:        Version 19.44.35229.0\n C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX86\\x86\\c1.dll:        Version 19.44.35229.0\n C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX86\\x86\\c1xx.dll:      Version 19.44.35229.0\n C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX86\\x86\\c2.dll:        Version 19.44.35229.0\n C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX86\\x86\\c1xx.dll:      Version 19.44.35229.0\n C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX86\\x86\\link.exe:      Version 14.44.35229.0\n C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX86\\x86\\mspdb140.dll:  Version 14.44.35229.0\n C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX86\\x86\\1033\\clui.dll: Version 19.44.35229.0\n\nidentity_probe.cpp\n",
+  "linker_banner": [
+    "Microsoft (R) Incremental Linker Version 14.44.35229.0",
+    "Copyright (C) Microsoft Corporation.  All rights reserved.",
+    ""
+  ],
+  "scope": "Paths resolved with the same fixed vcvars32 bootstrap; compile-only probe, no generated executable is launched",
+  "evidence": [
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\toolchain_rk02.py",
+      "sha256": "f47fea6b3d2ab2919c86e9972bfedbb332aeb45fcc3153a61a1aafdef5253d78",
+      "bytes": 2470
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\host\\toolchain\\identify.cmd",
+      "sha256": "8972bdebb7b717e53b72ad151489fd0c20a9ff466448e262c5df8563441fe702",
+      "bytes": 411
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\host\\toolchain\\identity_probe.cpp",
+      "sha256": "f170897e7b0de89b7c92ed7059b599d80614123b336f2814f6eb1f5d2c63c66b",
+      "bytes": 46
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\host\\toolchain\\identity_probe.obj",
+      "sha256": "9101ad453afa6a6519741c348a64ddf5348a4f82496e7d0a21276b8290ab8fd6",
+      "bytes": 777
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\host\\toolchain\\bootstrap.log",
+      "sha256": "da0d87975a59d06710135e1f2d04dd91f48c5c6eef8db3927a48862b85d33af2",
+      "bytes": 299
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\host\\toolchain\\cl_path.txt",
+      "sha256": "2d11feba000fb2cec4ab901ccdfbb1eb3b4d09d6fbdfea2ec03601b066c323f9",
+      "bytes": 113
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\host\\toolchain\\link_path.txt",
+      "sha256": "bc2f12aae2edd58ee46ce1d73b7209fc2e1cfc5d2a550fbd7437715defa7631d",
+      "bytes": 115
+    }
+  ]
+}

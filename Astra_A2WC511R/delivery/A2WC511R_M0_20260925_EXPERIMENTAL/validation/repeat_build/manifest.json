@@ -1,0 +1,238 @@
+{
+  "target": "A2WC511R",
+  "ecuid": "2F12515306",
+  "auto_trans": 1,
+  "status": "COMPILED_EXPERIMENTAL_UNAPPROVED",
+  "real_rom_allocation_accepted": false,
+  "real_ram_allocation_accepted": false,
+  "hook_abi_accepted": false,
+  "ram_bytes": 32,
+  "code_base": "0x000E1000",
+  "ram_base": "0xFFFF7400",
+  "code_bytes": 868,
+  "flags": [
+    "-m2e",
+    "-mb",
+    "-mrenesas",
+    "-mieee",
+    "-ffreestanding",
+    "-fno-builtin",
+    "-nostdinc",
+    "-Os",
+    "-fno-common",
+    "-fno-strict-aliasing",
+    "-fstack-usage",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-std=c99",
+    "-I",
+    "C:\\Dev\\Astra_A2WC511R\\work\\MerpMod_M0\\MerpMod\\DiagnosticM0",
+    "-DTARGET_ECU=A2WC511R"
+  ],
+  "commands": [
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-gcc.exe",
+        "--version"
+      ],
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-gcc.exe",
+        "@C:\\Dev\\Astra_A2WC511R\\work\\builds\\m0_final_repeat_06\\Diagnostic.gcc"
+      ],
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-as.exe",
+        "-big",
+        "-renesas",
+        "--isa=sh2e",
+        "C:\\Dev\\Astra_A2WC511R\\work\\builds\\m0_final_repeat_06\\Diagnostic.s",
+        "-o",
+        "C:\\Dev\\Astra_A2WC511R\\work\\builds\\m0_final_repeat_06\\Diagnostic.o"
+      ],
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-gcc.exe",
+        "@C:\\Dev\\Astra_A2WC511R\\work\\builds\\m0_final_repeat_06\\Bindings.gcc"
+      ],
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-as.exe",
+        "-big",
+        "-renesas",
+        "--isa=sh2e",
+        "C:\\Dev\\Astra_A2WC511R\\work\\builds\\m0_final_repeat_06\\Bindings.s",
+        "-o",
+        "C:\\Dev\\Astra_A2WC511R\\work\\builds\\m0_final_repeat_06\\Bindings.o"
+      ],
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-gcc.exe",
+        "@C:\\Dev\\Astra_A2WC511R\\work\\builds\\m0_final_repeat_06\\Identifier.gcc"
+      ],
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-as.exe",
+        "-big",
+        "-renesas",
+        "--isa=sh2e",
+        "C:\\Dev\\Astra_A2WC511R\\work\\builds\\m0_final_repeat_06\\Identifier.s",
+        "-o",
+        "C:\\Dev\\Astra_A2WC511R\\work\\builds\\m0_final_repeat_06\\Identifier.o"
+      ],
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-as.exe",
+        "-big",
+        "-renesas",
+        "--isa=sh2e",
+        "C:\\Dev\\Astra_A2WC511R\\work\\MerpMod_M0\\MerpMod\\DiagnosticM0\\DecoderHook.s",
+        "-o",
+        "C:\\Dev\\Astra_A2WC511R\\work\\builds\\m0_final_repeat_06\\DecoderHook.o"
+      ],
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-ld.exe",
+        "-EB",
+        "-r",
+        "C:\\Dev\\Astra_A2WC511R\\work\\builds\\m0_final_repeat_06\\Diagnostic.o",
+        "C:\\Dev\\Astra_A2WC511R\\work\\builds\\m0_final_repeat_06\\Bindings.o",
+        "C:\\Dev\\Astra_A2WC511R\\work\\builds\\m0_final_repeat_06\\Identifier.o",
+        "C:\\Dev\\Astra_A2WC511R\\work\\builds\\m0_final_repeat_06\\DecoderHook.o",
+        "-o",
+        "C:\\Dev\\Astra_A2WC511R\\work\\builds\\m0_final_repeat_06\\A2WC511R_DiagnosticM0.relocatable.o"
+      ],
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-ld.exe",
+        "-EB",
+        "-T",
+        "C:\\Dev\\Astra_A2WC511R\\work\\MerpMod_M0\\MerpMod\\DiagnosticM0\\experimental_only.ld",
+        "-Map=C:\\Dev\\Astra_A2WC511R\\work\\builds\\m0_final_repeat_06\\harness.map",
+        "C:\\Dev\\Astra_A2WC511R\\work\\builds\\m0_final_repeat_06\\Diagnostic.o",
+        "C:\\Dev\\Astra_A2WC511R\\work\\builds\\m0_final_repeat_06\\Bindings.o",
+        "C:\\Dev\\Astra_A2WC511R\\work\\builds\\m0_final_repeat_06\\Identifier.o",
+        "C:\\Dev\\Astra_A2WC511R\\work\\builds\\m0_final_repeat_06\\DecoderHook.o",
+        "-o",
+        "C:\\Dev\\Astra_A2WC511R\\work\\builds\\m0_final_repeat_06\\A2WC511R_DiagnosticM0.EXPERIMENTAL_UNAPPROVED.elf"
+      ],
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-objdump.exe",
+        "-d",
+        "-r",
+        "-t",
+        "-h",
+        "C:\\Dev\\Astra_A2WC511R\\work\\builds\\m0_final_repeat_06\\A2WC511R_DiagnosticM0.EXPERIMENTAL_UNAPPROVED.elf"
+      ],
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-objcopy.exe",
+        "-O",
+        "binary",
+        "-j",
+        ".m0",
+        "C:\\Dev\\Astra_A2WC511R\\work\\builds\\m0_final_repeat_06\\A2WC511R_DiagnosticM0.EXPERIMENTAL_UNAPPROVED.elf",
+        "C:\\Dev\\Astra_A2WC511R\\work\\builds\\m0_final_repeat_06\\m0.EXPERIMENTAL_UNAPPROVED.code.bin"
+      ],
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-gcc.exe",
+        "-m2e",
+        "-mb",
+        "-mrenesas",
+        "-mieee",
+        "-ffreestanding",
+        "-fno-builtin",
+        "-nostdinc",
+        "-Os",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-fstack-usage",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-std=c99",
+        "-I",
+        "C:\\Dev\\Astra_A2WC511R\\work\\MerpMod_M0\\MerpMod\\DiagnosticM0",
+        "-DTARGET_ECU=A2WC511R",
+        "-E",
+        "-dM",
+        "C:\\Dev\\Astra_A2WC511R\\work\\MerpMod_M0\\MerpMod\\DiagnosticM0\\Bindings.c"
+      ],
+      "returncode": 0
+    }
+  ],
+  "sources": {
+    "A2WC511R.h": "8714a58aec894434f9bd8de75949ac2a5a0522463034848a8a38a32d13b0f9c6",
+    "Bindings.c": "0e44a138bf487a666a4e17fa622732272720ad229873676a74e2d297991f64d6",
+    "build.py": "43e7e767d7a33b39aed4b200947ffa265e6a79565c9fd7d2c4aab0a2a65e7413",
+    "DecoderHook.s": "a4b868e4cf5a8357938ed7d441a6575b825f88b83f228f5054a7a02f398c293d",
+    "Diagnostic.c": "b045628962cbf3309c586df63101a844340931ce7d8f24a78d1a0920dfb2d22d",
+    "Diagnostic.h": "38411eb2eaee76c2b0001442d664fad53256f5c224aa494ba571757caaf712b8",
+    "DiagnosticConfig.h": "75b44a68b2a5dda157cb9d4b02aad67116f8886afe4dd8c5b05e4a18179faf27",
+    "experimental_only.ld": "9250e106fe8ce31f00192aa88b0dadada02cf169a0c4ba34a388521f703f1a93",
+    "experimental_roundtrip.py": "4a2d7ae32d9b358920bf103de0acc929cff17395dd3534604e4c32407ea68494",
+    "harness_only.ld": "b61a8a8d0ade06a6bd6118ca708c30910f5a9e0cec6da7ca58ff0da8543482ba",
+    "Identifier.c": "ef653037aeb55542b4994edce7c6ffe56f5d5ddbf2f29a42f3c272d9b5797f39",
+    "test_host.py": "5f03b6fdaf92e10088db61b8c1f7bd38e1ed29d07d4d06098a5d70312c7b08c1"
+  },
+  "tools": {
+    "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-gcc.exe": "55efba44b61d6a1e00187d605a44cee3d7e77c89d442e7ef24a67a8b2a3ed810",
+    "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-as.exe": "bd1ccb87f383922697746b8a99367b2c97ffa7c9b8806660aac9dfe297c7ec30",
+    "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-ld.exe": "2537899084cb274369003db6207c6ad081de423b3699ec0014c5c999e1d03117",
+    "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-objcopy.exe": "543209122ca71a0e6d09f7699a032e00d9299093250f96dcf9e41b9c8c849987",
+    "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-objdump.exe": "c3d6124591069417f8733efefffec8f825d3777ab8e2ad939774f346dfb1cb2b"
+  },
+  "artifacts": {
+    "A2WC511R_DiagnosticM0.EXPERIMENTAL_UNAPPROVED.elf": "39de4598a5149347052d5773f7bc179f3a21fde9ad4b571fe23a0bbe6e1e9eed",
+    "A2WC511R_DiagnosticM0.relocatable.o": "195adc98fe7d518313892ca67cc825d3bbd32c85b0a58e230af41c609d764b00",
+    "Bindings.o": "d1ce8c424b16e32288d24cde09233fe33b396185422a70c6fa3e8f4c252a0d9f",
+    "Bindings.s": "bc67fc58459bee96e375a9d22606faba3a146cc5ab309646522f9f12dbc199c5",
+    "Bindings.su": "f5b82542c29afc4f1cead1dac3af57d3495e805acc6329a2099eb7faea0545ea",
+    "DecoderHook.o": "5c55c47b1857aa871b2dd2b105f31df6c5f46842aa2c25da0f0594ecef0050e4",
+    "Diagnostic.o": "f50089e889e6fab862d14244d443b11ab7a5a99fa8eb71730d115f246614d40e",
+    "Diagnostic.s": "677ce7f3f9fc0e5ba357273c2da45952d583e0425ed2c6abc35c66e4e2a70928",
+    "Diagnostic.su": "ce88c043a78d6e8051506105af4cb5c0febce13aa24f51f9262eab184785dd20",
+    "harness.map": "54863dc20a8fbad84bae9498b4330da0bba4e35abc9ad47995cbca8d5a92569a",
+    "Identifier.o": "5c01ef705cf45f9bc2f0bfbdb4dd3cf95af7c359aa39aaf24b8c87c90b118083",
+    "Identifier.s": "5ffdae8a1cbef4856b700d22ed30e1607e4cd29c407ccbf7f9905c51a48fc1e9",
+    "Identifier.su": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m0.EXPERIMENTAL_UNAPPROVED.code.bin": "b5004baa2863bf571eb1ab014f93f0316b3500c5b154e47de2e42f904234b2ff"
+  },
+  "symbols": {
+    "_m0_observe": "0xe1114",
+    "_m0_init": "0xe10bc",
+    "_m0_sample_hardware": "0xe1240",
+    "_m0_decode": "0xe1000",
+    "_m0_decoder_hook": "0xe12dc",
+    "_m0_reasons": "0xe101c",
+    "_m0_state": "0xffff7400",
+    "_m0_identifier": "0xe1348"
+  }
+}

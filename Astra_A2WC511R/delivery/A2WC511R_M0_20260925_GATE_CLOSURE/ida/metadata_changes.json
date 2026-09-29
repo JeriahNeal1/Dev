@@ -1,0 +1,25 @@
+{
+  "changes": [
+    {
+      "ea": 501660,
+      "old_comment": null,
+      "new_comment": "Verified exclusive calibration-scan bound CE754 (pool7A820), used by7A77C halfword rolling sum. First/middle/last128-word cases and wrong-bound negative control PASS. Excludes hole for this reader only; not ROM ownership."
+    },
+    {
+      "ea": 63326,
+      "old_comment": null,
+      "new_comment": "Verified BE uint32 additive checksum loop @r14++; descriptor0 reads[2000,FFAF8), INCLUDING M0 hole. Stock/payload/boundary chunk regression PASS. Corrected checksum required; no full reset/peripheral timing proof."
+    },
+    {
+      "ea": 64132,
+      "old_comment": null,
+      "new_comment": "Verified checksum range validator: aligned4 start<=end, with end%4==3 OR start==end. Seven actual-opcode boundary cases PASS; gate_closure/rom/routine_regression.json."
+    },
+    {
+      "ea": 64132,
+      "old_name": "sub_FA84",
+      "new_name": "oem_validate_rom_checksum_range"
+    }
+  ],
+  "rom_bytes_unchanged": true
+}

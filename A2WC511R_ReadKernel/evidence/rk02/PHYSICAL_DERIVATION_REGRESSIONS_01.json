@@ -1,0 +1,248 @@
+{
+  "schema": 1,
+  "status": "PASS",
+  "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+  "checker": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\review_physical_derivation_rk02.py",
+    "bytes": 17661,
+    "sha256": "c3069ed41d7a2e00b00fc4ab24457ba8ea1d650002a6ebe426b7ccd53252d17f"
+  },
+  "positive": {
+    "schema": 1,
+    "status": "PASS",
+    "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+    "errors": [],
+    "checks": [
+      "Fixed native05, header, builder and toolchain identities",
+      "Exactly eleven source replacements and exact inverse",
+      "Exact provider/certificate header with unchanged payload and ciphertext",
+      "Exact source diff and compile command",
+      "Exact paths, binding and complete eight-file physical manifest"
+    ],
+    "inputs": [
+      {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\build_physical.py",
+        "bytes": 9160,
+        "sha256": "e48ad9307bb7484c966833594a2e6d30ac285b160339c6dfaa43b2892e0a29ec"
+      },
+      {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\native.cpp",
+        "bytes": 15997,
+        "sha256": "3e6b2e3b72697db9a7ed8143c47f706d4fa1ffa4125e341e8d24d6f89cf3e177"
+      },
+      {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\build\\native_05\\owned_artifact.h",
+        "bytes": 9603,
+        "sha256": "2d281be105992b3e03971f2767464af7046ff30565e1ba76cf11e0c22787f12a"
+      },
+      {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\build\\native_05\\binding.json",
+        "bytes": 917,
+        "sha256": "c2022fd081d2f22313831c462627207241ea91ceb8d072273d7351aabcc39609"
+      },
+      {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\build\\native_05\\BUILD_MANIFEST.json",
+        "bytes": 3031,
+        "sha256": "0bfe0b866c6575f1146b49b6b2b671ebaf34848191171d49bbffe4fbf07d15bd"
+      },
+      {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\host\\NATIVE_TOOLCHAIN.json",
+        "bytes": 4726,
+        "sha256": "cd89948c59d927252810e7e5ebd4d7c0f8845cc88fcf5415fe185792c2d8d36a"
+      },
+      {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\OFFLINE_SOFTWARE_CERTIFICATE.json",
+        "bytes": 505,
+        "sha256": "ace0cdbd7c96342d41ecf7aacdad5ca025984650e45ced4609fc7c48e089c5d1"
+      },
+      {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\PHYSICAL_BINDING_PLAN.json",
+        "bytes": 1371,
+        "sha256": "ee3ad7703002840127ffcc434f37baac85da01a2bf95d73192e4f4f18a27e72f"
+      },
+      {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\physical_build\\rk02_physical_01\\native_physical.cpp",
+        "bytes": 16665,
+        "sha256": "e1d92d2ac097880cd9f829d0a9bf8abf8735af51b749f9e94f21050dd7a1a691"
+      },
+      {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\physical_build\\rk02_physical_01\\owned_physical_read32.exe",
+        "bytes": 35,
+        "sha256": "137767b446e11d39bfc4ae212768373f977ed4bb375c2d209f687812e1bfcfb0"
+      },
+      {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\physical_build\\rk02_physical_01\\owned_artifact.h",
+        "bytes": 9895,
+        "sha256": "e96a0e1d785ffc697f3551783b3a38951b41d25c6948a7007a79731a68ab51f8"
+      },
+      {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\physical_build\\rk02_physical_01\\compile_only.cmd",
+        "bytes": 641,
+        "sha256": "699e272411c4a762f9fadcb13a4587242154cdf4aa25bb419d0ed067f5f94ecd"
+      },
+      {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\physical_build\\rk02_physical_01\\compile_only.log",
+        "bytes": 36,
+        "sha256": "5b8131eb48757d1c6a7e656fc878c0ea605238e7e064f5b92955aac6b10a8675"
+      },
+      {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\physical_build\\rk02_physical_01\\resolved_linker.txt",
+        "bytes": 115,
+        "sha256": "bc2f12aae2edd58ee46ce1d73b7209fc2e1cfc5d2a550fbd7437715defa7631d"
+      },
+      {
+        "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\physical_build\\rk02_physical_01\\SOURCE_DIFF.patch",
+        "bytes": 6929,
+        "sha256": "dd9a2e6c1ed2bd485f140c9b161cfafc077a50867f26f7e146febd224deeb3b3"
+      }
+    ],
+    "native_execution": false,
+    "provider_loaded": false,
+    "scope": "Independent text/binding derivation. Native binary compilation provenance remains a separate pinned-toolchain build check; this function does not execute the binary."
+  },
+  "cases": [
+    {
+      "case": "unreviewed_source_edit",
+      "status": "PASS",
+      "rejection": [
+        "ValueError: Independent reconstructed bytes differ: native_physical.cpp"
+      ]
+    },
+    {
+      "case": "source_guard_removed",
+      "status": "PASS",
+      "rejection": [
+        "ValueError: Independent reconstructed bytes differ: native_physical.cpp"
+      ]
+    },
+    {
+      "case": "header_payload_changed",
+      "status": "PASS",
+      "rejection": [
+        "ValueError: Independent reconstructed bytes differ: owned_artifact.h"
+      ]
+    },
+    {
+      "case": "header_certificate_constant_changed",
+      "status": "PASS",
+      "rejection": [
+        "ValueError: Independent reconstructed bytes differ: owned_artifact.h"
+      ]
+    },
+    {
+      "case": "compile_command_extra_define",
+      "status": "PASS",
+      "rejection": [
+        "ValueError: Independent reconstructed bytes differ: compile_only.cmd"
+      ]
+    },
+    {
+      "case": "source_diff_changed",
+      "status": "PASS",
+      "rejection": [
+        "ValueError: Independent reconstructed bytes differ: SOURCE_DIFF.patch"
+      ]
+    },
+    {
+      "case": "source_rules_empty",
+      "status": "PASS",
+      "rejection": [
+        "ValueError: Unknown or missing transformation rule"
+      ]
+    },
+    {
+      "case": "files_empty",
+      "status": "PASS",
+      "rejection": [
+        "ValueError: Incomplete or duplicate physical manifest files"
+      ]
+    },
+    {
+      "case": "file_duplicate",
+      "status": "PASS",
+      "rejection": [
+        "ValueError: Incomplete or duplicate physical manifest files"
+      ]
+    },
+    {
+      "case": "provider_path_changed",
+      "status": "PASS",
+      "rejection": [
+        "ValueError: Provider binding changed"
+      ]
+    },
+    {
+      "case": "provider_hash_changed",
+      "status": "PASS",
+      "rejection": [
+        "ValueError: Provider binding changed"
+      ]
+    },
+    {
+      "case": "binding_changed",
+      "status": "PASS",
+      "rejection": [
+        "ValueError: Physical manifest changes tested binding"
+      ]
+    },
+    {
+      "case": "source_reference_redirected",
+      "status": "PASS",
+      "rejection": [
+        "ValueError: Unexpected source reference path"
+      ]
+    },
+    {
+      "case": "certificate_ineligible",
+      "status": "PASS",
+      "rejection": [
+        "ValueError: Certificate fixed field mismatch: eligible"
+      ]
+    },
+    {
+      "case": "wrong_linker_selected",
+      "status": "PASS",
+      "rejection": [
+        "ValueError: Recorded selected linker differs"
+      ]
+    }
+  ],
+  "negative_count": 15,
+  "scope": "Synthetic in-memory source/header/manifest contract only. The EXE and compile log are visibly nonexecuted synthetic placeholders; no actual physical build qualification is claimed.",
+  "actual_inputs": [
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\build_physical.py",
+      "bytes": 9160,
+      "sha256": "e48ad9307bb7484c966833594a2e6d30ac285b160339c6dfaa43b2892e0a29ec"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\native.cpp",
+      "bytes": 15997,
+      "sha256": "3e6b2e3b72697db9a7ed8143c47f706d4fa1ffa4125e341e8d24d6f89cf3e177"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\build\\native_05\\owned_artifact.h",
+      "bytes": 9603,
+      "sha256": "2d281be105992b3e03971f2767464af7046ff30565e1ba76cf11e0c22787f12a"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\build\\native_05\\binding.json",
+      "bytes": 917,
+      "sha256": "c2022fd081d2f22313831c462627207241ea91ceb8d072273d7351aabcc39609"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\build\\native_05\\BUILD_MANIFEST.json",
+      "bytes": 3031,
+      "sha256": "0bfe0b866c6575f1146b49b6b2b671ebaf34848191171d49bbffe4fbf07d15bd"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\host\\NATIVE_TOOLCHAIN.json",
+      "bytes": 4726,
+      "sha256": "cd89948c59d927252810e7e5ebd4d7c0f8845cc88fcf5415fe185792c2d8d36a"
+    }
+  ],
+  "builder_invocations": 0,
+  "native_execution": false,
+  "provider_loaded": false,
+  "physical_operations": 0
+}

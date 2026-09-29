@@ -1,0 +1,11 @@
+--- C:\Dev\A2WC511R_ReadKernel\evidence\rk02\input_snapshot\fake\model.py
++++ C:\Dev\A2WC511R_ReadKernel\fake\model.py
+@@ -72,7 +72,7 @@
+                 elif self.state=='ENTRY':
+                     require(payload==bytes.fromhex('310101'),'Only fixed entry request')
+                     from sim.harness import KernelSession
+-                    self.cpu=KernelSession(self.manifest_path,self.rom_path,self.rom_sha256,trace_dir=self.trace_dir/'execution_cpu',kernel_bytes=bytes(self.kernel))
++                    self.cpu=KernelSession(self.manifest_path,self.rom_path,self.rom_sha256,trace_dir=self.trace_dir/'execution_cpu',kernel_bytes=bytes(self.kernel),receiver_self_echo=True)
+                     result=self.cpu.start(entry=ENTRY_ADDRESS)
+                     status=result['status'] if isinstance(result,dict) else result.status
+                     require(status=='PASS','Kernel startup failed: '+str(result))

@@ -1,0 +1,39 @@
+Command: py -3.14 run_validation.py
+Python: 3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]
+Stock SHA256: 22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218
+test_add_or_unsigned_compare_and_shift (test_sim.ArchitectureTests.test_add_or_unsigned_compare_and_shift) ... ok
+test_big_endian_load_store_forms_and_sign_extension (test_sim.ArchitectureTests.test_big_endian_load_store_forms_and_sign_extension) ... ok
+test_conditional_delayed_branch_both_outcomes (test_sim.ArchitectureTests.test_conditional_delayed_branch_both_outcomes) ... ok
+test_decode_table_unambiguous (test_sim.ArchitectureTests.test_decode_table_unambiguous) ... ok
+test_displacement_long_scale (test_sim.ArchitectureTests.test_displacement_long_scale) ... ok
+test_dt_decrements_and_sets_t_for_zero (test_sim.ArchitectureTests.test_dt_decrements_and_sets_t_for_zero) ... ok
+test_jsr_returns_and_preserves_pr_via_stack (test_sim.ArchitectureTests.test_jsr_returns_and_preserves_pr_via_stack) ... ok
+test_jump_destination_latched_before_slot_changes_register (test_sim.ArchitectureTests.test_jump_destination_latched_before_slot_changes_register) ... ok
+test_negc_borrow_boundaries (test_sim.ArchitectureTests.test_negc_borrow_boundaries) ... ok
+test_nested_call_pr_stack_and_watch_context (test_sim.ArchitectureTests.test_nested_call_pr_stack_and_watch_context) ... ok
+test_nondelayed_branches_skip_next_instruction (test_sim.ArchitectureTests.test_nondelayed_branches_skip_next_instruction) ... ok
+test_pc_relative_load_sign_and_alignment (test_sim.ArchitectureTests.test_pc_relative_load_sign_and_alignment) ... ok
+test_postincrement_byte_sign_and_pointer (test_sim.ArchitectureTests.test_postincrement_byte_sign_and_pointer) ... ok
+test_postincrement_same_register_does_not_increment_loaded_value (test_sim.ArchitectureTests.test_postincrement_same_register_does_not_increment_loaded_value) ... ok
+test_predecrement_uses_original_value_when_register_aliases (test_sim.ArchitectureTests.test_predecrement_uses_original_value_when_register_aliases) ... ok
+test_preservation_and_instruction_budget_failures (test_sim.ArchitectureTests.test_preservation_and_instruction_budget_failures) ... ok
+test_shar_negative_and_t_bit (test_sim.ArchitectureTests.test_shar_negative_and_t_bit) ... ok
+test_signed_immediate_arithmetic_extub_and_movt (test_sim.ArchitectureTests.test_signed_immediate_arithmetic_extub_and_movt) ... ok
+test_sr_and_mac_stack_transfers (test_sim.ArchitectureTests.test_sr_and_mac_stack_transfers) ... ok
+test_stack_overflow_collision_and_undeclared_write_fail (test_sim.ArchitectureTests.test_stack_overflow_collision_and_undeclared_write_fail) ... ok
+test_taken_bra_runs_slot_once_and_skips_fallthrough (test_sim.ArchitectureTests.test_taken_bra_runs_slot_once_and_skips_fallthrough) ... ok
+test_unknown_opcode_and_slot_constraints_fail (test_sim.ArchitectureTests.test_unknown_opcode_and_slot_constraints_fail) ... ok
+test_big_endian_and_bounds (test_sim.MemoryTests.test_big_endian_and_bounds) ... ok
+test_rom_readonly_and_immutable_overlay (test_sim.MemoryTests.test_rom_readonly_and_immutable_overlay) ... ok
+test_uninitialized_read_is_failure (test_sim.MemoryTests.test_uninitialized_read_is_failure) ... ok
+test_watchpoint_has_pc_call_address_and_value_sources (test_sim.MemoryTests.test_watchpoint_has_pc_call_address_and_value_sources) ... ok
+test_all_packed_bytes_cross_prior_values (test_sim.StockRoutineTests.test_all_packed_bytes_cross_prior_values) ... ok
+test_all_status_bytes_exact_r0_and_no_writes (test_sim.StockRoutineTests.test_all_status_bytes_exact_r0_and_no_writes) ... ok
+test_identity_mismatch_is_failure (test_sim.StockRoutineTests.test_identity_mismatch_is_failure) ... ok
+test_replay_byte_trace_and_propagation_reproducibility (test_sim.StockRoutineTests.test_replay_byte_trace_and_propagation_reproducibility) ... ok
+test_reset_vector_decode (test_sim.StockRoutineTests.test_reset_vector_decode) ... ok
+
+----------------------------------------------------------------------
+Ran 31 tests in 2.459s
+
+OK

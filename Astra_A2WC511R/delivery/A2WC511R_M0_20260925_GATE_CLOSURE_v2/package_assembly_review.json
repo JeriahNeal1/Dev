@@ -1,0 +1,11 @@
+{
+  "initial_attempt": "delivery/A2WC511R_M0_20260925_GATE_CLOSURE",
+  "initial_result": "FAILED_BEFORE_MANIFEST_CREATION",
+  "failure": "Generic source-copy filtering omitted historical __pycache__ files included in the frozen 625-entry package manifest.",
+  "first_missing_entry": "validation/local/interfaces/__pycache__/checksum_audit.cpython-314.pyc",
+  "original_delivery_modified": false,
+  "correction": "Copy the frozen candidate without exclusions and verify all original manifest entries against both original and copied files. Filtering remains limited to new source/helper trees.",
+  "failed_attempt_preserved": true,
+  "final_attempt": "delivery/A2WC511R_M0_20260925_GATE_CLOSURE_v2",
+  "final_result_source": "../gate_closure_package_verification.json"
+}

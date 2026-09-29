@@ -1,0 +1,42 @@
+{
+  "created_utc": "2026-09-25T20:08:24.442175+00:00",
+  "session_id": "01a0da26-addc-7fe1-84df-8c0baa8174f8",
+  "model_config": "gpt-6-astra",
+  "effort_config": "ultra",
+  "model_advertisement_probe": "not repeated: active session already running; local configuration inspected",
+  "windows": "Windows 10 Enterprise LTSC 10.0.17763",
+  "package_tests": {
+    "passed": 64,
+    "log": "reports/local/handoff_tests_corrected.txt"
+  },
+  "ida": {
+    "vendor": "Hex-Rays",
+    "mcp": "20260924.0.3",
+    "nexus": "0.13.0",
+    "domain": "0.5.1",
+    "backend": "idalib",
+    "instance": "b742fb7776da",
+    "open_existing_database": true,
+    "recovery": "none",
+    "gui_process_at_start": false,
+    "database_rom_sha256": "a34c4ce8238bf28bdc18c191bbe73b2179130aa9846e952a6fa332bae442de96",
+    "processor_analysis": "SH4B",
+    "execution_target": "SH-2E big endian",
+    "byte_patches": false,
+    "backup": "backups/run_01a0da26/idb",
+    "tools": [
+      "open_database",
+      "execute_python",
+      "reference",
+      "list_databases",
+      "save_database",
+      "close_database"
+    ]
+  },
+  "toolchain_smoke": "reports/local/build/toolchain_smoke/toolchain_probe.json",
+  "romraider_acceptance": "16_native_checks_pass_human_GUI_confirmation_remaining",
+  "physical_validation": false,
+  "compiled_final": "m0_final_05",
+  "independent_review": "PASS_EXPERIMENTAL_SCOPE_ONLY",
+  "ida_database_saved_and_closed": true
+}

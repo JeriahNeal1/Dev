@@ -1,0 +1,702 @@
+{
+  "classification": "RAW_PREFIX_PROPOSALS_NOT_VALIDATED_FUNCTIONS_OR_OWNERSHIP",
+  "IDA_export": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\gate_closure\\ida\\defined_code_export.json",
+  "IDA_export_sha256": "db77bfa6d563df046d58fd666b6ccf90ddcbb53c171c2f96d2076eee0a3f7578",
+  "candidates": [
+    {
+      "baseline_entry": "0x00004B04",
+      "baseline_end": "0x00004B1C",
+      "baseline_IDA_name": "sub_4B04",
+      "prefix_hex": "6341666d26688b03",
+      "roms": [
+        {
+          "calid": "A2WC412D",
+          "prefix_candidates": [
+            {
+              "entry": "0x00001C94",
+              "full_span_equal": true
+            },
+            {
+              "entry": "0x00004B04",
+              "full_span_equal": true
+            }
+          ]
+        },
+        {
+          "calid": "A2WC510C",
+          "prefix_candidates": [
+            {
+              "entry": "0x00001C94",
+              "full_span_equal": true
+            },
+            {
+              "entry": "0x00004B04",
+              "full_span_equal": true
+            }
+          ]
+        },
+        {
+          "calid": "A2WC521C",
+          "prefix_candidates": [
+            {
+              "entry": "0x00001C94",
+              "full_span_equal": true
+            },
+            {
+              "entry": "0x00004B04",
+              "full_span_equal": true
+            }
+          ]
+        },
+        {
+          "calid": "A2WC500R",
+          "prefix_candidates": [
+            {
+              "entry": "0x00001C94",
+              "full_span_equal": true
+            },
+            {
+              "entry": "0x00004B04",
+              "full_span_equal": true
+            }
+          ]
+        },
+        {
+          "calid": "A2WC510R",
+          "prefix_candidates": [
+            {
+              "entry": "0x00001C94",
+              "full_span_equal": true
+            },
+            {
+              "entry": "0x00004B04",
+              "full_span_equal": true
+            }
+          ]
+        },
+        {
+          "calid": "A2WC510S",
+          "prefix_candidates": [
+            {
+              "entry": "0x00001C94",
+              "full_span_equal": true
+            },
+            {
+              "entry": "0x00004B04",
+              "full_span_equal": true
+            }
+          ]
+        },
+        {
+          "calid": "A2WC511R",
+          "prefix_candidates": [
+            {
+              "entry": "0x00001C94",
+              "full_span_equal": true
+            },
+            {
+              "entry": "0x00004B04",
+              "full_span_equal": true
+            }
+          ]
+        },
+        {
+          "calid": "A2WC521R",
+          "prefix_candidates": [
+            {
+              "entry": "0x00001C94",
+              "full_span_equal": true
+            },
+            {
+              "entry": "0x00004B04",
+              "full_span_equal": true
+            }
+          ]
+        },
+        {
+          "calid": "A2WC522S",
+          "prefix_candidates": [
+            {
+              "entry": "0x00001C94",
+              "full_span_equal": true
+            },
+            {
+              "entry": "0x00004B04",
+              "full_span_equal": true
+            }
+          ]
+        },
+        {
+          "calid": "A2WF200R",
+          "prefix_candidates": [
+            {
+              "entry": "0x00001C94",
+              "full_span_equal": true
+            },
+            {
+              "entry": "0x00004B04",
+              "full_span_equal": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "baseline_entry": "0x000147AC",
+      "baseline_end": "0x00014802",
+      "baseline_IDA_name": "sDecodePackedGearRangeByte",
+      "prefix_hex": "d217652096282659",
+      "roms": [
+        {
+          "calid": "A2WC412D",
+          "prefix_candidates": []
+        },
+        {
+          "calid": "A2WC510C",
+          "prefix_candidates": [
+            {
+              "entry": "0x000147AC",
+              "full_span_equal": true
+            }
+          ]
+        },
+        {
+          "calid": "A2WC521C",
+          "prefix_candidates": [
+            {
+              "entry": "0x000147AC",
+              "full_span_equal": true
+            }
+          ]
+        },
+        {
+          "calid": "A2WC500R",
+          "prefix_candidates": [
+            {
+              "entry": "0x000147EC",
+              "full_span_equal": true
+            }
+          ]
+        },
+        {
+          "calid": "A2WC510R",
+          "prefix_candidates": [
+            {
+              "entry": "0x000147AC",
+              "full_span_equal": true
+            }
+          ]
+        },
+        {
+          "calid": "A2WC510S",
+          "prefix_candidates": [
+            {
+              "entry": "0x000147AC",
+              "full_span_equal": true
+            }
+          ]
+        },
+        {
+          "calid": "A2WC511R",
+          "prefix_candidates": [
+            {
+              "entry": "0x000147AC",
+              "full_span_equal": true
+            }
+          ]
+        },
+        {
+          "calid": "A2WC521R",
+          "prefix_candidates": [
+            {
+              "entry": "0x000147AC",
+              "full_span_equal": true
+            }
+          ]
+        },
+        {
+          "calid": "A2WC522S",
+          "prefix_candidates": [
+            {
+              "entry": "0x000147AC",
+              "full_span_equal": true
+            }
+          ]
+        },
+        {
+          "calid": "A2WF200R",
+          "prefix_candidates": [
+            {
+              "entry": "0x00015A4C",
+              "full_span_equal": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "baseline_entry": "0x00015A02",
+      "baseline_end": "0x00015A16",
+      "baseline_IDA_name": "sTestTcuStatusMask02",
+      "prefix_hex": "d0096000c8020029",
+      "roms": [
+        {
+          "calid": "A2WC412D",
+          "prefix_candidates": [
+            {
+              "entry": "0x00015662",
+              "full_span_equal": true
+            }
+          ]
+        },
+        {
+          "calid": "A2WC510C",
+          "prefix_candidates": [
+            {
+              "entry": "0x00015A02",
+              "full_span_equal": true
+            }
+          ]
+        },
+        {
+          "calid": "A2WC521C",
+          "prefix_candidates": [
+            {
+              "entry": "0x00015B06",
+              "full_span_equal": true
+            }
+          ]
+        },
+        {
+          "calid": "A2WC500R",
+          "prefix_candidates": [
+            {
+              "entry": "0x00015A42",
+              "full_span_equal": true
+            }
+          ]
+        },
+        {
+          "calid": "A2WC510R",
+          "prefix_candidates": [
+            {
+              "entry": "0x00015A02",
+              "full_span_equal": true
+            }
+          ]
+        },
+        {
+          "calid": "A2WC510S",
+          "prefix_candidates": [
+            {
+              "entry": "0x00015A02",
+              "full_span_equal": true
+            }
+          ]
+        },
+        {
+          "calid": "A2WC511R",
+          "prefix_candidates": [
+            {
+              "entry": "0x00015A02",
+              "full_span_equal": true
+            }
+          ]
+        },
+        {
+          "calid": "A2WC521R",
+          "prefix_candidates": [
+            {
+              "entry": "0x00015B06",
+              "full_span_equal": true
+            }
+          ]
+        },
+        {
+          "calid": "A2WC522S",
+          "prefix_candidates": [
+            {
+              "entry": "0x00015B06",
+              "full_span_equal": true
+            }
+          ]
+        },
+        {
+          "calid": "A2WF200R",
+          "prefix_candidates": [
+            {
+              "entry": "0x00016DA6",
+              "full_span_equal": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "baseline_entry": "0x00018012",
+      "baseline_end": "0x00018026",
+      "baseline_IDA_name": "sGetCruiseCoastFlags",
+      "prefix_hex": "d05b6000c8020029",
+      "roms": [
+        {
+          "calid": "A2WC412D",
+          "prefix_candidates": [
+            {
+              "entry": "0x0004A8B2",
+              "full_span_equal": false
+            }
+          ]
+        },
+        {
+          "calid": "A2WC510C",
+          "prefix_candidates": [
+            {
+              "entry": "0x00018012",
+              "full_span_equal": true
+            },
+            {
+              "entry": "0x0004BDC2",
+              "full_span_equal": false
+            }
+          ]
+        },
+        {
+          "calid": "A2WC521C",
+          "prefix_candidates": [
+            {
+              "entry": "0x00018116",
+              "full_span_equal": true
+            },
+            {
+              "entry": "0x0004BECE",
+              "full_span_equal": false
+            }
+          ]
+        },
+        {
+          "calid": "A2WC500R",
+          "prefix_candidates": [
+            {
+              "entry": "0x00018052",
+              "full_span_equal": true
+            },
+            {
+              "entry": "0x0004C02A",
+              "full_span_equal": false
+            }
+          ]
+        },
+        {
+          "calid": "A2WC510R",
+          "prefix_candidates": [
+            {
+              "entry": "0x00018012",
+              "full_span_equal": true
+            },
+            {
+              "entry": "0x0004BDC2",
+              "full_span_equal": false
+            }
+          ]
+        },
+        {
+          "calid": "A2WC510S",
+          "prefix_candidates": [
+            {
+              "entry": "0x00018012",
+              "full_span_equal": true
+            },
+            {
+              "entry": "0x0004BDC2",
+              "full_span_equal": false
+            }
+          ]
+        },
+        {
+          "calid": "A2WC511R",
+          "prefix_candidates": [
+            {
+              "entry": "0x00018012",
+              "full_span_equal": true
+            },
+            {
+              "entry": "0x0004BDC2",
+              "full_span_equal": false
+            }
+          ]
+        },
+        {
+          "calid": "A2WC521R",
+          "prefix_candidates": [
+            {
+              "entry": "0x00018116",
+              "full_span_equal": true
+            },
+            {
+              "entry": "0x0004BECE",
+              "full_span_equal": false
+            }
+          ]
+        },
+        {
+          "calid": "A2WC522S",
+          "prefix_candidates": [
+            {
+              "entry": "0x00018116",
+              "full_span_equal": true
+            },
+            {
+              "entry": "0x0004BECE",
+              "full_span_equal": false
+            }
+          ]
+        },
+        {
+          "calid": "A2WF200R",
+          "prefix_candidates": [
+            {
+              "entry": "0x000193B6",
+              "full_span_equal": true
+            },
+            {
+              "entry": "0x0004CE0E",
+              "full_span_equal": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "baseline_entry": "0x00018026",
+      "baseline_end": "0x0001803A",
+      "baseline_IDA_name": "sGetCruiseResumeFlags",
+      "prefix_hex": "d0566000c8040029",
+      "roms": [
+        {
+          "calid": "A2WC412D",
+          "prefix_candidates": []
+        },
+        {
+          "calid": "A2WC510C",
+          "prefix_candidates": [
+            {
+              "entry": "0x00018026",
+              "full_span_equal": true
+            }
+          ]
+        },
+        {
+          "calid": "A2WC521C",
+          "prefix_candidates": [
+            {
+              "entry": "0x0001812A",
+              "full_span_equal": true
+            }
+          ]
+        },
+        {
+          "calid": "A2WC500R",
+          "prefix_candidates": [
+            {
+              "entry": "0x00018066",
+              "full_span_equal": true
+            }
+          ]
+        },
+        {
+          "calid": "A2WC510R",
+          "prefix_candidates": [
+            {
+              "entry": "0x00018026",
+              "full_span_equal": true
+            }
+          ]
+        },
+        {
+          "calid": "A2WC510S",
+          "prefix_candidates": [
+            {
+              "entry": "0x00018026",
+              "full_span_equal": true
+            }
+          ]
+        },
+        {
+          "calid": "A2WC511R",
+          "prefix_candidates": [
+            {
+              "entry": "0x00018026",
+              "full_span_equal": true
+            }
+          ]
+        },
+        {
+          "calid": "A2WC521R",
+          "prefix_candidates": [
+            {
+              "entry": "0x0001812A",
+              "full_span_equal": true
+            }
+          ]
+        },
+        {
+          "calid": "A2WC522S",
+          "prefix_candidates": [
+            {
+              "entry": "0x0001812A",
+              "full_span_equal": true
+            }
+          ]
+        },
+        {
+          "calid": "A2WF200R",
+          "prefix_candidates": [
+            {
+              "entry": "0x000193CA",
+              "full_span_equal": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "baseline_entry": "0x00023B12",
+      "baseline_end": "0x00023B26",
+      "baseline_IDA_name": "sub_23B12",
+      "prefix_hex": "d00f6000c8800029",
+      "roms": [
+        {
+          "calid": "A2WC412D",
+          "prefix_candidates": [
+            {
+              "entry": "0x00022322",
+              "full_span_equal": true
+            },
+            {
+              "entry": "0x000230B2",
+              "full_span_equal": true
+            }
+          ]
+        },
+        {
+          "calid": "A2WC510C",
+          "prefix_candidates": [
+            {
+              "entry": "0x00023B12",
+              "full_span_equal": true
+            },
+            {
+              "entry": "0x000248A6",
+              "full_span_equal": true
+            }
+          ]
+        },
+        {
+          "calid": "A2WC521C",
+          "prefix_candidates": [
+            {
+              "entry": "0x00023C16",
+              "full_span_equal": true
+            },
+            {
+              "entry": "0x000249AA",
+              "full_span_equal": true
+            }
+          ]
+        },
+        {
+          "calid": "A2WC500R",
+          "prefix_candidates": [
+            {
+              "entry": "0x00023B52",
+              "full_span_equal": true
+            },
+            {
+              "entry": "0x000248E6",
+              "full_span_equal": true
+            }
+          ]
+        },
+        {
+          "calid": "A2WC510R",
+          "prefix_candidates": [
+            {
+              "entry": "0x00023B12",
+              "full_span_equal": true
+            },
+            {
+              "entry": "0x000248A6",
+              "full_span_equal": true
+            }
+          ]
+        },
+        {
+          "calid": "A2WC510S",
+          "prefix_candidates": [
+            {
+              "entry": "0x00023B12",
+              "full_span_equal": true
+            },
+            {
+              "entry": "0x000248A6",
+              "full_span_equal": true
+            }
+          ]
+        },
+        {
+          "calid": "A2WC511R",
+          "prefix_candidates": [
+            {
+              "entry": "0x00023B12",
+              "full_span_equal": true
+            },
+            {
+              "entry": "0x000248A6",
+              "full_span_equal": true
+            }
+          ]
+        },
+        {
+          "calid": "A2WC521R",
+          "prefix_candidates": [
+            {
+              "entry": "0x00023C16",
+              "full_span_equal": true
+            },
+            {
+              "entry": "0x000249AA",
+              "full_span_equal": true
+            }
+          ]
+        },
+        {
+          "calid": "A2WC522S",
+          "prefix_candidates": [
+            {
+              "entry": "0x00023C16",
+              "full_span_equal": true
+            },
+            {
+              "entry": "0x000249AA",
+              "full_span_equal": true
+            }
+          ]
+        },
+        {
+          "calid": "A2WF200R",
+          "prefix_candidates": [
+            {
+              "entry": "0x0002488A",
+              "full_span_equal": true
+            },
+            {
+              "entry": "0x0002561E",
+              "full_span_equal": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "limitations": "The8-byte prefix can be nonunique or data; full span equality can omit external pools. No compression replacement or ownership claim is made."
+}

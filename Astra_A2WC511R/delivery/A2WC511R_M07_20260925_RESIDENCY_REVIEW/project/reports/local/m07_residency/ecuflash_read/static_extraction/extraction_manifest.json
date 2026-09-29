@@ -1,0 +1,121 @@
+{
+  "status": "INSTALLED_READ_PATH_AND_KERNEL_FAIL_UNRECOVERED",
+  "static_loader_recovery": "PASS_BOUNDED_BYTE_TRANSFORMS",
+  "protector": "Themida/Winlicense1.XX-2.XX signature plus recoveredThemida marker",
+  "blocker": "Recovered4.17MiB protection-loader block, not application/kernel. Continuing requires protector-specific recovery of original application sections/imports and exception-dependent startup context. No impossibility claim; no protected executable or provider was run.",
+  "gates": {
+    "exact_installed_kernel": "FAIL",
+    "Read_full_ROM_coverage": "FAIL",
+    "Read_flash_write_exclusion": "FAIL",
+    "Read_RAM_sideeffects": "FAIL",
+    "cleanup_reset": "FAIL"
+  },
+  "evidence": {
+    "7zip_listing.txt": {
+      "size": 2688,
+      "sha256": "542ab920319d6c455a70abbfdd2273c54c2117b8ae82b8996fff2ca30bea2634"
+    },
+    "aplib_crosscheck.json": {
+      "size": 253,
+      "sha256": "1c5c6f07d41f7bed681d827a12f00ab9d3a5849c969508400f03b192a92dc0a4"
+    },
+    "decoded_stage1.disassembly.json": {
+      "size": 1014,
+      "sha256": "50fb8cbee1dee9b41834ac996debd5798c324543f660a07e53ccd862b0889cd2"
+    },
+    "decoded_stage1.windows.json": {
+      "size": 11864,
+      "sha256": "f9b3c3e95a30a34689df83864b95242698e6e99bc8fcd589dd4d6d9ef305a7c0"
+    },
+    "decoded_stage1_4096.bin": {
+      "size": 4096,
+      "sha256": "bb72acc24e9bf4b83358e71230462c4a1738b9d40d53d0710756d09420c7d1e8"
+    },
+    "decoded_stage2_entry.json": {
+      "size": 29958,
+      "sha256": "787debbbe8f9ef96ba34885ec0f34821022d33d5673a35db220826acc7c2316c"
+    },
+    "decoded_stage2_interesting_strings.json": {
+      "size": 58,
+      "sha256": "b526b845bbfd74b1ba05812059283595874fb80d95976ba40be6a96e30a44646"
+    },
+    "decoded_stage2_loader.bin": {
+      "size": 4173012,
+      "sha256": "7f01029e62b1e337413ae587716026c312a12dc7f265b7962bf0130499fa2539"
+    },
+    "decoded_stage2_real_entry.json": {
+      "size": 5183,
+      "sha256": "031daa11809d076d4288fcea06af7181800fde31b5f17799e255e9aaed45b3c5"
+    },
+    "decoded_stage2_resolver_windows.json": {
+      "size": 18656,
+      "sha256": "8f72e84174f0103bc5e61c7c35f6618360d3341202b53f55761db2a9fb386b5a"
+    },
+    "decoded_stage2_strings.json": {
+      "size": 214578,
+      "sha256": "7e79a76f5c28d506bec20467f35996ec586e02358fbdf2f63d13dfd56961a3d6"
+    },
+    "decoded_stage3_entry.json": {
+      "size": 1414,
+      "sha256": "2450255ad97d5efe4d0df9b96842b5fcf70a8b549d958d9ce5565c6530dfa8c5"
+    },
+    "decoded_stage3_exception_windows.json": {
+      "size": 5574,
+      "sha256": "0089e65cf45285aa68dcf7161ee53c5cc06f0ff49a9e7722ca8c59a3c064aee7"
+    },
+    "decoded_stage3_loader.bin": {
+      "size": 4173012,
+      "sha256": "30e96f024c0c11c82b7b4193d47713af7ae300d7c8508299938501a51959926e"
+    },
+    "die_scan.stderr.txt": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "die_scan.stdout.json": {
+      "size": 2179,
+      "sha256": "44de122491ec0a9c99fbcb08facec7caa1a6d20a1fda96f8eea959e95fc3e17d"
+    },
+    "ecuflash.static-copy.exe": {
+      "size": 7840904,
+      "sha256": "5e1b1729446d306487bb7ed358b1ee050b11e440902bb23a05663d8575346115"
+    },
+    "pe_details.json": {
+      "size": 9059,
+      "sha256": "e9407070133dfc83e6d1d8fe25d15a88a82e63cdb33bae614e5527f0e3f40ad4"
+    },
+    "static_decode.json": {
+      "size": 1367,
+      "sha256": "c19240274e59f27ab4440f1db2ca39afa62f54824a227c5e8b14461ea141419a"
+    },
+    "static_decode.py": {
+      "size": 6392,
+      "sha256": "10d91b532c013b5dd64e10d14bff9800a1debc34d202ec50f0779ae5fbf961a0"
+    },
+    "STATIC_EXTRACTION_REVIEW.md": {
+      "size": 5356,
+      "sha256": "2b3c06452a74059965a931937fa161c5e988bb50058e6035d45b5eb5d2920c8a"
+    }
+  },
+  "tools": {
+    "C:\\Dev\\Astra_A2WC511R\\work\\tools\\m07_die321\\portable\\die\\diec.exe": "dda171a904f6dc3a2c414e99e9d718c8d7500bc26c3dcdc1a72ec0e7d718cfe7",
+    "C:\\Dev\\Astra_A2WC511R\\work\\tools\\m07_die321\\portable\\die\\db\\PE\\protector_Themida.2.sg": "d591e8b8a303d7592a3659928a689593377eab2ec1063df10272d36f3bcdcd6f",
+    "C:\\Dev\\Astra_A2WC511R\\work\\tools\\m07_die321\\download.json": "695268d18b90cd199d0274a2af64d48bbf243765e1969145ae0c6b1b55c60777",
+    "C:\\Dev\\Astra_A2WC511R\\work\\tools\\m07_aplib\\aplib.py": "e35517800657b7f8548683675f7309d9413bf6d9b89a0619c26b3080ccada23c",
+    "C:\\Dev\\Astra_A2WC511R\\work\\tools\\m07_aplib\\LICENSE": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+    "C:\\Dev\\Astra_A2WC511R\\work\\tools\\m07_aplib\\download.json": "d2bfd4d8a7b3d9dd1f90a7d7960407764204a6bf83c4a571b31db3c17e8b708e"
+  },
+  "installed_executable_unchanged": true,
+  "physical_interface_actions": [],
+  "reproducible_command": [
+    "C:\\Program Files\\Python314\\python.exe",
+    "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\ecuflash_read\\static_extraction\\static_decode.py"
+  ],
+  "signature_scan_command": [
+    "C:\\Dev\\Astra_A2WC511R\\work\\tools\\m07_die321\\portable\\die\\diec.exe",
+    "-j",
+    "-d",
+    "-u",
+    "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\ecuflash_read\\static_extraction\\ecuflash.static-copy.exe"
+  ],
+  "old_audit_retained": true
+}

@@ -1,0 +1,3784 @@
+[
+  {
+    "events": [
+      {
+        "address": "FFFF7400",
+        "address_sources": [
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "rom:00014802",
+          "rom:00014804"
+        ],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000E1100",
+        "size": 4,
+        "value": "A5A5A5A5",
+        "value_sources": [
+          "ram:FFFF7400",
+          "ram:FFFF7401",
+          "ram:FFFF7402",
+          "ram:FFFF7403"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF7404",
+        "address_sources": [
+          "instruction:000E1104",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "rom:00014802",
+          "rom:00014804"
+        ],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000E1104",
+        "size": 4,
+        "value": "A5A5A5A5",
+        "value_sources": [
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF7400",
+        "address_sources": [
+          "instruction:000E10BC",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8",
+          "000E10BC"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E10C6",
+        "size": 1,
+        "value": "00000000",
+        "value_sources": [
+          "instruction:000E10BE"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF7401",
+        "address_sources": [
+          "instruction:000E10BC",
+          "instruction:000E10CC",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8",
+          "000E10BC"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E10C0",
+          "instruction:000E10C8",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E10C6",
+        "size": 1,
+        "value": "00000000",
+        "value_sources": [
+          "instruction:000E10BE"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF7402",
+        "address_sources": [
+          "instruction:000E10BC",
+          "instruction:000E10CC",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8",
+          "000E10BC"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E10C0",
+          "instruction:000E10C8",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E10C6",
+        "size": 1,
+        "value": "00000000",
+        "value_sources": [
+          "instruction:000E10BE"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF7403",
+        "address_sources": [
+          "instruction:000E10BC",
+          "instruction:000E10CC",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8",
+          "000E10BC"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E10C0",
+          "instruction:000E10C8",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E10C6",
+        "size": 1,
+        "value": "00000000",
+        "value_sources": [
+          "instruction:000E10BE"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF7404",
+        "address_sources": [
+          "instruction:000E10BC",
+          "instruction:000E10CC",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8",
+          "000E10BC"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E10C0",
+          "instruction:000E10C8",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E10C6",
+        "size": 1,
+        "value": "00000000",
+        "value_sources": [
+          "instruction:000E10BE"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF7405",
+        "address_sources": [
+          "instruction:000E10BC",
+          "instruction:000E10CC",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8",
+          "000E10BC"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E10C0",
+          "instruction:000E10C8",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E10C6",
+        "size": 1,
+        "value": "00000000",
+        "value_sources": [
+          "instruction:000E10BE"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF7406",
+        "address_sources": [
+          "instruction:000E10BC",
+          "instruction:000E10CC",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8",
+          "000E10BC"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E10C0",
+          "instruction:000E10C8",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E10C6",
+        "size": 1,
+        "value": "00000000",
+        "value_sources": [
+          "instruction:000E10BE"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF7407",
+        "address_sources": [
+          "instruction:000E10BC",
+          "instruction:000E10CC",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8",
+          "000E10BC"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E10C0",
+          "instruction:000E10C8",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E10C6",
+        "size": 1,
+        "value": "00000000",
+        "value_sources": [
+          "instruction:000E10BE"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF7408",
+        "address_sources": [
+          "instruction:000E10BC",
+          "instruction:000E10CC",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8",
+          "000E10BC"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E10C0",
+          "instruction:000E10C8",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E10C6",
+        "size": 1,
+        "value": "00000000",
+        "value_sources": [
+          "instruction:000E10BE"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF7409",
+        "address_sources": [
+          "instruction:000E10BC",
+          "instruction:000E10CC",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8",
+          "000E10BC"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E10C0",
+          "instruction:000E10C8",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E10C6",
+        "size": 1,
+        "value": "00000000",
+        "value_sources": [
+          "instruction:000E10BE"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF740A",
+        "address_sources": [
+          "instruction:000E10BC",
+          "instruction:000E10CC",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8",
+          "000E10BC"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E10C0",
+          "instruction:000E10C8",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E10C6",
+        "size": 1,
+        "value": "00000000",
+        "value_sources": [
+          "instruction:000E10BE"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF740B",
+        "address_sources": [
+          "instruction:000E10BC",
+          "instruction:000E10CC",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8",
+          "000E10BC"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E10C0",
+          "instruction:000E10C8",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E10C6",
+        "size": 1,
+        "value": "00000000",
+        "value_sources": [
+          "instruction:000E10BE"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF740C",
+        "address_sources": [
+          "instruction:000E10BC",
+          "instruction:000E10CC",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8",
+          "000E10BC"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E10C0",
+          "instruction:000E10C8",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E10C6",
+        "size": 1,
+        "value": "00000000",
+        "value_sources": [
+          "instruction:000E10BE"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF740D",
+        "address_sources": [
+          "instruction:000E10BC",
+          "instruction:000E10CC",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8",
+          "000E10BC"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E10C0",
+          "instruction:000E10C8",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E10C6",
+        "size": 1,
+        "value": "00000000",
+        "value_sources": [
+          "instruction:000E10BE"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF740E",
+        "address_sources": [
+          "instruction:000E10BC",
+          "instruction:000E10CC",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8",
+          "000E10BC"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E10C0",
+          "instruction:000E10C8",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E10C6",
+        "size": 1,
+        "value": "00000000",
+        "value_sources": [
+          "instruction:000E10BE"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF740F",
+        "address_sources": [
+          "instruction:000E10BC",
+          "instruction:000E10CC",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8",
+          "000E10BC"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E10C0",
+          "instruction:000E10C8",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E10C6",
+        "size": 1,
+        "value": "00000000",
+        "value_sources": [
+          "instruction:000E10BE"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF7410",
+        "address_sources": [
+          "instruction:000E10BC",
+          "instruction:000E10CC",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8",
+          "000E10BC"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E10C0",
+          "instruction:000E10C8",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E10C6",
+        "size": 1,
+        "value": "00000000",
+        "value_sources": [
+          "instruction:000E10BE"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF7411",
+        "address_sources": [
+          "instruction:000E10BC",
+          "instruction:000E10CC",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8",
+          "000E10BC"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E10C0",
+          "instruction:000E10C8",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E10C6",
+        "size": 1,
+        "value": "00000000",
+        "value_sources": [
+          "instruction:000E10BE"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF7412",
+        "address_sources": [
+          "instruction:000E10BC",
+          "instruction:000E10CC",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8",
+          "000E10BC"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E10C0",
+          "instruction:000E10C8",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E10C6",
+        "size": 1,
+        "value": "00000000",
+        "value_sources": [
+          "instruction:000E10BE"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF7413",
+        "address_sources": [
+          "instruction:000E10BC",
+          "instruction:000E10CC",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8",
+          "000E10BC"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E10C0",
+          "instruction:000E10C8",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E10C6",
+        "size": 1,
+        "value": "00000000",
+        "value_sources": [
+          "instruction:000E10BE"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF7414",
+        "address_sources": [
+          "instruction:000E10BC",
+          "instruction:000E10CC",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8",
+          "000E10BC"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E10C0",
+          "instruction:000E10C8",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E10C6",
+        "size": 1,
+        "value": "00000000",
+        "value_sources": [
+          "instruction:000E10BE"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF7415",
+        "address_sources": [
+          "instruction:000E10BC",
+          "instruction:000E10CC",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8",
+          "000E10BC"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E10C0",
+          "instruction:000E10C8",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E10C6",
+        "size": 1,
+        "value": "00000000",
+        "value_sources": [
+          "instruction:000E10BE"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF7416",
+        "address_sources": [
+          "instruction:000E10BC",
+          "instruction:000E10CC",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8",
+          "000E10BC"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E10C0",
+          "instruction:000E10C8",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E10C6",
+        "size": 1,
+        "value": "00000000",
+        "value_sources": [
+          "instruction:000E10BE"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF7417",
+        "address_sources": [
+          "instruction:000E10BC",
+          "instruction:000E10CC",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8",
+          "000E10BC"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E10C0",
+          "instruction:000E10C8",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E10C6",
+        "size": 1,
+        "value": "00000000",
+        "value_sources": [
+          "instruction:000E10BE"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF7418",
+        "address_sources": [
+          "instruction:000E10BC",
+          "instruction:000E10CC",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8",
+          "000E10BC"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E10C0",
+          "instruction:000E10C8",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E10C6",
+        "size": 1,
+        "value": "00000000",
+        "value_sources": [
+          "instruction:000E10BE"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF7419",
+        "address_sources": [
+          "instruction:000E10BC",
+          "instruction:000E10CC",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8",
+          "000E10BC"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E10C0",
+          "instruction:000E10C8",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E10C6",
+        "size": 1,
+        "value": "00000000",
+        "value_sources": [
+          "instruction:000E10BE"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF741A",
+        "address_sources": [
+          "instruction:000E10BC",
+          "instruction:000E10CC",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8",
+          "000E10BC"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E10C0",
+          "instruction:000E10C8",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E10C6",
+        "size": 1,
+        "value": "00000000",
+        "value_sources": [
+          "instruction:000E10BE"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF741B",
+        "address_sources": [
+          "instruction:000E10BC",
+          "instruction:000E10CC",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8",
+          "000E10BC"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E10C0",
+          "instruction:000E10C8",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E10C6",
+        "size": 1,
+        "value": "00000000",
+        "value_sources": [
+          "instruction:000E10BE"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF741C",
+        "address_sources": [
+          "instruction:000E10BC",
+          "instruction:000E10CC",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8",
+          "000E10BC"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E10C0",
+          "instruction:000E10C8",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E10C6",
+        "size": 1,
+        "value": "00000000",
+        "value_sources": [
+          "instruction:000E10BE"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF741D",
+        "address_sources": [
+          "instruction:000E10BC",
+          "instruction:000E10CC",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8",
+          "000E10BC"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E10C0",
+          "instruction:000E10C8",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E10C6",
+        "size": 1,
+        "value": "00000000",
+        "value_sources": [
+          "instruction:000E10BE"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF741E",
+        "address_sources": [
+          "instruction:000E10BC",
+          "instruction:000E10CC",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8",
+          "000E10BC"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E10C0",
+          "instruction:000E10C8",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E10C6",
+        "size": 1,
+        "value": "00000000",
+        "value_sources": [
+          "instruction:000E10BE"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF741F",
+        "address_sources": [
+          "instruction:000E10BC",
+          "instruction:000E10CC",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8",
+          "000E10BC"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E10C0",
+          "instruction:000E10C8",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E10C6",
+        "size": 1,
+        "value": "00000000",
+        "value_sources": [
+          "instruction:000E10BE"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF7404",
+        "address_sources": [
+          "instruction:000E10D0",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8",
+          "000E10BC"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E10C0",
+          "instruction:000E10C8",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E10D0",
+        "size": 4,
+        "value": "4D304431",
+        "value_sources": [
+          "rom:000E10E4"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF740C",
+        "address_sources": [
+          "instruction:000E10D4",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8",
+          "000E10BC"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E10C0",
+          "instruction:000E10C8",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E10D4",
+        "size": 4,
+        "value": "00000208",
+        "value_sources": [
+          "rom:000E10E0"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF741E",
+        "address_sources": [
+          "instruction:000E10D6",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8",
+          "000E10BC"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E10C0",
+          "instruction:000E10C8",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E10DA",
+        "size": 1,
+        "value": "00000001",
+        "value_sources": [
+          "instruction:000E10D8"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF7400",
+        "address_sources": [
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E10C0",
+          "instruction:000E10C8",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E1132",
+        "size": 4,
+        "value": "00000001",
+        "value_sources": [
+          "instruction:000E1128",
+          "instruction:000E112A",
+          "instruction:000E1130"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF7408",
+        "address_sources": [
+          "instruction:000E1134",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E10C0",
+          "instruction:000E10C8",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000E1134",
+        "size": 4,
+        "value": "00000000",
+        "value_sources": [
+          "instruction:000E10BE",
+          "ram:FFFF7408",
+          "ram:FFFF7409",
+          "ram:FFFF740A",
+          "ram:FFFF740B"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF7414",
+        "address_sources": [
+          "instruction:000E115E",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E10BE",
+          "instruction:000E10C0",
+          "instruction:000E10C8",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "ram:FFFF7408",
+          "ram:FFFF7409",
+          "ram:FFFF740A",
+          "ram:FFFF740B",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E1160",
+        "size": 1,
+        "value": "00000000",
+        "value_sources": [
+          "ram:FFFF4C75",
+          "ram:FFFFBF3C"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF7415",
+        "address_sources": [
+          "instruction:000E1168",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E10BE",
+          "instruction:000E10C0",
+          "instruction:000E10C8",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "ram:FFFF7408",
+          "ram:FFFF7409",
+          "ram:FFFF740A",
+          "ram:FFFF740B",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E116A",
+        "size": 1,
+        "value": "00000021",
+        "value_sources": [
+          "ram:FFFF4C8D",
+          "ram:FFFFBF3D"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF7416",
+        "address_sources": [
+          "instruction:000E1174",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E10BE",
+          "instruction:000E10C0",
+          "instruction:000E10C8",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "ram:FFFF7408",
+          "ram:FFFF7409",
+          "ram:FFFF740A",
+          "ram:FFFF740B",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E1176",
+        "size": 1,
+        "value": "00000001",
+        "value_sources": [
+          "ram:FFFF4CA1",
+          "ram:FFFFBF3E"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF7417",
+        "address_sources": [
+          "instruction:000E1180",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E10BE",
+          "instruction:000E10C0",
+          "instruction:000E10C8",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "ram:FFFF7408",
+          "ram:FFFF7409",
+          "ram:FFFF740A",
+          "ram:FFFF740B",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E1182",
+        "size": 1,
+        "value": "00000000",
+        "value_sources": [
+          "ram:FFFF4C50",
+          "ram:FFFFBF3F"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF7418",
+        "address_sources": [
+          "instruction:000E1180",
+          "instruction:000E1184",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E10BE",
+          "instruction:000E10C0",
+          "instruction:000E10C8",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "ram:FFFF7408",
+          "ram:FFFF7409",
+          "ram:FFFF740A",
+          "ram:FFFF740B",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E1186",
+        "size": 1,
+        "value": "00000002",
+        "value_sources": [
+          "ram:FFFF4C8D",
+          "ram:FFFFBF3D"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF7419",
+        "address_sources": [
+          "instruction:000E1180",
+          "instruction:000E1184",
+          "instruction:000E1188",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E10BE",
+          "instruction:000E10C0",
+          "instruction:000E10C8",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "ram:FFFF7408",
+          "ram:FFFF7409",
+          "ram:FFFF740A",
+          "ram:FFFF740B",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E118A",
+        "size": 1,
+        "value": "00000001",
+        "value_sources": [
+          "instruction:000E10F2",
+          "ram:FFFF4C8D",
+          "ram:FFFFBF3D"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF741A",
+        "address_sources": [
+          "instruction:000E1180",
+          "instruction:000E1184",
+          "instruction:000E1188",
+          "instruction:000E118C",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E10BE",
+          "instruction:000E10C0",
+          "instruction:000E10C8",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "ram:FFFF7408",
+          "ram:FFFF7409",
+          "ram:FFFF740A",
+          "ram:FFFF740B",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000E118E",
+        "size": 1,
+        "value": "00000000",
+        "value_sources": [
+          "instruction:000E10BE",
+          "ram:FFFF741A"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF741A",
+        "address_sources": [
+          "instruction:000E1180",
+          "instruction:000E1184",
+          "instruction:000E1188",
+          "instruction:000E118C",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E10BE",
+          "instruction:000E10C0",
+          "instruction:000E10C8",
+          "instruction:000E1162",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "ram:FFFF7408",
+          "ram:FFFF7409",
+          "ram:FFFF740A",
+          "ram:FFFF740B",
+          "ram:FFFFBF3D",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E11A0",
+        "size": 1,
+        "value": "00000002",
+        "value_sources": [
+          "ram:FFFF4C8D",
+          "ram:FFFFBF3D"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF741B",
+        "address_sources": [
+          "instruction:000E11A4",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E10BE",
+          "instruction:000E10C0",
+          "instruction:000E10C8",
+          "instruction:000E1162",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "ram:FFFF7408",
+          "ram:FFFF7409",
+          "ram:FFFF740A",
+          "ram:FFFF740B",
+          "ram:FFFFBF3D",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000E11A6",
+        "size": 1,
+        "value": "00000000",
+        "value_sources": [
+          "instruction:000E10BE",
+          "ram:FFFF741B"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF741B",
+        "address_sources": [
+          "instruction:000E11A4",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E10BE",
+          "instruction:000E10C0",
+          "instruction:000E10C8",
+          "instruction:000E10F2",
+          "instruction:000E1162",
+          "instruction:000E11A8",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "ram:FFFF7408",
+          "ram:FFFF7409",
+          "ram:FFFF740A",
+          "ram:FFFF740B",
+          "ram:FFFFBF3D",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E11BE",
+        "size": 1,
+        "value": "00000001",
+        "value_sources": [
+          "instruction:000E10F2",
+          "ram:FFFF4C8D",
+          "ram:FFFFBF3D"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF741C",
+        "address_sources": [
+          "instruction:000E11C8",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E10BE",
+          "instruction:000E10C0",
+          "instruction:000E10C8",
+          "instruction:000E10F2",
+          "instruction:000E1162",
+          "instruction:000E11A8",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "ram:FFFF7408",
+          "ram:FFFF7409",
+          "ram:FFFF740A",
+          "ram:FFFF740B",
+          "ram:FFFFBF3D",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E11CA",
+        "size": 1,
+        "value": "00000000",
+        "value_sources": [
+          "instruction:000E1278",
+          "ram:FFFFBF40"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF741F",
+        "address_sources": [
+          "instruction:000E11D8",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E10BE",
+          "instruction:000E10C0",
+          "instruction:000E10C8",
+          "instruction:000E10F2",
+          "instruction:000E1162",
+          "instruction:000E11A8",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "ram:FFFF7408",
+          "ram:FFFF7409",
+          "ram:FFFF740A",
+          "ram:FFFF740B",
+          "ram:FFFFBF3D",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E11DA",
+        "size": 1,
+        "value": "00000000",
+        "value_sources": [
+          "instruction:000E1268",
+          "ram:FFFF4C50",
+          "ram:FFFFBF41"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF740C",
+        "address_sources": [
+          "instruction:000E11E0",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E1026",
+          "instruction:000E103A",
+          "instruction:000E104A",
+          "instruction:000E108C",
+          "instruction:000E1092",
+          "instruction:000E10BE",
+          "instruction:000E10C0",
+          "instruction:000E10C8",
+          "instruction:000E10F2",
+          "instruction:000E1162",
+          "instruction:000E11A8",
+          "instruction:000E1268",
+          "instruction:000E1278",
+          "ram:FFFF4C50",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "ram:FFFF7408",
+          "ram:FFFF7409",
+          "ram:FFFF740A",
+          "ram:FFFF740B",
+          "ram:FFFFBF3C",
+          "ram:FFFFBF3D",
+          "ram:FFFFBF3E",
+          "ram:FFFFBF3F",
+          "ram:FFFFBF40",
+          "ram:FFFFBF41",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E11E0",
+        "size": 4,
+        "value": "0000022D",
+        "value_sources": [
+          "instruction:000E1050",
+          "instruction:000E1062",
+          "instruction:000E1082",
+          "rom:000E10B4"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF741D",
+        "address_sources": [
+          "instruction:000E11E8",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E1026",
+          "instruction:000E103A",
+          "instruction:000E104A",
+          "instruction:000E108C",
+          "instruction:000E1092",
+          "instruction:000E10BE",
+          "instruction:000E10C0",
+          "instruction:000E10C8",
+          "instruction:000E10F2",
+          "instruction:000E1162",
+          "instruction:000E11A8",
+          "instruction:000E1268",
+          "instruction:000E1278",
+          "ram:FFFF4C50",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "ram:FFFF7408",
+          "ram:FFFF7409",
+          "ram:FFFF740A",
+          "ram:FFFF740B",
+          "ram:FFFFBF3C",
+          "ram:FFFFBF3D",
+          "ram:FFFFBF3E",
+          "ram:FFFFBF3F",
+          "ram:FFFFBF40",
+          "ram:FFFFBF41",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E11EA",
+        "size": 1,
+        "value": "00000021",
+        "value_sources": [
+          "ram:FFFF4C8D",
+          "ram:FFFFBF3D"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF7408",
+        "address_sources": [
+          "instruction:000E11EE",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E1026",
+          "instruction:000E103A",
+          "instruction:000E104A",
+          "instruction:000E108C",
+          "instruction:000E1092",
+          "instruction:000E10BE",
+          "instruction:000E10C0",
+          "instruction:000E10C8",
+          "instruction:000E10F2",
+          "instruction:000E1162",
+          "instruction:000E11A8",
+          "instruction:000E1268",
+          "instruction:000E1278",
+          "ram:FFFF4C50",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "ram:FFFF7408",
+          "ram:FFFF7409",
+          "ram:FFFF740A",
+          "ram:FFFF740B",
+          "ram:FFFFBF3C",
+          "ram:FFFFBF3D",
+          "ram:FFFFBF3E",
+          "ram:FFFFBF3F",
+          "ram:FFFFBF40",
+          "ram:FFFFBF41",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000E11EE",
+        "size": 4,
+        "value": "00000000",
+        "value_sources": [
+          "instruction:000E10BE",
+          "ram:FFFF7408",
+          "ram:FFFF7409",
+          "ram:FFFF740A",
+          "ram:FFFF740B"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF7408",
+        "address_sources": [
+          "instruction:000E11F2",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E1026",
+          "instruction:000E103A",
+          "instruction:000E104A",
+          "instruction:000E108C",
+          "instruction:000E1092",
+          "instruction:000E10BE",
+          "instruction:000E10C0",
+          "instruction:000E10C8",
+          "instruction:000E10F2",
+          "instruction:000E1162",
+          "instruction:000E11A8",
+          "instruction:000E1268",
+          "instruction:000E1278",
+          "ram:FFFF4C50",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "ram:FFFF7408",
+          "ram:FFFF7409",
+          "ram:FFFF740A",
+          "ram:FFFF740B",
+          "ram:FFFFBF3C",
+          "ram:FFFFBF3D",
+          "ram:FFFFBF3E",
+          "ram:FFFFBF3F",
+          "ram:FFFFBF40",
+          "ram:FFFFBF41",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E11F2",
+        "size": 4,
+        "value": "00000001",
+        "value_sources": [
+          "instruction:000E10BE",
+          "instruction:000E11F0",
+          "ram:FFFF7408",
+          "ram:FFFF7409",
+          "ram:FFFF740A",
+          "ram:FFFF740B"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF7400",
+        "address_sources": [
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E1026",
+          "instruction:000E103A",
+          "instruction:000E104A",
+          "instruction:000E108C",
+          "instruction:000E1092",
+          "instruction:000E10BE",
+          "instruction:000E10C0",
+          "instruction:000E10C8",
+          "instruction:000E10F2",
+          "instruction:000E1162",
+          "instruction:000E11A8",
+          "instruction:000E1268",
+          "instruction:000E1278",
+          "ram:FFFF4C50",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "ram:FFFF7408",
+          "ram:FFFF7409",
+          "ram:FFFF740A",
+          "ram:FFFF740B",
+          "ram:FFFFBF3C",
+          "ram:FFFFBF3D",
+          "ram:FFFFBF3E",
+          "ram:FFFFBF3F",
+          "ram:FFFFBF40",
+          "ram:FFFFBF41",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E11F4",
+        "size": 4,
+        "value": "00000002",
+        "value_sources": [
+          "instruction:000E1128",
+          "instruction:000E112A",
+          "instruction:000E11EC"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      }
+    ],
+    "fixture": {
+      "packed": 33,
+      "warm": false
+    },
+    "rom_sha256": "3544df4b742bb85553f639356abdb1a58ebc3b8126a667a147a37bd741a322e6"
+  },
+  {
+    "events": [
+      {
+        "address": "FFFF7400",
+        "address_sources": [
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "rom:00014802",
+          "rom:00014804"
+        ],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000E1100",
+        "size": 4,
+        "value": "FFFFFFFE",
+        "value_sources": [
+          "ram:FFFF7400",
+          "ram:FFFF7401",
+          "ram:FFFF7402",
+          "ram:FFFF7403"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF7404",
+        "address_sources": [
+          "instruction:000E1104",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "rom:00014802",
+          "rom:00014804"
+        ],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000E1104",
+        "size": 4,
+        "value": "4D304431",
+        "value_sources": [
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF741E",
+        "address_sources": [
+          "instruction:000E1116",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000E1118",
+        "size": 1,
+        "value": "00000001",
+        "value_sources": [
+          "ram:FFFF741E"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF7400",
+        "address_sources": [
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E111C",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "ram:FFFF741E",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E1132",
+        "size": 4,
+        "value": "FFFFFFFF",
+        "value_sources": [
+          "instruction:000E1120",
+          "instruction:000E1130",
+          "ram:FFFF7400",
+          "ram:FFFF7401",
+          "ram:FFFF7402",
+          "ram:FFFF7403"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF7408",
+        "address_sources": [
+          "instruction:000E1134",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E111C",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "ram:FFFF741E",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000E1134",
+        "size": 4,
+        "value": "FFFFFFFF",
+        "value_sources": [
+          "ram:FFFF7408",
+          "ram:FFFF7409",
+          "ram:FFFF740A",
+          "ram:FFFF740B"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF741D",
+        "address_sources": [
+          "instruction:000E1140",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E111C",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "ram:FFFF7408",
+          "ram:FFFF7409",
+          "ram:FFFF740A",
+          "ram:FFFF740B",
+          "ram:FFFF741E",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000E1144",
+        "size": 1,
+        "value": "0000009F",
+        "value_sources": [
+          "ram:FFFF741D"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF7414",
+        "address_sources": [
+          "instruction:000E115E",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E111C",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "ram:FFFF7408",
+          "ram:FFFF7409",
+          "ram:FFFF740A",
+          "ram:FFFF740B",
+          "ram:FFFF741D",
+          "ram:FFFF741E",
+          "ram:FFFFBF3D",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E1160",
+        "size": 1,
+        "value": "0000009F",
+        "value_sources": [
+          "ram:FFFF4C75",
+          "ram:FFFFBF3C"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF7415",
+        "address_sources": [
+          "instruction:000E1168",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E111C",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "ram:FFFF7408",
+          "ram:FFFF7409",
+          "ram:FFFF740A",
+          "ram:FFFF740B",
+          "ram:FFFF741D",
+          "ram:FFFF741E",
+          "ram:FFFFBF3D",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E116A",
+        "size": 1,
+        "value": "0000009F",
+        "value_sources": [
+          "ram:FFFF4C8D",
+          "ram:FFFFBF3D"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF7416",
+        "address_sources": [
+          "instruction:000E1174",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E111C",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "ram:FFFF7408",
+          "ram:FFFF7409",
+          "ram:FFFF740A",
+          "ram:FFFF740B",
+          "ram:FFFF741D",
+          "ram:FFFF741E",
+          "ram:FFFFBF3D",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E1176",
+        "size": 1,
+        "value": "000000FF",
+        "value_sources": [
+          "ram:FFFF4CA1",
+          "ram:FFFFBF3E"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF7417",
+        "address_sources": [
+          "instruction:000E1180",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E111C",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "ram:FFFF7408",
+          "ram:FFFF7409",
+          "ram:FFFF740A",
+          "ram:FFFF740B",
+          "ram:FFFF741D",
+          "ram:FFFF741E",
+          "ram:FFFFBF3D",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E1182",
+        "size": 1,
+        "value": "00000080",
+        "value_sources": [
+          "ram:FFFF4C50",
+          "ram:FFFFBF3F"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF7418",
+        "address_sources": [
+          "instruction:000E1180",
+          "instruction:000E1184",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E111C",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "ram:FFFF7408",
+          "ram:FFFF7409",
+          "ram:FFFF740A",
+          "ram:FFFF740B",
+          "ram:FFFF741D",
+          "ram:FFFF741E",
+          "ram:FFFFBF3D",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E1186",
+        "size": 1,
+        "value": "00000009",
+        "value_sources": [
+          "ram:FFFF4C8D",
+          "ram:FFFFBF3D"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF7419",
+        "address_sources": [
+          "instruction:000E1180",
+          "instruction:000E1184",
+          "instruction:000E1188",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E111C",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "ram:FFFF7408",
+          "ram:FFFF7409",
+          "ram:FFFF740A",
+          "ram:FFFF740B",
+          "ram:FFFF741D",
+          "ram:FFFF741E",
+          "ram:FFFFBF3D",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E118A",
+        "size": 1,
+        "value": "0000000F",
+        "value_sources": [
+          "instruction:000E10F2",
+          "ram:FFFF4C8D",
+          "ram:FFFFBF3D"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF741A",
+        "address_sources": [
+          "instruction:000E1180",
+          "instruction:000E1184",
+          "instruction:000E1188",
+          "instruction:000E118C",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E111C",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "ram:FFFF7408",
+          "ram:FFFF7409",
+          "ram:FFFF740A",
+          "ram:FFFF740B",
+          "ram:FFFF741D",
+          "ram:FFFF741E",
+          "ram:FFFFBF3D",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000E118E",
+        "size": 1,
+        "value": "000000A7",
+        "value_sources": [
+          "ram:FFFF741A"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF741A",
+        "address_sources": [
+          "instruction:000E1180",
+          "instruction:000E1184",
+          "instruction:000E1188",
+          "instruction:000E118C",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E111C",
+          "instruction:000E1162",
+          "instruction:000E1198",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "ram:FFFF7408",
+          "ram:FFFF7409",
+          "ram:FFFF740A",
+          "ram:FFFF740B",
+          "ram:FFFF741D",
+          "ram:FFFF741E",
+          "ram:FFFFBF3D",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E11A0",
+        "size": 1,
+        "value": "000000A7",
+        "value_sources": [
+          "ram:FFFF741A"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF741B",
+        "address_sources": [
+          "instruction:000E11A4",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E111C",
+          "instruction:000E1162",
+          "instruction:000E1198",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "ram:FFFF7408",
+          "ram:FFFF7409",
+          "ram:FFFF740A",
+          "ram:FFFF740B",
+          "ram:FFFF741D",
+          "ram:FFFF741E",
+          "ram:FFFFBF3D",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000E11A6",
+        "size": 1,
+        "value": "000000B8",
+        "value_sources": [
+          "ram:FFFF741B"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF741B",
+        "address_sources": [
+          "instruction:000E11A4",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E10F2",
+          "instruction:000E111C",
+          "instruction:000E1162",
+          "instruction:000E1198",
+          "instruction:000E11A8",
+          "instruction:000E11B2",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "ram:FFFF7408",
+          "ram:FFFF7409",
+          "ram:FFFF740A",
+          "ram:FFFF740B",
+          "ram:FFFF741D",
+          "ram:FFFF741E",
+          "ram:FFFFBF3D",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E11BE",
+        "size": 1,
+        "value": "000000B8",
+        "value_sources": [
+          "ram:FFFF741B"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF741C",
+        "address_sources": [
+          "instruction:000E11C8",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E10F2",
+          "instruction:000E111C",
+          "instruction:000E1162",
+          "instruction:000E1198",
+          "instruction:000E11A8",
+          "instruction:000E11B2",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "ram:FFFF7408",
+          "ram:FFFF7409",
+          "ram:FFFF740A",
+          "ram:FFFF740B",
+          "ram:FFFF741D",
+          "ram:FFFF741E",
+          "ram:FFFFBF3D",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E11CA",
+        "size": 1,
+        "value": "00000000",
+        "value_sources": [
+          "instruction:000E1278",
+          "ram:FFFFBF40"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF741F",
+        "address_sources": [
+          "instruction:000E11D8",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E10F2",
+          "instruction:000E111C",
+          "instruction:000E1162",
+          "instruction:000E1198",
+          "instruction:000E11A8",
+          "instruction:000E11B2",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "ram:FFFF7408",
+          "ram:FFFF7409",
+          "ram:FFFF740A",
+          "ram:FFFF740B",
+          "ram:FFFF741D",
+          "ram:FFFF741E",
+          "ram:FFFFBF3D",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E11DA",
+        "size": 1,
+        "value": "00000000",
+        "value_sources": [
+          "instruction:000E1268",
+          "ram:FFFF4C50",
+          "ram:FFFFBF41"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF740C",
+        "address_sources": [
+          "instruction:000E11E0",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E1026",
+          "instruction:000E103A",
+          "instruction:000E104A",
+          "instruction:000E108C",
+          "instruction:000E10F2",
+          "instruction:000E111C",
+          "instruction:000E1162",
+          "instruction:000E1198",
+          "instruction:000E11A8",
+          "instruction:000E11B2",
+          "instruction:000E1268",
+          "instruction:000E1278",
+          "ram:FFFF4C50",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "ram:FFFF7408",
+          "ram:FFFF7409",
+          "ram:FFFF740A",
+          "ram:FFFF740B",
+          "ram:FFFF741D",
+          "ram:FFFF741E",
+          "ram:FFFFBF3C",
+          "ram:FFFFBF3D",
+          "ram:FFFFBF3E",
+          "ram:FFFFBF3F",
+          "ram:FFFFBF40",
+          "ram:FFFFBF41",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E11E0",
+        "size": 4,
+        "value": "0000028F",
+        "value_sources": [
+          "instruction:000E103E",
+          "instruction:000E1050",
+          "instruction:000E1062",
+          "rom:000E10B4",
+          "rom:000E10B6"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF741D",
+        "address_sources": [
+          "instruction:000E11E8",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E1026",
+          "instruction:000E103A",
+          "instruction:000E104A",
+          "instruction:000E108C",
+          "instruction:000E10F2",
+          "instruction:000E111C",
+          "instruction:000E1162",
+          "instruction:000E1198",
+          "instruction:000E11A8",
+          "instruction:000E11B2",
+          "instruction:000E1268",
+          "instruction:000E1278",
+          "ram:FFFF4C50",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "ram:FFFF7408",
+          "ram:FFFF7409",
+          "ram:FFFF740A",
+          "ram:FFFF740B",
+          "ram:FFFF741D",
+          "ram:FFFF741E",
+          "ram:FFFFBF3C",
+          "ram:FFFFBF3D",
+          "ram:FFFFBF3E",
+          "ram:FFFFBF3F",
+          "ram:FFFFBF40",
+          "ram:FFFFBF41",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E11EA",
+        "size": 1,
+        "value": "0000009F",
+        "value_sources": [
+          "ram:FFFF4C8D",
+          "ram:FFFFBF3D"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF7408",
+        "address_sources": [
+          "instruction:000E11EE",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E1026",
+          "instruction:000E103A",
+          "instruction:000E104A",
+          "instruction:000E108C",
+          "instruction:000E10F2",
+          "instruction:000E111C",
+          "instruction:000E1162",
+          "instruction:000E1198",
+          "instruction:000E11A8",
+          "instruction:000E11B2",
+          "instruction:000E1268",
+          "instruction:000E1278",
+          "ram:FFFF4C50",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "ram:FFFF7408",
+          "ram:FFFF7409",
+          "ram:FFFF740A",
+          "ram:FFFF740B",
+          "ram:FFFF741D",
+          "ram:FFFF741E",
+          "ram:FFFFBF3C",
+          "ram:FFFFBF3D",
+          "ram:FFFFBF3E",
+          "ram:FFFFBF3F",
+          "ram:FFFFBF40",
+          "ram:FFFFBF41",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "r",
+        "pc": "000E11EE",
+        "size": 4,
+        "value": "FFFFFFFF",
+        "value_sources": [
+          "ram:FFFF7408",
+          "ram:FFFF7409",
+          "ram:FFFF740A",
+          "ram:FFFF740B"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF7408",
+        "address_sources": [
+          "instruction:000E11F2",
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E1026",
+          "instruction:000E103A",
+          "instruction:000E104A",
+          "instruction:000E108C",
+          "instruction:000E10F2",
+          "instruction:000E111C",
+          "instruction:000E1162",
+          "instruction:000E1198",
+          "instruction:000E11A8",
+          "instruction:000E11B2",
+          "instruction:000E1268",
+          "instruction:000E1278",
+          "ram:FFFF4C50",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "ram:FFFF7408",
+          "ram:FFFF7409",
+          "ram:FFFF740A",
+          "ram:FFFF740B",
+          "ram:FFFF741D",
+          "ram:FFFF741E",
+          "ram:FFFFBF3C",
+          "ram:FFFFBF3D",
+          "ram:FFFFBF3E",
+          "ram:FFFFBF3F",
+          "ram:FFFFBF40",
+          "ram:FFFFBF41",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E11F2",
+        "size": 4,
+        "value": "00000000",
+        "value_sources": [
+          "instruction:000E11F0",
+          "ram:FFFF7408",
+          "ram:FFFF7409",
+          "ram:FFFF740A",
+          "ram:FFFF740B"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      },
+      {
+        "address": "FFFF7400",
+        "address_sources": [
+          "rom:000E1314"
+        ],
+        "call_context": [
+          "0001193A",
+          "000E12B0",
+          "000E1214",
+          "000E10E8"
+        ],
+        "control_sources": [
+          "instruction:000147DE",
+          "instruction:000147E6",
+          "instruction:000147F2",
+          "instruction:000E1026",
+          "instruction:000E103A",
+          "instruction:000E104A",
+          "instruction:000E108C",
+          "instruction:000E10F2",
+          "instruction:000E111C",
+          "instruction:000E1162",
+          "instruction:000E1198",
+          "instruction:000E11A8",
+          "instruction:000E11B2",
+          "instruction:000E1268",
+          "instruction:000E1278",
+          "ram:FFFF4C50",
+          "ram:FFFF4C75",
+          "ram:FFFF4C8D",
+          "ram:FFFF4CA1",
+          "ram:FFFF7404",
+          "ram:FFFF7405",
+          "ram:FFFF7406",
+          "ram:FFFF7407",
+          "ram:FFFF7408",
+          "ram:FFFF7409",
+          "ram:FFFF740A",
+          "ram:FFFF740B",
+          "ram:FFFF741D",
+          "ram:FFFF741E",
+          "ram:FFFFBF3C",
+          "ram:FFFFBF3D",
+          "ram:FFFFBF3E",
+          "ram:FFFFBF3F",
+          "ram:FFFFBF40",
+          "ram:FFFFBF41",
+          "rom:00014802",
+          "rom:00014804",
+          "rom:000E1208"
+        ],
+        "delay_slot": false,
+        "mode": "w",
+        "pc": "000E11F4",
+        "size": 4,
+        "value": "00000000",
+        "value_sources": [
+          "instruction:000E1120",
+          "instruction:000E11EC",
+          "ram:FFFF7400",
+          "ram:FFFF7401",
+          "ram:FFFF7402",
+          "ram:FFFF7403"
+        ],
+        "watchpoints": [
+          "experimental observer RAM"
+        ]
+      }
+    ],
+    "fixture": {
+      "packed": 159,
+      "warm": true
+    },
+    "rom_sha256": "3544df4b742bb85553f639356abdb1a58ebc3b8126a667a147a37bd741a322e6"
+  }
+]

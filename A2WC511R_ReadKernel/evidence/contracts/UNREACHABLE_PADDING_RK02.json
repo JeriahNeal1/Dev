@@ -1,0 +1,172 @@
+{
+  "schema": 1,
+  "status": "PASS_UNREACHABLE_EMITTED_PADDING",
+  "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+  "inputs": [
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\build\\rk02_01\\manifest.json",
+      "bytes": 51029,
+      "sha256": "a35562a19f21d4a2815e88fb729d21dd2cc08bf702c0d866f88ffc9e3ddb659e"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\build\\rk02_01\\kernel.bin",
+      "bytes": 1808,
+      "sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\BINARY_REVIEW_rk02_01.json",
+      "bytes": 31922,
+      "sha256": "e422b29cf712ba531facae58e792a7721dab9537b8f582469f1687bed53b4b4b"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\UPLOAD_WIRE_CONTRACT_RK02.json",
+      "bytes": 9330,
+      "sha256": "b1c5431141f9b249b16dd15938c290f20b99593e7ab8512caebcde1906c37f50"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\review_padding_rk02.py",
+      "bytes": 4967,
+      "sha256": "8dbc51deba8645828919577170c8b280b36fafb641bacc3c12cfb2e816eb782f"
+    }
+  ],
+  "executable_instruction_count": 335,
+  "executable_interval": [
+    "FFFF3004",
+    "FFFF32A2"
+  ],
+  "padding": [
+    {
+      "address": "FFFF3000",
+      "bytes": "0009",
+      "decodes_as": "NOP",
+      "classification": "NON_EXECUTED_UPLOAD_HEADER"
+    },
+    {
+      "address": "FFFF3002",
+      "bytes": "0009",
+      "decodes_as": "NOP",
+      "classification": "NON_EXECUTED_UPLOAD_HEADER"
+    },
+    {
+      "address": "FFFF32A2",
+      "bytes": "0009",
+      "decodes_as": "NOP",
+      "classification": "NON_EXECUTED_CODE_ALIGNMENT"
+    }
+  ],
+  "entry_proof": "The fixed OEM start path jumps to FFFF3004. The header at3000/3002 participates in upload/checksum as data and is never the entry.",
+  "alignment_proof": "The last executable pair is BRA FFFF329E at329E with NOP delay slot32A0. Its successor is329E, so it cannot fall through to32A2.",
+  "direct_control_proof": "All decoded direct branch targets, conditional fallthroughs, BSR targets and BSR return PCs lie in the335-word executable interval and exclude all three padding words.",
+  "direct_edge_count": 120,
+  "calls_and_return_addresses": [
+    {
+      "pc": "FFFF30A6",
+      "target": "FFFF31A6",
+      "return": "FFFF30AA"
+    },
+    {
+      "pc": "FFFF30AC",
+      "target": "FFFF31BC",
+      "return": "FFFF30B0"
+    },
+    {
+      "pc": "FFFF30BC",
+      "target": "FFFF31BC",
+      "return": "FFFF30C0"
+    },
+    {
+      "pc": "FFFF30CC",
+      "target": "FFFF31BC",
+      "return": "FFFF30D0"
+    },
+    {
+      "pc": "FFFF30DA",
+      "target": "FFFF31BC",
+      "return": "FFFF30DE"
+    },
+    {
+      "pc": "FFFF30F2",
+      "target": "FFFF31BC",
+      "return": "FFFF30F6"
+    },
+    {
+      "pc": "FFFF3100",
+      "target": "FFFF31BC",
+      "return": "FFFF3104"
+    },
+    {
+      "pc": "FFFF312C",
+      "target": "FFFF31FC",
+      "return": "FFFF3130"
+    },
+    {
+      "pc": "FFFF316E",
+      "target": "FFFF31FC",
+      "return": "FFFF3172"
+    },
+    {
+      "pc": "FFFF318E",
+      "target": "FFFF31A6",
+      "return": "FFFF3192"
+    },
+    {
+      "pc": "FFFF321A",
+      "target": "FFFF31D8",
+      "return": "FFFF321E"
+    },
+    {
+      "pc": "FFFF3220",
+      "target": "FFFF31D8",
+      "return": "FFFF3224"
+    },
+    {
+      "pc": "FFFF3228",
+      "target": "FFFF31D8",
+      "return": "FFFF322C"
+    },
+    {
+      "pc": "FFFF322E",
+      "target": "FFFF31D8",
+      "return": "FFFF3232"
+    },
+    {
+      "pc": "FFFF323E",
+      "target": "FFFF31D8",
+      "return": "FFFF3242"
+    },
+    {
+      "pc": "FFFF3244",
+      "target": "FFFF31D8",
+      "return": "FFFF3248"
+    },
+    {
+      "pc": "FFFF3252",
+      "target": "FFFF31D8",
+      "return": "FFFF3256"
+    },
+    {
+      "pc": "FFFF3262",
+      "target": "FFFF31D8",
+      "return": "FFFF3266"
+    },
+    {
+      "pc": "FFFF326C",
+      "target": "FFFF31D8",
+      "return": "FFFF3270"
+    },
+    {
+      "pc": "FFFF3270",
+      "target": "FFFF3280",
+      "return": "FFFF3274"
+    }
+  ],
+  "return_proof": "All five RTS sites are called helpers. Leaves preservePR; tx_frame receives a BSR-setPR, saves it inR14 at31FC, and restores onlythatR14 at327A. The completeR14 definition set contains only31FC. Main and exception paths do notRTS. This is the bounded fixed-object call contract from the independent binary review.",
+  "exception_proof": "All256 private vectors contain FFFF3296, which ends in the329E self-loop. NoRTE and no computed jump/call are present. Pre-private-VBR/asynchronous corruption remain outside the admitted contract.",
+  "padding_words_not_in_coverage_denominator": 3,
+  "physical_operations": 0,
+  "limits": [
+    "These are intentionally nonexecuted emitted words, not extra uncovered executable instructions.",
+    "Arbitrary corrupted code/PR, unexpected initial entry or uncontrolled asynchronous execution are not claimed safe.",
+    "Other literal, identity, vector and checksum bytes may decode as instructions under a raw disassembler; their data classification is separately pinned by artifact_review and the executable interval."
+  ]
+}

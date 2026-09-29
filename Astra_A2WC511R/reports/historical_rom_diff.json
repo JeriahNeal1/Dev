@@ -1,0 +1,22 @@
+{
+  "a": "evidence/original/ECUFlashReadRaw(1).bin",
+  "b": "evidence/original/ECUFlashReadRR(1).bin",
+  "a_size": 1048576,
+  "b_size": 1048576,
+  "a_sha256": "1aac3214ec276822f1343e66fc1b8af83be8e61866d2d182882beb88317b4920",
+  "b_sha256": "2f9c2f8af56e337e9fa31fd5efd4b1f01d3474f78396065ad3fc9a0bd132cbdc",
+  "identical": false,
+  "changed_byte_positions": 3,
+  "total_ranges": 1,
+  "ranges": [
+    {
+      "start": "0xffc4d",
+      "end_exclusive": "0xffc50",
+      "length": 3,
+      "a_first16": "06 06 14",
+      "b_first16": "08 18 15"
+    }
+  ],
+  "truncated": false,
+  "warning": "A diff is not a semantic, checksum, relocation, RAM-allocation, or flash-safety validation."
+}

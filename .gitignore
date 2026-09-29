@@ -1,0 +1,47 @@
+# Local editor and agent state
+.serena/
+.vscode/
+.idea/
+
+# Python caches and environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Build and packaging output
+build/
+dist/
+out/
+bin/
+obj/
+*.egg-info/
+*.pdb
+
+# Temporary and generated files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*.log
+
+# Astra local state, generated reports, workspaces, and backups
+Astra_A2WC511R/.runtime/
+Astra_A2WC511R/backups/
+Astra_A2WC511R/reports/local/
+Astra_A2WC511R/state/
+Astra_A2WC511R/work/
+
+# Tool-local generated state
+Tools/**/cache/
+Tools/**/build/
+Tools/**/dist/

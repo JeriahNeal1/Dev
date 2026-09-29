@@ -1,0 +1,142 @@
+{
+  "classification": "EXPERIMENTAL_SEMANTIC_REPLACEMENTS_NOT_ACCEPTED_RESIDENCY",
+  "created_utc": "2026-09-26T01:10:14.943831+00:00",
+  "stock_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+  "candidates": {
+    "division": {
+      "start": 16992,
+      "original_end_exclusive": 17162,
+      "replacement_end_exclusive": 17060,
+      "bytes_saved": 102,
+      "source": "C:\\Dev\\Astra_A2WC511R\\work\\M07\\semantic\\division.s",
+      "binary": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\semantic\\division.bin",
+      "elf": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\semantic\\division.elf",
+      "expected_before_hex": "20082f26894b2f36e2002127333a312a23074124330441243304412433044124330441243304412433044124330441243304412433044124330441243304412433044124",
+      "replacement_hex": "20082f2689142f362f46e2002127333a312a2307e22041243304042942108ffa44214124312e601364f663f6000b62f6d102d203e0002122000b62f6ffff130c0000044e",
+      "source_sha256": "cc79624e95d7eb3a9036802df239764889ab59f942251d4a7967d3fb42f44b42",
+      "binary_sha256": "d484207950dd46302e68a8d4f0d9cd9dfeeb9273ab565c6e2647b2ec23de39c5",
+      "elf_sha256": "97963084a6f882a05a3979ebbc59cb4484c4d75c8a8151a2cdd5cd2028f57040",
+      "reclaimed_tail_status": "FAIL_PENDING_COMPLETE_ENTRY_AND_READ_OWNERSHIP_PROOF"
+    },
+    "range_tail": {
+      "start": 83772,
+      "original_end_exclusive": 83884,
+      "replacement_end_exclusive": 83824,
+      "bytes_saved": 60,
+      "source": "C:\\Dev\\Astra_A2WC511R\\work\\M07\\semantic\\range_tail.s",
+      "binary": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\semantic\\range_tail.bin",
+      "elf": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\semantic\\range_tail.elf",
+      "expected_before_hex": "9761205988008d1d000988018d1c000988028d1b000988038d1a000988048d19000988058d18000988068d17000988078d160009",
+      "replacement_hex": "970e2059e30833028900880fd402044c644cd302000b23400001475effff4bc000800001020408102040808080808080800f0009",
+      "source_sha256": "5db875d1bc20dd7e32e341d0738a3fa2ebc978e92762e1835e897f0c96839e99",
+      "binary_sha256": "6f89e419e01fb9c0b318f2e40b16a9d0f35ffc1af3c7f13c5d46679e173f3f4b",
+      "elf_sha256": "1153d68300e90a41c2963bd7661df57eb6d05fd1e17efe29a8dce3c6746dea25",
+      "reclaimed_tail_status": "FAIL_PENDING_COMPLETE_ENTRY_AND_READ_OWNERSHIP_PROOF"
+    }
+  },
+  "commands": [
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-as.exe",
+        "-big",
+        "-renesas",
+        "--isa=sh2e",
+        "C:\\Dev\\Astra_A2WC511R\\work\\M07\\semantic\\division.s",
+        "-o",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\semantic\\division.o"
+      ],
+      "exit_code": 0,
+      "log": "division.assemble.log"
+    },
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-ld.exe",
+        "-EB",
+        "-T",
+        "C:\\Dev\\Astra_A2WC511R\\work\\M07\\semantic\\division.ld",
+        "-Map",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\semantic\\division.map",
+        "-o",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\semantic\\division.elf",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\semantic\\division.o"
+      ],
+      "exit_code": 0,
+      "log": "division.link.log"
+    },
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-objcopy.exe",
+        "-O",
+        "binary",
+        "-j",
+        ".replacement",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\semantic\\division.elf",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\semantic\\division.bin"
+      ],
+      "exit_code": 0,
+      "log": "division.extract.log"
+    },
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-objdump.exe",
+        "-d",
+        "-msh2e",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\semantic\\division.elf"
+      ],
+      "exit_code": 0,
+      "log": "division.disassembly.txt"
+    },
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-as.exe",
+        "-big",
+        "-renesas",
+        "--isa=sh2e",
+        "C:\\Dev\\Astra_A2WC511R\\work\\M07\\semantic\\range_tail.s",
+        "-o",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\semantic\\range_tail.o"
+      ],
+      "exit_code": 0,
+      "log": "range_tail.assemble.log"
+    },
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-ld.exe",
+        "-EB",
+        "-T",
+        "C:\\Dev\\Astra_A2WC511R\\work\\M07\\semantic\\range_tail.ld",
+        "-Map",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\semantic\\range_tail.map",
+        "-o",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\semantic\\range_tail.elf",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\semantic\\range_tail.o"
+      ],
+      "exit_code": 0,
+      "log": "range_tail.link.log"
+    },
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-objcopy.exe",
+        "-O",
+        "binary",
+        "-j",
+        ".replacement",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\semantic\\range_tail.elf",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\semantic\\range_tail.bin"
+      ],
+      "exit_code": 0,
+      "log": "range_tail.extract.log"
+    },
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-objdump.exe",
+        "-d",
+        "-msh2e",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\semantic\\range_tail.elf"
+      ],
+      "exit_code": 0,
+      "log": "range_tail.disassembly.txt"
+    }
+  ],
+  "core_sha256": "b47ac261634c116c3ffcdf19da9ec73e7014c034cd349ea8867f5f54895cdfff"
+}

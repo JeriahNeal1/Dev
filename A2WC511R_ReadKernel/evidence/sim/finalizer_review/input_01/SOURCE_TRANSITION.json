@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "status": "PASS_LOGGING_ONLY_SOURCE_CHANGE",
+  "old_source": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\build\\native_03\\EXECUTED_NATIVE.cpp",
+    "sha256": "a50778ad9932fedc03dfc6605e8d8d718345569dfc0940d8a950e91afc656fb8"
+  },
+  "new_source": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\native.cpp",
+    "sha256": "3e6b2e3b72697db9a7ed8143c47f706d4fa1ffa4125e341e8d24d6f89cf3e177"
+  },
+  "all_source_outside_log_api_exact": true,
+  "added_fields": [
+    "protocol",
+    "rx_status",
+    "tx_flags",
+    "timestamp",
+    "data_size",
+    "extra",
+    "utc_filetime",
+    "counter",
+    "frequency"
+  ],
+  "kernel_payload_protocol_API_sequence_unchanged": true,
+  "physical": false
+}

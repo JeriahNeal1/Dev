@@ -1,0 +1,660 @@
+public final class com.romraider.io.j2534.api.J2534ConnectionISO9141 implements com.romraider.io.connection.ConnectionManager {
+  private static final org.apache.log4j.Logger LOGGER;
+
+  private com.romraider.io.j2534.api.J2534 api;
+
+  private int channelId;
+
+  private int deviceId;
+
+  private int msgId;
+
+  private byte[] lastResponse;
+
+  private long timeout;
+
+  public com.romraider.io.j2534.api.J2534ConnectionISO9141(com.romraider.io.connection.ConnectionProperties, java.lang.String);
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: aconst_null
+       6: putfield      #2                  // Field api:Lcom/romraider/io/j2534/api/J2534;
+       9: aload_1
+      10: ldc           #3                  // String connectionProperties
+      12: invokestatic  #4                  // Method com/romraider/util/ParamChecker.checkNotNull:(Ljava/lang/Object;Ljava/lang/String;)V
+      15: aload_0
+      16: iconst_m1
+      17: putfield      #5                  // Field deviceId:I
+      20: aload_0
+      21: iconst_m1
+      22: putfield      #6                  // Field msgId:I
+      25: aload_0
+      26: aload_1
+      27: invokeinterface #7,  1            // InterfaceMethod com/romraider/io/connection/ConnectionProperties.getConnectTimeout:()I
+      32: i2l
+      33: putfield      #8                  // Field timeout:J
+      36: aload_0
+      37: aload_1
+      38: aload_2
+      39: invokespecial #9                  // Method initJ2534:(Lcom/romraider/io/connection/ConnectionProperties;Ljava/lang/String;)V
+      42: getstatic     #10                 // Field LOGGER:Lorg/apache/log4j/Logger;
+      45: ldc           #11                 // String J2534/ISO9141 connection initialised
+      47: invokevirtual #12                 // Method org/apache/log4j/Logger.info:(Ljava/lang/Object;)V
+      50: return
+
+  public void open(byte[], byte[]);
+    Code:
+       0: return
+
+  public void send(byte[], byte[], com.romraider.logger.ecu.comms.manager.PollingState);
+    Code:
+       0: aload_1
+       1: ldc           #13                 // String request
+       3: invokestatic  #4                  // Method com/romraider/util/ParamChecker.checkNotNull:(Ljava/lang/Object;Ljava/lang/String;)V
+       6: aload_2
+       7: ldc           #14                 // String response
+       9: invokestatic  #4                  // Method com/romraider/util/ParamChecker.checkNotNull:(Ljava/lang/Object;Ljava/lang/String;)V
+      12: aload_3
+      13: ldc           #15                 // String pollState
+      15: invokestatic  #4                  // Method com/romraider/util/ParamChecker.checkNotNull:(Ljava/lang/Object;Ljava/lang/String;)V
+      18: aload_3
+      19: invokeinterface #16,  1           // InterfaceMethod com/romraider/logger/ecu/comms/manager/PollingState.getCurrentState:()Lcom/romraider/logger/ecu/comms/manager/PollingState$State;
+      24: getstatic     #17                 // Field com/romraider/logger/ecu/comms/manager/PollingState$State.STATE_0:Lcom/romraider/logger/ecu/comms/manager/PollingState$State;
+      27: if_acmpne     46
+      30: aload_3
+      31: invokeinterface #18,  1           // InterfaceMethod com/romraider/logger/ecu/comms/manager/PollingState.getLastState:()Lcom/romraider/logger/ecu/comms/manager/PollingState$State;
+      36: getstatic     #19                 // Field com/romraider/logger/ecu/comms/manager/PollingState$State.STATE_1:Lcom/romraider/logger/ecu/comms/manager/PollingState$State;
+      39: if_acmpne     46
+      42: aload_0
+      43: invokevirtual #20                 // Method clearLine:()V
+      46: aload_3
+      47: invokeinterface #16,  1           // InterfaceMethod com/romraider/logger/ecu/comms/manager/PollingState.getCurrentState:()Lcom/romraider/logger/ecu/comms/manager/PollingState$State;
+      52: getstatic     #17                 // Field com/romraider/logger/ecu/comms/manager/PollingState$State.STATE_0:Lcom/romraider/logger/ecu/comms/manager/PollingState$State;
+      55: if_acmpne     79
+      58: aload_0
+      59: getfield      #2                  // Field api:Lcom/romraider/io/j2534/api/J2534;
+      62: aload_0
+      63: getfield      #21                 // Field channelId:I
+      66: aload_1
+      67: aload_0
+      68: getfield      #8                  // Field timeout:J
+      71: getstatic     #22                 // Field com/romraider/io/j2534/api/J2534Impl$TxFlags.NO_FLAGS:Lcom/romraider/io/j2534/api/J2534Impl$TxFlags;
+      74: invokeinterface #23,  6           // InterfaceMethod com/romraider/io/j2534/api/J2534.writeMsg:(I[BJLcom/romraider/io/j2534/api/J2534Impl$TxFlags;)V
+      79: aload_0
+      80: getfield      #2                  // Field api:Lcom/romraider/io/j2534/api/J2534;
+      83: aload_0
+      84: getfield      #21                 // Field channelId:I
+      87: aload_2
+      88: aload_0
+      89: getfield      #8                  // Field timeout:J
+      92: invokeinterface #24,  5           // InterfaceMethod com/romraider/io/j2534/api/J2534.readMsg:(I[BJ)V
+      97: aload_3
+      98: invokeinterface #16,  1           // InterfaceMethod com/romraider/logger/ecu/comms/manager/PollingState.getCurrentState:()Lcom/romraider/logger/ecu/comms/manager/PollingState$State;
+     103: getstatic     #19                 // Field com/romraider/logger/ecu/comms/manager/PollingState$State.STATE_1:Lcom/romraider/logger/ecu/comms/manager/PollingState$State;
+     106: if_acmpne     234
+     109: aload_2
+     110: iconst_0
+     111: baload
+     112: bipush        -128
+     114: if_icmpne     187
+     117: aload_2
+     118: iconst_1
+     119: baload
+     120: bipush        -16
+     122: if_icmpne     187
+     125: aload_2
+     126: iconst_2
+     127: baload
+     128: bipush        16
+     130: if_icmpeq     141
+     133: aload_2
+     134: iconst_2
+     135: baload
+     136: bipush        24
+     138: if_icmpne     187
+     141: aload_2
+     142: iconst_3
+     143: baload
+     144: aload_2
+     145: arraylength
+     146: iconst_5
+     147: isub
+     148: if_icmpne     187
+     151: aload_2
+     152: aload_2
+     153: arraylength
+     154: iconst_1
+     155: isub
+     156: baload
+     157: aload_2
+     158: invokestatic  #25                 // Method com/romraider/io/protocol/ssm/iso9141/SSMChecksumCalculator.calculateChecksum:([B)B
+     161: if_icmpne     187
+     164: aload_0
+     165: aload_2
+     166: arraylength
+     167: newarray       byte
+     169: putfield      #26                 // Field lastResponse:[B
+     172: aload_2
+     173: iconst_0
+     174: aload_0
+     175: getfield      #26                 // Field lastResponse:[B
+     178: iconst_0
+     179: aload_2
+     180: arraylength
+     181: invokestatic  #27                 // Method java/lang/System.arraycopy:(Ljava/lang/Object;ILjava/lang/Object;II)V
+     184: goto          234
+     187: getstatic     #10                 // Field LOGGER:Lorg/apache/log4j/Logger;
+     190: new           #28                 // class java/lang/StringBuilder
+     193: dup
+     194: invokespecial #29                 // Method java/lang/StringBuilder."<init>":()V
+     197: ldc           #30                 // String J2534/ISO9141 Bad Data response:
+     199: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     202: aload_2
+     203: invokestatic  #32                 // Method com/romraider/util/HexUtil.asHex:([B)Ljava/lang/String;
+     206: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     209: invokevirtual #33                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+     212: invokevirtual #34                 // Method org/apache/log4j/Logger.error:(Ljava/lang/Object;)V
+     215: aload_0
+     216: getfield      #26                 // Field lastResponse:[B
+     219: iconst_0
+     220: aload_2
+     221: iconst_0
+     222: aload_2
+     223: arraylength
+     224: invokestatic  #27                 // Method java/lang/System.arraycopy:(Ljava/lang/Object;ILjava/lang/Object;II)V
+     227: aload_3
+     228: iconst_1
+     229: invokeinterface #35,  2           // InterfaceMethod com/romraider/logger/ecu/comms/manager/PollingState.setNewQuery:(Z)V
+     234: return
+
+  public byte[] send(byte[]);
+    Code:
+       0: aload_1
+       1: ldc           #13                 // String request
+       3: invokestatic  #4                  // Method com/romraider/util/ParamChecker.checkNotNull:(Ljava/lang/Object;Ljava/lang/String;)V
+       6: aload_0
+       7: getfield      #2                  // Field api:Lcom/romraider/io/j2534/api/J2534;
+      10: aload_0
+      11: getfield      #21                 // Field channelId:I
+      14: aload_1
+      15: aload_0
+      16: getfield      #8                  // Field timeout:J
+      19: getstatic     #22                 // Field com/romraider/io/j2534/api/J2534Impl$TxFlags.NO_FLAGS:Lcom/romraider/io/j2534/api/J2534Impl$TxFlags;
+      22: invokeinterface #23,  6           // InterfaceMethod com/romraider/io/j2534/api/J2534.writeMsg:(I[BJLcom/romraider/io/j2534/api/J2534Impl$TxFlags;)V
+      27: aload_0
+      28: getfield      #2                  // Field api:Lcom/romraider/io/j2534/api/J2534;
+      31: aload_0
+      32: getfield      #21                 // Field channelId:I
+      35: iconst_1
+      36: aload_0
+      37: getfield      #8                  // Field timeout:J
+      40: invokeinterface #36,  5           // InterfaceMethod com/romraider/io/j2534/api/J2534.readMsg:(IIJ)[B
+      45: areturn
+
+  public void clearLine();
+    Code:
+       0: getstatic     #10                 // Field LOGGER:Lorg/apache/log4j/Logger;
+       3: invokevirtual #37                 // Method org/apache/log4j/Logger.isDebugEnabled:()Z
+       6: ifeq          17
+       9: getstatic     #10                 // Field LOGGER:Lorg/apache/log4j/Logger;
+      12: ldc           #38                 // String J2534/ISO9141 sending line break
+      14: invokevirtual #39                 // Method org/apache/log4j/Logger.debug:(Ljava/lang/Object;)V
+      17: aload_0
+      18: getfield      #2                  // Field api:Lcom/romraider/io/j2534/api/J2534;
+      21: aload_0
+      22: getfield      #21                 // Field channelId:I
+      25: bipush        20
+      27: newarray       byte
+      29: ldc2_w        #40                 // long 100l
+      32: getstatic     #22                 // Field com/romraider/io/j2534/api/J2534Impl$TxFlags.NO_FLAGS:Lcom/romraider/io/j2534/api/J2534Impl$TxFlags;
+      35: invokeinterface #23,  6           // InterfaceMethod com/romraider/io/j2534/api/J2534.writeMsg:(I[BJLcom/romraider/io/j2534/api/J2534Impl$TxFlags;)V
+      40: iconst_0
+      41: istore_1
+      42: aload_0
+      43: getfield      #2                  // Field api:Lcom/romraider/io/j2534/api/J2534;
+      46: aload_0
+      47: getfield      #21                 // Field channelId:I
+      50: ldc2_w        #40                 // long 100l
+      53: invokeinterface #42,  4           // InterfaceMethod com/romraider/io/j2534/api/J2534.readMsg:(IJ)[B
+      58: astore_2
+      59: aload_2
+      60: arraylength
+      61: ifle          106
+      64: getstatic     #10                 // Field LOGGER:Lorg/apache/log4j/Logger;
+      67: invokevirtual #37                 // Method org/apache/log4j/Logger.isDebugEnabled:()Z
+      70: ifeq          101
+      73: getstatic     #10                 // Field LOGGER:Lorg/apache/log4j/Logger;
+      76: new           #28                 // class java/lang/StringBuilder
+      79: dup
+      80: invokespecial #29                 // Method java/lang/StringBuilder."<init>":()V
+      83: ldc           #43                 // String J2534/ISO9141 clearing line (stale data):
+      85: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      88: aload_2
+      89: invokestatic  #32                 // Method com/romraider/util/HexUtil.asHex:([B)Ljava/lang/String;
+      92: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      95: invokevirtual #33                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      98: invokevirtual #39                 // Method org/apache/log4j/Logger.debug:(Ljava/lang/Object;)V
+     101: iconst_0
+     102: istore_1
+     103: goto          108
+     106: iconst_1
+     107: istore_1
+     108: iload_1
+     109: ifeq          42
+     112: return
+
+  public void close();
+    Code:
+       0: aload_0
+       1: invokespecial #44                 // Method stopMsgFilter:()V
+       4: aload_0
+       5: invokespecial #45                 // Method disconnectChannel:()V
+       8: aload_0
+       9: invokespecial #46                 // Method closeDevice:()V
+      12: return
+
+  private void initJ2534(com.romraider.io.connection.ConnectionProperties, java.lang.String);
+    Code:
+       0: aload_0
+       1: new           #47                 // class com/romraider/io/j2534/api/J2534Impl
+       4: dup
+       5: getstatic     #48                 // Field com/romraider/io/j2534/api/J2534Impl$Protocol.ISO9141:Lcom/romraider/io/j2534/api/J2534Impl$Protocol;
+       8: aload_2
+       9: invokespecial #49                 // Method com/romraider/io/j2534/api/J2534Impl."<init>":(Lcom/romraider/io/j2534/api/J2534Impl$Protocol;Ljava/lang/String;)V
+      12: putfield      #2                  // Field api:Lcom/romraider/io/j2534/api/J2534;
+      15: aload_0
+      16: aload_0
+      17: getfield      #2                  // Field api:Lcom/romraider/io/j2534/api/J2534;
+      20: invokeinterface #50,  1           // InterfaceMethod com/romraider/io/j2534/api/J2534.open:()I
+      25: putfield      #5                  // Field deviceId:I
+      28: aload_0
+      29: aload_0
+      30: getfield      #5                  // Field deviceId:I
+      33: invokespecial #51                 // Method version:(I)V
+      36: aload_0
+      37: aload_0
+      38: getfield      #2                  // Field api:Lcom/romraider/io/j2534/api/J2534;
+      41: aload_0
+      42: getfield      #5                  // Field deviceId:I
+      45: getstatic     #52                 // Field com/romraider/io/j2534/api/J2534Impl$Flag.ISO9141_NO_CHECKSUM:Lcom/romraider/io/j2534/api/J2534Impl$Flag;
+      48: invokevirtual #53                 // Method com/romraider/io/j2534/api/J2534Impl$Flag.getValue:()I
+      51: aload_1
+      52: invokeinterface #54,  1           // InterfaceMethod com/romraider/io/connection/ConnectionProperties.getBaudRate:()I
+      57: invokeinterface #55,  4           // InterfaceMethod com/romraider/io/j2534/api/J2534.connect:(III)I
+      62: putfield      #21                 // Field channelId:I
+      65: aload_0
+      66: aload_0
+      67: getfield      #21                 // Field channelId:I
+      70: aload_1
+      71: invokespecial #56                 // Method setConfig:(ILcom/romraider/io/connection/ConnectionProperties;)V
+      74: aload_0
+      75: aload_0
+      76: getfield      #2                  // Field api:Lcom/romraider/io/j2534/api/J2534;
+      79: aload_0
+      80: getfield      #21                 // Field channelId:I
+      83: iconst_0
+      84: iconst_0
+      85: invokeinterface #57,  4           // InterfaceMethod com/romraider/io/j2534/api/J2534.startPassMsgFilter:(IBB)I
+      90: putfield      #6                  // Field msgId:I
+      93: getstatic     #10                 // Field LOGGER:Lorg/apache/log4j/Logger;
+      96: invokevirtual #37                 // Method org/apache/log4j/Logger.isDebugEnabled:()Z
+      99: ifeq          147
+     102: getstatic     #10                 // Field LOGGER:Lorg/apache/log4j/Logger;
+     105: ldc           #58                 // String J2534/ISO9141 success: deviceId:%d, channelId:%d, msgId:%d
+     107: iconst_3
+     108: anewarray     #59                 // class java/lang/Object
+     111: dup
+     112: iconst_0
+     113: aload_0
+     114: getfield      #5                  // Field deviceId:I
+     117: invokestatic  #60                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     120: aastore
+     121: dup
+     122: iconst_1
+     123: aload_0
+     124: getfield      #21                 // Field channelId:I
+     127: invokestatic  #60                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     130: aastore
+     131: dup
+     132: iconst_2
+     133: aload_0
+     134: getfield      #6                  // Field msgId:I
+     137: invokestatic  #60                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     140: aastore
+     141: invokestatic  #61                 // Method java/lang/String.format:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+     144: invokevirtual #39                 // Method org/apache/log4j/Logger.debug:(Ljava/lang/Object;)V
+     147: goto          240
+     150: astore_3
+     151: getstatic     #10                 // Field LOGGER:Lorg/apache/log4j/Logger;
+     154: invokevirtual #37                 // Method org/apache/log4j/Logger.isDebugEnabled:()Z
+     157: ifeq          205
+     160: getstatic     #10                 // Field LOGGER:Lorg/apache/log4j/Logger;
+     163: ldc           #63                 // String J2534/ISO9141 exception: deviceId:%d, channelId:%d, msgId:%d
+     165: iconst_3
+     166: anewarray     #59                 // class java/lang/Object
+     169: dup
+     170: iconst_0
+     171: aload_0
+     172: getfield      #5                  // Field deviceId:I
+     175: invokestatic  #60                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     178: aastore
+     179: dup
+     180: iconst_1
+     181: aload_0
+     182: getfield      #21                 // Field channelId:I
+     185: invokestatic  #60                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     188: aastore
+     189: dup
+     190: iconst_2
+     191: aload_0
+     192: getfield      #6                  // Field msgId:I
+     195: invokestatic  #60                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     198: aastore
+     199: invokestatic  #61                 // Method java/lang/String.format:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+     202: invokevirtual #39                 // Method org/apache/log4j/Logger.debug:(Ljava/lang/Object;)V
+     205: aload_0
+     206: invokevirtual #64                 // Method close:()V
+     209: new           #65                 // class com/romraider/io/j2534/api/J2534Exception
+     212: dup
+     213: new           #28                 // class java/lang/StringBuilder
+     216: dup
+     217: invokespecial #29                 // Method java/lang/StringBuilder."<init>":()V
+     220: ldc           #66                 // String J2534/ISO9141 Error opening device:
+     222: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     225: aload_3
+     226: invokevirtual #67                 // Method java/lang/Exception.getMessage:()Ljava/lang/String;
+     229: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     232: invokevirtual #33                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+     235: aload_3
+     236: invokespecial #68                 // Method com/romraider/io/j2534/api/J2534Exception."<init>":(Ljava/lang/String;Ljava/lang/Throwable;)V
+     239: athrow
+     240: return
+    Exception table:
+       from    to  target type
+          28   147   150   Class java/lang/Exception
+
+  private void version(int);
+    Code:
+       0: aload_0
+       1: getfield      #2                  // Field api:Lcom/romraider/io/j2534/api/J2534;
+       4: iload_1
+       5: invokeinterface #69,  2           // InterfaceMethod com/romraider/io/j2534/api/J2534.readVersion:(I)Lcom/romraider/io/j2534/api/Version;
+      10: astore_2
+      11: getstatic     #10                 // Field LOGGER:Lorg/apache/log4j/Logger;
+      14: new           #28                 // class java/lang/StringBuilder
+      17: dup
+      18: invokespecial #29                 // Method java/lang/StringBuilder."<init>":()V
+      21: ldc           #70                 // String J2534 Version => firmware:
+      23: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      26: aload_2
+      27: getfield      #71                 // Field com/romraider/io/j2534/api/Version.firmware:Ljava/lang/String;
+      30: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      33: ldc           #72                 // String , dll:
+      35: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      38: aload_2
+      39: getfield      #73                 // Field com/romraider/io/j2534/api/Version.dll:Ljava/lang/String;
+      42: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      45: ldc           #74                 // String , api:
+      47: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      50: aload_2
+      51: getfield      #75                 // Field com/romraider/io/j2534/api/Version.api:Ljava/lang/String;
+      54: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      57: invokevirtual #33                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      60: invokevirtual #12                 // Method org/apache/log4j/Logger.info:(Ljava/lang/Object;)V
+      63: return
+
+  private void setConfig(int, com.romraider.io.connection.ConnectionProperties);
+    Code:
+       0: new           #76                 // class com/romraider/io/j2534/api/ConfigItem
+       3: dup
+       4: getstatic     #77                 // Field com/romraider/io/j2534/api/J2534Impl$Config.P1_MAX:Lcom/romraider/io/j2534/api/J2534Impl$Config;
+       7: invokevirtual #78                 // Method com/romraider/io/j2534/api/J2534Impl$Config.getValue:()I
+      10: iconst_1
+      11: invokespecial #79                 // Method com/romraider/io/j2534/api/ConfigItem."<init>":(II)V
+      14: astore_3
+      15: new           #76                 // class com/romraider/io/j2534/api/ConfigItem
+      18: dup
+      19: getstatic     #80                 // Field com/romraider/io/j2534/api/J2534Impl$Config.P3_MIN:Lcom/romraider/io/j2534/api/J2534Impl$Config;
+      22: invokevirtual #78                 // Method com/romraider/io/j2534/api/J2534Impl$Config.getValue:()I
+      25: iconst_1
+      26: invokespecial #79                 // Method com/romraider/io/j2534/api/ConfigItem."<init>":(II)V
+      29: astore        4
+      31: new           #76                 // class com/romraider/io/j2534/api/ConfigItem
+      34: dup
+      35: getstatic     #81                 // Field com/romraider/io/j2534/api/J2534Impl$Config.P4_MIN:Lcom/romraider/io/j2534/api/J2534Impl$Config;
+      38: invokevirtual #78                 // Method com/romraider/io/j2534/api/J2534Impl$Config.getValue:()I
+      41: iconst_0
+      42: invokespecial #79                 // Method com/romraider/io/j2534/api/ConfigItem."<init>":(II)V
+      45: astore        5
+      47: new           #76                 // class com/romraider/io/j2534/api/ConfigItem
+      50: dup
+      51: getstatic     #82                 // Field com/romraider/io/j2534/api/J2534Impl$Config.LOOPBACK:Lcom/romraider/io/j2534/api/J2534Impl$Config;
+      54: invokevirtual #78                 // Method com/romraider/io/j2534/api/J2534Impl$Config.getValue:()I
+      57: iconst_1
+      58: invokespecial #79                 // Method com/romraider/io/j2534/api/ConfigItem."<init>":(II)V
+      61: astore        6
+      63: new           #76                 // class com/romraider/io/j2534/api/ConfigItem
+      66: dup
+      67: getstatic     #83                 // Field com/romraider/io/j2534/api/J2534Impl$Config.DATA_BITS:Lcom/romraider/io/j2534/api/J2534Impl$Config;
+      70: invokevirtual #78                 // Method com/romraider/io/j2534/api/J2534Impl$Config.getValue:()I
+      73: aload_2
+      74: invokeinterface #84,  1           // InterfaceMethod com/romraider/io/connection/ConnectionProperties.getDataBits:()I
+      79: bipush        8
+      81: if_icmpne     88
+      84: iconst_0
+      85: goto          89
+      88: iconst_1
+      89: invokespecial #79                 // Method com/romraider/io/j2534/api/ConfigItem."<init>":(II)V
+      92: astore        7
+      94: new           #76                 // class com/romraider/io/j2534/api/ConfigItem
+      97: dup
+      98: getstatic     #85                 // Field com/romraider/io/j2534/api/J2534Impl$Config.PARITY:Lcom/romraider/io/j2534/api/J2534Impl$Config;
+     101: invokevirtual #78                 // Method com/romraider/io/j2534/api/J2534Impl$Config.getValue:()I
+     104: aload_2
+     105: invokeinterface #86,  1           // InterfaceMethod com/romraider/io/connection/ConnectionProperties.getParity:()I
+     110: invokespecial #79                 // Method com/romraider/io/j2534/api/ConfigItem."<init>":(II)V
+     113: astore        8
+     115: aload_0
+     116: getfield      #2                  // Field api:Lcom/romraider/io/j2534/api/J2534;
+     119: iload_1
+     120: bipush        6
+     122: anewarray     #76                 // class com/romraider/io/j2534/api/ConfigItem
+     125: dup
+     126: iconst_0
+     127: aload_3
+     128: aastore
+     129: dup
+     130: iconst_1
+     131: aload         4
+     133: aastore
+     134: dup
+     135: iconst_2
+     136: aload         5
+     138: aastore
+     139: dup
+     140: iconst_3
+     141: aload         6
+     143: aastore
+     144: dup
+     145: iconst_4
+     146: aload         7
+     148: aastore
+     149: dup
+     150: iconst_5
+     151: aload         8
+     153: aastore
+     154: invokeinterface #87,  3           // InterfaceMethod com/romraider/io/j2534/api/J2534.setConfig:(I[Lcom/romraider/io/j2534/api/ConfigItem;)V
+     159: getstatic     #10                 // Field LOGGER:Lorg/apache/log4j/Logger;
+     162: invokevirtual #37                 // Method org/apache/log4j/Logger.isDebugEnabled:()Z
+     165: ifeq          212
+     168: getstatic     #10                 // Field LOGGER:Lorg/apache/log4j/Logger;
+     171: new           #28                 // class java/lang/StringBuilder
+     174: dup
+     175: invokespecial #29                 // Method java/lang/StringBuilder."<init>":()V
+     178: ldc           #88                 // String J2534/ISO9141 set connection properties: bits=
+     180: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     183: aload_2
+     184: invokeinterface #84,  1           // InterfaceMethod com/romraider/io/connection/ConnectionProperties.getDataBits:()I
+     189: invokevirtual #89                 // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+     192: ldc           #90                 // String , parity=
+     194: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     197: aload_2
+     198: invokeinterface #86,  1           // InterfaceMethod com/romraider/io/connection/ConnectionProperties.getParity:()I
+     203: invokevirtual #89                 // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+     206: invokevirtual #33                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+     209: invokevirtual #39                 // Method org/apache/log4j/Logger.debug:(Ljava/lang/Object;)V
+     212: return
+
+  private void stopMsgFilter();
+    Code:
+       0: aload_0
+       1: getfield      #6                  // Field msgId:I
+       4: iconst_m1
+       5: if_icmpne     9
+       8: return
+       9: aload_0
+      10: getfield      #2                  // Field api:Lcom/romraider/io/j2534/api/J2534;
+      13: aload_0
+      14: getfield      #21                 // Field channelId:I
+      17: aload_0
+      18: getfield      #6                  // Field msgId:I
+      21: invokeinterface #91,  3           // InterfaceMethod com/romraider/io/j2534/api/J2534.stopMsgFilter:(II)V
+      26: getstatic     #10                 // Field LOGGER:Lorg/apache/log4j/Logger;
+      29: invokevirtual #37                 // Method org/apache/log4j/Logger.isDebugEnabled:()Z
+      32: ifeq          63
+      35: getstatic     #10                 // Field LOGGER:Lorg/apache/log4j/Logger;
+      38: new           #28                 // class java/lang/StringBuilder
+      41: dup
+      42: invokespecial #29                 // Method java/lang/StringBuilder."<init>":()V
+      45: ldc           #92                 // String J2534/ISO9141 stopped message filter:
+      47: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      50: aload_0
+      51: getfield      #6                  // Field msgId:I
+      54: invokevirtual #89                 // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+      57: invokevirtual #33                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      60: invokevirtual #39                 // Method org/apache/log4j/Logger.debug:(Ljava/lang/Object;)V
+      63: goto          95
+      66: astore_1
+      67: getstatic     #10                 // Field LOGGER:Lorg/apache/log4j/Logger;
+      70: new           #28                 // class java/lang/StringBuilder
+      73: dup
+      74: invokespecial #29                 // Method java/lang/StringBuilder."<init>":()V
+      77: ldc           #93                 // String J2534/ISO9141 Error stopping msg filter:
+      79: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      82: aload_1
+      83: invokevirtual #67                 // Method java/lang/Exception.getMessage:()Ljava/lang/String;
+      86: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      89: invokevirtual #33                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      92: invokevirtual #94                 // Method org/apache/log4j/Logger.warn:(Ljava/lang/Object;)V
+      95: return
+    Exception table:
+       from    to  target type
+           9    63    66   Class java/lang/Exception
+
+  private void disconnectChannel();
+    Code:
+       0: aload_0
+       1: getfield      #5                  // Field deviceId:I
+       4: iconst_m1
+       5: if_icmpne     9
+       8: return
+       9: aload_0
+      10: getfield      #2                  // Field api:Lcom/romraider/io/j2534/api/J2534;
+      13: aload_0
+      14: getfield      #21                 // Field channelId:I
+      17: invokeinterface #95,  2           // InterfaceMethod com/romraider/io/j2534/api/J2534.disconnect:(I)V
+      22: getstatic     #10                 // Field LOGGER:Lorg/apache/log4j/Logger;
+      25: invokevirtual #37                 // Method org/apache/log4j/Logger.isDebugEnabled:()Z
+      28: ifeq          59
+      31: getstatic     #10                 // Field LOGGER:Lorg/apache/log4j/Logger;
+      34: new           #28                 // class java/lang/StringBuilder
+      37: dup
+      38: invokespecial #29                 // Method java/lang/StringBuilder."<init>":()V
+      41: ldc           #96                 // String J2534/ISO9141 disconnected channel:
+      43: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      46: aload_0
+      47: getfield      #21                 // Field channelId:I
+      50: invokevirtual #89                 // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+      53: invokevirtual #33                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      56: invokevirtual #39                 // Method org/apache/log4j/Logger.debug:(Ljava/lang/Object;)V
+      59: goto          91
+      62: astore_1
+      63: getstatic     #10                 // Field LOGGER:Lorg/apache/log4j/Logger;
+      66: new           #28                 // class java/lang/StringBuilder
+      69: dup
+      70: invokespecial #29                 // Method java/lang/StringBuilder."<init>":()V
+      73: ldc           #97                 // String J2534/ISO9141 Error disconnecting channel:
+      75: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      78: aload_1
+      79: invokevirtual #67                 // Method java/lang/Exception.getMessage:()Ljava/lang/String;
+      82: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      85: invokevirtual #33                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      88: invokevirtual #94                 // Method org/apache/log4j/Logger.warn:(Ljava/lang/Object;)V
+      91: return
+    Exception table:
+       from    to  target type
+           9    59    62   Class java/lang/Exception
+
+  private void closeDevice();
+    Code:
+       0: aload_0
+       1: getfield      #5                  // Field deviceId:I
+       4: iconst_m1
+       5: if_icmpeq     49
+       8: aload_0
+       9: getfield      #2                  // Field api:Lcom/romraider/io/j2534/api/J2534;
+      12: aload_0
+      13: getfield      #5                  // Field deviceId:I
+      16: invokeinterface #98,  2           // InterfaceMethod com/romraider/io/j2534/api/J2534.close:(I)V
+      21: getstatic     #10                 // Field LOGGER:Lorg/apache/log4j/Logger;
+      24: new           #28                 // class java/lang/StringBuilder
+      27: dup
+      28: invokespecial #29                 // Method java/lang/StringBuilder."<init>":()V
+      31: ldc           #99                 // String J2534/ISO9141 closed connection to device:
+      33: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      36: aload_0
+      37: getfield      #5                  // Field deviceId:I
+      40: invokevirtual #89                 // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+      43: invokevirtual #33                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      46: invokevirtual #12                 // Method org/apache/log4j/Logger.info:(Ljava/lang/Object;)V
+      49: aload_0
+      50: iconst_m1
+      51: putfield      #5                  // Field deviceId:I
+      54: goto          102
+      57: astore_1
+      58: getstatic     #10                 // Field LOGGER:Lorg/apache/log4j/Logger;
+      61: new           #28                 // class java/lang/StringBuilder
+      64: dup
+      65: invokespecial #29                 // Method java/lang/StringBuilder."<init>":()V
+      68: ldc           #100                // String J2534/ISO9141 Error closing device:
+      70: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      73: aload_1
+      74: invokevirtual #67                 // Method java/lang/Exception.getMessage:()Ljava/lang/String;
+      77: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      80: invokevirtual #33                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      83: invokevirtual #94                 // Method org/apache/log4j/Logger.warn:(Ljava/lang/Object;)V
+      86: aload_0
+      87: iconst_m1
+      88: putfield      #5                  // Field deviceId:I
+      91: goto          102
+      94: astore_2
+      95: aload_0
+      96: iconst_m1
+      97: putfield      #5                  // Field deviceId:I
+     100: aload_2
+     101: athrow
+     102: return
+    Exception table:
+       from    to  target type
+           0    49    57   Class java/lang/Exception
+           0    49    94   any
+          57    86    94   any
+
+  static {};
+    Code:
+       0: ldc           #101                // class com/romraider/io/j2534/api/J2534ConnectionISO9141
+       2: invokestatic  #102                // Method org/apache/log4j/Logger.getLogger:(Ljava/lang/Class;)Lorg/apache/log4j/Logger;
+       5: putstatic     #10                 // Field LOGGER:Lorg/apache/log4j/Logger;
+       8: return
+}

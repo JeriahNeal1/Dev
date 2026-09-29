@@ -1,0 +1,338 @@
+[
+  {
+    "exercised": true,
+    "mask": "FFFF",
+    "name": "nop",
+    "value": "0009"
+  },
+  {
+    "exercised": true,
+    "mask": "FFFF",
+    "name": "rts",
+    "value": "000B"
+  },
+  {
+    "exercised": true,
+    "mask": "FFFF",
+    "name": "clrt",
+    "value": "0008"
+  },
+  {
+    "exercised": true,
+    "mask": "FFFF",
+    "name": "sett",
+    "value": "0018"
+  },
+  {
+    "exercised": true,
+    "mask": "F0FF",
+    "name": "movt",
+    "value": "0029"
+  },
+  {
+    "exercised": true,
+    "mask": "F000",
+    "name": "mov_imm",
+    "value": "E000"
+  },
+  {
+    "exercised": true,
+    "mask": "F000",
+    "name": "add_imm",
+    "value": "7000"
+  },
+  {
+    "exercised": true,
+    "mask": "F000",
+    "name": "movl_pc",
+    "value": "D000"
+  },
+  {
+    "exercised": true,
+    "mask": "F000",
+    "name": "movw_pc",
+    "value": "9000"
+  },
+  {
+    "exercised": true,
+    "mask": "F00F",
+    "name": "movb_load",
+    "value": "6000"
+  },
+  {
+    "exercised": true,
+    "mask": "F00F",
+    "name": "movw_load",
+    "value": "6001"
+  },
+  {
+    "exercised": true,
+    "mask": "F00F",
+    "name": "movl_load",
+    "value": "6002"
+  },
+  {
+    "exercised": true,
+    "mask": "F00F",
+    "name": "mov_reg",
+    "value": "6003"
+  },
+  {
+    "exercised": true,
+    "mask": "F00F",
+    "name": "movb_store",
+    "value": "2000"
+  },
+  {
+    "exercised": true,
+    "mask": "F00F",
+    "name": "movw_store",
+    "value": "2001"
+  },
+  {
+    "exercised": true,
+    "mask": "F00F",
+    "name": "movl_store",
+    "value": "2002"
+  },
+  {
+    "exercised": true,
+    "mask": "F00F",
+    "name": "and_reg",
+    "value": "2009"
+  },
+  {
+    "exercised": true,
+    "mask": "F00F",
+    "name": "extub",
+    "value": "600C"
+  },
+  {
+    "exercised": true,
+    "mask": "F00F",
+    "name": "extuw",
+    "value": "600D"
+  },
+  {
+    "exercised": true,
+    "mask": "F00F",
+    "name": "cmpeq_reg",
+    "value": "3000"
+  },
+  {
+    "exercised": true,
+    "mask": "FF00",
+    "name": "cmpeq_imm",
+    "value": "8800"
+  },
+  {
+    "exercised": true,
+    "mask": "F00F",
+    "name": "tst_reg",
+    "value": "2008"
+  },
+  {
+    "exercised": true,
+    "mask": "FF00",
+    "name": "tst_imm",
+    "value": "C800"
+  },
+  {
+    "exercised": true,
+    "mask": "F0FF",
+    "name": "shar",
+    "value": "4021"
+  },
+  {
+    "exercised": true,
+    "mask": "F00F",
+    "name": "neg",
+    "value": "600B"
+  },
+  {
+    "exercised": true,
+    "mask": "FF00",
+    "name": "bf_s",
+    "value": "8F00"
+  },
+  {
+    "exercised": true,
+    "mask": "FF00",
+    "name": "bt_s",
+    "value": "8D00"
+  },
+  {
+    "exercised": true,
+    "mask": "FF00",
+    "name": "bf",
+    "value": "8B00"
+  },
+  {
+    "exercised": true,
+    "mask": "FF00",
+    "name": "bt",
+    "value": "8900"
+  },
+  {
+    "exercised": true,
+    "mask": "F000",
+    "name": "bra",
+    "value": "A000"
+  },
+  {
+    "exercised": true,
+    "mask": "F000",
+    "name": "bsr",
+    "value": "B000"
+  },
+  {
+    "exercised": true,
+    "mask": "F0FF",
+    "name": "jmp",
+    "value": "402B"
+  },
+  {
+    "exercised": true,
+    "mask": "F0FF",
+    "name": "jsr",
+    "value": "400B"
+  },
+  {
+    "exercised": true,
+    "mask": "F0FF",
+    "name": "sts_pr_push",
+    "value": "4022"
+  },
+  {
+    "exercised": true,
+    "mask": "F0FF",
+    "name": "lds_pr_pop",
+    "value": "4026"
+  },
+  {
+    "exercised": true,
+    "mask": "F00F",
+    "name": "movl_predec",
+    "value": "2006"
+  },
+  {
+    "exercised": true,
+    "mask": "F00F",
+    "name": "movl_postinc",
+    "value": "6006"
+  },
+  {
+    "exercised": true,
+    "mask": "F00F",
+    "name": "movb_postinc",
+    "value": "6004"
+  },
+  {
+    "exercised": true,
+    "mask": "F000",
+    "name": "movl_store_disp",
+    "value": "1000"
+  },
+  {
+    "exercised": true,
+    "mask": "F000",
+    "name": "movl_load_disp",
+    "value": "5000"
+  },
+  {
+    "exercised": true,
+    "mask": "F00F",
+    "name": "add_reg",
+    "value": "300C"
+  },
+  {
+    "exercised": true,
+    "mask": "F00F",
+    "name": "or_reg",
+    "value": "200B"
+  },
+  {
+    "exercised": true,
+    "mask": "F00F",
+    "name": "cmphi",
+    "value": "3006"
+  },
+  {
+    "exercised": true,
+    "mask": "F00F",
+    "name": "cmphs",
+    "value": "3002"
+  },
+  {
+    "exercised": true,
+    "mask": "F00F",
+    "name": "cmpge",
+    "value": "3003"
+  },
+  {
+    "exercised": true,
+    "mask": "F0FF",
+    "name": "shlr2",
+    "value": "4009"
+  },
+  {
+    "exercised": true,
+    "mask": "F0FF",
+    "name": "dt",
+    "value": "4010"
+  },
+  {
+    "exercised": true,
+    "mask": "F0FF",
+    "name": "shll",
+    "value": "4000"
+  },
+  {
+    "exercised": true,
+    "mask": "F0FF",
+    "name": "shll2",
+    "value": "4008"
+  },
+  {
+    "exercised": true,
+    "mask": "F00F",
+    "name": "negc",
+    "value": "600A"
+  },
+  {
+    "exercised": true,
+    "mask": "F0FF",
+    "name": "stc_sr_push",
+    "value": "4003"
+  },
+  {
+    "exercised": true,
+    "mask": "F0FF",
+    "name": "ldc_sr_pop",
+    "value": "4007"
+  },
+  {
+    "exercised": true,
+    "mask": "F0FF",
+    "name": "sts_mach_push",
+    "value": "4002"
+  },
+  {
+    "exercised": true,
+    "mask": "F0FF",
+    "name": "lds_mach_pop",
+    "value": "4006"
+  },
+  {
+    "exercised": true,
+    "mask": "F0FF",
+    "name": "sts_macl_push",
+    "value": "4012"
+  },
+  {
+    "exercised": true,
+    "mask": "F0FF",
+    "name": "lds_macl_pop",
+    "value": "4016"
+  }
+]

@@ -1,0 +1,119 @@
+[
+  {
+    "check": "status",
+    "result": {
+      "bridge_version": "2.0.0",
+      "session": "a1dc6eba-0261-4384-8263-50764af04e01",
+      "apply_enabled": true,
+      "approval": "local_dialog_each_changeset",
+      "roms": [
+        {
+          "rom_id": "rom_1",
+          "file_name": "A2WC511R.GUI_TEST.NOT_FLASH_READY.bin",
+          "file_path": "C:\\Dev\\Astra_A2WC511R\\work\\gate_closure\\romraider_gui\\A2WC511R.GUI_TEST.NOT_FLASH_READY.bin",
+          "calid": "A2WC511R",
+          "binary_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+          "size_bytes": 1048576,
+          "definition_path": "C:\\Dev\\SubaruDefs\\RomRaider\\ecu\\standard\\ecu_defs.xml",
+          "faulty_tables": []
+        }
+      ]
+    }
+  },
+  {
+    "check": "original_display",
+    "result": {
+      "image_index": 0,
+      "open_roms": 1,
+      "file": "C:\\Dev\\Astra_A2WC511R\\work\\gate_closure\\romraider_gui\\A2WC511R.GUI_TEST.NOT_FLASH_READY.bin",
+      "sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+      "table_visible": true,
+      "values": [
+        {
+          "raw": 8704.0,
+          "real": 1700.0,
+          "original_raw": 8704.0,
+          "display": "1700"
+        },
+        {
+          "raw": 8704.0,
+          "real": 1700.0,
+          "original_raw": 8704.0,
+          "display": "1700"
+        },
+        {
+          "raw": 8704.0,
+          "real": 1700.0,
+          "original_raw": 8704.0,
+          "display": "1700"
+        },
+        {
+          "raw": 8448.0,
+          "real": 1650.0,
+          "original_raw": 8448.0,
+          "display": "1650"
+        }
+      ]
+    }
+  },
+  {
+    "check": "positive_preview",
+    "result": {
+      "preview_id": "c610f083-d1df-4595-888e-1cfcc7fea984",
+      "expires_seconds": 600,
+      "before_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+      "after_sha256": "c163455b11b883500457ad9b899fe157a904bb807958d4f3367beade4a431816",
+      "changes": [
+        {
+          "table": "Idle Speed Target A",
+          "row": 0,
+          "column": 0,
+          "before_raw": 8704.0,
+          "after_raw": 8708.0,
+          "requested": 8708.0,
+          "achieved": 8708.0,
+          "mode": "raw",
+          "tolerance": 0.0
+        }
+      ],
+      "binary_ranges": [
+        {
+          "start": 832001,
+          "end_exclusive": 832002,
+          "length": 1
+        }
+      ],
+      "reason": "Authorized offline actual GUI acceptance on disposable ROM",
+      "evidence": [
+        "No calibration objective: reversible native integration test only"
+      ],
+      "rom_restored": true,
+      "checksum_status": "NOT_RECALCULATED_NOT_FLASH_READY"
+    }
+  },
+  {
+    "check": "positive_dialog",
+    "result": {
+      "title": "Codex RomRaider changeset approval",
+      "visible": true,
+      "text": [
+        "Apply 1 reviewed cells to the OPEN RomRaider model?",
+        "Reason: Authorized offline actual GUI acceptance on disposable ROM",
+        "Idle Speed Target A [0,0] raw 8704.0 -> 8708.0; achieved 8708.0",
+        "Preview: c610f083-d1df-4595-888e-1cfcc7fea984",
+        "Before SHA256: 22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+        "Expected after: c163455b11b883500457ad9b899fe157a904bb807958d4f3367beade4a431816",
+        "No ECU write. No disk overwrite. Checksum review remains required.",
+        null
+      ]
+    }
+  },
+  {
+    "check": "positive_native_button",
+    "result": {
+      "native_dialog": "Codex RomRaider changeset approval",
+      "clicked_native_button": "Yes",
+      "mode": "Actual JButton event, no callback or dialog value override"
+    }
+  }
+]

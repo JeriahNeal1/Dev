@@ -1,0 +1,56 @@
+[
+  {
+    "va": "0x1410000",
+    "bytes": "60",
+    "mnemonic": "pushal",
+    "operands": ""
+  },
+  {
+    "va": "0x1410001",
+    "bytes": "e800000000",
+    "mnemonic": "call",
+    "operands": "0x1410006"
+  },
+  {
+    "va": "0x1410006",
+    "bytes": "58",
+    "mnemonic": "pop",
+    "operands": "eax"
+  },
+  {
+    "va": "0x1410007",
+    "bytes": "0558000000",
+    "mnemonic": "add",
+    "operands": "eax, 0x58"
+  },
+  {
+    "va": "0x141000c",
+    "bytes": "8038e9",
+    "mnemonic": "cmp",
+    "operands": "byte ptr [eax], 0xe9"
+  },
+  {
+    "va": "0x141000f",
+    "bytes": "7513",
+    "mnemonic": "jne",
+    "operands": "0x1410024"
+  },
+  {
+    "va": "0x1410011",
+    "bytes": "61",
+    "mnemonic": "popal",
+    "operands": ""
+  },
+  {
+    "va": "0x1410012",
+    "bytes": "eb4a",
+    "mnemonic": "jmp",
+    "operands": "0x141005e"
+  },
+  {
+    "va": "0x1410014",
+    "bytes": "db2d1a004101",
+    "mnemonic": "fld",
+    "operands": "xword ptr [0x141001a]"
+  }
+]

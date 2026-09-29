@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "architecture": "SUPPORTED_HOST_ONLY_NATIVE_A8",
+  "gates": [
+    {"id": "M07_HOST_SERVICE_OFFLINE", "status": "PASS", "reason": "Fixed six-address one-shot A8, raw values/predicates, UTC/monotonic JSONL, terminal faults, finite replay, and 15 regression groups pass.", "evidence": ["host/HOST_SERVICE_REVIEW.md", "host/host_service_tests.log", "host/capture_replay_final.jsonl"]},
+    {"id": "M07_NATIVE_ROMRAIDER_VIRTUAL", "status": "PASS", "reason": "Actual installed RomRaider encoder/parser consumed all eight stock-ROM executed six-byte A8 fixtures using an isolated in-memory manager; no provider was loaded.", "evidence": ["host/capture_native_final.jsonl", "host/stock_six_a8_fixtures.json"]},
+    {"id": "M07_HOST_SERVICE_PHYSICAL", "status": "PHYSICAL/BENCH REQUIRED", "reason": "Physical work is deferred. This service implements offline backends only; no live transport, timing, data validity, or physical fault semantics were accepted.", "evidence": ["host/HOST_SERVICE_REVIEW.md"], "remaining": "Separately scoped future physical read-only transport and acceptance, if requested; not a prerequisite for the supported offline host artifact."},
+    {"id": "M07_A0_FULL_IMAGE_ATTESTATION", "status": "FAIL", "reason": "Retains the proven withdrawal: masked OEM A0 reads can pass equality/CALID checks while not reproducing the actual ROM. No full-ROM acquisition is offered.", "evidence": ["host/HOST_SERVICE_REVIEW.md"]}
+  ]
+}

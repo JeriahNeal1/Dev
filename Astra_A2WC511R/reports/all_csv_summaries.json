@@ -1,0 +1,1769 @@
+[
+  {
+    "file": "evidence/original/A2WC511R_R3_Change_Summary.csv",
+    "sha256": "721183d21cbf11ef3249ecc602e08310222b8ef6c0fea1549b903d23ae08e3f9",
+    "rows": 56,
+    "columns": [
+      "table",
+      "RPM",
+      "Load",
+      "From_R1",
+      "To_R3",
+      "Delta"
+    ],
+    "header_only": false,
+    "numeric": {
+      "RPM": {
+        "min": 2800.0,
+        "max": 4400.0,
+        "missing_or_invalid": 0,
+        "unique_count": 5,
+        "counts": {
+          "2800.0": 16,
+          "3200.0": 16,
+          "3600.0": 8,
+          "4000.0": 8,
+          "4400.0": 8
+        }
+      },
+      "Load": {
+        "min": 1.5,
+        "max": 2.5,
+        "missing_or_invalid": 0,
+        "unique_count": 8,
+        "counts": {
+          "1.5": 7,
+          "1.6": 7,
+          "1.7": 7,
+          "1.95": 7,
+          "2.1": 7,
+          "2.2": 7,
+          "2.3": 7,
+          "2.5": 7
+        }
+      },
+      "From_R1": {
+        "min": 4.2578125,
+        "max": 14.453125,
+        "missing_or_invalid": 0,
+        "unique_count": 15,
+        "counts": {
+          "4.2578125": 1,
+          "5.3125": 1,
+          "5.6640625": 1,
+          "6.015625": 5,
+          "6.71875": 2,
+          "8.828125": 2,
+          "10.5859375": 1,
+          "11.2": 16,
+          "11.267065868263472": 11,
+          "11.403636363636362": 8,
+          "11.473170731707317": 4,
+          "11.614814814814814": 1,
+          "11.9921875": 1,
+          "12.34375": 1,
+          "14.453125": 1
+        }
+      },
+      "To_R3": {
+        "min": 4.2578125,
+        "max": 14.1015625,
+        "missing_or_invalid": 0,
+        "unique_count": 15,
+        "counts": {
+          "4.2578125": 1,
+          "4.9609375": 1,
+          "5.3125": 1,
+          "5.6640625": 7,
+          "7.421875": 2,
+          "9.53125": 1,
+          "10.9375": 1,
+          "11.473170731707317": 21,
+          "11.543558282208588": 5,
+          "11.614814814814814": 4,
+          "11.68695652173913": 6,
+          "11.76": 3,
+          "11.833962264150943": 1,
+          "11.9921875": 1,
+          "14.1015625": 1
+        }
+      },
+      "Delta": {
+        "min": -1.40625,
+        "max": 0.3563636363636373,
+        "missing_or_invalid": 0,
+        "unique_count": 14,
+        "counts": {
+          "-1.40625": 2,
+          "-1.0546875": 4,
+          "-0.3515625": 9,
+          "0.0": 1,
+          "0.13992191857222558": 1,
+          "0.1416440831074972": 2,
+          "0.20610486344384427": 5,
+          "0.21914744933612873": 1,
+          "0.2731707317073173": 16,
+          "0.2764924139451157": 4,
+          "0.283320158102768": 6,
+          "0.2868292682926832": 2,
+          "0.3477489465513415": 2,
+          "0.3563636363636373": 1
+        }
+      }
+    }
+  },
+  {
+    "file": "evidence/original/romraiderlog_20260817_175424.csv",
+    "sha256": "6c7c4d5544a819c4768f04923da52a2c59717164d4c332d8e0cdea489e92cdc0",
+    "rows": 1180,
+    "columns": [
+      "Time (msec)",
+      "A/F Correction #1 (%)",
+      "A/F Learning #1 (%)",
+      "Battery Voltage (V)",
+      "Engine Speed (rpm)",
+      "Gear (Calculated)* (position)",
+      "Ignition Base Timing* (degrees)",
+      "Ignition Total Timing (degrees)",
+      "Requested Torque* (raw ecu value)",
+      "Target Throttle Plate Position* (%)",
+      "Vehicle Speed (mph)",
+      "Volumetric Efficiency 2.5L (Calculated) (%)",
+      "Engine Load (2-byte)** (g/rev)",
+      "Throttle Opening Angle (%)",
+      "Mass Airflow (g/s)",
+      "Primary Wastegate Duty Cycle (%)",
+      "Manifold Relative Pressure (psi)",
+      "Intake Air Temperature (F)",
+      "IAM (1-byte)** (multiplier)",
+      "Fine Learning Knock Correction (1-byte)** (degrees)",
+      "Feedback Knock Correction (1-byte)** (degrees)",
+      "A/F Sensor #1 (AFR)",
+      "Mass Airflow Sensor Voltage (V)"
+    ],
+    "header_only": false,
+    "numeric": {
+      "Time (msec)": {
+        "min": 0.0,
+        "max": 428704.0,
+        "missing_or_invalid": 0,
+        "unique_count": 1180
+      },
+      "A/F Correction #1 (%)": {
+        "min": -25.0,
+        "max": 25.0,
+        "missing_or_invalid": 0,
+        "unique_count": 63
+      },
+      "A/F Learning #1 (%)": {
+        "min": -0.78,
+        "max": 1.56,
+        "missing_or_invalid": 0,
+        "unique_count": 4,
+        "counts": {
+          "-0.78": 656,
+          "0.0": 417,
+          "0.78": 27,
+          "1.56": 80
+        }
+      },
+      "Battery Voltage (V)": {
+        "min": 11.68,
+        "max": 14.24,
+        "missing_or_invalid": 0,
+        "unique_count": 32
+      },
+      "Engine Speed (rpm)": {
+        "min": 0.0,
+        "max": 4310.0,
+        "missing_or_invalid": 0,
+        "unique_count": 869
+      },
+      "Gear (Calculated)* (position)": {
+        "min": 0.0,
+        "max": 5.0,
+        "missing_or_invalid": 0,
+        "unique_count": 6,
+        "counts": {
+          "0.0": 126,
+          "1.0": 540,
+          "2.0": 239,
+          "3.0": 195,
+          "4.0": 9,
+          "5.0": 71
+        }
+      },
+      "Ignition Base Timing* (degrees)": {
+        "min": 8.44,
+        "max": 45.04,
+        "missing_or_invalid": 0,
+        "unique_count": 455
+      },
+      "Ignition Total Timing (degrees)": {
+        "min": -1.5,
+        "max": 44.0,
+        "missing_or_invalid": 0,
+        "unique_count": 74
+      },
+      "Requested Torque* (raw ecu value)": {
+        "min": 0.0,
+        "max": 320.0,
+        "missing_or_invalid": 0,
+        "unique_count": 384
+      },
+      "Target Throttle Plate Position* (%)": {
+        "min": 0.0,
+        "max": 100.0,
+        "missing_or_invalid": 0,
+        "unique_count": 296
+      },
+      "Vehicle Speed (mph)": {
+        "min": 0.0,
+        "max": 42.0,
+        "missing_or_invalid": 0,
+        "unique_count": 43
+      },
+      "Volumetric Efficiency 2.5L (Calculated) (%)": {
+        "min": 0.0,
+        "max": 268.47,
+        "missing_or_invalid": 0,
+        "unique_count": 1061
+      },
+      "Engine Load (2-byte)** (g/rev)": {
+        "min": 0.06,
+        "max": 2.03,
+        "missing_or_invalid": 0,
+        "unique_count": 157
+      },
+      "Throttle Opening Angle (%)": {
+        "min": 0.0,
+        "max": 100.0,
+        "missing_or_invalid": 0,
+        "unique_count": 126
+      },
+      "Mass Airflow (g/s)": {
+        "min": 1.18,
+        "max": 140.26,
+        "missing_or_invalid": 0,
+        "unique_count": 759
+      },
+      "Primary Wastegate Duty Cycle (%)": {
+        "min": 0.0,
+        "max": 45.1,
+        "missing_or_invalid": 0,
+        "unique_count": 62
+      },
+      "Manifold Relative Pressure (psi)": {
+        "min": -10.3,
+        "max": 13.2,
+        "missing_or_invalid": 0,
+        "unique_count": 138
+      },
+      "Intake Air Temperature (F)": {
+        "min": 95.0,
+        "max": 117.0,
+        "missing_or_invalid": 0,
+        "unique_count": 13,
+        "counts": {
+          "95.0": 202,
+          "97.0": 307,
+          "99.0": 66,
+          "100.0": 85,
+          "102.0": 109,
+          "104.0": 32,
+          "106.0": 15,
+          "108.0": 55,
+          "109.0": 68,
+          "111.0": 21,
+          "113.0": 114,
+          "115.0": 97,
+          "117.0": 9
+        }
+      },
+      "IAM (1-byte)** (multiplier)": {
+        "min": 0.75,
+        "max": 0.75,
+        "missing_or_invalid": 0,
+        "unique_count": 1,
+        "counts": {
+          "0.75": 1180
+        }
+      },
+      "Fine Learning Knock Correction (1-byte)** (degrees)": {
+        "min": 0.0,
+        "max": 0.0,
+        "missing_or_invalid": 0,
+        "unique_count": 1,
+        "counts": {
+          "0.0": 1180
+        }
+      },
+      "Feedback Knock Correction (1-byte)** (degrees)": {
+        "min": -5.98,
+        "max": 0.0,
+        "missing_or_invalid": 0,
+        "unique_count": 16,
+        "counts": {
+          "-5.98": 4,
+          "-5.27": 1,
+          "-4.57": 3,
+          "-4.22": 2,
+          "-3.87": 5,
+          "-3.52": 1,
+          "-3.16": 1,
+          "-2.81": 1,
+          "-2.46": 2,
+          "-2.11": 5,
+          "-1.76": 4,
+          "-1.41": 3,
+          "-1.05": 4,
+          "-0.7": 5,
+          "-0.35": 5,
+          "0.0": 1134
+        }
+      },
+      "A/F Sensor #1 (AFR)": {
+        "min": 11.02,
+        "max": 20.9,
+        "missing_or_invalid": 0,
+        "unique_count": 84
+      },
+      "Mass Airflow Sensor Voltage (V)": {
+        "min": 0.72,
+        "max": 3.76,
+        "missing_or_invalid": 0,
+        "unique_count": 146
+      }
+    },
+    "time": {
+      "column": "Time (msec)",
+      "first_ms": 0.0,
+      "last_ms": 428704.0,
+      "nonincreasing_steps": 0,
+      "median_interval_ms": 361.0,
+      "max_interval_ms": 3660.0
+    }
+  },
+  {
+    "file": "evidence/original/romraiderlog_20260817_181218.csv",
+    "sha256": "7cdbc63c5e54fc91d19d6c3c2d13fa2c175bbd149c93327feaaaa675bbd7749f",
+    "rows": 0,
+    "columns": [
+      "Time (msec)",
+      "A/F Correction #1 (%)",
+      "A/F Learning #1 (%)",
+      "A/F Sensor #1 (AFR)",
+      "Battery Voltage (V)",
+      "Engine Load (2-byte)** (g/rev)",
+      "Engine Speed (rpm)",
+      "Feedback Knock Correction (1-byte)** (degrees)",
+      "Fine Learning Knock Correction (1-byte)** (degrees)",
+      "Gear (Calculated)* (position)",
+      "IAM (1-byte)** (multiplier)",
+      "Ignition Base Timing* (degrees)",
+      "Ignition Total Timing (degrees)",
+      "Intake Air Temperature (F)",
+      "Manifold Relative Pressure (psi)",
+      "Mass Airflow (g/s)",
+      "Mass Airflow Sensor Voltage (V)",
+      "Primary Wastegate Duty Cycle (%)",
+      "Requested Torque* (raw ecu value)",
+      "Target Throttle Plate Position* (%)",
+      "Throttle Opening Angle (%)",
+      "Vehicle Speed (mph)",
+      "Volumetric Efficiency 2.5L (Calculated) (%)",
+      "Innovate MTS ECB-1 CH4 (%)",
+      "Innovate MTS ECB-1 CH3 (PSI)",
+      "Innovate MTS ECB-1 CH1 (AFR)",
+      "Innovate MTS ECB-1 CH2 (degF)"
+    ],
+    "header_only": true,
+    "numeric": {}
+  },
+  {
+    "file": "evidence/original/romraiderlog_20260817_195355(2).csv",
+    "sha256": "119d2660a272427543f4437677cd729f36d34b4ea67e382f779c28268dbee2a5",
+    "rows": 16485,
+    "columns": [
+      "Time (msec)",
+      "Engine Load (2-byte)** (g/rev)",
+      "Engine Speed (rpm)",
+      "Feedback Knock Correction (1-byte)** (degrees)",
+      "Fine Learning Knock Correction (1-byte)** (degrees)",
+      "IAM (1-byte)** (multiplier)",
+      "Ignition Total Timing (degrees)",
+      "Manifold Relative Sea Level Pressure (2-byte)** (psi relative sea level)",
+      "Mass Airflow (g/s)",
+      "Primary Open Loop Map Enrichment (2-byte)** (estimated AFR)",
+      "Primary Wastegate Duty Cycle (%)",
+      "Target Boost (2-byte)** (psi relative sea level)",
+      "Throttle Plate Opening Angle (2-byte)** (%)",
+      "Innovate MTS ECB-1 CH1 (AFR)",
+      "Innovate MTS ECB-1 CH3 (PSI)"
+    ],
+    "header_only": false,
+    "numeric": {
+      "Time (msec)": {
+        "min": 0.0,
+        "max": 899204.0,
+        "missing_or_invalid": 0,
+        "unique_count": 16485
+      },
+      "Engine Load (2-byte)** (g/rev)": {
+        "min": 0.16,
+        "max": 2.15,
+        "missing_or_invalid": 0,
+        "unique_count": 198
+      },
+      "Engine Speed (rpm)": {
+        "min": 474.0,
+        "max": 4458.0,
+        "missing_or_invalid": 0,
+        "unique_count": 3441
+      },
+      "Feedback Knock Correction (1-byte)** (degrees)": {
+        "min": -6.68,
+        "max": 0.0,
+        "missing_or_invalid": 0,
+        "unique_count": 20,
+        "counts": {
+          "-6.68": 12,
+          "-6.33": 7,
+          "-5.98": 7,
+          "-5.62": 8,
+          "-5.27": 9,
+          "-4.92": 8,
+          "-4.57": 14,
+          "-4.22": 10,
+          "-3.87": 56,
+          "-3.52": 16,
+          "-3.16": 14,
+          "-2.81": 27,
+          "-2.46": 41,
+          "-2.11": 250,
+          "-1.76": 82,
+          "-1.41": 90,
+          "-1.05": 178,
+          "-0.7": 93,
+          "-0.35": 108,
+          "0.0": 15455
+        }
+      },
+      "Fine Learning Knock Correction (1-byte)** (degrees)": {
+        "min": 0.0,
+        "max": 0.0,
+        "missing_or_invalid": 0,
+        "unique_count": 1,
+        "counts": {
+          "0.0": 16485
+        }
+      },
+      "IAM (1-byte)** (multiplier)": {
+        "min": 0.75,
+        "max": 0.75,
+        "missing_or_invalid": 0,
+        "unique_count": 1,
+        "counts": {
+          "0.75": 16485
+        }
+      },
+      "Ignition Total Timing (degrees)": {
+        "min": -5.5,
+        "max": 42.5,
+        "missing_or_invalid": 0,
+        "unique_count": 97
+      },
+      "Manifold Relative Sea Level Pressure (2-byte)** (psi relative sea level)": {
+        "min": -12.53,
+        "max": 12.41,
+        "missing_or_invalid": 0,
+        "unique_count": 1132
+      },
+      "Mass Airflow (g/s)": {
+        "min": 2.85,
+        "max": 154.87,
+        "missing_or_invalid": 0,
+        "unique_count": 5196
+      },
+      "Primary Open Loop Map Enrichment (2-byte)** (estimated AFR)": {
+        "min": 11.2,
+        "max": 14.7,
+        "missing_or_invalid": 0,
+        "unique_count": 326
+      },
+      "Primary Wastegate Duty Cycle (%)": {
+        "min": 0.0,
+        "max": 45.1,
+        "missing_or_invalid": 0,
+        "unique_count": 116
+      },
+      "Target Boost (2-byte)** (psi relative sea level)": {
+        "min": -1.49,
+        "max": 16.42,
+        "missing_or_invalid": 0,
+        "unique_count": 869
+      },
+      "Throttle Plate Opening Angle (2-byte)** (%)": {
+        "min": 2.64,
+        "max": 100.59,
+        "missing_or_invalid": 0,
+        "unique_count": 654
+      },
+      "Innovate MTS ECB-1 CH1 (AFR)": {
+        "min": -9.0,
+        "max": 130.4,
+        "missing_or_invalid": 0,
+        "unique_count": 1449
+      },
+      "Innovate MTS ECB-1 CH3 (PSI)": {
+        "min": -14.33,
+        "max": 420.5,
+        "missing_or_invalid": 0,
+        "unique_count": 177
+      }
+    },
+    "time": {
+      "column": "Time (msec)",
+      "first_ms": 0.0,
+      "last_ms": 899204.0,
+      "nonincreasing_steps": 0,
+      "median_interval_ms": 55.0,
+      "max_interval_ms": 76.0
+    }
+  },
+  {
+    "file": "evidence/original/romraiderlog_20260817_200857(2).csv",
+    "sha256": "ac122205e1b127642a721628cd9d4f845266ce1389481f3b14dfb37e5c5586a3",
+    "rows": 1795,
+    "columns": [
+      "Time (msec)",
+      "Engine Load (2-byte)** (g/rev)",
+      "Engine Speed (rpm)",
+      "Feedback Knock Correction (1-byte)** (degrees)",
+      "Fine Learning Knock Correction (1-byte)** (degrees)",
+      "IAM (1-byte)** (multiplier)",
+      "Ignition Total Timing (degrees)",
+      "Manifold Relative Sea Level Pressure (2-byte)** (psi relative sea level)",
+      "Mass Airflow (g/s)",
+      "Primary Open Loop Map Enrichment (2-byte)** (estimated AFR)",
+      "Primary Wastegate Duty Cycle (%)",
+      "Target Boost (2-byte)** (psi relative sea level)",
+      "Throttle Plate Opening Angle (2-byte)** (%)",
+      "Innovate MTS ECB-1 CH1 (AFR)",
+      "Innovate MTS ECB-1 CH3 (PSI)"
+    ],
+    "header_only": false,
+    "numeric": {
+      "Time (msec)": {
+        "min": 0.0,
+        "max": 97870.0,
+        "missing_or_invalid": 0,
+        "unique_count": 1795
+      },
+      "Engine Load (2-byte)** (g/rev)": {
+        "min": 0.16,
+        "max": 1.73,
+        "missing_or_invalid": 0,
+        "unique_count": 145
+      },
+      "Engine Speed (rpm)": {
+        "min": 0.0,
+        "max": 4518.0,
+        "missing_or_invalid": 0,
+        "unique_count": 1159
+      },
+      "Feedback Knock Correction (1-byte)** (degrees)": {
+        "min": -2.11,
+        "max": 0.0,
+        "missing_or_invalid": 0,
+        "unique_count": 5,
+        "counts": {
+          "-2.11": 36,
+          "-1.05": 9,
+          "-0.7": 6,
+          "-0.35": 7,
+          "0.0": 1737
+        }
+      },
+      "Fine Learning Knock Correction (1-byte)** (degrees)": {
+        "min": 0.0,
+        "max": 0.0,
+        "missing_or_invalid": 0,
+        "unique_count": 1,
+        "counts": {
+          "0.0": 1795
+        }
+      },
+      "IAM (1-byte)** (multiplier)": {
+        "min": 0.75,
+        "max": 0.75,
+        "missing_or_invalid": 0,
+        "unique_count": 1,
+        "counts": {
+          "0.75": 1795
+        }
+      },
+      "Ignition Total Timing (degrees)": {
+        "min": 0.0,
+        "max": 41.5,
+        "missing_or_invalid": 0,
+        "unique_count": 70
+      },
+      "Manifold Relative Sea Level Pressure (2-byte)** (psi relative sea level)": {
+        "min": -12.43,
+        "max": 6.79,
+        "missing_or_invalid": 0,
+        "unique_count": 431
+      },
+      "Mass Airflow (g/s)": {
+        "min": 2.2,
+        "max": 109.49,
+        "missing_or_invalid": 0,
+        "unique_count": 761
+      },
+      "Primary Open Loop Map Enrichment (2-byte)** (estimated AFR)": {
+        "min": 11.29,
+        "max": 14.7,
+        "missing_or_invalid": 0,
+        "unique_count": 171
+      },
+      "Primary Wastegate Duty Cycle (%)": {
+        "min": 0.0,
+        "max": 45.1,
+        "missing_or_invalid": 0,
+        "unique_count": 75
+      },
+      "Target Boost (2-byte)** (psi relative sea level)": {
+        "min": -1.31,
+        "max": 16.2,
+        "missing_or_invalid": 0,
+        "unique_count": 228
+      },
+      "Throttle Plate Opening Angle (2-byte)** (%)": {
+        "min": 0.0,
+        "max": 100.44,
+        "missing_or_invalid": 0,
+        "unique_count": 254
+      },
+      "Innovate MTS ECB-1 CH1 (AFR)": {
+        "min": 7.35,
+        "max": 98.28,
+        "missing_or_invalid": 0,
+        "unique_count": 387
+      },
+      "Innovate MTS ECB-1 CH3 (PSI)": {
+        "min": -14.33,
+        "max": 442.31,
+        "missing_or_invalid": 0,
+        "unique_count": 113
+      }
+    },
+    "time": {
+      "column": "Time (msec)",
+      "first_ms": 0.0,
+      "last_ms": 97870.0,
+      "nonincreasing_steps": 0,
+      "median_interval_ms": 55.0,
+      "max_interval_ms": 57.0
+    }
+  },
+  {
+    "file": "evidence/original/romraiderlog_20260818_140616.csv",
+    "sha256": "4e0187f97ac0403265859aee497bf72162217c82ca1891ec858edade4cd63833",
+    "rows": 7349,
+    "columns": [
+      "Time (msec)",
+      "Engine Load (2-byte)** (g/rev)",
+      "Engine Speed (rpm)",
+      "Feedback Knock Correction (1-byte)** (degrees)",
+      "Fine Learning Knock Correction (1-byte)** (degrees)",
+      "IAM (1-byte)** (multiplier)",
+      "Ignition Total Timing (degrees)",
+      "Manifold Relative Sea Level Pressure (2-byte)** (psi relative sea level)",
+      "Mass Airflow (g/s)",
+      "Primary Open Loop Map Enrichment (2-byte)** (estimated AFR)",
+      "Primary Wastegate Duty Cycle (%)",
+      "Target Boost (2-byte)** (psi relative sea level)",
+      "Throttle Plate Opening Angle (2-byte)** (%)",
+      "Innovate MTS ECB-1 CH1 (AFR)",
+      "Innovate MTS ECB-1 CH3 (PSI)"
+    ],
+    "header_only": false,
+    "numeric": {
+      "Time (msec)": {
+        "min": 0.0,
+        "max": 400874.0,
+        "missing_or_invalid": 0,
+        "unique_count": 7349
+      },
+      "Engine Load (2-byte)** (g/rev)": {
+        "min": 0.16,
+        "max": 2.12,
+        "missing_or_invalid": 0,
+        "unique_count": 197
+      },
+      "Engine Speed (rpm)": {
+        "min": 430.0,
+        "max": 4697.0,
+        "missing_or_invalid": 0,
+        "unique_count": 2810
+      },
+      "Feedback Knock Correction (1-byte)** (degrees)": {
+        "min": -7.03,
+        "max": 0.0,
+        "missing_or_invalid": 0,
+        "unique_count": 17,
+        "counts": {
+          "-7.03": 36,
+          "-5.98": 37,
+          "-5.62": 12,
+          "-5.27": 10,
+          "-4.92": 17,
+          "-4.57": 6,
+          "-4.22": 5,
+          "-3.87": 50,
+          "-3.52": 6,
+          "-3.16": 40,
+          "-2.11": 175,
+          "-1.76": 6,
+          "-1.41": 5,
+          "-1.05": 117,
+          "-0.7": 6,
+          "-0.35": 6,
+          "0.0": 6815
+        }
+      },
+      "Fine Learning Knock Correction (1-byte)** (degrees)": {
+        "min": 0.0,
+        "max": 0.0,
+        "missing_or_invalid": 0,
+        "unique_count": 1,
+        "counts": {
+          "0.0": 7349
+        }
+      },
+      "IAM (1-byte)** (multiplier)": {
+        "min": 0.75,
+        "max": 0.75,
+        "missing_or_invalid": 0,
+        "unique_count": 1,
+        "counts": {
+          "0.75": 7349
+        }
+      },
+      "Ignition Total Timing (degrees)": {
+        "min": -8.5,
+        "max": 41.5,
+        "missing_or_invalid": 0,
+        "unique_count": 97
+      },
+      "Manifold Relative Sea Level Pressure (2-byte)** (psi relative sea level)": {
+        "min": -12.32,
+        "max": 13.3,
+        "missing_or_invalid": 0,
+        "unique_count": 1127
+      },
+      "Mass Airflow (g/s)": {
+        "min": 3.39,
+        "max": 151.45,
+        "missing_or_invalid": 0,
+        "unique_count": 3685
+      },
+      "Primary Open Loop Map Enrichment (2-byte)** (estimated AFR)": {
+        "min": 11.14,
+        "max": 14.7,
+        "missing_or_invalid": 0,
+        "unique_count": 325
+      },
+      "Primary Wastegate Duty Cycle (%)": {
+        "min": 0.0,
+        "max": 45.1,
+        "missing_or_invalid": 0,
+        "unique_count": 108
+      },
+      "Target Boost (2-byte)** (psi relative sea level)": {
+        "min": -3.13,
+        "max": 15.53,
+        "missing_or_invalid": 0,
+        "unique_count": 736
+      },
+      "Throttle Plate Opening Angle (2-byte)** (%)": {
+        "min": 2.82,
+        "max": 100.48,
+        "missing_or_invalid": 0,
+        "unique_count": 472
+      },
+      "Innovate MTS ECB-1 CH1 (AFR)": {
+        "min": 0.0,
+        "max": 0.0,
+        "missing_or_invalid": 0,
+        "unique_count": 1,
+        "counts": {
+          "0.0": 7349
+        }
+      },
+      "Innovate MTS ECB-1 CH3 (PSI)": {
+        "min": 0.0,
+        "max": 0.0,
+        "missing_or_invalid": 0,
+        "unique_count": 1,
+        "counts": {
+          "0.0": 7349
+        }
+      }
+    },
+    "time": {
+      "column": "Time (msec)",
+      "first_ms": 0.0,
+      "last_ms": 400874.0,
+      "nonincreasing_steps": 0,
+      "median_interval_ms": 55.0,
+      "max_interval_ms": 64.0
+    }
+  },
+  {
+    "file": "evidence/original/romraiderlog_20260818_141337.csv",
+    "sha256": "491d9acc4f8a003f81d719aef1da7081b01cfac0f0b5f2c449c76f08a02144f2",
+    "rows": 5496,
+    "columns": [
+      "Time (msec)",
+      "Engine Load (2-byte)** (g/rev)",
+      "Engine Speed (rpm)",
+      "Feedback Knock Correction (1-byte)** (degrees)",
+      "Fine Learning Knock Correction (1-byte)** (degrees)",
+      "IAM (1-byte)** (multiplier)",
+      "Ignition Total Timing (degrees)",
+      "Manifold Relative Sea Level Pressure (2-byte)** (psi relative sea level)",
+      "Mass Airflow (g/s)",
+      "Primary Open Loop Map Enrichment (2-byte)** (estimated AFR)",
+      "Primary Wastegate Duty Cycle (%)",
+      "Target Boost (2-byte)** (psi relative sea level)",
+      "Throttle Plate Opening Angle (2-byte)** (%)",
+      "Innovate MTS ECB-1 CH1 (AFR)",
+      "Innovate MTS ECB-1 CH3 (PSI)"
+    ],
+    "header_only": false,
+    "numeric": {
+      "Time (msec)": {
+        "min": 0.0,
+        "max": 299766.0,
+        "missing_or_invalid": 0,
+        "unique_count": 5496
+      },
+      "Engine Load (2-byte)** (g/rev)": {
+        "min": 0.17,
+        "max": 2.16,
+        "missing_or_invalid": 0,
+        "unique_count": 197
+      },
+      "Engine Speed (rpm)": {
+        "min": 515.0,
+        "max": 4337.0,
+        "missing_or_invalid": 0,
+        "unique_count": 2047
+      },
+      "Feedback Knock Correction (1-byte)** (degrees)": {
+        "min": -3.16,
+        "max": 0.0,
+        "missing_or_invalid": 0,
+        "unique_count": 6,
+        "counts": {
+          "-3.16": 36,
+          "-2.11": 110,
+          "-1.05": 62,
+          "-0.7": 18,
+          "-0.35": 20,
+          "0.0": 5250
+        }
+      },
+      "Fine Learning Knock Correction (1-byte)** (degrees)": {
+        "min": 0.0,
+        "max": 0.0,
+        "missing_or_invalid": 0,
+        "unique_count": 1,
+        "counts": {
+          "0.0": 5496
+        }
+      },
+      "IAM (1-byte)** (multiplier)": {
+        "min": 0.75,
+        "max": 0.75,
+        "missing_or_invalid": 0,
+        "unique_count": 1,
+        "counts": {
+          "0.75": 5496
+        }
+      },
+      "Ignition Total Timing (degrees)": {
+        "min": -7.0,
+        "max": 40.5,
+        "missing_or_invalid": 0,
+        "unique_count": 81
+      },
+      "Manifold Relative Sea Level Pressure (2-byte)** (psi relative sea level)": {
+        "min": -11.87,
+        "max": 12.86,
+        "missing_or_invalid": 0,
+        "unique_count": 857
+      },
+      "Mass Airflow (g/s)": {
+        "min": 3.66,
+        "max": 147.75,
+        "missing_or_invalid": 0,
+        "unique_count": 2246
+      },
+      "Primary Open Loop Map Enrichment (2-byte)** (estimated AFR)": {
+        "min": 11.15,
+        "max": 14.7,
+        "missing_or_invalid": 0,
+        "unique_count": 310
+      },
+      "Primary Wastegate Duty Cycle (%)": {
+        "min": 0.0,
+        "max": 43.53,
+        "missing_or_invalid": 0,
+        "unique_count": 90
+      },
+      "Target Boost (2-byte)** (psi relative sea level)": {
+        "min": -2.69,
+        "max": 13.73,
+        "missing_or_invalid": 0,
+        "unique_count": 500
+      },
+      "Throttle Plate Opening Angle (2-byte)** (%)": {
+        "min": 2.97,
+        "max": 99.9,
+        "missing_or_invalid": 0,
+        "unique_count": 451
+      },
+      "Innovate MTS ECB-1 CH1 (AFR)": {
+        "min": 0.0,
+        "max": 0.0,
+        "missing_or_invalid": 0,
+        "unique_count": 1,
+        "counts": {
+          "0.0": 5496
+        }
+      },
+      "Innovate MTS ECB-1 CH3 (PSI)": {
+        "min": 0.0,
+        "max": 0.0,
+        "missing_or_invalid": 0,
+        "unique_count": 1,
+        "counts": {
+          "0.0": 5496
+        }
+      }
+    },
+    "time": {
+      "column": "Time (msec)",
+      "first_ms": 0.0,
+      "last_ms": 299766.0,
+      "nonincreasing_steps": 0,
+      "median_interval_ms": 55.0,
+      "max_interval_ms": 73.0
+    }
+  },
+  {
+    "file": "evidence/original/romraiderlog_20260818_141838.csv",
+    "sha256": "20f403aec5fa4c81ecb2f379d6c7e879833b8a1d35123aa7987f2f86c5e0666a",
+    "rows": 3515,
+    "columns": [
+      "Time (msec)",
+      "Engine Load (2-byte)** (g/rev)",
+      "Engine Speed (rpm)",
+      "Feedback Knock Correction (1-byte)** (degrees)",
+      "Fine Learning Knock Correction (1-byte)** (degrees)",
+      "IAM (1-byte)** (multiplier)",
+      "Ignition Total Timing (degrees)",
+      "Manifold Relative Sea Level Pressure (2-byte)** (psi relative sea level)",
+      "Mass Airflow (g/s)",
+      "Primary Open Loop Map Enrichment (2-byte)** (estimated AFR)",
+      "Primary Wastegate Duty Cycle (%)",
+      "Target Boost (2-byte)** (psi relative sea level)",
+      "Throttle Plate Opening Angle (2-byte)** (%)",
+      "Innovate MTS ECB-1 CH1 (AFR)",
+      "Innovate MTS ECB-1 CH3 (PSI)"
+    ],
+    "header_only": false,
+    "numeric": {
+      "Time (msec)": {
+        "min": 0.0,
+        "max": 191679.0,
+        "missing_or_invalid": 0,
+        "unique_count": 3515
+      },
+      "Engine Load (2-byte)** (g/rev)": {
+        "min": 0.19,
+        "max": 2.33,
+        "missing_or_invalid": 0,
+        "unique_count": 194
+      },
+      "Engine Speed (rpm)": {
+        "min": 0.0,
+        "max": 4273.0,
+        "missing_or_invalid": 0,
+        "unique_count": 1786
+      },
+      "Feedback Knock Correction (1-byte)** (degrees)": {
+        "min": -11.95,
+        "max": 0.0,
+        "missing_or_invalid": 0,
+        "unique_count": 27
+      },
+      "Fine Learning Knock Correction (1-byte)** (degrees)": {
+        "min": 0.0,
+        "max": 0.0,
+        "missing_or_invalid": 0,
+        "unique_count": 1,
+        "counts": {
+          "0.0": 3515
+        }
+      },
+      "IAM (1-byte)** (multiplier)": {
+        "min": 0.75,
+        "max": 0.75,
+        "missing_or_invalid": 0,
+        "unique_count": 1,
+        "counts": {
+          "0.75": 3515
+        }
+      },
+      "Ignition Total Timing (degrees)": {
+        "min": -9.0,
+        "max": 41.5,
+        "missing_or_invalid": 0,
+        "unique_count": 99
+      },
+      "Manifold Relative Sea Level Pressure (2-byte)** (psi relative sea level)": {
+        "min": -11.64,
+        "max": 12.41,
+        "missing_or_invalid": 0,
+        "unique_count": 748
+      },
+      "Mass Airflow (g/s)": {
+        "min": 2.2,
+        "max": 166.25,
+        "missing_or_invalid": 0,
+        "unique_count": 1668
+      },
+      "Primary Open Loop Map Enrichment (2-byte)** (estimated AFR)": {
+        "min": 11.2,
+        "max": 14.7,
+        "missing_or_invalid": 0,
+        "unique_count": 269
+      },
+      "Primary Wastegate Duty Cycle (%)": {
+        "min": 0.0,
+        "max": 45.1,
+        "missing_or_invalid": 0,
+        "unique_count": 107
+      },
+      "Target Boost (2-byte)** (psi relative sea level)": {
+        "min": -2.01,
+        "max": 15.37,
+        "missing_or_invalid": 0,
+        "unique_count": 526
+      },
+      "Throttle Plate Opening Angle (2-byte)** (%)": {
+        "min": 0.0,
+        "max": 100.33,
+        "missing_or_invalid": 0,
+        "unique_count": 442
+      },
+      "Innovate MTS ECB-1 CH1 (AFR)": {
+        "min": 0.0,
+        "max": 0.0,
+        "missing_or_invalid": 0,
+        "unique_count": 1,
+        "counts": {
+          "0.0": 3515
+        }
+      },
+      "Innovate MTS ECB-1 CH3 (PSI)": {
+        "min": 0.0,
+        "max": 0.0,
+        "missing_or_invalid": 0,
+        "unique_count": 1,
+        "counts": {
+          "0.0": 3515
+        }
+      }
+    },
+    "time": {
+      "column": "Time (msec)",
+      "first_ms": 0.0,
+      "last_ms": 191679.0,
+      "nonincreasing_steps": 0,
+      "median_interval_ms": 55.0,
+      "max_interval_ms": 62.0
+    }
+  },
+  {
+    "file": "evidence/original/romraiderlog_20260818_144527.csv",
+    "sha256": "1b5f09a8b718ddb85f673b72ee3db7c6baff9bcd4b27e1ce4b8edd7a0d743d0a",
+    "rows": 18268,
+    "columns": [
+      "Time (msec)",
+      "Engine Load (2-byte)** (g/rev)",
+      "Engine Speed (rpm)",
+      "Feedback Knock Correction (1-byte)** (degrees)",
+      "Fine Learning Knock Correction (1-byte)** (degrees)",
+      "IAM (1-byte)** (multiplier)",
+      "Ignition Total Timing (degrees)",
+      "Manifold Relative Sea Level Pressure (2-byte)** (psi relative sea level)",
+      "Mass Airflow (g/s)",
+      "Primary Open Loop Map Enrichment (2-byte)** (estimated AFR)",
+      "Primary Wastegate Duty Cycle (%)",
+      "Target Boost (2-byte)** (psi relative sea level)",
+      "Throttle Plate Opening Angle (2-byte)** (%)",
+      "Innovate MTS ECB-1 CH1 (AFR)",
+      "Innovate MTS ECB-1 CH3 (PSI)"
+    ],
+    "header_only": false,
+    "numeric": {
+      "Time (msec)": {
+        "min": 0.0,
+        "max": 996386.0,
+        "missing_or_invalid": 0,
+        "unique_count": 18268
+      },
+      "Engine Load (2-byte)** (g/rev)": {
+        "min": 0.15,
+        "max": 2.4,
+        "missing_or_invalid": 0,
+        "unique_count": 212
+      },
+      "Engine Speed (rpm)": {
+        "min": 0.0,
+        "max": 4480.0,
+        "missing_or_invalid": 0,
+        "unique_count": 3153
+      },
+      "Feedback Knock Correction (1-byte)** (degrees)": {
+        "min": -3.87,
+        "max": 0.0,
+        "missing_or_invalid": 0,
+        "unique_count": 12,
+        "counts": {
+          "-3.87": 9,
+          "-3.52": 7,
+          "-3.16": 9,
+          "-2.81": 7,
+          "-2.46": 8,
+          "-2.11": 272,
+          "-1.76": 40,
+          "-1.41": 41,
+          "-1.05": 162,
+          "-0.7": 57,
+          "-0.35": 78,
+          "0.0": 17578
+        }
+      },
+      "Fine Learning Knock Correction (1-byte)** (degrees)": {
+        "min": 0.0,
+        "max": 0.0,
+        "missing_or_invalid": 0,
+        "unique_count": 1,
+        "counts": {
+          "0.0": 18268
+        }
+      },
+      "IAM (1-byte)** (multiplier)": {
+        "min": 0.75,
+        "max": 0.75,
+        "missing_or_invalid": 0,
+        "unique_count": 1,
+        "counts": {
+          "0.75": 18268
+        }
+      },
+      "Ignition Total Timing (degrees)": {
+        "min": -6.5,
+        "max": 41.5,
+        "missing_or_invalid": 0,
+        "unique_count": 97
+      },
+      "Manifold Relative Sea Level Pressure (2-byte)** (psi relative sea level)": {
+        "min": -11.93,
+        "max": 12.53,
+        "missing_or_invalid": 0,
+        "unique_count": 1124
+      },
+      "Mass Airflow (g/s)": {
+        "min": 2.2,
+        "max": 165.69,
+        "missing_or_invalid": 0,
+        "unique_count": 4377
+      },
+      "Primary Open Loop Map Enrichment (2-byte)** (estimated AFR)": {
+        "min": 11.18,
+        "max": 14.7,
+        "missing_or_invalid": 0,
+        "unique_count": 323
+      },
+      "Primary Wastegate Duty Cycle (%)": {
+        "min": 0.0,
+        "max": 45.1,
+        "missing_or_invalid": 0,
+        "unique_count": 114
+      },
+      "Target Boost (2-byte)** (psi relative sea level)": {
+        "min": -2.2,
+        "max": 16.11,
+        "missing_or_invalid": 0,
+        "unique_count": 782
+      },
+      "Throttle Plate Opening Angle (2-byte)** (%)": {
+        "min": 0.0,
+        "max": 100.42,
+        "missing_or_invalid": 0,
+        "unique_count": 615
+      },
+      "Innovate MTS ECB-1 CH1 (AFR)": {
+        "min": -9.0,
+        "max": 125.05,
+        "missing_or_invalid": 0,
+        "unique_count": 1161
+      },
+      "Innovate MTS ECB-1 CH3 (PSI)": {
+        "min": -14.5,
+        "max": 384.48,
+        "missing_or_invalid": 0,
+        "unique_count": 183
+      }
+    },
+    "time": {
+      "column": "Time (msec)",
+      "first_ms": 0.0,
+      "last_ms": 996386.0,
+      "nonincreasing_steps": 0,
+      "median_interval_ms": 55.0,
+      "max_interval_ms": 115.0
+    }
+  },
+  {
+    "file": "evidence/original/romraiderlog_20260818_144527_WOT_summary.csv",
+    "sha256": "befbf8ffae0b146eed8dec9d0693537786a5fee62feebb3860f0848e3a11afb7",
+    "rows": 9,
+    "columns": [
+      "rpm_bin",
+      "samples",
+      "rpm_median",
+      "load_median",
+      "commanded_AFR_median",
+      "wideband_AFR_median",
+      "ECU_boost_median",
+      "ECB1_boost_median",
+      "target_boost_median",
+      "WGDC_median",
+      "total_timing_median",
+      "minimum_FBKC",
+      "MAF_median_g_s"
+    ],
+    "header_only": false,
+    "numeric": {
+      "samples": {
+        "min": 2.0,
+        "max": 123.0,
+        "missing_or_invalid": 0,
+        "unique_count": 9,
+        "counts": {
+          "2.0": 1,
+          "4.0": 1,
+          "39.0": 1,
+          "44.0": 1,
+          "64.0": 1,
+          "111.0": 1,
+          "114.0": 1,
+          "121.0": 1,
+          "123.0": 1
+        }
+      },
+      "rpm_median": {
+        "min": 2464.0,
+        "max": 4012.0,
+        "missing_or_invalid": 0,
+        "unique_count": 9,
+        "counts": {
+          "2464.0": 1,
+          "2744.0": 1,
+          "2900.0": 1,
+          "3107.0": 1,
+          "3300.0": 1,
+          "3490.0": 1,
+          "3679.5": 1,
+          "3895.5": 1,
+          "4012.0": 1
+        }
+      },
+      "load_median": {
+        "min": 1.435,
+        "max": 2.16,
+        "missing_or_invalid": 0,
+        "unique_count": 9,
+        "counts": {
+          "1.435": 1,
+          "1.63": 1,
+          "1.67": 1,
+          "1.77": 1,
+          "1.83": 1,
+          "1.91": 1,
+          "1.98": 1,
+          "2.0999999999999996": 1,
+          "2.16": 1
+        }
+      },
+      "commanded_AFR_median": {
+        "min": 11.195,
+        "max": 11.87,
+        "missing_or_invalid": 0,
+        "unique_count": 9,
+        "counts": {
+          "11.195": 1,
+          "11.2": 1,
+          "11.25": 1,
+          "11.27": 1,
+          "11.31": 1,
+          "11.36": 1,
+          "11.41": 1,
+          "11.47": 1,
+          "11.87": 1
+        }
+      },
+      "wideband_AFR_median": {
+        "min": 10.28,
+        "max": 10.605,
+        "missing_or_invalid": 0,
+        "unique_count": 8,
+        "counts": {
+          "10.28": 1,
+          "10.29": 1,
+          "10.41": 1,
+          "10.47": 1,
+          "10.5": 2,
+          "10.59": 1,
+          "10.6": 1,
+          "10.605": 1
+        }
+      },
+      "ECU_boost_median": {
+        "min": 1.025,
+        "max": 12.095,
+        "missing_or_invalid": 0,
+        "unique_count": 9,
+        "counts": {
+          "1.025": 1,
+          "4.6": 1,
+          "5.07": 1,
+          "6.13": 1,
+          "6.96": 1,
+          "8.35": 1,
+          "9.65": 1,
+          "10.87": 1,
+          "12.095": 1
+        }
+      },
+      "ECB1_boost_median": {
+        "min": 2.24,
+        "max": 13.594999999999999,
+        "missing_or_invalid": 0,
+        "unique_count": 9,
+        "counts": {
+          "2.24": 1,
+          "5.83": 1,
+          "6.12": 1,
+          "7.14": 1,
+          "8.16": 1,
+          "9.46": 1,
+          "10.37": 1,
+          "11.72": 1,
+          "13.594999999999999": 1
+        }
+      },
+      "target_boost_median": {
+        "min": 8.14,
+        "max": 15.76,
+        "missing_or_invalid": 0,
+        "unique_count": 9,
+        "counts": {
+          "8.14": 1,
+          "11.18": 1,
+          "12.76": 1,
+          "13.44": 1,
+          "14.17": 1,
+          "14.91": 1,
+          "15.45": 1,
+          "15.72": 1,
+          "15.76": 1
+        }
+      },
+      "WGDC_median": {
+        "min": 13.530000000000001,
+        "max": 44.905,
+        "missing_or_invalid": 0,
+        "unique_count": 9,
+        "counts": {
+          "13.530000000000001": 1,
+          "26.27": 1,
+          "31.37": 1,
+          "36.47": 1,
+          "40.0": 1,
+          "41.96": 1,
+          "43.53": 1,
+          "44.31": 1,
+          "44.905": 1
+        }
+      },
+      "total_timing_median": {
+        "min": 5.25,
+        "max": 16.5,
+        "missing_or_invalid": 0,
+        "unique_count": 8,
+        "counts": {
+          "5.25": 1,
+          "6.0": 2,
+          "6.5": 1,
+          "7.0": 1,
+          "7.5": 1,
+          "8.5": 1,
+          "10.5": 1,
+          "16.5": 1
+        }
+      },
+      "minimum_FBKC": {
+        "min": -2.11,
+        "max": 0.0,
+        "missing_or_invalid": 0,
+        "unique_count": 3,
+        "counts": {
+          "-2.11": 7,
+          "-0.35": 1,
+          "0.0": 1
+        }
+      },
+      "MAF_median_g_s": {
+        "min": 59.769999999999996,
+        "max": 146.66000000000003,
+        "missing_or_invalid": 0,
+        "unique_count": 9,
+        "counts": {
+          "59.769999999999996": 1,
+          "75.48": 1,
+          "81.16": 1,
+          "91.42": 1,
+          "101.47": 1,
+          "110.66": 1,
+          "122.115": 1,
+          "135.56": 1,
+          "146.66000000000003": 1
+        }
+      }
+    }
+  },
+  {
+    "file": "evidence/original/romraiderlog_20260823_193409.csv",
+    "sha256": "fc33a91aeff1275bf001c20868defbe0ce1509f201f8dc2236f5905ed2ebc786",
+    "rows": 15101,
+    "columns": [
+      "Time (msec)",
+      "A2WC511R Gear Index E9* (raw)",
+      "A2WC511R Gear State E8* (raw)"
+    ],
+    "header_only": false,
+    "numeric": {
+      "Time (msec)": {
+        "min": 0.0,
+        "max": 286863.0,
+        "missing_or_invalid": 0,
+        "unique_count": 15101
+      },
+      "A2WC511R Gear Index E9* (raw)": {
+        "min": 0.0,
+        "max": 5.0,
+        "missing_or_invalid": 0,
+        "unique_count": 6,
+        "counts": {
+          "0.0": 616,
+          "1.0": 4928,
+          "2.0": 1640,
+          "3.0": 3996,
+          "4.0": 1799,
+          "5.0": 2122
+        }
+      },
+      "A2WC511R Gear State E8* (raw)": {
+        "min": 1.0,
+        "max": 6.0,
+        "missing_or_invalid": 0,
+        "unique_count": 6,
+        "counts": {
+          "1.0": 4928,
+          "2.0": 1640,
+          "3.0": 3996,
+          "4.0": 1799,
+          "5.0": 2122,
+          "6.0": 616
+        }
+      }
+    },
+    "time": {
+      "column": "Time (msec)",
+      "first_ms": 0.0,
+      "last_ms": 286863.0,
+      "nonincreasing_steps": 0,
+      "median_interval_ms": 19.0,
+      "max_interval_ms": 87.0
+    }
+  },
+  {
+    "file": "evidence/original/romraiderlog_20260824_131151.csv",
+    "sha256": "14d66b79469d7b7a0b2286fc37b7798492350d238d52902b4bae267db86b0029",
+    "rows": 0,
+    "columns": [
+      "Time (msec)",
+      "A2WC511R Gear Index E9* (raw)",
+      "A2WC511R Gear State E8* (raw)",
+      "A2WC511R Raw Gear Range Code* (raw)",
+      "Engine Speed (rpm)",
+      "Vehicle Speed (mph)"
+    ],
+    "header_only": true,
+    "numeric": {}
+  },
+  {
+    "file": "evidence/original/romraiderlog_20260824_131619.csv",
+    "sha256": "1979e8090593ed219dfe2e996b4cd39adb7e8a041ab2b5bb920357541a5c0dc7",
+    "rows": 4996,
+    "columns": [
+      "Time (msec)",
+      "A2WC511R Raw Gear Range Code* (raw)",
+      "Engine Speed (rpm)",
+      "Vehicle Speed (mph)",
+      "A2WC511R Gear State E8* (raw)",
+      "A2WC511R Gear Index E9* (raw)"
+    ],
+    "header_only": false,
+    "numeric": {
+      "Time (msec)": {
+        "min": 0.0,
+        "max": 136550.0,
+        "missing_or_invalid": 0,
+        "unique_count": 4996
+      },
+      "A2WC511R Raw Gear Range Code* (raw)": {
+        "min": 0.0,
+        "max": 7.0,
+        "missing_or_invalid": 0,
+        "unique_count": 7,
+        "counts": {
+          "0.0": 412,
+          "1.0": 1270,
+          "2.0": 302,
+          "3.0": 416,
+          "4.0": 1623,
+          "5.0": 141,
+          "7.0": 832
+        }
+      },
+      "Engine Speed (rpm)": {
+        "min": 0.0,
+        "max": 3975.0,
+        "missing_or_invalid": 0,
+        "unique_count": 1756
+      },
+      "Vehicle Speed (mph)": {
+        "min": 0.0,
+        "max": 42.0,
+        "missing_or_invalid": 0,
+        "unique_count": 43
+      },
+      "A2WC511R Gear State E8* (raw)": {
+        "min": 1.0,
+        "max": 6.0,
+        "missing_or_invalid": 0,
+        "unique_count": 6,
+        "counts": {
+          "1.0": 2102,
+          "2.0": 302,
+          "3.0": 417,
+          "4.0": 1622,
+          "5.0": 141,
+          "6.0": 412
+        }
+      },
+      "A2WC511R Gear Index E9* (raw)": {
+        "min": 0.0,
+        "max": 5.0,
+        "missing_or_invalid": 0,
+        "unique_count": 6,
+        "counts": {
+          "0.0": 413,
+          "1.0": 2101,
+          "2.0": 303,
+          "3.0": 415,
+          "4.0": 1623,
+          "5.0": 141
+        }
+      }
+    },
+    "time": {
+      "column": "Time (msec)",
+      "first_ms": 0.0,
+      "last_ms": 136550.0,
+      "nonincreasing_steps": 0,
+      "median_interval_ms": 27.0,
+      "max_interval_ms": 45.0
+    }
+  },
+  {
+    "file": "evidence/original/romraiderlog_20260824_143124.csv",
+    "sha256": "ccbf129cdb36867c5c0bfdfed8571cc8350f6a988d3941dc8951c826179e380b",
+    "rows": 6453,
+    "columns": [
+      "Time (msec)",
+      "Engine Speed (rpm)",
+      "Vehicle Speed (mph)",
+      "A2WC511R Gear Index E9* (raw)",
+      "A2WC511R Gear State E8* (raw)",
+      "A2WC511R Packed Gear/Range Byte* (raw)",
+      "A2WC511R Raw Gear Range Code* (raw)",
+      "A2WC511R Raw Gear/Range A* (raw)",
+      "A2WC511R TCU State BC0* (raw)",
+      "A2WC511R TCU State BC3* (raw)"
+    ],
+    "header_only": false,
+    "numeric": {
+      "Time (msec)": {
+        "min": 0.0,
+        "max": 232239.0,
+        "missing_or_invalid": 0,
+        "unique_count": 6453
+      },
+      "Engine Speed (rpm)": {
+        "min": 0.0,
+        "max": 4231.0,
+        "missing_or_invalid": 0,
+        "unique_count": 2322
+      },
+      "Vehicle Speed (mph)": {
+        "min": 0.0,
+        "max": 52.0,
+        "missing_or_invalid": 0,
+        "unique_count": 53
+      },
+      "A2WC511R Gear Index E9* (raw)": {
+        "min": 0.0,
+        "max": 5.0,
+        "missing_or_invalid": 0,
+        "unique_count": 6,
+        "counts": {
+          "0.0": 211,
+          "1.0": 1355,
+          "2.0": 782,
+          "3.0": 936,
+          "4.0": 1537,
+          "5.0": 1632
+        }
+      },
+      "A2WC511R Gear State E8* (raw)": {
+        "min": 1.0,
+        "max": 6.0,
+        "missing_or_invalid": 0,
+        "unique_count": 6,
+        "counts": {
+          "1.0": 1354,
+          "2.0": 782,
+          "3.0": 937,
+          "4.0": 1537,
+          "5.0": 1633,
+          "6.0": 210
+        }
+      },
+      "A2WC511R Packed Gear/Range Byte* (raw)": {
+        "min": 0.0,
+        "max": 136.0,
+        "missing_or_invalid": 0,
+        "unique_count": 19,
+        "counts": {
+          "0.0": 100,
+          "17.0": 520,
+          "18.0": 185,
+          "19.0": 27,
+          "33.0": 346,
+          "34.0": 201,
+          "35.0": 161,
+          "37.0": 38,
+          "50.0": 394,
+          "51.0": 343,
+          "52.0": 316,
+          "53.0": 3,
+          "67.0": 406,
+          "68.0": 963,
+          "69.0": 198,
+          "84.0": 258,
+          "85.0": 1393,
+          "119.0": 490,
+          "136.0": 111
+        }
+      },
+      "A2WC511R Raw Gear Range Code* (raw)": {
+        "min": 0.0,
+        "max": 7.0,
+        "missing_or_invalid": 0,
+        "unique_count": 7,
+        "counts": {
+          "0.0": 211,
+          "1.0": 866,
+          "2.0": 780,
+          "3.0": 937,
+          "4.0": 1537,
+          "5.0": 1632,
+          "7.0": 490
+        }
+      },
+      "A2WC511R Raw Gear/Range A* (raw)": {
+        "min": 0.0,
+        "max": 7.0,
+        "missing_or_invalid": 0,
+        "unique_count": 7,
+        "counts": {
+          "0.0": 210,
+          "1.0": 731,
+          "2.0": 750,
+          "3.0": 1056,
+          "4.0": 1564,
+          "5.0": 1651,
+          "7.0": 491
+        }
+      },
+      "A2WC511R TCU State BC0* (raw)": {
+        "min": 0.0,
+        "max": 0.0,
+        "missing_or_invalid": 0,
+        "unique_count": 1,
+        "counts": {
+          "0.0": 6453
+        }
+      },
+      "A2WC511R TCU State BC3* (raw)": {
+        "min": 0.0,
+        "max": 4.0,
+        "missing_or_invalid": 0,
+        "unique_count": 2,
+        "counts": {
+          "0.0": 6436,
+          "4.0": 17
+        }
+      }
+    },
+    "time": {
+      "column": "Time (msec)",
+      "first_ms": 0.0,
+      "last_ms": 232239.0,
+      "nonincreasing_steps": 0,
+      "median_interval_ms": 36.0,
+      "max_interval_ms": 44.0
+    }
+  }
+]

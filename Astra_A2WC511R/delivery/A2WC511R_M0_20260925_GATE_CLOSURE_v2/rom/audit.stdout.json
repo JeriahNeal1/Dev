@@ -1,0 +1,46 @@
+{
+  "holes": {
+    "provisional": {
+      "span": [
+        845652,
+        1047288
+      ],
+      "size": 201636,
+      "sha256": "1c82d6cd42ae9559eb9486a7e103ce62a9966f48efb6c40da5ed321a9cab7555",
+      "defined_code": 0,
+      "xrefs": 0,
+      "byte_unaligned_u32": 144,
+      "even_pc_relative": 5,
+      "direct_branches": 0,
+      "immediates": 0
+    },
+    "alternative": {
+      "span": [
+        547260,
+        786432
+      ],
+      "size": 239172,
+      "sha256": "57623fda50def35c2fae84d7b15f30d7d21c6376587980b6b84c1d1fd062ad87",
+      "defined_code": 0,
+      "xrefs": 0,
+      "byte_unaligned_u32": 21109,
+      "even_pc_relative": 65,
+      "direct_branches": 34,
+      "immediates": 0
+    }
+  },
+  "reachability": {
+    "reset_and_vectors": {
+      "seen": 132,
+      "unresolved": 1,
+      "undefined": 1,
+      "hole_entries": []
+    },
+    "all_defined_functions": {
+      "seen": 60028,
+      "unresolved": 703,
+      "undefined": 4,
+      "hole_entries": []
+    }
+  }
+}

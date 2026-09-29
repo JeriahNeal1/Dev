@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "status": "FINDING_REPRODUCED",
+  "classification": "SYNTHETIC_INPUT_READ_RACE_ONLY",
+  "reviewed_finalizer": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\sim\\finalizer_review\\input_01\\finalize.py",
+    "sha256": "10a4075d040a272373b094137d1473c6fe1755d8ed74b1d533fc8bfbda2be3ed",
+    "bytes": 8475
+  },
+  "validated_journal_before": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\sim\\finalizer_review\\SYNTHETIC_RACE_01\\native_api.jsonl",
+    "sha256": "81b5525afe7278edbdcd70a9cfcf3d00bab324be7b5006a3f97ea7f7b183fb37",
+    "bytes": 7138507
+  },
+  "reported_journal_after": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\sim\\finalizer_review\\SYNTHETIC_RACE_01\\native_api.jsonl",
+    "sha256": "8a27696a3a8800c9b71ddc73d01ab8cb36db0c0b7d786eef0b5a446ed7f29c42",
+    "bytes": 33
+  },
+  "wrongly_accepted_result": "PASS_RAW_CAPTURE_INTEGRITY",
+  "reason": "Proof uses earlier journal bytes; report hashes later replaced invalid bytes, with no revalidation.",
+  "fixture": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\sim\\finalizer_review\\SYNTHETIC_RACE_01",
+  "physical_operations": 0,
+  "provider_loaded": false,
+  "not_evidence_of": [
+    "native04 execution",
+    "physical acquisition",
+    "current ECU ROM"
+  ]
+}

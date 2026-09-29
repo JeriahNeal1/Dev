@@ -1,0 +1,783 @@
+{
+  "schema": 1,
+  "utc": "2026-09-26T01:37:28.698137+00:00",
+  "baseline_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+  "scope": "Catalog of documented M07 function-compression work and M06 reclaim screening/related consumer inventory. Not a whole-firmware search or claim that every listed routine is compressible. No new execution tests were run.",
+  "address_convention": "Hexadecimal ROM offsets; intervals end-exclusive. Envelope/body span sizes may include literal data and are not free-space claims. Overlapping rows and paired estimates must not be added.",
+  "implemented_M07_function_rewrites": 2,
+  "M07_conditional_savings_bytes": 162,
+  "M07_accepted_residency_bytes": 0,
+  "entries": [
+    {
+      "id": "division",
+      "name": "Signed division sub_4260",
+      "start": "00004260",
+      "end_exclusive": "0000430A",
+      "span_bytes": 170,
+      "kind": "function_rewrite",
+      "stage": "IMPLEMENTED_SCOPED_EQUIVALENCE",
+      "decision": "RESEARCH_ONLY_RESIDENCY_UNRESOLVED",
+      "reason": "Compresses 32 repeated ROTCL/DIV1 arithmetic pairs into a counted loop preserving the original T input at every pair.",
+      "proof_scope": "Compiled structural induction and 1,401 original/replacement pairs preserve final GPR/SR/PR/MAC state and divide-by-zero side effect under function-entry/private-stack/noninterleaving contracts. Nonzero path adds one private four-byte stack word; longest measured instruction count grows 79 to 210. No global stack/interrupt/timing or internal-consumer proof.",
+      "evidence": [
+        "reports/local/m07_residency/semantic/candidate_manifest.json",
+        "reports/local/m07_residency/semantic/SEMANTIC_REPLACEMENTS.md",
+        "reports/local/m07_residency/semantic/semantic_structural_proof.json",
+        "reports/local/m07_residency/semantic/semantic_differential.json",
+        "reports/local/m07_residency/semantic/object_inventory.json",
+        "reports/local/m07_residency/ownership_review/OWNERSHIP_PEER_REVIEW.md"
+      ],
+      "original_function_entry": "00004260",
+      "function_metadata_span": [
+        "00004260",
+        "0000430A"
+      ],
+      "replacement_bytes": 68,
+      "conditional_savings_bytes": 102,
+      "proposed_tail": [
+        "000042A4",
+        "0000430A"
+      ],
+      "accepted_residency_bytes": 0
+    },
+    {
+      "id": "range_tail",
+      "name": "Switch tail within sub_1466E",
+      "start": "0001473C",
+      "end_exclusive": "000147AC",
+      "span_bytes": 112,
+      "kind": "function_tail_rewrite",
+      "stage": "IMPLEMENTED_SCOPED_EQUIVALENCE",
+      "decision": "RESEARCH_ONLY_RESIDENCY_UNRESOLVED",
+      "reason": "Replaces repeated nibble comparisons with a sixteen-byte lookup while retaining the enclosing function and its setup.",
+      "proof_scope": "Compiled structural proof covers all 16 nibble partitions and T behavior;1,792 full enclosing-function pairs pass. Requires unchanged 1466E setup R6=64; arbitrary interior entry with unconstrainedR6 has a concrete failure. No extra stack; no global entry/internal-consumer proof.",
+      "evidence": [
+        "reports/local/m07_residency/semantic/candidate_manifest.json",
+        "reports/local/m07_residency/semantic/SEMANTIC_REPLACEMENTS.md",
+        "reports/local/m07_residency/semantic/semantic_structural_proof.json",
+        "reports/local/m07_residency/semantic/semantic_differential.json",
+        "reports/local/m07_residency/semantic/object_inventory.json",
+        "reports/local/m07_residency/ownership_review/OWNERSHIP_PEER_REVIEW.md"
+      ],
+      "original_function_entry": "0001466E",
+      "function_metadata_span": [
+        "0001466E",
+        "000147AC"
+      ],
+      "replacement_bytes": 52,
+      "conditional_savings_bytes": 60,
+      "proposed_tail": [
+        "00014770",
+        "000147AC"
+      ],
+      "accepted_residency_bytes": 0
+    },
+    {
+      "id": "ssm_dispatch_envelope",
+      "name": "SSM command dispatcher envelope",
+      "start": "0004828C",
+      "end_exclusive": "000484D4",
+      "span_bytes": 584,
+      "kind": "routine_envelope",
+      "stage": "SCREENED_NOT_IMPLEMENTED",
+      "decision": "NOT_SELECTED",
+      "reason": "The 584-byte envelope includes shared literals and live command bodies; repeated flag writes cannot be merged without changing intermediate writes/interruption behavior.",
+      "proof_scope": "Command paths and body bounds were identified. No dispatcher compression equivalence proof or exclusively reclaimable584-byte object was established.",
+      "evidence": [
+        "reports/local/m06_architecture/rom_reclamation/ROM_RECLAMATION_REVIEW.md",
+        "reports/local/m06_architecture/rom_reclamation/reclamation_audit.json",
+        "reports/local/m06_architecture/rom_reclamation/ssm_architecture.txt"
+      ],
+      "includes_shared_literal_interval": [
+        "00048318",
+        "0004835C"
+      ]
+    },
+    {
+      "id": "ssm_body_a0",
+      "name": "SSM A0 handler body",
+      "start": "0004835C",
+      "end_exclusive": "000483B6",
+      "span_bytes": 90,
+      "kind": "dispatcher_body",
+      "stage": "SCREENED_NOT_IMPLEMENTED",
+      "decision": "PRESERVE_EXISTING_BODY",
+      "reason": "Identified live OEM command body; no complete dead/unneeded handler or semantics-preserving compression was proved. Preserve existing behavior.",
+      "proof_scope": "These are body intervals inside one dispatcher, not independent complete function ownership claims. No replacement-size/equivalence claim.",
+      "evidence": [
+        "reports/local/m06_architecture/rom_reclamation/ROM_RECLAMATION_REVIEW.md",
+        "reports/local/m06_architecture/rom_reclamation/reclamation_audit.json",
+        "reports/local/m06_architecture/rom_reclamation/ssm_architecture.txt"
+      ]
+    },
+    {
+      "id": "ssm_body_a8",
+      "name": "SSM A8 handler body",
+      "start": "000483B6",
+      "end_exclusive": "000483D6",
+      "span_bytes": 32,
+      "kind": "dispatcher_body",
+      "stage": "SCREENED_NOT_IMPLEMENTED",
+      "decision": "PRESERVE_EXISTING_BODY",
+      "reason": "Identified live OEM command body; no complete dead/unneeded handler or semantics-preserving compression was proved. Preserve existing behavior.",
+      "proof_scope": "These are body intervals inside one dispatcher, not independent complete function ownership claims. No replacement-size/equivalence claim.",
+      "evidence": [
+        "reports/local/m06_architecture/rom_reclamation/ROM_RECLAMATION_REVIEW.md",
+        "reports/local/m06_architecture/rom_reclamation/reclamation_audit.json",
+        "reports/local/m06_architecture/rom_reclamation/ssm_architecture.txt"
+      ]
+    },
+    {
+      "id": "ssm_body_b0",
+      "name": "SSM B0 handler body",
+      "start": "000483D6",
+      "end_exclusive": "0004841E",
+      "span_bytes": 72,
+      "kind": "dispatcher_body",
+      "stage": "SCREENED_NOT_IMPLEMENTED",
+      "decision": "PRESERVE_EXISTING_BODY",
+      "reason": "Identified live OEM command body; no complete dead/unneeded handler or semantics-preserving compression was proved. Preserve existing behavior.",
+      "proof_scope": "These are body intervals inside one dispatcher, not independent complete function ownership claims. No replacement-size/equivalence claim.",
+      "evidence": [
+        "reports/local/m06_architecture/rom_reclamation/ROM_RECLAMATION_REVIEW.md",
+        "reports/local/m06_architecture/rom_reclamation/reclamation_audit.json",
+        "reports/local/m06_architecture/rom_reclamation/ssm_architecture.txt"
+      ]
+    },
+    {
+      "id": "ssm_body_b8",
+      "name": "SSM B8 handler body",
+      "start": "0004841E",
+      "end_exclusive": "00048460",
+      "span_bytes": 66,
+      "kind": "dispatcher_body",
+      "stage": "SCREENED_NOT_IMPLEMENTED",
+      "decision": "PRESERVE_EXISTING_BODY",
+      "reason": "Identified live OEM command body; no complete dead/unneeded handler or semantics-preserving compression was proved. Preserve existing behavior.",
+      "proof_scope": "These are body intervals inside one dispatcher, not independent complete function ownership claims. No replacement-size/equivalence claim.",
+      "evidence": [
+        "reports/local/m06_architecture/rom_reclamation/ROM_RECLAMATION_REVIEW.md",
+        "reports/local/m06_architecture/rom_reclamation/reclamation_audit.json",
+        "reports/local/m06_architecture/rom_reclamation/ssm_architecture.txt"
+      ]
+    },
+    {
+      "id": "ssm_body_bf",
+      "name": "SSM BF handler body",
+      "start": "00048460",
+      "end_exclusive": "00048472",
+      "span_bytes": 18,
+      "kind": "dispatcher_body",
+      "stage": "SCREENED_NOT_IMPLEMENTED",
+      "decision": "PRESERVE_EXISTING_BODY",
+      "reason": "Identified live OEM command body; no complete dead/unneeded handler or semantics-preserving compression was proved. Preserve existing behavior.",
+      "proof_scope": "These are body intervals inside one dispatcher, not independent complete function ownership claims. No replacement-size/equivalence claim.",
+      "evidence": [
+        "reports/local/m06_architecture/rom_reclamation/ROM_RECLAMATION_REVIEW.md",
+        "reports/local/m06_architecture/rom_reclamation/reclamation_audit.json",
+        "reports/local/m06_architecture/rom_reclamation/ssm_architecture.txt"
+      ]
+    },
+    {
+      "id": "ssm_body_9f",
+      "name": "SSM 9F handler body",
+      "start": "00048472",
+      "end_exclusive": "00048486",
+      "span_bytes": 20,
+      "kind": "dispatcher_body",
+      "stage": "SCREENED_NOT_IMPLEMENTED",
+      "decision": "PRESERVE_EXISTING_BODY",
+      "reason": "Identified live OEM command body; no complete dead/unneeded handler or semantics-preserving compression was proved. Preserve existing behavior.",
+      "proof_scope": "These are body intervals inside one dispatcher, not independent complete function ownership claims. No replacement-size/equivalence claim.",
+      "evidence": [
+        "reports/local/m06_architecture/rom_reclamation/ROM_RECLAMATION_REVIEW.md",
+        "reports/local/m06_architecture/rom_reclamation/reclamation_audit.json",
+        "reports/local/m06_architecture/rom_reclamation/ssm_architecture.txt"
+      ]
+    },
+    {
+      "id": "ssm_body_default",
+      "name": "SSM default handler body",
+      "start": "000484B0",
+      "end_exclusive": "000484BC",
+      "span_bytes": 12,
+      "kind": "dispatcher_body",
+      "stage": "SCREENED_NOT_IMPLEMENTED",
+      "decision": "PRESERVE_EXISTING_BODY",
+      "reason": "Live reject behavior sets 649B reject bit and clears 649A automatic-repeat bit; deleting it is not a no-op.",
+      "proof_scope": "These are body intervals inside one dispatcher, not independent complete function ownership claims. No replacement-size/equivalence claim.",
+      "evidence": [
+        "reports/local/m06_architecture/rom_reclamation/ROM_RECLAMATION_REVIEW.md",
+        "reports/local/m06_architecture/rom_reclamation/reclamation_audit.json",
+        "reports/local/m06_architecture/rom_reclamation/ssm_architecture.txt"
+      ]
+    },
+    {
+      "id": "boolean_48A70",
+      "name": "Duplicate boolean leaf",
+      "start": "00048A70",
+      "end_exclusive": "00048A7E",
+      "span_bytes": 14,
+      "kind": "leaf_function",
+      "stage": "SCREENED_NOT_IMPLEMENTED",
+      "decision": "NOT_SELECTED",
+      "reason": "Both 14-byte leaves read bit 0 of FFFF649C; sharing one might save roughly 10 bytes, insufficient to justify another hook.",
+      "proof_scope": "Source/disassembly equivalence screening and separate reference identification only; no compiled sharing transformation or global ownership proof.",
+      "evidence": [
+        "reports/local/m06_architecture/rom_reclamation/ROM_RECLAMATION_REVIEW.md",
+        "reports/local/m06_architecture/rom_reclamation/reclamation_audit.json",
+        "reports/local/m06_architecture/rom_reclamation/ssm_architecture.txt"
+      ],
+      "identified_caller": "00049920",
+      "conditional_pair_savings_estimate_bytes": 10,
+      "estimate_must_not_be_summed_per_leaf": true
+    },
+    {
+      "id": "boolean_48A7E",
+      "name": "Duplicate boolean leaf",
+      "start": "00048A7E",
+      "end_exclusive": "00048A8C",
+      "span_bytes": 14,
+      "kind": "leaf_function",
+      "stage": "SCREENED_NOT_IMPLEMENTED",
+      "decision": "NOT_SELECTED",
+      "reason": "Both 14-byte leaves read bit 0 of FFFF649C; sharing one might save roughly 10 bytes, insufficient to justify another hook.",
+      "proof_scope": "Source/disassembly equivalence screening and separate reference identification only; no compiled sharing transformation or global ownership proof.",
+      "evidence": [
+        "reports/local/m06_architecture/rom_reclamation/ROM_RECLAMATION_REVIEW.md",
+        "reports/local/m06_architecture/rom_reclamation/reclamation_audit.json",
+        "reports/local/m06_architecture/rom_reclamation/ssm_architecture.txt"
+      ],
+      "identified_caller": "00049926",
+      "conditional_pair_savings_estimate_bytes": 10,
+      "estimate_must_not_be_summed_per_leaf": true
+    },
+    {
+      "id": "noop_4A096",
+      "name": "Existing RTS/NOP setter leaf",
+      "start": "0004A096",
+      "end_exclusive": "0004A09A",
+      "span_bytes": 4,
+      "kind": "leaf_function",
+      "stage": "SCREENED_NOT_IMPLEMENTED",
+      "decision": "NOT_SELECTED",
+      "reason": "Already a four-byte RTS/NOP leaf; not a useful contiguous payload region. Distinct original pointer identities are retained by the table dictionary.",
+      "proof_scope": "Exact small body identified; no code deletion/merging or free-region theorem.",
+      "evidence": [
+        "reports/local/m06_architecture/rom_reclamation/ROM_RECLAMATION_REVIEW.md",
+        "reports/local/m06_architecture/rom_reclamation/reclamation_audit.json",
+        "reports/local/m06_architecture/rom_reclamation/getters_setters.txt"
+      ]
+    },
+    {
+      "id": "noop_4A0EA",
+      "name": "Existing RTS/NOP setter leaf",
+      "start": "0004A0EA",
+      "end_exclusive": "0004A0EE",
+      "span_bytes": 4,
+      "kind": "leaf_function",
+      "stage": "SCREENED_NOT_IMPLEMENTED",
+      "decision": "NOT_SELECTED",
+      "reason": "Already a four-byte RTS/NOP leaf; not a useful contiguous payload region. Distinct original pointer identities are retained by the table dictionary.",
+      "proof_scope": "Exact small body identified; no code deletion/merging or free-region theorem.",
+      "evidence": [
+        "reports/local/m06_architecture/rom_reclamation/ROM_RECLAMATION_REVIEW.md",
+        "reports/local/m06_architecture/rom_reclamation/reclamation_audit.json",
+        "reports/local/m06_architecture/rom_reclamation/getters_setters.txt"
+      ]
+    },
+    {
+      "id": "noop_4A0EE",
+      "name": "Existing RTS/NOP setter leaf",
+      "start": "0004A0EE",
+      "end_exclusive": "0004A0F2",
+      "span_bytes": 4,
+      "kind": "leaf_function",
+      "stage": "SCREENED_NOT_IMPLEMENTED",
+      "decision": "NOT_SELECTED",
+      "reason": "Already a four-byte RTS/NOP leaf; not a useful contiguous payload region. Distinct original pointer identities are retained by the table dictionary.",
+      "proof_scope": "Exact small body identified; no code deletion/merging or free-region theorem.",
+      "evidence": [
+        "reports/local/m06_architecture/rom_reclamation/ROM_RECLAMATION_REVIEW.md",
+        "reports/local/m06_architecture/rom_reclamation/reclamation_audit.json",
+        "reports/local/m06_architecture/rom_reclamation/getters_setters.txt"
+      ]
+    },
+    {
+      "id": "setter_table",
+      "name": "SSM setter dispatch table representation",
+      "start": "0004F310",
+      "end_exclusive": "0004F950",
+      "span_bytes": 1600,
+      "kind": "data_object_not_function",
+      "stage": "IMPLEMENTED_FINITE_LOOKUP_EQUIVALENCE",
+      "decision": "FROZEN_M06_RESEARCH_NOT_M07_RESIDENCY",
+      "reason": "400 pointers include 383 identical default entries. 400-byte indices + 72-byte dictionary + 92-byte helper conditionally save 1036 bytes.",
+      "proof_scope": "All 65,536 getter and 65,536 setter indices compared at selected-handler entry, preserving complete selected state under the helper contract; getter 400..799 alias must also translate. 16 additional private stack bytes. Unknown internal consumers/computed entries remain unresolved. Raw diagnostic ROM readback changing with image identity is not by itself a residency failure.",
+      "evidence": [
+        "reports/local/m06_architecture/rom_reclamation/ROM_RECLAMATION_REVIEW.md",
+        "reports/local/m06_architecture/rom_reclamation/reclamation_audit.json",
+        "reports/local/m06_architecture/rom_reclamation/lookup_overlay_manifest.json",
+        "reports/local/m06_architecture/lookup_validation/20260925T221333.336500Z/lookup_differential.json"
+      ],
+      "replacement_bytes": 564,
+      "conditional_savings_bytes": 1036,
+      "proposed_tail": [
+        "0004F544",
+        "0004F950"
+      ],
+      "accepted_residency_bytes": 0
+    },
+    {
+      "id": "getter_resolver",
+      "name": "SSM getter resolver",
+      "start": "00048968",
+      "end_exclusive": "000489F0",
+      "span_bytes": 136,
+      "kind": "coupled_lookup_routine",
+      "stage": "IMPLEMENTED_LOOKUP_SITE_REDIRECTION",
+      "decision": "PRESERVE_ROUTINE_SEMANTICS",
+      "reason": "Only the eight-byte table-lookup site is redirected through the shared compact lookup; original security classification, handler call and continuation remain.",
+      "proof_scope": "Full u16 lookup-entry-state proof is shared with setter_table. The entire resolver is not compressed and its span is not reclaimed. Getter aliasing makes a setter-only change incorrect.",
+      "evidence": [
+        "reports/local/m06_architecture/rom_reclamation/ROM_RECLAMATION_REVIEW.md",
+        "reports/local/m06_architecture/rom_reclamation/reclamation_audit.json",
+        "reports/local/m06_architecture/rom_reclamation/lookup_overlay_manifest.json"
+      ],
+      "hook_span": [
+        "00048988",
+        "00048990"
+      ],
+      "reclaimed_bytes": 0
+    },
+    {
+      "id": "setter_resolver",
+      "name": "SSM setter resolver",
+      "start": "000489F0",
+      "end_exclusive": "00048A70",
+      "span_bytes": 128,
+      "kind": "coupled_lookup_routine",
+      "stage": "IMPLEMENTED_LOOKUP_SITE_REDIRECTION",
+      "decision": "PRESERVE_ROUTINE_SEMANTICS",
+      "reason": "Only the eight-byte table-lookup site is redirected through the shared compact lookup; original security classification, handler call and continuation remain.",
+      "proof_scope": "Full u16 lookup-entry-state proof is shared with setter_table. The entire resolver is not compressed and its span is not reclaimed. Getter aliasing makes a setter-only change incorrect.",
+      "evidence": [
+        "reports/local/m06_architecture/rom_reclamation/ROM_RECLAMATION_REVIEW.md",
+        "reports/local/m06_architecture/rom_reclamation/reclamation_audit.json",
+        "reports/local/m06_architecture/rom_reclamation/lookup_overlay_manifest.json"
+      ],
+      "hook_span": [
+        "00048A30",
+        "00048A38"
+      ],
+      "reclaimed_bytes": 0
+    },
+    {
+      "id": "preserved_setter_4A090",
+      "name": "Distinct setter target",
+      "start": "0004A090",
+      "end_exclusive": "0004A096",
+      "span_bytes": 6,
+      "kind": "preserved_handler_inventory",
+      "stage": "INVENTORIED_NOT_A_COMPRESSION_CANDIDATE",
+      "decision": "PRESERVE_UNCHANGED",
+      "reason": "Its address/body hash and index mapping were inventoried to preserve all original dispatch targets; no code-sharing/compression proposal was implemented.",
+      "proof_scope": "Bounded body span/hash and exact dispatch target identity; exhaustive lookup stops at selected-handler entry and does not execute arbitrary out-of-range handlers. This is not an independent handler-equivalence theorem.",
+      "evidence": [
+        "reports/local/m06_architecture/rom_reclamation/reclamation_audit.json",
+        "reports/local/m06_architecture/rom_reclamation/getters_setters.txt"
+      ],
+      "table_indices": [
+        0
+      ],
+      "original_body_sha256": "108ef649f5c2d5e2fcd531b07964eecdf59e343101aee424591746413ba529b3"
+    },
+    {
+      "id": "preserved_setter_4A09A",
+      "name": "Distinct setter target",
+      "start": "0004A09A",
+      "end_exclusive": "0004A0A0",
+      "span_bytes": 6,
+      "kind": "preserved_handler_inventory",
+      "stage": "INVENTORIED_NOT_A_COMPRESSION_CANDIDATE",
+      "decision": "PRESERVE_UNCHANGED",
+      "reason": "Its address/body hash and index mapping were inventoried to preserve all original dispatch targets; no code-sharing/compression proposal was implemented.",
+      "proof_scope": "Bounded body span/hash and exact dispatch target identity; exhaustive lookup stops at selected-handler entry and does not execute arbitrary out-of-range handlers. This is not an independent handler-equivalence theorem.",
+      "evidence": [
+        "reports/local/m06_architecture/rom_reclamation/reclamation_audit.json",
+        "reports/local/m06_architecture/rom_reclamation/getters_setters.txt"
+      ],
+      "table_indices": [
+        96
+      ],
+      "original_body_sha256": "eed3ad737c7fb4295a9b91d88163edcf37600ab933ef8ae6c49863db538f7856"
+    },
+    {
+      "id": "preserved_setter_4A0A0",
+      "name": "Distinct setter target",
+      "start": "0004A0A0",
+      "end_exclusive": "0004A0B2",
+      "span_bytes": 18,
+      "kind": "preserved_handler_inventory",
+      "stage": "INVENTORIED_NOT_A_COMPRESSION_CANDIDATE",
+      "decision": "PRESERVE_UNCHANGED",
+      "reason": "Its address/body hash and index mapping were inventoried to preserve all original dispatch targets; no code-sharing/compression proposal was implemented.",
+      "proof_scope": "Bounded body span/hash and exact dispatch target identity; exhaustive lookup stops at selected-handler entry and does not execute arbitrary out-of-range handlers. This is not an independent handler-equivalence theorem.",
+      "evidence": [
+        "reports/local/m06_architecture/rom_reclamation/reclamation_audit.json",
+        "reports/local/m06_architecture/rom_reclamation/getters_setters.txt"
+      ],
+      "table_indices": [
+        111
+      ],
+      "original_body_sha256": "de1c2ac2ebbf49b456da9ad5dfa25b8c5331c6f942a0dd8684c8c6d3eb7c4cd7"
+    },
+    {
+      "id": "preserved_setter_4A0B2",
+      "name": "Distinct setter target",
+      "start": "0004A0B2",
+      "end_exclusive": "0004A0C8",
+      "span_bytes": 22,
+      "kind": "preserved_handler_inventory",
+      "stage": "INVENTORIED_NOT_A_COMPRESSION_CANDIDATE",
+      "decision": "PRESERVE_UNCHANGED",
+      "reason": "Its address/body hash and index mapping were inventoried to preserve all original dispatch targets; no code-sharing/compression proposal was implemented.",
+      "proof_scope": "Bounded body span/hash and exact dispatch target identity; exhaustive lookup stops at selected-handler entry and does not execute arbitrary out-of-range handlers. This is not an independent handler-equivalence theorem.",
+      "evidence": [
+        "reports/local/m06_architecture/rom_reclamation/reclamation_audit.json",
+        "reports/local/m06_architecture/rom_reclamation/getters_setters.txt"
+      ],
+      "table_indices": [
+        112
+      ],
+      "original_body_sha256": "aaee0091611e27fa51bf19bff80a4245d4a05b9c6f6e08a46b3d3b39de45063f"
+    },
+    {
+      "id": "preserved_setter_4A0C8",
+      "name": "Distinct setter target",
+      "start": "0004A0C8",
+      "end_exclusive": "0004A0DE",
+      "span_bytes": 22,
+      "kind": "preserved_handler_inventory",
+      "stage": "INVENTORIED_NOT_A_COMPRESSION_CANDIDATE",
+      "decision": "PRESERVE_UNCHANGED",
+      "reason": "Its address/body hash and index mapping were inventoried to preserve all original dispatch targets; no code-sharing/compression proposal was implemented.",
+      "proof_scope": "Bounded body span/hash and exact dispatch target identity; exhaustive lookup stops at selected-handler entry and does not execute arbitrary out-of-range handlers. This is not an independent handler-equivalence theorem.",
+      "evidence": [
+        "reports/local/m06_architecture/rom_reclamation/reclamation_audit.json",
+        "reports/local/m06_architecture/rom_reclamation/getters_setters.txt"
+      ],
+      "table_indices": [
+        113
+      ],
+      "original_body_sha256": "f4bbfce255c39c8456cb19e84a0e62e79fbb4bfc84b94793768aa48b757a7212"
+    },
+    {
+      "id": "preserved_setter_4A0DE",
+      "name": "Distinct setter target",
+      "start": "0004A0DE",
+      "end_exclusive": "0004A0E4",
+      "span_bytes": 6,
+      "kind": "preserved_handler_inventory",
+      "stage": "INVENTORIED_NOT_A_COMPRESSION_CANDIDATE",
+      "decision": "PRESERVE_UNCHANGED",
+      "reason": "Its address/body hash and index mapping were inventoried to preserve all original dispatch targets; no code-sharing/compression proposal was implemented.",
+      "proof_scope": "Bounded body span/hash and exact dispatch target identity; exhaustive lookup stops at selected-handler entry and does not execute arbitrary out-of-range handlers. This is not an independent handler-equivalence theorem.",
+      "evidence": [
+        "reports/local/m06_architecture/rom_reclamation/reclamation_audit.json",
+        "reports/local/m06_architecture/rom_reclamation/getters_setters.txt"
+      ],
+      "table_indices": [
+        137
+      ],
+      "original_body_sha256": "af0d4a365c87c4d78ba39af9821b824dfd9b3c11f5721ead61ee0ae6deca0e27"
+    },
+    {
+      "id": "preserved_setter_4A0E4",
+      "name": "Distinct setter target",
+      "start": "0004A0E4",
+      "end_exclusive": "0004A0EA",
+      "span_bytes": 6,
+      "kind": "preserved_handler_inventory",
+      "stage": "INVENTORIED_NOT_A_COMPRESSION_CANDIDATE",
+      "decision": "PRESERVE_UNCHANGED",
+      "reason": "Its address/body hash and index mapping were inventoried to preserve all original dispatch targets; no code-sharing/compression proposal was implemented.",
+      "proof_scope": "Bounded body span/hash and exact dispatch target identity; exhaustive lookup stops at selected-handler entry and does not execute arbitrary out-of-range handlers. This is not an independent handler-equivalence theorem.",
+      "evidence": [
+        "reports/local/m06_architecture/rom_reclamation/reclamation_audit.json",
+        "reports/local/m06_architecture/rom_reclamation/getters_setters.txt"
+      ],
+      "table_indices": [
+        138
+      ],
+      "original_body_sha256": "14d38313e5ad209163f2fd86b89a471f2de118d60272507bdac0d22521fae6f5"
+    },
+    {
+      "id": "preserved_setter_4A0F2",
+      "name": "Distinct setter target",
+      "start": "0004A0F2",
+      "end_exclusive": "0004A106",
+      "span_bytes": 20,
+      "kind": "preserved_handler_inventory",
+      "stage": "INVENTORIED_NOT_A_COMPRESSION_CANDIDATE",
+      "decision": "PRESERVE_UNCHANGED",
+      "reason": "Its address/body hash and index mapping were inventoried to preserve all original dispatch targets; no code-sharing/compression proposal was implemented.",
+      "proof_scope": "Bounded body span/hash and exact dispatch target identity; exhaustive lookup stops at selected-handler entry and does not execute arbitrary out-of-range handlers. This is not an independent handler-equivalence theorem.",
+      "evidence": [
+        "reports/local/m06_architecture/rom_reclamation/reclamation_audit.json",
+        "reports/local/m06_architecture/rom_reclamation/getters_setters.txt"
+      ],
+      "table_indices": [
+        223
+      ],
+      "original_body_sha256": "05b01bdbe6a94b3460d383eb056469c278fae24f1f2cca4ebd78c5ab845583bf"
+    },
+    {
+      "id": "preserved_setter_4A106",
+      "name": "Distinct setter target",
+      "start": "0004A106",
+      "end_exclusive": "0004A10C",
+      "span_bytes": 6,
+      "kind": "preserved_handler_inventory",
+      "stage": "INVENTORIED_NOT_A_COMPRESSION_CANDIDATE",
+      "decision": "PRESERVE_UNCHANGED",
+      "reason": "Its address/body hash and index mapping were inventoried to preserve all original dispatch targets; no code-sharing/compression proposal was implemented.",
+      "proof_scope": "Bounded body span/hash and exact dispatch target identity; exhaustive lookup stops at selected-handler entry and does not execute arbitrary out-of-range handlers. This is not an independent handler-equivalence theorem.",
+      "evidence": [
+        "reports/local/m06_architecture/rom_reclamation/reclamation_audit.json",
+        "reports/local/m06_architecture/rom_reclamation/getters_setters.txt"
+      ],
+      "table_indices": [
+        224
+      ],
+      "original_body_sha256": "886dbb11fd8e00dbb0306e01b735fadf79114daf4b42bf499299a4f8548e1d75"
+    },
+    {
+      "id": "preserved_setter_4A114",
+      "name": "Distinct setter target",
+      "start": "0004A114",
+      "end_exclusive": "0004A138",
+      "span_bytes": 36,
+      "kind": "preserved_handler_inventory",
+      "stage": "INVENTORIED_NOT_A_COMPRESSION_CANDIDATE",
+      "decision": "PRESERVE_UNCHANGED",
+      "reason": "Its address/body hash and index mapping were inventoried to preserve all original dispatch targets; no code-sharing/compression proposal was implemented.",
+      "proof_scope": "Bounded body span/hash and exact dispatch target identity; exhaustive lookup stops at selected-handler entry and does not execute arbitrary out-of-range handlers. This is not an independent handler-equivalence theorem.",
+      "evidence": [
+        "reports/local/m06_architecture/rom_reclamation/reclamation_audit.json",
+        "reports/local/m06_architecture/rom_reclamation/getters_setters.txt"
+      ],
+      "table_indices": [
+        225
+      ],
+      "original_body_sha256": "380d4db935c8e19a12acbb7b535a0e6b0eff22419c0f2a27fed83050ee9d7161"
+    },
+    {
+      "id": "preserved_setter_4A138",
+      "name": "Distinct setter target",
+      "start": "0004A138",
+      "end_exclusive": "0004A13E",
+      "span_bytes": 6,
+      "kind": "preserved_handler_inventory",
+      "stage": "INVENTORIED_NOT_A_COMPRESSION_CANDIDATE",
+      "decision": "PRESERVE_UNCHANGED",
+      "reason": "Its address/body hash and index mapping were inventoried to preserve all original dispatch targets; no code-sharing/compression proposal was implemented.",
+      "proof_scope": "Bounded body span/hash and exact dispatch target identity; exhaustive lookup stops at selected-handler entry and does not execute arbitrary out-of-range handlers. This is not an independent handler-equivalence theorem.",
+      "evidence": [
+        "reports/local/m06_architecture/rom_reclamation/reclamation_audit.json",
+        "reports/local/m06_architecture/rom_reclamation/getters_setters.txt"
+      ],
+      "table_indices": [
+        226
+      ],
+      "original_body_sha256": "829dad1ffa77899b63a02448c91f41596f165b52c2402b5f6d5a2fed45294ce8"
+    },
+    {
+      "id": "preserved_setter_4A13E",
+      "name": "Distinct setter target",
+      "start": "0004A13E",
+      "end_exclusive": "0004A144",
+      "span_bytes": 6,
+      "kind": "preserved_handler_inventory",
+      "stage": "INVENTORIED_NOT_A_COMPRESSION_CANDIDATE",
+      "decision": "PRESERVE_UNCHANGED",
+      "reason": "Its address/body hash and index mapping were inventoried to preserve all original dispatch targets; no code-sharing/compression proposal was implemented.",
+      "proof_scope": "Bounded body span/hash and exact dispatch target identity; exhaustive lookup stops at selected-handler entry and does not execute arbitrary out-of-range handlers. This is not an independent handler-equivalence theorem.",
+      "evidence": [
+        "reports/local/m06_architecture/rom_reclamation/reclamation_audit.json",
+        "reports/local/m06_architecture/rom_reclamation/getters_setters.txt"
+      ],
+      "table_indices": [
+        227
+      ],
+      "original_body_sha256": "5f11909a7a453593b2fa004bad162332a19a95d39b0b2270949e9a73047df3bf"
+    },
+    {
+      "id": "preserved_setter_4A144",
+      "name": "Distinct setter target",
+      "start": "0004A144",
+      "end_exclusive": "0004A14A",
+      "span_bytes": 6,
+      "kind": "preserved_handler_inventory",
+      "stage": "INVENTORIED_NOT_A_COMPRESSION_CANDIDATE",
+      "decision": "PRESERVE_UNCHANGED",
+      "reason": "Its address/body hash and index mapping were inventoried to preserve all original dispatch targets; no code-sharing/compression proposal was implemented.",
+      "proof_scope": "Bounded body span/hash and exact dispatch target identity; exhaustive lookup stops at selected-handler entry and does not execute arbitrary out-of-range handlers. This is not an independent handler-equivalence theorem.",
+      "evidence": [
+        "reports/local/m06_architecture/rom_reclamation/reclamation_audit.json",
+        "reports/local/m06_architecture/rom_reclamation/getters_setters.txt"
+      ],
+      "table_indices": [
+        228
+      ],
+      "original_body_sha256": "c8e7b2edb068f95bd51c6d92d061f5a29174eea2b8c4ba4bb56253e30802eae5"
+    },
+    {
+      "id": "preserved_setter_4A14A",
+      "name": "Distinct setter target",
+      "start": "0004A14A",
+      "end_exclusive": "0004A15A",
+      "span_bytes": 16,
+      "kind": "preserved_handler_inventory",
+      "stage": "INVENTORIED_NOT_A_COMPRESSION_CANDIDATE",
+      "decision": "PRESERVE_UNCHANGED",
+      "reason": "Its address/body hash and index mapping were inventoried to preserve all original dispatch targets; no code-sharing/compression proposal was implemented.",
+      "proof_scope": "Bounded body span/hash and exact dispatch target identity; exhaustive lookup stops at selected-handler entry and does not execute arbitrary out-of-range handlers. This is not an independent handler-equivalence theorem.",
+      "evidence": [
+        "reports/local/m06_architecture/rom_reclamation/reclamation_audit.json",
+        "reports/local/m06_architecture/rom_reclamation/getters_setters.txt"
+      ],
+      "table_indices": [
+        232
+      ],
+      "original_body_sha256": "1394fd095f094b57a55bd3020663fb5fbf84449a6d5d9bcbdae2aef46b680dd4"
+    },
+    {
+      "id": "preserved_setter_4A1E0",
+      "name": "Distinct setter target",
+      "start": "0004A1E0",
+      "end_exclusive": "0004A210",
+      "span_bytes": 48,
+      "kind": "preserved_handler_inventory",
+      "stage": "INVENTORIED_NOT_A_COMPRESSION_CANDIDATE",
+      "decision": "PRESERVE_UNCHANGED",
+      "reason": "Its address/body hash and index mapping were inventoried to preserve all original dispatch targets; no code-sharing/compression proposal was implemented. tail calls OEM helpers 285DC/285EC; optional call 285FC",
+      "proof_scope": "Bounded body span/hash and exact dispatch target identity; exhaustive lookup stops at selected-handler entry and does not execute arbitrary out-of-range handlers. This is not an independent handler-equivalence theorem.",
+      "evidence": [
+        "reports/local/m06_architecture/rom_reclamation/reclamation_audit.json",
+        "reports/local/m06_architecture/rom_reclamation/getters_setters.txt"
+      ],
+      "table_indices": [
+        288
+      ],
+      "original_body_sha256": "49e35e62fa3759cf41c271d95513ecd2a8fae4c5e08e453cf65216fac803e817"
+    },
+    {
+      "id": "map_reader_4986E",
+      "name": "Neighboring byte-map getter",
+      "start": "0004986E",
+      "end_exclusive": "0004988A",
+      "span_bytes": 28,
+      "kind": "related_consumer_not_candidate",
+      "stage": "CONSUMER_AUDIT_ONLY",
+      "decision": "PRESERVE_UNCHANGED",
+      "reason": "Audited because it reads map 4F950 using (u16)R4-142; must not accidentally read reclaimed setter-table storage.",
+      "proof_scope": "For exact selected getter index, 59 original getter indices per reader stay in the documented map. Arbitrary direct R4=0 underflows into setter-table bytes; no arbitrary-call/global-interleaving contract was proved. No compression attempted.",
+      "evidence": [
+        "reports/local/m06_architecture/rom_reclamation/ROM_RECLAMATION_REVIEW.md",
+        "reports/local/m06_architecture/rom_reclamation/reclamation_audit.json",
+        "reports/local/m06_architecture/rom_reclamation/getters_setters.txt"
+      ]
+    },
+    {
+      "id": "map_reader_4988A",
+      "name": "Neighboring byte-map getter",
+      "start": "0004988A",
+      "end_exclusive": "000498A6",
+      "span_bytes": 28,
+      "kind": "related_consumer_not_candidate",
+      "stage": "CONSUMER_AUDIT_ONLY",
+      "decision": "PRESERVE_UNCHANGED",
+      "reason": "Audited because it reads map 4F950 using (u16)R4-142; must not accidentally read reclaimed setter-table storage.",
+      "proof_scope": "For exact selected getter index, 59 original getter indices per reader stay in the documented map. Arbitrary direct R4=0 underflows into setter-table bytes; no arbitrary-call/global-interleaving contract was proved. No compression attempted.",
+      "evidence": [
+        "reports/local/m06_architecture/rom_reclamation/ROM_RECLAMATION_REVIEW.md",
+        "reports/local/m06_architecture/rom_reclamation/reclamation_audit.json",
+        "reports/local/m06_architecture/rom_reclamation/getters_setters.txt"
+      ]
+    },
+    {
+      "id": "getter_table_context",
+      "name": "Original getter dispatch table",
+      "start": "0004ECD0",
+      "end_exclusive": "0004F310",
+      "span_bytes": 1600,
+      "kind": "related_data_object_not_candidate",
+      "stage": "CONSUMER_AUDIT_ONLY",
+      "decision": "PRESERVE_UNCHANGED",
+      "reason": "Getter index400..799 aliases the following original setter table, so the getter resolver participates in its translation.",
+      "proof_scope": "Identified original table base/boundary and complete u16 pointer-selection model. This table was not compressed or reclaimed.",
+      "evidence": [
+        "reports/local/m06_architecture/rom_reclamation/ROM_RECLAMATION_REVIEW.md",
+        "reports/local/m06_architecture/rom_reclamation/reclamation_audit.json"
+      ]
+    }
+  ],
+  "source_evidence": [
+    {
+      "path": "reports/local/m06_architecture/lookup_validation/20260925T221333.336500Z/lookup_differential.json",
+      "sha256": "10f2eeef70d4d32a7ecd50d45d6568a9d291e52f3a2013c4973d33558d00a894"
+    },
+    {
+      "path": "reports/local/m06_architecture/rom_reclamation/ROM_RECLAMATION_REVIEW.md",
+      "sha256": "d7b44044d56d05a91dd27ba5d80e0e80282ecf2eb27aede36a528e949771e9d8"
+    },
+    {
+      "path": "reports/local/m06_architecture/rom_reclamation/getters_setters.txt",
+      "sha256": "cf7ea79adcdcc841fb2da1e11f8eaa6b94b03558cde33da5ece353caadb672b2"
+    },
+    {
+      "path": "reports/local/m06_architecture/rom_reclamation/lookup_overlay_manifest.json",
+      "sha256": "421cd8cf6d465852c1ff9a3d02dd84a32481b18817c32f5dab2276479316c7db"
+    },
+    {
+      "path": "reports/local/m06_architecture/rom_reclamation/reclamation_audit.json",
+      "sha256": "176814a2db0ec6cf596dd28310a8f851d4a639dfb7ad3f5a1c7e4d3504e7e87c"
+    },
+    {
+      "path": "reports/local/m06_architecture/rom_reclamation/ssm_architecture.txt",
+      "sha256": "c1b56d143aab4d4b1e61b915de5bdd4433b3b6ad4b0c9323d0a8e0ef4d2b1777"
+    },
+    {
+      "path": "reports/local/m07_residency/ownership_review/OWNERSHIP_PEER_REVIEW.md",
+      "sha256": "d99931e2be90b55aa267da3393890fa3620eaaa93bea75685b270d469611751f"
+    },
+    {
+      "path": "reports/local/m07_residency/semantic/SEMANTIC_REPLACEMENTS.md",
+      "sha256": "08cda005d9032204c08e83ff03f4ac14edd6b142bd91386080c147b7891b92e0"
+    },
+    {
+      "path": "reports/local/m07_residency/semantic/candidate_manifest.json",
+      "sha256": "7bc821454a1df1ba59e57434a780b4e049c29c4d116dd966dc66527372800db8"
+    },
+    {
+      "path": "reports/local/m07_residency/semantic/object_inventory.json",
+      "sha256": "393880eec7fc5693595afa093bbc19b144df17d77224595f4fe4eda39d5fd897"
+    },
+    {
+      "path": "reports/local/m07_residency/semantic/semantic_differential.json",
+      "sha256": "31d8d0cec0c85c6c0a0a6ccf6f23820e4d141770191a5a1af99f748dd1d5ec6b"
+    },
+    {
+      "path": "reports/local/m07_residency/semantic/semantic_structural_proof.json",
+      "sha256": "3ccb19ea564fc4a4fbc2e2344cfab3622f5df8c1ac1a6501400f4b2b7b88f0e9"
+    }
+  ],
+  "limitations": [
+    "Scoped equivalence does not prove global caller/interior-entry/internal-data-consumer contracts.",
+    "Division adds stack traffic and instruction count; hardware preemption/timing not established.",
+    "Transparent diagnostic ROM readback is expected image-identity behavior, distinct from internal semantic consumers.",
+    "M06 table compression is frozen historical research and not selected M07 payload residency.",
+    "No new ROM/IDB/artifact/gate edits or physical actions."
+  ]
+}

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\Dev\Astra_A2WC511R\work\gate_closure\romraider_gui\run_gui.py", line 127, in <module>
+    command('save_as');time.sleep(.4);record('native_save_as',command('choose_save_path',label='native_save_chooser'))
+                                                              ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Dev\Astra_A2WC511R\work\gate_closure\romraider_gui\run_gui.py", line 66, in command
+    if not v['ok']:raise RuntimeError(v['error'])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: java.lang.NullPointerException

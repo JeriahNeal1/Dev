@@ -1,0 +1,117 @@
+{
+  "file": "definitions/logger_STD_EN_v370_A2WC511R_tcu_validity_test.xml",
+  "sha256": "e680c7bd8a5012e1f273e113c29484921eb68e72a849f7923dcf26ee8f3f5527",
+  "xml_well_formed": true,
+  "version": "370",
+  "custom_parameters": [
+    {
+      "id": "E_A2WC511R_GE8",
+      "name": "A2WC511R Gear State E8*",
+      "addresses": [
+        "0xFF52E8"
+      ],
+      "exact_ecu": true,
+      "raw_uint8": true,
+      "target": "1"
+    },
+    {
+      "id": "E_A2WC511R_GE9",
+      "name": "A2WC511R Gear Index E9*",
+      "addresses": [
+        "0xFF52E9"
+      ],
+      "exact_ecu": true,
+      "raw_uint8": true,
+      "target": "1"
+    },
+    {
+      "id": "E_A2WC511R_RAW_GEAR_RANGE",
+      "name": "A2WC511R Raw Gear Range Code*",
+      "addresses": [
+        "0xFF4BC2"
+      ],
+      "exact_ecu": true,
+      "raw_uint8": true,
+      "target": "1"
+    },
+    {
+      "id": "E_A2WC511R_TCU_BC0",
+      "name": "A2WC511R TCU State BC0*",
+      "addresses": [
+        "0xFF4BC0"
+      ],
+      "exact_ecu": true,
+      "raw_uint8": true,
+      "target": "1"
+    },
+    {
+      "id": "E_A2WC511R_RAW_GEAR_RANGE_A",
+      "name": "A2WC511R Raw Gear/Range A*",
+      "addresses": [
+        "0xFF4BC1"
+      ],
+      "exact_ecu": true,
+      "raw_uint8": true,
+      "target": "1"
+    },
+    {
+      "id": "E_A2WC511R_TCU_STATE_BC3",
+      "name": "A2WC511R TCU State BC3*",
+      "addresses": [
+        "0xFF4BC3"
+      ],
+      "exact_ecu": true,
+      "raw_uint8": true,
+      "target": "1"
+    },
+    {
+      "id": "E_A2WC511R_PACKED_GEAR_RANGE",
+      "name": "A2WC511R Packed Target/Current Gear Snapshot*",
+      "addresses": [
+        "0xFF4C8D"
+      ],
+      "exact_ecu": true,
+      "raw_uint8": true,
+      "target": "1"
+    },
+    {
+      "id": "E_A2WC511R_TCU_STATUS_FLAGS",
+      "name": "A2WC511R TCU Status Flags*",
+      "addresses": [
+        "0xFF4C50"
+      ],
+      "exact_ecu": true,
+      "raw_uint8": true,
+      "target": "1"
+    },
+    {
+      "id": "E_A2WC511R_TCU_DERIVED_DATA_VALID",
+      "name": "A2WC511R TCU Derived Data Valid*",
+      "addresses": [
+        "0xFF4CA1"
+      ],
+      "exact_ecu": true,
+      "raw_uint8": true,
+      "target": "1"
+    },
+    {
+      "id": "E_A2WC511R_PACKED_GEAR_RANGE_SOURCE",
+      "name": "A2WC511R Packed Target/Current Gear Source*",
+      "addresses": [
+        "0xFF4C75"
+      ],
+      "exact_ecu": true,
+      "raw_uint8": true,
+      "target": "1"
+    }
+  ],
+  "required_checks": {
+    "E_A2WC511R_TCU_STATUS_FLAGS": true,
+    "E_A2WC511R_TCU_DERIVED_DATA_VALID": true,
+    "E_A2WC511R_PACKED_GEAR_RANGE_SOURCE": true,
+    "E_A2WC511R_PACKED_GEAR_RANGE": true
+  },
+  "duplicate_custom_ids": [],
+  "required_pass": true,
+  "validation_scope": "XML well-formedness and exact project-channel checks, NOT RomRaider runtime or strict whole-document DTD validation. Existing stock DTD has repeated module IDs."
+}

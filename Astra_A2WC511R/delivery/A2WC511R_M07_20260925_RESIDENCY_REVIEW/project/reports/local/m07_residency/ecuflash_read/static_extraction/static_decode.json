@@ -1,0 +1,43 @@
+{
+  "executable_sha256": "5e1b1729446d306487bb7ed358b1ee050b11e440902bb23a05663d8575346115",
+  "transform": {
+    "input_rva": "01010000",
+    "length": 4096,
+    "operation": "little-endian u32:((word XOR5E947B85)+2D52015D) mod2^32",
+    "input_sha256": "a7b845bf4ffa7a1bda19bf047bd175aad5443c0ab099cc152c2efa8115fdc720",
+    "output_sha256": "bb72acc24e9bf4b83358e71230462c4a1738b9d40d53d0710756d09420c7d1e8",
+    "inverse_roundtrip": "PASS"
+  },
+  "decompressor": {
+    "source_code_va": [
+      "014100BF",
+      "01410209"
+    ],
+    "stream_rva": "01010212",
+    "destination_rva": "00C14014",
+    "compressed_bytes_consumed": 1860492,
+    "decoded_bytes": 4173012,
+    "output_sha256": "7f01029e62b1e337413ae587716026c312a12dc7f265b7962bf0130499fa2539",
+    "operations": 1243997,
+    "output_limit": 4177900,
+    "negative_controls": [
+      "PASS",
+      "PASS"
+    ],
+    "independent_aplib_crosscheck": "PASS"
+  },
+  "next_transform": {
+    "code_va": [
+      "01015955",
+      "01015966"
+    ],
+    "buffer_va": [
+      "01015966",
+      "0101C966"
+    ],
+    "operation": "Subtract1mod256 from eachof28672bytes.",
+    "output_sha256": "30e96f024c0c11c82b7b4193d47713af7ae300d7c8508299938501a51959926e"
+  },
+  "classification": "STATIC_LOADER_BYTES_ONLY_NOT_APPLICATION_OR_KERNEL",
+  "native_execution": false
+}

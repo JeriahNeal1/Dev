@@ -1,0 +1,24 @@
+--- C:\Dev\A2WC511R_ReadKernel\evidence\rk02\input_snapshot\host\test_finalize.py
++++ C:\Dev\A2WC511R_ReadKernel\host\test_finalize.py
+@@ -8,8 +8,8 @@
+ from host.protocol import sha256
+ from host.finalize import replay_native,record
+ 
+-def main():
+-    folder=ROOT/'fake/runs/composite_native04'
++def main(capture=None,output_dir=None):
++    folder=Path(capture) if capture is not None else ROOT/'fake/runs/composite_native04'
+     report=json.loads((folder/'RESULT.json').read_text())
+     assert report['status']=='PASS_NATIVE_FAKE_COMPILED_KERNEL_TWO_FULL_READS'
+     binding=report['binding'];kernel=Path(binding['kernel_path']).read_bytes()
+@@ -51,5 +51,8 @@
+     result={'schema':1,'status':'PASS','input_capture':record(folder/'RESULT.json'),'native_journal':record(folder/'native_api.jsonl'),
+             'checks':checks,'count':len(checks),'positive_proof':proof,'provider_loaded':False,'transport_calls':0,'physical':False,
+             'source':record(Path(__file__)),'finalizer':record(ROOT/'host/finalize.py')}
+-    (ROOT/'host/tests/FINALIZER_TESTS.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps({'status':'PASS','checks':len(checks)},indent=2))
+-if __name__=='__main__':main()
++    out=Path(output_dir) if output_dir is not None else ROOT/'host/tests';out.mkdir(parents=True,exist_ok=True)
++    (out/'FINALIZER_TESTS.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps({'status':'PASS','checks':len(checks)},indent=2))
++if __name__=='__main__':
++    import argparse
++    parser=argparse.ArgumentParser();parser.add_argument('--capture');parser.add_argument('--output-dir');args=parser.parse_args();main(args.capture,args.output_dir)

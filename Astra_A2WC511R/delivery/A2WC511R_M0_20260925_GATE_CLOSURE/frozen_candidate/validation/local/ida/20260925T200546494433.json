@@ -1,0 +1,31 @@
+{
+  "request": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "tools/call",
+    "params": {
+      "name": "execute_python",
+      "arguments": {
+        "code": "import json, hashlib\nfrom pathlib import Path\nimport ida_bytes, ida_funcs, ida_name, ida_ua, idautils, idc\noutdir=Path('C:/Dev/Astra_A2WC511R/reports/local/ida')\nrom=ida_bytes.get_bytes(0,0x100000)\ndef lines(start,end):\n    out=[]\n    for ea in range(start,end,2):\n        insn=ida_ua.insn_t();size=ida_ua.decode_insn(insn,ea)\n        out.append({'ea':hex(ea),'bytes':rom[ea:ea+2].hex(),'persistent_code':ida_bytes.is_code(ida_bytes.get_flags(ea)),\n            'text':idc.generate_disasm_line(ea,idc.GENDSM_FORCE_CODE) if size else None})\n    return out\nout={'sha256':hashlib.sha256(rom).hexdigest(),'windows':{},'literal_candidates':[],'special_instructions':[],\n     'ram_names':[],'function_count':sum(1 for _ in idautils.Functions(0,0x100000))}\nfor a,b in [(0x118B0,0x11980),(0x11AC0,0x11B00),(0x11200,0x11258),(0xD1A0,0xD270),\n            (0xF9BC,0xFB20),(0x660,0x740),(0x11900,0x11A00)]:\n    out['windows'][hex(a)]=lines(a,b)\nfor ea in range(0,0x100000-3,2):\n    val=int.from_bytes(rom[ea:ea+4],'big')\n    if 0xffff7000<=val<0xffff8000 or 0xe0000<=val<0xe4000:\n        out['literal_candidates'].append({'ea':hex(ea),'value':hex(val),'aligned4':ea%4==0,\n           'xrefs':[{'from':hex(x.frm),'type':x.type,'code':bool(x.iscode)} for x in idautils.XrefsTo(ea)]})\nfor ea in idautils.Heads(0,0x859bc):\n    if not ida_bytes.is_code(ida_bytes.get_flags(ea)):continue\n    text=idc.generate_disasm_line(ea,0) or ''\n    if any(k in text.lower() for k in ['vbr','gbr','r15','ecc','ed0','ed1']):\n        out['special_instructions'].append({'ea':hex(ea),'text':text})\nfor ea,name in idautils.Names():\n    if 0xffff6800<=ea<0xffff8000:\n        out['ram_names'].append({'ea':hex(ea),'name':name,'xrefs':[{'from':hex(x.frm),'type':x.type} for x in idautils.XrefsTo(ea)]})\n(outdir/'allocation_static_audit.json').write_text(json.dumps(out,indent=2),encoding='utf-8')\nprint(json.dumps({'functions':out['function_count'],'literal_candidates':len(out['literal_candidates']),\n 'named_ram':len(out['ram_names']),'special_instructions':len(out['special_instructions'])}))\n"
+      }
+    }
+  },
+  "response": {
+    "jsonrpc": "2.0",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"result\": null,\n  \"stdout\": \"{\\\"functions\\\": 913, \\\"literal_candidates\\\": 442, \\\"named_ram\\\": 0, \\\"special_instructions\\\": 8034}\\n\",\n  \"stderr\": \"\"\n}"
+        }
+      ],
+      "isError": false,
+      "structuredContent": {
+        "result": null,
+        "stdout": "{\"functions\": 913, \"literal_candidates\": 442, \"named_ram\": 0, \"special_instructions\": 8034}\n",
+        "stderr": ""
+      }
+    },
+    "id": 1
+  }
+}

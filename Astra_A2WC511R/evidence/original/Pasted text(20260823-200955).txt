@@ -1,0 +1,290 @@
+Phase: Compiler, File: Compiler, dependency scan error
+In file included from C:\Dev\MerpMod\MerpMod\BlendAndSwitch.c:15:0:
+Phase: Compiler, File: Compiler, dependency scan error
+In file included from C:\Dev\MerpMod\MerpMod\BoostHackTables.c:15:0:
+Phase: Compiler, File: Compiler, dependency scan error
+In file included from C:\Dev\MerpMod\MerpMod\BoostHacks.c:15:0:
+Phase: Compiler, File: Compiler, dependency scan error
+In file included from C:\Dev\MerpMod\MerpMod\CelFlash.c:15:0:
+Phase: Compiler, File: Compiler, dependency scan error
+In file included from C:\Dev\MerpMod\MerpMod\CelFlashTables.c:15:0:
+Phase: Compiler, File: Compiler, dependency scan error
+In file included from C:\Dev\MerpMod\MerpMod\CelFlashTests.c:17:0:
+Phase: Compiler, File: Compiler, dependency scan error
+In file included from C:\Dev\MerpMod\MerpMod\Debug.c:15:0:
+Phase: Compiler, File: Compiler, dependency scan error
+In file included from C:\Dev\MerpMod\MerpMod\Definition.c:15:0:
+Phase: Compiler, File: Compiler, dependency scan error
+In file included from C:\Dev\MerpMod\MerpMod\EcuHacks.c:53:0:
+Phase: Compiler, File: Compiler, dependency scan error
+In file included from C:\Dev\MerpMod\MerpMod\FuelHackTables.c:15:0:
+Phase: Compiler, File: Compiler, dependency scan error
+In file included from C:\Dev\MerpMod\MerpMod\FuelHacks.c:15:0:
+Phase: Compiler, File: Compiler, dependency scan error
+In file included from C:\Dev\MerpMod\MerpMod\Functions.c:15:0:
+Phase: Compiler, File: Compiler, dependency scan error
+In file included from C:\Dev\MerpMod\MerpMod\GenericTests.c:15:0:
+Phase: Compiler, File: Compiler, dependency scan error
+In file included from C:\Dev\MerpMod\MerpMod\Identifier.c:15:0:
+Phase: Compiler, File: Compiler, dependency scan error
+In file included from C:\Dev\MerpMod\MerpMod\Initializer.c:15:0:
+Phase: Compiler, File: Compiler, dependency scan error
+In file included from C:\Dev\MerpMod\MerpMod\MapSwitchTables.c:15:0:
+Phase: Compiler, File: Compiler, dependency scan error
+In file included from C:\Dev\MerpMod\MerpMod\Metadata.c:15:0:
+Phase: Compiler, File: Compiler, dependency scan error
+In file included from C:\Dev\MerpMod\MerpMod\ProgMode.c:15:0:
+Phase: Compiler, File: Compiler, dependency scan error
+In file included from C:\Dev\MerpMod\MerpMod\ProgModeTables.c:15:0:
+Phase: Compiler, File: Compiler, dependency scan error
+In file included from C:\Dev\MerpMod\MerpMod\ProgModeTests.c:16:0:
+Phase: Compiler, File: Compiler, dependency scan error
+In file included from C:\Dev\MerpMod\MerpMod\PullRamHooks.c:15:0:
+Phase: Compiler, File: Compiler, dependency scan error
+In file included from C:\Dev\MerpMod\MerpMod\RevLimiter.c:15:0:
+Phase: Compiler, File: Compiler, dependency scan error
+In file included from C:\Dev\MerpMod\MerpMod\RevLimiterTables.c:15:0:
+Phase: Compiler, File: Compiler, dependency scan error
+In file included from C:\Dev\MerpMod\MerpMod\RevLimiterTests.c:15:0:
+Phase: Compiler, File: Compiler, dependency scan error
+In file included from C:\Dev\MerpMod\MerpMod\SparkHacks.c:15:0:
+Phase: Compiler, File: Compiler, dependency scan error
+In file included from C:\Dev\MerpMod\MerpMod\SpeedDensity.c:15:0:
+Phase: Compiler, File: Compiler, dependency scan error
+In file included from C:\Dev\MerpMod\MerpMod\SpeedDensityTables.c:15:0:
+Phase: Compiler, File: Compiler, dependency scan error
+In file included from C:\Dev\MerpMod\MerpMod\SpeedDensityTests.c:15:0:
+Phase: Compiler, File: Compiler, dependency scan error
+In file included from C:\Dev\MerpMod\MerpMod\SwitchChecks.c:15:0:
+Phase: Compiler, File: Compiler, dependency scan error
+In file included from C:\Dev\MerpMod\MerpMod\TableHackTests.c:17:0:
+Phase: Compiler, File: Compiler, dependency scan error
+In file included from C:\Dev\MerpMod\MerpMod\TestUtilities.c:15:0:
+Phase: Compiler, File: Compiler, dependency scan error
+In file included from C:\Dev\MerpMod\MerpMod\TimingHackTables.c:15:0:
+Phase: Compiler, File: Compiler, dependency scan error
+In file included from C:\Dev\MerpMod\MerpMod\TimingHacks.c:15:0:
+Building - MerpMod - Gratis_Debug
+
+Phase Git Hash starting
+C:\Dev\MerpMod\MerpMod>"C:\Program Files\Git\bin\git.exe" describe --tags --long --always  1>tmpgithash 
+C:\Dev\MerpMod\MerpMod>SET /p ghvar=  0<tmpgithash 
+C:\Dev\MerpMod\MerpMod>DEL tmpgithash 
+C:\Dev\MerpMod\MerpMod>ECHO #define GITVERSION v0.1-73-g8720d20  1>GitVersion.h 
+Phase Git Hash finished
+
+Phase Target Selection starting
+C:\Dev\MerpMod\MerpMod\TARGETS>..\..\SharpTune.exe ecumaptool idatohew.xml "A8DH202X.map" "A8DH202X.h" "A8DH202X.txt" A8DH202X Gratis_Debug 
+Found user directory: C:\Users\Jeriah Neal
+<--- Initializing SharpTuner CLI--->
+SharpTune Assembly Version: 0.1.9-RC2-10-gfcf9fdb
+Loading definitions from: C:\Dev\MerpMod\MerpMod\TARGETS\..\..\..\SubaruDefs\ECUFlash\subaru standard
+Error finding scaling ChecksumFix
+Successfully loaded 333XML definitions!
+Added 38 embedded mods
+No external mods found
+Settings dir: C:\Users\Jeriah Neal\.SharpTune
+Loading plugins from C:\Users\Jeriah Neal\.SharpTune\Plugins
+<--Finished Initializing SharpTuner CLI --->
+Begin updating target header
+Loading conversion XML
+Conversion XML Successfully Loaded
+Importing header and map file
+Loaded header file: A8DH202X.h
+Loaded map file: A8DH202X.map
+Defining Category NonSpecific Rom Info and Routines
+COULD NOT FIND DEFINE: pRamHoleEnd
+Defining Category Switch Hacks
+COULD NOT FIND DEFINE: pSiDrive
+COULD NOT FIND DEFINE: hPull2DTipInEnrich
+COULD NOT FIND DEFINE: hPull2DCrankingFuel
+COULD NOT FIND DEFINE: hPull2DStartupEnrich2
+COULD NOT FIND DEFINE: hPull2DStartupEnrich3
+Defining Category Rev Limit Hack
+Defining Category Speed Density Hack
+Defining Category Injector Hack
+Defining Category Cel Hacks
+COULD NOT FIND DEFINE: hCelTriggerShort
+Defining Category Boost Hacks
+COULD NOT FIND DEFINE: tTargetBoostKcaAlt
+COULD NOT FIND DEFINE: hTableTargetBoostKcaAlt
+COULD NOT FIND DEFINE: tTargetBoostKcaBLo
+COULD NOT FIND DEFINE: hTableTargetBoostKcaBLo
+COULD NOT FIND DEFINE: tTargetBoostKcaBHi
+COULD NOT FIND DEFINE: hTableTargetBoostKcaBHi
+Defining Category WGDC Hacks
+COULD NOT FIND DEFINE: tWgdcInitialAlt
+COULD NOT FIND DEFINE: tWgdcInitialKcaAlt
+COULD NOT FIND DEFINE: hTableWgdcInitialKcaAlt
+COULD NOT FIND DEFINE: tWgdcInitialKcaBLo
+COULD NOT FIND DEFINE: hTableWgdcInitialKcaBLo
+COULD NOT FIND DEFINE: tWgdcInitialKcaBHi
+COULD NOT FIND DEFINE: hTableWgdcInitialKcaBHi
+COULD NOT FIND DEFINE: tWgdcMaxKcaAlt
+COULD NOT FIND DEFINE: hTableWgdcMaxKcaAlt
+COULD NOT FIND DEFINE: tWgdcMaxKcaBLo
+COULD NOT FIND DEFINE: hTableWgdcMaxKcaBLo
+COULD NOT FIND DEFINE: tWgdcMaxKcaBHi
+COULD NOT FIND DEFINE: hTableWgdcMaxKcaBHi
+Defining Category Primary Open Loop Fueling Hacks
+COULD NOT FIND DEFINE: tPolfSwitched
+COULD NOT FIND DEFINE: hTablePolfAlt
+COULD NOT FIND DEFINE: tPolfKcaAlt
+COULD NOT FIND DEFINE: hTablePolfKcaAlt
+COULD NOT FIND DEFINE: tPolfKcaBLo
+COULD NOT FIND DEFINE: hTablePolfKcaBLo
+COULD NOT FIND DEFINE: tPolfKcaBHi
+COULD NOT FIND DEFINE: hTablePolfKcaBHi
+Defining Category Timing Hacks
+COULD NOT FIND DEFINE: tBaseTimingPCruise
+COULD NOT FIND DEFINE: hTableBaseTimingPCruise
+COULD NOT FIND DEFINE: tBaseTimingPNonCruise
+COULD NOT FIND DEFINE: hTableBaseTimingPNonCruise
+COULD NOT FIND DEFINE: tBaseTimingRCruiseAvcs
+COULD NOT FIND DEFINE: hTableBaseTimingRCruiseAvcs
+COULD NOT FIND DEFINE: tBaseTimingRNonCruiseAvcs
+COULD NOT FIND DEFINE: hTableBaseTimingRNonCruiseAvcs
+Defining Category Spark Cut
+Defining Category Flags-Signals
+Defining Category NonSpecific Engine params
+Defining Category OBD Experimental stuff
+Defining Category New Definitions
+COULD NOT FIND DEFINE: dLoadSmoothingAlt
+COULD NOT FIND DEFINE: dLoadSmoothingAlt2
+Defining Category Memory Reset
+Target header update success!!
+C:\Dev\MerpMod\MerpMod\TARGETS>Del ..\TargetHeader.h 
+C:\Dev\MerpMod\MerpMod\TARGETS>Copy "A8DH202X.h" ..\TargetHeader.h 
+        1 file(s) copied.
+C:\Dev\MerpMod\MerpMod\TARGETS>IF NOT EXIST "A8DH202XConfig.h" (
+goto 2  
+ Copy TemplateConfig.h A8DH202XConfig.h 
+)  ELSE (goto exit ) 
+C:\Dev\MerpMod\MerpMod\TARGETS>Copy "A8DH202XConfig.h" ..\TargetConfig.h 
+        1 file(s) copied.
+C:\Dev\MerpMod\MerpMod\TARGETS>Copy "A8DH202X.txt" ..\LinkerScript.txt 
+        1 file(s) copied.
+Could Not Find C:\Dev\MerpMod\MerpMod\TargetHeader.h
+Phase Target Selection finished
+
+Phase Library Generator starting
+Please wait...This may take a few minutes
+Compiling Header independent files
+Compiling optimized Ctype library
+Phase Library Generator finished
+
+Phase Compiler starting
+C:\Dev\MerpMod\MerpMod\BlendAndSwitch.c
+C:\Dev\MerpMod\MerpMod\BoostHackTables.c
+C:\Dev\MerpMod\MerpMod\BoostHacks.c
+C:\Dev\MerpMod\MerpMod\CelFlash.c
+C:\Dev\MerpMod\MerpMod\CelFlashTables.c
+C:\Dev\MerpMod\MerpMod\CelFlashTests.c
+C:\Dev\MerpMod\MerpMod\Debug.c
+C:\Dev\MerpMod\MerpMod\Definition.c
+C:\Dev\MerpMod\MerpMod\EcuHacks.c
+C:\Dev\MerpMod\MerpMod\FuelHackTables.c
+C:\Dev\MerpMod\MerpMod\FuelHacks.c
+C:\Dev\MerpMod\MerpMod\Functions.c
+C:\Dev\MerpMod\MerpMod\GenericTests.c
+C:\Dev\MerpMod\MerpMod\Identifier.c
+C:\Dev\MerpMod\MerpMod\Initializer.c
+C:\Dev\MerpMod\MerpMod\MapSwitchTables.c
+C:\Dev\MerpMod\MerpMod\Metadata.c
+C:\Dev\MerpMod\MerpMod\PortLogger.c
+C:\Dev\MerpMod\MerpMod\ProgMode.c
+C:\Dev\MerpMod\MerpMod\ProgModeTables.c
+C:\Dev\MerpMod\MerpMod\ProgModeTests.c
+C:\Dev\MerpMod\MerpMod\PullRamHooks.c
+C:\Dev\MerpMod\MerpMod\PullRamHooks.c(17) : 123: warning: initialization from incompatible pointer type [enabled by default]
+C:\Dev\MerpMod\MerpMod\PullRamHooks.c(18) : 106: warning: initialization from incompatible pointer type [enabled by default]
+C:\Dev\MerpMod\MerpMod\RamHoleScanner.c
+C:\Dev\MerpMod\MerpMod\RevLimiter.c
+C:\Dev\MerpMod\MerpMod\RevLimiterTables.c
+C:\Dev\MerpMod\MerpMod\RevLimiterTests.c
+C:\Dev\MerpMod\MerpMod\SparkHacks.c
+C:\Dev\MerpMod\MerpMod\SpeedDensity.c
+C:\Dev\MerpMod\MerpMod\SpeedDensityTables.c
+C:\Dev\MerpMod\MerpMod\SpeedDensityTests.c
+C:\Dev\MerpMod\MerpMod\SwitchChecks.c
+C:\Dev\MerpMod\MerpMod\TableHackTests.c
+C:\Dev\MerpMod\MerpMod\TestUtilities.c
+C:\Dev\MerpMod\MerpMod\TimingHackTables.c
+C:\Dev\MerpMod\MerpMod\TimingHacks.c
+Phase Compiler finished
+
+Phase Assembler starting
+C:\Dev\MerpMod\MerpMod\ResetHandler.s
+C:\Dev\MerpMod\MerpMod\Gratis_Debug\BlendAndSwitch.s
+C:\Dev\MerpMod\MerpMod\Gratis_Debug\BoostHackTables.s
+C:\Dev\MerpMod\MerpMod\Gratis_Debug\BoostHacks.s
+C:\Dev\MerpMod\MerpMod\Gratis_Debug\CelFlash.s
+C:\Dev\MerpMod\MerpMod\Gratis_Debug\CelFlashTables.s
+C:\Dev\MerpMod\MerpMod\Gratis_Debug\CelFlashTests.s
+C:\Dev\MerpMod\MerpMod\Gratis_Debug\Debug.s
+C:\Dev\MerpMod\MerpMod\Gratis_Debug\Definition.s
+C:\Dev\MerpMod\MerpMod\Gratis_Debug\EcuHacks.s
+C:\Dev\MerpMod\MerpMod\Gratis_Debug\FuelHackTables.s
+C:\Dev\MerpMod\MerpMod\Gratis_Debug\FuelHacks.s
+C:\Dev\MerpMod\MerpMod\Gratis_Debug\Functions.s
+C:\Dev\MerpMod\MerpMod\Gratis_Debug\GenericTests.s
+C:\Dev\MerpMod\MerpMod\Gratis_Debug\Identifier.s
+C:\Dev\MerpMod\MerpMod\Gratis_Debug\Initializer.s
+C:\Dev\MerpMod\MerpMod\Gratis_Debug\MapSwitchTables.s
+C:\Dev\MerpMod\MerpMod\Gratis_Debug\Metadata.s
+C:\Dev\MerpMod\MerpMod\Gratis_Debug\ProgMode.s
+C:\Dev\MerpMod\MerpMod\Gratis_Debug\ProgModeTables.s
+C:\Dev\MerpMod\MerpMod\Gratis_Debug\ProgModeTests.s
+C:\Dev\MerpMod\MerpMod\Gratis_Debug\PullRamHooks.s
+C:\Dev\MerpMod\MerpMod\Gratis_Debug\RevLimiter.s
+C:\Dev\MerpMod\MerpMod\Gratis_Debug\RevLimiterTables.s
+C:\Dev\MerpMod\MerpMod\Gratis_Debug\RevLimiterTests.s
+C:\Dev\MerpMod\MerpMod\Gratis_Debug\SparkHacks.s
+C:\Dev\MerpMod\MerpMod\Gratis_Debug\SpeedDensity.s
+C:\Dev\MerpMod\MerpMod\Gratis_Debug\SpeedDensityTables.s
+C:\Dev\MerpMod\MerpMod\Gratis_Debug\SpeedDensityTests.s
+C:\Dev\MerpMod\MerpMod\Gratis_Debug\SwitchChecks.s
+C:\Dev\MerpMod\MerpMod\Gratis_Debug\TableHackTests.s
+C:\Dev\MerpMod\MerpMod\Gratis_Debug\TestUtilities.s
+C:\Dev\MerpMod\MerpMod\Gratis_Debug\TimingHackTables.s
+C:\Dev\MerpMod\MerpMod\Gratis_Debug\TimingHacks.s
+Phase Assembler finished
+
+Phase Linker starting
+Phase Linker finished
+
+Phase Update Test Rom starting
+C:\Dev\MerpMod\MerpMod\TestRom>mkdir Gratis_Debug\A8DH202X\ 
+C:\Dev\MerpMod\MerpMod\TestRom>cd  
+C:\Dev\MerpMod\MerpMod\TestRom
+C:\Dev\MerpMod\MerpMod\TestRom>for %P in (*.patch) do del %P 
+C:\Dev\MerpMod\MerpMod\TestRom>copy ..\Gratis_Debug\MerpMod.mot partial-patch.mot 
+        1 file(s) copied.
+C:\Dev\MerpMod\MerpMod\TestRom>Copy ..\..\..\SubaruRoms\OEM\A8DH202X.bin patched.bin 
+The system cannot find the file specified.
+C:\Dev\MerpMod\MerpMod\TestRom>..\..\SharpTune.exe rommod hewbuild partial-patch.mot patched.bin Gratis_Debug 
+Found user directory: C:\Users\Jeriah Neal
+<--- Initializing SharpTuner CLI--->
+SharpTune Assembly Version: 0.1.9-RC2-10-gfcf9fdb
+Loading definitions from: C:\Dev\MerpMod\MerpMod\TestRom\..\..\..\SubaruDefs\ECUFlash\subaru standard
+Error finding scaling ChecksumFix
+Successfully loaded 333XML definitions!
+Added 38 embedded mods
+No external mods found
+Settings dir: C:\Users\Jeriah Neal\.SharpTune
+Loading plugins from C:\Users\Jeriah Neal\.SharpTune\Plugins
+<--Finished Initializing SharpTuner CLI --->
+System.IO.FileNotFoundException: Could not find file 'C:\Dev\MerpMod\MerpMod\TestRom\patched.bin'.
+File name: 'C:\Dev\MerpMod\MerpMod\TestRom\patched.bin'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at SharpTune.RomMod.RomMod.TryHewBuild(AvailableDevices ad, String patchPath, String romPath, String bc, String defPath)
+   at SharpTune.RomMod.RomMod.Run(AvailableDevices availableDevices, String[] args)
+   at SharpTune.Program.Run(String[] args)
+   at SharpTune.Program.Main(String[] args)
+Phase Update Test Rom finished
+
+Build Finished
+0 Errors, 2 Warnings
+

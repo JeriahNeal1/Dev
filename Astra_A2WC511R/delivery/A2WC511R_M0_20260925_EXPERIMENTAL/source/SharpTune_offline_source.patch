@@ -1,0 +1,68 @@
+diff --git a/SharpTune/Program.cs b/SharpTune/Program.cs
+index de6b462..45b3931 100644
+--- a/SharpTune/Program.cs
++++ b/SharpTune/Program.cs
+@@ -51,6 +51,7 @@ namespace SharpTune
+                 {
+                     // This makes diagnostics much much easier.
+                     Trace.WriteLine(exception);
++                    result = false; // Offline CLI must never report success after an exception.
+                 }
+             }
+             // For parity with "fc /b" return 0 on success, 1 on failure.
+diff --git a/SharpTune/RomMod/Mod.cs b/SharpTune/RomMod/Mod.cs
+index 105b144..05be099 100644
+--- a/SharpTune/RomMod/Mod.cs
++++ b/SharpTune/RomMod/Mod.cs
+@@ -378,7 +378,18 @@ namespace SharpTune.RomMod
+             else
+             {
+                 DialogResult res;
+-                if (ModBuild.ContainsCI("debug") || ModBuild.ContainsCI("testing"))
++                string offlineHome = Environment.GetEnvironmentVariable("SHARPTUNE_OFFLINE_HOME");
++                bool authorizedOfflineCopy = !String.IsNullOrEmpty(offlineHome)
++                    && Environment.GetEnvironmentVariable("SHARPTUNE_OFFLINE_LOCAL_APPLY") == "1"
++                    && ModBuild == "M0_Offline_Debug"
++                    && ModIdent == "A2WC511R.M0.EXPERIMENTAL.v1"
++                    && Path.GetFullPath(outPath).StartsWith(Path.GetFullPath(offlineHome).TrimEnd(Path.DirectorySeparatorChar) + Path.DirectorySeparatorChar, StringComparison.OrdinalIgnoreCase);
++                if (authorizedOfflineCopy)
++                {
++                    Trace.WriteLine("Explicit offline M0 copy authorization; no vehicle interface involved.");
++                    res = DialogResult.OK;
++                }
++                else if (ModBuild.ContainsCI("debug") || ModBuild.ContainsCI("testing"))
+                     res = MessageBox.Show(TestBuildWarning, "WARNING",MessageBoxButtons.OKCancel,MessageBoxIcon.Hand);
+                 else
+                     res = MessageBox.Show(ReleaseBuildWarning, "WARNING",MessageBoxButtons.OKCancel,MessageBoxIcon.Warning);
+diff --git a/SharpTune/SharpTuner.cs b/SharpTune/SharpTuner.cs
+index d742b16..52926b6 100644
+--- a/SharpTune/SharpTuner.cs
++++ b/SharpTune/SharpTuner.cs
+@@ -117,6 +117,27 @@ namespace SharpTune
+ 
+         public void InitSettings()
+         {
++            // Optional local CLI isolation. No user.config writes or inherited plugins.
++            string offlineHome = Environment.GetEnvironmentVariable("SHARPTUNE_OFFLINE_HOME");
++            if (!String.IsNullOrEmpty(offlineHome))
++            {
++                offlineHome = Path.GetFullPath(offlineHome);
++                Settings.Default.SettingsPath = offlineHome;
++                Settings.Default.LogLevel = SourceLevels.All;
++                Settings.Default.LogFilePath = Path.Combine(offlineHome, "SharpTune.log");
++                Settings.Default.PluginPath = Path.Combine(offlineHome, "Plugins");
++                Settings.Default.PatchPath = Path.Combine(offlineHome, "Mods");
++                Settings.Default.SubaruDefsRepoPath = Path.Combine(offlineHome, "SubaruDefs");
++                Settings.Default.EmbeddedDefRepoPath = Path.Combine(offlineHome, "EmbeddedDefs");
++                Settings.Default.EcuFlashDefRepoPath = Path.Combine(Settings.Default.SubaruDefsRepoPath, @"ECUFlash\subaru standard");
++                Settings.Default.RomRaiderDefRepoPath = Path.Combine(Settings.Default.SubaruDefsRepoPath, "RomRaider");
++                Settings.Default.RomRaiderEcuDefPath = Path.Combine(Settings.Default.RomRaiderDefRepoPath, @"ecu\standard");
++                Settings.Default.RomRaiderLoggerDefPath = Path.Combine(Settings.Default.RomRaiderDefRepoPath, "logger");
++                Directory.CreateDirectory(offlineHome);
++                Directory.CreateDirectory(Settings.Default.PluginPath);
++                Directory.CreateDirectory(Settings.Default.PatchPath);
++                return;
++            }
+             string userdir = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
+             Console.WriteLine("Found user directory: " + userdir);
+ 

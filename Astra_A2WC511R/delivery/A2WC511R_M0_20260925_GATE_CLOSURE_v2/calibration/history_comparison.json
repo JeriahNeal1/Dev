@@ -1,0 +1,2391 @@
+{
+  "log": "C:\\Users\\Jeriah Neal\\AppData\\Roaming\\OpenECU\\EcuFlash\\logs\\ecuflash_log_20260818t134942.txt",
+  "log_sha256": "c31adfadb19429135c4f49ae525a8d3a1ce2a569c456f10dd2882fe1d3cf0ef4",
+  "flash_correct_recorded": true,
+  "logged_pages": [
+    {
+      "segment": "FB01",
+      "start": 0,
+      "length": 4096,
+      "ecu_crc32": 413558472,
+      "image_crc32": 413558472,
+      "equal": true
+    },
+    {
+      "segment": "FB02",
+      "start": 4096,
+      "length": 4096,
+      "ecu_crc32": 2400196641,
+      "image_crc32": 2400196641,
+      "equal": true
+    },
+    {
+      "segment": "FB03",
+      "start": 8192,
+      "length": 4096,
+      "ecu_crc32": 2206494528,
+      "image_crc32": 2206494528,
+      "equal": true
+    },
+    {
+      "segment": "FB04",
+      "start": 12288,
+      "length": 4096,
+      "ecu_crc32": 2783571258,
+      "image_crc32": 2783571258,
+      "equal": true
+    },
+    {
+      "segment": "FB05",
+      "start": 16384,
+      "length": 4096,
+      "ecu_crc32": 2140095037,
+      "image_crc32": 2140095037,
+      "equal": true
+    },
+    {
+      "segment": "FB06",
+      "start": 20480,
+      "length": 4096,
+      "ecu_crc32": 1510921133,
+      "image_crc32": 1510921133,
+      "equal": true
+    },
+    {
+      "segment": "FB07",
+      "start": 24576,
+      "length": 4096,
+      "ecu_crc32": 180299345,
+      "image_crc32": 180299345,
+      "equal": true
+    },
+    {
+      "segment": "FB08",
+      "start": 28672,
+      "length": 4096,
+      "ecu_crc32": 2054580971,
+      "image_crc32": 2054580971,
+      "equal": true
+    },
+    {
+      "segment": "FB09",
+      "start": 32768,
+      "length": 98304,
+      "ecu_crc32": 2658351747,
+      "image_crc32": 2658351747,
+      "equal": true
+    },
+    {
+      "segment": "FB10",
+      "start": 131072,
+      "length": 131072,
+      "ecu_crc32": 4284155302,
+      "image_crc32": 4284155302,
+      "equal": true
+    },
+    {
+      "segment": "FB11",
+      "start": 262144,
+      "length": 131072,
+      "ecu_crc32": 3443585804,
+      "image_crc32": 3443585804,
+      "equal": true
+    },
+    {
+      "segment": "FB12",
+      "start": 393216,
+      "length": 131072,
+      "ecu_crc32": 493705208,
+      "image_crc32": 493705208,
+      "equal": true
+    },
+    {
+      "segment": "FB13",
+      "start": 524288,
+      "length": 131072,
+      "ecu_crc32": 2706197376,
+      "image_crc32": 2706197376,
+      "equal": true
+    },
+    {
+      "segment": "FB14",
+      "start": 655360,
+      "length": 131072,
+      "ecu_crc32": 357041100,
+      "image_crc32": 357041100,
+      "equal": true
+    },
+    {
+      "segment": "FB15",
+      "start": 786432,
+      "length": 131072,
+      "ecu_crc32": 2661006774,
+      "image_crc32": 2661006774,
+      "equal": true
+    },
+    {
+      "segment": "FB16",
+      "start": 917504,
+      "length": 131072,
+      "ecu_crc32": 560316365,
+      "image_crc32": 560316365,
+      "equal": true
+    }
+  ],
+  "comparisons": [
+    {
+      "sha256": "a34c4ce8238bf28bdc18c191bbe73b2179130aa9846e952a6fa332bae442de96",
+      "path": "C:\\Dev\\Astra_A2WC511R\\backups\\run_01a0da26\\idb\\A2WC511R_STOCK_ROMRAIDER.bin",
+      "page_matches": 13,
+      "total": 16,
+      "pages": [
+        {
+          "start": 0,
+          "calculated": 413558472,
+          "logged": 413558472,
+          "matches": true
+        },
+        {
+          "start": 4096,
+          "calculated": 2400196641,
+          "logged": 2400196641,
+          "matches": true
+        },
+        {
+          "start": 8192,
+          "calculated": 2206494528,
+          "logged": 2206494528,
+          "matches": true
+        },
+        {
+          "start": 12288,
+          "calculated": 2783571258,
+          "logged": 2783571258,
+          "matches": true
+        },
+        {
+          "start": 16384,
+          "calculated": 2140095037,
+          "logged": 2140095037,
+          "matches": true
+        },
+        {
+          "start": 20480,
+          "calculated": 1510921133,
+          "logged": 1510921133,
+          "matches": true
+        },
+        {
+          "start": 24576,
+          "calculated": 180299345,
+          "logged": 180299345,
+          "matches": true
+        },
+        {
+          "start": 28672,
+          "calculated": 2054580971,
+          "logged": 2054580971,
+          "matches": true
+        },
+        {
+          "start": 32768,
+          "calculated": 3418298641,
+          "logged": 2658351747,
+          "matches": false
+        },
+        {
+          "start": 131072,
+          "calculated": 4284155302,
+          "logged": 4284155302,
+          "matches": true
+        },
+        {
+          "start": 262144,
+          "calculated": 3443585804,
+          "logged": 3443585804,
+          "matches": true
+        },
+        {
+          "start": 393216,
+          "calculated": 493705208,
+          "logged": 493705208,
+          "matches": true
+        },
+        {
+          "start": 524288,
+          "calculated": 2706197376,
+          "logged": 2706197376,
+          "matches": true
+        },
+        {
+          "start": 655360,
+          "calculated": 357041100,
+          "logged": 357041100,
+          "matches": true
+        },
+        {
+          "start": 786432,
+          "calculated": 2172472585,
+          "logged": 2661006774,
+          "matches": false
+        },
+        {
+          "start": 917504,
+          "calculated": 829707990,
+          "logged": 560316365,
+          "matches": false
+        }
+      ]
+    },
+    {
+      "sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+      "path": "C:\\Dev\\Astra_A2WC511R\\delivery\\A2WC511R_M0_20260925_EXPERIMENTAL\\artifacts\\A2WC511R.analysis_baseline.bin",
+      "page_matches": 13,
+      "total": 16,
+      "pages": [
+        {
+          "start": 0,
+          "calculated": 413558472,
+          "logged": 413558472,
+          "matches": true
+        },
+        {
+          "start": 4096,
+          "calculated": 2400196641,
+          "logged": 2400196641,
+          "matches": true
+        },
+        {
+          "start": 8192,
+          "calculated": 2206494528,
+          "logged": 2206494528,
+          "matches": true
+        },
+        {
+          "start": 12288,
+          "calculated": 2783571258,
+          "logged": 2783571258,
+          "matches": true
+        },
+        {
+          "start": 16384,
+          "calculated": 2140095037,
+          "logged": 2140095037,
+          "matches": true
+        },
+        {
+          "start": 20480,
+          "calculated": 1510921133,
+          "logged": 1510921133,
+          "matches": true
+        },
+        {
+          "start": 24576,
+          "calculated": 180299345,
+          "logged": 180299345,
+          "matches": true
+        },
+        {
+          "start": 28672,
+          "calculated": 2054580971,
+          "logged": 2054580971,
+          "matches": true
+        },
+        {
+          "start": 32768,
+          "calculated": 3418298641,
+          "logged": 2658351747,
+          "matches": false
+        },
+        {
+          "start": 131072,
+          "calculated": 4284155302,
+          "logged": 4284155302,
+          "matches": true
+        },
+        {
+          "start": 262144,
+          "calculated": 3443585804,
+          "logged": 3443585804,
+          "matches": true
+        },
+        {
+          "start": 393216,
+          "calculated": 493705208,
+          "logged": 493705208,
+          "matches": true
+        },
+        {
+          "start": 524288,
+          "calculated": 2706197376,
+          "logged": 2706197376,
+          "matches": true
+        },
+        {
+          "start": 655360,
+          "calculated": 357041100,
+          "logged": 357041100,
+          "matches": true
+        },
+        {
+          "start": 786432,
+          "calculated": 2172472585,
+          "logged": 2661006774,
+          "matches": false
+        },
+        {
+          "start": 917504,
+          "calculated": 3661740812,
+          "logged": 560316365,
+          "matches": false
+        }
+      ]
+    },
+    {
+      "sha256": "6e556dd084e69af47c230a1787d229aee7b49d957d2848bb14a39a48a69042af",
+      "path": "C:\\Dev\\Astra_A2WC511R\\delivery\\A2WC511R_M0_20260925_EXPERIMENTAL\\artifacts\\A2WC511R.M0.EXPERIMENTAL_UNAPPROVED.checksum_corrected.bin",
+      "page_matches": 13,
+      "total": 16,
+      "pages": [
+        {
+          "start": 0,
+          "calculated": 413558472,
+          "logged": 413558472,
+          "matches": true
+        },
+        {
+          "start": 4096,
+          "calculated": 2400196641,
+          "logged": 2400196641,
+          "matches": true
+        },
+        {
+          "start": 8192,
+          "calculated": 2206494528,
+          "logged": 2206494528,
+          "matches": true
+        },
+        {
+          "start": 12288,
+          "calculated": 2783571258,
+          "logged": 2783571258,
+          "matches": true
+        },
+        {
+          "start": 16384,
+          "calculated": 2140095037,
+          "logged": 2140095037,
+          "matches": true
+        },
+        {
+          "start": 20480,
+          "calculated": 1510921133,
+          "logged": 1510921133,
+          "matches": true
+        },
+        {
+          "start": 24576,
+          "calculated": 180299345,
+          "logged": 180299345,
+          "matches": true
+        },
+        {
+          "start": 28672,
+          "calculated": 2054580971,
+          "logged": 2054580971,
+          "matches": true
+        },
+        {
+          "start": 32768,
+          "calculated": 4264973215,
+          "logged": 2658351747,
+          "matches": false
+        },
+        {
+          "start": 131072,
+          "calculated": 4284155302,
+          "logged": 4284155302,
+          "matches": true
+        },
+        {
+          "start": 262144,
+          "calculated": 3443585804,
+          "logged": 3443585804,
+          "matches": true
+        },
+        {
+          "start": 393216,
+          "calculated": 493705208,
+          "logged": 493705208,
+          "matches": true
+        },
+        {
+          "start": 524288,
+          "calculated": 2706197376,
+          "logged": 2706197376,
+          "matches": true
+        },
+        {
+          "start": 655360,
+          "calculated": 357041100,
+          "logged": 357041100,
+          "matches": true
+        },
+        {
+          "start": 786432,
+          "calculated": 2172472585,
+          "logged": 2661006774,
+          "matches": false
+        },
+        {
+          "start": 917504,
+          "calculated": 329850142,
+          "logged": 560316365,
+          "matches": false
+        }
+      ]
+    },
+    {
+      "sha256": "8092a20fd37f17dd351d18c805fdf195c2207af9adecca25e388146c7a9acc37",
+      "path": "C:\\Dev\\Astra_A2WC511R\\delivery\\A2WC511R_M0_20260925_EXPERIMENTAL\\artifacts\\A2WC511R.M0.EXPERIMENTAL_UNAPPROVED.raw.bin",
+      "page_matches": 13,
+      "total": 16,
+      "pages": [
+        {
+          "start": 0,
+          "calculated": 413558472,
+          "logged": 413558472,
+          "matches": true
+        },
+        {
+          "start": 4096,
+          "calculated": 2400196641,
+          "logged": 2400196641,
+          "matches": true
+        },
+        {
+          "start": 8192,
+          "calculated": 2206494528,
+          "logged": 2206494528,
+          "matches": true
+        },
+        {
+          "start": 12288,
+          "calculated": 2783571258,
+          "logged": 2783571258,
+          "matches": true
+        },
+        {
+          "start": 16384,
+          "calculated": 2140095037,
+          "logged": 2140095037,
+          "matches": true
+        },
+        {
+          "start": 20480,
+          "calculated": 1510921133,
+          "logged": 1510921133,
+          "matches": true
+        },
+        {
+          "start": 24576,
+          "calculated": 180299345,
+          "logged": 180299345,
+          "matches": true
+        },
+        {
+          "start": 28672,
+          "calculated": 2054580971,
+          "logged": 2054580971,
+          "matches": true
+        },
+        {
+          "start": 32768,
+          "calculated": 4264973215,
+          "logged": 2658351747,
+          "matches": false
+        },
+        {
+          "start": 131072,
+          "calculated": 4284155302,
+          "logged": 4284155302,
+          "matches": true
+        },
+        {
+          "start": 262144,
+          "calculated": 3443585804,
+          "logged": 3443585804,
+          "matches": true
+        },
+        {
+          "start": 393216,
+          "calculated": 493705208,
+          "logged": 493705208,
+          "matches": true
+        },
+        {
+          "start": 524288,
+          "calculated": 2706197376,
+          "logged": 2706197376,
+          "matches": true
+        },
+        {
+          "start": 655360,
+          "calculated": 357041100,
+          "logged": 357041100,
+          "matches": true
+        },
+        {
+          "start": 786432,
+          "calculated": 2172472585,
+          "logged": 2661006774,
+          "matches": false
+        },
+        {
+          "start": 917504,
+          "calculated": 2101318483,
+          "logged": 560316365,
+          "matches": false
+        }
+      ]
+    },
+    {
+      "sha256": "e958daa7f840512fbd19364bc3983959a233c8e7ac932cae1e082c01496bde2e",
+      "path": "C:\\Dev\\Astra_A2WC511R\\delivery\\A2WC511R_M0_20260925_EXPERIMENTAL\\validation\\local\\interfaces\\native_save_core.NOT_FLASH_READY.bin",
+      "page_matches": 13,
+      "total": 16,
+      "pages": [
+        {
+          "start": 0,
+          "calculated": 413558472,
+          "logged": 413558472,
+          "matches": true
+        },
+        {
+          "start": 4096,
+          "calculated": 2400196641,
+          "logged": 2400196641,
+          "matches": true
+        },
+        {
+          "start": 8192,
+          "calculated": 2206494528,
+          "logged": 2206494528,
+          "matches": true
+        },
+        {
+          "start": 12288,
+          "calculated": 2783571258,
+          "logged": 2783571258,
+          "matches": true
+        },
+        {
+          "start": 16384,
+          "calculated": 2140095037,
+          "logged": 2140095037,
+          "matches": true
+        },
+        {
+          "start": 20480,
+          "calculated": 1510921133,
+          "logged": 1510921133,
+          "matches": true
+        },
+        {
+          "start": 24576,
+          "calculated": 180299345,
+          "logged": 180299345,
+          "matches": true
+        },
+        {
+          "start": 28672,
+          "calculated": 2054580971,
+          "logged": 2054580971,
+          "matches": true
+        },
+        {
+          "start": 32768,
+          "calculated": 3418298641,
+          "logged": 2658351747,
+          "matches": false
+        },
+        {
+          "start": 131072,
+          "calculated": 4284155302,
+          "logged": 4284155302,
+          "matches": true
+        },
+        {
+          "start": 262144,
+          "calculated": 3443585804,
+          "logged": 3443585804,
+          "matches": true
+        },
+        {
+          "start": 393216,
+          "calculated": 493705208,
+          "logged": 493705208,
+          "matches": true
+        },
+        {
+          "start": 524288,
+          "calculated": 2706197376,
+          "logged": 2706197376,
+          "matches": true
+        },
+        {
+          "start": 655360,
+          "calculated": 357041100,
+          "logged": 357041100,
+          "matches": true
+        },
+        {
+          "start": 786432,
+          "calculated": 2172472585,
+          "logged": 2661006774,
+          "matches": false
+        },
+        {
+          "start": 917504,
+          "calculated": 4134183548,
+          "logged": 560316365,
+          "matches": false
+        }
+      ]
+    },
+    {
+      "sha256": "a4218fcfb21f0c760b5347c98301fca66cd6b6a0bb8a2c3ca168a59f20b46646",
+      "path": "C:\\Dev\\Astra_A2WC511R\\delivery\\A2WC511R_M0_20260925_EXPERIMENTAL\\validation\\patch\\A2WC511R.M0.EXPERIMENTAL.corrected_then_removed.bin",
+      "page_matches": 13,
+      "total": 16,
+      "pages": [
+        {
+          "start": 0,
+          "calculated": 413558472,
+          "logged": 413558472,
+          "matches": true
+        },
+        {
+          "start": 4096,
+          "calculated": 2400196641,
+          "logged": 2400196641,
+          "matches": true
+        },
+        {
+          "start": 8192,
+          "calculated": 2206494528,
+          "logged": 2206494528,
+          "matches": true
+        },
+        {
+          "start": 12288,
+          "calculated": 2783571258,
+          "logged": 2783571258,
+          "matches": true
+        },
+        {
+          "start": 16384,
+          "calculated": 2140095037,
+          "logged": 2140095037,
+          "matches": true
+        },
+        {
+          "start": 20480,
+          "calculated": 1510921133,
+          "logged": 1510921133,
+          "matches": true
+        },
+        {
+          "start": 24576,
+          "calculated": 180299345,
+          "logged": 180299345,
+          "matches": true
+        },
+        {
+          "start": 28672,
+          "calculated": 2054580971,
+          "logged": 2054580971,
+          "matches": true
+        },
+        {
+          "start": 32768,
+          "calculated": 3418298641,
+          "logged": 2658351747,
+          "matches": false
+        },
+        {
+          "start": 131072,
+          "calculated": 4284155302,
+          "logged": 4284155302,
+          "matches": true
+        },
+        {
+          "start": 262144,
+          "calculated": 3443585804,
+          "logged": 3443585804,
+          "matches": true
+        },
+        {
+          "start": 393216,
+          "calculated": 493705208,
+          "logged": 493705208,
+          "matches": true
+        },
+        {
+          "start": 524288,
+          "calculated": 2706197376,
+          "logged": 2706197376,
+          "matches": true
+        },
+        {
+          "start": 655360,
+          "calculated": 357041100,
+          "logged": 357041100,
+          "matches": true
+        },
+        {
+          "start": 786432,
+          "calculated": 2172472585,
+          "logged": 2661006774,
+          "matches": false
+        },
+        {
+          "start": 917504,
+          "calculated": 3034002753,
+          "logged": 560316365,
+          "matches": false
+        }
+      ]
+    },
+    {
+      "sha256": "f832ed27c51f749bc793ffc88b5515994e3801c95995ee703e7fc1230e28169e",
+      "path": "C:\\Dev\\Astra_A2WC511R\\delivery\\A2WC511R_M0_20260925_EXPERIMENTAL\\validation\\patch\\negative_bad_hook.bin",
+      "page_matches": 13,
+      "total": 16,
+      "pages": [
+        {
+          "start": 0,
+          "calculated": 413558472,
+          "logged": 413558472,
+          "matches": true
+        },
+        {
+          "start": 4096,
+          "calculated": 2400196641,
+          "logged": 2400196641,
+          "matches": true
+        },
+        {
+          "start": 8192,
+          "calculated": 2206494528,
+          "logged": 2206494528,
+          "matches": true
+        },
+        {
+          "start": 12288,
+          "calculated": 2783571258,
+          "logged": 2783571258,
+          "matches": true
+        },
+        {
+          "start": 16384,
+          "calculated": 2140095037,
+          "logged": 2140095037,
+          "matches": true
+        },
+        {
+          "start": 20480,
+          "calculated": 1510921133,
+          "logged": 1510921133,
+          "matches": true
+        },
+        {
+          "start": 24576,
+          "calculated": 180299345,
+          "logged": 180299345,
+          "matches": true
+        },
+        {
+          "start": 28672,
+          "calculated": 2054580971,
+          "logged": 2054580971,
+          "matches": true
+        },
+        {
+          "start": 32768,
+          "calculated": 2354199113,
+          "logged": 2658351747,
+          "matches": false
+        },
+        {
+          "start": 131072,
+          "calculated": 4284155302,
+          "logged": 4284155302,
+          "matches": true
+        },
+        {
+          "start": 262144,
+          "calculated": 3443585804,
+          "logged": 3443585804,
+          "matches": true
+        },
+        {
+          "start": 393216,
+          "calculated": 493705208,
+          "logged": 493705208,
+          "matches": true
+        },
+        {
+          "start": 524288,
+          "calculated": 2706197376,
+          "logged": 2706197376,
+          "matches": true
+        },
+        {
+          "start": 655360,
+          "calculated": 357041100,
+          "logged": 357041100,
+          "matches": true
+        },
+        {
+          "start": 786432,
+          "calculated": 2172472585,
+          "logged": 2661006774,
+          "matches": false
+        },
+        {
+          "start": 917504,
+          "calculated": 3661740812,
+          "logged": 560316365,
+          "matches": false
+        }
+      ]
+    },
+    {
+      "sha256": "8220606b741fb5c1e927a3f0b5007d1a702e0cd4a9532f1854d2d52d8b323cd5",
+      "path": "C:\\Dev\\Astra_A2WC511R\\delivery\\A2WC511R_M0_20260925_EXPERIMENTAL\\validation\\patch\\negative_bad_payload.bin",
+      "page_matches": 13,
+      "total": 16,
+      "pages": [
+        {
+          "start": 0,
+          "calculated": 413558472,
+          "logged": 413558472,
+          "matches": true
+        },
+        {
+          "start": 4096,
+          "calculated": 2400196641,
+          "logged": 2400196641,
+          "matches": true
+        },
+        {
+          "start": 8192,
+          "calculated": 2206494528,
+          "logged": 2206494528,
+          "matches": true
+        },
+        {
+          "start": 12288,
+          "calculated": 2783571258,
+          "logged": 2783571258,
+          "matches": true
+        },
+        {
+          "start": 16384,
+          "calculated": 2140095037,
+          "logged": 2140095037,
+          "matches": true
+        },
+        {
+          "start": 20480,
+          "calculated": 1510921133,
+          "logged": 1510921133,
+          "matches": true
+        },
+        {
+          "start": 24576,
+          "calculated": 180299345,
+          "logged": 180299345,
+          "matches": true
+        },
+        {
+          "start": 28672,
+          "calculated": 2054580971,
+          "logged": 2054580971,
+          "matches": true
+        },
+        {
+          "start": 32768,
+          "calculated": 4264973215,
+          "logged": 2658351747,
+          "matches": false
+        },
+        {
+          "start": 131072,
+          "calculated": 4284155302,
+          "logged": 4284155302,
+          "matches": true
+        },
+        {
+          "start": 262144,
+          "calculated": 3443585804,
+          "logged": 3443585804,
+          "matches": true
+        },
+        {
+          "start": 393216,
+          "calculated": 493705208,
+          "logged": 493705208,
+          "matches": true
+        },
+        {
+          "start": 524288,
+          "calculated": 2706197376,
+          "logged": 2706197376,
+          "matches": true
+        },
+        {
+          "start": 655360,
+          "calculated": 357041100,
+          "logged": 357041100,
+          "matches": true
+        },
+        {
+          "start": 786432,
+          "calculated": 2172472585,
+          "logged": 2661006774,
+          "matches": false
+        },
+        {
+          "start": 917504,
+          "calculated": 1723490684,
+          "logged": 560316365,
+          "matches": false
+        }
+      ]
+    },
+    {
+      "sha256": "1aac3214ec276822f1343e66fc1b8af83be8e61866d2d182882beb88317b4920",
+      "path": "C:\\Dev\\Astra_A2WC511R\\evidence\\original\\ECUFlashReadRaw(1).bin",
+      "page_matches": 14,
+      "total": 16,
+      "pages": [
+        {
+          "start": 0,
+          "calculated": 413558472,
+          "logged": 413558472,
+          "matches": true
+        },
+        {
+          "start": 4096,
+          "calculated": 2400196641,
+          "logged": 2400196641,
+          "matches": true
+        },
+        {
+          "start": 8192,
+          "calculated": 2206494528,
+          "logged": 2206494528,
+          "matches": true
+        },
+        {
+          "start": 12288,
+          "calculated": 2783571258,
+          "logged": 2783571258,
+          "matches": true
+        },
+        {
+          "start": 16384,
+          "calculated": 2140095037,
+          "logged": 2140095037,
+          "matches": true
+        },
+        {
+          "start": 20480,
+          "calculated": 1510921133,
+          "logged": 1510921133,
+          "matches": true
+        },
+        {
+          "start": 24576,
+          "calculated": 180299345,
+          "logged": 180299345,
+          "matches": true
+        },
+        {
+          "start": 28672,
+          "calculated": 2054580971,
+          "logged": 2054580971,
+          "matches": true
+        },
+        {
+          "start": 32768,
+          "calculated": 2658351747,
+          "logged": 2658351747,
+          "matches": true
+        },
+        {
+          "start": 131072,
+          "calculated": 4284155302,
+          "logged": 4284155302,
+          "matches": true
+        },
+        {
+          "start": 262144,
+          "calculated": 3443585804,
+          "logged": 3443585804,
+          "matches": true
+        },
+        {
+          "start": 393216,
+          "calculated": 493705208,
+          "logged": 493705208,
+          "matches": true
+        },
+        {
+          "start": 524288,
+          "calculated": 2706197376,
+          "logged": 2706197376,
+          "matches": true
+        },
+        {
+          "start": 655360,
+          "calculated": 357041100,
+          "logged": 357041100,
+          "matches": true
+        },
+        {
+          "start": 786432,
+          "calculated": 2077826461,
+          "logged": 2661006774,
+          "matches": false
+        },
+        {
+          "start": 917504,
+          "calculated": 3011501386,
+          "logged": 560316365,
+          "matches": false
+        }
+      ]
+    },
+    {
+      "sha256": "2f9c2f8af56e337e9fa31fd5efd4b1f01d3474f78396065ad3fc9a0bd132cbdc",
+      "path": "C:\\Dev\\Astra_A2WC511R\\evidence\\original\\ECUFlashReadRR(1).bin",
+      "page_matches": 14,
+      "total": 16,
+      "pages": [
+        {
+          "start": 0,
+          "calculated": 413558472,
+          "logged": 413558472,
+          "matches": true
+        },
+        {
+          "start": 4096,
+          "calculated": 2400196641,
+          "logged": 2400196641,
+          "matches": true
+        },
+        {
+          "start": 8192,
+          "calculated": 2206494528,
+          "logged": 2206494528,
+          "matches": true
+        },
+        {
+          "start": 12288,
+          "calculated": 2783571258,
+          "logged": 2783571258,
+          "matches": true
+        },
+        {
+          "start": 16384,
+          "calculated": 2140095037,
+          "logged": 2140095037,
+          "matches": true
+        },
+        {
+          "start": 20480,
+          "calculated": 1510921133,
+          "logged": 1510921133,
+          "matches": true
+        },
+        {
+          "start": 24576,
+          "calculated": 180299345,
+          "logged": 180299345,
+          "matches": true
+        },
+        {
+          "start": 28672,
+          "calculated": 2054580971,
+          "logged": 2054580971,
+          "matches": true
+        },
+        {
+          "start": 32768,
+          "calculated": 2658351747,
+          "logged": 2658351747,
+          "matches": true
+        },
+        {
+          "start": 131072,
+          "calculated": 4284155302,
+          "logged": 4284155302,
+          "matches": true
+        },
+        {
+          "start": 262144,
+          "calculated": 3443585804,
+          "logged": 3443585804,
+          "matches": true
+        },
+        {
+          "start": 393216,
+          "calculated": 493705208,
+          "logged": 493705208,
+          "matches": true
+        },
+        {
+          "start": 524288,
+          "calculated": 2706197376,
+          "logged": 2706197376,
+          "matches": true
+        },
+        {
+          "start": 655360,
+          "calculated": 357041100,
+          "logged": 357041100,
+          "matches": true
+        },
+        {
+          "start": 786432,
+          "calculated": 2077826461,
+          "logged": 2661006774,
+          "matches": false
+        },
+        {
+          "start": 917504,
+          "calculated": 902281613,
+          "logged": 560316365,
+          "matches": false
+        }
+      ]
+    },
+    {
+      "sha256": "c163455b11b883500457ad9b899fe157a904bb807958d4f3367beade4a431816",
+      "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\gate_closure\\interfaces\\gui_run05\\c163455b11b883500457ad9b899fe157a904bb807958d4f3367beade4a431816.NOT_FLASH_READY.bin",
+      "page_matches": 13,
+      "total": 16,
+      "pages": [
+        {
+          "start": 0,
+          "calculated": 413558472,
+          "logged": 413558472,
+          "matches": true
+        },
+        {
+          "start": 4096,
+          "calculated": 2400196641,
+          "logged": 2400196641,
+          "matches": true
+        },
+        {
+          "start": 8192,
+          "calculated": 2206494528,
+          "logged": 2206494528,
+          "matches": true
+        },
+        {
+          "start": 12288,
+          "calculated": 2783571258,
+          "logged": 2783571258,
+          "matches": true
+        },
+        {
+          "start": 16384,
+          "calculated": 2140095037,
+          "logged": 2140095037,
+          "matches": true
+        },
+        {
+          "start": 20480,
+          "calculated": 1510921133,
+          "logged": 1510921133,
+          "matches": true
+        },
+        {
+          "start": 24576,
+          "calculated": 180299345,
+          "logged": 180299345,
+          "matches": true
+        },
+        {
+          "start": 28672,
+          "calculated": 2054580971,
+          "logged": 2054580971,
+          "matches": true
+        },
+        {
+          "start": 32768,
+          "calculated": 3418298641,
+          "logged": 2658351747,
+          "matches": false
+        },
+        {
+          "start": 131072,
+          "calculated": 4284155302,
+          "logged": 4284155302,
+          "matches": true
+        },
+        {
+          "start": 262144,
+          "calculated": 3443585804,
+          "logged": 3443585804,
+          "matches": true
+        },
+        {
+          "start": 393216,
+          "calculated": 493705208,
+          "logged": 493705208,
+          "matches": true
+        },
+        {
+          "start": 524288,
+          "calculated": 2706197376,
+          "logged": 2706197376,
+          "matches": true
+        },
+        {
+          "start": 655360,
+          "calculated": 357041100,
+          "logged": 357041100,
+          "matches": true
+        },
+        {
+          "start": 786432,
+          "calculated": 3351365995,
+          "logged": 2661006774,
+          "matches": false
+        },
+        {
+          "start": 917504,
+          "calculated": 3661740812,
+          "logged": 560316365,
+          "matches": false
+        }
+      ]
+    },
+    {
+      "sha256": "de821aaac257e8704616a87378c936eda751ab2b05e8087050f04e6fc8388781",
+      "path": "C:\\Dev\\Astra_A2WC511R\\work\\gate_closure\\romraider_gui\\GUI_SAVED.NOT_FLASH_READY.bin",
+      "page_matches": 13,
+      "total": 16,
+      "pages": [
+        {
+          "start": 0,
+          "calculated": 413558472,
+          "logged": 413558472,
+          "matches": true
+        },
+        {
+          "start": 4096,
+          "calculated": 2400196641,
+          "logged": 2400196641,
+          "matches": true
+        },
+        {
+          "start": 8192,
+          "calculated": 2206494528,
+          "logged": 2206494528,
+          "matches": true
+        },
+        {
+          "start": 12288,
+          "calculated": 2783571258,
+          "logged": 2783571258,
+          "matches": true
+        },
+        {
+          "start": 16384,
+          "calculated": 2140095037,
+          "logged": 2140095037,
+          "matches": true
+        },
+        {
+          "start": 20480,
+          "calculated": 1510921133,
+          "logged": 1510921133,
+          "matches": true
+        },
+        {
+          "start": 24576,
+          "calculated": 180299345,
+          "logged": 180299345,
+          "matches": true
+        },
+        {
+          "start": 28672,
+          "calculated": 2054580971,
+          "logged": 2054580971,
+          "matches": true
+        },
+        {
+          "start": 32768,
+          "calculated": 3418298641,
+          "logged": 2658351747,
+          "matches": false
+        },
+        {
+          "start": 131072,
+          "calculated": 4284155302,
+          "logged": 4284155302,
+          "matches": true
+        },
+        {
+          "start": 262144,
+          "calculated": 3443585804,
+          "logged": 3443585804,
+          "matches": true
+        },
+        {
+          "start": 393216,
+          "calculated": 493705208,
+          "logged": 493705208,
+          "matches": true
+        },
+        {
+          "start": 524288,
+          "calculated": 2706197376,
+          "logged": 2706197376,
+          "matches": true
+        },
+        {
+          "start": 655360,
+          "calculated": 357041100,
+          "logged": 357041100,
+          "matches": true
+        },
+        {
+          "start": 786432,
+          "calculated": 3351365995,
+          "logged": 2661006774,
+          "matches": false
+        },
+        {
+          "start": 917504,
+          "calculated": 1352532161,
+          "logged": 560316365,
+          "matches": false
+        }
+      ]
+    },
+    {
+      "sha256": "276b60d65958ae90afc9e5e82e449c7e04001d614a6aa8e9e4a0e6c1a2eafb60",
+      "path": "C:\\Dev\\Astra_A2WC511R\\work\\patches\\m0_experimental_01\\A2WC511R.M0.EXPERIMENTAL.corrected_then_removed.bin",
+      "page_matches": 13,
+      "total": 16,
+      "pages": [
+        {
+          "start": 0,
+          "calculated": 413558472,
+          "logged": 413558472,
+          "matches": true
+        },
+        {
+          "start": 4096,
+          "calculated": 2400196641,
+          "logged": 2400196641,
+          "matches": true
+        },
+        {
+          "start": 8192,
+          "calculated": 2206494528,
+          "logged": 2206494528,
+          "matches": true
+        },
+        {
+          "start": 12288,
+          "calculated": 2783571258,
+          "logged": 2783571258,
+          "matches": true
+        },
+        {
+          "start": 16384,
+          "calculated": 2140095037,
+          "logged": 2140095037,
+          "matches": true
+        },
+        {
+          "start": 20480,
+          "calculated": 1510921133,
+          "logged": 1510921133,
+          "matches": true
+        },
+        {
+          "start": 24576,
+          "calculated": 180299345,
+          "logged": 180299345,
+          "matches": true
+        },
+        {
+          "start": 28672,
+          "calculated": 2054580971,
+          "logged": 2054580971,
+          "matches": true
+        },
+        {
+          "start": 32768,
+          "calculated": 3418298641,
+          "logged": 2658351747,
+          "matches": false
+        },
+        {
+          "start": 131072,
+          "calculated": 4284155302,
+          "logged": 4284155302,
+          "matches": true
+        },
+        {
+          "start": 262144,
+          "calculated": 3443585804,
+          "logged": 3443585804,
+          "matches": true
+        },
+        {
+          "start": 393216,
+          "calculated": 493705208,
+          "logged": 493705208,
+          "matches": true
+        },
+        {
+          "start": 524288,
+          "calculated": 2706197376,
+          "logged": 2706197376,
+          "matches": true
+        },
+        {
+          "start": 655360,
+          "calculated": 357041100,
+          "logged": 357041100,
+          "matches": true
+        },
+        {
+          "start": 786432,
+          "calculated": 2172472585,
+          "logged": 2661006774,
+          "matches": false
+        },
+        {
+          "start": 917504,
+          "calculated": 1090945790,
+          "logged": 560316365,
+          "matches": false
+        }
+      ]
+    },
+    {
+      "sha256": "f4517a8f8be92ec87b414b755f9095374282fbb21b642664c1d8e3f6693c3856",
+      "path": "C:\\Dev\\Astra_A2WC511R\\work\\patches\\m0_experimental_01\\A2WC511R.M0.EXPERIMENTAL_UNAPPROVED.checksum_corrected.bin",
+      "page_matches": 13,
+      "total": 16,
+      "pages": [
+        {
+          "start": 0,
+          "calculated": 413558472,
+          "logged": 413558472,
+          "matches": true
+        },
+        {
+          "start": 4096,
+          "calculated": 2400196641,
+          "logged": 2400196641,
+          "matches": true
+        },
+        {
+          "start": 8192,
+          "calculated": 2206494528,
+          "logged": 2206494528,
+          "matches": true
+        },
+        {
+          "start": 12288,
+          "calculated": 2783571258,
+          "logged": 2783571258,
+          "matches": true
+        },
+        {
+          "start": 16384,
+          "calculated": 2140095037,
+          "logged": 2140095037,
+          "matches": true
+        },
+        {
+          "start": 20480,
+          "calculated": 1510921133,
+          "logged": 1510921133,
+          "matches": true
+        },
+        {
+          "start": 24576,
+          "calculated": 180299345,
+          "logged": 180299345,
+          "matches": true
+        },
+        {
+          "start": 28672,
+          "calculated": 2054580971,
+          "logged": 2054580971,
+          "matches": true
+        },
+        {
+          "start": 32768,
+          "calculated": 1526465995,
+          "logged": 2658351747,
+          "matches": false
+        },
+        {
+          "start": 131072,
+          "calculated": 4284155302,
+          "logged": 4284155302,
+          "matches": true
+        },
+        {
+          "start": 262144,
+          "calculated": 3443585804,
+          "logged": 3443585804,
+          "matches": true
+        },
+        {
+          "start": 393216,
+          "calculated": 493705208,
+          "logged": 493705208,
+          "matches": true
+        },
+        {
+          "start": 524288,
+          "calculated": 2706197376,
+          "logged": 2706197376,
+          "matches": true
+        },
+        {
+          "start": 655360,
+          "calculated": 357041100,
+          "logged": 357041100,
+          "matches": true
+        },
+        {
+          "start": 786432,
+          "calculated": 2172472585,
+          "logged": 2661006774,
+          "matches": false
+        },
+        {
+          "start": 917504,
+          "calculated": 2339250209,
+          "logged": 560316365,
+          "matches": false
+        }
+      ]
+    },
+    {
+      "sha256": "3544df4b742bb85553f639356abdb1a58ebc3b8126a667a147a37bd741a322e6",
+      "path": "C:\\Dev\\Astra_A2WC511R\\work\\patches\\m0_experimental_01\\A2WC511R.M0.EXPERIMENTAL_UNAPPROVED.raw.bin",
+      "page_matches": 13,
+      "total": 16,
+      "pages": [
+        {
+          "start": 0,
+          "calculated": 413558472,
+          "logged": 413558472,
+          "matches": true
+        },
+        {
+          "start": 4096,
+          "calculated": 2400196641,
+          "logged": 2400196641,
+          "matches": true
+        },
+        {
+          "start": 8192,
+          "calculated": 2206494528,
+          "logged": 2206494528,
+          "matches": true
+        },
+        {
+          "start": 12288,
+          "calculated": 2783571258,
+          "logged": 2783571258,
+          "matches": true
+        },
+        {
+          "start": 16384,
+          "calculated": 2140095037,
+          "logged": 2140095037,
+          "matches": true
+        },
+        {
+          "start": 20480,
+          "calculated": 1510921133,
+          "logged": 1510921133,
+          "matches": true
+        },
+        {
+          "start": 24576,
+          "calculated": 180299345,
+          "logged": 180299345,
+          "matches": true
+        },
+        {
+          "start": 28672,
+          "calculated": 2054580971,
+          "logged": 2054580971,
+          "matches": true
+        },
+        {
+          "start": 32768,
+          "calculated": 1526465995,
+          "logged": 2658351747,
+          "matches": false
+        },
+        {
+          "start": 131072,
+          "calculated": 4284155302,
+          "logged": 4284155302,
+          "matches": true
+        },
+        {
+          "start": 262144,
+          "calculated": 3443585804,
+          "logged": 3443585804,
+          "matches": true
+        },
+        {
+          "start": 393216,
+          "calculated": 493705208,
+          "logged": 493705208,
+          "matches": true
+        },
+        {
+          "start": 524288,
+          "calculated": 2706197376,
+          "logged": 2706197376,
+          "matches": true
+        },
+        {
+          "start": 655360,
+          "calculated": 357041100,
+          "logged": 357041100,
+          "matches": true
+        },
+        {
+          "start": 786432,
+          "calculated": 2172472585,
+          "logged": 2661006774,
+          "matches": false
+        },
+        {
+          "start": 917504,
+          "calculated": 271129043,
+          "logged": 560316365,
+          "matches": false
+        }
+      ]
+    },
+    {
+      "sha256": "b906c58666b28b2449bd008135223e884c429802bc996e1f5121d28cc4535b3c",
+      "path": "C:\\Dev\\Astra_A2WC511R\\work\\patches\\m0_experimental_01\\negative_bad_payload.bin",
+      "page_matches": 13,
+      "total": 16,
+      "pages": [
+        {
+          "start": 0,
+          "calculated": 413558472,
+          "logged": 413558472,
+          "matches": true
+        },
+        {
+          "start": 4096,
+          "calculated": 2400196641,
+          "logged": 2400196641,
+          "matches": true
+        },
+        {
+          "start": 8192,
+          "calculated": 2206494528,
+          "logged": 2206494528,
+          "matches": true
+        },
+        {
+          "start": 12288,
+          "calculated": 2783571258,
+          "logged": 2783571258,
+          "matches": true
+        },
+        {
+          "start": 16384,
+          "calculated": 2140095037,
+          "logged": 2140095037,
+          "matches": true
+        },
+        {
+          "start": 20480,
+          "calculated": 1510921133,
+          "logged": 1510921133,
+          "matches": true
+        },
+        {
+          "start": 24576,
+          "calculated": 180299345,
+          "logged": 180299345,
+          "matches": true
+        },
+        {
+          "start": 28672,
+          "calculated": 2054580971,
+          "logged": 2054580971,
+          "matches": true
+        },
+        {
+          "start": 32768,
+          "calculated": 1526465995,
+          "logged": 2658351747,
+          "matches": false
+        },
+        {
+          "start": 131072,
+          "calculated": 4284155302,
+          "logged": 4284155302,
+          "matches": true
+        },
+        {
+          "start": 262144,
+          "calculated": 3443585804,
+          "logged": 3443585804,
+          "matches": true
+        },
+        {
+          "start": 393216,
+          "calculated": 493705208,
+          "logged": 493705208,
+          "matches": true
+        },
+        {
+          "start": 524288,
+          "calculated": 2706197376,
+          "logged": 2706197376,
+          "matches": true
+        },
+        {
+          "start": 655360,
+          "calculated": 357041100,
+          "logged": 357041100,
+          "matches": true
+        },
+        {
+          "start": 786432,
+          "calculated": 2172472585,
+          "logged": 2661006774,
+          "matches": false
+        },
+        {
+          "start": 917504,
+          "calculated": 195881980,
+          "logged": 560316365,
+          "matches": false
+        }
+      ]
+    },
+    {
+      "sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2",
+      "path": "C:\\Users\\Jeriah Neal\\Desktop\\AdjustedBaseTimingANDNOCLOLD.bin",
+      "page_matches": 16,
+      "total": 16,
+      "pages": [
+        {
+          "start": 0,
+          "calculated": 413558472,
+          "logged": 413558472,
+          "matches": true
+        },
+        {
+          "start": 4096,
+          "calculated": 2400196641,
+          "logged": 2400196641,
+          "matches": true
+        },
+        {
+          "start": 8192,
+          "calculated": 2206494528,
+          "logged": 2206494528,
+          "matches": true
+        },
+        {
+          "start": 12288,
+          "calculated": 2783571258,
+          "logged": 2783571258,
+          "matches": true
+        },
+        {
+          "start": 16384,
+          "calculated": 2140095037,
+          "logged": 2140095037,
+          "matches": true
+        },
+        {
+          "start": 20480,
+          "calculated": 1510921133,
+          "logged": 1510921133,
+          "matches": true
+        },
+        {
+          "start": 24576,
+          "calculated": 180299345,
+          "logged": 180299345,
+          "matches": true
+        },
+        {
+          "start": 28672,
+          "calculated": 2054580971,
+          "logged": 2054580971,
+          "matches": true
+        },
+        {
+          "start": 32768,
+          "calculated": 2658351747,
+          "logged": 2658351747,
+          "matches": true
+        },
+        {
+          "start": 131072,
+          "calculated": 4284155302,
+          "logged": 4284155302,
+          "matches": true
+        },
+        {
+          "start": 262144,
+          "calculated": 3443585804,
+          "logged": 3443585804,
+          "matches": true
+        },
+        {
+          "start": 393216,
+          "calculated": 493705208,
+          "logged": 493705208,
+          "matches": true
+        },
+        {
+          "start": 524288,
+          "calculated": 2706197376,
+          "logged": 2706197376,
+          "matches": true
+        },
+        {
+          "start": 655360,
+          "calculated": 357041100,
+          "logged": 357041100,
+          "matches": true
+        },
+        {
+          "start": 786432,
+          "calculated": 2661006774,
+          "logged": 2661006774,
+          "matches": true
+        },
+        {
+          "start": 917504,
+          "calculated": 560316365,
+          "logged": 560316365,
+          "matches": true
+        }
+      ]
+    },
+    {
+      "sha256": "d2dc34e1b21985c89b49996c9dedd88494c90c65e2da0c0a735d31d54ca92171",
+      "path": "C:\\Users\\Jeriah Neal\\Desktop\\REV3Map.bin",
+      "page_matches": 14,
+      "total": 16,
+      "pages": [
+        {
+          "start": 0,
+          "calculated": 413558472,
+          "logged": 413558472,
+          "matches": true
+        },
+        {
+          "start": 4096,
+          "calculated": 2400196641,
+          "logged": 2400196641,
+          "matches": true
+        },
+        {
+          "start": 8192,
+          "calculated": 2206494528,
+          "logged": 2206494528,
+          "matches": true
+        },
+        {
+          "start": 12288,
+          "calculated": 2783571258,
+          "logged": 2783571258,
+          "matches": true
+        },
+        {
+          "start": 16384,
+          "calculated": 2140095037,
+          "logged": 2140095037,
+          "matches": true
+        },
+        {
+          "start": 20480,
+          "calculated": 1510921133,
+          "logged": 1510921133,
+          "matches": true
+        },
+        {
+          "start": 24576,
+          "calculated": 180299345,
+          "logged": 180299345,
+          "matches": true
+        },
+        {
+          "start": 28672,
+          "calculated": 2054580971,
+          "logged": 2054580971,
+          "matches": true
+        },
+        {
+          "start": 32768,
+          "calculated": 2658351747,
+          "logged": 2658351747,
+          "matches": true
+        },
+        {
+          "start": 131072,
+          "calculated": 4284155302,
+          "logged": 4284155302,
+          "matches": true
+        },
+        {
+          "start": 262144,
+          "calculated": 3443585804,
+          "logged": 3443585804,
+          "matches": true
+        },
+        {
+          "start": 393216,
+          "calculated": 493705208,
+          "logged": 493705208,
+          "matches": true
+        },
+        {
+          "start": 524288,
+          "calculated": 2706197376,
+          "logged": 2706197376,
+          "matches": true
+        },
+        {
+          "start": 655360,
+          "calculated": 357041100,
+          "logged": 357041100,
+          "matches": true
+        },
+        {
+          "start": 786432,
+          "calculated": 2199819060,
+          "logged": 2661006774,
+          "matches": false
+        },
+        {
+          "start": 917504,
+          "calculated": 644648490,
+          "logged": 560316365,
+          "matches": false
+        }
+      ]
+    }
+  ],
+  "tune_history_pairwise": [
+    {
+      "from": "1aac3214ec276822f1343e66fc1b8af83be8e61866d2d182882beb88317b4920",
+      "to": "2f9c2f8af56e337e9fa31fd5efd4b1f01d3474f78396065ad3fc9a0bd132cbdc",
+      "count": 3,
+      "ranges": [
+        {
+          "start": 1047629,
+          "end": 1047632
+        }
+      ]
+    },
+    {
+      "from": "1aac3214ec276822f1343e66fc1b8af83be8e61866d2d182882beb88317b4920",
+      "to": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2",
+      "count": 53,
+      "ranges": [
+        {
+          "start": 814017,
+          "end": 814018
+        },
+        {
+          "start": 814019,
+          "end": 814020
+        },
+        {
+          "start": 814021,
+          "end": 814022
+        },
+        {
+          "start": 814023,
+          "end": 814024
+        },
+        {
+          "start": 814025,
+          "end": 814026
+        },
+        {
+          "start": 814027,
+          "end": 814028
+        },
+        {
+          "start": 814029,
+          "end": 814030
+        },
+        {
+          "start": 814031,
+          "end": 814032
+        },
+        {
+          "start": 814033,
+          "end": 814034
+        },
+        {
+          "start": 827812,
+          "end": 827820
+        },
+        {
+          "start": 827828,
+          "end": 827835
+        },
+        {
+          "start": 827844,
+          "end": 827852
+        },
+        {
+          "start": 827860,
+          "end": 827868
+        },
+        {
+          "start": 827878,
+          "end": 827884
+        },
+        {
+          "start": 1047432,
+          "end": 1047436
+        },
+        {
+          "start": 1047629,
+          "end": 1047632
+        }
+      ]
+    },
+    {
+      "from": "1aac3214ec276822f1343e66fc1b8af83be8e61866d2d182882beb88317b4920",
+      "to": "d2dc34e1b21985c89b49996c9dedd88494c90c65e2da0c0a735d31d54ca92171",
+      "count": 94,
+      "ranges": [
+        {
+          "start": 814017,
+          "end": 814018
+        },
+        {
+          "start": 814019,
+          "end": 814020
+        },
+        {
+          "start": 814021,
+          "end": 814022
+        },
+        {
+          "start": 814023,
+          "end": 814024
+        },
+        {
+          "start": 814025,
+          "end": 814026
+        },
+        {
+          "start": 814027,
+          "end": 814028
+        },
+        {
+          "start": 814029,
+          "end": 814030
+        },
+        {
+          "start": 814031,
+          "end": 814032
+        },
+        {
+          "start": 814033,
+          "end": 814034
+        },
+        {
+          "start": 821288,
+          "end": 821296
+        },
+        {
+          "start": 821304,
+          "end": 821312
+        },
+        {
+          "start": 821320,
+          "end": 821328
+        },
+        {
+          "start": 821336,
+          "end": 821344
+        },
+        {
+          "start": 821352,
+          "end": 821360
+        },
+        {
+          "start": 827812,
+          "end": 827820
+        },
+        {
+          "start": 827828,
+          "end": 827836
+        },
+        {
+          "start": 827844,
+          "end": 827852
+        },
+        {
+          "start": 827860,
+          "end": 827868
+        },
+        {
+          "start": 827878,
+          "end": 827884
+        },
+        {
+          "start": 1047432,
+          "end": 1047436
+        },
+        {
+          "start": 1047629,
+          "end": 1047632
+        }
+      ]
+    },
+    {
+      "from": "2f9c2f8af56e337e9fa31fd5efd4b1f01d3474f78396065ad3fc9a0bd132cbdc",
+      "to": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2",
+      "count": 51,
+      "ranges": [
+        {
+          "start": 814017,
+          "end": 814018
+        },
+        {
+          "start": 814019,
+          "end": 814020
+        },
+        {
+          "start": 814021,
+          "end": 814022
+        },
+        {
+          "start": 814023,
+          "end": 814024
+        },
+        {
+          "start": 814025,
+          "end": 814026
+        },
+        {
+          "start": 814027,
+          "end": 814028
+        },
+        {
+          "start": 814029,
+          "end": 814030
+        },
+        {
+          "start": 814031,
+          "end": 814032
+        },
+        {
+          "start": 814033,
+          "end": 814034
+        },
+        {
+          "start": 827812,
+          "end": 827820
+        },
+        {
+          "start": 827828,
+          "end": 827835
+        },
+        {
+          "start": 827844,
+          "end": 827852
+        },
+        {
+          "start": 827860,
+          "end": 827868
+        },
+        {
+          "start": 827878,
+          "end": 827884
+        },
+        {
+          "start": 1047432,
+          "end": 1047436
+        },
+        {
+          "start": 1047631,
+          "end": 1047632
+        }
+      ]
+    },
+    {
+      "from": "2f9c2f8af56e337e9fa31fd5efd4b1f01d3474f78396065ad3fc9a0bd132cbdc",
+      "to": "d2dc34e1b21985c89b49996c9dedd88494c90c65e2da0c0a735d31d54ca92171",
+      "count": 92,
+      "ranges": [
+        {
+          "start": 814017,
+          "end": 814018
+        },
+        {
+          "start": 814019,
+          "end": 814020
+        },
+        {
+          "start": 814021,
+          "end": 814022
+        },
+        {
+          "start": 814023,
+          "end": 814024
+        },
+        {
+          "start": 814025,
+          "end": 814026
+        },
+        {
+          "start": 814027,
+          "end": 814028
+        },
+        {
+          "start": 814029,
+          "end": 814030
+        },
+        {
+          "start": 814031,
+          "end": 814032
+        },
+        {
+          "start": 814033,
+          "end": 814034
+        },
+        {
+          "start": 821288,
+          "end": 821296
+        },
+        {
+          "start": 821304,
+          "end": 821312
+        },
+        {
+          "start": 821320,
+          "end": 821328
+        },
+        {
+          "start": 821336,
+          "end": 821344
+        },
+        {
+          "start": 821352,
+          "end": 821360
+        },
+        {
+          "start": 827812,
+          "end": 827820
+        },
+        {
+          "start": 827828,
+          "end": 827836
+        },
+        {
+          "start": 827844,
+          "end": 827852
+        },
+        {
+          "start": 827860,
+          "end": 827868
+        },
+        {
+          "start": 827878,
+          "end": 827884
+        },
+        {
+          "start": 1047432,
+          "end": 1047436
+        },
+        {
+          "start": 1047631,
+          "end": 1047632
+        }
+      ]
+    },
+    {
+      "from": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2",
+      "to": "d2dc34e1b21985c89b49996c9dedd88494c90c65e2da0c0a735d31d54ca92171",
+      "count": 60,
+      "ranges": [
+        {
+          "start": 821288,
+          "end": 821296
+        },
+        {
+          "start": 821304,
+          "end": 821312
+        },
+        {
+          "start": 821320,
+          "end": 821328
+        },
+        {
+          "start": 821336,
+          "end": 821344
+        },
+        {
+          "start": 821352,
+          "end": 821360
+        },
+        {
+          "start": 827812,
+          "end": 827819
+        },
+        {
+          "start": 827828,
+          "end": 827836
+        },
+        {
+          "start": 1047432,
+          "end": 1047436
+        },
+        {
+          "start": 1047631,
+          "end": 1047632
+        }
+      ]
+    }
+  ],
+  "current_flashed_identity": null,
+  "scope": "Historical CRC equality is not cryptographic byte identity or proof of no later write. No fresh ECU read performed."
+}

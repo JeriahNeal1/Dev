@@ -1,0 +1,134 @@
+{
+  "schema": 1,
+  "status": "PASS",
+  "classification": "EXACT_PER_STEP_DIFFERENTIAL_WITH_FROZEN_ISA",
+  "kernel_sha256": "3d70abfb8617b87e1b9c52724fd27ed4066ba231818994e780c8ba3006de273f",
+  "core_sha256": "b47ac261634c116c3ffcdf19da9ec73e7014c034cd349ea8867f5f54895cdfff",
+  "compared_instruction_steps": 47541,
+  "scenarios": [
+    {
+      "case": "version_read_reject",
+      "status": "PASS",
+      "compared_instruction_steps": 15207,
+      "result_statuses": [
+        "PASS",
+        "PASS",
+        "PASS",
+        "FAIL"
+      ],
+      "stop_reasons": [
+        "RX_WAIT",
+        "RX_WAIT",
+        "RX_WAIT",
+        "KERNEL_REJECT"
+      ],
+      "execution_sha256": "229e16683752ec913ea2c9f3b437f55adb6c451a0f9a43846d760258a484d5a7",
+      "memory_event_sha256": "2e029bfd91ae192c60b3ea89eb7269f8698564c988673e2d6b9177c37f1bd33d"
+    },
+    {
+      "case": "delayed_RX_TX",
+      "status": "PASS",
+      "compared_instruction_steps": 23159,
+      "result_statuses": [
+        "PASS",
+        "PASS",
+        "PASS"
+      ],
+      "stop_reasons": [
+        "RX_WAIT",
+        "RX_WAIT",
+        "RX_WAIT"
+      ],
+      "execution_sha256": "6bc0daa8c9b48a281020f610f52a1b43c98fa993ed6d8de29d62a97c45a4416b",
+      "memory_event_sha256": "31f39b5d41afc28db8dbc1d6c2b439af369f4775fd5e6682faae457c5176d34a"
+    },
+    {
+      "case": "shadow_guard",
+      "status": "PASS",
+      "compared_instruction_steps": 31,
+      "result_statuses": [
+        "FAIL"
+      ],
+      "stop_reasons": [
+        "KERNEL_REJECT"
+      ],
+      "execution_sha256": "44794801fe9d5cb60909caca46e07e5d91c3352a910695c35b2f3c949349935f",
+      "memory_event_sha256": "495f479017fc71109bdd7fb99e90991553857dad5f3ffe13549be1e95668bd71"
+    },
+    {
+      "case": "MAT_guard",
+      "status": "PASS",
+      "compared_instruction_steps": 35,
+      "result_statuses": [
+        "FAIL"
+      ],
+      "stop_reasons": [
+        "KERNEL_REJECT"
+      ],
+      "execution_sha256": "341a9c58642c2fd40aa7034831db008738f9e8c040c5cdc8b1ed75277b12d7bb",
+      "memory_event_sha256": "0feef4b7764e6fb11e863722c1fecaa07738552f5416340450442b4ca9fe68e3"
+    },
+    {
+      "case": "stale_RX_error_clear",
+      "status": "PASS",
+      "compared_instruction_steps": 4764,
+      "result_statuses": [
+        "PASS",
+        "PASS"
+      ],
+      "stop_reasons": [
+        "RX_WAIT",
+        "RX_WAIT"
+      ],
+      "execution_sha256": "365499b61999f7c221b77877fa83ebf58d2d0cd61ed9671dc4736b20ce119db8",
+      "memory_event_sha256": "0f9e3aa023a01118d9be753ad7660515180e1398470a05a0fe29c82313e174b0"
+    },
+    {
+      "case": "bad_checksum",
+      "status": "PASS",
+      "compared_instruction_steps": 4345,
+      "result_statuses": [
+        "PASS",
+        "FAIL"
+      ],
+      "stop_reasons": [
+        "RX_WAIT",
+        "KERNEL_REJECT"
+      ],
+      "execution_sha256": "6bc071b1ae2430285473c80a37314e047cadaed3068456058a972b983abf7e55",
+      "memory_event_sha256": "870d05d8dc5f927b26967decfe1212fef9d3e42529d5672b1df69870052250d8"
+    }
+  ],
+  "compared": [
+    "all GPR",
+    "PC",
+    "SR",
+    "PR",
+    "VBR",
+    "MACH",
+    "MACL",
+    "pending delay branch",
+    "call context",
+    "private RAM and initialization bits",
+    "every data event digest",
+    "every control edge digest",
+    "every SCI schedule event digest",
+    "all SCI registers and queued/transmitted bytes",
+    "stack state",
+    "DMAOR/WDT/PCCR model state"
+  ],
+  "optimization": "Generated from the pinned frozen CPU.step AST; only decode lookup cache, optional taint and verbose trace allocations removed. Every instruction remains executed.",
+  "source_sha256": {
+    "core.py": "caf6571a836676b82bec8f8a5eaa356590532e15931fae2da4b5822fe8ef0f90",
+    "cpu.py": "5043dafdfe59447cb8d906f7570907c472e1d638deb507dc4af8546e9b0f1980",
+    "fast_step.py": "029bb2b484911289b19e5cdbad35bbbbdc80af05420e91dad6884e0ff0484cfa",
+    "full_read.py": "02704688254cff485ea933eae7966c5ff1cea97c0a26366460fab4ea6b4822c4",
+    "generate_fast.py": "4e53e3703d876b8f06fba4b24b112cf29a6749d7acda294ad6cf1c1f4ebcb76f",
+    "harness.py": "3686cee51a1b4f366737b84ba9aebecbf4747227545213d36aad2267e06785bd",
+    "memory.py": "fbce26a55a2cce274394fa436c1e36e2342d0635c68c5b6dfeba59672f00d638",
+    "sci.py": "fba8fa3e78e17ac926149a314cd8f0b34837c126a83f03906af007502cf884ba",
+    "test_model.py": "e472d1849d0c72b34fb03b84621cd8ab515b84d007f4e66ff9d37d5ce81b7c90",
+    "verify_fast.py": "f81050677aae3de5c5d3fa44a0758dad919cfb01c538d8ade15dbbbe781cc7ce",
+    "__init__.py": "8e8b1da117fdc2ba4fe06edfc32b9c8d67176ab69a9470ee21151018bc85fbd8"
+  }
+}

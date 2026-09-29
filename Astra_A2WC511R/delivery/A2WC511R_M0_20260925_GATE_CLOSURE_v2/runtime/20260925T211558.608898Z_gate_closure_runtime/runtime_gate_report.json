@@ -1,0 +1,70 @@
+{
+  "added_instruction_upper_bound": 526,
+  "all_path_instruction_upper_bound": 562,
+  "cadence": "RAM/RTOS agent identified CMT1 Pphi/8, CMCOR2499 ->20000Pphi cycles/tick; task9 every8D936 ticks ->160000Pphi cycles/normal enqueue. Actual clock, missed events, queueing, and higher-priority response-time bound require separate proof.",
+  "classification": "OFFLINE_GATE_EVIDENCE_NOT_PHYSICAL_ACCEPTANCE",
+  "documentation": [
+    {
+      "revision": "REJ09B0316-0200 Rev2.00",
+      "sections": "7 instruction semantics;8.1..8.8/Table8.1 stage and contention descriptions",
+      "url": "https://www.renesas.com/en/document/mah/sh-2e-software-manual"
+    },
+    {
+      "revision": "Rev3.00 Sep2004",
+      "sections": "1.1 CPU maximum;14 CMT;24.1 RAM read/write access states",
+      "url": "https://www.renesas.com/en/document/mah/sh-2e-sh7058-f-ztat-tm-hardware-manual"
+    }
+  ],
+  "exact_added_stack_bytes": 124,
+  "final_build": "C:\\Dev\\Astra_A2WC511R\\work\\builds\\m0_final_05",
+  "gates": {
+    "OEM_task_reentry_exclusion": "PHYSICAL/BENCH REQUIRED",
+    "absolute_hook_cadence_and_silicon_margin": "PHYSICAL/BENCH REQUIRED",
+    "injected_cfg_and_balanced_stack": "PASS",
+    "register_preservation_under_disjoint_private_stack": "PASS",
+    "reset_RAM_pattern_and_finite_DMA_setup_regressions": "PASS",
+    "total_context_stack_headroom": "PHYSICAL/BENCH REQUIRED",
+    "unconditional_observer_reentrancy": "FAIL",
+    "watchpoints_propagation_replay_differential": "PASS"
+  },
+  "known_surrounding_oem_frames": 8,
+  "limitations": [
+    "Frozen payload unchanged; simulator source backed up before focused opcode additions",
+    "No DMA engine, status completion, real logger provider, physical CAN/device or active control commands",
+    "Static timing examples are conditional serialized envelopes; entry stalls and external interference are not bounded",
+    "Root whole-ROM/RTOS ownership gates remain separate from the observed zero-hole-access scenarios"
+  ],
+  "observed_extra_instruction_range": [
+    291,
+    483
+  ],
+  "paired_cases": 1024,
+  "payload_sha256": "b5004baa2863bf571eb1ab014f93f0316b3500c5b154e47de2e42f904234b2ff",
+  "reentry_explanation": "A deliberate nested writer closes sequence14 inside outer sequence13; outer resumes writing fields under even14. Actual OEM reentry possibility is separately gated; one nonreentrant writer remains mandatory.",
+  "reproduce": [
+    "py -3.14 run_gate_closure.py",
+    "py -3.14 gate_scenarios.py"
+  ],
+  "run_directory": "C:\\Dev\\A2WC511R_Sim\\runs\\20260925T211558.608898Z_gate_closure_runtime",
+  "schema": 1,
+  "source_hashes": {
+    "dma_setup_probe.py": "f712b0b33ac96a31a23e73a2746aa696ef3f24f887ed83fa0b403807ef3331e6",
+    "gate_scenarios.py": "bf909c2c8084867ce4e3879ca8cc3da4d9029aa1b648ccf52767a1eeb117eebd",
+    "reentry_probe.py": "60ef7ffcb381f154c5c74c36b5efd2cb685d7894009bb5fe875c1f2aeacea904",
+    "run_gate_closure.py": "3680a47b295bab0461c67d2f188db50fafd4162db9345f13effe46d7527e2e63",
+    "runtime_audit.py": "261e408415b335f853eeba91cbd67c879cadadbd7243855c2ca2d57858c4d1bb",
+    "sh2e.py": "df018c2a425ae987b553e2bd8cb57df25f82adcd4ce7b6d30a8b7e4694b083d6",
+    "tests\\test_gate_closure.py": "c6c6ccf1f3a2610e5e5adc022d186b5746712336ccc9b8ad1d8f8e54f9016a3a"
+  },
+  "status": "PASS",
+  "test_summary": {
+    "errors": 0,
+    "exercised_forms": 56,
+    "failures": 0,
+    "skipped": 0,
+    "supported_opcode_forms": 56,
+    "tests": 52,
+    "unexercised_forms": []
+  },
+  "tracing_limit": "Full default control origins retained for wrapper scenarios. FA58 bulk test explicitly disables cumulative control-source decoration to avoid quadratic trace growth; this is a trace option and does not change instruction/memory behavior."
+}

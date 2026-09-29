@@ -1,0 +1,1334 @@
+Python>print("=== GEAR FUNCTION PROLOGUE / R10 SOURCE ===")
+=== GEAR FUNCTION PROLOGUE / R10 SOURCE ===
+Python>dump_range(0x24940, 0x24998)
+00024940: <decode failed> 00 00
+00024942: tst     r1, r1
+00024944: <decode failed> 00 00
+00024946: cmp/str r1, r5
+00024948: mov.b   @(r0,r0), r0
+0002494A: mov.b   r4, @-r2
+0002494C: <decode failed> ff ff
+0002494E: mov.l   @(h'24,r12), r1
+00024950: mov.l   r14, @-r15
+00024952: mov.l   r13, @-r15
+00024954: mov.l   r12, @-r15
+00024956: mov.l   r11, @-r15
+00024958: mov.l   r10, @-r15
+0002495A: fmov.s  fr15, @-r15
+0002495C: fmov.s  fr14, @-r15
+0002495E: fmov.s  fr13, @-r15
+00024960: fmov.s  fr12, @-r15
+00024962: sts.l   pr, @-r15
+00024964: mov.l   #h'FFFF51E8, r3
+00024966: add     #-h'C, r15
+00024968: mov.l   #h'2663C, r2
+0002496A: fmov.s  @r3, fr3
+0002496C: jsr     @r2
+0002496E: fmov.s  fr3, @r15
+00024970: mov.b   r0, @(4,r15)
+00024972: mov.l   #h'FFFF4BC2, r3
+00024974: mov.l   #h'16652, r2
+00024976: jsr     @r2
+00024978: mov.b   @r3, r10
+0002497A: mov     r0, r4
+0002497C: extu.b  r4, r0
+0002497E: cmp/eq  #1, r0
+00024980: bf/s    unk_2499C
+00024982: nop
+00024984: mov.l   #h'C25DC, r3
+00024986: mov     #8, r0
+00024988: mov.l   #h'C25E0, r2
+0002498A: fmov.s  @r3, fr3
+0002498C: fmov.s  fr3, @(r0,r15)
+0002498E: fmov.s  @r2, fr15
+00024990: mov.l   #h'C25E4, r1
+00024992: fmov.s  @r1, fr14
+00024994: mov.l   #h'C25E8, r3
+00024996: mov.l   #h'C25EC, r2
+Python>print("\n=== GEAR FUNCTION EPILOGUE ===")
+
+=== GEAR FUNCTION EPILOGUE ===
+Python>dump_range(0x24A78, 0x24AA4)
+00024A78: mov.b   r10, @r13
+00024A7A: mov.b   r10, @r14
+00024A7C: bra     unk_24A84
+00024A7E: mov.b   r12, @r13
+00024A80: mov.b   r10, @r14
+00024A82: mov.b   r12, @r13
+00024A84: add     #h'C, r15
+00024A86: lds.l   @r15+, pr
+00024A88: fmov.s  @r15+, fr12
+00024A8A: fmov.s  @r15+, fr13
+00024A8C: fmov.s  @r15+, fr14
+00024A8E: fmov.s  @r15+, fr15
+00024A90: mov.l   @r15+, r10
+00024A92: mov.l   @r15+, r11
+00024A94: mov.l   @r15+, r12
+00024A96: mov.l   @r15+, r13
+00024A98: rts
+00024A9A: mov.l   @r15+, r14
+00024A9C: mov.l   #h'FFFF52E8, r2
+00024A9E: mov     #6, r3
+00024AA0: rts
+00024AA2: mov.b   r3, @r2
+Python>print("\n=== R3 WRITES BEFORE R10 LOAD ===")
+
+=== R3 WRITES BEFORE R10 LOAD ===
+Python>for ea in range(0x24940, 0x24978, 2):
+    line = decode_line(ea)
+
+    if not line:
+        continue
+
+    low = line.lower()
+
+    if re.search(r',\s*r3(?:\s|$)', low):
+        print(f"{ea:08X}: {line}")
+Python>
+00024964: mov.l   #h'FFFF51E8, r3
+00024972: mov.l   #h'FFFF4BC2, r3
+Python>ida_funcs.add_func(FUNCTION_START, 0x24A9C)
+Traceback (most recent call last):
+  File "<string>", line 2, in <module>
+NameError: name 'FUNCTION_START' is not defined
+Python>import ida_funcs
+Python>import ida_name
+Python>import idc
+Python>import ida_kernwin
+Python>print(
+    "main:",
+    ida_funcs.add_func(
+        0x24950,
+        0x24A9C
+    )
+)
+main: False
+Python>ida_name.set_name(
+    0x24950,
+    "sUpdateNormalizedGearState",
+    ida_name.SN_FORCE
+)
+True
+Python>print(
+    "sentinel:",
+    ida_funcs.add_func(
+        0x24A9C,
+        0x24AA4
+    )
+)
+sentinel: False
+Python>ida_name.set_name(
+    0x24A9C,
+    "sSetGearStateE8To6",
+    ida_name.SN_FORCE
+)
+True
+Flushing buffers, please wait...ok
+Database has been saved
+Python>ida_name.set_name(
+    0xFFFF4BC2,
+    "pRawGearRangeCode_candidate",
+    ida_name.SN_FORCE
+)
+True
+Python>idc.set_cmt(
+    0xFFFF4BC2,
+    "Raw byte loaded into R10 at 0x24978 before OEM normalization "
+    "into FFFF52E8/FFFF52E9. Exact address verified; numeric "
+    "range/gear semantics pending live validation.",
+    1
+)
+True
+Flushing buffers, please wait...ok
+Database has been saved
+Python>ida_name.set_name(
+    0xFFFF52E8,
+    "pGearStateNormalized",
+    ida_name.SN_FORCE
+)
+True
+Python>ida_name.set_name(
+    0xFFFF52E9,
+    "pGearIndexNormalized",
+    ida_name.SN_FORCE
+)
+True
+Python>    0xFFFF52E8,
+    "Live A2WC511R 5EAT observation: P/N=6, R=1, "
+    "forward gears 1..5=1..5. Reverse is normalized to 1.",
+    1
+)
+  File "<string>", line 1
+    0xFFFF52E8,
+IndentationError: unexpected indent
+Python>idc.set_cmt(
+    0xFFFF52E8,
+    "Live A2WC511R 5EAT observation: P/N=6, R=1, "
+    "forward gears 1..5=1..5. Reverse is normalized to 1.",
+    1
+)
+True
+Python>idc.set_cmt(
+    0xFFFF52E9,
+    "Live A2WC511R 5EAT observation: P/N=0, R=1, "
+    "forward gears 1..5=1..5. OEM code can also assign 6.",
+    1
+)
+True
+Python>Pasted text(20260824-002404).txt
+Document
+These are the latest results, and I am confirming that my 5EAT has 5 usable gears, it has a normal drive mode and then it has a simulated dual clutch mode that lets me choose between 1, 2, 3, 4, and 5
+Today 7:11 PM
+logger_STD_EN_v370(1).xml
+File
+This is the logger file I have been using
+Romraiderlog 20260823 193409
+Here is the latest log, I started in Park, went to reverse, neutral, drive and then in sport mode, then I went through every single gear, 1 through 5
+
+Keep the names for now. Your new hypothesis is worth testing, but the static code argues that E8 and E9 are both gear-related states, not simply “drive mode vs gear.”
+
+The reason is the calculation at 0x24A4C–0x24A82: the ECU explicitly writes 2, 3, 4, and 5 into both E8 and E9 as the calculated ratio crosses successive thresholds. Only at the upper edge do they diverge, with E8=5 and E9=6. That looks much more like:
+
+E8 = normalized/clamped gear state, limited to 1–5
+E9 = gear/index classification, allowed to reach 6 as an out-of-range/sentinel state
+
+rather than E8 being D/S/manual mode. A true transmission-mode variable should not normally walk through 1,2,3,4,5 with each gear.
+
+That said, your second live test is exactly the right way to challenge that interpretation. The existing logger already exposes the actual TCU Tiptronic Mode, D/R/N-P range signals, upshift/downshift switches, and related states. It also has separate P, P/N, and N indicators, plus a distinct AUTO/MANUAL Mode Switch. Those are excellent ground truth for your hypothesis.
+
+For the repeat log, if RomRaider lets you poll them without destroying the sampling rate, I'd record:
+
+A2WC511R Gear State E8
+A2WC511R Gear Index E9
+
+Gear Position (P60)
+
+Tiptronic Mode Switch
+AUTO/MANUAL Mode Switch
+
+D Range Signal
+R Range Signal
+N/P Range Signal
+P Range
+N Range
+
+Vehicle Speed
+Engine Speed
+
+Then deliberately dwell several seconds in:
+
+P
+R
+N
+D automatic
+Sport/manual while still in 1st
+manual 1
+manual 2
+manual 3
+manual 4
+manual 5
+back to D
+back to N
+
+That will let us distinguish mode changes that occur without a gear change, which is the key test of your E8 hypothesis. If switching D → manual while remaining physically in 1st changes E8 but not E9, your hypothesis gets much stronger. If both remain 1, then E8 is almost certainly another gear-state representation.
+
+What the newest IDA output tells us
+
+The empty result here:
+
+R10 uses before gear normalization:
+
+does not mean r10 has no source.
+
+It means there were no IDA-decoded instructions mentioning r10 specifically within the narrow range:
+
+0x24800 <= address < 0x249B4
+
+There are two likely explanations:
+
+r10 was initialized before 0x24800 in the same large function.
+IDA hasn't defined all of the code preceding this block, and the next_head()-based search skipped some undecoded instructions.
+
+The latter is especially possible given how much of this ROM we've had to create manually.
+
+The other error is completely harmless:
+
+NameError: name 'dump_from' is not defined
+
+Clearing/restarting the IDAPython session removed our helper Python function. It did not affect the IDA database or any names you've saved.
+
+Use this stronger R10-tracing script next
+
+This version doesn't depend on IDA having already created heads at every instruction and scans every aligned 16-bit SH instruction directly.
+
+import re
+import ida_bytes
+import ida_ua
+import ida_funcs
+import idc
+
+
+def decode_line(ea):
+    insn = ida_ua.insn_t()
+
+    size = ida_ua.decode_insn(insn, ea)
+
+    if size <= 0:
+        return None
+
+    return idc.generate_disasm_line(
+        ea,
+        idc.GENDSM_FORCE_CODE
+    )
+
+
+def dump_from(ea, count=30, before=6):
+    start = max(0, ea - before)
+    start &= ~1
+
+    cur = start
+
+    for _ in range(count):
+        line = decode_line(cur)
+
+        marker = ">>" if cur == ea else "  "
+
+        if line:
+            print(f"{marker} {cur:08X}: {line}")
+        else:
+            raw = ida_bytes.get_bytes(cur, 2)
+            print(
+                f"{marker} {cur:08X}: "
+                f"<decode failed> "
+                f"{raw.hex(' ') if raw else ''}"
+            )
+
+        cur += 2
+
+
+def scan_r10(start, end):
+    all_uses = []
+    writes = []
+
+    for ea in range(start & ~1, end & ~1, 2):
+        line = decode_line(ea)
+
+        if not line:
+            continue
+
+        low = line.lower()
+
+        if re.search(r'\br10\b', low):
+            all_uses.append((ea, line))
+
+            # Destination operand appears to be r10.
+            if re.search(r',\s*r10(?:\s|$)', low):
+                writes.append((ea, line))
+
+    return all_uses, writes
+
+
+uses, writes = scan_r10(
+    0x24000,
+    0x249B4
+)
+
+print("=== ALL R10 REFERENCES ===")
+for ea, line in uses:
+    print(f"{ea:08X}: {line}")
+
+print("\n=== LIKELY R10 WRITES ===")
+for ea, line in writes:
+    print(f"{ea:08X}: {line}")
+
+What matters most is the second section:
+
+=== LIKELY R10 WRITES ===
+
+If that produces something like:
+
+mov.b   @r3,r10
+
+we've probably found our raw transmission state.
+
+If it gives:
+
+mov     r4,r10
+
+then we trace r4 backward.
+
+If it still produces nothing, widen it immediately:
+
+uses, writes = scan_r10(
+    0x22000,
+    0x249B4
+)
+
+print("=== R10 WRITES, WIDER SEARCH ===")
+
+for ea, line in writes:
+    print(f"{ea:08X}: {line}")
+Then dump only the likely assignments
+
+Run:
+
+for ea, line in writes[-20:]:
+    print("\n" + "=" * 72)
+    print(f"R10 WRITE @ {ea:08X}: {line}")
+    dump_from(ea, 34)
+
+That should be much cleaner than dumping hundreds of instructions.
+
+Also determine the actual function boundary
+
+This is useful now because r10 may have been initialized very early in the same function.
+
+Run:
+
+f = ida_funcs.get_func(0x249B4)
+
+if f:
+    print(
+        f"IDA function containing 249B4: "
+        f"{f.start_ea:08X} - {f.end_ea:08X}"
+    )
+else:
+    print("IDA currently has no function containing 249B4")
+
+If IDA does recognize the function and its start is, for example:
+
+000246xx
+
+then we know precisely how far backward we need to trace.
+
+If it says:
+
+IDA currently has no function containing 249B4
+
+that's also useful—we'll identify the prologue manually next and turn this entire transmission/gear calculation into a proper IDA function.
+
+One more thing I'd inspect
+
+Since we've seen the routine output into:
+
+FFFF52E8
+FFFF52E9
+FFFF52EC
+
+and 52EC receives a float at 0x24A3C, the surrounding structure is starting to look like a small cluster of transmission-derived ECU variables:
+
+FFFF52E8  byte
+FFFF52E9  byte
+FFFF52EA  ?
+FFFF52EB  ?
+FFFF52EC  float
+
+I don't want to assign semantics yet, but once we've traced r10, inspecting 52EA–52EF may reveal more of the OEM gear/range state structure.
+
+For now, though, don't change the E8/E9 names. Your repeat test with the actual Tiptronic, AUTO/MANUAL, D, R, and N/P signals can experimentally separate “mode” from “gear,” while the new IDA script should tell us where r10 originates. Those two investigations complement each other very well.
+
+I have confirmed your original hypothesis, Park is 0, Reverse is 1, Neutral is 0, drive is 1 again, and corresponding 6 being gear 0 as well. Feel free to suggest the commands to remove the earlier definitions now if doing so is helpful:
+Here are the latest logs:
+R10 uses before gear normalization:
+Python>
+Python>def find_reg_uses(start, end, reg="r10"):
+    cur = start
+    hits = []
+
+    while cur < end:
+        line = idc.generate_disasm_line(
+            cur,
+            idc.GENDSM_FORCE_CODE
+        )
+
+        if line and reg.lower() in line.lower():
+            hits.append(cur)
+
+        nxt = idc.next_head(cur)
+
+        if nxt == idc.BADADDR or nxt <= cur:
+            cur += 2
+        else:
+            cur = nxt
+
+    return hits
+Python>
+Python>hits = find_reg_uses(
+    0x24800,
+    0x249B4,
+    "r10"
+)
+Python>print("R10 uses before gear normalization:")
+R10 uses before gear normalization:
+Python>for ea in hits:
+    print(
+        f"{ea:08X}:",
+        idc.generate_disasm_line(
+            ea,
+            idc.GENDSM_FORCE_CODE
+        )
+    )
+Python>
+Python>for ea in hits:
+    print("\n" + "=" * 72)
+    print(f"R10 CONTEXT @ {ea:08X}")
+    dump_from(ea, 26)
+Python>
+Python>print("\n=== PRE-GEAR-NORMALIZATION ROUTINE ===")
+dump_from(0x24920, 80)
+
+=== PRE-GEAR-NORMALIZATION ROUTINE ===
+Traceback (most recent call last):
+  File "<string>", line 2, in <module>
+NameError: name 'dump_from' is not defined
+Python>dump_from(0x24920, 80)
+Traceback (most recent call last):
+  File "<string>", line 2, in <module>
+NameError: name 'dump_from' is not defined
+Python>import re
+Python>import ida_bytes
+Python>import ida_ua
+Python>import ida_funcs
+Python>import idc
+Python>def decode_line(ea):
+    insn = ida_ua.insn_t()
+
+    size = ida_ua.decode_insn(insn, ea)
+
+    if size <= 0:
+        return None
+
+    return idc.generate_disasm_line(
+        ea,
+        idc.GENDSM_FORCE_CODE
+    )
+Python>def decode_line(ea):
+    insn = ida_ua.insn_t()
+
+    size = ida_ua.decode_insn(insn, ea)
+
+    if size <= 0:
+        return None
+
+    return idc.generate_disasm_line(
+        ea,
+        idc.GENDSM_FORCE_CODE
+    )
+Python>def scan_r10(start, end):
+    all_uses = []
+    writes = []
+
+    for ea in range(start & ~1, end & ~1, 2):
+        line = decode_line(ea)
+
+        if not line:
+            continue
+
+        low = line.lower()
+
+        if re.search(r'\br10\b', low):
+            all_uses.append((ea, line))
+
+            # Destination operand appears to be r10.
+            if re.search(r',\s*r10(?:\s|$)', low):
+                writes.append((ea, line))
+
+    return all_uses, writes
+Python>
+Python>uses, writes = scan_r10(
+    0x24000,
+    0x249B4
+)
+Python>
+Python>print("=== ALL R10 REFERENCES ===")
+for ea, line in uses:
+    print(f"{ea:08X}: {line}")
+Python>
+=== ALL R10 REFERENCES ===
+00024002: negc    r7, r10
+0002400A: mov.b   @r6, r10
+0002400E: exts.b  r6, r10
+00024176: mov.b   @r14+, r10
+0002417E: mov.l   @r1, r10
+00024182: mov.l   @r6+, r10
+00024186: mov.l   @(0,r10), r14
+00024190: subc    r15, r10
+0002419E: mov.b   r10, @-r5
+000241B8: mov.l   r10, @-r15
+000241EA: mov     #2, r10
+00024278: mov.b   r10, @r14
+0002427A: mov.b   r10, @r14
+00024284: mov.l   @r15+, r10
+000243CA: cmp/str r10, r5
+000243D6: tst     r10, r5
+00024418: mov.l   r10, @-r15
+00024438: mov.l   #h'FFFF51FC, r10
+0002444C: add     r10, r12
+0002446E: add     r10, r3
+000244A2: add     r10, r5
+000244D4: add     r10, r12
+000244D6: mov.l   #h'FFFF529C, r10
+000244D8: add     r9, r10
+000244DA: fmov.s  @r10, fr5
+00024510: mov.l   @r15+, r10
+00024526: mov.l   @r15+, r10
+0002458C: mov.l   r10, @-r15
+00024592: mov     #3, r10
+000245C2: cmp/gt  r10, r3
+000245CC: mov.l   @r15+, r10
+00024606: mov.l   @(h'30,r10), r2
+00024958: mov.l   r10, @-r15
+00024978: mov.b   @r3, r10
+Python>print("\n=== LIKELY R10 WRITES ===")
+for ea, line in writes:
+    print(f"{ea:08X}: {line}")
+Python>
+
+=== LIKELY R10 WRITES ===
+00024002: negc    r7, r10
+0002400A: mov.b   @r6, r10
+0002400E: exts.b  r6, r10
+00024176: mov.b   @r14+, r10
+0002417E: mov.l   @r1, r10
+00024182: mov.l   @r6+, r10
+00024190: subc    r15, r10
+000241EA: mov     #2, r10
+00024284: mov.l   @r15+, r10
+00024438: mov.l   #h'FFFF51FC, r10
+000244D6: mov.l   #h'FFFF529C, r10
+000244D8: add     r9, r10
+00024510: mov.l   @r15+, r10
+00024526: mov.l   @r15+, r10
+00024592: mov     #3, r10
+000245CC: mov.l   @r15+, r10
+00024978: mov.b   @r3, r10
+Python>uses, writes = scan_r10(
+    0x22000,
+    0x249B4
+)
+Python>
+Python>print("=== R10 WRITES, WIDER SEARCH ===")
+=== R10 WRITES, WIDER SEARCH ===
+Python>
+Python>for ea, line in writes:
+    print(f"{ea:08X}: {line}")
+Python>
+0002215A: mov.l   @r5, r10
+00022D0A: mov.l   #h'FFFF51B3, r10
+00022D9E: shad    r4, r10
+00022E3A: mov.l   @r15+, r10
+00023236: mov     #h'20, r10 ; ' '
+00023238: tst     r4, r10
+00023240: mov     r14, r10
+00023242: mov     #0, r10
+000233AA: div1    r15, r10
+000237BE: mov.l   @r15+, r10
+000237F8: mov.l   #h'FFFF51BA, r10
+000238D2: mov.l   @r15+, r10
+00023F06: div1    r15, r10
+00024002: negc    r7, r10
+0002400A: mov.b   @r6, r10
+0002400E: exts.b  r6, r10
+00024176: mov.b   @r14+, r10
+0002417E: mov.l   @r1, r10
+00024182: mov.l   @r6+, r10
+00024190: subc    r15, r10
+000241EA: mov     #2, r10
+00024284: mov.l   @r15+, r10
+00024438: mov.l   #h'FFFF51FC, r10
+000244D6: mov.l   #h'FFFF529C, r10
+000244D8: add     r9, r10
+00024510: mov.l   @r15+, r10
+00024526: mov.l   @r15+, r10
+00024592: mov     #3, r10
+000245CC: mov.l   @r15+, r10
+00024978: mov.b   @r3, r10
+Python>for ea, line in writes[-20:]:
+    print("\n" + "=" * 72)
+    print(f"R10 WRITE @ {ea:08X}: {line}")
+    dump_from(ea, 34)
+Python>
+
+========================================================================
+R10 WRITE @ 000237F8: mov.l   #h'FFFF51BA, r10
+Traceback (most recent call last):
+  File "<string>", line 4, in <module>
+NameError: name 'dump_from' is not defined
+Python>f = ida_funcs.get_func(0x249B4)
+<string>:1: DeprecationWarning: get_func() is deprecated, use get_func_start or get_func_entry_info()
+Python>
+Python>if f:
+    print(
+        f"IDA function containing 249B4: "
+        f"{f.start_ea:08X} - {f.end_ea:08X}"
+    )
+else:
+    print("IDA currently has no function containing 249B4")
+Python>
+IDA currently has no function containing 249B4
+
+Yes — your live test now supports the original interpretation much better:
+
+P  → E8=6, E9=0
+R  → E8=1, E9=1
+N  → E8=6, E9=0
+D1 → E8=1, E9=1
+D2 → E8=2, E9=2
+...
+D5 → E8=5, E9=5
+
+So I would not delete the logger parameters. They're useful diagnostic variables. I would only make the IDA names more neutral/accurate.
+
+ida_name.set_name(
+    0xFFFF52E8,
+    "pGearStateNormalized",
+    ida_name.SN_FORCE
+)
+
+ida_name.set_name(
+    0xFFFF52E9,
+    "pGearIndexNormalized",
+    ida_name.SN_FORCE
+)
+
+idc.set_cmt(
+    0xFFFF52E8,
+    "Observed A2WC511R 5EAT: P/N=6, R=1, forward gears=1..5. "
+    "Normalized gear state; Reverse is collapsed to 1.",
+    1
+)
+
+idc.set_cmt(
+    0xFFFF52E9,
+    "Observed A2WC511R 5EAT: P/N=0, R=1, forward gears=1..5. "
+    "Can reach 6 in OEM calculation path; not a forward-range discriminator.",
+    1
+)
+
+ida_kernwin.save_database()
+
+You don't need to remove the old names first; SN_FORCE replaces them.
+
+The latest IDA result contains a very important clue
+
+This is the line that matters:
+
+00024958: mov.l r10, @-r15
+...
+00024978: mov.b @r3, r10
+
+The earlier wide scan produced dozens of apparent writes to r10, but almost all of them are irrelevant because they're in other routines.
+
+0x24958 looks like part of a function prologue saving the old value of the callee-saved r10 register. Then:
+
+00024978: mov.b @r3,r10
+
+loads the value that is subsequently used by the gear-normalization logic.
+
+So we don't need to trace r10 all the way back through 0x22000–0x24900.
+
+We need to answer one much simpler question:
+
+What address is in r3 at 0x24978?
+
+That is now the highest-value target.
+
+And your live result makes r10 == 7 particularly interesting
+
+Recall the direct-state portion of the OEM routine:
+
+raw r10 == 7
+       ↓
+E8 = 1
+E9 = 1
+
+raw r10 == 6 or 0
+       ↓
+E8 = 6
+E9 = 0
+
+raw r10 == 1..5
+       ↓
+E8 = r10
+E9 = r10
+
+Combine that with what you observed:
+
+Reverse → 1/1
+Park    → 6/0
+Neutral → 6/0
+Drive1  → 1/1
+
+and the strongest hypothesis now is:
+
+raw r10
+
+0 / 6 → Park / Neutral / invalid
+1     → 1st
+2     → 2nd
+3     → 3rd
+4     → 4th
+5     → 5th
+7     → Reverse
+
+That would be almost ideal for launch-control safety because Reverse is still distinguishable before the OEM normalization destroys that information.
+
+We still need to prove it by finding and logging r10's source.
+
+Run this next
+
+Your dump_from disappeared because it's only a Python helper function; clearing/restarting IDAPython doesn't preserve it. Your IDA database itself is fine.
+
+Use this self-contained block:
+
+import ida_bytes
+import ida_ua
+import ida_funcs
+import ida_name
+import ida_kernwin
+import idc
+import re
+
+
+def decode_line(ea):
+    insn = ida_ua.insn_t()
+
+    if ida_ua.decode_insn(insn, ea) <= 0:
+        return None
+
+    return idc.generate_disasm_line(
+        ea,
+        idc.GENDSM_FORCE_CODE
+    )
+
+
+def dump_range(start, end):
+    for ea in range(start & ~1, end & ~1, 2):
+        line = decode_line(ea)
+        raw = ida_bytes.get_bytes(ea, 2)
+
+        if line:
+            print(f"{ea:08X}: {line}")
+        else:
+            print(
+                f"{ea:08X}: <decode failed> "
+                f"{raw.hex(' ') if raw else ''}"
+            )
+
+
+ida_kernwin.msg_clear()
+
+print("=== GEAR FUNCTION PROLOGUE / R10 SOURCE ===")
+dump_range(0x24940, 0x24998)
+
+print("\n=== GEAR FUNCTION EPILOGUE ===")
+dump_range(0x24A78, 0x24AA4)
+
+The first part is the critical one.
+
+I'm specifically looking for something shortly before:
+
+24978: mov.b @r3,r10
+
+like:
+
+mov.l #FFFFxxxx,r3
+...
+mov.b @r3,r10
+
+If we get that, FFFFxxxx is probably the unnormalized transmission gear/range state we've been searching for.
+
+Also automatically find the last assignment to r3
+
+Run this after the dump:
+
+print("\n=== R3 WRITES BEFORE R10 LOAD ===")
+
+for ea in range(0x24940, 0x24978, 2):
+    line = decode_line(ea)
+
+    if not line:
+        continue
+
+    low = line.lower()
+
+    if re.search(r',\s*r3(?:\s|$)', low):
+        print(f"{ea:08X}: {line}")
+
+There may be more than one, but the last write before 0x24978 is generally the one we care about.
+
+For example, if you get:
+
+24974: mov.l #FFFFxxxx,r3
+24976: ...
+24978: mov.b @r3,r10
+
+we're essentially done finding the raw state.
+
+There's another interesting structural discovery here
+
+At 0x249B8 the routine reads:
+
+mov.l #FFFF51B6,r4
+mov.b @r4,r0
+and   #1,r0
+tst   r0,r0
+
+It then chooses between two completely different methods.
+
+One branch uses the r10 value directly and applies the special mappings:
+
+0/6 → invalid/P/N
+7   → 1
+1–5 → 1–5
+
+The other branch calculates gear using floating-point speed/ratio thresholds and writes gears 1–5 itself.
+
+A strong structural hypothesis is therefore:
+
+FFFF51B6 bit 0
+
+one state → use transmission-provided gear/range code
+other     → calculate gear from RPM / speed ratios
+
+That would make sense in Subaru firmware shared between automatic and manual configurations: an automatic can receive an actual transmission gear state, whereas a manual ECU often has to infer gear from RPM and vehicle speed.
+
+I'm marking that as hypothesis, not proven semantics, but the code structure fits very well.
+
+IDA not recognizing the function is useful information too
+
+This:
+
+IDA currently has no function containing 249B4
+
+means we haven't told IDA where this routine begins.
+
+That's why some xrefs and control-flow analysis around this area are weak.
+
+Your earlier output showed an epilogue around:
+
+24A84: add ...
+...
+24A98: rts
+24A9A: mov.l @r15+,r14
+
+and then:
+
+24A9C: mov.l #FFFF52E8,r2
+24A9E: mov #6,r3
+24AA0: rts
+24AA2: mov.b r3,@r2
+
+So 0x24A9C is clearly a different tiny routine that sets E8 to 6.
+
+The main gear routine therefore probably ends at:
+
+0x24A9C  (end-exclusive)
+
+We just need to determine its exact beginning.
+
+The new 0x24940–0x24998 dump should reveal the prologue. It'll probably contain a series like:
+
+mov.l r14,@-r15
+mov.l r13,@-r15
+mov.l r12,@-r15
+mov.l r11,@-r15
+mov.l r10,@-r15
+...
+sts.l pr,@-r15
+
+Once we see the beginning, we'll create it properly:
+
+ida_funcs.add_func(FUNCTION_START, 0x24A9C)
+
+and give it a conservative name such as:
+
+sUpdateGearState
+
+or:
+
+sCalculateNormalizedGear
+
+depending on what the full routine shows.
+
+Don't run add_func() with a guessed start yet.
+
+What I would leave alone
+
+Keep the two custom RomRaider definitions:
+
+FFFF52E8
+FFFF52E9
+
+They're now useful reference channels.
+
+And keep the two IDA addresses named, just with the neutral names above. Removing all identification would actually make the database harder to work with.
+
+If you really did want to strip the names entirely, the command is:
+
+ida_name.set_name(
+    0xFFFF52E8,
+    "",
+    ida_name.SN_NOWARN
+)
+
+ida_name.set_name(
+    0xFFFF52E9,
+    "",
+    ida_name.SN_NOWARN
+)
+
+but I wouldn't do that.
+
+Where we are now
+
+We've learned something more useful than merely identifying current gear:
+
+OEM raw range/gear code
+        ↓
+      r10
+        ↓
+special normalization
+  7 → 1     ← likely Reverse
+0/6 → 6/0   ← P/N/no valid gear
+1–5 → 1–5
+        ↓
+FFFF52E8 / FFFF52E9
+
+So run the 0x24940–0x24998 dump and R3-write scan next. There is a good chance the next output gives us the exact raw RAM byte that retains Reverse = 7, which would be a much better launch-control interlock than E8 or E9.
+
+Today 12:50 PM
+Here are the latest logs:
+Python>print("=== GEAR FUNCTION PROLOGUE / R10 SOURCE ===")
+=== GEAR FUNCTION PROLOGUE / R10 SOURCE ===
+Python>dump_range(0x24940, 0x24998)
+00024940: <decode failed> 00 00
+00024942: tst     r1, r1
+00024944: <decode failed> 00 00
+00024946: cmp/str r1, r5
+00024948: mov.b   @(r0,r0), r0
+0002494A: mov.b   r4, @-r2
+0002494C: <decode failed> ff ff
+0002494E: mov.l   @(h'24,r12), r1
+00024950: mov.l   r14, @-r15
+00024952: mov.l   r13, @-r15
+00024954: mov.l   r12, @-r15
+00024956: mov.l   r11, @-r15
+00024958: mov.l   r10, @-r15
+0002495A: fmov.s  fr15, @-r15
+0002495C: fmov.s  fr14, @-r15
+0002495E: fmov.s  fr13, @-r15
+00024960: fmov.s  fr12, @-r15
+00024962: sts.l   pr, @-r15
+00024964: mov.l   #h'FFFF51E8, r3
+00024966: add     #-h'C, r15
+00024968: mov.l   #h'2663C, r2
+0002496A: fmov.s  @r3, fr3
+0002496C: jsr     @r2
+0002496E: fmov.s  fr3, @r15
+00024970: mov.b   r0, @(4,r15)
+00024972: mov.l   #h'FFFF4BC2, r3
+00024974: mov.l   #h'16652, r2
+00024976: jsr     @r2
+00024978: mov.b   @r3, r10
+0002497A: mov     r0, r4
+0002497C: extu.b  r4, r0
+0002497E: cmp/eq  #1, r0
+00024980: bf/s    unk_2499C
+00024982: nop
+00024984: mov.l   #h'C25DC, r3
+00024986: mov     #8, r0
+00024988: mov.l   #h'C25E0, r2
+0002498A: fmov.s  @r3, fr3
+0002498C: fmov.s  fr3, @(r0,r15)
+0002498E: fmov.s  @r2, fr15
+00024990: mov.l   #h'C25E4, r1
+00024992: fmov.s  @r1, fr14
+00024994: mov.l   #h'C25E8, r3
+00024996: mov.l   #h'C25EC, r2
+Python>print("\n=== GEAR FUNCTION EPILOGUE ===")
+
+=== GEAR FUNCTION EPILOGUE ===
+Python>dump_range(0x24A78, 0x24AA4)
+00024A78: mov.b   r10, @r13
+00024A7A: mov.b   r10, @r14
+00024A7C: bra     unk_24A84
+00024A7E: mov.b   r12, @r13
+00024A80: mov.b   r10, @r14
+00024A82: mov.b   r12, @r13
+00024A84: add     #h'C, r15
+00024A86: lds.l   @r15+, pr
+00024A88: fmov.s  @r15+, fr12
+00024A8A: fmov.s  @r15+, fr13
+00024A8C: fmov.s  @r15+, fr14
+00024A8E: fmov.s  @r15+, fr15
+00024A90: mov.l   @r15+, r10
+00024A92: mov.l   @r15+, r11
+00024A94: mov.l   @r15+, r12
+00024A96: mov.l   @r15+, r13
+00024A98: rts
+00024A9A: mov.l   @r15+, r14
+00024A9C: mov.l   #h'FFFF52E8, r2
+00024A9E: mov     #6, r3
+00024AA0: rts
+00024AA2: mov.b   r3, @r2
+Python>print("\n=== R3 WRITES BEFORE R10 LOAD ===")
+
+=== R3 WRITES BEFORE R10 LOAD ===
+Python>for ea in range(0x24940, 0x24978, 2):
+    line = decode_line(ea)
+
+    if not line:
+        continue
+
+    low = line.lower()
+
+    if re.search(r',\s*r3(?:\s|$)', low):
+        print(f"{ea:08X}: {line}")
+Python>
+00024964: mov.l   #h'FFFF51E8, r3
+00024972: mov.l   #h'FFFF4BC2, r3
+Python>ida_funcs.add_func(FUNCTION_START, 0x24A9C)
+Traceback (most recent call last):
+  File "<string>", line 2, in <module>
+NameError: name 'FUNCTION_START' is not defined
+
+These logs give us the result we were trying to reach: the un-normalized transmission byte feeding the E8/E9 logic is 0xFFFF4BC2.
+
+At 0x24972 the ECU loads r3 = 0xFFFF4BC2, and at 0x24978 it executes:
+
+mov.b   @r3, r10
+
+That instruction is the delay-slot instruction for the jsr @r2 at 0x24976, so it executes before control transfers to 0x16652. Therefore we can state directly:
+
+r10 = *(uint8_t *)0xFFFF4BC2;
+
+before the normalization logic later turns that value into FFFF52E8 and FFFF52E9.
+
+That is no longer a candidate address. The only remaining candidate part is what each numeric value at 4BC2 means.
+
+We also have the exact function boundary now
+
+The junk-looking decoding at 0x24940–0x2494E is data/literal-pool material. Then 0x24950 begins a textbook function prologue:
+
+24950 mov.l r14,@-r15
+24952 mov.l r13,@-r15
+24954 mov.l r12,@-r15
+24956 mov.l r11,@-r15
+24958 mov.l r10,@-r15
+...
+24962 sts.l pr,@-r15
+
+and the matching epilogue restores everything through 0x24A9A. 0x24A9C then starts a separate tiny routine. So the main function is:
+
+start:         0x24950
+end-exclusive: 0x24A9C
+
+Your earlier command failed only because FUNCTION_START was a placeholder name, not a defined Python variable. You can now create and name both functions exactly:
+
+import ida_funcs
+import ida_name
+import idc
+import ida_kernwin
+
+print(
+    "main:",
+    ida_funcs.add_func(
+        0x24950,
+        0x24A9C
+    )
+)
+
+ida_name.set_name(
+    0x24950,
+    "sUpdateNormalizedGearState",
+    ida_name.SN_FORCE
+)
+
+print(
+    "sentinel:",
+    ida_funcs.add_func(
+        0x24A9C,
+        0x24AA4
+    )
+)
+
+ida_name.set_name(
+    0x24A9C,
+    "sSetGearStateE8To6",
+    ida_name.SN_FORCE
+)
+
+ida_kernwin.save_database()
+
+If add_func() prints False, don't change anything else yet; send me that output. The boundaries are strongly supported, but IDA may already have some overlapping definition we need to remove first.
+
+Name the newly discovered raw byte
+
+I would now name FFFF4BC2, but conservatively because its numeric encoding still needs the live test:
+
+ida_name.set_name(
+    0xFFFF4BC2,
+    "pRawGearRangeCode_candidate",
+    ida_name.SN_FORCE
+)
+
+idc.set_cmt(
+    0xFFFF4BC2,
+    "Raw byte loaded into R10 at 0x24978 before OEM normalization "
+    "into FFFF52E8/FFFF52E9. Exact address verified; numeric "
+    "range/gear semantics pending live validation.",
+    1
+)
+
+ida_kernwin.save_database()
+
+Notice that this is much stronger than our earlier E8/E9 discovery. 4BC2 is an input to the normalization routine; E8/E9 are outputs.
+
+The structure now looks like:
+
+FFFF4BC2
+ raw TCU-derived code
+       │
+       ▼
+      r10
+       │
+       ├── 0 or 6 ──► E8=6, E9=0
+       │
+       ├── 7 ───────► E8=1, E9=1
+       │
+       └── 1..5 ────► E8/E9 = 1..5
+
+That is why Reverse disappeared and became indistinguishable from first gear in the E8/E9 log.
+
+Don't delete E8/E9
+
+I would keep them. They are now useful diagnostic outputs that show what Subaru's own normalization routine decided.
+
+I would only replace any overly-specific IDA names with:
+
+ida_name.set_name(
+    0xFFFF52E8,
+    "pGearStateNormalized",
+    ida_name.SN_FORCE
+)
+
+ida_name.set_name(
+    0xFFFF52E9,
+    "pGearIndexNormalized",
+    ida_name.SN_FORCE
+)
+
+idc.set_cmt(
+    0xFFFF52E8,
+    "Live A2WC511R 5EAT observation: P/N=6, R=1, "
+    "forward gears 1..5=1..5. Reverse is normalized to 1.",
+    1
+)
+
+idc.set_cmt(
+    0xFFFF52E9,
+    "Live A2WC511R 5EAT observation: P/N=0, R=1, "
+    "forward gears 1..5=1..5. OEM code can also assign 6.",
+    1
+)
+
+ida_kernwin.save_database()
+
+That replaces the previous names; there is no need to blank them first.
+
+The next live test should be FFFF4BC2
+
+This is now more valuable than another E8/E9 test.
+
+Add one more extended logger parameter:
+
+<ecuparam
+    id="E_A2WC511R_RAW_GEAR_RANGE"
+    name="A2WC511R Raw Gear Range Code*"
+    desc="Raw uint8 ECU RAM byte FFFF4BC2 used by OEM gear-state normalization."
+    target="1">
+    <ecu id="2F12515306">
+        <address>0xFF4BC2</address>
+    </ecu>
+    <conversions>
+        <conversion
+            units="raw"
+            storagetype="uint8"
+            expr="x"
+            format="0" />
+    </conversions>
+</ecuparam>
+
+The use of the shortened 0xFFxxxx logger address matches how your definition handles direct SH7058 RAM for this exact ECU family—for example your exact ECU ID is associated with direct 0xFF4FC0 logging.
+
+For this test you can log only:
+
+Raw FFFF4BC2
+E8
+E9
+Engine Speed
+Vehicle Speed
+
+and go:
+
+P → R → N → D
+
+then, if practical, through gears 1–5.
+
+The result I especially want to test is:
+
+Selector	predicted 4BC2	E8	E9
+P	0 or 6	6	0
+R	7	1	1
+N	0 or 6	6	0
+D / 1st	1	1	1
+2nd	2	2	2
+3rd	3	3	3
+4th	4	4	4
+5th	5	5	5
+
+The particularly interesting possibility is that Park and Neutral may actually use different raw codes—perhaps one is 0 and the other 6—and Subaru deliberately collapses both into E8/E9's no-gear state. We shouldn't assume that until the log tells us.
+
+If Reverse really is 7, this becomes an excellent launch-control interlock:
+
+static unsigned char ForwardGearValid(void)
+{
+    unsigned char raw = *pRawGearRangeCode;
+
+    return raw >= 1 && raw <= 5;
+}
+
+That naturally rejects:
+
+P
+N
+R = 7
+invalid/sentinel states
+
+while admitting only forward gears.
+
+One more static test is worthwhile now
+
+After creating the function, ask IDA who calls it:
+
+import idautils
+  File "<string>", line 1
+    Pasted text(20260824-002404).txt
+                         ^^
+SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers
+Python>import idautils
+Python>print("=== CALLERS OF GEAR STATE UPDATE ===")
+=== CALLERS OF GEAR STATE UPDATE ===
+Python>for x in idautils.XrefsTo(0x24950):
+    print(
+        f"{x.frm:08X}: "
+        f"{idc.generate_disasm_line(x.frm, idc.GENDSM_FORCE_CODE)}"
+    )
+Python>
+Python>for x in idautils.XrefsTo(0x24950):
+    print(
+        f"{x.frm:08X}: "
+        f"{idc.generate_disasm_line(x.frm, idc.GENDSM_FORCE_CODE)}"
+    )
+Python>

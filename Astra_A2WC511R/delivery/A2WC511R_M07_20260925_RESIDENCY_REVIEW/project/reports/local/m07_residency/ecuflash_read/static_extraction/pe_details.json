@@ -1,0 +1,440 @@
+{
+  "sha256": "5e1b1729446d306487bb7ed358b1ee050b11e440902bb23a05663d8575346115",
+  "exports": [
+    {
+      "name": "_FT_Close@4",
+      "address": 1263120
+    },
+    {
+      "name": "_FT_ClrDtr@4",
+      "address": 1263264
+    },
+    {
+      "name": "_FT_ClrRts@4",
+      "address": 1263344
+    },
+    {
+      "name": "_FT_ComPortCancelIdle@4",
+      "address": 1263424
+    },
+    {
+      "name": "_FT_ComPortIdle@4",
+      "address": 1263504
+    },
+    {
+      "name": "_FT_CreateDeviceInfoList@4",
+      "address": 1263584
+    },
+    {
+      "name": "_FT_CyclePort@4",
+      "address": 1263648
+    },
+    {
+      "name": "_FT_EEPROM_Program@28",
+      "address": 1263728
+    },
+    {
+      "name": "_FT_EEPROM_Read@28",
+      "address": 1264512
+    },
+    {
+      "name": "_FT_EE_Program@8",
+      "address": 1265296
+    },
+    {
+      "name": "_FT_EE_ProgramEx@24",
+      "address": 1267872
+    },
+    {
+      "name": "_FT_EE_Read@8",
+      "address": 1267936
+    },
+    {
+      "name": "_FT_EE_ReadConfig@12",
+      "address": 1268624
+    },
+    {
+      "name": "_FT_EE_ReadECC@12",
+      "address": 1268720
+    },
+    {
+      "name": "_FT_EE_ReadEx@24",
+      "address": 1268816
+    },
+    {
+      "name": "_FT_EE_UARead@16",
+      "address": 1268880
+    },
+    {
+      "name": "_FT_EE_UASize@8",
+      "address": 1269216
+    },
+    {
+      "name": "_FT_EE_UAWrite@12",
+      "address": 1269536
+    },
+    {
+      "name": "_FT_EE_WriteConfig@12",
+      "address": 1269952
+    },
+    {
+      "name": "_FT_EraseEE@4",
+      "address": 1270064
+    },
+    {
+      "name": "_FT_Finalise@0",
+      "address": 1270160
+    },
+    {
+      "name": "_FT_GetBitMode@8",
+      "address": 1270224
+    },
+    {
+      "name": "_FT_GetComPortNumber@8",
+      "address": 1270320
+    },
+    {
+      "name": "_FT_GetDeviceInfo@24",
+      "address": 1270384
+    },
+    {
+      "name": "_FT_GetDeviceInfoDetail@32",
+      "address": 1270880
+    },
+    {
+      "name": "_FT_GetDeviceInfoList@8",
+      "address": 1271120
+    },
+    {
+      "name": "_FT_GetDriverVersion@8",
+      "address": 1271264
+    },
+    {
+      "name": "_FT_GetEventStatus@8",
+      "address": 1271312
+    },
+    {
+      "name": "_FT_GetLatencyTimer@8",
+      "address": 1271360
+    },
+    {
+      "name": "_FT_GetLibraryVersion@4",
+      "address": 1271456
+    },
+    {
+      "name": "_FT_GetModemStatus@8",
+      "address": 1271488
+    },
+    {
+      "name": "_FT_GetQueueStatus@8",
+      "address": 1271536
+    },
+    {
+      "name": "_FT_GetQueueStatusEx@8",
+      "address": 1271584
+    },
+    {
+      "name": "_FT_GetStatus@16",
+      "address": 1271632
+    },
+    {
+      "name": "_FT_Initialise@0",
+      "address": 1271760
+    },
+    {
+      "name": "_FT_IoCtl@32",
+      "address": 1271776
+    },
+    {
+      "name": "_FT_ListDevices@12",
+      "address": 1271888
+    },
+    {
+      "name": "_FT_Open@8",
+      "address": 1272624
+    },
+    {
+      "name": "_FT_OpenEx@12",
+      "address": 1273328
+    },
+    {
+      "name": "_FT_Purge@8",
+      "address": 1273808
+    },
+    {
+      "name": "_FT_Read@16",
+      "address": 1273904
+    },
+    {
+      "name": "_FT_ReadEE@12",
+      "address": 1274000
+    },
+    {
+      "name": "_FT_Reload@8",
+      "address": 1274096
+    },
+    {
+      "name": "_FT_Rescan@0",
+      "address": 1274224
+    },
+    {
+      "name": "_FT_ResetDevice@4",
+      "address": 1274240
+    },
+    {
+      "name": "_FT_ResetPort@4",
+      "address": 1274320
+    },
+    {
+      "name": "_FT_RestartInTask@4",
+      "address": 1274400
+    },
+    {
+      "name": "_FT_SetBaudRate@8",
+      "address": 1274480
+    },
+    {
+      "name": "_FT_SetBitMode@12",
+      "address": 1274592
+    },
+    {
+      "name": "_FT_SetBreakOff@4",
+      "address": 1274704
+    },
+    {
+      "name": "_FT_SetBreakOn@4",
+      "address": 1274784
+    },
+    {
+      "name": "_FT_SetChars@20",
+      "address": 1274864
+    },
+    {
+      "name": "_FT_SetDataCharacteristics@16",
+      "address": 1274992
+    },
+    {
+      "name": "_FT_SetDeadmanTimeout@8",
+      "address": 1275104
+    },
+    {
+      "name": "_FT_SetDivisor@8",
+      "address": 1275200
+    },
+    {
+      "name": "_FT_SetDtr@4",
+      "address": 1275296
+    },
+    {
+      "name": "_FT_SetEventNotification@12",
+      "address": 1275376
+    },
+    {
+      "name": "_FT_SetFlowControl@16",
+      "address": 1275488
+    },
+    {
+      "name": "_FT_SetLatencyTimer@8",
+      "address": 1275600
+    },
+    {
+      "name": "_FT_SetResetPipeRetryCount@8",
+      "address": 1275696
+    },
+    {
+      "name": "_FT_SetRts@4",
+      "address": 1275792
+    },
+    {
+      "name": "_FT_SetTimeouts@12",
+      "address": 1275872
+    },
+    {
+      "name": "_FT_SetUSBParameters@12",
+      "address": 1275984
+    },
+    {
+      "name": "_FT_SetWaitMask@8",
+      "address": 1276096
+    },
+    {
+      "name": "_FT_StopInTask@4",
+      "address": 1276192
+    },
+    {
+      "name": "_FT_VendorCmdGet@16",
+      "address": 1276272
+    },
+    {
+      "name": "_FT_VendorCmdGetEx@16",
+      "address": 1276448
+    },
+    {
+      "name": "_FT_VendorCmdSet@16",
+      "address": 1276624
+    },
+    {
+      "name": "_FT_VendorCmdSetEx@16",
+      "address": 1276800
+    },
+    {
+      "name": "_FT_W32_CancelIo@4",
+      "address": 1276976
+    },
+    {
+      "name": "_FT_W32_ClearCommBreak@4",
+      "address": 1276992
+    },
+    {
+      "name": "_FT_W32_ClearCommError@12",
+      "address": 1277040
+    },
+    {
+      "name": "_FT_W32_CloseHandle@4",
+      "address": 1277136
+    },
+    {
+      "name": "_FT_W32_CreateFile@28",
+      "address": 1277280
+    },
+    {
+      "name": "_FT_W32_EscapeCommFunction@8",
+      "address": 1277776
+    },
+    {
+      "name": "_FT_W32_GetCommMask@8",
+      "address": 1278080
+    },
+    {
+      "name": "_FT_W32_GetCommModemStatus@8",
+      "address": 1278128
+    },
+    {
+      "name": "_FT_W32_GetCommState@8",
+      "address": 1278176
+    },
+    {
+      "name": "_FT_W32_GetCommTimeouts@8",
+      "address": 1278304
+    },
+    {
+      "name": "_FT_W32_GetLastError@4",
+      "address": 1278352
+    },
+    {
+      "name": "_FT_W32_GetOverlappedResult@16",
+      "address": 1278368
+    },
+    {
+      "name": "_FT_W32_PurgeComm@8",
+      "address": 1278432
+    },
+    {
+      "name": "_FT_W32_ReadFile@20",
+      "address": 1278512
+    },
+    {
+      "name": "_FT_W32_SetCommBreak@4",
+      "address": 1278592
+    },
+    {
+      "name": "_FT_W32_SetCommMask@8",
+      "address": 1278640
+    },
+    {
+      "name": "_FT_W32_SetCommState@8",
+      "address": 1278688
+    },
+    {
+      "name": "_FT_W32_SetCommTimeouts@8",
+      "address": 1278784
+    },
+    {
+      "name": "_FT_W32_SetupComm@12",
+      "address": 1278864
+    },
+    {
+      "name": "_FT_W32_WaitCommEvent@12",
+      "address": 1278912
+    },
+    {
+      "name": "_FT_W32_WriteFile@20",
+      "address": 1278960
+    },
+    {
+      "name": "_FT_WaitOnMask@8",
+      "address": 1279040
+    },
+    {
+      "name": "_FT_Write@16",
+      "address": 1279136
+    },
+    {
+      "name": "_FT_WriteEE@12",
+      "address": 1279232
+    }
+  ],
+  "TLS_callbacks": [],
+  "markers": {
+    "UPX!": [],
+    "UPX0": [],
+    "UPX1": [],
+    "Themida": [],
+    "WinLicense": [],
+    "ASPack": [],
+    "MPRESS": [],
+    "VMProtect": [],
+    "Enigma": []
+  },
+  "entry_bytes": "565053e801000000cc5889c3402d00901c002d2cf70b100523f70b10803bcc7519c60300bb00100000685d01522d68857b945e5350e80a00000083c000894424085b58c35589e5505351568b75088b4d0cc1e9028b45108b5d1485c9740a3106011e83c60449ebf25e595b58c9c210001aa4bd816a3037c312379ae8f71aeef0",
+  "sections": [
+    {
+      "name_hex": "2020200020202020",
+      "rva": 4096,
+      "raw": 4096,
+      "raw_size": 5956608,
+      "virtual_size": 12648448,
+      "flags": "0xe0000040"
+    },
+    {
+      "name_hex": "2e72737263000000",
+      "rva": 12652544,
+      "raw": 5960704,
+      "raw_size": 2048,
+      "virtual_size": 6120,
+      "flags": "0xc0000040"
+    },
+    {
+      "name_hex": "2e69646174612020",
+      "rva": 12660736,
+      "raw": 5962752,
+      "raw_size": 512,
+      "virtual_size": 4096,
+      "flags": "0xc0000040"
+    },
+    {
+      "name_hex": "2020202020202020",
+      "rva": 12664832,
+      "raw": 5963264,
+      "raw_size": 512,
+      "virtual_size": 4177920,
+      "flags": "0xe0000040"
+    },
+    {
+      "name_hex": "797a78637a78746e",
+      "rva": 16842752,
+      "raw": 5963776,
+      "raw_size": 1869824,
+      "virtual_size": 1871872,
+      "flags": "0xe0000040"
+    },
+    {
+      "name_hex": "6979756f6b687a64",
+      "rva": 18714624,
+      "raw": 7833600,
+      "raw_size": 512,
+      "virtual_size": 4096,
+      "flags": "0xe0000040"
+    }
+  ]
+}

@@ -1,0 +1,568 @@
+{
+  "schema": 1,
+  "classification": "OFFLINE_VERIFIED_COLLECTOR_PHYSICAL_USE_REQUIRES_HUMAN_AND_BENCH_ACCEPTANCE",
+  "java": {
+    "path": "C:\\Program Files (x86)\\Java\\jre1.8.0_503\\bin\\java.exe",
+    "sha256": "16f36cd4a358ba6eb3dfd578e874715f55851034bf4686f1425afccbd065bc39"
+  },
+  "provider": {
+    "path": "C:\\Windows\\SysWOW64\\op20pt32.dll",
+    "sha256": "f432084801762d919a3c31974616e097562424470003edc4f4fb843df34103cf"
+  },
+  "snapshot": {
+    "path": "C:\\Dev\\A2WC511R_Sim\\runs\\20260925T210127.390057Z_gate_scenarios\\virtual_ram_snapshots.json",
+    "sha256": "fee2ff989929917ee55823cf3584c92bcfa1ff8984bee1232373a0fc8f5c1632"
+  },
+  "rom": {
+    "path": "C:\\Dev\\Astra_A2WC511R\\work\\patches\\m0_final_05\\A2WC511R.M0.EXPERIMENTAL_UNAPPROVED.raw.bin",
+    "sha256": "8092a20fd37f17dd351d18c805fdf195c2207af9adecca25e388146c7a9acc37"
+  },
+  "classpath": [
+    "C:\\Dev\\Astra_A2WC511R\\work\\gate_closure\\virtual_rr\\classes",
+    "C:\\Program Files\\RomRaider\\RomRaider.jar",
+    "C:\\Dev\\Astra_A2WC511R\\integrations\\romraider\\dist\\romraider-bridge.jar",
+    "C:\\Program Files\\RomRaider\\lib\\common\\args4j-2.0.1.jar",
+    "C:\\Program Files\\RomRaider\\lib\\common\\com4j.jar",
+    "C:\\Program Files\\RomRaider\\lib\\common\\Graph3d.jar",
+    "C:\\Program Files\\RomRaider\\lib\\common\\j3dcore.jar",
+    "C:\\Program Files\\RomRaider\\lib\\common\\j3dutils.jar",
+    "C:\\Program Files\\RomRaider\\lib\\common\\jama-1.0.2.jar",
+    "C:\\Program Files\\RomRaider\\lib\\common\\jamlab.jar",
+    "C:\\Program Files\\RomRaider\\lib\\common\\jcommon-1.0.12.jar",
+    "C:\\Program Files\\RomRaider\\lib\\common\\jep.jar",
+    "C:\\Program Files\\RomRaider\\lib\\common\\jfreechart-1.0.9.jar",
+    "C:\\Program Files\\RomRaider\\lib\\common\\jna.jar",
+    "C:\\Program Files\\RomRaider\\lib\\common\\jSerialComm-2.9.1.jar",
+    "C:\\Program Files\\RomRaider\\lib\\common\\log4j-1.2.14.jar",
+    "C:\\Program Files\\RomRaider\\lib\\common\\phidget21.jar",
+    "C:\\Program Files\\RomRaider\\lib\\common\\platform.jar",
+    "C:\\Program Files\\RomRaider\\lib\\common\\vecmath.jar",
+    "C:\\Program Files\\RomRaider\\i18n"
+  ],
+  "runtime_directories": [
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\work\\gate_closure\\virtual_rr\\classes",
+      "files": [
+        "C:\\Dev\\Astra_A2WC511R\\work\\gate_closure\\virtual_rr\\classes\\a2wc\\virtualrr\\NativeLoggerAcceptance$1.class",
+        "C:\\Dev\\Astra_A2WC511R\\work\\gate_closure\\virtual_rr\\classes\\a2wc\\virtualrr\\NativeLoggerAcceptance.class",
+        "C:\\Dev\\Astra_A2WC511R\\work\\gate_closure\\virtual_rr\\classes\\a2wc\\virtualrr\\ReadOnlySSMCollector$ReadOnlyGate.class",
+        "C:\\Dev\\Astra_A2WC511R\\work\\gate_closure\\virtual_rr\\classes\\a2wc\\virtualrr\\ReadOnlySSMCollector.class",
+        "C:\\Dev\\Astra_A2WC511R\\work\\gate_closure\\virtual_rr\\classes\\a2wc\\virtualrr\\VirtualSSMConnectionManager.class"
+      ]
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n",
+      "files": [
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\ECUExec.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\ECUExec_fr_CA.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\editor\\ecu\\ECUEditor.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\editor\\ecu\\ECUEditor_fr_CA.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\comms\\globaladjust\\SSMGlobalAdjustManager.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\comms\\globaladjust\\SSMGlobalAdjustManager_fr_CA.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\comms\\io\\connection\\DS2LoggerConnection.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\comms\\io\\connection\\NCSLoggerConnection.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\comms\\io\\connection\\NCSLoggerConnection_fr_CA.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\comms\\learning\\DS2LearningTableValues.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\comms\\learning\\DS2LearningTableValues_fr_CA.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\comms\\learning\\NCSLearningTableValues.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\comms\\learning\\NCSLearningTableValues_fr_CA.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\comms\\learning\\SSMLearningTableValues.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\comms\\manager\\QueryManagerImpl.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\comms\\readcodes\\ReadCodesManagerImpl.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\definition\\EcuDataLoaderImpl.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\EcuLogger.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\EcuLogger_fr_CA.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\profile\\UserProfileFileFilter.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\profile\\UserProfileImpl.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\ui\\handler\\dash\\PlainGaugeStyle.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\ui\\handler\\file\\FileLoggerImpl.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\ui\\handler\\graph\\GraphUpdateHandler.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\ui\\handler\\livedata\\LiveDataTableModel.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\ui\\paramlist\\ParameterListTableModel.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\ui\\StatusIndicator.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\ui\\swing\\menubar\\EcuLoggerMenuBar.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\ui\\swing\\menubar\\util\\FileHelper.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\ui\\swing\\tools\\DS2LearningTableValuesResultsPanel.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\ui\\swing\\tools\\DS2ResetPanel.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\ui\\swing\\tools\\GlobalAdjustmentsPanel.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\ui\\swing\\tools\\NCSLearningTableValuesResultsPanel.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\ui\\swing\\tools\\ReadCodesResultsPanel.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\ui\\swing\\tools\\SSMLearningTableValuesResultsPanel.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\ui\\swing\\tools\\tablemodels\\ReadCodesTableModel.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\ui\\tab\\dyno\\DynoChartPanel.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\ui\\tab\\dyno\\DynoControlPanel.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\ui\\tab\\dyno\\DynoControlPanel_fr_CA.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\ui\\tab\\dyno\\DynoTabImpl.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\ui\\tab\\injector\\InjectorControlPanel.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\ui\\tab\\injector\\InjectorTabImpl.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\ui\\tab\\maf\\MafControlPanel.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\ui\\tab\\maf\\MafTabImpl.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\ui\\tab\\TableFinder.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\ui\\tab\\XYTrendline.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\external\\phidget\\interfacekit\\plugin\\IntfKitConvertorPanel.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\external\\phidget\\interfacekit\\plugin\\IntfKitTableModel.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\maps\\checksum\\ChecksumFactory.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\maps\\Rom.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\maps\\Table3DView.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\maps\\TableBitwiseSwitch.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\maps\\TableSwitch.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\maps\\TableView.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\swing\\CompareImagesForm.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\swing\\DebugPanel.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\swing\\DefinitionFilter.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\swing\\DefinitionManager.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\swing\\ECUEditorMenuBar.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\swing\\ECUEditorToolBar.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\swing\\ECUImageFilter.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\swing\\JProgressPane.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\swing\\JTableChooser.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\swing\\menubar\\action\\AbstractAction.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\swing\\RomFilterPanel.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\swing\\RomPropertyPanel.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\swing\\SettingsForm.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\swing\\TableFrame.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\swing\\TableMenuBar.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\swing\\TablePropertyPanel.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\swing\\TableToolBar.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\swing\\util\\NumberVerifier.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\swing\\util\\NumberVerifier_fr_CA.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\util\\SettingsManager.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\xml\\ConversionLayer\\BMWCodingConversionLayer.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\xml\\ConversionLayer\\XDFConversionLayer.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\xml\\DOMRomUnmarshaller.properties",
+        "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\xml\\DOMSettingsBuilder.properties"
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "C:\\Program Files (x86)\\Java\\jre1.8.0_503\\bin\\java.exe",
+      "sha256": "16f36cd4a358ba6eb3dfd578e874715f55851034bf4686f1425afccbd065bc39"
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\op20pt32.dll",
+      "sha256": "f432084801762d919a3c31974616e097562424470003edc4f4fb843df34103cf"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\RomRaider.jar",
+      "sha256": "43f0e92d652a5d2dde57fbe76ef99ff4f18c8147b0cbc20c0c4ccb33a7fe6635"
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\integrations\\romraider\\dist\\romraider-bridge.jar",
+      "sha256": "88183aa9a7e84503f23a412b8490f644dda5153dcaf2f035f5e9e5b788f644b0"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\lib\\common\\args4j-2.0.1.jar",
+      "sha256": "a6c30642b5117927f45ecf9f47b93e68d46c9285b7a8f84047b9647ca19abec1"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\lib\\common\\com4j.jar",
+      "sha256": "105a61f59b1bc160e8c4331c9cfae60fc0c61ebcd9d9eb2c53e0a4c1b7081fd1"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\lib\\common\\Graph3d.jar",
+      "sha256": "0f8e6bf0cdc1300042ddea452642850ba1ebb34b8a6dba860d6c8ec2622190e4"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\lib\\common\\j3dcore.jar",
+      "sha256": "0305cc1eb7169ee15efd8edb40db4e5b9562496069f7315d49ac36d735881edc"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\lib\\common\\j3dutils.jar",
+      "sha256": "b7ed0c0c17d70beb486b50443281259cda779f5b62a96fd16d465ac99b765515"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\lib\\common\\jama-1.0.2.jar",
+      "sha256": "f6390ab8e1281324305b640e0092c062b10135aecc84583849d6d23726c6ab43"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\lib\\common\\jamlab.jar",
+      "sha256": "9927431c668436ef464103d882cf3b533ee6c970b20b3eb054bef526fd41574d"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\lib\\common\\jcommon-1.0.12.jar",
+      "sha256": "c121a8b0afc2f4c182ee3af65f8c61132fb126870b43b9e94148ea1c797d59dc"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\lib\\common\\jep.jar",
+      "sha256": "3aa83f7b324b2c7fab21bff407468ebb147542ee065e4a3f857b7ecf8d50e9eb"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\lib\\common\\jfreechart-1.0.9.jar",
+      "sha256": "4a2a1eb6d188a43e1e97bb7c7d204a5bdd1aaec0d82203cf1b1156ff697d7f8e"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\lib\\common\\jna.jar",
+      "sha256": "35583680fa419f182facef045a6c851790147f0ca0a96418db65832ecd73afdb"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\lib\\common\\jSerialComm-2.9.1.jar",
+      "sha256": "8c3bba2ecf1d7f561e1578a3b50bcccc7c891e1c87a63ff47bb67767db38e679"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\lib\\common\\log4j-1.2.14.jar",
+      "sha256": "e3bff9ab64a09b1ac2800f3b5fb1e3d99728064acb6dd3924938507638a404fb"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\lib\\common\\phidget21.jar",
+      "sha256": "c8285348744896f782a901ad5867d18ad46bba37ee5d6546eb09eb32a4d6319f"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\lib\\common\\platform.jar",
+      "sha256": "8719110b6f7e3ac3f9306cb2f5ad7cacdb7f46de219cf1571f8db61e02e5791f"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\lib\\common\\vecmath.jar",
+      "sha256": "09adf7955baa6bddf57a4bdbf9a91cf690261314969b59a18085ece1e05eccf9"
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\work\\gate_closure\\virtual_rr\\classes\\a2wc\\virtualrr\\NativeLoggerAcceptance$1.class",
+      "sha256": "e465d38dac94b341be7d0f1577825fd76b0c9f54885d76bc13c7b8b1fda79192"
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\work\\gate_closure\\virtual_rr\\classes\\a2wc\\virtualrr\\NativeLoggerAcceptance.class",
+      "sha256": "3edbd6526aaade49c4aaeba987ed50a15f8e05ade41670cc6fb9564d6c0b0eec"
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\work\\gate_closure\\virtual_rr\\classes\\a2wc\\virtualrr\\ReadOnlySSMCollector$ReadOnlyGate.class",
+      "sha256": "7782b570f5609f72a561c2be57469d27da9d168c1af2edba2ea12bd1956b98e3"
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\work\\gate_closure\\virtual_rr\\classes\\a2wc\\virtualrr\\ReadOnlySSMCollector.class",
+      "sha256": "50ece20dd9cf59984861c545c4c39078157d6be54b56cca09a512d928ee0b9c3"
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\work\\gate_closure\\virtual_rr\\classes\\a2wc\\virtualrr\\VirtualSSMConnectionManager.class",
+      "sha256": "c6dd2b90c3f4750bce1f482e207ff632e239d053009193368ddcb012d3e44281"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\ECUExec.properties",
+      "sha256": "595cafb9ba2b7dd9ecf8eac536cf9da1a9fc797ea49f7cdcb862c63ec809db81"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\ECUExec_fr_CA.properties",
+      "sha256": "46d7fdbbbef6db1c1c071c8179c5c56ee27f76edc95e88b13271806c429a1fe8"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\editor\\ecu\\ECUEditor.properties",
+      "sha256": "f8e06e2ba68c5976b65ffe33233e82b76a9120309228a103005ecea63b9d7ed9"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\editor\\ecu\\ECUEditor_fr_CA.properties",
+      "sha256": "a875dd7eab0743c833774020b2da7003e66fa6ae330e7f1572350ef26e181739"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\comms\\globaladjust\\SSMGlobalAdjustManager.properties",
+      "sha256": "92c13a0db2d018cf325506e976082c30822c914021667afe70995dd9c247f307"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\comms\\globaladjust\\SSMGlobalAdjustManager_fr_CA.properties",
+      "sha256": "e47e07af284074b98361516325f838f8740c5b7fbfc805a30abc073c837367af"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\comms\\io\\connection\\DS2LoggerConnection.properties",
+      "sha256": "e69d1b8f3d111b2777a1e5eb970a5f508f6ea92c673e7481cc59f888f1baacc5"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\comms\\io\\connection\\NCSLoggerConnection.properties",
+      "sha256": "e21e865771dd876a4d447138b618d9ede6a9bf4d0879febcb8b3d05d0e833085"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\comms\\io\\connection\\NCSLoggerConnection_fr_CA.properties",
+      "sha256": "dce057c432568e47e7f62d9eca43b1db92efb8f18b512e05f89c476c7e48e3b1"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\comms\\learning\\DS2LearningTableValues.properties",
+      "sha256": "1da7fe079d2fc8e25f2b2a678052aa44fb7e65f155941ec9faecd4ec4325fcf9"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\comms\\learning\\DS2LearningTableValues_fr_CA.properties",
+      "sha256": "aad50d95e69a3ea128f85c14a16793fb00611a94edaf0b65b5b6e550ac5ede5e"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\comms\\learning\\NCSLearningTableValues.properties",
+      "sha256": "090c86f889c517b2fae339b2eb33af6780834b7c6ed2e16cb4329a28ce7915d1"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\comms\\learning\\NCSLearningTableValues_fr_CA.properties",
+      "sha256": "627d75e3b8afff117deccada455532eebd4c1b2e13d05e5f1c548a2bf7256930"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\comms\\learning\\SSMLearningTableValues.properties",
+      "sha256": "d91e50d322a31f5b3bb689bdbdf842bf8c77eca7e27b86bd5e3e8f941b4bcae3"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\comms\\manager\\QueryManagerImpl.properties",
+      "sha256": "5a54e1d930f612eda5164d651cb294cd4291b97fb921cc8194815fe9af87544e"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\comms\\readcodes\\ReadCodesManagerImpl.properties",
+      "sha256": "d8e4a5cb45b982b8ac45fc516a06b86d48085e628dcd6bea8a374768c7cb2218"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\definition\\EcuDataLoaderImpl.properties",
+      "sha256": "af6a87906362510d870daed6dd8d146fd2421793e8d2f22639843575335309dc"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\EcuLogger.properties",
+      "sha256": "d0e660e92ab36635c3185d28abab9c92b2402a11ae425de066b73b20e6871b4a"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\EcuLogger_fr_CA.properties",
+      "sha256": "8d186d2182b6aea9aaa063da9da2338d5fc44698e4f8d09aa4fec2f760d392ea"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\profile\\UserProfileFileFilter.properties",
+      "sha256": "77bfec35cf108487db290330b731d065ca62709b6649f89809341c94dc3ff6ac"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\profile\\UserProfileImpl.properties",
+      "sha256": "a53c38c8140f1d83916188c8860a7129f90a68d21f5f1650f7a9d9d9c327a503"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\ui\\handler\\dash\\PlainGaugeStyle.properties",
+      "sha256": "447868bac8f4817742a174e810136b3f0c0fc6c97de3e95c9110695873ac12dc"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\ui\\handler\\file\\FileLoggerImpl.properties",
+      "sha256": "3f11764d1c5be084aa8a2c4d7736607df19427c83e091709493f7ef72a806fee"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\ui\\handler\\graph\\GraphUpdateHandler.properties",
+      "sha256": "7cd9c53ade40ead872f1f937ce035095cfc8a61c40c97b532c25f2570642bc8b"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\ui\\handler\\livedata\\LiveDataTableModel.properties",
+      "sha256": "5aa6d9948abdef054deeb4a4f975d1a840da4453c0e7bbac78022ff61f5646f8"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\ui\\paramlist\\ParameterListTableModel.properties",
+      "sha256": "60460bb0325b2d2ccd5c0d5317c3a0afbf56671c1ce19451f0cdfaaa631084f7"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\ui\\StatusIndicator.properties",
+      "sha256": "98594b1f3d733949486d440431216a05cc00cd8c1bd62f787fe7b585d783322b"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\ui\\swing\\menubar\\EcuLoggerMenuBar.properties",
+      "sha256": "aea34f6287b216ac3bdc4bc5fcc26350f2e2b17a26b6db4e4fa9108f55106b84"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\ui\\swing\\menubar\\util\\FileHelper.properties",
+      "sha256": "15315dbaa68839a87ea60af04b81577f7f3c00498d01cc4b7f2daab453fc412f"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\ui\\swing\\tools\\DS2LearningTableValuesResultsPanel.properties",
+      "sha256": "eb428c659072975d59c2b8bc7f091ba19ecb94ab5c88b2236b83e22342d503bf"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\ui\\swing\\tools\\DS2ResetPanel.properties",
+      "sha256": "d25a7388e3a250845900f2865985ca79766c6669c1761961a72fd61766431ee3"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\ui\\swing\\tools\\GlobalAdjustmentsPanel.properties",
+      "sha256": "59d8048f70a0dd49069013ccdcb9019795ccde6381c70a3c23e3d0f290bf52eb"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\ui\\swing\\tools\\NCSLearningTableValuesResultsPanel.properties",
+      "sha256": "da597d96ad5e8ceb471413c8ab565eb10fd995cba93290147c798e272d61d605"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\ui\\swing\\tools\\ReadCodesResultsPanel.properties",
+      "sha256": "7ce5518de7a032bda27fa80d252238d2708d2ea1d4d73868087e1ebc93ca1436"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\ui\\swing\\tools\\SSMLearningTableValuesResultsPanel.properties",
+      "sha256": "ac6e1f4c1c5e2d149712ae78457ed96c9375a76213cf59ebb18cb13459f3dc27"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\ui\\swing\\tools\\tablemodels\\ReadCodesTableModel.properties",
+      "sha256": "c9c3ee977c2e0847f5155acfc053942fe7f620a7a23e6b055c6b94edc33e1410"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\ui\\tab\\dyno\\DynoChartPanel.properties",
+      "sha256": "d977af01c1f88413dda9f3b8ea41c48bedc23d6075b2ac7a2757e9bfb68cb0df"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\ui\\tab\\dyno\\DynoControlPanel.properties",
+      "sha256": "ee2cd4d1065ad8bfed90b14120cc78cc5ab42992ccce1020961d7aeb841494ab"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\ui\\tab\\dyno\\DynoControlPanel_fr_CA.properties",
+      "sha256": "77aea15eabcaf9deaab5bfa21b71b222627ca0d6c611751d1b878254c3ffbb78"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\ui\\tab\\dyno\\DynoTabImpl.properties",
+      "sha256": "322f04e6d0616d92f381b754ab54e04bfbe3aa82d3e3cbca5e0a7feb1b9b0161"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\ui\\tab\\injector\\InjectorControlPanel.properties",
+      "sha256": "32b3000809c05be02bc5e6b88dbc1fa224806a394e94776b80aeb43b1fe907db"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\ui\\tab\\injector\\InjectorTabImpl.properties",
+      "sha256": "8afce53ef12cfba9d7f21816c402f464388cbe5c2dd0b6492b9126d07fb9d3a0"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\ui\\tab\\maf\\MafControlPanel.properties",
+      "sha256": "1ddfa28cbf55513e1ccf1df002ef92416dea8792d44e5567464be2d73da195d6"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\ui\\tab\\maf\\MafTabImpl.properties",
+      "sha256": "b6f0224d0cff55c2a15938e84911644ee81829046b3734dca7a714b718799d9e"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\ui\\tab\\TableFinder.properties",
+      "sha256": "9a5b4332fe606d8c0beb4174db88f98c7ab72a97c32a84c8d253b3e053769dbd"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\ecu\\ui\\tab\\XYTrendline.properties",
+      "sha256": "0d0c64af8bab66f3aef3c7e3d80b2e72c069c41bbe3eaca17adb72971485a2e8"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\external\\phidget\\interfacekit\\plugin\\IntfKitConvertorPanel.properties",
+      "sha256": "d35bf4b832220e685f08e48566f30c8034ed8d728aa5d8126821b3813ffd8a0b"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\logger\\external\\phidget\\interfacekit\\plugin\\IntfKitTableModel.properties",
+      "sha256": "70d3f92dbd54f33590fe7e26a3ade55c41e4171df30a3b59cc8635d46938fd98"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\maps\\checksum\\ChecksumFactory.properties",
+      "sha256": "e64ccf34b96b2c1328238e920589964525b614594acf467ab13953c8a7281572"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\maps\\Rom.properties",
+      "sha256": "abdbfac61106a786e1ac3f9f82d058806b79bba0d773f843a55faa078bc0d571"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\maps\\Table3DView.properties",
+      "sha256": "1a0a37253af07909fc82ecf58f1e5bec7b6f2dce386857137902030405fb9c3f"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\maps\\TableBitwiseSwitch.properties",
+      "sha256": "e41a7afed4d63edc005f43a2ba08cd40db3daf2709173d9ec0aea059886372ff"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\maps\\TableSwitch.properties",
+      "sha256": "7eee6033a5da396232ce593f865ea86a4427c71293662fb4de69ff74e42ace8c"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\maps\\TableView.properties",
+      "sha256": "9c0d2a99a8bedb4b981255357f1c74f276a29bedbfa2b1abb11b9d0e76f6ba0d"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\swing\\CompareImagesForm.properties",
+      "sha256": "3b36702d847b44aeff63b604372308188c1c8ae8605cbc064f61b7525a01a3ef"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\swing\\DebugPanel.properties",
+      "sha256": "3c5c8cd5c295d76a48affc50eb57d8ace494c4a574d1e39960a091dc10ff51c2"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\swing\\DefinitionFilter.properties",
+      "sha256": "541fdf17343ca090c29d73bd710d656e080fb9dcebb2f00e044d9188dd2d19f9"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\swing\\DefinitionManager.properties",
+      "sha256": "b897c4728a78ffc15fea3bf48ea6d78b3523341b2254e9afb2ba9630e83d2061"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\swing\\ECUEditorMenuBar.properties",
+      "sha256": "64db382cead9b008f4357be3a948aa22b65568fb58c94d17891c2ea15867be50"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\swing\\ECUEditorToolBar.properties",
+      "sha256": "077eac4eaa026691427cf25c0db4f2f076f5dd35450c8d5676bc8ee44d32c2fb"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\swing\\ECUImageFilter.properties",
+      "sha256": "d847dbf1cc0866dc375ceaa7d2172a36f778c6c7b0bc175244c6041b63568213"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\swing\\JProgressPane.properties",
+      "sha256": "f413f82dadbb37ad97f3c300f5f6c1457ea6218973923739e99e159bda80b737"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\swing\\JTableChooser.properties",
+      "sha256": "70575b0da6e62aa406c5172f73db67bf25d7bda0ecf46301c0d0ff649a366f02"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\swing\\menubar\\action\\AbstractAction.properties",
+      "sha256": "552f2ad8bc5849b6a732bd1680575ed1bb963711547afb8a5691e8c23acaf773"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\swing\\RomFilterPanel.properties",
+      "sha256": "4cc43b219dc91723f5670e0193d77c61f0cf86fdafe05f817ac7f7115af03c81"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\swing\\RomPropertyPanel.properties",
+      "sha256": "ab6f5180ba2943e29c6e789dd05309f1012e62e5d9c1d38bc3ac23abf9ca1f99"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\swing\\SettingsForm.properties",
+      "sha256": "d1ace242beb002d0c6052361ede8a230ab149bd5a4bcfc8a0624244fb8a03989"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\swing\\TableFrame.properties",
+      "sha256": "9bfc2b3bb45a1f059836d48757a178311df17f43ec49ec07aae8dcfdbdc9a506"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\swing\\TableMenuBar.properties",
+      "sha256": "0bf271a65c06acbf57988f7f490fad543794eb6dc4952cd91df37aae124d9e6e"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\swing\\TablePropertyPanel.properties",
+      "sha256": "2d216a6323a5eedb487ebdbfb60ba3b5ca789c4be17bb1de6153fe854ecf5fd4"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\swing\\TableToolBar.properties",
+      "sha256": "9a87557722f9ab3d3239955085bce1e28569cf190bb8cf56d9f939a06338f4ec"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\swing\\util\\NumberVerifier.properties",
+      "sha256": "0646327014a2a49accb92dd495a75d287fbd1a2bc500aa8bb1787e4381becb2e"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\swing\\util\\NumberVerifier_fr_CA.properties",
+      "sha256": "38f669c02bd4b0ccf65ff211318df9c7b69f31766c68152fb196df5f7c38c3d5"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\util\\SettingsManager.properties",
+      "sha256": "22b83f740246ae5e3e7329426ba7893f5580832f489c64cfcebd6dc45c8b91ed"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\xml\\ConversionLayer\\BMWCodingConversionLayer.properties",
+      "sha256": "33963dd1bd126c1decffce593f9921b5fbb61448644c1efd107ac07e7bca5b0a"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\xml\\ConversionLayer\\XDFConversionLayer.properties",
+      "sha256": "8fed9e242ba9f5edb316b136d940747a7daef406bdfc8a7127efac19dd8a2b79"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\xml\\DOMRomUnmarshaller.properties",
+      "sha256": "556553a225bf096c5cc7bc41a777670f4c0eb47aaca2e5ce798ebe7637c5366f"
+    },
+    {
+      "path": "C:\\Program Files\\RomRaider\\i18n\\com\\romraider\\xml\\DOMSettingsBuilder.properties",
+      "sha256": "942abdbb6210661698fb99b58d7935b78a2772f2313ad3db711f814228756b76"
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\integrations\\romraider\\virtual\\src\\a2wc\\virtualrr\\NativeLoggerAcceptance.java",
+      "sha256": "8da97be322644966d9f7a7642aa145e9cfa8e11808e342abaf2a025a680c164b"
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\integrations\\romraider\\virtual\\src\\a2wc\\virtualrr\\ReadOnlySSMCollector.java",
+      "sha256": "81d5a8d31d881c805ceb4f7a51e5d6369c4d25161687716cf6bd176e18ecee12"
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\integrations\\romraider\\virtual\\src\\a2wc\\virtualrr\\VirtualSSMConnectionManager.java",
+      "sha256": "03ac3499040dca7b168a220535274cf14c82435a4d8b8cffe325ca29908ec4ce"
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\integrations\\romraider\\virtual\\Invoke-ReadOnlySSM.ps1",
+      "sha256": "a94e1b4a124a5ddcf9c07114ea91f12dcab5fccbe3e2b18c2c1b8d7c3ec407a4"
+    }
+  ],
+  "provider_was_loaded": false
+}

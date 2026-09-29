@@ -1,0 +1,28 @@
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 C:\Dev\Astra_A2WC511R\reports\local\m07_residency\semantic\range_tail.o
+ .data          0x0000000000000000        0x0 C:\Dev\Astra_A2WC511R\reports\local\m07_residency\semantic\range_tail.o
+ .bss           0x0000000000000000        0x0 C:\Dev\Astra_A2WC511R\reports\local\m07_residency\semantic\range_tail.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+                0x000000000001473c                . = 0x1473c
+
+.replacement    0x000000000001473c       0x34
+ *(.replacement)
+ .replacement   0x000000000001473c       0x34 C:\Dev\Astra_A2WC511R\reports\local\m07_residency\semantic\range_tail.o
+                0x000000000001473c                replacement_start
+                0x000000000001476e                replacement_end
+
+/DISCARD/
+ *(.text)
+ *(.data)
+ *(.bss)
+LOAD C:\Dev\Astra_A2WC511R\reports\local\m07_residency\semantic\range_tail.o
+OUTPUT(C:\Dev\Astra_A2WC511R\reports\local\m07_residency\semantic\range_tail.elf elf32-sh)

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "status": "PASS",
+  "reviewed_source": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\tools\\validate.py",
+    "sha256": "5536a0f989a7f43b3d07f9f3d0d2d432e463b3ea1fe0362026d6490e22b0be58",
+    "bytes": 11869
+  },
+  "classification": "HARDENED_VALIDATOR_REJECTS_BOTH_PREVIOUSLY_ACCEPTED_INVALID_INDEXES",
+  "cases": [
+    {
+      "negative": "misdirected_gates_and_aliased_fixtures",
+      "observed_status": "FAIL",
+      "software_status": "FAIL",
+      "failed_checks": [
+        "STATIC_NO_FLASH_WRITE_PATH",
+        "SIMULATOR_EXECUTION_COVERAGE",
+        "LOSSLESS_FULL_IMAGE_FIXTURES",
+        "HOST_FIXED_ALLOWLIST",
+        "FAKE_PROVIDER_ACTUAL_KERNEL_EXECUTION",
+        "FAULT_INJECTION",
+        "OEM_UPLOAD_ENTRY_CONTRACT",
+        "EVIDENCE_PRESERVATION",
+        "COMPILED_COVERAGE_CROSSCHECK",
+        "BYTE_FOR_BYTE_TWO_FULL_READS"
+      ],
+      "status": "PASS"
+    },
+    {
+      "negative": "wrong_coverage_identity_empty_writes_unreviewed_entry",
+      "observed_status": "FAIL",
+      "software_status": "FAIL",
+      "failed_checks": [
+        "STATIC_NO_FLASH_WRITE_PATH",
+        "SIMULATOR_EXECUTION_COVERAGE",
+        "LOSSLESS_FULL_IMAGE_FIXTURES",
+        "HOST_FIXED_ALLOWLIST",
+        "FAKE_PROVIDER_ACTUAL_KERNEL_EXECUTION",
+        "FAULT_INJECTION",
+        "OEM_UPLOAD_ENTRY_CONTRACT",
+        "EVIDENCE_PRESERVATION",
+        "COVERAGE_BINARY_IDENTITY",
+        "COMPILED_COVERAGE_CROSSCHECK",
+        "BYTE_FOR_BYTE_TWO_FULL_READS"
+      ],
+      "status": "PASS"
+    }
+  ],
+  "positive_complete_index": "PENDING_OTHER_AGENTS_FINAL_REPORTS",
+  "physical_operations": 0,
+  "provider_loaded": false
+}

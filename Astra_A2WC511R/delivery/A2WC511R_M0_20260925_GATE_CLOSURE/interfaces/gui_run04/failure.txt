@@ -1,0 +1,44 @@
+Traceback (most recent call last):
+  File "C:\Dev\Astra_A2WC511R\work\gate_closure\romraider_gui\run_gui.py", line 96, in <module>
+    p=record('positive_preview',preview());record('positive_commit',commit_ui(p,'positive'))
+                                                                    ~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Dev\Astra_A2WC511R\work\gate_closure\romraider_gui\run_gui.py", line 80, in commit_ui
+    try:result=future.result(timeout=25)
+               ~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\concurrent\futures\_base.py", line 454, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Program Files\Python314\Lib\concurrent\futures\_base.py", line 396, in __get_result
+    raise self._exception
+  File "C:\Program Files\Python314\Lib\concurrent\futures\thread.py", line 86, in run
+    result = ctx.run(self.task)
+  File "C:\Program Files\Python314\Lib\concurrent\futures\thread.py", line 73, in run
+    return fn(*args, **kwargs)
+  File "C:\Dev\Astra_A2WC511R\work\gate_closure\romraider_gui\run_gui.py", line 24, in request
+    with urllib.request.build_opener(urllib.request.ProxyHandler({}),NoRedirect()).open(req,timeout=260) as r:
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\urllib\request.py", line 487, in open
+    response = self._open(req, data)
+  File "C:\Program Files\Python314\Lib\urllib\request.py", line 504, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "C:\Program Files\Python314\Lib\urllib\request.py", line 464, in _call_chain
+    result = func(*args)
+  File "C:\Program Files\Python314\Lib\urllib\request.py", line 1349, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\urllib\request.py", line 1324, in do_open
+    r = h.getresponse()
+  File "C:\Program Files\Python314\Lib\http\client.py", line 1478, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Program Files\Python314\Lib\http\client.py", line 343, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Program Files\Python314\Lib\http\client.py", line 304, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\socket.py", line 729, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host

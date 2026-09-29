@@ -1,0 +1,108 @@
+{
+  "file": "evidence/original/ECUFlashReadRaw(1).bin",
+  "size": 1048576,
+  "sha256": "1aac3214ec276822f1343e66fc1b8af83be8e61866d2d182882beb88317b4920",
+  "calid_at_2000": "A2WC511R",
+  "ecuid_at_CDAD8": "2F12515306",
+  "identity_matches": true,
+  "reset_pc": "0xaac",
+  "reset_sp": "0xffffbfa0",
+  "rom_tail": "00 00 f6 0c 00 00 20 00",
+  "hook_old_values": [
+    {
+      "offset": "0x7a04",
+      "role": "MAF interpolation pointer",
+      "expected": "0x209c",
+      "actual": "0x209c",
+      "matches": true
+    },
+    {
+      "offset": "0x122b4",
+      "role": "WGDC routine pointer",
+      "expected": "0x14b20",
+      "actual": "0x14b20",
+      "matches": true
+    },
+    {
+      "offset": "0x127e8",
+      "role": "rev-limit routine pointer",
+      "expected": "0x317d8",
+      "actual": "0x317d8",
+      "matches": true
+    },
+    {
+      "offset": "0xd324",
+      "role": "memory reset routine pointer",
+      "expected": "0xf928",
+      "actual": "0xf928",
+      "matches": true
+    },
+    {
+      "offset": "0xfff8",
+      "role": "memory reset upper limit",
+      "expected": "0xffffbffb",
+      "actual": "0xffffbffb",
+      "matches": true
+    },
+    {
+      "offset": "0x114e0",
+      "role": "base timing pointer; semantics still need audit",
+      "expected": "0x35b96",
+      "actual": "0x35b96",
+      "matches": true
+    },
+    {
+      "offset": "0x1281c",
+      "role": "POLF pointer; semantics still need audit",
+      "expected": "0x2e2e8",
+      "actual": "0x2e2e8",
+      "matches": true
+    },
+    {
+      "offset": "0x35c3c",
+      "role": "timing interpolation pointer candidate",
+      "expected": "0x2150",
+      "actual": "0x2150",
+      "matches": true
+    },
+    {
+      "offset": "0x35c40",
+      "role": "base timing descriptor pointer candidate",
+      "expected": "0x84944",
+      "actual": "0x84944",
+      "matches": true
+    },
+    {
+      "offset": "0x2e538",
+      "role": "POLF interpolation pointer candidate",
+      "expected": "0x2150",
+      "actual": "0x2150",
+      "matches": true
+    },
+    {
+      "offset": "0x2e544",
+      "role": "POLF descriptor pointer candidate",
+      "expected": "0x842e4",
+      "actual": "0x842e4",
+      "matches": true
+    }
+  ],
+  "ff_runs": [
+    {
+      "start": "0xe14",
+      "end_exclusive": "0xfe0",
+      "length": 460
+    },
+    {
+      "start": "0x859bc",
+      "end_exclusive": "0xc0000",
+      "length": 239172
+    },
+    {
+      "start": "0xce754",
+      "end_exclusive": "0xffaf8",
+      "length": 201636
+    }
+  ],
+  "warning": "Identity and matching pointers do NOT establish stock provenance, compatibility, checksum validity, unused memory, or flash safety."
+}

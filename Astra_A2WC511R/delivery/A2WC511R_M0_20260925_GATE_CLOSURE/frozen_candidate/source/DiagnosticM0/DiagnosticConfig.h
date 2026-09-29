@@ -1,0 +1,31 @@
+#ifndef A2WC511R_M0_CONFIG_H
+#define A2WC511R_M0_CONFIG_H
+#define M0_DIAGNOSTIC_ONLY 1
+#define MEMORY_HACKS 0
+#define RAM_PERSIST 0
+#define SD_HACKS 0
+#define REVLIM_HACKS 0
+#define LC_ADJ_HACKS 0
+#define PROG_MODE 0
+#define PROG_HACKS 0
+#define SPARK_HACKS 0
+#define SPARK_CUT 0
+#define CEL_HACKS 0
+#define BOOST_HACKS 0
+#define TIMING_HACKS 0
+#define POLF_HACKS 0
+#define PGWG_HACKS 0
+#define INJECTOR_HACKS 0
+#define INJ_HACKS 0
+#define VIN_HACKS 0
+#define SWITCH_HACKS 0
+#define E85_HACKS 0
+#define SUB_KCA_HACKS 0
+#define VE_RAMTUNING 0
+#define POLF_RAMTUNING 0
+#define TIMING_RAMTUNING 0
+#define PGWG_RAMTUNING 0
+#define WGDC_RAMTUNING 0
+#define PORT_LOGGER 0
+#define RAM_HOLE_SCANNER 0
+#endif

@@ -1,0 +1,37 @@
+
+C:\Dev\Astra_A2WC511R\reports\local\m07_residency\semantic\range_tail.elf:     file format elf32-sh
+
+
+Disassembly of section .replacement:
+
+0001473c <replacement_start>:
+   1473c:	97 0e       	mov.w	1475c <replacement_start+0x20>,r7	! 80
+   1473e:	20 59       	and	r5,r0
+   14740:	e3 08       	mov	#8,r3
+   14742:	33 02       	cmp/hs	r0,r3
+   14744:	89 00       	bt	14748 <replacement_start+0xc>
+   14746:	88 0f       	cmp/eq	#15,r0
+   14748:	d4 02       	mov.l	14754 <replacement_start+0x18>,r4	! 1475e <.Ltable>
+   1474a:	04 4c       	mov.b	@(r0,r4),r4
+   1474c:	64 4c       	extu.b	r4,r4
+   1474e:	d3 02       	mov.l	14758 <replacement_start+0x1c>,r3	! ffff4bc0
+   14750:	00 0b       	rts	
+   14752:	23 40       	mov.b	r4,@r3
+   14754:	00 01       	.word 0x0001
+   14756:	47 5e       	.word 0x475e
+   14758:	ff ff       	.word 0xffff
+   1475a:	4b c0       	.word 0x4bc0
+   1475c:	00 80       	.word 0x0080
+
+0001475e <.Ltable>:
+   1475e:	00 01       	.word 0x0001
+   14760:	02 04       	mov.b	r0,@(r0,r2)
+   14762:	08 10       	.word 0x0810
+   14764:	20 40       	mov.b	r4,@r0
+   14766:	80 80       	mov.b	r0,@(0,r8)
+   14768:	80 80       	mov.b	r0,@(0,r8)
+   1476a:	80 80       	mov.b	r0,@(0,r8)
+   1476c:	80 0f       	mov.b	r0,@(15,r0)
+
+0001476e <replacement_end>:
+   1476e:	00 09       	nop	

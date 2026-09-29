@@ -1,0 +1,37 @@
+/* NON-FLASHABLE LINKER-SCRIPT TEMPLATE.
+ * Replace RAMHOLE_START only after proving a safe, unreferenced RAM interval.
+ */
+SECTIONS
+{
+    REVLIM_START 0x000317D8 : AT (0x000317D8)
+    {
+        *(RevLimit)
+    }
+
+    ROMHOLE_START 0x000E1000 : AT (0x000E1000)
+    {
+        *(RomHole_Identifier)
+        *(RomHole_Misc)
+        *(RomHole_SpeedDensityTables)
+        *(RomHole_RevLimTables)
+        *(RomHole_CelFlashTables)
+        *(RomHole_POLFHackTables)
+        *(RomHole_BoostHackTables)
+        *(RomHole_TimingHackTables)
+        *(RomHole_MapSwitchTables)
+        *(RomHole_ProgModeTables)
+        *(RomHole_PortLoggerTables)
+        *(RomHole_Vin)
+        *(RomHole_Code)
+        *(RomHole_Functions)
+        *(RomHole_RomHoleEndMarker)
+    }
+
+    /* DO NOT UNCOMMENT UNTIL A SAFE RAM HOLE IS VERIFIED. */
+    /*
+    RAMHOLE_START 0xFFFF???? : AT (0xFFFF????)
+    {
+        *(RamHole)
+    }
+    */
+}

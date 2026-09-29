@@ -1,0 +1,119 @@
+{
+  "status": "RESEARCH_FRAGMENTS_NOT_OWNERSHIP_APPROVED",
+  "fragments": [
+    {
+      "name": "match",
+      "start": 17060,
+      "end_exclusive": 17148,
+      "bytes": 88,
+      "sha256": "31bfda410cbc399f24a360895e8dda3ce8facdd8b87162df85546a1bd463aa0d"
+    },
+    {
+      "name": "main",
+      "start": 83824,
+      "end_exclusive": 83884,
+      "bytes": 60,
+      "sha256": "e1b87d3e683128c8b2ada9e18e8db85afe4b18ac9bc6d744677f24029820773e"
+    }
+  ],
+  "payload_bytes": 148,
+  "persistent_ram_bytes": 0,
+  "additional_adapter_stack_bytes": 8,
+  "uses_existing_A8_producer": true,
+  "no_refill_hook": true,
+  "pages": [
+    {
+      "page": 0,
+      "version": 1,
+      "request_without_checksum": "8010F00EBE10FF4C75FF4C8DFF4CA1FF4C50",
+      "response_opcode": 252,
+      "data_bytes": 4
+    },
+    {
+      "page": 1,
+      "version": 1,
+      "request_without_checksum": "8010F008BE11FF4BC1FF4BC2",
+      "response_opcode": 253,
+      "data_bytes": 2
+    }
+  ],
+  "commands": [
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-as.exe",
+        "-big",
+        "-renesas",
+        "--isa=sh2e",
+        "C:\\Dev\\Astra_A2WC511R\\work\\M07\\protocol\\two_pages.s",
+        "-o",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\protocol\\two_pages_01\\payload.o"
+      ],
+      "exit": 0
+    },
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-ld.exe",
+        "-EB",
+        "-T",
+        "C:\\Dev\\Astra_A2WC511R\\work\\M07\\protocol\\two_pages.ld",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\protocol\\two_pages_01\\payload.o",
+        "-o",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\protocol\\two_pages_01\\payload.elf"
+      ],
+      "exit": 0
+    },
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-objcopy.exe",
+        "-O",
+        "binary",
+        "-j",
+        ".m07_match",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\protocol\\two_pages_01\\payload.elf",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\protocol\\two_pages_01\\match.bin"
+      ],
+      "exit": 0
+    },
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-objcopy.exe",
+        "-O",
+        "binary",
+        "-j",
+        ".m07_main",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\protocol\\two_pages_01\\payload.elf",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\protocol\\two_pages_01\\main.bin"
+      ],
+      "exit": 0
+    },
+    {
+      "argv": [
+        "C:\\Program Files (x86)\\Renesas\\Hew\\Tools\\KPIT\\GNUSH-ELF\\v13.01\\sh-elf\\bin\\sh-elf-objdump.exe",
+        "-d",
+        "-t",
+        "-h",
+        "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\protocol\\two_pages_01\\payload.elf"
+      ],
+      "exit": 0
+    }
+  ],
+  "sources": {
+    "build_one_page.py": "dfc352b318227149c341ec40849189b698948224822c60ee78bee9bd9af9ef65",
+    "build_two_pages.py": "c1c06840cd02c0b8134367bbbf0452a9fd4d528ce8ac39c30597517ae5439188",
+    "one_page.ld": "f4d76c91f11ce788786dec59e344c72fe80d70511e04ebe31eb5d5c9ed7925b0",
+    "one_page.s": "a10537057faca962ed71931a33580afdde291f35df6bd3819035cdb885928385",
+    "two_pages.ld": "142e5e921f20f428ba1335f18e407b29190ca9a17894490815c1975e7ecf78e3",
+    "two_pages.s": "dfb5eb0a457cebcb4a1efd83afea530d238b093e597615fda106c17b254399a1"
+  },
+  "artifacts": {
+    "assemble.log": "f7616386df90f0cf2dba52d780d7d9d07ae4f9f2eed04c3f9a5c290522fd6071",
+    "disassembly.log": "14aa148268ae4855c396c67cd10c5f875b870651558ad6b08f60188657b01c8d",
+    "extract_main.log": "7c7a41fb177dfedeaf9c38c74a90ca1baa2571c6af14872b93d7f1707c72f100",
+    "extract_match.log": "391c681c3aefd5d4ef92120fafcc81bdf44c4d8f07932e55af35598290d81faa",
+    "link.log": "e502ef0b31033ce35a9dec6271421c55b78fdc8fa52dc5fe3bd6449b3bc9b36a",
+    "main.bin": "e1b87d3e683128c8b2ada9e18e8db85afe4b18ac9bc6d744677f24029820773e",
+    "match.bin": "31bfda410cbc399f24a360895e8dda3ce8facdd8b87162df85546a1bd463aa0d",
+    "payload.elf": "b6d90afcdf15431eba4bf56ebc03790139f716515560caa96c372b42ec996cb1",
+    "payload.o": "d2feed050717642066de03b31c47ea78eb21389ebfea8a5912a42191095c5c6a"
+  }
+}

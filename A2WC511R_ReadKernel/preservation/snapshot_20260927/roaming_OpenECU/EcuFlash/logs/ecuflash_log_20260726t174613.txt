@@ -1,0 +1,1373 @@
+[17:46:13.828] Logging to file C:/Users/Jeriah Neal/AppData/Roaming/OpenECU/EcuFlash/logs/ecuflash_log_20260726t174613.txt
+[17:46:13.828] EcuFlash Version 1.44.4870
+[17:46:13.828] OS Version Windows 10
+[17:46:13.828] Kernel Type winnt
+[17:46:13.828] Kernel Version 10.0.17763
+[17:46:13.828] CPU x86_64
+[17:46:13.828] Product Name Windows 10
+[17:46:13.828] Product Type windows
+[17:46:13.828] Product Version 10
+[17:46:13.828] Qt Version 5.6.0
+[17:46:13.828] Qwt Version 6.1.2
+[17:46:13.828] QwtPlot3D Version 0.2.6
+[17:46:13.828] Boost Version 1.60
+[17:46:13.828] FTDI Library Version 3.02.11
+[17:46:13.828] Openport J2534 Library Version 1.02.4870
+[17:46:13.828] 67 memory models read.
+[17:46:13.828] scanning for metadata models in C:/Program Files (x86)/OpenECU/EcuFlash/rommetadata
+[17:46:18.890] 745 ROM metadata models scanned.
+[17:46:18.890] checksum module "subarudbw" loaded.
+[17:46:18.890] checksum module "subarudiesel" loaded.
+[17:46:18.890] checksum module "subaruhitachi" loaded.
+[17:46:18.890] checksum module "mitsucan" loaded.
+[17:46:18.890] checksum module "mitsuh8" loaded.
+[17:46:18.890] patch module "Subaru CAN Enhanced RAM Parameter Logging" loaded.
+[17:46:18.890] patch module "Mitsu CAN RAM Parameter Logging" loaded.
+[17:46:18.890] using metadata XML ID read_sti05 from file C:/Program Files (x86)/OpenECU/EcuFlash/rommetadata/read templates/read_sti05.xml
+[17:46:18.906] flashing tool "wrx02" loaded.
+[17:46:18.906] flashing tool "wrx04" loaded.
+[17:46:18.906] flashing tool "sti04" loaded.
+[17:46:18.906] flashing tool "sti05" loaded.
+[17:46:18.906] flashing tool "mitsucan" loaded.
+[17:46:18.906] flashing tool "mitsukernel" loaded.
+[17:46:18.906] flashing tool "mitsukernelocp" loaded.
+[17:46:18.906] flashing tool "mitsubootloader" loaded.
+[17:46:18.906] flashing tool "shbootmode" loaded.
+[17:46:18.906] flashing tool "shaudmode" loaded.
+[17:46:18.906] flashing tool "subarucan" loaded.
+[17:46:18.906] flashing tool "subarucand" loaded.
+[17:46:18.906] flashing tool "subarubrz" loaded.
+[17:46:18.906] flashing tool "subaruhitachi" loaded.
+[17:46:18.953] J2534 API Version: 04.04
+[17:46:18.953] J2534 DLL Version: 1.02.4870 Feb  3 2017 23:36:31
+[17:46:18.953] Device Firmware Version: 1.17.4877
+[17:46:18.953] Device Serial Number: TAPoN7at
+[17:46:18.953] interface close
+[17:46:18.969] J2534 API Version: 04.04
+[17:46:18.969] J2534 DLL Version: 1.02.4870 Feb  3 2017 23:36:31
+[17:46:18.969] Device Firmware Version: 1.17.4877
+[17:46:18.969] Device Serial Number: TAPoN7at
+[17:46:18.969] interface close
+[17:46:18.984] J2534 API Version: 04.04
+[17:46:18.984] J2534 DLL Version: 1.02.4870 Feb  3 2017 23:36:31
+[17:46:18.984] Device Firmware Version: 1.17.4877
+[17:46:18.984] Device Serial Number: TAPoN7at
+[17:46:18.984] interface close
+[17:46:19.000] J2534 API Version: 04.04
+[17:46:19.000] J2534 DLL Version: 1.02.4870 Feb  3 2017 23:36:31
+[17:46:19.000] Device Firmware Version: 1.17.4877
+[17:46:19.000] Device Serial Number: TAPoN7at
+[17:46:19.000] interface close
+[17:46:19.015] J2534 API Version: 04.04
+[17:46:19.015] J2534 DLL Version: 1.02.4870 Feb  3 2017 23:36:31
+[17:46:19.015] Device Firmware Version: 1.17.4877
+[17:46:19.015] Device Serial Number: TAPoN7at
+[17:46:19.015] interface close
+[17:46:19.031] J2534 API Version: 04.04
+[17:46:19.031] J2534 DLL Version: 1.02.4870 Feb  3 2017 23:36:31
+[17:46:19.031] Device Firmware Version: 1.17.4877
+[17:46:19.031] Device Serial Number: TAPoN7at
+[17:46:19.031] interface close
+[17:46:23.320] using metadata XML ID read_sti05 from file C:/Program Files (x86)/OpenECU/EcuFlash/rommetadata/read templates/read_sti05.xml
+[17:46:23.335] J2534 API Version: 04.04
+[17:46:23.335] J2534 DLL Version: 1.02.4870 Feb  3 2017 23:36:31
+[17:46:23.335] Device Firmware Version: 1.17.4877
+[17:46:23.335] Device Serial Number: TAPoN7at
+[17:46:25.076] kernel get version
+[17:46:25.296] interface close
+[17:46:25.317] J2534 API Version: 04.04
+[17:46:25.317] J2534 DLL Version: 1.02.4870 Feb  3 2017 23:36:31
+[17:46:25.317] Device Firmware Version: 1.17.4877
+[17:46:25.317] Device Serial Number: TAPoN7at
+[17:46:25.606] VIN read not supported
+[17:46:25.918] interface close
+[17:46:25.933] J2534 API Version: 04.04
+[17:46:25.933] J2534 DLL Version: 1.02.4870 Feb  3 2017 23:36:31
+[17:46:25.933] Device Firmware Version: 1.17.4877
+[17:46:25.933] Device Serial Number: TAPoN7at
+[17:46:26.122] SSM2 init
+[17:46:26.268] SSM2 ECU ID is 2F12515306
+[17:46:26.346] Requesting Seed...
+[17:46:26.393] Sending Key [1]...
+[17:46:27.025] interface close
+[17:46:27.025] interface close
+[17:47:22.833] using metadata XML ID read_sti05 from file C:/Program Files (x86)/OpenECU/EcuFlash/rommetadata/read templates/read_sti05.xml
+[17:47:22.848] J2534 API Version: 04.04
+[17:47:22.848] J2534 DLL Version: 1.02.4870 Feb  3 2017 23:36:31
+[17:47:22.848] Device Firmware Version: 1.17.4877
+[17:47:22.848] Device Serial Number: TAPoN7at
+[17:47:24.782] kernel get version
+[17:47:24.997] interface close
+[17:47:25.017] J2534 API Version: 04.04
+[17:47:25.017] J2534 DLL Version: 1.02.4870 Feb  3 2017 23:36:31
+[17:47:25.017] Device Firmware Version: 1.17.4877
+[17:47:25.017] Device Serial Number: TAPoN7at
+[17:47:25.317] VIN read not supported
+[17:47:25.615] interface close
+[17:47:25.630] J2534 API Version: 04.04
+[17:47:25.630] J2534 DLL Version: 1.02.4870 Feb  3 2017 23:36:31
+[17:47:25.630] Device Firmware Version: 1.17.4877
+[17:47:25.630] Device Serial Number: TAPoN7at
+[17:47:25.802] SSM2 init
+[17:47:25.935] SSM2 ECU ID is 2F12515306
+[17:47:26.031] Requesting Seed...
+[17:47:26.062] Sending Key [1]...
+[17:47:26.712] writing kernel area addr: FFFF3000 len: 1234
+[17:47:26.712] SSM2 write kernel ram block addr: FFFF3000 len: 0080
+[17:47:26.806] SSM2 write kernel ram block addr: FFFF3080 len: 0080
+[17:47:26.900] SSM2 write kernel ram block addr: FFFF3100 len: 0080
+[17:47:26.993] SSM2 write kernel ram block addr: FFFF3180 len: 0080
+[17:47:27.088] SSM2 write kernel ram block addr: FFFF3200 len: 0080
+[17:47:27.181] SSM2 write kernel ram block addr: FFFF3280 len: 0080
+[17:47:27.275] SSM2 write kernel ram block addr: FFFF3300 len: 0080
+[17:47:27.369] SSM2 write kernel ram block addr: FFFF3380 len: 0080
+[17:47:27.462] SSM2 write kernel ram block addr: FFFF3400 len: 0080
+[17:47:27.572] SSM2 write kernel ram block addr: FFFF3480 len: 0080
+[17:47:27.666] SSM2 write kernel ram block addr: FFFF3500 len: 0080
+[17:47:27.759] SSM2 write kernel ram block addr: FFFF3580 len: 0080
+[17:47:27.853] SSM2 write kernel ram block addr: FFFF3600 len: 0080
+[17:47:27.947] SSM2 write kernel ram block addr: FFFF3680 len: 0080
+[17:47:28.041] SSM2 write kernel ram block addr: FFFF3700 len: 0080
+[17:47:28.134] SSM2 write kernel ram block addr: FFFF3780 len: 0080
+[17:47:28.228] SSM2 write kernel ram block addr: FFFF3800 len: 0080
+[17:47:28.322] SSM2 write kernel ram block addr: FFFF3880 len: 0080
+[17:47:28.431] SSM2 write kernel ram block addr: FFFF3900 len: 0080
+[17:47:28.525] SSM2 write kernel ram block addr: FFFF3980 len: 0080
+[17:47:28.619] SSM2 write kernel ram block addr: FFFF3A00 len: 0080
+[17:47:28.713] SSM2 write kernel ram block addr: FFFF3A80 len: 0080
+[17:47:28.806] SSM2 write kernel ram block addr: FFFF3B00 len: 0080
+[17:47:28.900] SSM2 write kernel ram block addr: FFFF3B80 len: 0080
+[17:47:28.994] SSM2 write kernel ram block addr: FFFF3C00 len: 0080
+[17:47:29.087] SSM2 write kernel ram block addr: FFFF3C80 len: 0080
+[17:47:29.186] SSM2 write kernel ram block addr: FFFF3D00 len: 0080
+[17:47:29.280] SSM2 write kernel ram block addr: FFFF3D80 len: 0080
+[17:47:29.375] SSM2 write kernel ram block addr: FFFF3E00 len: 0080
+[17:47:29.469] SSM2 write kernel ram block addr: FFFF3E80 len: 0080
+[17:47:29.563] SSM2 write kernel ram block addr: FFFF3F00 len: 0080
+[17:47:29.672] SSM2 write kernel ram block addr: FFFF3F80 len: 0080
+[17:47:29.766] SSM2 write kernel ram block addr: FFFF4000 len: 0080
+[17:47:29.859] SSM2 write kernel ram block addr: FFFF4080 len: 0080
+[17:47:29.953] SSM2 write kernel ram block addr: FFFF4100 len: 0080
+[17:47:30.047] SSM2 write kernel ram block addr: FFFF4180 len: 0080
+[17:47:30.141] SSM2 write kernel ram block addr: FFFF4200 len: 0034
+[17:47:30.641] kernel get version
+[17:47:30.641] kernel version is : OpenECU Subaru SH7058 DUAL  Kernel V1.07
+[17:47:30.641] reading kernel comm buffer size
+[17:47:30.657] comm buffer size set to 512
+[17:47:30.657] reading kernel flash buffer size
+[17:47:30.657] flash buffer size set to 4096
+[17:47:30.657] -- dumping ECU memory --
+[17:47:30.672] kernel read area: addr: 00000000 len: 0200
+[17:47:30.753] kernel read area: addr: 00000200 len: 0200
+[17:47:30.846] kernel read area: addr: 00000400 len: 0200
+[17:47:30.940] kernel read area: addr: 00000600 len: 0200
+[17:47:31.018] kernel read area: addr: 00000800 len: 0200
+[17:47:31.112] kernel read area: addr: 00000A00 len: 0200
+[17:47:31.192] kernel read area: addr: 00000C00 len: 0200
+[17:47:31.284] kernel read area: addr: 00000E00 len: 0200
+[17:47:31.391] kernel read area: addr: 00001000 len: 0200
+[17:47:31.469] kernel read area: addr: 00001200 len: 0200
+[17:47:31.563] kernel read area: addr: 00001400 len: 0200
+[17:47:31.657] kernel read area: addr: 00001600 len: 0200
+[17:47:31.736] kernel read area: addr: 00001800 len: 0200
+[17:47:31.830] kernel read area: addr: 00001A00 len: 0200
+[17:47:31.908] kernel read area: addr: 00001C00 len: 0200
+[17:47:32.010] kernel read area: addr: 00001E00 len: 0200
+[17:47:32.104] kernel read area: addr: 00002000 len: 0200
+[17:47:32.198] kernel read area: addr: 00002200 len: 0200
+[17:47:32.276] kernel read area: addr: 00002400 len: 0200
+[17:47:32.374] kernel read area: addr: 00002600 len: 0200
+[17:47:32.452] kernel read area: addr: 00002800 len: 0200
+[17:47:32.548] kernel read area: addr: 00002A00 len: 0200
+[17:47:32.626] kernel read area: addr: 00002C00 len: 0200
+[17:47:32.721] kernel read area: addr: 00002E00 len: 0200
+[17:47:32.830] kernel read area: addr: 00003000 len: 0200
+[17:47:32.909] kernel read area: addr: 00003200 len: 0200
+[17:47:32.998] kernel read area: addr: 00003400 len: 0200
+[17:47:33.092] kernel read area: addr: 00003600 len: 0200
+[17:47:33.173] kernel read area: addr: 00003800 len: 0200
+[17:47:33.267] kernel read area: addr: 00003A00 len: 0200
+[17:47:33.346] kernel read area: addr: 00003C00 len: 0200
+[17:47:33.443] kernel read area: addr: 00003E00 len: 0200
+[17:47:33.538] kernel read area: addr: 00004000 len: 0200
+[17:47:33.621] kernel read area: addr: 00004200 len: 0200
+[17:47:33.715] kernel read area: addr: 00004400 len: 0200
+[17:47:33.809] kernel read area: addr: 00004600 len: 0200
+[17:47:33.888] kernel read area: addr: 00004800 len: 0200
+[17:47:33.982] kernel read area: addr: 00004A00 len: 0200
+[17:47:34.060] kernel read area: addr: 00004C00 len: 0200
+[17:47:34.153] kernel read area: addr: 00004E00 len: 0200
+[17:47:34.253] kernel read area: addr: 00005000 len: 0200
+[17:47:34.348] kernel read area: addr: 00005200 len: 0200
+[17:47:34.426] kernel read area: addr: 00005400 len: 0200
+[17:47:34.519] kernel read area: addr: 00005600 len: 0200
+[17:47:34.613] kernel read area: addr: 00005800 len: 0200
+[17:47:34.696] kernel read area: addr: 00005A00 len: 0200
+[17:47:34.791] kernel read area: addr: 00005C00 len: 0200
+[17:47:34.869] kernel read area: addr: 00005E00 len: 0200
+[17:47:34.968] kernel read area: addr: 00006000 len: 0200
+[17:47:35.064] kernel read area: addr: 00006200 len: 0200
+[17:47:35.157] kernel read area: addr: 00006400 len: 0200
+[17:47:35.235] kernel read area: addr: 00006600 len: 0200
+[17:47:35.329] kernel read area: addr: 00006800 len: 0200
+[17:47:35.407] kernel read area: addr: 00006A00 len: 0200
+[17:47:35.501] kernel read area: addr: 00006C00 len: 0200
+[17:47:35.595] kernel read area: addr: 00006E00 len: 0200
+[17:47:35.689] kernel read area: addr: 00007000 len: 0200
+[17:47:35.782] kernel read area: addr: 00007200 len: 0200
+[17:47:35.865] kernel read area: addr: 00007400 len: 0200
+[17:47:35.959] kernel read area: addr: 00007600 len: 0200
+[17:47:36.038] kernel read area: addr: 00007800 len: 0200
+[17:47:36.132] kernel read area: addr: 00007A00 len: 0200
+[17:47:36.220] kernel read area: addr: 00007C00 len: 0200
+[17:47:36.299] kernel read area: addr: 00007E00 len: 0200
+[17:47:36.408] kernel read area: addr: 00008000 len: 0200
+[17:47:36.502] kernel read area: addr: 00008200 len: 0200
+[17:47:36.581] kernel read area: addr: 00008400 len: 0200
+[17:47:36.675] kernel read area: addr: 00008600 len: 0200
+[17:47:36.753] kernel read area: addr: 00008800 len: 0200
+[17:47:36.847] kernel read area: addr: 00008A00 len: 0200
+[17:47:36.940] kernel read area: addr: 00008C00 len: 0200
+[17:47:37.018] kernel read area: addr: 00008E00 len: 0200
+[17:47:37.128] kernel read area: addr: 00009000 len: 0200
+[17:47:37.222] kernel read area: addr: 00009200 len: 0200
+[17:47:37.300] kernel read area: addr: 00009400 len: 0200
+[17:47:37.394] kernel read area: addr: 00009600 len: 0200
+[17:47:37.487] kernel read area: addr: 00009800 len: 0200
+[17:47:37.572] kernel read area: addr: 00009A00 len: 0200
+[17:47:37.656] kernel read area: addr: 00009C00 len: 0200
+[17:47:37.750] kernel read area: addr: 00009E00 len: 0200
+[17:47:37.845] kernel read area: addr: 0000A000 len: 0200
+[17:47:37.939] kernel read area: addr: 0000A200 len: 0200
+[17:47:38.033] kernel read area: addr: 0000A400 len: 0200
+[17:47:38.111] kernel read area: addr: 0000A600 len: 0200
+[17:47:38.205] kernel read area: addr: 0000A800 len: 0200
+[17:47:38.283] kernel read area: addr: 0000AA00 len: 0200
+[17:47:38.377] kernel read area: addr: 0000AC00 len: 0200
+[17:47:38.470] kernel read area: addr: 0000AE00 len: 0200
+[17:47:38.564] kernel read area: addr: 0000B000 len: 0200
+[17:47:38.658] kernel read area: addr: 0000B200 len: 0200
+[17:47:38.751] kernel read area: addr: 0000B400 len: 0200
+[17:47:38.830] kernel read area: addr: 0000B600 len: 0200
+[17:47:38.923] kernel read area: addr: 0000B800 len: 0200
+[17:47:39.002] kernel read area: addr: 0000BA00 len: 0200
+[17:47:39.100] kernel read area: addr: 0000BC00 len: 0200
+[17:47:39.179] kernel read area: addr: 0000BE00 len: 0200
+[17:47:39.294] kernel read area: addr: 0000C000 len: 0200
+[17:47:39.374] kernel read area: addr: 0000C200 len: 0200
+[17:47:39.467] kernel read area: addr: 0000C400 len: 0200
+[17:47:39.545] kernel read area: addr: 0000C600 len: 0200
+[17:47:39.639] kernel read area: addr: 0000C800 len: 0200
+[17:47:39.733] kernel read area: addr: 0000CA00 len: 0200
+[17:47:39.811] kernel read area: addr: 0000CC00 len: 0200
+[17:47:39.905] kernel read area: addr: 0000CE00 len: 0200
+[17:47:40.014] kernel read area: addr: 0000D000 len: 0200
+[17:47:40.092] kernel read area: addr: 0000D200 len: 0200
+[17:47:40.186] kernel read area: addr: 0000D400 len: 0200
+[17:47:40.264] kernel read area: addr: 0000D600 len: 0200
+[17:47:40.358] kernel read area: addr: 0000D800 len: 0200
+[17:47:40.442] kernel read area: addr: 0000DA00 len: 0200
+[17:47:40.537] kernel read area: addr: 0000DC00 len: 0200
+[17:47:40.615] kernel read area: addr: 0000DE00 len: 0200
+[17:47:40.725] kernel read area: addr: 0000E000 len: 0200
+[17:47:40.819] kernel read area: addr: 0000E200 len: 0200
+[17:47:40.897] kernel read area: addr: 0000E400 len: 0200
+[17:47:40.984] kernel read area: addr: 0000E600 len: 0200
+[17:47:41.079] kernel read area: addr: 0000E800 len: 0200
+[17:47:41.173] kernel read area: addr: 0000EA00 len: 0200
+[17:47:41.251] kernel read area: addr: 0000EC00 len: 0200
+[17:47:41.345] kernel read area: addr: 0000EE00 len: 0200
+[17:47:41.454] kernel read area: addr: 0000F000 len: 0200
+[17:47:41.532] kernel read area: addr: 0000F200 len: 0200
+[17:47:41.626] kernel read area: addr: 0000F400 len: 0200
+[17:47:41.704] kernel read area: addr: 0000F600 len: 0200
+[17:47:41.802] kernel read area: addr: 0000F800 len: 0200
+[17:47:41.882] kernel read area: addr: 0000FA00 len: 0200
+[17:47:41.976] kernel read area: addr: 0000FC00 len: 0200
+[17:47:42.054] kernel read area: addr: 0000FE00 len: 0200
+[17:47:42.163] kernel read area: addr: 00010000 len: 0200
+[17:47:42.257] kernel read area: addr: 00010200 len: 0200
+[17:47:42.335] kernel read area: addr: 00010400 len: 0200
+[17:47:42.436] kernel read area: addr: 00010600 len: 0200
+[17:47:42.515] kernel read area: addr: 00010800 len: 0200
+[17:47:42.610] kernel read area: addr: 00010A00 len: 0200
+[17:47:42.688] kernel read area: addr: 00010C00 len: 0200
+[17:47:42.782] kernel read area: addr: 00010E00 len: 0200
+[17:47:42.875] kernel read area: addr: 00011000 len: 0200
+[17:47:42.969] kernel read area: addr: 00011200 len: 0200
+[17:47:43.063] kernel read area: addr: 00011400 len: 0200
+[17:47:43.146] kernel read area: addr: 00011600 len: 0200
+[17:47:43.241] kernel read area: addr: 00011800 len: 0200
+[17:47:43.319] kernel read area: addr: 00011A00 len: 0200
+[17:47:43.413] kernel read area: addr: 00011C00 len: 0200
+[17:47:43.491] kernel read area: addr: 00011E00 len: 0200
+[17:47:43.600] kernel read area: addr: 00012000 len: 0200
+[17:47:43.694] kernel read area: addr: 00012200 len: 0200
+[17:47:43.772] kernel read area: addr: 00012400 len: 0200
+[17:47:43.866] kernel read area: addr: 00012600 len: 0200
+[17:47:43.960] kernel read area: addr: 00012800 len: 0200
+[17:47:44.038] kernel read area: addr: 00012A00 len: 0200
+[17:47:44.138] kernel read area: addr: 00012C00 len: 0200
+[17:47:44.216] kernel read area: addr: 00012E00 len: 0200
+[17:47:44.326] kernel read area: addr: 00013000 len: 0200
+[17:47:44.405] kernel read area: addr: 00013200 len: 0200
+[17:47:44.503] kernel read area: addr: 00013400 len: 0200
+[17:47:44.582] kernel read area: addr: 00013600 len: 0200
+[17:47:44.676] kernel read area: addr: 00013800 len: 0200
+[17:47:44.754] kernel read area: addr: 00013A00 len: 0200
+[17:47:44.848] kernel read area: addr: 00013C00 len: 0200
+[17:47:44.942] kernel read area: addr: 00013E00 len: 0200
+[17:47:45.036] kernel read area: addr: 00014000 len: 0200
+[17:47:45.129] kernel read area: addr: 00014200 len: 0200
+[17:47:45.223] kernel read area: addr: 00014400 len: 0200
+[17:47:45.301] kernel read area: addr: 00014600 len: 0200
+[17:47:45.401] kernel read area: addr: 00014800 len: 0200
+[17:47:45.480] kernel read area: addr: 00014A00 len: 0200
+[17:47:45.574] kernel read area: addr: 00014C00 len: 0200
+[17:47:45.652] kernel read area: addr: 00014E00 len: 0200
+[17:47:45.762] kernel read area: addr: 00015000 len: 0200
+[17:47:45.846] kernel read area: addr: 00015200 len: 0200
+[17:47:45.941] kernel read area: addr: 00015400 len: 0200
+[17:47:46.019] kernel read area: addr: 00015600 len: 0200
+[17:47:46.120] kernel read area: addr: 00015800 len: 0200
+[17:47:46.200] kernel read area: addr: 00015A00 len: 0200
+[17:47:46.293] kernel read area: addr: 00015C00 len: 0200
+[17:47:46.371] kernel read area: addr: 00015E00 len: 0200
+[17:47:46.481] kernel read area: addr: 00016000 len: 0200
+[17:47:46.575] kernel read area: addr: 00016200 len: 0200
+[17:47:46.653] kernel read area: addr: 00016400 len: 0200
+[17:47:46.747] kernel read area: addr: 00016600 len: 0200
+[17:47:46.840] kernel read area: addr: 00016800 len: 0200
+[17:47:46.918] kernel read area: addr: 00016A00 len: 0200
+[17:47:47.012] kernel read area: addr: 00016C00 len: 0200
+[17:47:47.106] kernel read area: addr: 00016E00 len: 0200
+[17:47:47.204] kernel read area: addr: 00017000 len: 0200
+[17:47:47.298] kernel read area: addr: 00017200 len: 0200
+[17:47:47.378] kernel read area: addr: 00017400 len: 0200
+[17:47:47.472] kernel read area: addr: 00017600 len: 0200
+[17:47:47.550] kernel read area: addr: 00017800 len: 0200
+[17:47:47.643] kernel read area: addr: 00017A00 len: 0200
+[17:47:47.737] kernel read area: addr: 00017C00 len: 0200
+[17:47:47.815] kernel read area: addr: 00017E00 len: 0200
+[17:47:47.925] kernel read area: addr: 00018000 len: 0200
+[17:47:48.018] kernel read area: addr: 00018200 len: 0200
+[17:47:48.096] kernel read area: addr: 00018400 len: 0200
+[17:47:48.190] kernel read area: addr: 00018600 len: 0200
+[17:47:48.284] kernel read area: addr: 00018800 len: 0200
+[17:47:48.362] kernel read area: addr: 00018A00 len: 0200
+[17:47:48.456] kernel read area: addr: 00018C00 len: 0200
+[17:47:48.534] kernel read area: addr: 00018E00 len: 0200
+[17:47:48.648] kernel read area: addr: 00019000 len: 0200
+[17:47:48.728] kernel read area: addr: 00019200 len: 0200
+[17:47:48.822] kernel read area: addr: 00019400 len: 0200
+[17:47:48.915] kernel read area: addr: 00019600 len: 0200
+[17:47:48.993] kernel read area: addr: 00019800 len: 0200
+[17:47:49.087] kernel read area: addr: 00019A00 len: 0200
+[17:47:49.165] kernel read area: addr: 00019C00 len: 0200
+[17:47:49.265] kernel read area: addr: 00019E00 len: 0200
+[17:47:49.360] kernel read area: addr: 0001A000 len: 0200
+[17:47:49.453] kernel read area: addr: 0001A200 len: 0200
+[17:47:49.531] kernel read area: addr: 0001A400 len: 0200
+[17:47:49.625] kernel read area: addr: 0001A600 len: 0200
+[17:47:49.719] kernel read area: addr: 0001A800 len: 0200
+[17:47:49.797] kernel read area: addr: 0001AA00 len: 0200
+[17:47:49.891] kernel read area: addr: 0001AC00 len: 0200
+[17:47:49.974] kernel read area: addr: 0001AE00 len: 0200
+[17:47:50.085] kernel read area: addr: 0001B000 len: 0200
+[17:47:50.178] kernel read area: addr: 0001B200 len: 0200
+[17:47:50.256] kernel read area: addr: 0001B400 len: 0200
+[17:47:50.340] kernel read area: addr: 0001B600 len: 0200
+[17:47:50.435] kernel read area: addr: 0001B800 len: 0200
+[17:47:50.529] kernel read area: addr: 0001BA00 len: 0200
+[17:47:50.607] kernel read area: addr: 0001BC00 len: 0200
+[17:47:50.701] kernel read area: addr: 0001BE00 len: 0200
+[17:47:50.810] kernel read area: addr: 0001C000 len: 0200
+[17:47:50.889] kernel read area: addr: 0001C200 len: 0200
+[17:47:50.982] kernel read area: addr: 0001C400 len: 0200
+[17:47:51.060] kernel read area: addr: 0001C600 len: 0200
+[17:47:51.154] kernel read area: addr: 0001C800 len: 0200
+[17:47:51.248] kernel read area: addr: 0001CA00 len: 0200
+[17:47:51.332] kernel read area: addr: 0001CC00 len: 0200
+[17:47:51.427] kernel read area: addr: 0001CE00 len: 0200
+[17:47:51.520] kernel read area: addr: 0001D000 len: 0200
+[17:47:51.614] kernel read area: addr: 0001D200 len: 0200
+[17:47:51.692] kernel read area: addr: 0001D400 len: 0200
+[17:47:51.786] kernel read area: addr: 0001D600 len: 0200
+[17:47:51.880] kernel read area: addr: 0001D800 len: 0200
+[17:47:51.958] kernel read area: addr: 0001DA00 len: 0200
+[17:47:52.052] kernel read area: addr: 0001DC00 len: 0200
+[17:47:52.145] kernel read area: addr: 0001DE00 len: 0200
+[17:47:52.241] kernel read area: addr: 0001E000 len: 0200
+[17:47:52.335] kernel read area: addr: 0001E200 len: 0200
+[17:47:52.414] kernel read area: addr: 0001E400 len: 0200
+[17:47:52.508] kernel read area: addr: 0001E600 len: 0200
+[17:47:52.586] kernel read area: addr: 0001E800 len: 0200
+[17:47:52.685] kernel read area: addr: 0001EA00 len: 0200
+[17:47:52.765] kernel read area: addr: 0001EC00 len: 0200
+[17:47:52.859] kernel read area: addr: 0001EE00 len: 0200
+[17:47:52.953] kernel read area: addr: 0001F000 len: 0200
+[17:47:53.046] kernel read area: addr: 0001F200 len: 0200
+[17:47:53.140] kernel read area: addr: 0001F400 len: 0200
+[17:47:53.219] kernel read area: addr: 0001F600 len: 0200
+[17:47:53.312] kernel read area: addr: 0001F800 len: 0200
+[17:47:53.406] kernel read area: addr: 0001FA00 len: 0200
+[17:47:53.484] kernel read area: addr: 0001FC00 len: 0200
+[17:47:53.578] kernel read area: addr: 0001FE00 len: 0200
+[17:47:53.687] kernel read area: addr: 00020000 len: 0200
+[17:47:53.765] kernel read area: addr: 00020200 len: 0200
+[17:47:53.859] kernel read area: addr: 00020400 len: 0200
+[17:47:53.937] kernel read area: addr: 00020600 len: 0200
+[17:47:54.037] kernel read area: addr: 00020800 len: 0200
+[17:47:54.115] kernel read area: addr: 00020A00 len: 0200
+[17:47:54.210] kernel read area: addr: 00020C00 len: 0200
+[17:47:54.294] kernel read area: addr: 00020E00 len: 0200
+[17:47:54.404] kernel read area: addr: 00021000 len: 0200
+[17:47:54.482] kernel read area: addr: 00021200 len: 0200
+[17:47:54.576] kernel read area: addr: 00021400 len: 0200
+[17:47:54.670] kernel read area: addr: 00021600 len: 0200
+[17:47:54.748] kernel read area: addr: 00021800 len: 0200
+[17:47:54.842] kernel read area: addr: 00021A00 len: 0200
+[17:47:54.935] kernel read area: addr: 00021C00 len: 0200
+[17:47:55.013] kernel read area: addr: 00021E00 len: 0200
+[17:47:55.123] kernel read area: addr: 00022000 len: 0200
+[17:47:55.201] kernel read area: addr: 00022200 len: 0200
+[17:47:55.295] kernel read area: addr: 00022400 len: 0200
+[17:47:55.378] kernel read area: addr: 00022600 len: 0200
+[17:47:55.472] kernel read area: addr: 00022800 len: 0200
+[17:47:55.567] kernel read area: addr: 00022A00 len: 0200
+[17:47:55.646] kernel read area: addr: 00022C00 len: 0200
+[17:47:55.739] kernel read area: addr: 00022E00 len: 0200
+[17:47:55.833] kernel read area: addr: 00023000 len: 0200
+[17:47:55.927] kernel read area: addr: 00023200 len: 0200
+[17:47:56.021] kernel read area: addr: 00023400 len: 0200
+[17:47:56.099] kernel read area: addr: 00023600 len: 0200
+[17:47:56.192] kernel read area: addr: 00023800 len: 0200
+[17:47:56.286] kernel read area: addr: 00023A00 len: 0200
+[17:47:56.364] kernel read area: addr: 00023C00 len: 0200
+[17:47:56.458] kernel read area: addr: 00023E00 len: 0200
+[17:47:56.567] kernel read area: addr: 00024000 len: 0200
+[17:47:56.646] kernel read area: addr: 00024200 len: 0200
+[17:47:56.744] kernel read area: addr: 00024400 len: 0200
+[17:47:56.822] kernel read area: addr: 00024600 len: 0200
+[17:47:56.917] kernel read area: addr: 00024800 len: 0200
+[17:47:56.995] kernel read area: addr: 00024A00 len: 0200
+[17:47:57.089] kernel read area: addr: 00024C00 len: 0200
+[17:47:57.183] kernel read area: addr: 00024E00 len: 0200
+[17:47:57.276] kernel read area: addr: 00025000 len: 0200
+[17:47:57.370] kernel read area: addr: 00025200 len: 0200
+[17:47:57.464] kernel read area: addr: 00025400 len: 0200
+[17:47:57.542] kernel read area: addr: 00025600 len: 0200
+[17:47:57.636] kernel read area: addr: 00025800 len: 0200
+[17:47:57.729] kernel read area: addr: 00025A00 len: 0200
+[17:47:57.808] kernel read area: addr: 00025C00 len: 0200
+[17:47:57.902] kernel read area: addr: 00025E00 len: 0200
+[17:47:57.995] kernel read area: addr: 00026000 len: 0200
+[17:47:58.089] kernel read area: addr: 00026200 len: 0200
+[17:47:58.172] kernel read area: addr: 00026400 len: 0200
+[17:47:58.267] kernel read area: addr: 00026600 len: 0200
+[17:47:58.361] kernel read area: addr: 00026800 len: 0200
+[17:47:58.439] kernel read area: addr: 00026A00 len: 0200
+[17:47:58.533] kernel read area: addr: 00026C00 len: 0200
+[17:47:58.611] kernel read area: addr: 00026E00 len: 0200
+[17:47:58.727] kernel read area: addr: 00027000 len: 0200
+[17:47:58.807] kernel read area: addr: 00027200 len: 0200
+[17:47:58.901] kernel read area: addr: 00027400 len: 0200
+[17:47:58.979] kernel read area: addr: 00027600 len: 0200
+[17:47:59.073] kernel read area: addr: 00027800 len: 0200
+[17:47:59.166] kernel read area: addr: 00027A00 len: 0200
+[17:47:59.245] kernel read area: addr: 00027C00 len: 0200
+[17:47:59.344] kernel read area: addr: 00027E00 len: 0200
+[17:47:59.439] kernel read area: addr: 00028000 len: 0200
+[17:47:59.522] kernel read area: addr: 00028200 len: 0200
+[17:47:59.617] kernel read area: addr: 00028400 len: 0200
+[17:47:59.711] kernel read area: addr: 00028600 len: 0200
+[17:47:59.789] kernel read area: addr: 00028800 len: 0200
+[17:47:59.883] kernel read area: addr: 00028A00 len: 0200
+[17:47:59.961] kernel read area: addr: 00028C00 len: 0200
+[17:48:00.055] kernel read area: addr: 00028E00 len: 0200
+[17:48:00.164] kernel read area: addr: 00029000 len: 0200
+[17:48:00.242] kernel read area: addr: 00029200 len: 0200
+[17:48:00.336] kernel read area: addr: 00029400 len: 0200
+[17:48:00.430] kernel read area: addr: 00029600 len: 0200
+[17:48:00.508] kernel read area: addr: 00029800 len: 0200
+[17:48:00.601] kernel read area: addr: 00029A00 len: 0200
+[17:48:00.680] kernel read area: addr: 00029C00 len: 0200
+[17:48:00.774] kernel read area: addr: 00029E00 len: 0200
+[17:48:00.873] kernel read area: addr: 0002A000 len: 0200
+[17:48:00.968] kernel read area: addr: 0002A200 len: 0200
+[17:48:01.061] kernel read area: addr: 0002A400 len: 0200
+[17:48:01.139] kernel read area: addr: 0002A600 len: 0200
+[17:48:01.233] kernel read area: addr: 0002A800 len: 0200
+[17:48:01.327] kernel read area: addr: 0002AA00 len: 0200
+[17:48:01.405] kernel read area: addr: 0002AC00 len: 0200
+[17:48:01.501] kernel read area: addr: 0002AE00 len: 0200
+[17:48:01.596] kernel read area: addr: 0002B000 len: 0200
+[17:48:01.690] kernel read area: addr: 0002B200 len: 0200
+[17:48:01.783] kernel read area: addr: 0002B400 len: 0200
+[17:48:01.861] kernel read area: addr: 0002B600 len: 0200
+[17:48:01.955] kernel read area: addr: 0002B800 len: 0200
+[17:48:02.038] kernel read area: addr: 0002BA00 len: 0200
+[17:48:02.133] kernel read area: addr: 0002BC00 len: 0200
+[17:48:02.217] kernel read area: addr: 0002BE00 len: 0200
+[17:48:02.312] kernel read area: addr: 0002C000 len: 0200
+[17:48:02.406] kernel read area: addr: 0002C200 len: 0200
+[17:48:02.499] kernel read area: addr: 0002C400 len: 0200
+[17:48:02.578] kernel read area: addr: 0002C600 len: 0200
+[17:48:02.671] kernel read area: addr: 0002C800 len: 0200
+[17:48:02.750] kernel read area: addr: 0002CA00 len: 0200
+[17:48:02.843] kernel read area: addr: 0002CC00 len: 0200
+[17:48:02.937] kernel read area: addr: 0002CE00 len: 0200
+[17:48:03.031] kernel read area: addr: 0002D000 len: 0200
+[17:48:03.125] kernel read area: addr: 0002D200 len: 0200
+[17:48:03.218] kernel read area: addr: 0002D400 len: 0200
+[17:48:03.297] kernel read area: addr: 0002D600 len: 0200
+[17:48:03.390] kernel read area: addr: 0002D800 len: 0200
+[17:48:03.468] kernel read area: addr: 0002DA00 len: 0200
+[17:48:03.568] kernel read area: addr: 0002DC00 len: 0200
+[17:48:03.646] kernel read area: addr: 0002DE00 len: 0200
+[17:48:03.756] kernel read area: addr: 0002E000 len: 0200
+[17:48:03.850] kernel read area: addr: 0002E200 len: 0200
+[17:48:03.928] kernel read area: addr: 0002E400 len: 0200
+[17:48:04.022] kernel read area: addr: 0002E600 len: 0200
+[17:48:04.099] kernel read area: addr: 0002E800 len: 0200
+[17:48:04.194] kernel read area: addr: 0002EA00 len: 0200
+[17:48:04.290] kernel read area: addr: 0002EC00 len: 0200
+[17:48:04.371] kernel read area: addr: 0002EE00 len: 0200
+[17:48:04.474] kernel read area: addr: 0002F000 len: 0200
+[17:48:04.568] kernel read area: addr: 0002F200 len: 0200
+[17:48:04.647] kernel read area: addr: 0002F400 len: 0200
+[17:48:04.746] kernel read area: addr: 0002F600 len: 0200
+[17:48:04.825] kernel read area: addr: 0002F800 len: 0200
+[17:48:04.922] kernel read area: addr: 0002FA00 len: 0200
+[17:48:05.002] kernel read area: addr: 0002FC00 len: 0200
+[17:48:05.096] kernel read area: addr: 0002FE00 len: 0200
+[17:48:05.190] kernel read area: addr: 00030000 len: 0200
+[17:48:05.284] kernel read area: addr: 00030200 len: 0200
+[17:48:05.378] kernel read area: addr: 00030400 len: 0200
+[17:48:05.456] kernel read area: addr: 00030600 len: 0200
+[17:48:05.550] kernel read area: addr: 00030800 len: 0200
+[17:48:05.628] kernel read area: addr: 00030A00 len: 0200
+[17:48:05.722] kernel read area: addr: 00030C00 len: 0200
+[17:48:05.810] kernel read area: addr: 00030E00 len: 0200
+[17:48:05.920] kernel read area: addr: 00031000 len: 0200
+[17:48:05.998] kernel read area: addr: 00031200 len: 0200
+[17:48:06.088] kernel read area: addr: 00031400 len: 0200
+[17:48:06.182] kernel read area: addr: 00031600 len: 0200
+[17:48:06.262] kernel read area: addr: 00031800 len: 0200
+[17:48:06.361] kernel read area: addr: 00031A00 len: 0200
+[17:48:06.440] kernel read area: addr: 00031C00 len: 0200
+[17:48:06.534] kernel read area: addr: 00031E00 len: 0200
+[17:48:06.628] kernel read area: addr: 00032000 len: 0200
+[17:48:06.721] kernel read area: addr: 00032200 len: 0200
+[17:48:06.805] kernel read area: addr: 00032400 len: 0200
+[17:48:06.900] kernel read area: addr: 00032600 len: 0200
+[17:48:06.993] kernel read area: addr: 00032800 len: 0200
+[17:48:07.072] kernel read area: addr: 00032A00 len: 0200
+[17:48:07.165] kernel read area: addr: 00032C00 len: 0200
+[17:48:07.244] kernel read area: addr: 00032E00 len: 0200
+[17:48:07.353] kernel read area: addr: 00033000 len: 0200
+[17:48:07.447] kernel read area: addr: 00033200 len: 0200
+[17:48:07.525] kernel read area: addr: 00033400 len: 0200
+[17:48:07.619] kernel read area: addr: 00033600 len: 0200
+[17:48:07.702] kernel read area: addr: 00033800 len: 0200
+[17:48:07.796] kernel read area: addr: 00033A00 len: 0200
+[17:48:07.876] kernel read area: addr: 00033C00 len: 0200
+[17:48:07.970] kernel read area: addr: 00033E00 len: 0200
+[17:48:08.079] kernel read area: addr: 00034000 len: 0200
+[17:48:08.157] kernel read area: addr: 00034200 len: 0200
+[17:48:08.251] kernel read area: addr: 00034400 len: 0200
+[17:48:08.345] kernel read area: addr: 00034600 len: 0200
+[17:48:08.427] kernel read area: addr: 00034800 len: 0200
+[17:48:08.515] kernel read area: addr: 00034A00 len: 0200
+[17:48:08.609] kernel read area: addr: 00034C00 len: 0200
+[17:48:08.687] kernel read area: addr: 00034E00 len: 0200
+[17:48:08.797] kernel read area: addr: 00035000 len: 0200
+[17:48:08.890] kernel read area: addr: 00035200 len: 0200
+[17:48:08.968] kernel read area: addr: 00035400 len: 0200
+[17:48:09.068] kernel read area: addr: 00035600 len: 0200
+[17:48:09.147] kernel read area: addr: 00035800 len: 0200
+[17:48:09.241] kernel read area: addr: 00035A00 len: 0200
+[17:48:09.324] kernel read area: addr: 00035C00 len: 0200
+[17:48:09.419] kernel read area: addr: 00035E00 len: 0200
+[17:48:09.513] kernel read area: addr: 00036000 len: 0200
+[17:48:09.606] kernel read area: addr: 00036200 len: 0200
+[17:48:09.690] kernel read area: addr: 00036400 len: 0200
+[17:48:09.785] kernel read area: addr: 00036600 len: 0200
+[17:48:09.864] kernel read area: addr: 00036800 len: 0200
+[17:48:09.957] kernel read area: addr: 00036A00 len: 0200
+[17:48:10.036] kernel read area: addr: 00036C00 len: 0200
+[17:48:10.129] kernel read area: addr: 00036E00 len: 0200
+[17:48:10.239] kernel read area: addr: 00037000 len: 0200
+[17:48:10.317] kernel read area: addr: 00037200 len: 0200
+[17:48:10.416] kernel read area: addr: 00037400 len: 0200
+[17:48:10.496] kernel read area: addr: 00037600 len: 0200
+[17:48:10.589] kernel read area: addr: 00037800 len: 0200
+[17:48:10.680] kernel read area: addr: 00037A00 len: 0200
+[17:48:10.759] kernel read area: addr: 00037C00 len: 0200
+[17:48:10.853] kernel read area: addr: 00037E00 len: 0200
+[17:48:10.955] kernel read area: addr: 00038000 len: 0200
+[17:48:11.049] kernel read area: addr: 00038200 len: 0200
+[17:48:11.128] kernel read area: addr: 00038400 len: 0200
+[17:48:11.222] kernel read area: addr: 00038600 len: 0200
+[17:48:11.300] kernel read area: addr: 00038800 len: 0200
+[17:48:11.394] kernel read area: addr: 00038A00 len: 0200
+[17:48:11.487] kernel read area: addr: 00038C00 len: 0200
+[17:48:11.565] kernel read area: addr: 00038E00 len: 0200
+[17:48:11.675] kernel read area: addr: 00039000 len: 0200
+[17:48:11.759] kernel read area: addr: 00039200 len: 0200
+[17:48:11.855] kernel read area: addr: 00039400 len: 0200
+[17:48:11.933] kernel read area: addr: 00039600 len: 0200
+[17:48:12.026] kernel read area: addr: 00039800 len: 0200
+[17:48:12.120] kernel read area: addr: 00039A00 len: 0200
+[17:48:12.199] kernel read area: addr: 00039C00 len: 0200
+[17:48:12.289] kernel read area: addr: 00039E00 len: 0200
+[17:48:12.400] kernel read area: addr: 0003A000 len: 0200
+[17:48:12.476] kernel read area: addr: 0003A200 len: 0200
+[17:48:12.570] kernel read area: addr: 0003A400 len: 0200
+[17:48:12.663] kernel read area: addr: 0003A600 len: 0200
+[17:48:12.743] kernel read area: addr: 0003A800 len: 0200
+[17:48:12.836] kernel read area: addr: 0003AA00 len: 0200
+[17:48:12.914] kernel read area: addr: 0003AC00 len: 0200
+[17:48:13.008] kernel read area: addr: 0003AE00 len: 0200
+[17:48:13.107] kernel read area: addr: 0003B000 len: 0200
+[17:48:13.201] kernel read area: addr: 0003B200 len: 0200
+[17:48:13.280] kernel read area: addr: 0003B400 len: 0200
+[17:48:13.380] kernel read area: addr: 0003B600 len: 0200
+[17:48:13.458] kernel read area: addr: 0003B800 len: 0200
+[17:48:13.552] kernel read area: addr: 0003BA00 len: 0200
+[17:48:13.630] kernel read area: addr: 0003BC00 len: 0200
+[17:48:13.723] kernel read area: addr: 0003BE00 len: 0200
+[17:48:13.833] kernel read area: addr: 0003C000 len: 0200
+[17:48:13.911] kernel read area: addr: 0003C200 len: 0200
+[17:48:14.005] kernel read area: addr: 0003C400 len: 0200
+[17:48:14.083] kernel read area: addr: 0003C600 len: 0200
+[17:48:14.177] kernel read area: addr: 0003C800 len: 0200
+[17:48:14.270] kernel read area: addr: 0003CA00 len: 0200
+[17:48:14.354] kernel read area: addr: 0003CC00 len: 0200
+[17:48:14.433] kernel read area: addr: 0003CE00 len: 0200
+[17:48:14.548] kernel read area: addr: 0003D000 len: 0200
+[17:48:14.627] kernel read area: addr: 0003D200 len: 0200
+[17:48:14.721] kernel read area: addr: 0003D400 len: 0200
+[17:48:14.815] kernel read area: addr: 0003D600 len: 0200
+[17:48:14.893] kernel read area: addr: 0003D800 len: 0200
+[17:48:14.986] kernel read area: addr: 0003DA00 len: 0200
+[17:48:15.065] kernel read area: addr: 0003DC00 len: 0200
+[17:48:15.158] kernel read area: addr: 0003DE00 len: 0200
+[17:48:15.268] kernel read area: addr: 0003E000 len: 0200
+[17:48:15.346] kernel read area: addr: 0003E200 len: 0200
+[17:48:15.439] kernel read area: addr: 0003E400 len: 0200
+[17:48:15.533] kernel read area: addr: 0003E600 len: 0200
+[17:48:15.611] kernel read area: addr: 0003E800 len: 0200
+[17:48:15.705] kernel read area: addr: 0003EA00 len: 0200
+[17:48:15.783] kernel read area: addr: 0003EC00 len: 0200
+[17:48:15.882] kernel read area: addr: 0003EE00 len: 0200
+[17:48:15.977] kernel read area: addr: 0003F000 len: 0200
+[17:48:16.071] kernel read area: addr: 0003F200 len: 0200
+[17:48:16.165] kernel read area: addr: 0003F400 len: 0200
+[17:48:16.243] kernel read area: addr: 0003F600 len: 0200
+[17:48:16.337] kernel read area: addr: 0003F800 len: 0200
+[17:48:16.430] kernel read area: addr: 0003FA00 len: 0200
+[17:48:16.509] kernel read area: addr: 0003FC00 len: 0200
+[17:48:16.602] kernel read area: addr: 0003FE00 len: 0200
+[17:48:16.696] kernel read area: addr: 00040000 len: 0200
+[17:48:16.790] kernel read area: addr: 00040200 len: 0200
+[17:48:16.884] kernel read area: addr: 00040400 len: 0200
+[17:48:16.962] kernel read area: addr: 00040600 len: 0200
+[17:48:17.056] kernel read area: addr: 00040800 len: 0200
+[17:48:17.149] kernel read area: addr: 00040A00 len: 0200
+[17:48:17.232] kernel read area: addr: 00040C00 len: 0200
+[17:48:17.327] kernel read area: addr: 00040E00 len: 0200
+[17:48:17.420] kernel read area: addr: 00041000 len: 0200
+[17:48:17.514] kernel read area: addr: 00041200 len: 0200
+[17:48:17.592] kernel read area: addr: 00041400 len: 0200
+[17:48:17.686] kernel read area: addr: 00041600 len: 0200
+[17:48:17.780] kernel read area: addr: 00041800 len: 0200
+[17:48:17.858] kernel read area: addr: 00041A00 len: 0200
+[17:48:17.952] kernel read area: addr: 00041C00 len: 0200
+[17:48:18.045] kernel read area: addr: 00041E00 len: 0200
+[17:48:18.139] kernel read area: addr: 00042000 len: 0200
+[17:48:18.233] kernel read area: addr: 00042200 len: 0200
+[17:48:18.327] kernel read area: addr: 00042400 len: 0200
+[17:48:18.405] kernel read area: addr: 00042600 len: 0200
+[17:48:18.498] kernel read area: addr: 00042800 len: 0200
+[17:48:18.582] kernel read area: addr: 00042A00 len: 0200
+[17:48:18.677] kernel read area: addr: 00042C00 len: 0200
+[17:48:18.755] kernel read area: addr: 00042E00 len: 0200
+[17:48:18.865] kernel read area: addr: 00043000 len: 0200
+[17:48:18.959] kernel read area: addr: 00043200 len: 0200
+[17:48:19.037] kernel read area: addr: 00043400 len: 0200
+[17:48:19.131] kernel read area: addr: 00043600 len: 0200
+[17:48:19.208] kernel read area: addr: 00043800 len: 0200
+[17:48:19.302] kernel read area: addr: 00043A00 len: 0200
+[17:48:19.387] kernel read area: addr: 00043C00 len: 0200
+[17:48:19.482] kernel read area: addr: 00043E00 len: 0200
+[17:48:19.576] kernel read area: addr: 00044000 len: 0200
+[17:48:19.670] kernel read area: addr: 00044200 len: 0200
+[17:48:19.764] kernel read area: addr: 00044400 len: 0200
+[17:48:19.842] kernel read area: addr: 00044600 len: 0200
+[17:48:19.926] kernel read area: addr: 00044800 len: 0200
+[17:48:20.021] kernel read area: addr: 00044A00 len: 0200
+[17:48:20.115] kernel read area: addr: 00044C00 len: 0200
+[17:48:20.193] kernel read area: addr: 00044E00 len: 0200
+[17:48:20.303] kernel read area: addr: 00045000 len: 0200
+[17:48:20.381] kernel read area: addr: 00045200 len: 0200
+[17:48:20.475] kernel read area: addr: 00045400 len: 0200
+[17:48:20.568] kernel read area: addr: 00045600 len: 0200
+[17:48:20.646] kernel read area: addr: 00045800 len: 0200
+[17:48:20.740] kernel read area: addr: 00045A00 len: 0200
+[17:48:20.834] kernel read area: addr: 00045C00 len: 0200
+[17:48:20.912] kernel read area: addr: 00045E00 len: 0200
+[17:48:21.021] kernel read area: addr: 00046000 len: 0200
+[17:48:21.115] kernel read area: addr: 00046200 len: 0200
+[17:48:21.193] kernel read area: addr: 00046400 len: 0200
+[17:48:21.292] kernel read area: addr: 00046600 len: 0200
+[17:48:21.371] kernel read area: addr: 00046800 len: 0200
+[17:48:21.466] kernel read area: addr: 00046A00 len: 0200
+[17:48:21.544] kernel read area: addr: 00046C00 len: 0200
+[17:48:21.638] kernel read area: addr: 00046E00 len: 0200
+[17:48:21.747] kernel read area: addr: 00047000 len: 0200
+[17:48:21.825] kernel read area: addr: 00047200 len: 0200
+[17:48:21.919] kernel read area: addr: 00047400 len: 0200
+[17:48:22.013] kernel read area: addr: 00047600 len: 0200
+[17:48:22.091] kernel read area: addr: 00047800 len: 0200
+[17:48:22.185] kernel read area: addr: 00047A00 len: 0200
+[17:48:22.274] kernel read area: addr: 00047C00 len: 0200
+[17:48:22.352] kernel read area: addr: 00047E00 len: 0200
+[17:48:22.462] kernel read area: addr: 00048000 len: 0200
+[17:48:22.556] kernel read area: addr: 00048200 len: 0200
+[17:48:22.639] kernel read area: addr: 00048400 len: 0200
+[17:48:22.717] kernel read area: addr: 00048600 len: 0200
+[17:48:22.812] kernel read area: addr: 00048800 len: 0200
+[17:48:22.906] kernel read area: addr: 00048A00 len: 0200
+[17:48:22.984] kernel read area: addr: 00048C00 len: 0200
+[17:48:23.078] kernel read area: addr: 00048E00 len: 0200
+[17:48:23.172] kernel read area: addr: 00049000 len: 0200
+[17:48:23.266] kernel read area: addr: 00049200 len: 0200
+[17:48:23.359] kernel read area: addr: 00049400 len: 0200
+[17:48:23.437] kernel read area: addr: 00049600 len: 0200
+[17:48:23.531] kernel read area: addr: 00049800 len: 0200
+[17:48:23.625] kernel read area: addr: 00049A00 len: 0200
+[17:48:23.703] kernel read area: addr: 00049C00 len: 0200
+[17:48:23.797] kernel read area: addr: 00049E00 len: 0200
+[17:48:23.891] kernel read area: addr: 0004A000 len: 0200
+[17:48:23.984] kernel read area: addr: 0004A200 len: 0200
+[17:48:24.067] kernel read area: addr: 0004A400 len: 0200
+[17:48:24.162] kernel read area: addr: 0004A600 len: 0200
+[17:48:24.256] kernel read area: addr: 0004A800 len: 0200
+[17:48:24.334] kernel read area: addr: 0004AA00 len: 0200
+[17:48:24.418] kernel read area: addr: 0004AC00 len: 0200
+[17:48:24.513] kernel read area: addr: 0004AE00 len: 0200
+[17:48:24.623] kernel read area: addr: 0004B000 len: 0200
+[17:48:24.701] kernel read area: addr: 0004B200 len: 0200
+[17:48:24.795] kernel read area: addr: 0004B400 len: 0200
+[17:48:24.888] kernel read area: addr: 0004B600 len: 0200
+[17:48:24.966] kernel read area: addr: 0004B800 len: 0200
+[17:48:25.060] kernel read area: addr: 0004BA00 len: 0200
+[17:48:25.154] kernel read area: addr: 0004BC00 len: 0200
+[17:48:25.232] kernel read area: addr: 0004BE00 len: 0200
+[17:48:25.341] kernel read area: addr: 0004C000 len: 0200
+[17:48:25.425] kernel read area: addr: 0004C200 len: 0200
+[17:48:25.520] kernel read area: addr: 0004C400 len: 0200
+[17:48:25.598] kernel read area: addr: 0004C600 len: 0200
+[17:48:25.692] kernel read area: addr: 0004C800 len: 0200
+[17:48:25.786] kernel read area: addr: 0004CA00 len: 0200
+[17:48:25.864] kernel read area: addr: 0004CC00 len: 0200
+[17:48:25.958] kernel read area: addr: 0004CE00 len: 0200
+[17:48:26.051] kernel read area: addr: 0004D000 len: 0200
+[17:48:26.145] kernel read area: addr: 0004D200 len: 0200
+[17:48:26.239] kernel read area: addr: 0004D400 len: 0200
+[17:48:26.317] kernel read area: addr: 0004D600 len: 0200
+[17:48:26.411] kernel read area: addr: 0004D800 len: 0200
+[17:48:26.504] kernel read area: addr: 0004DA00 len: 0200
+[17:48:26.583] kernel read area: addr: 0004DC00 len: 0200
+[17:48:26.677] kernel read area: addr: 0004DE00 len: 0200
+[17:48:26.775] kernel read area: addr: 0004E000 len: 0200
+[17:48:26.870] kernel read area: addr: 0004E200 len: 0200
+[17:48:26.949] kernel read area: addr: 0004E400 len: 0200
+[17:48:27.042] kernel read area: addr: 0004E600 len: 0200
+[17:48:27.136] kernel read area: addr: 0004E800 len: 0200
+[17:48:27.214] kernel read area: addr: 0004EA00 len: 0200
+[17:48:27.308] kernel read area: addr: 0004EC00 len: 0200
+[17:48:27.402] kernel read area: addr: 0004EE00 len: 0200
+[17:48:27.495] kernel read area: addr: 0004F000 len: 0200
+[17:48:27.589] kernel read area: addr: 0004F200 len: 0200
+[17:48:27.680] kernel read area: addr: 0004F400 len: 0200
+[17:48:27.758] kernel read area: addr: 0004F600 len: 0200
+[17:48:27.851] kernel read area: addr: 0004F800 len: 0200
+[17:48:27.945] kernel read area: addr: 0004FA00 len: 0200
+[17:48:28.023] kernel read area: addr: 0004FC00 len: 0200
+[17:48:28.110] kernel read area: addr: 0004FE00 len: 0200
+[17:48:28.221] kernel read area: addr: 00050000 len: 0200
+[17:48:28.299] kernel read area: addr: 00050200 len: 0200
+[17:48:28.392] kernel read area: addr: 00050400 len: 0200
+[17:48:28.486] kernel read area: addr: 00050600 len: 0200
+[17:48:28.564] kernel read area: addr: 00050800 len: 0200
+[17:48:28.674] kernel read area: addr: 00050A00 len: 0200
+[17:48:28.752] kernel read area: addr: 00050C00 len: 0200
+[17:48:28.846] kernel read area: addr: 00050E00 len: 0200
+[17:48:28.940] kernel read area: addr: 00051000 len: 0200
+[17:48:29.033] kernel read area: addr: 00051200 len: 0200
+[17:48:29.127] kernel read area: addr: 00051400 len: 0200
+[17:48:29.205] kernel read area: addr: 00051600 len: 0200
+[17:48:29.299] kernel read area: addr: 00051800 len: 0200
+[17:48:29.382] kernel read area: addr: 00051A00 len: 0200
+[17:48:29.476] kernel read area: addr: 00051C00 len: 0200
+[17:48:29.555] kernel read area: addr: 00051E00 len: 0200
+[17:48:29.665] kernel read area: addr: 00052000 len: 0200
+[17:48:29.759] kernel read area: addr: 00052200 len: 0200
+[17:48:29.837] kernel read area: addr: 00052400 len: 0200
+[17:48:29.931] kernel read area: addr: 00052600 len: 0200
+[17:48:30.009] kernel read area: addr: 00052800 len: 0200
+[17:48:30.103] kernel read area: addr: 00052A00 len: 0200
+[17:48:30.196] kernel read area: addr: 00052C00 len: 0200
+[17:48:30.275] kernel read area: addr: 00052E00 len: 0200
+[17:48:30.384] kernel read area: addr: 00053000 len: 0200
+[17:48:30.477] kernel read area: addr: 00053200 len: 0200
+[17:48:30.556] kernel read area: addr: 00053400 len: 0200
+[17:48:30.649] kernel read area: addr: 00053600 len: 0200
+[17:48:30.743] kernel read area: addr: 00053800 len: 0200
+[17:48:30.826] kernel read area: addr: 00053A00 len: 0200
+[17:48:30.920] kernel read area: addr: 00053C00 len: 0200
+[17:48:31.000] kernel read area: addr: 00053E00 len: 0200
+[17:48:31.109] kernel read area: addr: 00054000 len: 0200
+[17:48:31.187] kernel read area: addr: 00054200 len: 0200
+[17:48:31.281] kernel read area: addr: 00054400 len: 0200
+[17:48:31.375] kernel read area: addr: 00054600 len: 0200
+[17:48:31.453] kernel read area: addr: 00054800 len: 0200
+[17:48:31.546] kernel read area: addr: 00054A00 len: 0200
+[17:48:31.630] kernel read area: addr: 00054C00 len: 0200
+[17:48:31.725] kernel read area: addr: 00054E00 len: 0200
+[17:48:31.819] kernel read area: addr: 00055000 len: 0200
+[17:48:31.913] kernel read area: addr: 00055200 len: 0200
+[17:48:32.006] kernel read area: addr: 00055400 len: 0200
+[17:48:32.084] kernel read area: addr: 00055600 len: 0200
+[17:48:32.181] kernel read area: addr: 00055800 len: 0200
+[17:48:32.261] kernel read area: addr: 00055A00 len: 0200
+[17:48:32.357] kernel read area: addr: 00055C00 len: 0200
+[17:48:32.434] kernel read area: addr: 00055E00 len: 0200
+[17:48:32.544] kernel read area: addr: 00056000 len: 0200
+[17:48:32.638] kernel read area: addr: 00056200 len: 0200
+[17:48:32.716] kernel read area: addr: 00056400 len: 0200
+[17:48:32.810] kernel read area: addr: 00056600 len: 0200
+[17:48:32.888] kernel read area: addr: 00056800 len: 0200
+[17:48:32.981] kernel read area: addr: 00056A00 len: 0200
+[17:48:33.075] kernel read area: addr: 00056C00 len: 0200
+[17:48:33.159] kernel read area: addr: 00056E00 len: 0200
+[17:48:33.268] kernel read area: addr: 00057000 len: 0200
+[17:48:33.348] kernel read area: addr: 00057200 len: 0200
+[17:48:33.442] kernel read area: addr: 00057400 len: 0200
+[17:48:33.520] kernel read area: addr: 00057600 len: 0200
+[17:48:33.619] kernel read area: addr: 00057800 len: 0200
+[17:48:33.698] kernel read area: addr: 00057A00 len: 0200
+[17:48:33.792] kernel read area: addr: 00057C00 len: 0200
+[17:48:33.885] kernel read area: addr: 00057E00 len: 0200
+[17:48:33.979] kernel read area: addr: 00058000 len: 0200
+[17:48:34.073] kernel read area: addr: 00058200 len: 0200
+[17:48:34.151] kernel read area: addr: 00058400 len: 0200
+[17:48:34.245] kernel read area: addr: 00058600 len: 0200
+[17:48:34.339] kernel read area: addr: 00058800 len: 0200
+[17:48:34.423] kernel read area: addr: 00058A00 len: 0200
+[17:48:34.518] kernel read area: addr: 00058C00 len: 0200
+[17:48:34.596] kernel read area: addr: 00058E00 len: 0200
+[17:48:34.705] kernel read area: addr: 00059000 len: 0200
+[17:48:34.784] kernel read area: addr: 00059200 len: 0200
+[17:48:34.877] kernel read area: addr: 00059400 len: 0200
+[17:48:34.961] kernel read area: addr: 00059600 len: 0200
+[17:48:35.055] kernel read area: addr: 00059800 len: 0200
+[17:48:35.139] kernel read area: addr: 00059A00 len: 0200
+[17:48:35.232] kernel read area: addr: 00059C00 len: 0200
+[17:48:35.312] kernel read area: addr: 00059E00 len: 0200
+[17:48:35.421] kernel read area: addr: 0005A000 len: 0200
+[17:48:35.515] kernel read area: addr: 0005A200 len: 0200
+[17:48:35.593] kernel read area: addr: 0005A400 len: 0200
+[17:48:35.687] kernel read area: addr: 0005A600 len: 0200
+[17:48:35.780] kernel read area: addr: 0005A800 len: 0200
+[17:48:35.859] kernel read area: addr: 0005AA00 len: 0200
+[17:48:35.952] kernel read area: addr: 0005AC00 len: 0200
+[17:48:36.031] kernel read area: addr: 0005AE00 len: 0200
+[17:48:36.140] kernel read area: addr: 0005B000 len: 0200
+[17:48:36.234] kernel read area: addr: 0005B200 len: 0200
+[17:48:36.317] kernel read area: addr: 0005B400 len: 0200
+[17:48:36.412] kernel read area: addr: 0005B600 len: 0200
+[17:48:36.490] kernel read area: addr: 0005B800 len: 0200
+[17:48:36.584] kernel read area: addr: 0005BA00 len: 0200
+[17:48:36.662] kernel read area: addr: 0005BC00 len: 0200
+[17:48:36.756] kernel read area: addr: 0005BE00 len: 0200
+[17:48:36.865] kernel read area: addr: 0005C000 len: 0200
+[17:48:36.944] kernel read area: addr: 0005C200 len: 0200
+[17:48:37.037] kernel read area: addr: 0005C400 len: 0200
+[17:48:37.131] kernel read area: addr: 0005C600 len: 0200
+[17:48:37.215] kernel read area: addr: 0005C800 len: 0200
+[17:48:37.309] kernel read area: addr: 0005CA00 len: 0200
+[17:48:37.388] kernel read area: addr: 0005CC00 len: 0200
+[17:48:37.482] kernel read area: addr: 0005CE00 len: 0200
+[17:48:37.582] kernel read area: addr: 0005D000 len: 0200
+[17:48:37.667] kernel read area: addr: 0005D200 len: 0200
+[17:48:37.762] kernel read area: addr: 0005D400 len: 0200
+[17:48:37.855] kernel read area: addr: 0005D600 len: 0200
+[17:48:37.934] kernel read area: addr: 0005D800 len: 0200
+[17:48:38.028] kernel read area: addr: 0005DA00 len: 0200
+[17:48:38.106] kernel read area: addr: 0005DC00 len: 0200
+[17:48:38.199] kernel read area: addr: 0005DE00 len: 0200
+[17:48:38.309] kernel read area: addr: 0005E000 len: 0200
+[17:48:38.387] kernel read area: addr: 0005E200 len: 0200
+[17:48:38.481] kernel read area: addr: 0005E400 len: 0200
+[17:48:38.574] kernel read area: addr: 0005E600 len: 0200
+[17:48:38.652] kernel read area: addr: 0005E800 len: 0200
+[17:48:38.746] kernel read area: addr: 0005EA00 len: 0200
+[17:48:38.840] kernel read area: addr: 0005EC00 len: 0200
+[17:48:38.918] kernel read area: addr: 0005EE00 len: 0200
+[17:48:39.033] kernel read area: addr: 0005F000 len: 0200
+[17:48:39.112] kernel read area: addr: 0005F200 len: 0200
+[17:48:39.206] kernel read area: addr: 0005F400 len: 0200
+[17:48:39.284] kernel read area: addr: 0005F600 len: 0200
+[17:48:39.383] kernel read area: addr: 0005F800 len: 0200
+[17:48:39.462] kernel read area: addr: 0005FA00 len: 0200
+[17:48:39.557] kernel read area: addr: 0005FC00 len: 0200
+[17:48:39.637] kernel read area: addr: 0005FE00 len: 0200
+[17:48:39.746] kernel read area: addr: 00060000 len: 0200
+[17:48:39.824] kernel read area: addr: 00060200 len: 0200
+[17:48:39.918] kernel read area: addr: 00060400 len: 0200
+[17:48:40.012] kernel read area: addr: 00060600 len: 0200
+[17:48:40.090] kernel read area: addr: 00060800 len: 0200
+[17:48:40.184] kernel read area: addr: 00060A00 len: 0200
+[17:48:40.262] kernel read area: addr: 00060C00 len: 0200
+[17:48:40.361] kernel read area: addr: 00060E00 len: 0200
+[17:48:40.455] kernel read area: addr: 00061000 len: 0200
+[17:48:40.549] kernel read area: addr: 00061200 len: 0200
+[17:48:40.643] kernel read area: addr: 00061400 len: 0200
+[17:48:40.721] kernel read area: addr: 00061600 len: 0200
+[17:48:40.815] kernel read area: addr: 00061800 len: 0200
+[17:48:40.909] kernel read area: addr: 00061A00 len: 0200
+[17:48:40.987] kernel read area: addr: 00061C00 len: 0200
+[17:48:41.081] kernel read area: addr: 00061E00 len: 0200
+[17:48:41.175] kernel read area: addr: 00062000 len: 0200
+[17:48:41.268] kernel read area: addr: 00062200 len: 0200
+[17:48:41.362] kernel read area: addr: 00062400 len: 0200
+[17:48:41.440] kernel read area: addr: 00062600 len: 0200
+[17:48:41.534] kernel read area: addr: 00062800 len: 0200
+[17:48:41.627] kernel read area: addr: 00062A00 len: 0200
+[17:48:41.706] kernel read area: addr: 00062C00 len: 0200
+[17:48:41.804] kernel read area: addr: 00062E00 len: 0200
+[17:48:41.899] kernel read area: addr: 00063000 len: 0200
+[17:48:41.993] kernel read area: addr: 00063200 len: 0200
+[17:48:42.071] kernel read area: addr: 00063400 len: 0200
+[17:48:42.165] kernel read area: addr: 00063600 len: 0200
+[17:48:42.258] kernel read area: addr: 00063800 len: 0200
+[17:48:42.347] kernel read area: addr: 00063A00 len: 0200
+[17:48:42.425] kernel read area: addr: 00063C00 len: 0200
+[17:48:42.520] kernel read area: addr: 00063E00 len: 0200
+[17:48:42.614] kernel read area: addr: 00064000 len: 0200
+[17:48:42.707] kernel read area: addr: 00064200 len: 0200
+[17:48:42.796] kernel read area: addr: 00064400 len: 0200
+[17:48:42.891] kernel read area: addr: 00064600 len: 0200
+[17:48:42.969] kernel read area: addr: 00064800 len: 0200
+[17:48:43.063] kernel read area: addr: 00064A00 len: 0200
+[17:48:43.150] kernel read area: addr: 00064C00 len: 0200
+[17:48:43.229] kernel read area: addr: 00064E00 len: 0200
+[17:48:43.345] kernel read area: addr: 00065000 len: 0200
+[17:48:43.424] kernel read area: addr: 00065200 len: 0200
+[17:48:43.518] kernel read area: addr: 00065400 len: 0200
+[17:48:43.596] kernel read area: addr: 00065600 len: 0200
+[17:48:43.690] kernel read area: addr: 00065800 len: 0200
+[17:48:43.783] kernel read area: addr: 00065A00 len: 0200
+[17:48:43.861] kernel read area: addr: 00065C00 len: 0200
+[17:48:43.955] kernel read area: addr: 00065E00 len: 0200
+[17:48:44.065] kernel read area: addr: 00066000 len: 0200
+[17:48:44.143] kernel read area: addr: 00066200 len: 0200
+[17:48:44.237] kernel read area: addr: 00066400 len: 0200
+[17:48:44.315] kernel read area: addr: 00066600 len: 0200
+[17:48:44.415] kernel read area: addr: 00066800 len: 0200
+[17:48:44.493] kernel read area: addr: 00066A00 len: 0200
+[17:48:44.588] kernel read area: addr: 00066C00 len: 0200
+[17:48:44.666] kernel read area: addr: 00066E00 len: 0200
+[17:48:44.775] kernel read area: addr: 00067000 len: 0200
+[17:48:44.869] kernel read area: addr: 00067200 len: 0200
+[17:48:44.947] kernel read area: addr: 00067400 len: 0200
+[17:48:45.041] kernel read area: addr: 00067600 len: 0200
+[17:48:45.134] kernel read area: addr: 00067800 len: 0200
+[17:48:45.212] kernel read area: addr: 00067A00 len: 0200
+[17:48:45.306] kernel read area: addr: 00067C00 len: 0200
+[17:48:45.384] kernel read area: addr: 00067E00 len: 0200
+[17:48:45.494] kernel read area: addr: 00068000 len: 0200
+[17:48:45.587] kernel read area: addr: 00068200 len: 0200
+[17:48:45.666] kernel read area: addr: 00068400 len: 0200
+[17:48:45.759] kernel read area: addr: 00068600 len: 0200
+[17:48:45.843] kernel read area: addr: 00068800 len: 0200
+[17:48:45.938] kernel read area: addr: 00068A00 len: 0200
+[17:48:46.016] kernel read area: addr: 00068C00 len: 0200
+[17:48:46.110] kernel read area: addr: 00068E00 len: 0200
+[17:48:46.219] kernel read area: addr: 00069000 len: 0200
+[17:48:46.297] kernel read area: addr: 00069200 len: 0200
+[17:48:46.391] kernel read area: addr: 00069400 len: 0200
+[17:48:46.469] kernel read area: addr: 00069600 len: 0200
+[17:48:46.563] kernel read area: addr: 00069800 len: 0200
+[17:48:46.657] kernel read area: addr: 00069A00 len: 0200
+[17:48:46.735] kernel read area: addr: 00069C00 len: 0200
+[17:48:46.829] kernel read area: addr: 00069E00 len: 0200
+[17:48:46.938] kernel read area: addr: 0006A000 len: 0200
+[17:48:47.025] kernel read area: addr: 0006A200 len: 0200
+[17:48:47.105] kernel read area: addr: 0006A400 len: 0200
+[17:48:47.188] kernel read area: addr: 0006A600 len: 0200
+[17:48:47.283] kernel read area: addr: 0006A800 len: 0200
+[17:48:47.376] kernel read area: addr: 0006AA00 len: 0200
+[17:48:47.455] kernel read area: addr: 0006AC00 len: 0200
+[17:48:47.548] kernel read area: addr: 0006AE00 len: 0200
+[17:48:47.658] kernel read area: addr: 0006B000 len: 0200
+[17:48:47.736] kernel read area: addr: 0006B200 len: 0200
+[17:48:47.830] kernel read area: addr: 0006B400 len: 0200
+[17:48:47.908] kernel read area: addr: 0006B600 len: 0200
+[17:48:48.002] kernel read area: addr: 0006B800 len: 0200
+[17:48:48.087] kernel read area: addr: 0006BA00 len: 0200
+[17:48:48.182] kernel read area: addr: 0006BC00 len: 0200
+[17:48:48.261] kernel read area: addr: 0006BE00 len: 0200
+[17:48:48.370] kernel read area: addr: 0006C000 len: 0200
+[17:48:48.464] kernel read area: addr: 0006C200 len: 0200
+[17:48:48.547] kernel read area: addr: 0006C400 len: 0200
+[17:48:48.642] kernel read area: addr: 0006C600 len: 0200
+[17:48:48.721] kernel read area: addr: 0006C800 len: 0200
+[17:48:48.814] kernel read area: addr: 0006CA00 len: 0200
+[17:48:48.893] kernel read area: addr: 0006CC00 len: 0200
+[17:48:48.986] kernel read area: addr: 0006CE00 len: 0200
+[17:48:49.096] kernel read area: addr: 0006D000 len: 0200
+[17:48:49.174] kernel read area: addr: 0006D200 len: 0200
+[17:48:49.267] kernel read area: addr: 0006D400 len: 0200
+[17:48:49.361] kernel read area: addr: 0006D600 len: 0200
+[17:48:49.444] kernel read area: addr: 0006D800 len: 0200
+[17:48:49.524] kernel read area: addr: 0006DA00 len: 0200
+[17:48:49.618] kernel read area: addr: 0006DC00 len: 0200
+[17:48:49.711] kernel read area: addr: 0006DE00 len: 0200
+[17:48:49.805] kernel read area: addr: 0006E000 len: 0200
+[17:48:49.904] kernel read area: addr: 0006E200 len: 0200
+[17:48:49.982] kernel read area: addr: 0006E400 len: 0200
+[17:48:50.077] kernel read area: addr: 0006E600 len: 0200
+[17:48:50.156] kernel read area: addr: 0006E800 len: 0200
+[17:48:50.249] kernel read area: addr: 0006EA00 len: 0200
+[17:48:50.333] kernel read area: addr: 0006EC00 len: 0200
+[17:48:50.427] kernel read area: addr: 0006EE00 len: 0200
+[17:48:50.538] kernel read area: addr: 0006F000 len: 0200
+[17:48:50.616] kernel read area: addr: 0006F200 len: 0200
+[17:48:50.709] kernel read area: addr: 0006F400 len: 0200
+[17:48:50.788] kernel read area: addr: 0006F600 len: 0200
+[17:48:50.881] kernel read area: addr: 0006F800 len: 0200
+[17:48:50.975] kernel read area: addr: 0006FA00 len: 0200
+[17:48:51.053] kernel read area: addr: 0006FC00 len: 0200
+[17:48:51.147] kernel read area: addr: 0006FE00 len: 0200
+[17:48:51.259] kernel read area: addr: 00070000 len: 0200
+[17:48:51.340] kernel read area: addr: 00070200 len: 0200
+[17:48:51.435] kernel read area: addr: 00070400 len: 0200
+[17:48:51.513] kernel read area: addr: 00070600 len: 0200
+[17:48:51.606] kernel read area: addr: 00070800 len: 0200
+[17:48:51.685] kernel read area: addr: 00070A00 len: 0200
+[17:48:51.778] kernel read area: addr: 00070C00 len: 0200
+[17:48:51.872] kernel read area: addr: 00070E00 len: 0200
+[17:48:51.966] kernel read area: addr: 00071000 len: 0200
+[17:48:52.060] kernel read area: addr: 00071200 len: 0200
+[17:48:52.154] kernel read area: addr: 00071400 len: 0200
+[17:48:52.232] kernel read area: addr: 00071600 len: 0200
+[17:48:52.325] kernel read area: addr: 00071800 len: 0200
+[17:48:52.403] kernel read area: addr: 00071A00 len: 0200
+[17:48:52.497] kernel read area: addr: 00071C00 len: 0200
+[17:48:52.591] kernel read area: addr: 00071E00 len: 0200
+[17:48:52.690] kernel read area: addr: 00072000 len: 0200
+[17:48:52.785] kernel read area: addr: 00072200 len: 0200
+[17:48:52.863] kernel read area: addr: 00072400 len: 0200
+[17:48:52.957] kernel read area: addr: 00072600 len: 0200
+[17:48:53.035] kernel read area: addr: 00072800 len: 0200
+[17:48:53.129] kernel read area: addr: 00072A00 len: 0200
+[17:48:53.222] kernel read area: addr: 00072C00 len: 0200
+[17:48:53.301] kernel read area: addr: 00072E00 len: 0200
+[17:48:53.410] kernel read area: addr: 00073000 len: 0200
+[17:48:53.504] kernel read area: addr: 00073200 len: 0200
+[17:48:53.582] kernel read area: addr: 00073400 len: 0200
+[17:48:53.676] kernel read area: addr: 00073600 len: 0200
+[17:48:53.754] kernel read area: addr: 00073800 len: 0200
+[17:48:53.848] kernel read area: addr: 00073A00 len: 0200
+[17:48:53.941] kernel read area: addr: 00073C00 len: 0200
+[17:48:54.025] kernel read area: addr: 00073E00 len: 0200
+[17:48:54.135] kernel read area: addr: 00074000 len: 0200
+[17:48:54.214] kernel read area: addr: 00074200 len: 0200
+[17:48:54.307] kernel read area: addr: 00074400 len: 0200
+[17:48:54.385] kernel read area: addr: 00074600 len: 0200
+[17:48:54.485] kernel read area: addr: 00074800 len: 0200
+[17:48:54.565] kernel read area: addr: 00074A00 len: 0200
+[17:48:54.658] kernel read area: addr: 00074C00 len: 0200
+[17:48:54.737] kernel read area: addr: 00074E00 len: 0200
+[17:48:54.846] kernel read area: addr: 00075000 len: 0200
+[17:48:54.940] kernel read area: addr: 00075200 len: 0200
+[17:48:55.018] kernel read area: addr: 00075400 len: 0200
+[17:48:55.112] kernel read area: addr: 00075600 len: 0200
+[17:48:55.205] kernel read area: addr: 00075800 len: 0200
+[17:48:55.283] kernel read area: addr: 00075A00 len: 0200
+[17:48:55.382] kernel read area: addr: 00075C00 len: 0200
+[17:48:55.462] kernel read area: addr: 00075E00 len: 0200
+[17:48:55.571] kernel read area: addr: 00076000 len: 0200
+[17:48:55.665] kernel read area: addr: 00076200 len: 0200
+[17:48:55.743] kernel read area: addr: 00076400 len: 0200
+[17:48:55.837] kernel read area: addr: 00076600 len: 0200
+[17:48:55.915] kernel read area: addr: 00076800 len: 0200
+[17:48:56.009] kernel read area: addr: 00076A00 len: 0200
+[17:48:56.102] kernel read area: addr: 00076C00 len: 0200
+[17:48:56.181] kernel read area: addr: 00076E00 len: 0200
+[17:48:56.290] kernel read area: addr: 00077000 len: 0200
+[17:48:56.384] kernel read area: addr: 00077200 len: 0200
+[17:48:56.462] kernel read area: addr: 00077400 len: 0200
+[17:48:56.556] kernel read area: addr: 00077600 len: 0200
+[17:48:56.650] kernel read area: addr: 00077800 len: 0200
+[17:48:56.733] kernel read area: addr: 00077A00 len: 0200
+[17:48:56.811] kernel read area: addr: 00077C00 len: 0200
+[17:48:56.906] kernel read area: addr: 00077E00 len: 0200
+[17:48:57.016] kernel read area: addr: 00078000 len: 0200
+[17:48:57.094] kernel read area: addr: 00078200 len: 0200
+[17:48:57.187] kernel read area: addr: 00078400 len: 0200
+[17:48:57.281] kernel read area: addr: 00078600 len: 0200
+[17:48:57.359] kernel read area: addr: 00078800 len: 0200
+[17:48:57.453] kernel read area: addr: 00078A00 len: 0200
+[17:48:57.531] kernel read area: addr: 00078C00 len: 0200
+[17:48:57.625] kernel read area: addr: 00078E00 len: 0200
+[17:48:57.734] kernel read area: addr: 00079000 len: 0200
+[17:48:57.813] kernel read area: addr: 00079200 len: 0200
+[17:48:57.906] kernel read area: addr: 00079400 len: 0200
+[17:48:58.000] kernel read area: addr: 00079600 len: 0200
+[17:48:58.083] kernel read area: addr: 00079800 len: 0200
+[17:48:58.177] kernel read area: addr: 00079A00 len: 0200
+[17:48:58.256] kernel read area: addr: 00079C00 len: 0200
+[17:48:58.350] kernel read area: addr: 00079E00 len: 0200
+[17:48:58.444] kernel read area: addr: 0007A000 len: 0200
+[17:48:58.538] kernel read area: addr: 0007A200 len: 0200
+[17:48:58.631] kernel read area: addr: 0007A400 len: 0200
+[17:48:58.709] kernel read area: addr: 0007A600 len: 0200
+[17:48:58.803] kernel read area: addr: 0007A800 len: 0200
+[17:48:58.897] kernel read area: addr: 0007AA00 len: 0200
+[17:48:58.975] kernel read area: addr: 0007AC00 len: 0200
+[17:48:59.069] kernel read area: addr: 0007AE00 len: 0200
+[17:48:59.178] kernel read area: addr: 0007B000 len: 0200
+[17:48:59.256] kernel read area: addr: 0007B200 len: 0200
+[17:48:59.350] kernel read area: addr: 0007B400 len: 0200
+[17:48:59.434] kernel read area: addr: 0007B600 len: 0200
+[17:48:59.528] kernel read area: addr: 0007B800 len: 0200
+[17:48:59.607] kernel read area: addr: 0007BA00 len: 0200
+[17:48:59.701] kernel read area: addr: 0007BC00 len: 0200
+[17:48:59.795] kernel read area: addr: 0007BE00 len: 0200
+[17:48:59.888] kernel read area: addr: 0007C000 len: 0200
+[17:48:59.982] kernel read area: addr: 0007C200 len: 0200
+[17:49:00.076] kernel read area: addr: 0007C400 len: 0200
+[17:49:00.154] kernel read area: addr: 0007C600 len: 0200
+[17:49:00.248] kernel read area: addr: 0007C800 len: 0200
+[17:49:00.326] kernel read area: addr: 0007CA00 len: 0200
+[17:49:00.420] kernel read area: addr: 0007CC00 len: 0200
+[17:49:00.513] kernel read area: addr: 0007CE00 len: 0200
+[17:49:00.607] kernel read area: addr: 0007D000 len: 0200
+[17:49:00.701] kernel read area: addr: 0007D200 len: 0200
+[17:49:00.795] kernel read area: addr: 0007D400 len: 0200
+[17:49:00.878] kernel read area: addr: 0007D600 len: 0200
+[17:49:00.957] kernel read area: addr: 0007D800 len: 0200
+[17:49:01.051] kernel read area: addr: 0007DA00 len: 0200
+[17:49:01.145] kernel read area: addr: 0007DC00 len: 0200
+[17:49:01.223] kernel read area: addr: 0007DE00 len: 0200
+[17:49:01.333] kernel read area: addr: 0007E000 len: 0200
+[17:49:01.426] kernel read area: addr: 0007E200 len: 0200
+[17:49:01.504] kernel read area: addr: 0007E400 len: 0200
+[17:49:01.598] kernel read area: addr: 0007E600 len: 0200
+[17:49:01.676] kernel read area: addr: 0007E800 len: 0200
+[17:49:01.770] kernel read area: addr: 0007EA00 len: 0200
+[17:49:01.864] kernel read area: addr: 0007EC00 len: 0200
+[17:49:01.942] kernel read area: addr: 0007EE00 len: 0200
+[17:49:02.051] kernel read area: addr: 0007F000 len: 0200
+[17:49:02.145] kernel read area: addr: 0007F200 len: 0200
+[17:49:02.229] kernel read area: addr: 0007F400 len: 0200
+[17:49:02.308] kernel read area: addr: 0007F600 len: 0200
+[17:49:02.402] kernel read area: addr: 0007F800 len: 0200
+[17:49:02.496] kernel read area: addr: 0007FA00 len: 0200
+[17:49:02.574] kernel read area: addr: 0007FC00 len: 0200
+[17:49:02.668] kernel read area: addr: 0007FE00 len: 0200
+[17:49:02.777] kernel read area: addr: 00080000 len: 0200
+[17:49:02.855] kernel read area: addr: 00080200 len: 0200
+[17:49:02.949] kernel read area: addr: 00080400 len: 0200
+[17:49:03.027] kernel read area: addr: 00080600 len: 0200
+[17:49:03.121] kernel read area: addr: 00080800 len: 0200
+[17:49:03.215] kernel read area: addr: 00080A00 len: 0200
+[17:49:03.298] kernel read area: addr: 00080C00 len: 0200
+[17:49:03.393] kernel read area: addr: 00080E00 len: 0200
+[17:49:03.487] kernel read area: addr: 00081000 len: 0200
+[17:49:03.586] kernel read area: addr: 00081200 len: 0200
+[17:49:03.665] kernel read area: addr: 00081400 len: 0200
+[17:49:03.759] kernel read area: addr: 00081600 len: 0200
+[17:49:03.837] kernel read area: addr: 00081800 len: 0200
+[17:49:03.931] kernel read area: addr: 00081A00 len: 0200
+[17:49:04.024] kernel read area: addr: 00081C00 len: 0200
+[17:49:04.103] kernel read area: addr: 00081E00 len: 0200
+[17:49:04.212] kernel read area: addr: 00082000 len: 0200
+[17:49:04.306] kernel read area: addr: 00082200 len: 0200
+[17:49:04.384] kernel read area: addr: 00082400 len: 0200
+[17:49:04.483] kernel read area: addr: 00082600 len: 0200
+[17:49:04.562] kernel read area: addr: 00082800 len: 0200
+[17:49:04.656] kernel read area: addr: 00082A00 len: 0200
+[17:49:04.735] kernel read area: addr: 00082C00 len: 0200
+[17:49:04.828] kernel read area: addr: 00082E00 len: 0200
+[17:49:04.926] kernel read area: addr: 00083000 len: 0200
+[17:49:05.021] kernel read area: addr: 00083200 len: 0200
+[17:49:05.115] kernel read area: addr: 00083400 len: 0200
+[17:49:05.193] kernel read area: addr: 00083600 len: 0200
+[17:49:05.287] kernel read area: addr: 00083800 len: 0200
+[17:49:05.365] kernel read area: addr: 00083A00 len: 0200
+[17:49:05.459] kernel read area: addr: 00083C00 len: 0200
+[17:49:05.553] kernel read area: addr: 00083E00 len: 0200
+[17:49:05.646] kernel read area: addr: 00084000 len: 0200
+[17:49:05.740] kernel read area: addr: 00084200 len: 0200
+[17:49:05.834] kernel read area: addr: 00084400 len: 0200
+[17:49:05.912] kernel read area: addr: 00084600 len: 0200
+[17:49:06.006] kernel read area: addr: 00084800 len: 0200
+[17:49:06.099] kernel read area: addr: 00084A00 len: 0200
+[17:49:06.178] kernel read area: addr: 00084C00 len: 0200
+[17:49:06.277] kernel read area: addr: 00084E00 len: 0200
+[17:49:06.371] kernel read area: addr: 00085000 len: 0200
+[17:49:06.465] kernel read area: addr: 00085200 len: 0200
+[17:49:06.544] kernel read area: addr: 00085400 len: 0200
+[17:49:06.637] kernel read area: addr: 00085600 len: 0200
+[17:49:06.731] kernel read area: addr: 00085800 len: 0200
+[17:49:06.809] kernel read area: addr: 00085A00 len: 0200
+[17:49:06.903] kernel read area: addr: 00085C00 len: 0200
+[17:49:06.997] kernel read area: addr: 00085E00 len: 0200
+[17:49:08.081] kernel read area: addr: 000C0000 len: 0200
+[17:49:08.159] kernel read area: addr: 000C0200 len: 0200
+[17:49:08.253] kernel read area: addr: 000C0400 len: 0200
+[17:49:08.347] kernel read area: addr: 000C0600 len: 0200
+[17:49:08.425] kernel read area: addr: 000C0800 len: 0200
+[17:49:08.519] kernel read area: addr: 000C0A00 len: 0200
+[17:49:08.597] kernel read area: addr: 000C0C00 len: 0200
+[17:49:08.691] kernel read area: addr: 000C0E00 len: 0200
+[17:49:08.800] kernel read area: addr: 000C1000 len: 0200
+[17:49:08.878] kernel read area: addr: 000C1200 len: 0200
+[17:49:08.972] kernel read area: addr: 000C1400 len: 0200
+[17:49:09.056] kernel read area: addr: 000C1600 len: 0200
+[17:49:09.151] kernel read area: addr: 000C1800 len: 0200
+[17:49:09.229] kernel read area: addr: 000C1A00 len: 0200
+[17:49:09.323] kernel read area: addr: 000C1C00 len: 0200
+[17:49:09.416] kernel read area: addr: 000C1E00 len: 0200
+[17:49:09.515] kernel read area: addr: 000C2000 len: 0200
+[17:49:09.610] kernel read area: addr: 000C2200 len: 0200
+[17:49:09.688] kernel read area: addr: 000C2400 len: 0200
+[17:49:09.782] kernel read area: addr: 000C2600 len: 0200
+[17:49:09.860] kernel read area: addr: 000C2800 len: 0200
+[17:49:09.954] kernel read area: addr: 000C2A00 len: 0200
+[17:49:10.048] kernel read area: addr: 000C2C00 len: 0200
+[17:49:10.126] kernel read area: addr: 000C2E00 len: 0200
+[17:49:10.235] kernel read area: addr: 000C3000 len: 0200
+[17:49:10.319] kernel read area: addr: 000C3200 len: 0200
+[17:49:10.413] kernel read area: addr: 000C3400 len: 0200
+[17:49:10.493] kernel read area: addr: 000C3600 len: 0200
+[17:49:10.586] kernel read area: addr: 000C3800 len: 0200
+[17:49:10.680] kernel read area: addr: 000C3A00 len: 0200
+[17:49:10.758] kernel read area: addr: 000C3C00 len: 0200
+[17:49:10.852] kernel read area: addr: 000C3E00 len: 0200
+[17:49:10.961] kernel read area: addr: 000C4000 len: 0200
+[17:49:11.040] kernel read area: addr: 000C4200 len: 0200
+[17:49:11.133] kernel read area: addr: 000C4400 len: 0200
+[17:49:11.211] kernel read area: addr: 000C4600 len: 0200
+[17:49:11.305] kernel read area: addr: 000C4800 len: 0200
+[17:49:11.399] kernel read area: addr: 000C4A00 len: 0200
+[17:49:11.477] kernel read area: addr: 000C4C00 len: 0200
+[17:49:11.571] kernel read area: addr: 000C4E00 len: 0200
+[17:49:11.680] kernel read area: addr: 000C5000 len: 0200
+[17:49:11.763] kernel read area: addr: 000C5200 len: 0200
+[17:49:11.858] kernel read area: addr: 000C5400 len: 0200
+[17:49:11.936] kernel read area: addr: 000C5600 len: 0200
+[17:49:12.030] kernel read area: addr: 000C5800 len: 0200
+[17:49:12.108] kernel read area: addr: 000C5A00 len: 0200
+[17:49:12.202] kernel read area: addr: 000C5C00 len: 0200
+[17:49:12.286] kernel read area: addr: 000C5E00 len: 0200
+[17:49:12.395] kernel read area: addr: 000C6000 len: 0200
+[17:49:12.475] kernel read area: addr: 000C6200 len: 0200
+[17:49:12.569] kernel read area: addr: 000C6400 len: 0200
+[17:49:12.662] kernel read area: addr: 000C6600 len: 0200
+[17:49:12.740] kernel read area: addr: 000C6800 len: 0200
+[17:49:12.834] kernel read area: addr: 000C6A00 len: 0200
+[17:49:12.912] kernel read area: addr: 000C6C00 len: 0200
+[17:49:13.006] kernel read area: addr: 000C6E00 len: 0200
+[17:49:13.105] kernel read area: addr: 000C7000 len: 0200
+[17:49:13.200] kernel read area: addr: 000C7200 len: 0200
+[17:49:13.294] kernel read area: addr: 000C7400 len: 0200
+[17:49:13.372] kernel read area: addr: 000C7600 len: 0200
+[17:49:13.466] kernel read area: addr: 000C7800 len: 0200
+[17:49:13.544] kernel read area: addr: 000C7A00 len: 0200
+[17:49:13.638] kernel read area: addr: 000C7C00 len: 0200
+[17:49:13.731] kernel read area: addr: 000C7E00 len: 0200
+[17:49:13.825] kernel read area: addr: 000C8000 len: 0200
+[17:49:13.919] kernel read area: addr: 000C8200 len: 0200
+[17:49:14.013] kernel read area: addr: 000C8400 len: 0200
+[17:49:14.091] kernel read area: addr: 000C8600 len: 0200
+[17:49:14.185] kernel read area: addr: 000C8800 len: 0200
+[17:49:14.263] kernel read area: addr: 000C8A00 len: 0200
+[17:49:14.357] kernel read area: addr: 000C8C00 len: 0200
+[17:49:14.440] kernel read area: addr: 000C8E00 len: 0200
+[17:49:14.550] kernel read area: addr: 000C9000 len: 0200
+[17:49:14.645] kernel read area: addr: 000C9200 len: 0200
+[17:49:14.723] kernel read area: addr: 000C9400 len: 0200
+[17:49:14.817] kernel read area: addr: 000C9600 len: 0200
+[17:49:14.895] kernel read area: addr: 000C9800 len: 0200
+[17:49:14.988] kernel read area: addr: 000C9A00 len: 0200
+[17:49:15.082] kernel read area: addr: 000C9C00 len: 0200
+[17:49:15.160] kernel read area: addr: 000C9E00 len: 0200
+[17:49:15.270] kernel read area: addr: 000CA000 len: 0200
+[17:49:15.363] kernel read area: addr: 000CA200 len: 0200
+[17:49:15.446] kernel read area: addr: 000CA400 len: 0200
+[17:49:15.540] kernel read area: addr: 000CA600 len: 0200
+[17:49:15.620] kernel read area: addr: 000CA800 len: 0200
+[17:49:15.714] kernel read area: addr: 000CAA00 len: 0200
+[17:49:15.796] kernel read area: addr: 000CAC00 len: 0200
+[17:49:15.890] kernel read area: addr: 000CAE00 len: 0200
+[17:49:15.985] kernel read area: addr: 000CB000 len: 0200
+[17:49:16.079] kernel read area: addr: 000CB200 len: 0200
+[17:49:16.157] kernel read area: addr: 000CB400 len: 0200
+[17:49:16.251] kernel read area: addr: 000CB600 len: 0200
+[17:49:16.344] kernel read area: addr: 000CB800 len: 0200
+[17:49:16.422] kernel read area: addr: 000CBA00 len: 0200
+[17:49:16.516] kernel read area: addr: 000CBC00 len: 0200
+[17:49:16.610] kernel read area: addr: 000CBE00 len: 0200
+[17:49:16.703] kernel read area: addr: 000CC000 len: 0200
+[17:49:16.797] kernel read area: addr: 000CC200 len: 0200
+[17:49:16.891] kernel read area: addr: 000CC400 len: 0200
+[17:49:16.969] kernel read area: addr: 000CC600 len: 0200
+[17:49:17.063] kernel read area: addr: 000CC800 len: 0200
+[17:49:17.157] kernel read area: addr: 000CCA00 len: 0200
+[17:49:17.240] kernel read area: addr: 000CCC00 len: 0200
+[17:49:17.319] kernel read area: addr: 000CCE00 len: 0200
+[17:49:17.429] kernel read area: addr: 000CD000 len: 0200
+[17:49:17.522] kernel read area: addr: 000CD200 len: 0200
+[17:49:17.601] kernel read area: addr: 000CD400 len: 0200
+[17:49:17.694] kernel read area: addr: 000CD600 len: 0200
+[17:49:17.788] kernel read area: addr: 000CD800 len: 0200
+[17:49:17.866] kernel read area: addr: 000CDA00 len: 0200
+[17:49:17.960] kernel read area: addr: 000CDC00 len: 0200
+[17:49:18.054] kernel read area: addr: 000CDE00 len: 0200
+[17:49:18.148] kernel read area: addr: 000CE000 len: 0200
+[17:49:18.241] kernel read area: addr: 000CE200 len: 0200
+[17:49:18.335] kernel read area: addr: 000CE400 len: 0200
+[17:49:18.413] kernel read area: addr: 000CE600 len: 0200
+[17:49:18.507] kernel read area: addr: 000CE800 len: 0200
+[17:49:18.590] kernel read area: addr: 000CEA00 len: 0200
+[17:49:18.685] kernel read area: addr: 000CEC00 len: 0200
+[17:49:18.763] kernel read area: addr: 000CEE00 len: 0200
+[17:49:19.674] kernel read area: addr: 000FF000 len: 0200
+[17:49:19.753] kernel read area: addr: 000FF200 len: 0200
+[17:49:19.846] kernel read area: addr: 000FF400 len: 0200
+[17:49:19.930] kernel read area: addr: 000FF600 len: 0200
+[17:49:20.025] kernel read area: addr: 000FF800 len: 0200
+[17:49:20.103] kernel read area: addr: 000FFA00 len: 0200
+[17:49:20.197] kernel read area: addr: 000FFC00 len: 0200
+[17:49:20.275] kernel read area: addr: 000FFE00 len: 0200
+[17:49:20.369] interface close
+[17:49:20.369] interface close
+[17:49:23.037] A2WC510C (296 tables) inheriting 32BITBASE (1237 tables)
+[17:49:23.053] A2WC511R (0 tables) inheriting A2WC510C (1237 tables)
+[17:49:23.100] using metadata XML ID A2WC511R from file C:/Program Files (x86)/OpenECU/EcuFlash/rommetadata/subaru/Outback XT/A2WC511R.xml
+ which inherits XML ID A2WC510C from file C:/Program Files (x86)/OpenECU/EcuFlash/rommetadata/subaru/Legacy GT/A2WC510C.xml
+ which inherits XML ID 32BITBASE from file C:/Program Files (x86)/OpenECU/EcuFlash/rommetadata/subaru/Bases/32BITBASE.xml
+[17:49:23.100] ---notes for 32BITBASE---
+2014/06/20 [Tactrix] Tactrix definition auto cleaned|merged w/ RomRaiderGitHubAlphaMay2014.
+---notes for A2WC510C---
+2014/05/22 [Tactrix] Tactrix definition auto cleaned|merged w/ RomRaiderGitHubAlphaMay2014.
+---notes for A2WC511R---
+2014/05/22 [Tactrix] Tactrix definition auto cleaned|merged w/ RomRaiderGitHubAlphaMay2014.
+

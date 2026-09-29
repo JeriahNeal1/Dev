@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "status": "PASS_OFFLINE_SOFTWARE_CONDITIONAL_PHYSICAL",
+  "reports_identical_bytes": true,
+  "clean_process_reports": [
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\FINAL_VALIDATION_01.json",
+      "bytes": 2281135,
+      "sha256": "58c88663d7e9480fbabaedc964fcc5548bd2a2e778a1acf19475ed095400b19b"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\FINAL_VALIDATION_02.json",
+      "bytes": 2281135,
+      "sha256": "58c88663d7e9480fbabaedc964fcc5548bd2a2e778a1acf19475ed095400b19b"
+    }
+  ],
+  "release_certificate": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\RELEASE_CERTIFICATE.json",
+    "bytes": 2660,
+    "sha256": "98b159d10b6cab49243c98eac28c30b3874934abeb3de514c8c9b00f2f3af189"
+  },
+  "qualification_index": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\QUALIFICATION_INPUTS.json",
+    "bytes": 3533557,
+    "sha256": "d4c194210471aa527bfc231f8e2b77c2299e36bbdd92e9818a3f231dd03caac0"
+  },
+  "sealed_files": 16299,
+  "checks_passed": 16337,
+  "failed_checks": [],
+  "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+  "physical_host_sha256": "58d0867b85162e6fa4ccd3ac7fe0413c40e4054cbc416d12e39e29f926e60862",
+  "procedure": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\HUMAN_ACQUISITION_RK02.md",
+    "bytes": 11595,
+    "sha256": "d4add862135ad104ecc3c0145f09ddec879da8ef53775cb90c106f8221c67f81"
+  },
+  "engineering_gates": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\ENGINEERING_GATES.json",
+    "bytes": 6592,
+    "sha256": "66c0addbc7276ad650033a4a20c3109798db2d8e5dbf30778a216e5c7da80af7"
+  },
+  "physical_gates": [
+    {
+      "id": "ACTUAL_CURRENT_ECU_LOADER_ACCEPTANCE",
+      "status": "PHYSICAL_REQUIRED"
+    },
+    {
+      "id": "ACTUAL_OPENPORT_ELECTRICAL_UART",
+      "status": "PHYSICAL_REQUIRED"
+    },
+    {
+      "id": "CLOCK_RAM_UPLOAD_AND_ENTRY",
+      "status": "PHYSICAL_REQUIRED"
+    },
+    {
+      "id": "EXTERNAL_WATCHDOG_AND_NMI",
+      "status": "PHYSICAL_REQUIRED"
+    },
+    {
+      "id": "PHYSICAL_CAPTURE_CURRENT_ROM_ASSOCIATION",
+      "status": "PHYSICAL_REQUIRED"
+    },
+    {
+      "id": "POWER_DOWN_OEM_RESTART",
+      "status": "PHYSICAL_REQUIRED"
+    }
+  ],
+  "real_provider_loaded": false,
+  "physical_executable_executed": false,
+  "RK01": "SUPERSEDED_NOT_FOR_HARDWARE",
+  "current_ROM": "UNIDENTIFIED",
+  "next_rational_action": "B_SINGLE_HUMAN_ACQUISITION_ONLY_SUBJECT_TO_PHYSICAL_PREFLIGHT",
+  "scope": "Two fresh validator processes verify the same pinned prior execution evidence. They do not execute the physical tool or establish hardware behavior."
+}

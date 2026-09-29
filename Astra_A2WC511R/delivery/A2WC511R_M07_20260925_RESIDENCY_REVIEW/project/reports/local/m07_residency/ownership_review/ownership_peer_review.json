@@ -1,0 +1,187 @@
+{
+  "classification": "INDEPENDENT_BOUNDED_OBJECT_REVIEW_NOT_ACCEPTED_RESIDENCY",
+  "rom_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+  "objects": {
+    "division": {
+      "entry": "00004260",
+      "changed_span": [
+        "00004260",
+        "0000430A"
+      ],
+      "proposed_tail": [
+        "000042A4",
+        "0000430A"
+      ],
+      "proposed_bytes": 102,
+      "provably_owned_bytes": 0,
+      "bounded_subclaims": {
+        "external_encoded_direct_branch": "PASS: all524287 aligned ROM words scanned; none target the full original object from outside.",
+        "external_PC_relative_read_of_changed_bytes": "PASS: all raw MOV.W/MOV.L/MOVA forms scanned; none overlap changed span from outside.",
+        "literal_function_entry_classification": "PASS: every aligned raw pointer into the full original object points at its ordinary entry; actual literal-load/JSR/delay-slot sequences verified.",
+        "external_call_manufactured_interior_return": "PASS: no BSR/BSRF/JSR outside the object has architectural returnPC inside it.",
+        "original_internal_calls": "PASS: original executed division and range paths contain no calls, so no original nested callee retains a legitimate returnPC into reclaimed instructions.",
+        "transparent_ROM_readback": "PASS_AS_ALLOWED_BEHAVIOR: native A0/A8 may expose changed bytes. No virtualization or claim of original byte identity.",
+        "semantic_replacement": "PASS_CONDITIONAL: reviewed structural induction / complete nibble partition argument, not finite sample extrapolation."
+      },
+      "complete_inbound_ownership": "FAIL",
+      "remaining_obligations": [
+        "computed_control_source_contracts",
+        "internal_code_as_data_consumers",
+        "interrupt_context_and_stack"
+      ],
+      "ordinary_calls": [
+        {
+          "load": "0001B250",
+          "call": "0001B254",
+          "pool": "0001B330",
+          "target": "00004260",
+          "register": 3,
+          "through_delay_slot": "d33760ec430b6143"
+        },
+        {
+          "load": "00033E6C",
+          "call": "00033E72",
+          "pool": "00033EE0",
+          "target": "00004260",
+          "register": 2,
+          "through_delay_slot": "d21c2c01d01a420b6183"
+        },
+        {
+          "load": "000483BC",
+          "call": "000483C2",
+          "pool": "000484A8",
+          "target": "00004260",
+          "register": 3,
+          "through_delay_slot": "d33a610c71fe430be003"
+        },
+        {
+          "load": "0006425C",
+          "call": "00064260",
+          "pool": "00064318",
+          "target": "00004260",
+          "register": 3,
+          "through_delay_slot": "d32e611c430be005"
+        }
+      ],
+      "old_literal_pool": "430A NOP and430C..4314 literals remain outside changedspan. No original linker/object identity established.",
+      "semantic_conditions": [
+        "R0divisor,R1dividend; arithmeticpair induction32 iterations; DT altersT then SHAR restorescapturedT; otherSRbits unchanged.",
+        "ExtraR4store/load at[initialSP-12,initialSP-8) onnonzerodivisor only. Contents of this word are not restored to pre-call contents; ownership/private assumption is necessary.",
+        "Divisorzero retains originalR2save,errorwrite44E toFFFF130C,R0zero and registersideeffects."
+      ]
+    },
+    "range_tail": {
+      "entry": "0001466E",
+      "changed_span": [
+        "0001473C",
+        "000147AC"
+      ],
+      "proposed_tail": [
+        "00014770",
+        "000147AC"
+      ],
+      "proposed_bytes": 60,
+      "provably_owned_bytes": 0,
+      "bounded_subclaims": {
+        "external_encoded_direct_branch": "PASS: all524287 aligned ROM words scanned; none target the full original object from outside.",
+        "external_PC_relative_read_of_changed_bytes": "PASS: all raw MOV.W/MOV.L/MOVA forms scanned; none overlap changed span from outside.",
+        "literal_function_entry_classification": "PASS: every aligned raw pointer into the full original object points at its ordinary entry; actual literal-load/JSR/delay-slot sequences verified.",
+        "external_call_manufactured_interior_return": "PASS: no BSR/BSRF/JSR outside the object has architectural returnPC inside it.",
+        "original_internal_calls": "PASS: original executed division and range paths contain no calls, so no original nested callee retains a legitimate returnPC into reclaimed instructions.",
+        "transparent_ROM_readback": "PASS_AS_ALLOWED_BEHAVIOR: native A0/A8 may expose changed bytes. No virtualization or claim of original byte identity.",
+        "semantic_replacement": "PASS_CONDITIONAL: reviewed structural induction / complete nibble partition argument, not finite sample extrapolation."
+      },
+      "complete_inbound_ownership": "FAIL",
+      "remaining_obligations": [
+        "computed_control_source_contracts",
+        "internal_code_as_data_consumers",
+        "interrupt_context_and_stack"
+      ],
+      "ordinary_calls": [
+        {
+          "load": "00011934",
+          "call": "00011936",
+          "pool": "00011AD8",
+          "target": "0001466E",
+          "register": 3,
+          "through_delay_slot": "d368430b0009"
+        }
+      ],
+      "semantic_conditions": [
+        "Entry1466E dominates withR6=64; original1473A setsR0=15 beforemask.",
+        "All16low-nibble classes preserveR4output,R0nibble,R3destination,R7=128,R6=64,allotherregisters andT=(n<=8 or n==15).",
+        "Sharedliteralpool146B4..14730 is read by preceding functions; it is not exclusive to this function and remains unchanged.",
+        "Arbitrary interior entry bypassingR6setup has a known negative equivalence counterexample."
+      ]
+    }
+  },
+  "proposed_bytes_total": 162,
+  "provably_owned_bytes_total": 0,
+  "remaining_obligations": [
+    {
+      "id": "computed_control_source_contracts",
+      "status": "FAIL",
+      "ranges": [
+        "[00004260,0000430A)",
+        "[0001466E,000147AC)"
+      ],
+      "sources": [
+        {
+          "pc": "00000042",
+          "instruction": "JMP @R4",
+          "source": "Entry0040 changesSP then jumps to suppliedR4; complete caller-supplied R4 domain is not established."
+        },
+        {
+          "pc": "0000DE3E",
+          "instruction": "JSR @R1",
+          "source": "DE3C loadsR1 from descriptor+4. Descriptor=BE32(ROM[1023C+4*u8(entryR4)])+8*u16(entryR5), afterDDF4 setup; executable descriptor case requires leadingu16==FFFF. Complete caller index domains and descriptor provenance are not proved."
+        }
+      ],
+      "requirement": "Establish target-sensitive contracts for these and all remaining calculated control sources. No actual witness into either candidate is claimed. The broad analyzer has TOP frontiers and unfinished worklist, so it cannot supply this closure."
+    },
+    {
+      "id": "internal_code_as_data_consumers",
+      "status": "FAIL",
+      "ranges": [
+        "[00004260,0000430A)",
+        "[0001473C,000147AC)"
+      ],
+      "requirement": "Exclude or preserve firmware-internal byte/word reconstruction, computed code-table reads, and DMA that consume changed instruction bytes as data with behavior beyond transparent diagnostic readback. PC-relative reads and aligned absolute literals are closed; computed dataflow is not."
+    },
+    {
+      "id": "interrupt_context_and_stack",
+      "status": "FAIL",
+      "ranges": [
+        "division initialSP-12..initialSP-8",
+        "IRQ/exception savedPC and register frames"
+      ],
+      "requirement": "Replacement must start after reset/quiescent programming, never resume a pre-patch execution frame. Prove ISR context transparency and exclusive additional division stack word inclnested interrupts/DMA; added131instructions need caller-specific deadline margin. Existing noninterleaved semantic theorem excludes these contexts."
+    }
+  ],
+  "raw_pointer_classification": {
+    "TWO_SEPARATELY_READ_FLOAT_LITERALS": 13,
+    "ALIGNED_ENTRY_LITERAL": 4,
+    "BYTE_CROSSING_NO_PROVEN_CONSUMER": 1,
+    "ALIGNED_WORD_CROSSING_NO_PROVEN_CONSUMER": 846,
+    "TWO_DEFINITION_TYPED_FLOAT_ELEMENTS": 80
+  },
+  "raw_pointer_interpretation": "No unaligned hit is an alignedSHlongword function pointer.13literalfloatcrossings and80typedfloatcrossings have positive data-use evidence.846othercrossings andoneodddatawordcrossing have no complete consumer contract; they are not falsely reported as reachable code entries.",
+  "rtos_target_exclusion": "PASS_TARGET_SPECIFIC_EXCLUSION",
+  "local_library_provenance": "477storedarchives searched: nofullroutine or12-byteheader match;12libgccarchives contain genericunrolledROTCL/DIV1pairs only. RenesasPAKcompressedruntimeobjects notdecompressed/identified. Nooriginalsymbol/linkermetadata proof.",
+  "review_of_SEMANTIC_REPLACEMENTS": "PASS_WITH_EXPLICIT_SCOPE: induction and range partition are sound under their entry/private-stack/noninterleaving domains. GenericROMreads should be reported as transparentmodified-image behavior, not an automaticownershipfailure.",
+  "verification": {
+    "checks": 31,
+    "status": "PASS",
+    "additional_rtos_pairs": 65536
+  },
+  "evidence": {
+    "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\ownership_review\\inbound_inventory.json": "7eab059931a27c3fc459be2ba400d00b2c63ca9ea6a0e2d607ac0da69692a157",
+    "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\ownership_review\\classified_uses.json": "97929fb524d58d2c2fbb499a2bbd76a6ceeeb16c95561616286dd16f37f6e9ee",
+    "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\ownership_review\\verification.json": "f078f628b39b3c5025775ab199f66495002839bbd0bcfd1841ed6980dd545bfb",
+    "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\ownership_review\\rtos_target_exclusion.json": "79189c1f613d4c21e0a4087238d784e606aa0a6a2a7f242d95b6e558ae5f37ec",
+    "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\ownership_review\\local_library_search.json": "952c7c69e36c7c7265d80809ad7c1cf810280bb5e2f38b6b0103aedc1d50531e",
+    "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\semantic\\candidate_manifest.json": "7bc821454a1df1ba59e57434a780b4e049c29c4d116dd966dc66527372800db8",
+    "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\semantic\\semantic_structural_proof.json": "3ccb19ea564fc4a4fbc2e2344cfab3622f5df8c1ac1a6501400f4b2b7b88f0e9",
+    "C:\\Dev\\Astra_A2WC511R\\reports\\local\\m07_residency\\semantic\\SEMANTIC_REPLACEMENTS.md": "08cda005d9032204c08e83ff03f4ac14edd6b142bd91386080c147b7891b92e0"
+  }
+}

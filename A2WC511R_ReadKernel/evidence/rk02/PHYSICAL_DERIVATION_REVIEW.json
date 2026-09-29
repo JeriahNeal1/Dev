@@ -1,0 +1,122 @@
+{
+  "schema": 1,
+  "status": "PASS",
+  "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+  "errors": [],
+  "checks": [
+    "Fixed native05, header, builder and toolchain identities",
+    "Exactly eleven source replacements and exact inverse",
+    "Exact provider/certificate header with unchanged payload and ciphertext",
+    "Exact source diff and compile command",
+    "Exact paths, binding and complete eight-file physical manifest"
+  ],
+  "inputs": [
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\build_physical.py",
+      "bytes": 9160,
+      "sha256": "e48ad9307bb7484c966833594a2e6d30ac285b160339c6dfaa43b2892e0a29ec"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\native.cpp",
+      "bytes": 15997,
+      "sha256": "3e6b2e3b72697db9a7ed8143c47f706d4fa1ffa4125e341e8d24d6f89cf3e177"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\build\\native_05\\owned_artifact.h",
+      "bytes": 9603,
+      "sha256": "2d281be105992b3e03971f2767464af7046ff30565e1ba76cf11e0c22787f12a"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\build\\native_05\\binding.json",
+      "bytes": 917,
+      "sha256": "c2022fd081d2f22313831c462627207241ea91ceb8d072273d7351aabcc39609"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\build\\native_05\\BUILD_MANIFEST.json",
+      "bytes": 3031,
+      "sha256": "0bfe0b866c6575f1146b49b6b2b671ebaf34848191171d49bbffe4fbf07d15bd"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\host\\NATIVE_TOOLCHAIN.json",
+      "bytes": 4726,
+      "sha256": "cd89948c59d927252810e7e5ebd4d7c0f8845cc88fcf5415fe185792c2d8d36a"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\OFFLINE_SOFTWARE_CERTIFICATE.json",
+      "bytes": 2137,
+      "sha256": "effd2cb9158f10a2a6ca517dae8390553392035b640af360dfbb923e1bab59d5"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\PHYSICAL_BINDING_PLAN.json",
+      "bytes": 1371,
+      "sha256": "ee3ad7703002840127ffcc434f37baac85da01a2bf95d73192e4f4f18a27e72f"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\physical_build\\rk02_physical_01\\native_physical.cpp",
+      "bytes": 16665,
+      "sha256": "e1d92d2ac097880cd9f829d0a9bf8abf8735af51b749f9e94f21050dd7a1a691"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\physical_build\\rk02_physical_01\\owned_physical_read32.exe",
+      "bytes": 164352,
+      "sha256": "58d0867b85162e6fa4ccd3ac7fe0413c40e4054cbc416d12e39e29f926e60862"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\physical_build\\rk02_physical_01\\owned_artifact.h",
+      "bytes": 9895,
+      "sha256": "99c52271b79366159f461e789ca886ee5efb933f45dc7a413c71a177af9564ce"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\physical_build\\rk02_physical_01\\compile_only.cmd",
+      "bytes": 641,
+      "sha256": "699e272411c4a762f9fadcb13a4587242154cdf4aa25bb419d0ed067f5f94ecd"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\physical_build\\rk02_physical_01\\compile_only.log",
+      "bytes": 320,
+      "sha256": "ce6ae2184484ae7a24645d55e1ead833d8f5b2379c5dca75f746de4fd9e8e856"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\physical_build\\rk02_physical_01\\resolved_linker.txt",
+      "bytes": 115,
+      "sha256": "bc2f12aae2edd58ee46ce1d73b7209fc2e1cfc5d2a550fbd7437715defa7631d"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\physical_build\\rk02_physical_01\\SOURCE_DIFF.patch",
+      "bytes": 6929,
+      "sha256": "dd9a2e6c1ed2bd485f140c9b161cfafc077a50867f26f7e146febd224deeb3b3"
+    }
+  ],
+  "native_execution": false,
+  "provider_loaded": false,
+  "scope": "Independent text/binding derivation. Native binary compilation provenance remains a separate pinned-toolchain build check; this function does not execute the binary.",
+  "physical_build_manifest": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\physical_build\\rk02_physical_01\\BUILD_MANIFEST.json",
+    "bytes": 7584,
+    "sha256": "fb761f3e5e3951b81a402b8f82b159ff1c691762cf3f8abcc20bd3aa44708d70"
+  },
+  "checker": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\review_physical_derivation_rk02.py",
+    "bytes": 17661,
+    "sha256": "c3069ed41d7a2e00b00fc4ab24457ba8ea1d650002a6ebe426b7ccd53252d17f"
+  },
+  "source_review": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\RELEASE_VALIDATOR_REVIEW_RK02.json",
+    "bytes": 5241,
+    "sha256": "462bba79c4466074f0f44984b097221b947b2179e888f57b7877fb5b3d47f5a2"
+  },
+  "synthetic_regressions": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\PHYSICAL_DERIVATION_REGRESSIONS_01.json",
+    "bytes": 8824,
+    "sha256": "3ff4fa3769ba863bee2f8e211bbd9dfd6148483b127735f7b8dbf599dc2ed0ec"
+  },
+  "actual_derivative_review": true,
+  "native_binary": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\physical_build\\rk02_physical_01\\owned_physical_read32.exe",
+    "sha256": "58d0867b85162e6fa4ccd3ac7fe0413c40e4054cbc416d12e39e29f926e60862",
+    "bytes": 164352
+  },
+  "compiler_invoked_by_reviewer": false,
+  "physical_executable_run_by_reviewer": false,
+  "input_stability_rechecked": true
+}

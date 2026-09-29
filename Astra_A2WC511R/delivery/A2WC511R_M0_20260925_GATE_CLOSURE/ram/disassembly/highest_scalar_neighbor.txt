@@ -1,0 +1,65 @@
+
+C:\Dev\SubaruRoms\OEM\A2WC511R.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00071c88 <.data+0x71c88>:
+   71c88:	00 09       	nop	
+   71c8a:	e0 44       	mov	#68,r0
+   71c8c:	d3 17       	mov.l	0x71cec,r3	! 7600c
+   71c8e:	e6 01       	mov	#1,r6
+   71c90:	80 f4       	mov.b	r0,@(4,r15)
+   71c92:	65 f3       	mov	r15,r5
+   71c94:	75 04       	add	#4,r5
+   71c96:	43 0b       	jsr	@r3
+   71c98:	e4 04       	mov	#4,r4
+   71c9a:	e2 01       	mov	#1,r2
+   71c9c:	d3 14       	mov.l	0x71cf0,r3	! ffff736c
+   71c9e:	e1 04       	mov	#4,r1
+   71ca0:	23 20       	mov.b	r2,@r3
+   71ca2:	66 f3       	mov	r15,r6
+   71ca4:	2f 12       	mov.l	r1,@r15
+   71ca6:	65 23       	mov	r2,r5
+   71ca8:	d2 12       	mov.l	0x71cf4,r2	! ddf4
+   71caa:	42 0b       	jsr	@r2
+   71cac:	e4 00       	mov	#0,r4
+   71cae:	7f 08       	add	#8,r15
+   71cb0:	4f 26       	lds.l	@r15+,pr
+   71cb2:	00 0b       	rts	
+   71cb4:	00 09       	nop	
+   71cb6:	e6 00       	mov	#0,r6
+   71cb8:	d3 0d       	mov.l	0x71cf0,r3	! ffff736c
+   71cba:	e2 04       	mov	#4,r2
+   71cbc:	4f 22       	sts.l	pr,@-r15
+   71cbe:	e1 01       	mov	#1,r1
+   71cc0:	7f f0       	add	#-16,r15
+   71cc2:	65 f3       	mov	r15,r5
+   71cc4:	23 60       	mov.b	r6,@r3
+   71cc6:	64 53       	mov	r5,r4
+   71cc8:	24 22       	mov.l	r2,@r4
+   71cca:	e2 07       	mov	#7,r2
+   71ccc:	15 11       	mov.l	r1,@(4,r5)
+   71cce:	15 22       	mov.l	r2,@(8,r5)
+   71cd0:	d1 09       	mov.l	0x71cf8,r1	! 76384
+   71cd2:	41 0b       	jsr	@r1
+   71cd4:	15 63       	mov.l	r6,@(12,r5)
+   71cd6:	7f 10       	add	#16,r15
+   71cd8:	4f 26       	lds.l	@r15+,pr
+   71cda:	00 0b       	rts	
+   71cdc:	00 09       	nop	
+   71cde:	e3 00       	mov	#0,r3
+   71ce0:	d2 03       	mov.l	0x71cf0,r2	! ffff736c
+   71ce2:	00 0b       	rts	
+   71ce4:	22 30       	mov.b	r3,@r2
+   71ce6:	ff ff       	.word 0xffff
+   71ce8:	00 07       	mul.l	r0,r0
+   71cea:	48 54       	.word 0x4854
+   71cec:	00 07       	mul.l	r0,r0
+   71cee:	60 0c       	extu.b	r0,r0
+   71cf0:	ff ff       	.word 0xffff
+   71cf2:	73 6c       	add	#108,r3
+   71cf4:	00 00       	.word 0x0000
+   71cf6:	dd f4       	mov.l	0x720c8,r13	! dc233637
+   71cf8:	00 07       	mul.l	r0,r0
+   71cfa:	63 84       	mov.b	@r8+,r3

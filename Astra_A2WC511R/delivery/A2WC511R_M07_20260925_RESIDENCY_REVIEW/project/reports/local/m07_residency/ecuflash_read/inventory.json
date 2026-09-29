@@ -1,0 +1,121 @@
+{
+  "executable": "C:\\Program Files (x86)\\OpenECU\\EcuFlash\\ecuflash.exe",
+  "sha256": "5e1b1729446d306487bb7ed358b1ee050b11e440902bb23a05663d8575346115",
+  "size": 7840904,
+  "machine": 332,
+  "image_base": 4194304,
+  "sections": [
+    {
+      "name": "   \u0000    ",
+      "rva": 4096,
+      "raw_offset": 4096,
+      "raw_size": 5956608,
+      "virtual_size": 12648448
+    },
+    {
+      "name": ".rsrc",
+      "rva": 12652544,
+      "raw_offset": 5960704,
+      "raw_size": 2048,
+      "virtual_size": 6120
+    },
+    {
+      "name": ".idata  ",
+      "rva": 12660736,
+      "raw_offset": 5962752,
+      "raw_size": 512,
+      "virtual_size": 4096
+    },
+    {
+      "name": "        ",
+      "rva": 12664832,
+      "raw_offset": 5963264,
+      "raw_size": 512,
+      "virtual_size": 4177920
+    },
+    {
+      "name": "yzxczxtn",
+      "rva": 16842752,
+      "raw_offset": 5963776,
+      "raw_size": 1869824,
+      "virtual_size": 1871872
+    },
+    {
+      "name": "iyuokhzd",
+      "rva": 18714624,
+      "raw_offset": 7833600,
+      "raw_size": 512,
+      "virtual_size": 4096
+    }
+  ],
+  "strings": [
+    {
+      "offset": 5962835,
+      "va": 16855123,
+      "codec": "ascii",
+      "text": "kernel32.dll"
+    },
+    {
+      "offset": 7833265,
+      "va": 22906545,
+      "codec": "ascii",
+      "text": "      <assemblyIdentity type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*' />"
+    }
+  ],
+  "resources": [
+    {
+      "path": [
+        3,
+        1,
+        1033
+      ],
+      "rva": 18706696,
+      "size": 4264,
+      "sha256": "131fa672a59d54f57a486da4512355c6f9fe6a807ef924978d1f6fc0f16498f5"
+    },
+    {
+      "path": [
+        14,
+        "IDI_ICON1",
+        1033
+      ],
+      "rva": 18710960,
+      "size": 20,
+      "sha256": "a14e70ed824f3f17d3a51136aa08839954d6d3ccadaa067415c7bfc08e6636b0"
+    },
+    {
+      "path": [
+        16,
+        1,
+        1033
+      ],
+      "rva": 18710980,
+      "size": 852,
+      "sha256": "138f820604bf932457e657fbc9501d650a70f5db8b3cf3eb63bc5fb0256036a7"
+    },
+    {
+      "path": [
+        24,
+        1,
+        1033
+      ],
+      "rva": 18711832,
+      "size": 638,
+      "sha256": "97b1dfac60ade39e293fb39a093e1fd01fec5438549c9bb1e341c7fc82d102fb"
+    }
+  ],
+  "imports": [
+    {
+      "dll": "kernel32.dll",
+      "names": [
+        "lstrcpy"
+      ]
+    },
+    {
+      "dll": "comctl32.dll",
+      "names": [
+        "InitCommonControls"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "schema": 1,
+  "status": "PASS",
+  "classification": "ACTUAL_NATIVE04_JOURNAL_INDEPENDENT_OFFLINE_REPLAY",
+  "input_report": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\composite_native04\\RESULT.json",
+    "sha256": "1e8334b4793e10add3a8f38f468d809a3589bdc153f2970c7618e22ed903903e",
+    "bytes": 15922
+  },
+  "native_journal": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\composite_native04\\native_api.jsonl",
+    "sha256": "3a77db1f308ed970bfe8cff5fc0fa3d7229e4ce2ed9939facf0e0aabeb6c3e61",
+    "bytes": 13263082
+  },
+  "finalizer": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\finalize.py",
+    "sha256": "b55d0c85e6f3e6026a12c1360a77ad8bac892ed16891e69ddef4b18cfc1666ef",
+    "bytes": 9782
+  },
+  "preserved_finalizer": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\sim\\finalizer_review\\input_03\\finalize.py",
+    "sha256": "b55d0c85e6f3e6026a12c1360a77ad8bac892ed16891e69ddef4b18cfc1666ef",
+    "bytes": 9782
+  },
+  "kernel_sha256": "3d70abfb8617b87e1b9c52724fd27ed4066ba231818994e780c8ba3006de273f",
+  "native_client_sha256": "9ca8941960f64a1cb2931c18889e77fb8c3a0cd42840bff5422e05e1a363addc",
+  "fixture": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\fixtures\\composite.bin",
+    "sha256": "b91ad3e88637bfae6a15871761c288f914fe10fe74c78cbc53e963c4fe80e545",
+    "bytes": 1048576
+  },
+  "replayed_passes": [
+    {
+      "bytes": 1048576,
+      "sha256": "b91ad3e88637bfae6a15871761c288f914fe10fe74c78cbc53e963c4fe80e545"
+    },
+    {
+      "bytes": 1048576,
+      "sha256": "b91ad3e88637bfae6a15871761c288f914fe10fe74c78cbc53e963c4fe80e545"
+    }
+  ],
+  "positive_replay": {
+    "status": "PASS_NATIVE_JOURNAL_ONLY",
+    "API_calls": 28821,
+    "TX_frames": 4119,
+    "RX_messages": 24692,
+    "assembled_responses_with_multiple_messages": 4119,
+    "host_replay": {
+      "status": "PASS",
+      "failure": null,
+      "steps": 4119,
+      "kernel_sha256": "3d70abfb8617b87e1b9c52724fd27ed4066ba231818994e780c8ba3006de273f",
+      "physical": false,
+      "passes": [
+        {
+          "bytes": 1048576,
+          "sha256": "b91ad3e88637bfae6a15871761c288f914fe10fe74c78cbc53e963c4fe80e545",
+          "complete": true
+        },
+        {
+          "bytes": 1048576,
+          "sha256": "b91ad3e88637bfae6a15871761c288f914fe10fe74c78cbc53e963c4fe80e545",
+          "complete": true
+        }
+      ]
+    },
+    "native_ESP_equal_calls": 28821,
+    "timestamps_retained": true,
+    "timing_scope": "Timestamps retained; exact GetTickCount64 receive-deadline start is not reconstructed from QPC log, and no physical timing claim is made"
+  },
+  "negative_controls": [
+    {
+      "case": "actual_fake_journal_cannot_be_physical",
+      "status": "PASS",
+      "observed": "REJECTED",
+      "reason": "Native sequence/status/provenance"
+    },
+    {
+      "case": "actual_complete_read_without_terminal_close",
+      "status": "PASS",
+      "observed": "REJECTED",
+      "reason": "Wrong/missing fixed API step PassThruClose"
+    },
+    {
+      "case": "forged_control_count",
+      "status": "PASS",
+      "observed": "REJECTED",
+      "reason": "Non-message API must have exact zero message shape"
+    },
+    {
+      "case": "forged_control_protocol",
+      "status": "PASS",
+      "observed": "REJECTED",
+      "reason": "Non-message API must have exact zero message shape"
+    },
+    {
+      "case": "forged_control_rx_status",
+      "status": "PASS",
+      "observed": "REJECTED",
+      "reason": "Non-message API must have exact zero message shape"
+    },
+    {
+      "case": "forged_control_tx_flags",
+      "status": "PASS",
+      "observed": "REJECTED",
+      "reason": "Non-message API must have exact zero message shape"
+    },
+    {
+      "case": "forged_control_timestamp",
+      "status": "PASS",
+      "observed": "REJECTED",
+      "reason": "Non-message API must have exact zero message shape"
+    },
+    {
+      "case": "forged_control_extra",
+      "status": "PASS",
+      "observed": "REJECTED",
+      "reason": "Non-message API must have exact zero message shape"
+    },
+    {
+      "case": "forbidden_API",
+      "status": "PASS",
+      "observed": "REJECTED",
+      "reason": "Wrong/missing fixed API step PassThruConnect"
+    },
+    {
+      "case": "wrong_pass_with_correct_checksum",
+      "status": "PASS",
+      "observed": "REJECTED",
+      "reason": "Wrong read length/opcode/pass/address"
+    },
+    {
+      "case": "wrong_address_with_correct_checksum",
+      "status": "PASS",
+      "observed": "REJECTED",
+      "reason": "Wrong read length/opcode/pass/address"
+    },
+    {
+      "case": "unsupported_RX_status",
+      "status": "PASS",
+      "observed": "REJECTED",
+      "reason": "Unknown/error RX status"
+    }
+  ],
+  "native_source_transition": "EXACT_OUTSIDE_LOG_API",
+  "physical_session_association_proven": false,
+  "current_ROM_identified": false,
+  "provider_loaded": false,
+  "physical_operations": 0,
+  "transport_calls": 0,
+  "scope": [
+    "Recorded bytes and API names/zero message shape are independently checked",
+    "Native source/binary supply fixed non-message arguments; journal does not independently record every IOCTL/filter/connection argument",
+    "UTC/QPC metadata retained, not proof of silicon or exact host frame deadline timing",
+    "Virtual fixture identity is independently checked here; raw-capture finalizer alone attests integrity only"
+  ]
+}

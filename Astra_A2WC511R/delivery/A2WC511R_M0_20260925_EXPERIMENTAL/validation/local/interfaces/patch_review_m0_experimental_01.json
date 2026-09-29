@@ -1,0 +1,354 @@
+{
+  "status": "PASS",
+  "build": "C:\\Dev\\Astra_A2WC511R\\work\\builds\\m0_experimental_01",
+  "patch_folder": "C:\\Dev\\Astra_A2WC511R\\work\\patches\\m0_experimental_01",
+  "raw_sha256": "3544df4b742bb85553f639356abdb1a58ebc3b8126a667a147a37bd741a322e6",
+  "corrected_sha256": "f4517a8f8be92ec87b414b755f9095374282fbb21b642664c1d8e3f6693c3856",
+  "elf_sha256": "5684de4ce3d9f2e3ed5be7027e55bf8d7e100022499239125ff2324431eab1e3",
+  "actual_entry": "0xe12b0",
+  "code_span": [
+    "0xe1000",
+    "0xe1338"
+  ],
+  "raw_changed_bytes": 815,
+  "corrected_extra_changed_addresses": [
+    "0xffb88",
+    "0xffb89",
+    "0xffb8a",
+    "0xffb8b"
+  ],
+  "srecords": [
+    {
+      "address": "0xe1000",
+      "bytes": 32,
+      "kind": "code"
+    },
+    {
+      "address": "0xe1020",
+      "bytes": 32,
+      "kind": "code"
+    },
+    {
+      "address": "0xe1040",
+      "bytes": 32,
+      "kind": "code"
+    },
+    {
+      "address": "0xe1060",
+      "bytes": 32,
+      "kind": "code"
+    },
+    {
+      "address": "0xe1080",
+      "bytes": 32,
+      "kind": "code"
+    },
+    {
+      "address": "0xe10a0",
+      "bytes": 32,
+      "kind": "code"
+    },
+    {
+      "address": "0xe10c0",
+      "bytes": 32,
+      "kind": "code"
+    },
+    {
+      "address": "0xe10e0",
+      "bytes": 32,
+      "kind": "code"
+    },
+    {
+      "address": "0xe1100",
+      "bytes": 32,
+      "kind": "code"
+    },
+    {
+      "address": "0xe1120",
+      "bytes": 32,
+      "kind": "code"
+    },
+    {
+      "address": "0xe1140",
+      "bytes": 32,
+      "kind": "code"
+    },
+    {
+      "address": "0xe1160",
+      "bytes": 32,
+      "kind": "code"
+    },
+    {
+      "address": "0xe1180",
+      "bytes": 32,
+      "kind": "code"
+    },
+    {
+      "address": "0xe11a0",
+      "bytes": 32,
+      "kind": "code"
+    },
+    {
+      "address": "0xe11c0",
+      "bytes": 32,
+      "kind": "code"
+    },
+    {
+      "address": "0xe11e0",
+      "bytes": 32,
+      "kind": "code"
+    },
+    {
+      "address": "0xe1200",
+      "bytes": 32,
+      "kind": "code"
+    },
+    {
+      "address": "0xe1220",
+      "bytes": 32,
+      "kind": "code"
+    },
+    {
+      "address": "0xe1240",
+      "bytes": 32,
+      "kind": "code"
+    },
+    {
+      "address": "0xe1260",
+      "bytes": 32,
+      "kind": "code"
+    },
+    {
+      "address": "0xe1280",
+      "bytes": 32,
+      "kind": "code"
+    },
+    {
+      "address": "0xe12a0",
+      "bytes": 32,
+      "kind": "code"
+    },
+    {
+      "address": "0xe12c0",
+      "bytes": 32,
+      "kind": "code"
+    },
+    {
+      "address": "0xe12e0",
+      "bytes": 32,
+      "kind": "code"
+    },
+    {
+      "address": "0xe1300",
+      "bytes": 32,
+      "kind": "code"
+    },
+    {
+      "address": "0xe1320",
+      "bytes": 24,
+      "kind": "code"
+    },
+    {
+      "address": "0x80001000",
+      "bytes": 32,
+      "kind": "metadata"
+    },
+    {
+      "address": "0x80001020",
+      "bytes": 32,
+      "kind": "metadata"
+    },
+    {
+      "address": "0x80001040",
+      "bytes": 32,
+      "kind": "metadata"
+    },
+    {
+      "address": "0x80001060",
+      "bytes": 32,
+      "kind": "metadata"
+    },
+    {
+      "address": "0x80001080",
+      "bytes": 32,
+      "kind": "metadata"
+    },
+    {
+      "address": "0x800010a0",
+      "bytes": 32,
+      "kind": "metadata"
+    },
+    {
+      "address": "0x800010c0",
+      "bytes": 32,
+      "kind": "metadata"
+    },
+    {
+      "address": "0x800010e0",
+      "bytes": 32,
+      "kind": "metadata"
+    },
+    {
+      "address": "0x80001100",
+      "bytes": 32,
+      "kind": "metadata"
+    },
+    {
+      "address": "0x80001120",
+      "bytes": 32,
+      "kind": "metadata"
+    },
+    {
+      "address": "0x80001140",
+      "bytes": 32,
+      "kind": "metadata"
+    },
+    {
+      "address": "0x80001160",
+      "bytes": 12,
+      "kind": "metadata"
+    },
+    {
+      "address": "0xff0e1000",
+      "bytes": 32,
+      "kind": "baseline"
+    },
+    {
+      "address": "0xff0e1020",
+      "bytes": 32,
+      "kind": "baseline"
+    },
+    {
+      "address": "0xff0e1040",
+      "bytes": 32,
+      "kind": "baseline"
+    },
+    {
+      "address": "0xff0e1060",
+      "bytes": 32,
+      "kind": "baseline"
+    },
+    {
+      "address": "0xff0e1080",
+      "bytes": 32,
+      "kind": "baseline"
+    },
+    {
+      "address": "0xff0e10a0",
+      "bytes": 32,
+      "kind": "baseline"
+    },
+    {
+      "address": "0xff0e10c0",
+      "bytes": 32,
+      "kind": "baseline"
+    },
+    {
+      "address": "0xff0e10e0",
+      "bytes": 32,
+      "kind": "baseline"
+    },
+    {
+      "address": "0xff0e1100",
+      "bytes": 32,
+      "kind": "baseline"
+    },
+    {
+      "address": "0xff0e1120",
+      "bytes": 32,
+      "kind": "baseline"
+    },
+    {
+      "address": "0xff0e1140",
+      "bytes": 32,
+      "kind": "baseline"
+    },
+    {
+      "address": "0xff0e1160",
+      "bytes": 32,
+      "kind": "baseline"
+    },
+    {
+      "address": "0xff0e1180",
+      "bytes": 32,
+      "kind": "baseline"
+    },
+    {
+      "address": "0xff0e11a0",
+      "bytes": 32,
+      "kind": "baseline"
+    },
+    {
+      "address": "0xff0e11c0",
+      "bytes": 32,
+      "kind": "baseline"
+    },
+    {
+      "address": "0xff0e11e0",
+      "bytes": 32,
+      "kind": "baseline"
+    },
+    {
+      "address": "0xff0e1200",
+      "bytes": 32,
+      "kind": "baseline"
+    },
+    {
+      "address": "0xff0e1220",
+      "bytes": 32,
+      "kind": "baseline"
+    },
+    {
+      "address": "0xff0e1240",
+      "bytes": 32,
+      "kind": "baseline"
+    },
+    {
+      "address": "0xff0e1260",
+      "bytes": 32,
+      "kind": "baseline"
+    },
+    {
+      "address": "0xff0e1280",
+      "bytes": 32,
+      "kind": "baseline"
+    },
+    {
+      "address": "0xff0e12a0",
+      "bytes": 32,
+      "kind": "baseline"
+    },
+    {
+      "address": "0xff0e12c0",
+      "bytes": 32,
+      "kind": "baseline"
+    },
+    {
+      "address": "0xff0e12e0",
+      "bytes": 32,
+      "kind": "baseline"
+    },
+    {
+      "address": "0xff0e1300",
+      "bytes": 32,
+      "kind": "baseline"
+    },
+    {
+      "address": "0xff0e1320",
+      "bytes": 24,
+      "kind": "baseline"
+    }
+  ],
+  "checks": [
+    "Raw candidate equals ELF-only section plus verified hook pointer",
+    "All patch S3 counts/checksums/address ranges valid and disjoint",
+    "Strict original bytes embedded at SharpTune baseline offset",
+    "No metadata/simulator bytes flattened into 1MiB image",
+    "Raw removal exact baseline",
+    "Checksum derivative exactly independent native-matched arithmetic",
+    "Corrected removal + checksum normalization exact baseline",
+    "Edit stamp unchanged",
+    "Manifest and output hashes all match"
+  ],
+  "limit": "Serialization and integrity only. ROM/RAM ownership and task timing remain unapproved."
+}

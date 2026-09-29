@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "status": "PASS",
+  "input_capture": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_composite_01\\RESULT.json",
+    "sha256": "a2b08f21cce5053867476b06853cb0c22da286928846bbd1855d1a1cbcaec8ea",
+    "bytes": 17740
+  },
+  "native_journal": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\fake\\runs\\rk02_composite_01\\native_api.jsonl",
+    "sha256": "dfc40806753cb541c0ad91e2e6702d54b33a0b0b8f6d7db03b00bb235df907b5",
+    "bytes": 13322731
+  },
+  "checks": [
+    "complete native journal alone reproduces both exact raw files",
+    "mutated sequence",
+    "mutated status",
+    "mutated physical",
+    "mutated esp_after",
+    "mutated utc_filetime",
+    "mutated frequency",
+    "mutated counter",
+    "mutated data_size",
+    "missing native protocol",
+    "missing native rx_status",
+    "missing native extra",
+    "missing native timestamp",
+    "missing native counter",
+    "mixed monotonic clocks",
+    "forbidden extra API",
+    "non-message API forged count",
+    "non-message API forged protocol",
+    "non-message API forged rx_status",
+    "non-message API forged tx_flags",
+    "non-message API forged timestamp",
+    "non-message API forged extra",
+    "valid-checksum wrong TX opcode",
+    "unexplained extra-data index",
+    "RX error status",
+    "changed RX byte without matching checksum",
+    "missing terminal close",
+    "trailing close/replay"
+  ],
+  "count": 28,
+  "positive_proof": {
+    "status": "PASS_NATIVE_JOURNAL_ONLY",
+    "API_calls": 28827,
+    "TX_frames": 4120,
+    "RX_messages": 24697,
+    "assembled_responses_with_multiple_messages": 4120,
+    "host_replay": {
+      "status": "PASS",
+      "failure": null,
+      "steps": 4120,
+      "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+      "physical": false,
+      "passes": [
+        {
+          "bytes": 1048576,
+          "sha256": "b91ad3e88637bfae6a15871761c288f914fe10fe74c78cbc53e963c4fe80e545",
+          "complete": true
+        },
+        {
+          "bytes": 1048576,
+          "sha256": "b91ad3e88637bfae6a15871761c288f914fe10fe74c78cbc53e963c4fe80e545",
+          "complete": true
+        }
+      ]
+    },
+    "native_ESP_equal_calls": 28827,
+    "timestamps_retained": true,
+    "timing_scope": "Timestamps retained; exact GetTickCount64 receive-deadline start is not reconstructed from QPC log, and no physical timing claim is made"
+  },
+  "provider_loaded": false,
+  "transport_calls": 0,
+  "physical": false,
+  "source": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\test_finalize.py",
+    "sha256": "df2d6da59bbc516b309747518ac91d098d231a7666a62d5384d48de68557c765",
+    "bytes": 4358
+  },
+  "finalizer": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\finalize.py",
+    "sha256": "b55d0c85e6f3e6026a12c1360a77ad8bac892ed16891e69ddef4b18cfc1666ef",
+    "bytes": 9782
+  }
+}
