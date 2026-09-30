@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "session_id": "RK03_KERNEL_START_IDENTITY_01",
+  "qualification_sha256": "19dc92d085a5721d7af280fc8fabf32a22919a9a370ec19e8052c8d6f8cf9cf8",
+  "status": "OEM_RETURN_RUNNING",
+  "next_gate": null,
+  "physical_state": "NORMAL MODE ON",
+  "engine": "OFF",
+  "probe_invocation_count": 1,
+  "launch_reserved": true,
+  "commit_authorization": {
+    "reply": "PROCEED RK03 KERNEL START IDENTITY",
+    "source": "user",
+    "received_utc": "2026-09-30T06:39:26.795046+00:00",
+    "session_id": "RK03_KERNEL_START_IDENTITY_01",
+    "qualification_sha256": "19dc92d085a5721d7af280fc8fabf32a22919a9a370ec19e8052c8d6f8cf9cf8"
+  },
+  "completed_pre_probe_gates": [
+    {
+      "reply": "IGNITION OFF",
+      "source": "user",
+      "received_utc": "2026-09-30T06:34:19.922957+00:00",
+      "session_id": "RK03_KERNEL_START_IDENTITY_01",
+      "qualification_sha256": "19dc92d085a5721d7af280fc8fabf32a22919a9a370ec19e8052c8d6f8cf9cf8"
+    },
+    {
+      "reply": "TEST MODE ON",
+      "source": "user",
+      "received_utc": "2026-09-30T06:36:58.729215+00:00",
+      "session_id": "RK03_KERNEL_START_IDENTITY_01",
+      "qualification_sha256": "19dc92d085a5721d7af280fc8fabf32a22919a9a370ec19e8052c8d6f8cf9cf8"
+    }
+  ],
+  "completed_recovery_gates": [
+    {
+      "reply": "IGNITION OFF",
+      "source": "user",
+      "received_utc": "2026-09-30T06:41:14.187573+00:00",
+      "session_id": "RK03_KERNEL_START_IDENTITY_01",
+      "qualification_sha256": "19dc92d085a5721d7af280fc8fabf32a22919a9a370ec19e8052c8d6f8cf9cf8"
+    },
+    {
+      "reply": "NORMAL MODE ON",
+      "source": "user",
+      "received_utc": "2026-09-30T06:42:22.054613+00:00",
+      "session_id": "RK03_KERNEL_START_IDENTITY_01",
+      "qualification_sha256": "19dc92d085a5721d7af280fc8fabf32a22919a9a370ec19e8052c8d6f8cf9cf8"
+    }
+  ],
+  "operator_managed_physical_context": true,
+  "full_acquisition_allowed": false,
+  "kernel_start_allowed": true,
+  "retry_allowed": false,
+  "abort_requested": false,
+  "passive_oem_return_invocations": 1,
+  "updated_utc": "2026-09-30T06:42:22.054613+00:00",
+  "precommit_client_check": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_physical_20260930_01\\PRECOMMIT_CLIENT_CHECK.json",
+    "sha256": "e3ad2e0f3d5eceae289f8eabd603b4c64165e566f256eee32847c6c5573d3816",
+    "utc": "2026-09-30T06:37:02.8926586Z"
+  },
+  "launch_reserved_utc": "2026-09-30T06:39:31.517747+00:00",
+  "process_id": 13748,
+  "process_exited": true,
+  "exit_code": 0,
+  "identity_physical": "PASS",
+  "physical_result": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_physical_20260930_01\\physical_result\\PHYSICAL_RESULT.json",
+    "bytes": 8886,
+    "sha256": "2f524a38ef883b189aeab55ac1c06127c6f8164eeccca835f81fd78d5f7fdcda"
+  },
+  "passive_process_id": 2448
+}

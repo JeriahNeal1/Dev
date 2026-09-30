@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "created_utc": "2026-09-30T02:39:29.358642+00:00",
+  "status": "REQUESTED_SCOPE_COMPLETE",
+  "RK03_TRANSITION_PHYSICAL": "PASS",
+  "physical_probe_invocations": 1,
+  "physical_C3_response": "80f01007c30000ff00ff0048",
+  "OEM_RETURN_AFTER_TRANSITION_PROBE": "PASS",
+  "passive_samples": 120,
+  "observer_broker_provider_cleanup": "PASS",
+  "OFFLINE_CONTINUATION_FIRST_CHUNK": "PASS_127_OF_127",
+  "offline_executable_sha256": "e16d47a1d7fda7058016cf0f392aca1b64d1a6077353185eda8d3bb33ed68c86",
+  "continuation_qualification": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\run_completion_20260930_01\\CONTINUATION_QUALIFICATION.json",
+    "bytes": 215562,
+    "sha256": "a706de3800d855569403ac93724c55a8b4e7d1b1ea09bb04fb12fc66fa5259ac"
+  },
+  "development_commit": "2a8eeee2a7ff251346314c54d6dd028f6df93766",
+  "current_rom_designation": "CURRENT_PHYSICAL_CAPTURE",
+  "current_rom_sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2",
+  "current_rom_size": 1048576,
+  "current_cal_id": "A2WC511R",
+  "current_subaru_checksum": "PASS",
+  "total_differing_bytes": 1856,
+  "differing_ranges": 517,
+  "executable_bytes_identical_to_stock": true,
+  "changed_executable_functions": [],
+  "unknown_changed_ranges": [],
+  "closest_historical_tune": "C:\\Users\\Jeriah Neal\\Desktop\\AdjustedBaseTimingANDNOCLOLD.bin",
+  "historical_match": "EXACT",
+  "current_rom_report": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\CURRENT_ROM_STATUS.json",
+    "bytes": 242857,
+    "sha256": "018615b863b9ce80d705c7118863ba2bca40b28c2e925dfc4127eac220ab3f0c"
+  },
+  "physical_result": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\physical_probe_result\\PHYSICAL_RESULT.json",
+    "bytes": 10152,
+    "sha256": "acc41d5d8bbb499ab15805ef0b039a1602307ba8605bfdb90e91c4e73a929544"
+  },
+  "oem_return_result": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\oem_return_after_probe_01\\OEM_RETURN_RESULT.json",
+    "bytes": 4018,
+    "sha256": "e20b02e5dd13a5701649b782103f80693c885953e287034a3c18af73062df32a"
+  },
+  "transport_comparison": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\physical_probe_comparison\\PHYSICAL_TRANSITION_COMPARISON.json",
+    "bytes": 81180,
+    "sha256": "9d543de247894e243ec9ecaeea36a2794e3be63864bf5dcbdfc8f438b6243c81"
+  },
+  "causality": "Combined corrected transport crossed83 in one physical session; no individual change identified as uniquely causal.",
+  "physical_programming_after_probe": false,
+  "physical_RAM_upload_in_this_run": false,
+  "physical_kernel_start_in_this_run": false,
+  "physical_ROM_read_by_custom_host_in_this_run": false,
+  "flash_operation_in_this_run": false,
+  "gate_policy": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\gate_policy_migrations\\20260930T020401086019Z\\OPERATOR_SIMPLIFIED_GATE_POLICY.json",
+    "sha256": "2489c1ef5c9599dba9d830768c98e1d247dc126b6c6711710387337d3ab3f983"
+  },
+  "measured_vehicle_power_loss_claimed": false,
+  "future_physical_work_authorized": false,
+  "full_RK03_acquisition_performed": false
+}

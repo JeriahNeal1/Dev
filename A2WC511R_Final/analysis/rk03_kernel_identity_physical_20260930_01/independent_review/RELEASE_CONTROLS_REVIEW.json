@@ -1,0 +1,208 @@
+{
+  "schema": 1,
+  "status": "PASS_INDEPENDENT_RELEASE_CONTROLS_REVIEW",
+  "reviewer": "passive_review",
+  "physical_operations": 0,
+  "provider_loads": 0,
+  "client_tools_invoked": 0,
+  "control_tests_rerun_by_reviewer": false,
+  "blocking_findings": [],
+  "role": "Independent source/report review; root authored controls and ran mocked tests. No actual launcher/client checker/passive wrapper/sealer invoked by reviewer.",
+  "canonical_files": [
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_physical_20260930_01\\launch_identity_once.py",
+      "bytes": 8767,
+      "sha256": "1c27e9d0b169b25251a38a4ab0e9654fb846665bd275f496294a6a24889a7250"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_physical_20260930_01\\launch_oem_return_once.py",
+      "bytes": 4322,
+      "sha256": "5997a611d7bb9280e652ce73b383093d3c00de70ed5df4586770b91c606b6e92"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_physical_20260930_01\\seal_identity_result.py",
+      "bytes": 17299,
+      "sha256": "9e9bc2de39f25696f528c54a26001f12a54fd3632eefec6afe57ff3f168c0f72"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_physical_20260930_01\\seal_oem_return_identity.py",
+      "bytes": 5976,
+      "sha256": "1150d536f43a578329855d0e9835c12eac270f83adc9006c815f42082ab95098"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_physical_20260930_01\\check_clients.ps1",
+      "bytes": 2082,
+      "sha256": "82a004b83457372a5624c7898a2a48d78b0ecf180f0ab705f3bec7e77b5f69c2"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_physical_20260930_01\\test_launcher_offline.py",
+      "bytes": 7884,
+      "sha256": "6ac657596379af6e2ec1327e945336cac420749db4f9d81e49a1a4a6151decc5"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_physical_20260930_01\\test_oem_return_controls.py",
+      "bytes": 3587,
+      "sha256": "c4501985af3ed866d2ef21ff137a10b04c6daae0402048b84cfda0075b86bef0"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_physical_20260930_01\\test_result_validator.py",
+      "bytes": 6954,
+      "sha256": "9a356335626584d021c336e9ad5c939b450105915df607e02d421aaa525e8f0e"
+    }
+  ],
+  "tracked_release_copies": [
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_KernelIdentityPhysical\\kernel_identity_physical\\release_controls\\launch_identity_once.py",
+      "bytes": 8767,
+      "sha256": "1c27e9d0b169b25251a38a4ab0e9654fb846665bd275f496294a6a24889a7250"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_KernelIdentityPhysical\\kernel_identity_physical\\release_controls\\launch_oem_return_once.py",
+      "bytes": 4322,
+      "sha256": "5997a611d7bb9280e652ce73b383093d3c00de70ed5df4586770b91c606b6e92"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_KernelIdentityPhysical\\kernel_identity_physical\\release_controls\\seal_identity_result.py",
+      "bytes": 17299,
+      "sha256": "9e9bc2de39f25696f528c54a26001f12a54fd3632eefec6afe57ff3f168c0f72"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_KernelIdentityPhysical\\kernel_identity_physical\\release_controls\\seal_oem_return_identity.py",
+      "bytes": 5976,
+      "sha256": "1150d536f43a578329855d0e9835c12eac270f83adc9006c815f42082ab95098"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_KernelIdentityPhysical\\kernel_identity_physical\\release_controls\\check_clients.ps1",
+      "bytes": 2082,
+      "sha256": "82a004b83457372a5624c7898a2a48d78b0ecf180f0ab705f3bec7e77b5f69c2"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_KernelIdentityPhysical\\kernel_identity_physical\\release_controls\\test_launcher_offline.py",
+      "bytes": 7884,
+      "sha256": "6ac657596379af6e2ec1327e945336cac420749db4f9d81e49a1a4a6151decc5"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_KernelIdentityPhysical\\kernel_identity_physical\\release_controls\\test_oem_return_controls.py",
+      "bytes": 3587,
+      "sha256": "c4501985af3ed866d2ef21ff137a10b04c6daae0402048b84cfda0075b86bef0"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_KernelIdentityPhysical\\kernel_identity_physical\\release_controls\\test_result_validator.py",
+      "bytes": 6954,
+      "sha256": "9a356335626584d021c336e9ad5c939b450105915df607e02d421aaa525e8f0e"
+    }
+  ],
+  "test_reports": [
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_physical_20260930_01\\LAUNCHER_TESTS_V2.json",
+      "bytes": 1874,
+      "sha256": "a627f49f0387df6a9b13681ef0345b2b3994544cf6c6b574f622f2bcc7df016f"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_physical_20260930_01\\OEM_RETURN_CONTROL_TESTS_V2.json",
+      "bytes": 1026,
+      "sha256": "10a94b6179edd049b3bcf576d80954c304ec7f3f087c77e8dcb044bf698876a5"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_physical_20260930_01\\RESULT_VALIDATOR_TESTS.json",
+      "bytes": 2234,
+      "sha256": "6450d3212df2294079549e29c61c6ffa6bf777df0fae0d363b0bfba7d3fb9492"
+    }
+  ],
+  "test_counts": {
+    "mocked_launcher": 36,
+    "mocked_recovery": 14,
+    "pure_result_validator": 46
+  },
+  "reviewed_controls": [
+    {
+      "conclusion": "Fresh ordered user gates and exact token bind session/certificate. All qualified hashes are checked before reservation; exclusive files/native marker prevent replay.",
+      "source": {
+        "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_physical_20260930_01\\launch_identity_once.py",
+        "line": 41,
+        "match": "def validate_gate"
+      }
+    },
+    {
+      "conclusion": "Child process is launched once and awaited even after bookkeeping/console-interruption failures; no provider/client action was executed during reviewer inspection.",
+      "source": {
+        "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_physical_20260930_01\\launch_identity_once.py",
+        "line": 84,
+        "match": "def wait_for_child"
+      }
+    },
+    {
+      "conclusion": "Both previous full-upload and new identity executable names remain competing clients; provider module inspection is retained for later authorized use.",
+      "source": {
+        "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_physical_20260930_01\\check_clients.ps1",
+        "line": 8,
+        "match": "$named ="
+      }
+    },
+    {
+      "conclusion": "Recovery requires child exit then fresh IGNITION OFF / NORMAL MODE ON user receipts; reuse pins and abort state are rechecked after mocked client scan.",
+      "source": {
+        "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_physical_20260930_01\\launch_oem_return_once.py",
+        "line": 11,
+        "match": "def validate_recovery"
+      }
+    },
+    {
+      "conclusion": "Result validation requires24fixed requests, exact15chunk ACKs, derived seed/key, complete startACK before ANYfollowing control,62500/nullflowBEEFfilter, exact identity, and cleanup.",
+      "source": {
+        "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_physical_20260930_01\\seal_identity_result.py",
+        "line": 22,
+        "match": "def validate_rows"
+      }
+    },
+    {
+      "conclusion": "RX windows are independently checked below2000ms using observed first-read/last-return QPC. Exact alternating intent/return sequence excludes hidden/unaccounted events.",
+      "source": {
+        "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_physical_20260930_01\\seal_identity_result.py",
+        "line": 51,
+        "match": "Reply must precede any following control action"
+      }
+    },
+    {
+      "conclusion": "Both success and failure preserve raw evidence; manifest/result/state labels now identify the identity stage. Failures do not authorize retries.",
+      "source": {
+        "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_physical_20260930_01\\seal_identity_result.py",
+        "line": 141,
+        "match": "def main"
+      }
+    },
+    {
+      "conclusion": "Passive OEM return independently verifies BF2F12515306 plus120A8/six variables and clean observer/broker exit. Subsequent work is offline bounded-read qualification only after PASS, divergence analysis after FAIL.",
+      "source": {
+        "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_physical_20260930_01\\seal_oem_return_identity.py",
+        "line": 43,
+        "match": "identity_physical_result="
+      }
+    }
+  ],
+  "resolved_review_findings": [
+    "Restored prior full-upload executable name alongside new identity executable in competing-client detection.",
+    "Replaced inherited full-upload manifest/result/state labels and stale identity-repeat recommendation with identity labels and the next offline bounded-read scope.",
+    "Added explicit startACK-before-filter/baud ordering and observed completeRXwindow deadline checks, with three meaningful negative journal mutations."
+  ],
+  "historical_revision": {
+    "note": "Initial43-check report and corresponding sources retained by root; final46-check report supersedes their validation scope.",
+    "report": {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_physical_20260930_01\\RESULT_VALIDATOR_TESTS_V1_43_CASES.json",
+      "bytes": 2135,
+      "sha256": "c8df6eac7a469c363607a6f7b6b6853731334eb5c4b6434eb049fc48ff633617"
+    }
+  },
+  "qualification_author_report": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_physical_20260930_01\\independent_review\\NATIVE_AND_QUALIFICATION_REVIEW.json",
+    "bytes": 393782,
+    "sha256": "885bc4febf2a30a67028a62c13449dd185a62a61a215c829d9a72b55946d6a0a"
+  },
+  "limits": [
+    "Mocked launcher/recovery tests never executed the real PE, client checker or passive capture. Result tests consumed existing fake journals only.",
+    "Synthetic physical-envelope tests exercise field bindings, not a real physical session.",
+    "The observed QPC receive window is independent supporting evidence. Native whole-frame enforcement also includes the pre-call/logging interval; silicon timing remains unproven.",
+    "Qualified release still requires a separate certificate, fresh human states and exact PROCEED RK03 KERNEL START IDENTITY token before a single physical invocation.",
+    "This review authorizes neither ROM acquisition nor any additional physical operation after the bounded identity session."
+  ]
+}

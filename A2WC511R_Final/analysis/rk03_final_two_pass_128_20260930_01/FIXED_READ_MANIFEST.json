@@ -1,0 +1,28 @@
+{
+  "ROM_start": 0,
+  "ROM_end_exclusive": 1048576,
+  "block_bytes": 128,
+  "blocks_per_pass": 8192,
+  "passes": 2,
+  "total_reads": 16384,
+  "total_payload_bytes": 2097152,
+  "first_address": 0,
+  "last_address": 1048448,
+  "frame_length": 13,
+  "response_length": 139,
+  "response_body_length": 134,
+  "fixed_schedule": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_final_two_pass_128_20260930_01\\FIXED_READ_SCHEDULE.bin",
+    "bytes": 212992,
+    "sha256": "2d9c6c3d74100f476c7a81c57b8b2c86a5f047b52dedb40bf5d01f8ae996f2f2"
+  },
+  "address_rule": "(index % 8192) * 128",
+  "pass_rule": "index // 8192",
+  "index_range": [
+    0,
+    16384
+  ],
+  "no_gaps": true,
+  "no_overlaps": true,
+  "no_duplicate_addresses_within_pass": true
+}

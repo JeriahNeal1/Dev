@@ -1,0 +1,145 @@
+{
+  "schema": 1,
+  "created_utc": "2026-09-30T01:16:20.576786+00:00",
+  "status": "PASS_OFFLINE_PROBE_TEST_QUALIFICATION_REVIEW",
+  "scope": "BF_81_83_TRANSITION_PROBE_ONLY_NO_PHYSICAL_AUTHORIZATION",
+  "roles": {
+    "passive_review": "Independent C++ core review, qualification runner and README author, read-only report/pin audit; not independent reviewer of own runner",
+    "rk02_readiness": "C++/fake/main/build implementation and one qualification-run execution",
+    "root_and_oem_transition": "Independent runner/source/report review; final manifest/launcher handled by root"
+  },
+  "test_report": {
+    "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\TEST_REPORT.json",
+    "sha256": "5c0c017258750b607b660c0f0e0ef8eb033428f020df1e5ee59d07863be82f0c",
+    "bytes": 124637
+  },
+  "physical_executable": {
+    "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\build_a\\rk03_transition_probe32.exe",
+    "sha256": "1573fa0046a6c1ee6b0ca9d3b0873ce0b3536fb2cdc6888304fb1e7b1ff3513e",
+    "bytes": 283648
+  },
+  "reproducible_executable_sha256": "1573fa0046a6c1ee6b0ca9d3b0873ce0b3536fb2cdc6888304fb1e7b1ff3513e",
+  "case_count": 65,
+  "passed_case_count": 65,
+  "verified_pin_count": 223,
+  "verified_artifact_count": 195,
+  "pin_mismatches": [],
+  "blocking_findings": [],
+  "checks": [
+    {
+      "requirement": "Same native PE and reproducible clean builds",
+      "result": "PASS",
+      "evidence": "Runner verifies exact selected PE hash equals both independently populated build outputs; compiled source/tool/log/import/header pins match."
+    },
+    {
+      "requirement": "Only BF,81,83 and three TX maximum",
+      "result": "PASS",
+      "evidence": "All65 cases assert exact ordered wire-prefix and TX ceiling; successful paths end after fullC3 then cleanup. Native core has one guarded dispatch from three fixed vectors."
+    },
+    {
+      "requirement": "Five explicit SET and immediate provider-returned GET",
+      "result": "PASS",
+      "evidence": "Each SET failure stops before TX; GET sentinel initialization, five returned values, count, pointer ownership and parameter integrity are checked. GET immediately follows fifthSET, filter immediately follows GET."
+    },
+    {
+      "requirement": "Exact broad filter including nonnull flow",
+      "result": "PASS",
+      "evidence": "Protocol3/type1/mask4zero/pattern4zero/flow4zero and nonnull pointers asserted. Returned filter mutation fails before BF while still attempting filter cleanup."
+    },
+    {
+      "requirement": "API evidence includes malformed/error outputs",
+      "result": "PASS",
+      "evidence": "Counts, full bounded messages and config arrays are logged before validation, with active requested/effective configuration/filter state. DataSize5000 logs4128bytes with truncation; invalid pointer1 is logged without dereference; errorstatus16/count1 retains62-byte BF."
+    },
+    {
+      "requirement": "QPC intervals exclude intent and output serialization",
+      "result": "PASS",
+      "evidence": "Source timing wraps only actual API function call. Runner checks intentcounter<=QPCbefore<=QPCafter, elapsedticks and monotonic API sequencing."
+    },
+    {
+      "requirement": "Recorded status16 and metadata replay",
+      "result": "PASS",
+      "evidence": "Runner compares all5 original physical read records: SOM,BF,SOM,C1,status16, including count, protocol,statusflags,timestamps,DataSize,ExtraDataIndex and bytes. No laterTX or retry."
+    },
+    {
+      "requirement": "Malformed identity/frame/checksum/status/count rejection",
+      "result": "PASS",
+      "evidence": "WrongBF stops after1TX; malformed81 after2; malformed83 after3. Fragmentation/4indicators succeed; fifthindicator, post-data marker, bad echo and count/metadata/framing failures terminate."
+    },
+    {
+      "requirement": "Cleanup on success/failure and cleanup errors",
+      "result": "PASS",
+      "evidence": "Allocated StopFilter,Disconnect,Close attempted once in order. Individual/all cleanup errors preserve later attempts and forceFAIL; combinedstatus16+allcleanupfailure tested."
+    },
+    {
+      "requirement": "Journal failure after allocated filter",
+      "result": "PASS",
+      "evidence": "Intent retained and one deliberately omitted filter return; ownership survives serialization failure, all3 cleanup calls logged, zeroTX,log_failed=true andFAIL terminal."
+    },
+    {
+      "requirement": "Source/binary/input preservation",
+      "result": "PASS",
+      "evidence": "All223 referenced pins verified after the one runner execution;195 output artifacts include65journals,65stdout,65stderr. Runner/source/binary unchanged after execution."
+    }
+  ],
+  "reviewed_source": [
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\src\\common.hpp",
+      "sha256": "3e892d6eeec55ef5eaa004a7ce4f7b18f07802ba7a46af60df087840858e6e2d",
+      "bytes": 6606
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\src\\fake_backend.hpp",
+      "sha256": "7b2e1b701b7334fe1cc413e4ff6ca27e1fb2a8f6ec3c5b1df716c2feb6af6bde",
+      "bytes": 8535
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\src\\j2534_tactrix.h",
+      "sha256": "c559ea33654af59ad147eedfcccd56a1f2cb6e95daeb2412b53f6f4bbc76a7d9",
+      "bytes": 12119
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\src\\main.cpp",
+      "sha256": "14ec5777e795e10c669b5324a6eea21bf1590eafd1e63b634d86f377e3f23d2a",
+      "bytes": 7461
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\src\\pins.hpp",
+      "sha256": "8290c79bc25de6ec7286dd51bf14a1ae5c24cf97a25e682e587caf66bd78aad6",
+      "bytes": 929
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\src\\probe_core.hpp",
+      "sha256": "13dd69a6dd2a4cc7f8534cf6e2af146c59dd35e8038a0acf101919d851b17089",
+      "bytes": 12642
+    }
+  ],
+  "runner": {
+    "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\tools\\test_probe_independent.py",
+    "sha256": "3f348d00cbb450fb455e79431b1f2233e7287e82691e031e3f26b833d7985fcb",
+    "bytes": 30482
+  },
+  "readme": {
+    "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\README.md",
+    "sha256": "9a280ed9f11c2595aaf7aedd047ad8100491bc0ac299960a5b7232c7949cff1f",
+    "bytes": 7446
+  },
+  "source_review_changes_resolved": [
+    "Moved whitelist guard/accounting outside timed API lambda",
+    "Reject filter andTX output mutation before progression",
+    "Cleanup uses logging fallback and continues after cleanup failures"
+  ],
+  "operations_by_this_agent": {
+    "new_physical_provider_loads": 0,
+    "new_vehicle_commands": 0,
+    "probe_executable_runs": 0
+  },
+  "limitations": [
+    "Passing fake fixtures does not establish real provider defaults/timing, Test Mode state, ECU response or physical causation.",
+    "Whole-frame deadline is source-reviewed; fixtures do not emulate actual bus timing or real DLL behavior.",
+    "Unexpected native provider crashes/arbitrary memory corruption are not simulated or claimed recoverable.",
+    "No seed/key, upload, fullROM acquisition, ECU reset or power-state acceptance is qualified.",
+    "Physical launcher/gate/lifecycle tests are separately owned and sealed by root."
+  ],
+  "external_independent_review_status": "oem_transition reported no defect in revised runner before execution; root/oem complete their own report audit separately."
+}

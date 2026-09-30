@@ -1,0 +1,19 @@
+{
+  "status": "PASS_FINAL_OFFLINE_LAUNCHER_CONTROLS",
+  "negative_gate_cases": 12,
+  "lifecycle_cases": 2,
+  "positive_gate_cases": 1,
+  "optimized_python_guards_active": true,
+  "physical_launches": 0,
+  "provider_loads": 0,
+  "authorization_files_created": 0,
+  "source": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\launch_probe_once.py",
+    "sha256": "3956ce39faf25f9c6759bcddb7d2d843062f0d2669477d70cc60ade9478fa5bd"
+  },
+  "test_source": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\test_launcher_controls.py",
+    "sha256": "ceb7fd7b8ccbe5932559908af433dde2b7e574e55f54f1a529d1f1e3bff30c23"
+  },
+  "limits": "Gate and child-wait logic tested in memory. Physical launch and provider loading not exercised."
+}

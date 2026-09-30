@@ -1,0 +1,11 @@
+The post-83 OEM evidence review passes within its stated offline scope. The exact current capture and stock image match in all 18 reviewed protocol, security, quiescence, boot and literal ranges.
+
+Actual stock instructions establish full replies: seed `6701<four bytes>`, accepted key `670234`, session `5085`, declaration `7484`, and first upload block `76`. The complete framed bytes and source pins are in OEM_POST83_REVIEW.json. The retained 16 actual-CPU seed cases include `3be61b56 -> 00000000`, `1f503559 -> ffffffff`, `9da745a4 -> 12345678`, and `12345678 -> e78f1f21`; they independently support host inverse-transform qualification.
+
+Four new bounded stock/current instruction replays passed (143,536 instructions). One 34 declaration is sufficient before the first 128-byte 36 block. An immediate identical second34 also receives 7484 and preserves the exact recorded declaration state. Each first block produces 76 and exactly 32 decrypted longword stores at PC 1646 into `[FFFF3000,FFFF3080)`. All cases recover the owned first 128 bytes with SHA256 `4f467e4371e66ff93b991f29c3081d9d78fdfafc58299acd3e3e0240b93da309`. No kernel entry or flash-controller access occurs.
+
+The 108502 response is sent before the separate OEM quiescence/boot transition. Retained boot execution writes SCI2 SMR00 and BRR27, consistent with 15625 baud under the existing 20 MHz peripheral-clock assumption. Actual oscillator timing is not measured. Programming admission requires explicit connector/watchdog predicates; the retained 78-tick condition is not a demonstrated millisecond delay. Installed ECUFlash 200/100/200ms delays and post-baud queue clears are host-parity evidence, not an independently proven minimum timing requirement.
+
+The OEM writes decrypted RAM during 36 before checking its trailing frame checksum. A missing/negative acknowledgement therefore must terminate progression; a failed frame is not assumed to leave RAM untouched. This is temporary RAM behavior, not flash programming.
+
+Retained evidence was reused without rerunning broad qualification. Only the four new first-block declaration cases ran in the offline instruction interpreter, with explicit peripheral fixtures. No provider, hardware, physical-capable executable or sealed artifact was changed.

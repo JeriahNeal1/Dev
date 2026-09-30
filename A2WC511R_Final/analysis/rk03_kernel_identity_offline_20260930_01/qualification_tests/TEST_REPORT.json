@@ -1,0 +1,6182 @@
+{
+  "negative_cases": 433,
+  "passed": 526,
+  "physical_operations": 0,
+  "prior287qualification_reused_not_recounted": true,
+  "scope": "NEW_OFFLINE_IDENTITY_MODEL_ONLY",
+  "status": "PASS",
+  "test_count": 526,
+  "tests": [
+    {
+      "case": "positive_complete_cleanup",
+      "detail": {
+        "acks": 24,
+        "tx": 24
+      },
+      "pass": true
+    },
+    {
+      "case": "exact_physical_upload_prefix",
+      "detail": {
+        "physical_log_sha256": "8f10d7379019ca07d761b7befdc8259f98577668b33d78ce9460e604e822d719"
+      },
+      "pass": true
+    },
+    {
+      "case": "exact_start_and_identity_only_suffix",
+      "detail": [
+        "8010f003310101b6",
+        "beef000101af"
+      ],
+      "pass": true
+    },
+    {
+      "case": "exact_fixed_replies",
+      "detail": [
+        "80f01003710101f6",
+        "beef000f8141325743353131522d524b3032005f"
+      ],
+      "pass": true
+    },
+    {
+      "case": "stop_after_identity",
+      "detail": {
+        "final_protocol_action": 90
+      },
+      "pass": true
+    },
+    {
+      "case": "fixed_chunk_1",
+      "detail": {
+        "address": "FFFF3000",
+        "length": 128,
+        "sha256": "b27c4fe47f71a7c96881891c73002084f3dbc5ebe977ec7e7e857b5dc4c44413"
+      },
+      "pass": true
+    },
+    {
+      "case": "fixed_chunk_2",
+      "detail": {
+        "address": "FFFF3080",
+        "length": 128,
+        "sha256": "07e0a7591c2664cad999b2ef96cc8531bb1251e221575e7c87de26ede4763abf"
+      },
+      "pass": true
+    },
+    {
+      "case": "fixed_chunk_3",
+      "detail": {
+        "address": "FFFF3100",
+        "length": 128,
+        "sha256": "100d6ec33fc5faa7b65efb3288816bc417b8faadf44ac757e1dd024dd8a328e9"
+      },
+      "pass": true
+    },
+    {
+      "case": "fixed_chunk_4",
+      "detail": {
+        "address": "FFFF3180",
+        "length": 128,
+        "sha256": "b81dfc437e0265ea95bee53c3c1e4f1fb858628b780c8d04dd734b27bf878f41"
+      },
+      "pass": true
+    },
+    {
+      "case": "fixed_chunk_5",
+      "detail": {
+        "address": "FFFF3200",
+        "length": 128,
+        "sha256": "c1f913fa9be870c84ec384eaadeb5021e425b0a68ad0aff8367af7b789a88348"
+      },
+      "pass": true
+    },
+    {
+      "case": "fixed_chunk_6",
+      "detail": {
+        "address": "FFFF3280",
+        "length": 128,
+        "sha256": "98196e7717170d0648aad05bce25d684019cf9aeba1f7671b05d40912c22786c"
+      },
+      "pass": true
+    },
+    {
+      "case": "fixed_chunk_7",
+      "detail": {
+        "address": "FFFF3300",
+        "length": 128,
+        "sha256": "65006edfa7ce69a2dedceca722fead4c5fde054b7819c799230c28d3e2dd500f"
+      },
+      "pass": true
+    },
+    {
+      "case": "fixed_chunk_8",
+      "detail": {
+        "address": "FFFF3380",
+        "length": 128,
+        "sha256": "3452edc6a17f072160fbe6afab0864eafd55dd03475e2a2a1ec7ce54affd7235"
+      },
+      "pass": true
+    },
+    {
+      "case": "fixed_chunk_9",
+      "detail": {
+        "address": "FFFF3400",
+        "length": 128,
+        "sha256": "3452edc6a17f072160fbe6afab0864eafd55dd03475e2a2a1ec7ce54affd7235"
+      },
+      "pass": true
+    },
+    {
+      "case": "fixed_chunk_10",
+      "detail": {
+        "address": "FFFF3480",
+        "length": 128,
+        "sha256": "3452edc6a17f072160fbe6afab0864eafd55dd03475e2a2a1ec7ce54affd7235"
+      },
+      "pass": true
+    },
+    {
+      "case": "fixed_chunk_11",
+      "detail": {
+        "address": "FFFF3500",
+        "length": 128,
+        "sha256": "3452edc6a17f072160fbe6afab0864eafd55dd03475e2a2a1ec7ce54affd7235"
+      },
+      "pass": true
+    },
+    {
+      "case": "fixed_chunk_12",
+      "detail": {
+        "address": "FFFF3580",
+        "length": 128,
+        "sha256": "3452edc6a17f072160fbe6afab0864eafd55dd03475e2a2a1ec7ce54affd7235"
+      },
+      "pass": true
+    },
+    {
+      "case": "fixed_chunk_13",
+      "detail": {
+        "address": "FFFF3600",
+        "length": 128,
+        "sha256": "3452edc6a17f072160fbe6afab0864eafd55dd03475e2a2a1ec7ce54affd7235"
+      },
+      "pass": true
+    },
+    {
+      "case": "fixed_chunk_14",
+      "detail": {
+        "address": "FFFF3680",
+        "length": 128,
+        "sha256": "3452edc6a17f072160fbe6afab0864eafd55dd03475e2a2a1ec7ce54affd7235"
+      },
+      "pass": true
+    },
+    {
+      "case": "fixed_chunk_15",
+      "detail": {
+        "address": "FFFF3700",
+        "length": 16,
+        "sha256": "650e747209d3aad9ba1f26fc45f7eb2cf2c325e64bfeec652463825f4d202995"
+      },
+      "pass": true
+    },
+    {
+      "case": "frame_checksum_length_0",
+      "detail": {
+        "bytes": 6
+      },
+      "pass": true
+    },
+    {
+      "case": "frame_checksum_length_1",
+      "detail": {
+        "bytes": 6
+      },
+      "pass": true
+    },
+    {
+      "case": "frame_checksum_length_2",
+      "detail": {
+        "bytes": 7
+      },
+      "pass": true
+    },
+    {
+      "case": "frame_checksum_length_3",
+      "detail": {
+        "bytes": 7
+      },
+      "pass": true
+    },
+    {
+      "case": "frame_checksum_length_4",
+      "detail": {
+        "bytes": 11
+      },
+      "pass": true
+    },
+    {
+      "case": "frame_checksum_length_5",
+      "detail": {
+        "bytes": 8
+      },
+      "pass": true
+    },
+    {
+      "case": "frame_checksum_length_6",
+      "detail": {
+        "bytes": 13
+      },
+      "pass": true
+    },
+    {
+      "case": "frame_checksum_length_7",
+      "detail": {
+        "bytes": 137
+      },
+      "pass": true
+    },
+    {
+      "case": "frame_checksum_length_8",
+      "detail": {
+        "bytes": 137
+      },
+      "pass": true
+    },
+    {
+      "case": "frame_checksum_length_9",
+      "detail": {
+        "bytes": 137
+      },
+      "pass": true
+    },
+    {
+      "case": "frame_checksum_length_10",
+      "detail": {
+        "bytes": 137
+      },
+      "pass": true
+    },
+    {
+      "case": "frame_checksum_length_11",
+      "detail": {
+        "bytes": 137
+      },
+      "pass": true
+    },
+    {
+      "case": "frame_checksum_length_12",
+      "detail": {
+        "bytes": 137
+      },
+      "pass": true
+    },
+    {
+      "case": "frame_checksum_length_13",
+      "detail": {
+        "bytes": 137
+      },
+      "pass": true
+    },
+    {
+      "case": "frame_checksum_length_14",
+      "detail": {
+        "bytes": 137
+      },
+      "pass": true
+    },
+    {
+      "case": "frame_checksum_length_15",
+      "detail": {
+        "bytes": 137
+      },
+      "pass": true
+    },
+    {
+      "case": "frame_checksum_length_16",
+      "detail": {
+        "bytes": 137
+      },
+      "pass": true
+    },
+    {
+      "case": "frame_checksum_length_17",
+      "detail": {
+        "bytes": 137
+      },
+      "pass": true
+    },
+    {
+      "case": "frame_checksum_length_18",
+      "detail": {
+        "bytes": 137
+      },
+      "pass": true
+    },
+    {
+      "case": "frame_checksum_length_19",
+      "detail": {
+        "bytes": 137
+      },
+      "pass": true
+    },
+    {
+      "case": "frame_checksum_length_20",
+      "detail": {
+        "bytes": 137
+      },
+      "pass": true
+    },
+    {
+      "case": "frame_checksum_length_21",
+      "detail": {
+        "bytes": 25
+      },
+      "pass": true
+    },
+    {
+      "case": "frame_checksum_length_22",
+      "detail": {
+        "bytes": 8
+      },
+      "pass": true
+    },
+    {
+      "case": "frame_checksum_length_23",
+      "detail": {
+        "bytes": 6
+      },
+      "pass": true
+    },
+    {
+      "case": "frame_checksum_length_24",
+      "detail": {
+        "bytes": 62
+      },
+      "pass": true
+    },
+    {
+      "case": "frame_checksum_length_25",
+      "detail": {
+        "bytes": 8
+      },
+      "pass": true
+    },
+    {
+      "case": "frame_checksum_length_26",
+      "detail": {
+        "bytes": 12
+      },
+      "pass": true
+    },
+    {
+      "case": "frame_checksum_length_27",
+      "detail": {
+        "bytes": 11
+      },
+      "pass": true
+    },
+    {
+      "case": "frame_checksum_length_28",
+      "detail": {
+        "bytes": 8
+      },
+      "pass": true
+    },
+    {
+      "case": "frame_checksum_length_29",
+      "detail": {
+        "bytes": 7
+      },
+      "pass": true
+    },
+    {
+      "case": "frame_checksum_length_30",
+      "detail": {
+        "bytes": 7
+      },
+      "pass": true
+    },
+    {
+      "case": "frame_checksum_length_31",
+      "detail": {
+        "bytes": 6
+      },
+      "pass": true
+    },
+    {
+      "case": "frame_checksum_length_32",
+      "detail": {
+        "bytes": 6
+      },
+      "pass": true
+    },
+    {
+      "case": "frame_checksum_length_33",
+      "detail": {
+        "bytes": 6
+      },
+      "pass": true
+    },
+    {
+      "case": "frame_checksum_length_34",
+      "detail": {
+        "bytes": 6
+      },
+      "pass": true
+    },
+    {
+      "case": "frame_checksum_length_35",
+      "detail": {
+        "bytes": 6
+      },
+      "pass": true
+    },
+    {
+      "case": "frame_checksum_length_36",
+      "detail": {
+        "bytes": 6
+      },
+      "pass": true
+    },
+    {
+      "case": "frame_checksum_length_37",
+      "detail": {
+        "bytes": 6
+      },
+      "pass": true
+    },
+    {
+      "case": "frame_checksum_length_38",
+      "detail": {
+        "bytes": 6
+      },
+      "pass": true
+    },
+    {
+      "case": "frame_checksum_length_39",
+      "detail": {
+        "bytes": 6
+      },
+      "pass": true
+    },
+    {
+      "case": "frame_checksum_length_40",
+      "detail": {
+        "bytes": 6
+      },
+      "pass": true
+    },
+    {
+      "case": "frame_checksum_length_41",
+      "detail": {
+        "bytes": 6
+      },
+      "pass": true
+    },
+    {
+      "case": "frame_checksum_length_42",
+      "detail": {
+        "bytes": 6
+      },
+      "pass": true
+    },
+    {
+      "case": "frame_checksum_length_43",
+      "detail": {
+        "bytes": 6
+      },
+      "pass": true
+    },
+    {
+      "case": "frame_checksum_length_44",
+      "detail": {
+        "bytes": 6
+      },
+      "pass": true
+    },
+    {
+      "case": "frame_checksum_length_45",
+      "detail": {
+        "bytes": 6
+      },
+      "pass": true
+    },
+    {
+      "case": "frame_checksum_length_46",
+      "detail": {
+        "bytes": 8
+      },
+      "pass": true
+    },
+    {
+      "case": "frame_checksum_length_47",
+      "detail": {
+        "bytes": 20
+      },
+      "pass": true
+    },
+    {
+      "case": "retained_five_serial_sets",
+      "detail": [
+        [
+          {
+            "parameter": 22,
+            "value": 0
+          }
+        ],
+        [
+          {
+            "parameter": 7,
+            "value": 1
+          }
+        ],
+        [
+          {
+            "parameter": 10,
+            "value": 0
+          }
+        ],
+        [
+          {
+            "parameter": 12,
+            "value": 0
+          }
+        ],
+        [
+          {
+            "parameter": 3,
+            "value": 0
+          }
+        ]
+      ],
+      "pass": true
+    },
+    {
+      "case": "retained_effective_readback",
+      "detail": {
+        "list_present": true,
+        "owned_buffer_entries": [
+          {
+            "parameter": 22,
+            "value": 0
+          },
+          {
+            "parameter": 7,
+            "value": 1
+          },
+          {
+            "parameter": 10,
+            "value": 0
+          },
+          {
+            "parameter": 12,
+            "value": 0
+          },
+          {
+            "parameter": 3,
+            "value": 0
+          }
+        ],
+        "owned_capacity": 5,
+        "pointer_matches_owned": true,
+        "returned_num_params": 5
+      },
+      "pass": true
+    },
+    {
+      "case": "retained_broad_filter",
+      "detail": {
+        "channel": 3,
+        "filter_output_present": true,
+        "filter_type": 1,
+        "flow": {
+          "buffer_capacity": 4128,
+          "data_hex": "00000000",
+          "data_size": 4,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 4,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "flow_present": true,
+        "mask": {
+          "buffer_capacity": 4128,
+          "data_hex": "00000000",
+          "data_size": 4,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 4,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "mask_present": true,
+        "pattern": {
+          "buffer_capacity": 4128,
+          "data_hex": "00000000",
+          "data_size": 4,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 4,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "pattern_present": true
+      },
+      "pass": true
+    },
+    {
+      "case": "virtual_wait_contract",
+      "detail": [
+        [
+          25,
+          200
+        ],
+        [
+          29,
+          100
+        ],
+        [
+          33,
+          200
+        ]
+      ],
+      "pass": true
+    },
+    {
+      "case": "baud_transition_contract",
+      "detail": [
+        [
+          {
+            "parameter": 1,
+            "value": 15625
+          }
+        ],
+        [
+          {
+            "parameter": 1,
+            "value": 62500
+          }
+        ]
+      ],
+      "pass": true
+    },
+    {
+      "case": "fixed_start_identity_transition",
+      "detail": [
+        {
+          "function": "PassThruStopMsgFilter",
+          "input": {
+            "channel": 3,
+            "filter_id": 0,
+            "filter_id_present": true
+          },
+          "output": {}
+        },
+        {
+          "function": "PassThruIoctl",
+          "input": {
+            "channel": 3,
+            "config": {
+              "list_present": true,
+              "owned_buffer_entries": [
+                {
+                  "parameter": 1,
+                  "value": 62500
+                }
+              ],
+              "owned_capacity": 1,
+              "pointer_matches_owned": true,
+              "returned_num_params": 1
+            },
+            "input_present": true,
+            "ioctl": 2,
+            "output_present": false
+          },
+          "output": {
+            "canaries_intact": true,
+            "config": {
+              "list_present": true,
+              "owned_buffer_entries": [
+                {
+                  "parameter": 1,
+                  "value": 62500
+                }
+              ],
+              "owned_capacity": 1,
+              "pointer_matches_owned": true,
+              "returned_num_params": 1
+            }
+          }
+        },
+        {
+          "function": "PassThruStartMsgFilter",
+          "input": {
+            "channel": 3,
+            "filter_output_present": true,
+            "filter_type": 1,
+            "flow": null,
+            "flow_present": false,
+            "mask": {
+              "buffer_capacity": 4128,
+              "data_hex": "ffff",
+              "data_size": 2,
+              "data_truncated": false,
+              "extra_data_index": 0,
+              "logged_bytes": 2,
+              "protocol": 3,
+              "rx_status": 0,
+              "tx_flags": 0
+            },
+            "mask_present": true,
+            "pattern": {
+              "buffer_capacity": 4128,
+              "data_hex": "beef",
+              "data_size": 2,
+              "data_truncated": false,
+              "extra_data_index": 0,
+              "logged_bytes": 2,
+              "protocol": 3,
+              "rx_status": 0,
+              "tx_flags": 0
+            },
+            "pattern_present": true
+          },
+          "output": {
+            "canaries_intact": true,
+            "filter_id": 0,
+            "flow": null,
+            "mask": {
+              "buffer_capacity": 4128,
+              "data_hex": "ffff",
+              "data_size": 2,
+              "data_truncated": false,
+              "extra_data_index": 0,
+              "logged_bytes": 2,
+              "protocol": 3,
+              "rx_status": 0,
+              "tx_flags": 0
+            },
+            "pattern": {
+              "buffer_capacity": 4128,
+              "data_hex": "beef",
+              "data_size": 2,
+              "data_truncated": false,
+              "extra_data_index": 0,
+              "logged_bytes": 2,
+              "protocol": 3,
+              "rx_status": 0,
+              "tx_flags": 0
+            }
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "case": "fixed_BEEF_filter",
+      "detail": {
+        "channel": 3,
+        "filter_output_present": true,
+        "filter_type": 1,
+        "flow": null,
+        "flow_present": false,
+        "mask": {
+          "buffer_capacity": 4128,
+          "data_hex": "ffff",
+          "data_size": 2,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 2,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "mask_present": true,
+        "pattern": {
+          "buffer_capacity": 4128,
+          "data_hex": "beef",
+          "data_size": 2,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 2,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "pattern_present": true
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_0",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruOpen",
+        "fault_action": 0,
+        "result_sha256": "d75802154187637733baae193a269b14f2c058a243bdc5d8006de954e58c64eb",
+        "tx": 0
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_0",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 0,
+        "result_sha256": "c8a194aed98367de6f8c729abd353930b92880b394adb07779a64d57dbec7816",
+        "tx": 0
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_1",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadVersion",
+        "fault_action": 1,
+        "result_sha256": "24424f53dabd3a34ae875e8f2746f297a1db638ce4dc3b66e8ee11aac5574cdc",
+        "tx": 0
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_1",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 1,
+        "result_sha256": "73112a81b2660c43c372bf8611c15a1f8a8499a303adc8510141509e519f5156",
+        "tx": 0
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_2",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruConnect",
+        "fault_action": 2,
+        "result_sha256": "8d213c6b119f5e5e2129fe3e94636ee0c31d17c341256442ccf4924123373d0c",
+        "tx": 0
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_2",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 2,
+        "result_sha256": "b2215527d62e915a0cd5e2ae79df077eedada5e1b1c19591c9611d569fb99f0a",
+        "tx": 0
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_3",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruIoctl",
+        "fault_action": 3,
+        "result_sha256": "485063137d3ce1befccd85387d71ce58f1a7262dceadac5a7a6c4b4cb89d17fe",
+        "tx": 0
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_3",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 3,
+        "result_sha256": "d56355ff5d4d1a8640eae00075d2a2620660a9daa40663962512f87cfaf5f2d4",
+        "tx": 0
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_4",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruIoctl",
+        "fault_action": 4,
+        "result_sha256": "8420d215b965a78159ada104b2dc515e9a5b430ce218ce1a2892a65983650637",
+        "tx": 0
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_4",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 4,
+        "result_sha256": "618d5a4538fd39eb5199905cf6b023d03a254756f1bb65f9a42d8e79f30301cb",
+        "tx": 0
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_5",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruIoctl",
+        "fault_action": 5,
+        "result_sha256": "ba5728cbb38f0d8f83c2528800d13acecbc337ab6e3dbf25affe4a25a64f4d9d",
+        "tx": 0
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_5",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 5,
+        "result_sha256": "af59cfcb92512a62acf1d9f1cb014ec8d60c1ee043c4a2a68f5201c4dae7c87b",
+        "tx": 0
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_6",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruIoctl",
+        "fault_action": 6,
+        "result_sha256": "a07d9d719787e230f260e7bd2de7a3a35ea57f8d9887b6385ccef3b72c2cdc3a",
+        "tx": 0
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_6",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 6,
+        "result_sha256": "cc6269feb597c4b0b621f08f840f0de8be56cbb929dc210ccb0b829e07a71dc1",
+        "tx": 0
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_7",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruIoctl",
+        "fault_action": 7,
+        "result_sha256": "a520b5b92e472c1c76c5f363bf1ed14df39c6bc8fac8b1ea8083807e8e497b46",
+        "tx": 0
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_7",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 7,
+        "result_sha256": "a62a07e23bff8653836d9da8028cbdb06c3e905f57f59e921c7163b9e49c341c",
+        "tx": 0
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_8",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruIoctl",
+        "fault_action": 8,
+        "result_sha256": "bf2679effe60a2aec247b95071f9dcf5f82491a50beac48f51aab79a3e858cf8",
+        "tx": 0
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_8",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 8,
+        "result_sha256": "59a9bfa1ef15e93e2051ebd6b8f96021feaff6e64e8fd9e10eb3b00464d8b1a5",
+        "tx": 0
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_9",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruStartMsgFilter",
+        "fault_action": 9,
+        "result_sha256": "86079332a9806448697df31be31e84431e7e31a0cb6606bcd4c0df93ba84c53a",
+        "tx": 0
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_9",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 9,
+        "result_sha256": "b10b853d5ab4f35e88c64632b1ff506b6ef7aee30e7266eabef87a4986c93c00",
+        "tx": 0
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_10",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruWriteMsgs",
+        "fault_action": 10,
+        "result_sha256": "cccaf031b452eb17f74b07bc9105f2c8b22a3d00804c60f85ef649454229d6cc",
+        "tx": 1
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_10",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 10,
+        "result_sha256": "d4d54758903d8a8495cd8e65813b07e25108f83e2b15f5c5855b6fb4f2488a59",
+        "tx": 1
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_11",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "fault_action": 11,
+        "result_sha256": "01b916387217921600cfc55d98f6a8f315983a224bc0f1d6cb72b46486493dd3",
+        "tx": 1
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_11",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 11,
+        "result_sha256": "751f194d7dd953872f203687e954732f72d441820ec3ce4f174a3eeb4bf4ee2f",
+        "tx": 1
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_12",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "fault_action": 12,
+        "result_sha256": "84b43ed28b147c616ccf47c6b0da3f257ee54b043f25fdbc696a2a1d18f62619",
+        "tx": 1
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_12",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 12,
+        "result_sha256": "faf90d271ced585cae7d082773731d19ff8fd50b91c8ea24bac3fb92f9ac5300",
+        "tx": 1
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_13",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruWriteMsgs",
+        "fault_action": 13,
+        "result_sha256": "0e680b414ef6943c94825abfdca2e878373e49da92d4ab058d3a23fc7a25c816",
+        "tx": 2
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_13",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 13,
+        "result_sha256": "491ee2087cdbdd4b60b9812c3532d6165eb601644ed451a5fecd719e12cdf0ea",
+        "tx": 2
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_14",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "fault_action": 14,
+        "result_sha256": "b185d4ef0f20d1fbedeab9dc9876eaff65f1b163d574be2be7a42befa1b7f718",
+        "tx": 2
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_14",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 14,
+        "result_sha256": "8dce303f8966efc2985b90687781b925cfe1118ff99de8c724915402368666ca",
+        "tx": 2
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_15",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "fault_action": 15,
+        "result_sha256": "f18630abae1e7b5902aa452cbff00ad3fede3bb3bfc2eae84a80c3da4b58b8bc",
+        "tx": 2
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_15",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 15,
+        "result_sha256": "8ca6891992ede88fa69e01a6507e526929c812023b06852d959a1554857d50a2",
+        "tx": 2
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_16",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruWriteMsgs",
+        "fault_action": 16,
+        "result_sha256": "2ce0ce46f0fd0243fced5dc1370cfbae4d4a52dc88b3cd957b26f005a2cac54f",
+        "tx": 3
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_16",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 16,
+        "result_sha256": "5d76e3cc4f3fb8068984832e0268ab4e282b14a9d70e52a87b756ba787e3b2b4",
+        "tx": 3
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_17",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "fault_action": 17,
+        "result_sha256": "761584a515bb52af04cb4999d24e4c19f20990ab99313564e5ee156fa627ed16",
+        "tx": 3
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_17",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 17,
+        "result_sha256": "bbb915d1b74d786cb54d8a7d7fe9fd99cf4feec676d3f6543b959f316ddeebb2",
+        "tx": 3
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_18",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "fault_action": 18,
+        "result_sha256": "c968215bb635ae0d0f5212c7140118950fdfbddd85a12445e23d00809f20c5b0",
+        "tx": 3
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_18",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 18,
+        "result_sha256": "be14d29638193d8736ff1970aa60d3a96c59c58e96259104a3ae2050517636ea",
+        "tx": 3
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_19",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruWriteMsgs",
+        "fault_action": 19,
+        "result_sha256": "961c2884a5b4072e0e6d37291f0927c47c7a39f0425315408d957189b32bb418",
+        "tx": 4
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_19",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 19,
+        "result_sha256": "9d215c375c4e1e3bf64cef3be5aa2db27a20bf0ef27b55f3a4f5a284d3ff64d0",
+        "tx": 4
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_20",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "fault_action": 20,
+        "result_sha256": "69a79c31cea5debaa1cf4901b5d79b021f0ea001afc78ae4c21afff97da65520",
+        "tx": 4
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_20",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 20,
+        "result_sha256": "a2bfdddc1439c315e363bfc21692f51df03d74eb66e02b9d263b82a94bad713e",
+        "tx": 4
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_21",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "fault_action": 21,
+        "result_sha256": "e340cc998b4ddb4c6f6628b37272bd23ebe0ef7132a045cb596a74cf1fa40229",
+        "tx": 4
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_21",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 21,
+        "result_sha256": "87f7a98d2e034f0d95861157744ad09f597bfcc319a66dedf1aefc989f02f925",
+        "tx": 4
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_22",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruWriteMsgs",
+        "fault_action": 22,
+        "result_sha256": "ec61baf7dc4428dd3f58f6a645647081de3b2adeef2cf57407c9c4eadc8a14b2",
+        "tx": 5
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_22",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 22,
+        "result_sha256": "5dc753fc3f6e885e39aaf68c4ba0d6c4c2639c226b2be8db680f262f7a18f781",
+        "tx": 5
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_23",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "fault_action": 23,
+        "result_sha256": "7c1b78941ca00b04ce56ebd4a8e0e25aa65fb275603ae60c7688e6e68d268595",
+        "tx": 5
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_23",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 23,
+        "result_sha256": "7c43f08ae4100f1ce95ed8ab9f89110f9ee07ddb14c34ea9fedf8556804c98e9",
+        "tx": 5
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_24",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "fault_action": 24,
+        "result_sha256": "f3c513fad8d9827a8a84727a59da0ff0f7a26a14083795ab9eb1c803f0c5a4ed",
+        "tx": 5
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_24",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 24,
+        "result_sha256": "e18dfa78968156bfd3c9004c18f0250f9946f0fd296f6b890e80d404f1f0ca67",
+        "tx": 5
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_25",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at VirtualWait",
+        "fault_action": 25,
+        "result_sha256": "3bf01ec571aab8c7a618082c48cc234f05b9643a0b904501d007a2e697daa55e",
+        "tx": 5
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_25",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 25,
+        "result_sha256": "a75211073cf585f5c181c5facd47bdbe2fc0924ca987ed6701c948a3a59c7f8b",
+        "tx": 5
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_26",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruWriteMsgs",
+        "fault_action": 26,
+        "result_sha256": "5c12aa2bdf6c7fa7ff11bb653027117d06a553b0bb6f6609a89672cd3098fd94",
+        "tx": 6
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_26",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 26,
+        "result_sha256": "e5673f22f6d753f50777c1f18f61fcc3bf44d2158f59a07d402b6e8be6b5a45f",
+        "tx": 6
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_27",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "fault_action": 27,
+        "result_sha256": "5792d1a52f644190eaba51ee816a282857383558454b0a581e8ea63f5a19e521",
+        "tx": 6
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_27",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 27,
+        "result_sha256": "2cdf72509a00517918c185f963b20c99b88a9c8ded74250d79b64545f75a39cc",
+        "tx": 6
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_28",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "fault_action": 28,
+        "result_sha256": "5269b41153657b31bf2f492400155f3efac5e3abc5b0165a5bb131a2b6e77daa",
+        "tx": 6
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_28",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 28,
+        "result_sha256": "cb99fe1fd95403c7f8553eca54bb35e6775cfd271fbee063f786a4b838797146",
+        "tx": 6
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_29",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at VirtualWait",
+        "fault_action": 29,
+        "result_sha256": "281448b61cc49cf75fb08dd862277977cd0d2eec4417256787a74ade3f59c888",
+        "tx": 6
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_29",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 29,
+        "result_sha256": "2f0ac069fd3d2a2cecb0a8cb155a4d70e2c82732d33dcfd20d97d0fce24ee872",
+        "tx": 6
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_30",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruIoctl",
+        "fault_action": 30,
+        "result_sha256": "e29a8c5ad32b6a347f80c05169a6c196c607852824d52ba5700595e44d5c1117",
+        "tx": 6
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_30",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 30,
+        "result_sha256": "35f989f49b262e5ebe132e7eaed8fe90a6bd8db1b50f26a2bb85631a5d6360e1",
+        "tx": 6
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_31",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruIoctl",
+        "fault_action": 31,
+        "result_sha256": "f991899024e74de2702cb4613dbd5d7b1eb840709ca4fe28fc1078883b221f8a",
+        "tx": 6
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_31",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 31,
+        "result_sha256": "4be648cfa4c2fa4227211774a0e5215a98353791e19f7ab0b02e7b30fe771716",
+        "tx": 6
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_32",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruIoctl",
+        "fault_action": 32,
+        "result_sha256": "4d0f0b7ebbd8a533e8eb98d6a1010bbd78837c5d864458bfc3a1f39de1c823da",
+        "tx": 6
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_32",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 32,
+        "result_sha256": "d25f3712f524a9b89b07471693d7d0456665ba790dc7f45f5e84fefc47545da3",
+        "tx": 6
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_33",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at VirtualWait",
+        "fault_action": 33,
+        "result_sha256": "b82ced825338f46e77aca066ca539a508a57449e87ee105b406f22bcfb7664f6",
+        "tx": 6
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_33",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 33,
+        "result_sha256": "dd716be61b1b8ac87d4099ae41ad4593d3087d5ca25b0f0a1a01eaf0a482d44e",
+        "tx": 6
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_34",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruWriteMsgs",
+        "fault_action": 34,
+        "result_sha256": "44ff8b1471593052205790de2d3a8c3de380429b16ca7bed5ec38225e4e11ce3",
+        "tx": 7
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_34",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 34,
+        "result_sha256": "9065f09ed7ea5c4958841486d9113f0854287e1ab09a431afa1aaee5b2afd950",
+        "tx": 7
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_35",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "fault_action": 35,
+        "result_sha256": "8a863b3078c4e8f4b20d68e7ead01d6e38f4b303aea0385a0d16dd18293e1eac",
+        "tx": 7
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_35",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 35,
+        "result_sha256": "c4c1ab5cf747cea47ff764114ac1f9431cb3201daec18ab0f084f653e7fdb421",
+        "tx": 7
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_36",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "fault_action": 36,
+        "result_sha256": "8c86302dc787c85b7bf9ec08031f716b52bc1b8407189979d87f44eed1854bd8",
+        "tx": 7
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_36",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 36,
+        "result_sha256": "34e674db1a2fb50add48681d2e268457570d804d14012b7edba1d2b23fc9cf78",
+        "tx": 7
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_37",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruWriteMsgs",
+        "fault_action": 37,
+        "result_sha256": "c970aafccbcb032a286380de35ebc2a5bd7e2446612378778538e154fdafcc41",
+        "tx": 8
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_37",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 37,
+        "result_sha256": "284b5ed055f0cc2a30be036fab57d39d6479ef3884af640b2f52c6dfa53d8492",
+        "tx": 8
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_38",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "fault_action": 38,
+        "result_sha256": "289d334b4da4b86cab3529a3190358ffb1b0d6808c2aef47371f1d3e7ba901e0",
+        "tx": 8
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_38",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 38,
+        "result_sha256": "10f72feaf1210a453fe9a853a3ec7a6fa8fce92b5cda80f03dd6fe0534e85c9b",
+        "tx": 8
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_39",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "fault_action": 39,
+        "result_sha256": "8ce71d8dc720e4c9cb29ab64180055a0da12ee9d0884cfcba362544c5478905a",
+        "tx": 8
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_39",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 39,
+        "result_sha256": "e9a7f5620330bc1814d06dd4287954fdac236168fd1800b6614badb6e8604348",
+        "tx": 8
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_40",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruWriteMsgs",
+        "fault_action": 40,
+        "result_sha256": "262900f1cd1967ece53aadc94c5a7ea627e3e744769672d4326fc687c040962d",
+        "tx": 9
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_40",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 40,
+        "result_sha256": "a5bdef4955cf697b61fb4978d1d2f992619992596938a1bcd60de9f75d6915b1",
+        "tx": 9
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_41",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "fault_action": 41,
+        "result_sha256": "3612ad726d4c363753107e14d5a7b05a7fe33f963c2c989887141f2f969f3018",
+        "tx": 9
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_41",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 41,
+        "result_sha256": "178d722c2dbcadce45c8ec8bbfff22c7edf2f6a5b660b37907b6a1385cdf38da",
+        "tx": 9
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_42",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "fault_action": 42,
+        "result_sha256": "003a52269006247b979744125433eaac97ba306073e49e0e61fff0c2517ed213",
+        "tx": 9
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_42",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 42,
+        "result_sha256": "15d2d1cae8d8b0f07a3f2aab2152cb49ab7be47c7ef7184f71e61dc8f59ca56d",
+        "tx": 9
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_43",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruWriteMsgs",
+        "fault_action": 43,
+        "result_sha256": "69661f035a82bbc0dfbfe270265d62fdd589972a458eeb5376ec4f96932f8d36",
+        "tx": 10
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_43",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 43,
+        "result_sha256": "86b17dd85251df4e98c21c532842bc4c98311008e8674b31126abf9feab71f9b",
+        "tx": 10
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_44",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "fault_action": 44,
+        "result_sha256": "a72bad95aba39c740e22b7fc0c58376dba1f9ebcd3d71f702fc8bb39007b5bc2",
+        "tx": 10
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_44",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 44,
+        "result_sha256": "4643355a63525adfd2c7f19c29918399c8637c6abb91aff8b7fec3f0084ccdbd",
+        "tx": 10
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_45",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "fault_action": 45,
+        "result_sha256": "06fc7eea4a37ba46fc1dec084d4164a6c5c3f6e53f9c023dfd62b6702b8d208d",
+        "tx": 10
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_45",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 45,
+        "result_sha256": "29a511514d3674b97e5d90c6cee764c697b379d998d91be0f09e7cbd9c98b86c",
+        "tx": 10
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_46",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruWriteMsgs",
+        "fault_action": 46,
+        "result_sha256": "e48ce2b98e08eb647f76686b118f2543967b38d34f3fada78f484b03dc97ab3e",
+        "tx": 11
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_46",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 46,
+        "result_sha256": "5a8fb2ea40a44a45261b85f204041cdaeaa37f93fee7342c1df298296c734a93",
+        "tx": 11
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_47",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "fault_action": 47,
+        "result_sha256": "01cd0be62eb3a3b1f227d76ca96b73d02ff4da24c2ad2307e356f830ca7705b3",
+        "tx": 11
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_47",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 47,
+        "result_sha256": "44a75e6d829fb895d13766b12f0f20b56ca676f5fb5bfec609652a5a6b53d35d",
+        "tx": 11
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_48",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "fault_action": 48,
+        "result_sha256": "86f75441cb5e9e989ca23765397489e5a3978a9da8862c72c71b65dd664d1ebd",
+        "tx": 11
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_48",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 48,
+        "result_sha256": "984c6ed1a7846f8e7087d129740e8298b63768b7df1425bdd948d2069e188625",
+        "tx": 11
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_49",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruWriteMsgs",
+        "fault_action": 49,
+        "result_sha256": "7cc0ca40435817b131c7ccc7d2934431b7995866005dacbadd9064a01c3bf62e",
+        "tx": 12
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_49",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 49,
+        "result_sha256": "1a3528117fdc2fef9ec30914fe6353190a132923a5c0ebec117bd68b1e31620f",
+        "tx": 12
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_50",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "fault_action": 50,
+        "result_sha256": "a148276391ad7d2aacee52ceebdf326f31d35bc4832e9c7b573332eaffc8c15b",
+        "tx": 12
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_50",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 50,
+        "result_sha256": "1c5e45e8d78d75f8e93bfe9370be02b284cb48ea44062fb74257cef82a3b0456",
+        "tx": 12
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_51",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "fault_action": 51,
+        "result_sha256": "2cde980d9960bbfe839f974d061a2ba2381adfb1799538d8b4084a7a9ac2449a",
+        "tx": 12
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_51",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 51,
+        "result_sha256": "462f8147ac6d0565fd9375ba1a245d845fb3ef384e46d650833def7c9e42b09e",
+        "tx": 12
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_52",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruWriteMsgs",
+        "fault_action": 52,
+        "result_sha256": "bac290b082a0fe594c5746cb8753e5502c1c33f549ddd1d50704e9cc67fc9a2d",
+        "tx": 13
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_52",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 52,
+        "result_sha256": "5ead27ad288039b33bb3bdab81e709614dc61ca23c09657b5c8f25aad3ea0f32",
+        "tx": 13
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_53",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "fault_action": 53,
+        "result_sha256": "7531fc0325846155e1f3d6434369997842dec798b53d4cb5662c3c0fee1a7add",
+        "tx": 13
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_53",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 53,
+        "result_sha256": "695b5c251cbcd88aa3a4f15152374c4c895f2cbb0296b594006806a8bcdd1baa",
+        "tx": 13
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_54",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "fault_action": 54,
+        "result_sha256": "9b356d6174902c46b7c8d630aa4ce3f274bf0160474a3c9fff6bc48fa6eabd7c",
+        "tx": 13
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_54",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 54,
+        "result_sha256": "d64d65155d32aeadd6b97063718a64c9347e529d83667ca728b9636b3343986e",
+        "tx": 13
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_55",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruWriteMsgs",
+        "fault_action": 55,
+        "result_sha256": "f7a840e350d90a348cb2a2fa853faa10e2b2cf3c4548050429dd33974b47af88",
+        "tx": 14
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_55",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 55,
+        "result_sha256": "b94e2258db6bdba947575d35141d37e61db385d4f06429abef158f4855900bed",
+        "tx": 14
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_56",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "fault_action": 56,
+        "result_sha256": "aa98ddb122870a8653b9e778fec0c21a15034cb3a4ccbe9d8f5a4e717a2c9fd1",
+        "tx": 14
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_56",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 56,
+        "result_sha256": "3b86d11cab5c4748535743f37f60662a55c71853011a532874884d90c073d64c",
+        "tx": 14
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_57",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "fault_action": 57,
+        "result_sha256": "e07261e81aad95f162737afdb23d4e838a9d8bc05f83f011dd94bd0fdbd86fb3",
+        "tx": 14
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_57",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 57,
+        "result_sha256": "69cebaf9d089c1d5ffa5f06136771da1929e44e215cf359e1383e92df06f7c2d",
+        "tx": 14
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_58",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruWriteMsgs",
+        "fault_action": 58,
+        "result_sha256": "77e42fb13e5c91fe27308cce2043d894ec5015880abfb6b5665119a156fb7271",
+        "tx": 15
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_58",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 58,
+        "result_sha256": "d0f31a4ec29b5c19da08fe0202cac637ec9383341aa58803278d91719e0e1cce",
+        "tx": 15
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_59",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "fault_action": 59,
+        "result_sha256": "62208d2450439998ffc3292f5af943c4c9d2fbec1a7fb8fb113134da45e7defa",
+        "tx": 15
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_59",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 59,
+        "result_sha256": "171c5beaf49f4f6048d0eb0564203879bb5d7d31812a2bf7f77eb38b72be69ab",
+        "tx": 15
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_60",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "fault_action": 60,
+        "result_sha256": "55291d3ea3510afe1570e7cca3d611d49b4a7645d01a70c699e98f29b0890591",
+        "tx": 15
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_60",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 60,
+        "result_sha256": "a42dbb7cf2b0148771fe8ad254a544bde40484898e4d1935f16741128dcc1cb0",
+        "tx": 15
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_61",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruWriteMsgs",
+        "fault_action": 61,
+        "result_sha256": "10a45a1f353dba575ed0ba06ac8ac9055e8c90729446374189b4b5e7d86afb0e",
+        "tx": 16
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_61",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 61,
+        "result_sha256": "e4283ae71ce71612596a34c6c35853b376bcd29e5b9d6aaf8f835a20f52c4ad5",
+        "tx": 16
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_62",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "fault_action": 62,
+        "result_sha256": "34d421810257274d0af8338a9c6f7443f6d07acd69cec5c40f11ca520ff73999",
+        "tx": 16
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_62",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 62,
+        "result_sha256": "03701cc88bd96a296595ceb2d13475a67c1acd6e49712517f71273feb802a0ac",
+        "tx": 16
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_63",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "fault_action": 63,
+        "result_sha256": "a819f4d6aa54159b692dc30b1732025c2100af4709bc4700459436455cbe855e",
+        "tx": 16
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_63",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 63,
+        "result_sha256": "459f48a5dd9195cc32554661db1b93d46861b31442446c502919fcc78c396d02",
+        "tx": 16
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_64",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruWriteMsgs",
+        "fault_action": 64,
+        "result_sha256": "7f2fc8089274df4585d59333d73a001b255f45e400b777e9cc9fd3acd6e91e1b",
+        "tx": 17
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_64",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 64,
+        "result_sha256": "bab9b67aa8fc94a597531b4aec3c139fc1389e0e0fa95fdf022e0d4f903543ad",
+        "tx": 17
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_65",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "fault_action": 65,
+        "result_sha256": "0af1a6ffa8d88e7c8f1e0afc6c3fe12af8ed1e87ddfc812aa2791784deffce44",
+        "tx": 17
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_65",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 65,
+        "result_sha256": "b93c9e4ae703ba0b43123b10c689ebfe0a23a4db97695cd0c4c1e784a7938014",
+        "tx": 17
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_66",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "fault_action": 66,
+        "result_sha256": "35a47066dc2a1369d61eaa5e5d0c7fc284083352811dd32226682397348ea26b",
+        "tx": 17
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_66",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 66,
+        "result_sha256": "b9ee3dec530bd85af7dc33c6e7a65e077cfa81dbc4a560fad8f6a2f1f5ad314c",
+        "tx": 17
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_67",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruWriteMsgs",
+        "fault_action": 67,
+        "result_sha256": "f28e3609bde1aa39ff7ee4c94d588a2be63bf20dd944689a36cc0539f76a6455",
+        "tx": 18
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_67",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 67,
+        "result_sha256": "2af9cdb48597bad808f93f845b03511f22fae31129cbfe9e47f6381f430d2995",
+        "tx": 18
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_68",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "fault_action": 68,
+        "result_sha256": "099fec3cc05b540e24b4e9364410d8b5645878ae0c43b283d44a3c3a0dac5668",
+        "tx": 18
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_68",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 68,
+        "result_sha256": "6473b5727952d5501abf91e7677e95f5dea54ac0bdfa952b00b3392aa3f7d836",
+        "tx": 18
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_69",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "fault_action": 69,
+        "result_sha256": "b8752e32efb19818161f05e707ee403b0498c329cd7a105b5e52f42b2e2b5ad9",
+        "tx": 18
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_69",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 69,
+        "result_sha256": "23b1fec239d555d3f571c8ed5fb26a41063e71b8b321670c1e0a15ab6e7e8b55",
+        "tx": 18
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_70",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruWriteMsgs",
+        "fault_action": 70,
+        "result_sha256": "aa9f54a87aeeac40c238b6f5702b7ecd3d23e5cd1b2e3a016bd37ac63dde1137",
+        "tx": 19
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_70",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 70,
+        "result_sha256": "ec8c20243c37bb0afa8ffe9d1e49826780c0dafe1c38e7b2492ae51a0a0e41a2",
+        "tx": 19
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_71",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "fault_action": 71,
+        "result_sha256": "27c8267fb343ba085e74d8429b8968071a20101edc0dabfaabda70eba515e240",
+        "tx": 19
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_71",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 71,
+        "result_sha256": "ffb1ad0d89ac8b9ab12cc6c9cd58abc242590d6789c5b1a35abae4ae8af84dab",
+        "tx": 19
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_72",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "fault_action": 72,
+        "result_sha256": "917475d310e174890a7772df2d677742de06e74d1e8becdb5835cdf81f68ddac",
+        "tx": 19
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_72",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 72,
+        "result_sha256": "821e04a5615388337ef2f0ed4513767a97cbe0da6c80dfe9cf13abc8adbdb40b",
+        "tx": 19
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_73",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruWriteMsgs",
+        "fault_action": 73,
+        "result_sha256": "9ca45110ea11e6458bac0d6fd343f076214c76197866ffe02829862cd147fd0f",
+        "tx": 20
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_73",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 73,
+        "result_sha256": "3af4dc611d8f32328130fa9209f0caba79526eb85aead18cd01f2e83495375f2",
+        "tx": 20
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_74",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "fault_action": 74,
+        "result_sha256": "504c9ddd0994bf8457f2f369234eadff5fb351d78c420333a0d6a3f062896bd9",
+        "tx": 20
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_74",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 74,
+        "result_sha256": "92502df037507075e8e474bb01ba207c8bd7a4297e1073fbbe8410c156a10f9f",
+        "tx": 20
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_75",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "fault_action": 75,
+        "result_sha256": "32718d39af0cbb0ae2d43a1c26bd3197bd15bfbf77babb180dada72c90070ada",
+        "tx": 20
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_75",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 75,
+        "result_sha256": "9111f1347f7f3fcadb99649c62505c7cd1b76c63030a2ea3f426231b84446903",
+        "tx": 20
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_76",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruWriteMsgs",
+        "fault_action": 76,
+        "result_sha256": "7c4786fbd7b39399fd2026d076001213a95f0f82cd0cd4533fcbc79c218d359b",
+        "tx": 21
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_76",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 76,
+        "result_sha256": "4a238d2e393080813f2d8906785725deb09ffe643bea9b7ab2385467508b3e00",
+        "tx": 21
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_77",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "fault_action": 77,
+        "result_sha256": "7892dd70409c5e512fcf3764920f4369d37edb8f8f147c4eb4b1c83a455085a5",
+        "tx": 21
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_77",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 77,
+        "result_sha256": "d16173b54fd14696fb31199459df1eff6b334e22a514e809111dd9feada45788",
+        "tx": 21
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_78",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "fault_action": 78,
+        "result_sha256": "d0637b553bd3fef29c3808c8300567e2cf67421c6603e6053a2507354c22169a",
+        "tx": 21
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_78",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 78,
+        "result_sha256": "ed6d912c334542104635bb5483949511417034457ed8f5c94e989cac60f7a73f",
+        "tx": 21
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_79",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruWriteMsgs",
+        "fault_action": 79,
+        "result_sha256": "000e5a6f8b061075d843a3d3d888bbefaf2519e5a1217efa253489d93bca01c5",
+        "tx": 22
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_79",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 79,
+        "result_sha256": "3a56ac9f9b254c857c9c845546f1ad52ba80996166c0be9367d7951ee8656d1c",
+        "tx": 22
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_80",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "fault_action": 80,
+        "result_sha256": "92cd2979473be353a9bc2782d59258c185cbfa83dbe4fe7cd15f959d1e994626",
+        "tx": 22
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_80",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 80,
+        "result_sha256": "c936f9e0b5159e61340bfcae85a9c2d21d5371fcc225852bcff379427da377df",
+        "tx": 22
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_81",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "fault_action": 81,
+        "result_sha256": "c008cdbe65364067a8ac1997fa090985fa6cd44d16e66839972dcd7653416c52",
+        "tx": 22
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_81",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 81,
+        "result_sha256": "858c0e13eeca4384115054f19c3e30eba401b359fc5733015e08bcedf0cac672",
+        "tx": 22
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_82",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruWriteMsgs",
+        "fault_action": 82,
+        "result_sha256": "b6d8deeac608b37fc88231ef4b1b3713c6d392116079acef5498f2b4bbe4c0d5",
+        "tx": 23
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_82",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 82,
+        "result_sha256": "4dbee84354d917cfa920505e69e03f85bb94e29ac32565b93a433f03ed804786",
+        "tx": 23
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_83",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "fault_action": 83,
+        "result_sha256": "038bbeda1e92f8b3c8ab76d9409c75f58c34413b62175cbbf301ca55e2184a0e",
+        "tx": 23
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_83",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 83,
+        "result_sha256": "dd0a103610e873bc7a6edada8bf08921abd5602511aa8c0d2a04f87859acef4b",
+        "tx": 23
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_84",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "fault_action": 84,
+        "result_sha256": "2d2a93577fc84eeba11fcd3a22f824497785a598906a57adcfac8c37c267a0e3",
+        "tx": 23
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_84",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 84,
+        "result_sha256": "d7dac5f06cb2bc0708bb9b795c628862b2e7b1823c3e81417118205dfecc569b",
+        "tx": 23
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_85",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruStopMsgFilter",
+        "fault_action": 85,
+        "result_sha256": "47fee3d225c5e38beceb67316bee54601a244c4fbd6a246ae751619ce69f13b3",
+        "tx": 23
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_85",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 85,
+        "result_sha256": "720262605f34ea8ab0611a1059c1cbaa9e85f02462ec702f6212391f40f7ccee",
+        "tx": 23
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_86",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruIoctl",
+        "fault_action": 86,
+        "result_sha256": "e2ae0cb4d892cd60a77fa311574db2dd0dff1565588c517d30479e0dffdb40cc",
+        "tx": 23
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_86",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 86,
+        "result_sha256": "2b97ad85d9a56cc21f0d39a970414985b542b05a9db31ea5fb29e16346033dc3",
+        "tx": 23
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_87",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruStartMsgFilter",
+        "fault_action": 87,
+        "result_sha256": "4ef4d5d7bc90a16c4a8f55d3fb17b10aa1e8cb9c3bec77b4771f27d0192fb124",
+        "tx": 23
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_87",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 87,
+        "result_sha256": "0a766d3c9345b0e9dab582c2298accb0ad460c64481f2f01f47344849d8d9b11",
+        "tx": 23
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_88",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruWriteMsgs",
+        "fault_action": 88,
+        "result_sha256": "ba417771f1003442c1543a7c41941d349338928bacfdb6f5dca654f4bf034672",
+        "tx": 24
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_88",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 88,
+        "result_sha256": "a840aec21c58ec773623f65d10b89e8fa96a622ef48a7b6d960bddab5af64a37",
+        "tx": 24
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_89",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "fault_action": 89,
+        "result_sha256": "55172acd58199372164b9e85c6e8590b4f3c336d8415d687e8505ae61126b478",
+        "tx": 24
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_89",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 89,
+        "result_sha256": "1d36807e113bc1b98e35c15d3b9b3cdcba700b041a878a8bfcaea1d48dde29e3",
+        "tx": 24
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_90",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "fault_action": 90,
+        "result_sha256": "b16114a25438c72ed20227e2f62a2a5ec35d69e2e5851b4c95ee0eb35985429a",
+        "tx": 24
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_90",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 90,
+        "result_sha256": "ba7cd8715ad6148fe67d18d37437a508ff9ec86429380c633564ec9bb7de32b4",
+        "tx": 24
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_91",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [
+          "Fake status 16 at PassThruStopMsgFilter"
+        ],
+        "failure": null,
+        "fault_action": 91,
+        "result_sha256": "a346e190ec4f1443ba49f8784be639f8dd7dc08c6d87b420ae49cab7dcbd0a35",
+        "tx": 24
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_91",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [
+          "Cleanup output contract"
+        ],
+        "failure": null,
+        "fault_action": 91,
+        "result_sha256": "f7f87a8db19d62c5363a32db2a8da31d14ab04f60a5dbf003b82a9a0e5146849",
+        "tx": 24
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_92",
+      "detail": {
+        "cleanup_confirmed": false,
+        "cleanup_errors": [
+          "Fake status 16 at PassThruDisconnect"
+        ],
+        "failure": null,
+        "fault_action": 92,
+        "result_sha256": "b2699e799cee0a7edd43e22fb05533c9993e3e46ef999f7b309dcd235d13443e",
+        "tx": 24
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_92",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [
+          "Cleanup output contract"
+        ],
+        "failure": null,
+        "fault_action": 92,
+        "result_sha256": "93755a371f860b3fc1519b7e6c91d12d6e16933f496c1feabb250070231fb3b7",
+        "tx": 24
+      },
+      "pass": true
+    },
+    {
+      "case": "api_failure_93",
+      "detail": {
+        "cleanup_confirmed": false,
+        "cleanup_errors": [
+          "Fake status 16 at PassThruClose"
+        ],
+        "failure": null,
+        "fault_action": 93,
+        "result_sha256": "40cf8d0d57f0882bd5e0a2fa207fbb416891fb300c2693114aba04c204fce773",
+        "tx": 24
+      },
+      "pass": true
+    },
+    {
+      "case": "output_mismatch_93",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [
+          "Cleanup output contract"
+        ],
+        "failure": null,
+        "fault_action": 93,
+        "result_sha256": "b2dc3b66865300e8c08d1efff2fe7cc06058af9c086c16c06593583f1ae81c54",
+        "tx": 24
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_10",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 10,
+        "result_sha256": "852793f614de91e5dbb06071b5182697ca046a141a6c9e70b71ba4c9b556b3a5",
+        "tx": 1
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_11",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "One receive record",
+        "fault_action": 11,
+        "result_sha256": "c7cf9cccf496eb2c9da5daf873c95261cb5c1903a89853733459f551fd77a038",
+        "tx": 1
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_12",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "One receive record",
+        "fault_action": 12,
+        "result_sha256": "d4a4335e6a67f642b0245dec3b1d4a330b6d8cf0fa6f6cdba46f7c23d7c37297",
+        "tx": 1
+      },
+      "pass": true
+    },
+    {
+      "case": "bad_checksum_12",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Frame checksum",
+        "fault_action": 12,
+        "result_sha256": "f60a19769e73a291c705d0addb2fb974ca0bbfe08bd23c89937efb6289b2d00b",
+        "tx": 1
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_ack_12",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact expected reply",
+        "fault_action": 12,
+        "result_sha256": "17955967bb782ece7f151e6403370ca2b133473164ee736fc296984d2d2c15f6",
+        "tx": 1
+      },
+      "pass": true
+    },
+    {
+      "case": "truncated_12",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact frame length",
+        "fault_action": 12,
+        "result_sha256": "08caa8c1f1ca63c1d371c7fceb3b3d2af4d03b222f8c1bbccc31a578d01e6556",
+        "tx": 1
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_length_12",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact frame length",
+        "fault_action": 12,
+        "result_sha256": "1c5442b46c13a572bbb2cbf66b7f9526ffc870a4a809df3163ed85e5d30dc812",
+        "tx": 1
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_rx_status_12",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Unexpected receive status",
+        "fault_action": 12,
+        "result_sha256": "706d0461cfb057709f52dc5a66294c6a98be82b551df71f6ed44f0b1031054b8",
+        "tx": 1
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_protocol_12",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Receive protocol/flags",
+        "fault_action": 12,
+        "result_sha256": "ff82afc356868eb65b78132893659ef532540656c15d8712f2cd2aff35db22e6",
+        "tx": 1
+      },
+      "pass": true
+    },
+    {
+      "case": "trailing_bytes_12",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Bounded fixed reply",
+        "fault_action": 12,
+        "result_sha256": "b06b33c291a4d21b897a8cd50cea81dfa51eb83ce0208aa112ab0ee9d1ea5bc3",
+        "tx": 1
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_13",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 13,
+        "result_sha256": "62060020c768feaad2f0195d297e5c8f3a9fa30f81a81bb3748add1b0238a690",
+        "tx": 2
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_14",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "One receive record",
+        "fault_action": 14,
+        "result_sha256": "f09b3544395b39b284f23314b4ac5a6959518fd2e0d14a21ad93f77c9fd97c4e",
+        "tx": 2
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_15",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "One receive record",
+        "fault_action": 15,
+        "result_sha256": "e9f8a2d4b8c4a1ada08f2e3d2de408f6daa6a5efcce4803fa3785385d5a40485",
+        "tx": 2
+      },
+      "pass": true
+    },
+    {
+      "case": "bad_checksum_15",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Frame checksum",
+        "fault_action": 15,
+        "result_sha256": "1c93e1f25e506adfd089a323882ca07e17639bcfe4afedc0c32ee0a3021b13be",
+        "tx": 2
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_ack_15",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact expected reply",
+        "fault_action": 15,
+        "result_sha256": "6b97440bd36b110a36028fb303084d31ee2e96b3e6762f549779767ed8d19a5c",
+        "tx": 2
+      },
+      "pass": true
+    },
+    {
+      "case": "truncated_15",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact frame length",
+        "fault_action": 15,
+        "result_sha256": "57b78894746781f4e4c44df961bd25cbff367e5f7950bcb0e3f505a6cae0c433",
+        "tx": 2
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_length_15",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact frame length",
+        "fault_action": 15,
+        "result_sha256": "f07953451fbe0ac5f4e93cfb855af59d9da02101335f54bfb0c65c1e85537d20",
+        "tx": 2
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_rx_status_15",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Unexpected receive status",
+        "fault_action": 15,
+        "result_sha256": "2547218d1f24d26ddbdab62dd03af02d38c0528f8d4bdcbc8c4eba5e3c6c1596",
+        "tx": 2
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_protocol_15",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Receive protocol/flags",
+        "fault_action": 15,
+        "result_sha256": "93aee6d705b226b520af7f1725667629c5da1e9c4fd9415a981f4d02e54533f4",
+        "tx": 2
+      },
+      "pass": true
+    },
+    {
+      "case": "trailing_bytes_15",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Bounded fixed reply",
+        "fault_action": 15,
+        "result_sha256": "45cf4cc7dd8d6872b9069888cc3af2951289f3257af6df1b6173b7dc80e3ab70",
+        "tx": 2
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_16",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 16,
+        "result_sha256": "552e563d752e76a990d9e2ef23406a99d20e19057814aaac5562844bd2345420",
+        "tx": 3
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_17",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "One receive record",
+        "fault_action": 17,
+        "result_sha256": "b3bdbc3e8d01547429147cd2c83254581a4dd9bbdef21f6651544974c6988a5a",
+        "tx": 3
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_18",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "One receive record",
+        "fault_action": 18,
+        "result_sha256": "3fb3ea2d18ccbc830292d9ab1f84387de6d2464b3de6deaae623584c08eb69d0",
+        "tx": 3
+      },
+      "pass": true
+    },
+    {
+      "case": "bad_checksum_18",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Frame checksum",
+        "fault_action": 18,
+        "result_sha256": "c58f3438c4a3bf75f54daa69c36ec83210cad665b72609e9b9188c84fc9b9434",
+        "tx": 3
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_ack_18",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact expected reply",
+        "fault_action": 18,
+        "result_sha256": "8096093574c611807a1119b59468529e31d8582c43eecf846e32895402c04423",
+        "tx": 3
+      },
+      "pass": true
+    },
+    {
+      "case": "truncated_18",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact frame length",
+        "fault_action": 18,
+        "result_sha256": "518378e313da6d47aee52c1232095df99d078d4d92913327f76e435b1e052887",
+        "tx": 3
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_length_18",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact frame length",
+        "fault_action": 18,
+        "result_sha256": "9053bfe765b3aa823d64780948d0df0c77930c36824d1fabda5ae3dcf3ba0b1f",
+        "tx": 3
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_rx_status_18",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Unexpected receive status",
+        "fault_action": 18,
+        "result_sha256": "be73af8d7b42a211484910641424a62e18a1d115e5939e9c3633f100bad0726f",
+        "tx": 3
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_protocol_18",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Receive protocol/flags",
+        "fault_action": 18,
+        "result_sha256": "38f84aa0159bb38583518ffe169c657c6e5f64559e6d07c59af8e33f6e4616b1",
+        "tx": 3
+      },
+      "pass": true
+    },
+    {
+      "case": "trailing_bytes_18",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Bounded fixed reply",
+        "fault_action": 18,
+        "result_sha256": "da40d87e769b080f5c2ea56df29d96f22ecada94a6ce2e0f7a1fd37c4696fd51",
+        "tx": 3
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_19",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 19,
+        "result_sha256": "b156dcfa10482b6c0f96b2518d2fff2169e849e8cb253f2515828a3f5793652d",
+        "tx": 4
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_20",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "One receive record",
+        "fault_action": 20,
+        "result_sha256": "dead61e5a1cdb9acf413cb361b64bf346fa905b7b5e0b8c73e72c60a2e0e8e7b",
+        "tx": 4
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_21",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "One receive record",
+        "fault_action": 21,
+        "result_sha256": "e82549d5f4918889cc6f8089d75a79b1140a098b0bb4ad7692d67a3896437a36",
+        "tx": 4
+      },
+      "pass": true
+    },
+    {
+      "case": "bad_checksum_21",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Frame checksum",
+        "fault_action": 21,
+        "result_sha256": "4d5f62164d9d412edca0e6de42f2c5ed940ecd19e4a3378696960f79586b9f4f",
+        "tx": 4
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_ack_21",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact expected reply",
+        "fault_action": 21,
+        "result_sha256": "c1f81827e732c3a7f861fff3dd3defaf8aa157f9054e858e2b32a352d7b53e84",
+        "tx": 4
+      },
+      "pass": true
+    },
+    {
+      "case": "truncated_21",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact frame length",
+        "fault_action": 21,
+        "result_sha256": "400723b6129b16eb7abcdfb4196029744e7d6d82c9cb0264bf70c1236c6caf71",
+        "tx": 4
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_length_21",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact frame length",
+        "fault_action": 21,
+        "result_sha256": "691e04537f6bca5335e253d92660680258b27df596a02519418f2801ae3a0abd",
+        "tx": 4
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_rx_status_21",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Unexpected receive status",
+        "fault_action": 21,
+        "result_sha256": "8e395bb588623d6401a91dc972f621048f9b9e8e05d29bceaa5e018e9973a907",
+        "tx": 4
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_protocol_21",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Receive protocol/flags",
+        "fault_action": 21,
+        "result_sha256": "72acca96d7fd10e76dde8ea84cfa71d526b79b860d60584c33b3b9af1d670465",
+        "tx": 4
+      },
+      "pass": true
+    },
+    {
+      "case": "trailing_bytes_21",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Bounded fixed reply",
+        "fault_action": 21,
+        "result_sha256": "8e49168289cc2a605dd174161b8c5e35254a98543e5afdf33ddf7925f13823ed",
+        "tx": 4
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_22",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 22,
+        "result_sha256": "37407c4f6d33c211802454ef5558c18461733600a72da8efeaab78f0423ef9ea",
+        "tx": 5
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_23",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "One receive record",
+        "fault_action": 23,
+        "result_sha256": "17986e60b370f03ece7cc2310256e18474bf979f6b4446362a273bc4db2313d0",
+        "tx": 5
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_24",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "One receive record",
+        "fault_action": 24,
+        "result_sha256": "c22190aea4cf324e83207c24009da3b2e2de2a7af4dc416a413efb1cc316d378",
+        "tx": 5
+      },
+      "pass": true
+    },
+    {
+      "case": "bad_checksum_24",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Frame checksum",
+        "fault_action": 24,
+        "result_sha256": "ed56006ae9eeac91992f80c3c08f278c687e45927ad41a2aff0c583fc4276cc3",
+        "tx": 5
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_ack_24",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact expected reply",
+        "fault_action": 24,
+        "result_sha256": "e4581c4eb6ddec8c5bcc4fb2470c2ba88b7c24bde990fcc955479a67ad546f81",
+        "tx": 5
+      },
+      "pass": true
+    },
+    {
+      "case": "truncated_24",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact frame length",
+        "fault_action": 24,
+        "result_sha256": "43263a291bc6e3f08fe0966ce596b04531cf325a92f854244f49c17f8cfd20c0",
+        "tx": 5
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_length_24",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact frame length",
+        "fault_action": 24,
+        "result_sha256": "3ba9fcc0a303594626541e1d24b16f3500d97036febb8610e167fd7ad4eb2744",
+        "tx": 5
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_rx_status_24",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Unexpected receive status",
+        "fault_action": 24,
+        "result_sha256": "313861083307ff106121db53284c2093e77876104eeda1518ce5b3d58ffa6816",
+        "tx": 5
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_protocol_24",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Receive protocol/flags",
+        "fault_action": 24,
+        "result_sha256": "62fc3186fb5e66637a6907cd2f1f6ca241c32ad3258d16b4504fc99806eed021",
+        "tx": 5
+      },
+      "pass": true
+    },
+    {
+      "case": "trailing_bytes_24",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Bounded fixed reply",
+        "fault_action": 24,
+        "result_sha256": "6bfdeee3c2f551eaa04c523e2945f7cec42743bba2d55565fb2079e00b9a9ec0",
+        "tx": 5
+      },
+      "pass": true
+    },
+    {
+      "case": "short_wait_25",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 25,
+        "result_sha256": "e6359b4b1a323c71715f511e3512007296f009b013666409ad3a594bce275cab",
+        "tx": 5
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_26",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 26,
+        "result_sha256": "08a5b42543091c5a6de75709142a9dee9a41bc4aa93bc68dbcbbb9c032d27534",
+        "tx": 6
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_27",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "One receive record",
+        "fault_action": 27,
+        "result_sha256": "e0f09de07dc3715a07aad3158ee60324eb74f97353cf74366b8654f6e8080a34",
+        "tx": 6
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_28",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "One receive record",
+        "fault_action": 28,
+        "result_sha256": "3dd07890a6cb6c15a6d5059c5daa47888d690c709781162ddc09c25a7326c49b",
+        "tx": 6
+      },
+      "pass": true
+    },
+    {
+      "case": "bad_checksum_28",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Frame checksum",
+        "fault_action": 28,
+        "result_sha256": "97f32680b200c105806a4709e08b5f29fa13cdd99dc32021c201062a6eafc9f6",
+        "tx": 6
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_ack_28",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact expected reply",
+        "fault_action": 28,
+        "result_sha256": "dbabcc2a15d7fa739665126c4025013f6a0d2d7ce2553b6b3b164fab4f786051",
+        "tx": 6
+      },
+      "pass": true
+    },
+    {
+      "case": "truncated_28",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact frame length",
+        "fault_action": 28,
+        "result_sha256": "2734a3460b3a44563fb298e6ce0175980feefd5e7f2bf3c260eb66a2ce980c70",
+        "tx": 6
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_length_28",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact frame length",
+        "fault_action": 28,
+        "result_sha256": "fa259d9957775f60fb346def94fa32421e389e3832ae0acf3b90855397f3c8db",
+        "tx": 6
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_rx_status_28",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Unexpected receive status",
+        "fault_action": 28,
+        "result_sha256": "83c4f40189fd72be74b4b04da2f36fb3ed4dbf1317ef3125619d4ba5c20e4749",
+        "tx": 6
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_protocol_28",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Receive protocol/flags",
+        "fault_action": 28,
+        "result_sha256": "6d73b635135090f81a03f5a279a11ee069c3abb6de006063b853c59dfb12484c",
+        "tx": 6
+      },
+      "pass": true
+    },
+    {
+      "case": "trailing_bytes_28",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Bounded fixed reply",
+        "fault_action": 28,
+        "result_sha256": "63f436a7b24ec2c210cbfe7aa3fc14a7006985a4b32161823a77f6aeb8eb24f5",
+        "tx": 6
+      },
+      "pass": true
+    },
+    {
+      "case": "short_wait_29",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 29,
+        "result_sha256": "85bb92c1f62b0daab04d96ce369ed80840553dc35d4319edd563ed1e8bb13f20",
+        "tx": 6
+      },
+      "pass": true
+    },
+    {
+      "case": "short_wait_33",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 33,
+        "result_sha256": "8247837f1a339a25ba7e300577f201c686e7be618d74224bda05f7a8fa2418cb",
+        "tx": 6
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_34",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 34,
+        "result_sha256": "a1ac45dade78dbbfe2e2a98cd85a170043d68e520ec116c43c10cdaa1972a060",
+        "tx": 7
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_35",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "One receive record",
+        "fault_action": 35,
+        "result_sha256": "a6ffc7ff5a35ccd4da17273a96565e79931a85802148a71055ac9c8a07cdfa06",
+        "tx": 7
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_36",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "One receive record",
+        "fault_action": 36,
+        "result_sha256": "86c21fa0ac0feb4cd6cedf60fe83b595f04d78f7e62a09388e3471b0be5ac5ab",
+        "tx": 7
+      },
+      "pass": true
+    },
+    {
+      "case": "bad_checksum_36",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Frame checksum",
+        "fault_action": 36,
+        "result_sha256": "c79a9db4bddc09f4b7fded390a4add77d73c0109cfef375b725ecf0d6f32b7e0",
+        "tx": 7
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_ack_36",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact expected reply",
+        "fault_action": 36,
+        "result_sha256": "130d69c0cb436cb275c22551a32f81d517f67ebed78ba7d86b9601ea036dee85",
+        "tx": 7
+      },
+      "pass": true
+    },
+    {
+      "case": "truncated_36",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact frame length",
+        "fault_action": 36,
+        "result_sha256": "cc7d8b608585e958b5e47d1e74e9bc86d3758ea000ae1a8d567805a729dcb410",
+        "tx": 7
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_length_36",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact frame length",
+        "fault_action": 36,
+        "result_sha256": "9a39126659ca2734847dd45d45332bfccbec70f34eddaf292d5fc65b2d4cdf74",
+        "tx": 7
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_rx_status_36",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Unexpected receive status",
+        "fault_action": 36,
+        "result_sha256": "f60d71b02cfe0f39c14cf50d3319a8a0ea84ad98d62784753a306c584e9dd422",
+        "tx": 7
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_protocol_36",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Receive protocol/flags",
+        "fault_action": 36,
+        "result_sha256": "3f2583524385586f7f59897aa1c83e4abbbdaec8f159cb0312f3486d82a82286",
+        "tx": 7
+      },
+      "pass": true
+    },
+    {
+      "case": "trailing_bytes_36",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Bounded fixed reply",
+        "fault_action": 36,
+        "result_sha256": "2979a690639d2cc336425f53088b3319730e58d1305e6622b1ded39d370af78f",
+        "tx": 7
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_37",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 37,
+        "result_sha256": "938e07d597fd560c06041c822d3cf60cf176907eae3a1e666ead61d4b1e6b3b6",
+        "tx": 8
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_38",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "One receive record",
+        "fault_action": 38,
+        "result_sha256": "f67b10767df73583081d95c0be7d85bf22ce6c40984353a6477c26097947e8e8",
+        "tx": 8
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_39",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "One receive record",
+        "fault_action": 39,
+        "result_sha256": "b10cdd16101b2b234f6635887cef42a270cc5bdf4386de1632d42d4233520964",
+        "tx": 8
+      },
+      "pass": true
+    },
+    {
+      "case": "bad_checksum_39",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Frame checksum",
+        "fault_action": 39,
+        "result_sha256": "0444d7aaedd5e5c925adf0331b4f7f4634cc09d212ce959164b16161dedfe529",
+        "tx": 8
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_ack_39",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact expected reply",
+        "fault_action": 39,
+        "result_sha256": "61ad9a67f3bcc7eee23f20cc95d76844341f4e854ed0c909a220336831073f9d",
+        "tx": 8
+      },
+      "pass": true
+    },
+    {
+      "case": "truncated_39",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Frame minimum length",
+        "fault_action": 39,
+        "result_sha256": "b8428f256112c3ae745b9405792cfd2fe866cfcea9594ad47e4af13ce75f20f2",
+        "tx": 8
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_length_39",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact frame length",
+        "fault_action": 39,
+        "result_sha256": "781ef4ad6183393f75f2090dee514176b47f8b1fbc80a9b84edc0aaa650263ce",
+        "tx": 8
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_rx_status_39",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Unexpected receive status",
+        "fault_action": 39,
+        "result_sha256": "c364854e8fc30a52b82910ec4f1d1e3dcd3a758054c1d316ea64287f55207940",
+        "tx": 8
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_protocol_39",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Receive protocol/flags",
+        "fault_action": 39,
+        "result_sha256": "91eb2b08aafef5dcabef45e9d338c30e1a6369ec083637d97cc79bdea098eace",
+        "tx": 8
+      },
+      "pass": true
+    },
+    {
+      "case": "trailing_bytes_39",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Bounded fixed reply",
+        "fault_action": 39,
+        "result_sha256": "e336ee3715657bb606c87d7980a040ca549c657c9eb80bee67fbf6e1a5185667",
+        "tx": 8
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_40",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 40,
+        "result_sha256": "a3851decad6c53c6371a2980897a52ed267c5d94b4b2aa78d2886a8caa28faa7",
+        "tx": 9
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_41",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "One receive record",
+        "fault_action": 41,
+        "result_sha256": "ac7f801a58c4e89906c3514ba7329418cdee4619da3fc1b2c9e5c6f0f2b4469d",
+        "tx": 9
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_42",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "One receive record",
+        "fault_action": 42,
+        "result_sha256": "88de8e6a8a29df99339b238b672050337e9c9465351f547b7c4f928197a7b5e5",
+        "tx": 9
+      },
+      "pass": true
+    },
+    {
+      "case": "bad_checksum_42",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Frame checksum",
+        "fault_action": 42,
+        "result_sha256": "89467ef7bdd6b21d75d1de47c6e59608c211024c5ef2dfb550b36aea6140057c",
+        "tx": 9
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_ack_42",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact expected reply",
+        "fault_action": 42,
+        "result_sha256": "b3ad3c411c8f34371e90a9ab61e9be3ceaab1c1d1fb76e72a3156f662bb92934",
+        "tx": 9
+      },
+      "pass": true
+    },
+    {
+      "case": "truncated_42",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Frame minimum length",
+        "fault_action": 42,
+        "result_sha256": "264f5f11ea1f55bd342cc2086e9c132dcf1d928c8d934a9afa619239281b1a65",
+        "tx": 9
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_length_42",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact frame length",
+        "fault_action": 42,
+        "result_sha256": "360d336896c210b222588c2be0d3e6265d63293c77b8b98c742188b3f63d8727",
+        "tx": 9
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_rx_status_42",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Unexpected receive status",
+        "fault_action": 42,
+        "result_sha256": "bcf6be165ade16bc043b58fac9e92bf0edb9236ff3e5a6735ebe096f4f874730",
+        "tx": 9
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_protocol_42",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Receive protocol/flags",
+        "fault_action": 42,
+        "result_sha256": "0d97749e5c97f633ad2153eb5a3135adfb17791981741700a4942e4d9a84e15a",
+        "tx": 9
+      },
+      "pass": true
+    },
+    {
+      "case": "trailing_bytes_42",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Bounded fixed reply",
+        "fault_action": 42,
+        "result_sha256": "57a921c99138038defc1f8ce1d21c0ece7fbc69ba52eefb3456eae48ca2daf8a",
+        "tx": 9
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_43",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 43,
+        "result_sha256": "c353f88486402df556c6804213b05a3f4dfa25679ffe269513603ff6b204333c",
+        "tx": 10
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_44",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "One receive record",
+        "fault_action": 44,
+        "result_sha256": "ad2547daa7ec276c77ffcf3d05b759f7541d28bbb468712d62a761ecba098f88",
+        "tx": 10
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_45",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "One receive record",
+        "fault_action": 45,
+        "result_sha256": "8b25797e1b991d9283fd1f3a2cc4724ab90e7f34e28234f46bcab7534b877c0b",
+        "tx": 10
+      },
+      "pass": true
+    },
+    {
+      "case": "bad_checksum_45",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Frame checksum",
+        "fault_action": 45,
+        "result_sha256": "83513f8cfbfab47f1f67c74466dbf32f01323214fe75d99be60e63323b60d190",
+        "tx": 10
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_ack_45",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact expected reply",
+        "fault_action": 45,
+        "result_sha256": "95bbde4a9c4bee827554e8c20cc0c63be16f5f9ba3b9889f721cbb95aa90e33e",
+        "tx": 10
+      },
+      "pass": true
+    },
+    {
+      "case": "truncated_45",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Frame minimum length",
+        "fault_action": 45,
+        "result_sha256": "b8dbd78007ebc3e97d659a0c59f29dfa0ea4e5b80f0c3e0b563a6fd42bcfcbdc",
+        "tx": 10
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_length_45",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact frame length",
+        "fault_action": 45,
+        "result_sha256": "4798e70320e7a7b770651b2d16c1f91a1e167853b96c5f8b7a2b37bead03b340",
+        "tx": 10
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_rx_status_45",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Unexpected receive status",
+        "fault_action": 45,
+        "result_sha256": "b9a18759d376a716fe0849b65ff6706943ab9cb84c897a33da7aa7f5797b6517",
+        "tx": 10
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_protocol_45",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Receive protocol/flags",
+        "fault_action": 45,
+        "result_sha256": "ccfdc885b2c57cb322bd63e456cd6eb0e34d3cc8fb569d9d615896a6b0375f7a",
+        "tx": 10
+      },
+      "pass": true
+    },
+    {
+      "case": "trailing_bytes_45",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Bounded fixed reply",
+        "fault_action": 45,
+        "result_sha256": "cdcb724c569ecae8025d2d9f88a99ad87638748db416bc7bbf0fa5a2aeb3106b",
+        "tx": 10
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_46",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 46,
+        "result_sha256": "13b5f52970a9d3ffb19d97cec73037db2088c84865c2d843294a1d031e38b42b",
+        "tx": 11
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_47",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "One receive record",
+        "fault_action": 47,
+        "result_sha256": "3968c438c2f1512fbd3abafa8c04d5fbd3b590684dafac236267a3d4d0e5dc10",
+        "tx": 11
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_48",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "One receive record",
+        "fault_action": 48,
+        "result_sha256": "e9a4c4745f49b2f81b7e4d5b04620e34d99c88212182f138be118bfc0bb0d57e",
+        "tx": 11
+      },
+      "pass": true
+    },
+    {
+      "case": "bad_checksum_48",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Frame checksum",
+        "fault_action": 48,
+        "result_sha256": "2c3534fc7ffca148fb555cc5164ebf585edc03d492337dc49bb7d818b5cea90c",
+        "tx": 11
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_ack_48",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact expected reply",
+        "fault_action": 48,
+        "result_sha256": "73eb2781569c1efd3f0b0de552446c69e91f443a95e435b08ed579a5de7d698e",
+        "tx": 11
+      },
+      "pass": true
+    },
+    {
+      "case": "truncated_48",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Frame minimum length",
+        "fault_action": 48,
+        "result_sha256": "b3b5cb5fb2d98b4f350354bf758161ecd504724b75ef920b96a4be98a74b0559",
+        "tx": 11
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_length_48",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact frame length",
+        "fault_action": 48,
+        "result_sha256": "a3c62ce34c041e3b7c2389c933dd63c8a71b892d4268316fd3083053569c889f",
+        "tx": 11
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_rx_status_48",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Unexpected receive status",
+        "fault_action": 48,
+        "result_sha256": "298d89784b1157504d62d7b182fe0cefe3a444bb0cd3b118dfe5274c7d52bf24",
+        "tx": 11
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_protocol_48",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Receive protocol/flags",
+        "fault_action": 48,
+        "result_sha256": "d0e89794787cdab6181836b2e85519bbb9eb57f9648a473ab9d438a8fef37cd8",
+        "tx": 11
+      },
+      "pass": true
+    },
+    {
+      "case": "trailing_bytes_48",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Bounded fixed reply",
+        "fault_action": 48,
+        "result_sha256": "aebe88ad085190d2579ac7d8432ccb4bff3afb2d169f50f123cb8cea9b0825aa",
+        "tx": 11
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_49",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 49,
+        "result_sha256": "f5c2de2cab04df287e6f29127a500251aa48ef08fc8ed84013a0c6c31d7b23d9",
+        "tx": 12
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_50",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "One receive record",
+        "fault_action": 50,
+        "result_sha256": "f3ace3017b76bee7fc0a909d0f0c568951ab615934772bb8b7a9409a2e41dc0e",
+        "tx": 12
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_51",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "One receive record",
+        "fault_action": 51,
+        "result_sha256": "1d6cb84bfc8586805d60898fff9c9b2a50353ea9023f97406c187972b1056cac",
+        "tx": 12
+      },
+      "pass": true
+    },
+    {
+      "case": "bad_checksum_51",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Frame checksum",
+        "fault_action": 51,
+        "result_sha256": "1033726961dc8fb4419f314f31bb9546631de76bc79c2bf507855055cc75d710",
+        "tx": 12
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_ack_51",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact expected reply",
+        "fault_action": 51,
+        "result_sha256": "23651c5505c645eabffbbaf4932127138c4f347a824b5e819346ec7c7e4ed63a",
+        "tx": 12
+      },
+      "pass": true
+    },
+    {
+      "case": "truncated_51",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Frame minimum length",
+        "fault_action": 51,
+        "result_sha256": "1a3ce3716eae6c837e57d72568638d058dde265fb33c163bf7f2470a0943206c",
+        "tx": 12
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_length_51",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact frame length",
+        "fault_action": 51,
+        "result_sha256": "51b4dad3141196088388afe33ca28e39c8f5a64cb45ca5dd66785fdce49ec682",
+        "tx": 12
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_rx_status_51",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Unexpected receive status",
+        "fault_action": 51,
+        "result_sha256": "48d501273259692eeaefe49d50c6cc98cf1e4759a1645cf0825fde351894c757",
+        "tx": 12
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_protocol_51",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Receive protocol/flags",
+        "fault_action": 51,
+        "result_sha256": "5b05527c080704db470f3a95d137a2ed78cca6f5ea739b240e28274d669f4f64",
+        "tx": 12
+      },
+      "pass": true
+    },
+    {
+      "case": "trailing_bytes_51",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Bounded fixed reply",
+        "fault_action": 51,
+        "result_sha256": "3fa9e4596c5c80697c4001fa40e9d828dfccf0efc154d8068640c87491902ce4",
+        "tx": 12
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_52",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 52,
+        "result_sha256": "424eb0d63abe41c9c39677a2ae6794c94232464728832e95701afa20c329863d",
+        "tx": 13
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_53",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "One receive record",
+        "fault_action": 53,
+        "result_sha256": "0ca954e5a2440d2526cbee73ada4bb7be11a5e79935e3cac0c19ca8de8e4b2b6",
+        "tx": 13
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_54",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "One receive record",
+        "fault_action": 54,
+        "result_sha256": "2a385fee6df58e94ef233e6b8ea676c1d941df847c7d87662bed1f13e4dc49fd",
+        "tx": 13
+      },
+      "pass": true
+    },
+    {
+      "case": "bad_checksum_54",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Frame checksum",
+        "fault_action": 54,
+        "result_sha256": "21cff97c39eb573e37cfde4c3378ce87daaacdc594f3f6363f7d6a97ffaca420",
+        "tx": 13
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_ack_54",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact expected reply",
+        "fault_action": 54,
+        "result_sha256": "f64fa728f18ef468b7231752615fb02f07d035627e2b8ae9c7866483096b552e",
+        "tx": 13
+      },
+      "pass": true
+    },
+    {
+      "case": "truncated_54",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Frame minimum length",
+        "fault_action": 54,
+        "result_sha256": "982d0554c497978f4dcb7a7926181b80e6cc25219974e71b594ad529c18fc1e9",
+        "tx": 13
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_length_54",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact frame length",
+        "fault_action": 54,
+        "result_sha256": "f909758f7ecb73868ac1128a26f750727f35f35d40dc2c048dae1f9b84e58e54",
+        "tx": 13
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_rx_status_54",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Unexpected receive status",
+        "fault_action": 54,
+        "result_sha256": "ef422004b441ff41ec5e98f193ad9bfa68d787df620d89df5c754be3034b5b59",
+        "tx": 13
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_protocol_54",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Receive protocol/flags",
+        "fault_action": 54,
+        "result_sha256": "47bb5f9b788500e2627abb535e40c6548dbb2d517661e01042ed0bd54c584c1d",
+        "tx": 13
+      },
+      "pass": true
+    },
+    {
+      "case": "trailing_bytes_54",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Bounded fixed reply",
+        "fault_action": 54,
+        "result_sha256": "9cc5b5a9c6b873229f42f3aea0c05a17d09ca619374ab46beb9fe7106f61bb64",
+        "tx": 13
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_55",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 55,
+        "result_sha256": "f7e82dbacd26306758e183d1a32cda2a8a5647a170f25fab7a15d517a0298e5b",
+        "tx": 14
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_56",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "One receive record",
+        "fault_action": 56,
+        "result_sha256": "cc472a57ec716a6c6a6824f63f9ec2bcee5a8cbf2cc4d97aad0ba2000f6a813c",
+        "tx": 14
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_57",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "One receive record",
+        "fault_action": 57,
+        "result_sha256": "d0a8190c11940241f82cc6b4fcb9f346ff9b9cd2fad8613a5efa68c253393802",
+        "tx": 14
+      },
+      "pass": true
+    },
+    {
+      "case": "bad_checksum_57",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Frame checksum",
+        "fault_action": 57,
+        "result_sha256": "134e825ec4296c3b4067e6a0a33f36e38ca0b0fd075b40cfec24f1d84eac6c23",
+        "tx": 14
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_ack_57",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact expected reply",
+        "fault_action": 57,
+        "result_sha256": "36b0e0995cc71ce41dbd33d97c4003322670027062ea8ffa1bdd4f84f1c59e8e",
+        "tx": 14
+      },
+      "pass": true
+    },
+    {
+      "case": "truncated_57",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Frame minimum length",
+        "fault_action": 57,
+        "result_sha256": "92141f59dc48b7f97ccd5e51cfcc5d2b5252a96c3d773e143a08e77bce8ea3ec",
+        "tx": 14
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_length_57",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact frame length",
+        "fault_action": 57,
+        "result_sha256": "6fa3682754cb91184abc615ef4438dfb13c662a1a3a70121330b3d6169c71e32",
+        "tx": 14
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_rx_status_57",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Unexpected receive status",
+        "fault_action": 57,
+        "result_sha256": "f62483196ecd444ba2ea61c255add5cd5847d3545b79179494e78e159effe28d",
+        "tx": 14
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_protocol_57",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Receive protocol/flags",
+        "fault_action": 57,
+        "result_sha256": "24c1d1fe73ec52c730f156fa833b283027145e2986986171f3bd4b3a7d07f470",
+        "tx": 14
+      },
+      "pass": true
+    },
+    {
+      "case": "trailing_bytes_57",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Bounded fixed reply",
+        "fault_action": 57,
+        "result_sha256": "d8a80383a8f3bcbdbb4dffe268ba285e469c3683b142f014f0d9c884b7868ceb",
+        "tx": 14
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_58",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 58,
+        "result_sha256": "6d248f958ed8446189001e0fd4df38692912e3c331301833049d5bd24ebaad30",
+        "tx": 15
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_59",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "One receive record",
+        "fault_action": 59,
+        "result_sha256": "c1cbc0295eec284c05c25329127c32f1a433287b8d1294c392d16ca65afa67a4",
+        "tx": 15
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_60",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "One receive record",
+        "fault_action": 60,
+        "result_sha256": "b37c20a6ffd487bcd2cb479fd2ec8e3d762ae180ade8b3da6e1323d31d149a2c",
+        "tx": 15
+      },
+      "pass": true
+    },
+    {
+      "case": "bad_checksum_60",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Frame checksum",
+        "fault_action": 60,
+        "result_sha256": "c7ceeb331448e839e45ecb29627934af61bfb1cc199b69fcfc364802db3a6454",
+        "tx": 15
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_ack_60",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact expected reply",
+        "fault_action": 60,
+        "result_sha256": "692f51e8ac29b30e7e37f8c445f09b9bc5fccf60e038b99207bd15b99c888bf4",
+        "tx": 15
+      },
+      "pass": true
+    },
+    {
+      "case": "truncated_60",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Frame minimum length",
+        "fault_action": 60,
+        "result_sha256": "fb01f9657c78ae54ae81b3cffc406ee17d3ad7c4f9cefd7b2cd2bca69689df70",
+        "tx": 15
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_length_60",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact frame length",
+        "fault_action": 60,
+        "result_sha256": "acbf7cc5e86c89247bd58cee1874a577e02f62fdaf30bfdf8163eedf8390c8c3",
+        "tx": 15
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_rx_status_60",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Unexpected receive status",
+        "fault_action": 60,
+        "result_sha256": "a981bec173d77d24225eb9a300c30b66471a8e3110e3e7f4da2be55347ce6b33",
+        "tx": 15
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_protocol_60",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Receive protocol/flags",
+        "fault_action": 60,
+        "result_sha256": "3122c0426d09a1b4876a199ce468da7556545d61850803a58393f1d0105ea3cf",
+        "tx": 15
+      },
+      "pass": true
+    },
+    {
+      "case": "trailing_bytes_60",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Bounded fixed reply",
+        "fault_action": 60,
+        "result_sha256": "15d7d1c1b77000cb4ae8e1621b9832afb8e84e01f8092f3a8e1c679b353c4eda",
+        "tx": 15
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_61",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 61,
+        "result_sha256": "e2e3737e7d0466f723a59825a3d43be9ff5856cf6c3a045f7951b40244883c8d",
+        "tx": 16
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_62",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "One receive record",
+        "fault_action": 62,
+        "result_sha256": "278627213097dfddb1699de7e2346977a2ac55ac39e28a99f8ca5af8d79485e0",
+        "tx": 16
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_63",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "One receive record",
+        "fault_action": 63,
+        "result_sha256": "5018fdef890a34b616823828e325334d2e647a4f9bd6810599e084e1fa72104d",
+        "tx": 16
+      },
+      "pass": true
+    },
+    {
+      "case": "bad_checksum_63",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Frame checksum",
+        "fault_action": 63,
+        "result_sha256": "2c79721fb20713bab35b36bf6441e79a8f77d5f73714b8722194586aa88e88ce",
+        "tx": 16
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_ack_63",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact expected reply",
+        "fault_action": 63,
+        "result_sha256": "d5213c66b803ba9343021e09d6f557271a42c35e50e688b9965a3820db6a8818",
+        "tx": 16
+      },
+      "pass": true
+    },
+    {
+      "case": "truncated_63",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Frame minimum length",
+        "fault_action": 63,
+        "result_sha256": "819f081ee33d62bf36a6e7cd7da12632cf60ac96da74bb7d595d95e3f52f87ef",
+        "tx": 16
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_length_63",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact frame length",
+        "fault_action": 63,
+        "result_sha256": "052378386bad67c729a062cc7b961468d6793177b8dfea1ddba16324046d0842",
+        "tx": 16
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_rx_status_63",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Unexpected receive status",
+        "fault_action": 63,
+        "result_sha256": "3e8c3155393760362e0a39aca6531514d2045e8a8278990ba22ce7a3f1481e85",
+        "tx": 16
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_protocol_63",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Receive protocol/flags",
+        "fault_action": 63,
+        "result_sha256": "692c9420e7b769a31c9eeb9097477078e013a865f8d1e71381d505c318681e13",
+        "tx": 16
+      },
+      "pass": true
+    },
+    {
+      "case": "trailing_bytes_63",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Bounded fixed reply",
+        "fault_action": 63,
+        "result_sha256": "6f88bbf1839cf5badd191ce3077d3c316a5e7daf1247514b9246d0c290ab8cd3",
+        "tx": 16
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_64",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 64,
+        "result_sha256": "050a94e1fe09d740a6e64c3d5a7f3ba5fd83c7e70e034ba49e77b27e2f8b58d2",
+        "tx": 17
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_65",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "One receive record",
+        "fault_action": 65,
+        "result_sha256": "e50f221acf074daa43687e7e3dbc8fb59878e412acbfc53275725e36e6ab5e2f",
+        "tx": 17
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_66",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "One receive record",
+        "fault_action": 66,
+        "result_sha256": "b2a2060a28f1bc2f48363e389af70527713e8a6592ccaca6e86bdc5d0c47bc9f",
+        "tx": 17
+      },
+      "pass": true
+    },
+    {
+      "case": "bad_checksum_66",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Frame checksum",
+        "fault_action": 66,
+        "result_sha256": "cc1aaf750bf7ffd569cbd2854b795f2ae8f934d8461d72cca27c0179d7154710",
+        "tx": 17
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_ack_66",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact expected reply",
+        "fault_action": 66,
+        "result_sha256": "da05c15c945255036beaa589857ca77f3d89c8b41c23dba2caca51d6ca3d647e",
+        "tx": 17
+      },
+      "pass": true
+    },
+    {
+      "case": "truncated_66",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Frame minimum length",
+        "fault_action": 66,
+        "result_sha256": "d895198760c9a7f52ccb02df56f8e43524b756fc8b0e920d43bb3ac25f22f959",
+        "tx": 17
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_length_66",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact frame length",
+        "fault_action": 66,
+        "result_sha256": "e4ef873cb650a045f43cea1ac56a53c2348cd9baa1223787ef7a1c1e144f3bb4",
+        "tx": 17
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_rx_status_66",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Unexpected receive status",
+        "fault_action": 66,
+        "result_sha256": "e6e6c1bb570055c0706d1c3ddf72bc9de2c684380e8abd12dccaeef8fce002b9",
+        "tx": 17
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_protocol_66",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Receive protocol/flags",
+        "fault_action": 66,
+        "result_sha256": "4d7917e3f09d76b6ef6a8f10f5d086977dade25dab1791c4bfecd4b7dabc4fd7",
+        "tx": 17
+      },
+      "pass": true
+    },
+    {
+      "case": "trailing_bytes_66",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Bounded fixed reply",
+        "fault_action": 66,
+        "result_sha256": "24b326383fa975e5fc58569964906dd52ac65389cdf9ef187b0ce96405b822cc",
+        "tx": 17
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_67",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 67,
+        "result_sha256": "189a72cac7bdf51fe5af34d228d0a19d0242a713535c44cab380b50d49fbaaaf",
+        "tx": 18
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_68",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "One receive record",
+        "fault_action": 68,
+        "result_sha256": "dd2422c5e6be8d60fe95404af231eeec5a4a3fb4709d5c0271b2ca2ee222606d",
+        "tx": 18
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_69",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "One receive record",
+        "fault_action": 69,
+        "result_sha256": "ea33f4bdd718594ff1504bdc00f2001f60737ceffe1a9228c77b11d4839d3a05",
+        "tx": 18
+      },
+      "pass": true
+    },
+    {
+      "case": "bad_checksum_69",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Frame checksum",
+        "fault_action": 69,
+        "result_sha256": "2db1505370adaba32f09c4298082f31285bff2693c252557798afb29011b61e6",
+        "tx": 18
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_ack_69",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact expected reply",
+        "fault_action": 69,
+        "result_sha256": "d4193a34028235407c49d4517ede8ef49f44bea4e5551c9497243b584f68d62f",
+        "tx": 18
+      },
+      "pass": true
+    },
+    {
+      "case": "truncated_69",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Frame minimum length",
+        "fault_action": 69,
+        "result_sha256": "07dc3ad0a4b29a4fc0f5a812e2b378963bdc2ccff40910872962b69135213e5f",
+        "tx": 18
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_length_69",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact frame length",
+        "fault_action": 69,
+        "result_sha256": "9c5193dc311dc159a969a40158427ad9180984c7a8f540107e295f69bffa6a8b",
+        "tx": 18
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_rx_status_69",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Unexpected receive status",
+        "fault_action": 69,
+        "result_sha256": "cde2ddff91503bb7397c3ca4de879e5a18cc419ed4875bcbf4926d0d2f189383",
+        "tx": 18
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_protocol_69",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Receive protocol/flags",
+        "fault_action": 69,
+        "result_sha256": "bb689eb1e5105cdbc33ef34295e0b899668ef56d88486e92d53f2318b6b2e4d1",
+        "tx": 18
+      },
+      "pass": true
+    },
+    {
+      "case": "trailing_bytes_69",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Bounded fixed reply",
+        "fault_action": 69,
+        "result_sha256": "601437fde944b9171ed89cbb498d26f705c1b5987c6b5c641cd30bf2cb1c0905",
+        "tx": 18
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_70",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 70,
+        "result_sha256": "81f3260f8b23bf8e23823cdb080e79149d78e44602a864760a0dd08462553e1d",
+        "tx": 19
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_71",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "One receive record",
+        "fault_action": 71,
+        "result_sha256": "b8a46722ef202d2013528eabc228e266bb33a2d6a0297324161f4eabbace56f5",
+        "tx": 19
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_72",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "One receive record",
+        "fault_action": 72,
+        "result_sha256": "4fb6bbe738d96f123e32482aff803bd5cf8818f4370fe881a62c444e2974bf4f",
+        "tx": 19
+      },
+      "pass": true
+    },
+    {
+      "case": "bad_checksum_72",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Frame checksum",
+        "fault_action": 72,
+        "result_sha256": "839de2d081cccb94737cbe162272f7499f7dc2264fd9eeca3e52d455f1fbcda1",
+        "tx": 19
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_ack_72",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact expected reply",
+        "fault_action": 72,
+        "result_sha256": "c1b33b5a79a399dcc6f71bbbe53cd38efbd2949e2afa0318d7aaba93f7a23c5e",
+        "tx": 19
+      },
+      "pass": true
+    },
+    {
+      "case": "truncated_72",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Frame minimum length",
+        "fault_action": 72,
+        "result_sha256": "2e1819c08dc4de74d0567eab9e49fd0bbcbae60884413b748ad8aa004c0aa8d8",
+        "tx": 19
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_length_72",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact frame length",
+        "fault_action": 72,
+        "result_sha256": "88d48949c190ab22ae73f18f835ab106e33025ca210d8089e8513508dbaa5ad9",
+        "tx": 19
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_rx_status_72",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Unexpected receive status",
+        "fault_action": 72,
+        "result_sha256": "4ad2ca02d9d3f2680bb835a2a040f301d7698a2f1e53babe756cd36fa3692af9",
+        "tx": 19
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_protocol_72",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Receive protocol/flags",
+        "fault_action": 72,
+        "result_sha256": "33da467619f874e9ff5226b870792ccdc72806339ee9cfa5314d30c4e7072b49",
+        "tx": 19
+      },
+      "pass": true
+    },
+    {
+      "case": "trailing_bytes_72",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Bounded fixed reply",
+        "fault_action": 72,
+        "result_sha256": "c3562ee5914375611bde2b916b417c09ae93cf6eeae3d388bfab74de209419db",
+        "tx": 19
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_73",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 73,
+        "result_sha256": "11589b0c9b71643a88f7d2e182ac6eef57a80f32c59f9b5c66557a3b9d6067ba",
+        "tx": 20
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_74",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "One receive record",
+        "fault_action": 74,
+        "result_sha256": "8d8933251455c02c7a4ea20b0d87c42fca643a1d533f434e9fa619eaba1c1f33",
+        "tx": 20
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_75",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "One receive record",
+        "fault_action": 75,
+        "result_sha256": "b598ad24bf663079ea121d1367d5c67be9f3527f18b708fb86446ce1d0bd7678",
+        "tx": 20
+      },
+      "pass": true
+    },
+    {
+      "case": "bad_checksum_75",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Frame checksum",
+        "fault_action": 75,
+        "result_sha256": "8621b69d4d89fd4acb083382df1bc97beae6c39ef8424c7ceaa7029a69e43b3e",
+        "tx": 20
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_ack_75",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact expected reply",
+        "fault_action": 75,
+        "result_sha256": "0811fe6d2cf58be13d532ccb326da867799dfdc98c4bb981b8ceb5f07c42bd13",
+        "tx": 20
+      },
+      "pass": true
+    },
+    {
+      "case": "truncated_75",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Frame minimum length",
+        "fault_action": 75,
+        "result_sha256": "7449ace0167c09bb63cb10c9157e160b5a3f62de4e04b292bc3a7fa6fb95cbcc",
+        "tx": 20
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_length_75",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact frame length",
+        "fault_action": 75,
+        "result_sha256": "2d98eb69d52ec47de29523dcdc7edbc93d7c3fb8eaf820aefd2c3d6dfb62436b",
+        "tx": 20
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_rx_status_75",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Unexpected receive status",
+        "fault_action": 75,
+        "result_sha256": "173e28de91eee0e5eebe166da0de0cf32753d4163248e16e9385a6714d28d870",
+        "tx": 20
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_protocol_75",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Receive protocol/flags",
+        "fault_action": 75,
+        "result_sha256": "fe2c32e9095ec394cd37bb9fd1ff589134d385b33f92a231a733dd2ec4404c17",
+        "tx": 20
+      },
+      "pass": true
+    },
+    {
+      "case": "trailing_bytes_75",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Bounded fixed reply",
+        "fault_action": 75,
+        "result_sha256": "19c9a9642ac849399fdf963521599e4732d2b9747588c391823c9153abb0dc36",
+        "tx": 20
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_76",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 76,
+        "result_sha256": "40c33d8bea0455129b4311e946bc7601f34b4bd726e98635797b7e59e493433e",
+        "tx": 21
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_77",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "One receive record",
+        "fault_action": 77,
+        "result_sha256": "28235cd57a67af6c609f981f587bb2ddba61c63f5871edcf4ad6632f07cb3b9b",
+        "tx": 21
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_78",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "One receive record",
+        "fault_action": 78,
+        "result_sha256": "9ad8d0cd1bca312d233d58339e09e787cdee1df576aac5f3e89ab5005dd68d4e",
+        "tx": 21
+      },
+      "pass": true
+    },
+    {
+      "case": "bad_checksum_78",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Frame checksum",
+        "fault_action": 78,
+        "result_sha256": "c5a8533806868f15780af11812b05e8067ed0de6faa8c1192221ebb23260389a",
+        "tx": 21
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_ack_78",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact expected reply",
+        "fault_action": 78,
+        "result_sha256": "897b9e7797e0d7bd804c254ec396ee9cf9a3f44dbc8c554fd1f6c52b804e9fd2",
+        "tx": 21
+      },
+      "pass": true
+    },
+    {
+      "case": "truncated_78",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Frame minimum length",
+        "fault_action": 78,
+        "result_sha256": "ed78e33dcd7c3208fcb3e9c19f96642e591c4c13c8394c5b230a01f08b914d4d",
+        "tx": 21
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_length_78",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact frame length",
+        "fault_action": 78,
+        "result_sha256": "3b0d933bf4e2d46ff2f100da7f579319d3700e58f298b3417c900e648f83e557",
+        "tx": 21
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_rx_status_78",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Unexpected receive status",
+        "fault_action": 78,
+        "result_sha256": "09b435561d5aefee26868a847522cd991bcd4969e0834c94511176cc1238e4b3",
+        "tx": 21
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_protocol_78",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Receive protocol/flags",
+        "fault_action": 78,
+        "result_sha256": "e8f2f877964e4ca100ef0f80a15ce33d26d453b4993224b6fe6efae3208b6237",
+        "tx": 21
+      },
+      "pass": true
+    },
+    {
+      "case": "trailing_bytes_78",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Bounded fixed reply",
+        "fault_action": 78,
+        "result_sha256": "9e61ccef231dc5cda84452b96dec1c86dca3e9b2af1837328f3ffab5703926ef",
+        "tx": 21
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_79",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 79,
+        "result_sha256": "f267704258f8e8779b6e5c221bc82d89b6f3de8c764d8730c1d4a5bf3c97111b",
+        "tx": 22
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_80",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "One receive record",
+        "fault_action": 80,
+        "result_sha256": "6c6a338dc1fd6f32cd83acd30927c1b5059c9d12de13407f554676d517858c41",
+        "tx": 22
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_81",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "One receive record",
+        "fault_action": 81,
+        "result_sha256": "7b4a475551065c1ad9da08c32dc2c6af4cb5ff47dad883995e95d78ea7a9d576",
+        "tx": 22
+      },
+      "pass": true
+    },
+    {
+      "case": "bad_checksum_81",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Frame checksum",
+        "fault_action": 81,
+        "result_sha256": "516b0ab0df4052b002d032b04fb93a05f950c3a10e0fd344fd1b6ce82fc203dd",
+        "tx": 22
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_ack_81",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact expected reply",
+        "fault_action": 81,
+        "result_sha256": "361f8e1e203dac3b397388c4283fb70f49fd64fc0c8a7ab1ce19d4a8b27ff9c9",
+        "tx": 22
+      },
+      "pass": true
+    },
+    {
+      "case": "truncated_81",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Frame minimum length",
+        "fault_action": 81,
+        "result_sha256": "2ec4151fc95165209704e8b846f6d84b6a0292707438838d4ab632496d6a9f07",
+        "tx": 22
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_length_81",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact frame length",
+        "fault_action": 81,
+        "result_sha256": "357b467dc7cc5f4bfaac08b68da07fbff20c1093c661a74161206088be428a01",
+        "tx": 22
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_rx_status_81",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Unexpected receive status",
+        "fault_action": 81,
+        "result_sha256": "78b444b3066ac3cf718ad83df0ac9f91d96da2dcb94358ba51cef0c3a26d1914",
+        "tx": 22
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_protocol_81",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Receive protocol/flags",
+        "fault_action": 81,
+        "result_sha256": "c0bbb30f463932671e9315fa5225e6ce5c85904bcb31f52f099903bb2c14b21a",
+        "tx": 22
+      },
+      "pass": true
+    },
+    {
+      "case": "trailing_bytes_81",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Bounded fixed reply",
+        "fault_action": 81,
+        "result_sha256": "4d0f48a05630f507540ada7188bc95b294fa6849249ecef3f3883a8e2bde30fe",
+        "tx": 22
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_82",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 82,
+        "result_sha256": "a5bd893a19908902da52f460b941d608e62d1129718e279cf3d43d8880382512",
+        "tx": 23
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_83",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "One receive record",
+        "fault_action": 83,
+        "result_sha256": "f19c2855c307b2c9c81acc2895cde69ea4dca1c9697cadeb896bb9be75ba1738",
+        "tx": 23
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_84",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "One receive record",
+        "fault_action": 84,
+        "result_sha256": "adfdae90e3699f30c9af1a6a75385a1d8f5f5b95d83e7ea03839575c694e7704",
+        "tx": 23
+      },
+      "pass": true
+    },
+    {
+      "case": "bad_checksum_84",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Frame checksum",
+        "fault_action": 84,
+        "result_sha256": "e6f71c6a1c58ebced959c6b11d53ea2439f09465465126cc8cfc28acac348598",
+        "tx": 23
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_ack_84",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact expected reply",
+        "fault_action": 84,
+        "result_sha256": "6e77917b90baee6a932a06a01b8143dae2d489b20bc6fce8f0677854153cd25d",
+        "tx": 23
+      },
+      "pass": true
+    },
+    {
+      "case": "truncated_84",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact frame length",
+        "fault_action": 84,
+        "result_sha256": "e94b7198d7af30d873dc9da4d70227c9ceda6919442b1ce63508664a915fb981",
+        "tx": 23
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_length_84",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact frame length",
+        "fault_action": 84,
+        "result_sha256": "56781949d849410b75c8d909633d056fca3b025b4b05a0f2aa3de2ed002d3b19",
+        "tx": 23
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_rx_status_84",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Unexpected receive status",
+        "fault_action": 84,
+        "result_sha256": "fc713349e18c5f65375d1849e38606086eb5c8c44711f702abe8f7182421f22f",
+        "tx": 23
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_protocol_84",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Receive protocol/flags",
+        "fault_action": 84,
+        "result_sha256": "c7b8ca25f45d828eb52b4c784b302e0374f1c9a518617246229091af0f6a80f6",
+        "tx": 23
+      },
+      "pass": true
+    },
+    {
+      "case": "trailing_bytes_84",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Bounded fixed reply",
+        "fault_action": 84,
+        "result_sha256": "77e9835361c06f8334916d6924e4d03c2fcc02dda749885636e1361de2ae9c03",
+        "tx": 23
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_88",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "fault_action": 88,
+        "result_sha256": "ff22868d0b03afee5467cde05704893e80454836c35c0e27dec2404bca200ce5",
+        "tx": 24
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_89",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "One receive record",
+        "fault_action": 89,
+        "result_sha256": "6a5636529e24b54bf364f0f9894830e9baac1401e1b7adfc12c4390267dcb769",
+        "tx": 24
+      },
+      "pass": true
+    },
+    {
+      "case": "count_zero_90",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "One receive record",
+        "fault_action": 90,
+        "result_sha256": "00c47177d31d6c86afbc61ce325b232252112769968cf5f6fa9803db43382b88",
+        "tx": 24
+      },
+      "pass": true
+    },
+    {
+      "case": "bad_checksum_90",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Frame checksum",
+        "fault_action": 90,
+        "result_sha256": "167c6987efd47ae85e075f3d28e9a8fca772299ea57ed48a4329dea9152ee1d2",
+        "tx": 24
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_ack_90",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact expected reply",
+        "fault_action": 90,
+        "result_sha256": "8c28a3cd2de3e421ef3e61d387f49b12ad49c757200ee859d3ce519321fa76bf",
+        "tx": 24
+      },
+      "pass": true
+    },
+    {
+      "case": "truncated_90",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact frame length",
+        "fault_action": 90,
+        "result_sha256": "b60ff2607f4452ffcc3ef4c2826f26633621c9c381a14e3bb9a5872a45210e02",
+        "tx": 24
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_length_90",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact frame length",
+        "fault_action": 90,
+        "result_sha256": "886e542c3078db0ece56f28f059ec8661ef332abda8e2a46cb4dad4ca2b3dc16",
+        "tx": 24
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_rx_status_90",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Unexpected receive status",
+        "fault_action": 90,
+        "result_sha256": "aa25addabb55b1e79cf27525fc0725bf0b561ac0bd4e0020538d1c3ddc9f8ca3",
+        "tx": 24
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_protocol_90",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Receive protocol/flags",
+        "fault_action": 90,
+        "result_sha256": "a982e6b54a99c53ada2545cb8213fc643712154e0263c75d6039d7d7878cad45",
+        "tx": 24
+      },
+      "pass": true
+    },
+    {
+      "case": "trailing_bytes_90",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Bounded fixed reply",
+        "fault_action": 90,
+        "result_sha256": "b7f42505c3621691632e6b3d2a18d8021ca5e951549612267079f41d2c5685d7",
+        "tx": 24
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_identity_90",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact expected reply",
+        "fault_action": 90,
+        "result_sha256": "5a587ed4c2ebe07d50d8a93f27622ffb206261636dba4e6816a462cd17c94ad4",
+        "tx": 24
+      },
+      "pass": true
+    },
+    {
+      "case": "wrong_version_90",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact expected reply",
+        "fault_action": 90,
+        "result_sha256": "8b66fad8d6c8e8fceccef1cea5383b895a0e2fe1e5a78d25a95ae5f2755d5abd",
+        "tx": 24
+      },
+      "pass": true
+    },
+    {
+      "case": "structural_closed_imports",
+      "detail": [
+        "hashlib",
+        "json",
+        "fixed_data",
+        "json",
+        "sys",
+        "identity_model"
+      ],
+      "pass": true
+    },
+    {
+      "case": "structural_no_external_IO_or_execution",
+      "detail": [],
+      "pass": true
+    },
+    {
+      "case": "structural_fixed_emit_alphabet",
+      "detail": [
+        191,
+        129,
+        131,
+        39,
+        39,
+        16,
+        52,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        49
+      ],
+      "pass": true
+    },
+    {
+      "case": "structural_no_read_or_flash_command",
+      "detail": {
+        "kernel_command": 1,
+        "kernel_command3_absent": true
+      },
+      "pass": true
+    },
+    {
+      "case": "closed_build_a",
+      "detail": [
+        "__main__.py",
+        "fixed_data.py",
+        "identity_model.py"
+      ],
+      "pass": true
+    },
+    {
+      "case": "built_model_execution_a",
+      "detail": {
+        "returncode": 0,
+        "stderr": ""
+      },
+      "pass": true
+    },
+    {
+      "case": "reject_cli_a--physical",
+      "detail": {
+        "returncode": 2
+      },
+      "pass": true
+    },
+    {
+      "case": "reject_cli_a--entry",
+      "detail": {
+        "returncode": 2
+      },
+      "pass": true
+    },
+    {
+      "case": "reject_cli_a--payload",
+      "detail": {
+        "returncode": 2
+      },
+      "pass": true
+    },
+    {
+      "case": "reject_cli_a--provider",
+      "detail": {
+        "returncode": 2
+      },
+      "pass": true
+    },
+    {
+      "case": "closed_build_b",
+      "detail": [
+        "__main__.py",
+        "fixed_data.py",
+        "identity_model.py"
+      ],
+      "pass": true
+    },
+    {
+      "case": "built_model_execution_b",
+      "detail": {
+        "returncode": 0,
+        "stderr": ""
+      },
+      "pass": true
+    },
+    {
+      "case": "reject_cli_b--physical",
+      "detail": {
+        "returncode": 2
+      },
+      "pass": true
+    },
+    {
+      "case": "reject_cli_b--entry",
+      "detail": {
+        "returncode": 2
+      },
+      "pass": true
+    },
+    {
+      "case": "reject_cli_b--payload",
+      "detail": {
+        "returncode": 2
+      },
+      "pass": true
+    },
+    {
+      "case": "reject_cli_b--provider",
+      "detail": {
+        "returncode": 2
+      },
+      "pass": true
+    },
+    {
+      "case": "two_clean_artifacts_identical",
+      "detail": {
+        "sha256": "04d8332493c98e90fa3c537c8ea0bc12926b5a85e37ea8ea9c826ec8e03c34fe"
+      },
+      "pass": true
+    },
+    {
+      "case": "two_clean_manifests_identical",
+      "detail": {
+        "sha256": "bf3aaa321fcf09e7a8af69b5eabe45e87a95654d0886b4a481e654a2f69b58fe"
+      },
+      "pass": true
+    }
+  ]
+}

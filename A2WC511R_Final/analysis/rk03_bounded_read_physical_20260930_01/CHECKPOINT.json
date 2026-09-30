@@ -1,0 +1,48 @@
+{
+  "status": "PHYSICAL_BOUNDED_FAIL_OEM_RETURN_PASS_NO_RETRY",
+  "physical_invocations": 1,
+  "physical_authorization_received": false,
+  "next_after_bounded_pass": "OFFLINE_FINAL_TWO_PASS_RELEASE_QUALIFICATION",
+  "final_full_physical_allowed": false,
+  "contract": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_read_physical_20260930_01\\PHYSICAL_BOUNDED_REVIEW_CONTRACT.json",
+    "bytes": 23300,
+    "sha256": "be14e560229f5a7eb1904cc18c47dc9c36fe6df3b79c86be12f844640fe15e02"
+  },
+  "branch": "rk03/bounded-rom-read-physical",
+  "commit": "96f6c49030b2d1c694e388ba6a1925d62d83b56a",
+  "executable_sha256": "5a66a0848601c8564a6896ddabbc35af453179c68c79ec871bee6d73e120bfb9",
+  "native_cases_passed": 1116,
+  "launcher_checks": 36,
+  "recovery_checks": 14,
+  "result_validator_checks": 54,
+  "root_review_checks": 5582,
+  "updated_utc": "2026-09-30T07:31:07.070665+00:00",
+  "certificate": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_read_physical_20260930_01\\qualification\\QUALIFICATION.json",
+    "bytes": 1003527,
+    "sha256": "15ba34b4d14c17e104fe28163faf7afe6b3c11b067ecf15a3bc97f8af8b253d1"
+  },
+  "physical_executable": {
+    "path": "C:\\Dev\\A2WC511R_RK03_BoundedReadPhysical\\bounded_read_physical\\build_a\\rk03_bounded_rom_read_physical32.exe",
+    "bytes": 423424,
+    "sha256": "5a66a0848601c8564a6896ddabbc35af453179c68c79ec871bee6d73e120bfb9"
+  },
+  "physical_result": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_read_physical_20260930_01\\physical_result\\PHYSICAL_RESULT.json",
+    "bytes": 3913,
+    "sha256": "68a8ab19e81887d3e73079acf5b74881367731a41f02ff6b8aa9823d303b200e"
+  },
+  "oem_return": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_read_physical_20260930_01\\oem_return_after_bounded_01\\OEM_RETURN_RESULT.json",
+    "bytes": 4115,
+    "sha256": "ee8254520d76c2b4d8bd06a7e9de0ae0e00a5baa397b949e0eadaa7efee8f8ac"
+  },
+  "completion": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_read_physical_20260930_01\\session_completion\\COMPLETION_MANIFEST.json",
+    "bytes": 10002,
+    "sha256": "869695659608eb2c435ebcdec8244cbb67756bf191ddcc13dbf4c1f8a6eb8487"
+  },
+  "final_full_release": "NOT_QUALIFIED_AFTER_BOUNDED_FAILURE",
+  "next_gate": null
+}

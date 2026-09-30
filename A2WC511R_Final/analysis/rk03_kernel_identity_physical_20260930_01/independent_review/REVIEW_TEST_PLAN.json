@@ -1,0 +1,200 @@
+{
+  "schema": 1,
+  "status": "PLANNED_OFFLINE_REVIEW_ONLY",
+  "physical_operations": 0,
+  "tests_executed": 0,
+  "identity_TX_authorization": "PENDING_USER_CLARIFICATION_RECEIVE_ONLY_VS_SEALED_QUERY",
+  "baseline_exe_sha256": "6c7571ece71bb6c29feae9fbfa873cca9635e41cabe269ebc7fa21b1e2fc0d51",
+  "baseline_build_source_pins_19_verified": true,
+  "hazards": [
+    {
+      "id": "PARSER_MODE",
+      "finding": "Current Stream and payload validate SSM only; add stage-selected fixed BEEF identity framing with 20-byte total / 15-byte body ceiling.",
+      "source": {
+        "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\full_upload_physical\\src\\common.hpp",
+        "line": 41,
+        "match": "struct Stream{"
+      }
+    },
+    {
+      "id": "LATE_RETURN",
+      "finding": "Whole-frame deadline is tested before provider ReadMsgs only. A late complete valid return can currently pass; require a post-return deadline check and preserved error evidence.",
+      "source": {
+        "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\full_upload_physical\\src\\probe_core.hpp",
+        "line": 66,
+        "match": "for(;;){ULONGLONG now=GetTickCount64()"
+      }
+    },
+    {
+      "id": "FILTER_STATE",
+      "finding": "State strings hardcode broad zero masks/nonnull flow; new BEEF filter requires truthful requested/returned metadata and null flow.",
+      "source": {
+        "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\full_upload_physical\\src\\probe_core.hpp",
+        "line": 22,
+        "match": "std::string state()const"
+      }
+    },
+    {
+      "id": "FILTER_OWNERSHIP",
+      "finding": "Transition stop must release old filter ownership before any journal exception. A failed transition stop is terminal; do not retry that stop during cleanup. New filter allocation must be owned before validation/logging can fail.",
+      "source": {
+        "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\full_upload_physical\\src\\probe_core.hpp",
+        "line": 82,
+        "match": "void cleanup(){"
+      }
+    },
+    {
+      "id": "FAKE_ENFORCEMENT",
+      "finding": "Old fake supports one filter ID702 and does not change filtered state on Stop. Add distinct new filter ID703 and enforce stop->62500->BEEF allocation->identity ordering.",
+      "source": {
+        "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\full_upload_physical\\src\\fake_backend.hpp",
+        "line": 52,
+        "match": "inline long PT_CALL stop_filter"
+      }
+    },
+    {
+      "id": "DISPATCH_BOUNDS",
+      "finding": "Current request/exchange guards stop at22. New fixed stages22=start and23=identity must precede all cipher offset arithmetic, with24 absolute ceiling and no generic payload/address inputs.",
+      "source": {
+        "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\full_upload_physical\\src\\probe_core.hpp",
+        "line": 10,
+        "match": "Bytes request(unsigned stage)const"
+      }
+    },
+    {
+      "id": "TERMINAL_BOUNDARY",
+      "finding": "Current protocol_complete becomes true after15th ACK; move completion only after exact identity match, then cleanup only.",
+      "source": {
+        "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\full_upload_physical\\src\\probe_core.hpp",
+        "line": 102,
+        "match": "int run(){"
+      }
+    }
+  ],
+  "focused_test_groups": [
+    {
+      "group": "success_and_provenance",
+      "checks": [
+        "exact22 retained TX prefix plus start8010f003310101b6 and identitybeef000101af only",
+        "fresh complete physical full-upload prefix:22TX/44RX, actualb99d2bfd seed/51f7b537 key and metadata; new timing remains synthetic",
+        "all16 retained seed vectors execute through identity in newPE",
+        "successful whole,byte-fragmented,header-split,payload-split and exactly4validindicator/echo paths",
+        "nullflow BEEF filter maskffff/patternbeef, distinct returned ID703 used for cleanup",
+        "same200/100/200 waits,15625 clearTX7thenRX8 prefix; new62500 after exact startACK; no new queueclear/wait"
+      ]
+    },
+    {
+      "group": "start_failures",
+      "checks": [
+        "all15chunkACK failures prevent start",
+        "stage22 Write status/count0/count2/message/canary mutation",
+        "start RX status16/count0/count2/protocol/flags/ExtraDataIndex/unknownstatus/nonemptySOM/wrongecho/5indicators/indicationafterdata",
+        "negative/wrongSID/wrongsubfunction/short/extra/checksum/truncation/trailing startACK",
+        "failed start or ACK =>23attemptedTX at most, no baud/filter transition/identity"
+      ]
+    },
+    {
+      "group": "transition_controls",
+      "checks": [
+        "oldfilter stopfailure and journalfailure: no retry/protocolprogress",
+        "62500SET status/count/pointer/parameter/value/canary mutation =>23TXonly",
+        "new BEEF filter failure/maskmutation/patternmutation/canary/logfailure =>23TXonly",
+        "stopoldfilter succeeds =>oldownership false; new allocation succeeds =>newIDowned even if later validation fails",
+        "all failure paths Disconnect/Close once; final BEEF Stop only if allocated and not already attempted"
+      ]
+    },
+    {
+      "group": "identity_BEEF_failures",
+      "checks": [
+        "stage23 TX failure/count/message mutation =>24max no laterprotocol",
+        "RX lengthheader0000,000e,0010,010f,ffff; prefixbyte mismatch; SSM reply in BEEF mode",
+        "correctchecksum wrongresponsecommand/wrongidentity/wrongversion/missingNUL/extraNUL/embeddedNUL",
+        "badchecksum/truncatedheader/truncatedbody/trailingbyte/duplicateframe coalesced in same record",
+        "unknown/combinedRxStatus,nonemptySOM,wrongexactecho,indicatorafterdata,fifthindicator,emptydata",
+        "status16fatal even with providerreturnedbytes; count0/count2/oversize/canary/malformedextraindex preserved",
+        "completevalidreply returned after2000ms rejected; cumulative delayed fragments cannot refresh deadline; eachread timeout boundedremaining",
+        "cannot attest absence of separate unread queued trailingrecords after accepted complete frame; no extra physical reads proposed"
+      ]
+    },
+    {
+      "group": "closure_reproducibility",
+      "checks": [
+        "samePE offlinefixture/realclockfake/bootstrap only; no real session/auth/reservation touched by runner",
+        "two clean x86 /W4/WX /Brepro builds exactsameEXE; sourceinput compiler/linker buildlog/importpins",
+        "unchanged kernel1808/cipher15chunks and entryFFFF3004, no16thchunk/secondstart/rawread/flash/arbitrarypayload",
+        "preserve old311report and invoke newPE regression fixtures only, do not rerun oldexecutables or count reused evidence as new",
+        "new source comparison isolates reviewed parser/deadline/transition additions; old setup/seed/upload/cleanup lineage pinned",
+        "24bootstrapfixtures use disposablebindings and hard stop before providerload; rootlaunch/recovery/resultcontrols independentlyreviewed",
+        "journal mutant tests remove/mutate finalACK/identity/filterID/flow/cleanup/timing to verify independent runner rejects falsePASS"
+      ]
+    }
+  ],
+  "inputs": [
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\full_upload_physical\\src\\common.hpp",
+      "bytes": 6279,
+      "sha256": "e502c533058d2aeed48d44d8b1c393bb75511a010ca37bf897bd4c341964d3d8"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\full_upload_physical\\src\\probe_core.hpp",
+      "bytes": 17605,
+      "sha256": "fc941497efd0a440483bc1c47595a50db0d3d7ee40a5b279e90ea500b4224d4c"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\full_upload_physical\\src\\fake_backend.hpp",
+      "bytes": 15915,
+      "sha256": "267a19e0c6db4f3c8941ce098c9317b2f33b72e798b1bd3a3d50ec1720707e48"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\full_upload_physical\\src\\main.cpp",
+      "bytes": 3508,
+      "sha256": "fa8932af90e6fae9f205e00c5ff53c5b57badb2fa619ecb33070f635b9e1a96a"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\full_upload_physical\\src\\bootstrap.hpp",
+      "bytes": 6793,
+      "sha256": "a7123b3471b01a4593eb7f5c58cd1117fe1fc9fb7a9fe7b27bdc1885833b80d9"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\full_upload_physical\\src\\real_clock.hpp",
+      "bytes": 1064,
+      "sha256": "2e2358ba07c89e55520c64dc943b7fca750014753772ecd66e084d5ae2b37818"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\full_upload_physical\\src\\protocol.hpp",
+      "bytes": 1077,
+      "sha256": "60ebaa976978f48352d67249817c43ff63c346ebd9df1cda68c36083c5c6a877"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\full_upload_physical\\tools\\test_full_physical_independent.py",
+      "bytes": 80718,
+      "sha256": "ccc470742171ff164c93341eed9d3647e4b34f6d768ef378c4ba3cf763c8411a"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\full_upload_physical\\tools\\build_probe.py",
+      "bytes": 2184,
+      "sha256": "3173e51e707ed6b643ac27f8f9221d7bd0de4b2c98c322954582160353c6ccaa"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\full_upload_physical\\tools\\build_probe.cmd",
+      "bytes": 775,
+      "sha256": "dc0fd4287e7739bfdbd974a18c3fafba50cc6f2bbce3f1cb1acd7dd0f9bce528"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\full_upload_physical\\build_a\\BUILD.json",
+      "bytes": 5582,
+      "sha256": "09edc658e895b075857c0b90c30b8d17a578aa367f37225132f9137c1152e148"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\full_upload_physical\\build_b\\BUILD.json",
+      "bytes": 5582,
+      "sha256": "b9f5e072cfd1d5027c6b09bce35e8006d9278c055548f0c9987df92704e83bb9"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\full_upload_physical\\reports\\qualification_20260930T045456687736Z\\TEST_REPORT.json",
+      "bytes": 747139,
+      "sha256": "20273a8be9d018758eab00818b4a186cabb8cfc48083281800175c0d5dab53c1"
+    }
+  ],
+  "scope_limit": "No release qualification asserted; future compiled source and new test results still require independent review."
+}

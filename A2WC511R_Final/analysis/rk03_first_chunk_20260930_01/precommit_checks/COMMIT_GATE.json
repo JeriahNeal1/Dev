@@ -1,0 +1,29 @@
+{
+  "session_id": "RK03_FIRST_CHUNK_01",
+  "created_utc": "2026-09-30T03:52:41.642914+00:00",
+  "status": "READY_FOR_EXACT_HUMAN_SOFTWARE_AUTHORIZATION",
+  "prior_confirmed_ecu_identity": "2F12515306",
+  "prior_passive_capture_status": "PASS_CAPTURE_ONLY",
+  "prior_passive_samples": 120,
+  "prior_evidence": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\oem_return_after_probe_01\\OEM_RETURN_RESULT.json",
+    "sha256": "e20b02e5dd13a5701649b782103f80693c885953e287034a3c18af73062df32a"
+  },
+  "physical_state": "TEST MODE ON",
+  "engine": "OFF",
+  "state_basis": "Current explicit user confirmation",
+  "power_and_charger": "Operator managed under simplified gate policy; numerical voltage not requested",
+  "executable_sha256": "3a6abe4e11fc6a85682c33018e67b533897860a932962f2840976fbd35ed1c02",
+  "qualification_sha256": "51f42896bc04e63b62fdcbb57b490ef8212af69f906e71e5e51c577ce12a6af4",
+  "diagnostic_clients_check": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\precommit_checks\\CLIENT_CHECK.json",
+    "sha256": "ca7dec31bbd4231740dfd25cdd22da20b86aa7c2e57f637052ed58d272c31ffd",
+    "pass_result": true,
+    "checked_utc": "2026-09-30T03:51:52.4909965Z"
+  },
+  "first_chunk_physical_invocations": 0,
+  "authorization_received": false,
+  "scope": "One fixed128-byte RAM transfer at FFFF3000, require exact76ACK then StopFilter/Disconnect/Close; no second36, kernel start, ROM read or flash",
+  "no_retry": true,
+  "required_reply": "PROCEED RK03 FIRST CHUNK PROBE"
+}

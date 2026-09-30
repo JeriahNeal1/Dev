@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "status": "PHYSICAL_BOUNDED_FAIL_OEM_RETURN_PASS_NO_RETRY",
+  "RK03_BOUNDED_ROM_READ_PHYSICAL": "FAIL",
+  "OEM_RETURN_AFTER_BOUNDED_ROM_READ": "PASS",
+  "physical_probe_invocations": 1,
+  "ROM_read_requests": 1,
+  "ROM_read_payload_validated": false,
+  "all15_upload_ACKs": true,
+  "start_and_identity_passed": true,
+  "cleanup_passed": true,
+  "received_frame_bytes": 228,
+  "expected_frame_bytes": 523,
+  "matching_ROM_prefix_bytes": 217,
+  "first_candidate_ROM_difference": {
+    "address": "000000D9",
+    "expected": "28",
+    "actual": "F8"
+  },
+  "terminal_J2534_status": 16,
+  "terminal_J2534_name": "ERR_BUFFER_EMPTY",
+  "terminal_count": 0,
+  "expected_payload_sha256": "d3421c81a4380638a8844e34012db592ba6eed35ca5cb8402880b79869e71f01",
+  "complete_returned_payload_sha256": null,
+  "incomplete_frame_sha256": "ce0c68f88b65e0e85c7bd3e9f538b3406bf2f39f494e332ce99d8512fbdbb1b6",
+  "final_two_pass_release_status": "NOT_BUILT_NOT_QUALIFIED_PREREQUISITE_PHYSICAL_BOUNDED_FAILURE",
+  "final_physical_executable_sha256": null,
+  "final_release_certificate_sha256": null,
+  "planned_final_schedule": {
+    "block_size": 512,
+    "blocks_per_pass": 2048,
+    "passes": 2,
+    "total_read_requests": 4096,
+    "bytes_per_pass": 1048576,
+    "total_bytes": 2097152
+  },
+  "remaining_human_actions_this_run": [],
+  "additional_physical_operations_allowed": false,
+  "final_authorization_phrase": null,
+  "final_authorization_reason": "No final release exists and no authorization is requested after the bounded physical failure.",
+  "next_milestone": "OFFLINE_FAILURE_RESOLUTION_AND_SEPARATELY_AUTHORIZED_K_LINE_MEASUREMENT_DESIGN",
+  "evidence": [
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_read_physical_20260930_01\\physical_result\\PHYSICAL_RESULT.json",
+      "bytes": 3913,
+      "sha256": "68a8ab19e81887d3e73079acf5b74881367731a41f02ff6b8aa9823d303b200e"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_read_physical_20260930_01\\failure_analysis\\EVENT_DIFF.json",
+      "bytes": 35511,
+      "sha256": "25c99e72284428599fc4c6275d8fb4eb193e0d07ffd6e3d23a03a4e490c1368c"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_read_physical_20260930_01\\failure_analysis\\INDEPENDENT_PHYSICAL_REVIEW.json",
+      "bytes": 137412,
+      "sha256": "ad4eaf02a3daf273adf35d328651510b9ca2b9ac8bf75b64bd56f7d3f473ffc3"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_read_physical_20260930_01\\oem_return_after_bounded_01\\OEM_RETURN_RESULT.json",
+      "bytes": 4115,
+      "sha256": "ee8254520d76c2b4d8bd06a7e9de0ae0e00a5baa397b949e0eadaa7efee8f8ac"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_read_physical_20260930_01\\qualification\\QUALIFICATION.json",
+      "bytes": 1003527,
+      "sha256": "15ba34b4d14c17e104fe28163faf7afe6b3c11b067ecf15a3bc97f8af8b253d1"
+    }
+  ],
+  "utc": "2026-09-30T07:45:10.958528+00:00"
+}

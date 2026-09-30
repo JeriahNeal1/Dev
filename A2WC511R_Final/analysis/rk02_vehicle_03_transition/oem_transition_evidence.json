@@ -1,0 +1,194 @@
+{
+  "scope": "Verified stock firmware transition; current physical ROM code unknown",
+  "status": "STOCK_REQUEST_VALIDITY_AND_TIMING_MECHANISM_VERIFIED_OFFLINE",
+  "physical_cause_proven": false,
+  "physical_operations": 0,
+  "qualified_source_or_binary_modified": false,
+  "failed_physical_evidence_modified": false,
+  "original_wire_evidence_pin_checks": [
+    {
+      "path": "C:\\Dev\\SubaruRoms\\OEM\\A2WC511R.bin",
+      "expected_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+      "actual_sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218",
+      "matches": true
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\verify_kwp_wire.py",
+      "expected_sha256": "dc4fc4c218f60ece9b0561fcd7c780ddfe16fa085abfc6751a34a075b8286772",
+      "actual_sha256": "dc4fc4c218f60ece9b0561fcd7c780ddfe16fa085abfc6751a34a075b8286772",
+      "matches": true
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\verify_kwp_contract.py",
+      "expected_sha256": "bc449cee55fc25c0a7975a2444bf3c8fe5124a9a4ae8cd73ccc7bd18cc628a58",
+      "actual_sha256": "bc449cee55fc25c0a7975a2444bf3c8fe5124a9a4ae8cd73ccc7bd18cc628a58",
+      "matches": true
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\verify_oem_contracts.py",
+      "expected_sha256": "eb5fd8a5bdeeef214ac8c5f214c8d7637265643ae36bbf3571a2fe0452b8f191",
+      "actual_sha256": "eb5fd8a5bdeeef214ac8c5f214c8d7637265643ae36bbf3571a2fe0452b8f191",
+      "matches": true
+    }
+  ],
+  "ordered_stock_transactions": [
+    {
+      "request": "8010f0018102",
+      "response": "80f01003c1ef8fc2",
+      "request_total_bytes": 6,
+      "request_payload_bytes": 1,
+      "response_total_bytes": 8,
+      "response_payload_bytes": 3,
+      "request_checksum": "02",
+      "response_checksum": "c2",
+      "both_checksums_valid": true
+    },
+    {
+      "request": "8010f002830005",
+      "response": "80f01007c30000ff00ff0048",
+      "request_total_bytes": 7,
+      "request_payload_bytes": 2,
+      "response_total_bytes": 12,
+      "response_payload_bytes": 7,
+      "request_checksum": "05",
+      "response_checksum": "48",
+      "both_checksums_valid": true
+    }
+  ],
+  "firmware_addresses": {
+    "request_parser": "00047F20",
+    "receive_ISR_body": "00047E24",
+    "kwp_dispatcher": "000476E0",
+    "81_validator": "000473C4",
+    "81_body_and_session_set": "000477DE",
+    "83_validator": "000473F0",
+    "83_body": "000477FC",
+    "periodic_transport_service": "00047D94",
+    "periodic_caller": [
+      "000064A4",
+      "00006542",
+      "000470A6",
+      "00047C66"
+    ],
+    "periodic_task_descriptor": "00004948",
+    "reset_counter": "FFFF63F6",
+    "response_delay_counter": "FFFF6400"
+  },
+  "stock_83_handler": {
+    "requires_payload_length": 2,
+    "requires_subfunction": 0,
+    "requires_session_63E1_mask": "20",
+    "valid_reply_expected": true,
+    "changes_baud": false,
+    "checks_Test_Mode": false,
+    "confidence": "HIGH for exact bounded stock handler"
+  },
+  "interbyte_guard": {
+    "reset_after_periodic_calls_since_last_RXI": 8,
+    "unit_seconds": null,
+    "81_changes_guard_or_parser": false,
+    "long_idle_gap_guard_resets_session_bit20": false,
+    "periodic_task_descriptor_index": 7,
+    "0_and_7_tick_cases": "exact positive C3 reply",
+    "8_and_9_tick_cases": "partial request cursor reset and no reply",
+    "physical_5ms_gap_acceptability": "UNKNOWN without actual timebase and transmitted spacing"
+  },
+  "physical_timing": {
+    "C1_read_return_to_83_write_return_ms": 77.0782,
+    "wire_gap_ms": null,
+    "interpretation": "API completion interval only"
+  },
+  "evidence": [
+    {
+      "path": "C:\\Dev\\SubaruRoms\\OEM\\A2WC511R.bin",
+      "bytes": 1048576,
+      "sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\acquisitions\\RK02_VEHICLE_03\\native_api.jsonl",
+      "bytes": 3536,
+      "sha256": "e277405b588f5cfeec12a073f1ab0ac447945b23e3e48ba2303035c4caa6e53f"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\KWP_WIRE_CONTRACT.json",
+      "bytes": 2728,
+      "sha256": "118b7f5e9537ac1e1700b67ce16799d8d357692c84ab80fd42dffdca207c23a2"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\KWP_WIRE_TRACE.json.gz",
+      "bytes": 119536,
+      "sha256": "6c1e03791eb1e52bb4d3efa5def5c956bf098d36e7cf915c6bf1a75f9623edff"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\KWP_PRODUCER_REGRESSIONS.json",
+      "bytes": 44321,
+      "sha256": "9bc39da629507ecfe76ec4c76e6d6efdaee6745480c506ac1fd5c4edae2cdbfe"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\BOOT_KWP_IDA_FUNCTIONS.json",
+      "bytes": 38262,
+      "sha256": "95299c5b97bc0f4c7b3f0447ca95fc1d09dceb9529742afb07176f03b9a96332"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\verify_kwp_wire.py",
+      "bytes": 6163,
+      "sha256": "dc4fc4c218f60ece9b0561fcd7c780ddfe16fa085abfc6751a34a075b8286772"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\verify_kwp_contract.py",
+      "bytes": 10190,
+      "sha256": "bc449cee55fc25c0a7975a2444bf3c8fe5124a9a4ae8cd73ccc7bd18cc628a58"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk02_vehicle_03_transition\\oem_transition_stock_47108_48240.asm",
+      "bytes": 83287,
+      "sha256": "ab609533fcc0bb82b9688323b075fa8d86c09a4cd8204d0d6d081052569b269b"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk02_vehicle_03_transition\\oem_transition_replay.py",
+      "bytes": 6079,
+      "sha256": "b6fb81978af6ffd4613f0888463bf76607db5d5c87fba31ebe366674d83c3278"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk02_vehicle_03_transition\\oem_transition_rx_isr_replay.json",
+      "bytes": 45104,
+      "sha256": "9d40dc870ae88da586aa60ce1c9d3e37011e691e116820feddbea8bdc11599be"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk02_vehicle_03_transition\\oem_transition_rx_isr_trace.json.gz",
+      "bytes": 129981,
+      "sha256": "e70dc69ae83dc8b52915e46475c83d71f0c86e0db0c0c9c41165e63b9b3385bd"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk02_vehicle_03_transition\\oem_transition_gap_replay.py",
+      "bytes": 4493,
+      "sha256": "7d59e48645d122a936a64a6661b1c09d380d15b9fee5e368bb5e4d71c93a5e32"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk02_vehicle_03_transition\\oem_transition_gap_replay.json",
+      "bytes": 3351,
+      "sha256": "d7cb2c969884c0fa78308466ad0d4f7263c95cdc86752db02bceaf9e59a5ab21"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk02_vehicle_03_transition\\oem_transition_gap_trace.json.gz",
+      "bytes": 239907,
+      "sha256": "f3e62c12064803ddd326676d3c72f5da04ed0d272696c4a0011b73a5113bf0e7"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk02_vehicle_03_transition\\oem_transition_findings.md",
+      "bytes": 9765,
+      "sha256": "ce5da0af0513206ded29b9cb27e27a913b6cea97b4b1e349bbde7f88079627e3"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk02_vehicle_03_transition\\oem_transition_catalog.py",
+      "bytes": 5833,
+      "sha256": "42e95db9cc2532ae7c949a67491696cb3b6fc11dd3f6bd0515f7632e1d39e15d"
+    }
+  ],
+  "remaining_questions": [
+    "Actual provider defaults and emitted interbyte spacing.",
+    "Actual periodic task timebase/current code compatibility.",
+    "Whether physical83 request reached the ECU and whether any raw reply reached adapter.",
+    "Historical successful exact API/configuration/wire behavior, analyzed separately."
+  ]
+}

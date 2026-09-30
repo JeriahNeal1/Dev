@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "checks_passed": 14,
+  "checks": [
+    "positive_fresh_recovery",
+    "reject_session_id",
+    "reject_probe_invocation_count",
+    "reject_process_exited",
+    "reject_status",
+    "reject_physical_state",
+    "reject_engine",
+    "reject_abort_requested",
+    "reject_reordered_gates",
+    "reject_recovery_before_exit",
+    "reject_timezone_missing",
+    "reject_nonhuman_reply",
+    "reject_old_session_reply",
+    "reject_abort_arriving_during_client_scan"
+  ],
+  "physical_operations": 0,
+  "provider_loads": 0,
+  "subprocess_calls": "MOCKED_ONLY",
+  "wrapper": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_read_physical_20260930_01\\launch_oem_return_once.py",
+    "sha256": "d05ffa5465224d0a253b09d06aaad0ca1057372500fbc4ebe65cf199ea6a9f18"
+  },
+  "test_source": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_read_physical_20260930_01\\test_oem_return_controls.py",
+    "sha256": "c4501985af3ed866d2ef21ff137a10b04c6daae0402048b84cfda0075b86bef0"
+  }
+}

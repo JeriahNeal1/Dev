@@ -1,0 +1,24 @@
+{
+  "session_id": "RK03_FULL_UPLOAD_NO_START_01",
+  "utc": "2026-09-30T05:11:34.895637+00:00",
+  "expected_ECU_identity": "2F12515306",
+  "qualification_sha256": "dbfe169cbe89f4ab23318cb79dec1dbafcaa49dbdea48397dc4ec0f16de95399",
+  "executable_sha256": "6c7571ece71bb6c29feae9fbfa873cca9635e41cabe269ebc7fa21b1e2fc0d51",
+  "fixed_image_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+  "fixed_chunks": 15,
+  "stop": "After fifteenth exact76 acknowledgement, cleanup only",
+  "kernel_start_reachable": false,
+  "client_absence_check": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\precommit_checks\\CLIENT_CHECK.json",
+    "sha256": "368f237becb9427c939403bbde326a92246cc974213819499d1f1721e6840341"
+  },
+  "release_integrity_check": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\precommit_checks\\RELEASE_INTEGRITY.json",
+    "sha256": "7aa98087c76826b7cbae716cf6d5fa22fae03c83e35134c76b99cc166826bf3a"
+  },
+  "physical_state": "TEST MODE ON",
+  "engine": "OFF",
+  "physical_invocations": 0,
+  "required_reply": "PROCEED RK03 FULL UPLOAD NO START",
+  "authorization_received": false
+}

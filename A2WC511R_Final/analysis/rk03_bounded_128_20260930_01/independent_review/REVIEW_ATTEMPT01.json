@@ -1,0 +1,63 @@
+{
+  "status": "FAIL_PACKAGING_CONTROL_BYTE_IDENTITY",
+  "native_and_journal_checks_reached": "PASS before mismatch",
+  "native_source_change_required": false,
+  "details": [
+    {
+      "file": "launch_bounded_once.py",
+      "same_bytes": false,
+      "same_normalized_text": true,
+      "analysis_sha256": "b8bdd2932309666891134fa0b777fbaeb7e6d8b99b8630a37309a0d6b7e7e909",
+      "tracked_sha256": "f55ad1bce493e49d26ad9c68b137dc957d37ba3e549b754b1ad4932ae71a8f83"
+    },
+    {
+      "file": "launch_oem_return_once.py",
+      "same_bytes": false,
+      "same_normalized_text": true,
+      "analysis_sha256": "9db9f0d2f2ed4b53e43450334f01ef783c29eb0fcdcb22fea3534982c5dea072",
+      "tracked_sha256": "d05ffa5465224d0a253b09d06aaad0ca1057372500fbc4ebe65cf199ea6a9f18"
+    },
+    {
+      "file": "check_clients.ps1",
+      "same_bytes": false,
+      "same_normalized_text": true,
+      "analysis_sha256": "4e2ef39b40abbee53367c1d6f47c6cafa6c5aeffdd5f472fb7dbe6450d6cdd96",
+      "tracked_sha256": "df14e9c33bd77d202d2d5cd6ca29ab2e965386e07d27612aaa7dc559db0a5225"
+    },
+    {
+      "file": "seal_bounded_result.py",
+      "same_bytes": false,
+      "same_normalized_text": true,
+      "analysis_sha256": "1d45cd1642214f51056bc17e3552da76a9b209d4cd479623f691ddded8db4fc8",
+      "tracked_sha256": "5d788a337d01cef7b5cb8454634e2d2a62a0bb1e184e8aa3c9fb6f0e2215fb70"
+    },
+    {
+      "file": "seal_oem_return_bounded.py",
+      "same_bytes": false,
+      "same_normalized_text": true,
+      "analysis_sha256": "5b936a35a084246b91542e90a9971986825370348c247fb46c26ecda1711a685",
+      "tracked_sha256": "0cf7429ad363fbb6d5d5bc169954e01be0f5f1ef616d5cb911b1a01ffbef3682"
+    },
+    {
+      "file": "test_launcher_offline.py",
+      "same_bytes": false,
+      "same_normalized_text": true,
+      "analysis_sha256": "1da3bbe152ed3686d77474d6c66112ee369bcb986d01bbbdfb45915900b91871",
+      "tracked_sha256": "c369bb7fd6b53970b251fa446179a76cb1398a7f7948e747af8439d782cc2d08"
+    },
+    {
+      "file": "test_oem_return_controls.py",
+      "same_bytes": false,
+      "same_normalized_text": true,
+      "analysis_sha256": "f5e2d39b90498b0d7f2679c6e73fc7d5dbf2b897f3740e114e20d2bd40cd2d44",
+      "tracked_sha256": "c4501985af3ed866d2ef21ff137a10b04c6daae0402048b84cfda0075b86bef0"
+    },
+    {
+      "file": "test_result_validator.py",
+      "same_bytes": false,
+      "same_normalized_text": true,
+      "analysis_sha256": "c72d63ef687efa7abe6f025ba59f95d0052f55dc96986da965c5293e83ba7e62",
+      "tracked_sha256": "1fe122d921ea3921fdd05c834619c5f424f2349fc9dd69ce24c3b64c8e52c28e"
+    }
+  ]
+}

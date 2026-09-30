@@ -1,0 +1,284 @@
+{
+  "schema": 1,
+  "status": "PASS_ONE_FIXED_READ_FROM_RETAINED_IDENTITY_CHECKPOINT",
+  "scope": "OFFLINE_ONE_FIXED_FIRST512_BYTE_READ",
+  "physical_operations": 0,
+  "provider_loads": 0,
+  "upload_start_identity_instructions_reexecuted": 0,
+  "new_read_requests": 1,
+  "full_acquisition": false,
+  "inputs": [
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_rom_read_offline_20260930_01\\instruction_review\\FIXED_READ_CONTRACT.json",
+      "bytes": 4983,
+      "sha256": "48df08343615f960263d9940b648c44568a9c0dbb8f2ae588267cfce53dd2b6a"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_rom_read_offline_20260930_01\\instruction_review\\replay_one_fixed_read.py",
+      "bytes": 12983,
+      "sha256": "8e20035b7083b28f084b0116ec339fd8fd65a77b89ebd7b9ba97e94afbe636bb"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_offline_20260930_01\\instruction_review\\replay_20260930T054149444398Z\\actual_OEM_registers\\KERNEL_COVERAGE.json",
+      "bytes": 33498,
+      "sha256": "faaa44ba928d6a8e4d03be1c015e2719c697113d5b0bfa6af5c4eb579308828d"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_offline_20260930_01\\instruction_review\\replay_20260930T054149444398Z\\actual_OEM_registers\\KERNEL_IDENTITY_TRACE.json.gz",
+      "bytes": 19146,
+      "sha256": "fee85e9cf4e09ec89837f434ff4f664e147603a931d3bc324649d2c118541db3"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_offline_20260930_01\\instruction_review\\replay_20260930T054149444398Z\\INSTRUCTION_REPLAY.json",
+      "bytes": 80671,
+      "sha256": "300de29c90b7f79b7bc845859232bcc75f08ce3a311f749f0851e01f7bca0ffa"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\build\\rk02_01\\kernel.bin",
+      "bytes": 1808,
+      "sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\build\\rk02_01\\manifest.json",
+      "bytes": 51029,
+      "sha256": "a35562a19f21d4a2815e88fb729d21dd2cc08bf702c0d866f88ffc9e3ddb659e"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\linker\\kernel.ld",
+      "bytes": 1051,
+      "sha256": "269d8b6de2edfa84afabad1080b6c7f4baefedd60bdd7ec2d75b5d7240e7dbef"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\__init__.py",
+      "bytes": 76,
+      "sha256": "8e8b1da117fdc2ba4fe06edfc32b9c8d67176ab69a9470ee21151018bc85fbd8"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\core.py",
+      "bytes": 658,
+      "sha256": "caf6571a836676b82bec8f8a5eaa356590532e15931fae2da4b5822fe8ef0f90"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\cpu.py",
+      "bytes": 3943,
+      "sha256": "5043dafdfe59447cb8d906f7570907c472e1d638deb507dc4af8546e9b0f1980"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\fast_step.py",
+      "bytes": 11167,
+      "sha256": "029bb2b484911289b19e5cdbad35bbbbdc80af05420e91dad6884e0ff0484cfa"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\harness.py",
+      "bytes": 12388,
+      "sha256": "0496579da46daf66eb3be3847da0f3e94f8f45bf6f0b494a1f89a97853a8b4c6"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\memory.py",
+      "bytes": 6138,
+      "sha256": "d6062f1dde275b9611d1b631f8151eac567314c603a533dad8751eede3fa2a38"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\sci.py",
+      "bytes": 7885,
+      "sha256": "6f3b4b38ae6e12ac75d5101c767f10b106e9676c322eac3a0e39a67a9c0030c1"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\self_echo.py",
+      "bytes": 4798,
+      "sha256": "87896f45a074fcff5132a6faa57af48f5444de13fdf67f00a4f1304ea583da5d"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\src\\kernel.S",
+      "bytes": 9144,
+      "sha256": "3d20c9227c209b6712a451ce867c032e8e8d21fd4d2776816d720e2a3fa72355"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\tools\\build.py",
+      "bytes": 5833,
+      "sha256": "f6e7219c8d7ec7d169e3b8acdddcd609da109f0d7ca83fcf6e10d13b137cd249"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Sim\\sh2e.py",
+      "bytes": 29610,
+      "sha256": "b47ac261634c116c3ffcdf19da9ec73e7014c034cd349ea8867f5f54895cdfff"
+    },
+    {
+      "path": "C:\\Dev\\SubaruRoms\\current.bin",
+      "bytes": 1048576,
+      "sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2"
+    }
+  ],
+  "contract": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_rom_read_offline_20260930_01\\instruction_review\\FIXED_READ_CONTRACT.json",
+    "bytes": 4983,
+    "sha256": "48df08343615f960263d9940b648c44568a9c0dbb8f2ae588267cfce53dd2b6a"
+  },
+  "prior_instruction_replay": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_offline_20260930_01\\instruction_review\\replay_20260930T054149444398Z\\INSTRUCTION_REPLAY.json",
+    "bytes": 80671,
+    "sha256": "300de29c90b7f79b7bc845859232bcc75f08ce3a311f749f0851e01f7bca0ffa"
+  },
+  "checkpoint": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_rom_read_offline_20260930_01\\instruction_review\\replay_20260930T065049517214Z\\RESTORED_CHECKPOINT.json",
+    "bytes": 1040,
+    "sha256": "b706367695d29564f4c6b8040c85cdf30a862f06e8f7c83c76c0e1e083ee356a"
+  },
+  "request_hex": "beef00080300000000000200ba",
+  "response_hex": "beef020683000000000000000aacffffbfa000000aacffffbfa000000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa8ffffffffffffffffdf01442b00090000ffffbfa0df01000b00090000ffffbfa0e5f74518750a8451e3ff4318620c737f2239324ce13c622c4118321c25210009000900090009000b0009ffff8441600c937f20388b04d643947c917c412be506000b00098441600c937320388b04d63e94729170412be506000b0009d33b7402d23b2342d13b412b6422634392614f227ff81f418431600c202988048b0c6433b0287402d3326503b03764322f0066f394539350430be5017f084f26000b00098441600c934520388b04d62b94469142412be506000b00098441600c933920388b060002913b2019cbf0400eaffe0009000b00098441600c624040286303622c84424228600c4018330c42188443332c600c6433340c000b60432fe62fd66d432fc66c532fb63dc24f229b198d0aee0062d4622c3e2c64ed441934ec4b0b6e4c3dc28bf54f2660e36bf66cf66df6000b6ef6ff07008804e0009000b000c0ff0f04c4ffff00000fec00000ff8ffffbfa4ffffbfa00000004000000fe42fe62fd62fc62fb62fa62f962f864f2295ab6453d361430b74fed26193a62321de6092a422e1d15e90a22011730623e1721222e1919d21e1731223e1720622e1711a21e1730e23e172c022e1e7",
+  "response_sha256": "796f64cefcd2b81c5c7662b2bdacad828c0a948c55bfdc5d002ac5c8da7f898e",
+  "response_bytes": 523,
+  "data_bytes": 512,
+  "data_sha256": "d3421c81a4380638a8844e34012db592ba6eed35ca5cb8402880b79869e71f01",
+  "range_start": "00000000",
+  "range_end_exclusive": "00000200",
+  "pass_number": 0,
+  "cursor_after": "00000200",
+  "instruction_count": 10327,
+  "read_exchange": {
+    "status": "PASS",
+    "tx_hex": "beef020683000000000000000aacffffbfa000000aacffffbfa000000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa8ffffffffffffffffdf01442b00090000ffffbfa0df01000b00090000ffffbfa0e5f74518750a8451e3ff4318620c737f2239324ce13c622c4118321c25210009000900090009000b0009ffff8441600c937f20388b04d643947c917c412be506000b00098441600c937320388b04d63e94729170412be506000b0009d33b7402d23b2342d13b412b6422634392614f227ff81f418431600c202988048b0c6433b0287402d3326503b03764322f0066f394539350430be5017f084f26000b00098441600c934520388b04d62b94469142412be506000b00098441600c933920388b060002913b2019cbf0400eaffe0009000b00098441600c624040286303622c84424228600c4018330c42188443332c600c6433340c000b60432fe62fd66d432fc66c532fb63dc24f229b198d0aee0062d4622c3e2c64ed441934ec4b0b6e4c3dc28bf54f2660e36bf66cf66df6000b6ef6ff07008804e0009000b000c0ff0f04c4ffff00000fec00000ff8ffffbfa4ffffbfa00000004000000fe42fe62fd62fc62fb62fa62f962f864f2295ab6453d361430b74fed26193a62321de6092a422e1d15e90a22011730623e1721222e1919d21e1731223e1720622e1711a21e1730e23e172c022e1e7",
+    "instruction_count": 10327,
+    "stop_reason": "RX_WAIT",
+    "evidence": {
+      "sequence": 0,
+      "terminal_pc": "FFFF31BE",
+      "terminal_sp": "FFFF372C",
+      "min_sp": "FFFF372C",
+      "memory_event_sha256": "47f939b115d2f04cc67c7905a116d95e6edb9343159782a28d17e6f207fc7dd6",
+      "execution_sha256": "7cd42217fa9fa648a9fd78a44eb7980e53b4d9abe4d1af5ce3c7a68f408dae1b",
+      "SCI_schedule_sha256": "ad05f48b4bce37f0795a17a0cfd3c620c6794fc50080a5979db6ca307c1b2a18",
+      "physical": false,
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_rom_read_offline_20260930_01\\instruction_review\\replay_20260930T065049517214Z\\exchange\\exchange_00000.json",
+      "sha256": "2f135dfbad01c5dda1cf340a2e52a31e398c82b6f29a73db6ef3b414569af060"
+    }
+  },
+  "ROM_data_read_events": 512,
+  "ROM_data_read_PC": "FFFF3260",
+  "flash_write_events": 0,
+  "kernel_mutation": false,
+  "forbidden_symbols_unexecuted": [
+    "kernel_entry",
+    "identity",
+    "pass_done",
+    "complete",
+    "fatal",
+    "halt_fail",
+    "exception_handler",
+    "halt_exception"
+  ],
+  "SCI_event_counts_this_read": {
+    "register_write": 1061,
+    "register_read": 1076,
+    "host_rx_enqueued": 1,
+    "rx_character_ready": 13,
+    "tx_character_start": 523,
+    "tx_shift_register_loaded": 523,
+    "ECU_self_echo_start_RE0": 523,
+    "tx_character_complete": 523,
+    "ECU_self_echo_ignored_RE0": 523
+  },
+  "kernel_coverage": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_rom_read_offline_20260930_01\\instruction_review\\replay_20260930T065049517214Z\\KERNEL_READ_COVERAGE.json",
+    "bytes": 29551,
+    "sha256": "bff1e1da637e21d99ec42c09249e66d547dc2988df52bd12701467026ff9f499"
+  },
+  "trace": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_rom_read_offline_20260930_01\\instruction_review\\replay_20260930T065049517214Z\\KERNEL_READ_TRACE.json.gz",
+    "bytes": 62399,
+    "sha256": "56c0d1fbb1b58106f8ffeaf56a7ef3c196cfe9ce54490413d6becf22087726fd"
+  },
+  "model_identity": {
+    "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+    "kernel_bytes": 1808,
+    "rom": {
+      "source": "C:\\Dev\\SubaruRoms\\current.bin",
+      "sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2",
+      "base_sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2",
+      "overlays": [],
+      "size": 1048576
+    },
+    "core_path": "C:\\Dev\\A2WC511R_Sim\\sh2e.py",
+    "core_sha256": "b47ac261634c116c3ffcdf19da9ec73e7014c034cd349ea8867f5f54895cdfff",
+    "manifest_sha256": "a35562a19f21d4a2815e88fb729d21dd2cc08bf702c0d866f88ffc9e3ddb659e",
+    "model_sources": {
+      "core.py": "caf6571a836676b82bec8f8a5eaa356590532e15931fae2da4b5822fe8ef0f90",
+      "cpu.py": "5043dafdfe59447cb8d906f7570907c472e1d638deb507dc4af8546e9b0f1980",
+      "fast_step.py": "029bb2b484911289b19e5cdbad35bbbbdc80af05420e91dad6884e0ff0484cfa",
+      "harness.py": "0496579da46daf66eb3be3847da0f3e94f8f45bf6f0b494a1f89a97853a8b4c6",
+      "memory.py": "d6062f1dde275b9611d1b631f8151eac567314c603a533dad8751eede3fa2a38",
+      "sci.py": "6f3b4b38ae6e12ac75d5101c767f10b106e9676c322eac3a0e39a67a9c0030c1",
+      "self_echo.py": "87896f45a074fcff5132a6faa57af48f5444de13fdf67f00a4f1304ea583da5d",
+      "__init__.py": "8e8b1da117fdc2ba4fe06edfc32b9c8d67176ab69a9470ee21151018bc85fbd8"
+    },
+    "peripheral_initial": {
+      "sci2": {
+        "FFFFF010": 0,
+        "FFFFF011": 255,
+        "FFFFF012": 32,
+        "FFFFF013": 255,
+        "FFFFF014": 132,
+        "FFFFF015": 0,
+        "FFFFF016": 242
+      },
+      "pccr": 0,
+      "dmaor": 0,
+      "wdt_tcsr": 0,
+      "ramer": 0,
+      "fmats": 0
+    },
+    "schedule": {
+      "rx_gap_ticks": 1,
+      "tx_complete_ticks": 1,
+      "brr_settle_ticks": 1,
+      "tx_load_ticks": 1
+    },
+    "optimized": false,
+    "receiver_self_echo": true,
+    "echo_profile": {
+      "start_delay_ticks": 0,
+      "ordinals": null
+    },
+    "model": "DECLARED_INSTRUCTION_TICK_SCI2_NOT_PHYSICAL_TIMING"
+  },
+  "limits": [
+    "This is actual unchanged SH-2E instruction execution in the pinned simulator, not a provider transcript or hardware operation.",
+    "The prior completed upload/start/identity is reused. CPU registers/private RAM and finite peripheral state are reconstructed from its retained actual-OEM-register variant; no prior CPU instruction is rerun.",
+    "Recorded peripheral register calls/ticks are replayed to reconstruct the exact idle checkpoint and compared with retained events. Prior identity bytes are replayed only into the peripheral-state reconstruction; the only new CPU exchange is the fixed read.",
+    "Instruction ticks, UART completion/self-echo and peripheral models remain declared simulation assumptions, not physical baud or silicon timing.",
+    "Exactly one read request is executed. The cursor advances to0x200, pass remains0, and the kernel waits for another request; no full acquisition, pass completion or later read is attempted.",
+    "The fixed512-byte block matches stock as well as current.bin and cannot identify the complete current calibration. No ROM classification, Diaphora or historical analysis is repeated."
+  ],
+  "artifacts": [
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_rom_read_offline_20260930_01\\instruction_review\\replay_20260930T065049517214Z\\exchange\\exchange_00000.json",
+      "bytes": 1591,
+      "sha256": "2f135dfbad01c5dda1cf340a2e52a31e398c82b6f29a73db6ef3b414569af060"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_rom_read_offline_20260930_01\\instruction_review\\replay_20260930T065049517214Z\\KERNEL_READ_COVERAGE.json",
+      "bytes": 29551,
+      "sha256": "bff1e1da637e21d99ec42c09249e66d547dc2988df52bd12701467026ff9f499"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_rom_read_offline_20260930_01\\instruction_review\\replay_20260930T065049517214Z\\KERNEL_READ_TRACE.json.gz",
+      "bytes": 62399,
+      "sha256": "56c0d1fbb1b58106f8ffeaf56a7ef3c196cfe9ce54490413d6becf22087726fd"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_rom_read_offline_20260930_01\\instruction_review\\replay_20260930T065049517214Z\\READ_RESPONSE.bin",
+      "bytes": 523,
+      "sha256": "796f64cefcd2b81c5c7662b2bdacad828c0a948c55bfdc5d002ac5c8da7f898e"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_rom_read_offline_20260930_01\\instruction_review\\replay_20260930T065049517214Z\\RESTORED_CHECKPOINT.json",
+      "bytes": 1040,
+      "sha256": "b706367695d29564f4c6b8040c85cdf30a862f06e8f7c83c76c0e1e083ee356a"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_rom_read_offline_20260930_01\\instruction_review\\replay_20260930T065049517214Z\\ROM_BLOCK_00000000_00000200.bin",
+      "bytes": 512,
+      "sha256": "d3421c81a4380638a8844e34012db592ba6eed35ca5cb8402880b79869e71f01"
+    }
+  ]
+}

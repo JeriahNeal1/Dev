@@ -1,0 +1,304 @@
+{
+  "schema": 1,
+  "status": "PASS_INDEPENDENT_NATIVE_AND_CONTROLS_REVIEW",
+  "created_utc": "2026-09-30T04:57:18.792773+00:00",
+  "native_and_control_author": "root",
+  "reviewer": "passive_review",
+  "runner_author": "passive_review",
+  "independent_runner_reviewer": "root",
+  "physical_operations": 0,
+  "provider_loads": 0,
+  "hardware_authorization_granted": false,
+  "blocking_findings": [],
+  "checks": [
+    {
+      "status": "PASS",
+      "finding": "Both fake modes return before physical dispatch and bind the same core to the static fake API.",
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\full_upload_physical\\src\\main.cpp",
+      "line": 12
+    },
+    {
+      "status": "PASS",
+      "finding": "Only the exact physical CLI is accepted. The shared Gate checks fixed session and authorization paths before the provider can load.",
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\full_upload_physical\\src\\main.cpp",
+      "line": 20
+    },
+    {
+      "status": "PASS",
+      "finding": "The pinned provider stays read-locked while loaded from its fixed path. All required exports resolve before core execution; module RAII unloads it afterward.",
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\full_upload_physical\\src\\main.cpp",
+      "line": 23
+    },
+    {
+      "status": "PASS",
+      "finding": "The core matches the sealed offline implementation except for the physical clock guard and two terminal labels. Requests, parsing and cleanup are unchanged.",
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\full_upload_physical\\src\\probe_core.hpp",
+      "line": 9
+    },
+    {
+      "status": "PASS",
+      "finding": "The request guard permits exactly 22 transmissions and fifteen fixed chunks. The final exact76 acknowledgement leads directly to cleanup.",
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\full_upload_physical\\src\\probe_core.hpp",
+      "line": 11
+    },
+    {
+      "status": "PASS",
+      "finding": "The Gate requires exact LF authorization and reservation files, then creates and flushes an exclusive invocation marker before hashing or loading the provider.",
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\full_upload_physical\\src\\bootstrap.hpp",
+      "line": 31
+    },
+    {
+      "status": "PASS",
+      "finding": "The 24 offline bootstrap fixtures exercise the shared gate using dummy files and export pointers, then stop before loading or calling any provider.",
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\full_upload_physical\\src\\bootstrap_tests.hpp",
+      "line": 32
+    },
+    {
+      "status": "PASS",
+      "finding": "The launcher checks certificate and file hashes, fresh user IGNITION OFF/TEST MODE ON replies, exact token, engine OFF, no abort or retry, and zero invocations.",
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\launch_full_upload_once.py",
+      "line": 41
+    },
+    {
+      "status": "PASS",
+      "finding": "The launcher rechecks gates and hashes after client inspection, reserves once and starts one child. It keeps waiting through bookkeeping failure or console interruption.",
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\launch_full_upload_once.py",
+      "line": 84
+    },
+    {
+      "status": "PASS",
+      "finding": "Recovery requires confirmed child exit and fresh chronological IGNITION OFF/NORMAL MODE ON user replies, then verifies the fixed passive BF/A8 qualification.",
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\launch_oem_return_once.py",
+      "line": 11
+    },
+    {
+      "status": "PASS",
+      "finding": "Recovery rechecks abort state and passive input pins after client inspection and permits one fixed120-sample passive capture. It cannot retry the active upload.",
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\launch_oem_return_once.py",
+      "line": 35
+    },
+    {
+      "status": "PASS",
+      "finding": "The client scan checks diagnostic names globally and provider modules in the same Windows session. Unreadable live-process module information fails closed.",
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\check_clients.ps1",
+      "line": 8
+    }
+  ],
+  "core_allowed_changes": [
+    "Constructor accepts physical mode only with the real monotonic clock",
+    "Physical terminal JSON result label",
+    "Physical terminal console result label"
+  ],
+  "unchanged_normalized_source_files": [
+    "common.hpp",
+    "protocol.hpp",
+    "fake_backend.hpp",
+    "fixtures.hpp",
+    "owned_artifact.h",
+    "real_clock.hpp",
+    "physical_replay.hpp",
+    "first_physical_replay.hpp",
+    "j2534_tactrix.h"
+  ],
+  "bootstrap_files_unchanged_from_first_chunk": [
+    "bootstrap.hpp",
+    "bootstrap_tests.hpp"
+  ],
+  "source_inputs": [
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\full_upload_physical\\src\\bootstrap.hpp",
+      "sha256": "a7123b3471b01a4593eb7f5c58cd1117fe1fc9fb7a9fe7b27bdc1885833b80d9",
+      "bytes": 6793
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\full_upload_physical\\src\\bootstrap_tests.hpp",
+      "sha256": "7754a91f18c89bcd1be4115faab9ce756085bb7488c60a0828112ee56305d402",
+      "bytes": 5071
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\full_upload_physical\\src\\common.hpp",
+      "sha256": "e502c533058d2aeed48d44d8b1c393bb75511a010ca37bf897bd4c341964d3d8",
+      "bytes": 6279
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\full_upload_physical\\src\\fake_backend.hpp",
+      "sha256": "267a19e0c6db4f3c8941ce098c9317b2f33b72e798b1bd3a3d50ec1720707e48",
+      "bytes": 15915
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\full_upload_physical\\src\\first_physical_replay.hpp",
+      "sha256": "40ef1c01b6504409a1408fd7312778b76b6a225462d288e6d0991b07953eb83c",
+      "bytes": 3187
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\full_upload_physical\\src\\fixtures.hpp",
+      "sha256": "59573effa1b0de52eed19378ba82611f6c2a14b886746d7e6449bca7bfc114e8",
+      "bytes": 5623
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\full_upload_physical\\src\\j2534_tactrix.h",
+      "sha256": "25df54ce5e75ef81bef26c27c694ac82ab74959381bfbf4a6d79a9a68e5d179a",
+      "bytes": 11763
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\full_upload_physical\\src\\main.cpp",
+      "sha256": "fa8932af90e6fae9f205e00c5ff53c5b57badb2fa619ecb33070f635b9e1a96a",
+      "bytes": 3508
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\full_upload_physical\\src\\owned_artifact.h",
+      "sha256": "b62c00f24f578a2b5984fd6eb1e31d16318e431d57e02ee43eaab5c98fb25ab2",
+      "bytes": 9322
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\full_upload_physical\\src\\physical_replay.hpp",
+      "sha256": "21440a7071d8f00289164a3c7f37d8f07138f8133ee45600d39e4f6f86fb8421",
+      "bytes": 1814
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\full_upload_physical\\src\\pins.hpp",
+      "sha256": "8f701430e21baab03a4e553df7eadb9fcc3fe15c0e0d34570cca1ff79f26513e",
+      "bytes": 773
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\full_upload_physical\\src\\probe_core.hpp",
+      "sha256": "fc941497efd0a440483bc1c47595a50db0d3d7ee40a5b279e90ea500b4224d4c",
+      "bytes": 17605
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\full_upload_physical\\src\\protocol.hpp",
+      "sha256": "60ebaa976978f48352d67249817c43ff63c346ebd9df1cda68c36083c5c6a877",
+      "bytes": 1077
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\full_upload_physical\\src\\real_clock.hpp",
+      "sha256": "2e2358ba07c89e55520c64dc943b7fca750014753772ecd66e084d5ae2b37818",
+      "bytes": 1064
+    }
+  ],
+  "builds": [
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\full_upload_physical\\build_a\\BUILD.json",
+      "sha256": "09edc658e895b075857c0b90c30b8d17a578aa367f37225132f9137c1152e148",
+      "bytes": 5582
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\full_upload_physical\\build_b\\BUILD.json",
+      "sha256": "b9f5e072cfd1d5027c6b09bce35e8006d9278c055548f0c9987df92704e83bb9",
+      "bytes": 5582
+    }
+  ],
+  "executables": [
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\full_upload_physical\\build_a\\rk03_full_upload_no_start_physical32.exe",
+      "sha256": "6c7571ece71bb6c29feae9fbfa873cca9635e41cabe269ebc7fa21b1e2fc0d51",
+      "bytes": 360448
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\full_upload_physical\\build_b\\rk03_full_upload_no_start_physical32.exe",
+      "sha256": "6c7571ece71bb6c29feae9fbfa873cca9635e41cabe269ebc7fa21b1e2fc0d51",
+      "bytes": 360448
+    }
+  ],
+  "control_derivation": [
+    {
+      "old": {
+        "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\launch_first_chunk_once.py",
+        "sha256": "4a3d100ae3e7fcacf5e67cf0aa6bd0556f37ef5a1e16171e255213931c4af893",
+        "bytes": 8664
+      },
+      "new": {
+        "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\launch_full_upload_once.py",
+        "sha256": "9492fe7e2e6d704c355cb35d11336a25cbc3a29308c11c40b88e10249e08ea1e",
+        "bytes": 8766
+      },
+      "normalized_text_matches_reviewed_scope_substitutions": true
+    },
+    {
+      "old": {
+        "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\launch_oem_return_once.py",
+        "sha256": "765b75d246721ad85076a61f585923427fec9f592efb14f583810773f540ca2b",
+        "bytes": 4318
+      },
+      "new": {
+        "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\launch_oem_return_once.py",
+        "sha256": "381cf8393dbb4d4b90694b900e0f0a1d00d3d24662b7cc261e8fa87615b0186f",
+        "bytes": 4327
+      },
+      "normalized_text_matches_reviewed_scope_substitutions": true
+    },
+    {
+      "old": {
+        "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\test_launcher_offline.py",
+        "sha256": "d9c5147a3ee530a3a64ff03c6b72489b2dd318bd1e0e3414a824faead93dae0b",
+        "bytes": 7854
+      },
+      "new": {
+        "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\test_launcher_offline.py",
+        "sha256": "e83764b5b90eb5ca4697237e2a603c7a0ccd8dacbfe78906a7c1e98622852890",
+        "bytes": 7884
+      },
+      "normalized_text_matches_reviewed_scope_substitutions": true
+    },
+    {
+      "old": {
+        "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\test_oem_return_controls.py",
+        "sha256": "c4501985af3ed866d2ef21ff137a10b04c6daae0402048b84cfda0075b86bef0",
+        "bytes": 3587
+      },
+      "new": {
+        "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\test_oem_return_controls.py",
+        "sha256": "c4501985af3ed866d2ef21ff137a10b04c6daae0402048b84cfda0075b86bef0",
+        "bytes": 3587
+      },
+      "normalized_text_matches_reviewed_scope_substitutions": true
+    },
+    {
+      "old": {
+        "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\check_clients.ps1",
+        "sha256": "4c86344593f64b50d33784c69e7033af43d554d8d8962ddc6eb68221c47a0d04",
+        "bytes": 1982
+      },
+      "new": {
+        "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\check_clients.ps1",
+        "sha256": "1ea3398668e7ea1edefa07e2ba983bd7762742088392f50fe1c956c52b882f44",
+        "bytes": 2044
+      },
+      "normalized_text_matches_reviewed_scope_substitutions": true
+    }
+  ],
+  "contract": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\PHYSICAL_FULL_UPLOAD_REVIEW_CONTRACT.json",
+    "sha256": "0b56e15ae2dcf749666679effd559c54b7a7c2e202fc2ad2902e24c2a54b1e51",
+    "bytes": 18529
+  },
+  "qualification_report": {
+    "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\full_upload_physical\\reports\\qualification_20260930T045456687736Z\\TEST_REPORT.json",
+    "sha256": "20273a8be9d018758eab00818b4a186cabb8cfc48083281800175c0d5dab53c1",
+    "bytes": 747139
+  },
+  "runner_author_audit": {
+    "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\full_upload_physical\\reports\\RUNNER_AUTHOR_AUDIT.json",
+    "sha256": "0489b4054caf16687706caa22aae9c56f0851fae0400350ba04c86c685e2abfb",
+    "bytes": 3399
+  },
+  "launcher_mock_tests": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\LAUNCHER_TESTS_V2.json",
+    "sha256": "f43751027da14a1a942e6a172c41495768dd9b899cc0bdcf6ef9c4c3c3c2ac65",
+    "bytes": 1869
+  },
+  "recovery_mock_tests": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\OEM_RETURN_CONTROL_TESTS_V2.json",
+    "sha256": "0ef57be3b892ab4f86a6493d0f9f0556761d18f22d99a823886733bf96f11139",
+    "bytes": 1018
+  },
+  "limits": [
+    "This review and all311tests were offline. A root qualification certificate and fresh human gates/token are still required before a physical launch.",
+    "Dummy export resolution verifies required symbols and failure boundaries; it does not reproduce real provider ABI or timing behavior.",
+    "Provider module inspection covers the same Windows session; known diagnostic process names and Java arguments are scanned globally.",
+    "The PE intentionally contains gated LoadLibraryExW/GetProcAddress/FreeLibrary usage and runtime imports. Import absence is not claimed.",
+    "Transfer ACKs are not physical RAM readback. Plaintext proof comes from retained current-ROM instruction execution under explicit admission and peripheral assumptions.",
+    "No sixteenth36, kernel start/execution, ROM read, flash operation, arbitrary payload/address or automatic retry is allowed.",
+    "Later-added result sealers are reviewed separately; this report covers native code, launcher, recovery wrapper and client check."
+  ]
+}

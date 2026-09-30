@@ -1,0 +1,56 @@
+{
+  "inputs": [
+    {
+      "bytes": 1808,
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\build\\rk02_01\\kernel.bin",
+      "sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581"
+    },
+    {
+      "bytes": 51029,
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\build\\rk02_01\\manifest.json",
+      "sha256": "a35562a19f21d4a2815e88fb729d21dd2cc08bf702c0d866f88ffc9e3ddb659e"
+    },
+    {
+      "bytes": 9330,
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\UPLOAD_WIRE_CONTRACT_RK02.json",
+      "sha256": "b1c5431141f9b249b16dd15938c290f20b99593e7ab8512caebcde1906c37f50"
+    },
+    {
+      "bytes": 7821,
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\physical_result\\PHYSICAL_RESULT.json",
+      "sha256": "41d0b333b1fd01c43ae6f11154e33e10a1740f8d9735694d3895bb0e47b4d1a0"
+    },
+    {
+      "bytes": 45205,
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\physical_review\\PHYSICAL_REVIEW.json",
+      "sha256": "bb7a189788c17fe4492c385c739d226065bc37a424c8bb4812cd8cc458406673"
+    },
+    {
+      "bytes": 4179,
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\oem_return_after_full_upload_01\\OEM_RETURN_RESULT.json",
+      "sha256": "b1fe217fed67fcbe2de4e56f7d0f0b643939d7361534faaf5d7534c212d1ee4a"
+    },
+    {
+      "bytes": 347253,
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\physical_session\\RK03_FULL_UPLOAD_NO_START_01\\native_api.jsonl",
+      "sha256": "8f10d7379019ca07d761b7befdc8259f98577668b33d78ce9460e604e822d719"
+    },
+    {
+      "bytes": 14102,
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_no_start_20260930_01\\FIXED_UPLOAD_MANIFEST.json",
+      "sha256": "d43066e736ee11e89e0a4b926f16f629b6c80d579ed936fa2b3bdce631cbfdb9"
+    },
+    {
+      "bytes": 16665,
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\physical_build\\rk02_physical_01\\native_physical.cpp",
+      "sha256": "e1d92d2ac097880cd9f829d0a9bf8abf8735af51b749f9e94f21050dd7a1a691"
+    }
+  ],
+  "normalizations": [
+    "remove captured process pointer addresses and provider timestamps",
+    "represent reviewed200/100/200ms waits as virtual minimums",
+    "new start/identity replies are pinned model expectations, not physical evidence"
+  ],
+  "physical_invocations_this_scope": 0,
+  "reused_offline_qualification": "287/287; unchanged history not rerun"
+}

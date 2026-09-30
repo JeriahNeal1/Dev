@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "recorded_at_utc": "2026-09-29T23:22:54.401734+00:00",
+  "session": "RK02_VEHICLE_03",
+  "status": "INCOMPLETE_NOT_CURRENT_ROM",
+  "rk02_invocations": 1,
+  "rk02_exit_code": 1,
+  "finalizer_exit_code": 1,
+  "finalizer_completed_or_definitively_failed": true,
+  "all_session_processes_exited": true,
+  "last_transmit_hex": "8010f002830005",
+  "transmitted_frames": [
+    "8010f001bf40",
+    "8010f0018102",
+    "8010f002830005"
+  ],
+  "last_read_status": 16,
+  "last_read_message_count": 0,
+  "bf_identity_received": "2F12515306",
+  "session_81_response_hex": "80f01003c1ef8fc2",
+  "seed_or_key_transmitted": false,
+  "ram_kernel_upload_transmitted": false,
+  "kernel_start_transmitted": false,
+  "rom_read_transmitted": false,
+  "flash_operation_transmitted": false,
+  "raw_partial_sizes": [
+    0,
+    0
+  ],
+  "explicit_provider_cleanup_recorded": false,
+  "ecu_reset_proven": false,
+  "retry_allowed": false,
+  "next_gate": "G13",
+  "voltage_gate_policy": "No numerical G12 request per latest operator instruction; independent monitoring continues",
+  "preserved_artifacts": [
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\acquisitions\\RK02_VEHICLE_03\\native.log",
+      "sha256": "8b633a75b8d8f02af88163d85bf72dd1c11a66e8353f99037f682990042a7474",
+      "bytes": 71
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\acquisitions\\RK02_VEHICLE_03\\native_api.jsonl",
+      "sha256": "e277405b588f5cfeec12a073f1ab0ac447945b23e3e48ba2303035c4caa6e53f",
+      "bytes": 3536
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\acquisitions\\RK02_VEHICLE_03\\pass0.partial.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\acquisitions\\RK02_VEHICLE_03\\pass1.partial.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\acquisitions\\RK02_VEHICLE_03\\finalizer.console.log",
+      "sha256": "d0dc16fa7b3b4393a3129227398b84997b99d0c6831aed593800d8ffd94e3297",
+      "bytes": 1116
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\acquisitions\\RK02_VEHICLE_03\\RK02_LAUNCH_AUTHORIZATION.json",
+      "sha256": "1eb8348e454c51e812e25c08843a02b802218b338f643424026b377c4d6488e2",
+      "bytes": 809
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\acquisitions\\RK02_VEHICLE_03\\RK02_STARTED.json",
+      "sha256": "634373ac56814c999c1330d4a0fd7ade658752011a0a6a5b8097e3a7f880a605",
+      "bytes": 187
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\acquisitions\\RK02_VEHICLE_03\\RK02_EXECUTION.json",
+      "sha256": "ea64c44079e4be6181c9a4ee95371d19269cfa9d24489a341c4f00305c9a8d6f",
+      "bytes": 481
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\acquisitions\\RK02_VEHICLE_03\\FINALIZER_EXECUTION.json",
+      "sha256": "059d356f1c848c686ee2bc3e91c73d7ae72598a1eb740ec5b9483461194086e5",
+      "bytes": 506
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\acquisitions\\RK02_VEHICLE_03\\RK02_POSTEXIT_CLIENT_CHECK.json",
+      "sha256": "c1f979773c1f82b6b9239f91cca8327531f657d3457621f864098200a8b4b29f",
+      "bytes": 110
+    }
+  ]
+}

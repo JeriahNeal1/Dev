@@ -1,0 +1,354 @@
+{
+  "schema": 1,
+  "created_utc": "2026-09-30T04:52:56.870429+00:00",
+  "status": "REVIEW_CONTRACT_PHYSICAL_FULL_UPLOAD_NO_START_NOT_AUTHORIZATION",
+  "scope": "ONE_FRESH_PHYSICAL_SESSION_FIXED15_CHUNKS_THEN_CLEANUP",
+  "physical_entry_point": true,
+  "provider_loader": true,
+  "physical_authorization": false,
+  "maximum_physical_invocations": 1,
+  "automatic_retry_allowed": false,
+  "base_branch": "rk03/full-upload-no-start",
+  "base_commit": "4cb0bee977fcd979af2e88223c1ff14898ab72bf",
+  "build_branch": "rk03/full-upload-no-start-physical",
+  "connect": {
+    "protocol": 3,
+    "flags": 512,
+    "baud": 4800
+  },
+  "set_config_order": [
+    {
+      "parameter": 22,
+      "value": 0
+    },
+    {
+      "parameter": 7,
+      "value": 1
+    },
+    {
+      "parameter": 10,
+      "value": 0
+    },
+    {
+      "parameter": 12,
+      "value": 0
+    },
+    {
+      "parameter": 3,
+      "value": 0
+    }
+  ],
+  "get_config": "Immediately after all five SET_CONFIG calls, retrieve and check all five returned values using GET_CONFIG with SCONFIG_LIST in pInput and null pOutput; sentinel initialize values and verify list integrity",
+  "filter": {
+    "type": 1,
+    "protocol": 3,
+    "tx_flags": 0,
+    "mask_hex": "00000000",
+    "pattern_hex": "00000000",
+    "flow_control_hex": "00000000",
+    "flow_pointer_nonnull": true,
+    "source": "Archived installed-host API sequence47; provider.cpp serializes a null pointer as JSON null, so the logged four-byte flow object proves a nonnull argument"
+  },
+  "waits_ms": [
+    200,
+    100,
+    200
+  ],
+  "baud_set": 15625,
+  "queue_clears_in_order": [
+    7,
+    8
+  ],
+  "maximum_tx": 22,
+  "download_declarations": 1,
+  "transfers": 15,
+  "upload_start_inclusive": "FFFF3000",
+  "upload_end_exclusive": "FFFF3710",
+  "upload_bytes": 1808,
+  "payload_lengths": [
+    128,
+    128,
+    128,
+    128,
+    128,
+    128,
+    128,
+    128,
+    128,
+    128,
+    128,
+    128,
+    128,
+    128,
+    16
+  ],
+  "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+  "cipher_sha256": "ea851d51dfd2e7d49a9b6d59e7cffd9f0376e33aa2a312816b3101446e053f6b",
+  "ordered_requests": [
+    {
+      "stage": 0,
+      "wire_hex": "8010f001bf40",
+      "dynamic_rule": null,
+      "sample_wire_hex": "8010f001bf40",
+      "expected_reply_hex": "80f01039ffa210112f1251530673facba62b81fea800000060ce54f9b1e4000c200000000000dc00005d1f3080f226000043fb00e1000000000000c1f0c2"
+    },
+    {
+      "stage": 1,
+      "wire_hex": "8010f0018102",
+      "dynamic_rule": null,
+      "sample_wire_hex": "8010f0018102",
+      "expected_reply_hex": "80f01003c1ef8fc2"
+    },
+    {
+      "stage": 2,
+      "wire_hex": "8010f002830005",
+      "dynamic_rule": null,
+      "sample_wire_hex": "8010f002830005",
+      "expected_reply_hex": "80f01007c30000ff00ff0048"
+    },
+    {
+      "stage": 3,
+      "wire_hex": "8010f0022701aa",
+      "dynamic_rule": null,
+      "sample_wire_hex": "8010f0022701aa",
+      "expected_reply_hex": "80f0100667011234567802"
+    },
+    {
+      "stage": 4,
+      "wire_hex": null,
+      "dynamic_rule": "2702 plus reviewed key derived from validated four-byte seed",
+      "sample_wire_hex": "8010f0062702e78f1f2165",
+      "expected_reply_hex": "80f0100367023420"
+    },
+    {
+      "stage": 5,
+      "wire_hex": "8010f0031085021a",
+      "dynamic_rule": null,
+      "sample_wire_hex": "8010f0031085021a",
+      "expected_reply_hex": "80f01002508557"
+    },
+    {
+      "stage": 6,
+      "wire_hex": "8010f00834ff30000400071006",
+      "dynamic_rule": null,
+      "sample_wire_hex": "8010f00834ff30000400071006",
+      "expected_reply_hex": "80f0100274847a"
+    },
+    {
+      "stage": 7,
+      "wire_hex": "8010f08436ff30002178b10a345b1076fd256f75f05ba033e301ed7bbae243b735e6aedbc143c40be01bf9b6caab4599eccaacb23d3eeb06dddf471ed3b0238f2bf0553861e117054bad87079a8cbb9681c01303b7825b2d199bc7e5c4dd5bcf85cf1a64050df3ab050df3ab2a45f9b476963b1f16baea94084e321a79bd4cf9c0f25912ab9d7b8df4",
+      "dynamic_rule": null,
+      "sample_wire_hex": "8010f08436ff30002178b10a345b1076fd256f75f05ba033e301ed7bbae243b735e6aedbc143c40be01bf9b6caab4599eccaacb23d3eeb06dddf471ed3b0238f2bf0553861e117054bad87079a8cbb9681c01303b7825b2d199bc7e5c4dd5bcf85cf1a64050df3ab050df3ab2a45f9b476963b1f16baea94084e321a79bd4cf9c0f25912ab9d7b8df4",
+      "expected_reply_hex": "80f0100176f7"
+    },
+    {
+      "stage": 8,
+      "wire_hex": "8010f08436ff3080a614d816e73b7a2f8010d0033c21fd82e809dcd33849889e1bb8439f58c18e12d1328f80e2d30dccf17eadf57d339c382284e4779a8cbb96094cf9da205bf8c04e6120419a8cbb9687d0d3c3ea5b98c957670833e1a0128aff648ef5c03ca6b7b876eac3f7b569d887422e4be8f5108bedc55089c03ca6b7539b8ad1a4d30a534a",
+      "dynamic_rule": null,
+      "sample_wire_hex": "8010f08436ff3080a614d816e73b7a2f8010d0033c21fd82e809dcd33849889e1bb8439f58c18e12d1328f80e2d30dccf17eadf57d339c382284e4779a8cbb96094cf9da205bf8c04e6120419a8cbb9687d0d3c3ea5b98c957670833e1a0128aff648ef5c03ca6b7b876eac3f7b569d887422e4be8f5108bedc55089c03ca6b7539b8ad1a4d30a534a",
+      "expected_reply_hex": "80f0100176f7"
+    },
+    {
+      "stage": 9,
+      "wire_hex": "8010f08436ff3100e28c3ee42446007d2de0ddaa9dce70327241c643aab2699ea62dd88c9cead164bbf16590f4e0cd28e987359e6b371cd882af16896daaa08c2bfb509b6f5a700b7016e8ad4d3d09337306eba60e9f2d6e3e5ccec225f798f1fc359ea168d7727d38fc1265927d740c43d5e9b1862403ee9330f481bc7dd24e36e13bd0697c3ebcf7",
+      "dynamic_rule": null,
+      "sample_wire_hex": "8010f08436ff3100e28c3ee42446007d2de0ddaa9dce70327241c643aab2699ea62dd88c9cead164bbf16590f4e0cd28e987359e6b371cd882af16896daaa08c2bfb509b6f5a700b7016e8ad4d3d09337306eba60e9f2d6e3e5ccec225f798f1fc359ea168d7727d38fc1265927d740c43d5e9b1862403ee9330f481bc7dd24e36e13bd0697c3ebcf7",
+      "expected_reply_hex": "80f0100176f7"
+    },
+    {
+      "stage": 10,
+      "wire_hex": "8010f08436ff3180e53ad55784b629fd3cea7e81d4dc1bda5cf12a09f0b79a4aa55b665170242840fb7a57ac4529e2035494df2334c35cd56728ca429349c6346df8cb0851762c820bd86e23ff3f981ecfaa3f64bd138e591f7758aa5bc2bb0a356880ee7fe99c9e999df968b7990b479cead164b8a522b9916f7876b64b0a986df8cb08e41af6e447",
+      "dynamic_rule": null,
+      "sample_wire_hex": "8010f08436ff3180e53ad55784b629fd3cea7e81d4dc1bda5cf12a09f0b79a4aa55b665170242840fb7a57ac4529e2035494df2334c35cd56728ca429349c6346df8cb0851762c820bd86e23ff3f981ecfaa3f64bd138e591f7758aa5bc2bb0a356880ee7fe99c9e999df968b7990b479cead164b8a522b9916f7876b64b0a986df8cb08e41af6e447",
+      "expected_reply_hex": "80f0100176f7"
+    },
+    {
+      "stage": 11,
+      "wire_hex": "8010f08436ff3200eca5fa6a8a62f844b5e1848ef17eadf568825b141d4ff58dc89ab04cfbd4a32d9abc830e01f8532ebdbc9702cee42851332c5982b6577390905dcdb16d01a44985461295b0146d10af5802982bcc68f85cf4a719a94e5346ef3981a189138327778d6eabd4a1b462624856a52b19196c33317cbf50c026109533ebf66df8cb08ea",
+      "dynamic_rule": null,
+      "sample_wire_hex": "8010f08436ff3200eca5fa6a8a62f844b5e1848ef17eadf568825b141d4ff58dc89ab04cfbd4a32d9abc830e01f8532ebdbc9702cee42851332c5982b6577390905dcdb16d01a44985461295b0146d10af5802982bcc68f85cf4a719a94e5346ef3981a189138327778d6eabd4a1b462624856a52b19196c33317cbf50c026109533ebf66df8cb08ea",
+      "expected_reply_hex": "80f0100176f7"
+    },
+    {
+      "stage": 12,
+      "wire_hex": "8010f08436ff3280f40b4a6eaac8fec9999df968727f34e532725d2a308f31b7fd4a3cc0fb7a57ac2178b10aecaf7860c2a995fabf999e820e33d2922119a57cfdd3ffff83d78c2ed9d6fc2e55d8f95b582d518eecaf786053bb63cf43eb460683d78c2e08ac051618f01400e24c1787a16505d65eb63b868a551574fc94751063f2d4d1de2eec0c0b",
+      "dynamic_rule": null,
+      "sample_wire_hex": "8010f08436ff3280f40b4a6eaac8fec9999df968727f34e532725d2a308f31b7fd4a3cc0fb7a57ac2178b10aecaf7860c2a995fabf999e820e33d2922119a57cfdd3ffff83d78c2ed9d6fc2e55d8f95b582d518eecaf786053bb63cf43eb460683d78c2e08ac051618f01400e24c1787a16505d65eb63b868a551574fc94751063f2d4d1de2eec0c0b",
+      "expected_reply_hex": "80f0100176f7"
+    },
+    {
+      "stage": 13,
+      "wire_hex": "8010f08436ff33006bf35d4fef1ead4e87be33e29dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf3123c8",
+      "dynamic_rule": null,
+      "sample_wire_hex": "8010f08436ff33006bf35d4fef1ead4e87be33e29dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf3123c8",
+      "expected_reply_hex": "80f0100176f7"
+    },
+    {
+      "stage": 14,
+      "wire_hex": "8010f08436ff33809dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf3123ec",
+      "dynamic_rule": null,
+      "sample_wire_hex": "8010f08436ff33809dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf3123ec",
+      "expected_reply_hex": "80f0100176f7"
+    },
+    {
+      "stage": 15,
+      "wire_hex": "8010f08436ff34009dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31236d",
+      "dynamic_rule": null,
+      "sample_wire_hex": "8010f08436ff34009dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31236d",
+      "expected_reply_hex": "80f0100176f7"
+    },
+    {
+      "stage": 16,
+      "wire_hex": "8010f08436ff34809dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf3123ed",
+      "dynamic_rule": null,
+      "sample_wire_hex": "8010f08436ff34809dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf3123ed",
+      "expected_reply_hex": "80f0100176f7"
+    },
+    {
+      "stage": 17,
+      "wire_hex": "8010f08436ff35009dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31236e",
+      "dynamic_rule": null,
+      "sample_wire_hex": "8010f08436ff35009dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31236e",
+      "expected_reply_hex": "80f0100176f7"
+    },
+    {
+      "stage": 18,
+      "wire_hex": "8010f08436ff35809dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf3123ee",
+      "dynamic_rule": null,
+      "sample_wire_hex": "8010f08436ff35809dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf3123ee",
+      "expected_reply_hex": "80f0100176f7"
+    },
+    {
+      "stage": 19,
+      "wire_hex": "8010f08436ff36009dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31236f",
+      "dynamic_rule": null,
+      "sample_wire_hex": "8010f08436ff36009dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31236f",
+      "expected_reply_hex": "80f0100176f7"
+    },
+    {
+      "stage": 20,
+      "wire_hex": "8010f08436ff36809dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf3123ef",
+      "dynamic_rule": null,
+      "sample_wire_hex": "8010f08436ff36809dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf3123ef",
+      "expected_reply_hex": "80f0100176f7"
+    },
+    {
+      "stage": 21,
+      "wire_hex": "8010f01436ff37009dbf31239dbf31239dbf3123299ea39812",
+      "dynamic_rule": null,
+      "sample_wire_hex": "8010f01436ff37009dbf31239dbf31239dbf3123299ea39812",
+      "expected_reply_hex": "80f0100176f7"
+    }
+  ],
+  "excluded_historical_frame_index": 16,
+  "excluded_historical_frame_hex": "8010f003310101b6",
+  "forbidden": [
+    "kernel start",
+    "kernel execution",
+    "kernel version",
+    "ROM read",
+    "flash operation",
+    "arbitrary address",
+    "arbitrary payload",
+    "sixteenth36",
+    "retry"
+  ],
+  "reused_evidence": [
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\FIRST_CHUNK_REVIEW_CONTRACT.json",
+      "bytes": 10169,
+      "sha256": "a7482b0eba224c9642745b830c71b3fff14f987988a58cdc1376e45dc0aa839c"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\qualification\\QUALIFICATION.json",
+      "bytes": 196687,
+      "sha256": "51f42896bc04e63b62fdcbb57b490ef8212af69f906e71e5e51c577ce12a6af4"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\physical_result\\PHYSICAL_RESULT.json",
+      "bytes": 9469,
+      "sha256": "29a87941a4ee101ea21db981047c0622e3ad9d44932e6474e9fc1ed923e5ae35"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\physical_result\\evidence\\native_api.jsonl",
+      "bytes": 163830,
+      "sha256": "d258d9eb5b0690e8dd1c79d29f217aa86e152d866e1aeb1e938bf98aa13896a3"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\physical_review\\PHYSICAL_REVIEW.json",
+      "bytes": 75208,
+      "sha256": "078823af1ebf7a7d44163d2577e5a272a4edaad78fc90836f573f615e919f1fd"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\oem_return_after_first_chunk_01\\OEM_RETURN_RESULT.json",
+      "bytes": 4022,
+      "sha256": "e209ab72812e49ca83aeda07078ae0a295722fe43f640c07325b31b03966312e"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\UPLOAD_WIRE_CONTRACT_RK02.json",
+      "bytes": 9330,
+      "sha256": "b1c5431141f9b249b16dd15938c290f20b99593e7ab8512caebcde1906c37f50"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\UPLOAD_WIRE_RK02_TRACE.json.gz",
+      "bytes": 6987389,
+      "sha256": "148aa99345229c92f789c25339e008eb7bf3ec5e133ce3bb5f3c385d5451f469"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\build\\rk02_01\\kernel.bin",
+      "bytes": 1808,
+      "sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FirstChunkPhysical\\first_chunk\\reports\\qualification_20260930T033815962561Z\\TEST_REPORT.json",
+      "bytes": 388742,
+      "sha256": "efb46f51d94ff624587b88228492535a8f441a0a9bcd1473d7f96329dde36e7b"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FirstChunkPhysical\\first_chunk\\tools\\test_first_chunk_independent.py",
+      "bytes": 64211,
+      "sha256": "01bc991fb80ad10634cea7fbcebf9f3c4064c202568314e285fe3de8421fa921"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\CURRENT_ROM_STATUS.json",
+      "bytes": 242857,
+      "sha256": "018615b863b9ce80d705c7118863ba2bca40b28c2e925dfc4127eac220ab3f0c"
+    }
+  ],
+  "limitations": [
+    "Separate physical executable requires new independent qualification and explicit user authorization.",
+    "All remaining physical chunk acceptance and full-unstarted-upload recovery remain unproven until this experiment.",
+    "ACK acceptance is not physical RAM readback. No causal attribution among individual transport changes."
+  ],
+  "session_id": "RK03_FULL_UPLOAD_NO_START_01",
+  "session_path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\physical_session\\RK03_FULL_UPLOAD_NO_START_01",
+  "requires_exact_human_authorization": "PROCEED RK03 FULL UPLOAD NO START",
+  "physical_provider": {
+    "path": "C:\\Windows\\SysWOW64\\op20pt32.dll",
+    "bytes": 1781896,
+    "sha256": "f432084801762d919a3c31974616e097562424470003edc4f4fb843df34103cf"
+  },
+  "offline_qualification": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_no_start_20260930_01\\qualification\\QUALIFICATION.json",
+    "bytes": 20347,
+    "sha256": "cca85ff256dc86c7f88e3f3baa48c0868a51ff0617096455071086b5b54c2660"
+  },
+  "offline_manifest": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_no_start_20260930_01\\qualification\\PRESERVATION_MANIFEST.json",
+    "bytes": 510453,
+    "sha256": "9eb37765bf8d83e8f2050e008d77ab63d575cfccaacca111877e72f5bb7f54c7"
+  },
+  "fixed_upload_manifest": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_no_start_20260930_01\\FIXED_UPLOAD_MANIFEST.json",
+    "bytes": 14102,
+    "sha256": "d43066e736ee11e89e0a4b926f16f629b6c80d579ed936fa2b3bdce631cbfdb9"
+  },
+  "simplified_physical_gates": [
+    "IGNITION OFF",
+    "TEST MODE ON"
+  ],
+  "recovery_gates": [
+    "IGNITION OFF",
+    "NORMAL MODE ON"
+  ]
+}

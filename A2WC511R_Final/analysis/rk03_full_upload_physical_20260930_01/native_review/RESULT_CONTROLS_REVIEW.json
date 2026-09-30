@@ -1,0 +1,124 @@
+{
+  "schema": 1,
+  "status": "PASS_INDEPENDENT_RESULT_CONTROLS_REVIEW",
+  "created_utc": "2026-09-30T05:04:39.342431+00:00",
+  "author_and_test_executor": "root",
+  "reviewer": "passive_review",
+  "review_mode": "Read-only source and existing report/pin inspection; AST syntax parse only, no imports or execution of sealers/tests",
+  "physical_operations": 0,
+  "provider_loads": 0,
+  "PE_invocations": 0,
+  "hardware_authorization_granted": false,
+  "blocking_findings": [],
+  "checks": [
+    {
+      "status": "PASS",
+      "finding": "The validator requires one startup record, consistent physical flags, fixed upload size, real clock, and explicit physical session/executable/contract/provider bindings plus native authorization flags.",
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\seal_full_upload_result.py",
+      "line": 22
+    },
+    {
+      "status": "PASS",
+      "finding": "Every API return must pair with its intent, retain arguments, return status zero and preserve timing/stack accounting; exactly22fixed transmissions and the seed-derived key are checked.",
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\seal_full_upload_result.py",
+      "line": 36
+    },
+    {
+      "status": "PASS",
+      "finding": "Complete BF identity, seed, C1/C3 and transfer replies are assembled from bounded valid metadata/indicators; every transfer requires exact76 and checksum/framing integrity.",
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\seal_full_upload_result.py",
+      "line": 43
+    },
+    {
+      "status": "PASS",
+      "finding": "The non-read API schedule is checked exactly, including five SETs, immediate GET, broad filter, waits, baud, queue clears and final cleanup. Argument/output objects and resource handles are validated directly.",
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\seal_full_upload_result.py",
+      "line": 65
+    },
+    {
+      "status": "PASS",
+      "finding": "Minimum physical waits, immediate cleanup order and terminal counters/errors must agree; no later frame or retry can be accepted as a passing result.",
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\seal_full_upload_result.py",
+      "line": 115
+    },
+    {
+      "status": "PASS",
+      "finding": "The completed-session sealer requires exit, one invocation, user token, certificate/executable/contract bindings and post-exit client cleanup; it copies evidence before validation and preserves PASS or FAIL without retries.",
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\seal_full_upload_result.py",
+      "line": 130
+    },
+    {
+      "status": "PASS",
+      "finding": "The passive result sealer requires exactly120samples of the six addresses, BF identity2F12515306, PASS_CAPTURE_ONLY, clean observer exit and post-exit client scan; exact wire requests are oneBF and120A8 only.",
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\seal_oem_return_full_upload.py",
+      "line": 14
+    },
+    {
+      "status": "PASS",
+      "finding": "OEM return is reported independently for either recorded upload PASS or FAIL. It seals artifacts and returns to offline-only scope without starting another operation.",
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\seal_oem_return_full_upload.py",
+      "line": 31
+    },
+    {
+      "status": "PASS",
+      "finding": "The38tests reuse four saved fake journals, test all fifteen badACK boundaries and explicit synthetic physical envelopes/control mutations. No executable or provider runs in this test source.",
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\test_result_validator.py",
+      "line": 39
+    }
+  ],
+  "resolved_review_findings": [
+    "Initial upload result validator did not bind physical startup identity/hashes or independently validate the full setup/control schedule. Final source now checks both directly and38offline tests cover the strengthened boundaries.",
+    "Inherited OEM sealer assumed uploadPASS. New sealer accepts a recorded uploadPASS orFAIL and reports passive recovery independently."
+  ],
+  "inputs": [
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\seal_full_upload_result.py",
+      "bytes": 15276,
+      "sha256": "d1039b455b0a107e0f812e6396f9045bfc951cea1d95dd3c7bfb71a5431ac816"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\seal_oem_return_full_upload.py",
+      "bytes": 6017,
+      "sha256": "8ebad67be03c3dd8f99ec2a1141e0fc4eac0a7478352312873bc65dcd048c2ba"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\test_result_validator.py",
+      "bytes": 5298,
+      "sha256": "ffefa0f1331737257feb0fde35266122c5a9461a7cb364ba57288bf500f65196"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\RESULT_VALIDATOR_TESTS.json",
+      "bytes": 1953,
+      "sha256": "f375bcfccc9475f01a3086d9a16b4eeb165a248df701104fcbfd1b257c94f165"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\PHYSICAL_FULL_UPLOAD_REVIEW_CONTRACT.json",
+      "bytes": 18529,
+      "sha256": "0b56e15ae2dcf749666679effd559c54b7a7c2e202fc2ad2902e24c2a54b1e51"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\launch_full_upload_once.py",
+      "bytes": 8766,
+      "sha256": "9492fe7e2e6d704c355cb35d11336a25cbc3a29308c11c40b88e10249e08ea1e"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\launch_oem_return_once.py",
+      "bytes": 4327,
+      "sha256": "381cf8393dbb4d4b90694b900e0f0a1d00d3d24662b7cc261e8fa87615b0186f"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\check_clients.ps1",
+      "bytes": 2044,
+      "sha256": "1ea3398668e7ea1edefa07e2ba983bd7762742088392f50fe1c956c52b882f44"
+    }
+  ],
+  "validator_test_checks": 38,
+  "tests_are_synthetic_not_physical_results": true,
+  "limits": [
+    "No physical result or recovery evidence exists for this new session yet; review success grants no authorization.",
+    "The synthetic physical envelope tests metadata validation only and is explicitly marked synthetic; it is not a vehicle transcript.",
+    "The OEM sealer is adapted retained postprocessing code and was reviewed without executing its top-level reads/writes. Passive backend qualification is reused separately.",
+    "Human gate receipts remain root-recorded from actual user responses; neither result sealer invents or advances a physical action.",
+    "Transfer acknowledgements do not directly read back RAM; no kernel start, ROM acquisition or flash operation is qualified."
+  ]
+}

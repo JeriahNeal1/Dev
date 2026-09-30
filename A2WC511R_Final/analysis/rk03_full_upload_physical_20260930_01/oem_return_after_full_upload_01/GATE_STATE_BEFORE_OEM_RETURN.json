@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "session_id": "RK03_FULL_UPLOAD_NO_START_01",
+  "qualification_sha256": "dbfe169cbe89f4ab23318cb79dec1dbafcaa49dbdea48397dc4ec0f16de95399",
+  "status": "RECOVERY_NORMAL_MODE_CONFIRMED",
+  "next_gate": null,
+  "physical_state": "NORMAL MODE ON",
+  "engine": "OFF",
+  "probe_invocation_count": 1,
+  "launch_reserved": true,
+  "commit_authorization": {
+    "reply": "PROCEED RK03 FULL UPLOAD NO START",
+    "source": "user",
+    "session_id": "RK03_FULL_UPLOAD_NO_START_01",
+    "qualification_sha256": "dbfe169cbe89f4ab23318cb79dec1dbafcaa49dbdea48397dc4ec0f16de95399",
+    "received_utc": "2026-09-30T05:15:15.305521+00:00"
+  },
+  "completed_pre_probe_gates": [
+    {
+      "reply": "IGNITION OFF",
+      "source": "user",
+      "session_id": "RK03_FULL_UPLOAD_NO_START_01",
+      "received_utc": "2026-09-30T05:08:21.169792+00:00",
+      "qualification_sha256": "dbfe169cbe89f4ab23318cb79dec1dbafcaa49dbdea48397dc4ec0f16de95399"
+    },
+    {
+      "reply": "TEST MODE ON",
+      "source": "user",
+      "session_id": "RK03_FULL_UPLOAD_NO_START_01",
+      "received_utc": "2026-09-30T05:10:18.543270+00:00",
+      "qualification_sha256": "dbfe169cbe89f4ab23318cb79dec1dbafcaa49dbdea48397dc4ec0f16de95399"
+    }
+  ],
+  "completed_recovery_gates": [
+    {
+      "reply": "IGNITION OFF",
+      "source": "user",
+      "session_id": "RK03_FULL_UPLOAD_NO_START_01",
+      "received_utc": "2026-09-30T05:17:47.233495+00:00",
+      "qualification_sha256": "dbfe169cbe89f4ab23318cb79dec1dbafcaa49dbdea48397dc4ec0f16de95399"
+    },
+    {
+      "reply": "NORMAL MODE ON",
+      "source": "user",
+      "session_id": "RK03_FULL_UPLOAD_NO_START_01",
+      "received_utc": "2026-09-30T05:19:32.176990+00:00",
+      "qualification_sha256": "dbfe169cbe89f4ab23318cb79dec1dbafcaa49dbdea48397dc4ec0f16de95399"
+    }
+  ],
+  "operator_managed_physical_context": true,
+  "full_acquisition_allowed": false,
+  "kernel_start_allowed": false,
+  "retry_allowed": false,
+  "abort_requested": false,
+  "passive_oem_return_invocations": 0,
+  "updated_utc": "2026-09-30T05:19:32.176990+00:00",
+  "commit_gate_presentation": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\precommit_checks\\COMMIT_GATE_PRESENTATION.json",
+    "sha256": "6fca6bbc0208be6cb2a4a623c44d13c94c29a41830fbe5b260964afdd6ab7c24"
+  },
+  "launch_reserved_utc": "2026-09-30T05:15:27.500100+00:00",
+  "process_id": 21608,
+  "process_exited": true,
+  "exit_code": 0,
+  "full_upload_physical": "PASS",
+  "physical_result": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\physical_result\\PHYSICAL_RESULT.json",
+    "bytes": 7821,
+    "sha256": "41d0b333b1fd01c43ae6f11154e33e10a1740f8d9735694d3895bb0e47b4d1a0"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "status": "SEALED_FINAL_TWO_PASS_128_READY_FOR_SEPARATE_PHYSICAL_RUN",
+  "source_worktree": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128",
+  "branch": "rk03/final-two-pass-128",
+  "base_commit": "ea696a82d2e37e57ba1e2f7983de219f780b05da",
+  "kernel_sha256": "808a5523d47de11881bfc2ea06a35278aedb5122ed51e8110f817b3210adb653",
+  "ROM_start": 0,
+  "ROM_end_exclusive": 1048576,
+  "block_bytes": 128,
+  "blocks_per_pass": 8192,
+  "passes": 2,
+  "total_reads": 16384,
+  "maximum_TX": 16408,
+  "no_physical_execution_this_run": true,
+  "pending_operator_state": "NORMAL MODE ON for passive recovery",
+  "updated_utc": "2026-09-30T08:23:49.775383+00:00",
+  "OEM_return_after128": "PASS",
+  "native_tests": 38,
+  "validator_tests": 65,
+  "launcher_checks": 36,
+  "recovery_checks": 14,
+  "physical_invocations": 0,
+  "bounded128_session_completion": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_128_20260930_01\\session_completion\\COMPLETION_MANIFEST.json",
+    "bytes": 9569,
+    "sha256": "879af782fa59daa43f7b3ebfa873fc43ad4b7ffe9ff4cf9b48c588e332e7378e"
+  },
+  "certificate": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_final_two_pass_128_20260930_01\\qualification\\QUALIFICATION.json",
+    "bytes": 98386,
+    "sha256": "7e3fd3de08872f2e6ad4327d344e0b580bd0f1f4996ca7683be05cdcd93b7ca9"
+  },
+  "physical_executable": {
+    "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\build_a\\rk03_final_two_pass_128_physical32.exe",
+    "bytes": 448000,
+    "sha256": "991492809897e3333fdc1422e70d70690906f59d722e1e99088fb55bd56432ce"
+  },
+  "remaining_physical_milestones": 1
+}

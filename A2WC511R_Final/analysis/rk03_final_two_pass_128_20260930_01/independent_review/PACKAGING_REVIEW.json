@@ -1,0 +1,176 @@
+{
+  "schema": 1,
+  "status": "PASS",
+  "scope": "FINAL_TWO_PASS128_PACKAGING_ONLY_STATIC_REVIEW",
+  "utc": "2026-09-30T08:48:55.836128+00:00",
+  "reviewer": "passive_review",
+  "checks_passed": 41,
+  "checks": [
+    "pinned independent root audit",
+    "root audit status/role/no physical rerun",
+    "current root-reviewed source fake_backend.hpp",
+    "current root-reviewed source current_physical_replay.hpp",
+    "current root-reviewed source identity_physical_replay.hpp",
+    "current root-reviewed source test_final_physical.py",
+    "current root-reviewed source root_review.py",
+    "prior independent native/control review retained",
+    "unconditional rejection when Python assertions disabled",
+    "optimization rejection is first sealing operation",
+    "clean final branch required",
+    "no final physical session before sealing",
+    "all three reviews mandatory and recursively hash-verified",
+    "new38-case fake qualification required",
+    "65/36/14 control results mandatory",
+    "physical128 and recovery prerequisites mandatory",
+    "fixed128 two-pass scope",
+    "exact unchanged kernel/entry",
+    "matching source closure and byte-identical PE builds",
+    "commit will bind tracked exact source snapshot",
+    "schedule manifest, exact wires and future run plan included",
+    "case evidence pins verified including preserved gzip/raw images",
+    "fresh gates contain no receipts, authorization or invocation",
+    "preparation cannot claim current physical authorization",
+    "certificate exclusions explicit",
+    "byte equality and separate baseline classification accurately bound",
+    "certificate hash generated before future mutable gate binding",
+    "mutable gate excluded from certificate files",
+    "read-only attributes limited to new package/analysis, not historical/provider/reference inputs",
+    "sealer contains no vehicle/provider/process launch; only read-only git metadata",
+    "future plan forbids this preparation run and requires exact new token",
+    "no retry, consumed markers preserved, recovery regardless of result",
+    "completion and image designation correct",
+    "actual contract matches packaging claims",
+    "retained new result FINAL_VALIDATOR_TESTS.json",
+    "retained new result LAUNCHER_TESTS.json",
+    "retained new result OEM_RETURN_CONTROL_TESTS.json",
+    "final build manifest build_a",
+    "current PE build_a",
+    "final build manifest build_b",
+    "current PE build_b"
+  ],
+  "blocking_findings": [],
+  "reviewed_files": [
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\tools\\seal_final_release.py",
+      "bytes": 9079,
+      "sha256": "157f4f1b6d101fe46708ea93964e441de68d0d61d1409357e07b5aa3c3cde12d"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_final_two_pass_128_20260930_01\\FINAL_RUN_PLAN.md",
+      "bytes": 5595,
+      "sha256": "6638e755a725e53d47c5d59b4c36c9ba755a8c4ecebf1778a1fe0787fab52e01"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_final_two_pass_128_20260930_01\\root_review\\REVIEW.json",
+      "bytes": 608644,
+      "sha256": "3433057aea42f085196f5f090cb02b7e950ba504dadb5beec1598122db9628eb"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\src\\fake_backend.hpp",
+      "bytes": 7496,
+      "sha256": "283c886fb98bbe646766c0c6823940cfa6975fc6318ff1a9dcdb199bc8db97e8"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\src\\current_physical_replay.hpp",
+      "bytes": 12395,
+      "sha256": "78f00d870f5363fca10d12f63756d038312530f053f8382896bbae0ea687eba4"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\src\\identity_physical_replay.hpp",
+      "bytes": 623,
+      "sha256": "84a549d8f5d6cbe87a133739519610b91661966bfa6932564cb9f1d548efec98"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\tools\\test_final_physical.py",
+      "bytes": 23632,
+      "sha256": "4e8f0c13852385346553578dec0485724c7331fb890a67ee08b5ec57aaed912e"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\tools\\root_review.py",
+      "bytes": 5961,
+      "sha256": "1bef3857307ae5b0fcda632c1b305cc59d0d9d95ae173daf9e19582e9ff4f725"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_final_two_pass_128_20260930_01\\independent_review\\REVIEW.json",
+      "bytes": 45551,
+      "sha256": "26f7a3f86f75d72e38b43e747b5cd5e58fada8c3780a4f6331b9c3a8437d0bd8"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_final_two_pass_128_20260930_01\\FINAL_TWO_PASS_REVIEW_CONTRACT.json",
+      "bytes": 18395,
+      "sha256": "22944aad65f7999f064c48acb2335ab4f871826aca770119d44b4d90fdc34ac9"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_final_two_pass_128_20260930_01\\FINAL_VALIDATOR_TESTS.json",
+      "bytes": 15485,
+      "sha256": "3c5ef0e183c3eaef5a4f2a4342011e118449dca740eba516db4d4e5662b4dfa4"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_final_two_pass_128_20260930_01\\LAUNCHER_TESTS.json",
+      "bytes": 1859,
+      "sha256": "ebac52c1afbe4eee5e02a5bcfd14da7d080fe3ca85056dbd1a04f6158f2eda25"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_final_two_pass_128_20260930_01\\OEM_RETURN_CONTROL_TESTS.json",
+      "bytes": 1014,
+      "sha256": "a5b2a50e0829f1067146438b6b70e6abcb653cb2415745a1343e8005e645c16e"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\build_a\\BUILD.json",
+      "bytes": 7489,
+      "sha256": "9dc4b80f12db169bf0c68172bb6e571cde6c053c52aa2bdaf6400b1483fca31e"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\build_a\\rk03_final_two_pass_128_physical32.exe",
+      "bytes": 448000,
+      "sha256": "991492809897e3333fdc1422e70d70690906f59d722e1e99088fb55bd56432ce"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\build_b\\BUILD.json",
+      "bytes": 7489,
+      "sha256": "d7668d77a875d1b78e15ab0a4ccd61d1c92aedfb3d2e5c5455b06b431ec31c22"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\build_b\\rk03_final_two_pass_128_physical32.exe",
+      "bytes": 448000,
+      "sha256": "991492809897e3333fdc1422e70d70690906f59d722e1e99088fb55bd56432ce"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_final_two_pass_128_20260930_01\\FIXED_READ_MANIFEST.json",
+      "bytes": 746,
+      "sha256": "f2d2112de424d5ca96470dab72402376407f79b828ff6fefca82fc5cbe2acde5"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_final_two_pass_128_20260930_01\\FIXED_READ_SCHEDULE.bin",
+      "bytes": 212992,
+      "sha256": "2d9c6c3d74100f476c7a81c57b8b2c86a5f047b52dedb40bf5d01f8ae996f2f2"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_final_two_pass_128_20260930_01\\independent_review\\review_final_packaging.py",
+      "bytes": 9482,
+      "sha256": "babe431380b60e5f84b7e4d8943ff641b965ed051857d783bd2bf6e6b9886ce7"
+    }
+  ],
+  "conclusions": [
+    "The sealer binds the new fixed128 two-pass scope, samePE matching builds,38-case fake report,65/36/14 control checks and all three independent reviews.",
+    "Prior physical128 success and OEM return are exact pinned prerequisites. The unchanged128 kernel and all16384 request wires are bound through reviewed source/manifest/evidence.",
+    "Source snapshot and clean commit are sealed without touching prior evidence. Certificate creation precedes separate mutable gate/state files; no authorization, receipt or invocation is invented.",
+    "The run plan requires a separately authorized future run, exact fresh token, single child ownership, cleanup/recovery, independently reconstructed raw images and offline integrity/tag completion."
+  ],
+  "resolved_findings": [
+    {
+      "issue": "Python assert-based sealing checks can be disabled by optimization.",
+      "resolution": "An unconditional sys.flags.optimize rejection is now required and verified before sealing work."
+    }
+  ],
+  "limitations": [
+    "No sealer, test suite, native executable, provider, client scanner or hardware was invoked by this packaging review.",
+    "The generated certificate hash is intentionally absent from this review to avoid self-reference. Final source commit is read and bound by the sealer after commit.",
+    "Root independent audit is reused by its sealed hash; no prior full qualification audit is repeated.",
+    "Physical two-pass acquisition remains unexecuted and requires a separate future request and human gates."
+  ],
+  "physical_operations": 0,
+  "provider_loads": 0,
+  "native_executions": 0,
+  "qualification_reruns": 0
+}

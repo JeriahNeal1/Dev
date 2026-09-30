@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "created_utc": "2026-09-30T03:15:11.221266+00:00",
+  "status": "AUTHORITATIVE_CHECKPOINT_SUPERSESSION",
+  "RK03_TRANSITION_PHYSICAL": "PASS",
+  "physical_C3_response": "80f01007c30000ff00ff0048",
+  "OEM_RETURN_AFTER_TRANSITION_PROBE": "PASS",
+  "probe_invocations": 1,
+  "current_rom_sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2",
+  "current_rom_designation": "CURRENT_PHYSICAL_CAPTURE",
+  "current_executable_identical_to_stock": true,
+  "offline_continuation_cases_passed": 127,
+  "continuation_commit": "2a8eeee2a7ff251346314c54d6dd028f6df93766",
+  "supersession": "Any earlier NOT RUN or NOT YET VERIFIED statement about the RK03 BF/81/83 physical transition is a historical pre-test snapshot, superseded by the linked physical PASS and OEM-return PASS evidence. Sealed historical files are retained unchanged. This does not imply that a physical first-chunk probe has run.",
+  "authoritative_evidence": [
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\run_completion_20260930_01\\RUN_RESULT.json",
+      "bytes": 3250,
+      "sha256": "971e436ea9374365255e2771e047dff9c78658ac2ae64f4a93379156927e87ea"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\physical_probe_result\\PHYSICAL_RESULT.json",
+      "bytes": 10152,
+      "sha256": "acc41d5d8bbb499ab15805ef0b039a1602307ba8605bfdb90e91c4e73a929544"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\oem_return_after_probe_01\\OEM_RETURN_RESULT.json",
+      "bytes": 4018,
+      "sha256": "e20b02e5dd13a5701649b782103f80693c885953e287034a3c18af73062df32a"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\CURRENT_ROM_STATUS.json",
+      "bytes": 242857,
+      "sha256": "018615b863b9ce80d705c7118863ba2bca40b28c2e925dfc4127eac220ab3f0c"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\run_completion_20260930_01\\CONTINUATION_QUALIFICATION.json",
+      "bytes": 215562,
+      "sha256": "a706de3800d855569403ac93724c55a8b4e7d1b1ea09bb04fb12fc66fa5259ac"
+    }
+  ],
+  "next_scope": "Qualify one separate first128-byte RAM-transfer physical probe; no second36/kernelstart/ROMread/flash; human simplified ignition states and exact software authorization required",
+  "first_chunk_physical_status": "NOT_RUN",
+  "first_chunk_invocations": 0,
+  "physical_execution_authorized": false
+}

@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "status": "PASS",
+  "scope": "FINAL128_PACKAGING_ONLY_NO_HARDWARE_AUTHORIZATION",
+  "utc": "2026-09-30T08:11:16.443867+00:00",
+  "source_commit": "ea696a82d2e37e57ba1e2f7983de219f780b05da",
+  "reviewer": "passive_review",
+  "checks_passed": 228,
+  "reviewed_files": [
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_Bounded128Physical\\bounded_128_physical\\tools\\seal_bounded_release.py",
+      "bytes": 9068,
+      "sha256": "3315f391d7976dcad0d8a1baf24317570066118ef5c9d9777b056af5af0afa42"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_Bounded128Physical\\bounded_128_physical\\tools\\root_review.py",
+      "bytes": 9905,
+      "sha256": "dc2565db1b7a0ceb877aaf7a4f434dd8f8a68c12957e2fe9d9c031fa61d2afdd"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_Bounded128Physical\\bounded_128_physical\\README.md",
+      "bytes": 932,
+      "sha256": "3cd013f33b282a1b117e99682bcc2238f78de6dbe646f60b50fc20775f45e97f"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_128_20260930_01\\CONTRACT_INTERPRETATION.json",
+      "bytes": 1130,
+      "sha256": "2ec0ab985b35bcacfbb885c0b2748f3b0473177974eeb519309bb46131122d14"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_128_20260930_01\\root_review\\REVIEW.json",
+      "bytes": 82245,
+      "sha256": "42983ba4edc7987d63f59977d998b4deacce2ff8fe2e7275843c42a71ff94349"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_128_20260930_01\\independent_review\\REVIEW.json",
+      "bytes": 9541,
+      "sha256": "06fb4084059e2be74b51a366c07c0273d6ca419415dac8665fb5dcf6eb7b6ad4"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_128_20260930_01\\FIXED_UPLOAD_128_MANIFEST.json",
+      "bytes": 9135,
+      "sha256": "b050503942079ad5392ca82f84aff18d414d4cb771e9d5217d3a934ca350fe4a"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_128_20260930_01\\PHYSICAL_BOUNDED_128_REVIEW_CONTRACT.json",
+      "bytes": 23476,
+      "sha256": "767885ac7ec8dae204902dd0bc7dda54c8a7a3890ee9703f20a169fae05ba16a"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_128_20260930_01\\kernel_review\\LATEST_KERNEL_TESTS.json",
+      "bytes": 290,
+      "sha256": "4257e2e30cd3598775a42d0c18342ab340f6554bc38955ec2baa0d7d0f4ccdf3"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_128_20260930_01\\kernel_review\\run_20260930T075948741217Z\\KERNEL_TEST_REPORT.json",
+      "bytes": 79042,
+      "sha256": "821eda233f936379c79d39b8cc0b2828d22993762cff12ee1862b228990b6f47"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_128_20260930_01\\independent_review\\review_packaging128.py",
+      "bytes": 8787,
+      "sha256": "5945d6984d4f78551531881ef2a0dff68477b23761de44961b66fb913a9e1eb5"
+    }
+  ],
+  "summary": [
+    "Current certificate scope explicitly requires one128-byte request, the new kernel hash,17 new instruction cases and349 native test evidence.",
+    "New upload manifest was independently checked against kernel plaintext, embedded ciphertext, exact15 requests and ACKs.",
+    "Historical512 qualification/contract/action fields are explicitly identified as references and cannot substitute for new128 proof.",
+    "Three mandatory reviews include this final packaging report; certificate sealing initializes unconsumed BOUNDED_128_GATE_STATE with exact new token.",
+    "Mutable gate/current/checkpoint data remains outside immutable certificate files; only new owned paths are frozen."
+  ],
+  "blocking_findings": [],
+  "physical_operations": 0,
+  "provider_loads": 0,
+  "native_or_model_test_runs": 0,
+  "builds_run": 0,
+  "limits": [
+    "This review does not execute the sealer or grant physical authorization.",
+    "Same identity text is retained; kernel808a5523 and native1e985242 image hashes distinguish the new variant.",
+    "A physical128 pass and successful OEM return are still required before the conditional final two-pass qualification."
+  ]
+}

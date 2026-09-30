@@ -1,0 +1,26 @@
+{
+  "session_id": "RK03_BOUNDED_ROM_READ_01",
+  "command_argv": [
+    "C:\\Windows\\py.exe",
+    "-3.14",
+    "-B",
+    "C:\\Dev\\A2WC511R_Final\\passive_som01\\integrations\\prehardware\\capture.py",
+    "--backend",
+    "physical-j2534",
+    "--authorize-physical-read-only",
+    "--count",
+    "120",
+    "--interval-ms",
+    "250",
+    "--output",
+    "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_read_physical_20260930_01\\oem_return_after_bounded_01\\capture.jsonl"
+  ],
+  "started_utc": "2026-09-30T07:41:36.675509+00:00",
+  "retry_allowed": false,
+  "scope": "PASSIVE_BF_A8_ONLY",
+  "pid": 21364,
+  "exit_code": 0,
+  "exited_utc": "2026-09-30T07:42:17.220185+00:00",
+  "process_exited": true,
+  "bookkeeping_error": null
+}

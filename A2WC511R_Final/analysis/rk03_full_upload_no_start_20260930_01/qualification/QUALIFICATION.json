@@ -1,0 +1,396 @@
+{
+  "schema": 1,
+  "status": "PASS_OFFLINE_FULL_KERNEL_UPLOAD_NO_START_ONLY",
+  "utc": "2026-09-30T04:40:34.581890+00:00",
+  "branch": "rk03/full-upload-no-start",
+  "commit": "4cb0bee977fcd979af2e88223c1ff14898ab72bf",
+  "source_snapshot": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_no_start_20260930_01\\qualification\\SOURCE_SNAPSHOT.zip",
+    "bytes": 80436,
+    "sha256": "fc1e3903ba54d28c13caa0ee1174822ba20d428dcab10f702dbaae7294310815"
+  },
+  "source_identity": [
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\.gitignore",
+      "bytes": 31,
+      "sha256": "5e10b695da893bce09479863338aba60da81f1df9a80b5f0b19ddc90ef1b85d0"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\FUTURE_PHYSICAL_RELEASE_PLAN.md",
+      "bytes": 5700,
+      "sha256": "59a37b583ef563a488cbaf33da14e6138814c8196d9bb77e0890e4d7796adaae"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\INPUT_PINS.json",
+      "bytes": 6049,
+      "sha256": "e2728cef98dc7430c335a6e7aac59504a003406f7890949c87d01b21fa6c95b2"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\README.md",
+      "bytes": 9286,
+      "sha256": "ff6bcaf93dc3e07f14d6cc591709ee2ae912d99c7c3a2e60fbfc0c3918a69e90"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\fixtures\\full_upload_oracle.json",
+      "bytes": 12349,
+      "sha256": "df654c9c8b393ae19b5dcd0ba85f30ac6765f91c72112f8032ca07f418114b8e"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\fixtures\\physical_first_chunk_replay.json",
+      "bytes": 6192,
+      "sha256": "f4bf8a26f009115d43059ec1ca42b906af89cc67a5d97c9cde1e11a324f41a13"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\src\\common.hpp",
+      "bytes": 6279,
+      "sha256": "e502c533058d2aeed48d44d8b1c393bb75511a010ca37bf897bd4c341964d3d8"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\src\\contract_pin.hpp",
+      "bytes": 123,
+      "sha256": "07bf60cdcbf4eec56d5fd33b179e1f011497cf3a0d59cfc2ba192ce43c5e96ab"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\src\\fake_backend.hpp",
+      "bytes": 15915,
+      "sha256": "267a19e0c6db4f3c8941ce098c9317b2f33b72e798b1bd3a3d50ec1720707e48"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\src\\first_physical_replay.hpp",
+      "bytes": 3187,
+      "sha256": "40ef1c01b6504409a1408fd7312778b76b6a225462d288e6d0991b07953eb83c"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\src\\fixtures.hpp",
+      "bytes": 5623,
+      "sha256": "59573effa1b0de52eed19378ba82611f6c2a14b886746d7e6449bca7bfc114e8"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\src\\j2534_tactrix.h",
+      "bytes": 11763,
+      "sha256": "25df54ce5e75ef81bef26c27c694ac82ab74959381bfbf4a6d79a9a68e5d179a"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\src\\main.cpp",
+      "bytes": 2339,
+      "sha256": "e2b2f931b36746e4fe0c5fe369232cb8065ae442550e00ca583c0a5a281b32d1"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\src\\owned_artifact.h",
+      "bytes": 9322,
+      "sha256": "b62c00f24f578a2b5984fd6eb1e31d16318e431d57e02ee43eaab5c98fb25ab2"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\src\\physical_replay.hpp",
+      "bytes": 1814,
+      "sha256": "21440a7071d8f00289164a3c7f37d8f07138f8133ee45600d39e4f6f86fb8421"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\src\\probe_core.hpp",
+      "bytes": 17496,
+      "sha256": "a12cb44cc0c36e83428b96c0a3fdf2bc126f23fbe19fc8d123730add1a10f422"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\src\\protocol.hpp",
+      "bytes": 1077,
+      "sha256": "60ebaa976978f48352d67249817c43ff63c346ebd9df1cda68c36083c5c6a877"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\src\\real_clock.hpp",
+      "bytes": 1064,
+      "sha256": "2e2358ba07c89e55520c64dc943b7fca750014753772ecd66e084d5ae2b37818"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\tools\\audit_full_qualification.py",
+      "bytes": 8647,
+      "sha256": "e7ddef3aaf55760e69eb93db10301e078881a2b979d79b7d658c4b58a886865f"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\tools\\build_probe.cmd",
+      "bytes": 761,
+      "sha256": "8c81b16c5649b43fcf4474f54fd662894d7d7c2ef38e99e5f4b7c6c1f08e3805"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\tools\\build_probe.py",
+      "bytes": 2176,
+      "sha256": "f244b306a89c14f945254524ef908675dbdd4b4c8642c9083ec881a0b2df0957"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\tools\\checkpoint_recovery.py",
+      "bytes": 3656,
+      "sha256": "1042831b3185cb9b50bdb93613bbc86d0d29eb48c69fc140a3c28084e8f26eb9"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\tools\\create_fixed_manifest.py",
+      "bytes": 4555,
+      "sha256": "8489563621cc7c8eb4df59bef4fa9ebbd508e740ccc44e70f0a526e299bfe72c"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\tools\\derive_offline_stage.py",
+      "bytes": 14240,
+      "sha256": "435bb23f766268e5f085bc525129d5966cbf59cbd2441b87b895969d78c584d0"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\tools\\replay_current_no_start.py",
+      "bytes": 6968,
+      "sha256": "bdb961d623ce5bc74863e3f32278640f053c4ee55c26a250726d2d6f3f5de250"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\tools\\seal_offline_qualification.py",
+      "bytes": 13742,
+      "sha256": "7e511b8a027ef09b37d10dbcf735ed3440cd639ef8ea4495bdfa3e36f2d41a7a"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\tools\\test_full_upload_independent.py",
+      "bytes": 68369,
+      "sha256": "d96ca60e6a97ab6fba06e0956424eca2ac6ea8e162c8b567956b1b5308c6abea"
+    }
+  ],
+  "executable": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_no_start_20260930_01\\qualification\\rk03_full_upload_no_start_offline32.exe",
+    "bytes": 328704,
+    "sha256": "602f2b0835d8e39d37af9b1eddead0223cd7ba5411970645e1ebc7e78dc1c7a5"
+  },
+  "build_reproducibility": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_no_start_20260930_01\\BUILD_REPRODUCIBILITY.json",
+    "bytes": 1372,
+    "sha256": "750dbf90ccabab0c5011122980ba470069be58c7e075dc5052321dcaae1f7138"
+  },
+  "test_report": {
+    "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\reports\\qualification_20260930T043538633340Z\\TEST_REPORT.json",
+    "sha256": "bb3a7813be188705492ff5d265a27ede1d741b2cedd4df673b429b4002d79aa5",
+    "bytes": 649656
+  },
+  "test_cases": 287,
+  "passed_cases": 287,
+  "positive_scenarios": 28,
+  "negative_scenarios": 259,
+  "test_history": "Earlier285/287 report preserved; two inherited service-name fixtures were misclassified by runner regex. Runner corrected; same binaries287/287.",
+  "contract": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_no_start_20260930_01\\FULL_UPLOAD_NO_START_CONTRACT.json",
+    "bytes": 17177,
+    "sha256": "3861d397a625a252394ab2c0fdd58af9bbf03c9996a7c98ec7de239270779a5f"
+  },
+  "fixed_upload_manifest": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_no_start_20260930_01\\FIXED_UPLOAD_MANIFEST.json",
+    "bytes": 14102,
+    "sha256": "d43066e736ee11e89e0a4b926f16f629b6c80d579ed936fa2b3bdce631cbfdb9"
+  },
+  "chunk_table": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_no_start_20260930_01\\FIXED_UPLOAD_CHUNKS.md",
+    "bytes": 1876,
+    "sha256": "370eb8076fabcbc1cb4845949baaf361c1e9240c31109cf58ee8e92fcc07be00"
+  },
+  "current_instruction_replay": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_no_start_20260930_01\\current_instruction_replay\\CURRENT_NO_START_REPLAY.json",
+    "bytes": 10599,
+    "sha256": "ed9a2d53349a22373ace06003e8b73f3fac67b2561f2640cbdb14bfc0b51b567"
+  },
+  "expected_uploaded_ram": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_no_start_20260930_01\\current_instruction_replay\\expected_uploaded_ram.bin",
+    "bytes": 1808,
+    "sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581"
+  },
+  "expected_uploaded_ram_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+  "independent_native_review": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_no_start_20260930_01\\native_review\\NATIVE_SOURCE_REVIEW.json",
+    "bytes": 6982,
+    "sha256": "b83f12b6d8e5c03d7aba3658bdd0374967eff9980f42987d587e12323116d95c"
+  },
+  "independent_model_and_execution_review": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_no_start_20260930_01\\native_review\\QUALIFICATION_AND_MODEL_REVIEW.json",
+    "bytes": 5186,
+    "sha256": "a8353a46c522cd5115a521c87c53946bbb8ddb31be281d8a3b3c85d5c804ec13"
+  },
+  "independent_runner_review": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_no_start_20260930_01\\root_review\\ROOT_REVIEW.json",
+    "bytes": 3090,
+    "sha256": "c662d3f8c6450af36f277cac3d809c0766f2b2f205ea133d5211f5a2e2b978a9"
+  },
+  "recovery_audit": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_no_start_20260930_01\\RECOVERY_AUDIT.json",
+    "bytes": 15479,
+    "sha256": "32f4bb6ff228561e0ee3c119a73cdbd955d279fda806e3eff256ca40b3f22128"
+  },
+  "future_design_plan": {
+    "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\FUTURE_PHYSICAL_RELEASE_PLAN.md",
+    "bytes": 5700,
+    "sha256": "59a37b583ef563a488cbaf33da14e6138814c8196d9bb77e0890e4d7796adaae"
+  },
+  "preserved_previous_evidence": [
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\physical_result\\evidence\\AUTHORIZATION.txt",
+      "bytes": 219,
+      "sha256": "ec9cfb1962d8c996c3549f412578bacdc5930935783caf3eeb071b04d2200f14"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\physical_result\\evidence\\console.log",
+      "bytes": 57,
+      "sha256": "342b18599a4dccdb19bc6883c7b9c173f245cf0b947fee99a428b7a5fa1f2d7b"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\physical_result\\evidence\\EXECUTION.json",
+      "bytes": 1022,
+      "sha256": "7ccec3261c50787aee5e702348a1add87b28e1b9cc638b77184b4df1f8248b21"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\physical_result\\evidence\\EXECUTION_BEGIN.json",
+      "bytes": 882,
+      "sha256": "8a8f147bcddacbf250c70112646fa6e79c106a58d1ef7837c1a7f1097bf04a72"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\physical_result\\evidence\\invocation.once",
+      "bytes": 150,
+      "sha256": "fac796a5f7ab2a06916ba40e61a6f0d8759306bb0e5e480405c33c8b89b0eddf"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\physical_result\\evidence\\launch.reserved",
+      "bytes": 150,
+      "sha256": "fac796a5f7ab2a06916ba40e61a6f0d8759306bb0e5e480405c33c8b89b0eddf"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\physical_result\\evidence\\native_api.jsonl",
+      "bytes": 163830,
+      "sha256": "d258d9eb5b0690e8dd1c79d29f217aa86e152d866e1aeb1e938bf98aa13896a3"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\physical_result\\evidence\\POSTEXIT_CLIENT_CHECK.json",
+      "bytes": 494,
+      "sha256": "062483de953cab256ba25f1ad9ca8a39801c14004dd27f4d3aae19b6434e9f28"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\physical_result\\evidence\\PRELAUNCH_CLIENT_CHECK.json",
+      "bytes": 494,
+      "sha256": "81096bde085e38a0946fa0dae6141c36e730c8c3b95aaca4115f86d2f0cca823"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\physical_result\\GATE_STATE_AT_RESULT.json",
+      "bytes": 2308,
+      "sha256": "312e85a6bb9eb94ee24c2b928d80870203505b58168296d9bb2860fa18966d26"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\physical_result\\PHYSICAL_RESULT.json",
+      "bytes": 9469,
+      "sha256": "29a87941a4ee101ea21db981047c0622e3ad9d44932e6474e9fc1ed923e5ae35"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\physical_result\\PHYSICAL_RESULT.md",
+      "bytes": 925,
+      "sha256": "82b261e47ab0b1b767ecac16477a825ccc7abc48209fd341f68d85a140b69f1a"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\physical_result\\MANIFEST.json",
+      "bytes": 2979,
+      "sha256": "cd29a3d85816c4a225b4c4741e1909d6ed7ad27d96430a7c7d8c264da50215f3"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\oem_return_after_first_chunk_01\\capture.jsonl",
+      "bytes": 272313,
+      "sha256": "f9522d5fae37068a8c071e314739140c60a0abd6f9370821bc4ebacca094390c"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\oem_return_after_first_chunk_01\\capture.jsonl.provider.stderr.log",
+      "bytes": 87142,
+      "sha256": "fb0109b694255390da9e207fb1388a19b5488825d7c1761eec409311ad16db6a"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\oem_return_after_first_chunk_01\\console.log",
+      "bytes": 245,
+      "sha256": "266cb78ea28b2f4bb13cc4cecf9414a72495a6b58dc9755f6dd4e1bfe7f397cb"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\oem_return_after_first_chunk_01\\EXECUTION.json",
+      "bytes": 724,
+      "sha256": "8a6424ff3ca1e786f5428ec2d14d5ff198cba803035743b06a1995f836249111"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\oem_return_after_first_chunk_01\\GATE_STATE_AT_OEM_RETURN.json",
+      "bytes": 3067,
+      "sha256": "450df967a4a299614934605380193e9db6941791316e883bd9627bdf580514b6"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\oem_return_after_first_chunk_01\\GATE_STATE_BEFORE_OEM_RETURN.json",
+      "bytes": 3009,
+      "sha256": "10543fa5563d9c881010e83d2a047bc8baa5ea5d778e1a4b9d75de019d55104b"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\oem_return_after_first_chunk_01\\invocation.once",
+      "bytes": 583,
+      "sha256": "72c456b5c77586438dc8db3e992c51fbf215ecf95584bd487103e4a158cc739c"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\oem_return_after_first_chunk_01\\OEM_RETURN_RESULT.json",
+      "bytes": 4022,
+      "sha256": "e209ab72812e49ca83aeda07078ae0a295722fe43f640c07325b31b03966312e"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\oem_return_after_first_chunk_01\\OEM_RETURN_RESULT.md",
+      "bytes": 681,
+      "sha256": "eca6b424057a89aa21b5ef31690a1cff47ac91dff29a4b1f5e9eeed5259172fd"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\oem_return_after_first_chunk_01\\POSTEXIT_CLIENT_CHECK.json",
+      "bytes": 494,
+      "sha256": "55e4c99aec2dd14fb9fb3ce0ccda6595fa1d3ef2ac225cc1089f15e0626cfee5"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\oem_return_after_first_chunk_01\\PREFLIGHT.json",
+      "bytes": 4118,
+      "sha256": "89323ec38b2951282fcb058743a4bcb8aeea1e1e765b491e82a6854bc28622ce"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\oem_return_after_first_chunk_01\\PRELAUNCH_CLIENT_CHECK.json",
+      "bytes": 494,
+      "sha256": "af2d34998732c7ea9765a2899ad42f160e6c36680df95dfa19c9c4860f007cbe"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\oem_return_after_first_chunk_01\\MANIFEST.json",
+      "bytes": 3126,
+      "sha256": "9ac8d29431655eb04b54b251537e0dc70a14ffa8a5f45b99bec1ce63fe29bcfe"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\physical_result\\PHYSICAL_RESULT.json",
+      "bytes": 9469,
+      "sha256": "29a87941a4ee101ea21db981047c0622e3ad9d44932e6474e9fc1ed923e5ae35"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\physical_review\\PHYSICAL_REVIEW.json",
+      "bytes": 75208,
+      "sha256": "078823af1ebf7a7d44163d2577e5a272a4edaad78fc90836f573f615e919f1fd"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\qualification\\QUALIFICATION.json",
+      "bytes": 196687,
+      "sha256": "51f42896bc04e63b62fdcbb57b490ef8212af69f906e71e5e51c577ce12a6af4"
+    }
+  ],
+  "physical_operations": 0,
+  "physical_provider_loader": false,
+  "physical_release_created": false,
+  "physical_execution_authorized": false,
+  "maximum_physical_invocations": 0,
+  "structural_no_start_proof": [
+    "Only static fake API can be bound by the two accepted offline CLI modes; Probe constructor rejects physical=true.",
+    "Request stage guarded below22, monotonic next_tx guarded below22, each fixed request transmitted once.",
+    "Stages0..6 are fixed admission/declaration except the validated seed-derived key; stages7..21 are the15 bounded fixed transfer frames.",
+    "Exact76 required at every transfer; run() immediately leaves protocol after stage21 and invokes cleanup.",
+    "Reference frame16 containing310101 is excluded by frames[:16]; generated runtime table has no handoff frame.",
+    "No provider discovery, physical dispatcher, kernel protocol, ROM-read or flash command dispatch exists in the compiled source closure.",
+    "Payload array1808 and fixed contiguous addresses are embedded; CLI accepts no payload or address.",
+    "Current-ROM CPU replay supplies only declaration+15chunks, executes476281OEM instructions, returns after lastACK and never enters RAM.",
+    "Generic MSVC CRT LoadLibraryExW/GetProcAddress imports exist; no application call uses them to load a provider."
+  ],
+  "limits": [
+    "Successful OEM1008 programming condition established BFBA1; boot loop BFC81 and initialized parser RAM.",
+    "Input injected at actual RDR read; ready/TEND84 and nonexpired WDT are explicit transcript values.",
+    "No asynchronous DMA, interrupt, NMI, power event or byte corruption; pinned stock bytes.",
+    "No UART waveform, physical clock or elapsed-time simulation.",
+    "No full reset-to-upload uninterrupted execution; earlier KWP/IRQ/initialization contracts are independently linked.",
+    "This byte-exact upload execution supplements address/length/domain derivation, not a universal malformed-request theorem.",
+    "Current ROM was used directly in this offline CPU replay; no image editing or re-ingestion.",
+    "Stops at returned OEM caller after final76; no later command, timer advancement, reset or physical UART behavior modeled.",
+    "Offline qualification is not evidence of physical acceptance of chunks2..15.",
+    "Complete future physical host, launcher, certificate and recovery qualification remain outstanding.",
+    "No custom kernel is executed and no ROM acquisition or flash operation is qualified."
+  ]
+}

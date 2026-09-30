@@ -1,0 +1,95 @@
+--- C:\Dev\A2WC511R_RK03_FullUploadPhysical\full_upload_physical\src\probe_core.hpp
++++ C:\Dev\A2WC511R_RK03_KernelIdentityPhysical\kernel_identity_physical\src\probe_core.hpp
+@@ -1,14 +1,18 @@
+ #pragma once
+ #include "common.hpp"
+ #include "protocol.hpp"
++#include "identity_response.hpp"
+ struct Probe{
++ bool kernel_filter=false,filter_stop_attempted=false,start_acknowledged=false,identity_validated=false;unsigned acknowledged_chunks=0;
+  Bytes key_request;U requested_baud=4800;bool baud_accepted=false;unsigned clear_mask=0;
+  Api api;FILE* journal;bool physical;bool real_clock=false;long long last_elapsed_ticks=0,last_qpc_frequency=0;bool inject_log_failure=false;bool opened=false,connected=false,filtered=false,protocol_complete=false,log_failed=false;
+  U device=SENTINEL,channel=SENTINEL,filter=SENTINEL;unsigned next_tx=0,sequence=0,requested_count=0,set_success_count=0,cleanup_errors=0;
+  bool get_observed=false,get_valid=false,filter_requested=false,filter_objects_valid=false;SCONFIG observed[5]{};PASSTHRU_MSG observed_mask{},observed_pattern{},observed_flow{};char failure[256]{};
+  Probe(Api a,FILE* j,bool p,bool real=false):api(a),journal(j),physical(p),real_clock(real){require(!p||real,"Physical mode requires monotonic minimum waits");}
+  Bytes request(unsigned stage)const{
+-  require(stage<22,"Fifteenth chunk is the final offline protocol action");
++  require(stage<24,"Fixed identity is the final protocol action");
++  if(stage==22){require(acknowledged_chunks==15,"All fifteen ACKs before fixed start");return decode("8010f003310101b6");}
++  if(stage==23){require(start_acknowledged&&kernel_filter&&filtered&&requested_baud==62500,"Identity follows reviewed start transition");return decode("beef000101af");}
+   if(stage==0)return frame({0xbf});if(stage==1)return frame({0x81});if(stage==2)return frame({0x83,0});if(stage==3)return frame({0x27,1});
+   if(stage==4){require(key_request.size()==6,"Key must derive from validated seed");return frame(key_request);}if(stage==5)return frame({0x10,0x85,2});
+   if(stage==6)return frame({0x34,0xff,0x30,0,4,static_cast<unsigned char>(KERNEL_SIZE>>16),static_cast<unsigned char>(KERNEL_SIZE>>8),static_cast<unsigned char>(KERNEL_SIZE)});
+@@ -20,7 +24,7 @@
+  }
+ 
+  std::string state()const{std::string requested="[",returned=get_observed?"[":"null";for(unsigned i=0;i<requested_count;i++){if(i)requested+=',';requested+="{\"parameter\":"+number(SERIAL[i].Parameter)+",\"value\":"+number(SERIAL[i].Value)+"}";}requested+=']';if(get_observed){for(unsigned i=0;i<5;i++){if(i)returned+=',';returned+="{\"parameter\":"+number(observed[i].Parameter)+",\"value\":"+number(observed[i].Value)+"}";}returned+=']';}
+- return "{"+std::string(real_clock?"\"clock_model\":\"QPC_MONOTONIC_MINIMUM\",\"monotonic_ms\":":"\"clock_model\":\"VIRTUAL_ONLY_NOT_PHYSICAL_TIME\",\"virtual_ms\":")+number(api.virtual_ms())+",\"requested_baud\":"+number(requested_baud)+",\"baud_set_accepted\":"+boolean(baud_accepted)+",\"clear_mask\":"+number(clear_mask)+",\"connection_contract\":{\"protocol\":3,\"flags\":512,\"baud\":4800},\"opened\":"+boolean(opened)+",\"device\":"+number(device)+",\"connected\":"+boolean(connected)+",\"channel\":"+number(channel)+",\"tx_attempts\":"+number(next_tx)+",\"requested_configuration\":"+requested+",\"successful_set_calls\":"+number(set_success_count)+",\"observed_configuration\":"+returned+",\"effective_configuration_valid\":"+boolean(get_valid)+",\"filter\":{\"requested\":"+boolean(filter_requested)+",\"active\":"+boolean(filtered)+",\"id\":"+number(filter)+",\"type\":1,\"requested_mask_hex\":\"00000000\",\"requested_pattern_hex\":\"00000000\",\"requested_flow_hex\":\"00000000\",\"protocol\":3,\"flags\":0,\"returned_objects_valid\":"+boolean(filter_objects_valid)+",\"observed_mask\":"+(filter_requested?message_json(observed_mask):"null")+",\"observed_pattern\":"+(filter_requested?message_json(observed_pattern):"null")+",\"observed_flow\":"+(filter_requested?message_json(observed_flow):"null")+"}}";}
++ return "{"+std::string(real_clock?"\"clock_model\":\"QPC_MONOTONIC_MINIMUM\",\"monotonic_ms\":":"\"clock_model\":\"VIRTUAL_ONLY_NOT_PHYSICAL_TIME\",\"virtual_ms\":")+number(api.virtual_ms())+",\"requested_baud\":"+number(requested_baud)+",\"baud_set_accepted\":"+boolean(baud_accepted)+",\"clear_mask\":"+number(clear_mask)+",\"connection_contract\":{\"protocol\":3,\"flags\":512,\"baud\":4800},\"opened\":"+boolean(opened)+",\"device\":"+number(device)+",\"connected\":"+boolean(connected)+",\"channel\":"+number(channel)+",\"kernel_filter\":"+boolean(kernel_filter)+",\"filter_stop_attempted\":"+boolean(filter_stop_attempted)+",\"acknowledged_chunks\":"+number(acknowledged_chunks)+",\"start_acknowledged\":"+boolean(start_acknowledged)+",\"identity_validated\":"+boolean(identity_validated)+",\"tx_attempts\":"+number(next_tx)+",\"requested_configuration\":"+requested+",\"successful_set_calls\":"+number(set_success_count)+",\"observed_configuration\":"+returned+",\"effective_configuration_valid\":"+boolean(get_valid)+",\"filter\":{\"requested\":"+boolean(filter_requested)+",\"active\":"+boolean(filtered)+",\"id\":"+number(filter)+",\"type\":1,\"requested_mask_hex\":"+quote(kernel_filter?"ffff":"00000000")+",\"requested_pattern_hex\":"+quote(kernel_filter?"beef":"00000000")+",\"requested_flow_hex\":"+(kernel_filter?std::string("null"):quote("00000000"))+",\"protocol\":3,\"flags\":0,\"returned_objects_valid\":"+boolean(filter_objects_valid)+",\"observed_mask\":"+(filter_requested?message_json(observed_mask):"null")+",\"observed_pattern\":"+(filter_requested?message_json(observed_pattern):"null")+",\"observed_flow\":"+(filter_requested&&!kernel_filter?message_json(observed_flow):"null")+"}}";}
+  void event(const std::string& s){if(!physical&&inject_log_failure&&filtered){inject_log_failure=false;throw std::runtime_error("Offline injected journal failure after filter allocation");}require(fwrite(s.data(),1,s.size(),journal)==s.size()&&fwrite("\n",1,1,journal)==1&&fflush(journal)==0,"Journal persistence failure");}
+  template<class F,class O> long call(const char* name,const std::string& input,F fn,O output,bool cleanup=false){
+   unsigned seq=sequence++;std::string prefix="\"sequence\":"+number(seq)+",\"function\":"+quote(name)+",\"physical\":"+boolean(physical);
+@@ -58,14 +62,14 @@
+   require(filter_objects_valid,"Filter output mutation/ABI bounds");
+  }
+  Bytes exchange(unsigned stage){
+-  require(stage==next_tx&&stage<22,"Fixed transmit order/count guard");Message tx;set_message(tx.value,request(stage));U count=1;
++  require(stage==next_tx&&stage<24,"Fixed transmit order/count guard");Message tx;set_message(tx.value,request(stage));U count=1;
+   const std::string input="{\"channel\":"+number(channel)+",\"timeout_ms\":1000,\"count_pointer_present\":true,\"input_count\":1,\"message_capacity\":1,\"message\":"+message_json(tx.value)+"}";
+-  require(stage==next_tx&&next_tx<22&&Bytes(tx.value.Data,tx.value.Data+tx.value.DataSize)==request(stage),"Dispatch whitelist guard");const PASSTHRU_MSG expected_tx=tx.value;
++  require(stage==next_tx&&next_tx<24&&Bytes(tx.value.Data,tx.value.Data+tx.value.DataSize)==request(stage),"Dispatch whitelist guard");const PASSTHRU_MSG expected_tx=tx.value;
+   ok(call("PassThruWriteMsgs",input,[&](){return api.write(channel,&tx.value,&count,1000);},[&](long){next_tx++;return "{\"count\":"+number(count)+",\"message\":"+message_json(tx.value)+",\"canaries_intact\":"+boolean(tx.intact())+"}";}));
+-  require(tx.intact()&&count==1&&!memcmp(&tx.value,&expected_tx,sizeof(expected_tx)),"TX output count/mutation/ABI");Stream stream;ULONGLONG deadline=GetTickCount64()+2000;
++  require(tx.intact()&&count==1&&!memcmp(&tx.value,&expected_tx,sizeof(expected_tx)),"TX output count/mutation/ABI");Stream stream;IdentityReply identity;ULONGLONG deadline=GetTickCount64()+2000;
+   for(;;){ULONGLONG now=GetTickCount64();require(now<deadline,"Whole frame deadline");U timeout=static_cast<U>(std::min<ULONGLONG>(1000,deadline-now));Message rx;count=1;
+    ok(call("PassThruReadMsgs","{\"channel\":"+number(channel)+",\"timeout_ms\":"+number(timeout)+",\"input_count\":1,\"count_pointer_present\":true,\"message_capacity\":1,\"message\":"+message_json(rx.value)+"}",[&](){return api.read(channel,&rx.value,&count,timeout);},[&](long){return "{\"count\":"+number(count)+",\"message\":"+message_json(rx.value)+",\"canaries_intact\":"+boolean(rx.intact())+"}";}));
+-   require(rx.intact()&&count==1,"RX count/ABI bounds");if(stream.consume(rx.value,request(stage)))return stream.bytes;
++   require(GetTickCount64()<deadline,"Whole frame deadline after API return");require(rx.intact()&&count==1,"RX count/ABI bounds");if(stage==23){if(identity.consume(rx.value,request(stage)))return identity.bytes;}else if(stream.consume(rx.value,request(stage)))return stream.bytes;
+   }
+  }
+  template<class F> long cleanup_call(const char* name,const char* resource,U id,bool has_filter,bool& owned,F fn){
+@@ -80,7 +84,7 @@
+   if(n<0||fflush(journal))log_failed=true;return result;
+  }
+  void cleanup(){
+-  if(filtered){if(cleanup_call("PassThruStopMsgFilter","channel",channel,true,filtered,[&](){return api.stop_filter(channel,filter);}))cleanup_errors|=1;}
++  if(filtered&&!filter_stop_attempted){filter_stop_attempted=true;if(cleanup_call("PassThruStopMsgFilter","channel",channel,true,filtered,[&](){return api.stop_filter(channel,filter);}))cleanup_errors|=1;}
+   if(connected){if(cleanup_call("PassThruDisconnect","channel",channel,false,connected,[&](){return api.disconnect(channel);}))cleanup_errors|=2;}
+   if(opened){if(cleanup_call("PassThruClose","device",device,false,opened,[&](){return api.close(device);}))cleanup_errors|=4;}
+  }
+@@ -99,16 +103,32 @@
+   require(b.intact()&&b.list.NumOfParams==1&&b.list.ConfigPtr==b.items&&b.items[0].Parameter==1&&b.items[0].Value==15625,"Baud SET_CONFIG mutation");
+   for(U code:{7UL,8UL})ok(call("PassThruIoctl","{\"channel\":"+number(channel)+",\"ioctl\":"+number(code)+",\"input_present\":false,\"output_present\":false}",[&](){return api.ioctl(channel,code,nullptr,nullptr);},[&](long s){if(!s)clear_mask|=code==7?1:2;return "{}";}));
+  }
++
++ void identity_transport(){
++  require(next_tx==23&&start_acknowledged&&filtered&&!filter_stop_attempted,"Start ACK precedes transition");
++  long stopped=call("PassThruStopMsgFilter","{\"channel\":"+number(channel)+",\"filter_id\":"+number(filter)+"}",[&](){filter_stop_attempted=true;return api.stop_filter(channel,filter);},[&](long s){if(!s)filtered=false;else cleanup_errors|=1;return "{}";});ok(stopped);
++  requested_baud=62500;baud_accepted=false;ConfigBuffer b;b.list.NumOfParams=1;b.items[0]={1,62500};
++  ok(call("PassThruIoctl","{\"channel\":"+number(channel)+",\"ioctl\":2,\"input_present\":true,\"output_present\":false,\"config\":"+config_json(b.list,b.items,1)+"}",[&](){return api.ioctl(channel,2,&b.list,nullptr);},[&](long s){baud_accepted=!s;return "{\"config\":"+config_json(b.list,b.items,1)+",\"canaries_intact\":"+boolean(b.intact())+"}";}));
++  require(b.intact()&&b.list.NumOfParams==1&&b.list.ConfigPtr==b.items&&b.items[0].Parameter==1&&b.items[0].Value==62500,"Identity baud SET_CONFIG mutation");
++  Message mask,pattern;set_message(mask.value,{0xff,0xff});set_message(pattern.value,{0xbe,0xef});const auto expected_mask=mask.value,expected_pattern=pattern.value;
++  kernel_filter=true;filter_requested=true;filter_objects_valid=false;filter_stop_attempted=false;
++  std::string input="{\"channel\":"+number(channel)+",\"filter_type\":1,\"mask_present\":true,\"pattern_present\":true,\"flow_present\":false,\"filter_output_present\":true,\"mask\":"+message_json(mask.value)+",\"pattern\":"+message_json(pattern.value)+",\"flow\":null}";
++  ok(call("PassThruStartMsgFilter",input,[&](){return api.filter(channel,1,&mask.value,&pattern.value,nullptr,&filter);},[&](long s){if(!s)filtered=true;observed_mask=mask.value;observed_pattern=pattern.value;observed_flow={};filter_objects_valid=mask.intact()&&pattern.intact()&&!memcmp(&mask.value,&expected_mask,sizeof(expected_mask))&&!memcmp(&pattern.value,&expected_pattern,sizeof(expected_pattern));return "{\"filter_id\":"+number(filter)+",\"mask\":"+message_json(mask.value)+",\"pattern\":"+message_json(pattern.value)+",\"flow\":null,\"canaries_intact\":"+boolean(mask.intact()&&pattern.intact())+"}";}));
++  require(filter_objects_valid,"Identity filter output mutation/ABI bounds");
++ }
++
+  int run(){
+   try{setup();auto id=payload(exchange(0));require(id.size()==57&&Bytes(id.begin(),id.begin()+4)==Bytes({0xff,0xa2,0x10,0x11})&&Bytes(id.begin()+4,id.begin()+9)==Bytes({0x2f,0x12,0x51,0x53,0x06}),"Wrong BF identity");
+    require(payload(exchange(1))==Bytes({0xc1,0xef,0x8f}),"Malformed/unexpected 81 response");require(payload(exchange(2))==Bytes({0xc3,0,0,0xff,0,0xff,0}),"Malformed/unexpected 83 response");
+    auto seed=payload(exchange(3));require(seed.size()==6&&seed[0]==0x67&&seed[1]==1,"Seed response length/SID/subfunction");key_request={0x27,2};auto key=key_for_seed(Bytes(seed.begin()+2,seed.end()));key_request.insert(key_request.end(),key.begin(),key.end());
+    require(payload(exchange(4))==Bytes({0x67,2,0x34}),"Key ACK must be exact670234");wait(200,"post_key_ack");
+    require(payload(exchange(5))==Bytes({0x50,0x85}),"Session ACK must be exact5085");wait(100,"post_session_ack");change_baud_and_clear();wait(200,"pre_download_declaration");
+-   require(payload(exchange(6))==Bytes({0x74,0x84}),"Download ACK must be exact7484");for(unsigned stage=7;stage<22;stage++)require(payload(exchange(stage))==Bytes({0x76}),"Each fixed chunk ACK must be exact76");protocol_complete=true;
++   require(payload(exchange(6))==Bytes({0x74,0x84}),"Download ACK must be exact7484");for(unsigned stage=7;stage<22;stage++){require(payload(exchange(stage))==Bytes({0x76}),"Each fixed chunk ACK must be exact76");acknowledged_chunks++;}
++   require(payload(exchange(22))==Bytes({0x71,1,1}),"Exact fixed start ACK");start_acknowledged=true;identity_transport();
++   require(exchange(23)==IdentityReply::expected(),"Exact pinned kernel identity including NUL");identity_validated=true;protocol_complete=true;
+   }catch(const std::exception& e){strncpy_s(failure,e.what(),_TRUNCATE);}
+   cleanup();bool pass=!failure[0]&&!cleanup_errors&&!log_failed&&protocol_complete;
+-  try{event("{\"type\":\"probe_terminal\",\"physical\":"+boolean(physical)+",\"status\":"+quote(pass?(physical?"PASS_FULL_UPLOAD_NO_START_ONLY":"PASS_OFFLINE_FULL_KERNEL_UPLOAD_NO_START_ONLY"):"FAIL_TERMINAL")+",\"protocol_complete\":"+boolean(protocol_complete)+",\"cleanup_confirmed\":"+boolean(!opened&&!connected&&!filtered)+",\"cleanup_error_mask\":"+number(cleanup_errors)+",\"log_failed\":"+boolean(log_failed)+",\"failure\":"+quote(failure)+",\"state\":"+state()+"}");}catch(...){pass=false;}
+-  printf("%s physical=%s tx_attempts=%u\n",pass?(physical?"PASS_FULL_UPLOAD_NO_START_ONLY":"PASS_OFFLINE_FULL_KERNEL_UPLOAD_NO_START_ONLY"):"FAIL_TERMINAL",physical?"true":"false",next_tx);return pass?0:1;
++  try{event("{\"type\":\"probe_terminal\",\"physical\":"+boolean(physical)+",\"status\":"+quote(pass?(physical?"PASS_KERNEL_START_IDENTITY_ONLY":"PASS_OFFLINE_KERNEL_START_IDENTITY_ONLY"):"FAIL_TERMINAL")+",\"protocol_complete\":"+boolean(protocol_complete)+",\"cleanup_confirmed\":"+boolean(!opened&&!connected&&!filtered)+",\"cleanup_error_mask\":"+number(cleanup_errors)+",\"log_failed\":"+boolean(log_failed)+",\"failure\":"+quote(failure)+",\"state\":"+state()+"}");}catch(...){pass=false;}
++  printf("%s physical=%s tx_attempts=%u\n",pass?(physical?"PASS_KERNEL_START_IDENTITY_ONLY":"PASS_OFFLINE_KERNEL_START_IDENTITY_ONLY"):"FAIL_TERMINAL",physical?"true":"false",next_tx);return pass?0:1;
+  }
+ };

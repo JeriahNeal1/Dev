@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "purpose": "Independent root acceptance criteria for isolated configuration correction, derived from archived installed-host calls and reviewed unchanged RK02 policy",
+  "configuration_before_first_TX": [
+    {
+      "parameter": 22,
+      "value": 0
+    },
+    {
+      "parameter": 7,
+      "value": 1
+    },
+    {
+      "parameter": 10,
+      "value": 0
+    },
+    {
+      "parameter": 12,
+      "value": 0
+    },
+    {
+      "parameter": 3,
+      "value": 0
+    }
+  ],
+  "Connect": {
+    "protocol": 3,
+    "flags": 512,
+    "baud": 4800
+  },
+  "preserve_RK02_policy": {
+    "filter_mask": "ffffff",
+    "filter_pattern": "80f010",
+    "write_timeout_ms": 1000,
+    "read_slice_max_ms": 1000,
+    "frame_deadline_ms": 2000,
+    "nonzero_read_status": "TERMINAL",
+    "retransmissions": 0,
+    "programming_voltage_API_allowed": false,
+    "initial_config_calls_only_new_operational_behavior": true
+  },
+  "required_cases": [
+    "Synthetic unconfigured baseline attempts its first WriteMsgs but fake provider rejects TX admission before any ECU-model exchange; corrected initialization passes. Do not label this zero WriteMsgs.",
+    "each of five SET_CONFIG failures stops before first TX and makes no subsequent provider calls",
+    "full physical BF and C1 plus full stock C3 replies accepted",
+    "fragmented/status-indicated full frames accepted within unchanged bounds",
+    "bad C3 payload rejected",
+    "C3 checksum corruption rejected",
+    "recorded physical83 ERR_BUFFER_EMPTY16/count0 remains terminal with no later TX/upload",
+    "fixed transition reaches first owned-kernel36 transfer under fake replies; no full-ROM acquisition claim"
+  ],
+  "evidence_requirements": [
+    "actual modified native path exercised",
+    "fixed in-process fake or exclusivelyfake provider; no real provider loading path",
+    "exact API arguments and entry/return timestamps/status",
+    "originalRK02 inputsha and unifiedsourcepatch",
+    "source/build/testreportpins",
+    "explicit unknown real-provider default values",
+    "remaining fulltransitiondifferences and physical qualification blockers documented"
+  ],
+  "oracle_source": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk02_vehicle_03_transition\\historical_offline_host_trace_prefix.json",
+    "sha256": "466e252e63e7b0d3e6e41e19a8d6871f9943854a1879bbf7a0038f63b169d368",
+    "source_sequences": [
+      40,
+      41,
+      42,
+      43,
+      44
+    ]
+  },
+  "physical_causality_proven": false,
+  "physical_attempt_authorized": false
+}

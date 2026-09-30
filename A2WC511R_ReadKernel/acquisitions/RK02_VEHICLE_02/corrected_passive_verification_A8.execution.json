@@ -1,0 +1,25 @@
+{
+  "utc_started": "2026-09-29T23:09:52.930302+00:00",
+  "utc_finished": "2026-09-29T23:10:33.252565+00:00",
+  "observer_process_id": 18256,
+  "observer_exit_code": 0,
+  "observer_exited": true,
+  "command_argv": [
+    "C:\\Windows\\py.exe",
+    "-3.14",
+    "-B",
+    "C:\\Dev\\A2WC511R_Final\\passive_som01\\integrations\\prehardware\\capture.py",
+    "--backend",
+    "physical-j2534",
+    "--authorize-physical-read-only",
+    "--count",
+    "120",
+    "--interval-ms",
+    "250",
+    "--output",
+    "C:\\Dev\\A2WC511R_ReadKernel\\acquisitions\\RK02_VEHICLE_02\\corrected_passive_verification_A8.jsonl"
+  ],
+  "capture_file": "C:\\Dev\\A2WC511R_ReadKernel\\acquisitions\\RK02_VEHICLE_02\\corrected_passive_verification_A8.jsonl",
+  "RK02_launch_count": 0,
+  "retry": false
+}

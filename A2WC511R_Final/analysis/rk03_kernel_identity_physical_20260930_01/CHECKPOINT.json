@@ -1,0 +1,46 @@
+{
+  "status": "PHYSICAL_IDENTITY_AND_OEM_RETURN_PASS_FOLLOWON_OFFLINE_BOUNDED_READ_SEALED",
+  "physical_invocations": 1,
+  "provider_loaded": false,
+  "source_base_commit": "41b01141ab2aaa8f001f993b245e09cb1756f5b5",
+  "new_branch": "rk03/kernel-start-identity-physical",
+  "identity_query_scope": "EXPLICITLY_AUTHORIZED_BY_USER_YES",
+  "completed": [
+    "Fixed identity query explicitly approved",
+    "Native release integrated",
+    "Two identical clean builds",
+    "386 native qualification cases passed",
+    "36/14/46 control checks passed",
+    "Independent source/control/seal review and independent root runner audit passed",
+    "Source committed and release sealed"
+  ],
+  "not_completed": [],
+  "blocking_conflict": null,
+  "review_contract": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_physical_20260930_01\\PHYSICAL_IDENTITY_REVIEW_CONTRACT.json",
+    "sha256": "5f2b1e263d98bc1a4a957770ea8e3c214a6ffb5a6798caf7aba79bcc5ecfe167",
+    "bytes": 20306
+  },
+  "updated_utc": "2026-09-30T07:02:20.409274+00:00",
+  "qualification": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_physical_20260930_01\\qualification\\QUALIFICATION.json",
+    "bytes": 407756,
+    "sha256": "19dc92d085a5721d7af280fc8fabf32a22919a9a370ec19e8052c8d6f8cf9cf8"
+  },
+  "source_commit": "a8cb760b09e6219ae640419ddb030af2037a432e",
+  "provider_loaded_during_physical_run": true,
+  "process_exited": true,
+  "provider_cleanup_confirmed": true,
+  "physical_result": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_physical_20260930_01\\physical_result\\PHYSICAL_RESULT.json",
+    "sha256": "2f524a38ef883b189aeab55ac1c06127c6f8164eeccca835f81fd78d5f7fdcda",
+    "bytes": 8886
+  },
+  "OEM_return": "PASS",
+  "next_gate": null,
+  "followon_offline_qualification": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_rom_read_offline_20260930_01\\sealed\\QUALIFICATION.json",
+    "bytes": 8707,
+    "sha256": "0ec65a7934e51c1d3afc4dfaeab9b53c6bf7355bd7f5b30a5f6384e3ffc6d44b"
+  }
+}

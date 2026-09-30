@@ -1,0 +1,192 @@
+{
+  "schema": 1,
+  "status": "PASS",
+  "scope": "INDEPENDENT_REVIEW_ROOT_AUTHORED_FIXED128_NATIVE_RELEASE",
+  "utc": "2026-09-30T08:05:21.691303+00:00",
+  "reviewer": "passive_review",
+  "author_roles": {
+    "kernel128_source_and_instruction_test_author": "passive_review; independent root kernel review required separately",
+    "native_host_fixture_runner_and_controls_author": "root (adapted prior passive_review runner)",
+    "native_host_and_new_runner_reviewer": "passive_review"
+  },
+  "checks_passed": 11295,
+  "verified_pins": 1095,
+  "test_report": {
+    "path": "C:\\Dev\\A2WC511R_RK03_Bounded128Physical\\bounded_128_physical\\reports\\qualification_20260930T075908151050Z\\TEST_REPORT.json",
+    "bytes": 578085,
+    "sha256": "5b3060122811e9d90d96b67d18523a637aa9737210b48174d15e1b9549586f11"
+  },
+  "cases": {
+    "total": 349,
+    "positive": 154,
+    "negative": 195,
+    "total_TX": 8491
+  },
+  "kernel_sha256": "808a5523d47de11881bfc2ea06a35278aedb5122ed51e8110f817b3210adb653",
+  "native_executable_sha256": "1e98524252b28b634129bc3622b37e739b18d99ea5955209c9857a8f4ce02c45",
+  "reviewed_files": [
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_128_20260930_01\\PHYSICAL_BOUNDED_128_REVIEW_CONTRACT.json",
+      "bytes": 23476,
+      "sha256": "767885ac7ec8dae204902dd0bc7dda54c8a7a3890ee9703f20a169fae05ba16a"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_Bounded128Physical\\bounded_128_physical\\fixtures\\128_oracle.json",
+      "bytes": 116948,
+      "sha256": "fe211a6c727ccd12c0b15b62630fa41e8b81f3324bf324c7f6b1fbd53e48acde"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_Bounded128Physical\\bounded_128_physical\\tools\\derive_128.py",
+      "bytes": 8078,
+      "sha256": "bc95e6090a62aac15369c629e7cb6edfcdc7313fd85fc5b0b62979b67fcde0b8"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_Bounded128Physical\\bounded_128_physical\\tools\\finish_128_derivation.py",
+      "bytes": 4603,
+      "sha256": "3e286827e9dac10ab57aeffb5b3a6244bab71a9e60237063ab2011163780ccfd"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_Bounded128Physical\\bounded_128_physical\\tools\\test_bounded_physical.py",
+      "bytes": 22908,
+      "sha256": "028cf89ca776c3106f616c23c318f148bff80467c6ea6ca7efde9b0306c5ef68"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_Bounded128Physical\\bounded_128_physical\\build_a\\BUILD.json",
+      "bytes": 6859,
+      "sha256": "d4fea94b596f67624e4fd5b35fa5ccc5a35ddaae55d7d1163d26231db8f8bd1a"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_Bounded128Physical\\bounded_128_physical\\build_b\\BUILD.json",
+      "bytes": 6859,
+      "sha256": "51fa303388c5fa66fc6449f386124b47c7642e7bf1ea54dc58201c42cefa99db"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_Bounded128Physical\\bounded_128_physical\\reports\\qualification_20260930T075908151050Z\\TEST_REPORT.json",
+      "bytes": 578085,
+      "sha256": "5b3060122811e9d90d96b67d18523a637aa9737210b48174d15e1b9549586f11"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_BoundedReadPhysical\\physical_session\\RK03_BOUNDED_ROM_READ_01\\native_api.jsonl",
+      "bytes": 427545,
+      "sha256": "42c900bbfae9e2537615eb3fd0967e013d7d603d315968c1d59bbd0de701ba1f"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_128_20260930_01\\FIXED_UPLOAD_128_MANIFEST.json",
+      "bytes": 9135,
+      "sha256": "b050503942079ad5392ca82f84aff18d414d4cb771e9d5217d3a934ca350fe4a"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_128_20260930_01\\independent_review\\review_native128.py",
+      "bytes": 15038,
+      "sha256": "8ac75a1c395b00665cfc1facf7f417b7ffa041756e28e0143354d7e8c229d712"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_Bounded128Physical\\bounded_128_physical\\src\\probe_core.hpp",
+      "bytes": 22386,
+      "sha256": "11ba96c847cc492476c3369b35331632829294abc9ca8a7bbc59533711abd0c8"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_Bounded128Physical\\bounded_128_physical\\src\\bounded_response.hpp",
+      "bytes": 1848,
+      "sha256": "dbc1de5fe3fe89a98527e371813632ce74d5dacf5f6e742f9807ae1ec13b7153"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_Bounded128Physical\\bounded_128_physical\\src\\main.cpp",
+      "bytes": 3590,
+      "sha256": "29b2f4c5aeca137e022f3cd34cf0287010fa135c2a2ce698803f574d9eb77bb7"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_Bounded128Physical\\bounded_128_physical\\src\\pins.hpp",
+      "bytes": 761,
+      "sha256": "4f98d5e9c406c469f4a89cb5b99e4fef4090d06e0aa40c2e199cee315b0e4c19"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_Bounded128Physical\\bounded_128_physical\\src\\owned_artifact.h",
+      "bytes": 9306,
+      "sha256": "618fc9432d53c4a0a83de384b69b336f0eb744b19f88385a4d87b216b714c806"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_Bounded128Physical\\bounded_128_physical\\src\\fixtures.hpp",
+      "bytes": 5623,
+      "sha256": "d8f6c6f146a8421619ec8c0bb1b7ac16eedcd494e06067f60906ffd070d7bc23"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_Bounded128Physical\\bounded_128_physical\\src\\fake_backend.hpp",
+      "bytes": 28124,
+      "sha256": "a14b781e24f2ed2f9795a4da52e6414fcdd4fa60379fcb064c004b6fd37b047a"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_128_20260930_01\\launch_bounded_once.py",
+      "bytes": 8902,
+      "sha256": "b8bdd2932309666891134fa0b777fbaeb7e6d8b99b8630a37309a0d6b7e7e909"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_128_20260930_01\\launch_oem_return_once.py",
+      "bytes": 4389,
+      "sha256": "9db9f0d2f2ed4b53e43450334f01ef783c29eb0fcdcb22fea3534982c5dea072"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_128_20260930_01\\check_clients.ps1",
+      "bytes": 2193,
+      "sha256": "4e2ef39b40abbee53367c1d6f47c6cafa6c5aeffdd5f472fb7dbe6450d6cdd96"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_128_20260930_01\\seal_bounded_result.py",
+      "bytes": 19200,
+      "sha256": "1d45cd1642214f51056bc17e3552da76a9b209d4cd479623f691ddded8db4fc8"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_128_20260930_01\\seal_oem_return_bounded.py",
+      "bytes": 6009,
+      "sha256": "5b936a35a084246b91542e90a9971986825370348c247fb46c26ecda1711a685"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_128_20260930_01\\test_launcher_offline.py",
+      "bytes": 7995,
+      "sha256": "1da3bbe152ed3686d77474d6c66112ee369bcb986d01bbbdfb45915900b91871"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_128_20260930_01\\test_oem_return_controls.py",
+      "bytes": 3636,
+      "sha256": "f5e2d39b90498b0d7f2679c6e73fc7d5dbf2b897f3740e114e20d2bd40cd2d44"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_128_20260930_01\\test_result_validator.py",
+      "bytes": 8184,
+      "sha256": "c72d63ef687efa7abe6f025ba59f95d0052f55dc96986da965c5293e83ba7e62"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_128_20260930_01\\LAUNCHER_TESTS_V2.json",
+      "bytes": 1847,
+      "sha256": "1317c1434e6f3e0db783d26a2a865d60625b76e483ac09585f87097406c56312"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_128_20260930_01\\OEM_RETURN_CONTROL_TESTS_V2.json",
+      "bytes": 1000,
+      "sha256": "a65b9f92a0cec559a8cbce6eef72d676c508e5e2c3e84adae38b3224ccd9e2c8"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_128_20260930_01\\RESULT_VALIDATOR_TESTS.json",
+      "bytes": 2534,
+      "sha256": "204640211068dae7cb4e0bd2d5902b72ab920713e34ad1997df13773b6a7cd6d"
+    }
+  ],
+  "verification_pinset_sha256": "1ff952e8bf15ecb8f75599223cb2c8287bfb19eb15f2e81ad63f3b73572c5897",
+  "conclusions": [
+    "Two matching new PE builds bind the new1808-byte kernel; independent inverse transform recovers its exact bytes from embedded ciphertext and all15 upload frames match.",
+    "Transport, setup, cleanup and timeout mechanisms are unchanged; fixed128 request and139-byte parser/event bounds are correct.",
+    "All349 existing journals and pins pass this independent read-only audit. Actual failed228-byte record is rejected before another receive.",
+    "New human token/session, one-shot reservation, client detection, result and OEM-return controls preserve the existing boundaries."
+  ],
+  "blocking_findings": [],
+  "limitations": [
+    "Kernel source/model author review is not independent; root separately reviews it.",
+    "Inherited runner report labels refer to prior passive_review authorship; current128 adaptation/execution was by root, independently reviewed here.",
+    "No old qualification suite, new native binary, provider, client scanner, or hardware was executed by this review.",
+    "The physical_identity_replay fixture reuses historical RX/version metadata with new simulated kernel upload bytes; it is not a physical128 success.",
+    "Shortening the fixed response is an authorized new experiment, not a proven correction for the prior failure.",
+    "Same kernel identity text does not distinguish new image; exact kernel/native hashes and upload bytes establish release binding.",
+    "Copied old512 sealing/root-review tools remain inactive references and were excluded from this active native/control review; final128 sealing mechanics require separate review.",
+    "Full128 two-pass physical qualification remains conditional on the new physical bounded128 and subsequent OEM return passing."
+  ]
+}

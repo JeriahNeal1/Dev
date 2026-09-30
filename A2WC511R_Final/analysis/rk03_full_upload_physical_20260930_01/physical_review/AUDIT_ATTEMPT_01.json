@@ -1,0 +1,8 @@
+{
+  "status": "REVIEWER_ASSERTION_CORRECTED_NO_NATIVE_FAILURE",
+  "script_sha256": "6966074f2c2e686414acffcd5250c64169c41e910fd93c4bc61be6b7b2c355c2",
+  "exception": "AssertionError at line282: cleanup input object expected only handle; native shared cleanup logger also emits filter_id_present:false and filter_id:0 on Disconnect/Close.",
+  "correction": "Include both recorded optional-filter fields in the exact expected input objects, as implemented by the already qualified cleanup logger.",
+  "physical_operations": 0,
+  "source_evidence_modified": false
+}

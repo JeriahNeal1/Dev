@@ -1,0 +1,167 @@
+{
+  "schema": 1,
+  "created_utc": "2026-09-30T04:31:01.374002+00:00",
+  "status": "PASS_INDEPENDENT_NATIVE_SOURCE_REVIEW_OFFLINE_ONLY",
+  "native_author": "root",
+  "reviewer": "passive_review",
+  "runner_role": "passive_review authored runner; root independently reviews it",
+  "physical_operations": 0,
+  "provider_loads": 0,
+  "native_execution_during_review": 0,
+  "blocking_findings": [],
+  "checks": [
+    {
+      "finding": "Only two offline CLI modes, fixed fake API binding, exclusive journal; no provider dispatcher",
+      "path": "src/main.cpp",
+      "line": 16,
+      "status": "PASS"
+    },
+    {
+      "finding": "Core constructor rejects physical=true",
+      "path": "src/probe_core.hpp",
+      "line": 9,
+      "status": "PASS"
+    },
+    {
+      "finding": "Requests bounded to22; fixed chunk offset/length and1808-byte array; first14x128 andlast16",
+      "path": "src/probe_core.hpp",
+      "line": 16,
+      "status": "PASS"
+    },
+    {
+      "finding": "One declaration then15 exact76 ACKs, immediate cleanup after last; no kernel-start request",
+      "path": "src/probe_core.hpp",
+      "line": 108,
+      "status": "PASS"
+    },
+    {
+      "finding": "Parser, setup/GET/filter, cleanup, seed/framing helper and QPC minimum clock reused with unchanged normalized source",
+      "path": "src/probe_core.hpp",
+      "line": 41,
+      "status": "PASS"
+    },
+    {
+      "finding": "Status and output validation remain terminal before later TX; intent/return logging and cleanup fallbacks retained",
+      "path": "src/probe_core.hpp",
+      "line": 40,
+      "status": "PASS"
+    },
+    {
+      "finding": "Remaining14 chunk stages each support11 named faults at the intended write/read boundary",
+      "path": "src/fake_backend.hpp",
+      "line": 61,
+      "status": "PASS"
+    },
+    {
+      "finding": "New physical replay preserves all16 RX records, full version buffers and4015f497 key request; later suffix remains synthetic",
+      "path": "src/first_physical_replay.hpp",
+      "line": 6,
+      "status": "PASS"
+    },
+    {
+      "finding": "Real-clock mode uses same QPC helper; virtual provider schedule stays separate from measured wall time",
+      "path": "src/main.cpp",
+      "line": 11,
+      "status": "PASS"
+    }
+  ],
+  "source_inputs": [
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\src\\common.hpp",
+      "sha256": "e502c533058d2aeed48d44d8b1c393bb75511a010ca37bf897bd4c341964d3d8",
+      "bytes": 6279
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\src\\contract_pin.hpp",
+      "sha256": "07bf60cdcbf4eec56d5fd33b179e1f011497cf3a0d59cfc2ba192ce43c5e96ab",
+      "bytes": 123
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\src\\fake_backend.hpp",
+      "sha256": "267a19e0c6db4f3c8941ce098c9317b2f33b72e798b1bd3a3d50ec1720707e48",
+      "bytes": 15915
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\src\\first_physical_replay.hpp",
+      "sha256": "40ef1c01b6504409a1408fd7312778b76b6a225462d288e6d0991b07953eb83c",
+      "bytes": 3187
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\src\\fixtures.hpp",
+      "sha256": "59573effa1b0de52eed19378ba82611f6c2a14b886746d7e6449bca7bfc114e8",
+      "bytes": 5623
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\src\\j2534_tactrix.h",
+      "sha256": "25df54ce5e75ef81bef26c27c694ac82ab74959381bfbf4a6d79a9a68e5d179a",
+      "bytes": 11763
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\src\\main.cpp",
+      "sha256": "e2b2f931b36746e4fe0c5fe369232cb8065ae442550e00ca583c0a5a281b32d1",
+      "bytes": 2339
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\src\\owned_artifact.h",
+      "sha256": "b62c00f24f578a2b5984fd6eb1e31d16318e431d57e02ee43eaab5c98fb25ab2",
+      "bytes": 9322
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\src\\physical_replay.hpp",
+      "sha256": "21440a7071d8f00289164a3c7f37d8f07138f8133ee45600d39e4f6f86fb8421",
+      "bytes": 1814
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\src\\probe_core.hpp",
+      "sha256": "a12cb44cc0c36e83428b96c0a3fdf2bc126f23fbe19fc8d123730add1a10f422",
+      "bytes": 17496
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\src\\protocol.hpp",
+      "sha256": "60ebaa976978f48352d67249817c43ff63c346ebd9df1cda68c36083c5c6a877",
+      "bytes": 1077
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\src\\real_clock.hpp",
+      "sha256": "2e2358ba07c89e55520c64dc943b7fca750014753772ecd66e084d5ae2b37818",
+      "bytes": 1064
+    }
+  ],
+  "builds": [
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\build_a\\BUILD.json",
+      "sha256": "664a9bf6e36247e1a198eef65a3e2e19f6e44c15928e2bb4e2668b13bcf7e18b",
+      "bytes": 5152
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\build_b\\BUILD.json",
+      "sha256": "1ac8e557bc7552caeaaf0e171a3638a3d722af5b2d08796e5f484cad5874e258",
+      "bytes": 5152
+    }
+  ],
+  "executable": {
+    "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\build_a\\rk03_full_upload_no_start_offline32.exe",
+    "sha256": "602f2b0835d8e39d37af9b1eddead0223cd7ba5411970645e1ebc7e78dc1c7a5",
+    "bytes": 328704
+  },
+  "contract": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_no_start_20260930_01\\FULL_UPLOAD_NO_START_CONTRACT.json",
+    "sha256": "3861d397a625a252394ab2c0fdd58af9bbf03c9996a7c98ec7de239270779a5f",
+    "bytes": 17177
+  },
+  "reference_upload": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\UPLOAD_WIRE_CONTRACT_RK02.json",
+    "sha256": "b1c5431141f9b249b16dd15938c290f20b99593e7ab8512caebcde1906c37f50",
+    "bytes": 9330
+  },
+  "imports": {
+    "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\build_a\\imports.txt",
+    "sha256": "e2334d15fcd998687b10c37fbcf89a738a946b998f1d30345f921d4f6f10e558",
+    "bytes": 3784
+  },
+  "limitations": [
+    "KERNEL32 generic GetProcAddress/LoadLibraryExW imports remain through the MSVC/CRT executable; source has no provider loader, provider path or physical dispatcher. Import absence is not claimed.",
+    "Retained stock-upload contract frame16 is the forbidden310101 handoff. Only frames0..15 are imported.",
+    "New offline test results are pending at this source-review point. No physical upload, kernel execution, ROM read or future physical readiness is qualified."
+  ]
+}

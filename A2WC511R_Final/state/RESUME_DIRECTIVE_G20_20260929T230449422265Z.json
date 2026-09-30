@@ -1,0 +1,73 @@
+{
+  "recorded_at_utc": "20260929T230449422265Z",
+  "authority": "Latest explicit user instruction in this conversation; supersedes conflicting earlier sequencing",
+  "session": "RK02_VEHICLE_02",
+  "next_human_gate": "G20",
+  "one_human_gate_at_a_time": true,
+  "require_exact_replies": [
+    "DONE G20",
+    "DONE G21",
+    "DONE G22",
+    "DONE G23",
+    "DONE G24",
+    "PROCEED RK02"
+  ],
+  "confirmed_by_user": {
+    "failure_recovery_G13_through_G19_complete": true,
+    "vehicle_fully_depowered": true,
+    "ignition": "OFF",
+    "battery_positive": "DISCONNECTED",
+    "battery_negative": "DISCONNECTED_ISOLATED",
+    "test_mode_connectors": "DISCONNECTED",
+    "radiator_fans": "INTENTIONALLY_PHYSICALLY_DISCONNECTED",
+    "rk02_invocations": 0,
+    "temporary_ram_kernel_uploaded": false,
+    "flash_operation_occurred": false
+  },
+  "voltage_policy": "Operator manually monitors voltage; no numerical voltage request unless operator reports a power problem. No numeric voltage inferred.",
+  "charger_policy": "Schumacher SE-5212A 10 A charging only; never 50 A Engine Start",
+  "after_G24": "Automatically run ONLY the separately qualified corrected passive BF/A8 observer, with no intervening voltage request",
+  "physical_pass_requires": [
+    "BF identity 2F12515306",
+    "expected passive six-variable acquisition",
+    "PASS_CAPTURE_ONLY",
+    "clean observer exit",
+    "clean broker/provider cleanup"
+  ],
+  "on_passive_failure": "Do not launch RK02",
+  "on_passive_success": "Preserve evidence and report exact result; continue in this same Codex run with a NEW physical/acquisition session identity",
+  "fresh_attempt_human_gates": [
+    "Ignition OFF and wait",
+    "Connect green Test Mode connectors and wait",
+    "Ignition ON engine OFF and wait",
+    "Confirm actual Test Mode indications and wait"
+  ],
+  "test_mode_evidence": "Absent fan cycling is expected because fans are intentionally disconnected; do not treat it as Test Mode failure",
+  "commit_display": [
+    "ECU BF identity",
+    "corrected passive capture status",
+    "Test Mode status",
+    "charger state",
+    "exact RK02 executable SHA256",
+    "exact certificate SHA256",
+    "ECUFlash/RomRaider/all competing J2534 clients closed",
+    "no previous RK02 invocation"
+  ],
+  "commit_warning": "RK02 RAM TAKEOVER IS NEXT.\nNO PHYSICAL STATE CHANGES UNTIL IT EXITS.",
+  "rk02_execution": "Only after exact PROCEED RK02; qualified executable exactly once; no retry after terminal failure; qualified finalizer automatically after exit",
+  "post_capture": {
+    "designation": "CURRENT_PHYSICAL_CAPTURE",
+    "previous_romraider_edits_known": true,
+    "factory_stock_assumption_allowed": false,
+    "expect_calibration_differences": true,
+    "executable_stock_status": "Determine independently",
+    "compare_every_changed_range_against": [
+      "verified A2WC511R stock baseline",
+      "RomRaider definitions",
+      "historical tune candidates"
+    ],
+    "use_diaphora_if_executable_regions_differ": true,
+    "modify_captured_raw_images": false,
+    "offline_ingest_after_physical_session_complete_only": true
+  }
+}

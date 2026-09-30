@@ -1,0 +1,1857 @@
+address,address_hex,stock,current,classification,object_keys
+87549,0x155FD,180,130,scalar,Max Wastegate Duty Limit Post-Compensation
+787777,0xC0541,74,68,table,TD Activation Thresholds (Target Boost)
+787778,0xC0542,128,118,table,TD Activation Thresholds (Target Boost)
+787779,0xC0543,0,225,table,TD Activation Thresholds (Target Boost)
+787781,0xC0545,87,74,table,TD Activation Thresholds (Target Boost)
+787782,0xC0546,0,237,table,TD Activation Thresholds (Target Boost)
+787783,0xC0547,0,194,table,TD Activation Thresholds (Target Boost)
+787792,0xC0550,0,193,scalar,TD Integral Negative Activation (Boost Error)
+787793,0xC0551,0,120,scalar,TD Integral Negative Activation (Boost Error)
+787794,0xC0552,0,59,scalar,TD Integral Negative Activation (Boost Error)
+787795,0xC0553,0,83,scalar,TD Integral Negative Activation (Boost Error)
+787800,0xC0558,64,65,scalar,TD Integral Positive Activation (Boost Error)
+787801,0xC0559,160,206,scalar,TD Integral Positive Activation (Boost Error)
+787802,0xC055A,0,220,scalar,TD Integral Positive Activation (Boost Error)
+787803,0xC055B,0,27,scalar,TD Integral Positive Activation (Boost Error)
+787808,0xC0560,0,64,scalar,TD Integral Positive Activation (Wastegate Duty)
+787809,0xC0561,0,160,scalar,TD Integral Positive Activation (Wastegate Duty)
+787820,0xC056C,69,68,table,TD Activation Thresholds (RPM)
+787821,0xC056D,6,237,table,TD Activation Thresholds (RPM)
+787822,0xC056E,96,128,table,TD Activation Thresholds (RPM)
+787824,0xC0570,69,68,table,TD Activation Thresholds (RPM)
+787825,0xC0571,12,250,table,TD Activation Thresholds (RPM)
+787826,0xC0572,160,0,table,TD Activation Thresholds (RPM)
+787836,0xC057C,194,192,table,TD Integral Cumulative Range (WGDC Correction)
+787837,0xC057D,32,160,table,TD Integral Cumulative Range (WGDC Correction)
+787840,0xC0580,65,64,table,TD Integral Cumulative Range (WGDC Correction)
+787841,0xC0581,112,160,table,TD Integral Cumulative Range (WGDC Correction)
+788325,0xC0765,128,122,table,Target Boost Compensation (ECT)
+788326,0xC0766,128,109,table,Target Boost Compensation (ECT)
+788327,0xC0767,128,90,table,Target Boost Compensation (ECT)
+788387,0xC07A3,0,2,axis,Turbo Dynamics Proportional::axis
+788391,0xC07A7,0,7,axis,Turbo Dynamics Proportional::axis
+788393,0xC07A9,160,159,axis,Turbo Dynamics Proportional::axis
+788394,0xC07AA,0,255,axis,Turbo Dynamics Proportional::axis
+788395,0xC07AB,0,245,axis,Turbo Dynamics Proportional::axis
+788399,0xC07AF,0,16,axis,Turbo Dynamics Proportional::axis
+788407,0xC07B7,0,16,axis,Turbo Dynamics Proportional::axis
+788409,0xC07B9,160,159,axis,Turbo Dynamics Proportional::axis
+788410,0xC07BA,0,255,axis,Turbo Dynamics Proportional::axis
+788411,0xC07BB,0,245,axis,Turbo Dynamics Proportional::axis
+788415,0xC07BF,0,7,axis,Turbo Dynamics Proportional::axis
+788419,0xC07C3,0,2,axis,Turbo Dynamics Proportional::axis
+788431,0xC07CF,128,64,table,Turbo Dynamics Proportional
+788432,0xC07D0,51,50,table,Turbo Dynamics Proportional
+788433,0xC07D1,0,128,table,Turbo Dynamics Proportional
+788434,0xC07D2,53,51,table,Turbo Dynamics Proportional
+788436,0xC07D4,59,52,table,Turbo Dynamics Proportional
+788443,0xC07DB,0,1,axis,Turbo Dynamics Integral Negative::axis
+788449,0xC07E1,32,31,axis,Turbo Dynamics Integral Negative::axis
+788450,0xC07E2,0,255,axis,Turbo Dynamics Integral Negative::axis
+788451,0xC07E3,0,255,axis,Turbo Dynamics Integral Negative::axis
+788453,0xC07E5,240,239,axis,Turbo Dynamics Integral Negative::axis
+788454,0xC07E6,0,255,axis,Turbo Dynamics Integral Negative::axis
+788455,0xC07E7,0,253,axis,Turbo Dynamics Integral Negative::axis
+788459,0xC07EB,0,3,axis,Turbo Dynamics Integral Negative::axis
+788463,0xC07EF,0,3,axis,Turbo Dynamics Integral Negative::axis
+788465,0xC07F1,160,159,axis,Turbo Dynamics Integral Negative::axis
+788466,0xC07F2,0,255,axis,Turbo Dynamics Integral Negative::axis
+788467,0xC07F3,0,245,axis,Turbo Dynamics Integral Negative::axis
+788471,0xC07F7,0,16,axis,Turbo Dynamics Integral Negative::axis
+788476,0xC07FC,45,46,table,Turbo Dynamics Integral Negative
+788483,0xC0803,154,128,table,Turbo Dynamics Integral Negative
+788485,0xC0805,26,0,table,Turbo Dynamics Integral Negative
+788487,0xC0807,154,102,table,Turbo Dynamics Integral Negative
+788489,0xC0809,205,179,table,Turbo Dynamics Integral Negative
+788503,0xC0817,0,16,axis,Turbo Dynamics Integral Positive::axis
+788505,0xC0819,160,159,axis,Turbo Dynamics Integral Positive::axis
+788506,0xC081A,0,255,axis,Turbo Dynamics Integral Positive::axis
+788507,0xC081B,0,245,axis,Turbo Dynamics Integral Positive::axis
+788511,0xC081F,0,3,axis,Turbo Dynamics Integral Positive::axis
+788515,0xC0823,0,3,axis,Turbo Dynamics Integral Positive::axis
+788517,0xC0825,240,239,axis,Turbo Dynamics Integral Positive::axis
+788518,0xC0826,0,255,axis,Turbo Dynamics Integral Positive::axis
+788519,0xC0827,0,253,axis,Turbo Dynamics Integral Positive::axis
+788521,0xC0829,32,31,axis,Turbo Dynamics Integral Positive::axis
+788522,0xC082A,0,255,axis,Turbo Dynamics Integral Positive::axis
+788523,0xC082B,0,255,axis,Turbo Dynamics Integral Positive::axis
+788531,0xC0833,0,1,axis,Turbo Dynamics Integral Positive::axis
+788535,0xC0837,26,0,table,Turbo Dynamics Integral Positive
+788537,0xC0839,51,26,table,Turbo Dynamics Integral Positive
+788539,0xC083B,102,51,table,Turbo Dynamics Integral Positive
+788541,0xC083D,230,90,table,Turbo Dynamics Integral Positive
+788542,0xC083E,51,50,table,Turbo Dynamics Integral Positive
+788543,0xC083F,102,128,table,Turbo Dynamics Integral Positive
+788544,0xC0840,52,50,table,Turbo Dynamics Integral Positive
+788545,0xC0841,0,166,table,Turbo Dynamics Integral Positive
+788546,0xC0842,55,50,table,Turbo Dynamics Integral Positive
+788547,0xC0843,0,205,table,Turbo Dynamics Integral Positive
+788548,0xC0844,59,51,table,Turbo Dynamics Integral Positive
+788660,0xC08B4,66,128,table,Max Wastegate Duty Alternate A (RPM)
+788661,0xC08B5,32,0,table,Max Wastegate Duty Alternate A (RPM)
+788664,0xC08B8,66,128,table,Max Wastegate Duty Alternate A (RPM)
+788665,0xC08B9,32,0,table,Max Wastegate Duty Alternate A (RPM)
+788669,0xC08BD,42,130,table,Max Wastegate Duty Alternate A (RPM)
+788673,0xC08C1,52,130,table,Max Wastegate Duty Alternate A (RPM)
+788677,0xC08C5,52,104,table,Max Wastegate Duty Alternate A (RPM)
+788700,0xC08DC,66,128,table,Max Wastegate Duty Alternate B (RPM)
+788701,0xC08DD,32,0,table,Max Wastegate Duty Alternate B (RPM)
+788704,0xC08E0,66,128,table,Max Wastegate Duty Alternate B (RPM)
+788705,0xC08E1,32,0,table,Max Wastegate Duty Alternate B (RPM)
+788709,0xC08E5,42,112,table,Max Wastegate Duty Alternate B (RPM)
+788713,0xC08E9,52,112,table,Max Wastegate Duty Alternate B (RPM)
+788717,0xC08ED,52,80,table,Max Wastegate Duty Alternate B (RPM)
+788926,0xC09BE,90,0,table,Initial Wastegate Duty A
+788928,0xC09C0,90,0,table,Initial Wastegate Duty A
+788930,0xC09C2,90,0,table,Initial Wastegate Duty A
+788932,0xC09C4,90,0,table,Initial Wastegate Duty A
+788934,0xC09C6,90,0,table,Initial Wastegate Duty A
+788936,0xC09C8,90,0,table,Initial Wastegate Duty A
+788938,0xC09CA,90,0,table,Initial Wastegate Duty A
+788940,0xC09CC,56,0,table,Initial Wastegate Duty A
+788941,0xC09CD,205,0,table,Initial Wastegate Duty A
+788942,0xC09CE,56,0,table,Initial Wastegate Duty A
+788943,0xC09CF,205,0,table,Initial Wastegate Duty A
+788944,0xC09D0,56,0,table,Initial Wastegate Duty A
+788945,0xC09D1,205,0,table,Initial Wastegate Duty A
+788946,0xC09D2,56,0,table,Initial Wastegate Duty A
+788947,0xC09D3,205,0,table,Initial Wastegate Duty A
+788948,0xC09D4,56,0,table,Initial Wastegate Duty A
+788949,0xC09D5,205,0,table,Initial Wastegate Duty A
+788950,0xC09D6,56,0,table,Initial Wastegate Duty A
+788951,0xC09D7,205,0,table,Initial Wastegate Duty A
+788952,0xC09D8,56,0,table,Initial Wastegate Duty A
+788953,0xC09D9,205,0,table,Initial Wastegate Duty A
+788954,0xC09DA,56,4,table,Initial Wastegate Duty A
+788955,0xC09DB,205,0,table,Initial Wastegate Duty A
+788956,0xC09DC,51,0,table,Initial Wastegate Duty A
+788957,0xC09DD,205,0,table,Initial Wastegate Duty A
+788958,0xC09DE,51,0,table,Initial Wastegate Duty A
+788959,0xC09DF,205,0,table,Initial Wastegate Duty A
+788960,0xC09E0,51,0,table,Initial Wastegate Duty A
+788961,0xC09E1,205,0,table,Initial Wastegate Duty A
+788962,0xC09E2,51,0,table,Initial Wastegate Duty A
+788963,0xC09E3,205,0,table,Initial Wastegate Duty A
+788964,0xC09E4,51,0,table,Initial Wastegate Duty A
+788965,0xC09E5,205,0,table,Initial Wastegate Duty A
+788966,0xC09E6,51,8,table,Initial Wastegate Duty A
+788967,0xC09E7,205,0,table,Initial Wastegate Duty A
+788968,0xC09E8,51,12,table,Initial Wastegate Duty A
+788969,0xC09E9,205,0,table,Initial Wastegate Duty A
+788970,0xC09EA,51,22,table,Initial Wastegate Duty A
+788971,0xC09EB,205,0,table,Initial Wastegate Duty A
+788972,0xC09EC,49,0,table,Initial Wastegate Duty A
+788974,0xC09EE,49,0,table,Initial Wastegate Duty A
+788976,0xC09F0,49,0,table,Initial Wastegate Duty A
+788978,0xC09F2,49,0,table,Initial Wastegate Duty A
+788980,0xC09F4,49,0,table,Initial Wastegate Duty A
+788982,0xC09F6,49,14,table,Initial Wastegate Duty A
+788984,0xC09F8,49,20,table,Initial Wastegate Duty A
+788986,0xC09FA,49,32,table,Initial Wastegate Duty A
+788988,0xC09FC,49,0,table,Initial Wastegate Duty A
+788990,0xC09FE,49,0,table,Initial Wastegate Duty A
+788992,0xC0A00,49,0,table,Initial Wastegate Duty A
+788994,0xC0A02,49,0,table,Initial Wastegate Duty A
+788996,0xC0A04,49,0,table,Initial Wastegate Duty A
+788998,0xC0A06,49,18,table,Initial Wastegate Duty A
+789000,0xC0A08,49,24,table,Initial Wastegate Duty A
+789002,0xC0A0A,49,36,table,Initial Wastegate Duty A
+789004,0xC0A0C,47,0,table,Initial Wastegate Duty A
+789006,0xC0A0E,47,0,table,Initial Wastegate Duty A
+789008,0xC0A10,47,0,table,Initial Wastegate Duty A
+789010,0xC0A12,47,0,table,Initial Wastegate Duty A
+789012,0xC0A14,47,0,table,Initial Wastegate Duty A
+789014,0xC0A16,47,20,table,Initial Wastegate Duty A
+789016,0xC0A18,47,26,table,Initial Wastegate Duty A
+789018,0xC0A1A,47,38,table,Initial Wastegate Duty A
+789020,0xC0A1C,44,0,table,Initial Wastegate Duty A
+789022,0xC0A1E,44,0,table,Initial Wastegate Duty A
+789024,0xC0A20,44,0,table,Initial Wastegate Duty A
+789026,0xC0A22,44,0,table,Initial Wastegate Duty A
+789028,0xC0A24,44,0,table,Initial Wastegate Duty A
+789030,0xC0A26,44,20,table,Initial Wastegate Duty A
+789032,0xC0A28,44,26,table,Initial Wastegate Duty A
+789034,0xC0A2A,44,38,table,Initial Wastegate Duty A
+789036,0xC0A2C,41,0,table,Initial Wastegate Duty A
+789038,0xC0A2E,41,0,table,Initial Wastegate Duty A
+789040,0xC0A30,41,0,table,Initial Wastegate Duty A
+789042,0xC0A32,41,0,table,Initial Wastegate Duty A
+789044,0xC0A34,41,0,table,Initial Wastegate Duty A
+789046,0xC0A36,41,18,table,Initial Wastegate Duty A
+789048,0xC0A38,41,24,table,Initial Wastegate Duty A
+789050,0xC0A3A,41,34,table,Initial Wastegate Duty A
+789052,0xC0A3C,42,0,table,Initial Wastegate Duty A
+789054,0xC0A3E,42,0,table,Initial Wastegate Duty A
+789056,0xC0A40,42,0,table,Initial Wastegate Duty A
+789058,0xC0A42,42,0,table,Initial Wastegate Duty A
+789060,0xC0A44,42,0,table,Initial Wastegate Duty A
+789062,0xC0A46,42,16,table,Initial Wastegate Duty A
+789064,0xC0A48,42,21,table,Initial Wastegate Duty A
+789066,0xC0A4A,42,30,table,Initial Wastegate Duty A
+789068,0xC0A4C,33,0,table,Initial Wastegate Duty A
+789070,0xC0A4E,33,0,table,Initial Wastegate Duty A
+789072,0xC0A50,33,0,table,Initial Wastegate Duty A
+789074,0xC0A52,33,0,table,Initial Wastegate Duty A
+789076,0xC0A54,33,0,table,Initial Wastegate Duty A
+789078,0xC0A56,33,10,table,Initial Wastegate Duty A
+789080,0xC0A58,33,14,table,Initial Wastegate Duty A
+789082,0xC0A5A,33,20,table,Initial Wastegate Duty A
+789084,0xC0A5C,33,0,table,Initial Wastegate Duty A
+789086,0xC0A5E,33,0,table,Initial Wastegate Duty A
+789088,0xC0A60,33,0,table,Initial Wastegate Duty A
+789090,0xC0A62,33,0,table,Initial Wastegate Duty A
+789092,0xC0A64,33,0,table,Initial Wastegate Duty A
+789094,0xC0A66,33,7,table,Initial Wastegate Duty A
+789096,0xC0A68,33,10,table,Initial Wastegate Duty A
+789098,0xC0A6A,33,15,table,Initial Wastegate Duty A
+789178,0xC0ABA,90,0,table,Initial Wastegate Duty B
+789180,0xC0ABC,90,0,table,Initial Wastegate Duty B
+789182,0xC0ABE,90,0,table,Initial Wastegate Duty B
+789184,0xC0AC0,90,0,table,Initial Wastegate Duty B
+789186,0xC0AC2,90,0,table,Initial Wastegate Duty B
+789188,0xC0AC4,90,0,table,Initial Wastegate Duty B
+789190,0xC0AC6,90,0,table,Initial Wastegate Duty B
+789192,0xC0AC8,56,0,table,Initial Wastegate Duty B
+789193,0xC0AC9,205,0,table,Initial Wastegate Duty B
+789194,0xC0ACA,56,0,table,Initial Wastegate Duty B
+789195,0xC0ACB,205,0,table,Initial Wastegate Duty B
+789196,0xC0ACC,56,0,table,Initial Wastegate Duty B
+789197,0xC0ACD,205,0,table,Initial Wastegate Duty B
+789198,0xC0ACE,56,0,table,Initial Wastegate Duty B
+789199,0xC0ACF,205,0,table,Initial Wastegate Duty B
+789200,0xC0AD0,56,0,table,Initial Wastegate Duty B
+789201,0xC0AD1,205,0,table,Initial Wastegate Duty B
+789202,0xC0AD2,56,0,table,Initial Wastegate Duty B
+789203,0xC0AD3,205,0,table,Initial Wastegate Duty B
+789204,0xC0AD4,56,0,table,Initial Wastegate Duty B
+789205,0xC0AD5,205,0,table,Initial Wastegate Duty B
+789206,0xC0AD6,56,4,table,Initial Wastegate Duty B
+789207,0xC0AD7,205,0,table,Initial Wastegate Duty B
+789208,0xC0AD8,51,0,table,Initial Wastegate Duty B
+789209,0xC0AD9,205,0,table,Initial Wastegate Duty B
+789210,0xC0ADA,51,0,table,Initial Wastegate Duty B
+789211,0xC0ADB,205,0,table,Initial Wastegate Duty B
+789212,0xC0ADC,51,0,table,Initial Wastegate Duty B
+789213,0xC0ADD,205,0,table,Initial Wastegate Duty B
+789214,0xC0ADE,51,0,table,Initial Wastegate Duty B
+789215,0xC0ADF,205,0,table,Initial Wastegate Duty B
+789216,0xC0AE0,51,0,table,Initial Wastegate Duty B
+789217,0xC0AE1,205,0,table,Initial Wastegate Duty B
+789218,0xC0AE2,51,8,table,Initial Wastegate Duty B
+789219,0xC0AE3,205,0,table,Initial Wastegate Duty B
+789220,0xC0AE4,51,12,table,Initial Wastegate Duty B
+789221,0xC0AE5,205,0,table,Initial Wastegate Duty B
+789222,0xC0AE6,51,22,table,Initial Wastegate Duty B
+789223,0xC0AE7,205,0,table,Initial Wastegate Duty B
+789224,0xC0AE8,49,0,table,Initial Wastegate Duty B
+789226,0xC0AEA,49,0,table,Initial Wastegate Duty B
+789228,0xC0AEC,49,0,table,Initial Wastegate Duty B
+789230,0xC0AEE,49,0,table,Initial Wastegate Duty B
+789232,0xC0AF0,49,0,table,Initial Wastegate Duty B
+789234,0xC0AF2,49,14,table,Initial Wastegate Duty B
+789236,0xC0AF4,49,20,table,Initial Wastegate Duty B
+789238,0xC0AF6,49,32,table,Initial Wastegate Duty B
+789240,0xC0AF8,49,0,table,Initial Wastegate Duty B
+789242,0xC0AFA,49,0,table,Initial Wastegate Duty B
+789244,0xC0AFC,49,0,table,Initial Wastegate Duty B
+789246,0xC0AFE,49,0,table,Initial Wastegate Duty B
+789248,0xC0B00,49,0,table,Initial Wastegate Duty B
+789250,0xC0B02,49,18,table,Initial Wastegate Duty B
+789252,0xC0B04,49,24,table,Initial Wastegate Duty B
+789254,0xC0B06,49,36,table,Initial Wastegate Duty B
+789256,0xC0B08,47,0,table,Initial Wastegate Duty B
+789258,0xC0B0A,47,0,table,Initial Wastegate Duty B
+789260,0xC0B0C,47,0,table,Initial Wastegate Duty B
+789262,0xC0B0E,47,0,table,Initial Wastegate Duty B
+789264,0xC0B10,47,0,table,Initial Wastegate Duty B
+789266,0xC0B12,47,20,table,Initial Wastegate Duty B
+789268,0xC0B14,47,26,table,Initial Wastegate Duty B
+789270,0xC0B16,47,38,table,Initial Wastegate Duty B
+789272,0xC0B18,44,0,table,Initial Wastegate Duty B
+789274,0xC0B1A,44,0,table,Initial Wastegate Duty B
+789276,0xC0B1C,44,0,table,Initial Wastegate Duty B
+789278,0xC0B1E,44,0,table,Initial Wastegate Duty B
+789280,0xC0B20,44,0,table,Initial Wastegate Duty B
+789282,0xC0B22,44,20,table,Initial Wastegate Duty B
+789284,0xC0B24,44,26,table,Initial Wastegate Duty B
+789286,0xC0B26,44,38,table,Initial Wastegate Duty B
+789288,0xC0B28,41,0,table,Initial Wastegate Duty B
+789290,0xC0B2A,41,0,table,Initial Wastegate Duty B
+789292,0xC0B2C,41,0,table,Initial Wastegate Duty B
+789294,0xC0B2E,41,0,table,Initial Wastegate Duty B
+789296,0xC0B30,41,0,table,Initial Wastegate Duty B
+789298,0xC0B32,41,18,table,Initial Wastegate Duty B
+789300,0xC0B34,41,24,table,Initial Wastegate Duty B
+789302,0xC0B36,41,34,table,Initial Wastegate Duty B
+789304,0xC0B38,42,0,table,Initial Wastegate Duty B
+789306,0xC0B3A,42,0,table,Initial Wastegate Duty B
+789308,0xC0B3C,42,0,table,Initial Wastegate Duty B
+789310,0xC0B3E,42,0,table,Initial Wastegate Duty B
+789312,0xC0B40,42,0,table,Initial Wastegate Duty B
+789314,0xC0B42,42,16,table,Initial Wastegate Duty B
+789316,0xC0B44,42,21,table,Initial Wastegate Duty B
+789318,0xC0B46,42,30,table,Initial Wastegate Duty B
+789320,0xC0B48,33,0,table,Initial Wastegate Duty B
+789322,0xC0B4A,33,0,table,Initial Wastegate Duty B
+789324,0xC0B4C,33,0,table,Initial Wastegate Duty B
+789326,0xC0B4E,33,0,table,Initial Wastegate Duty B
+789328,0xC0B50,33,0,table,Initial Wastegate Duty B
+789330,0xC0B52,33,10,table,Initial Wastegate Duty B
+789332,0xC0B54,33,14,table,Initial Wastegate Duty B
+789334,0xC0B56,33,20,table,Initial Wastegate Duty B
+789336,0xC0B58,33,0,table,Initial Wastegate Duty B
+789338,0xC0B5A,33,0,table,Initial Wastegate Duty B
+789340,0xC0B5C,33,0,table,Initial Wastegate Duty B
+789342,0xC0B5E,33,0,table,Initial Wastegate Duty B
+789344,0xC0B60,33,0,table,Initial Wastegate Duty B
+789346,0xC0B62,33,7,table,Initial Wastegate Duty B
+789348,0xC0B64,33,10,table,Initial Wastegate Duty B
+789350,0xC0B66,33,15,table,Initial Wastegate Duty B
+789934,0xC0DAE,90,0,table,Max Wastegate Duty
+789936,0xC0DB0,90,0,table,Max Wastegate Duty
+789938,0xC0DB2,90,0,table,Max Wastegate Duty
+789940,0xC0DB4,90,0,table,Max Wastegate Duty
+789942,0xC0DB6,90,0,table,Max Wastegate Duty
+789944,0xC0DB8,90,0,table,Max Wastegate Duty
+789946,0xC0DBA,90,0,table,Max Wastegate Duty
+789948,0xC0DBC,63,0,table,Max Wastegate Duty
+789949,0xC0DBD,205,0,table,Max Wastegate Duty
+789950,0xC0DBE,63,0,table,Max Wastegate Duty
+789951,0xC0DBF,205,0,table,Max Wastegate Duty
+789952,0xC0DC0,63,0,table,Max Wastegate Duty
+789953,0xC0DC1,205,0,table,Max Wastegate Duty
+789954,0xC0DC2,63,0,table,Max Wastegate Duty
+789955,0xC0DC3,205,0,table,Max Wastegate Duty
+789956,0xC0DC4,63,0,table,Max Wastegate Duty
+789957,0xC0DC5,205,0,table,Max Wastegate Duty
+789958,0xC0DC6,63,12,table,Max Wastegate Duty
+789959,0xC0DC7,205,0,table,Max Wastegate Duty
+789960,0xC0DC8,63,18,table,Max Wastegate Duty
+789961,0xC0DC9,205,0,table,Max Wastegate Duty
+789962,0xC0DCA,63,30,table,Max Wastegate Duty
+789963,0xC0DCB,205,0,table,Max Wastegate Duty
+789964,0xC0DCC,58,0,table,Max Wastegate Duty
+789965,0xC0DCD,205,0,table,Max Wastegate Duty
+789966,0xC0DCE,58,0,table,Max Wastegate Duty
+789967,0xC0DCF,205,0,table,Max Wastegate Duty
+789968,0xC0DD0,58,0,table,Max Wastegate Duty
+789969,0xC0DD1,205,0,table,Max Wastegate Duty
+789970,0xC0DD2,58,0,table,Max Wastegate Duty
+789971,0xC0DD3,205,0,table,Max Wastegate Duty
+789972,0xC0DD4,58,0,table,Max Wastegate Duty
+789973,0xC0DD5,205,0,table,Max Wastegate Duty
+789974,0xC0DD6,58,24,table,Max Wastegate Duty
+789975,0xC0DD7,205,0,table,Max Wastegate Duty
+789976,0xC0DD8,58,32,table,Max Wastegate Duty
+789977,0xC0DD9,205,0,table,Max Wastegate Duty
+789978,0xC0DDA,58,45,table,Max Wastegate Duty
+789979,0xC0DDB,205,0,table,Max Wastegate Duty
+789980,0xC0DDC,56,0,table,Max Wastegate Duty
+789982,0xC0DDE,56,0,table,Max Wastegate Duty
+789984,0xC0DE0,56,0,table,Max Wastegate Duty
+789986,0xC0DE2,56,0,table,Max Wastegate Duty
+789988,0xC0DE4,56,0,table,Max Wastegate Duty
+789990,0xC0DE6,56,35,table,Max Wastegate Duty
+789992,0xC0DE8,56,45,table,Max Wastegate Duty
+789994,0xC0DEA,56,60,table,Max Wastegate Duty
+789996,0xC0DEC,56,0,table,Max Wastegate Duty
+789998,0xC0DEE,56,0,table,Max Wastegate Duty
+790000,0xC0DF0,56,0,table,Max Wastegate Duty
+790002,0xC0DF2,56,0,table,Max Wastegate Duty
+790004,0xC0DF4,56,0,table,Max Wastegate Duty
+790006,0xC0DF6,56,40,table,Max Wastegate Duty
+790008,0xC0DF8,56,50,table,Max Wastegate Duty
+790010,0xC0DFA,56,65,table,Max Wastegate Duty
+790012,0xC0DFC,54,0,table,Max Wastegate Duty
+790014,0xC0DFE,54,0,table,Max Wastegate Duty
+790016,0xC0E00,54,0,table,Max Wastegate Duty
+790018,0xC0E02,54,0,table,Max Wastegate Duty
+790020,0xC0E04,54,0,table,Max Wastegate Duty
+790022,0xC0E06,54,42,table,Max Wastegate Duty
+790024,0xC0E08,54,52,table,Max Wastegate Duty
+790026,0xC0E0A,54,65,table,Max Wastegate Duty
+790028,0xC0E0C,51,0,table,Max Wastegate Duty
+790030,0xC0E0E,51,0,table,Max Wastegate Duty
+790032,0xC0E10,51,0,table,Max Wastegate Duty
+790034,0xC0E12,51,0,table,Max Wastegate Duty
+790036,0xC0E14,51,0,table,Max Wastegate Duty
+790038,0xC0E16,51,42,table,Max Wastegate Duty
+790040,0xC0E18,51,52,table,Max Wastegate Duty
+790042,0xC0E1A,51,65,table,Max Wastegate Duty
+790044,0xC0E1C,48,0,table,Max Wastegate Duty
+790046,0xC0E1E,48,0,table,Max Wastegate Duty
+790048,0xC0E20,48,0,table,Max Wastegate Duty
+790050,0xC0E22,48,0,table,Max Wastegate Duty
+790052,0xC0E24,48,0,table,Max Wastegate Duty
+790054,0xC0E26,48,35,table,Max Wastegate Duty
+790056,0xC0E28,48,45,table,Max Wastegate Duty
+790058,0xC0E2A,48,58,table,Max Wastegate Duty
+790060,0xC0E2C,49,0,table,Max Wastegate Duty
+790062,0xC0E2E,49,0,table,Max Wastegate Duty
+790064,0xC0E30,49,0,table,Max Wastegate Duty
+790066,0xC0E32,49,0,table,Max Wastegate Duty
+790068,0xC0E34,49,0,table,Max Wastegate Duty
+790070,0xC0E36,49,30,table,Max Wastegate Duty
+790072,0xC0E38,49,40,table,Max Wastegate Duty
+790074,0xC0E3A,49,52,table,Max Wastegate Duty
+790076,0xC0E3C,40,0,table,Max Wastegate Duty
+790078,0xC0E3E,40,0,table,Max Wastegate Duty
+790080,0xC0E40,40,0,table,Max Wastegate Duty
+790082,0xC0E42,40,0,table,Max Wastegate Duty
+790084,0xC0E44,40,0,table,Max Wastegate Duty
+790086,0xC0E46,40,20,table,Max Wastegate Duty
+790088,0xC0E48,40,28,table,Max Wastegate Duty
+790090,0xC0E4A,40,38,table,Max Wastegate Duty
+790092,0xC0E4C,40,0,table,Max Wastegate Duty
+790094,0xC0E4E,40,0,table,Max Wastegate Duty
+790096,0xC0E50,40,0,table,Max Wastegate Duty
+790098,0xC0E52,40,0,table,Max Wastegate Duty
+790100,0xC0E54,40,0,table,Max Wastegate Duty
+790102,0xC0E56,40,15,table,Max Wastegate Duty
+790104,0xC0E58,40,20,table,Max Wastegate Duty
+790106,0xC0E5A,40,30,table,Max Wastegate Duty
+790449,0xC0FB1,253,248,table,Target Boost A
+790451,0xC0FB3,253,248,table,Target Boost A
+790452,0xC0FB4,3,2,table,Target Boost A
+790453,0xC0FB5,2,248,table,Target Boost A
+790454,0xC0FB6,3,2,table,Target Boost A
+790455,0xC0FB7,42,248,table,Target Boost A
+790456,0xC0FB8,3,2,table,Target Boost A
+790457,0xC0FB9,32,248,table,Target Boost A
+790459,0xC0FBB,32,8,table,Target Boost A
+790461,0xC0FBD,42,39,table,Target Boost A
+790463,0xC0FBF,92,83,table,Target Boost A
+790465,0xC0FC1,87,126,table,Target Boost A
+790467,0xC0FC3,92,168,table,Target Boost A
+790469,0xC0FC5,112,209,table,Target Boost A
+790470,0xC0FC6,4,3,table,Target Boost A
+790471,0xC0FC7,56,251,table,Target Boost A
+790472,0xC0FC8,3,2,table,Target Boost A
+790473,0xC0FC9,32,248,table,Target Boost A
+790475,0xC0FCB,32,25,table,Target Boost A
+790477,0xC0FCD,172,90,table,Target Boost A
+790478,0xC0FCE,4,3,table,Target Boost A
+790479,0xC0FCF,56,182,table,Target Boost A
+790481,0xC0FD1,136,18,table,Target Boost A
+790483,0xC0FD3,156,105,table,Target Boost A
+790485,0xC0FD5,166,192,table,Target Boost A
+790487,0xC0FD7,180,23,table,Target Boost A
+790488,0xC0FD8,3,2,table,Target Boost A
+790489,0xC0FD9,32,248,table,Target Boost A
+790491,0xC0FDB,32,42,table,Target Boost A
+790493,0xC0FDD,202,141,table,Target Boost A
+790495,0xC0FDF,196,26,table,Target Boost A
+790496,0xC0FE0,5,4,table,Target Boost A
+790497,0xC0FE1,40,166,table,Target Boost A
+790499,0xC0FE3,80,43,table,Target Boost A
+790501,0xC0FE5,90,175,table,Target Boost A
+790502,0xC0FE6,5,6,table,Target Boost A
+790503,0xC0FE7,180,51,table,Target Boost A
+790504,0xC0FE8,3,2,table,Target Boost A
+790505,0xC0FE9,32,248,table,Target Boost A
+790507,0xC0FEB,32,53,table,Target Boost A
+790509,0xC0FED,112,174,table,Target Boost A
+790511,0xC0FEF,156,89,table,Target Boost A
+790513,0xC0FF1,10,4,table,Target Boost A
+790515,0xC0FF3,80,166,table,Target Boost A
+790516,0xC0FF4,5,6,table,Target Boost A
+790517,0xC0FF5,100,71,table,Target Boost A
+790518,0xC0FF6,5,6,table,Target Boost A
+790519,0xC0FF7,180,232,table,Target Boost A
+790520,0xC0FF8,3,2,table,Target Boost A
+790521,0xC0FF9,32,248,table,Target Boost A
+790523,0xC0FFB,32,53,table,Target Boost A
+790525,0xC0FFD,32,174,table,Target Boost A
+790527,0xC0FFF,36,89,table,Target Boost A
+790528,0xC1000,4,5,table,Target Boost A
+790529,0xC1001,196,4,table,Target Boost A
+790531,0xC1003,20,166,table,Target Boost A
+790532,0xC1004,5,6,table,Target Boost A
+790533,0xC1005,70,71,table,Target Boost A
+790534,0xC1006,5,6,table,Target Boost A
+790535,0xC1007,150,232,table,Target Boost A
+790536,0xC1008,3,2,table,Target Boost A
+790537,0xC1009,32,248,table,Target Boost A
+790539,0xC100B,32,49,table,Target Boost A
+790541,0xC100D,32,164,table,Target Boost A
+790542,0xC100E,3,4,table,Target Boost A
+790543,0xC100F,162,71,table,Target Boost A
+790545,0xC1011,96,233,table,Target Boost A
+790546,0xC1012,4,5,table,Target Boost A
+790547,0xC1013,206,131,table,Target Boost A
+790548,0xC1014,5,6,table,Target Boost A
+790549,0xC1015,10,28,table,Target Boost A
+790550,0xC1016,5,6,table,Target Boost A
+790551,0xC1017,100,181,table,Target Boost A
+790552,0xC1018,3,2,table,Target Boost A
+790553,0xC1019,32,248,table,Target Boost A
+790555,0xC101B,32,43,table,Target Boost A
+790557,0xC101D,32,146,table,Target Boost A
+790558,0xC101E,3,4,table,Target Boost A
+790559,0xC101F,112,34,table,Target Boost A
+790561,0xC1021,36,180,table,Target Boost A
+790562,0xC1022,4,5,table,Target Boost A
+790563,0xC1023,156,60,table,Target Boost A
+790564,0xC1024,4,5,table,Target Boost A
+790565,0xC1025,226,197,table,Target Boost A
+790566,0xC1026,5,6,table,Target Boost A
+790567,0xC1027,80,77,table,Target Boost A
+790568,0xC1028,3,2,table,Target Boost A
+790569,0xC1029,32,248,table,Target Boost A
+790571,0xC102B,32,39,table,Target Boost A
+790573,0xC102D,32,132,table,Target Boost A
+790574,0xC102E,3,4,table,Target Boost A
+790575,0xC102F,62,8,table,Target Boost A
+790576,0xC1030,3,4,table,Target Boost A
+790577,0xC1031,232,139,table,Target Boost A
+790578,0xC1032,4,5,table,Target Boost A
+790579,0xC1033,106,7,table,Target Boost A
+790580,0xC1034,4,5,table,Target Boost A
+790581,0xC1035,196,132,table,Target Boost A
+790582,0xC1036,5,6,table,Target Boost A
+790583,0xC1037,60,0,table,Target Boost A
+790584,0xC1038,3,2,table,Target Boost A
+790585,0xC1039,32,248,table,Target Boost A
+790587,0xC103B,32,35,table,Target Boost A
+790589,0xC103D,32,122,table,Target Boost A
+790591,0xC103F,32,245,table,Target Boost A
+790592,0xC1040,3,4,table,Target Boost A
+790593,0xC1041,192,112,table,Target Boost A
+790595,0xC1043,76,228,table,Target Boost A
+790596,0xC1044,4,5,table,Target Boost A
+790597,0xC1045,176,88,table,Target Boost A
+790599,0xC1047,30,204,table,Target Boost A
+790600,0xC1048,3,2,table,Target Boost A
+790601,0xC1049,32,248,table,Target Boost A
+790605,0xC104D,32,113,table,Target Boost A
+790607,0xC104F,32,227,table,Target Boost A
+790608,0xC1050,3,4,table,Target Boost A
+790609,0xC1051,182,86,table,Target Boost A
+790611,0xC1053,56,193,table,Target Boost A
+790612,0xC1054,4,5,table,Target Boost A
+790613,0xC1055,156,45,table,Target Boost A
+790615,0xC1057,10,152,table,Target Boost A
+790616,0xC1058,3,2,table,Target Boost A
+790617,0xC1059,32,248,table,Target Boost A
+790619,0xC105B,32,29,table,Target Boost A
+790621,0xC105D,32,104,table,Target Boost A
+790623,0xC105F,32,209,table,Target Boost A
+790624,0xC1060,3,4,table,Target Boost A
+790625,0xC1061,162,59,table,Target Boost A
+790627,0xC1063,36,158,table,Target Boost A
+790628,0xC1064,4,5,table,Target Boost A
+790629,0xC1065,76,1,table,Target Boost A
+790630,0xC1066,4,5,table,Target Boost A
+790631,0xC1067,176,101,table,Target Boost A
+790721,0xC10C1,253,248,table,Target Boost B
+790723,0xC10C3,253,248,table,Target Boost B
+790724,0xC10C4,3,2,table,Target Boost B
+790725,0xC10C5,2,248,table,Target Boost B
+790726,0xC10C6,3,2,table,Target Boost B
+790727,0xC10C7,42,248,table,Target Boost B
+790728,0xC10C8,3,2,table,Target Boost B
+790729,0xC10C9,32,248,table,Target Boost B
+790731,0xC10CB,32,8,table,Target Boost B
+790733,0xC10CD,42,39,table,Target Boost B
+790735,0xC10CF,92,83,table,Target Boost B
+790737,0xC10D1,87,126,table,Target Boost B
+790739,0xC10D3,92,168,table,Target Boost B
+790741,0xC10D5,112,209,table,Target Boost B
+790742,0xC10D6,4,3,table,Target Boost B
+790743,0xC10D7,56,251,table,Target Boost B
+790744,0xC10D8,3,2,table,Target Boost B
+790745,0xC10D9,32,248,table,Target Boost B
+790747,0xC10DB,32,25,table,Target Boost B
+790749,0xC10DD,172,90,table,Target Boost B
+790750,0xC10DE,4,3,table,Target Boost B
+790751,0xC10DF,56,182,table,Target Boost B
+790753,0xC10E1,136,18,table,Target Boost B
+790755,0xC10E3,156,105,table,Target Boost B
+790757,0xC10E5,166,192,table,Target Boost B
+790759,0xC10E7,180,23,table,Target Boost B
+790760,0xC10E8,3,2,table,Target Boost B
+790761,0xC10E9,32,248,table,Target Boost B
+790763,0xC10EB,32,40,table,Target Boost B
+790765,0xC10ED,202,136,table,Target Boost B
+790767,0xC10EF,196,16,table,Target Boost B
+790768,0xC10F0,5,4,table,Target Boost B
+790769,0xC10F1,40,153,table,Target Boost B
+790771,0xC10F3,80,25,table,Target Boost B
+790773,0xC10F5,90,153,table,Target Boost B
+790774,0xC10F6,5,6,table,Target Boost B
+790775,0xC10F7,180,26,table,Target Boost B
+790776,0xC10F8,3,2,table,Target Boost B
+790777,0xC10F9,32,248,table,Target Boost B
+790779,0xC10FB,32,51,table,Target Boost B
+790781,0xC10FD,112,169,table,Target Boost B
+790783,0xC10FF,156,80,table,Target Boost B
+790784,0xC1100,5,4,table,Target Boost B
+790785,0xC1101,10,247,table,Target Boost B
+790787,0xC1103,80,148,table,Target Boost B
+790788,0xC1104,5,6,table,Target Boost B
+790789,0xC1105,100,49,table,Target Boost B
+790790,0xC1106,5,6,table,Target Boost B
+790791,0xC1107,180,207,table,Target Boost B
+790792,0xC1108,3,2,table,Target Boost B
+790793,0xC1109,32,248,table,Target Boost B
+790795,0xC110B,32,51,table,Target Boost B
+790797,0xC110D,32,169,table,Target Boost B
+790799,0xC110F,36,80,table,Target Boost B
+790801,0xC1111,196,247,table,Target Boost B
+790803,0xC1113,20,148,table,Target Boost B
+790804,0xC1114,5,6,table,Target Boost B
+790805,0xC1115,70,49,table,Target Boost B
+790806,0xC1116,5,6,table,Target Boost B
+790807,0xC1117,150,207,table,Target Boost B
+790808,0xC1118,3,2,table,Target Boost B
+790809,0xC1119,32,248,table,Target Boost B
+790811,0xC111B,32,48,table,Target Boost B
+790813,0xC111D,32,160,table,Target Boost B
+790814,0xC111E,3,4,table,Target Boost B
+790815,0xC111F,162,62,table,Target Boost B
+790817,0xC1121,96,220,table,Target Boost B
+790818,0xC1122,4,5,table,Target Boost B
+790819,0xC1123,206,113,table,Target Boost B
+790820,0xC1124,5,6,table,Target Boost B
+790821,0xC1125,10,6,table,Target Boost B
+790822,0xC1126,5,6,table,Target Boost B
+790823,0xC1127,100,155,table,Target Boost B
+790824,0xC1128,3,2,table,Target Boost B
+790825,0xC1129,32,248,table,Target Boost B
+790827,0xC112B,32,42,table,Target Boost B
+790829,0xC112D,32,141,table,Target Boost B
+790830,0xC112E,3,4,table,Target Boost B
+790831,0xC112F,112,26,table,Target Boost B
+790833,0xC1131,36,166,table,Target Boost B
+790834,0xC1132,4,5,table,Target Boost B
+790835,0xC1133,156,43,table,Target Boost B
+790836,0xC1134,4,5,table,Target Boost B
+790837,0xC1135,226,175,table,Target Boost B
+790838,0xC1136,5,6,table,Target Boost B
+790839,0xC1137,80,51,table,Target Boost B
+790840,0xC1138,3,2,table,Target Boost B
+790841,0xC1139,32,248,table,Target Boost B
+790843,0xC113B,32,37,table,Target Boost B
+790845,0xC113D,32,127,table,Target Boost B
+790847,0xC113F,62,254,table,Target Boost B
+790848,0xC1140,3,4,table,Target Boost B
+790849,0xC1141,232,126,table,Target Boost B
+790851,0xC1143,106,246,table,Target Boost B
+790852,0xC1144,4,5,table,Target Boost B
+790853,0xC1145,196,110,table,Target Boost B
+790855,0xC1147,60,230,table,Target Boost B
+790856,0xC1148,3,2,table,Target Boost B
+790857,0xC1149,32,248,table,Target Boost B
+790859,0xC114B,32,34,table,Target Boost B
+790861,0xC114D,32,118,table,Target Boost B
+790863,0xC114F,32,236,table,Target Boost B
+790864,0xC1150,3,4,table,Target Boost B
+790865,0xC1151,192,99,table,Target Boost B
+790867,0xC1153,76,211,table,Target Boost B
+790868,0xC1154,4,5,table,Target Boost B
+790869,0xC1155,176,66,table,Target Boost B
+790871,0xC1157,30,178,table,Target Boost B
+790872,0xC1158,3,2,table,Target Boost B
+790873,0xC1159,32,248,table,Target Boost B
+790877,0xC115D,32,113,table,Target Boost B
+790879,0xC115F,32,227,table,Target Boost B
+790880,0xC1160,3,4,table,Target Boost B
+790881,0xC1161,182,86,table,Target Boost B
+790883,0xC1163,56,193,table,Target Boost B
+790884,0xC1164,4,5,table,Target Boost B
+790885,0xC1165,156,45,table,Target Boost B
+790887,0xC1167,10,152,table,Target Boost B
+790888,0xC1168,3,2,table,Target Boost B
+790889,0xC1169,32,248,table,Target Boost B
+790891,0xC116B,32,29,table,Target Boost B
+790893,0xC116D,32,104,table,Target Boost B
+790895,0xC116F,32,209,table,Target Boost B
+790896,0xC1170,3,4,table,Target Boost B
+790897,0xC1171,162,59,table,Target Boost B
+790899,0xC1173,36,158,table,Target Boost B
+790900,0xC1174,4,5,table,Target Boost B
+790901,0xC1175,76,1,table,Target Boost B
+790902,0xC1176,4,5,table,Target Boost B
+790903,0xC1177,176,101,table,Target Boost B
+814016,0xC6BC0,4,0,table,CL to OL Delay
+814017,0xC6BC1,226,0,table,CL to OL Delay
+814018,0xC6BC2,2,0,table,CL to OL Delay
+814019,0xC6BC3,238,0,table,CL to OL Delay
+814020,0xC6BC4,1,0,table,CL to OL Delay
+814021,0xC6BC5,57,0,table,CL to OL Delay
+814022,0xC6BC6,4,0,table,CL to OL Delay
+814023,0xC6BC7,226,0,table,CL to OL Delay
+814024,0xC6BC8,2,0,table,CL to OL Delay
+814025,0xC6BC9,238,0,table,CL to OL Delay
+814026,0xC6BCA,1,0,table,CL to OL Delay
+814027,0xC6BCB,57,0,table,CL to OL Delay
+814028,0xC6BCC,2,0,table,CL to OL Delay
+814029,0xC6BCD,238,0,table,CL to OL Delay
+814030,0xC6BCE,1,0,table,CL to OL Delay
+814031,0xC6BCF,244,0,table,CL to OL Delay
+814033,0xC6BD1,250,0,table,CL to OL Delay
+814973,0xC6F7D,121,159,scalar,CL to OL Transition with Delay Throttle Hysteresis
+814974,0xC6F7E,153,13,scalar,CL to OL Transition with Delay Throttle Hysteresis
+814975,0xC6F7F,153,162,scalar,CL to OL Transition with Delay Throttle Hysteresis
+814976,0xC6F80,67,68,scalar,CL to OL Transition with Delay BPW Hysteresis
+814977,0xC6F81,128,0,scalar,CL to OL Transition with Delay BPW Hysteresis
+815072,0xC6FE0,66,65,table,CL Delay Maximum (Throttle) (High Atm. Pressure)
+815073,0xC6FE1,180,70,table,CL Delay Maximum (Throttle) (High Atm. Pressure)
+815074,0xC6FE2,0,209,table,CL Delay Maximum (Throttle) (High Atm. Pressure)
+815075,0xC6FE3,0,11,table,CL Delay Maximum (Throttle) (High Atm. Pressure)
+815076,0xC6FE4,66,65,table,CL Delay Maximum (Throttle) (High Atm. Pressure)
+815077,0xC6FE5,182,170,table,CL Delay Maximum (Throttle) (High Atm. Pressure)
+815078,0xC6FE6,0,251,table,CL Delay Maximum (Throttle) (High Atm. Pressure)
+815079,0xC6FE7,0,117,table,CL Delay Maximum (Throttle) (High Atm. Pressure)
+815080,0xC6FE8,66,65,table,CL Delay Maximum (Throttle) (Low Atm. Pressure)
+815081,0xC6FE9,180,70,table,CL Delay Maximum (Throttle) (Low Atm. Pressure)
+815082,0xC6FEA,0,209,table,CL Delay Maximum (Throttle) (Low Atm. Pressure)
+815083,0xC6FEB,0,11,table,CL Delay Maximum (Throttle) (Low Atm. Pressure)
+815084,0xC6FEC,66,65,table,CL Delay Maximum (Throttle) (Low Atm. Pressure)
+815085,0xC6FED,182,170,table,CL Delay Maximum (Throttle) (Low Atm. Pressure)
+815086,0xC6FEE,0,251,table,CL Delay Maximum (Throttle) (Low Atm. Pressure)
+815087,0xC6FEF,0,117,table,CL Delay Maximum (Throttle) (Low Atm. Pressure)
+816619,0xC75EB,148,51,table,CL to OL Transition with Delay A (Throttle)
+816620,0xC75EC,148,31,table,CL to OL Transition with Delay A (Throttle)
+816621,0xC75ED,148,25,table,CL to OL Transition with Delay A (Throttle)
+816622,0xC75EE,148,25,table,CL to OL Transition with Delay A (Throttle)
+816623,0xC75EF,148,25,table,CL to OL Transition with Delay A (Throttle)
+816624,0xC75F0,148,25,table,CL to OL Transition with Delay A (Throttle)
+816625,0xC75F1,148,25,table,CL to OL Transition with Delay A (Throttle)
+816626,0xC75F2,148,25,table,CL to OL Transition with Delay A (Throttle)
+816627,0xC75F3,0,25,table,CL to OL Transition with Delay A (Throttle)
+816628,0xC75F4,0,25,table,CL to OL Transition with Delay A (Throttle)
+816629,0xC75F5,0,25,table,CL to OL Transition with Delay A (Throttle)
+816630,0xC75F6,0,25,table,CL to OL Transition with Delay A (Throttle)
+816631,0xC75F7,0,25,table,CL to OL Transition with Delay A (Throttle)
+816699,0xC763B,148,51,table,CL to OL Transition with Delay B (Throttle)
+816700,0xC763C,148,31,table,CL to OL Transition with Delay B (Throttle)
+816701,0xC763D,148,25,table,CL to OL Transition with Delay B (Throttle)
+816702,0xC763E,148,25,table,CL to OL Transition with Delay B (Throttle)
+816703,0xC763F,148,25,table,CL to OL Transition with Delay B (Throttle)
+816704,0xC7640,148,25,table,CL to OL Transition with Delay B (Throttle)
+816705,0xC7641,148,25,table,CL to OL Transition with Delay B (Throttle)
+816706,0xC7642,148,25,table,CL to OL Transition with Delay B (Throttle)
+816707,0xC7643,0,25,table,CL to OL Transition with Delay B (Throttle)
+816708,0xC7644,0,25,table,CL to OL Transition with Delay B (Throttle)
+816709,0xC7645,0,25,table,CL to OL Transition with Delay B (Throttle)
+816710,0xC7646,0,25,table,CL to OL Transition with Delay B (Throttle)
+816711,0xC7647,0,25,table,CL to OL Transition with Delay B (Throttle)
+816779,0xC768B,148,51,table,CL to OL Transition with Delay C (Throttle)
+816780,0xC768C,148,31,table,CL to OL Transition with Delay C (Throttle)
+816781,0xC768D,148,25,table,CL to OL Transition with Delay C (Throttle)
+816782,0xC768E,148,25,table,CL to OL Transition with Delay C (Throttle)
+816783,0xC768F,184,25,table,CL to OL Transition with Delay C (Throttle)
+816784,0xC7690,184,25,table,CL to OL Transition with Delay C (Throttle)
+816785,0xC7691,184,25,table,CL to OL Transition with Delay C (Throttle)
+816786,0xC7692,184,25,table,CL to OL Transition with Delay C (Throttle)
+816787,0xC7693,0,25,table,CL to OL Transition with Delay C (Throttle)
+816788,0xC7694,0,25,table,CL to OL Transition with Delay C (Throttle)
+816789,0xC7695,0,25,table,CL to OL Transition with Delay C (Throttle)
+816790,0xC7696,0,25,table,CL to OL Transition with Delay C (Throttle)
+816791,0xC7697,0,25,table,CL to OL Transition with Delay C (Throttle)
+818595,0xC7DA3,220,95,table,CL to OL Transition with Delay A (Base Pulse Width)
+818596,0xC7DA4,6,4,table,CL to OL Transition with Delay A (Base Pulse Width)
+818597,0xC7DA5,89,101,table,CL to OL Transition with Delay A (Base Pulse Width)
+818598,0xC7DA6,6,3,table,CL to OL Transition with Delay A (Base Pulse Width)
+818599,0xC7DA7,214,232,table,CL to OL Transition with Delay A (Base Pulse Width)
+818600,0xC7DA8,6,3,table,CL to OL Transition with Delay A (Base Pulse Width)
+818601,0xC7DA9,214,107,table,CL to OL Transition with Delay A (Base Pulse Width)
+818602,0xC7DAA,6,2,table,CL to OL Transition with Delay A (Base Pulse Width)
+818603,0xC7DAB,214,238,table,CL to OL Transition with Delay A (Base Pulse Width)
+818604,0xC7DAC,6,2,table,CL to OL Transition with Delay A (Base Pulse Width)
+818605,0xC7DAD,89,176,table,CL to OL Transition with Delay A (Base Pulse Width)
+818606,0xC7DAE,6,2,table,CL to OL Transition with Delay A (Base Pulse Width)
+818607,0xC7DAF,89,176,table,CL to OL Transition with Delay A (Base Pulse Width)
+818608,0xC7DB0,0,2,table,CL to OL Transition with Delay A (Base Pulse Width)
+818609,0xC7DB1,0,176,table,CL to OL Transition with Delay A (Base Pulse Width)
+818610,0xC7DB2,0,2,table,CL to OL Transition with Delay A (Base Pulse Width)
+818611,0xC7DB3,0,176,table,CL to OL Transition with Delay A (Base Pulse Width)
+818612,0xC7DB4,0,2,table,CL to OL Transition with Delay A (Base Pulse Width)
+818613,0xC7DB5,0,176,table,CL to OL Transition with Delay A (Base Pulse Width)
+818614,0xC7DB6,0,2,table,CL to OL Transition with Delay A (Base Pulse Width)
+818615,0xC7DB7,0,176,table,CL to OL Transition with Delay A (Base Pulse Width)
+818616,0xC7DB8,0,2,table,CL to OL Transition with Delay A (Base Pulse Width)
+818617,0xC7DB9,0,176,table,CL to OL Transition with Delay A (Base Pulse Width)
+818618,0xC7DBA,0,2,table,CL to OL Transition with Delay A (Base Pulse Width)
+818619,0xC7DBB,0,176,table,CL to OL Transition with Delay A (Base Pulse Width)
+818684,0xC7DFC,6,5,table,CL to OL Transition with Delay B (Base Pulse Width)
+818685,0xC7DFD,214,220,table,CL to OL Transition with Delay B (Base Pulse Width)
+818686,0xC7DFE,6,5,table,CL to OL Transition with Delay B (Base Pulse Width)
+818687,0xC7DFF,214,220,table,CL to OL Transition with Delay B (Base Pulse Width)
+818688,0xC7E00,6,5,table,CL to OL Transition with Delay B (Base Pulse Width)
+818689,0xC7E01,214,220,table,CL to OL Transition with Delay B (Base Pulse Width)
+818690,0xC7E02,6,5,table,CL to OL Transition with Delay B (Base Pulse Width)
+818691,0xC7E03,214,95,table,CL to OL Transition with Delay B (Base Pulse Width)
+818692,0xC7E04,6,4,table,CL to OL Transition with Delay B (Base Pulse Width)
+818693,0xC7E05,214,101,table,CL to OL Transition with Delay B (Base Pulse Width)
+818694,0xC7E06,7,3,table,CL to OL Transition with Delay B (Base Pulse Width)
+818695,0xC7E07,208,232,table,CL to OL Transition with Delay B (Base Pulse Width)
+818696,0xC7E08,8,3,table,CL to OL Transition with Delay B (Base Pulse Width)
+818697,0xC7E09,77,107,table,CL to OL Transition with Delay B (Base Pulse Width)
+818698,0xC7E0A,10,2,table,CL to OL Transition with Delay B (Base Pulse Width)
+818699,0xC7E0B,65,238,table,CL to OL Transition with Delay B (Base Pulse Width)
+818700,0xC7E0C,10,2,table,CL to OL Transition with Delay B (Base Pulse Width)
+818701,0xC7E0D,65,176,table,CL to OL Transition with Delay B (Base Pulse Width)
+818702,0xC7E0E,9,2,table,CL to OL Transition with Delay B (Base Pulse Width)
+818703,0xC7E0F,71,176,table,CL to OL Transition with Delay B (Base Pulse Width)
+818704,0xC7E10,8,2,table,CL to OL Transition with Delay B (Base Pulse Width)
+818705,0xC7E11,202,176,table,CL to OL Transition with Delay B (Base Pulse Width)
+818706,0xC7E12,8,2,table,CL to OL Transition with Delay B (Base Pulse Width)
+818707,0xC7E13,202,176,table,CL to OL Transition with Delay B (Base Pulse Width)
+818708,0xC7E14,4,2,table,CL to OL Transition with Delay B (Base Pulse Width)
+818709,0xC7E15,101,176,table,CL to OL Transition with Delay B (Base Pulse Width)
+818710,0xC7E16,1,2,table,CL to OL Transition with Delay B (Base Pulse Width)
+818711,0xC7E17,244,176,table,CL to OL Transition with Delay B (Base Pulse Width)
+818712,0xC7E18,1,2,table,CL to OL Transition with Delay B (Base Pulse Width)
+818713,0xC7E19,244,176,table,CL to OL Transition with Delay B (Base Pulse Width)
+818714,0xC7E1A,1,2,table,CL to OL Transition with Delay B (Base Pulse Width)
+818715,0xC7E1B,244,176,table,CL to OL Transition with Delay B (Base Pulse Width)
+818780,0xC7E5C,6,5,table,CL to OL Transition with Delay C (Base Pulse Width)
+818781,0xC7E5D,214,220,table,CL to OL Transition with Delay C (Base Pulse Width)
+818782,0xC7E5E,6,5,table,CL to OL Transition with Delay C (Base Pulse Width)
+818783,0xC7E5F,214,220,table,CL to OL Transition with Delay C (Base Pulse Width)
+818784,0xC7E60,6,5,table,CL to OL Transition with Delay C (Base Pulse Width)
+818785,0xC7E61,214,220,table,CL to OL Transition with Delay C (Base Pulse Width)
+818786,0xC7E62,6,5,table,CL to OL Transition with Delay C (Base Pulse Width)
+818787,0xC7E63,214,95,table,CL to OL Transition with Delay C (Base Pulse Width)
+818788,0xC7E64,6,4,table,CL to OL Transition with Delay C (Base Pulse Width)
+818789,0xC7E65,214,101,table,CL to OL Transition with Delay C (Base Pulse Width)
+818790,0xC7E66,8,3,table,CL to OL Transition with Delay C (Base Pulse Width)
+818791,0xC7E67,202,232,table,CL to OL Transition with Delay C (Base Pulse Width)
+818792,0xC7E68,9,3,table,CL to OL Transition with Delay C (Base Pulse Width)
+818793,0xC7E69,196,107,table,CL to OL Transition with Delay C (Base Pulse Width)
+818794,0xC7E6A,10,2,table,CL to OL Transition with Delay C (Base Pulse Width)
+818795,0xC7E6B,190,238,table,CL to OL Transition with Delay C (Base Pulse Width)
+818796,0xC7E6C,10,2,table,CL to OL Transition with Delay C (Base Pulse Width)
+818797,0xC7E6D,190,176,table,CL to OL Transition with Delay C (Base Pulse Width)
+818798,0xC7E6E,10,2,table,CL to OL Transition with Delay C (Base Pulse Width)
+818799,0xC7E6F,65,176,table,CL to OL Transition with Delay C (Base Pulse Width)
+818800,0xC7E70,10,2,table,CL to OL Transition with Delay C (Base Pulse Width)
+818801,0xC7E71,65,176,table,CL to OL Transition with Delay C (Base Pulse Width)
+818802,0xC7E72,10,2,table,CL to OL Transition with Delay C (Base Pulse Width)
+818803,0xC7E73,65,176,table,CL to OL Transition with Delay C (Base Pulse Width)
+818804,0xC7E74,5,2,table,CL to OL Transition with Delay C (Base Pulse Width)
+818805,0xC7E75,95,176,table,CL to OL Transition with Delay C (Base Pulse Width)
+818807,0xC7E77,238,176,table,CL to OL Transition with Delay C (Base Pulse Width)
+818809,0xC7E79,238,176,table,CL to OL Transition with Delay C (Base Pulse Width)
+818811,0xC7E7B,238,176,table,CL to OL Transition with Delay C (Base Pulse Width)
+818840,0xC7E98,128,131,table,Primary Open Loop Fueling Compensation (ECT)
+818841,0xC7E99,0,215,table,Primary Open Loop Fueling Compensation (ECT)
+818842,0xC7E9A,128,134,table,Primary Open Loop Fueling Compensation (ECT)
+818843,0xC7E9B,0,102,table,Primary Open Loop Fueling Compensation (ECT)
+819249,0xC8031,183,191,table,Boost Limit (Fuel Cut)
+819251,0xC8033,21,13,table,Boost Limit (Fuel Cut)
+819253,0xC8035,114,90,table,Boost Limit (Fuel Cut)
+819255,0xC8037,208,168,table,Boost Limit (Fuel Cut)
+819256,0xC8038,6,5,table,Boost Limit (Fuel Cut)
+819257,0xC8039,45,220,table,Boost Limit (Fuel Cut)
+819259,0xC803B,124,15,table,Boost Limit (Fuel Cut)
+821055,0xC873F,204,205,axis,Primary Open Loop Fueling::x
+821059,0xC8743,153,154,axis,Primary Open Loop Fueling::x
+821087,0xC875F,204,205,axis,Primary Open Loop Fueling::x
+821091,0xC8763,153,154,axis,Primary Open Loop Fueling::x
+821103,0xC876F,204,205,axis,Primary Open Loop Fueling::x
+821223,0xC87E7,0,8,table,Primary Open Loop Fueling
+821224,0xC87E8,0,11,table,Primary Open Loop Fueling
+821225,0xC87E9,0,15,table,Primary Open Loop Fueling
+821226,0xC87EA,0,17,table,Primary Open Loop Fueling
+821227,0xC87EB,0,19,table,Primary Open Loop Fueling
+821228,0xC87EC,0,19,table,Primary Open Loop Fueling
+821229,0xC87ED,0,19,table,Primary Open Loop Fueling
+821230,0xC87EE,0,19,table,Primary Open Loop Fueling
+821231,0xC87EF,0,19,table,Primary Open Loop Fueling
+821238,0xC87F6,0,8,table,Primary Open Loop Fueling
+821239,0xC87F7,0,15,table,Primary Open Loop Fueling
+821240,0xC87F8,0,18,table,Primary Open Loop Fueling
+821241,0xC87F9,0,20,table,Primary Open Loop Fueling
+821242,0xC87FA,0,23,table,Primary Open Loop Fueling
+821243,0xC87FB,8,25,table,Primary Open Loop Fueling
+821244,0xC87FC,10,25,table,Primary Open Loop Fueling
+821245,0xC87FD,12,25,table,Primary Open Loop Fueling
+821246,0xC87FE,12,25,table,Primary Open Loop Fueling
+821247,0xC87FF,12,25,table,Primary Open Loop Fueling
+821252,0xC8804,0,8,table,Primary Open Loop Fueling
+821253,0xC8805,0,11,table,Primary Open Loop Fueling
+821254,0xC8806,0,18,table,Primary Open Loop Fueling
+821255,0xC8807,0,24,table,Primary Open Loop Fueling
+821256,0xC8808,0,26,table,Primary Open Loop Fueling
+821257,0xC8809,0,29,table,Primary Open Loop Fueling
+821258,0xC880A,12,30,table,Primary Open Loop Fueling
+821259,0xC880B,17,31,table,Primary Open Loop Fueling
+821260,0xC880C,20,33,table,Primary Open Loop Fueling
+821261,0xC880D,23,33,table,Primary Open Loop Fueling
+821262,0xC880E,23,33,table,Primary Open Loop Fueling
+821263,0xC880F,23,33,table,Primary Open Loop Fueling
+821267,0xC8813,0,5,table,Primary Open Loop Fueling
+821268,0xC8814,0,15,table,Primary Open Loop Fueling
+821269,0xC8815,0,19,table,Primary Open Loop Fueling
+821270,0xC8816,0,24,table,Primary Open Loop Fueling
+821271,0xC8817,0,30,table,Primary Open Loop Fueling
+821272,0xC8818,10,31,table,Primary Open Loop Fueling
+821273,0xC8819,17,33,table,Primary Open Loop Fueling
+821274,0xC881A,23,34,table,Primary Open Loop Fueling
+821275,0xC881B,35,37,table,Primary Open Loop Fueling
+821276,0xC881C,41,39,table,Primary Open Loop Fueling
+821277,0xC881D,46,39,table,Primary Open Loop Fueling
+821278,0xC881E,46,39,table,Primary Open Loop Fueling
+821279,0xC881F,47,39,table,Primary Open Loop Fueling
+821282,0xC8822,0,3,table,Primary Open Loop Fueling
+821283,0xC8823,0,11,table,Primary Open Loop Fueling
+821284,0xC8824,0,21,table,Primary Open Loop Fueling
+821285,0xC8825,0,26,table,Primary Open Loop Fueling
+821286,0xC8826,0,30,table,Primary Open Loop Fueling
+821287,0xC8827,8,33,table,Primary Open Loop Fueling
+821288,0xC8828,13,34,table,Primary Open Loop Fueling
+821289,0xC8829,17,36,table,Primary Open Loop Fueling
+821290,0xC882A,23,37,table,Primary Open Loop Fueling
+821291,0xC882B,36,39,table,Primary Open Loop Fueling
+821292,0xC882C,41,40,table,Primary Open Loop Fueling
+821293,0xC882D,42,40,table,Primary Open Loop Fueling
+821294,0xC882E,42,40,table,Primary Open Loop Fueling
+821295,0xC882F,44,40,table,Primary Open Loop Fueling
+821298,0xC8832,0,5,table,Primary Open Loop Fueling
+821299,0xC8833,0,15,table,Primary Open Loop Fueling
+821300,0xC8834,0,25,table,Primary Open Loop Fueling
+821301,0xC8835,0,29,table,Primary Open Loop Fueling
+821302,0xC8836,8,31,table,Primary Open Loop Fueling
+821303,0xC8837,10,34,table,Primary Open Loop Fueling
+821304,0xC8838,15,36,table,Primary Open Loop Fueling
+821305,0xC8839,18,37,table,Primary Open Loop Fueling
+821306,0xC883A,23,37,table,Primary Open Loop Fueling
+821307,0xC883B,35,39,table,Primary Open Loop Fueling
+821309,0xC883D,41,40,table,Primary Open Loop Fueling
+821310,0xC883E,41,40,table,Primary Open Loop Fueling
+821311,0xC883F,42,40,table,Primary Open Loop Fueling
+821314,0xC8842,0,5,table,Primary Open Loop Fueling
+821315,0xC8843,0,17,table,Primary Open Loop Fueling
+821316,0xC8844,4,26,table,Primary Open Loop Fueling
+821317,0xC8845,8,30,table,Primary Open Loop Fueling
+821318,0xC8846,12,33,table,Primary Open Loop Fueling
+821319,0xC8847,22,36,table,Primary Open Loop Fueling
+821320,0xC8848,24,37,table,Primary Open Loop Fueling
+821321,0xC8849,27,37,table,Primary Open Loop Fueling
+821322,0xC884A,29,39,table,Primary Open Loop Fueling
+821323,0xC884B,38,39,table,Primary Open Loop Fueling
+821324,0xC884C,44,40,table,Primary Open Loop Fueling
+821325,0xC884D,46,40,table,Primary Open Loop Fueling
+821326,0xC884E,46,40,table,Primary Open Loop Fueling
+821327,0xC884F,47,40,table,Primary Open Loop Fueling
+821328,0xC8850,10,0,table,Primary Open Loop Fueling
+821329,0xC8851,10,0,table,Primary Open Loop Fueling
+821330,0xC8852,10,6,table,Primary Open Loop Fueling
+821331,0xC8853,10,17,table,Primary Open Loop Fueling
+821332,0xC8854,16,26,table,Primary Open Loop Fueling
+821333,0xC8855,20,30,table,Primary Open Loop Fueling
+821334,0xC8856,23,33,table,Primary Open Loop Fueling
+821335,0xC8857,29,36,table,Primary Open Loop Fueling
+821336,0xC8858,32,37,table,Primary Open Loop Fueling
+821337,0xC8859,35,37,table,Primary Open Loop Fueling
+821338,0xC885A,37,39,table,Primary Open Loop Fueling
+821339,0xC885B,44,39,table,Primary Open Loop Fueling
+821340,0xC885C,50,40,table,Primary Open Loop Fueling
+821341,0xC885D,52,40,table,Primary Open Loop Fueling
+821342,0xC885E,52,40,table,Primary Open Loop Fueling
+821343,0xC885F,52,40,table,Primary Open Loop Fueling
+821344,0xC8860,9,0,table,Primary Open Loop Fueling
+821345,0xC8861,9,0,table,Primary Open Loop Fueling
+821346,0xC8862,9,5,table,Primary Open Loop Fueling
+821347,0xC8863,9,15,table,Primary Open Loop Fueling
+821348,0xC8864,15,24,table,Primary Open Loop Fueling
+821349,0xC8865,18,29,table,Primary Open Loop Fueling
+821350,0xC8866,27,31,table,Primary Open Loop Fueling
+821351,0xC8867,44,34,table,Primary Open Loop Fueling
+821352,0xC8868,45,36,table,Primary Open Loop Fueling
+821353,0xC8869,47,36,table,Primary Open Loop Fueling
+821354,0xC886A,49,37,table,Primary Open Loop Fueling
+821355,0xC886B,50,39,table,Primary Open Loop Fueling
+821356,0xC886C,51,39,table,Primary Open Loop Fueling
+821357,0xC886D,52,39,table,Primary Open Loop Fueling
+821358,0xC886E,54,39,table,Primary Open Loop Fueling
+821359,0xC886F,54,39,table,Primary Open Loop Fueling
+821360,0xC8870,9,0,table,Primary Open Loop Fueling
+821361,0xC8871,9,0,table,Primary Open Loop Fueling
+821362,0xC8872,9,5,table,Primary Open Loop Fueling
+821363,0xC8873,9,12,table,Primary Open Loop Fueling
+821364,0xC8874,15,21,table,Primary Open Loop Fueling
+821365,0xC8875,18,28,table,Primary Open Loop Fueling
+821366,0xC8876,28,30,table,Primary Open Loop Fueling
+821367,0xC8877,41,33,table,Primary Open Loop Fueling
+821368,0xC8878,44,34,table,Primary Open Loop Fueling
+821369,0xC8879,49,34,table,Primary Open Loop Fueling
+821370,0xC887A,50,36,table,Primary Open Loop Fueling
+821371,0xC887B,51,37,table,Primary Open Loop Fueling
+821372,0xC887C,51,37,table,Primary Open Loop Fueling
+821373,0xC887D,52,37,table,Primary Open Loop Fueling
+821374,0xC887E,54,37,table,Primary Open Loop Fueling
+821375,0xC887F,54,37,table,Primary Open Loop Fueling
+821376,0xC8880,9,0,table,Primary Open Loop Fueling
+821377,0xC8881,9,0,table,Primary Open Loop Fueling
+821378,0xC8882,9,4,table,Primary Open Loop Fueling
+821379,0xC8883,9,10,table,Primary Open Loop Fueling
+821380,0xC8884,14,19,table,Primary Open Loop Fueling
+821381,0xC8885,17,25,table,Primary Open Loop Fueling
+821382,0xC8886,24,29,table,Primary Open Loop Fueling
+821383,0xC8887,35,31,table,Primary Open Loop Fueling
+821384,0xC8888,37,33,table,Primary Open Loop Fueling
+821385,0xC8889,41,33,table,Primary Open Loop Fueling
+821386,0xC888A,45,34,table,Primary Open Loop Fueling
+821387,0xC888B,48,36,table,Primary Open Loop Fueling
+821388,0xC888C,50,36,table,Primary Open Loop Fueling
+821389,0xC888D,51,36,table,Primary Open Loop Fueling
+821390,0xC888E,54,36,table,Primary Open Loop Fueling
+821391,0xC888F,55,36,table,Primary Open Loop Fueling
+821392,0xC8890,13,0,table,Primary Open Loop Fueling
+821393,0xC8891,13,0,table,Primary Open Loop Fueling
+821394,0xC8892,13,3,table,Primary Open Loop Fueling
+821395,0xC8893,13,8,table,Primary Open Loop Fueling
+821396,0xC8894,18,17,table,Primary Open Loop Fueling
+821397,0xC8895,21,23,table,Primary Open Loop Fueling
+821398,0xC8896,28,26,table,Primary Open Loop Fueling
+821399,0xC8897,37,29,table,Primary Open Loop Fueling
+821400,0xC8898,38,30,table,Primary Open Loop Fueling
+821401,0xC8899,42,31,table,Primary Open Loop Fueling
+821402,0xC889A,45,33,table,Primary Open Loop Fueling
+821403,0xC889B,48,34,table,Primary Open Loop Fueling
+821404,0xC889C,50,34,table,Primary Open Loop Fueling
+821405,0xC889D,51,34,table,Primary Open Loop Fueling
+821406,0xC889E,55,34,table,Primary Open Loop Fueling
+821407,0xC889F,56,34,table,Primary Open Loop Fueling
+821408,0xC88A0,13,0,table,Primary Open Loop Fueling
+821409,0xC88A1,13,0,table,Primary Open Loop Fueling
+821410,0xC88A2,13,3,table,Primary Open Loop Fueling
+821411,0xC88A3,13,7,table,Primary Open Loop Fueling
+821412,0xC88A4,19,15,table,Primary Open Loop Fueling
+821413,0xC88A5,24,20,table,Primary Open Loop Fueling
+821414,0xC88A6,31,24,table,Primary Open Loop Fueling
+821415,0xC88A7,38,28,table,Primary Open Loop Fueling
+821416,0xC88A8,41,29,table,Primary Open Loop Fueling
+821417,0xC88A9,42,30,table,Primary Open Loop Fueling
+821418,0xC88AA,45,31,table,Primary Open Loop Fueling
+821419,0xC88AB,46,33,table,Primary Open Loop Fueling
+821420,0xC88AC,47,33,table,Primary Open Loop Fueling
+821421,0xC88AD,49,33,table,Primary Open Loop Fueling
+821422,0xC88AE,51,33,table,Primary Open Loop Fueling
+821423,0xC88AF,54,33,table,Primary Open Loop Fueling
+821424,0xC88B0,13,0,table,Primary Open Loop Fueling
+821425,0xC88B1,13,0,table,Primary Open Loop Fueling
+821426,0xC88B2,13,2,table,Primary Open Loop Fueling
+821427,0xC88B3,13,6,table,Primary Open Loop Fueling
+821428,0xC88B4,22,12,table,Primary Open Loop Fueling
+821429,0xC88B5,27,18,table,Primary Open Loop Fueling
+821430,0xC88B6,31,21,table,Primary Open Loop Fueling
+821431,0xC88B7,38,25,table,Primary Open Loop Fueling
+821432,0xC88B8,41,28,table,Primary Open Loop Fueling
+821433,0xC88B9,42,29,table,Primary Open Loop Fueling
+821434,0xC88BA,44,30,table,Primary Open Loop Fueling
+821435,0xC88BB,46,31,table,Primary Open Loop Fueling
+821436,0xC88BC,47,31,table,Primary Open Loop Fueling
+821437,0xC88BD,49,31,table,Primary Open Loop Fueling
+821438,0xC88BE,51,31,table,Primary Open Loop Fueling
+821439,0xC88BF,51,31,table,Primary Open Loop Fueling
+821440,0xC88C0,13,0,table,Primary Open Loop Fueling
+821441,0xC88C1,13,0,table,Primary Open Loop Fueling
+821442,0xC88C2,13,2,table,Primary Open Loop Fueling
+821443,0xC88C3,15,5,table,Primary Open Loop Fueling
+821444,0xC88C4,24,10,table,Primary Open Loop Fueling
+821445,0xC88C5,27,16,table,Primary Open Loop Fueling
+821446,0xC88C6,31,19,table,Primary Open Loop Fueling
+821447,0xC88C7,38,23,table,Primary Open Loop Fueling
+821448,0xC88C8,41,25,table,Primary Open Loop Fueling
+821449,0xC88C9,42,26,table,Primary Open Loop Fueling
+821450,0xC88CA,44,29,table,Primary Open Loop Fueling
+821451,0xC88CB,46,30,table,Primary Open Loop Fueling
+821452,0xC88CC,47,31,table,Primary Open Loop Fueling
+821453,0xC88CD,49,31,table,Primary Open Loop Fueling
+821454,0xC88CE,51,31,table,Primary Open Loop Fueling
+821455,0xC88CF,51,31,table,Primary Open Loop Fueling
+821456,0xC88D0,13,0,table,Primary Open Loop Fueling
+821457,0xC88D1,13,0,table,Primary Open Loop Fueling
+821458,0xC88D2,13,2,table,Primary Open Loop Fueling
+821459,0xC88D3,18,5,table,Primary Open Loop Fueling
+821460,0xC88D4,27,8,table,Primary Open Loop Fueling
+821461,0xC88D5,27,13,table,Primary Open Loop Fueling
+821462,0xC88D6,31,17,table,Primary Open Loop Fueling
+821463,0xC88D7,38,20,table,Primary Open Loop Fueling
+821464,0xC88D8,41,23,table,Primary Open Loop Fueling
+821465,0xC88D9,42,25,table,Primary Open Loop Fueling
+821466,0xC88DA,44,28,table,Primary Open Loop Fueling
+821467,0xC88DB,46,30,table,Primary Open Loop Fueling
+821468,0xC88DC,47,31,table,Primary Open Loop Fueling
+821469,0xC88DD,49,31,table,Primary Open Loop Fueling
+821470,0xC88DE,51,31,table,Primary Open Loop Fueling
+821471,0xC88DF,51,31,table,Primary Open Loop Fueling
+821499,0xC88FB,204,205,axis,Primary Open Loop Fueling (Failsafe)::x
+821503,0xC88FF,153,154,axis,Primary Open Loop Fueling (Failsafe)::x
+821531,0xC891B,204,205,axis,Primary Open Loop Fueling (Failsafe)::x
+821535,0xC891F,153,154,axis,Primary Open Loop Fueling (Failsafe)::x
+821547,0xC892B,204,205,axis,Primary Open Loop Fueling (Failsafe)::x
+821667,0xC89A3,0,8,table,Primary Open Loop Fueling (Failsafe)
+821668,0xC89A4,0,11,table,Primary Open Loop Fueling (Failsafe)
+821669,0xC89A5,0,15,table,Primary Open Loop Fueling (Failsafe)
+821670,0xC89A6,0,17,table,Primary Open Loop Fueling (Failsafe)
+821671,0xC89A7,0,19,table,Primary Open Loop Fueling (Failsafe)
+821672,0xC89A8,0,19,table,Primary Open Loop Fueling (Failsafe)
+821673,0xC89A9,0,19,table,Primary Open Loop Fueling (Failsafe)
+821674,0xC89AA,0,19,table,Primary Open Loop Fueling (Failsafe)
+821675,0xC89AB,0,19,table,Primary Open Loop Fueling (Failsafe)
+821682,0xC89B2,0,8,table,Primary Open Loop Fueling (Failsafe)
+821683,0xC89B3,0,15,table,Primary Open Loop Fueling (Failsafe)
+821684,0xC89B4,0,18,table,Primary Open Loop Fueling (Failsafe)
+821685,0xC89B5,0,20,table,Primary Open Loop Fueling (Failsafe)
+821686,0xC89B6,0,23,table,Primary Open Loop Fueling (Failsafe)
+821687,0xC89B7,0,25,table,Primary Open Loop Fueling (Failsafe)
+821688,0xC89B8,0,25,table,Primary Open Loop Fueling (Failsafe)
+821689,0xC89B9,0,25,table,Primary Open Loop Fueling (Failsafe)
+821690,0xC89BA,0,25,table,Primary Open Loop Fueling (Failsafe)
+821691,0xC89BB,0,25,table,Primary Open Loop Fueling (Failsafe)
+821696,0xC89C0,0,8,table,Primary Open Loop Fueling (Failsafe)
+821697,0xC89C1,0,11,table,Primary Open Loop Fueling (Failsafe)
+821698,0xC89C2,0,18,table,Primary Open Loop Fueling (Failsafe)
+821699,0xC89C3,0,24,table,Primary Open Loop Fueling (Failsafe)
+821700,0xC89C4,4,26,table,Primary Open Loop Fueling (Failsafe)
+821701,0xC89C5,8,29,table,Primary Open Loop Fueling (Failsafe)
+821702,0xC89C6,14,30,table,Primary Open Loop Fueling (Failsafe)
+821703,0xC89C7,15,31,table,Primary Open Loop Fueling (Failsafe)
+821704,0xC89C8,15,33,table,Primary Open Loop Fueling (Failsafe)
+821705,0xC89C9,15,33,table,Primary Open Loop Fueling (Failsafe)
+821706,0xC89CA,15,33,table,Primary Open Loop Fueling (Failsafe)
+821707,0xC89CB,15,33,table,Primary Open Loop Fueling (Failsafe)
+821711,0xC89CF,0,5,table,Primary Open Loop Fueling (Failsafe)
+821712,0xC89D0,0,15,table,Primary Open Loop Fueling (Failsafe)
+821713,0xC89D1,0,19,table,Primary Open Loop Fueling (Failsafe)
+821714,0xC89D2,0,24,table,Primary Open Loop Fueling (Failsafe)
+821715,0xC89D3,0,30,table,Primary Open Loop Fueling (Failsafe)
+821716,0xC89D4,11,31,table,Primary Open Loop Fueling (Failsafe)
+821717,0xC89D5,18,33,table,Primary Open Loop Fueling (Failsafe)
+821718,0xC89D6,24,34,table,Primary Open Loop Fueling (Failsafe)
+821719,0xC89D7,35,37,table,Primary Open Loop Fueling (Failsafe)
+821720,0xC89D8,35,39,table,Primary Open Loop Fueling (Failsafe)
+821721,0xC89D9,35,39,table,Primary Open Loop Fueling (Failsafe)
+821722,0xC89DA,35,39,table,Primary Open Loop Fueling (Failsafe)
+821723,0xC89DB,35,39,table,Primary Open Loop Fueling (Failsafe)
+821726,0xC89DE,0,3,table,Primary Open Loop Fueling (Failsafe)
+821727,0xC89DF,0,11,table,Primary Open Loop Fueling (Failsafe)
+821728,0xC89E0,0,21,table,Primary Open Loop Fueling (Failsafe)
+821729,0xC89E1,0,26,table,Primary Open Loop Fueling (Failsafe)
+821730,0xC89E2,0,30,table,Primary Open Loop Fueling (Failsafe)
+821731,0xC89E3,9,33,table,Primary Open Loop Fueling (Failsafe)
+821732,0xC89E4,13,34,table,Primary Open Loop Fueling (Failsafe)
+821733,0xC89E5,18,36,table,Primary Open Loop Fueling (Failsafe)
+821734,0xC89E6,24,37,table,Primary Open Loop Fueling (Failsafe)
+821735,0xC89E7,36,39,table,Primary Open Loop Fueling (Failsafe)
+821736,0xC89E8,36,40,table,Primary Open Loop Fueling (Failsafe)
+821737,0xC89E9,36,40,table,Primary Open Loop Fueling (Failsafe)
+821738,0xC89EA,36,40,table,Primary Open Loop Fueling (Failsafe)
+821739,0xC89EB,36,40,table,Primary Open Loop Fueling (Failsafe)
+821742,0xC89EE,0,5,table,Primary Open Loop Fueling (Failsafe)
+821743,0xC89EF,0,15,table,Primary Open Loop Fueling (Failsafe)
+821744,0xC89F0,0,25,table,Primary Open Loop Fueling (Failsafe)
+821745,0xC89F1,0,29,table,Primary Open Loop Fueling (Failsafe)
+821746,0xC89F2,3,31,table,Primary Open Loop Fueling (Failsafe)
+821747,0xC89F3,9,34,table,Primary Open Loop Fueling (Failsafe)
+821748,0xC89F4,13,36,table,Primary Open Loop Fueling (Failsafe)
+821749,0xC89F5,19,37,table,Primary Open Loop Fueling (Failsafe)
+821750,0xC89F6,24,37,table,Primary Open Loop Fueling (Failsafe)
+821751,0xC89F7,40,39,table,Primary Open Loop Fueling (Failsafe)
+821758,0xC89FE,0,5,table,Primary Open Loop Fueling (Failsafe)
+821759,0xC89FF,0,17,table,Primary Open Loop Fueling (Failsafe)
+821760,0xC8A00,0,26,table,Primary Open Loop Fueling (Failsafe)
+821761,0xC8A01,3,30,table,Primary Open Loop Fueling (Failsafe)
+821762,0xC8A02,6,33,table,Primary Open Loop Fueling (Failsafe)
+821763,0xC8A03,15,36,table,Primary Open Loop Fueling (Failsafe)
+821764,0xC8A04,21,37,table,Primary Open Loop Fueling (Failsafe)
+821765,0xC8A05,26,37,table,Primary Open Loop Fueling (Failsafe)
+821766,0xC8A06,31,39,table,Primary Open Loop Fueling (Failsafe)
+821767,0xC8A07,41,39,table,Primary Open Loop Fueling (Failsafe)
+821768,0xC8A08,41,40,table,Primary Open Loop Fueling (Failsafe)
+821769,0xC8A09,41,40,table,Primary Open Loop Fueling (Failsafe)
+821770,0xC8A0A,41,40,table,Primary Open Loop Fueling (Failsafe)
+821771,0xC8A0B,41,40,table,Primary Open Loop Fueling (Failsafe)
+821772,0xC8A0C,8,0,table,Primary Open Loop Fueling (Failsafe)
+821773,0xC8A0D,8,0,table,Primary Open Loop Fueling (Failsafe)
+821774,0xC8A0E,8,6,table,Primary Open Loop Fueling (Failsafe)
+821775,0xC8A0F,8,17,table,Primary Open Loop Fueling (Failsafe)
+821776,0xC8A10,8,26,table,Primary Open Loop Fueling (Failsafe)
+821777,0xC8A11,11,30,table,Primary Open Loop Fueling (Failsafe)
+821778,0xC8A12,15,33,table,Primary Open Loop Fueling (Failsafe)
+821779,0xC8A13,21,36,table,Primary Open Loop Fueling (Failsafe)
+821780,0xC8A14,26,37,table,Primary Open Loop Fueling (Failsafe)
+821781,0xC8A15,28,37,table,Primary Open Loop Fueling (Failsafe)
+821782,0xC8A16,35,39,table,Primary Open Loop Fueling (Failsafe)
+821783,0xC8A17,44,39,table,Primary Open Loop Fueling (Failsafe)
+821784,0xC8A18,46,40,table,Primary Open Loop Fueling (Failsafe)
+821785,0xC8A19,46,40,table,Primary Open Loop Fueling (Failsafe)
+821786,0xC8A1A,46,40,table,Primary Open Loop Fueling (Failsafe)
+821787,0xC8A1B,46,40,table,Primary Open Loop Fueling (Failsafe)
+821788,0xC8A1C,9,0,table,Primary Open Loop Fueling (Failsafe)
+821789,0xC8A1D,9,0,table,Primary Open Loop Fueling (Failsafe)
+821790,0xC8A1E,9,5,table,Primary Open Loop Fueling (Failsafe)
+821791,0xC8A1F,9,15,table,Primary Open Loop Fueling (Failsafe)
+821792,0xC8A20,9,24,table,Primary Open Loop Fueling (Failsafe)
+821793,0xC8A21,13,29,table,Primary Open Loop Fueling (Failsafe)
+821794,0xC8A22,20,31,table,Primary Open Loop Fueling (Failsafe)
+821795,0xC8A23,31,34,table,Primary Open Loop Fueling (Failsafe)
+821796,0xC8A24,38,36,table,Primary Open Loop Fueling (Failsafe)
+821797,0xC8A25,42,36,table,Primary Open Loop Fueling (Failsafe)
+821798,0xC8A26,45,37,table,Primary Open Loop Fueling (Failsafe)
+821799,0xC8A27,47,39,table,Primary Open Loop Fueling (Failsafe)
+821800,0xC8A28,50,39,table,Primary Open Loop Fueling (Failsafe)
+821801,0xC8A29,50,39,table,Primary Open Loop Fueling (Failsafe)
+821802,0xC8A2A,50,39,table,Primary Open Loop Fueling (Failsafe)
+821803,0xC8A2B,50,39,table,Primary Open Loop Fueling (Failsafe)
+821804,0xC8A2C,11,0,table,Primary Open Loop Fueling (Failsafe)
+821805,0xC8A2D,11,0,table,Primary Open Loop Fueling (Failsafe)
+821806,0xC8A2E,11,5,table,Primary Open Loop Fueling (Failsafe)
+821807,0xC8A2F,11,12,table,Primary Open Loop Fueling (Failsafe)
+821808,0xC8A30,11,21,table,Primary Open Loop Fueling (Failsafe)
+821809,0xC8A31,13,28,table,Primary Open Loop Fueling (Failsafe)
+821810,0xC8A32,19,30,table,Primary Open Loop Fueling (Failsafe)
+821811,0xC8A33,28,33,table,Primary Open Loop Fueling (Failsafe)
+821812,0xC8A34,35,34,table,Primary Open Loop Fueling (Failsafe)
+821813,0xC8A35,38,34,table,Primary Open Loop Fueling (Failsafe)
+821814,0xC8A36,42,36,table,Primary Open Loop Fueling (Failsafe)
+821815,0xC8A37,47,37,table,Primary Open Loop Fueling (Failsafe)
+821816,0xC8A38,50,37,table,Primary Open Loop Fueling (Failsafe)
+821817,0xC8A39,50,37,table,Primary Open Loop Fueling (Failsafe)
+821818,0xC8A3A,50,37,table,Primary Open Loop Fueling (Failsafe)
+821819,0xC8A3B,50,37,table,Primary Open Loop Fueling (Failsafe)
+821820,0xC8A3C,11,0,table,Primary Open Loop Fueling (Failsafe)
+821821,0xC8A3D,11,0,table,Primary Open Loop Fueling (Failsafe)
+821822,0xC8A3E,11,4,table,Primary Open Loop Fueling (Failsafe)
+821823,0xC8A3F,11,10,table,Primary Open Loop Fueling (Failsafe)
+821824,0xC8A40,11,19,table,Primary Open Loop Fueling (Failsafe)
+821825,0xC8A41,13,25,table,Primary Open Loop Fueling (Failsafe)
+821826,0xC8A42,19,29,table,Primary Open Loop Fueling (Failsafe)
+821827,0xC8A43,27,31,table,Primary Open Loop Fueling (Failsafe)
+821828,0xC8A44,32,33,table,Primary Open Loop Fueling (Failsafe)
+821829,0xC8A45,35,33,table,Primary Open Loop Fueling (Failsafe)
+821830,0xC8A46,42,34,table,Primary Open Loop Fueling (Failsafe)
+821831,0xC8A47,48,36,table,Primary Open Loop Fueling (Failsafe)
+821832,0xC8A48,52,36,table,Primary Open Loop Fueling (Failsafe)
+821833,0xC8A49,52,36,table,Primary Open Loop Fueling (Failsafe)
+821834,0xC8A4A,52,36,table,Primary Open Loop Fueling (Failsafe)
+821835,0xC8A4B,52,36,table,Primary Open Loop Fueling (Failsafe)
+821836,0xC8A4C,13,0,table,Primary Open Loop Fueling (Failsafe)
+821837,0xC8A4D,13,0,table,Primary Open Loop Fueling (Failsafe)
+821838,0xC8A4E,13,3,table,Primary Open Loop Fueling (Failsafe)
+821839,0xC8A4F,13,8,table,Primary Open Loop Fueling (Failsafe)
+821840,0xC8A50,13,17,table,Primary Open Loop Fueling (Failsafe)
+821841,0xC8A51,17,23,table,Primary Open Loop Fueling (Failsafe)
+821842,0xC8A52,22,26,table,Primary Open Loop Fueling (Failsafe)
+821844,0xC8A54,35,30,table,Primary Open Loop Fueling (Failsafe)
+821845,0xC8A55,40,31,table,Primary Open Loop Fueling (Failsafe)
+821846,0xC8A56,44,33,table,Primary Open Loop Fueling (Failsafe)
+821847,0xC8A57,48,34,table,Primary Open Loop Fueling (Failsafe)
+821848,0xC8A58,50,34,table,Primary Open Loop Fueling (Failsafe)
+821849,0xC8A59,50,34,table,Primary Open Loop Fueling (Failsafe)
+821850,0xC8A5A,50,34,table,Primary Open Loop Fueling (Failsafe)
+821851,0xC8A5B,50,34,table,Primary Open Loop Fueling (Failsafe)
+821852,0xC8A5C,13,0,table,Primary Open Loop Fueling (Failsafe)
+821853,0xC8A5D,13,0,table,Primary Open Loop Fueling (Failsafe)
+821854,0xC8A5E,13,3,table,Primary Open Loop Fueling (Failsafe)
+821855,0xC8A5F,13,7,table,Primary Open Loop Fueling (Failsafe)
+821857,0xC8A61,19,20,table,Primary Open Loop Fueling (Failsafe)
+821859,0xC8A63,32,28,table,Primary Open Loop Fueling (Failsafe)
+821860,0xC8A64,35,29,table,Primary Open Loop Fueling (Failsafe)
+821861,0xC8A65,40,30,table,Primary Open Loop Fueling (Failsafe)
+821862,0xC8A66,45,31,table,Primary Open Loop Fueling (Failsafe)
+821863,0xC8A67,45,33,table,Primary Open Loop Fueling (Failsafe)
+821864,0xC8A68,45,33,table,Primary Open Loop Fueling (Failsafe)
+821865,0xC8A69,45,33,table,Primary Open Loop Fueling (Failsafe)
+821866,0xC8A6A,45,33,table,Primary Open Loop Fueling (Failsafe)
+821867,0xC8A6B,45,33,table,Primary Open Loop Fueling (Failsafe)
+821868,0xC8A6C,13,0,table,Primary Open Loop Fueling (Failsafe)
+821869,0xC8A6D,13,0,table,Primary Open Loop Fueling (Failsafe)
+821870,0xC8A6E,13,2,table,Primary Open Loop Fueling (Failsafe)
+821871,0xC8A6F,13,6,table,Primary Open Loop Fueling (Failsafe)
+821872,0xC8A70,17,12,table,Primary Open Loop Fueling (Failsafe)
+821873,0xC8A71,19,18,table,Primary Open Loop Fueling (Failsafe)
+821874,0xC8A72,24,21,table,Primary Open Loop Fueling (Failsafe)
+821875,0xC8A73,32,25,table,Primary Open Loop Fueling (Failsafe)
+821876,0xC8A74,35,28,table,Primary Open Loop Fueling (Failsafe)
+821877,0xC8A75,38,29,table,Primary Open Loop Fueling (Failsafe)
+821878,0xC8A76,45,30,table,Primary Open Loop Fueling (Failsafe)
+821879,0xC8A77,45,31,table,Primary Open Loop Fueling (Failsafe)
+821880,0xC8A78,45,31,table,Primary Open Loop Fueling (Failsafe)
+821881,0xC8A79,45,31,table,Primary Open Loop Fueling (Failsafe)
+821882,0xC8A7A,45,31,table,Primary Open Loop Fueling (Failsafe)
+821883,0xC8A7B,45,31,table,Primary Open Loop Fueling (Failsafe)
+821884,0xC8A7C,13,0,table,Primary Open Loop Fueling (Failsafe)
+821885,0xC8A7D,13,0,table,Primary Open Loop Fueling (Failsafe)
+821886,0xC8A7E,13,2,table,Primary Open Loop Fueling (Failsafe)
+821887,0xC8A7F,13,5,table,Primary Open Loop Fueling (Failsafe)
+821888,0xC8A80,17,10,table,Primary Open Loop Fueling (Failsafe)
+821889,0xC8A81,19,16,table,Primary Open Loop Fueling (Failsafe)
+821890,0xC8A82,23,19,table,Primary Open Loop Fueling (Failsafe)
+821891,0xC8A83,32,23,table,Primary Open Loop Fueling (Failsafe)
+821892,0xC8A84,35,25,table,Primary Open Loop Fueling (Failsafe)
+821893,0xC8A85,38,26,table,Primary Open Loop Fueling (Failsafe)
+821894,0xC8A86,45,29,table,Primary Open Loop Fueling (Failsafe)
+821895,0xC8A87,45,30,table,Primary Open Loop Fueling (Failsafe)
+821896,0xC8A88,45,31,table,Primary Open Loop Fueling (Failsafe)
+821897,0xC8A89,45,31,table,Primary Open Loop Fueling (Failsafe)
+821898,0xC8A8A,45,31,table,Primary Open Loop Fueling (Failsafe)
+821899,0xC8A8B,45,31,table,Primary Open Loop Fueling (Failsafe)
+821900,0xC8A8C,13,0,table,Primary Open Loop Fueling (Failsafe)
+821901,0xC8A8D,13,0,table,Primary Open Loop Fueling (Failsafe)
+821902,0xC8A8E,13,2,table,Primary Open Loop Fueling (Failsafe)
+821903,0xC8A8F,13,5,table,Primary Open Loop Fueling (Failsafe)
+821904,0xC8A90,17,8,table,Primary Open Loop Fueling (Failsafe)
+821905,0xC8A91,19,13,table,Primary Open Loop Fueling (Failsafe)
+821906,0xC8A92,23,17,table,Primary Open Loop Fueling (Failsafe)
+821907,0xC8A93,32,20,table,Primary Open Loop Fueling (Failsafe)
+821908,0xC8A94,35,23,table,Primary Open Loop Fueling (Failsafe)
+821909,0xC8A95,38,25,table,Primary Open Loop Fueling (Failsafe)
+821910,0xC8A96,45,28,table,Primary Open Loop Fueling (Failsafe)
+821911,0xC8A97,45,30,table,Primary Open Loop Fueling (Failsafe)
+821912,0xC8A98,45,31,table,Primary Open Loop Fueling (Failsafe)
+821913,0xC8A99,45,31,table,Primary Open Loop Fueling (Failsafe)
+821914,0xC8A9A,45,31,table,Primary Open Loop Fueling (Failsafe)
+821915,0xC8A9B,45,31,table,Primary Open Loop Fueling (Failsafe)
+824203,0xC938B,188,120,scalar,Fine Correction Advance Delay
+824873,0xC9629,0,64,scalar,Advance Multiplier (Initial)
+824877,0xC962D,212,187,table,Rough Correction Range (RPM)
+824881,0xC9631,225,200,table,Rough Correction Range (RPM)
+824885,0xC9635,171,187,table,Rough Correction Range (RPM)
+824886,0xC9636,224,128,table,Rough Correction Range (RPM)
+824889,0xC9639,175,193,table,Rough Correction Range (RPM)
+824890,0xC963A,0,192,table,Rough Correction Range (RPM)
+824893,0xC963D,115,12,table,Rough Correction Range (Load)
+824894,0xC963E,51,204,table,Rough Correction Range (Load)
+824895,0xC963F,51,205,table,Rough Correction Range (Load)
+824897,0xC9641,128,38,table,Rough Correction Range (Load)
+824898,0xC9642,0,102,table,Rough Correction Range (Load)
+824899,0xC9643,0,102,table,Rough Correction Range (Load)
+824909,0xC964D,128,64,scalar,Rough Correction Minimum KC Advance Map Value
+824968,0xC9688,65,64,scalar,Fine Correction Advance Limit
+824969,0xC9689,0,160,scalar,Fine Correction Advance Limit
+826676,0xC9D34,40,30,table,Rough Correction Learning Delay (Increasing)
+826677,0xC9D35,40,30,table,Rough Correction Learning Delay (Increasing)
+826678,0xC9D36,40,30,table,Rough Correction Learning Delay (Increasing)
+826679,0xC9D37,40,35,table,Rough Correction Learning Delay (Increasing)
+826680,0xC9D38,47,40,table,Rough Correction Learning Delay (Increasing)
+826681,0xC9D39,53,45,table,Rough Correction Learning Delay (Increasing)
+826682,0xC9D3A,60,50,table,Rough Correction Learning Delay (Increasing)
+826683,0xC9D3B,67,55,table,Rough Correction Learning Delay (Increasing)
+826684,0xC9D3C,73,60,table,Rough Correction Learning Delay (Increasing)
+826685,0xC9D3D,80,65,table,Rough Correction Learning Delay (Increasing)
+827579,0xCA0BB,204,205,axis,Base Timing::x
+827583,0xCA0BF,153,154,axis,Base Timing::x
+827611,0xCA0DB,204,205,axis,Base Timing::x
+827615,0xCA0DF,153,154,axis,Base Timing::x
+827627,0xCA0EB,204,205,axis,Base Timing::x
+827745,0xCA161,111,108,table,Base Timing
+827759,0xCA16F,139,137,table,Base Timing
+827760,0xCA170,131,128,table,Base Timing
+827761,0xCA171,131,125,table,Base Timing
+827762,0xCA172,108,105,table,Base Timing
+827764,0xCA174,82,80,table,Base Timing
+827765,0xCA175,77,74,table,Base Timing
+827774,0xCA17E,156,154,table,Base Timing
+827775,0xCA17F,159,154,table,Base Timing
+827776,0xCA180,151,142,table,Base Timing
+827777,0xCA181,148,137,table,Base Timing
+827778,0xCA182,128,119,table,Base Timing
+827779,0xCA183,105,100,table,Base Timing
+827780,0xCA184,94,88,table,Base Timing
+827781,0xCA185,80,82,table,Base Timing
+827784,0xCA188,68,71,table,Base Timing
+827785,0xCA189,63,68,table,Base Timing
+827786,0xCA18A,60,63,table,Base Timing
+827787,0xCA18B,57,60,table,Base Timing
+827792,0xCA190,162,154,table,Base Timing
+827793,0xCA191,159,142,table,Base Timing
+827794,0xCA192,139,125,table,Base Timing
+827795,0xCA193,117,108,table,Base Timing
+827796,0xCA194,108,97,table,Base Timing
+827797,0xCA195,97,91,table,Base Timing
+827798,0xCA196,91,85,table,Base Timing
+827800,0xCA198,74,77,table,Base Timing
+827801,0xCA199,71,74,table,Base Timing
+827802,0xCA19A,68,71,table,Base Timing
+827803,0xCA19B,63,68,table,Base Timing
+827808,0xCA1A0,171,159,table,Base Timing
+827809,0xCA1A1,162,148,table,Base Timing
+827810,0xCA1A2,145,128,table,Base Timing
+827811,0xCA1A3,122,108,table,Base Timing
+827812,0xCA1A4,111,98,table,Base Timing
+827813,0xCA1A5,102,91,table,Base Timing
+827814,0xCA1A6,97,82,table,Base Timing
+827815,0xCA1A7,85,76,table,Base Timing
+827816,0xCA1A8,82,74,table,Base Timing
+827817,0xCA1A9,80,73,table,Base Timing
+827818,0xCA1AA,77,72,table,Base Timing
+827819,0xCA1AB,65,69,table,Base Timing
+827824,0xCA1B0,179,171,table,Base Timing
+827825,0xCA1B1,165,154,table,Base Timing
+827826,0xCA1B2,151,131,table,Base Timing
+827827,0xCA1B3,131,105,table,Base Timing
+827828,0xCA1B4,119,92,table,Base Timing
+827829,0xCA1B5,111,87,table,Base Timing
+827830,0xCA1B6,105,82,table,Base Timing
+827831,0xCA1B7,94,76,table,Base Timing
+827832,0xCA1B8,88,74,table,Base Timing
+827833,0xCA1B9,82,74,table,Base Timing
+827834,0xCA1BA,80,74,table,Base Timing
+827840,0xCA1C0,179,171,table,Base Timing
+827841,0xCA1C1,165,154,table,Base Timing
+827842,0xCA1C2,151,134,table,Base Timing
+827843,0xCA1C3,134,102,table,Base Timing
+827844,0xCA1C4,125,90,table,Base Timing
+827845,0xCA1C5,117,85,table,Base Timing
+827846,0xCA1C6,108,81,table,Base Timing
+827847,0xCA1C7,97,76,table,Base Timing
+827848,0xCA1C8,91,74,table,Base Timing
+827849,0xCA1C9,88,74,table,Base Timing
+827850,0xCA1CA,82,74,table,Base Timing
+827851,0xCA1CB,82,74,table,Base Timing
+827856,0xCA1D0,179,174,table,Base Timing
+827857,0xCA1D1,171,159,table,Base Timing
+827858,0xCA1D2,159,137,table,Base Timing
+827859,0xCA1D3,134,105,table,Base Timing
+827860,0xCA1D4,128,90,table,Base Timing
+827861,0xCA1D5,125,86,table,Base Timing
+827862,0xCA1D6,111,82,table,Base Timing
+827863,0xCA1D7,105,78,table,Base Timing
+827864,0xCA1D8,100,76,table,Base Timing
+827865,0xCA1D9,97,76,table,Base Timing
+827866,0xCA1DA,94,75,table,Base Timing
+827867,0xCA1DB,94,75,table,Base Timing
+827872,0xCA1E0,179,174,table,Base Timing
+827873,0xCA1E1,171,159,table,Base Timing
+827874,0xCA1E2,159,137,table,Base Timing
+827875,0xCA1E3,142,102,table,Base Timing
+827876,0xCA1E4,128,88,table,Base Timing
+827877,0xCA1E5,128,85,table,Base Timing
+827878,0xCA1E6,114,81,table,Base Timing
+827879,0xCA1E7,105,78,table,Base Timing
+827880,0xCA1E8,100,75,table,Base Timing
+827881,0xCA1E9,97,75,table,Base Timing
+827882,0xCA1EA,94,73,table,Base Timing
+827883,0xCA1EB,94,73,table,Base Timing
+827888,0xCA1F0,185,176,table,Base Timing
+827889,0xCA1F1,176,162,table,Base Timing
+827890,0xCA1F2,159,137,table,Base Timing
+827891,0xCA1F3,142,102,table,Base Timing
+827892,0xCA1F4,128,85,table,Base Timing
+827893,0xCA1F5,125,82,table,Base Timing
+827894,0xCA1F6,122,80,table,Base Timing
+827895,0xCA1F7,114,77,table,Base Timing
+827896,0xCA1F8,111,74,table,Base Timing
+827897,0xCA1F9,108,74,table,Base Timing
+827898,0xCA1FA,105,71,table,Base Timing
+827899,0xCA1FB,100,71,table,Base Timing
+827904,0xCA200,185,176,table,Base Timing
+827905,0xCA201,176,162,table,Base Timing
+827906,0xCA202,165,142,table,Base Timing
+827907,0xCA203,145,105,table,Base Timing
+827908,0xCA204,134,88,table,Base Timing
+827909,0xCA205,128,85,table,Base Timing
+827910,0xCA206,125,82,table,Base Timing
+827911,0xCA207,119,80,table,Base Timing
+827912,0xCA208,114,77,table,Base Timing
+827913,0xCA209,111,77,table,Base Timing
+827914,0xCA20A,111,74,table,Base Timing
+827915,0xCA20B,105,74,table,Base Timing
+827920,0xCA210,185,176,table,Base Timing
+827921,0xCA211,176,162,table,Base Timing
+827922,0xCA212,165,145,table,Base Timing
+827923,0xCA213,148,108,table,Base Timing
+827924,0xCA214,137,91,table,Base Timing
+827925,0xCA215,131,88,table,Base Timing
+827926,0xCA216,125,85,table,Base Timing
+827927,0xCA217,119,82,table,Base Timing
+827928,0xCA218,114,80,table,Base Timing
+827929,0xCA219,111,80,table,Base Timing
+827930,0xCA21A,111,77,table,Base Timing
+827931,0xCA21B,111,77,table,Base Timing
+827936,0xCA220,185,176,table,Base Timing
+827937,0xCA221,176,165,table,Base Timing
+827938,0xCA222,171,148,table,Base Timing
+827939,0xCA223,162,114,table,Base Timing
+827940,0xCA224,137,97,table,Base Timing
+827941,0xCA225,134,94,table,Base Timing
+827942,0xCA226,131,91,table,Base Timing
+827943,0xCA227,122,85,table,Base Timing
+827944,0xCA228,119,82,table,Base Timing
+827945,0xCA229,119,82,table,Base Timing
+827946,0xCA22A,119,80,table,Base Timing
+827947,0xCA22B,119,80,table,Base Timing
+827952,0xCA230,185,179,table,Base Timing
+827953,0xCA231,185,168,table,Base Timing
+827954,0xCA232,176,154,table,Base Timing
+827955,0xCA233,171,119,table,Base Timing
+827956,0xCA234,159,102,table,Base Timing
+827957,0xCA235,156,100,table,Base Timing
+827958,0xCA236,148,97,table,Base Timing
+827959,0xCA237,137,91,table,Base Timing
+827960,0xCA238,137,88,table,Base Timing
+827961,0xCA239,137,88,table,Base Timing
+827962,0xCA23A,137,85,table,Base Timing
+827963,0xCA23B,137,85,table,Base Timing
+827968,0xCA240,185,179,table,Base Timing
+827969,0xCA241,185,171,table,Base Timing
+827970,0xCA242,185,156,table,Base Timing
+827971,0xCA243,176,122,table,Base Timing
+827972,0xCA244,168,105,table,Base Timing
+827973,0xCA245,162,102,table,Base Timing
+827974,0xCA246,145,100,table,Base Timing
+827975,0xCA247,139,94,table,Base Timing
+827976,0xCA248,139,91,table,Base Timing
+827977,0xCA249,139,91,table,Base Timing
+827978,0xCA24A,139,88,table,Base Timing
+827979,0xCA24B,139,88,table,Base Timing
+827984,0xCA250,185,179,table,Base Timing
+827985,0xCA251,185,171,table,Base Timing
+827986,0xCA252,185,156,table,Base Timing
+827987,0xCA253,176,122,table,Base Timing
+827988,0xCA254,168,105,table,Base Timing
+827989,0xCA255,162,102,table,Base Timing
+827990,0xCA256,145,100,table,Base Timing
+827991,0xCA257,139,94,table,Base Timing
+827992,0xCA258,139,91,table,Base Timing
+827993,0xCA259,139,91,table,Base Timing
+827994,0xCA25A,139,88,table,Base Timing
+827995,0xCA25B,139,88,table,Base Timing
+828447,0xCA41F,204,205,axis,Knock Correction Advance Max::x
+828451,0xCA423,153,154,axis,Knock Correction Advance Max::x
+828479,0xCA43F,204,205,axis,Knock Correction Advance Max::x
+828483,0xCA443,153,154,axis,Knock Correction Advance Max::x
+828495,0xCA44F,204,205,axis,Knock Correction Advance Max::x
+828580,0xCA4A4,9,12,table,Knock Correction Advance Max
+828581,0xCA4A5,11,14,table,Knock Correction Advance Max
+828583,0xCA4A7,17,14,table,Knock Correction Advance Max
+828584,0xCA4A8,17,14,table,Knock Correction Advance Max
+828585,0xCA4A9,17,14,table,Knock Correction Advance Max
+828586,0xCA4AA,17,14,table,Knock Correction Advance Max
+828587,0xCA4AB,17,14,table,Knock Correction Advance Max
+828588,0xCA4AC,17,14,table,Knock Correction Advance Max
+828589,0xCA4AD,17,14,table,Knock Correction Advance Max
+828590,0xCA4AE,17,14,table,Knock Correction Advance Max
+828591,0xCA4AF,17,14,table,Knock Correction Advance Max
+828596,0xCA4B4,9,12,table,Knock Correction Advance Max
+828597,0xCA4B5,11,14,table,Knock Correction Advance Max
+828599,0xCA4B7,17,14,table,Knock Correction Advance Max
+828600,0xCA4B8,17,14,table,Knock Correction Advance Max
+828601,0xCA4B9,17,14,table,Knock Correction Advance Max
+828602,0xCA4BA,17,14,table,Knock Correction Advance Max
+828603,0xCA4BB,17,14,table,Knock Correction Advance Max
+828604,0xCA4BC,17,14,table,Knock Correction Advance Max
+828605,0xCA4BD,17,14,table,Knock Correction Advance Max
+828606,0xCA4BE,17,14,table,Knock Correction Advance Max
+828607,0xCA4BF,17,14,table,Knock Correction Advance Max
+828612,0xCA4C4,9,12,table,Knock Correction Advance Max
+828613,0xCA4C5,11,14,table,Knock Correction Advance Max
+828615,0xCA4C7,17,14,table,Knock Correction Advance Max
+828616,0xCA4C8,17,14,table,Knock Correction Advance Max
+828617,0xCA4C9,17,14,table,Knock Correction Advance Max
+828618,0xCA4CA,17,14,table,Knock Correction Advance Max
+828619,0xCA4CB,17,14,table,Knock Correction Advance Max
+828620,0xCA4CC,17,14,table,Knock Correction Advance Max
+828621,0xCA4CD,17,14,table,Knock Correction Advance Max
+828622,0xCA4CE,17,14,table,Knock Correction Advance Max
+828623,0xCA4CF,17,14,table,Knock Correction Advance Max
+828628,0xCA4D4,9,12,table,Knock Correction Advance Max
+828629,0xCA4D5,11,14,table,Knock Correction Advance Max
+828631,0xCA4D7,17,14,table,Knock Correction Advance Max
+828632,0xCA4D8,17,14,table,Knock Correction Advance Max
+828633,0xCA4D9,17,14,table,Knock Correction Advance Max
+828634,0xCA4DA,17,14,table,Knock Correction Advance Max
+828635,0xCA4DB,17,14,table,Knock Correction Advance Max
+828636,0xCA4DC,17,14,table,Knock Correction Advance Max
+828637,0xCA4DD,17,14,table,Knock Correction Advance Max
+828638,0xCA4DE,17,14,table,Knock Correction Advance Max
+828639,0xCA4DF,17,14,table,Knock Correction Advance Max
+828644,0xCA4E4,9,12,table,Knock Correction Advance Max
+828645,0xCA4E5,11,14,table,Knock Correction Advance Max
+828647,0xCA4E7,17,14,table,Knock Correction Advance Max
+828648,0xCA4E8,17,14,table,Knock Correction Advance Max
+828649,0xCA4E9,17,14,table,Knock Correction Advance Max
+828650,0xCA4EA,17,14,table,Knock Correction Advance Max
+828651,0xCA4EB,17,14,table,Knock Correction Advance Max
+828652,0xCA4EC,17,14,table,Knock Correction Advance Max
+828653,0xCA4ED,17,14,table,Knock Correction Advance Max
+828654,0xCA4EE,17,14,table,Knock Correction Advance Max
+828655,0xCA4EF,17,14,table,Knock Correction Advance Max
+828660,0xCA4F4,9,12,table,Knock Correction Advance Max
+828661,0xCA4F5,11,14,table,Knock Correction Advance Max
+828663,0xCA4F7,17,14,table,Knock Correction Advance Max
+828664,0xCA4F8,17,14,table,Knock Correction Advance Max
+828665,0xCA4F9,17,14,table,Knock Correction Advance Max
+828666,0xCA4FA,17,14,table,Knock Correction Advance Max
+828667,0xCA4FB,17,14,table,Knock Correction Advance Max
+828668,0xCA4FC,17,14,table,Knock Correction Advance Max
+828669,0xCA4FD,17,14,table,Knock Correction Advance Max
+828670,0xCA4FE,17,14,table,Knock Correction Advance Max
+828671,0xCA4FF,17,14,table,Knock Correction Advance Max
+828677,0xCA505,9,12,table,Knock Correction Advance Max
+828678,0xCA506,11,14,table,Knock Correction Advance Max
+828693,0xCA515,6,9,table,Knock Correction Advance Max
+828694,0xCA516,9,12,table,Knock Correction Advance Max
+828695,0xCA517,11,14,table,Knock Correction Advance Max
+828709,0xCA525,6,9,table,Knock Correction Advance Max
+828710,0xCA526,9,12,table,Knock Correction Advance Max
+828711,0xCA527,9,12,table,Knock Correction Advance Max
+828712,0xCA528,11,14,table,Knock Correction Advance Max
+828727,0xCA537,9,12,table,Knock Correction Advance Max
+828728,0xCA538,9,12,table,Knock Correction Advance Max
+828729,0xCA539,9,12,table,Knock Correction Advance Max
+828730,0xCA53A,11,14,table,Knock Correction Advance Max
+828731,0xCA53B,11,14,table,Knock Correction Advance Max
+828732,0xCA53C,11,14,table,Knock Correction Advance Max
+828733,0xCA53D,11,14,table,Knock Correction Advance Max
+828734,0xCA53E,11,14,table,Knock Correction Advance Max
+828735,0xCA53F,11,14,table,Knock Correction Advance Max
+828744,0xCA548,9,12,table,Knock Correction Advance Max
+828745,0xCA549,6,9,table,Knock Correction Advance Max
+828746,0xCA54A,9,12,table,Knock Correction Advance Max
+828747,0xCA54B,11,14,table,Knock Correction Advance Max
+828748,0xCA54C,11,14,table,Knock Correction Advance Max
+828749,0xCA54D,11,14,table,Knock Correction Advance Max
+828750,0xCA54E,11,14,table,Knock Correction Advance Max
+828751,0xCA54F,11,14,table,Knock Correction Advance Max
+828760,0xCA558,9,12,table,Knock Correction Advance Max
+828761,0xCA559,9,12,table,Knock Correction Advance Max
+828762,0xCA55A,9,12,table,Knock Correction Advance Max
+828763,0xCA55B,11,14,table,Knock Correction Advance Max
+828764,0xCA55C,11,14,table,Knock Correction Advance Max
+828765,0xCA55D,11,14,table,Knock Correction Advance Max
+828766,0xCA55E,11,14,table,Knock Correction Advance Max
+828767,0xCA55F,11,14,table,Knock Correction Advance Max
+828776,0xCA568,9,12,table,Knock Correction Advance Max
+828777,0xCA569,9,12,table,Knock Correction Advance Max
+828778,0xCA56A,6,9,table,Knock Correction Advance Max
+828779,0xCA56B,6,9,table,Knock Correction Advance Max
+828780,0xCA56C,9,12,table,Knock Correction Advance Max
+828781,0xCA56D,9,12,table,Knock Correction Advance Max
+828782,0xCA56E,9,12,table,Knock Correction Advance Max
+828783,0xCA56F,9,12,table,Knock Correction Advance Max
+828792,0xCA578,6,9,table,Knock Correction Advance Max
+828793,0xCA579,9,12,table,Knock Correction Advance Max
+828794,0xCA57A,6,9,table,Knock Correction Advance Max
+828795,0xCA57B,6,9,table,Knock Correction Advance Max
+828796,0xCA57C,9,12,table,Knock Correction Advance Max
+828797,0xCA57D,9,12,table,Knock Correction Advance Max
+828798,0xCA57E,9,12,table,Knock Correction Advance Max
+828799,0xCA57F,9,12,table,Knock Correction Advance Max
+828808,0xCA588,6,9,table,Knock Correction Advance Max
+828809,0xCA589,6,9,table,Knock Correction Advance Max
+828810,0xCA58A,6,9,table,Knock Correction Advance Max
+828811,0xCA58B,9,12,table,Knock Correction Advance Max
+828812,0xCA58C,9,12,table,Knock Correction Advance Max
+828813,0xCA58D,9,12,table,Knock Correction Advance Max
+828814,0xCA58E,9,12,table,Knock Correction Advance Max
+828815,0xCA58F,9,12,table,Knock Correction Advance Max
+828826,0xCA59A,6,9,table,Knock Correction Advance Max
+828827,0xCA59B,6,9,table,Knock Correction Advance Max
+828828,0xCA59C,6,9,table,Knock Correction Advance Max
+828829,0xCA59D,6,9,table,Knock Correction Advance Max
+828830,0xCA59E,6,9,table,Knock Correction Advance Max
+828831,0xCA59F,6,9,table,Knock Correction Advance Max
+828843,0xCA5AB,6,9,table,Knock Correction Advance Max
+828844,0xCA5AC,6,9,table,Knock Correction Advance Max
+828845,0xCA5AD,6,9,table,Knock Correction Advance Max
+828846,0xCA5AE,6,9,table,Knock Correction Advance Max
+828847,0xCA5AF,6,9,table,Knock Correction Advance Max
+828859,0xCA5BB,6,9,table,Knock Correction Advance Max
+828860,0xCA5BC,6,9,table,Knock Correction Advance Max
+828861,0xCA5BD,6,9,table,Knock Correction Advance Max
+828862,0xCA5BE,6,9,table,Knock Correction Advance Max
+828863,0xCA5BF,6,9,table,Knock Correction Advance Max
+840021,0xCD155,65,59,table,MAF Sensor Scaling
+840022,0xCD156,88,133,table,MAF Sensor Scaling
+840023,0xCD157,16,31,table,MAF Sensor Scaling
+840025,0xCD159,87,81,table,MAF Sensor Scaling
+840026,0xCD15A,219,71,table,MAF Sensor Scaling
+840027,0xCD15B,34,174,table,MAF Sensor Scaling
+840029,0xCD15D,112,104,table,MAF Sensor Scaling
+840030,0xCD15E,96,245,table,MAF Sensor Scaling
+840031,0xCD15F,170,195,table,MAF Sensor Scaling
+840033,0xCD161,133,129,table,MAF Sensor Scaling
+840034,0xCD162,100,71,table,MAF Sensor Scaling
+840035,0xCD163,90,174,table,MAF Sensor Scaling
+840037,0xCD165,147,143,table,MAF Sensor Scaling
+840038,0xCD166,119,10,table,MAF Sensor Scaling
+840039,0xCD167,49,61,table,MAF Sensor Scaling
+840041,0xCD169,163,159,table,MAF Sensor Scaling
+840042,0xCD16A,206,10,table,MAF Sensor Scaling
+840043,0xCD16B,7,61,table,MAF Sensor Scaling
+840045,0xCD16D,199,195,table,MAF Sensor Scaling
+840046,0xCD16E,27,51,table,MAF Sensor Scaling
+840047,0xCD16F,218,51,table,MAF Sensor Scaling
+840049,0xCD171,237,232,table,MAF Sensor Scaling
+840050,0xCD172,144,245,table,MAF Sensor Scaling
+840051,0xCD173,150,195,table,MAF Sensor Scaling
+840053,0xCD175,11,9,table,MAF Sensor Scaling
+840054,0xCD176,231,30,table,MAF Sensor Scaling
+840055,0xCD177,108,184,table,MAF Sensor Scaling
+840057,0xCD179,35,32,table,MAF Sensor Scaling
+840058,0xCD17A,131,81,table,MAF Sensor Scaling
+840059,0xCD17B,123,236,table,MAF Sensor Scaling
+840061,0xCD17D,61,63,table,MAF Sensor Scaling
+840062,0xCD17E,25,174,table,MAF Sensor Scaling
+840063,0xCD17F,101,20,table,MAF Sensor Scaling
+840065,0xCD181,89,91,table,MAF Sensor Scaling
+840066,0xCD182,25,215,table,MAF Sensor Scaling
+840067,0xCD183,101,10,table,MAF Sensor Scaling
+840070,0xCD186,82,81,table,MAF Sensor Scaling
+840071,0xCD187,84,236,table,MAF Sensor Scaling
+840074,0xCD18A,157,153,table,MAF Sensor Scaling
+840075,0xCD18B,20,154,table,MAF Sensor Scaling
+840077,0xCD18D,160,161,table,MAF Sensor Scaling
+840078,0xCD18E,99,153,table,MAF Sensor Scaling
+840079,0xCD18F,110,154,table,MAF Sensor Scaling
+840081,0xCD191,180,181,table,MAF Sensor Scaling
+840082,0xCD192,238,153,table,MAF Sensor Scaling
+840083,0xCD193,46,154,table,MAF Sensor Scaling
+840085,0xCD195,191,192,table,MAF Sensor Scaling
+840086,0xCD196,238,102,table,MAF Sensor Scaling
+840087,0xCD197,46,102,table,MAF Sensor Scaling
+840090,0xCD19A,240,235,table,MAF Sensor Scaling
+840091,0xCD19B,137,133,table,MAF Sensor Scaling
+840105,0xCD1A9,70,72,table,MAF Sensor Scaling
+840107,0xCD1AB,5,215,table,MAF Sensor Scaling
+840109,0xCD1AD,98,103,table,MAF Sensor Scaling
+840110,0xCD1AE,235,112,table,MAF Sensor Scaling
+840111,0xCD1AF,159,164,table,MAF Sensor Scaling
+840113,0xCD1B1,128,132,table,MAF Sensor Scaling
+840114,0xCD1B2,206,168,table,MAF Sensor Scaling
+840115,0xCD1B3,177,246,table,MAF Sensor Scaling
+840117,0xCD1B5,145,151,table,MAF Sensor Scaling
+840118,0xCD1B6,107,61,table,MAF Sensor Scaling
+840119,0xCD1B7,192,113,table,MAF Sensor Scaling
+840121,0xCD1B9,163,171,table,MAF Sensor Scaling
+840122,0xCD1BA,108,153,table,MAF Sensor Scaling
+840123,0xCD1BB,34,154,table,MAF Sensor Scaling
+840125,0xCD1BD,182,192,table,MAF Sensor Scaling
+840126,0xCD1BE,249,30,table,MAF Sensor Scaling
+840127,0xCD1BF,199,184,table,MAF Sensor Scaling
+840129,0xCD1C1,204,210,table,MAF Sensor Scaling
+840130,0xCD1C2,62,92,table,MAF Sensor Scaling
+840131,0xCD1C3,197,41,table,MAF Sensor Scaling
+845351,0xCE627,204,205,axis,Intake Cam Advance Angle (AVCS)::x
+845367,0xCE637,153,154,axis,Intake Cam Advance Angle (AVCS)::x
+845375,0xCE63F,204,205,axis,Intake Cam Advance Angle (AVCS)::x
+845383,0xCE647,204,205,axis,Intake Cam Advance Angle (AVCS)::x
+845470,0xCE69E,7,10,table,Intake Cam Advance Angle (AVCS)
+845471,0xCE69F,28,171,table,Intake Cam Advance Angle (AVCS)
+845472,0xCE6A0,10,14,table,Intake Cam Advance Angle (AVCS)
+845473,0xCE6A1,171,57,table,Intake Cam Advance Angle (AVCS)
+845488,0xCE6B0,10,14,table,Intake Cam Advance Angle (AVCS)
+845489,0xCE6B1,171,57,table,Intake Cam Advance Angle (AVCS)
+845490,0xCE6B2,10,14,table,Intake Cam Advance Angle (AVCS)
+845491,0xCE6B3,171,57,table,Intake Cam Advance Angle (AVCS)
+845492,0xCE6B4,10,17,table,Intake Cam Advance Angle (AVCS)
+845493,0xCE6B5,171,199,table,Intake Cam Advance Angle (AVCS)
+845494,0xCE6B6,10,17,table,Intake Cam Advance Angle (AVCS)
+845495,0xCE6B7,171,199,table,Intake Cam Advance Angle (AVCS)
+845496,0xCE6B8,10,17,table,Intake Cam Advance Angle (AVCS)
+845497,0xCE6B9,171,199,table,Intake Cam Advance Angle (AVCS)
+845498,0xCE6BA,10,17,table,Intake Cam Advance Angle (AVCS)
+845499,0xCE6BB,171,199,table,Intake Cam Advance Angle (AVCS)
+845500,0xCE6BC,10,14,table,Intake Cam Advance Angle (AVCS)
+845501,0xCE6BD,171,57,table,Intake Cam Advance Angle (AVCS)
+845502,0xCE6BE,10,14,table,Intake Cam Advance Angle (AVCS)
+845503,0xCE6BF,171,57,table,Intake Cam Advance Angle (AVCS)
+845504,0xCE6C0,0,7,table,Intake Cam Advance Angle (AVCS)
+845505,0xCE6C1,0,28,table,Intake Cam Advance Angle (AVCS)
+845506,0xCE6C2,0,10,table,Intake Cam Advance Angle (AVCS)
+845507,0xCE6C3,0,171,table,Intake Cam Advance Angle (AVCS)
+845508,0xCE6C4,0,14,table,Intake Cam Advance Angle (AVCS)
+845509,0xCE6C5,0,57,table,Intake Cam Advance Angle (AVCS)
+845510,0xCE6C6,0,14,table,Intake Cam Advance Angle (AVCS)
+845511,0xCE6C7,0,57,table,Intake Cam Advance Angle (AVCS)
+845512,0xCE6C8,3,17,table,Intake Cam Advance Angle (AVCS)
+845513,0xCE6C9,142,199,table,Intake Cam Advance Angle (AVCS)
+845514,0xCE6CA,7,17,table,Intake Cam Advance Angle (AVCS)
+845515,0xCE6CB,28,199,table,Intake Cam Advance Angle (AVCS)
+845516,0xCE6CC,7,17,table,Intake Cam Advance Angle (AVCS)
+845517,0xCE6CD,28,199,table,Intake Cam Advance Angle (AVCS)
+845518,0xCE6CE,7,17,table,Intake Cam Advance Angle (AVCS)
+845519,0xCE6CF,28,199,table,Intake Cam Advance Angle (AVCS)
+845520,0xCE6D0,7,14,table,Intake Cam Advance Angle (AVCS)
+845521,0xCE6D1,28,57,table,Intake Cam Advance Angle (AVCS)
+845522,0xCE6D2,7,14,table,Intake Cam Advance Angle (AVCS)
+845523,0xCE6D3,28,57,table,Intake Cam Advance Angle (AVCS)
+845524,0xCE6D4,0,7,table,Intake Cam Advance Angle (AVCS)
+845525,0xCE6D5,0,28,table,Intake Cam Advance Angle (AVCS)
+845526,0xCE6D6,0,10,table,Intake Cam Advance Angle (AVCS)
+845527,0xCE6D7,0,171,table,Intake Cam Advance Angle (AVCS)
+845528,0xCE6D8,0,10,table,Intake Cam Advance Angle (AVCS)
+845529,0xCE6D9,0,171,table,Intake Cam Advance Angle (AVCS)
+845530,0xCE6DA,3,14,table,Intake Cam Advance Angle (AVCS)
+845531,0xCE6DB,142,57,table,Intake Cam Advance Angle (AVCS)
+845532,0xCE6DC,3,17,table,Intake Cam Advance Angle (AVCS)
+845533,0xCE6DD,142,199,table,Intake Cam Advance Angle (AVCS)
+845534,0xCE6DE,7,17,table,Intake Cam Advance Angle (AVCS)
+845535,0xCE6DF,28,199,table,Intake Cam Advance Angle (AVCS)
+845536,0xCE6E0,7,17,table,Intake Cam Advance Angle (AVCS)
+845537,0xCE6E1,28,199,table,Intake Cam Advance Angle (AVCS)
+845538,0xCE6E2,7,17,table,Intake Cam Advance Angle (AVCS)
+845539,0xCE6E3,28,199,table,Intake Cam Advance Angle (AVCS)
+845540,0xCE6E4,7,14,table,Intake Cam Advance Angle (AVCS)
+845541,0xCE6E5,28,57,table,Intake Cam Advance Angle (AVCS)
+845542,0xCE6E6,7,14,table,Intake Cam Advance Angle (AVCS)
+845543,0xCE6E7,28,57,table,Intake Cam Advance Angle (AVCS)
+845546,0xCE6EA,7,10,table,Intake Cam Advance Angle (AVCS)
+845547,0xCE6EB,28,171,table,Intake Cam Advance Angle (AVCS)
+845548,0xCE6EC,7,10,table,Intake Cam Advance Angle (AVCS)
+845549,0xCE6ED,28,171,table,Intake Cam Advance Angle (AVCS)
+845550,0xCE6EE,7,14,table,Intake Cam Advance Angle (AVCS)
+845551,0xCE6EF,28,57,table,Intake Cam Advance Angle (AVCS)
+845552,0xCE6F0,7,14,table,Intake Cam Advance Angle (AVCS)
+845553,0xCE6F1,28,57,table,Intake Cam Advance Angle (AVCS)
+845554,0xCE6F2,7,14,table,Intake Cam Advance Angle (AVCS)
+845555,0xCE6F3,28,57,table,Intake Cam Advance Angle (AVCS)
+845556,0xCE6F4,7,14,table,Intake Cam Advance Angle (AVCS)
+845557,0xCE6F5,28,57,table,Intake Cam Advance Angle (AVCS)
+845558,0xCE6F6,7,14,table,Intake Cam Advance Angle (AVCS)
+845559,0xCE6F7,28,57,table,Intake Cam Advance Angle (AVCS)
+845560,0xCE6F8,7,10,table,Intake Cam Advance Angle (AVCS)
+845561,0xCE6F9,28,171,table,Intake Cam Advance Angle (AVCS)
+845562,0xCE6FA,7,10,table,Intake Cam Advance Angle (AVCS)
+845563,0xCE6FB,28,171,table,Intake Cam Advance Angle (AVCS)
+845570,0xCE702,7,10,table,Intake Cam Advance Angle (AVCS)
+845571,0xCE703,28,171,table,Intake Cam Advance Angle (AVCS)
+845572,0xCE704,7,10,table,Intake Cam Advance Angle (AVCS)
+845573,0xCE705,28,171,table,Intake Cam Advance Angle (AVCS)
+845574,0xCE706,7,10,table,Intake Cam Advance Angle (AVCS)
+845575,0xCE707,28,171,table,Intake Cam Advance Angle (AVCS)
+845576,0xCE708,7,10,table,Intake Cam Advance Angle (AVCS)
+845577,0xCE709,28,171,table,Intake Cam Advance Angle (AVCS)
+845578,0xCE70A,7,10,table,Intake Cam Advance Angle (AVCS)
+845579,0xCE70B,28,171,table,Intake Cam Advance Angle (AVCS)
+845584,0xCE710,0,3,table,Intake Cam Advance Angle (AVCS)
+845585,0xCE711,0,142,table,Intake Cam Advance Angle (AVCS)
+845586,0xCE712,0,3,table,Intake Cam Advance Angle (AVCS)
+845587,0xCE713,0,142,table,Intake Cam Advance Angle (AVCS)
+845588,0xCE714,0,3,table,Intake Cam Advance Angle (AVCS)
+845589,0xCE715,0,142,table,Intake Cam Advance Angle (AVCS)
+845590,0xCE716,0,7,table,Intake Cam Advance Angle (AVCS)
+845591,0xCE717,0,28,table,Intake Cam Advance Angle (AVCS)
+845592,0xCE718,0,7,table,Intake Cam Advance Angle (AVCS)
+845593,0xCE719,0,28,table,Intake Cam Advance Angle (AVCS)
+845594,0xCE71A,0,7,table,Intake Cam Advance Angle (AVCS)
+845595,0xCE71B,0,28,table,Intake Cam Advance Angle (AVCS)
+845596,0xCE71C,3,7,table,Intake Cam Advance Angle (AVCS)
+845597,0xCE71D,142,28,table,Intake Cam Advance Angle (AVCS)
+845598,0xCE71E,3,7,table,Intake Cam Advance Angle (AVCS)
+845599,0xCE71F,142,28,table,Intake Cam Advance Angle (AVCS)
+845612,0xCE72C,0,3,table,Intake Cam Advance Angle (AVCS)
+845613,0xCE72D,0,142,table,Intake Cam Advance Angle (AVCS)
+845614,0xCE72E,0,3,table,Intake Cam Advance Angle (AVCS)
+845615,0xCE72F,0,142,table,Intake Cam Advance Angle (AVCS)
+845616,0xCE730,0,3,table,Intake Cam Advance Angle (AVCS)
+845617,0xCE731,0,142,table,Intake Cam Advance Angle (AVCS)
+845618,0xCE732,0,3,table,Intake Cam Advance Angle (AVCS)
+845619,0xCE733,0,142,table,Intake Cam Advance Angle (AVCS)
+1047432,0xFFB88,12,142,checksum,Checksum Fix
+1047433,0xFFB89,88,68,checksum,Checksum Fix
+1047434,0xFFB8A,36,19,checksum,Checksum Fix
+1047435,0xFFB8B,168,165,checksum,Checksum Fix
+1047628,0xFFC4C,255,38,metadata,RomRaider edit stamp
+1047629,0xFFC4D,255,8,metadata,RomRaider edit stamp
+1047630,0xFFC4E,255,24,metadata,RomRaider edit stamp
+1047631,0xFFC4F,255,22,metadata,RomRaider edit stamp

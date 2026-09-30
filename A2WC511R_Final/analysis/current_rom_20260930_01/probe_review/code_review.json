@@ -1,0 +1,355 @@
+{
+  "schema": 1,
+  "status": "PASS_INDEPENDENT_OFFLINE_PROBE_REVIEW",
+  "review_type": "independent_read_only_source_review",
+  "physical_or_provider_invocations_by_reviewer": 0,
+  "contract": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\PROBE_REVIEW_CONTRACT.json",
+    "sha256": "a0b98003aadcd647a98a38fffc3a7404091af01b407ca19ea81177d6d48ed889",
+    "size": 4386
+  },
+  "reviewed_inputs": [
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\src\\common.hpp",
+      "sha256": "3e892d6eeec55ef5eaa004a7ce4f7b18f07802ba7a46af60df087840858e6e2d",
+      "size": 6606
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\src\\fake_backend.hpp",
+      "sha256": "7b2e1b701b7334fe1cc413e4ff6ca27e1fb2a8f6ec3c5b1df716c2feb6af6bde",
+      "size": 8535
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\src\\j2534_tactrix.h",
+      "sha256": "c559ea33654af59ad147eedfcccd56a1f2cb6e95daeb2412b53f6f4bbc76a7d9",
+      "size": 12119
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\src\\main.cpp",
+      "sha256": "14ec5777e795e10c669b5324a6eea21bf1590eafd1e63b634d86f377e3f23d2a",
+      "size": 7461
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\src\\pins.hpp",
+      "sha256": "8290c79bc25de6ec7286dd51bf14a1ae5c24cf97a25e682e587caf66bd78aad6",
+      "size": 929
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\src\\probe_core.hpp",
+      "sha256": "13dd69a6dd2a4cc7f8534cf6e2af146c59dd35e8038a0acf101919d851b17089",
+      "size": 12642
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\tools\\build_probe.py",
+      "sha256": "8bc8760ceea8e3bdb4d4e82a69158ab34c484e4ca6c51e4c59d58312a5b4ff6e",
+      "size": 2150
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\tools\\build_probe.cmd",
+      "sha256": "5cda96428b261e1a96fe442c7fe9b57159caf16f74bd9e15be67792071ea6e66",
+      "size": 736
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\tools\\pin_inputs.py",
+      "sha256": "db1601a6b4f8dee83187ac03beaa398c2625b587811055ff061181bdb2c2bcb1",
+      "size": 3062
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\tools\\test_probe_independent.py",
+      "sha256": "3f348d00cbb450fb455e79431b1f2233e7287e82691e031e3f26b833d7985fcb",
+      "size": 30482
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\PROBE_REVIEW_CONTRACT.json",
+      "sha256": "a0b98003aadcd647a98a38fffc3a7404091af01b407ca19ea81177d6d48ed889",
+      "size": 4386
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\OBJECTIVES_A_COMPLETE.json",
+      "sha256": "5ec533f88810a6a8245b6a142989afeab9c00acc800b6360527dab88ef6ae590",
+      "size": 20806
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\launch_probe_once.py",
+      "sha256": "3956ce39faf25f9c6759bcddb7d2d843062f0d2669477d70cc60ade9478fa5bd",
+      "size": 7170
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\check_clients.ps1",
+      "sha256": "4c86344593f64b50d33784c69e7033af43d554d8d8962ddc6eb68221c47a0d04",
+      "size": 1982
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\TRANSITION_PROBE_HUMAN_PROTOCOL.json",
+      "sha256": "a6ed7b78ab7386cd7e1d290da70c1dd0024fe39a7a8fb4453bd5676376c78e44",
+      "size": 4719
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\test_launcher_controls.py",
+      "sha256": "ceb7fd7b8ccbe5932559908af433dde2b7e574e55f54f1a529d1f1e3bff30c23",
+      "size": 3009
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\LAUNCHER_FINAL_TESTS.json",
+      "sha256": "875011532fbd42838e99e0203300d961551e767a924f52f9efe408ea1a12b057",
+      "size": 795
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\INPUT_PINS.json",
+      "sha256": "5f81fb9f782dd30ba2a6284b65102ede0eb3a12cf581e15749e5d87bc129f337",
+      "size": 3976
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\fixtures\\transition_probe_oracle.json",
+      "sha256": "aa6a9231059f5fc2a73453ad7a58c0c23f07f003d9675f7a10f39366019026be",
+      "size": 1067
+    }
+  ],
+  "findings": [
+    {
+      "id": "R1",
+      "severity": "medium",
+      "status": "RESOLVED_SOURCE_REVIEW",
+      "subject": "Cleanup exceptions can skip later resources",
+      "evidence": "probe_core.hpp cleanup() calls call() sequentially without a per-resource exception fallback; prefix/input/output/state string construction can throw outside logging catches. run() invokes cleanup() outside the protocol try block.",
+      "requested_resolution": "Attempt each applicable cleanup API independently even if journaling/string construction fails; never retry an API after it has already been invoked."
+    },
+    {
+      "id": "R2",
+      "severity": "medium",
+      "status": "RESOLVED_SOURCE_REVIEW",
+      "subject": "TX whitelist allocation inside measured API interval",
+      "evidence": "The WriteMsgs lambda currently constructs a Bytes vector, validates and increments next_tx between QPC samples.",
+      "requested_resolution": "Complete whitelist validation and state bookkeeping before the measured interval, keeping only the actual provider call between samples."
+    },
+    {
+      "id": "R3",
+      "severity": "medium",
+      "status": "RESOLVED_SOURCE_REVIEW",
+      "subject": "Launcher bookkeeping exception after child start could return before child exit",
+      "resolution": "wait_for_child catches bookkeeping errors and waits before returning; result includes PID, exit and bookkeeping error."
+    },
+    {
+      "id": "R4",
+      "severity": "low",
+      "status": "RESOLVED_SOURCE_REVIEW",
+      "subject": "Qualification certificate could change between preflight and attribution",
+      "resolution": "Parse one certificate byte snapshot, retain hash, require exact hash after client scan; require launcher/client-check/EXE/contract pins."
+    },
+    {
+      "id": "R5",
+      "severity": "low",
+      "status": "RESOLVED_SOURCE_REVIEW",
+      "subject": "Non-ASCII ReadVersion bytes could invalidate UTF-8 JSON",
+      "resolution": "quote() now escapes bytes >=127 as Unicode byte values; raw buffers remain hex."
+    },
+    {
+      "id": "R6",
+      "severity": "low",
+      "status": "RESOLVED_SOURCE_REVIEW",
+      "subject": "BCrypt buffer lifetime on hashing error",
+      "resolution": "Hash object backing vector declared outside try; hash handle destroyed before backing buffer unwinds."
+    },
+    {
+      "id": "R7",
+      "severity": "low",
+      "status": "RESOLVED_SOURCE_REVIEW",
+      "subject": "Qualification runner default input pin path",
+      "resolution": "Default path now probe/INPUT_PINS.json, matching builder output."
+    }
+  ],
+  "reviewed_passes": [
+    "Exactly three fixed outbound frames BF,81,8300; monotonically ordered stage guard",
+    "No protocol advancement on any nonzero J2534 return",
+    "Exact ECU identity and C1/C3 payload validation",
+    "Five ordered SET_CONFIG requests before one five-item GET_CONFIG using pInput and null pOutput",
+    "GET_CONFIG logging reads owned bounded storage and validates pointer, count, parameter order and effective values",
+    "Four-zero-byte broad PASS_FILTER mask, pattern and nonnull flow object",
+    "All received status/count/message fields logged before parser validation",
+    "Bounded frame assembly with exact framing/checksum and no retry",
+    "Header uses stdcall on Windows and PASSTHRU_MSG x86 size assertion; status16 is ERR_BUFFER_EMPTY",
+    "Protocol ends immediately after accepted C3; normal and API-status cleanup order StopMsgFilter,Disconnect,Close",
+    "Compiled ABI assertions explicitly pin 32-bit long/pointers, Data offset24, SCONFIG size8, SCONFIG_LIST size8/ConfigPtr offset4",
+    "One-shot launcher checks all exact gates, source=user authorization, certificate/file pins and exclusive fresh session reservation",
+    "Launcher waits for an already-started child despite bookkeeping failure; no termination/retry path",
+    "Client scan records scope and fails on same-session module-inspection failures"
+  ],
+  "pending": [],
+  "timeout_policy": {
+    "write_ms": 1000,
+    "read_slice_max_ms": 1000,
+    "whole_frame_bound_ms": 2000,
+    "source": "Parent confirmed retained RK02 policy; no new delay or retry"
+  },
+  "limitations": [
+    "Review and65 synthetic same-PE tests are offline evidence only; no physical authorization or successful vehicle transition is established.",
+    "Historical physical logs do not contain a complete successful wire/API transition. The C3 reply oracle is verified stock-code offline execution; BF/C1/status16 are preserved physical evidence.",
+    "Real provider defaults and timing remain unmeasured. The retained read policy is a maximum1000ms requested slice with a2000ms between-call frame deadline, not a guarantee against OS/provider/IO stalls.",
+    "Complete cleanup is verified for ordinary returns and handled C++/journal errors; abrupt termination, native provider faults and OS failures are outside these tests.",
+    "The PE retains generic OS loader/file APIs for its gated fixed provider bootstrap and C runtime; their presence does not mean arbitrary provider/payload selection is exposed."
+  ],
+  "reviewed_utc": "2026-09-30T01:15:26.589662+00:00",
+  "reviewer": "oem_transition",
+  "open_findings": [],
+  "physical_authorization_received": false,
+  "physical_qualification_claimed": false,
+  "tests_executed_by_reviewer": 0,
+  "builds": [
+    {
+      "manifest": {
+        "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\build_a\\BUILD.json",
+        "sha256": "7aca37081e106e0cddafbe4e5aa096fb0ad0594bf19067abb2d04db2f2908ab2",
+        "size": 3433
+      },
+      "executable": {
+        "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\build_a\\rk03_transition_probe32.exe",
+        "sha256": "1573fa0046a6c1ee6b0ca9d3b0873ce0b3536fb2cdc6888304fb1e7b1ff3513e",
+        "size": 283648
+      },
+      "imports": {
+        "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\build_a\\imports.txt",
+        "sha256": "ad934360fdaf069343af570b5f23af98722c60bf7b137d34a09dc68a9eb8e30e",
+        "size": 4284
+      },
+      "headers": {
+        "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\build_a\\headers.txt",
+        "sha256": "faa69b80a0c04875cfd59de56a41d24ecfd24e46fc35a0e0bf32d5565a33e4d0",
+        "size": 5182
+      }
+    },
+    {
+      "manifest": {
+        "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\build_b\\BUILD.json",
+        "sha256": "6d6dc72bc577d25a2c7a6522c7ea1c17a52f128daf57735529231a9675dabcae",
+        "size": 3433
+      },
+      "executable": {
+        "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\build_b\\rk03_transition_probe32.exe",
+        "sha256": "1573fa0046a6c1ee6b0ca9d3b0873ce0b3536fb2cdc6888304fb1e7b1ff3513e",
+        "size": 283648
+      },
+      "imports": {
+        "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\build_b\\imports.txt",
+        "sha256": "105ceae84cced6b289037e12fa81a794d3702bc20d0143dcd3004cc5db98a8d3",
+        "size": 4284
+      },
+      "headers": {
+        "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\build_b\\headers.txt",
+        "sha256": "3d7eaf2188b3c7a442b14b69d510f7a9ca4f8d282dc3a6c6431658b3e498e09d",
+        "size": 5182
+      }
+    }
+  ],
+  "build_review": {
+    "source_closure": "Only probe/src/main.cpp and local probe headers compile; inherited src/, owned_artifact.h and acquisition bootstrap are outside this target.",
+    "all_recorded_source_compiler_linker_build_log_import_header_hashes_verified": true,
+    "reproducible_executable_sha256": "1573fa0046a6c1ee6b0ca9d3b0873ce0b3536fb2cdc6888304fb1e7b1ff3513e",
+    "machine": 332,
+    "imported_dlls": [
+      "bcrypt.dll",
+      "KERNEL32.dll"
+    ],
+    "dynamic_provider_exports": [
+      "PassThruOpen",
+      "PassThruClose",
+      "PassThruConnect",
+      "PassThruDisconnect",
+      "PassThruReadMsgs",
+      "PassThruWriteMsgs",
+      "PassThruStartMsgFilter",
+      "PassThruStopMsgFilter",
+      "PassThruReadVersion",
+      "PassThruIoctl"
+    ],
+    "binary_string_scan": "Only these ten PassThru export names occur; selected acquisition/kernel/application markers absent. String scan is supplementary, not the basis of the finite-TX proof."
+  },
+  "finite_tx_proof": {
+    "whitelist": [
+      "8010f001bf40",
+      "8010f0018102",
+      "8010f002830005"
+    ],
+    "maximum_attempts": 3,
+    "ordered": true,
+    "sole_physical_write_call": "probe/src/probe_core.hpp Probe::exchange: api.write(channel,&tx.value,&count,1000)",
+    "data_origin": "fixed_tx(stage) internal immutable three-frame table; no argument/file/response controls transmitted bytes",
+    "callers": "Probe::run invokes exchange(0), exchange(1), exchange(2), each only after preceding strict successful reply; exceptions leave protocol and enter cleanup",
+    "guard": "stage==next_tx && stage<3 at construction and dispatch; next_tx increments after each API invocation; no retry loop around transmission",
+    "other_callable_ioctls": [
+      2,
+      1
+    ],
+    "forbidden_paths": "No seed/key/BEEF/session declaration/kernel upload/kernel start/ROM read/flash path is in the probe compilation closure",
+    "binding": "Reviewed source inputs match both independently produced clean PE builds; offline fixture tests invoke the selected physical PE through an early-return static fake branch."
+  },
+  "native_bootstrap_review": {
+    "fixed_session": "RK03_TRANSITION_PROBE_01",
+    "fixed_provider_path": "C:\\Windows\\SysWOW64\\op20pt32.dll",
+    "fixed_provider_sha256": "f432084801762d919a3c31974616e097562424470003edc4f4fb843df34103cf",
+    "fixed_auth_and_root_reservation": true,
+    "auth_binds_running_executable_hash_and_contract": true,
+    "exclusive_invocation_once_precedes_provider_access": true,
+    "provider_locked_against_writes_and_deletes_while_hash_checked_and_loaded": true,
+    "offline_branch_returns_before_dynamic_provider_load": true,
+    "all_normal_and_handled_error_exit_resources_released": true,
+    "limits": "Forced process termination, provider crash, OS failure, and actual DLL/provider timing are not exercised by static fake qualification. DLL RAII release is distinct from verified J2534 Close status."
+  },
+  "qualification_review": {
+    "report": {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\TEST_REPORT.json",
+      "sha256": "5c0c017258750b607b660c0f0e0ef8eb033428f020df1e5ee59d07863be82f0c",
+      "size": 124637
+    },
+    "runner": {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\tools\\test_probe_independent.py",
+      "sha256": "3f348d00cbb450fb455e79431b1f2233e7287e82691e031e3f26b833d7985fcb",
+      "size": 30482
+    },
+    "status": "PASS",
+    "test_cases": 65,
+    "passed_cases": 65,
+    "independent_hash_checks_of_test_inputs_sources_and_outputs": 211,
+    "independently_parsed_journal_api_intents": 1059,
+    "independently_parsed_journal_read_returns": 244,
+    "independent_audit_errors": [],
+    "case_assertions_reviewed": [
+      "same x86 PE and identical two-build source/binary hashes",
+      "all65 declared fake fixtures covered, no provider loaded by offline branch",
+      "exact three-frame ordered whitelist and correct failure stop point",
+      "five SET calls then input-only GET with sentinels and list/value integrity",
+      "broad four-zero mask/pattern/nonnull flow filter before BF",
+      "all requested/effective config/filter states and bounded input/output records",
+      "exact retained SOM/BF/SOM/C1/status16 receive records including timestamp/flags/counts",
+      "immediate termination on any nonzero API return; no retry",
+      "malformed framing/checksum/status/count/protocol/metadata/echo and wrong identity/replies",
+      "configuration and filter mutation/error paths",
+      "cleanup order/status effects, all-cleanup-failure case, journal-failure ownership path",
+      "QPC boundaries/monotonic sequence/UTC/counts and x86 stack checks",
+      "success ends after full expected C3; no later TX"
+    ]
+  },
+  "launcher_review": {
+    "source": {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\launch_probe_once.py",
+      "sha256": "3956ce39faf25f9c6759bcddb7d2d843062f0d2669477d70cc60ade9478fa5bd",
+      "size": 7170
+    },
+    "client_check": {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\check_clients.ps1",
+      "sha256": "4c86344593f64b50d33784c69e7033af43d554d8d8962ddc6eb68221c47a0d04",
+      "size": 1982
+    },
+    "offline_tests": {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\LAUNCHER_FINAL_TESTS.json",
+      "sha256": "875011532fbd42838e99e0203300d961551e767a924f52f9efe408ea1a12b057",
+      "size": 795
+    },
+    "negative_gate_cases": 12,
+    "positive_gate_cases": 1,
+    "lifecycle_cases": 2,
+    "exact_human_commit": "PROCEED RK03 TRANSITION PROBE",
+    "one_shot_enforced_by": "fixed-session exclusive authorization/root reservation/native invocation marker and count-zero gate",
+    "child_lifetime": "bookkeeping exceptions are recorded but cannot return before waiting for child exit",
+    "client_scan_scope": "all named diagnostic/Java process scan plus same-Windows-session module inspection; same-session inspection failure blocks launch"
+  }
+}

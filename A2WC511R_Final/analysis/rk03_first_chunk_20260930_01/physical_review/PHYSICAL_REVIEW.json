@@ -1,0 +1,3025 @@
+{
+  "schema": 1,
+  "status": "PASS_INDEPENDENT_PHYSICAL_FIRST_CHUNK_AUDIT",
+  "reviewer": "oem_transition",
+  "utc": "2026-09-30T04:01:21.845757+00:00",
+  "session_id": "RK03_FIRST_CHUNK_01",
+  "reviewer_native_executions": 0,
+  "reviewer_provider_loads": 0,
+  "physical_invocations_recorded": 1,
+  "additional_physical_authorization": false,
+  "unresolved_findings": [],
+  "qualification": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\qualification\\QUALIFICATION.json",
+    "bytes": 196687,
+    "sha256": "51f42896bc04e63b62fdcbb57b490ef8212af69f906e71e5e51c577ce12a6af4"
+  },
+  "contract": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\FIRST_CHUNK_REVIEW_CONTRACT.json",
+    "bytes": 10169,
+    "sha256": "a7482b0eba224c9642745b830c71b3fff14f987988a58cdc1376e45dc0aa839c"
+  },
+  "physical_executable": {
+    "path": "C:\\Dev\\A2WC511R_RK03_FirstChunkPhysical\\first_chunk\\build_a\\rk03_first_chunk_probe32.exe",
+    "bytes": 349696,
+    "sha256": "3a6abe4e11fc6a85682c33018e67b533897860a932962f2840976fbd35ed1c02"
+  },
+  "provider": {
+    "path": "C:\\Windows\\SysWOW64\\op20pt32.dll",
+    "bytes": 1781896,
+    "sha256": "f432084801762d919a3c31974616e097562424470003edc4f4fb843df34103cf"
+  },
+  "audit_script": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\physical_review\\audit_physical.py",
+    "bytes": 17433,
+    "sha256": "bf3d28e45f07ed9984088605efeb899e0d6b9a71d0c8a98d40b05d035c4c5d29"
+  },
+  "protocol_calculation_source": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\protocol.py",
+    "bytes": 4623,
+    "sha256": "d7909dc2026fae0545d94d048c2c71ab366e804df84c5ee563d656d3774dbf38"
+  },
+  "raw_evidence_before": [
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FirstChunkPhysical\\physical_session\\RK03_FIRST_CHUNK_01\\AUTHORIZATION.txt",
+      "bytes": 219,
+      "sha256": "ec9cfb1962d8c996c3549f412578bacdc5930935783caf3eeb071b04d2200f14"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FirstChunkPhysical\\physical_session\\RK03_FIRST_CHUNK_01\\console.log",
+      "bytes": 57,
+      "sha256": "342b18599a4dccdb19bc6883c7b9c173f245cf0b947fee99a428b7a5fa1f2d7b"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FirstChunkPhysical\\physical_session\\RK03_FIRST_CHUNK_01\\EXECUTION.json",
+      "bytes": 1022,
+      "sha256": "7ccec3261c50787aee5e702348a1add87b28e1b9cc638b77184b4df1f8248b21"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FirstChunkPhysical\\physical_session\\RK03_FIRST_CHUNK_01\\EXECUTION_BEGIN.json",
+      "bytes": 882,
+      "sha256": "8a8f147bcddacbf250c70112646fa6e79c106a58d1ef7837c1a7f1097bf04a72"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FirstChunkPhysical\\physical_session\\RK03_FIRST_CHUNK_01\\invocation.once",
+      "bytes": 150,
+      "sha256": "fac796a5f7ab2a06916ba40e61a6f0d8759306bb0e5e480405c33c8b89b0eddf"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FirstChunkPhysical\\physical_session\\RK03_FIRST_CHUNK_01\\launch.reserved",
+      "bytes": 150,
+      "sha256": "fac796a5f7ab2a06916ba40e61a6f0d8759306bb0e5e480405c33c8b89b0eddf"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FirstChunkPhysical\\physical_session\\RK03_FIRST_CHUNK_01\\native_api.jsonl",
+      "bytes": 163830,
+      "sha256": "d258d9eb5b0690e8dd1c79d29f217aa86e152d866e1aeb1e938bf98aa13896a3"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FirstChunkPhysical\\physical_session\\RK03_FIRST_CHUNK_01\\POSTEXIT_CLIENT_CHECK.json",
+      "bytes": 494,
+      "sha256": "062483de953cab256ba25f1ad9ca8a39801c14004dd27f4d3aae19b6434e9f28"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FirstChunkPhysical\\physical_session\\RK03_FIRST_CHUNK_01\\PRELAUNCH_CLIENT_CHECK.json",
+      "bytes": 494,
+      "sha256": "81096bde085e38a0946fa0dae6141c36e730c8c3b95aaca4115f86d2f0cca823"
+    }
+  ],
+  "raw_evidence_after": [
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FirstChunkPhysical\\physical_session\\RK03_FIRST_CHUNK_01\\AUTHORIZATION.txt",
+      "bytes": 219,
+      "sha256": "ec9cfb1962d8c996c3549f412578bacdc5930935783caf3eeb071b04d2200f14"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FirstChunkPhysical\\physical_session\\RK03_FIRST_CHUNK_01\\console.log",
+      "bytes": 57,
+      "sha256": "342b18599a4dccdb19bc6883c7b9c173f245cf0b947fee99a428b7a5fa1f2d7b"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FirstChunkPhysical\\physical_session\\RK03_FIRST_CHUNK_01\\EXECUTION.json",
+      "bytes": 1022,
+      "sha256": "7ccec3261c50787aee5e702348a1add87b28e1b9cc638b77184b4df1f8248b21"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FirstChunkPhysical\\physical_session\\RK03_FIRST_CHUNK_01\\EXECUTION_BEGIN.json",
+      "bytes": 882,
+      "sha256": "8a8f147bcddacbf250c70112646fa6e79c106a58d1ef7837c1a7f1097bf04a72"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FirstChunkPhysical\\physical_session\\RK03_FIRST_CHUNK_01\\invocation.once",
+      "bytes": 150,
+      "sha256": "fac796a5f7ab2a06916ba40e61a6f0d8759306bb0e5e480405c33c8b89b0eddf"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FirstChunkPhysical\\physical_session\\RK03_FIRST_CHUNK_01\\launch.reserved",
+      "bytes": 150,
+      "sha256": "fac796a5f7ab2a06916ba40e61a6f0d8759306bb0e5e480405c33c8b89b0eddf"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FirstChunkPhysical\\physical_session\\RK03_FIRST_CHUNK_01\\native_api.jsonl",
+      "bytes": 163830,
+      "sha256": "d258d9eb5b0690e8dd1c79d29f217aa86e152d866e1aeb1e938bf98aa13896a3"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FirstChunkPhysical\\physical_session\\RK03_FIRST_CHUNK_01\\POSTEXIT_CLIENT_CHECK.json",
+      "bytes": 494,
+      "sha256": "062483de953cab256ba25f1ad9ca8a39801c14004dd27f4d3aae19b6434e9f28"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FirstChunkPhysical\\physical_session\\RK03_FIRST_CHUNK_01\\PRELAUNCH_CLIENT_CHECK.json",
+      "bytes": 494,
+      "sha256": "81096bde085e38a0946fa0dae6141c36e730c8c3b95aaca4115f86d2f0cca823"
+    }
+  ],
+  "native_journal": {
+    "path": "C:\\Dev\\A2WC511R_RK03_FirstChunkPhysical\\physical_session\\RK03_FIRST_CHUNK_01\\native_api.jsonl",
+    "bytes": 163830,
+    "sha256": "d258d9eb5b0690e8dd1c79d29f217aa86e152d866e1aeb1e938bf98aa13896a3"
+  },
+  "execution": {
+    "session_id": "RK03_FIRST_CHUNK_01",
+    "command_argv": [
+      "C:\\Dev\\A2WC511R_RK03_FirstChunkPhysical\\first_chunk\\build_a\\rk03_first_chunk_probe32.exe",
+      "--physical-first-chunk-probe",
+      "--session",
+      "C:\\Dev\\A2WC511R_RK03_FirstChunkPhysical\\physical_session\\RK03_FIRST_CHUNK_01",
+      "--authorization-file",
+      "C:\\Dev\\A2WC511R_RK03_FirstChunkPhysical\\physical_session\\RK03_FIRST_CHUNK_01\\AUTHORIZATION.txt"
+    ],
+    "started_utc": "2026-09-30T03:54:58.216770+00:00",
+    "executable_sha256": "3a6abe4e11fc6a85682c33018e67b533897860a932962f2840976fbd35ed1c02",
+    "contract_sha256": "a7482b0eba224c9642745b830c71b3fff14f987988a58cdc1376e45dc0aa839c",
+    "qualification_sha256": "51f42896bc04e63b62fdcbb57b490ef8212af69f906e71e5e51c577ce12a6af4",
+    "authorization_source": "Exact new user token after IGNITION OFF and TEST MODE ON",
+    "retry_allowed": false,
+    "pid": 7496,
+    "exit_code": 0,
+    "exited_utc": "2026-09-30T03:54:59.367746+00:00",
+    "process_exited": true,
+    "bookkeeping_error": null
+  },
+  "call_count": 43,
+  "J2534_call_count": 40,
+  "TX_count": 8,
+  "RX_record_count": 16,
+  "full_response_count": 8,
+  "all_return_statuses_zero": true,
+  "ECU_BF_identity": "2F12515306",
+  "actual_seed": "a917a34f",
+  "actual_key": "4015f497",
+  "calculated_key": "4015f497",
+  "request_frames": [
+    "8010f001bf40",
+    "8010f0018102",
+    "8010f002830005",
+    "8010f0022701aa",
+    "8010f00627024015f4978f",
+    "8010f0031085021a",
+    "8010f00834ff30000400071006",
+    "8010f08436ff30002178b10a345b1076fd256f75f05ba033e301ed7bbae243b735e6aedbc143c40be01bf9b6caab4599eccaacb23d3eeb06dddf471ed3b0238f2bf0553861e117054bad87079a8cbb9681c01303b7825b2d199bc7e5c4dd5bcf85cf1a64050df3ab050df3ab2a45f9b476963b1f16baea94084e321a79bd4cf9c0f25912ab9d7b8df4"
+  ],
+  "response_frames": [
+    "80f01039ffa210112f1251530673facba62b81fea800000060ce54f9b1e4000c200000000000dc00005d1f3080f226000043fb00e1000000000000c1f0c2",
+    "80f01003c1ef8fc2",
+    "80f01007c30000ff00ff0048",
+    "80f010066701a917a34fa0",
+    "80f0100367023420",
+    "80f01002508557",
+    "80f0100274847a",
+    "80f0100176f7"
+  ],
+  "initial_GET_values": [
+    {
+      "parameter": 22,
+      "value": 0
+    },
+    {
+      "parameter": 7,
+      "value": 1
+    },
+    {
+      "parameter": 10,
+      "value": 0
+    },
+    {
+      "parameter": 12,
+      "value": 0
+    },
+    {
+      "parameter": 3,
+      "value": 0
+    }
+  ],
+  "actual_waits": [
+    {
+      "sequence": 25,
+      "reason": "post_key_ack",
+      "requested_ms": 200,
+      "actual_ms": 203.774,
+      "overshoot_ms": 3.774
+    },
+    {
+      "sequence": 29,
+      "reason": "post_session_ack",
+      "requested_ms": 100,
+      "actual_ms": 102.1152,
+      "overshoot_ms": 2.1152
+    },
+    {
+      "sequence": 33,
+      "reason": "pre_download_declaration",
+      "requested_ms": 200,
+      "actual_ms": 200.4695,
+      "overshoot_ms": 0.4695
+    }
+  ],
+  "baud_status": "SET15625_ACCEPTED_WITH_INTACT_OUTPUT_NO_BAUD_GET",
+  "first_chunk": {
+    "address": "FFFF3000",
+    "end_exclusive": "FFFF3080",
+    "cipher_bytes": 128,
+    "wire_sha256": "d2db948b4bedf0d660f00ec0830a8dfcc8a4686be0bf218327799898b88359f2",
+    "ACK": "80f0100176f7",
+    "RAM_readback": false,
+    "kernel_start": false
+  },
+  "cleanup_statuses": [
+    {
+      "function": "PassThruStopMsgFilter",
+      "status": 0
+    },
+    {
+      "function": "PassThruDisconnect",
+      "status": 0
+    },
+    {
+      "function": "PassThruClose",
+      "status": 0
+    }
+  ],
+  "comparison_to_prior_transition": {
+    "evidence": {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\physical_session\\RK03_TRANSITION_PROBE_01\\native_api.jsonl",
+      "bytes": 72999,
+      "sha256": "57352963c842fa8cef0f45769a8c0f9613994df9c198fe434ee78e73d262a68b"
+    },
+    "same_BF81_83_TX_RX_bytes": true,
+    "same_provider_version_buffers": true,
+    "current_C1_read_exit_to_83_write_entry_ms": 0.0712,
+    "current_83_write_exit_to_C3_read_exit_ms": 30.6448
+  },
+  "ordered_events": [
+    {
+      "sequence": 0,
+      "function": "PassThruOpen",
+      "status": 0,
+      "input": {
+        "name_present": false,
+        "device_output_present": true
+      },
+      "output": {
+        "device": 1
+      },
+      "qpc_before": 3822685535708,
+      "qpc_after": 3822685650372,
+      "qpc_frequency": 10000000
+    },
+    {
+      "sequence": 1,
+      "function": "PassThruReadVersion",
+      "status": 0,
+      "input": {
+        "device": 1,
+        "firmware_capacity": 80,
+        "dll_capacity": 80,
+        "api_capacity": 80
+      },
+      "output": {
+        "firmware": {
+          "capacity": 80,
+          "nul_terminated": true,
+          "value": "1.17.4877",
+          "raw_buffer_hex": "312e31372e343837370000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "dll": {
+          "capacity": 80,
+          "nul_terminated": true,
+          "value": "1.02.4870 Feb  3 2017 23:36:05",
+          "raw_buffer_hex": "312e30322e343837302046656220203320323031372032333a33363a30350000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "api": {
+          "capacity": 80,
+          "nul_terminated": true,
+          "value": "04.04",
+          "raw_buffer_hex": "30342e3034000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "canaries_intact": true
+      },
+      "qpc_before": 3822685650878,
+      "qpc_after": 3822685650884,
+      "qpc_frequency": 10000000
+    },
+    {
+      "sequence": 2,
+      "function": "PassThruConnect",
+      "status": 0,
+      "input": {
+        "device": 1,
+        "protocol": 3,
+        "flags": 512,
+        "baud": 4800,
+        "channel_output_present": true
+      },
+      "output": {
+        "channel": 3
+      },
+      "qpc_before": 3822685651640,
+      "qpc_after": 3822685681786,
+      "qpc_frequency": 10000000
+    },
+    {
+      "sequence": 3,
+      "function": "PassThruIoctl",
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "ioctl": 2,
+        "input_present": true,
+        "output_present": false,
+        "config": {
+          "list_present": true,
+          "returned_num_params": 1,
+          "config_pointer": 19890560,
+          "owned_buffer_pointer": 19890560,
+          "pointer_matches_owned": true,
+          "owned_capacity": 1,
+          "owned_buffer_entries": [
+            {
+              "parameter": 22,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "output": {
+        "config": {
+          "list_present": true,
+          "returned_num_params": 1,
+          "config_pointer": 19890560,
+          "owned_buffer_pointer": 19890560,
+          "pointer_matches_owned": true,
+          "owned_capacity": 1,
+          "owned_buffer_entries": [
+            {
+              "parameter": 22,
+              "value": 0
+            }
+          ]
+        },
+        "canaries_intact": true
+      },
+      "qpc_before": 3822685682544,
+      "qpc_after": 3822685686260,
+      "qpc_frequency": 10000000
+    },
+    {
+      "sequence": 4,
+      "function": "PassThruIoctl",
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "ioctl": 2,
+        "input_present": true,
+        "output_present": false,
+        "config": {
+          "list_present": true,
+          "returned_num_params": 1,
+          "config_pointer": 19890560,
+          "owned_buffer_pointer": 19890560,
+          "pointer_matches_owned": true,
+          "owned_capacity": 1,
+          "owned_buffer_entries": [
+            {
+              "parameter": 7,
+              "value": 1
+            }
+          ]
+        }
+      },
+      "output": {
+        "config": {
+          "list_present": true,
+          "returned_num_params": 1,
+          "config_pointer": 19890560,
+          "owned_buffer_pointer": 19890560,
+          "pointer_matches_owned": true,
+          "owned_capacity": 1,
+          "owned_buffer_entries": [
+            {
+              "parameter": 7,
+              "value": 1
+            }
+          ]
+        },
+        "canaries_intact": true
+      },
+      "qpc_before": 3822685686639,
+      "qpc_after": 3822685690394,
+      "qpc_frequency": 10000000
+    },
+    {
+      "sequence": 5,
+      "function": "PassThruIoctl",
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "ioctl": 2,
+        "input_present": true,
+        "output_present": false,
+        "config": {
+          "list_present": true,
+          "returned_num_params": 1,
+          "config_pointer": 19890560,
+          "owned_buffer_pointer": 19890560,
+          "pointer_matches_owned": true,
+          "owned_capacity": 1,
+          "owned_buffer_entries": [
+            {
+              "parameter": 10,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "output": {
+        "config": {
+          "list_present": true,
+          "returned_num_params": 1,
+          "config_pointer": 19890560,
+          "owned_buffer_pointer": 19890560,
+          "pointer_matches_owned": true,
+          "owned_capacity": 1,
+          "owned_buffer_entries": [
+            {
+              "parameter": 10,
+              "value": 0
+            }
+          ]
+        },
+        "canaries_intact": true
+      },
+      "qpc_before": 3822685690793,
+      "qpc_after": 3822685695375,
+      "qpc_frequency": 10000000
+    },
+    {
+      "sequence": 6,
+      "function": "PassThruIoctl",
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "ioctl": 2,
+        "input_present": true,
+        "output_present": false,
+        "config": {
+          "list_present": true,
+          "returned_num_params": 1,
+          "config_pointer": 19890560,
+          "owned_buffer_pointer": 19890560,
+          "pointer_matches_owned": true,
+          "owned_capacity": 1,
+          "owned_buffer_entries": [
+            {
+              "parameter": 12,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "output": {
+        "config": {
+          "list_present": true,
+          "returned_num_params": 1,
+          "config_pointer": 19890560,
+          "owned_buffer_pointer": 19890560,
+          "pointer_matches_owned": true,
+          "owned_capacity": 1,
+          "owned_buffer_entries": [
+            {
+              "parameter": 12,
+              "value": 0
+            }
+          ]
+        },
+        "canaries_intact": true
+      },
+      "qpc_before": 3822685696029,
+      "qpc_after": 3822685699701,
+      "qpc_frequency": 10000000
+    },
+    {
+      "sequence": 7,
+      "function": "PassThruIoctl",
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "ioctl": 2,
+        "input_present": true,
+        "output_present": false,
+        "config": {
+          "list_present": true,
+          "returned_num_params": 1,
+          "config_pointer": 19890560,
+          "owned_buffer_pointer": 19890560,
+          "pointer_matches_owned": true,
+          "owned_capacity": 1,
+          "owned_buffer_entries": [
+            {
+              "parameter": 3,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "output": {
+        "config": {
+          "list_present": true,
+          "returned_num_params": 1,
+          "config_pointer": 19890560,
+          "owned_buffer_pointer": 19890560,
+          "pointer_matches_owned": true,
+          "owned_capacity": 1,
+          "owned_buffer_entries": [
+            {
+              "parameter": 3,
+              "value": 0
+            }
+          ]
+        },
+        "canaries_intact": true
+      },
+      "qpc_before": 3822685700021,
+      "qpc_after": 3822685703836,
+      "qpc_frequency": 10000000
+    },
+    {
+      "sequence": 8,
+      "function": "PassThruIoctl",
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "ioctl": 1,
+        "input_present": true,
+        "output_present": false,
+        "config": {
+          "list_present": true,
+          "returned_num_params": 5,
+          "config_pointer": 19890480,
+          "owned_buffer_pointer": 19890480,
+          "pointer_matches_owned": true,
+          "owned_capacity": 5,
+          "owned_buffer_entries": [
+            {
+              "parameter": 22,
+              "value": 3512641005
+            },
+            {
+              "parameter": 7,
+              "value": 3512641005
+            },
+            {
+              "parameter": 10,
+              "value": 3512641005
+            },
+            {
+              "parameter": 12,
+              "value": 3512641005
+            },
+            {
+              "parameter": 3,
+              "value": 3512641005
+            }
+          ]
+        }
+      },
+      "output": {
+        "config": {
+          "list_present": true,
+          "returned_num_params": 5,
+          "config_pointer": 19890480,
+          "owned_buffer_pointer": 19890480,
+          "pointer_matches_owned": true,
+          "owned_capacity": 5,
+          "owned_buffer_entries": [
+            {
+              "parameter": 22,
+              "value": 0
+            },
+            {
+              "parameter": 7,
+              "value": 1
+            },
+            {
+              "parameter": 10,
+              "value": 0
+            },
+            {
+              "parameter": 12,
+              "value": 0
+            },
+            {
+              "parameter": 3,
+              "value": 0
+            }
+          ]
+        },
+        "canaries_intact": true
+      },
+      "qpc_before": 3822685704309,
+      "qpc_after": 3822685735418,
+      "qpc_frequency": 10000000
+    },
+    {
+      "sequence": 9,
+      "function": "PassThruStartMsgFilter",
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "filter_type": 1,
+        "mask_present": true,
+        "pattern_present": true,
+        "flow_present": true,
+        "filter_output_present": true,
+        "mask": {
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 4,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 4,
+          "data_truncated": false,
+          "data_hex": "00000000"
+        },
+        "pattern": {
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 4,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 4,
+          "data_truncated": false,
+          "data_hex": "00000000"
+        },
+        "flow": {
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 4,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 4,
+          "data_truncated": false,
+          "data_hex": "00000000"
+        }
+      },
+      "output": {
+        "filter_id": 0,
+        "mask": {
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 4,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 4,
+          "data_truncated": false,
+          "data_hex": "00000000"
+        },
+        "pattern": {
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 4,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 4,
+          "data_truncated": false,
+          "data_hex": "00000000"
+        },
+        "flow": {
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 4,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 4,
+          "data_truncated": false,
+          "data_hex": "00000000"
+        },
+        "canaries_intact": true
+      },
+      "qpc_before": 3822685736200,
+      "qpc_after": 3822685741775,
+      "qpc_frequency": 10000000
+    },
+    {
+      "sequence": 10,
+      "function": "PassThruWriteMsgs",
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "timeout_ms": 1000,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message_capacity": 1,
+        "message": {
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 6,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 6,
+          "data_truncated": false,
+          "data_hex": "8010f001bf40"
+        }
+      },
+      "output": {
+        "count": 1,
+        "message": {
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 6,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 6,
+          "data_truncated": false,
+          "data_hex": "8010f001bf40"
+        },
+        "canaries_intact": true
+      },
+      "qpc_before": 3822685742451,
+      "qpc_after": 3822685873241,
+      "qpc_frequency": 10000000
+    },
+    {
+      "sequence": 11,
+      "function": "PassThruReadMsgs",
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "timeout_ms": 1000,
+        "input_count": 1,
+        "count_pointer_present": true,
+        "message_capacity": 1,
+        "message": {
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 0,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 0,
+          "data_truncated": false,
+          "data_hex": ""
+        }
+      },
+      "output": {
+        "count": 1,
+        "message": {
+          "protocol": 3,
+          "rx_status": 2,
+          "tx_flags": 0,
+          "timestamp": 2140142023,
+          "data_size": 0,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 0,
+          "data_truncated": false,
+          "data_hex": ""
+        },
+        "canaries_intact": true
+      },
+      "qpc_before": 3822685874587,
+      "qpc_after": 3822686570593,
+      "qpc_frequency": 10000000
+    },
+    {
+      "sequence": 12,
+      "function": "PassThruReadMsgs",
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "timeout_ms": 1000,
+        "input_count": 1,
+        "count_pointer_present": true,
+        "message_capacity": 1,
+        "message": {
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 0,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 0,
+          "data_truncated": false,
+          "data_hex": ""
+        }
+      },
+      "output": {
+        "count": 1,
+        "message": {
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 2140271685,
+          "data_size": 62,
+          "extra_data_index": 62,
+          "buffer_capacity": 4128,
+          "logged_bytes": 62,
+          "data_truncated": false,
+          "data_hex": "80f01039ffa210112f1251530673facba62b81fea800000060ce54f9b1e4000c200000000000dc00005d1f3080f226000043fb00e1000000000000c1f0c2"
+        },
+        "canaries_intact": true
+      },
+      "qpc_before": 3822686572160,
+      "qpc_after": 3822687236704,
+      "qpc_frequency": 10000000
+    },
+    {
+      "sequence": 13,
+      "function": "PassThruWriteMsgs",
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "timeout_ms": 1000,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message_capacity": 1,
+        "message": {
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 6,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 6,
+          "data_truncated": false,
+          "data_hex": "8010f0018102"
+        }
+      },
+      "output": {
+        "count": 1,
+        "message": {
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 6,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 6,
+          "data_truncated": false,
+          "data_hex": "8010f0018102"
+        },
+        "canaries_intact": true
+      },
+      "qpc_before": 3822687238268,
+      "qpc_after": 3822687419056,
+      "qpc_frequency": 10000000
+    },
+    {
+      "sequence": 14,
+      "function": "PassThruReadMsgs",
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "timeout_ms": 1000,
+        "input_count": 1,
+        "count_pointer_present": true,
+        "message_capacity": 1,
+        "message": {
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 0,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 0,
+          "data_truncated": false,
+          "data_hex": ""
+        }
+      },
+      "output": {
+        "count": 1,
+        "message": {
+          "protocol": 3,
+          "rx_status": 2,
+          "tx_flags": 0,
+          "timestamp": 2140290918,
+          "data_size": 0,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 0,
+          "data_truncated": false,
+          "data_hex": ""
+        },
+        "canaries_intact": true
+      },
+      "qpc_before": 3822687420530,
+      "qpc_after": 3822687598414,
+      "qpc_frequency": 10000000
+    },
+    {
+      "sequence": 15,
+      "function": "PassThruReadMsgs",
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "timeout_ms": 1000,
+        "input_count": 1,
+        "count_pointer_present": true,
+        "message_capacity": 1,
+        "message": {
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 0,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 0,
+          "data_truncated": false,
+          "data_hex": ""
+        }
+      },
+      "output": {
+        "count": 1,
+        "message": {
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 2140308201,
+          "data_size": 8,
+          "extra_data_index": 8,
+          "buffer_capacity": 4128,
+          "logged_bytes": 8,
+          "data_truncated": false,
+          "data_hex": "80f01003c1ef8fc2"
+        },
+        "canaries_intact": true
+      },
+      "qpc_before": 3822687599680,
+      "qpc_after": 3822687599699,
+      "qpc_frequency": 10000000
+    },
+    {
+      "sequence": 16,
+      "function": "PassThruWriteMsgs",
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "timeout_ms": 1000,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message_capacity": 1,
+        "message": {
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 7,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 7,
+          "data_truncated": false,
+          "data_hex": "8010f002830005"
+        }
+      },
+      "output": {
+        "count": 1,
+        "message": {
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 7,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 7,
+          "data_truncated": false,
+          "data_hex": "8010f002830005"
+        },
+        "canaries_intact": true
+      },
+      "qpc_before": 3822687600411,
+      "qpc_after": 3822687752705,
+      "qpc_frequency": 10000000
+    },
+    {
+      "sequence": 17,
+      "function": "PassThruReadMsgs",
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "timeout_ms": 1000,
+        "input_count": 1,
+        "count_pointer_present": true,
+        "message_capacity": 1,
+        "message": {
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 0,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 0,
+          "data_truncated": false,
+          "data_hex": ""
+        }
+      },
+      "output": {
+        "count": 1,
+        "message": {
+          "protocol": 3,
+          "rx_status": 2,
+          "tx_flags": 0,
+          "timestamp": 2140330017,
+          "data_size": 0,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 0,
+          "data_truncated": false,
+          "data_hex": ""
+        },
+        "canaries_intact": true
+      },
+      "qpc_before": 3822687753578,
+      "qpc_after": 3822688058209,
+      "qpc_frequency": 10000000
+    },
+    {
+      "sequence": 18,
+      "function": "PassThruReadMsgs",
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "timeout_ms": 1000,
+        "input_count": 1,
+        "count_pointer_present": true,
+        "message_capacity": 1,
+        "message": {
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 0,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 0,
+          "data_truncated": false,
+          "data_hex": ""
+        }
+      },
+      "output": {
+        "count": 1,
+        "message": {
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 2140355704,
+          "data_size": 12,
+          "extra_data_index": 12,
+          "buffer_capacity": 4128,
+          "logged_bytes": 12,
+          "data_truncated": false,
+          "data_hex": "80f01007c30000ff00ff0048"
+        },
+        "canaries_intact": true
+      },
+      "qpc_before": 3822688059134,
+      "qpc_after": 3822688059153,
+      "qpc_frequency": 10000000
+    },
+    {
+      "sequence": 19,
+      "function": "PassThruWriteMsgs",
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "timeout_ms": 1000,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message_capacity": 1,
+        "message": {
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 7,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 7,
+          "data_truncated": false,
+          "data_hex": "8010f0022701aa"
+        }
+      },
+      "output": {
+        "count": 1,
+        "message": {
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 7,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 7,
+          "data_truncated": false,
+          "data_hex": "8010f0022701aa"
+        },
+        "canaries_intact": true
+      },
+      "qpc_before": 3822688060147,
+      "qpc_after": 3822688212890,
+      "qpc_frequency": 10000000
+    },
+    {
+      "sequence": 20,
+      "function": "PassThruReadMsgs",
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "timeout_ms": 1000,
+        "input_count": 1,
+        "count_pointer_present": true,
+        "message_capacity": 1,
+        "message": {
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 0,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 0,
+          "data_truncated": false,
+          "data_hex": ""
+        }
+      },
+      "output": {
+        "count": 1,
+        "message": {
+          "protocol": 3,
+          "rx_status": 2,
+          "tx_flags": 0,
+          "timestamp": 2140375970,
+          "data_size": 0,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 0,
+          "data_truncated": false,
+          "data_hex": ""
+        },
+        "canaries_intact": true
+      },
+      "qpc_before": 3822688214353,
+      "qpc_after": 3822688498347,
+      "qpc_frequency": 10000000
+    },
+    {
+      "sequence": 21,
+      "function": "PassThruReadMsgs",
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "timeout_ms": 1000,
+        "input_count": 1,
+        "count_pointer_present": true,
+        "message_capacity": 1,
+        "message": {
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 0,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 0,
+          "data_truncated": false,
+          "data_hex": ""
+        }
+      },
+      "output": {
+        "count": 1,
+        "message": {
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 2140399718,
+          "data_size": 11,
+          "extra_data_index": 11,
+          "buffer_capacity": 4128,
+          "logged_bytes": 11,
+          "data_truncated": false,
+          "data_hex": "80f010066701a917a34fa0"
+        },
+        "canaries_intact": true
+      },
+      "qpc_before": 3822688499649,
+      "qpc_after": 3822688499674,
+      "qpc_frequency": 10000000
+    },
+    {
+      "sequence": 22,
+      "function": "PassThruWriteMsgs",
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "timeout_ms": 1000,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message_capacity": 1,
+        "message": {
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 11,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 11,
+          "data_truncated": false,
+          "data_hex": "8010f00627024015f4978f"
+        }
+      },
+      "output": {
+        "count": 1,
+        "message": {
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 11,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 11,
+          "data_truncated": false,
+          "data_hex": "8010f00627024015f4978f"
+        },
+        "canaries_intact": true
+      },
+      "qpc_before": 3822688500401,
+      "qpc_after": 3822688735901,
+      "qpc_frequency": 10000000
+    },
+    {
+      "sequence": 23,
+      "function": "PassThruReadMsgs",
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "timeout_ms": 1000,
+        "input_count": 1,
+        "count_pointer_present": true,
+        "message_capacity": 1,
+        "message": {
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 0,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 0,
+          "data_truncated": false,
+          "data_hex": ""
+        }
+      },
+      "output": {
+        "count": 1,
+        "message": {
+          "protocol": 3,
+          "rx_status": 2,
+          "tx_flags": 0,
+          "timestamp": 2140427962,
+          "data_size": 0,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 0,
+          "data_truncated": false,
+          "data_hex": ""
+        },
+        "canaries_intact": true
+      },
+      "qpc_before": 3822688737010,
+      "qpc_after": 3822688953469,
+      "qpc_frequency": 10000000
+    },
+    {
+      "sequence": 24,
+      "function": "PassThruReadMsgs",
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "timeout_ms": 1000,
+        "input_count": 1,
+        "count_pointer_present": true,
+        "message_capacity": 1,
+        "message": {
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 0,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 0,
+          "data_truncated": false,
+          "data_hex": ""
+        }
+      },
+      "output": {
+        "count": 1,
+        "message": {
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 2140445216,
+          "data_size": 8,
+          "extra_data_index": 8,
+          "buffer_capacity": 4128,
+          "logged_bytes": 8,
+          "data_truncated": false,
+          "data_hex": "80f0100367023420"
+        },
+        "canaries_intact": true
+      },
+      "qpc_before": 3822688954817,
+      "qpc_after": 3822688954839,
+      "qpc_frequency": 10000000
+    },
+    {
+      "sequence": 25,
+      "function": "MonotonicMinimumWait",
+      "status": 0,
+      "input": {
+        "model": "QPC_MONOTONIC_MINIMUM",
+        "milliseconds": 200,
+        "requested_ms": 200,
+        "reason": "post_key_ack",
+        "monotonic_before_ms": 382268895
+      },
+      "output": {
+        "monotonic_after_ms": 382269099,
+        "requested_ms": 200,
+        "minimum_qpc_ticks": 2000000,
+        "elapsed_qpc_ticks": 2037740,
+        "qpc_frequency": 10000000,
+        "overshoot_qpc_ticks": 37740,
+        "minimum_satisfied": true
+      },
+      "qpc_before": 3822688955602,
+      "qpc_after": 3822690993342,
+      "qpc_frequency": 10000000
+    },
+    {
+      "sequence": 26,
+      "function": "PassThruWriteMsgs",
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "timeout_ms": 1000,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message_capacity": 1,
+        "message": {
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 8,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 8,
+          "data_truncated": false,
+          "data_hex": "8010f0031085021a"
+        }
+      },
+      "output": {
+        "count": 1,
+        "message": {
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 8,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 8,
+          "data_truncated": false,
+          "data_hex": "8010f0031085021a"
+        },
+        "canaries_intact": true
+      },
+      "qpc_before": 3822690995869,
+      "qpc_after": 3822691169887,
+      "qpc_frequency": 10000000
+    },
+    {
+      "sequence": 27,
+      "function": "PassThruReadMsgs",
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "timeout_ms": 1000,
+        "input_count": 1,
+        "count_pointer_present": true,
+        "message_capacity": 1,
+        "message": {
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 0,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 0,
+          "data_truncated": false,
+          "data_hex": ""
+        }
+      },
+      "output": {
+        "count": 1,
+        "message": {
+          "protocol": 3,
+          "rx_status": 2,
+          "tx_flags": 0,
+          "timestamp": 2140670852,
+          "data_size": 0,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 0,
+          "data_truncated": false,
+          "data_hex": ""
+        },
+        "canaries_intact": true
+      },
+      "qpc_before": 3822691171176,
+      "qpc_after": 3822691363756,
+      "qpc_frequency": 10000000
+    },
+    {
+      "sequence": 28,
+      "function": "PassThruReadMsgs",
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "timeout_ms": 1000,
+        "input_count": 1,
+        "count_pointer_present": true,
+        "message_capacity": 1,
+        "message": {
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 0,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 0,
+          "data_truncated": false,
+          "data_hex": ""
+        }
+      },
+      "output": {
+        "count": 1,
+        "message": {
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 2140686242,
+          "data_size": 7,
+          "extra_data_index": 7,
+          "buffer_capacity": 4128,
+          "logged_bytes": 7,
+          "data_truncated": false,
+          "data_hex": "80f01002508557"
+        },
+        "canaries_intact": true
+      },
+      "qpc_before": 3822691364584,
+      "qpc_after": 3822691364602,
+      "qpc_frequency": 10000000
+    },
+    {
+      "sequence": 29,
+      "function": "MonotonicMinimumWait",
+      "status": 0,
+      "input": {
+        "model": "QPC_MONOTONIC_MINIMUM",
+        "milliseconds": 100,
+        "requested_ms": 100,
+        "reason": "post_session_ack",
+        "monotonic_before_ms": 382269136
+      },
+      "output": {
+        "monotonic_after_ms": 382269238,
+        "requested_ms": 100,
+        "minimum_qpc_ticks": 1000000,
+        "elapsed_qpc_ticks": 1021152,
+        "qpc_frequency": 10000000,
+        "overshoot_qpc_ticks": 21152,
+        "minimum_satisfied": true
+      },
+      "qpc_before": 3822691365037,
+      "qpc_after": 3822692386189,
+      "qpc_frequency": 10000000
+    },
+    {
+      "sequence": 30,
+      "function": "PassThruIoctl",
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "ioctl": 2,
+        "input_present": true,
+        "output_present": false,
+        "config": {
+          "list_present": true,
+          "returned_num_params": 1,
+          "config_pointer": 19907600,
+          "owned_buffer_pointer": 19907600,
+          "pointer_matches_owned": true,
+          "owned_capacity": 1,
+          "owned_buffer_entries": [
+            {
+              "parameter": 1,
+              "value": 15625
+            }
+          ]
+        }
+      },
+      "output": {
+        "config": {
+          "list_present": true,
+          "returned_num_params": 1,
+          "config_pointer": 19907600,
+          "owned_buffer_pointer": 19907600,
+          "pointer_matches_owned": true,
+          "owned_capacity": 1,
+          "owned_buffer_entries": [
+            {
+              "parameter": 1,
+              "value": 15625
+            }
+          ]
+        },
+        "canaries_intact": true
+      },
+      "qpc_before": 3822692387811,
+      "qpc_after": 3822692449408,
+      "qpc_frequency": 10000000
+    },
+    {
+      "sequence": 31,
+      "function": "PassThruIoctl",
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "ioctl": 7,
+        "input_present": false,
+        "output_present": false
+      },
+      "output": {},
+      "qpc_before": 3822692450181,
+      "qpc_after": 3822692450190,
+      "qpc_frequency": 10000000
+    },
+    {
+      "sequence": 32,
+      "function": "PassThruIoctl",
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "ioctl": 8,
+        "input_present": false,
+        "output_present": false
+      },
+      "output": {},
+      "qpc_before": 3822692450588,
+      "qpc_after": 3822692450596,
+      "qpc_frequency": 10000000
+    },
+    {
+      "sequence": 33,
+      "function": "MonotonicMinimumWait",
+      "status": 0,
+      "input": {
+        "model": "QPC_MONOTONIC_MINIMUM",
+        "milliseconds": 200,
+        "requested_ms": 200,
+        "reason": "pre_download_declaration",
+        "monotonic_before_ms": 382269245
+      },
+      "output": {
+        "monotonic_after_ms": 382269445,
+        "requested_ms": 200,
+        "minimum_qpc_ticks": 2000000,
+        "elapsed_qpc_ticks": 2004695,
+        "qpc_frequency": 10000000,
+        "overshoot_qpc_ticks": 4695,
+        "minimum_satisfied": true
+      },
+      "qpc_before": 3822692451026,
+      "qpc_after": 3822694455721,
+      "qpc_frequency": 10000000
+    },
+    {
+      "sequence": 34,
+      "function": "PassThruWriteMsgs",
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "timeout_ms": 1000,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message_capacity": 1,
+        "message": {
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 13,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 13,
+          "data_truncated": false,
+          "data_hex": "8010f00834ff30000400071006"
+        }
+      },
+      "output": {
+        "count": 1,
+        "message": {
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 13,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 13,
+          "data_truncated": false,
+          "data_hex": "8010f00834ff30000400071006"
+        },
+        "canaries_intact": true
+      },
+      "qpc_before": 3822694456646,
+      "qpc_after": 3822694567569,
+      "qpc_frequency": 10000000
+    },
+    {
+      "sequence": 35,
+      "function": "PassThruReadMsgs",
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "timeout_ms": 1000,
+        "input_count": 1,
+        "count_pointer_present": true,
+        "message_capacity": 1,
+        "message": {
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 0,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 0,
+          "data_truncated": false,
+          "data_hex": ""
+        }
+      },
+      "output": {
+        "count": 1,
+        "message": {
+          "protocol": 3,
+          "rx_status": 2,
+          "tx_flags": 0,
+          "timestamp": 2141005702,
+          "data_size": 0,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 0,
+          "data_truncated": false,
+          "data_hex": ""
+        },
+        "canaries_intact": true
+      },
+      "qpc_before": 3822694568714,
+      "qpc_after": 3822694629465,
+      "qpc_frequency": 10000000
+    },
+    {
+      "sequence": 36,
+      "function": "PassThruReadMsgs",
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "timeout_ms": 1000,
+        "input_count": 1,
+        "count_pointer_present": true,
+        "message_capacity": 1,
+        "message": {
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 0,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 0,
+          "data_truncated": false,
+          "data_hex": ""
+        }
+      },
+      "output": {
+        "count": 1,
+        "message": {
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 2141010778,
+          "data_size": 7,
+          "extra_data_index": 7,
+          "buffer_capacity": 4128,
+          "logged_bytes": 7,
+          "data_truncated": false,
+          "data_hex": "80f0100274847a"
+        },
+        "canaries_intact": true
+      },
+      "qpc_before": 3822694631168,
+      "qpc_after": 3822694631193,
+      "qpc_frequency": 10000000
+    },
+    {
+      "sequence": 37,
+      "function": "PassThruWriteMsgs",
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "timeout_ms": 1000,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message_capacity": 1,
+        "message": {
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 137,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 137,
+          "data_truncated": false,
+          "data_hex": "8010f08436ff30002178b10a345b1076fd256f75f05ba033e301ed7bbae243b735e6aedbc143c40be01bf9b6caab4599eccaacb23d3eeb06dddf471ed3b0238f2bf0553861e117054bad87079a8cbb9681c01303b7825b2d199bc7e5c4dd5bcf85cf1a64050df3ab050df3ab2a45f9b476963b1f16baea94084e321a79bd4cf9c0f25912ab9d7b8df4"
+        }
+      },
+      "output": {
+        "count": 1,
+        "message": {
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 137,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 137,
+          "data_truncated": false,
+          "data_hex": "8010f08436ff30002178b10a345b1076fd256f75f05ba033e301ed7bbae243b735e6aedbc143c40be01bf9b6caab4599eccaacb23d3eeb06dddf471ed3b0238f2bf0553861e117054bad87079a8cbb9681c01303b7825b2d199bc7e5c4dd5bcf85cf1a64050df3ab050df3ab2a45f9b476963b1f16baea94084e321a79bd4cf9c0f25912ab9d7b8df4"
+        },
+        "canaries_intact": true
+      },
+      "qpc_before": 3822694632326,
+      "qpc_after": 3822695525740,
+      "qpc_frequency": 10000000
+    },
+    {
+      "sequence": 38,
+      "function": "PassThruReadMsgs",
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "timeout_ms": 1000,
+        "input_count": 1,
+        "count_pointer_present": true,
+        "message_capacity": 1,
+        "message": {
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 0,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 0,
+          "data_truncated": false,
+          "data_hex": ""
+        }
+      },
+      "output": {
+        "count": 1,
+        "message": {
+          "protocol": 3,
+          "rx_status": 2,
+          "tx_flags": 0,
+          "timestamp": 2141103538,
+          "data_size": 0,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 0,
+          "data_truncated": false,
+          "data_hex": ""
+        },
+        "canaries_intact": true
+      },
+      "qpc_before": 3822695526677,
+      "qpc_after": 3822695584089,
+      "qpc_frequency": 10000000
+    },
+    {
+      "sequence": 39,
+      "function": "PassThruReadMsgs",
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "timeout_ms": 1000,
+        "input_count": 1,
+        "count_pointer_present": true,
+        "message_capacity": 1,
+        "message": {
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 0,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 0,
+          "data_truncated": false,
+          "data_hex": ""
+        }
+      },
+      "output": {
+        "count": 1,
+        "message": {
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 2141108289,
+          "data_size": 6,
+          "extra_data_index": 6,
+          "buffer_capacity": 4128,
+          "logged_bytes": 6,
+          "data_truncated": false,
+          "data_hex": "80f0100176f7"
+        },
+        "canaries_intact": true
+      },
+      "qpc_before": 3822695584764,
+      "qpc_after": 3822695584783,
+      "qpc_frequency": 10000000
+    },
+    {
+      "sequence": 40,
+      "function": "PassThruStopMsgFilter",
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "filter_id_present": true,
+        "filter_id": 0
+      },
+      "output": {},
+      "qpc_before": 3822695585540,
+      "qpc_after": 3822695589350,
+      "qpc_frequency": 10000000
+    },
+    {
+      "sequence": 41,
+      "function": "PassThruDisconnect",
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "filter_id_present": false,
+        "filter_id": 0
+      },
+      "output": {},
+      "qpc_before": 3822695589994,
+      "qpc_after": 3822695593885,
+      "qpc_frequency": 10000000
+    },
+    {
+      "sequence": 42,
+      "function": "PassThruClose",
+      "status": 0,
+      "input": {
+        "device": 1,
+        "filter_id_present": false,
+        "filter_id": 0
+      },
+      "output": {},
+      "qpc_before": 3822695594520,
+      "qpc_after": 3822695600345,
+      "qpc_frequency": 10000000
+    }
+  ],
+  "checks": [
+    {
+      "name": "journal_hash",
+      "passed": true
+    },
+    {
+      "name": "exact_record_counts",
+      "passed": true
+    },
+    {
+      "name": "all_records_physical",
+      "passed": true
+    },
+    {
+      "name": "43_zero_status_returns",
+      "passed": true
+    },
+    {
+      "name": "ordered_sequences",
+      "passed": true
+    },
+    {
+      "name": "paired_call:0",
+      "passed": true
+    },
+    {
+      "name": "timing:0",
+      "passed": true
+    },
+    {
+      "name": "stack:0",
+      "passed": true
+    },
+    {
+      "name": "paired_call:1",
+      "passed": true
+    },
+    {
+      "name": "timing:1",
+      "passed": true
+    },
+    {
+      "name": "stack:1",
+      "passed": true
+    },
+    {
+      "name": "buffers:1",
+      "passed": true
+    },
+    {
+      "name": "paired_call:2",
+      "passed": true
+    },
+    {
+      "name": "timing:2",
+      "passed": true
+    },
+    {
+      "name": "stack:2",
+      "passed": true
+    },
+    {
+      "name": "paired_call:3",
+      "passed": true
+    },
+    {
+      "name": "timing:3",
+      "passed": true
+    },
+    {
+      "name": "stack:3",
+      "passed": true
+    },
+    {
+      "name": "buffers:3",
+      "passed": true
+    },
+    {
+      "name": "paired_call:4",
+      "passed": true
+    },
+    {
+      "name": "timing:4",
+      "passed": true
+    },
+    {
+      "name": "stack:4",
+      "passed": true
+    },
+    {
+      "name": "buffers:4",
+      "passed": true
+    },
+    {
+      "name": "paired_call:5",
+      "passed": true
+    },
+    {
+      "name": "timing:5",
+      "passed": true
+    },
+    {
+      "name": "stack:5",
+      "passed": true
+    },
+    {
+      "name": "buffers:5",
+      "passed": true
+    },
+    {
+      "name": "paired_call:6",
+      "passed": true
+    },
+    {
+      "name": "timing:6",
+      "passed": true
+    },
+    {
+      "name": "stack:6",
+      "passed": true
+    },
+    {
+      "name": "buffers:6",
+      "passed": true
+    },
+    {
+      "name": "paired_call:7",
+      "passed": true
+    },
+    {
+      "name": "timing:7",
+      "passed": true
+    },
+    {
+      "name": "stack:7",
+      "passed": true
+    },
+    {
+      "name": "buffers:7",
+      "passed": true
+    },
+    {
+      "name": "paired_call:8",
+      "passed": true
+    },
+    {
+      "name": "timing:8",
+      "passed": true
+    },
+    {
+      "name": "stack:8",
+      "passed": true
+    },
+    {
+      "name": "buffers:8",
+      "passed": true
+    },
+    {
+      "name": "paired_call:9",
+      "passed": true
+    },
+    {
+      "name": "timing:9",
+      "passed": true
+    },
+    {
+      "name": "stack:9",
+      "passed": true
+    },
+    {
+      "name": "buffers:9",
+      "passed": true
+    },
+    {
+      "name": "paired_call:10",
+      "passed": true
+    },
+    {
+      "name": "timing:10",
+      "passed": true
+    },
+    {
+      "name": "stack:10",
+      "passed": true
+    },
+    {
+      "name": "buffers:10",
+      "passed": true
+    },
+    {
+      "name": "paired_call:11",
+      "passed": true
+    },
+    {
+      "name": "timing:11",
+      "passed": true
+    },
+    {
+      "name": "stack:11",
+      "passed": true
+    },
+    {
+      "name": "buffers:11",
+      "passed": true
+    },
+    {
+      "name": "paired_call:12",
+      "passed": true
+    },
+    {
+      "name": "timing:12",
+      "passed": true
+    },
+    {
+      "name": "stack:12",
+      "passed": true
+    },
+    {
+      "name": "buffers:12",
+      "passed": true
+    },
+    {
+      "name": "paired_call:13",
+      "passed": true
+    },
+    {
+      "name": "timing:13",
+      "passed": true
+    },
+    {
+      "name": "stack:13",
+      "passed": true
+    },
+    {
+      "name": "buffers:13",
+      "passed": true
+    },
+    {
+      "name": "paired_call:14",
+      "passed": true
+    },
+    {
+      "name": "timing:14",
+      "passed": true
+    },
+    {
+      "name": "stack:14",
+      "passed": true
+    },
+    {
+      "name": "buffers:14",
+      "passed": true
+    },
+    {
+      "name": "paired_call:15",
+      "passed": true
+    },
+    {
+      "name": "timing:15",
+      "passed": true
+    },
+    {
+      "name": "stack:15",
+      "passed": true
+    },
+    {
+      "name": "buffers:15",
+      "passed": true
+    },
+    {
+      "name": "paired_call:16",
+      "passed": true
+    },
+    {
+      "name": "timing:16",
+      "passed": true
+    },
+    {
+      "name": "stack:16",
+      "passed": true
+    },
+    {
+      "name": "buffers:16",
+      "passed": true
+    },
+    {
+      "name": "paired_call:17",
+      "passed": true
+    },
+    {
+      "name": "timing:17",
+      "passed": true
+    },
+    {
+      "name": "stack:17",
+      "passed": true
+    },
+    {
+      "name": "buffers:17",
+      "passed": true
+    },
+    {
+      "name": "paired_call:18",
+      "passed": true
+    },
+    {
+      "name": "timing:18",
+      "passed": true
+    },
+    {
+      "name": "stack:18",
+      "passed": true
+    },
+    {
+      "name": "buffers:18",
+      "passed": true
+    },
+    {
+      "name": "paired_call:19",
+      "passed": true
+    },
+    {
+      "name": "timing:19",
+      "passed": true
+    },
+    {
+      "name": "stack:19",
+      "passed": true
+    },
+    {
+      "name": "buffers:19",
+      "passed": true
+    },
+    {
+      "name": "paired_call:20",
+      "passed": true
+    },
+    {
+      "name": "timing:20",
+      "passed": true
+    },
+    {
+      "name": "stack:20",
+      "passed": true
+    },
+    {
+      "name": "buffers:20",
+      "passed": true
+    },
+    {
+      "name": "paired_call:21",
+      "passed": true
+    },
+    {
+      "name": "timing:21",
+      "passed": true
+    },
+    {
+      "name": "stack:21",
+      "passed": true
+    },
+    {
+      "name": "buffers:21",
+      "passed": true
+    },
+    {
+      "name": "paired_call:22",
+      "passed": true
+    },
+    {
+      "name": "timing:22",
+      "passed": true
+    },
+    {
+      "name": "stack:22",
+      "passed": true
+    },
+    {
+      "name": "buffers:22",
+      "passed": true
+    },
+    {
+      "name": "paired_call:23",
+      "passed": true
+    },
+    {
+      "name": "timing:23",
+      "passed": true
+    },
+    {
+      "name": "stack:23",
+      "passed": true
+    },
+    {
+      "name": "buffers:23",
+      "passed": true
+    },
+    {
+      "name": "paired_call:24",
+      "passed": true
+    },
+    {
+      "name": "timing:24",
+      "passed": true
+    },
+    {
+      "name": "stack:24",
+      "passed": true
+    },
+    {
+      "name": "buffers:24",
+      "passed": true
+    },
+    {
+      "name": "paired_call:25",
+      "passed": true
+    },
+    {
+      "name": "timing:25",
+      "passed": true
+    },
+    {
+      "name": "stack:25",
+      "passed": true
+    },
+    {
+      "name": "paired_call:26",
+      "passed": true
+    },
+    {
+      "name": "timing:26",
+      "passed": true
+    },
+    {
+      "name": "stack:26",
+      "passed": true
+    },
+    {
+      "name": "buffers:26",
+      "passed": true
+    },
+    {
+      "name": "paired_call:27",
+      "passed": true
+    },
+    {
+      "name": "timing:27",
+      "passed": true
+    },
+    {
+      "name": "stack:27",
+      "passed": true
+    },
+    {
+      "name": "buffers:27",
+      "passed": true
+    },
+    {
+      "name": "paired_call:28",
+      "passed": true
+    },
+    {
+      "name": "timing:28",
+      "passed": true
+    },
+    {
+      "name": "stack:28",
+      "passed": true
+    },
+    {
+      "name": "buffers:28",
+      "passed": true
+    },
+    {
+      "name": "paired_call:29",
+      "passed": true
+    },
+    {
+      "name": "timing:29",
+      "passed": true
+    },
+    {
+      "name": "stack:29",
+      "passed": true
+    },
+    {
+      "name": "paired_call:30",
+      "passed": true
+    },
+    {
+      "name": "timing:30",
+      "passed": true
+    },
+    {
+      "name": "stack:30",
+      "passed": true
+    },
+    {
+      "name": "buffers:30",
+      "passed": true
+    },
+    {
+      "name": "paired_call:31",
+      "passed": true
+    },
+    {
+      "name": "timing:31",
+      "passed": true
+    },
+    {
+      "name": "stack:31",
+      "passed": true
+    },
+    {
+      "name": "paired_call:32",
+      "passed": true
+    },
+    {
+      "name": "timing:32",
+      "passed": true
+    },
+    {
+      "name": "stack:32",
+      "passed": true
+    },
+    {
+      "name": "paired_call:33",
+      "passed": true
+    },
+    {
+      "name": "timing:33",
+      "passed": true
+    },
+    {
+      "name": "stack:33",
+      "passed": true
+    },
+    {
+      "name": "paired_call:34",
+      "passed": true
+    },
+    {
+      "name": "timing:34",
+      "passed": true
+    },
+    {
+      "name": "stack:34",
+      "passed": true
+    },
+    {
+      "name": "buffers:34",
+      "passed": true
+    },
+    {
+      "name": "paired_call:35",
+      "passed": true
+    },
+    {
+      "name": "timing:35",
+      "passed": true
+    },
+    {
+      "name": "stack:35",
+      "passed": true
+    },
+    {
+      "name": "buffers:35",
+      "passed": true
+    },
+    {
+      "name": "paired_call:36",
+      "passed": true
+    },
+    {
+      "name": "timing:36",
+      "passed": true
+    },
+    {
+      "name": "stack:36",
+      "passed": true
+    },
+    {
+      "name": "buffers:36",
+      "passed": true
+    },
+    {
+      "name": "paired_call:37",
+      "passed": true
+    },
+    {
+      "name": "timing:37",
+      "passed": true
+    },
+    {
+      "name": "stack:37",
+      "passed": true
+    },
+    {
+      "name": "buffers:37",
+      "passed": true
+    },
+    {
+      "name": "paired_call:38",
+      "passed": true
+    },
+    {
+      "name": "timing:38",
+      "passed": true
+    },
+    {
+      "name": "stack:38",
+      "passed": true
+    },
+    {
+      "name": "buffers:38",
+      "passed": true
+    },
+    {
+      "name": "paired_call:39",
+      "passed": true
+    },
+    {
+      "name": "timing:39",
+      "passed": true
+    },
+    {
+      "name": "stack:39",
+      "passed": true
+    },
+    {
+      "name": "buffers:39",
+      "passed": true
+    },
+    {
+      "name": "paired_call:40",
+      "passed": true
+    },
+    {
+      "name": "timing:40",
+      "passed": true
+    },
+    {
+      "name": "paired_call:41",
+      "passed": true
+    },
+    {
+      "name": "timing:41",
+      "passed": true
+    },
+    {
+      "name": "paired_call:42",
+      "passed": true
+    },
+    {
+      "name": "timing:42",
+      "passed": true
+    },
+    {
+      "name": "monotonic_calls",
+      "passed": true
+    },
+    {
+      "name": "complete_call_order_no_extra",
+      "passed": true
+    },
+    {
+      "name": "qualification_pin:physical_executable",
+      "passed": true
+    },
+    {
+      "name": "qualification_pin:reproducible_build_executable",
+      "passed": true
+    },
+    {
+      "name": "qualification_pin:review_contract",
+      "passed": true
+    },
+    {
+      "name": "qualification_pin:native_test_report",
+      "passed": true
+    },
+    {
+      "name": "qualified_session",
+      "passed": true
+    },
+    {
+      "name": "bound_executable",
+      "passed": true
+    },
+    {
+      "name": "bound_contract",
+      "passed": true
+    },
+    {
+      "name": "bound_certificate",
+      "passed": true
+    },
+    {
+      "name": "fixed_provider_pin",
+      "passed": true
+    },
+    {
+      "name": "exact_authorization",
+      "passed": true
+    },
+    {
+      "name": "both_once_markers",
+      "passed": true
+    },
+    {
+      "name": "native_gate_flags",
+      "passed": true
+    },
+    {
+      "name": "execution_exit",
+      "passed": true
+    },
+    {
+      "name": "begin_provenance",
+      "passed": true
+    },
+    {
+      "name": "PRELAUNCH_CLIENT_CHECK.json",
+      "passed": true
+    },
+    {
+      "name": "POSTEXIT_CLIENT_CHECK.json",
+      "passed": true
+    },
+    {
+      "name": "connect",
+      "passed": true
+    },
+    {
+      "name": "initial_SET:0",
+      "passed": true
+    },
+    {
+      "name": "initial_SET:1",
+      "passed": true
+    },
+    {
+      "name": "initial_SET:2",
+      "passed": true
+    },
+    {
+      "name": "initial_SET:3",
+      "passed": true
+    },
+    {
+      "name": "initial_SET:4",
+      "passed": true
+    },
+    {
+      "name": "GET_effective_five",
+      "passed": true
+    },
+    {
+      "name": "filter_nonnull_arguments",
+      "passed": true
+    },
+    {
+      "name": "broad_filter:mask",
+      "passed": true
+    },
+    {
+      "name": "broad_filter:pattern",
+      "passed": true
+    },
+    {
+      "name": "broad_filter:flow",
+      "passed": true
+    },
+    {
+      "name": "filter_type",
+      "passed": true
+    },
+    {
+      "name": "eight_TX_sixteen_RX",
+      "passed": true
+    },
+    {
+      "name": "TX_metadata:0",
+      "passed": true
+    },
+    {
+      "name": "TX_metadata:1",
+      "passed": true
+    },
+    {
+      "name": "TX_metadata:2",
+      "passed": true
+    },
+    {
+      "name": "TX_metadata:3",
+      "passed": true
+    },
+    {
+      "name": "TX_metadata:4",
+      "passed": true
+    },
+    {
+      "name": "TX_metadata:5",
+      "passed": true
+    },
+    {
+      "name": "TX_metadata:6",
+      "passed": true
+    },
+    {
+      "name": "TX_metadata:7",
+      "passed": true
+    },
+    {
+      "name": "RX_metadata:0",
+      "passed": true
+    },
+    {
+      "name": "RX_metadata:1",
+      "passed": true
+    },
+    {
+      "name": "RX_metadata:2",
+      "passed": true
+    },
+    {
+      "name": "RX_metadata:3",
+      "passed": true
+    },
+    {
+      "name": "RX_metadata:4",
+      "passed": true
+    },
+    {
+      "name": "RX_metadata:5",
+      "passed": true
+    },
+    {
+      "name": "RX_metadata:6",
+      "passed": true
+    },
+    {
+      "name": "RX_metadata:7",
+      "passed": true
+    },
+    {
+      "name": "RX_metadata:8",
+      "passed": true
+    },
+    {
+      "name": "RX_metadata:9",
+      "passed": true
+    },
+    {
+      "name": "RX_metadata:10",
+      "passed": true
+    },
+    {
+      "name": "RX_metadata:11",
+      "passed": true
+    },
+    {
+      "name": "RX_metadata:12",
+      "passed": true
+    },
+    {
+      "name": "RX_metadata:13",
+      "passed": true
+    },
+    {
+      "name": "RX_metadata:14",
+      "passed": true
+    },
+    {
+      "name": "RX_metadata:15",
+      "passed": true
+    },
+    {
+      "name": "frame:0",
+      "passed": true
+    },
+    {
+      "name": "frame:1",
+      "passed": true
+    },
+    {
+      "name": "frame:2",
+      "passed": true
+    },
+    {
+      "name": "frame:3",
+      "passed": true
+    },
+    {
+      "name": "frame:4",
+      "passed": true
+    },
+    {
+      "name": "frame:5",
+      "passed": true
+    },
+    {
+      "name": "frame:6",
+      "passed": true
+    },
+    {
+      "name": "frame:7",
+      "passed": true
+    },
+    {
+      "name": "frame:8",
+      "passed": true
+    },
+    {
+      "name": "frame:9",
+      "passed": true
+    },
+    {
+      "name": "frame:10",
+      "passed": true
+    },
+    {
+      "name": "frame:11",
+      "passed": true
+    },
+    {
+      "name": "frame:12",
+      "passed": true
+    },
+    {
+      "name": "frame:13",
+      "passed": true
+    },
+    {
+      "name": "frame:14",
+      "passed": true
+    },
+    {
+      "name": "frame:15",
+      "passed": true
+    },
+    {
+      "name": "BF_identity",
+      "passed": true
+    },
+    {
+      "name": "actual_seed_key",
+      "passed": true
+    },
+    {
+      "name": "fixed_request:0",
+      "passed": true
+    },
+    {
+      "name": "fixed_request:1",
+      "passed": true
+    },
+    {
+      "name": "fixed_request:2",
+      "passed": true
+    },
+    {
+      "name": "fixed_request:3",
+      "passed": true
+    },
+    {
+      "name": "fixed_request:5",
+      "passed": true
+    },
+    {
+      "name": "fixed_request:6",
+      "passed": true
+    },
+    {
+      "name": "fixed_request:7",
+      "passed": true
+    },
+    {
+      "name": "strict_ACK:1",
+      "passed": true
+    },
+    {
+      "name": "strict_ACK:2",
+      "passed": true
+    },
+    {
+      "name": "strict_ACK:3",
+      "passed": true
+    },
+    {
+      "name": "strict_ACK:4",
+      "passed": true
+    },
+    {
+      "name": "strict_ACK:5",
+      "passed": true
+    },
+    {
+      "name": "strict_ACK:6",
+      "passed": true
+    },
+    {
+      "name": "strict_ACK:7",
+      "passed": true
+    },
+    {
+      "name": "single_fixed_chunk",
+      "passed": true
+    },
+    {
+      "name": "real_wait:0",
+      "passed": true
+    },
+    {
+      "name": "real_wait:1",
+      "passed": true
+    },
+    {
+      "name": "real_wait:2",
+      "passed": true
+    },
+    {
+      "name": "three_waits",
+      "passed": true
+    },
+    {
+      "name": "baud_SET",
+      "passed": true
+    },
+    {
+      "name": "clear_TX_RX",
+      "passed": true
+    },
+    {
+      "name": "no_baud_GET_claim",
+      "passed": true
+    },
+    {
+      "name": "terminal_cleanup",
+      "passed": true
+    },
+    {
+      "name": "only_cleanup_after76",
+      "passed": true
+    },
+    {
+      "name": "old_successful_BF81_83_bytes",
+      "passed": true
+    },
+    {
+      "name": "same_provider_versions",
+      "passed": true
+    },
+    {
+      "name": "raw_files_unchanged",
+      "passed": true
+    }
+  ],
+  "limits": [
+    "Eight full positive replies demonstrate this one first-chunk session through ACK76; no independent RAM readback was performed.",
+    "Only one128-byte RAM-transfer frame was sent. No second36, full upload, kernel-start, ROM-read or flash command was issued by this host.",
+    "The15625 setting is evidenced by successful SET_CONFIG and subsequent exchanges, not baud GET or an electrical waveform measurement.",
+    "QPC timings measure host API boundaries and waits; they are not exact on-wire bit/interbyte timing.",
+    "The new physical success does not uniquely identify the cause of the historical RK02 failure, because the qualified path contains multiple reviewed differences.",
+    "Cleanup and process exit do not establish OEM return; that requires the separately gated passive recovery result. No additional physical attempt is authorized by this report.",
+    "The current ROM remains CURRENT_PHYSICAL_CAPTURE with edited calibration data, not factory stock."
+  ]
+}

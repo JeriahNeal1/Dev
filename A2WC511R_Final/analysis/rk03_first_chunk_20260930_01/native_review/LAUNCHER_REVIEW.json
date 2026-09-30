@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "status": "PASS_INDEPENDENT_LAUNCHER_SOURCE_REVIEW_ONLY",
+  "physical_authorization": false,
+  "release_approval": false,
+  "utc": "2026-09-30T03:28:06.290282+00:00",
+  "reviewer": "oem_transition",
+  "source": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\launch_first_chunk_once.py",
+    "sha256": "4a3d100ae3e7fcacf5e67cf0aa6bd0556f37ef5a1e16171e255213931c4af893",
+    "bytes": 8664
+  },
+  "test_source": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\test_launcher_offline.py",
+    "sha256": "d9c5147a3ee530a3a64ff03c6b72489b2dd318bd1e0e3414a824faead93dae0b",
+    "bytes": 7854
+  },
+  "test_reports": [
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\LAUNCHER_TESTS_V2.json",
+      "sha256": "0936ef776e304ae362e2f2fa9378b9c6b66e2ac724f32a32031bf610cb2253ca",
+      "bytes": 1851
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\LAUNCHER_TESTS_V2_OPTIMIZED.json",
+      "sha256": "ae077d9aeed382574dc231a697ea08629f4a87f3a67b3a87b0a7d14f33b0f099",
+      "bytes": 1850
+    }
+  ],
+  "contract": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\FIRST_CHUNK_REVIEW_CONTRACT.json",
+    "sha256": "a7482b0eba224c9642745b830c71b3fff14f987988a58cdc1376e45dc0aa839c",
+    "bytes": 10169
+  },
+  "client_check": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\check_clients.ps1",
+    "sha256": "4c86344593f64b50d33784c69e7033af43d554d8d8962ddc6eb68221c47a0d04",
+    "bytes": 1982
+  },
+  "reviewer_subprocess_calls": 0,
+  "resolved_findings": [
+    {
+      "id": "FC-LIFECYCLE-01",
+      "finding": "An interrupt raised by process.wait could leave the child running while the launcher closed its console and returned.",
+      "resolution": "wait_for_child catches KeyboardInterrupt, records it and repeats waiting on the same child handle. It never relaunches.",
+      "verification": "Source lines92-99 plus fake first-wait KeyboardInterrupt then successful second-wait case; both ordinary and optimized Python reports PASS36."
+    }
+  ],
+  "unresolved_findings": [],
+  "verified_controls": [
+    "Exact new session and certificate binding with fresh simplified IGNITION OFF then TEST MODE ON user-source gates and exact new commit token.",
+    "Engine OFF and user-managed physical context required; full acquisition, retry and abort interlocks enforced.",
+    "Qualification and executable/contract/control files are hash pinned; certificate and gates are revalidated after competing-client inspection.",
+    "Authorization/reservation files created exclusively; any prior marker or execution artifact blocks reuse.",
+    "Native child starts once; process exit is awaited even after bookkeeping failure or a console wait interruption.",
+    "Result records PID, exit, certificate/hash provenance and bookkeeping errors; next physical state is IGNITION OFF.",
+    "Test source uses disposable paths and mocked subprocess functions only; native code/provider not invoked."
+  ],
+  "limits": [
+    "This reviews only launcher controls; native bootstrap, same-final-PE tests, final certificate and exact fresh human authorization remain required.",
+    "Forced process termination or machine power loss is outside Python exception handling.",
+    "JSON gate provenance represents root-recorded user replies; these tests do not fabricate or grant actual authorization."
+  ]
+}

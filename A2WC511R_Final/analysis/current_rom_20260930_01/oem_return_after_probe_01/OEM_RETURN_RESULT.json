@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "created_utc": "2026-09-30T02:15:05.981783+00:00",
+  "OEM_RETURN_AFTER_TRANSITION_PROBE": "PASS",
+  "session_id": "RK03_TRANSITION_PROBE_01",
+  "BF_identity": "2F12515306",
+  "capture_status": "PASS_CAPTURE_ONLY",
+  "samples": 120,
+  "variables_per_sample": 6,
+  "observer_exit_code": 0,
+  "broker_cleanup_confirmed": true,
+  "cleanup_basis": "Capture ended with no cleanup error; pinned transport close requires the broker CLOSE response and exit zero, then waits for worker termination. Post-exit process/module check also passed.",
+  "provider_cleanup_confirmed": true,
+  "postexit_provider_module_users": [],
+  "wire_requests": {
+    "BF": 1,
+    "A8": 120,
+    "other": 0
+  },
+  "programming_session_requests": 0,
+  "transition_probe_invocations": 1,
+  "transition_probe_rerun_allowed": false,
+  "full_acquisition_allowed": false,
+  "current_rom_attestation_from_passive_capture": false,
+  "physical_state_basis": "NORMAL MODE ON confirmed by operator; battery/charger/OpenPort/connector details operator-managed under explicit simplified policy. Measured vehicle-side power loss was not established and is not claimed.",
+  "active_human_gate_policy": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\gate_policy_migrations\\20260930T020401086019Z\\OPERATOR_SIMPLIFIED_GATE_POLICY.json",
+    "sha256": "2489c1ef5c9599dba9d830768c98e1d247dc126b6c6711710387337d3ab3f983"
+  },
+  "evidence": [
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\oem_return_after_probe_01\\capture.jsonl",
+      "bytes": 271829,
+      "sha256": "4dbc483f76d6268ee7f83adb75b419899651886b0face0792202e8c26a573eb2"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\oem_return_after_probe_01\\capture.jsonl.provider.stderr.log",
+      "bytes": 86658,
+      "sha256": "99f5594e6823f2ebcf678800c1bcddbb1ffe79ca79e178afff0849c8a40650cc"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\oem_return_after_probe_01\\console.log",
+      "bytes": 245,
+      "sha256": "99bd39393716eb8ce76bb19e914d90d0298d20a1cb8668acfaced8020162c570"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\oem_return_after_probe_01\\EXECUTION.json",
+      "bytes": 672,
+      "sha256": "ca2170bde303e46fced4208ee847590ffe2bc791523de59141df0e6a970cd8f5"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\oem_return_after_probe_01\\GATE_STATE_AT_OEM_RETURN.json",
+      "bytes": 12019,
+      "sha256": "e68779ab19766ef4a64ae4e02e3878e4affb44494957405c56cd97fc49ef3c63"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\oem_return_after_probe_01\\invocation.once",
+      "bytes": 556,
+      "sha256": "888529a5aad6dd2877ee24d6237bed496b0a4918d90d1d146e8eddc80ec53efc"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\oem_return_after_probe_01\\POSTEXIT_CLIENT_CHECK.json",
+      "bytes": 494,
+      "sha256": "947556d762d83501c3891cf152bf9580c1a13eef9deed915842fc7574bbb5e6d"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\oem_return_after_probe_01\\PREFLIGHT.json",
+      "bytes": 473,
+      "sha256": "895374fd8d6dd0816f7da02f549547465e8f44121cf0effc1bdc55536899a4d6"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\oem_return_after_probe_01\\PRELAUNCH_CLIENT_CHECK.json",
+      "bytes": 494,
+      "sha256": "3e4411425f2a85ed1f0425224c7eec096f6bf9059a0dabead874ba12e842fa4a"
+    }
+  ],
+  "next_scope": "OFFLINE_ONLY_REMAINING_RK03_SEQUENCE_THROUGH_FIRST_ACKNOWLEDGED_UPLOAD_CHUNK",
+  "validator": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\seal_oem_return.py",
+    "bytes": 6712,
+    "sha256": "90e0ed0c42b6fed70503f3c69f7ca6005d138b0f70af49544c057f1322390d39"
+  }
+}

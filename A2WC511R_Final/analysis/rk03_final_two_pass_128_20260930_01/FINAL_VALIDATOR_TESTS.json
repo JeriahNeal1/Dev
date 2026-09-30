@@ -1,0 +1,540 @@
+{
+  "status": "PASS",
+  "test_cases": 65,
+  "passed_cases": 65,
+  "physical_operations": 0,
+  "real_provider_loads": 0,
+  "scope": "38_RETAINED_NATIVE_CASES_PLUS_VALIDATOR_TAMPER_AND_FAKE_CLI_BOUNDS",
+  "checks": [
+    {
+      "case": "retained_success",
+      "status": "PASS",
+      "expect": "ACCEPT",
+      "result": {
+        "type": "full_read_result",
+        "passes": 2,
+        "blocks_per_pass": 8192,
+        "block_bytes": 128,
+        "ROM_start": 0,
+        "ROM_end_exclusive": 1048576,
+        "pass0_bytes": 1048576,
+        "pass1_bytes": 1048576,
+        "pass0_sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2",
+        "pass1_sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2",
+        "pass_to_pass_identical": true,
+        "current_reference_sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2",
+        "pass0_vs_current": {
+          "identical": true,
+          "differing_bytes": 0,
+          "differing_ranges": []
+        },
+        "pass1_vs_current": {
+          "identical": true,
+          "differing_bytes": 0,
+          "differing_ranges": []
+        },
+        "baseline_equality_required_for_transport": false
+      }
+    },
+    {
+      "case": "retained_success_changed_current",
+      "status": "PASS",
+      "expect": "ACCEPT",
+      "result": {
+        "type": "full_read_result",
+        "passes": 2,
+        "blocks_per_pass": 8192,
+        "block_bytes": 128,
+        "ROM_start": 0,
+        "ROM_end_exclusive": 1048576,
+        "pass0_bytes": 1048576,
+        "pass1_bytes": 1048576,
+        "pass0_sha256": "9cc942d4b66a440815ca45d2509699334c1ae7cdf9f5b3f67801664d897e0f4f",
+        "pass1_sha256": "9cc942d4b66a440815ca45d2509699334c1ae7cdf9f5b3f67801664d897e0f4f",
+        "pass_to_pass_identical": true,
+        "current_reference_sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2",
+        "pass0_vs_current": {
+          "identical": false,
+          "differing_bytes": 1,
+          "differing_ranges": [
+            {
+              "start": 0,
+              "end_exclusive": 1
+            }
+          ]
+        },
+        "pass1_vs_current": {
+          "identical": false,
+          "differing_bytes": 1,
+          "differing_ranges": [
+            {
+              "start": 0,
+              "end_exclusive": 1
+            }
+          ]
+        },
+        "baseline_equality_required_for_transport": false
+      }
+    },
+    {
+      "case": "retained_success_indicators",
+      "status": "PASS",
+      "expect": "ACCEPT",
+      "result": {
+        "type": "full_read_result",
+        "passes": 2,
+        "blocks_per_pass": 8192,
+        "block_bytes": 128,
+        "ROM_start": 0,
+        "ROM_end_exclusive": 1048576,
+        "pass0_bytes": 1048576,
+        "pass1_bytes": 1048576,
+        "pass0_sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2",
+        "pass1_sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2",
+        "pass_to_pass_identical": true,
+        "current_reference_sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2",
+        "pass0_vs_current": {
+          "identical": true,
+          "differing_bytes": 0,
+          "differing_ranges": []
+        },
+        "pass1_vs_current": {
+          "identical": true,
+          "differing_bytes": 0,
+          "differing_ranges": []
+        },
+        "baseline_equality_required_for_transport": false
+      }
+    },
+    {
+      "case": "retained_bad_checksum_first",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "Response length/checksum"
+    },
+    {
+      "case": "retained_wrong_address_first",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "Returned pass/address/length"
+    },
+    {
+      "case": "retained_wrong_length_first",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "Returned pass/address/length"
+    },
+    {
+      "case": "retained_short_first",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "Terminal API failure"
+    },
+    {
+      "case": "retained_missing_first",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "Terminal API failure"
+    },
+    {
+      "case": "retained_duplicate_first",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "RX metadata"
+    },
+    {
+      "case": "retained_reorder_first",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "Returned pass/address/length"
+    },
+    {
+      "case": "retained_status_failure_first",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "Terminal API failure"
+    },
+    {
+      "case": "retained_write_failure_first",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "Terminal API failure"
+    },
+    {
+      "case": "retained_bad_checksum_middle",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "Response length/checksum"
+    },
+    {
+      "case": "retained_wrong_address_middle",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "Returned pass/address/length"
+    },
+    {
+      "case": "retained_status_failure_middle",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "Terminal API failure"
+    },
+    {
+      "case": "retained_bad_checksum_final",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "Response length/checksum"
+    },
+    {
+      "case": "retained_wrong_length_final",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "Returned pass/address/length"
+    },
+    {
+      "case": "retained_missing_final",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "Terminal API failure"
+    },
+    {
+      "case": "retained_reorder_final",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "Returned pass/address/length"
+    },
+    {
+      "case": "retained_corruption_pass0_first",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "Exact block event and immediate match"
+    },
+    {
+      "case": "retained_corruption_pass0_middle",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "Exact block event and immediate match"
+    },
+    {
+      "case": "retained_pass1_mismatch_final",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "Exact block event and immediate match"
+    },
+    {
+      "case": "retained_output_write_first",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "Terminal after complete results"
+    },
+    {
+      "case": "retained_output_write_middle",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "Terminal after complete results"
+    },
+    {
+      "case": "retained_output_write_last",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "Terminal after complete results"
+    },
+    {
+      "case": "retained_output_flush",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "Terminal after complete results"
+    },
+    {
+      "case": "retained_output_size",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "Terminal after complete results"
+    },
+    {
+      "case": "retained_cleanup_all_fail",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "Terminal API failure"
+    },
+    {
+      "case": "retained_prefix_identity_bad",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "Fixed prefix reply 23"
+    },
+    {
+      "case": "retained_prefix_upload_status16",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "Terminal API failure"
+    },
+    {
+      "case": "retained_rx_protocol_first",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "RX metadata"
+    },
+    {
+      "case": "retained_rx_flags_first",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "RX metadata"
+    },
+    {
+      "case": "retained_rx_count_first",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "API message counts"
+    },
+    {
+      "case": "retained_late_reply_first",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "Whole frame deadline"
+    },
+    {
+      "case": "retained_wrong_pass_first",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "Returned pass/address/length"
+    },
+    {
+      "case": "retained_wrong_command_first",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "Returned pass/address/length"
+    },
+    {
+      "case": "retained_extra_byte_first",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "RX metadata"
+    },
+    {
+      "case": "retained_success",
+      "status": "PASS",
+      "expect": "ACCEPT",
+      "result": {
+        "type": "full_read_result",
+        "passes": 2,
+        "blocks_per_pass": 8192,
+        "block_bytes": 128,
+        "ROM_start": 0,
+        "ROM_end_exclusive": 1048576,
+        "pass0_bytes": 1048576,
+        "pass1_bytes": 1048576,
+        "pass0_sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2",
+        "pass1_sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2",
+        "pass_to_pass_identical": true,
+        "current_reference_sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2",
+        "pass0_vs_current": {
+          "identical": true,
+          "differing_bytes": 0,
+          "differing_ranges": []
+        },
+        "pass1_vs_current": {
+          "identical": true,
+          "differing_bytes": 0,
+          "differing_ranges": []
+        },
+        "baseline_equality_required_for_transport": false
+      }
+    },
+    {
+      "case": "tamper_startup_hash",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "Startup image/contract binding"
+    },
+    {
+      "case": "tamper_wrong_backend",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "Backend class"
+    },
+    {
+      "case": "tamper_missing_startup",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "Missing startup"
+    },
+    {
+      "case": "tamper_API_sequence",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "API pair"
+    },
+    {
+      "case": "tamper_API_status",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "Terminal API failure"
+    },
+    {
+      "case": "tamper_API_clock",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "API clock"
+    },
+    {
+      "case": "tamper_block_address",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "Exact block event and immediate match"
+    },
+    {
+      "case": "tamper_block_length",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "Exact block event and immediate match"
+    },
+    {
+      "case": "tamper_block_payload",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "Exact block event and immediate match"
+    },
+    {
+      "case": "tamper_block_checksum",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "Exact block event and immediate match"
+    },
+    {
+      "case": "tamper_block_duplicate",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "Block event ordering"
+    },
+    {
+      "case": "tamper_block_missing",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "API order or missing block event"
+    },
+    {
+      "case": "tamper_block_reordered",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "Exact block event and immediate match"
+    },
+    {
+      "case": "tamper_pass_mismatch",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "Exact block event and immediate match"
+    },
+    {
+      "case": "tamper_final_hash",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "Independent final comparison"
+    },
+    {
+      "case": "tamper_output_length",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "Independent final comparison"
+    },
+    {
+      "case": "tamper_baseline_claim",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "Independent final comparison"
+    },
+    {
+      "case": "tamper_missing_final",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "Terminal after complete results"
+    },
+    {
+      "case": "tamper_cleanup_failed",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "Terminal cleanup"
+    },
+    {
+      "case": "tamper_extra_TX_count",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "Terminal bounds"
+    },
+    {
+      "case": "tamper_missing_terminal",
+      "status": "PASS",
+      "expect": "REJECT",
+      "reason": "Missing terminal"
+    },
+    {
+      "case": "reject_CLI_--address",
+      "status": "PASS",
+      "expect": "REJECT_BEFORE_PROVIDER",
+      "exit_code": 2,
+      "stderr": "FAIL_CLOSED_BEFORE_OR_OUTSIDE_FINAL_TWO_PASS_128: Exact offline fixture/journal arguments required\n"
+    },
+    {
+      "case": "reject_CLI_--length",
+      "status": "PASS",
+      "expect": "REJECT_BEFORE_PROVIDER",
+      "exit_code": 2,
+      "stderr": "FAIL_CLOSED_BEFORE_OR_OUTSIDE_FINAL_TWO_PASS_128: Exact offline fixture/journal arguments required\n"
+    },
+    {
+      "case": "reject_CLI_--passes",
+      "status": "PASS",
+      "expect": "REJECT_BEFORE_PROVIDER",
+      "exit_code": 2,
+      "stderr": "FAIL_CLOSED_BEFORE_OR_OUTSIDE_FINAL_TWO_PASS_128: Exact offline fixture/journal arguments required\n"
+    },
+    {
+      "case": "reject_CLI_--kernel",
+      "status": "PASS",
+      "expect": "REJECT_BEFORE_PROVIDER",
+      "exit_code": 2,
+      "stderr": "FAIL_CLOSED_BEFORE_OR_OUTSIDE_FINAL_TWO_PASS_128: Exact offline fixture/journal arguments required\n"
+    },
+    {
+      "case": "reject_CLI_--entry",
+      "status": "PASS",
+      "expect": "REJECT_BEFORE_PROVIDER",
+      "exit_code": 2,
+      "stderr": "FAIL_CLOSED_BEFORE_OR_OUTSIDE_FINAL_TWO_PASS_128: Exact offline fixture/journal arguments required\n"
+    },
+    {
+      "case": "reject_CLI_--retry",
+      "status": "PASS",
+      "expect": "REJECT_BEFORE_PROVIDER",
+      "exit_code": 2,
+      "stderr": "FAIL_CLOSED_BEFORE_OR_OUTSIDE_FINAL_TWO_PASS_128: Exact offline fixture/journal arguments required\n"
+    }
+  ],
+  "files": [
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_final_two_pass_128_20260930_01\\test_final_validator.py",
+      "bytes": 5043,
+      "sha256": "b502cea13036a71c025ba0ed06996192332804e62ec43380fe5b6fdf54ce29a0"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_final_two_pass_128_20260930_01\\validate_final.py",
+      "bytes": 12842,
+      "sha256": "75b5884fcefea655ff80f59e11752009a01615cae066963f463df290cd630bed"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\TEST_REPORT.json",
+      "bytes": 218250,
+      "sha256": "56f620bee03bd847413542caacbd1f5f9fa35db3d38f4ce07729208dfb7f38bf"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_final_two_pass_128_20260930_01\\FINAL_TWO_PASS_REVIEW_CONTRACT.json",
+      "bytes": 18395,
+      "sha256": "22944aad65f7999f064c48acb2335ab4f871826aca770119d44b4d90fdc34ac9"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\build_a\\rk03_final_two_pass_128_physical32.exe",
+      "bytes": 448000,
+      "sha256": "991492809897e3333fdc1422e70d70690906f59d722e1e99088fb55bd56432ce"
+    }
+  ],
+  "native_test_reruns": 0
+}

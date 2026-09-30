@@ -1,0 +1,1443 @@
+{
+  "schema": 1,
+  "status": "PASS_INDEPENDENT_PHYSICAL_FULL_UPLOAD_NO_START_REVIEW",
+  "created_utc": "2026-09-30T05:22:04.004966+00:00",
+  "reviewer": "passive_review",
+  "review_mode": "Read-only completed evidence audit; no provider/client/native executable invocation",
+  "physical_operations_by_reviewer": 0,
+  "recorded_physical_invocations": 1,
+  "blocking_findings": [],
+  "session_id": "RK03_FULL_UPLOAD_NO_START_01",
+  "execution": {
+    "session_id": "RK03_FULL_UPLOAD_NO_START_01",
+    "command_argv": [
+      "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\full_upload_physical\\build_a\\rk03_full_upload_no_start_physical32.exe",
+      "--physical-full-upload-no-start",
+      "--session",
+      "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\physical_session\\RK03_FULL_UPLOAD_NO_START_01",
+      "--authorization-file",
+      "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\physical_session\\RK03_FULL_UPLOAD_NO_START_01\\AUTHORIZATION.txt"
+    ],
+    "started_utc": "2026-09-30T05:15:27.500674+00:00",
+    "executable_sha256": "6c7571ece71bb6c29feae9fbfa873cca9635e41cabe269ebc7fa21b1e2fc0d51",
+    "contract_sha256": "0b56e15ae2dcf749666679effd559c54b7a7c2e202fc2ad2902e24c2a54b1e51",
+    "qualification_sha256": "dbfe169cbe89f4ab23318cb79dec1dbafcaa49dbdea48397dc4ec0f16de95399",
+    "authorization_source": "Exact new user token after IGNITION OFF and TEST MODE ON",
+    "retry_allowed": false,
+    "pid": 21608,
+    "exit_code": 0,
+    "exited_utc": "2026-09-30T05:15:29.920159+00:00",
+    "process_exited": true,
+    "bookkeeping_error": null
+  },
+  "auth_source": "Root-recorded user gate receipts, exact session authorization and reservation bytes",
+  "qualified_file_hashes_verified": 1181,
+  "source_evidence": [
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\physical_session\\RK03_FULL_UPLOAD_NO_START_01\\AUTHORIZATION.txt",
+      "bytes": 231,
+      "sha256": "b66eb81fefe784ff2f4dec369c99937110e9bd9e435f7399dfd4c04d7b6396b2"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\physical_session\\RK03_FULL_UPLOAD_NO_START_01\\console.log",
+      "bytes": 61,
+      "sha256": "d8aee6202f244f0b90ba9ce44ca650d43bb87860339a9873a1aeda5958a23361"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\physical_session\\RK03_FULL_UPLOAD_NO_START_01\\EXECUTION.json",
+      "bytes": 1074,
+      "sha256": "e76fce5cb6d1c72adbfbb01a5ea309cb10b64b3bc5cd6bac992314d70fbb899e"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\physical_session\\RK03_FULL_UPLOAD_NO_START_01\\EXECUTION_BEGIN.json",
+      "bytes": 933,
+      "sha256": "18c8e8d0a33e029761e4aef2a505c8ebbdc731f8d5c97a92952dca9139d50d78"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\physical_session\\RK03_FULL_UPLOAD_NO_START_01\\invocation.once",
+      "bytes": 159,
+      "sha256": "55661d73bb3008022626e1f786d730bace7e419886b6771e08e48e232a883677"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\physical_session\\RK03_FULL_UPLOAD_NO_START_01\\launch.reserved",
+      "bytes": 159,
+      "sha256": "55661d73bb3008022626e1f786d730bace7e419886b6771e08e48e232a883677"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\physical_session\\RK03_FULL_UPLOAD_NO_START_01\\native_api.jsonl",
+      "bytes": 347253,
+      "sha256": "8f10d7379019ca07d761b7befdc8259f98577668b33d78ce9460e604e822d719"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\physical_session\\RK03_FULL_UPLOAD_NO_START_01\\POSTEXIT_CLIENT_CHECK.json",
+      "bytes": 356,
+      "sha256": "0d3fc224a331b17cdc9c6ad9bc329680a346ab0660d13d65bf5eaa88a8eee745"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\physical_session\\RK03_FULL_UPLOAD_NO_START_01\\PRELAUNCH_CLIENT_CHECK.json",
+      "bytes": 494,
+      "sha256": "439ddf288bf2b51939fa3f3bdba39b473a8918534def086c14361621550e2076"
+    }
+  ],
+  "result": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\physical_result\\PHYSICAL_RESULT.json",
+    "bytes": 7821,
+    "sha256": "41d0b333b1fd01c43ae6f11154e33e10a1740f8d9735694d3895bb0e47b4d1a0"
+  },
+  "qualification": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\qualification\\QUALIFICATION.json",
+    "bytes": 331611,
+    "sha256": "dbfe169cbe89f4ab23318cb79dec1dbafcaa49dbdea48397dc4ec0f16de95399"
+  },
+  "contract": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\PHYSICAL_FULL_UPLOAD_REVIEW_CONTRACT.json",
+    "bytes": 18529,
+    "sha256": "0b56e15ae2dcf749666679effd559c54b7a7c2e202fc2ad2902e24c2a54b1e51"
+  },
+  "review_source": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\physical_review\\audit_physical_evidence.py",
+    "bytes": 23379,
+    "sha256": "f28e504f3608b5ccb58690e06141edf0728d4ee416a6a4ad6cb7bd71e9365c67"
+  },
+  "review_helpers": {
+    "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\full_upload_physical\\tools\\test_full_physical_independent.py",
+    "bytes": 80718,
+    "sha256": "ccc470742171ff164c93341eed9d3647e4b34f6d768ef378c4ba3cf763c8411a"
+  },
+  "pure_byte_reference": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\protocol.py",
+    "bytes": 4623,
+    "sha256": "d7909dc2026fae0545d94d048c2c71ab366e804df84c5ee563d656d3774dbf38"
+  },
+  "reviewer_assertion_correction": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\physical_review\\AUDIT_ATTEMPT_01.json",
+    "bytes": 571,
+    "sha256": "2006ae84b27b46b50504665ebb69e33bdedb4c5ade7413548177124477ea3d54"
+  },
+  "gate_snapshot": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\physical_review\\GATE_STATE_READ_SNAPSHOT.json",
+    "bytes": 3279,
+    "sha256": "370811410776c664c14f89e153a339763c917586de690df8dfa575de68d22ad6"
+  },
+  "journal_records": 172,
+  "journal_call_returns": 85,
+  "provider_API_calls": 82,
+  "host_wait_calls": 3,
+  "all_call_statuses_zero": true,
+  "TX": 22,
+  "RX": 44,
+  "start_of_message_records": 22,
+  "complete_response_records": 22,
+  "BF_identity": "2F12515306",
+  "responses": [
+    "80f01039ffa210112f1251530673facba62b81fea800000060ce54f9b1e4000c200000000000dc00005d1f3080f226000043fb00e1000000000000c1f0c2",
+    "80f01003c1ef8fc2",
+    "80f01007c30000ff00ff0048",
+    "80f010066701b99d2bfd6c",
+    "80f0100367023420",
+    "80f01002508557",
+    "80f0100274847a",
+    "80f0100176f7",
+    "80f0100176f7",
+    "80f0100176f7",
+    "80f0100176f7",
+    "80f0100176f7",
+    "80f0100176f7",
+    "80f0100176f7",
+    "80f0100176f7",
+    "80f0100176f7",
+    "80f0100176f7",
+    "80f0100176f7",
+    "80f0100176f7",
+    "80f0100176f7",
+    "80f0100176f7",
+    "80f0100176f7"
+  ],
+  "seed_hex": "b99d2bfd",
+  "key_hex": "51f7b537",
+  "fixed_declarations": 1,
+  "fixed_chunks": [
+    {
+      "chunk": 1,
+      "address": "FFFF3000",
+      "bytes": 128,
+      "wire_hex": "8010f08436ff30002178b10a345b1076fd256f75f05ba033e301ed7bbae243b735e6aedbc143c40be01bf9b6caab4599eccaacb23d3eeb06dddf471ed3b0238f2bf0553861e117054bad87079a8cbb9681c01303b7825b2d199bc7e5c4dd5bcf85cf1a64050df3ab050df3ab2a45f9b476963b1f16baea94084e321a79bd4cf9c0f25912ab9d7b8df4",
+      "wire_sha256": "d2db948b4bedf0d660f00ec0830a8dfcc8a4686be0bf218327799898b88359f2",
+      "cipher_sha256": "b27c4fe47f71a7c96881891c73002084f3dbc5ebe977ec7e7e857b5dc4c44413",
+      "ack_hex": "80f0100176f7",
+      "tx_sequence": 37,
+      "ack_sequence": 39
+    },
+    {
+      "chunk": 2,
+      "address": "FFFF3080",
+      "bytes": 128,
+      "wire_hex": "8010f08436ff3080a614d816e73b7a2f8010d0033c21fd82e809dcd33849889e1bb8439f58c18e12d1328f80e2d30dccf17eadf57d339c382284e4779a8cbb96094cf9da205bf8c04e6120419a8cbb9687d0d3c3ea5b98c957670833e1a0128aff648ef5c03ca6b7b876eac3f7b569d887422e4be8f5108bedc55089c03ca6b7539b8ad1a4d30a534a",
+      "wire_sha256": "e0e1480a48a39fd64fdd2586495141653b88adcb60f7fbb788a1a4952a9b54a7",
+      "cipher_sha256": "07e0a7591c2664cad999b2ef96cc8531bb1251e221575e7c87de26ede4763abf",
+      "ack_hex": "80f0100176f7",
+      "tx_sequence": 40,
+      "ack_sequence": 42
+    },
+    {
+      "chunk": 3,
+      "address": "FFFF3100",
+      "bytes": 128,
+      "wire_hex": "8010f08436ff3100e28c3ee42446007d2de0ddaa9dce70327241c643aab2699ea62dd88c9cead164bbf16590f4e0cd28e987359e6b371cd882af16896daaa08c2bfb509b6f5a700b7016e8ad4d3d09337306eba60e9f2d6e3e5ccec225f798f1fc359ea168d7727d38fc1265927d740c43d5e9b1862403ee9330f481bc7dd24e36e13bd0697c3ebcf7",
+      "wire_sha256": "4955f1fdec66ade4f6fa260a73df4b3515da1d0eabcb8cd818990a5151bf2d13",
+      "cipher_sha256": "100d6ec33fc5faa7b65efb3288816bc417b8faadf44ac757e1dd024dd8a328e9",
+      "ack_hex": "80f0100176f7",
+      "tx_sequence": 43,
+      "ack_sequence": 45
+    },
+    {
+      "chunk": 4,
+      "address": "FFFF3180",
+      "bytes": 128,
+      "wire_hex": "8010f08436ff3180e53ad55784b629fd3cea7e81d4dc1bda5cf12a09f0b79a4aa55b665170242840fb7a57ac4529e2035494df2334c35cd56728ca429349c6346df8cb0851762c820bd86e23ff3f981ecfaa3f64bd138e591f7758aa5bc2bb0a356880ee7fe99c9e999df968b7990b479cead164b8a522b9916f7876b64b0a986df8cb08e41af6e447",
+      "wire_sha256": "01362b4a4ea051ba5c83669d943643e7e2e3fcd842960ccd672dad01458d69ab",
+      "cipher_sha256": "b81dfc437e0265ea95bee53c3c1e4f1fb858628b780c8d04dd734b27bf878f41",
+      "ack_hex": "80f0100176f7",
+      "tx_sequence": 46,
+      "ack_sequence": 48
+    },
+    {
+      "chunk": 5,
+      "address": "FFFF3200",
+      "bytes": 128,
+      "wire_hex": "8010f08436ff3200eca5fa6a8a62f844b5e1848ef17eadf568825b141d4ff58dc89ab04cfbd4a32d9abc830e01f8532ebdbc9702cee42851332c5982b6577390905dcdb16d01a44985461295b0146d10af5802982bcc68f85cf4a719a94e5346ef3981a189138327778d6eabd4a1b462624856a52b19196c33317cbf50c026109533ebf66df8cb08ea",
+      "wire_sha256": "fab1f05d5f803bf5ec3497d4d0fa4176f5b6fba66239cdf9132762ae4ed31df7",
+      "cipher_sha256": "c1f913fa9be870c84ec384eaadeb5021e425b0a68ad0aff8367af7b789a88348",
+      "ack_hex": "80f0100176f7",
+      "tx_sequence": 49,
+      "ack_sequence": 51
+    },
+    {
+      "chunk": 6,
+      "address": "FFFF3280",
+      "bytes": 128,
+      "wire_hex": "8010f08436ff3280f40b4a6eaac8fec9999df968727f34e532725d2a308f31b7fd4a3cc0fb7a57ac2178b10aecaf7860c2a995fabf999e820e33d2922119a57cfdd3ffff83d78c2ed9d6fc2e55d8f95b582d518eecaf786053bb63cf43eb460683d78c2e08ac051618f01400e24c1787a16505d65eb63b868a551574fc94751063f2d4d1de2eec0c0b",
+      "wire_sha256": "ebb34ffae31a2b6cd2f4474e0a95f40e25cc35462eaae0df49f243d77a07d5b6",
+      "cipher_sha256": "98196e7717170d0648aad05bce25d684019cf9aeba1f7671b05d40912c22786c",
+      "ack_hex": "80f0100176f7",
+      "tx_sequence": 52,
+      "ack_sequence": 54
+    },
+    {
+      "chunk": 7,
+      "address": "FFFF3300",
+      "bytes": 128,
+      "wire_hex": "8010f08436ff33006bf35d4fef1ead4e87be33e29dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf3123c8",
+      "wire_sha256": "ae60196ad5372c4b974668a21cc0e1085dc99c29ca2c47022e06ac8bdd471fd0",
+      "cipher_sha256": "65006edfa7ce69a2dedceca722fead4c5fde054b7819c799230c28d3e2dd500f",
+      "ack_hex": "80f0100176f7",
+      "tx_sequence": 55,
+      "ack_sequence": 57
+    },
+    {
+      "chunk": 8,
+      "address": "FFFF3380",
+      "bytes": 128,
+      "wire_hex": "8010f08436ff33809dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf3123ec",
+      "wire_sha256": "96e1039d9a4959dca54e2156972d7aa6a52edb4e97527bd70fca14d37d32a5c7",
+      "cipher_sha256": "3452edc6a17f072160fbe6afab0864eafd55dd03475e2a2a1ec7ce54affd7235",
+      "ack_hex": "80f0100176f7",
+      "tx_sequence": 58,
+      "ack_sequence": 60
+    },
+    {
+      "chunk": 9,
+      "address": "FFFF3400",
+      "bytes": 128,
+      "wire_hex": "8010f08436ff34009dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31236d",
+      "wire_sha256": "8267ce2e4856d38993844f9dfa614807574566268df17bdd3a65a2a52f3df284",
+      "cipher_sha256": "3452edc6a17f072160fbe6afab0864eafd55dd03475e2a2a1ec7ce54affd7235",
+      "ack_hex": "80f0100176f7",
+      "tx_sequence": 61,
+      "ack_sequence": 63
+    },
+    {
+      "chunk": 10,
+      "address": "FFFF3480",
+      "bytes": 128,
+      "wire_hex": "8010f08436ff34809dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf3123ed",
+      "wire_sha256": "d04abef6c6a6c65589e72fefe436fe2ddd97f038ea1c7026c98167e615ecbf6f",
+      "cipher_sha256": "3452edc6a17f072160fbe6afab0864eafd55dd03475e2a2a1ec7ce54affd7235",
+      "ack_hex": "80f0100176f7",
+      "tx_sequence": 64,
+      "ack_sequence": 66
+    },
+    {
+      "chunk": 11,
+      "address": "FFFF3500",
+      "bytes": 128,
+      "wire_hex": "8010f08436ff35009dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31236e",
+      "wire_sha256": "84bc2f3224cc186d966720d88dbbfa23f569d1db2615fc0e0315c7624c41b0f5",
+      "cipher_sha256": "3452edc6a17f072160fbe6afab0864eafd55dd03475e2a2a1ec7ce54affd7235",
+      "ack_hex": "80f0100176f7",
+      "tx_sequence": 67,
+      "ack_sequence": 69
+    },
+    {
+      "chunk": 12,
+      "address": "FFFF3580",
+      "bytes": 128,
+      "wire_hex": "8010f08436ff35809dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf3123ee",
+      "wire_sha256": "5e9fdbb5b903e79afcbd4fc831059cdcb81a3dc807b05665a6f1256263979493",
+      "cipher_sha256": "3452edc6a17f072160fbe6afab0864eafd55dd03475e2a2a1ec7ce54affd7235",
+      "ack_hex": "80f0100176f7",
+      "tx_sequence": 70,
+      "ack_sequence": 72
+    },
+    {
+      "chunk": 13,
+      "address": "FFFF3600",
+      "bytes": 128,
+      "wire_hex": "8010f08436ff36009dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31236f",
+      "wire_sha256": "bc79118cda629b78c5a83ae7ff93bc326554b8e2b31b1d37a53b920e1764bb7d",
+      "cipher_sha256": "3452edc6a17f072160fbe6afab0864eafd55dd03475e2a2a1ec7ce54affd7235",
+      "ack_hex": "80f0100176f7",
+      "tx_sequence": 73,
+      "ack_sequence": 75
+    },
+    {
+      "chunk": 14,
+      "address": "FFFF3680",
+      "bytes": 128,
+      "wire_hex": "8010f08436ff36809dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf3123ef",
+      "wire_sha256": "95bfc966dfd62bec0acca65eec528b8300cbb336ca6d85e80f0a863bb45d5c8c",
+      "cipher_sha256": "3452edc6a17f072160fbe6afab0864eafd55dd03475e2a2a1ec7ce54affd7235",
+      "ack_hex": "80f0100176f7",
+      "tx_sequence": 76,
+      "ack_sequence": 78
+    },
+    {
+      "chunk": 15,
+      "address": "FFFF3700",
+      "bytes": 16,
+      "wire_hex": "8010f01436ff37009dbf31239dbf31239dbf3123299ea39812",
+      "wire_sha256": "4bf76d239dd8787cca4217a0c67c02f72b8e718d402f794bbc7479b48781ee0b",
+      "cipher_sha256": "650e747209d3aad9ba1f26fc45f7eb2cf2c325e64bfeec652463825f4d202995",
+      "ack_hex": "80f0100176f7",
+      "tx_sequence": 79,
+      "ack_sequence": 81
+    }
+  ],
+  "cipher_bytes": 1808,
+  "cipher_sha256": "ea851d51dfd2e7d49a9b6d59e7cffd9f0376e33aa2a312816b3101446e053f6b",
+  "offline_decrypted_transmitted_bytes_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+  "physical_RAM_readback_performed": false,
+  "wire_addresses_verified_big_endian": true,
+  "upload_start_inclusive": "FFFF3000",
+  "upload_end_exclusive": "FFFF3710",
+  "actual_handles": {
+    "device": 1,
+    "channel": 3,
+    "filter": 0
+  },
+  "serial_readback": {
+    "config": {
+      "list_present": true,
+      "returned_num_params": 5,
+      "config_pointer": 18186560,
+      "owned_buffer_pointer": 18186560,
+      "pointer_matches_owned": true,
+      "owned_capacity": 5,
+      "owned_buffer_entries": [
+        {
+          "parameter": 22,
+          "value": 0
+        },
+        {
+          "parameter": 7,
+          "value": 1
+        },
+        {
+          "parameter": 10,
+          "value": 0
+        },
+        {
+          "parameter": 12,
+          "value": 0
+        },
+        {
+          "parameter": 3,
+          "value": 0
+        }
+      ]
+    },
+    "canaries_intact": true
+  },
+  "broad_filter": {
+    "type": "api_return",
+    "sequence": 9,
+    "function": "PassThruStartMsgFilter",
+    "physical": true,
+    "status": 0,
+    "input": {
+      "channel": 3,
+      "filter_type": 1,
+      "mask_present": true,
+      "pattern_present": true,
+      "flow_present": true,
+      "filter_output_present": true,
+      "mask": {
+        "protocol": 3,
+        "rx_status": 0,
+        "tx_flags": 0,
+        "timestamp": 0,
+        "data_size": 4,
+        "extra_data_index": 0,
+        "buffer_capacity": 4128,
+        "logged_bytes": 4,
+        "data_truncated": false,
+        "data_hex": "00000000"
+      },
+      "pattern": {
+        "protocol": 3,
+        "rx_status": 0,
+        "tx_flags": 0,
+        "timestamp": 0,
+        "data_size": 4,
+        "extra_data_index": 0,
+        "buffer_capacity": 4128,
+        "logged_bytes": 4,
+        "data_truncated": false,
+        "data_hex": "00000000"
+      },
+      "flow": {
+        "protocol": 3,
+        "rx_status": 0,
+        "tx_flags": 0,
+        "timestamp": 0,
+        "data_size": 4,
+        "extra_data_index": 0,
+        "buffer_capacity": 4128,
+        "logged_bytes": 4,
+        "data_truncated": false,
+        "data_hex": "00000000"
+      }
+    },
+    "output": {
+      "filter_id": 0,
+      "mask": {
+        "protocol": 3,
+        "rx_status": 0,
+        "tx_flags": 0,
+        "timestamp": 0,
+        "data_size": 4,
+        "extra_data_index": 0,
+        "buffer_capacity": 4128,
+        "logged_bytes": 4,
+        "data_truncated": false,
+        "data_hex": "00000000"
+      },
+      "pattern": {
+        "protocol": 3,
+        "rx_status": 0,
+        "tx_flags": 0,
+        "timestamp": 0,
+        "data_size": 4,
+        "extra_data_index": 0,
+        "buffer_capacity": 4128,
+        "logged_bytes": 4,
+        "data_truncated": false,
+        "data_hex": "00000000"
+      },
+      "flow": {
+        "protocol": 3,
+        "rx_status": 0,
+        "tx_flags": 0,
+        "timestamp": 0,
+        "data_size": 4,
+        "extra_data_index": 0,
+        "buffer_capacity": 4128,
+        "logged_bytes": 4,
+        "data_truncated": false,
+        "data_hex": "00000000"
+      },
+      "canaries_intact": true
+    },
+    "qpc_before": 3870978566183,
+    "qpc_after": 3870978571927,
+    "qpc_frequency": 10000000,
+    "api_elapsed_ticks": 5744,
+    "utc_filetime": 134352189276613386,
+    "esp_before": 18181300,
+    "esp_after": 18181300,
+    "state": {
+      "clock_model": "QPC_MONOTONIC_MINIMUM",
+      "monotonic_ms": 387097857,
+      "requested_baud": 4800,
+      "baud_set_accepted": false,
+      "clear_mask": 0,
+      "connection_contract": {
+        "protocol": 3,
+        "flags": 512,
+        "baud": 4800
+      },
+      "opened": true,
+      "device": 1,
+      "connected": true,
+      "channel": 3,
+      "tx_attempts": 0,
+      "requested_configuration": [
+        {
+          "parameter": 22,
+          "value": 0
+        },
+        {
+          "parameter": 7,
+          "value": 1
+        },
+        {
+          "parameter": 10,
+          "value": 0
+        },
+        {
+          "parameter": 12,
+          "value": 0
+        },
+        {
+          "parameter": 3,
+          "value": 0
+        }
+      ],
+      "successful_set_calls": 5,
+      "observed_configuration": [
+        {
+          "parameter": 22,
+          "value": 0
+        },
+        {
+          "parameter": 7,
+          "value": 1
+        },
+        {
+          "parameter": 10,
+          "value": 0
+        },
+        {
+          "parameter": 12,
+          "value": 0
+        },
+        {
+          "parameter": 3,
+          "value": 0
+        }
+      ],
+      "effective_configuration_valid": true,
+      "filter": {
+        "requested": true,
+        "active": true,
+        "id": 0,
+        "type": 1,
+        "requested_mask_hex": "00000000",
+        "requested_pattern_hex": "00000000",
+        "requested_flow_hex": "00000000",
+        "protocol": 3,
+        "flags": 0,
+        "returned_objects_valid": true,
+        "observed_mask": {
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 4,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 4,
+          "data_truncated": false,
+          "data_hex": "00000000"
+        },
+        "observed_pattern": {
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 4,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 4,
+          "data_truncated": false,
+          "data_hex": "00000000"
+        },
+        "observed_flow": {
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 4,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 4,
+          "data_truncated": false,
+          "data_hex": "00000000"
+        }
+      }
+    }
+  },
+  "waits": [
+    {
+      "type": "api_return",
+      "sequence": 25,
+      "function": "MonotonicMinimumWait",
+      "physical": true,
+      "status": 0,
+      "input": {
+        "model": "QPC_MONOTONIC_MINIMUM",
+        "milliseconds": 200,
+        "requested_ms": 200,
+        "reason": "post_key_ack",
+        "monotonic_before_ms": 387098179
+      },
+      "output": {
+        "monotonic_after_ms": 387098379,
+        "requested_ms": 200,
+        "minimum_qpc_ticks": 2000000,
+        "elapsed_qpc_ticks": 2005473,
+        "qpc_frequency": 10000000,
+        "overshoot_qpc_ticks": 5473,
+        "minimum_satisfied": true
+      },
+      "qpc_before": 3870981792696,
+      "qpc_after": 3870983798169,
+      "qpc_frequency": 10000000,
+      "api_elapsed_ticks": 2005473,
+      "utc_filetime": 134352189281839649,
+      "esp_before": 18202436,
+      "esp_after": 18202436,
+      "state": {
+        "clock_model": "QPC_MONOTONIC_MINIMUM",
+        "monotonic_ms": 387098379,
+        "requested_baud": 4800,
+        "baud_set_accepted": false,
+        "clear_mask": 0,
+        "connection_contract": {
+          "protocol": 3,
+          "flags": 512,
+          "baud": 4800
+        },
+        "opened": true,
+        "device": 1,
+        "connected": true,
+        "channel": 3,
+        "tx_attempts": 5,
+        "requested_configuration": [
+          {
+            "parameter": 22,
+            "value": 0
+          },
+          {
+            "parameter": 7,
+            "value": 1
+          },
+          {
+            "parameter": 10,
+            "value": 0
+          },
+          {
+            "parameter": 12,
+            "value": 0
+          },
+          {
+            "parameter": 3,
+            "value": 0
+          }
+        ],
+        "successful_set_calls": 5,
+        "observed_configuration": [
+          {
+            "parameter": 22,
+            "value": 0
+          },
+          {
+            "parameter": 7,
+            "value": 1
+          },
+          {
+            "parameter": 10,
+            "value": 0
+          },
+          {
+            "parameter": 12,
+            "value": 0
+          },
+          {
+            "parameter": 3,
+            "value": 0
+          }
+        ],
+        "effective_configuration_valid": true,
+        "filter": {
+          "requested": true,
+          "active": true,
+          "id": 0,
+          "type": 1,
+          "requested_mask_hex": "00000000",
+          "requested_pattern_hex": "00000000",
+          "requested_flow_hex": "00000000",
+          "protocol": 3,
+          "flags": 0,
+          "returned_objects_valid": true,
+          "observed_mask": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 4,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 4,
+            "data_truncated": false,
+            "data_hex": "00000000"
+          },
+          "observed_pattern": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 4,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 4,
+            "data_truncated": false,
+            "data_hex": "00000000"
+          },
+          "observed_flow": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 4,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 4,
+            "data_truncated": false,
+            "data_hex": "00000000"
+          }
+        }
+      }
+    },
+    {
+      "type": "api_return",
+      "sequence": 29,
+      "function": "MonotonicMinimumWait",
+      "physical": true,
+      "status": 0,
+      "input": {
+        "model": "QPC_MONOTONIC_MINIMUM",
+        "milliseconds": 100,
+        "requested_ms": 100,
+        "reason": "post_session_ack",
+        "monotonic_before_ms": 387098417
+      },
+      "output": {
+        "monotonic_after_ms": 387098520,
+        "requested_ms": 100,
+        "minimum_qpc_ticks": 1000000,
+        "elapsed_qpc_ticks": 1028275,
+        "qpc_frequency": 10000000,
+        "overshoot_qpc_ticks": 28275,
+        "minimum_satisfied": true
+      },
+      "qpc_before": 3870984173840,
+      "qpc_after": 3870985202115,
+      "qpc_frequency": 10000000,
+      "api_elapsed_ticks": 1028275,
+      "utc_filetime": 134352189283243909,
+      "esp_before": 18202436,
+      "esp_after": 18202436,
+      "state": {
+        "clock_model": "QPC_MONOTONIC_MINIMUM",
+        "monotonic_ms": 387098520,
+        "requested_baud": 4800,
+        "baud_set_accepted": false,
+        "clear_mask": 0,
+        "connection_contract": {
+          "protocol": 3,
+          "flags": 512,
+          "baud": 4800
+        },
+        "opened": true,
+        "device": 1,
+        "connected": true,
+        "channel": 3,
+        "tx_attempts": 6,
+        "requested_configuration": [
+          {
+            "parameter": 22,
+            "value": 0
+          },
+          {
+            "parameter": 7,
+            "value": 1
+          },
+          {
+            "parameter": 10,
+            "value": 0
+          },
+          {
+            "parameter": 12,
+            "value": 0
+          },
+          {
+            "parameter": 3,
+            "value": 0
+          }
+        ],
+        "successful_set_calls": 5,
+        "observed_configuration": [
+          {
+            "parameter": 22,
+            "value": 0
+          },
+          {
+            "parameter": 7,
+            "value": 1
+          },
+          {
+            "parameter": 10,
+            "value": 0
+          },
+          {
+            "parameter": 12,
+            "value": 0
+          },
+          {
+            "parameter": 3,
+            "value": 0
+          }
+        ],
+        "effective_configuration_valid": true,
+        "filter": {
+          "requested": true,
+          "active": true,
+          "id": 0,
+          "type": 1,
+          "requested_mask_hex": "00000000",
+          "requested_pattern_hex": "00000000",
+          "requested_flow_hex": "00000000",
+          "protocol": 3,
+          "flags": 0,
+          "returned_objects_valid": true,
+          "observed_mask": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 4,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 4,
+            "data_truncated": false,
+            "data_hex": "00000000"
+          },
+          "observed_pattern": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 4,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 4,
+            "data_truncated": false,
+            "data_hex": "00000000"
+          },
+          "observed_flow": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 4,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 4,
+            "data_truncated": false,
+            "data_hex": "00000000"
+          }
+        }
+      }
+    },
+    {
+      "type": "api_return",
+      "sequence": 33,
+      "function": "MonotonicMinimumWait",
+      "physical": true,
+      "status": 0,
+      "input": {
+        "model": "QPC_MONOTONIC_MINIMUM",
+        "milliseconds": 200,
+        "requested_ms": 200,
+        "reason": "pre_download_declaration",
+        "monotonic_before_ms": 387098526
+      },
+      "output": {
+        "monotonic_after_ms": 387098732,
+        "requested_ms": 200,
+        "minimum_qpc_ticks": 2000000,
+        "elapsed_qpc_ticks": 2057765,
+        "qpc_frequency": 10000000,
+        "overshoot_qpc_ticks": 57765,
+        "minimum_satisfied": true
+      },
+      "qpc_before": 3870985263772,
+      "qpc_after": 3870987321537,
+      "qpc_frequency": 10000000,
+      "api_elapsed_ticks": 2057765,
+      "utc_filetime": 134352189285363095,
+      "esp_before": 18202436,
+      "esp_after": 18202436,
+      "state": {
+        "clock_model": "QPC_MONOTONIC_MINIMUM",
+        "monotonic_ms": 387098732,
+        "requested_baud": 15625,
+        "baud_set_accepted": true,
+        "clear_mask": 3,
+        "connection_contract": {
+          "protocol": 3,
+          "flags": 512,
+          "baud": 4800
+        },
+        "opened": true,
+        "device": 1,
+        "connected": true,
+        "channel": 3,
+        "tx_attempts": 6,
+        "requested_configuration": [
+          {
+            "parameter": 22,
+            "value": 0
+          },
+          {
+            "parameter": 7,
+            "value": 1
+          },
+          {
+            "parameter": 10,
+            "value": 0
+          },
+          {
+            "parameter": 12,
+            "value": 0
+          },
+          {
+            "parameter": 3,
+            "value": 0
+          }
+        ],
+        "successful_set_calls": 5,
+        "observed_configuration": [
+          {
+            "parameter": 22,
+            "value": 0
+          },
+          {
+            "parameter": 7,
+            "value": 1
+          },
+          {
+            "parameter": 10,
+            "value": 0
+          },
+          {
+            "parameter": 12,
+            "value": 0
+          },
+          {
+            "parameter": 3,
+            "value": 0
+          }
+        ],
+        "effective_configuration_valid": true,
+        "filter": {
+          "requested": true,
+          "active": true,
+          "id": 0,
+          "type": 1,
+          "requested_mask_hex": "00000000",
+          "requested_pattern_hex": "00000000",
+          "requested_flow_hex": "00000000",
+          "protocol": 3,
+          "flags": 0,
+          "returned_objects_valid": true,
+          "observed_mask": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 4,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 4,
+            "data_truncated": false,
+            "data_hex": "00000000"
+          },
+          "observed_pattern": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 4,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 4,
+            "data_truncated": false,
+            "data_hex": "00000000"
+          },
+          "observed_flow": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 4,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 4,
+            "data_truncated": false,
+            "data_hex": "00000000"
+          }
+        }
+      }
+    }
+  ],
+  "waits_ms_actual": [
+    200.5473,
+    102.8275,
+    205.7765
+  ],
+  "baud_SET_status_zero": true,
+  "baud_effective_readback_performed": false,
+  "queue_clear_order": [
+    7,
+    8
+  ],
+  "cleanup": [
+    {
+      "type": "api_return",
+      "sequence": 82,
+      "function": "PassThruStopMsgFilter",
+      "physical": true,
+      "cleanup": true,
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "filter_id_present": true,
+        "filter_id": 0
+      },
+      "output": {},
+      "qpc_before": 3871001107206,
+      "qpc_after": 3871001111685,
+      "qpc_frequency": 10000000,
+      "api_elapsed_ticks": 4479,
+      "utc_filetime": 134352189299153045,
+      "state": {
+        "clock_model": "QPC_MONOTONIC_MINIMUM",
+        "monotonic_ms": 387100111,
+        "requested_baud": 15625,
+        "baud_set_accepted": true,
+        "clear_mask": 3,
+        "connection_contract": {
+          "protocol": 3,
+          "flags": 512,
+          "baud": 4800
+        },
+        "opened": true,
+        "device": 1,
+        "connected": true,
+        "channel": 3,
+        "tx_attempts": 22,
+        "requested_configuration": [
+          {
+            "parameter": 22,
+            "value": 0
+          },
+          {
+            "parameter": 7,
+            "value": 1
+          },
+          {
+            "parameter": 10,
+            "value": 0
+          },
+          {
+            "parameter": 12,
+            "value": 0
+          },
+          {
+            "parameter": 3,
+            "value": 0
+          }
+        ],
+        "successful_set_calls": 5,
+        "observed_configuration": [
+          {
+            "parameter": 22,
+            "value": 0
+          },
+          {
+            "parameter": 7,
+            "value": 1
+          },
+          {
+            "parameter": 10,
+            "value": 0
+          },
+          {
+            "parameter": 12,
+            "value": 0
+          },
+          {
+            "parameter": 3,
+            "value": 0
+          }
+        ],
+        "effective_configuration_valid": true,
+        "filter": {
+          "requested": true,
+          "active": false,
+          "id": 0,
+          "type": 1,
+          "requested_mask_hex": "00000000",
+          "requested_pattern_hex": "00000000",
+          "requested_flow_hex": "00000000",
+          "protocol": 3,
+          "flags": 0,
+          "returned_objects_valid": true,
+          "observed_mask": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 4,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 4,
+            "data_truncated": false,
+            "data_hex": "00000000"
+          },
+          "observed_pattern": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 4,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 4,
+            "data_truncated": false,
+            "data_hex": "00000000"
+          },
+          "observed_flow": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 4,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 4,
+            "data_truncated": false,
+            "data_hex": "00000000"
+          }
+        }
+      }
+    },
+    {
+      "type": "api_return",
+      "sequence": 83,
+      "function": "PassThruDisconnect",
+      "physical": true,
+      "cleanup": true,
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "filter_id_present": false,
+        "filter_id": 0
+      },
+      "output": {},
+      "qpc_before": 3871001112767,
+      "qpc_after": 3871001116749,
+      "qpc_frequency": 10000000,
+      "api_elapsed_ticks": 3982,
+      "utc_filetime": 134352189299158104,
+      "state": {
+        "clock_model": "QPC_MONOTONIC_MINIMUM",
+        "monotonic_ms": 387100111,
+        "requested_baud": 15625,
+        "baud_set_accepted": true,
+        "clear_mask": 3,
+        "connection_contract": {
+          "protocol": 3,
+          "flags": 512,
+          "baud": 4800
+        },
+        "opened": true,
+        "device": 1,
+        "connected": false,
+        "channel": 3,
+        "tx_attempts": 22,
+        "requested_configuration": [
+          {
+            "parameter": 22,
+            "value": 0
+          },
+          {
+            "parameter": 7,
+            "value": 1
+          },
+          {
+            "parameter": 10,
+            "value": 0
+          },
+          {
+            "parameter": 12,
+            "value": 0
+          },
+          {
+            "parameter": 3,
+            "value": 0
+          }
+        ],
+        "successful_set_calls": 5,
+        "observed_configuration": [
+          {
+            "parameter": 22,
+            "value": 0
+          },
+          {
+            "parameter": 7,
+            "value": 1
+          },
+          {
+            "parameter": 10,
+            "value": 0
+          },
+          {
+            "parameter": 12,
+            "value": 0
+          },
+          {
+            "parameter": 3,
+            "value": 0
+          }
+        ],
+        "effective_configuration_valid": true,
+        "filter": {
+          "requested": true,
+          "active": false,
+          "id": 0,
+          "type": 1,
+          "requested_mask_hex": "00000000",
+          "requested_pattern_hex": "00000000",
+          "requested_flow_hex": "00000000",
+          "protocol": 3,
+          "flags": 0,
+          "returned_objects_valid": true,
+          "observed_mask": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 4,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 4,
+            "data_truncated": false,
+            "data_hex": "00000000"
+          },
+          "observed_pattern": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 4,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 4,
+            "data_truncated": false,
+            "data_hex": "00000000"
+          },
+          "observed_flow": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 4,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 4,
+            "data_truncated": false,
+            "data_hex": "00000000"
+          }
+        }
+      }
+    },
+    {
+      "type": "api_return",
+      "sequence": 84,
+      "function": "PassThruClose",
+      "physical": true,
+      "cleanup": true,
+      "status": 0,
+      "input": {
+        "device": 1,
+        "filter_id_present": false,
+        "filter_id": 0
+      },
+      "output": {},
+      "qpc_before": 3871001117490,
+      "qpc_after": 3871001123463,
+      "qpc_frequency": 10000000,
+      "api_elapsed_ticks": 5973,
+      "utc_filetime": 134352189299164870,
+      "state": {
+        "clock_model": "QPC_MONOTONIC_MINIMUM",
+        "monotonic_ms": 387100112,
+        "requested_baud": 15625,
+        "baud_set_accepted": true,
+        "clear_mask": 3,
+        "connection_contract": {
+          "protocol": 3,
+          "flags": 512,
+          "baud": 4800
+        },
+        "opened": false,
+        "device": 1,
+        "connected": false,
+        "channel": 3,
+        "tx_attempts": 22,
+        "requested_configuration": [
+          {
+            "parameter": 22,
+            "value": 0
+          },
+          {
+            "parameter": 7,
+            "value": 1
+          },
+          {
+            "parameter": 10,
+            "value": 0
+          },
+          {
+            "parameter": 12,
+            "value": 0
+          },
+          {
+            "parameter": 3,
+            "value": 0
+          }
+        ],
+        "successful_set_calls": 5,
+        "observed_configuration": [
+          {
+            "parameter": 22,
+            "value": 0
+          },
+          {
+            "parameter": 7,
+            "value": 1
+          },
+          {
+            "parameter": 10,
+            "value": 0
+          },
+          {
+            "parameter": 12,
+            "value": 0
+          },
+          {
+            "parameter": 3,
+            "value": 0
+          }
+        ],
+        "effective_configuration_valid": true,
+        "filter": {
+          "requested": true,
+          "active": false,
+          "id": 0,
+          "type": 1,
+          "requested_mask_hex": "00000000",
+          "requested_pattern_hex": "00000000",
+          "requested_flow_hex": "00000000",
+          "protocol": 3,
+          "flags": 0,
+          "returned_objects_valid": true,
+          "observed_mask": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 4,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 4,
+            "data_truncated": false,
+            "data_hex": "00000000"
+          },
+          "observed_pattern": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 4,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 4,
+            "data_truncated": false,
+            "data_hex": "00000000"
+          },
+          "observed_flow": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 4,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 4,
+            "data_truncated": false,
+            "data_hex": "00000000"
+          }
+        }
+      }
+    }
+  ],
+  "provider_version": {
+    "firmware": {
+      "capacity": 80,
+      "nul_terminated": true,
+      "value": "1.17.4877",
+      "raw_buffer_hex": "312e31372e343837370000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "dll": {
+      "capacity": 80,
+      "nul_terminated": true,
+      "value": "1.02.4870 Feb  3 2017 23:36:05",
+      "raw_buffer_hex": "312e30322e343837302046656220203320323031372032333a33363a30350000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "api": {
+      "capacity": 80,
+      "nul_terminated": true,
+      "value": "04.04",
+      "raw_buffer_hex": "30342e3034000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "canaries_intact": true
+  },
+  "all_QPC_UTC_ordering_valid": true,
+  "process_elapsed_seconds": 2.419485,
+  "kernel_start_requests": 0,
+  "custom_kernel_version_requests": 0,
+  "ROM_read_requests": 0,
+  "flash_operations": 0,
+  "recovery_evaluated": false,
+  "limits": [
+    "PASS is scoped to accepted fixed upload followed by clean transport exit; it does not assert physical RAM readback.",
+    "Plaintext equality is derived offline from the transmitted ciphertext with the pinned reference transform, not by reading ECU RAM.",
+    "No kernel start, custom-kernel execution, ROM acquisition or flash operation occurred in the recorded request sequence.",
+    "This audit does not establish OEM-return recovery; that later passive result must be reviewed separately.",
+    "QPC measurements establish host waits and call timing, not electrical K-line waveform timing."
+  ]
+}

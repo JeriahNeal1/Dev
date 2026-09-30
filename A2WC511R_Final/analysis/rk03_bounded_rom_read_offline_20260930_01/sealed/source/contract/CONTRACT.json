@@ -1,0 +1,3736 @@
+{
+  "ROM_read_count": 1,
+  "actions": [
+    {
+      "function": "PassThruOpen",
+      "input": {
+        "device_output_present": true,
+        "name_present": false
+      },
+      "output": {
+        "device": 1
+      },
+      "source_sequence": 0
+    },
+    {
+      "function": "PassThruReadVersion",
+      "input": {
+        "api_capacity": 80,
+        "device": 1,
+        "dll_capacity": 80,
+        "firmware_capacity": 80
+      },
+      "output": {
+        "api": {
+          "capacity": 80,
+          "nul_terminated": true,
+          "raw_buffer_hex": "30342e3034000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "value": "04.04"
+        },
+        "canaries_intact": true,
+        "dll": {
+          "capacity": 80,
+          "nul_terminated": true,
+          "raw_buffer_hex": "312e30322e343837302046656220203320323031372032333a33363a30350000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "value": "1.02.4870 Feb  3 2017 23:36:05"
+        },
+        "firmware": {
+          "capacity": 80,
+          "nul_terminated": true,
+          "raw_buffer_hex": "312e31372e343837370000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "value": "1.17.4877"
+        }
+      },
+      "source_sequence": 1
+    },
+    {
+      "function": "PassThruConnect",
+      "input": {
+        "baud": 4800,
+        "channel_output_present": true,
+        "device": 1,
+        "flags": 512,
+        "protocol": 3
+      },
+      "output": {
+        "channel": 3
+      },
+      "source_sequence": 2
+    },
+    {
+      "function": "PassThruIoctl",
+      "input": {
+        "channel": 3,
+        "config": {
+          "list_present": true,
+          "owned_buffer_entries": [
+            {
+              "parameter": 22,
+              "value": 0
+            }
+          ],
+          "owned_capacity": 1,
+          "pointer_matches_owned": true,
+          "returned_num_params": 1
+        },
+        "input_present": true,
+        "ioctl": 2,
+        "output_present": false
+      },
+      "output": {
+        "canaries_intact": true,
+        "config": {
+          "list_present": true,
+          "owned_buffer_entries": [
+            {
+              "parameter": 22,
+              "value": 0
+            }
+          ],
+          "owned_capacity": 1,
+          "pointer_matches_owned": true,
+          "returned_num_params": 1
+        }
+      },
+      "source_sequence": 3
+    },
+    {
+      "function": "PassThruIoctl",
+      "input": {
+        "channel": 3,
+        "config": {
+          "list_present": true,
+          "owned_buffer_entries": [
+            {
+              "parameter": 7,
+              "value": 1
+            }
+          ],
+          "owned_capacity": 1,
+          "pointer_matches_owned": true,
+          "returned_num_params": 1
+        },
+        "input_present": true,
+        "ioctl": 2,
+        "output_present": false
+      },
+      "output": {
+        "canaries_intact": true,
+        "config": {
+          "list_present": true,
+          "owned_buffer_entries": [
+            {
+              "parameter": 7,
+              "value": 1
+            }
+          ],
+          "owned_capacity": 1,
+          "pointer_matches_owned": true,
+          "returned_num_params": 1
+        }
+      },
+      "source_sequence": 4
+    },
+    {
+      "function": "PassThruIoctl",
+      "input": {
+        "channel": 3,
+        "config": {
+          "list_present": true,
+          "owned_buffer_entries": [
+            {
+              "parameter": 10,
+              "value": 0
+            }
+          ],
+          "owned_capacity": 1,
+          "pointer_matches_owned": true,
+          "returned_num_params": 1
+        },
+        "input_present": true,
+        "ioctl": 2,
+        "output_present": false
+      },
+      "output": {
+        "canaries_intact": true,
+        "config": {
+          "list_present": true,
+          "owned_buffer_entries": [
+            {
+              "parameter": 10,
+              "value": 0
+            }
+          ],
+          "owned_capacity": 1,
+          "pointer_matches_owned": true,
+          "returned_num_params": 1
+        }
+      },
+      "source_sequence": 5
+    },
+    {
+      "function": "PassThruIoctl",
+      "input": {
+        "channel": 3,
+        "config": {
+          "list_present": true,
+          "owned_buffer_entries": [
+            {
+              "parameter": 12,
+              "value": 0
+            }
+          ],
+          "owned_capacity": 1,
+          "pointer_matches_owned": true,
+          "returned_num_params": 1
+        },
+        "input_present": true,
+        "ioctl": 2,
+        "output_present": false
+      },
+      "output": {
+        "canaries_intact": true,
+        "config": {
+          "list_present": true,
+          "owned_buffer_entries": [
+            {
+              "parameter": 12,
+              "value": 0
+            }
+          ],
+          "owned_capacity": 1,
+          "pointer_matches_owned": true,
+          "returned_num_params": 1
+        }
+      },
+      "source_sequence": 6
+    },
+    {
+      "function": "PassThruIoctl",
+      "input": {
+        "channel": 3,
+        "config": {
+          "list_present": true,
+          "owned_buffer_entries": [
+            {
+              "parameter": 3,
+              "value": 0
+            }
+          ],
+          "owned_capacity": 1,
+          "pointer_matches_owned": true,
+          "returned_num_params": 1
+        },
+        "input_present": true,
+        "ioctl": 2,
+        "output_present": false
+      },
+      "output": {
+        "canaries_intact": true,
+        "config": {
+          "list_present": true,
+          "owned_buffer_entries": [
+            {
+              "parameter": 3,
+              "value": 0
+            }
+          ],
+          "owned_capacity": 1,
+          "pointer_matches_owned": true,
+          "returned_num_params": 1
+        }
+      },
+      "source_sequence": 7
+    },
+    {
+      "function": "PassThruIoctl",
+      "input": {
+        "channel": 3,
+        "config": {
+          "list_present": true,
+          "owned_buffer_entries": [
+            {
+              "parameter": 22,
+              "value": 3512641005
+            },
+            {
+              "parameter": 7,
+              "value": 3512641005
+            },
+            {
+              "parameter": 10,
+              "value": 3512641005
+            },
+            {
+              "parameter": 12,
+              "value": 3512641005
+            },
+            {
+              "parameter": 3,
+              "value": 3512641005
+            }
+          ],
+          "owned_capacity": 5,
+          "pointer_matches_owned": true,
+          "returned_num_params": 5
+        },
+        "input_present": true,
+        "ioctl": 1,
+        "output_present": false
+      },
+      "output": {
+        "canaries_intact": true,
+        "config": {
+          "list_present": true,
+          "owned_buffer_entries": [
+            {
+              "parameter": 22,
+              "value": 0
+            },
+            {
+              "parameter": 7,
+              "value": 1
+            },
+            {
+              "parameter": 10,
+              "value": 0
+            },
+            {
+              "parameter": 12,
+              "value": 0
+            },
+            {
+              "parameter": 3,
+              "value": 0
+            }
+          ],
+          "owned_capacity": 5,
+          "pointer_matches_owned": true,
+          "returned_num_params": 5
+        }
+      },
+      "source_sequence": 8
+    },
+    {
+      "function": "PassThruStartMsgFilter",
+      "input": {
+        "channel": 3,
+        "filter_output_present": true,
+        "filter_type": 1,
+        "flow": {
+          "buffer_capacity": 4128,
+          "data_hex": "00000000",
+          "data_size": 4,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 4,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "flow_present": true,
+        "mask": {
+          "buffer_capacity": 4128,
+          "data_hex": "00000000",
+          "data_size": 4,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 4,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "mask_present": true,
+        "pattern": {
+          "buffer_capacity": 4128,
+          "data_hex": "00000000",
+          "data_size": 4,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 4,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "pattern_present": true
+      },
+      "output": {
+        "canaries_intact": true,
+        "filter_id": 0,
+        "flow": {
+          "buffer_capacity": 4128,
+          "data_hex": "00000000",
+          "data_size": 4,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 4,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "mask": {
+          "buffer_capacity": 4128,
+          "data_hex": "00000000",
+          "data_size": 4,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 4,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "pattern": {
+          "buffer_capacity": 4128,
+          "data_hex": "00000000",
+          "data_size": 4,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 4,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 9
+    },
+    {
+      "function": "PassThruWriteMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "8010f001bf40",
+          "data_size": 6,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 6,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "8010f001bf40",
+          "data_size": 6,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 6,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 10
+    },
+    {
+      "function": "PassThruReadMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 3,
+          "rx_status": 2,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 11
+    },
+    {
+      "function": "PassThruReadMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "80f01039ffa210112f1251530673facba62b81fea800000060ce54f9b1e4000c200000000000dc00005d1f3080f226000043fb00e1000000000000c1f0c2",
+          "data_size": 62,
+          "data_truncated": false,
+          "extra_data_index": 62,
+          "logged_bytes": 62,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 12
+    },
+    {
+      "function": "PassThruWriteMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "8010f0018102",
+          "data_size": 6,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 6,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "8010f0018102",
+          "data_size": 6,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 6,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 13
+    },
+    {
+      "function": "PassThruReadMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 3,
+          "rx_status": 2,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 14
+    },
+    {
+      "function": "PassThruReadMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "80f01003c1ef8fc2",
+          "data_size": 8,
+          "data_truncated": false,
+          "extra_data_index": 8,
+          "logged_bytes": 8,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 15
+    },
+    {
+      "function": "PassThruWriteMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "8010f002830005",
+          "data_size": 7,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 7,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "8010f002830005",
+          "data_size": 7,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 7,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 16
+    },
+    {
+      "function": "PassThruReadMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 3,
+          "rx_status": 2,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 17
+    },
+    {
+      "function": "PassThruReadMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "80f01007c30000ff00ff0048",
+          "data_size": 12,
+          "data_truncated": false,
+          "extra_data_index": 12,
+          "logged_bytes": 12,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 18
+    },
+    {
+      "function": "PassThruWriteMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "8010f0022701aa",
+          "data_size": 7,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 7,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "8010f0022701aa",
+          "data_size": 7,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 7,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 19
+    },
+    {
+      "function": "PassThruReadMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 3,
+          "rx_status": 2,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 20
+    },
+    {
+      "function": "PassThruReadMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "80f010066701b8808513be",
+          "data_size": 11,
+          "data_truncated": false,
+          "extra_data_index": 11,
+          "logged_bytes": 11,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 21
+    },
+    {
+      "function": "PassThruWriteMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "8010f0062702349c6319fb",
+          "data_size": 11,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 11,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "8010f0062702349c6319fb",
+          "data_size": 11,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 11,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 22
+    },
+    {
+      "function": "PassThruReadMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 3,
+          "rx_status": 2,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 23
+    },
+    {
+      "function": "PassThruReadMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "80f0100367023420",
+          "data_size": 8,
+          "data_truncated": false,
+          "extra_data_index": 8,
+          "logged_bytes": 8,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 24
+    },
+    {
+      "function": "VirtualWait",
+      "input": {
+        "milliseconds": 200,
+        "reason": "post_key_ack"
+      },
+      "output": {},
+      "source_sequence": 25
+    },
+    {
+      "function": "PassThruWriteMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "8010f0031085021a",
+          "data_size": 8,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 8,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "8010f0031085021a",
+          "data_size": 8,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 8,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 26
+    },
+    {
+      "function": "PassThruReadMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 3,
+          "rx_status": 2,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 27
+    },
+    {
+      "function": "PassThruReadMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "80f01002508557",
+          "data_size": 7,
+          "data_truncated": false,
+          "extra_data_index": 7,
+          "logged_bytes": 7,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 28
+    },
+    {
+      "function": "VirtualWait",
+      "input": {
+        "milliseconds": 100,
+        "reason": "post_session_ack"
+      },
+      "output": {},
+      "source_sequence": 29
+    },
+    {
+      "function": "PassThruIoctl",
+      "input": {
+        "channel": 3,
+        "config": {
+          "list_present": true,
+          "owned_buffer_entries": [
+            {
+              "parameter": 1,
+              "value": 15625
+            }
+          ],
+          "owned_capacity": 1,
+          "pointer_matches_owned": true,
+          "returned_num_params": 1
+        },
+        "input_present": true,
+        "ioctl": 2,
+        "output_present": false
+      },
+      "output": {
+        "canaries_intact": true,
+        "config": {
+          "list_present": true,
+          "owned_buffer_entries": [
+            {
+              "parameter": 1,
+              "value": 15625
+            }
+          ],
+          "owned_capacity": 1,
+          "pointer_matches_owned": true,
+          "returned_num_params": 1
+        }
+      },
+      "source_sequence": 30
+    },
+    {
+      "function": "PassThruIoctl",
+      "input": {
+        "channel": 3,
+        "input_present": false,
+        "ioctl": 7,
+        "output_present": false
+      },
+      "output": {},
+      "source_sequence": 31
+    },
+    {
+      "function": "PassThruIoctl",
+      "input": {
+        "channel": 3,
+        "input_present": false,
+        "ioctl": 8,
+        "output_present": false
+      },
+      "output": {},
+      "source_sequence": 32
+    },
+    {
+      "function": "VirtualWait",
+      "input": {
+        "milliseconds": 200,
+        "reason": "pre_download_declaration"
+      },
+      "output": {},
+      "source_sequence": 33
+    },
+    {
+      "function": "PassThruWriteMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "8010f00834ff30000400071006",
+          "data_size": 13,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 13,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "8010f00834ff30000400071006",
+          "data_size": 13,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 13,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 34
+    },
+    {
+      "function": "PassThruReadMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 3,
+          "rx_status": 2,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 35
+    },
+    {
+      "function": "PassThruReadMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "80f0100274847a",
+          "data_size": 7,
+          "data_truncated": false,
+          "extra_data_index": 7,
+          "logged_bytes": 7,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 36
+    },
+    {
+      "function": "PassThruWriteMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "8010f08436ff30002178b10a345b1076fd256f75f05ba033e301ed7bbae243b735e6aedbc143c40be01bf9b6caab4599eccaacb23d3eeb06dddf471ed3b0238f2bf0553861e117054bad87079a8cbb9681c01303b7825b2d199bc7e5c4dd5bcf85cf1a64050df3ab050df3ab2a45f9b476963b1f16baea94084e321a79bd4cf9c0f25912ab9d7b8df4",
+          "data_size": 137,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 137,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "8010f08436ff30002178b10a345b1076fd256f75f05ba033e301ed7bbae243b735e6aedbc143c40be01bf9b6caab4599eccaacb23d3eeb06dddf471ed3b0238f2bf0553861e117054bad87079a8cbb9681c01303b7825b2d199bc7e5c4dd5bcf85cf1a64050df3ab050df3ab2a45f9b476963b1f16baea94084e321a79bd4cf9c0f25912ab9d7b8df4",
+          "data_size": 137,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 137,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 37
+    },
+    {
+      "function": "PassThruReadMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 3,
+          "rx_status": 2,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 38
+    },
+    {
+      "function": "PassThruReadMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "80f0100176f7",
+          "data_size": 6,
+          "data_truncated": false,
+          "extra_data_index": 6,
+          "logged_bytes": 6,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 39
+    },
+    {
+      "function": "PassThruWriteMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "8010f08436ff3080a614d816e73b7a2f8010d0033c21fd82e809dcd33849889e1bb8439f58c18e12d1328f80e2d30dccf17eadf57d339c382284e4779a8cbb96094cf9da205bf8c04e6120419a8cbb9687d0d3c3ea5b98c957670833e1a0128aff648ef5c03ca6b7b876eac3f7b569d887422e4be8f5108bedc55089c03ca6b7539b8ad1a4d30a534a",
+          "data_size": 137,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 137,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "8010f08436ff3080a614d816e73b7a2f8010d0033c21fd82e809dcd33849889e1bb8439f58c18e12d1328f80e2d30dccf17eadf57d339c382284e4779a8cbb96094cf9da205bf8c04e6120419a8cbb9687d0d3c3ea5b98c957670833e1a0128aff648ef5c03ca6b7b876eac3f7b569d887422e4be8f5108bedc55089c03ca6b7539b8ad1a4d30a534a",
+          "data_size": 137,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 137,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 40
+    },
+    {
+      "function": "PassThruReadMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 3,
+          "rx_status": 2,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 41
+    },
+    {
+      "function": "PassThruReadMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "80f0100176f7",
+          "data_size": 6,
+          "data_truncated": false,
+          "extra_data_index": 6,
+          "logged_bytes": 6,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 42
+    },
+    {
+      "function": "PassThruWriteMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "8010f08436ff3100e28c3ee42446007d2de0ddaa9dce70327241c643aab2699ea62dd88c9cead164bbf16590f4e0cd28e987359e6b371cd882af16896daaa08c2bfb509b6f5a700b7016e8ad4d3d09337306eba60e9f2d6e3e5ccec225f798f1fc359ea168d7727d38fc1265927d740c43d5e9b1862403ee9330f481bc7dd24e36e13bd0697c3ebcf7",
+          "data_size": 137,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 137,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "8010f08436ff3100e28c3ee42446007d2de0ddaa9dce70327241c643aab2699ea62dd88c9cead164bbf16590f4e0cd28e987359e6b371cd882af16896daaa08c2bfb509b6f5a700b7016e8ad4d3d09337306eba60e9f2d6e3e5ccec225f798f1fc359ea168d7727d38fc1265927d740c43d5e9b1862403ee9330f481bc7dd24e36e13bd0697c3ebcf7",
+          "data_size": 137,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 137,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 43
+    },
+    {
+      "function": "PassThruReadMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 3,
+          "rx_status": 2,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 44
+    },
+    {
+      "function": "PassThruReadMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "80f0100176f7",
+          "data_size": 6,
+          "data_truncated": false,
+          "extra_data_index": 6,
+          "logged_bytes": 6,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 45
+    },
+    {
+      "function": "PassThruWriteMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "8010f08436ff3180e53ad55784b629fd3cea7e81d4dc1bda5cf12a09f0b79a4aa55b665170242840fb7a57ac4529e2035494df2334c35cd56728ca429349c6346df8cb0851762c820bd86e23ff3f981ecfaa3f64bd138e591f7758aa5bc2bb0a356880ee7fe99c9e999df968b7990b479cead164b8a522b9916f7876b64b0a986df8cb08e41af6e447",
+          "data_size": 137,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 137,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "8010f08436ff3180e53ad55784b629fd3cea7e81d4dc1bda5cf12a09f0b79a4aa55b665170242840fb7a57ac4529e2035494df2334c35cd56728ca429349c6346df8cb0851762c820bd86e23ff3f981ecfaa3f64bd138e591f7758aa5bc2bb0a356880ee7fe99c9e999df968b7990b479cead164b8a522b9916f7876b64b0a986df8cb08e41af6e447",
+          "data_size": 137,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 137,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 46
+    },
+    {
+      "function": "PassThruReadMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 3,
+          "rx_status": 2,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 47
+    },
+    {
+      "function": "PassThruReadMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "80f0100176f7",
+          "data_size": 6,
+          "data_truncated": false,
+          "extra_data_index": 6,
+          "logged_bytes": 6,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 48
+    },
+    {
+      "function": "PassThruWriteMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "8010f08436ff3200eca5fa6a8a62f844b5e1848ef17eadf568825b141d4ff58dc89ab04cfbd4a32d9abc830e01f8532ebdbc9702cee42851332c5982b6577390905dcdb16d01a44985461295b0146d10af5802982bcc68f85cf4a719a94e5346ef3981a189138327778d6eabd4a1b462624856a52b19196c33317cbf50c026109533ebf66df8cb08ea",
+          "data_size": 137,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 137,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "8010f08436ff3200eca5fa6a8a62f844b5e1848ef17eadf568825b141d4ff58dc89ab04cfbd4a32d9abc830e01f8532ebdbc9702cee42851332c5982b6577390905dcdb16d01a44985461295b0146d10af5802982bcc68f85cf4a719a94e5346ef3981a189138327778d6eabd4a1b462624856a52b19196c33317cbf50c026109533ebf66df8cb08ea",
+          "data_size": 137,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 137,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 49
+    },
+    {
+      "function": "PassThruReadMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 3,
+          "rx_status": 2,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 50
+    },
+    {
+      "function": "PassThruReadMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "80f0100176f7",
+          "data_size": 6,
+          "data_truncated": false,
+          "extra_data_index": 6,
+          "logged_bytes": 6,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 51
+    },
+    {
+      "function": "PassThruWriteMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "8010f08436ff3280f40b4a6eaac8fec9999df968727f34e532725d2a308f31b7fd4a3cc0fb7a57ac2178b10aecaf7860c2a995fabf999e820e33d2922119a57cfdd3ffff83d78c2ed9d6fc2e55d8f95b582d518eecaf786053bb63cf43eb460683d78c2e08ac051618f01400e24c1787a16505d65eb63b868a551574fc94751063f2d4d1de2eec0c0b",
+          "data_size": 137,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 137,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "8010f08436ff3280f40b4a6eaac8fec9999df968727f34e532725d2a308f31b7fd4a3cc0fb7a57ac2178b10aecaf7860c2a995fabf999e820e33d2922119a57cfdd3ffff83d78c2ed9d6fc2e55d8f95b582d518eecaf786053bb63cf43eb460683d78c2e08ac051618f01400e24c1787a16505d65eb63b868a551574fc94751063f2d4d1de2eec0c0b",
+          "data_size": 137,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 137,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 52
+    },
+    {
+      "function": "PassThruReadMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 3,
+          "rx_status": 2,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 53
+    },
+    {
+      "function": "PassThruReadMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "80f0100176f7",
+          "data_size": 6,
+          "data_truncated": false,
+          "extra_data_index": 6,
+          "logged_bytes": 6,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 54
+    },
+    {
+      "function": "PassThruWriteMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "8010f08436ff33006bf35d4fef1ead4e87be33e29dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf3123c8",
+          "data_size": 137,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 137,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "8010f08436ff33006bf35d4fef1ead4e87be33e29dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf3123c8",
+          "data_size": 137,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 137,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 55
+    },
+    {
+      "function": "PassThruReadMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 3,
+          "rx_status": 2,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 56
+    },
+    {
+      "function": "PassThruReadMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "80f0100176f7",
+          "data_size": 6,
+          "data_truncated": false,
+          "extra_data_index": 6,
+          "logged_bytes": 6,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 57
+    },
+    {
+      "function": "PassThruWriteMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "8010f08436ff33809dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf3123ec",
+          "data_size": 137,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 137,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "8010f08436ff33809dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf3123ec",
+          "data_size": 137,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 137,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 58
+    },
+    {
+      "function": "PassThruReadMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 3,
+          "rx_status": 2,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 59
+    },
+    {
+      "function": "PassThruReadMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "80f0100176f7",
+          "data_size": 6,
+          "data_truncated": false,
+          "extra_data_index": 6,
+          "logged_bytes": 6,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 60
+    },
+    {
+      "function": "PassThruWriteMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "8010f08436ff34009dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31236d",
+          "data_size": 137,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 137,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "8010f08436ff34009dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31236d",
+          "data_size": 137,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 137,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 61
+    },
+    {
+      "function": "PassThruReadMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 3,
+          "rx_status": 2,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 62
+    },
+    {
+      "function": "PassThruReadMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "80f0100176f7",
+          "data_size": 6,
+          "data_truncated": false,
+          "extra_data_index": 6,
+          "logged_bytes": 6,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 63
+    },
+    {
+      "function": "PassThruWriteMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "8010f08436ff34809dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf3123ed",
+          "data_size": 137,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 137,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "8010f08436ff34809dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf3123ed",
+          "data_size": 137,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 137,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 64
+    },
+    {
+      "function": "PassThruReadMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 3,
+          "rx_status": 2,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 65
+    },
+    {
+      "function": "PassThruReadMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "80f0100176f7",
+          "data_size": 6,
+          "data_truncated": false,
+          "extra_data_index": 6,
+          "logged_bytes": 6,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 66
+    },
+    {
+      "function": "PassThruWriteMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "8010f08436ff35009dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31236e",
+          "data_size": 137,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 137,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "8010f08436ff35009dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31236e",
+          "data_size": 137,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 137,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 67
+    },
+    {
+      "function": "PassThruReadMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 3,
+          "rx_status": 2,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 68
+    },
+    {
+      "function": "PassThruReadMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "80f0100176f7",
+          "data_size": 6,
+          "data_truncated": false,
+          "extra_data_index": 6,
+          "logged_bytes": 6,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 69
+    },
+    {
+      "function": "PassThruWriteMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "8010f08436ff35809dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf3123ee",
+          "data_size": 137,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 137,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "8010f08436ff35809dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf3123ee",
+          "data_size": 137,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 137,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 70
+    },
+    {
+      "function": "PassThruReadMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 3,
+          "rx_status": 2,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 71
+    },
+    {
+      "function": "PassThruReadMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "80f0100176f7",
+          "data_size": 6,
+          "data_truncated": false,
+          "extra_data_index": 6,
+          "logged_bytes": 6,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 72
+    },
+    {
+      "function": "PassThruWriteMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "8010f08436ff36009dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31236f",
+          "data_size": 137,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 137,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "8010f08436ff36009dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31236f",
+          "data_size": 137,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 137,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 73
+    },
+    {
+      "function": "PassThruReadMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 3,
+          "rx_status": 2,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 74
+    },
+    {
+      "function": "PassThruReadMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "80f0100176f7",
+          "data_size": 6,
+          "data_truncated": false,
+          "extra_data_index": 6,
+          "logged_bytes": 6,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 75
+    },
+    {
+      "function": "PassThruWriteMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "8010f08436ff36809dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf3123ef",
+          "data_size": 137,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 137,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "8010f08436ff36809dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf3123ef",
+          "data_size": 137,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 137,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 76
+    },
+    {
+      "function": "PassThruReadMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 3,
+          "rx_status": 2,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 77
+    },
+    {
+      "function": "PassThruReadMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "80f0100176f7",
+          "data_size": 6,
+          "data_truncated": false,
+          "extra_data_index": 6,
+          "logged_bytes": 6,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 78
+    },
+    {
+      "function": "PassThruWriteMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "8010f01436ff37009dbf31239dbf31239dbf3123299ea39812",
+          "data_size": 25,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 25,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "8010f01436ff37009dbf31239dbf31239dbf3123299ea39812",
+          "data_size": 25,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 25,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 79
+    },
+    {
+      "function": "PassThruReadMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 3,
+          "rx_status": 2,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 80
+    },
+    {
+      "function": "PassThruReadMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "80f0100176f7",
+          "data_size": 6,
+          "data_truncated": false,
+          "extra_data_index": 6,
+          "logged_bytes": 6,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 81
+    },
+    {
+      "function": "PassThruWriteMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "8010f003310101b6",
+          "data_size": 8,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 8,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "8010f003310101b6",
+          "data_size": 8,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 8,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 82
+    },
+    {
+      "function": "PassThruReadMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 3,
+          "rx_status": 2,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 83
+    },
+    {
+      "function": "PassThruReadMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "80f01003710101f6",
+          "data_size": 8,
+          "data_truncated": false,
+          "extra_data_index": 8,
+          "logged_bytes": 8,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 84
+    },
+    {
+      "function": "PassThruStopMsgFilter",
+      "input": {
+        "channel": 3,
+        "filter_id": 0
+      },
+      "output": {},
+      "source_sequence": 85
+    },
+    {
+      "function": "PassThruIoctl",
+      "input": {
+        "channel": 3,
+        "config": {
+          "list_present": true,
+          "owned_buffer_entries": [
+            {
+              "parameter": 1,
+              "value": 62500
+            }
+          ],
+          "owned_capacity": 1,
+          "pointer_matches_owned": true,
+          "returned_num_params": 1
+        },
+        "input_present": true,
+        "ioctl": 2,
+        "output_present": false
+      },
+      "output": {
+        "canaries_intact": true,
+        "config": {
+          "list_present": true,
+          "owned_buffer_entries": [
+            {
+              "parameter": 1,
+              "value": 62500
+            }
+          ],
+          "owned_capacity": 1,
+          "pointer_matches_owned": true,
+          "returned_num_params": 1
+        }
+      },
+      "source_sequence": 86
+    },
+    {
+      "function": "PassThruStartMsgFilter",
+      "input": {
+        "channel": 3,
+        "filter_output_present": true,
+        "filter_type": 1,
+        "flow": null,
+        "flow_present": false,
+        "mask": {
+          "buffer_capacity": 4128,
+          "data_hex": "ffff",
+          "data_size": 2,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 2,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "mask_present": true,
+        "pattern": {
+          "buffer_capacity": 4128,
+          "data_hex": "beef",
+          "data_size": 2,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 2,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "pattern_present": true
+      },
+      "output": {
+        "canaries_intact": true,
+        "filter_id": 1,
+        "flow": null,
+        "mask": {
+          "buffer_capacity": 4128,
+          "data_hex": "ffff",
+          "data_size": 2,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 2,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "pattern": {
+          "buffer_capacity": 4128,
+          "data_hex": "beef",
+          "data_size": 2,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 2,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 87
+    },
+    {
+      "function": "PassThruWriteMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "beef000101af",
+          "data_size": 6,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 6,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "beef000101af",
+          "data_size": 6,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 6,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 88
+    },
+    {
+      "function": "PassThruReadMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 3,
+          "rx_status": 2,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 89
+    },
+    {
+      "function": "PassThruReadMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "beef000f8141325743353131522d524b3032005f",
+          "data_size": 20,
+          "data_truncated": false,
+          "extra_data_index": 20,
+          "logged_bytes": 20,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        }
+      },
+      "source_sequence": 90
+    },
+    {
+      "function": "PassThruWriteMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "beef00080300000000000200ba",
+          "data_size": 13,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 13,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "beef00080300000000000200ba",
+          "data_size": 13,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 13,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        }
+      }
+    },
+    {
+      "function": "PassThruReadMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 3,
+          "rx_status": 2,
+          "tx_flags": 0
+        }
+      }
+    },
+    {
+      "function": "PassThruReadMsgs",
+      "input": {
+        "channel": 3,
+        "count_pointer_present": true,
+        "input_count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "",
+          "data_size": 0,
+          "data_truncated": false,
+          "extra_data_index": 0,
+          "logged_bytes": 0,
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0
+        },
+        "message_capacity": 1,
+        "timeout_ms": 1000
+      },
+      "output": {
+        "canaries_intact": true,
+        "count": 1,
+        "message": {
+          "buffer_capacity": 4128,
+          "data_hex": "beef020683000000000000000aacffffbfa000000aacffffbfa000000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa8ffffffffffffffffdf01442b00090000ffffbfa0df01000b00090000ffffbfa0e5f74518750a8451e3ff4318620c737f2239324ce13c622c4118321c25210009000900090009000b0009ffff8441600c937f20388b04d643947c917c412be506000b00098441600c937320388b04d63e94729170412be506000b0009d33b7402d23b2342d13b412b6422634392614f227ff81f418431600c202988048b0c6433b0287402d3326503b03764322f0066f394539350430be5017f084f26000b00098441600c934520388b04d62b94469142412be506000b00098441600c933920388b060002913b2019cbf0400eaffe0009000b00098441600c624040286303622c84424228600c4018330c42188443332c600c6433340c000b60432fe62fd66d432fc66c532fb63dc24f229b198d0aee0062d4622c3e2c64ed441934ec4b0b6e4c3dc28bf54f2660e36bf66cf66df6000b6ef6ff07008804e0009000b000c0ff0f04c4ffff00000fec00000ff8ffffbfa4ffffbfa00000004000000fe42fe62fd62fc62fb62fa62f962f864f2295ab6453d361430b74fed26193a62321de6092a422e1d15e90a22011730623e1721222e1919d21e1731223e1720622e1711a21e1730e23e172c022e1e7",
+          "data_size": 523,
+          "data_truncated": false,
+          "extra_data_index": 523,
+          "logged_bytes": 523,
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0
+        }
+      }
+    }
+  ],
+  "artifact": "RK03_BOUNDED_ROM_READ",
+  "cleanup": [
+    {
+      "function": "PassThruStopMsgFilter",
+      "input": {
+        "channel": 3,
+        "filter_id": 1,
+        "filter_id_present": true
+      },
+      "output": {}
+    },
+    {
+      "function": "PassThruDisconnect",
+      "input": {
+        "channel": 3,
+        "filter_id": 0,
+        "filter_id_present": false
+      },
+      "output": {}
+    },
+    {
+      "function": "PassThruClose",
+      "input": {
+        "device": 1,
+        "filter_id": 0,
+        "filter_id_present": false
+      },
+      "output": {}
+    }
+  ],
+  "entry": "FFFF3004",
+  "fixed_read": {
+    "address": "00000000",
+    "end_exclusive": "00000200",
+    "expected_bytes_hex": "00000aacffffbfa000000aacffffbfa000000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa8ffffffffffffffffdf01442b00090000ffffbfa0df01000b00090000ffffbfa0e5f74518750a8451e3ff4318620c737f2239324ce13c622c4118321c25210009000900090009000b0009ffff8441600c937f20388b04d643947c917c412be506000b00098441600c937320388b04d63e94729170412be506000b0009d33b7402d23b2342d13b412b6422634392614f227ff81f418431600c202988048b0c6433b0287402d3326503b03764322f0066f394539350430be5017f084f26000b00098441600c934520388b04d62b94469142412be506000b00098441600c933920388b060002913b2019cbf0400eaffe0009000b00098441600c624040286303622c84424228600c4018330c42188443332c600c6433340c000b60432fe62fd66d432fc66c532fb63dc24f229b198d0aee0062d4622c3e2c64ed441934ec4b0b6e4c3dc28bf54f2660e36bf66cf66df6000b6ef6ff07008804e0009000b000c0ff0f04c4ffff00000fec00000ff8ffffbfa4ffffbfa00000004000000fe42fe62fd62fc62fb62fa62f962f864f2295ab6453d361430b74fed26193a62321de6092a422e1d15e90a22011730623e1721222e1919d21e1731223e1720622e1711a21e1730e23e172c022e1",
+    "expected_bytes_sha256": "d3421c81a4380638a8844e34012db592ba6eed35ca5cb8402880b79869e71f01",
+    "expected_next_cursor": "00000200",
+    "length": 512,
+    "pass": 0,
+    "reason": "Unchanged RK02 image accepts only512-byte sequential blocks; the initial cursor is0. No smaller or CAL-ID-first request is valid.",
+    "request": "beef00080300000000000200ba",
+    "request_frame_bytes": 13,
+    "response": "beef020683000000000000000aacffffbfa000000aacffffbfa000000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa8ffffffffffffffffdf01442b00090000ffffbfa0df01000b00090000ffffbfa0e5f74518750a8451e3ff4318620c737f2239324ce13c622c4118321c25210009000900090009000b0009ffff8441600c937f20388b04d643947c917c412be506000b00098441600c937320388b04d63e94729170412be506000b0009d33b7402d23b2342d13b412b6422634392614f227ff81f418431600c202988048b0c6433b0287402d3326503b03764322f0066f394539350430be5017f084f26000b00098441600c934520388b04d62b94469142412be506000b00098441600c933920388b060002913b2019cbf0400eaffe0009000b00098441600c624040286303622c84424228600c4018330c42188443332c600c6433340c000b60432fe62fd66d432fc66c532fb63dc24f229b198d0aee0062d4622c3e2c64ed441934ec4b0b6e4c3dc28bf54f2660e36bf66cf66df6000b6ef6ff07008804e0009000b000c0ff0f04c4ffff00000fec00000ff8ffffbfa4ffffbfa00000004000000fe42fe62fd62fc62fb62fa62f962f864f2295ab6453d361430b74fed26193a62321de6092a422e1d15e90a22011730623e1721222e1919d21e1731223e1720622e1711a21e1730e23e172c022e1e7",
+    "response_body_bytes": 518,
+    "response_frame_bytes": 523,
+    "second_read_allowed": false
+  },
+  "frames": [
+    {
+      "rx": "80f01039ffa210112f1251530673facba62b81fea800000060ce54f9b1e4000c200000000000dc00005d1f3080f226000043fb00e1000000000000c1f0c2",
+      "tx": "8010f001bf40"
+    },
+    {
+      "rx": "80f01003c1ef8fc2",
+      "tx": "8010f0018102"
+    },
+    {
+      "rx": "80f01007c30000ff00ff0048",
+      "tx": "8010f002830005"
+    },
+    {
+      "rx": "80f010066701b8808513be",
+      "tx": "8010f0022701aa"
+    },
+    {
+      "rx": "80f0100367023420",
+      "tx": "8010f0062702349c6319fb"
+    },
+    {
+      "rx": "80f01002508557",
+      "tx": "8010f0031085021a"
+    },
+    {
+      "rx": "80f0100274847a",
+      "tx": "8010f00834ff30000400071006"
+    },
+    {
+      "rx": "80f0100176f7",
+      "tx": "8010f08436ff30002178b10a345b1076fd256f75f05ba033e301ed7bbae243b735e6aedbc143c40be01bf9b6caab4599eccaacb23d3eeb06dddf471ed3b0238f2bf0553861e117054bad87079a8cbb9681c01303b7825b2d199bc7e5c4dd5bcf85cf1a64050df3ab050df3ab2a45f9b476963b1f16baea94084e321a79bd4cf9c0f25912ab9d7b8df4"
+    },
+    {
+      "rx": "80f0100176f7",
+      "tx": "8010f08436ff3080a614d816e73b7a2f8010d0033c21fd82e809dcd33849889e1bb8439f58c18e12d1328f80e2d30dccf17eadf57d339c382284e4779a8cbb96094cf9da205bf8c04e6120419a8cbb9687d0d3c3ea5b98c957670833e1a0128aff648ef5c03ca6b7b876eac3f7b569d887422e4be8f5108bedc55089c03ca6b7539b8ad1a4d30a534a"
+    },
+    {
+      "rx": "80f0100176f7",
+      "tx": "8010f08436ff3100e28c3ee42446007d2de0ddaa9dce70327241c643aab2699ea62dd88c9cead164bbf16590f4e0cd28e987359e6b371cd882af16896daaa08c2bfb509b6f5a700b7016e8ad4d3d09337306eba60e9f2d6e3e5ccec225f798f1fc359ea168d7727d38fc1265927d740c43d5e9b1862403ee9330f481bc7dd24e36e13bd0697c3ebcf7"
+    },
+    {
+      "rx": "80f0100176f7",
+      "tx": "8010f08436ff3180e53ad55784b629fd3cea7e81d4dc1bda5cf12a09f0b79a4aa55b665170242840fb7a57ac4529e2035494df2334c35cd56728ca429349c6346df8cb0851762c820bd86e23ff3f981ecfaa3f64bd138e591f7758aa5bc2bb0a356880ee7fe99c9e999df968b7990b479cead164b8a522b9916f7876b64b0a986df8cb08e41af6e447"
+    },
+    {
+      "rx": "80f0100176f7",
+      "tx": "8010f08436ff3200eca5fa6a8a62f844b5e1848ef17eadf568825b141d4ff58dc89ab04cfbd4a32d9abc830e01f8532ebdbc9702cee42851332c5982b6577390905dcdb16d01a44985461295b0146d10af5802982bcc68f85cf4a719a94e5346ef3981a189138327778d6eabd4a1b462624856a52b19196c33317cbf50c026109533ebf66df8cb08ea"
+    },
+    {
+      "rx": "80f0100176f7",
+      "tx": "8010f08436ff3280f40b4a6eaac8fec9999df968727f34e532725d2a308f31b7fd4a3cc0fb7a57ac2178b10aecaf7860c2a995fabf999e820e33d2922119a57cfdd3ffff83d78c2ed9d6fc2e55d8f95b582d518eecaf786053bb63cf43eb460683d78c2e08ac051618f01400e24c1787a16505d65eb63b868a551574fc94751063f2d4d1de2eec0c0b"
+    },
+    {
+      "rx": "80f0100176f7",
+      "tx": "8010f08436ff33006bf35d4fef1ead4e87be33e29dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf3123c8"
+    },
+    {
+      "rx": "80f0100176f7",
+      "tx": "8010f08436ff33809dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf3123ec"
+    },
+    {
+      "rx": "80f0100176f7",
+      "tx": "8010f08436ff34009dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31236d"
+    },
+    {
+      "rx": "80f0100176f7",
+      "tx": "8010f08436ff34809dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf3123ed"
+    },
+    {
+      "rx": "80f0100176f7",
+      "tx": "8010f08436ff35009dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31236e"
+    },
+    {
+      "rx": "80f0100176f7",
+      "tx": "8010f08436ff35809dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf3123ee"
+    },
+    {
+      "rx": "80f0100176f7",
+      "tx": "8010f08436ff36009dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31236f"
+    },
+    {
+      "rx": "80f0100176f7",
+      "tx": "8010f08436ff36809dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf3123ef"
+    },
+    {
+      "rx": "80f0100176f7",
+      "tx": "8010f01436ff37009dbf31239dbf31239dbf3123299ea39812"
+    },
+    {
+      "rx": "80f01003710101f6",
+      "tx": "8010f003310101b6"
+    },
+    {
+      "rx": "beef000f8141325743353131522d524b3032005f",
+      "tx": "beef000101af"
+    },
+    {
+      "rx": "beef020683000000000000000aacffffbfa000000aacffffbfa000000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa8ffffffffffffffffdf01442b00090000ffffbfa0df01000b00090000ffffbfa0e5f74518750a8451e3ff4318620c737f2239324ce13c622c4118321c25210009000900090009000b0009ffff8441600c937f20388b04d643947c917c412be506000b00098441600c937320388b04d63e94729170412be506000b0009d33b7402d23b2342d13b412b6422634392614f227ff81f418431600c202988048b0c6433b0287402d3326503b03764322f0066f394539350430be5017f084f26000b00098441600c934520388b04d62b94469142412be506000b00098441600c933920388b060002913b2019cbf0400eaffe0009000b00098441600c624040286303622c84424228600c4018330c42188443332c600c6433340c000b60432fe62fd66d432fc66c532fb63dc24f229b198d0aee0062d4622c3e2c64ed441934ec4b0b6e4c3dc28bf54f2660e36bf66cf66df6000b6ef6ff07008804e0009000b000c0ff0f04c4ffff00000fec00000ff8ffffbfa4ffffbfa00000004000000fe42fe62fd62fc62fb62fa62f962f864f2295ab6453d361430b74fed26193a62321de6092a422e1d15e90a22011730623e1721222e1919d21e1731223e1720622e1711a21e1730e23e172c022e1e7",
+      "tx": "beef00080300000000000200ba"
+    }
+  ],
+  "full_upload_chunks": [
+    {
+      "chunk": 1,
+      "cipher_payload_sha256": "b27c4fe47f71a7c96881891c73002084f3dbc5ebe977ec7e7e857b5dc4c44413",
+      "end_exclusive": "FFFF3080",
+      "expected_ack_hex": "80f0100176f7",
+      "expected_plaintext_ram_sha256": "4f467e4371e66ff93b991f29c3081d9d78fdfafc58299acd3e3e0240b93da309",
+      "payload_bytes": 128,
+      "protocol_stage": 7,
+      "target_address": "FFFF3000",
+      "wire_bytes": 137,
+      "wire_checksum_hex": "f4",
+      "wire_frame_sha256": "d2db948b4bedf0d660f00ec0830a8dfcc8a4686be0bf218327799898b88359f2",
+      "wire_hex": "8010f08436ff30002178b10a345b1076fd256f75f05ba033e301ed7bbae243b735e6aedbc143c40be01bf9b6caab4599eccaacb23d3eeb06dddf471ed3b0238f2bf0553861e117054bad87079a8cbb9681c01303b7825b2d199bc7e5c4dd5bcf85cf1a64050df3ab050df3ab2a45f9b476963b1f16baea94084e321a79bd4cf9c0f25912ab9d7b8df4"
+    },
+    {
+      "chunk": 2,
+      "cipher_payload_sha256": "07e0a7591c2664cad999b2ef96cc8531bb1251e221575e7c87de26ede4763abf",
+      "end_exclusive": "FFFF3100",
+      "expected_ack_hex": "80f0100176f7",
+      "expected_plaintext_ram_sha256": "dbe8618ad9be23df227ca406dda88eb36b509246ff02083b31566bd4a6e4c9e6",
+      "payload_bytes": 128,
+      "protocol_stage": 8,
+      "target_address": "FFFF3080",
+      "wire_bytes": 137,
+      "wire_checksum_hex": "4a",
+      "wire_frame_sha256": "e0e1480a48a39fd64fdd2586495141653b88adcb60f7fbb788a1a4952a9b54a7",
+      "wire_hex": "8010f08436ff3080a614d816e73b7a2f8010d0033c21fd82e809dcd33849889e1bb8439f58c18e12d1328f80e2d30dccf17eadf57d339c382284e4779a8cbb96094cf9da205bf8c04e6120419a8cbb9687d0d3c3ea5b98c957670833e1a0128aff648ef5c03ca6b7b876eac3f7b569d887422e4be8f5108bedc55089c03ca6b7539b8ad1a4d30a534a"
+    },
+    {
+      "chunk": 3,
+      "cipher_payload_sha256": "100d6ec33fc5faa7b65efb3288816bc417b8faadf44ac757e1dd024dd8a328e9",
+      "end_exclusive": "FFFF3180",
+      "expected_ack_hex": "80f0100176f7",
+      "expected_plaintext_ram_sha256": "2ce4d4165b64c6af9a8c516c16e09e29a1823f0978b110931c99f494f09e560c",
+      "payload_bytes": 128,
+      "protocol_stage": 9,
+      "target_address": "FFFF3100",
+      "wire_bytes": 137,
+      "wire_checksum_hex": "f7",
+      "wire_frame_sha256": "4955f1fdec66ade4f6fa260a73df4b3515da1d0eabcb8cd818990a5151bf2d13",
+      "wire_hex": "8010f08436ff3100e28c3ee42446007d2de0ddaa9dce70327241c643aab2699ea62dd88c9cead164bbf16590f4e0cd28e987359e6b371cd882af16896daaa08c2bfb509b6f5a700b7016e8ad4d3d09337306eba60e9f2d6e3e5ccec225f798f1fc359ea168d7727d38fc1265927d740c43d5e9b1862403ee9330f481bc7dd24e36e13bd0697c3ebcf7"
+    },
+    {
+      "chunk": 4,
+      "cipher_payload_sha256": "b81dfc437e0265ea95bee53c3c1e4f1fb858628b780c8d04dd734b27bf878f41",
+      "end_exclusive": "FFFF3200",
+      "expected_ack_hex": "80f0100176f7",
+      "expected_plaintext_ram_sha256": "8ffc49c5c06cbf525a5965dc4bd202087aa93718b5931739503a161c96bc99e9",
+      "payload_bytes": 128,
+      "protocol_stage": 10,
+      "target_address": "FFFF3180",
+      "wire_bytes": 137,
+      "wire_checksum_hex": "47",
+      "wire_frame_sha256": "01362b4a4ea051ba5c83669d943643e7e2e3fcd842960ccd672dad01458d69ab",
+      "wire_hex": "8010f08436ff3180e53ad55784b629fd3cea7e81d4dc1bda5cf12a09f0b79a4aa55b665170242840fb7a57ac4529e2035494df2334c35cd56728ca429349c6346df8cb0851762c820bd86e23ff3f981ecfaa3f64bd138e591f7758aa5bc2bb0a356880ee7fe99c9e999df968b7990b479cead164b8a522b9916f7876b64b0a986df8cb08e41af6e447"
+    },
+    {
+      "chunk": 5,
+      "cipher_payload_sha256": "c1f913fa9be870c84ec384eaadeb5021e425b0a68ad0aff8367af7b789a88348",
+      "end_exclusive": "FFFF3280",
+      "expected_ack_hex": "80f0100176f7",
+      "expected_plaintext_ram_sha256": "df464e73fcd9aa5e857b22faf35bf872c82eec4085290ac461f26d8934df9d7d",
+      "payload_bytes": 128,
+      "protocol_stage": 11,
+      "target_address": "FFFF3200",
+      "wire_bytes": 137,
+      "wire_checksum_hex": "ea",
+      "wire_frame_sha256": "fab1f05d5f803bf5ec3497d4d0fa4176f5b6fba66239cdf9132762ae4ed31df7",
+      "wire_hex": "8010f08436ff3200eca5fa6a8a62f844b5e1848ef17eadf568825b141d4ff58dc89ab04cfbd4a32d9abc830e01f8532ebdbc9702cee42851332c5982b6577390905dcdb16d01a44985461295b0146d10af5802982bcc68f85cf4a719a94e5346ef3981a189138327778d6eabd4a1b462624856a52b19196c33317cbf50c026109533ebf66df8cb08ea"
+    },
+    {
+      "chunk": 6,
+      "cipher_payload_sha256": "98196e7717170d0648aad05bce25d684019cf9aeba1f7671b05d40912c22786c",
+      "end_exclusive": "FFFF3300",
+      "expected_ack_hex": "80f0100176f7",
+      "expected_plaintext_ram_sha256": "f5e65886b3d6a9eb75a12883d0a0fcd5c662e61252145b7e841cb63b17ff31b7",
+      "payload_bytes": 128,
+      "protocol_stage": 12,
+      "target_address": "FFFF3280",
+      "wire_bytes": 137,
+      "wire_checksum_hex": "0b",
+      "wire_frame_sha256": "ebb34ffae31a2b6cd2f4474e0a95f40e25cc35462eaae0df49f243d77a07d5b6",
+      "wire_hex": "8010f08436ff3280f40b4a6eaac8fec9999df968727f34e532725d2a308f31b7fd4a3cc0fb7a57ac2178b10aecaf7860c2a995fabf999e820e33d2922119a57cfdd3ffff83d78c2ed9d6fc2e55d8f95b582d518eecaf786053bb63cf43eb460683d78c2e08ac051618f01400e24c1787a16505d65eb63b868a551574fc94751063f2d4d1de2eec0c0b"
+    },
+    {
+      "chunk": 7,
+      "cipher_payload_sha256": "65006edfa7ce69a2dedceca722fead4c5fde054b7819c799230c28d3e2dd500f",
+      "end_exclusive": "FFFF3380",
+      "expected_ack_hex": "80f0100176f7",
+      "expected_plaintext_ram_sha256": "1517a16c3b9b7b9df7f058ab8188cd3176387c397e0231db0502969a570a3b2b",
+      "payload_bytes": 128,
+      "protocol_stage": 13,
+      "target_address": "FFFF3300",
+      "wire_bytes": 137,
+      "wire_checksum_hex": "c8",
+      "wire_frame_sha256": "ae60196ad5372c4b974668a21cc0e1085dc99c29ca2c47022e06ac8bdd471fd0",
+      "wire_hex": "8010f08436ff33006bf35d4fef1ead4e87be33e29dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf3123c8"
+    },
+    {
+      "chunk": 8,
+      "cipher_payload_sha256": "3452edc6a17f072160fbe6afab0864eafd55dd03475e2a2a1ec7ce54affd7235",
+      "end_exclusive": "FFFF3400",
+      "expected_ack_hex": "80f0100176f7",
+      "expected_plaintext_ram_sha256": "b2b0e802fdd3439ff425c7e852d727b03cf979f722399f3ed1c6f7814ca53bef",
+      "payload_bytes": 128,
+      "protocol_stage": 14,
+      "target_address": "FFFF3380",
+      "wire_bytes": 137,
+      "wire_checksum_hex": "ec",
+      "wire_frame_sha256": "96e1039d9a4959dca54e2156972d7aa6a52edb4e97527bd70fca14d37d32a5c7",
+      "wire_hex": "8010f08436ff33809dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf3123ec"
+    },
+    {
+      "chunk": 9,
+      "cipher_payload_sha256": "3452edc6a17f072160fbe6afab0864eafd55dd03475e2a2a1ec7ce54affd7235",
+      "end_exclusive": "FFFF3480",
+      "expected_ack_hex": "80f0100176f7",
+      "expected_plaintext_ram_sha256": "b2b0e802fdd3439ff425c7e852d727b03cf979f722399f3ed1c6f7814ca53bef",
+      "payload_bytes": 128,
+      "protocol_stage": 15,
+      "target_address": "FFFF3400",
+      "wire_bytes": 137,
+      "wire_checksum_hex": "6d",
+      "wire_frame_sha256": "8267ce2e4856d38993844f9dfa614807574566268df17bdd3a65a2a52f3df284",
+      "wire_hex": "8010f08436ff34009dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31236d"
+    },
+    {
+      "chunk": 10,
+      "cipher_payload_sha256": "3452edc6a17f072160fbe6afab0864eafd55dd03475e2a2a1ec7ce54affd7235",
+      "end_exclusive": "FFFF3500",
+      "expected_ack_hex": "80f0100176f7",
+      "expected_plaintext_ram_sha256": "b2b0e802fdd3439ff425c7e852d727b03cf979f722399f3ed1c6f7814ca53bef",
+      "payload_bytes": 128,
+      "protocol_stage": 16,
+      "target_address": "FFFF3480",
+      "wire_bytes": 137,
+      "wire_checksum_hex": "ed",
+      "wire_frame_sha256": "d04abef6c6a6c65589e72fefe436fe2ddd97f038ea1c7026c98167e615ecbf6f",
+      "wire_hex": "8010f08436ff34809dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf3123ed"
+    },
+    {
+      "chunk": 11,
+      "cipher_payload_sha256": "3452edc6a17f072160fbe6afab0864eafd55dd03475e2a2a1ec7ce54affd7235",
+      "end_exclusive": "FFFF3580",
+      "expected_ack_hex": "80f0100176f7",
+      "expected_plaintext_ram_sha256": "b2b0e802fdd3439ff425c7e852d727b03cf979f722399f3ed1c6f7814ca53bef",
+      "payload_bytes": 128,
+      "protocol_stage": 17,
+      "target_address": "FFFF3500",
+      "wire_bytes": 137,
+      "wire_checksum_hex": "6e",
+      "wire_frame_sha256": "84bc2f3224cc186d966720d88dbbfa23f569d1db2615fc0e0315c7624c41b0f5",
+      "wire_hex": "8010f08436ff35009dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31236e"
+    },
+    {
+      "chunk": 12,
+      "cipher_payload_sha256": "3452edc6a17f072160fbe6afab0864eafd55dd03475e2a2a1ec7ce54affd7235",
+      "end_exclusive": "FFFF3600",
+      "expected_ack_hex": "80f0100176f7",
+      "expected_plaintext_ram_sha256": "b2b0e802fdd3439ff425c7e852d727b03cf979f722399f3ed1c6f7814ca53bef",
+      "payload_bytes": 128,
+      "protocol_stage": 18,
+      "target_address": "FFFF3580",
+      "wire_bytes": 137,
+      "wire_checksum_hex": "ee",
+      "wire_frame_sha256": "5e9fdbb5b903e79afcbd4fc831059cdcb81a3dc807b05665a6f1256263979493",
+      "wire_hex": "8010f08436ff35809dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf3123ee"
+    },
+    {
+      "chunk": 13,
+      "cipher_payload_sha256": "3452edc6a17f072160fbe6afab0864eafd55dd03475e2a2a1ec7ce54affd7235",
+      "end_exclusive": "FFFF3680",
+      "expected_ack_hex": "80f0100176f7",
+      "expected_plaintext_ram_sha256": "b2b0e802fdd3439ff425c7e852d727b03cf979f722399f3ed1c6f7814ca53bef",
+      "payload_bytes": 128,
+      "protocol_stage": 19,
+      "target_address": "FFFF3600",
+      "wire_bytes": 137,
+      "wire_checksum_hex": "6f",
+      "wire_frame_sha256": "bc79118cda629b78c5a83ae7ff93bc326554b8e2b31b1d37a53b920e1764bb7d",
+      "wire_hex": "8010f08436ff36009dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31236f"
+    },
+    {
+      "chunk": 14,
+      "cipher_payload_sha256": "3452edc6a17f072160fbe6afab0864eafd55dd03475e2a2a1ec7ce54affd7235",
+      "end_exclusive": "FFFF3700",
+      "expected_ack_hex": "80f0100176f7",
+      "expected_plaintext_ram_sha256": "b2b0e802fdd3439ff425c7e852d727b03cf979f722399f3ed1c6f7814ca53bef",
+      "payload_bytes": 128,
+      "protocol_stage": 20,
+      "target_address": "FFFF3680",
+      "wire_bytes": 137,
+      "wire_checksum_hex": "ef",
+      "wire_frame_sha256": "95bfc966dfd62bec0acca65eec528b8300cbb336ca6d85e80f0a863bb45d5c8c",
+      "wire_hex": "8010f08436ff36809dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf3123ef"
+    },
+    {
+      "chunk": 15,
+      "cipher_payload_sha256": "650e747209d3aad9ba1f26fc45f7eb2cf2c325e64bfeec652463825f4d202995",
+      "end_exclusive": "FFFF3710",
+      "expected_ack_hex": "80f0100176f7",
+      "expected_plaintext_ram_sha256": "9273727bf26d2bb08b658c4e0396348da8d11f6428b1c8ad1e892d23e71ba358",
+      "payload_bytes": 16,
+      "protocol_stage": 21,
+      "target_address": "FFFF3700",
+      "wire_bytes": 25,
+      "wire_checksum_hex": "12",
+      "wire_frame_sha256": "4bf76d239dd8787cca4217a0c67c02f72b8e718d402f794bbc7479b48781ee0b",
+      "wire_hex": "8010f01436ff37009dbf31239dbf31239dbf3123299ea39812"
+    }
+  ],
+  "identity_count": 1,
+  "image_bytes": 1808,
+  "image_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+  "kind": "STATIC_FAKE_TRANSCRIPT_MODEL",
+  "maximum_transmits": 25,
+  "physical": false,
+  "prefix_actions": 91,
+  "prefix_transmits": 24,
+  "schema": 1,
+  "seed_behavior": "FIXED_LATEST_PHYSICAL_SEED_KEY_TRANSCRIPT; general seed algorithm evidence reused, not rerun",
+  "start_count": 1,
+  "version_ascii": "A2WC511R-RK02\u0000"
+}

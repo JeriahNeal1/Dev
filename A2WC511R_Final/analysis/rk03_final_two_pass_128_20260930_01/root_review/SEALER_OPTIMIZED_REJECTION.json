@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "case": "optimized_sealer_rejects_before_side_effects",
+  "observed_exit_code": 1,
+  "observed_exception": "RuntimeError: Sealing requires assertions enabled; optimized Python is forbidden",
+  "qualification_directory_absent": true,
+  "canonical_manifests_absent": true,
+  "source": {
+    "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\tools\\seal_final_release.py",
+    "sha256": "157f4f1b6d101fe46708ea93964e441de68d0d61d1409357e07b5aa3c3cde12d"
+  },
+  "physical_operations": 0
+}

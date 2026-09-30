@@ -1,0 +1,227 @@
+{
+  "schema": 1,
+  "RK03_FULL_UPLOAD_NO_START_PHYSICAL": "PASS",
+  "session_id": "RK03_FULL_UPLOAD_NO_START_01",
+  "utc": "2026-09-30T05:15:56.281646+00:00",
+  "physical_invocations": 1,
+  "execution": {
+    "session_id": "RK03_FULL_UPLOAD_NO_START_01",
+    "command_argv": [
+      "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\full_upload_physical\\build_a\\rk03_full_upload_no_start_physical32.exe",
+      "--physical-full-upload-no-start",
+      "--session",
+      "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\physical_session\\RK03_FULL_UPLOAD_NO_START_01",
+      "--authorization-file",
+      "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\physical_session\\RK03_FULL_UPLOAD_NO_START_01\\AUTHORIZATION.txt"
+    ],
+    "started_utc": "2026-09-30T05:15:27.500674+00:00",
+    "executable_sha256": "6c7571ece71bb6c29feae9fbfa873cca9635e41cabe269ebc7fa21b1e2fc0d51",
+    "contract_sha256": "0b56e15ae2dcf749666679effd559c54b7a7c2e202fc2ad2902e24c2a54b1e51",
+    "qualification_sha256": "dbfe169cbe89f4ab23318cb79dec1dbafcaa49dbdea48397dc4ec0f16de95399",
+    "authorization_source": "Exact new user token after IGNITION OFF and TEST MODE ON",
+    "retry_allowed": false,
+    "pid": 21608,
+    "exit_code": 0,
+    "exited_utc": "2026-09-30T05:15:29.920159+00:00",
+    "process_exited": true,
+    "bookkeeping_error": null
+  },
+  "validation": {
+    "BF_identity": "2F12515306",
+    "tx_count": 22,
+    "declarations": 1,
+    "transfers": 15,
+    "acknowledgements": 15,
+    "payload_bytes": 1808,
+    "responses": [
+      "80f01039ffa210112f1251530673facba62b81fea800000060ce54f9b1e4000c200000000000dc00005d1f3080f226000043fb00e1000000000000c1f0c2",
+      "80f01003c1ef8fc2",
+      "80f01007c30000ff00ff0048",
+      "80f010066701b99d2bfd6c",
+      "80f0100367023420",
+      "80f01002508557",
+      "80f0100274847a",
+      "80f0100176f7",
+      "80f0100176f7",
+      "80f0100176f7",
+      "80f0100176f7",
+      "80f0100176f7",
+      "80f0100176f7",
+      "80f0100176f7",
+      "80f0100176f7",
+      "80f0100176f7",
+      "80f0100176f7",
+      "80f0100176f7",
+      "80f0100176f7",
+      "80f0100176f7",
+      "80f0100176f7",
+      "80f0100176f7"
+    ],
+    "seed_hex": "b99d2bfd",
+    "key_request": "8010f006270251f7b537e3",
+    "waits_ms_actual": [
+      200.5473,
+      102.8275,
+      205.7765
+    ],
+    "provider_version": {
+      "firmware": {
+        "capacity": 80,
+        "nul_terminated": true,
+        "value": "1.17.4877",
+        "raw_buffer_hex": "312e31372e343837370000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "dll": {
+        "capacity": 80,
+        "nul_terminated": true,
+        "value": "1.02.4870 Feb  3 2017 23:36:05",
+        "raw_buffer_hex": "312e30322e343837302046656220203320323031372032333a33363a30350000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "api": {
+        "capacity": 80,
+        "nul_terminated": true,
+        "value": "04.04",
+        "raw_buffer_hex": "30342e3034000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "canaries_intact": true
+    },
+    "serial_readback": {
+      "config": {
+        "list_present": true,
+        "returned_num_params": 5,
+        "config_pointer": 18186560,
+        "owned_buffer_pointer": 18186560,
+        "pointer_matches_owned": true,
+        "owned_capacity": 5,
+        "owned_buffer_entries": [
+          {
+            "parameter": 22,
+            "value": 0
+          },
+          {
+            "parameter": 7,
+            "value": 1
+          },
+          {
+            "parameter": 10,
+            "value": 0
+          },
+          {
+            "parameter": 12,
+            "value": 0
+          },
+          {
+            "parameter": 3,
+            "value": 0
+          }
+        ]
+      },
+      "canaries_intact": true
+    },
+    "filter": {
+      "channel": 3,
+      "filter_type": 1,
+      "mask_present": true,
+      "pattern_present": true,
+      "flow_present": true,
+      "filter_output_present": true,
+      "mask": {
+        "protocol": 3,
+        "rx_status": 0,
+        "tx_flags": 0,
+        "timestamp": 0,
+        "data_size": 4,
+        "extra_data_index": 0,
+        "buffer_capacity": 4128,
+        "logged_bytes": 4,
+        "data_truncated": false,
+        "data_hex": "00000000"
+      },
+      "pattern": {
+        "protocol": 3,
+        "rx_status": 0,
+        "tx_flags": 0,
+        "timestamp": 0,
+        "data_size": 4,
+        "extra_data_index": 0,
+        "buffer_capacity": 4128,
+        "logged_bytes": 4,
+        "data_truncated": false,
+        "data_hex": "00000000"
+      },
+      "flow": {
+        "protocol": 3,
+        "rx_status": 0,
+        "tx_flags": 0,
+        "timestamp": 0,
+        "data_size": 4,
+        "extra_data_index": 0,
+        "buffer_capacity": 4128,
+        "logged_bytes": 4,
+        "data_truncated": false,
+        "data_hex": "00000000"
+      }
+    },
+    "API_returns": 85,
+    "cleanup_confirmed": true,
+    "kernel_start_requests": 0,
+    "ROM_read_requests": 0,
+    "flash_operations": 0
+  },
+  "validation_failure": null,
+  "source_evidence": [
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\physical_session\\RK03_FULL_UPLOAD_NO_START_01\\AUTHORIZATION.txt",
+      "bytes": 231,
+      "sha256": "b66eb81fefe784ff2f4dec369c99937110e9bd9e435f7399dfd4c04d7b6396b2"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\physical_session\\RK03_FULL_UPLOAD_NO_START_01\\console.log",
+      "bytes": 61,
+      "sha256": "d8aee6202f244f0b90ba9ce44ca650d43bb87860339a9873a1aeda5958a23361"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\physical_session\\RK03_FULL_UPLOAD_NO_START_01\\EXECUTION.json",
+      "bytes": 1074,
+      "sha256": "e76fce5cb6d1c72adbfbb01a5ea309cb10b64b3bc5cd6bac992314d70fbb899e"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\physical_session\\RK03_FULL_UPLOAD_NO_START_01\\EXECUTION_BEGIN.json",
+      "bytes": 933,
+      "sha256": "18c8e8d0a33e029761e4aef2a505c8ebbdc731f8d5c97a92952dca9139d50d78"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\physical_session\\RK03_FULL_UPLOAD_NO_START_01\\invocation.once",
+      "bytes": 159,
+      "sha256": "55661d73bb3008022626e1f786d730bace7e419886b6771e08e48e232a883677"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\physical_session\\RK03_FULL_UPLOAD_NO_START_01\\launch.reserved",
+      "bytes": 159,
+      "sha256": "55661d73bb3008022626e1f786d730bace7e419886b6771e08e48e232a883677"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\physical_session\\RK03_FULL_UPLOAD_NO_START_01\\native_api.jsonl",
+      "bytes": 347253,
+      "sha256": "8f10d7379019ca07d761b7befdc8259f98577668b33d78ce9460e604e822d719"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\physical_session\\RK03_FULL_UPLOAD_NO_START_01\\POSTEXIT_CLIENT_CHECK.json",
+      "bytes": 356,
+      "sha256": "0d3fc224a331b17cdc9c6ad9bc329680a346ab0660d13d65bf5eaa88a8eee745"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadPhysical\\physical_session\\RK03_FULL_UPLOAD_NO_START_01\\PRELAUNCH_CLIENT_CHECK.json",
+      "bytes": 494,
+      "sha256": "439ddf288bf2b51939fa3f3bdba39b473a8918534def086c14361621550e2076"
+    }
+  ],
+  "validator": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\seal_full_upload_result.py",
+    "bytes": 15276,
+    "sha256": "d1039b455b0a107e0f812e6396f9045bfc951cea1d95dd3c7bfb71a5431ac816"
+  },
+  "retry_allowed": false,
+  "kernel_start_allowed": false,
+  "next_required_state": "IGNITION OFF"
+}

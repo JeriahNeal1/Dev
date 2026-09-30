@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "status": "FAIL",
+  "scope": "OFFLINE_OEM_START_AND_SINGLE_IDENTITY_ONLY",
+  "physical_operations": 0,
+  "provider_loads": 0,
+  "acquisition_requests": 0,
+  "reviewer": "passive_review",
+  "upload_instructions_reexecuted": 0,
+  "error": "Traceback (most recent call last):\n  File \"C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_offline_20260930_01\\instruction_review\\replay_identity_only.py\", line 154, in main\n    assert old_trace['memory'][len(retained['memory']):] == memory.events\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+  "artifacts": []
+}

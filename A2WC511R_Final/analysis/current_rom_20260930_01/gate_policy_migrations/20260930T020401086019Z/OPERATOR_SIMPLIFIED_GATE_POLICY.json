@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "created_utc": "2026-09-30T02:04:01.086019+00:00",
+  "source": "Explicit latest user SIMPLIFIED HUMAN GATE POLICY directive",
+  "allowed_manual_state_replies": [
+    "IGNITION OFF",
+    "TEST MODE ON",
+    "NORMAL MODE ON"
+  ],
+  "operator_managed_context": [
+    "battery condition",
+    "charger state and mode",
+    "battery connections and isolation",
+    "OpenPort connection",
+    "voltage monitoring",
+    "radiator-fan disconnected state",
+    "Test Mode connector handling"
+  ],
+  "separate_component_gates_allowed": false,
+  "numerical_voltage_gates_allowed": false,
+  "abort_reports": [
+    "ABORT POWER",
+    "electrical fault",
+    "unstable voltage",
+    "smoke",
+    "heating",
+    "adapter problem"
+  ],
+  "abort_action": "Stop software activity immediately and request only appropriate ignition-state change; no further physical software activity",
+  "current_next_manual_state": {
+    "reply_exact": "NORMAL MODE ON",
+    "ignition": "ON",
+    "engine": "OFF",
+    "Subaru_Test_Mode": "DISABLED"
+  },
+  "automatic_after_normal_mode": [
+    "Run unchanged qualified passive BF/A8 OEM-return observer",
+    "Require BF identity 2F12515306 and PASS_CAPTURE_ONLY and clean observer/broker/provider cleanup",
+    "Preserve evidence"
+  ],
+  "on_oem_pass": "Record OEM_RETURN_AFTER_TRANSITION_PROBE=PASS; continue offline only",
+  "on_oem_failure": "Request only IGNITION OFF; stop further physical activity",
+  "software_interlocks": {
+    "probe_invocations_already_completed": 1,
+    "transition_probe_rerun_allowed": false,
+    "full_acquisition_allowed_this_run": false,
+    "explicit_authorization_before_RK03_or_RAM_kernel_required": true,
+    "automatic_retry_after_terminal_failure": false,
+    "flash_write_test_write_erase_program_requires_separate_authorization": true,
+    "evidence_preservation_required": true,
+    "provider_process_cleanup_required": true,
+    "passive_oem_return_required": true
+  },
+  "supersedes": "All earlier separate battery, charger, OpenPort, voltage and Test Mode connector gates; sealed historical instructions retained unchanged"
+}

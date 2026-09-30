@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "status": "PASS_INDEPENDENT_RUNNER_AND_JOURNAL_AUDIT",
+  "reviewer": "root",
+  "runner_author": "passive_review",
+  "native_author": "root",
+  "utc": "2026-09-30T04:36:35.786797+00:00",
+  "test_report": {
+    "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\reports\\qualification_20260930T043538633340Z\\TEST_REPORT.json",
+    "bytes": 649656,
+    "sha256": "bb3a7813be188705492ff5d265a27ede1d741b2cedd4df673b429b4002d79aa5"
+  },
+  "runner": {
+    "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\tools\\test_full_upload_independent.py",
+    "bytes": 68369,
+    "sha256": "d96ca60e6a97ab6fba06e0956424eca2ac6ea8e162c8b567956b1b5308c6abea"
+  },
+  "auditor": {
+    "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\tools\\audit_full_qualification.py",
+    "bytes": 8647,
+    "sha256": "e7ddef3aaf55760e69eb93db10301e078881a2b979d79b7d658c4b58a886865f"
+  },
+  "verified_unique_pins": 906,
+  "verified_transmissions": 3402,
+  "successful_scenarios": 28,
+  "negative_scenarios": 259,
+  "reviewed_cases": 287,
+  "runner_mutation_challenges": [
+    {
+      "case": "kernel_start_replaces_final_chunk",
+      "status": "PASS_REJECTED",
+      "reason": "Wire whitelist/order violated"
+    },
+    {
+      "case": "duplicate_second_chunk_at_third",
+      "status": "PASS_REJECTED",
+      "reason": "Wire whitelist/order violated"
+    },
+    {
+      "case": "skipped_second_chunk",
+      "status": "PASS_REJECTED",
+      "reason": "Wire whitelist/order violated"
+    },
+    {
+      "case": "arbitrary_final_target_with_valid_checksum",
+      "status": "PASS_REJECTED",
+      "reason": "Wire whitelist/order violated"
+    },
+    {
+      "case": "changed_final_payload_with_valid_checksum",
+      "status": "PASS_REJECTED",
+      "reason": "Wire whitelist/order violated"
+    },
+    {
+      "case": "wrong_final_ack_with_valid_checksum",
+      "status": "PASS_REJECTED",
+      "reason": "Successful native parser did not consume exact expected full replies"
+    },
+    {
+      "case": "false_physical_backend",
+      "status": "PASS_REJECTED",
+      "reason": "Wrong backend selection"
+    },
+    {
+      "case": "false_provider_loader",
+      "status": "PASS_REJECTED",
+      "reason": "Wrong backend selection"
+    },
+    {
+      "case": "false_cleanup_claim",
+      "status": "PASS_REJECTED",
+      "reason": "Cleanup confirmation contradicts returns"
+    }
+  ],
+  "physical_operations": 0,
+  "PE_invocations_during_this_audit": 0,
+  "blocking_findings": [],
+  "notes": [
+    "Reviewed runner validates exact operation schedule, every intended fault and terminal boundary, per-API arguments/results, all effective serial readbacks, filters, timers and cleanup.",
+    "Generic MSVC runtime loader imports are not evidence of an application provider loader; native source/reachable mode review is recorded independently.",
+    "All source and historical evidence pins checked; no historical test or physical run repeated."
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "inputs": [
+    {
+      "bytes": 8886,
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_physical_20260930_01\\physical_result\\PHYSICAL_RESULT.json",
+      "sha256": "2f524a38ef883b189aeab55ac1c06127c6f8164eeccca835f81fd78d5f7fdcda"
+    },
+    {
+      "bytes": 4184,
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_physical_20260930_01\\oem_return_after_identity_01\\OEM_RETURN_RESULT.json",
+      "sha256": "d2c181435ab346a400e30214f739c0363fec5ce13dc840c72dd2f66c82c0688b"
+    },
+    {
+      "bytes": 407756,
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_physical_20260930_01\\qualification\\QUALIFICATION.json",
+      "sha256": "19dc92d085a5721d7af280fc8fabf32a22919a9a370ec19e8052c8d6f8cf9cf8"
+    },
+    {
+      "bytes": 1048576,
+      "path": "C:\\Dev\\SubaruRoms\\current.bin",
+      "sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2"
+    },
+    {
+      "bytes": 1808,
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\build\\rk02_01\\kernel.bin",
+      "sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581"
+    },
+    {
+      "bytes": 51029,
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\build\\rk02_01\\manifest.json",
+      "sha256": "a35562a19f21d4a2815e88fb729d21dd2cc08bf702c0d866f88ffc9e3ddb659e"
+    },
+    {
+      "bytes": 9144,
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\src\\kernel.S",
+      "sha256": "3d20c9227c209b6712a451ce867c032e8e8d21fd4d2776816d720e2a3fa72355"
+    },
+    {
+      "bytes": 8370,
+      "path": "C:\\Dev\\A2WC511R_RK03_KernelIdentityOffline\\kernel_identity\\src\\identity_model.py",
+      "sha256": "8b2523cb4a20c75b0f5c53f9e5e663a6c78e7dd1a5dcbd52915f468160096b53"
+    },
+    {
+      "bytes": 107888,
+      "path": "C:\\Dev\\A2WC511R_RK03_KernelIdentityOffline\\kernel_identity\\contract\\CONTRACT.json",
+      "sha256": "bed9a78f0bde41f092e5617d547eed520784a9354a099ea607e82e47c80afd31"
+    },
+    {
+      "bytes": 405971,
+      "path": "C:\\Dev\\A2WC511R_RK03_KernelIdentityPhysical\\physical_session\\RK03_KERNEL_START_IDENTITY_01\\native_api.jsonl",
+      "sha256": "e6ac67a41cc98433fc56f2d5d0d9a8144ce836678a31094a108aff4187662e09"
+    }
+  ],
+  "normalizations": [
+    "Captured pointer addresses and provider timestamps removed from model actions; raw physical evidence remains sealed unchanged.",
+    "Physical minimum waits represented as virtual200/100/200ms; no silicon timing claim.",
+    "Only the25th exchange is synthetic, derived from the fixed kernel contract and current.bin bytes."
+  ],
+  "physical_operations": 0,
+  "prior_qualification_reused_not_recounted": true
+}

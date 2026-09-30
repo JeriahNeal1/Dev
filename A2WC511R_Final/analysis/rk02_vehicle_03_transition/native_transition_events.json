@@ -1,0 +1,536 @@
+{
+  "schema": 1,
+  "created_at_utc": "2026-09-29T23:32:28.529303+00:00",
+  "physical": true,
+  "evidence": [
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\acquisitions\\RK02_VEHICLE_03\\native_api.jsonl",
+      "sha256": "e277405b588f5cfeec12a073f1ab0ac447945b23e3e48ba2303035c4caa6e53f",
+      "bytes": 3536
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\physical_build\\rk02_physical_01\\native_physical.cpp",
+      "sha256": "e1d92d2ac097880cd9f829d0a9bf8abf8735af51b749f9e94f21050dd7a1a691",
+      "bytes": 16665
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\op20pt32.dll",
+      "sha256": "f432084801762d919a3c31974616e097562424470003edc4f4fb843df34103cf",
+      "bytes": 1781896
+    }
+  ],
+  "installed_Tactrix_header_matches_build_header": true,
+  "api_definitions": [
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\vendor\\j2534_tactrix.h",
+      "sha256": "c559ea33654af59ad147eedfcccd56a1f2cb6e95daeb2412b53f6f4bbc76a7d9",
+      "bytes": 12119,
+      "definitions": [
+        {
+          "line": 58,
+          "text": "#define ISO9141\t\t\t\t\t\t\t3"
+        },
+        {
+          "line": 90,
+          "text": "#define SET_CONFIG\t\t\t\t\t\t\t\t0x02"
+        },
+        {
+          "line": 94,
+          "text": "#define CLEAR_TX_BUFFER\t\t\t\t\t\t\t0x07"
+        },
+        {
+          "line": 95,
+          "text": "#define CLEAR_RX_BUFFER\t\t\t\t\t\t\t0x08"
+        },
+        {
+          "line": 156,
+          "text": "#define DATA_RATE\t\t\t\t\t\t0x01"
+        },
+        {
+          "line": 157,
+          "text": "#define LOOPBACK\t\t\t\t\t\t0x03"
+        },
+        {
+          "line": 161,
+          "text": "#define P1_MAX\t\t\t\t\t\t\t0x07"
+        },
+        {
+          "line": 164,
+          "text": "#define P3_MIN\t\t\t\t\t\t\t0x0A"
+        },
+        {
+          "line": 166,
+          "text": "#define P4_MIN\t\t\t\t\t\t\t0x0C"
+        },
+        {
+          "line": 245,
+          "text": "#define ERR_TIMEOUT\t\t\t\t\t\t\t0x09"
+        },
+        {
+          "line": 252,
+          "text": "#define ERR_BUFFER_EMPTY\t\t\t\t\t0x10"
+        },
+        {
+          "line": 274,
+          "text": "#define ISO9141_NO_CHECKSUM\t\t\t\t\t0x00000200"
+        },
+        {
+          "line": 276,
+          "text": "#define ISO9141_K_LINE_ONLY\t\t\t\t\t0x00001000"
+        }
+      ]
+    },
+    {
+      "path": "C:\\Program Files (x86)\\OpenECU\\OpenPort 2.0\\samples\\common\\j2534_tactrix.h",
+      "sha256": "c559ea33654af59ad147eedfcccd56a1f2cb6e95daeb2412b53f6f4bbc76a7d9",
+      "bytes": 12119,
+      "definitions": [
+        {
+          "line": 58,
+          "text": "#define ISO9141\t\t\t\t\t\t\t3"
+        },
+        {
+          "line": 90,
+          "text": "#define SET_CONFIG\t\t\t\t\t\t\t\t0x02"
+        },
+        {
+          "line": 94,
+          "text": "#define CLEAR_TX_BUFFER\t\t\t\t\t\t\t0x07"
+        },
+        {
+          "line": 95,
+          "text": "#define CLEAR_RX_BUFFER\t\t\t\t\t\t\t0x08"
+        },
+        {
+          "line": 156,
+          "text": "#define DATA_RATE\t\t\t\t\t\t0x01"
+        },
+        {
+          "line": 157,
+          "text": "#define LOOPBACK\t\t\t\t\t\t0x03"
+        },
+        {
+          "line": 161,
+          "text": "#define P1_MAX\t\t\t\t\t\t\t0x07"
+        },
+        {
+          "line": 164,
+          "text": "#define P3_MIN\t\t\t\t\t\t\t0x0A"
+        },
+        {
+          "line": 166,
+          "text": "#define P4_MIN\t\t\t\t\t\t\t0x0C"
+        },
+        {
+          "line": 245,
+          "text": "#define ERR_TIMEOUT\t\t\t\t\t\t\t0x09"
+        },
+        {
+          "line": 252,
+          "text": "#define ERR_BUFFER_EMPTY\t\t\t\t\t0x10"
+        },
+        {
+          "line": 274,
+          "text": "#define ISO9141_NO_CHECKSUM\t\t\t\t\t0x00000200"
+        },
+        {
+          "line": 276,
+          "text": "#define ISO9141_K_LINE_ONLY\t\t\t\t\t0x00001000"
+        }
+      ]
+    },
+    {
+      "path": "C:\\Program Files (x86)\\OpenECU\\EcuFlash\\samples\\common\\j2534_tactrix.h",
+      "sha256": "c559ea33654af59ad147eedfcccd56a1f2cb6e95daeb2412b53f6f4bbc76a7d9",
+      "bytes": 12119,
+      "definitions": [
+        {
+          "line": 58,
+          "text": "#define ISO9141\t\t\t\t\t\t\t3"
+        },
+        {
+          "line": 90,
+          "text": "#define SET_CONFIG\t\t\t\t\t\t\t\t0x02"
+        },
+        {
+          "line": 94,
+          "text": "#define CLEAR_TX_BUFFER\t\t\t\t\t\t\t0x07"
+        },
+        {
+          "line": 95,
+          "text": "#define CLEAR_RX_BUFFER\t\t\t\t\t\t\t0x08"
+        },
+        {
+          "line": 156,
+          "text": "#define DATA_RATE\t\t\t\t\t\t0x01"
+        },
+        {
+          "line": 157,
+          "text": "#define LOOPBACK\t\t\t\t\t\t0x03"
+        },
+        {
+          "line": 161,
+          "text": "#define P1_MAX\t\t\t\t\t\t\t0x07"
+        },
+        {
+          "line": 164,
+          "text": "#define P3_MIN\t\t\t\t\t\t\t0x0A"
+        },
+        {
+          "line": 166,
+          "text": "#define P4_MIN\t\t\t\t\t\t\t0x0C"
+        },
+        {
+          "line": 245,
+          "text": "#define ERR_TIMEOUT\t\t\t\t\t\t\t0x09"
+        },
+        {
+          "line": 252,
+          "text": "#define ERR_BUFFER_EMPTY\t\t\t\t\t0x10"
+        },
+        {
+          "line": 274,
+          "text": "#define ISO9141_NO_CHECKSUM\t\t\t\t\t0x00000200"
+        },
+        {
+          "line": 276,
+          "text": "#define ISO9141_K_LINE_ONLY\t\t\t\t\t0x00001000"
+        }
+      ]
+    }
+  ],
+  "status16": {
+    "decimal": 16,
+    "hex": "0x10",
+    "symbol": "ERR_BUFFER_EMPTY",
+    "distinct_from_ERR_TIMEOUT_hex": "0x09",
+    "meaning": "No message was delivered from the receive queue in this call (count0). Not an ECU negative response and not an adapter-disconnect status.",
+    "provider_loaded_for_this_analysis": false
+  },
+  "events": [
+    {
+      "source_line": 1,
+      "sequence": 0,
+      "function": "PassThruOpen",
+      "status": 0,
+      "count": 0,
+      "esp_before": 19856012,
+      "esp_after": 19856012,
+      "wire_hex": "",
+      "physical": true,
+      "protocol": 0,
+      "rx_status": 0,
+      "tx_flags": 0,
+      "timestamp": 0,
+      "data_size": 0,
+      "extra": 0,
+      "utc_filetime": 134351976888167348,
+      "counter": 3658604318556,
+      "frequency": 10000000,
+      "host_return_ms_since_open_return": 0.0,
+      "host_return_ms_since_previous_API_return": null
+    },
+    {
+      "source_line": 2,
+      "sequence": 1,
+      "function": "PassThruConnect",
+      "status": 0,
+      "count": 0,
+      "esp_before": 19856008,
+      "esp_after": 19856008,
+      "wire_hex": "",
+      "physical": true,
+      "protocol": 0,
+      "rx_status": 0,
+      "tx_flags": 0,
+      "timestamp": 0,
+      "data_size": 0,
+      "extra": 0,
+      "utc_filetime": 134351976888198009,
+      "counter": 3658604349213,
+      "frequency": 10000000,
+      "host_return_ms_since_open_return": 3.0657,
+      "host_return_ms_since_previous_API_return": 3.0657
+    },
+    {
+      "source_line": 3,
+      "sequence": 2,
+      "function": "PassThruStartMsgFilter",
+      "status": 0,
+      "count": 0,
+      "esp_before": 19843380,
+      "esp_after": 19843380,
+      "wire_hex": "",
+      "physical": true,
+      "protocol": 0,
+      "rx_status": 0,
+      "tx_flags": 0,
+      "timestamp": 0,
+      "data_size": 0,
+      "extra": 0,
+      "utc_filetime": 134351976888203526,
+      "counter": 3658604354730,
+      "frequency": 10000000,
+      "host_return_ms_since_open_return": 3.6174,
+      "host_return_ms_since_previous_API_return": 0.5517
+    },
+    {
+      "source_line": 4,
+      "sequence": 3,
+      "function": "PassThruWriteMsgs",
+      "status": 0,
+      "count": 1,
+      "esp_before": 19847524,
+      "esp_after": 19847524,
+      "wire_hex": "8010f001bf40",
+      "physical": true,
+      "protocol": 3,
+      "rx_status": 0,
+      "tx_flags": 0,
+      "timestamp": 0,
+      "data_size": 6,
+      "extra": 0,
+      "utc_filetime": 134351976888586882,
+      "counter": 3658604738092,
+      "frequency": 10000000,
+      "host_return_ms_since_open_return": 41.9536,
+      "host_return_ms_since_previous_API_return": 38.3362,
+      "wire_length": 6,
+      "ssm_payload_hex": "bf",
+      "declared_payload_length": 1,
+      "declared_length_matches": true,
+      "checksum_calculated_hex": "40",
+      "checksum_recorded_hex": "40",
+      "checksum_matches": true
+    },
+    {
+      "source_line": 5,
+      "sequence": 4,
+      "function": "PassThruReadMsgs",
+      "status": 0,
+      "count": 1,
+      "esp_before": 19847520,
+      "esp_after": 19847520,
+      "wire_hex": "",
+      "physical": true,
+      "protocol": 3,
+      "rx_status": 2,
+      "tx_flags": 0,
+      "timestamp": 2062904608,
+      "data_size": 0,
+      "extra": 0,
+      "utc_filetime": 134351976889276571,
+      "counter": 3658605427776,
+      "frequency": 10000000,
+      "host_return_ms_since_open_return": 110.922,
+      "host_return_ms_since_previous_API_return": 68.9684
+    },
+    {
+      "source_line": 6,
+      "sequence": 5,
+      "function": "PassThruReadMsgs",
+      "status": 0,
+      "count": 1,
+      "esp_before": 19847520,
+      "esp_after": 19847520,
+      "wire_hex": "80f01039ffa210112f1251530673facba62b81fea800000060ce54f9b1e4000c200000000000dc00005d1f3080f226000043fb00e1000000000000c1f0c2",
+      "physical": true,
+      "protocol": 3,
+      "rx_status": 0,
+      "tx_flags": 0,
+      "timestamp": 2063053738,
+      "data_size": 62,
+      "extra": 62,
+      "utc_filetime": 134351976890123494,
+      "counter": 3658606274698,
+      "frequency": 10000000,
+      "host_return_ms_since_open_return": 195.6142,
+      "host_return_ms_since_previous_API_return": 84.6922,
+      "wire_length": 62,
+      "ssm_payload_hex": "ffa210112f1251530673facba62b81fea800000060ce54f9b1e4000c200000000000dc00005d1f3080f226000043fb00e1000000000000c1f0",
+      "declared_payload_length": 57,
+      "declared_length_matches": true,
+      "checksum_calculated_hex": "c2",
+      "checksum_recorded_hex": "c2",
+      "checksum_matches": true
+    },
+    {
+      "source_line": 7,
+      "sequence": 6,
+      "function": "PassThruWriteMsgs",
+      "status": 0,
+      "count": 1,
+      "esp_before": 19847440,
+      "esp_after": 19847440,
+      "wire_hex": "8010f0018102",
+      "physical": true,
+      "protocol": 3,
+      "rx_status": 0,
+      "tx_flags": 0,
+      "timestamp": 0,
+      "data_size": 6,
+      "extra": 0,
+      "utc_filetime": 134351976890826559,
+      "counter": 3658606977765,
+      "frequency": 10000000,
+      "host_return_ms_since_open_return": 265.9209,
+      "host_return_ms_since_previous_API_return": 70.3067,
+      "wire_length": 6,
+      "ssm_payload_hex": "81",
+      "declared_payload_length": 1,
+      "declared_length_matches": true,
+      "checksum_calculated_hex": "02",
+      "checksum_recorded_hex": "02",
+      "checksum_matches": true
+    },
+    {
+      "source_line": 8,
+      "sequence": 7,
+      "function": "PassThruReadMsgs",
+      "status": 0,
+      "count": 1,
+      "esp_before": 19847436,
+      "esp_after": 19847436,
+      "wire_hex": "",
+      "physical": true,
+      "protocol": 3,
+      "rx_status": 2,
+      "tx_flags": 0,
+      "timestamp": 2063128580,
+      "data_size": 0,
+      "extra": 0,
+      "utc_filetime": 134351976891242980,
+      "counter": 3658607394185,
+      "frequency": 10000000,
+      "host_return_ms_since_open_return": 307.5629,
+      "host_return_ms_since_previous_API_return": 41.642
+    },
+    {
+      "source_line": 9,
+      "sequence": 8,
+      "function": "PassThruReadMsgs",
+      "status": 0,
+      "count": 1,
+      "esp_before": 19847436,
+      "esp_after": 19847436,
+      "wire_hex": "80f01003c1ef8fc2",
+      "physical": true,
+      "protocol": 3,
+      "rx_status": 0,
+      "tx_flags": 0,
+      "timestamp": 2063165760,
+      "data_size": 8,
+      "extra": 8,
+      "utc_filetime": 134351976891243300,
+      "counter": 3658607394503,
+      "frequency": 10000000,
+      "host_return_ms_since_open_return": 307.5947,
+      "host_return_ms_since_previous_API_return": 0.0318,
+      "wire_length": 8,
+      "ssm_payload_hex": "c1ef8f",
+      "declared_payload_length": 3,
+      "declared_length_matches": true,
+      "checksum_calculated_hex": "c2",
+      "checksum_recorded_hex": "c2",
+      "checksum_matches": true
+    },
+    {
+      "source_line": 10,
+      "sequence": 9,
+      "function": "PassThruWriteMsgs",
+      "status": 0,
+      "count": 1,
+      "esp_before": 19847440,
+      "esp_after": 19847440,
+      "wire_hex": "8010f002830005",
+      "physical": true,
+      "protocol": 3,
+      "rx_status": 0,
+      "tx_flags": 0,
+      "timestamp": 0,
+      "data_size": 7,
+      "extra": 0,
+      "utc_filetime": 134351976892014079,
+      "counter": 3658608165285,
+      "frequency": 10000000,
+      "host_return_ms_since_open_return": 384.6729,
+      "host_return_ms_since_previous_API_return": 77.0782,
+      "wire_length": 7,
+      "ssm_payload_hex": "8300",
+      "declared_payload_length": 2,
+      "declared_length_matches": true,
+      "checksum_calculated_hex": "05",
+      "checksum_recorded_hex": "05",
+      "checksum_matches": true
+    },
+    {
+      "source_line": 11,
+      "sequence": 10,
+      "function": "PassThruReadMsgs",
+      "status": 16,
+      "count": 0,
+      "esp_before": 19847436,
+      "esp_after": 19847436,
+      "wire_hex": "",
+      "physical": true,
+      "protocol": 0,
+      "rx_status": 0,
+      "tx_flags": 0,
+      "timestamp": 0,
+      "data_size": 0,
+      "extra": 0,
+      "utc_filetime": 134351976902032878,
+      "counter": 3658618184084,
+      "frequency": 10000000,
+      "host_return_ms_since_open_return": 1386.5528,
+      "host_return_ms_since_previous_API_return": 1001.8799
+    },
+    {
+      "source_line": 12,
+      "terminal_error": true,
+      "frames": 2,
+      "calls": 11
+    }
+  ],
+  "timing": {
+    "81_response_return_to_8300_write_return_ms": 77.0782,
+    "8300_write_return_to_empty_read_return_ms": 1001.8799,
+    "81_SOM_to_reply_provider_timestamp_ms": 37.18,
+    "measurement_scope": "QPC fields are logged after API returns; entry time and exact on-wire TX gap are NOT recorded. Provider RX timestamp meaning not inferred as a TX timestamp."
+  },
+  "configuration": {
+    "provenance": "Exact source bound to frozen physical executable; native API journal does not serialize Connect/filter/Ioctl argument structures",
+    "connect": {
+      "protocol": 3,
+      "protocol_name": "ISO9141",
+      "flags": 512,
+      "flags_hex": "0x200",
+      "flag_name": "ISO9141_NO_CHECKSUM",
+      "baud": 4800
+    },
+    "pass_filter": {
+      "type": 1,
+      "mask_hex": "ffffff",
+      "pattern_hex": "80f010",
+      "flow": null,
+      "protocol": 3
+    },
+    "initial_SET_CONFIG": null,
+    "initial_CLEAR_BUFFERS": null,
+    "provider_defaults_P1_P2_P3_P4_LOOPBACK": "Not queried or recorded; cannot infer exact defaults",
+    "write_timeout_ms": 1000,
+    "read_slice_max_ms": 1000,
+    "declared_whole_frame_deadline_ms": 2000,
+    "read_return_policy": "Every nonzero status throws from log_api before receive-loop continuation",
+    "echo_policy": "Up to4 empty START_OF_MESSAGE/TX_DONE or exact TX_MSG_TYPE echoes before data; echo not required",
+    "baud_change_before_or_at_8300": false,
+    "baud_change_intended_after_108502_positive": 15625,
+    "baud_change_intended_after_kernel_start": 62500
+  },
+  "causal_scope": {
+    "immediate_host_exit_cause": "log_api rejects nonzero16 before a second receive within frame budget",
+    "ECU_silence_cause": "UNDETERMINED_FROM_THIS_JOURNAL",
+    "claim_longer_wait_would_succeed": false
+  },
+  "no_new_hardware_activity": true
+}

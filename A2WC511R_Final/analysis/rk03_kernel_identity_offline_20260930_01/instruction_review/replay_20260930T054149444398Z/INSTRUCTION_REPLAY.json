@@ -1,0 +1,3101 @@
+{
+  "schema": 1,
+  "status": "PASS_OFFLINE_OEM_START_AND_SINGLE_KERNEL_IDENTITY",
+  "scope": "OFFLINE_OEM_START_AND_SINGLE_IDENTITY_ONLY",
+  "physical_operations": 0,
+  "provider_loads": 0,
+  "acquisition_requests": 0,
+  "reviewer": "passive_review",
+  "upload_instructions_reexecuted": 0,
+  "OEM_start": {
+    "request": "8010f003310101b6",
+    "reply_from_executed_TDR": "80f01003710101f6",
+    "instructions": 2902,
+    "per_byte": [
+      {
+        "ordinal": 0,
+        "byte": 128,
+        "instructions": 74,
+        "end_pc": "FFFFFFFC",
+        "pending_branch": null,
+        "returned": true
+      },
+      {
+        "ordinal": 1,
+        "byte": 16,
+        "instructions": 71,
+        "end_pc": "FFFFFFFC",
+        "pending_branch": null,
+        "returned": true
+      },
+      {
+        "ordinal": 2,
+        "byte": 240,
+        "instructions": 72,
+        "end_pc": "FFFFFFFC",
+        "pending_branch": null,
+        "returned": true
+      },
+      {
+        "ordinal": 3,
+        "byte": 3,
+        "instructions": 67,
+        "end_pc": "FFFFFFFC",
+        "pending_branch": null,
+        "returned": true
+      },
+      {
+        "ordinal": 4,
+        "byte": 49,
+        "instructions": 83,
+        "end_pc": "FFFFFFFC",
+        "pending_branch": null,
+        "returned": true
+      },
+      {
+        "ordinal": 5,
+        "byte": 1,
+        "instructions": 92,
+        "end_pc": "FFFFFFFC",
+        "pending_branch": null,
+        "returned": true
+      },
+      {
+        "ordinal": 6,
+        "byte": 1,
+        "instructions": 92,
+        "end_pc": "FFFFFFFC",
+        "pending_branch": null,
+        "returned": true
+      },
+      {
+        "ordinal": 7,
+        "byte": 182,
+        "instructions": 2351,
+        "end_pc": "FFFF3004",
+        "pending_branch": null,
+        "returned": false
+      }
+    ],
+    "entry_reached": "FFFF3004",
+    "SP": "FFFFBFA0",
+    "SR": "000000F0",
+    "kernel_instructions_executed_in_OEM_phase": 0,
+    "restored_prior_memory_write_events": 42969,
+    "restored_SCR": 32,
+    "exact_retained_stock_start_suffix_match": true,
+    "OEM_ROM_constant_read_events": [
+      {
+        "mode": "r",
+        "address": "00001554",
+        "size": 2,
+        "value": "0000BFDD",
+        "pc": "00001446",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001554"
+        ],
+        "address_sources": [
+          "instruction:00001446"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001556",
+        "size": 2,
+        "value": "0000BFBD",
+        "pc": "00001450",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001556"
+        ],
+        "address_sources": [
+          "instruction:00001450"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001558",
+        "size": 2,
+        "value": "0000F015",
+        "pc": "00001452",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001558"
+        ],
+        "address_sources": [
+          "instruction:00001452"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000155A",
+        "size": 2,
+        "value": "0000F014",
+        "pc": "00001458",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000155A"
+        ],
+        "address_sources": [
+          "instruction:00001458"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000155C",
+        "size": 2,
+        "value": "0000BFBC",
+        "pc": "00001462",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000155C"
+        ],
+        "address_sources": [
+          "instruction:00001462"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000155E",
+        "size": 2,
+        "value": "0000BFB8",
+        "pc": "00001464",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000155E"
+        ],
+        "address_sources": [
+          "instruction:00001464"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001560",
+        "size": 2,
+        "value": "0000BFC9",
+        "pc": "00001476",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001560"
+        ],
+        "address_sources": [
+          "instruction:00001476"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000143C",
+        "size": 2,
+        "value": "00000080",
+        "pc": "00001400",
+        "call_context": [
+          "00001440",
+          "000013F6"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000143C"
+        ],
+        "address_sources": [
+          "instruction:00001400"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001554",
+        "size": 2,
+        "value": "0000BFDD",
+        "pc": "00001446",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001554"
+        ],
+        "address_sources": [
+          "instruction:00001446"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001556",
+        "size": 2,
+        "value": "0000BFBD",
+        "pc": "00001450",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001556"
+        ],
+        "address_sources": [
+          "instruction:00001450"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001558",
+        "size": 2,
+        "value": "0000F015",
+        "pc": "00001452",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001558"
+        ],
+        "address_sources": [
+          "instruction:00001452"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000155A",
+        "size": 2,
+        "value": "0000F014",
+        "pc": "00001458",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000155A"
+        ],
+        "address_sources": [
+          "instruction:00001458"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000155C",
+        "size": 2,
+        "value": "0000BFBC",
+        "pc": "00001462",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000155C"
+        ],
+        "address_sources": [
+          "instruction:00001462"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000155E",
+        "size": 2,
+        "value": "0000BFB8",
+        "pc": "00001464",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000155E"
+        ],
+        "address_sources": [
+          "instruction:00001464"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001560",
+        "size": 2,
+        "value": "0000BFC9",
+        "pc": "00001476",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001560"
+        ],
+        "address_sources": [
+          "instruction:00001476"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001554",
+        "size": 2,
+        "value": "0000BFDD",
+        "pc": "00001446",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001554"
+        ],
+        "address_sources": [
+          "instruction:00001446"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001556",
+        "size": 2,
+        "value": "0000BFBD",
+        "pc": "00001450",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001556"
+        ],
+        "address_sources": [
+          "instruction:00001450"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001558",
+        "size": 2,
+        "value": "0000F015",
+        "pc": "00001452",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001558"
+        ],
+        "address_sources": [
+          "instruction:00001452"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000155A",
+        "size": 2,
+        "value": "0000F014",
+        "pc": "00001458",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000155A"
+        ],
+        "address_sources": [
+          "instruction:00001458"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000155C",
+        "size": 2,
+        "value": "0000BFBC",
+        "pc": "00001462",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000155C"
+        ],
+        "address_sources": [
+          "instruction:00001462"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000155E",
+        "size": 2,
+        "value": "0000BFB8",
+        "pc": "00001464",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000155E"
+        ],
+        "address_sources": [
+          "instruction:00001464"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001560",
+        "size": 2,
+        "value": "0000BFC9",
+        "pc": "00001476",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001560"
+        ],
+        "address_sources": [
+          "instruction:00001476"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000143E",
+        "size": 2,
+        "value": "000000F0",
+        "pc": "00001424",
+        "call_context": [
+          "00001440",
+          "000013F6"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000143E"
+        ],
+        "address_sources": [
+          "instruction:00001424"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001554",
+        "size": 2,
+        "value": "0000BFDD",
+        "pc": "00001446",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001554"
+        ],
+        "address_sources": [
+          "instruction:00001446"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001556",
+        "size": 2,
+        "value": "0000BFBD",
+        "pc": "00001450",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001556"
+        ],
+        "address_sources": [
+          "instruction:00001450"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001558",
+        "size": 2,
+        "value": "0000F015",
+        "pc": "00001452",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001558"
+        ],
+        "address_sources": [
+          "instruction:00001452"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000155A",
+        "size": 2,
+        "value": "0000F014",
+        "pc": "00001458",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000155A"
+        ],
+        "address_sources": [
+          "instruction:00001458"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000155C",
+        "size": 2,
+        "value": "0000BFBC",
+        "pc": "00001462",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000155C"
+        ],
+        "address_sources": [
+          "instruction:00001462"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000155E",
+        "size": 2,
+        "value": "0000BFB8",
+        "pc": "00001464",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000155E"
+        ],
+        "address_sources": [
+          "instruction:00001464"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001560",
+        "size": 2,
+        "value": "0000BFC9",
+        "pc": "00001476",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001560"
+        ],
+        "address_sources": [
+          "instruction:00001476"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001554",
+        "size": 2,
+        "value": "0000BFDD",
+        "pc": "00001446",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001554"
+        ],
+        "address_sources": [
+          "instruction:00001446"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001556",
+        "size": 2,
+        "value": "0000BFBD",
+        "pc": "00001450",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001556"
+        ],
+        "address_sources": [
+          "instruction:00001450"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001558",
+        "size": 2,
+        "value": "0000F015",
+        "pc": "00001452",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001558"
+        ],
+        "address_sources": [
+          "instruction:00001452"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000155A",
+        "size": 2,
+        "value": "0000F014",
+        "pc": "00001458",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000155A"
+        ],
+        "address_sources": [
+          "instruction:00001458"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000155C",
+        "size": 2,
+        "value": "0000BFBC",
+        "pc": "00001462",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000155C"
+        ],
+        "address_sources": [
+          "instruction:00001462"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000155E",
+        "size": 2,
+        "value": "0000BFB8",
+        "pc": "00001464",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000155E"
+        ],
+        "address_sources": [
+          "instruction:00001464"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001560",
+        "size": 2,
+        "value": "0000BFC9",
+        "pc": "00001476",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001560"
+        ],
+        "address_sources": [
+          "instruction:00001476"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001736",
+        "size": 2,
+        "value": "0000BFCD",
+        "pc": "000016D2",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001736"
+        ],
+        "address_sources": [
+          "instruction:000016D2"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001738",
+        "size": 2,
+        "value": "0000BFBA",
+        "pc": "000016D4",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001738"
+        ],
+        "address_sources": [
+          "instruction:000016D4"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000186C",
+        "size": 2,
+        "value": "0000BFC9",
+        "pc": "0000179A",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000186C"
+        ],
+        "address_sources": [
+          "instruction:0000179A"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001870",
+        "size": 2,
+        "value": "0000BFC0",
+        "pc": "000017B0",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001870"
+        ],
+        "address_sources": [
+          "instruction:000017B0"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000186E",
+        "size": 2,
+        "value": "0000BFBF",
+        "pc": "000017B4",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000186E"
+        ],
+        "address_sources": [
+          "instruction:000017B4"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001554",
+        "size": 2,
+        "value": "0000BFDD",
+        "pc": "00001446",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001554"
+        ],
+        "address_sources": [
+          "instruction:00001446"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001556",
+        "size": 2,
+        "value": "0000BFBD",
+        "pc": "00001450",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001556"
+        ],
+        "address_sources": [
+          "instruction:00001450"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001558",
+        "size": 2,
+        "value": "0000F015",
+        "pc": "00001452",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001558"
+        ],
+        "address_sources": [
+          "instruction:00001452"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000155A",
+        "size": 2,
+        "value": "0000F014",
+        "pc": "00001458",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000155A"
+        ],
+        "address_sources": [
+          "instruction:00001458"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000155C",
+        "size": 2,
+        "value": "0000BFBC",
+        "pc": "00001462",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000155C"
+        ],
+        "address_sources": [
+          "instruction:00001462"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000155E",
+        "size": 2,
+        "value": "0000BFB8",
+        "pc": "00001464",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000155E"
+        ],
+        "address_sources": [
+          "instruction:00001464"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001560",
+        "size": 2,
+        "value": "0000BFC9",
+        "pc": "00001476",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001560"
+        ],
+        "address_sources": [
+          "instruction:00001476"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001AD4",
+        "size": 2,
+        "value": "0000BFC0",
+        "pc": "000019F8",
+        "call_context": [
+          "00001440",
+          "000019F8"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001AD4"
+        ],
+        "address_sources": [
+          "instruction:000019F8"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001AD6",
+        "size": 2,
+        "value": "0000BFBD",
+        "pc": "00001A04",
+        "call_context": [
+          "00001440",
+          "000019F8"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001AD6"
+        ],
+        "address_sources": [
+          "instruction:00001A04"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001AD8",
+        "size": 2,
+        "value": "0000BFBC",
+        "pc": "00001A08",
+        "call_context": [
+          "00001440",
+          "000019F8"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001AD8"
+        ],
+        "address_sources": [
+          "instruction:00001A08"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001ADC",
+        "size": 2,
+        "value": "0000BFB8",
+        "pc": "00001A2C",
+        "call_context": [
+          "00001440",
+          "000019F8"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001ADC"
+        ],
+        "address_sources": [
+          "instruction:00001A2C"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001ADE",
+        "size": 2,
+        "value": "0000BFC9",
+        "pc": "00001A38",
+        "call_context": [
+          "00001440",
+          "000019F8"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001ADE"
+        ],
+        "address_sources": [
+          "instruction:00001A38"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001732",
+        "size": 2,
+        "value": "0000BFBF",
+        "pc": "00001672",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001732"
+        ],
+        "address_sources": [
+          "instruction:00001672"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001734",
+        "size": 2,
+        "value": "0000BFBE",
+        "pc": "00001674",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001734"
+        ],
+        "address_sources": [
+          "instruction:00001674"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001554",
+        "size": 2,
+        "value": "0000BFDD",
+        "pc": "00001446",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001554"
+        ],
+        "address_sources": [
+          "instruction:00001446"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001556",
+        "size": 2,
+        "value": "0000BFBD",
+        "pc": "00001450",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001556"
+        ],
+        "address_sources": [
+          "instruction:00001450"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001558",
+        "size": 2,
+        "value": "0000F015",
+        "pc": "00001452",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001558"
+        ],
+        "address_sources": [
+          "instruction:00001452"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000155A",
+        "size": 2,
+        "value": "0000F014",
+        "pc": "00001458",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000155A"
+        ],
+        "address_sources": [
+          "instruction:00001458"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000155C",
+        "size": 2,
+        "value": "0000BFBC",
+        "pc": "00001462",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000155C"
+        ],
+        "address_sources": [
+          "instruction:00001462"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000155E",
+        "size": 2,
+        "value": "0000BFB8",
+        "pc": "00001464",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000155E"
+        ],
+        "address_sources": [
+          "instruction:00001464"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001560",
+        "size": 2,
+        "value": "0000BFC9",
+        "pc": "00001476",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001560"
+        ],
+        "address_sources": [
+          "instruction:00001476"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001AD4",
+        "size": 2,
+        "value": "0000BFC0",
+        "pc": "000019F8",
+        "call_context": [
+          "00001440",
+          "000019F8"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001AD4"
+        ],
+        "address_sources": [
+          "instruction:000019F8"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001AD6",
+        "size": 2,
+        "value": "0000BFBD",
+        "pc": "00001A04",
+        "call_context": [
+          "00001440",
+          "000019F8"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001AD6"
+        ],
+        "address_sources": [
+          "instruction:00001A04"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001AD8",
+        "size": 2,
+        "value": "0000BFBC",
+        "pc": "00001A08",
+        "call_context": [
+          "00001440",
+          "000019F8"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001AD8"
+        ],
+        "address_sources": [
+          "instruction:00001A08"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001ADC",
+        "size": 2,
+        "value": "0000BFB8",
+        "pc": "00001A2C",
+        "call_context": [
+          "00001440",
+          "000019F8"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001ADC"
+        ],
+        "address_sources": [
+          "instruction:00001A2C"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001ADE",
+        "size": 2,
+        "value": "0000BFC9",
+        "pc": "00001A38",
+        "call_context": [
+          "00001440",
+          "000019F8"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001ADE"
+        ],
+        "address_sources": [
+          "instruction:00001A38"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001732",
+        "size": 2,
+        "value": "0000BFBF",
+        "pc": "00001672",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001732"
+        ],
+        "address_sources": [
+          "instruction:00001672"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001734",
+        "size": 2,
+        "value": "0000BFBE",
+        "pc": "00001674",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001734"
+        ],
+        "address_sources": [
+          "instruction:00001674"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001554",
+        "size": 2,
+        "value": "0000BFDD",
+        "pc": "00001446",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001554"
+        ],
+        "address_sources": [
+          "instruction:00001446"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001556",
+        "size": 2,
+        "value": "0000BFBD",
+        "pc": "00001450",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001556"
+        ],
+        "address_sources": [
+          "instruction:00001450"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001558",
+        "size": 2,
+        "value": "0000F015",
+        "pc": "00001452",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001558"
+        ],
+        "address_sources": [
+          "instruction:00001452"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000155A",
+        "size": 2,
+        "value": "0000F014",
+        "pc": "00001458",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000155A"
+        ],
+        "address_sources": [
+          "instruction:00001458"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000155C",
+        "size": 2,
+        "value": "0000BFBC",
+        "pc": "00001462",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000155C"
+        ],
+        "address_sources": [
+          "instruction:00001462"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000155E",
+        "size": 2,
+        "value": "0000BFB8",
+        "pc": "00001464",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000155E"
+        ],
+        "address_sources": [
+          "instruction:00001464"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001560",
+        "size": 2,
+        "value": "0000BFC9",
+        "pc": "00001476",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001560"
+        ],
+        "address_sources": [
+          "instruction:00001476"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001AD4",
+        "size": 2,
+        "value": "0000BFC0",
+        "pc": "000019F8",
+        "call_context": [
+          "00001440",
+          "000019F8"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001AD4"
+        ],
+        "address_sources": [
+          "instruction:000019F8"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001AD6",
+        "size": 2,
+        "value": "0000BFBD",
+        "pc": "00001A04",
+        "call_context": [
+          "00001440",
+          "000019F8"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001AD6"
+        ],
+        "address_sources": [
+          "instruction:00001A04"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001AD8",
+        "size": 2,
+        "value": "0000BFBC",
+        "pc": "00001A08",
+        "call_context": [
+          "00001440",
+          "000019F8"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001AD8"
+        ],
+        "address_sources": [
+          "instruction:00001A08"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001ADA",
+        "size": 2,
+        "value": "0000BFBE",
+        "pc": "00001A20",
+        "call_context": [
+          "00001440",
+          "000019F8"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001ADA"
+        ],
+        "address_sources": [
+          "instruction:00001A20"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001732",
+        "size": 2,
+        "value": "0000BFBF",
+        "pc": "00001672",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001732"
+        ],
+        "address_sources": [
+          "instruction:00001672"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001734",
+        "size": 2,
+        "value": "0000BFBE",
+        "pc": "00001674",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001734"
+        ],
+        "address_sources": [
+          "instruction:00001674"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "000019A2",
+        "size": 2,
+        "value": "0000BFC9",
+        "pc": "0000194E",
+        "call_context": [
+          "00001440",
+          "0000194C"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:000019A2"
+        ],
+        "address_sources": [
+          "instruction:0000194E"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "000019A8",
+        "size": 2,
+        "value": "0000BFA4",
+        "pc": "0000196E",
+        "call_context": [
+          "00001440",
+          "0000194C"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:000019A8"
+        ],
+        "address_sources": [
+          "instruction:0000196E"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "000019A6",
+        "size": 2,
+        "value": "0000BFA0",
+        "pc": "00001970",
+        "call_context": [
+          "00001440",
+          "0000194C"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:000019A6"
+        ],
+        "address_sources": [
+          "instruction:00001970"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "000019B0",
+        "size": 2,
+        "value": "00005AA5",
+        "pc": "00001984",
+        "call_context": [
+          "00001440",
+          "0000194C"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:000019B0"
+        ],
+        "address_sources": [
+          "instruction:00001984"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001884",
+        "size": 2,
+        "value": "0000BFB4",
+        "pc": "00001850",
+        "call_context": [
+          "00001440",
+          "0000194C",
+          "00001850"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001884"
+        ],
+        "address_sources": [
+          "instruction:00001850"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000187E",
+        "size": 2,
+        "value": "0000BFD5",
+        "pc": "00001854",
+        "call_context": [
+          "00001440",
+          "0000194C",
+          "00001850"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000187E"
+        ],
+        "address_sources": [
+          "instruction:00001854"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000187C",
+        "size": 2,
+        "value": "0000BFBC",
+        "pc": "000017D8",
+        "call_context": [
+          "00001440",
+          "0000194C",
+          "00001850"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000187C"
+        ],
+        "address_sources": [
+          "instruction:000017D8"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000187E",
+        "size": 2,
+        "value": "0000BFD5",
+        "pc": "000017E0",
+        "call_context": [
+          "00001440",
+          "0000194C",
+          "00001850"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000187E"
+        ],
+        "address_sources": [
+          "instruction:000017E0"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001880",
+        "size": 2,
+        "value": "00000080",
+        "pc": "000017E2",
+        "call_context": [
+          "00001440",
+          "0000194C",
+          "00001850"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001880"
+        ],
+        "address_sources": [
+          "instruction:000017E2"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001882",
+        "size": 2,
+        "value": "000000F0",
+        "pc": "000017E4",
+        "call_context": [
+          "00001440",
+          "0000194C",
+          "00001850"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001882"
+        ],
+        "address_sources": [
+          "instruction:000017E4"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001884",
+        "size": 2,
+        "value": "0000BFB4",
+        "pc": "000017EC",
+        "call_context": [
+          "00001440",
+          "0000194C",
+          "00001850"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001884"
+        ],
+        "address_sources": [
+          "instruction:000017EC"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001888",
+        "size": 4,
+        "value": "00001CEE",
+        "pc": "00001814",
+        "call_context": [
+          "00001440",
+          "0000194C",
+          "00001850"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001888"
+        ],
+        "address_sources": [
+          "instruction:00001814"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001DE8",
+        "size": 2,
+        "value": "0000F012",
+        "pc": "00001CEE",
+        "call_context": [
+          "00001440",
+          "0000194C",
+          "00001850",
+          "00001CEE"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001DE8"
+        ],
+        "address_sources": [
+          "instruction:00001CEE"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000188C",
+        "size": 4,
+        "value": "00001D00",
+        "pc": "00001820",
+        "call_context": [
+          "00001440",
+          "0000194C",
+          "00001850"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000188C"
+        ],
+        "address_sources": [
+          "instruction:00001820"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001DEC",
+        "size": 2,
+        "value": "00000080",
+        "pc": "00001D0C",
+        "call_context": [
+          "00001440",
+          "0000194C",
+          "00001850"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001DEC"
+        ],
+        "address_sources": [
+          "instruction:00001D0C"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001DEE",
+        "size": 2,
+        "value": "0000F014",
+        "pc": "00001D10",
+        "call_context": [
+          "00001440",
+          "0000194C",
+          "00001850"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001DEE"
+        ],
+        "address_sources": [
+          "instruction:00001D10"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001DFC",
+        "size": 4,
+        "value": "FFFFBFE0",
+        "pc": "00001D18",
+        "call_context": [
+          "00001440",
+          "0000194C",
+          "00001850"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001DFC"
+        ],
+        "address_sources": [
+          "instruction:00001D18"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001DEA",
+        "size": 2,
+        "value": "0000F013",
+        "pc": "00001D1C",
+        "call_context": [
+          "00001440",
+          "0000194C",
+          "00001850"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001DEA"
+        ],
+        "address_sources": [
+          "instruction:00001D1C"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001DF2",
+        "size": 2,
+        "value": "0000EC10",
+        "pc": "00001DB6",
+        "call_context": [
+          "00001440",
+          "0000194C",
+          "00001850",
+          "00001DB6"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001DF2"
+        ],
+        "address_sources": [
+          "instruction:00001DB6"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001DF2",
+        "size": 2,
+        "value": "0000EC10",
+        "pc": "00001DB6",
+        "call_context": [
+          "00001440",
+          "0000194C",
+          "00001850",
+          "00001DB6"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001DF2"
+        ],
+        "address_sources": [
+          "instruction:00001DB6"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001DF2",
+        "size": 2,
+        "value": "0000EC10",
+        "pc": "00001DB6",
+        "call_context": [
+          "00001440",
+          "0000194C",
+          "00001850",
+          "00001DB6"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001DF2"
+        ],
+        "address_sources": [
+          "instruction:00001DB6"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001DF2",
+        "size": 2,
+        "value": "0000EC10",
+        "pc": "00001DB6",
+        "call_context": [
+          "00001440",
+          "0000194C",
+          "00001850",
+          "00001DB6"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001DF2"
+        ],
+        "address_sources": [
+          "instruction:00001DB6"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001DF2",
+        "size": 2,
+        "value": "0000EC10",
+        "pc": "00001DB6",
+        "call_context": [
+          "00001440",
+          "0000194C",
+          "00001850",
+          "00001DB6"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001DF2"
+        ],
+        "address_sources": [
+          "instruction:00001DB6"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001DF2",
+        "size": 2,
+        "value": "0000EC10",
+        "pc": "00001DB6",
+        "call_context": [
+          "00001440",
+          "0000194C",
+          "00001850",
+          "00001DB6"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001DF2"
+        ],
+        "address_sources": [
+          "instruction:00001DB6"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001DF2",
+        "size": 2,
+        "value": "0000EC10",
+        "pc": "00001DB6",
+        "call_context": [
+          "00001440",
+          "0000194C",
+          "00001850",
+          "00001DB6"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001DF2"
+        ],
+        "address_sources": [
+          "instruction:00001DB6"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001DF2",
+        "size": 2,
+        "value": "0000EC10",
+        "pc": "00001DB6",
+        "call_context": [
+          "00001440",
+          "0000194C",
+          "00001850",
+          "00001DB6"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001DF2"
+        ],
+        "address_sources": [
+          "instruction:00001DB6"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "000019B2",
+        "size": 2,
+        "value": "0000BFC7",
+        "pc": "00001992",
+        "call_context": [
+          "00001440",
+          "0000194C"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:000019B2"
+        ],
+        "address_sources": [
+          "instruction:00001992"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "000019B4",
+        "size": 2,
+        "value": "0000BFE4",
+        "pc": "00001994",
+        "call_context": [
+          "00001440",
+          "0000194C"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:000019B4"
+        ],
+        "address_sources": [
+          "instruction:00001994"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "000019C4",
+        "size": 4,
+        "value": "FFFF3004",
+        "pc": "00001998",
+        "call_context": [
+          "00001440",
+          "0000194C"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:000019C4"
+        ],
+        "address_sources": [
+          "instruction:00001998"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "000019C8",
+        "size": 4,
+        "value": "00001C28",
+        "pc": "0000199C",
+        "call_context": [
+          "00001440",
+          "0000194C"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:000019C8"
+        ],
+        "address_sources": [
+          "instruction:0000199C"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001C30",
+        "size": 4,
+        "value": "FFFFBFA0",
+        "pc": "00001C28",
+        "call_context": [
+          "00001440",
+          "0000194C"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001C30"
+        ],
+        "address_sources": [
+          "instruction:00001C28"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      }
+    ],
+    "trace": {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_offline_20260930_01\\instruction_review\\replay_20260930T054149444398Z\\OEM_START_TRACE.json.gz",
+      "bytes": 32623,
+      "sha256": "d9956c1a1ae3eb13dc95612e39ab0fee0bc174e527035b45ec92c8a191dccb3f"
+    }
+  },
+  "kernel_identity_variants": {
+    "poisoned_registers": {
+      "entry_registers": {
+        "r": [
+          2768306176,
+          2768372227,
+          2768438278,
+          2768504329,
+          2768570380,
+          2768636431,
+          2768702482,
+          2768768533,
+          2768834584,
+          2768900635,
+          2768966686,
+          2769032737,
+          2769098788,
+          2769164839,
+          2769230890,
+          4294950816
+        ],
+        "SR": 770,
+        "PR": 4294962926,
+        "VBR": 0,
+        "MACH": 2309737967,
+        "MACL": 19088743
+      },
+      "request": "beef000101af",
+      "response_from_executed_SCI": "beef000f8141325743353131522d524b3032005f",
+      "identity_ascii": "A2WC511R-RK02\u0000",
+      "startup": {
+        "status": "PASS",
+        "tx_hex": "",
+        "instruction_count": 4214,
+        "stop_reason": "RX_WAIT",
+        "evidence": {
+          "sequence": 0,
+          "terminal_pc": "FFFF31BE",
+          "terminal_sp": "FFFF372C",
+          "min_sp": "FFFF372C",
+          "memory_event_sha256": "d1885a3cbd77687b02a9170b96f804e688ac61ccbf9a3e6fe6d1dcc5ce1b1b5a",
+          "execution_sha256": "fefec89e30b26b5a04bd0a38904d9f97d6a15b47c1d6ed57842d6d43c204e4f1",
+          "SCI_schedule_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "physical": false,
+          "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_offline_20260930_01\\instruction_review\\replay_20260930T054149444398Z\\poisoned_registers\\kernel_exchanges\\exchange_00000.json",
+          "sha256": "ffb354a5c066b3794b179f5aa3d2481ce6f1868b8fe07447bae70b2a389b8bd6"
+        }
+      },
+      "exchange": {
+        "status": "PASS",
+        "tx_hex": "beef000f8141325743353131522d524b3032005f",
+        "instruction_count": 564,
+        "stop_reason": "RX_WAIT",
+        "evidence": {
+          "sequence": 1,
+          "terminal_pc": "FFFF31BE",
+          "terminal_sp": "FFFF372C",
+          "min_sp": "FFFF372C",
+          "memory_event_sha256": "9df7b1068b7ef33c31ddc457aeb6c39da566d53bb535f9ec5469c17c61c51e2d",
+          "execution_sha256": "3b775aab7dac722425b463beb8b54059025c4f0a922e3e66d05a75be1e73d8de",
+          "SCI_schedule_sha256": "9295ec901774a05bb077488f2cf72e2b03f4523d17d5ea82a2cd0ab0e69e22aa",
+          "physical": false,
+          "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_offline_20260930_01\\instruction_review\\replay_20260930T054149444398Z\\poisoned_registers\\kernel_exchanges\\exchange_00001.json",
+          "sha256": "7fb2db06b70f2444566c4646a633987693caa89d98213a433c80485ce1330c11"
+        }
+      },
+      "entry": "FFFF3004",
+      "end_pc": "FFFF31BE",
+      "stop_reason": "RX_WAIT_AFTER_ONE_IDENTITY_EXCHANGE",
+      "raw_read_branch_executed": false,
+      "forbidden_symbols_unexecuted": [
+        "raw_read",
+        "decode_address",
+        "pass_done",
+        "complete",
+        "tx_raw",
+        "tx_address",
+        "fatal",
+        "halt_fail",
+        "exception_handler",
+        "halt_exception"
+      ],
+      "ROM_data_read_events": 0,
+      "flash_write_events": 0,
+      "host_requests": 1,
+      "response_bytes": 20,
+      "model_identity": {
+        "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+        "kernel_bytes": 1808,
+        "rom": {
+          "source": "C:\\Dev\\SubaruRoms\\current.bin",
+          "sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2",
+          "base_sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2",
+          "overlays": [],
+          "size": 1048576
+        },
+        "core_path": "C:\\Dev\\A2WC511R_Sim\\sh2e.py",
+        "core_sha256": "b47ac261634c116c3ffcdf19da9ec73e7014c034cd349ea8867f5f54895cdfff",
+        "manifest_sha256": "a35562a19f21d4a2815e88fb729d21dd2cc08bf702c0d866f88ffc9e3ddb659e",
+        "model_sources": {
+          "core.py": "caf6571a836676b82bec8f8a5eaa356590532e15931fae2da4b5822fe8ef0f90",
+          "cpu.py": "5043dafdfe59447cb8d906f7570907c472e1d638deb507dc4af8546e9b0f1980",
+          "fast_step.py": "029bb2b484911289b19e5cdbad35bbbbdc80af05420e91dad6884e0ff0484cfa",
+          "harness.py": "0496579da46daf66eb3be3847da0f3e94f8f45bf6f0b494a1f89a97853a8b4c6",
+          "memory.py": "d6062f1dde275b9611d1b631f8151eac567314c603a533dad8751eede3fa2a38",
+          "sci.py": "6f3b4b38ae6e12ac75d5101c767f10b106e9676c322eac3a0e39a67a9c0030c1",
+          "self_echo.py": "87896f45a074fcff5132a6faa57af48f5444de13fdf67f00a4f1304ea583da5d",
+          "__init__.py": "8e8b1da117fdc2ba4fe06edfc32b9c8d67176ab69a9470ee21151018bc85fbd8"
+        },
+        "peripheral_initial": {
+          "sci2": {
+            "FFFFF010": 0,
+            "FFFFF011": 255,
+            "FFFFF012": 0,
+            "FFFFF013": 255,
+            "FFFFF014": 132,
+            "FFFFF015": 0,
+            "FFFFF016": 242
+          },
+          "pccr": 0,
+          "dmaor": 0,
+          "wdt_tcsr": 24,
+          "ramer": 0,
+          "fmats": 0
+        },
+        "schedule": {
+          "rx_gap_ticks": 1,
+          "tx_complete_ticks": 1,
+          "brr_settle_ticks": 1,
+          "tx_load_ticks": 1
+        },
+        "optimized": false,
+        "receiver_self_echo": true,
+        "echo_profile": {
+          "start_delay_ticks": 0,
+          "ordinals": null
+        },
+        "model": "DECLARED_INSTRUCTION_TICK_SCI2_NOT_PHYSICAL_TIMING"
+      },
+      "shared_tx_data_reads": [
+        {
+          "mode": "r",
+          "address": "FFFF32FC",
+          "size": 1,
+          "value": "00000081",
+          "pc": "FFFF3260",
+          "delay_slot": false
+        },
+        {
+          "mode": "r",
+          "address": "FFFF32FD",
+          "size": 1,
+          "value": "00000041",
+          "pc": "FFFF3260",
+          "delay_slot": false
+        },
+        {
+          "mode": "r",
+          "address": "FFFF32FE",
+          "size": 1,
+          "value": "00000032",
+          "pc": "FFFF3260",
+          "delay_slot": false
+        },
+        {
+          "mode": "r",
+          "address": "FFFF32FF",
+          "size": 1,
+          "value": "00000057",
+          "pc": "FFFF3260",
+          "delay_slot": false
+        },
+        {
+          "mode": "r",
+          "address": "FFFF3300",
+          "size": 1,
+          "value": "00000043",
+          "pc": "FFFF3260",
+          "delay_slot": false
+        },
+        {
+          "mode": "r",
+          "address": "FFFF3301",
+          "size": 1,
+          "value": "00000035",
+          "pc": "FFFF3260",
+          "delay_slot": false
+        },
+        {
+          "mode": "r",
+          "address": "FFFF3302",
+          "size": 1,
+          "value": "00000031",
+          "pc": "FFFF3260",
+          "delay_slot": false
+        },
+        {
+          "mode": "r",
+          "address": "FFFF3303",
+          "size": 1,
+          "value": "00000031",
+          "pc": "FFFF3260",
+          "delay_slot": false
+        },
+        {
+          "mode": "r",
+          "address": "FFFF3304",
+          "size": 1,
+          "value": "00000052",
+          "pc": "FFFF3260",
+          "delay_slot": false
+        },
+        {
+          "mode": "r",
+          "address": "FFFF3305",
+          "size": 1,
+          "value": "0000002D",
+          "pc": "FFFF3260",
+          "delay_slot": false
+        },
+        {
+          "mode": "r",
+          "address": "FFFF3306",
+          "size": 1,
+          "value": "00000052",
+          "pc": "FFFF3260",
+          "delay_slot": false
+        },
+        {
+          "mode": "r",
+          "address": "FFFF3307",
+          "size": 1,
+          "value": "0000004B",
+          "pc": "FFFF3260",
+          "delay_slot": false
+        },
+        {
+          "mode": "r",
+          "address": "FFFF3308",
+          "size": 1,
+          "value": "00000030",
+          "pc": "FFFF3260",
+          "delay_slot": false
+        },
+        {
+          "mode": "r",
+          "address": "FFFF3309",
+          "size": 1,
+          "value": "00000032",
+          "pc": "FFFF3260",
+          "delay_slot": false
+        },
+        {
+          "mode": "r",
+          "address": "FFFF330A",
+          "size": 1,
+          "value": "00000000",
+          "pc": "FFFF3260",
+          "delay_slot": false
+        }
+      ],
+      "MMIO_write_addresses": [
+        "FFFFEC10",
+        "FFFFECB0",
+        "FFFFF010",
+        "FFFFF011",
+        "FFFFF012",
+        "FFFFF013",
+        "FFFFF014",
+        "FFFFF016",
+        "FFFFF73C"
+      ],
+      "private_RAM_write_count": 11,
+      "coverage": {
+        "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_offline_20260930_01\\instruction_review\\replay_20260930T054149444398Z\\poisoned_registers\\KERNEL_COVERAGE.json",
+        "bytes": 33498,
+        "sha256": "3ee4325293c4d22c8a59624e21141e9348a8499d72b27aa72e8606ff781977b9"
+      },
+      "trace": {
+        "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_offline_20260930_01\\instruction_review\\replay_20260930T054149444398Z\\poisoned_registers\\KERNEL_IDENTITY_TRACE.json.gz",
+        "bytes": 19211,
+        "sha256": "3e8b0fd2688f4c3eae2a29fddc59d552d09e5cd08e6351a7b0630c4f7fc47de0"
+      }
+    },
+    "actual_OEM_registers": {
+      "entry_registers": {
+        "r": [
+          4294950884,
+          4294950855,
+          0,
+          7208,
+          4294914052,
+          4294950869,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4294950816
+        ],
+        "SR": 240,
+        "PR": 5812,
+        "VBR": 8004,
+        "MACH": 0,
+        "MACL": 0,
+        "VBR_provenance": "EXPLICIT_RETAINED_BOOT_ENTRY_CONTRACT_NOT_REEXECUTED"
+      },
+      "request": "beef000101af",
+      "response_from_executed_SCI": "beef000f8141325743353131522d524b3032005f",
+      "identity_ascii": "A2WC511R-RK02\u0000",
+      "startup": {
+        "status": "PASS",
+        "tx_hex": "",
+        "instruction_count": 4214,
+        "stop_reason": "RX_WAIT",
+        "evidence": {
+          "sequence": 0,
+          "terminal_pc": "FFFF31BE",
+          "terminal_sp": "FFFF372C",
+          "min_sp": "FFFF372C",
+          "memory_event_sha256": "5f709636a24f9a84c1fd2ad323dd2deee8fd35659ce4b07eec510d1b163a98a7",
+          "execution_sha256": "fefec89e30b26b5a04bd0a38904d9f97d6a15b47c1d6ed57842d6d43c204e4f1",
+          "SCI_schedule_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "physical": false,
+          "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_offline_20260930_01\\instruction_review\\replay_20260930T054149444398Z\\actual_OEM_registers\\kernel_exchanges\\exchange_00000.json",
+          "sha256": "2f2961da8e67869a7a5d75f849f6fbe7be1ac37372fdfec243a0749085c1d8a1"
+        }
+      },
+      "exchange": {
+        "status": "PASS",
+        "tx_hex": "beef000f8141325743353131522d524b3032005f",
+        "instruction_count": 564,
+        "stop_reason": "RX_WAIT",
+        "evidence": {
+          "sequence": 1,
+          "terminal_pc": "FFFF31BE",
+          "terminal_sp": "FFFF372C",
+          "min_sp": "FFFF372C",
+          "memory_event_sha256": "730ac400e3060eb2d4a3b0b6f70cd794133bdff73a592c481e05fa6690a84c7e",
+          "execution_sha256": "3b775aab7dac722425b463beb8b54059025c4f0a922e3e66d05a75be1e73d8de",
+          "SCI_schedule_sha256": "9295ec901774a05bb077488f2cf72e2b03f4523d17d5ea82a2cd0ab0e69e22aa",
+          "physical": false,
+          "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_offline_20260930_01\\instruction_review\\replay_20260930T054149444398Z\\actual_OEM_registers\\kernel_exchanges\\exchange_00001.json",
+          "sha256": "6ec9b4753364ea0dca5a01b62418c0e7d4e3d6ddac95b34bf79dfd57b6ddcbcd"
+        }
+      },
+      "entry": "FFFF3004",
+      "end_pc": "FFFF31BE",
+      "stop_reason": "RX_WAIT_AFTER_ONE_IDENTITY_EXCHANGE",
+      "raw_read_branch_executed": false,
+      "forbidden_symbols_unexecuted": [
+        "raw_read",
+        "decode_address",
+        "pass_done",
+        "complete",
+        "tx_raw",
+        "tx_address",
+        "fatal",
+        "halt_fail",
+        "exception_handler",
+        "halt_exception"
+      ],
+      "ROM_data_read_events": 0,
+      "flash_write_events": 0,
+      "host_requests": 1,
+      "response_bytes": 20,
+      "model_identity": {
+        "kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+        "kernel_bytes": 1808,
+        "rom": {
+          "source": "C:\\Dev\\SubaruRoms\\current.bin",
+          "sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2",
+          "base_sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2",
+          "overlays": [],
+          "size": 1048576
+        },
+        "core_path": "C:\\Dev\\A2WC511R_Sim\\sh2e.py",
+        "core_sha256": "b47ac261634c116c3ffcdf19da9ec73e7014c034cd349ea8867f5f54895cdfff",
+        "manifest_sha256": "a35562a19f21d4a2815e88fb729d21dd2cc08bf702c0d866f88ffc9e3ddb659e",
+        "model_sources": {
+          "core.py": "caf6571a836676b82bec8f8a5eaa356590532e15931fae2da4b5822fe8ef0f90",
+          "cpu.py": "5043dafdfe59447cb8d906f7570907c472e1d638deb507dc4af8546e9b0f1980",
+          "fast_step.py": "029bb2b484911289b19e5cdbad35bbbbdc80af05420e91dad6884e0ff0484cfa",
+          "harness.py": "0496579da46daf66eb3be3847da0f3e94f8f45bf6f0b494a1f89a97853a8b4c6",
+          "memory.py": "d6062f1dde275b9611d1b631f8151eac567314c603a533dad8751eede3fa2a38",
+          "sci.py": "6f3b4b38ae6e12ac75d5101c767f10b106e9676c322eac3a0e39a67a9c0030c1",
+          "self_echo.py": "87896f45a074fcff5132a6faa57af48f5444de13fdf67f00a4f1304ea583da5d",
+          "__init__.py": "8e8b1da117fdc2ba4fe06edfc32b9c8d67176ab69a9470ee21151018bc85fbd8"
+        },
+        "peripheral_initial": {
+          "sci2": {
+            "FFFFF010": 0,
+            "FFFFF011": 255,
+            "FFFFF012": 32,
+            "FFFFF013": 255,
+            "FFFFF014": 132,
+            "FFFFF015": 0,
+            "FFFFF016": 242
+          },
+          "pccr": 0,
+          "dmaor": 0,
+          "wdt_tcsr": 0,
+          "ramer": 0,
+          "fmats": 0
+        },
+        "schedule": {
+          "rx_gap_ticks": 1,
+          "tx_complete_ticks": 1,
+          "brr_settle_ticks": 1,
+          "tx_load_ticks": 1
+        },
+        "optimized": false,
+        "receiver_self_echo": true,
+        "echo_profile": {
+          "start_delay_ticks": 0,
+          "ordinals": null
+        },
+        "model": "DECLARED_INSTRUCTION_TICK_SCI2_NOT_PHYSICAL_TIMING"
+      },
+      "shared_tx_data_reads": [
+        {
+          "mode": "r",
+          "address": "FFFF32FC",
+          "size": 1,
+          "value": "00000081",
+          "pc": "FFFF3260",
+          "delay_slot": false
+        },
+        {
+          "mode": "r",
+          "address": "FFFF32FD",
+          "size": 1,
+          "value": "00000041",
+          "pc": "FFFF3260",
+          "delay_slot": false
+        },
+        {
+          "mode": "r",
+          "address": "FFFF32FE",
+          "size": 1,
+          "value": "00000032",
+          "pc": "FFFF3260",
+          "delay_slot": false
+        },
+        {
+          "mode": "r",
+          "address": "FFFF32FF",
+          "size": 1,
+          "value": "00000057",
+          "pc": "FFFF3260",
+          "delay_slot": false
+        },
+        {
+          "mode": "r",
+          "address": "FFFF3300",
+          "size": 1,
+          "value": "00000043",
+          "pc": "FFFF3260",
+          "delay_slot": false
+        },
+        {
+          "mode": "r",
+          "address": "FFFF3301",
+          "size": 1,
+          "value": "00000035",
+          "pc": "FFFF3260",
+          "delay_slot": false
+        },
+        {
+          "mode": "r",
+          "address": "FFFF3302",
+          "size": 1,
+          "value": "00000031",
+          "pc": "FFFF3260",
+          "delay_slot": false
+        },
+        {
+          "mode": "r",
+          "address": "FFFF3303",
+          "size": 1,
+          "value": "00000031",
+          "pc": "FFFF3260",
+          "delay_slot": false
+        },
+        {
+          "mode": "r",
+          "address": "FFFF3304",
+          "size": 1,
+          "value": "00000052",
+          "pc": "FFFF3260",
+          "delay_slot": false
+        },
+        {
+          "mode": "r",
+          "address": "FFFF3305",
+          "size": 1,
+          "value": "0000002D",
+          "pc": "FFFF3260",
+          "delay_slot": false
+        },
+        {
+          "mode": "r",
+          "address": "FFFF3306",
+          "size": 1,
+          "value": "00000052",
+          "pc": "FFFF3260",
+          "delay_slot": false
+        },
+        {
+          "mode": "r",
+          "address": "FFFF3307",
+          "size": 1,
+          "value": "0000004B",
+          "pc": "FFFF3260",
+          "delay_slot": false
+        },
+        {
+          "mode": "r",
+          "address": "FFFF3308",
+          "size": 1,
+          "value": "00000030",
+          "pc": "FFFF3260",
+          "delay_slot": false
+        },
+        {
+          "mode": "r",
+          "address": "FFFF3309",
+          "size": 1,
+          "value": "00000032",
+          "pc": "FFFF3260",
+          "delay_slot": false
+        },
+        {
+          "mode": "r",
+          "address": "FFFF330A",
+          "size": 1,
+          "value": "00000000",
+          "pc": "FFFF3260",
+          "delay_slot": false
+        }
+      ],
+      "MMIO_write_addresses": [
+        "FFFFEC10",
+        "FFFFECB0",
+        "FFFFF010",
+        "FFFFF011",
+        "FFFFF012",
+        "FFFFF013",
+        "FFFFF014",
+        "FFFFF016",
+        "FFFFF73C"
+      ],
+      "private_RAM_write_count": 11,
+      "coverage": {
+        "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_offline_20260930_01\\instruction_review\\replay_20260930T054149444398Z\\actual_OEM_registers\\KERNEL_COVERAGE.json",
+        "bytes": 33498,
+        "sha256": "faaa44ba928d6a8e4d03be1c015e2719c697113d5b0bfa6af5c4eb579308828d"
+      },
+      "trace": {
+        "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_offline_20260930_01\\instruction_review\\replay_20260930T054149444398Z\\actual_OEM_registers\\KERNEL_IDENTITY_TRACE.json.gz",
+        "bytes": 19146,
+        "sha256": "fee85e9cf4e09ec89837f434ff4f664e147603a931d3bc324649d2c118541db3"
+      }
+    }
+  },
+  "inputs": [
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_no_start_20260930_01\\current_instruction_replay\\CURRENT_NO_START_REPLAY.json",
+      "bytes": 10599,
+      "sha256": "ed9a2d53349a22373ace06003e8b73f3fac67b2561f2640cbdb14bfc0b51b567"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_no_start_20260930_01\\current_instruction_replay\\CURRENT_NO_START_TRACE.json.gz",
+      "bytes": 6956210,
+      "sha256": "61d5ce455950dbb1a965795de5e07617219a768f68fbc0e69e519998e563485a"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_no_start_20260930_01\\current_instruction_replay\\expected_uploaded_ram.bin",
+      "bytes": 1808,
+      "sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_offline_20260930_01\\instruction_review\\replay_identity_only.py",
+      "bytes": 18872,
+      "sha256": "08eaa085ea61b9d55b2ca7dc108840979f653e9d8e937a326cb8a5153cc17929"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\build\\rk02_01\\kernel.bin",
+      "bytes": 1808,
+      "sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\build\\rk02_01\\manifest.json",
+      "bytes": 51029,
+      "sha256": "a35562a19f21d4a2815e88fb729d21dd2cc08bf702c0d866f88ffc9e3ddb659e"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\UPLOAD_WIRE_CONTRACT_RK02.json",
+      "bytes": 9330,
+      "sha256": "b1c5431141f9b249b16dd15938c290f20b99593e7ab8512caebcde1906c37f50"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\UPLOAD_WIRE_RK02_TRACE.json.gz",
+      "bytes": 6987389,
+      "sha256": "148aa99345229c92f789c25339e008eb7bf3ec5e133ce3bb5f3c385d5451f469"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\verify_boot_entry.py",
+      "bytes": 6314,
+      "sha256": "70f1521fa040c86f7ba5c7264e2031eb1ced4022dadf248b1d8fc9a195d6970e"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\verify_kwp_contract.py",
+      "bytes": 10190,
+      "sha256": "bc449cee55fc25c0a7975a2444bf3c8fe5124a9a4ae8cd73ccc7bd18cc628a58"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\verify_oem_contracts.py",
+      "bytes": 7414,
+      "sha256": "eb5fd8a5bdeeef214ac8c5f214c8d7637265643ae36bbf3571a2fe0452b8f191"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\verify_upload_wire_rk02.py",
+      "bytes": 5824,
+      "sha256": "d2c088b23baf2d3ad33dfa0db776e9047caa9dee0bcc25328039df024ea7ad95"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\protocol.py",
+      "bytes": 4623,
+      "sha256": "d7909dc2026fae0545d94d048c2c71ab366e804df84c5ee563d656d3774dbf38"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\__init__.py",
+      "bytes": 76,
+      "sha256": "8e8b1da117fdc2ba4fe06edfc32b9c8d67176ab69a9470ee21151018bc85fbd8"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\core.py",
+      "bytes": 658,
+      "sha256": "caf6571a836676b82bec8f8a5eaa356590532e15931fae2da4b5822fe8ef0f90"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\cpu.py",
+      "bytes": 3943,
+      "sha256": "5043dafdfe59447cb8d906f7570907c472e1d638deb507dc4af8546e9b0f1980"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\fast_step.py",
+      "bytes": 11167,
+      "sha256": "029bb2b484911289b19e5cdbad35bbbbdc80af05420e91dad6884e0ff0484cfa"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\harness.py",
+      "bytes": 12388,
+      "sha256": "0496579da46daf66eb3be3847da0f3e94f8f45bf6f0b494a1f89a97853a8b4c6"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\memory.py",
+      "bytes": 6138,
+      "sha256": "d6062f1dde275b9611d1b631f8151eac567314c603a533dad8751eede3fa2a38"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\sci.py",
+      "bytes": 7885,
+      "sha256": "6f3b4b38ae6e12ac75d5101c767f10b106e9676c322eac3a0e39a67a9c0030c1"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\sim\\self_echo.py",
+      "bytes": 4798,
+      "sha256": "87896f45a074fcff5132a6faa57af48f5444de13fdf67f00a4f1304ea583da5d"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Sim\\preflash_boot\\boot.py",
+      "bytes": 30985,
+      "sha256": "cea90b24165a33acbc161d873f14d80cbfe71832ab72158c8091a402c1d0b5ee"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Sim\\sh2e.py",
+      "bytes": 29610,
+      "sha256": "b47ac261634c116c3ffcdf19da9ec73e7014c034cd349ea8867f5f54895cdfff"
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\ecuflash_dynamic\\kernel_candidate\\execute_CANDIDATE.py",
+      "bytes": 13926,
+      "sha256": "bb8ee4e24edb9c076c019b6c1512e1b59e7a5a3a38339cead7688d583872c851"
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\ecuflash_dynamic\\kernel_candidate\\read_paths_CANDIDATE\\cleanup_CANDIDATE.py",
+      "bytes": 8892,
+      "sha256": "abd503568849f515057ec6a7cff28944ae82876b4dac9c25aa5ea379e39d2c85"
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\ecuflash_dynamic\\protocol_reference\\protocol_reference.py",
+      "bytes": 7314,
+      "sha256": "9e8061a9ba08c8d9adb0e908282bbd6ee9b072bd7a0f0e645db171d086fb26fe"
+    },
+    {
+      "path": "C:\\Dev\\SubaruRoms\\current.bin",
+      "bytes": 1048576,
+      "sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2"
+    }
+  ],
+  "limits": [
+    "No hardware, provider load, native physical host, acquisition or flash operation was invoked.",
+    "The completed upload was reused. OEM parser RAM was reconstructed from the retained current-ROM trace writes, then only the fixed start frame was executed.",
+    "OEM start uses the retained admitted-parser/RDR/readyTEND/watchdog fixtures and fresh bounded CPU calls per byte. Its ROM constant reads are legitimate OEM execution, not ROM acquisition.",
+    "Two independent KernelSession passes begin at the verified entry: retained poisoned registers, then actual ending OEM general/system registers. VBR1F44 is an explicit retained boot-entry assumption; the parser model does not carry that earlier setup. SCR and ready SSR/WDT values are carried into the actual-register pass; other peripheral defaults are declared. This is linked model evidence, not uninterrupted vehicle or reset-to-identity execution.",
+    "One instruction tick is an abstract schedule unit, not a CPU cycle, measured baud, UART waveform or physical elapsed time. Default collapsed SCI scheduling and explicit self-echo are recorded.",
+    "Only one fixed identity request per independent pass was fed. The kernel remains at an empty RX wait afterward; the model does not prove physical shutdown or recovery.",
+    "The unchanged kernel contains a raw-read command, but this replay never enters that branch and performs zero kernel ROM-data reads. No claim covers all malformed requests or later commands."
+  ],
+  "artifacts": [
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_offline_20260930_01\\instruction_review\\replay_20260930T054149444398Z\\actual_OEM_registers\\KERNEL_COVERAGE.json",
+      "bytes": 33498,
+      "sha256": "faaa44ba928d6a8e4d03be1c015e2719c697113d5b0bfa6af5c4eb579308828d"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_offline_20260930_01\\instruction_review\\replay_20260930T054149444398Z\\actual_OEM_registers\\kernel_exchanges\\exchange_00000.json",
+      "bytes": 544,
+      "sha256": "2f2961da8e67869a7a5d75f849f6fbe7be1ac37372fdfec243a0749085c1d8a1"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_offline_20260930_01\\instruction_review\\replay_20260930T054149444398Z\\actual_OEM_registers\\kernel_exchanges\\exchange_00001.json",
+      "bytes": 583,
+      "sha256": "6ec9b4753364ea0dca5a01b62418c0e7d4e3d6ddac95b34bf79dfd57b6ddcbcd"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_offline_20260930_01\\instruction_review\\replay_20260930T054149444398Z\\actual_OEM_registers\\KERNEL_IDENTITY_TRACE.json.gz",
+      "bytes": 19146,
+      "sha256": "fee85e9cf4e09ec89837f434ff4f664e147603a931d3bc324649d2c118541db3"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_offline_20260930_01\\instruction_review\\replay_20260930T054149444398Z\\OEM_START_TRACE.json.gz",
+      "bytes": 32623,
+      "sha256": "d9956c1a1ae3eb13dc95612e39ab0fee0bc174e527035b45ec92c8a191dccb3f"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_offline_20260930_01\\instruction_review\\replay_20260930T054149444398Z\\poisoned_registers\\KERNEL_COVERAGE.json",
+      "bytes": 33498,
+      "sha256": "3ee4325293c4d22c8a59624e21141e9348a8499d72b27aa72e8606ff781977b9"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_offline_20260930_01\\instruction_review\\replay_20260930T054149444398Z\\poisoned_registers\\kernel_exchanges\\exchange_00000.json",
+      "bytes": 544,
+      "sha256": "ffb354a5c066b3794b179f5aa3d2481ce6f1868b8fe07447bae70b2a389b8bd6"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_offline_20260930_01\\instruction_review\\replay_20260930T054149444398Z\\poisoned_registers\\kernel_exchanges\\exchange_00001.json",
+      "bytes": 583,
+      "sha256": "7fb2db06b70f2444566c4646a633987693caa89d98213a433c80485ce1330c11"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_offline_20260930_01\\instruction_review\\replay_20260930T054149444398Z\\poisoned_registers\\KERNEL_IDENTITY_TRACE.json.gz",
+      "bytes": 19211,
+      "sha256": "3e8b0fd2688f4c3eae2a29fddc59d552d09e5cd08e6351a7b0630c4f7fc47de0"
+    }
+  ]
+}

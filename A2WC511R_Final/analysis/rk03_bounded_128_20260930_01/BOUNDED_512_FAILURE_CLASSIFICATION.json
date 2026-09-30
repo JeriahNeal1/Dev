@@ -1,0 +1,560 @@
+{
+  "schema": 1,
+  "classification": "TRUNCATED_RESPONSE",
+  "classification_scope": "The application-level response delivered through J2534 is incomplete relative to its explicit header; physical cause remains unresolved.",
+  "complete_short_response": false,
+  "request_hex": "beef00080300000000000200ba",
+  "requested_address": "00000000",
+  "requested_payload_length": 512,
+  "received_frame_hex": "beef020683000000000000000aacffffbfa000000aacffffbfa000000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa8ffffffffffffffffdf01442b00090000ffffbfa0df01000b00090000ffffbfa0e5f74518750a8451e3ff4318620c737f2239324ce13c622c4118321c25210009000900090009000b0009ffff8441600c937f20388b04d643947c917c412be506000b00098441600c937320388b04d63e94729170412be506000b0009d33b7402d23b2342d13b412b6422634392614f227ff81f418431600c202988048b0c6433b0f8",
+  "received_frame_bytes": 228,
+  "header_hex": "beef0206830000000000",
+  "declared_body_length": 518,
+  "declared_payload_length": 512,
+  "declared_total_frame_length": 523,
+  "response_command": "83",
+  "returned_pass": 0,
+  "returned_address": "00000000",
+  "independent_returned_length_field": false,
+  "length_rule": "Two-byte BEEF body length includes command1+pass1+address4+data; subtract6 to obtain declared data length.",
+  "short217_hypothesis": {
+    "total_size": 228,
+    "required_body_length_hex": "00DF",
+    "observed_body_length_hex": "0206",
+    "required_checksum_with_observed_header": "39",
+    "required_checksum_with_correct_short_header": "10",
+    "observed_candidate_trailer": "F8",
+    "checksum_valid": false,
+    "syntactically_complete": false
+  },
+  "matching_payload_prefix_bytes": 217,
+  "first_differing_candidate_frame_byte": {
+    "offset": 227,
+    "expected": "28",
+    "actual": "F8",
+    "not_automatically_a_valid_ROM_byte": true
+  },
+  "checksum_status": "NO_COMPLETE_DECLARED_FRAME; SHORT_FRAME_CHECKSUM_INVALID",
+  "J2534_records": [
+    {
+      "type": "api_return",
+      "sequence": 92,
+      "function": "PassThruReadMsgs",
+      "physical": true,
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "timeout_ms": 1000,
+        "input_count": 1,
+        "count_pointer_present": true,
+        "message_capacity": 1,
+        "message": {
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 0,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 0,
+          "data_truncated": false,
+          "data_hex": ""
+        }
+      },
+      "output": {
+        "count": 1,
+        "message": {
+          "protocol": 3,
+          "rx_status": 2,
+          "tx_flags": 0,
+          "timestamp": 2603231369,
+          "data_size": 0,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 0,
+          "data_truncated": false,
+          "data_hex": ""
+        },
+        "canaries_intact": true
+      },
+      "qpc_before": 3956173968170,
+      "qpc_after": 3956174016027,
+      "qpc_frequency": 10000000,
+      "api_elapsed_ticks": 47857,
+      "utc_filetime": 134352274472057415,
+      "esp_before": 11766344,
+      "esp_after": 11766344,
+      "state": {
+        "clock_model": "QPC_MONOTONIC_MINIMUM",
+        "monotonic_ms": 395617401,
+        "requested_baud": 62500,
+        "baud_set_accepted": true,
+        "clear_mask": 3,
+        "connection_contract": {
+          "protocol": 3,
+          "flags": 512,
+          "baud": 4800
+        },
+        "opened": true,
+        "device": 1,
+        "connected": true,
+        "channel": 3,
+        "kernel_filter": true,
+        "filter_stop_attempted": false,
+        "acknowledged_chunks": 15,
+        "start_acknowledged": true,
+        "identity_validated": true,
+        "bounded_validated": false,
+        "tx_attempts": 25,
+        "requested_configuration": [
+          {
+            "parameter": 22,
+            "value": 0
+          },
+          {
+            "parameter": 7,
+            "value": 1
+          },
+          {
+            "parameter": 10,
+            "value": 0
+          },
+          {
+            "parameter": 12,
+            "value": 0
+          },
+          {
+            "parameter": 3,
+            "value": 0
+          }
+        ],
+        "successful_set_calls": 5,
+        "observed_configuration": [
+          {
+            "parameter": 22,
+            "value": 0
+          },
+          {
+            "parameter": 7,
+            "value": 1
+          },
+          {
+            "parameter": 10,
+            "value": 0
+          },
+          {
+            "parameter": 12,
+            "value": 0
+          },
+          {
+            "parameter": 3,
+            "value": 0
+          }
+        ],
+        "effective_configuration_valid": true,
+        "filter": {
+          "requested": true,
+          "active": true,
+          "id": 1,
+          "type": 1,
+          "requested_mask_hex": "ffff",
+          "requested_pattern_hex": "beef",
+          "requested_flow_hex": null,
+          "protocol": 3,
+          "flags": 0,
+          "returned_objects_valid": true,
+          "observed_mask": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 2,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 2,
+            "data_truncated": false,
+            "data_hex": "ffff"
+          },
+          "observed_pattern": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 2,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 2,
+            "data_truncated": false,
+            "data_hex": "beef"
+          },
+          "observed_flow": null
+        }
+      }
+    },
+    {
+      "type": "api_return",
+      "sequence": 93,
+      "function": "PassThruReadMsgs",
+      "physical": true,
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "timeout_ms": 1000,
+        "input_count": 1,
+        "count_pointer_present": true,
+        "message_capacity": 1,
+        "message": {
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 0,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 0,
+          "data_truncated": false,
+          "data_hex": ""
+        }
+      },
+      "output": {
+        "count": 1,
+        "message": {
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 2603268720,
+          "data_size": 228,
+          "extra_data_index": 228,
+          "buffer_capacity": 4128,
+          "logged_bytes": 228,
+          "data_truncated": false,
+          "data_hex": "beef020683000000000000000aacffffbfa000000aacffffbfa000000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa8ffffffffffffffffdf01442b00090000ffffbfa0df01000b00090000ffffbfa0e5f74518750a8451e3ff4318620c737f2239324ce13c622c4118321c25210009000900090009000b0009ffff8441600c937f20388b04d643947c917c412be506000b00098441600c937320388b04d63e94729170412be506000b0009d33b7402d23b2342d13b412b6422634392614f227ff81f418431600c202988048b0c6433b0f8"
+        },
+        "canaries_intact": true
+      },
+      "qpc_before": 3956174016709,
+      "qpc_after": 3956174341012,
+      "qpc_frequency": 10000000,
+      "api_elapsed_ticks": 324303,
+      "utc_filetime": 134352274472382476,
+      "esp_before": 11766344,
+      "esp_after": 11766344,
+      "state": {
+        "clock_model": "QPC_MONOTONIC_MINIMUM",
+        "monotonic_ms": 395617434,
+        "requested_baud": 62500,
+        "baud_set_accepted": true,
+        "clear_mask": 3,
+        "connection_contract": {
+          "protocol": 3,
+          "flags": 512,
+          "baud": 4800
+        },
+        "opened": true,
+        "device": 1,
+        "connected": true,
+        "channel": 3,
+        "kernel_filter": true,
+        "filter_stop_attempted": false,
+        "acknowledged_chunks": 15,
+        "start_acknowledged": true,
+        "identity_validated": true,
+        "bounded_validated": false,
+        "tx_attempts": 25,
+        "requested_configuration": [
+          {
+            "parameter": 22,
+            "value": 0
+          },
+          {
+            "parameter": 7,
+            "value": 1
+          },
+          {
+            "parameter": 10,
+            "value": 0
+          },
+          {
+            "parameter": 12,
+            "value": 0
+          },
+          {
+            "parameter": 3,
+            "value": 0
+          }
+        ],
+        "successful_set_calls": 5,
+        "observed_configuration": [
+          {
+            "parameter": 22,
+            "value": 0
+          },
+          {
+            "parameter": 7,
+            "value": 1
+          },
+          {
+            "parameter": 10,
+            "value": 0
+          },
+          {
+            "parameter": 12,
+            "value": 0
+          },
+          {
+            "parameter": 3,
+            "value": 0
+          }
+        ],
+        "effective_configuration_valid": true,
+        "filter": {
+          "requested": true,
+          "active": true,
+          "id": 1,
+          "type": 1,
+          "requested_mask_hex": "ffff",
+          "requested_pattern_hex": "beef",
+          "requested_flow_hex": null,
+          "protocol": 3,
+          "flags": 0,
+          "returned_objects_valid": true,
+          "observed_mask": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 2,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 2,
+            "data_truncated": false,
+            "data_hex": "ffff"
+          },
+          "observed_pattern": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 2,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 2,
+            "data_truncated": false,
+            "data_hex": "beef"
+          },
+          "observed_flow": null
+        }
+      }
+    },
+    {
+      "type": "api_return",
+      "sequence": 94,
+      "function": "PassThruReadMsgs",
+      "physical": true,
+      "status": 16,
+      "input": {
+        "channel": 3,
+        "timeout_ms": 1000,
+        "input_count": 1,
+        "count_pointer_present": true,
+        "message_capacity": 1,
+        "message": {
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 0,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 0,
+          "data_truncated": false,
+          "data_hex": ""
+        }
+      },
+      "output": {
+        "count": 0,
+        "message": {
+          "protocol": 0,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 0,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 0,
+          "data_truncated": false,
+          "data_hex": ""
+        },
+        "canaries_intact": true
+      },
+      "qpc_before": 3956174341807,
+      "qpc_after": 3956184395703,
+      "qpc_frequency": 10000000,
+      "api_elapsed_ticks": 10053896,
+      "utc_filetime": 134352274482437357,
+      "esp_before": 11766344,
+      "esp_after": 11766344,
+      "state": {
+        "clock_model": "QPC_MONOTONIC_MINIMUM",
+        "monotonic_ms": 395618439,
+        "requested_baud": 62500,
+        "baud_set_accepted": true,
+        "clear_mask": 3,
+        "connection_contract": {
+          "protocol": 3,
+          "flags": 512,
+          "baud": 4800
+        },
+        "opened": true,
+        "device": 1,
+        "connected": true,
+        "channel": 3,
+        "kernel_filter": true,
+        "filter_stop_attempted": false,
+        "acknowledged_chunks": 15,
+        "start_acknowledged": true,
+        "identity_validated": true,
+        "bounded_validated": false,
+        "tx_attempts": 25,
+        "requested_configuration": [
+          {
+            "parameter": 22,
+            "value": 0
+          },
+          {
+            "parameter": 7,
+            "value": 1
+          },
+          {
+            "parameter": 10,
+            "value": 0
+          },
+          {
+            "parameter": 12,
+            "value": 0
+          },
+          {
+            "parameter": 3,
+            "value": 0
+          }
+        ],
+        "successful_set_calls": 5,
+        "observed_configuration": [
+          {
+            "parameter": 22,
+            "value": 0
+          },
+          {
+            "parameter": 7,
+            "value": 1
+          },
+          {
+            "parameter": 10,
+            "value": 0
+          },
+          {
+            "parameter": 12,
+            "value": 0
+          },
+          {
+            "parameter": 3,
+            "value": 0
+          }
+        ],
+        "effective_configuration_valid": true,
+        "filter": {
+          "requested": true,
+          "active": true,
+          "id": 1,
+          "type": 1,
+          "requested_mask_hex": "ffff",
+          "requested_pattern_hex": "beef",
+          "requested_flow_hex": null,
+          "protocol": 3,
+          "flags": 0,
+          "returned_objects_valid": true,
+          "observed_mask": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 2,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 2,
+            "data_truncated": false,
+            "data_hex": "ffff"
+          },
+          "observed_pattern": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 2,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 2,
+            "data_truncated": false,
+            "data_hex": "beef"
+          },
+          "observed_flow": null
+        }
+      }
+    }
+  ],
+  "second_data_fragment_observed": false,
+  "provider_message_semantics": "One data record DataSize228/ExtraDataIndex228 logged fully inside4128-byte API capacity; this is not proof of a complete BEEF frame or what was present electrically. A following read returned16/count0.",
+  "provider_protocol": {
+    "protocol_id": 3,
+    "label": "ISO9141",
+    "connect_flags": 512,
+    "flag_name": "ISO9141_NO_CHECKSUM",
+    "P1_MAX_requested_and_readback": 1,
+    "baud": 62500,
+    "receive_filter_mask": "ffff",
+    "receive_filter_pattern": "beef"
+  },
+  "kernel_buffers": {
+    "request_buffer_bytes": 8,
+    "response_RAM_buffer_present": false,
+    "TX_method": "Streams bytes from flash address through SCI TDR using32-bit counter; no217-byte buffer or cutoff in the pinned source.",
+    "fixed_loop_bytes": 512,
+    "response_length_field_bits": 16,
+    "request_length_field_bits": 16
+  },
+  "remaining_causes": [
+    "ECU transmission interruption or corruption",
+    "electrical K-line behavior",
+    "provider delimiting/buffering/filtering; possible segmentation not proven"
+  ],
+  "confidence": {
+    "not_complete_short": "HIGH",
+    "incomplete_declared_frame": "HIGH",
+    "cause": "UNRESOLVED"
+  },
+  "sources": [
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_BoundedReadPhysical\\physical_session\\RK03_BOUNDED_ROM_READ_01\\native_api.jsonl",
+      "sha256": "42c900bbfae9e2537615eb3fd0967e013d7d603d315968c1d59bbd0de701ba1f"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_read_physical_20260930_01\\failure_analysis\\EVENT_DIFF.json",
+      "sha256": "25c99e72284428599fc4c6275d8fb4eb193e0d07ffd6e3d23a03a4e490c1368c"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\src\\kernel.S",
+      "sha256": "3d20c9227c209b6712a451ce867c032e8e8d21fd4d2776816d720e2a3fa72355"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\linker\\kernel.ld",
+      "sha256": "269d8b6de2edfa84afabad1080b6c7f4baefedd60bdd7ec2d75b5d7240e7dbef"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_BoundedReadPhysical\\bounded_read_physical\\src\\j2534_tactrix.h",
+      "sha256": "25df54ce5e75ef81bef26c27c694ac82ab74959381bfbf4a6d79a9a68e5d179a"
+    }
+  ],
+  "old_evidence_modified": false,
+  "physical_operations": 0,
+  "utc": "2026-09-30T07:54:25.172585+00:00"
+}

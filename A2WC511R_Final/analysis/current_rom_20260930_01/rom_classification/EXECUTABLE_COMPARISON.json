@@ -1,0 +1,81 @@
+{
+  "executable_code_identical": true,
+  "scope": "All changed bytes classified as exact RomRaider data/checksum/edit stamp, plus byte comparison of retained stock instruction inventories.",
+  "older_IDA_export": {
+    "defined_instruction_count": 63588,
+    "stock_word_validation": true,
+    "changed_instruction_count": 0
+  },
+  "Diaphora_stock_inventory": {
+    "function_count": 1147,
+    "instruction_rows": 70986,
+    "unique_instruction_words": 68739,
+    "instruction_bytes": 137478,
+    "changed_instruction_addresses": [],
+    "coverage_claim": "seeded static discovery, not complete firmware reachability or executable ownership"
+  },
+  "changed_executable_functions": [],
+  "function_contained_data_changes": [
+    {
+      "start": 86492,
+      "end": 87880,
+      "name": "sub_151DC",
+      "chunks": [
+        [
+          86492,
+          87880
+        ]
+      ],
+      "changed_byte_positions": [
+        87549
+      ],
+      "changed_instruction_addresses": [],
+      "stock_chunk_sha256": [
+        "5c6583db04e1f21da97ebc697d82575519a4f6f1a5e5f73b9b8ba951b57995e8"
+      ],
+      "current_chunk_sha256": [
+        "642e5678a133fd20bc1c46e43b2fee4a73765d0b09b7e08b8fa059c80d4fc41b"
+      ],
+      "classifications": [
+        {
+          "address": 87549,
+          "address_hex": "0x155FD",
+          "stock": 180,
+          "current": 130,
+          "classification": "scalar",
+          "object_keys": [
+            "Max Wastegate Duty Limit Post-Compensation"
+          ]
+        }
+      ]
+    }
+  ],
+  "embedded_scalar_proof": {
+    "scalar_address": "0x155FC",
+    "changed_byte": "0x155FD",
+    "object": "Max Wastegate Duty Limit Post-Compensation",
+    "stock_be_float32": 90.0,
+    "current_be_float32": 65.0,
+    "MOVA": {
+      "address": "0x15474",
+      "bytes": "c761",
+      "decoded_target": "0x155FC"
+    },
+    "load": {
+      "address": "0x15478",
+      "bytes": "f608",
+      "meaning": "FMOV.S @R0,FR6"
+    },
+    "instructions_unchanged": true,
+    "interpretation": "Embedded calibration literal inside function extent; changed data affects behavior without changing executable opcodes."
+  },
+  "all_bytes_outside_exact_known_data_changes_identical": true,
+  "fresh_Diaphora_matching_performed": false,
+  "Diaphora_decision": "No changed instruction bytes or unknown changed regions; exact aligned comparison plus retained instruction/function inventories is conclusive for this image. Fresh structural matching would add no evidence.",
+  "limits": [
+    "Static instruction inventories are partial, not a complete firmware reachability proof.",
+    "Data classification uses exact native loaded definition objects, not near-table addresses.",
+    "Unchanged instruction bytes do not imply unchanged behavior: calibration data changed.",
+    "One ECUFlash file is not independently proven lossless acquisition; compare with physical/provenance assessment separately."
+  ]
+}

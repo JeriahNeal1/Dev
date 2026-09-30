@@ -1,0 +1,49 @@
+{
+  "status": "PASS_ROOT_INDEPENDENT_FIXED_READ_INSTRUCTION_REVIEW",
+  "reviewer": "root",
+  "replay_author": "passive_review",
+  "replay": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_rom_read_offline_20260930_01\\instruction_review\\replay_20260930T065049517214Z\\INSTRUCTION_REPLAY.json",
+    "bytes": 14841,
+    "sha256": "c8a6e1f00bcf17686b6e193e572d70546c54642320e5a8cd39f4829aee6a5147"
+  },
+  "independent_fixed_contract": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_rom_read_offline_20260930_01\\instruction_review\\FIXED_READ_CONTRACT.json",
+    "bytes": 4983,
+    "sha256": "48df08343615f960263d9940b648c44568a9c0dbb8f2ae588267cfce53dd2b6a"
+  },
+  "root_fixed_contract": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_rom_read_offline_20260930_01\\ROOT_FIXED_READ_CONTRACT.json",
+    "bytes": 2648,
+    "sha256": "5afee9e27acc5758d7fc250230959bfe0682c98bf5f6f61ac0b93d91533f0aa6"
+  },
+  "model_contract": {
+    "path": "C:\\Dev\\A2WC511R_RK03_BoundedRomReadOffline\\bounded_rom_read\\contract\\CONTRACT.json",
+    "bytes": 115516,
+    "sha256": "9dccc5043477150c479255803ea25f48fe815d5b254f9c045e30b5923327edcf"
+  },
+  "audit_source": {
+    "path": "C:\\Dev\\A2WC511R_RK03_BoundedRomReadOffline\\bounded_rom_read\\tools\\review_instruction_evidence.py",
+    "bytes": 5871,
+    "sha256": "a8597595b26a32d40c949c25c390fc917f9150549153250bbb05b45f2f40e0e5"
+  },
+  "verified_distinct_pins": 28,
+  "observed_instructions": 10327,
+  "observed_sequential_ROM_byte_reads": 512,
+  "range_start": "00000000",
+  "range_end_exclusive": "00000200",
+  "observed_read_requests": 1,
+  "observed_reply_bytes": 523,
+  "cursor_after": "00000200",
+  "physical_operations": 0,
+  "provider_loads": 0,
+  "new_simulator_invocations": 0,
+  "conclusions": [
+    "Independent source-derived contracts, simulated SCI response and each raw ROM load agree.",
+    "Only the new read executes CPU instructions; the reviewed prior identity checkpoint supplies initial state.",
+    "No second read, entry/identity execution, pass completion, kernel mutation or flash-controller store is present in the trace."
+  ],
+  "limits": [
+    "Restored register/private-RAM state and SCI schedule are explicit simulation inputs; no silicon-timing or physical-ROM-read claim."
+  ]
+}

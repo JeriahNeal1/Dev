@@ -1,0 +1,60 @@
+{
+  "session_id": "RK03_BOUNDED_ROM_READ_01",
+  "qualification_sha256": "15ba34b4d14c17e104fe28163faf7afe6b3c11b067ecf15a3bc97f8af8b253d1",
+  "status": "RECOVERY_NORMAL_MODE_CONFIRMED",
+  "probe_invocation_count": 1,
+  "launch_reserved": true,
+  "physical_authorization_received": true,
+  "completed_pre_probe_gates": [
+    {
+      "reply": "IGNITION OFF",
+      "source": "user",
+      "session_id": "RK03_BOUNDED_ROM_READ_01",
+      "received_utc": "2026-09-30T07:34:28.568345+00:00"
+    },
+    {
+      "reply": "TEST MODE ON",
+      "source": "user",
+      "session_id": "RK03_BOUNDED_ROM_READ_01",
+      "received_utc": "2026-09-30T07:35:46.809047+00:00"
+    }
+  ],
+  "completed_recovery_gates": [
+    {
+      "reply": "IGNITION OFF",
+      "source": "user",
+      "session_id": "RK03_BOUNDED_ROM_READ_01",
+      "received_utc": "2026-09-30T07:39:48.830783+00:00"
+    },
+    {
+      "reply": "NORMAL MODE ON",
+      "source": "user",
+      "session_id": "RK03_BOUNDED_ROM_READ_01",
+      "received_utc": "2026-09-30T07:41:32.324665+00:00"
+    }
+  ],
+  "commit_authorization": {
+    "reply": "PROCEED RK03 BOUNDED ROM READ",
+    "source": "user",
+    "session_id": "RK03_BOUNDED_ROM_READ_01",
+    "qualification_sha256": "15ba34b4d14c17e104fe28163faf7afe6b3c11b067ecf15a3bc97f8af8b253d1",
+    "received_utc": "2026-09-30T07:37:19.499520+00:00"
+  },
+  "physical_state": "NORMAL MODE ON",
+  "engine": "OFF",
+  "operator_managed_physical_context": true,
+  "full_acquisition_allowed": false,
+  "retry_allowed": false,
+  "abort_requested": false,
+  "next_gate": null,
+  "launch_reserved_utc": "2026-09-30T07:37:24.763571+00:00",
+  "process_id": 8880,
+  "process_exited": true,
+  "exit_code": 1,
+  "bounded_physical": "FAIL",
+  "physical_result": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_read_physical_20260930_01\\physical_result\\PHYSICAL_RESULT.json",
+    "bytes": 3913,
+    "sha256": "68a8ab19e81887d3e73079acf5b74881367731a41f02ff6b8aa9823d303b200e"
+  }
+}

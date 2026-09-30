@@ -1,0 +1,53 @@
+--- sealed_original/broker.cpp
++++ passive_som01/broker.cpp
+@@ -15,6 +15,9 @@
+ #pragma comment(lib,"bcrypt.lib")
+ const std::vector<unsigned char> IDENTITY{0x80,0x10,0xf0,1,0xbf,0x40};
+ const std::vector<unsigned char> SNAPSHOT{0x80,0x10,0xf0,0x14,0xa8,0,0xff,0x4c,0x75,0xff,0x4c,0x8d,0xff,0x4c,0xa1,0xff,0x4c,0x50,0xff,0x4b,0xc1,0xff,0x4b,0xc2,0x72};
++// Tactrix j2534_tactrix.h RxStatus: START_OF_MESSAGE = 0x00000002.
++constexpr U START_OF_MESSAGE_STATUS=0x00000002;
++constexpr unsigned MAX_START_INDICATORS=4;
+ enum class Op { Invalid, Identity, Snapshot, Close };
+ Op parse(const std::string& s) {
+     if(s=="IDENTITY") return Op::Identity;
+@@ -90,6 +93,7 @@
+         U n=1; check(write(channel,&tx,&n,1000),"fixed diagnostic TX"); if(n!=1) throw std::runtime_error("short TX");
+         const size_t reply_size=op==Op::Identity?62:12;
+         std::vector<unsigned char> wire; std::string events="["; bool first=true;
++        unsigned start_indicators=0;
+         ULONGLONG deadline=GetTickCount64()+1200;
+         while(wire.size()<q.size()+reply_size) {
+             if(GetTickCount64()>=deadline) throw std::runtime_error("RX deadline");
+@@ -97,13 +101,27 @@
+             if((result==0x10 || result==9) && n==0) continue;
+             check(result,"read");
+             std::cerr<<"RX host_tick_ms="<<GetTickCount64()<<" provider_us="<<rx.timestamp<<" rx_status="<<rx.rx
++                <<" protocol="<<rx.protocol<<" tx_flags="<<rx.tx<<" extra_data_index="<<rx.extra<<" message_count="<<n
+                 <<" declared_size="<<rx.size<<" raw="<<hex(rx.data,std::min(rx.size,4128U))<<"\n";
+-            if(n!=1 || rx.protocol!=3 || rx.size==0 || rx.size>4128 || rx.extra>rx.size || rx.tx!=0 ||
+-                (rx.extra && rx.extra!=rx.size) || (rx.rx & ~1U)) throw std::runtime_error("unsupported RX metadata");
+-            if(wire.size()+rx.size>q.size()+reply_size) throw std::runtime_error("extra RX bytes");
++            if(n!=1 || rx.protocol!=3 || rx.size>4128 || rx.extra>rx.size || rx.tx!=0 ||
++                (rx.extra && rx.extra!=rx.size)) throw std::runtime_error("unsupported RX metadata");
++            const bool start_indicator=rx.rx==START_OF_MESSAGE_STATUS;
++            if(start_indicator) {
++                // Indicators carry no bytes and are admitted only before a complete
++                // message: initially, or after the exact outgoing request echo.
++                const bool boundary=wire.empty() || (wire.size()==q.size() && std::equal(q.begin(),q.end(),wire.begin()));
++                if(rx.size!=0 || rx.extra!=0 || !boundary || ++start_indicators>MAX_START_INDICATORS)
++                    throw std::runtime_error("unsupported START_OF_MESSAGE indication");
++            } else {
++                if(rx.size==0 || (rx.rx & ~1U)) throw std::runtime_error("unsupported RX metadata");
++                if(wire.size()+rx.size>q.size()+reply_size) throw std::runtime_error("extra RX bytes");
++            }
+             if(!first) events+=",";first=false;
+-            events+="{\"timestamp_us\":"+std::to_string(rx.timestamp)+",\"rx_status\":"+std::to_string(rx.rx)+",\"raw_hex\":\""+hex(rx.data,rx.size)+"\"}";
+-            wire.insert(wire.end(),rx.data,rx.data+rx.size);
++            events+="{\"timestamp_us\":"+std::to_string(rx.timestamp)+",\"rx_status\":"+std::to_string(rx.rx)
++                +",\"protocol\":"+std::to_string(rx.protocol)+",\"tx_flags\":"+std::to_string(rx.tx)
++                +",\"data_size\":"+std::to_string(rx.size)+",\"extra_data_index\":"+std::to_string(rx.extra)
++                +",\"message_count\":"+std::to_string(n)+",\"raw_hex\":\""+hex(rx.data,rx.size)+"\"}";
++            if(!start_indicator)wire.insert(wire.end(),rx.data,rx.data+rx.size);
+         }
+         events+="]";
+         if(!std::equal(q.begin(),q.end(),wire.begin())) throw std::runtime_error("missing or different exact echo");

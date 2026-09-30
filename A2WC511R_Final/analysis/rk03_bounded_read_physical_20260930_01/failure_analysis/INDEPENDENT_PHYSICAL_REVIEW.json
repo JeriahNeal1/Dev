@@ -1,0 +1,4744 @@
+{
+  "schema": 1,
+  "status": "PASS_EVIDENCE_REVIEW_OF_FAILED_PHYSICAL_RUN",
+  "physical_bounded_result": "FAIL",
+  "created_utc": "2026-09-30T07:43:07.525565+00:00",
+  "reviewer": "passive_review",
+  "checks_passed": 597,
+  "checks": [
+    "fixed observed failed raw log pin",
+    "retained successful physical identity raw pin",
+    "retained static model contract pin",
+    "retained narrow instruction replay pin",
+    "complete98 call pairs plus startup terminal",
+    "ordered complete pair 0",
+    "clock accounting 0",
+    "recorded ABI stack 0",
+    "ordered complete pair 1",
+    "clock accounting 1",
+    "recorded ABI stack 1",
+    "output guards 1",
+    "ordered complete pair 2",
+    "clock accounting 2",
+    "recorded ABI stack 2",
+    "ordered complete pair 3",
+    "clock accounting 3",
+    "recorded ABI stack 3",
+    "output guards 3",
+    "ordered complete pair 4",
+    "clock accounting 4",
+    "recorded ABI stack 4",
+    "output guards 4",
+    "ordered complete pair 5",
+    "clock accounting 5",
+    "recorded ABI stack 5",
+    "output guards 5",
+    "ordered complete pair 6",
+    "clock accounting 6",
+    "recorded ABI stack 6",
+    "output guards 6",
+    "ordered complete pair 7",
+    "clock accounting 7",
+    "recorded ABI stack 7",
+    "output guards 7",
+    "ordered complete pair 8",
+    "clock accounting 8",
+    "recorded ABI stack 8",
+    "output guards 8",
+    "ordered complete pair 9",
+    "clock accounting 9",
+    "recorded ABI stack 9",
+    "output guards 9",
+    "ordered complete pair 10",
+    "clock accounting 10",
+    "recorded ABI stack 10",
+    "output guards 10",
+    "ordered complete pair 11",
+    "clock accounting 11",
+    "recorded ABI stack 11",
+    "output guards 11",
+    "ordered complete pair 12",
+    "clock accounting 12",
+    "recorded ABI stack 12",
+    "output guards 12",
+    "ordered complete pair 13",
+    "clock accounting 13",
+    "recorded ABI stack 13",
+    "output guards 13",
+    "ordered complete pair 14",
+    "clock accounting 14",
+    "recorded ABI stack 14",
+    "output guards 14",
+    "ordered complete pair 15",
+    "clock accounting 15",
+    "recorded ABI stack 15",
+    "output guards 15",
+    "ordered complete pair 16",
+    "clock accounting 16",
+    "recorded ABI stack 16",
+    "output guards 16",
+    "ordered complete pair 17",
+    "clock accounting 17",
+    "recorded ABI stack 17",
+    "output guards 17",
+    "ordered complete pair 18",
+    "clock accounting 18",
+    "recorded ABI stack 18",
+    "output guards 18",
+    "ordered complete pair 19",
+    "clock accounting 19",
+    "recorded ABI stack 19",
+    "output guards 19",
+    "ordered complete pair 20",
+    "clock accounting 20",
+    "recorded ABI stack 20",
+    "output guards 20",
+    "ordered complete pair 21",
+    "clock accounting 21",
+    "recorded ABI stack 21",
+    "output guards 21",
+    "ordered complete pair 22",
+    "clock accounting 22",
+    "recorded ABI stack 22",
+    "output guards 22",
+    "ordered complete pair 23",
+    "clock accounting 23",
+    "recorded ABI stack 23",
+    "output guards 23",
+    "ordered complete pair 24",
+    "clock accounting 24",
+    "recorded ABI stack 24",
+    "output guards 24",
+    "ordered complete pair 25",
+    "clock accounting 25",
+    "recorded ABI stack 25",
+    "ordered complete pair 26",
+    "clock accounting 26",
+    "recorded ABI stack 26",
+    "output guards 26",
+    "ordered complete pair 27",
+    "clock accounting 27",
+    "recorded ABI stack 27",
+    "output guards 27",
+    "ordered complete pair 28",
+    "clock accounting 28",
+    "recorded ABI stack 28",
+    "output guards 28",
+    "ordered complete pair 29",
+    "clock accounting 29",
+    "recorded ABI stack 29",
+    "ordered complete pair 30",
+    "clock accounting 30",
+    "recorded ABI stack 30",
+    "output guards 30",
+    "ordered complete pair 31",
+    "clock accounting 31",
+    "recorded ABI stack 31",
+    "ordered complete pair 32",
+    "clock accounting 32",
+    "recorded ABI stack 32",
+    "ordered complete pair 33",
+    "clock accounting 33",
+    "recorded ABI stack 33",
+    "ordered complete pair 34",
+    "clock accounting 34",
+    "recorded ABI stack 34",
+    "output guards 34",
+    "ordered complete pair 35",
+    "clock accounting 35",
+    "recorded ABI stack 35",
+    "output guards 35",
+    "ordered complete pair 36",
+    "clock accounting 36",
+    "recorded ABI stack 36",
+    "output guards 36",
+    "ordered complete pair 37",
+    "clock accounting 37",
+    "recorded ABI stack 37",
+    "output guards 37",
+    "ordered complete pair 38",
+    "clock accounting 38",
+    "recorded ABI stack 38",
+    "output guards 38",
+    "ordered complete pair 39",
+    "clock accounting 39",
+    "recorded ABI stack 39",
+    "output guards 39",
+    "ordered complete pair 40",
+    "clock accounting 40",
+    "recorded ABI stack 40",
+    "output guards 40",
+    "ordered complete pair 41",
+    "clock accounting 41",
+    "recorded ABI stack 41",
+    "output guards 41",
+    "ordered complete pair 42",
+    "clock accounting 42",
+    "recorded ABI stack 42",
+    "output guards 42",
+    "ordered complete pair 43",
+    "clock accounting 43",
+    "recorded ABI stack 43",
+    "output guards 43",
+    "ordered complete pair 44",
+    "clock accounting 44",
+    "recorded ABI stack 44",
+    "output guards 44",
+    "ordered complete pair 45",
+    "clock accounting 45",
+    "recorded ABI stack 45",
+    "output guards 45",
+    "ordered complete pair 46",
+    "clock accounting 46",
+    "recorded ABI stack 46",
+    "output guards 46",
+    "ordered complete pair 47",
+    "clock accounting 47",
+    "recorded ABI stack 47",
+    "output guards 47",
+    "ordered complete pair 48",
+    "clock accounting 48",
+    "recorded ABI stack 48",
+    "output guards 48",
+    "ordered complete pair 49",
+    "clock accounting 49",
+    "recorded ABI stack 49",
+    "output guards 49",
+    "ordered complete pair 50",
+    "clock accounting 50",
+    "recorded ABI stack 50",
+    "output guards 50",
+    "ordered complete pair 51",
+    "clock accounting 51",
+    "recorded ABI stack 51",
+    "output guards 51",
+    "ordered complete pair 52",
+    "clock accounting 52",
+    "recorded ABI stack 52",
+    "output guards 52",
+    "ordered complete pair 53",
+    "clock accounting 53",
+    "recorded ABI stack 53",
+    "output guards 53",
+    "ordered complete pair 54",
+    "clock accounting 54",
+    "recorded ABI stack 54",
+    "output guards 54",
+    "ordered complete pair 55",
+    "clock accounting 55",
+    "recorded ABI stack 55",
+    "output guards 55",
+    "ordered complete pair 56",
+    "clock accounting 56",
+    "recorded ABI stack 56",
+    "output guards 56",
+    "ordered complete pair 57",
+    "clock accounting 57",
+    "recorded ABI stack 57",
+    "output guards 57",
+    "ordered complete pair 58",
+    "clock accounting 58",
+    "recorded ABI stack 58",
+    "output guards 58",
+    "ordered complete pair 59",
+    "clock accounting 59",
+    "recorded ABI stack 59",
+    "output guards 59",
+    "ordered complete pair 60",
+    "clock accounting 60",
+    "recorded ABI stack 60",
+    "output guards 60",
+    "ordered complete pair 61",
+    "clock accounting 61",
+    "recorded ABI stack 61",
+    "output guards 61",
+    "ordered complete pair 62",
+    "clock accounting 62",
+    "recorded ABI stack 62",
+    "output guards 62",
+    "ordered complete pair 63",
+    "clock accounting 63",
+    "recorded ABI stack 63",
+    "output guards 63",
+    "ordered complete pair 64",
+    "clock accounting 64",
+    "recorded ABI stack 64",
+    "output guards 64",
+    "ordered complete pair 65",
+    "clock accounting 65",
+    "recorded ABI stack 65",
+    "output guards 65",
+    "ordered complete pair 66",
+    "clock accounting 66",
+    "recorded ABI stack 66",
+    "output guards 66",
+    "ordered complete pair 67",
+    "clock accounting 67",
+    "recorded ABI stack 67",
+    "output guards 67",
+    "ordered complete pair 68",
+    "clock accounting 68",
+    "recorded ABI stack 68",
+    "output guards 68",
+    "ordered complete pair 69",
+    "clock accounting 69",
+    "recorded ABI stack 69",
+    "output guards 69",
+    "ordered complete pair 70",
+    "clock accounting 70",
+    "recorded ABI stack 70",
+    "output guards 70",
+    "ordered complete pair 71",
+    "clock accounting 71",
+    "recorded ABI stack 71",
+    "output guards 71",
+    "ordered complete pair 72",
+    "clock accounting 72",
+    "recorded ABI stack 72",
+    "output guards 72",
+    "ordered complete pair 73",
+    "clock accounting 73",
+    "recorded ABI stack 73",
+    "output guards 73",
+    "ordered complete pair 74",
+    "clock accounting 74",
+    "recorded ABI stack 74",
+    "output guards 74",
+    "ordered complete pair 75",
+    "clock accounting 75",
+    "recorded ABI stack 75",
+    "output guards 75",
+    "ordered complete pair 76",
+    "clock accounting 76",
+    "recorded ABI stack 76",
+    "output guards 76",
+    "ordered complete pair 77",
+    "clock accounting 77",
+    "recorded ABI stack 77",
+    "output guards 77",
+    "ordered complete pair 78",
+    "clock accounting 78",
+    "recorded ABI stack 78",
+    "output guards 78",
+    "ordered complete pair 79",
+    "clock accounting 79",
+    "recorded ABI stack 79",
+    "output guards 79",
+    "ordered complete pair 80",
+    "clock accounting 80",
+    "recorded ABI stack 80",
+    "output guards 80",
+    "ordered complete pair 81",
+    "clock accounting 81",
+    "recorded ABI stack 81",
+    "output guards 81",
+    "ordered complete pair 82",
+    "clock accounting 82",
+    "recorded ABI stack 82",
+    "output guards 82",
+    "ordered complete pair 83",
+    "clock accounting 83",
+    "recorded ABI stack 83",
+    "output guards 83",
+    "ordered complete pair 84",
+    "clock accounting 84",
+    "recorded ABI stack 84",
+    "output guards 84",
+    "ordered complete pair 85",
+    "clock accounting 85",
+    "recorded ABI stack 85",
+    "ordered complete pair 86",
+    "clock accounting 86",
+    "recorded ABI stack 86",
+    "output guards 86",
+    "ordered complete pair 87",
+    "clock accounting 87",
+    "recorded ABI stack 87",
+    "output guards 87",
+    "ordered complete pair 88",
+    "clock accounting 88",
+    "recorded ABI stack 88",
+    "output guards 88",
+    "ordered complete pair 89",
+    "clock accounting 89",
+    "recorded ABI stack 89",
+    "output guards 89",
+    "ordered complete pair 90",
+    "clock accounting 90",
+    "recorded ABI stack 90",
+    "output guards 90",
+    "ordered complete pair 91",
+    "clock accounting 91",
+    "recorded ABI stack 91",
+    "output guards 91",
+    "ordered complete pair 92",
+    "clock accounting 92",
+    "recorded ABI stack 92",
+    "output guards 92",
+    "ordered complete pair 93",
+    "clock accounting 93",
+    "recorded ABI stack 93",
+    "output guards 93",
+    "ordered complete pair 94",
+    "clock accounting 94",
+    "recorded ABI stack 94",
+    "output guards 94",
+    "ordered complete pair 95",
+    "clock accounting 95",
+    "ordered complete pair 96",
+    "clock accounting 96",
+    "ordered complete pair 97",
+    "clock accounting 97",
+    "one new read only",
+    "exact accepted TX 0",
+    "successful prefix receive 0",
+    "prefix checksum 0",
+    "exact prefix reply 0",
+    "exact accepted TX 1",
+    "successful prefix receive 1",
+    "prefix checksum 1",
+    "exact prefix reply 1",
+    "exact accepted TX 2",
+    "successful prefix receive 2",
+    "prefix checksum 2",
+    "exact prefix reply 2",
+    "exact accepted TX 3",
+    "successful prefix receive 3",
+    "prefix checksum 3",
+    "dynamic seed framing",
+    "exact accepted TX 4",
+    "successful prefix receive 4",
+    "prefix checksum 4",
+    "exact prefix reply 4",
+    "exact accepted TX 5",
+    "successful prefix receive 5",
+    "prefix checksum 5",
+    "exact prefix reply 5",
+    "exact accepted TX 6",
+    "successful prefix receive 6",
+    "prefix checksum 6",
+    "exact prefix reply 6",
+    "exact accepted TX 7",
+    "successful prefix receive 7",
+    "prefix checksum 7",
+    "exact prefix reply 7",
+    "exact accepted TX 8",
+    "successful prefix receive 8",
+    "prefix checksum 8",
+    "exact prefix reply 8",
+    "exact accepted TX 9",
+    "successful prefix receive 9",
+    "prefix checksum 9",
+    "exact prefix reply 9",
+    "exact accepted TX 10",
+    "successful prefix receive 10",
+    "prefix checksum 10",
+    "exact prefix reply 10",
+    "exact accepted TX 11",
+    "successful prefix receive 11",
+    "prefix checksum 11",
+    "exact prefix reply 11",
+    "exact accepted TX 12",
+    "successful prefix receive 12",
+    "prefix checksum 12",
+    "exact prefix reply 12",
+    "exact accepted TX 13",
+    "successful prefix receive 13",
+    "prefix checksum 13",
+    "exact prefix reply 13",
+    "exact accepted TX 14",
+    "successful prefix receive 14",
+    "prefix checksum 14",
+    "exact prefix reply 14",
+    "exact accepted TX 15",
+    "successful prefix receive 15",
+    "prefix checksum 15",
+    "exact prefix reply 15",
+    "exact accepted TX 16",
+    "successful prefix receive 16",
+    "prefix checksum 16",
+    "exact prefix reply 16",
+    "exact accepted TX 17",
+    "successful prefix receive 17",
+    "prefix checksum 17",
+    "exact prefix reply 17",
+    "exact accepted TX 18",
+    "successful prefix receive 18",
+    "prefix checksum 18",
+    "exact prefix reply 18",
+    "exact accepted TX 19",
+    "successful prefix receive 19",
+    "prefix checksum 19",
+    "exact prefix reply 19",
+    "exact accepted TX 20",
+    "successful prefix receive 20",
+    "prefix checksum 20",
+    "exact prefix reply 20",
+    "exact accepted TX 21",
+    "successful prefix receive 21",
+    "prefix checksum 21",
+    "exact prefix reply 21",
+    "exact accepted TX 22",
+    "successful prefix receive 22",
+    "prefix checksum 22",
+    "exact prefix reply 22",
+    "exact accepted TX 23",
+    "successful prefix receive 23",
+    "prefix checksum 23",
+    "exact prefix reply 23",
+    "exact accepted TX 24",
+    "three bounded receive calls",
+    "exact bounded statuses counts and lengths",
+    "empty SOM then data",
+    "one byte divergence in observed extent",
+    "227 frame bytes match then295 expected bytes unobserved",
+    "static and actual-instruction models agree on fixed request and expected full reply",
+    "retained CPU model full read",
+    "retained CPU artifact exchange_00000.json",
+    "retained CPU artifact KERNEL_READ_COVERAGE.json",
+    "retained CPU artifact KERNEL_READ_TRACE.json.gz",
+    "retained CPU artifact READ_RESPONSE.bin",
+    "retained CPU artifact RESTORED_CHECKPOINT.json",
+    "retained CPU artifact ROM_BLOCK_00000000_00000200.bin",
+    "actual pinned header status meaning",
+    "retained provider header pin",
+    "successful physical API prefix action 0",
+    "successful physical API prefix action 1",
+    "successful physical API prefix action 2",
+    "successful physical API prefix action 3",
+    "successful physical API prefix action 4",
+    "successful physical API prefix action 5",
+    "successful physical API prefix action 6",
+    "successful physical API prefix action 7",
+    "successful physical API prefix action 8",
+    "successful physical API prefix action 9",
+    "successful physical API prefix action 10",
+    "successful physical API prefix action 11",
+    "successful physical API prefix action 12",
+    "successful physical API prefix action 13",
+    "successful physical API prefix action 14",
+    "successful physical API prefix action 15",
+    "successful physical API prefix action 16",
+    "successful physical API prefix action 17",
+    "successful physical API prefix action 18",
+    "successful physical API prefix action 19",
+    "successful physical API prefix action 20",
+    "successful physical API prefix action 21",
+    "successful physical API prefix action 22",
+    "successful physical API prefix action 23",
+    "successful physical API prefix action 24",
+    "successful physical API prefix action 25",
+    "successful physical API prefix action 26",
+    "successful physical API prefix action 27",
+    "successful physical API prefix action 28",
+    "successful physical API prefix action 29",
+    "successful physical API prefix action 30",
+    "successful physical API prefix action 31",
+    "successful physical API prefix action 32",
+    "successful physical API prefix action 33",
+    "successful physical API prefix action 34",
+    "successful physical API prefix action 35",
+    "successful physical API prefix action 36",
+    "successful physical API prefix action 37",
+    "successful physical API prefix action 38",
+    "successful physical API prefix action 39",
+    "successful physical API prefix action 40",
+    "successful physical API prefix action 41",
+    "successful physical API prefix action 42",
+    "successful physical API prefix action 43",
+    "successful physical API prefix action 44",
+    "successful physical API prefix action 45",
+    "successful physical API prefix action 46",
+    "successful physical API prefix action 47",
+    "successful physical API prefix action 48",
+    "successful physical API prefix action 49",
+    "successful physical API prefix action 50",
+    "successful physical API prefix action 51",
+    "successful physical API prefix action 52",
+    "successful physical API prefix action 53",
+    "successful physical API prefix action 54",
+    "successful physical API prefix action 55",
+    "successful physical API prefix action 56",
+    "successful physical API prefix action 57",
+    "successful physical API prefix action 58",
+    "successful physical API prefix action 59",
+    "successful physical API prefix action 60",
+    "successful physical API prefix action 61",
+    "successful physical API prefix action 62",
+    "successful physical API prefix action 63",
+    "successful physical API prefix action 64",
+    "successful physical API prefix action 65",
+    "successful physical API prefix action 66",
+    "successful physical API prefix action 67",
+    "successful physical API prefix action 68",
+    "successful physical API prefix action 69",
+    "successful physical API prefix action 70",
+    "successful physical API prefix action 71",
+    "successful physical API prefix action 72",
+    "successful physical API prefix action 73",
+    "successful physical API prefix action 74",
+    "successful physical API prefix action 75",
+    "successful physical API prefix action 76",
+    "successful physical API prefix action 77",
+    "successful physical API prefix action 78",
+    "successful physical API prefix action 79",
+    "successful physical API prefix action 80",
+    "successful physical API prefix action 81",
+    "successful physical API prefix action 82",
+    "successful physical API prefix action 83",
+    "successful physical API prefix action 84",
+    "successful physical API prefix action 85",
+    "successful physical API prefix action 86",
+    "successful physical API prefix action 87",
+    "successful physical API prefix action 88",
+    "successful physical API prefix action 89",
+    "successful physical API prefix action 90",
+    "only dynamic seed reply and key request differ in normalized prefix",
+    "first and only nonzero API return",
+    "immediate successful cleanup without retry",
+    "honest failed terminal with cleanup confirmed",
+    "no complete bounded data result or successful comparison emitted",
+    "confirmed child exit1",
+    "physical certificate and executable binding",
+    "current ROM pin intact",
+    "217 candidate ROM payload prefix bytes match",
+    "postexit client scan evidence PASS without rerunning it"
+  ],
+  "inputs": [
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_BoundedReadPhysical\\physical_session\\RK03_BOUNDED_ROM_READ_01\\native_api.jsonl",
+      "bytes": 427545,
+      "sha256": "42c900bbfae9e2537615eb3fd0967e013d7d603d315968c1d59bbd0de701ba1f"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_KernelIdentityPhysical\\physical_session\\RK03_KERNEL_START_IDENTITY_01\\native_api.jsonl",
+      "bytes": 405971,
+      "sha256": "e6ac67a41cc98433fc56f2d5d0d9a8144ce836678a31094a108aff4187662e09"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_BoundedRomReadOffline\\bounded_rom_read\\contract\\CONTRACT.json",
+      "bytes": 115516,
+      "sha256": "9dccc5043477150c479255803ea25f48fe815d5b254f9c045e30b5923327edcf"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_rom_read_offline_20260930_01\\instruction_review\\replay_20260930T065049517214Z\\INSTRUCTION_REPLAY.json",
+      "bytes": 14841,
+      "sha256": "c8a6e1f00bcf17686b6e193e572d70546c54642320e5a8cd39f4829aee6a5147"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_read_physical_20260930_01\\PHYSICAL_BOUNDED_REVIEW_CONTRACT.json",
+      "bytes": 23300,
+      "sha256": "be14e560229f5a7eb1904cc18c47dc9c36fe6df3b79c86be12f844640fe15e02"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_read_physical_20260930_01\\qualification\\QUALIFICATION.json",
+      "bytes": 1003527,
+      "sha256": "15ba34b4d14c17e104fe28163faf7afe6b3c11b067ecf15a3bc97f8af8b253d1"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_BoundedReadPhysical\\physical_session\\RK03_BOUNDED_ROM_READ_01\\EXECUTION.json",
+      "bytes": 1057,
+      "sha256": "32b601554d2590dcf25d8a868a5b250eaeeb1aed377e1e3b3b9341ffd34a7ea3"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_BoundedReadPhysical\\physical_session\\RK03_BOUNDED_ROM_READ_01\\AUTHORIZATION.txt",
+      "bytes": 223,
+      "sha256": "d887b49deac76481ebc0a655254f16ca636961a1dead8fcb6f31f3d4d5450972"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_BoundedReadPhysical\\physical_session\\RK03_BOUNDED_ROM_READ_01\\launch.reserved",
+      "bytes": 155,
+      "sha256": "e03be9b6f5db376b4f68340d9c7e3327f32ee2b7458d344ab767cd0e902717c8"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_BoundedReadPhysical\\physical_session\\RK03_BOUNDED_ROM_READ_01\\invocation.once",
+      "bytes": 155,
+      "sha256": "e03be9b6f5db376b4f68340d9c7e3327f32ee2b7458d344ab767cd0e902717c8"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_BoundedReadPhysical\\physical_session\\RK03_BOUNDED_ROM_READ_01\\POSTEXIT_CLIENT_CHECK.json",
+      "bytes": 356,
+      "sha256": "57e701c82a1d05d8772c7ceb4537faa4d4462e71bc8508f5eb612ccfc674b385"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_BoundedReadPhysical\\bounded_read_physical\\src\\bounded_response.hpp",
+      "bytes": 2616,
+      "sha256": "2d73a1574a3368c167963b43c81745d0485704a20bb5cd0d5e0e85ed13f38d24"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_BoundedReadPhysical\\bounded_read_physical\\src\\probe_core.hpp",
+      "bytes": 22370,
+      "sha256": "5faab7562e3f611437c976efd8e66ed1a81e84cf84670e9c4761b741b3c746d8"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_BoundedReadPhysical\\bounded_read_physical\\src\\j2534_tactrix.h",
+      "bytes": 11763,
+      "sha256": "25df54ce5e75ef81bef26c27c694ac82ab74959381bfbf4a6d79a9a68e5d179a"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_read_physical_20260930_01\\failure_analysis\\analyze_physical_failure.py",
+      "bytes": 17566,
+      "sha256": "dd3e1d2a9a06c048f538442b9f83f9abf6eec8e5d93d9495b15a55ca572d81fc"
+    }
+  ],
+  "physical_operations_by_review": 0,
+  "provider_loads_by_review": 0,
+  "native_or_model_executions_by_review": 0,
+  "execution": {
+    "session_id": "RK03_BOUNDED_ROM_READ_01",
+    "command_argv": [
+      "C:\\Dev\\A2WC511R_RK03_BoundedReadPhysical\\bounded_read_physical\\build_a\\rk03_bounded_rom_read_physical32.exe",
+      "--physical-bounded-rom-read",
+      "--session",
+      "C:\\Dev\\A2WC511R_RK03_BoundedReadPhysical\\physical_session\\RK03_BOUNDED_ROM_READ_01",
+      "--authorization-file",
+      "C:\\Dev\\A2WC511R_RK03_BoundedReadPhysical\\physical_session\\RK03_BOUNDED_ROM_READ_01\\AUTHORIZATION.txt"
+    ],
+    "started_utc": "2026-09-30T07:37:24.763949+00:00",
+    "executable_sha256": "5a66a0848601c8564a6896ddabbc35af453179c68c79ec871bee6d73e120bfb9",
+    "contract_sha256": "be14e560229f5a7eb1904cc18c47dc9c36fe6df3b79c86be12f844640fe15e02",
+    "qualification_sha256": "15ba34b4d14c17e104fe28163faf7afe6b3c11b067ecf15a3bc97f8af8b253d1",
+    "authorization_source": "Exact new user token after IGNITION OFF and TEST MODE ON",
+    "retry_allowed": false,
+    "pid": 8880,
+    "exit_code": 1,
+    "exited_utc": "2026-09-30T07:37:28.251569+00:00",
+    "process_exited": true,
+    "bookkeeping_error": null
+  },
+  "startup": {
+    "type": "bounded_read_start",
+    "physical": true,
+    "session_id": "RK03_BOUNDED_ROM_READ_01",
+    "exe_sha256": "5a66a0848601c8564a6896ddabbc35af453179c68c79ec871bee6d73e120bfb9",
+    "contract_sha256": "be14e560229f5a7eb1904cc18c47dc9c36fe6df3b79c86be12f844640fe15e02",
+    "provider_path": "C:\\Windows\\SysWOW64\\op20pt32.dll",
+    "provider_sha256": "f432084801762d919a3c31974616e097562424470003edc4f4fb843df34103cf",
+    "time_model": "QPC_MONOTONIC_MINIMUM",
+    "embedded_cipher_bytes": 1808,
+    "declaration_size": 1808,
+    "authorization_verified": true,
+    "root_reservation_verified": true,
+    "native_invocation_reserved": true
+  },
+  "stage_comparison": [
+    {
+      "stage": 0,
+      "tx_sequence": 10,
+      "tx_line": 23,
+      "request_hex": "8010f001bf40",
+      "write_status": 0,
+      "write_count": 1,
+      "write_ms": 13.019,
+      "receive_sequences": [
+        11,
+        12
+      ],
+      "response_hex": "80f01039ffa210112f1251530673facba62b81fea800000060ce54f9b1e4000c200000000000dc00005d1f3080f226000043fb00e1000000000000c1f0c2",
+      "response_bytes": 62
+    },
+    {
+      "stage": 1,
+      "tx_sequence": 13,
+      "tx_line": 29,
+      "request_hex": "8010f0018102",
+      "write_status": 0,
+      "write_count": 1,
+      "write_ms": 13.0423,
+      "receive_sequences": [
+        14,
+        15
+      ],
+      "response_hex": "80f01003c1ef8fc2",
+      "response_bytes": 8
+    },
+    {
+      "stage": 2,
+      "tx_sequence": 16,
+      "tx_line": 35,
+      "request_hex": "8010f002830005",
+      "write_status": 0,
+      "write_count": 1,
+      "write_ms": 15.2501,
+      "receive_sequences": [
+        17,
+        18
+      ],
+      "response_hex": "80f01007c30000ff00ff0048",
+      "response_bytes": 12
+    },
+    {
+      "stage": 3,
+      "tx_sequence": 19,
+      "tx_line": 41,
+      "request_hex": "8010f0022701aa",
+      "write_status": 0,
+      "write_count": 1,
+      "write_ms": 15.2155,
+      "receive_sequences": [
+        20,
+        21
+      ],
+      "response_hex": "80f01006670139c1958704",
+      "response_bytes": 11
+    },
+    {
+      "stage": 4,
+      "tx_sequence": 22,
+      "tx_line": 47,
+      "request_hex": "8010f00627022087b6535f",
+      "write_status": 0,
+      "write_count": 1,
+      "write_ms": 23.5902,
+      "receive_sequences": [
+        23,
+        24
+      ],
+      "response_hex": "80f0100367023420",
+      "response_bytes": 8
+    },
+    {
+      "stage": 5,
+      "tx_sequence": 26,
+      "tx_line": 55,
+      "request_hex": "8010f0031085021a",
+      "write_status": 0,
+      "write_count": 1,
+      "write_ms": 17.4194,
+      "receive_sequences": [
+        27,
+        28
+      ],
+      "response_hex": "80f01002508557",
+      "response_bytes": 7
+    },
+    {
+      "stage": 6,
+      "tx_sequence": 34,
+      "tx_line": 71,
+      "request_hex": "8010f00834ff30000400071006",
+      "write_status": 0,
+      "write_count": 1,
+      "write_ms": 9.0827,
+      "receive_sequences": [
+        35,
+        36
+      ],
+      "response_hex": "80f0100274847a",
+      "response_bytes": 7
+    },
+    {
+      "stage": 7,
+      "tx_sequence": 37,
+      "tx_line": 77,
+      "request_hex": "8010f08436ff30002178b10a345b1076fd256f75f05ba033e301ed7bbae243b735e6aedbc143c40be01bf9b6caab4599eccaacb23d3eeb06dddf471ed3b0238f2bf0553861e117054bad87079a8cbb9681c01303b7825b2d199bc7e5c4dd5bcf85cf1a64050df3ab050df3ab2a45f9b476963b1f16baea94084e321a79bd4cf9c0f25912ab9d7b8df4",
+      "write_status": 0,
+      "write_count": 1,
+      "write_ms": 89.3422,
+      "receive_sequences": [
+        38,
+        39
+      ],
+      "response_hex": "80f0100176f7",
+      "response_bytes": 6
+    },
+    {
+      "stage": 8,
+      "tx_sequence": 40,
+      "tx_line": 83,
+      "request_hex": "8010f08436ff3080a614d816e73b7a2f8010d0033c21fd82e809dcd33849889e1bb8439f58c18e12d1328f80e2d30dccf17eadf57d339c382284e4779a8cbb96094cf9da205bf8c04e6120419a8cbb9687d0d3c3ea5b98c957670833e1a0128aff648ef5c03ca6b7b876eac3f7b569d887422e4be8f5108bedc55089c03ca6b7539b8ad1a4d30a534a",
+      "write_status": 0,
+      "write_count": 1,
+      "write_ms": 89.2472,
+      "receive_sequences": [
+        41,
+        42
+      ],
+      "response_hex": "80f0100176f7",
+      "response_bytes": 6
+    },
+    {
+      "stage": 9,
+      "tx_sequence": 43,
+      "tx_line": 89,
+      "request_hex": "8010f08436ff3100e28c3ee42446007d2de0ddaa9dce70327241c643aab2699ea62dd88c9cead164bbf16590f4e0cd28e987359e6b371cd882af16896daaa08c2bfb509b6f5a700b7016e8ad4d3d09337306eba60e9f2d6e3e5ccec225f798f1fc359ea168d7727d38fc1265927d740c43d5e9b1862403ee9330f481bc7dd24e36e13bd0697c3ebcf7",
+      "write_status": 0,
+      "write_count": 1,
+      "write_ms": 89.3751,
+      "receive_sequences": [
+        44,
+        45
+      ],
+      "response_hex": "80f0100176f7",
+      "response_bytes": 6
+    },
+    {
+      "stage": 10,
+      "tx_sequence": 46,
+      "tx_line": 95,
+      "request_hex": "8010f08436ff3180e53ad55784b629fd3cea7e81d4dc1bda5cf12a09f0b79a4aa55b665170242840fb7a57ac4529e2035494df2334c35cd56728ca429349c6346df8cb0851762c820bd86e23ff3f981ecfaa3f64bd138e591f7758aa5bc2bb0a356880ee7fe99c9e999df968b7990b479cead164b8a522b9916f7876b64b0a986df8cb08e41af6e447",
+      "write_status": 0,
+      "write_count": 1,
+      "write_ms": 89.4031,
+      "receive_sequences": [
+        47,
+        48
+      ],
+      "response_hex": "80f0100176f7",
+      "response_bytes": 6
+    },
+    {
+      "stage": 11,
+      "tx_sequence": 49,
+      "tx_line": 101,
+      "request_hex": "8010f08436ff3200eca5fa6a8a62f844b5e1848ef17eadf568825b141d4ff58dc89ab04cfbd4a32d9abc830e01f8532ebdbc9702cee42851332c5982b6577390905dcdb16d01a44985461295b0146d10af5802982bcc68f85cf4a719a94e5346ef3981a189138327778d6eabd4a1b462624856a52b19196c33317cbf50c026109533ebf66df8cb08ea",
+      "write_status": 0,
+      "write_count": 1,
+      "write_ms": 89.2929,
+      "receive_sequences": [
+        50,
+        51
+      ],
+      "response_hex": "80f0100176f7",
+      "response_bytes": 6
+    },
+    {
+      "stage": 12,
+      "tx_sequence": 52,
+      "tx_line": 107,
+      "request_hex": "8010f08436ff3280f40b4a6eaac8fec9999df968727f34e532725d2a308f31b7fd4a3cc0fb7a57ac2178b10aecaf7860c2a995fabf999e820e33d2922119a57cfdd3ffff83d78c2ed9d6fc2e55d8f95b582d518eecaf786053bb63cf43eb460683d78c2e08ac051618f01400e24c1787a16505d65eb63b868a551574fc94751063f2d4d1de2eec0c0b",
+      "write_status": 0,
+      "write_count": 1,
+      "write_ms": 90.1115,
+      "receive_sequences": [
+        53,
+        54
+      ],
+      "response_hex": "80f0100176f7",
+      "response_bytes": 6
+    },
+    {
+      "stage": 13,
+      "tx_sequence": 55,
+      "tx_line": 113,
+      "request_hex": "8010f08436ff33006bf35d4fef1ead4e87be33e29dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf3123c8",
+      "write_status": 0,
+      "write_count": 1,
+      "write_ms": 90.7421,
+      "receive_sequences": [
+        56,
+        57
+      ],
+      "response_hex": "80f0100176f7",
+      "response_bytes": 6
+    },
+    {
+      "stage": 14,
+      "tx_sequence": 58,
+      "tx_line": 119,
+      "request_hex": "8010f08436ff33809dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf3123ec",
+      "write_status": 0,
+      "write_count": 1,
+      "write_ms": 90.5549,
+      "receive_sequences": [
+        59,
+        60
+      ],
+      "response_hex": "80f0100176f7",
+      "response_bytes": 6
+    },
+    {
+      "stage": 15,
+      "tx_sequence": 61,
+      "tx_line": 125,
+      "request_hex": "8010f08436ff34009dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31236d",
+      "write_status": 0,
+      "write_count": 1,
+      "write_ms": 89.3916,
+      "receive_sequences": [
+        62,
+        63
+      ],
+      "response_hex": "80f0100176f7",
+      "response_bytes": 6
+    },
+    {
+      "stage": 16,
+      "tx_sequence": 64,
+      "tx_line": 131,
+      "request_hex": "8010f08436ff34809dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf3123ed",
+      "write_status": 0,
+      "write_count": 1,
+      "write_ms": 89.6883,
+      "receive_sequences": [
+        65,
+        66
+      ],
+      "response_hex": "80f0100176f7",
+      "response_bytes": 6
+    },
+    {
+      "stage": 17,
+      "tx_sequence": 67,
+      "tx_line": 137,
+      "request_hex": "8010f08436ff35009dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31236e",
+      "write_status": 0,
+      "write_count": 1,
+      "write_ms": 89.5451,
+      "receive_sequences": [
+        68,
+        69
+      ],
+      "response_hex": "80f0100176f7",
+      "response_bytes": 6
+    },
+    {
+      "stage": 18,
+      "tx_sequence": 70,
+      "tx_line": 143,
+      "request_hex": "8010f08436ff35809dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf3123ee",
+      "write_status": 0,
+      "write_count": 1,
+      "write_ms": 90.576,
+      "receive_sequences": [
+        71,
+        72
+      ],
+      "response_hex": "80f0100176f7",
+      "response_bytes": 6
+    },
+    {
+      "stage": 19,
+      "tx_sequence": 73,
+      "tx_line": 149,
+      "request_hex": "8010f08436ff36009dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31236f",
+      "write_status": 0,
+      "write_count": 1,
+      "write_ms": 90.8214,
+      "receive_sequences": [
+        74,
+        75
+      ],
+      "response_hex": "80f0100176f7",
+      "response_bytes": 6
+    },
+    {
+      "stage": 20,
+      "tx_sequence": 76,
+      "tx_line": 155,
+      "request_hex": "8010f08436ff36809dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf3123ef",
+      "write_status": 0,
+      "write_count": 1,
+      "write_ms": 90.6722,
+      "receive_sequences": [
+        77,
+        78
+      ],
+      "response_hex": "80f0100176f7",
+      "response_bytes": 6
+    },
+    {
+      "stage": 21,
+      "tx_sequence": 79,
+      "tx_line": 161,
+      "request_hex": "8010f01436ff37009dbf31239dbf31239dbf3123299ea39812",
+      "write_status": 0,
+      "write_count": 1,
+      "write_ms": 17.9777,
+      "receive_sequences": [
+        80,
+        81
+      ],
+      "response_hex": "80f0100176f7",
+      "response_bytes": 6
+    },
+    {
+      "stage": 22,
+      "tx_sequence": 82,
+      "tx_line": 167,
+      "request_hex": "8010f003310101b6",
+      "write_status": 0,
+      "write_count": 1,
+      "write_ms": 5.9765,
+      "receive_sequences": [
+        83,
+        84
+      ],
+      "response_hex": "80f01003710101f6",
+      "response_bytes": 8
+    },
+    {
+      "stage": 23,
+      "tx_sequence": 88,
+      "tx_line": 179,
+      "request_hex": "beef000101af",
+      "write_status": 0,
+      "write_count": 1,
+      "write_ms": 1.8727,
+      "receive_sequences": [
+        89,
+        90
+      ],
+      "response_hex": "beef000f8141325743353131522d524b3032005f",
+      "response_bytes": 20
+    },
+    {
+      "stage": 24,
+      "tx_sequence": 91,
+      "tx_line": 185,
+      "request_hex": "beef00080300000000000200ba",
+      "write_status": 0,
+      "write_count": 1,
+      "write_ms": 3.0347,
+      "receive_sequences": [
+        92,
+        93,
+        94
+      ],
+      "response_hex": "beef020683000000000000000aacffffbfa000000aacffffbfa000000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa8ffffffffffffffffdf01442b00090000ffffbfa0df01000b00090000ffffbfa0e5f74518750a8451e3ff4318620c737f2239324ce13c622c4118321c25210009000900090009000b0009ffff8441600c937f20388b04d643947c917c412be506000b00098441600c937320388b04d63e94729170412be506000b0009d33b7402d23b2342d13b412b6422634392614f227ff81f418431600c202988048b0c6433b0f8",
+      "response_bytes": 228
+    }
+  ],
+  "prefix_comparison": {
+    "successful_calls": 91,
+    "transmissions": 24,
+    "normalized_differences": [
+      {
+        "sequence": 21,
+        "function": "PassThruReadMsgs",
+        "field": "output",
+        "current": {
+          "count": 1,
+          "message": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "data_size": 11,
+            "extra_data_index": 11,
+            "buffer_capacity": 4128,
+            "logged_bytes": 11,
+            "data_truncated": false,
+            "data_hex": "80f01006670139c1958704"
+          },
+          "canaries_intact": true
+        },
+        "previous": {
+          "count": 1,
+          "message": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "data_size": 11,
+            "extra_data_index": 11,
+            "buffer_capacity": 4128,
+            "logged_bytes": 11,
+            "data_truncated": false,
+            "data_hex": "80f010066701b8808513be"
+          },
+          "canaries_intact": true
+        }
+      },
+      {
+        "sequence": 22,
+        "function": "PassThruWriteMsgs",
+        "field": "input",
+        "current": {
+          "channel": 3,
+          "timeout_ms": 1000,
+          "count_pointer_present": true,
+          "input_count": 1,
+          "message_capacity": 1,
+          "message": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "data_size": 11,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 11,
+            "data_truncated": false,
+            "data_hex": "8010f00627022087b6535f"
+          }
+        },
+        "previous": {
+          "channel": 3,
+          "timeout_ms": 1000,
+          "count_pointer_present": true,
+          "input_count": 1,
+          "message_capacity": 1,
+          "message": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "data_size": 11,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 11,
+            "data_truncated": false,
+            "data_hex": "8010f0062702349c6319fb"
+          }
+        }
+      },
+      {
+        "sequence": 22,
+        "function": "PassThruWriteMsgs",
+        "field": "output",
+        "current": {
+          "count": 1,
+          "message": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "data_size": 11,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 11,
+            "data_truncated": false,
+            "data_hex": "8010f00627022087b6535f"
+          },
+          "canaries_intact": true
+        },
+        "previous": {
+          "count": 1,
+          "message": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "data_size": 11,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 11,
+            "data_truncated": false,
+            "data_hex": "8010f0062702349c6319fb"
+          },
+          "canaries_intact": true
+        }
+      }
+    ],
+    "normalization": [
+      "Host timestamps and durations differ by session.",
+      "J2534 configuration buffer pointers are process-local and removed.",
+      "Provider message timestamps removed only from cross-session comparison; full original records remain pinned."
+    ],
+    "old_seed_hex": "b8808513",
+    "new_seed_hex": "39c19587",
+    "new_key_request": "8010f00627022087b6535f"
+  },
+  "first_divergence": {
+    "byte_observation_sequence": 93,
+    "source_line": 189,
+    "frame_offset": 227,
+    "rom_payload_offset": 217,
+    "expected_hex": "28",
+    "observed_byte_hex": "f8",
+    "preceding_frame_bytes_matching": 227,
+    "matching_ROM_payload_prefix_bytes": 217,
+    "received_frame_bytes": 228,
+    "expected_frame_bytes": 523,
+    "unobserved_expected_frame_bytes": 295,
+    "observed_sha256": "ce0c68f88b65e0e85c7bd3e9f538b3406bf2f39f494e332ce99d8512fbdbb1b6",
+    "observed_hex": "beef020683000000000000000aacffffbfa000000aacffffbfa000000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa8ffffffffffffffffdf01442b00090000ffffbfa0df01000b00090000ffffbfa0e5f74518750a8451e3ff4318620c737f2239324ce13c622c4118321c25210009000900090009000b0009ffff8441600c937f20388b04d643947c917c412be506000b00098441600c937320388b04d63e94729170412be506000b0009d33b7402d23b2342d13b412b6422634392614f227ff81f418431600c202988048b0c6433b0f8",
+    "full_expected_hex": "beef020683000000000000000aacffffbfa000000aacffffbfa000000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa8ffffffffffffffffdf01442b00090000ffffbfa0df01000b00090000ffffbfa0e5f74518750a8451e3ff4318620c737f2239324ce13c622c4118321c25210009000900090009000b0009ffff8441600c937f20388b04d643947c917c412be506000b00098441600c937320388b04d63e94729170412be506000b0009d33b7402d23b2342d13b412b6422634392614f227ff81f418431600c202988048b0c6433b0287402d3326503b03764322f0066f394539350430be5017f084f26000b00098441600c934520388b04d62b94469142412be506000b00098441600c933920388b060002913b2019cbf0400eaffe0009000b00098441600c624040286303622c84424228600c4018330c42188443332c600c6433340c000b60432fe62fd66d432fc66c532fb63dc24f229b198d0aee0062d4622c3e2c64ed441934ec4b0b6e4c3dc28bf54f2660e36bf66cf66df6000b6ef6ff07008804e0009000b000c0ff0f04c4ffff00000fec00000ff8ffffbfa4ffffbfa00000004000000fe42fe62fd62fc62fb62fa62f962f864f2295ab6453d361430b74fed26193a62321de6092a422e1d15e90a22011730623e1721222e1919d21e1731223e1720622e1711a21e1730e23e172c022e1e7",
+    "all_differences_within_observed_extent": [
+      {
+        "frame_offset": 227,
+        "rom_payload_offset": 217,
+        "actual_hex": "f8",
+        "expected_hex": "28"
+      }
+    ],
+    "short_record_is_valid_additive_frame": false,
+    "short_record_last_hex": "f8",
+    "sum_preceding_short_record_bytes_hex": "39",
+    "first_nonzero_api_sequence": 94,
+    "first_nonzero_api_status": 16,
+    "first_nonzero_api_symbol": "ERR_BUFFER_EMPTY",
+    "native_terminal_reason": "J2534 nonzero status; terminal without retry"
+  },
+  "bounded_exchange_records": [
+    {
+      "source_line": 185,
+      "utc": "2026-09-30T07:37:27.200896+00:00",
+      "elapsed_ms": 3.0347,
+      "record": {
+        "type": "api_return",
+        "sequence": 91,
+        "function": "PassThruWriteMsgs",
+        "physical": true,
+        "status": 0,
+        "input": {
+          "channel": 3,
+          "timeout_ms": 1000,
+          "count_pointer_present": true,
+          "input_count": 1,
+          "message_capacity": 1,
+          "message": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 13,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 13,
+            "data_truncated": false,
+            "data_hex": "beef00080300000000000200ba"
+          }
+        },
+        "output": {
+          "count": 1,
+          "message": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 13,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 13,
+            "data_truncated": false,
+            "data_hex": "beef00080300000000000200ba"
+          },
+          "canaries_intact": true
+        },
+        "qpc_before": 3956173937224,
+        "qpc_after": 3956173967571,
+        "qpc_frequency": 10000000,
+        "api_elapsed_ticks": 30347,
+        "utc_filetime": 134352274472008969,
+        "esp_before": 11766344,
+        "esp_after": 11766344,
+        "state": {
+          "clock_model": "QPC_MONOTONIC_MINIMUM",
+          "monotonic_ms": 395617396,
+          "requested_baud": 62500,
+          "baud_set_accepted": true,
+          "clear_mask": 3,
+          "connection_contract": {
+            "protocol": 3,
+            "flags": 512,
+            "baud": 4800
+          },
+          "opened": true,
+          "device": 1,
+          "connected": true,
+          "channel": 3,
+          "kernel_filter": true,
+          "filter_stop_attempted": false,
+          "acknowledged_chunks": 15,
+          "start_acknowledged": true,
+          "identity_validated": true,
+          "bounded_validated": false,
+          "tx_attempts": 25,
+          "requested_configuration": [
+            {
+              "parameter": 22,
+              "value": 0
+            },
+            {
+              "parameter": 7,
+              "value": 1
+            },
+            {
+              "parameter": 10,
+              "value": 0
+            },
+            {
+              "parameter": 12,
+              "value": 0
+            },
+            {
+              "parameter": 3,
+              "value": 0
+            }
+          ],
+          "successful_set_calls": 5,
+          "observed_configuration": [
+            {
+              "parameter": 22,
+              "value": 0
+            },
+            {
+              "parameter": 7,
+              "value": 1
+            },
+            {
+              "parameter": 10,
+              "value": 0
+            },
+            {
+              "parameter": 12,
+              "value": 0
+            },
+            {
+              "parameter": 3,
+              "value": 0
+            }
+          ],
+          "effective_configuration_valid": true,
+          "filter": {
+            "requested": true,
+            "active": true,
+            "id": 1,
+            "type": 1,
+            "requested_mask_hex": "ffff",
+            "requested_pattern_hex": "beef",
+            "requested_flow_hex": null,
+            "protocol": 3,
+            "flags": 0,
+            "returned_objects_valid": true,
+            "observed_mask": {
+              "protocol": 3,
+              "rx_status": 0,
+              "tx_flags": 0,
+              "timestamp": 0,
+              "data_size": 2,
+              "extra_data_index": 0,
+              "buffer_capacity": 4128,
+              "logged_bytes": 2,
+              "data_truncated": false,
+              "data_hex": "ffff"
+            },
+            "observed_pattern": {
+              "protocol": 3,
+              "rx_status": 0,
+              "tx_flags": 0,
+              "timestamp": 0,
+              "data_size": 2,
+              "extra_data_index": 0,
+              "buffer_capacity": 4128,
+              "logged_bytes": 2,
+              "data_truncated": false,
+              "data_hex": "beef"
+            },
+            "observed_flow": null
+          }
+        }
+      }
+    },
+    {
+      "source_line": 187,
+      "utc": "2026-09-30T07:37:27.205742+00:00",
+      "elapsed_ms": 4.7857,
+      "record": {
+        "type": "api_return",
+        "sequence": 92,
+        "function": "PassThruReadMsgs",
+        "physical": true,
+        "status": 0,
+        "input": {
+          "channel": 3,
+          "timeout_ms": 1000,
+          "input_count": 1,
+          "count_pointer_present": true,
+          "message_capacity": 1,
+          "message": {
+            "protocol": 0,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 0,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 0,
+            "data_truncated": false,
+            "data_hex": ""
+          }
+        },
+        "output": {
+          "count": 1,
+          "message": {
+            "protocol": 3,
+            "rx_status": 2,
+            "tx_flags": 0,
+            "timestamp": 2603231369,
+            "data_size": 0,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 0,
+            "data_truncated": false,
+            "data_hex": ""
+          },
+          "canaries_intact": true
+        },
+        "qpc_before": 3956173968170,
+        "qpc_after": 3956174016027,
+        "qpc_frequency": 10000000,
+        "api_elapsed_ticks": 47857,
+        "utc_filetime": 134352274472057415,
+        "esp_before": 11766344,
+        "esp_after": 11766344,
+        "state": {
+          "clock_model": "QPC_MONOTONIC_MINIMUM",
+          "monotonic_ms": 395617401,
+          "requested_baud": 62500,
+          "baud_set_accepted": true,
+          "clear_mask": 3,
+          "connection_contract": {
+            "protocol": 3,
+            "flags": 512,
+            "baud": 4800
+          },
+          "opened": true,
+          "device": 1,
+          "connected": true,
+          "channel": 3,
+          "kernel_filter": true,
+          "filter_stop_attempted": false,
+          "acknowledged_chunks": 15,
+          "start_acknowledged": true,
+          "identity_validated": true,
+          "bounded_validated": false,
+          "tx_attempts": 25,
+          "requested_configuration": [
+            {
+              "parameter": 22,
+              "value": 0
+            },
+            {
+              "parameter": 7,
+              "value": 1
+            },
+            {
+              "parameter": 10,
+              "value": 0
+            },
+            {
+              "parameter": 12,
+              "value": 0
+            },
+            {
+              "parameter": 3,
+              "value": 0
+            }
+          ],
+          "successful_set_calls": 5,
+          "observed_configuration": [
+            {
+              "parameter": 22,
+              "value": 0
+            },
+            {
+              "parameter": 7,
+              "value": 1
+            },
+            {
+              "parameter": 10,
+              "value": 0
+            },
+            {
+              "parameter": 12,
+              "value": 0
+            },
+            {
+              "parameter": 3,
+              "value": 0
+            }
+          ],
+          "effective_configuration_valid": true,
+          "filter": {
+            "requested": true,
+            "active": true,
+            "id": 1,
+            "type": 1,
+            "requested_mask_hex": "ffff",
+            "requested_pattern_hex": "beef",
+            "requested_flow_hex": null,
+            "protocol": 3,
+            "flags": 0,
+            "returned_objects_valid": true,
+            "observed_mask": {
+              "protocol": 3,
+              "rx_status": 0,
+              "tx_flags": 0,
+              "timestamp": 0,
+              "data_size": 2,
+              "extra_data_index": 0,
+              "buffer_capacity": 4128,
+              "logged_bytes": 2,
+              "data_truncated": false,
+              "data_hex": "ffff"
+            },
+            "observed_pattern": {
+              "protocol": 3,
+              "rx_status": 0,
+              "tx_flags": 0,
+              "timestamp": 0,
+              "data_size": 2,
+              "extra_data_index": 0,
+              "buffer_capacity": 4128,
+              "logged_bytes": 2,
+              "data_truncated": false,
+              "data_hex": "beef"
+            },
+            "observed_flow": null
+          }
+        }
+      }
+    },
+    {
+      "source_line": 189,
+      "utc": "2026-09-30T07:37:27.238248+00:00",
+      "elapsed_ms": 32.4303,
+      "record": {
+        "type": "api_return",
+        "sequence": 93,
+        "function": "PassThruReadMsgs",
+        "physical": true,
+        "status": 0,
+        "input": {
+          "channel": 3,
+          "timeout_ms": 1000,
+          "input_count": 1,
+          "count_pointer_present": true,
+          "message_capacity": 1,
+          "message": {
+            "protocol": 0,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 0,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 0,
+            "data_truncated": false,
+            "data_hex": ""
+          }
+        },
+        "output": {
+          "count": 1,
+          "message": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 2603268720,
+            "data_size": 228,
+            "extra_data_index": 228,
+            "buffer_capacity": 4128,
+            "logged_bytes": 228,
+            "data_truncated": false,
+            "data_hex": "beef020683000000000000000aacffffbfa000000aacffffbfa000000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa8ffffffffffffffffdf01442b00090000ffffbfa0df01000b00090000ffffbfa0e5f74518750a8451e3ff4318620c737f2239324ce13c622c4118321c25210009000900090009000b0009ffff8441600c937f20388b04d643947c917c412be506000b00098441600c937320388b04d63e94729170412be506000b0009d33b7402d23b2342d13b412b6422634392614f227ff81f418431600c202988048b0c6433b0f8"
+          },
+          "canaries_intact": true
+        },
+        "qpc_before": 3956174016709,
+        "qpc_after": 3956174341012,
+        "qpc_frequency": 10000000,
+        "api_elapsed_ticks": 324303,
+        "utc_filetime": 134352274472382476,
+        "esp_before": 11766344,
+        "esp_after": 11766344,
+        "state": {
+          "clock_model": "QPC_MONOTONIC_MINIMUM",
+          "monotonic_ms": 395617434,
+          "requested_baud": 62500,
+          "baud_set_accepted": true,
+          "clear_mask": 3,
+          "connection_contract": {
+            "protocol": 3,
+            "flags": 512,
+            "baud": 4800
+          },
+          "opened": true,
+          "device": 1,
+          "connected": true,
+          "channel": 3,
+          "kernel_filter": true,
+          "filter_stop_attempted": false,
+          "acknowledged_chunks": 15,
+          "start_acknowledged": true,
+          "identity_validated": true,
+          "bounded_validated": false,
+          "tx_attempts": 25,
+          "requested_configuration": [
+            {
+              "parameter": 22,
+              "value": 0
+            },
+            {
+              "parameter": 7,
+              "value": 1
+            },
+            {
+              "parameter": 10,
+              "value": 0
+            },
+            {
+              "parameter": 12,
+              "value": 0
+            },
+            {
+              "parameter": 3,
+              "value": 0
+            }
+          ],
+          "successful_set_calls": 5,
+          "observed_configuration": [
+            {
+              "parameter": 22,
+              "value": 0
+            },
+            {
+              "parameter": 7,
+              "value": 1
+            },
+            {
+              "parameter": 10,
+              "value": 0
+            },
+            {
+              "parameter": 12,
+              "value": 0
+            },
+            {
+              "parameter": 3,
+              "value": 0
+            }
+          ],
+          "effective_configuration_valid": true,
+          "filter": {
+            "requested": true,
+            "active": true,
+            "id": 1,
+            "type": 1,
+            "requested_mask_hex": "ffff",
+            "requested_pattern_hex": "beef",
+            "requested_flow_hex": null,
+            "protocol": 3,
+            "flags": 0,
+            "returned_objects_valid": true,
+            "observed_mask": {
+              "protocol": 3,
+              "rx_status": 0,
+              "tx_flags": 0,
+              "timestamp": 0,
+              "data_size": 2,
+              "extra_data_index": 0,
+              "buffer_capacity": 4128,
+              "logged_bytes": 2,
+              "data_truncated": false,
+              "data_hex": "ffff"
+            },
+            "observed_pattern": {
+              "protocol": 3,
+              "rx_status": 0,
+              "tx_flags": 0,
+              "timestamp": 0,
+              "data_size": 2,
+              "extra_data_index": 0,
+              "buffer_capacity": 4128,
+              "logged_bytes": 2,
+              "data_truncated": false,
+              "data_hex": "beef"
+            },
+            "observed_flow": null
+          }
+        }
+      }
+    },
+    {
+      "source_line": 191,
+      "utc": "2026-09-30T07:37:28.243736+00:00",
+      "elapsed_ms": 1005.3896,
+      "record": {
+        "type": "api_return",
+        "sequence": 94,
+        "function": "PassThruReadMsgs",
+        "physical": true,
+        "status": 16,
+        "input": {
+          "channel": 3,
+          "timeout_ms": 1000,
+          "input_count": 1,
+          "count_pointer_present": true,
+          "message_capacity": 1,
+          "message": {
+            "protocol": 0,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 0,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 0,
+            "data_truncated": false,
+            "data_hex": ""
+          }
+        },
+        "output": {
+          "count": 0,
+          "message": {
+            "protocol": 0,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 0,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 0,
+            "data_truncated": false,
+            "data_hex": ""
+          },
+          "canaries_intact": true
+        },
+        "qpc_before": 3956174341807,
+        "qpc_after": 3956184395703,
+        "qpc_frequency": 10000000,
+        "api_elapsed_ticks": 10053896,
+        "utc_filetime": 134352274482437357,
+        "esp_before": 11766344,
+        "esp_after": 11766344,
+        "state": {
+          "clock_model": "QPC_MONOTONIC_MINIMUM",
+          "monotonic_ms": 395618439,
+          "requested_baud": 62500,
+          "baud_set_accepted": true,
+          "clear_mask": 3,
+          "connection_contract": {
+            "protocol": 3,
+            "flags": 512,
+            "baud": 4800
+          },
+          "opened": true,
+          "device": 1,
+          "connected": true,
+          "channel": 3,
+          "kernel_filter": true,
+          "filter_stop_attempted": false,
+          "acknowledged_chunks": 15,
+          "start_acknowledged": true,
+          "identity_validated": true,
+          "bounded_validated": false,
+          "tx_attempts": 25,
+          "requested_configuration": [
+            {
+              "parameter": 22,
+              "value": 0
+            },
+            {
+              "parameter": 7,
+              "value": 1
+            },
+            {
+              "parameter": 10,
+              "value": 0
+            },
+            {
+              "parameter": 12,
+              "value": 0
+            },
+            {
+              "parameter": 3,
+              "value": 0
+            }
+          ],
+          "successful_set_calls": 5,
+          "observed_configuration": [
+            {
+              "parameter": 22,
+              "value": 0
+            },
+            {
+              "parameter": 7,
+              "value": 1
+            },
+            {
+              "parameter": 10,
+              "value": 0
+            },
+            {
+              "parameter": 12,
+              "value": 0
+            },
+            {
+              "parameter": 3,
+              "value": 0
+            }
+          ],
+          "effective_configuration_valid": true,
+          "filter": {
+            "requested": true,
+            "active": true,
+            "id": 1,
+            "type": 1,
+            "requested_mask_hex": "ffff",
+            "requested_pattern_hex": "beef",
+            "requested_flow_hex": null,
+            "protocol": 3,
+            "flags": 0,
+            "returned_objects_valid": true,
+            "observed_mask": {
+              "protocol": 3,
+              "rx_status": 0,
+              "tx_flags": 0,
+              "timestamp": 0,
+              "data_size": 2,
+              "extra_data_index": 0,
+              "buffer_capacity": 4128,
+              "logged_bytes": 2,
+              "data_truncated": false,
+              "data_hex": "ffff"
+            },
+            "observed_pattern": {
+              "protocol": 3,
+              "rx_status": 0,
+              "tx_flags": 0,
+              "timestamp": 0,
+              "data_size": 2,
+              "extra_data_index": 0,
+              "buffer_capacity": 4128,
+              "logged_bytes": 2,
+              "data_truncated": false,
+              "data_hex": "beef"
+            },
+            "observed_flow": null
+          }
+        }
+      }
+    }
+  ],
+  "timing": {
+    "read_write_ms": 3.0347,
+    "empty_SOM_read_ms": 4.7857,
+    "partial_data_read_ms": 32.4303,
+    "empty_buffer_read_ms": 1005.3896,
+    "all_receive_window_ms": 1042.7533,
+    "whole_frame_deadline_ms": 2000,
+    "api_read_timeout_ms": 1000,
+    "terminal_due_to_nonzero_status_not_whole_deadline": true
+  },
+  "configuration_records": [
+    {
+      "type": "api_return",
+      "sequence": 1,
+      "function": "PassThruReadVersion",
+      "physical": true,
+      "status": 0,
+      "input": {
+        "device": 1,
+        "firmware_capacity": 80,
+        "dll_capacity": 80,
+        "api_capacity": 80
+      },
+      "output": {
+        "firmware": {
+          "capacity": 80,
+          "nul_terminated": true,
+          "value": "1.17.4877",
+          "raw_buffer_hex": "312e31372e343837370000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "dll": {
+          "capacity": 80,
+          "nul_terminated": true,
+          "value": "1.02.4870 Feb  3 2017 23:36:05",
+          "raw_buffer_hex": "312e30322e343837302046656220203320323031372032333a33363a30350000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "api": {
+          "capacity": 80,
+          "nul_terminated": true,
+          "value": "04.04",
+          "raw_buffer_hex": "30342e3034000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "canaries_intact": true
+      },
+      "qpc_before": 3956151151889,
+      "qpc_after": 3956151151892,
+      "qpc_frequency": 10000000,
+      "api_elapsed_ticks": 3,
+      "utc_filetime": 134352274449193465,
+      "esp_before": 11757724,
+      "esp_after": 11757724,
+      "state": {
+        "clock_model": "QPC_MONOTONIC_MINIMUM",
+        "monotonic_ms": 395615115,
+        "requested_baud": 4800,
+        "baud_set_accepted": false,
+        "clear_mask": 0,
+        "connection_contract": {
+          "protocol": 3,
+          "flags": 512,
+          "baud": 4800
+        },
+        "opened": true,
+        "device": 1,
+        "connected": false,
+        "channel": 3512641005,
+        "kernel_filter": false,
+        "filter_stop_attempted": false,
+        "acknowledged_chunks": 0,
+        "start_acknowledged": false,
+        "identity_validated": false,
+        "bounded_validated": false,
+        "tx_attempts": 0,
+        "requested_configuration": [],
+        "successful_set_calls": 0,
+        "observed_configuration": null,
+        "effective_configuration_valid": false,
+        "filter": {
+          "requested": false,
+          "active": false,
+          "id": 3512641005,
+          "type": 1,
+          "requested_mask_hex": "00000000",
+          "requested_pattern_hex": "00000000",
+          "requested_flow_hex": "00000000",
+          "protocol": 3,
+          "flags": 0,
+          "returned_objects_valid": false,
+          "observed_mask": null,
+          "observed_pattern": null,
+          "observed_flow": null
+        }
+      }
+    },
+    {
+      "type": "api_return",
+      "sequence": 2,
+      "function": "PassThruConnect",
+      "physical": true,
+      "status": 0,
+      "input": {
+        "device": 1,
+        "protocol": 3,
+        "flags": 512,
+        "baud": 4800,
+        "channel_output_present": true
+      },
+      "output": {
+        "channel": 3
+      },
+      "qpc_before": 3956151152952,
+      "qpc_after": 3956151183166,
+      "qpc_frequency": 10000000,
+      "api_elapsed_ticks": 30214,
+      "utc_filetime": 134352274449224433,
+      "esp_before": 11757728,
+      "esp_after": 11757728,
+      "state": {
+        "clock_model": "QPC_MONOTONIC_MINIMUM",
+        "monotonic_ms": 395615118,
+        "requested_baud": 4800,
+        "baud_set_accepted": false,
+        "clear_mask": 0,
+        "connection_contract": {
+          "protocol": 3,
+          "flags": 512,
+          "baud": 4800
+        },
+        "opened": true,
+        "device": 1,
+        "connected": true,
+        "channel": 3,
+        "kernel_filter": false,
+        "filter_stop_attempted": false,
+        "acknowledged_chunks": 0,
+        "start_acknowledged": false,
+        "identity_validated": false,
+        "bounded_validated": false,
+        "tx_attempts": 0,
+        "requested_configuration": [],
+        "successful_set_calls": 0,
+        "observed_configuration": null,
+        "effective_configuration_valid": false,
+        "filter": {
+          "requested": false,
+          "active": false,
+          "id": 3512641005,
+          "type": 1,
+          "requested_mask_hex": "00000000",
+          "requested_pattern_hex": "00000000",
+          "requested_flow_hex": "00000000",
+          "protocol": 3,
+          "flags": 0,
+          "returned_objects_valid": false,
+          "observed_mask": null,
+          "observed_pattern": null,
+          "observed_flow": null
+        }
+      }
+    },
+    {
+      "type": "api_return",
+      "sequence": 3,
+      "function": "PassThruIoctl",
+      "physical": true,
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "ioctl": 2,
+        "input_present": true,
+        "output_present": false,
+        "config": {
+          "list_present": true,
+          "returned_num_params": 1,
+          "config_pointer": 11763040,
+          "owned_buffer_pointer": 11763040,
+          "pointer_matches_owned": true,
+          "owned_capacity": 1,
+          "owned_buffer_entries": [
+            {
+              "parameter": 22,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "output": {
+        "config": {
+          "list_present": true,
+          "returned_num_params": 1,
+          "config_pointer": 11763040,
+          "owned_buffer_pointer": 11763040,
+          "pointer_matches_owned": true,
+          "owned_capacity": 1,
+          "owned_buffer_entries": [
+            {
+              "parameter": 22,
+              "value": 0
+            }
+          ]
+        },
+        "canaries_intact": true
+      },
+      "qpc_before": 3956151183845,
+      "qpc_after": 3956151187752,
+      "qpc_frequency": 10000000,
+      "api_elapsed_ticks": 3907,
+      "utc_filetime": 134352274449229038,
+      "esp_before": 11757720,
+      "esp_after": 11757720,
+      "state": {
+        "clock_model": "QPC_MONOTONIC_MINIMUM",
+        "monotonic_ms": 395615118,
+        "requested_baud": 4800,
+        "baud_set_accepted": false,
+        "clear_mask": 0,
+        "connection_contract": {
+          "protocol": 3,
+          "flags": 512,
+          "baud": 4800
+        },
+        "opened": true,
+        "device": 1,
+        "connected": true,
+        "channel": 3,
+        "kernel_filter": false,
+        "filter_stop_attempted": false,
+        "acknowledged_chunks": 0,
+        "start_acknowledged": false,
+        "identity_validated": false,
+        "bounded_validated": false,
+        "tx_attempts": 0,
+        "requested_configuration": [
+          {
+            "parameter": 22,
+            "value": 0
+          }
+        ],
+        "successful_set_calls": 1,
+        "observed_configuration": null,
+        "effective_configuration_valid": false,
+        "filter": {
+          "requested": false,
+          "active": false,
+          "id": 3512641005,
+          "type": 1,
+          "requested_mask_hex": "00000000",
+          "requested_pattern_hex": "00000000",
+          "requested_flow_hex": "00000000",
+          "protocol": 3,
+          "flags": 0,
+          "returned_objects_valid": false,
+          "observed_mask": null,
+          "observed_pattern": null,
+          "observed_flow": null
+        }
+      }
+    },
+    {
+      "type": "api_return",
+      "sequence": 4,
+      "function": "PassThruIoctl",
+      "physical": true,
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "ioctl": 2,
+        "input_present": true,
+        "output_present": false,
+        "config": {
+          "list_present": true,
+          "returned_num_params": 1,
+          "config_pointer": 11763040,
+          "owned_buffer_pointer": 11763040,
+          "pointer_matches_owned": true,
+          "owned_capacity": 1,
+          "owned_buffer_entries": [
+            {
+              "parameter": 7,
+              "value": 1
+            }
+          ]
+        }
+      },
+      "output": {
+        "config": {
+          "list_present": true,
+          "returned_num_params": 1,
+          "config_pointer": 11763040,
+          "owned_buffer_pointer": 11763040,
+          "pointer_matches_owned": true,
+          "owned_capacity": 1,
+          "owned_buffer_entries": [
+            {
+              "parameter": 7,
+              "value": 1
+            }
+          ]
+        },
+        "canaries_intact": true
+      },
+      "qpc_before": 3956151188089,
+      "qpc_after": 3956151191881,
+      "qpc_frequency": 10000000,
+      "api_elapsed_ticks": 3792,
+      "utc_filetime": 134352274449233208,
+      "esp_before": 11757720,
+      "esp_after": 11757720,
+      "state": {
+        "clock_model": "QPC_MONOTONIC_MINIMUM",
+        "monotonic_ms": 395615119,
+        "requested_baud": 4800,
+        "baud_set_accepted": false,
+        "clear_mask": 0,
+        "connection_contract": {
+          "protocol": 3,
+          "flags": 512,
+          "baud": 4800
+        },
+        "opened": true,
+        "device": 1,
+        "connected": true,
+        "channel": 3,
+        "kernel_filter": false,
+        "filter_stop_attempted": false,
+        "acknowledged_chunks": 0,
+        "start_acknowledged": false,
+        "identity_validated": false,
+        "bounded_validated": false,
+        "tx_attempts": 0,
+        "requested_configuration": [
+          {
+            "parameter": 22,
+            "value": 0
+          },
+          {
+            "parameter": 7,
+            "value": 1
+          }
+        ],
+        "successful_set_calls": 2,
+        "observed_configuration": null,
+        "effective_configuration_valid": false,
+        "filter": {
+          "requested": false,
+          "active": false,
+          "id": 3512641005,
+          "type": 1,
+          "requested_mask_hex": "00000000",
+          "requested_pattern_hex": "00000000",
+          "requested_flow_hex": "00000000",
+          "protocol": 3,
+          "flags": 0,
+          "returned_objects_valid": false,
+          "observed_mask": null,
+          "observed_pattern": null,
+          "observed_flow": null
+        }
+      }
+    },
+    {
+      "type": "api_return",
+      "sequence": 5,
+      "function": "PassThruIoctl",
+      "physical": true,
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "ioctl": 2,
+        "input_present": true,
+        "output_present": false,
+        "config": {
+          "list_present": true,
+          "returned_num_params": 1,
+          "config_pointer": 11763040,
+          "owned_buffer_pointer": 11763040,
+          "pointer_matches_owned": true,
+          "owned_capacity": 1,
+          "owned_buffer_entries": [
+            {
+              "parameter": 10,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "output": {
+        "config": {
+          "list_present": true,
+          "returned_num_params": 1,
+          "config_pointer": 11763040,
+          "owned_buffer_pointer": 11763040,
+          "pointer_matches_owned": true,
+          "owned_capacity": 1,
+          "owned_buffer_entries": [
+            {
+              "parameter": 10,
+              "value": 0
+            }
+          ]
+        },
+        "canaries_intact": true
+      },
+      "qpc_before": 3956151192335,
+      "qpc_after": 3956151196211,
+      "qpc_frequency": 10000000,
+      "api_elapsed_ticks": 3876,
+      "utc_filetime": 134352274449237518,
+      "esp_before": 11757720,
+      "esp_after": 11757720,
+      "state": {
+        "clock_model": "QPC_MONOTONIC_MINIMUM",
+        "monotonic_ms": 395615119,
+        "requested_baud": 4800,
+        "baud_set_accepted": false,
+        "clear_mask": 0,
+        "connection_contract": {
+          "protocol": 3,
+          "flags": 512,
+          "baud": 4800
+        },
+        "opened": true,
+        "device": 1,
+        "connected": true,
+        "channel": 3,
+        "kernel_filter": false,
+        "filter_stop_attempted": false,
+        "acknowledged_chunks": 0,
+        "start_acknowledged": false,
+        "identity_validated": false,
+        "bounded_validated": false,
+        "tx_attempts": 0,
+        "requested_configuration": [
+          {
+            "parameter": 22,
+            "value": 0
+          },
+          {
+            "parameter": 7,
+            "value": 1
+          },
+          {
+            "parameter": 10,
+            "value": 0
+          }
+        ],
+        "successful_set_calls": 3,
+        "observed_configuration": null,
+        "effective_configuration_valid": false,
+        "filter": {
+          "requested": false,
+          "active": false,
+          "id": 3512641005,
+          "type": 1,
+          "requested_mask_hex": "00000000",
+          "requested_pattern_hex": "00000000",
+          "requested_flow_hex": "00000000",
+          "protocol": 3,
+          "flags": 0,
+          "returned_objects_valid": false,
+          "observed_mask": null,
+          "observed_pattern": null,
+          "observed_flow": null
+        }
+      }
+    },
+    {
+      "type": "api_return",
+      "sequence": 6,
+      "function": "PassThruIoctl",
+      "physical": true,
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "ioctl": 2,
+        "input_present": true,
+        "output_present": false,
+        "config": {
+          "list_present": true,
+          "returned_num_params": 1,
+          "config_pointer": 11763040,
+          "owned_buffer_pointer": 11763040,
+          "pointer_matches_owned": true,
+          "owned_capacity": 1,
+          "owned_buffer_entries": [
+            {
+              "parameter": 12,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "output": {
+        "config": {
+          "list_present": true,
+          "returned_num_params": 1,
+          "config_pointer": 11763040,
+          "owned_buffer_pointer": 11763040,
+          "pointer_matches_owned": true,
+          "owned_capacity": 1,
+          "owned_buffer_entries": [
+            {
+              "parameter": 12,
+              "value": 0
+            }
+          ]
+        },
+        "canaries_intact": true
+      },
+      "qpc_before": 3956151196923,
+      "qpc_after": 3956151200756,
+      "qpc_frequency": 10000000,
+      "api_elapsed_ticks": 3833,
+      "utc_filetime": 134352274449242049,
+      "esp_before": 11757720,
+      "esp_after": 11757720,
+      "state": {
+        "clock_model": "QPC_MONOTONIC_MINIMUM",
+        "monotonic_ms": 395615120,
+        "requested_baud": 4800,
+        "baud_set_accepted": false,
+        "clear_mask": 0,
+        "connection_contract": {
+          "protocol": 3,
+          "flags": 512,
+          "baud": 4800
+        },
+        "opened": true,
+        "device": 1,
+        "connected": true,
+        "channel": 3,
+        "kernel_filter": false,
+        "filter_stop_attempted": false,
+        "acknowledged_chunks": 0,
+        "start_acknowledged": false,
+        "identity_validated": false,
+        "bounded_validated": false,
+        "tx_attempts": 0,
+        "requested_configuration": [
+          {
+            "parameter": 22,
+            "value": 0
+          },
+          {
+            "parameter": 7,
+            "value": 1
+          },
+          {
+            "parameter": 10,
+            "value": 0
+          },
+          {
+            "parameter": 12,
+            "value": 0
+          }
+        ],
+        "successful_set_calls": 4,
+        "observed_configuration": null,
+        "effective_configuration_valid": false,
+        "filter": {
+          "requested": false,
+          "active": false,
+          "id": 3512641005,
+          "type": 1,
+          "requested_mask_hex": "00000000",
+          "requested_pattern_hex": "00000000",
+          "requested_flow_hex": "00000000",
+          "protocol": 3,
+          "flags": 0,
+          "returned_objects_valid": false,
+          "observed_mask": null,
+          "observed_pattern": null,
+          "observed_flow": null
+        }
+      }
+    },
+    {
+      "type": "api_return",
+      "sequence": 7,
+      "function": "PassThruIoctl",
+      "physical": true,
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "ioctl": 2,
+        "input_present": true,
+        "output_present": false,
+        "config": {
+          "list_present": true,
+          "returned_num_params": 1,
+          "config_pointer": 11763040,
+          "owned_buffer_pointer": 11763040,
+          "pointer_matches_owned": true,
+          "owned_capacity": 1,
+          "owned_buffer_entries": [
+            {
+              "parameter": 3,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "output": {
+        "config": {
+          "list_present": true,
+          "returned_num_params": 1,
+          "config_pointer": 11763040,
+          "owned_buffer_pointer": 11763040,
+          "pointer_matches_owned": true,
+          "owned_capacity": 1,
+          "owned_buffer_entries": [
+            {
+              "parameter": 3,
+              "value": 0
+            }
+          ]
+        },
+        "canaries_intact": true
+      },
+      "qpc_before": 3956151201098,
+      "qpc_after": 3956151204727,
+      "qpc_frequency": 10000000,
+      "api_elapsed_ticks": 3629,
+      "utc_filetime": 134352274449246012,
+      "esp_before": 11757720,
+      "esp_after": 11757720,
+      "state": {
+        "clock_model": "QPC_MONOTONIC_MINIMUM",
+        "monotonic_ms": 395615120,
+        "requested_baud": 4800,
+        "baud_set_accepted": false,
+        "clear_mask": 0,
+        "connection_contract": {
+          "protocol": 3,
+          "flags": 512,
+          "baud": 4800
+        },
+        "opened": true,
+        "device": 1,
+        "connected": true,
+        "channel": 3,
+        "kernel_filter": false,
+        "filter_stop_attempted": false,
+        "acknowledged_chunks": 0,
+        "start_acknowledged": false,
+        "identity_validated": false,
+        "bounded_validated": false,
+        "tx_attempts": 0,
+        "requested_configuration": [
+          {
+            "parameter": 22,
+            "value": 0
+          },
+          {
+            "parameter": 7,
+            "value": 1
+          },
+          {
+            "parameter": 10,
+            "value": 0
+          },
+          {
+            "parameter": 12,
+            "value": 0
+          },
+          {
+            "parameter": 3,
+            "value": 0
+          }
+        ],
+        "successful_set_calls": 5,
+        "observed_configuration": null,
+        "effective_configuration_valid": false,
+        "filter": {
+          "requested": false,
+          "active": false,
+          "id": 3512641005,
+          "type": 1,
+          "requested_mask_hex": "00000000",
+          "requested_pattern_hex": "00000000",
+          "requested_flow_hex": "00000000",
+          "protocol": 3,
+          "flags": 0,
+          "returned_objects_valid": false,
+          "observed_mask": null,
+          "observed_pattern": null,
+          "observed_flow": null
+        }
+      }
+    },
+    {
+      "type": "api_return",
+      "sequence": 8,
+      "function": "PassThruIoctl",
+      "physical": true,
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "ioctl": 1,
+        "input_present": true,
+        "output_present": false,
+        "config": {
+          "list_present": true,
+          "returned_num_params": 5,
+          "config_pointer": 11762960,
+          "owned_buffer_pointer": 11762960,
+          "pointer_matches_owned": true,
+          "owned_capacity": 5,
+          "owned_buffer_entries": [
+            {
+              "parameter": 22,
+              "value": 3512641005
+            },
+            {
+              "parameter": 7,
+              "value": 3512641005
+            },
+            {
+              "parameter": 10,
+              "value": 3512641005
+            },
+            {
+              "parameter": 12,
+              "value": 3512641005
+            },
+            {
+              "parameter": 3,
+              "value": 3512641005
+            }
+          ]
+        }
+      },
+      "output": {
+        "config": {
+          "list_present": true,
+          "returned_num_params": 5,
+          "config_pointer": 11762960,
+          "owned_buffer_pointer": 11762960,
+          "pointer_matches_owned": true,
+          "owned_capacity": 5,
+          "owned_buffer_entries": [
+            {
+              "parameter": 22,
+              "value": 0
+            },
+            {
+              "parameter": 7,
+              "value": 1
+            },
+            {
+              "parameter": 10,
+              "value": 0
+            },
+            {
+              "parameter": 12,
+              "value": 0
+            },
+            {
+              "parameter": 3,
+              "value": 0
+            }
+          ]
+        },
+        "canaries_intact": true
+      },
+      "qpc_before": 3956151205204,
+      "qpc_after": 3956151235678,
+      "qpc_frequency": 10000000,
+      "api_elapsed_ticks": 30474,
+      "utc_filetime": 134352274449277105,
+      "esp_before": 11757720,
+      "esp_after": 11757720,
+      "state": {
+        "clock_model": "QPC_MONOTONIC_MINIMUM",
+        "monotonic_ms": 395615123,
+        "requested_baud": 4800,
+        "baud_set_accepted": false,
+        "clear_mask": 0,
+        "connection_contract": {
+          "protocol": 3,
+          "flags": 512,
+          "baud": 4800
+        },
+        "opened": true,
+        "device": 1,
+        "connected": true,
+        "channel": 3,
+        "kernel_filter": false,
+        "filter_stop_attempted": false,
+        "acknowledged_chunks": 0,
+        "start_acknowledged": false,
+        "identity_validated": false,
+        "bounded_validated": false,
+        "tx_attempts": 0,
+        "requested_configuration": [
+          {
+            "parameter": 22,
+            "value": 0
+          },
+          {
+            "parameter": 7,
+            "value": 1
+          },
+          {
+            "parameter": 10,
+            "value": 0
+          },
+          {
+            "parameter": 12,
+            "value": 0
+          },
+          {
+            "parameter": 3,
+            "value": 0
+          }
+        ],
+        "successful_set_calls": 5,
+        "observed_configuration": [
+          {
+            "parameter": 22,
+            "value": 0
+          },
+          {
+            "parameter": 7,
+            "value": 1
+          },
+          {
+            "parameter": 10,
+            "value": 0
+          },
+          {
+            "parameter": 12,
+            "value": 0
+          },
+          {
+            "parameter": 3,
+            "value": 0
+          }
+        ],
+        "effective_configuration_valid": true,
+        "filter": {
+          "requested": false,
+          "active": false,
+          "id": 3512641005,
+          "type": 1,
+          "requested_mask_hex": "00000000",
+          "requested_pattern_hex": "00000000",
+          "requested_flow_hex": "00000000",
+          "protocol": 3,
+          "flags": 0,
+          "returned_objects_valid": false,
+          "observed_mask": null,
+          "observed_pattern": null,
+          "observed_flow": null
+        }
+      }
+    },
+    {
+      "type": "api_return",
+      "sequence": 9,
+      "function": "PassThruStartMsgFilter",
+      "physical": true,
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "filter_type": 1,
+        "mask_present": true,
+        "pattern_present": true,
+        "flow_present": true,
+        "filter_output_present": true,
+        "mask": {
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 4,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 4,
+          "data_truncated": false,
+          "data_hex": "00000000"
+        },
+        "pattern": {
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 4,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 4,
+          "data_truncated": false,
+          "data_hex": "00000000"
+        },
+        "flow": {
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 4,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 4,
+          "data_truncated": false,
+          "data_hex": "00000000"
+        }
+      },
+      "output": {
+        "filter_id": 0,
+        "mask": {
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 4,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 4,
+          "data_truncated": false,
+          "data_hex": "00000000"
+        },
+        "pattern": {
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 4,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 4,
+          "data_truncated": false,
+          "data_hex": "00000000"
+        },
+        "flow": {
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 4,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 4,
+          "data_truncated": false,
+          "data_hex": "00000000"
+        },
+        "canaries_intact": true
+      },
+      "qpc_before": 3956151236418,
+      "qpc_after": 3956151242126,
+      "qpc_frequency": 10000000,
+      "api_elapsed_ticks": 5708,
+      "utc_filetime": 134352274449283528,
+      "esp_before": 11757700,
+      "esp_after": 11757700,
+      "state": {
+        "clock_model": "QPC_MONOTONIC_MINIMUM",
+        "monotonic_ms": 395615124,
+        "requested_baud": 4800,
+        "baud_set_accepted": false,
+        "clear_mask": 0,
+        "connection_contract": {
+          "protocol": 3,
+          "flags": 512,
+          "baud": 4800
+        },
+        "opened": true,
+        "device": 1,
+        "connected": true,
+        "channel": 3,
+        "kernel_filter": false,
+        "filter_stop_attempted": false,
+        "acknowledged_chunks": 0,
+        "start_acknowledged": false,
+        "identity_validated": false,
+        "bounded_validated": false,
+        "tx_attempts": 0,
+        "requested_configuration": [
+          {
+            "parameter": 22,
+            "value": 0
+          },
+          {
+            "parameter": 7,
+            "value": 1
+          },
+          {
+            "parameter": 10,
+            "value": 0
+          },
+          {
+            "parameter": 12,
+            "value": 0
+          },
+          {
+            "parameter": 3,
+            "value": 0
+          }
+        ],
+        "successful_set_calls": 5,
+        "observed_configuration": [
+          {
+            "parameter": 22,
+            "value": 0
+          },
+          {
+            "parameter": 7,
+            "value": 1
+          },
+          {
+            "parameter": 10,
+            "value": 0
+          },
+          {
+            "parameter": 12,
+            "value": 0
+          },
+          {
+            "parameter": 3,
+            "value": 0
+          }
+        ],
+        "effective_configuration_valid": true,
+        "filter": {
+          "requested": true,
+          "active": true,
+          "id": 0,
+          "type": 1,
+          "requested_mask_hex": "00000000",
+          "requested_pattern_hex": "00000000",
+          "requested_flow_hex": "00000000",
+          "protocol": 3,
+          "flags": 0,
+          "returned_objects_valid": true,
+          "observed_mask": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 4,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 4,
+            "data_truncated": false,
+            "data_hex": "00000000"
+          },
+          "observed_pattern": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 4,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 4,
+            "data_truncated": false,
+            "data_hex": "00000000"
+          },
+          "observed_flow": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 4,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 4,
+            "data_truncated": false,
+            "data_hex": "00000000"
+          }
+        }
+      }
+    },
+    {
+      "type": "api_return",
+      "sequence": 25,
+      "function": "MonotonicMinimumWait",
+      "physical": true,
+      "status": 0,
+      "input": {
+        "model": "QPC_MONOTONIC_MINIMUM",
+        "milliseconds": 200,
+        "requested_ms": 200,
+        "reason": "post_key_ack",
+        "monotonic_before_ms": 395615441
+      },
+      "output": {
+        "monotonic_after_ms": 395615642,
+        "requested_ms": 200,
+        "minimum_qpc_ticks": 2000000,
+        "elapsed_qpc_ticks": 2011130,
+        "qpc_frequency": 10000000,
+        "overshoot_qpc_ticks": 11130,
+        "minimum_satisfied": true
+      },
+      "qpc_before": 3956154414253,
+      "qpc_after": 3956156425383,
+      "qpc_frequency": 10000000,
+      "api_elapsed_ticks": 2011130,
+      "utc_filetime": 134352274454467083,
+      "esp_before": 11778836,
+      "esp_after": 11778836,
+      "state": {
+        "clock_model": "QPC_MONOTONIC_MINIMUM",
+        "monotonic_ms": 395615642,
+        "requested_baud": 4800,
+        "baud_set_accepted": false,
+        "clear_mask": 0,
+        "connection_contract": {
+          "protocol": 3,
+          "flags": 512,
+          "baud": 4800
+        },
+        "opened": true,
+        "device": 1,
+        "connected": true,
+        "channel": 3,
+        "kernel_filter": false,
+        "filter_stop_attempted": false,
+        "acknowledged_chunks": 0,
+        "start_acknowledged": false,
+        "identity_validated": false,
+        "bounded_validated": false,
+        "tx_attempts": 5,
+        "requested_configuration": [
+          {
+            "parameter": 22,
+            "value": 0
+          },
+          {
+            "parameter": 7,
+            "value": 1
+          },
+          {
+            "parameter": 10,
+            "value": 0
+          },
+          {
+            "parameter": 12,
+            "value": 0
+          },
+          {
+            "parameter": 3,
+            "value": 0
+          }
+        ],
+        "successful_set_calls": 5,
+        "observed_configuration": [
+          {
+            "parameter": 22,
+            "value": 0
+          },
+          {
+            "parameter": 7,
+            "value": 1
+          },
+          {
+            "parameter": 10,
+            "value": 0
+          },
+          {
+            "parameter": 12,
+            "value": 0
+          },
+          {
+            "parameter": 3,
+            "value": 0
+          }
+        ],
+        "effective_configuration_valid": true,
+        "filter": {
+          "requested": true,
+          "active": true,
+          "id": 0,
+          "type": 1,
+          "requested_mask_hex": "00000000",
+          "requested_pattern_hex": "00000000",
+          "requested_flow_hex": "00000000",
+          "protocol": 3,
+          "flags": 0,
+          "returned_objects_valid": true,
+          "observed_mask": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 4,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 4,
+            "data_truncated": false,
+            "data_hex": "00000000"
+          },
+          "observed_pattern": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 4,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 4,
+            "data_truncated": false,
+            "data_hex": "00000000"
+          },
+          "observed_flow": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 4,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 4,
+            "data_truncated": false,
+            "data_hex": "00000000"
+          }
+        }
+      }
+    },
+    {
+      "type": "api_return",
+      "sequence": 29,
+      "function": "MonotonicMinimumWait",
+      "physical": true,
+      "status": 0,
+      "input": {
+        "model": "QPC_MONOTONIC_MINIMUM",
+        "milliseconds": 100,
+        "requested_ms": 100,
+        "reason": "post_session_ack",
+        "monotonic_before_ms": 395615680
+      },
+      "output": {
+        "monotonic_after_ms": 395615780,
+        "requested_ms": 100,
+        "minimum_qpc_ticks": 1000000,
+        "elapsed_qpc_ticks": 1000200,
+        "qpc_frequency": 10000000,
+        "overshoot_qpc_ticks": 200,
+        "minimum_satisfied": true
+      },
+      "qpc_before": 3956156801123,
+      "qpc_after": 3956157801323,
+      "qpc_frequency": 10000000,
+      "api_elapsed_ticks": 1000200,
+      "utc_filetime": 134352274455843022,
+      "esp_before": 11778836,
+      "esp_after": 11778836,
+      "state": {
+        "clock_model": "QPC_MONOTONIC_MINIMUM",
+        "monotonic_ms": 395615780,
+        "requested_baud": 4800,
+        "baud_set_accepted": false,
+        "clear_mask": 0,
+        "connection_contract": {
+          "protocol": 3,
+          "flags": 512,
+          "baud": 4800
+        },
+        "opened": true,
+        "device": 1,
+        "connected": true,
+        "channel": 3,
+        "kernel_filter": false,
+        "filter_stop_attempted": false,
+        "acknowledged_chunks": 0,
+        "start_acknowledged": false,
+        "identity_validated": false,
+        "bounded_validated": false,
+        "tx_attempts": 6,
+        "requested_configuration": [
+          {
+            "parameter": 22,
+            "value": 0
+          },
+          {
+            "parameter": 7,
+            "value": 1
+          },
+          {
+            "parameter": 10,
+            "value": 0
+          },
+          {
+            "parameter": 12,
+            "value": 0
+          },
+          {
+            "parameter": 3,
+            "value": 0
+          }
+        ],
+        "successful_set_calls": 5,
+        "observed_configuration": [
+          {
+            "parameter": 22,
+            "value": 0
+          },
+          {
+            "parameter": 7,
+            "value": 1
+          },
+          {
+            "parameter": 10,
+            "value": 0
+          },
+          {
+            "parameter": 12,
+            "value": 0
+          },
+          {
+            "parameter": 3,
+            "value": 0
+          }
+        ],
+        "effective_configuration_valid": true,
+        "filter": {
+          "requested": true,
+          "active": true,
+          "id": 0,
+          "type": 1,
+          "requested_mask_hex": "00000000",
+          "requested_pattern_hex": "00000000",
+          "requested_flow_hex": "00000000",
+          "protocol": 3,
+          "flags": 0,
+          "returned_objects_valid": true,
+          "observed_mask": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 4,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 4,
+            "data_truncated": false,
+            "data_hex": "00000000"
+          },
+          "observed_pattern": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 4,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 4,
+            "data_truncated": false,
+            "data_hex": "00000000"
+          },
+          "observed_flow": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 4,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 4,
+            "data_truncated": false,
+            "data_hex": "00000000"
+          }
+        }
+      }
+    },
+    {
+      "type": "api_return",
+      "sequence": 30,
+      "function": "PassThruIoctl",
+      "physical": true,
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "ioctl": 2,
+        "input_present": true,
+        "output_present": false,
+        "config": {
+          "list_present": true,
+          "returned_num_params": 1,
+          "config_pointer": 11780080,
+          "owned_buffer_pointer": 11780080,
+          "pointer_matches_owned": true,
+          "owned_capacity": 1,
+          "owned_buffer_entries": [
+            {
+              "parameter": 1,
+              "value": 15625
+            }
+          ]
+        }
+      },
+      "output": {
+        "config": {
+          "list_present": true,
+          "returned_num_params": 1,
+          "config_pointer": 11780080,
+          "owned_buffer_pointer": 11780080,
+          "pointer_matches_owned": true,
+          "owned_capacity": 1,
+          "owned_buffer_entries": [
+            {
+              "parameter": 1,
+              "value": 15625
+            }
+          ]
+        },
+        "canaries_intact": true
+      },
+      "qpc_before": 3956157802893,
+      "qpc_after": 3956157832624,
+      "qpc_frequency": 10000000,
+      "api_elapsed_ticks": 29731,
+      "utc_filetime": 134352274455874169,
+      "esp_before": 11778984,
+      "esp_after": 11778984,
+      "state": {
+        "clock_model": "QPC_MONOTONIC_MINIMUM",
+        "monotonic_ms": 395615783,
+        "requested_baud": 15625,
+        "baud_set_accepted": true,
+        "clear_mask": 0,
+        "connection_contract": {
+          "protocol": 3,
+          "flags": 512,
+          "baud": 4800
+        },
+        "opened": true,
+        "device": 1,
+        "connected": true,
+        "channel": 3,
+        "kernel_filter": false,
+        "filter_stop_attempted": false,
+        "acknowledged_chunks": 0,
+        "start_acknowledged": false,
+        "identity_validated": false,
+        "bounded_validated": false,
+        "tx_attempts": 6,
+        "requested_configuration": [
+          {
+            "parameter": 22,
+            "value": 0
+          },
+          {
+            "parameter": 7,
+            "value": 1
+          },
+          {
+            "parameter": 10,
+            "value": 0
+          },
+          {
+            "parameter": 12,
+            "value": 0
+          },
+          {
+            "parameter": 3,
+            "value": 0
+          }
+        ],
+        "successful_set_calls": 5,
+        "observed_configuration": [
+          {
+            "parameter": 22,
+            "value": 0
+          },
+          {
+            "parameter": 7,
+            "value": 1
+          },
+          {
+            "parameter": 10,
+            "value": 0
+          },
+          {
+            "parameter": 12,
+            "value": 0
+          },
+          {
+            "parameter": 3,
+            "value": 0
+          }
+        ],
+        "effective_configuration_valid": true,
+        "filter": {
+          "requested": true,
+          "active": true,
+          "id": 0,
+          "type": 1,
+          "requested_mask_hex": "00000000",
+          "requested_pattern_hex": "00000000",
+          "requested_flow_hex": "00000000",
+          "protocol": 3,
+          "flags": 0,
+          "returned_objects_valid": true,
+          "observed_mask": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 4,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 4,
+            "data_truncated": false,
+            "data_hex": "00000000"
+          },
+          "observed_pattern": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 4,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 4,
+            "data_truncated": false,
+            "data_hex": "00000000"
+          },
+          "observed_flow": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 4,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 4,
+            "data_truncated": false,
+            "data_hex": "00000000"
+          }
+        }
+      }
+    },
+    {
+      "type": "api_return",
+      "sequence": 31,
+      "function": "PassThruIoctl",
+      "physical": true,
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "ioctl": 7,
+        "input_present": false,
+        "output_present": false
+      },
+      "output": {},
+      "qpc_before": 3956157833533,
+      "qpc_after": 3956157833561,
+      "qpc_frequency": 10000000,
+      "api_elapsed_ticks": 28,
+      "utc_filetime": 134352274455874871,
+      "esp_before": 11778984,
+      "esp_after": 11778984,
+      "state": {
+        "clock_model": "QPC_MONOTONIC_MINIMUM",
+        "monotonic_ms": 395615783,
+        "requested_baud": 15625,
+        "baud_set_accepted": true,
+        "clear_mask": 1,
+        "connection_contract": {
+          "protocol": 3,
+          "flags": 512,
+          "baud": 4800
+        },
+        "opened": true,
+        "device": 1,
+        "connected": true,
+        "channel": 3,
+        "kernel_filter": false,
+        "filter_stop_attempted": false,
+        "acknowledged_chunks": 0,
+        "start_acknowledged": false,
+        "identity_validated": false,
+        "bounded_validated": false,
+        "tx_attempts": 6,
+        "requested_configuration": [
+          {
+            "parameter": 22,
+            "value": 0
+          },
+          {
+            "parameter": 7,
+            "value": 1
+          },
+          {
+            "parameter": 10,
+            "value": 0
+          },
+          {
+            "parameter": 12,
+            "value": 0
+          },
+          {
+            "parameter": 3,
+            "value": 0
+          }
+        ],
+        "successful_set_calls": 5,
+        "observed_configuration": [
+          {
+            "parameter": 22,
+            "value": 0
+          },
+          {
+            "parameter": 7,
+            "value": 1
+          },
+          {
+            "parameter": 10,
+            "value": 0
+          },
+          {
+            "parameter": 12,
+            "value": 0
+          },
+          {
+            "parameter": 3,
+            "value": 0
+          }
+        ],
+        "effective_configuration_valid": true,
+        "filter": {
+          "requested": true,
+          "active": true,
+          "id": 0,
+          "type": 1,
+          "requested_mask_hex": "00000000",
+          "requested_pattern_hex": "00000000",
+          "requested_flow_hex": "00000000",
+          "protocol": 3,
+          "flags": 0,
+          "returned_objects_valid": true,
+          "observed_mask": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 4,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 4,
+            "data_truncated": false,
+            "data_hex": "00000000"
+          },
+          "observed_pattern": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 4,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 4,
+            "data_truncated": false,
+            "data_hex": "00000000"
+          },
+          "observed_flow": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 4,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 4,
+            "data_truncated": false,
+            "data_hex": "00000000"
+          }
+        }
+      }
+    },
+    {
+      "type": "api_return",
+      "sequence": 32,
+      "function": "PassThruIoctl",
+      "physical": true,
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "ioctl": 8,
+        "input_present": false,
+        "output_present": false
+      },
+      "output": {},
+      "qpc_before": 3956157833913,
+      "qpc_after": 3956157833923,
+      "qpc_frequency": 10000000,
+      "api_elapsed_ticks": 10,
+      "utc_filetime": 134352274455875210,
+      "esp_before": 11778984,
+      "esp_after": 11778984,
+      "state": {
+        "clock_model": "QPC_MONOTONIC_MINIMUM",
+        "monotonic_ms": 395615783,
+        "requested_baud": 15625,
+        "baud_set_accepted": true,
+        "clear_mask": 3,
+        "connection_contract": {
+          "protocol": 3,
+          "flags": 512,
+          "baud": 4800
+        },
+        "opened": true,
+        "device": 1,
+        "connected": true,
+        "channel": 3,
+        "kernel_filter": false,
+        "filter_stop_attempted": false,
+        "acknowledged_chunks": 0,
+        "start_acknowledged": false,
+        "identity_validated": false,
+        "bounded_validated": false,
+        "tx_attempts": 6,
+        "requested_configuration": [
+          {
+            "parameter": 22,
+            "value": 0
+          },
+          {
+            "parameter": 7,
+            "value": 1
+          },
+          {
+            "parameter": 10,
+            "value": 0
+          },
+          {
+            "parameter": 12,
+            "value": 0
+          },
+          {
+            "parameter": 3,
+            "value": 0
+          }
+        ],
+        "successful_set_calls": 5,
+        "observed_configuration": [
+          {
+            "parameter": 22,
+            "value": 0
+          },
+          {
+            "parameter": 7,
+            "value": 1
+          },
+          {
+            "parameter": 10,
+            "value": 0
+          },
+          {
+            "parameter": 12,
+            "value": 0
+          },
+          {
+            "parameter": 3,
+            "value": 0
+          }
+        ],
+        "effective_configuration_valid": true,
+        "filter": {
+          "requested": true,
+          "active": true,
+          "id": 0,
+          "type": 1,
+          "requested_mask_hex": "00000000",
+          "requested_pattern_hex": "00000000",
+          "requested_flow_hex": "00000000",
+          "protocol": 3,
+          "flags": 0,
+          "returned_objects_valid": true,
+          "observed_mask": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 4,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 4,
+            "data_truncated": false,
+            "data_hex": "00000000"
+          },
+          "observed_pattern": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 4,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 4,
+            "data_truncated": false,
+            "data_hex": "00000000"
+          },
+          "observed_flow": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 4,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 4,
+            "data_truncated": false,
+            "data_hex": "00000000"
+          }
+        }
+      }
+    },
+    {
+      "type": "api_return",
+      "sequence": 33,
+      "function": "MonotonicMinimumWait",
+      "physical": true,
+      "status": 0,
+      "input": {
+        "model": "QPC_MONOTONIC_MINIMUM",
+        "milliseconds": 200,
+        "requested_ms": 200,
+        "reason": "pre_download_declaration",
+        "monotonic_before_ms": 395615783
+      },
+      "output": {
+        "monotonic_after_ms": 395615987,
+        "requested_ms": 200,
+        "minimum_qpc_ticks": 2000000,
+        "elapsed_qpc_ticks": 2039872,
+        "qpc_frequency": 10000000,
+        "overshoot_qpc_ticks": 39872,
+        "minimum_satisfied": true
+      },
+      "qpc_before": 3956157835005,
+      "qpc_after": 3956159874877,
+      "qpc_frequency": 10000000,
+      "api_elapsed_ticks": 2039872,
+      "utc_filetime": 134352274457916437,
+      "esp_before": 11778836,
+      "esp_after": 11778836,
+      "state": {
+        "clock_model": "QPC_MONOTONIC_MINIMUM",
+        "monotonic_ms": 395615987,
+        "requested_baud": 15625,
+        "baud_set_accepted": true,
+        "clear_mask": 3,
+        "connection_contract": {
+          "protocol": 3,
+          "flags": 512,
+          "baud": 4800
+        },
+        "opened": true,
+        "device": 1,
+        "connected": true,
+        "channel": 3,
+        "kernel_filter": false,
+        "filter_stop_attempted": false,
+        "acknowledged_chunks": 0,
+        "start_acknowledged": false,
+        "identity_validated": false,
+        "bounded_validated": false,
+        "tx_attempts": 6,
+        "requested_configuration": [
+          {
+            "parameter": 22,
+            "value": 0
+          },
+          {
+            "parameter": 7,
+            "value": 1
+          },
+          {
+            "parameter": 10,
+            "value": 0
+          },
+          {
+            "parameter": 12,
+            "value": 0
+          },
+          {
+            "parameter": 3,
+            "value": 0
+          }
+        ],
+        "successful_set_calls": 5,
+        "observed_configuration": [
+          {
+            "parameter": 22,
+            "value": 0
+          },
+          {
+            "parameter": 7,
+            "value": 1
+          },
+          {
+            "parameter": 10,
+            "value": 0
+          },
+          {
+            "parameter": 12,
+            "value": 0
+          },
+          {
+            "parameter": 3,
+            "value": 0
+          }
+        ],
+        "effective_configuration_valid": true,
+        "filter": {
+          "requested": true,
+          "active": true,
+          "id": 0,
+          "type": 1,
+          "requested_mask_hex": "00000000",
+          "requested_pattern_hex": "00000000",
+          "requested_flow_hex": "00000000",
+          "protocol": 3,
+          "flags": 0,
+          "returned_objects_valid": true,
+          "observed_mask": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 4,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 4,
+            "data_truncated": false,
+            "data_hex": "00000000"
+          },
+          "observed_pattern": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 4,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 4,
+            "data_truncated": false,
+            "data_hex": "00000000"
+          },
+          "observed_flow": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 4,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 4,
+            "data_truncated": false,
+            "data_hex": "00000000"
+          }
+        }
+      }
+    },
+    {
+      "type": "api_return",
+      "sequence": 86,
+      "function": "PassThruIoctl",
+      "physical": true,
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "ioctl": 2,
+        "input_present": true,
+        "output_present": false,
+        "config": {
+          "list_present": true,
+          "returned_num_params": 1,
+          "config_pointer": 11763392,
+          "owned_buffer_pointer": 11763392,
+          "pointer_matches_owned": true,
+          "owned_capacity": 1,
+          "owned_buffer_entries": [
+            {
+              "parameter": 1,
+              "value": 62500
+            }
+          ]
+        }
+      },
+      "output": {
+        "config": {
+          "list_present": true,
+          "returned_num_params": 1,
+          "config_pointer": 11763392,
+          "owned_buffer_pointer": 11763392,
+          "pointer_matches_owned": true,
+          "owned_capacity": 1,
+          "owned_buffer_entries": [
+            {
+              "parameter": 1,
+              "value": 62500
+            }
+          ]
+        },
+        "canaries_intact": true
+      },
+      "qpc_before": 3956173835436,
+      "qpc_after": 3956173864858,
+      "qpc_frequency": 10000000,
+      "api_elapsed_ticks": 29422,
+      "utc_filetime": 134352274471906287,
+      "esp_before": 11758152,
+      "esp_after": 11758152,
+      "state": {
+        "clock_model": "QPC_MONOTONIC_MINIMUM",
+        "monotonic_ms": 395617386,
+        "requested_baud": 62500,
+        "baud_set_accepted": true,
+        "clear_mask": 3,
+        "connection_contract": {
+          "protocol": 3,
+          "flags": 512,
+          "baud": 4800
+        },
+        "opened": true,
+        "device": 1,
+        "connected": true,
+        "channel": 3,
+        "kernel_filter": false,
+        "filter_stop_attempted": true,
+        "acknowledged_chunks": 15,
+        "start_acknowledged": true,
+        "identity_validated": false,
+        "bounded_validated": false,
+        "tx_attempts": 23,
+        "requested_configuration": [
+          {
+            "parameter": 22,
+            "value": 0
+          },
+          {
+            "parameter": 7,
+            "value": 1
+          },
+          {
+            "parameter": 10,
+            "value": 0
+          },
+          {
+            "parameter": 12,
+            "value": 0
+          },
+          {
+            "parameter": 3,
+            "value": 0
+          }
+        ],
+        "successful_set_calls": 5,
+        "observed_configuration": [
+          {
+            "parameter": 22,
+            "value": 0
+          },
+          {
+            "parameter": 7,
+            "value": 1
+          },
+          {
+            "parameter": 10,
+            "value": 0
+          },
+          {
+            "parameter": 12,
+            "value": 0
+          },
+          {
+            "parameter": 3,
+            "value": 0
+          }
+        ],
+        "effective_configuration_valid": true,
+        "filter": {
+          "requested": true,
+          "active": false,
+          "id": 0,
+          "type": 1,
+          "requested_mask_hex": "00000000",
+          "requested_pattern_hex": "00000000",
+          "requested_flow_hex": "00000000",
+          "protocol": 3,
+          "flags": 0,
+          "returned_objects_valid": true,
+          "observed_mask": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 4,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 4,
+            "data_truncated": false,
+            "data_hex": "00000000"
+          },
+          "observed_pattern": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 4,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 4,
+            "data_truncated": false,
+            "data_hex": "00000000"
+          },
+          "observed_flow": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 4,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 4,
+            "data_truncated": false,
+            "data_hex": "00000000"
+          }
+        }
+      }
+    },
+    {
+      "type": "api_return",
+      "sequence": 87,
+      "function": "PassThruStartMsgFilter",
+      "physical": true,
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "filter_type": 1,
+        "mask_present": true,
+        "pattern_present": true,
+        "flow_present": false,
+        "filter_output_present": true,
+        "mask": {
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 2,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 2,
+          "data_truncated": false,
+          "data_hex": "ffff"
+        },
+        "pattern": {
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 2,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 2,
+          "data_truncated": false,
+          "data_hex": "beef"
+        },
+        "flow": null
+      },
+      "output": {
+        "filter_id": 1,
+        "mask": {
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 2,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 2,
+          "data_truncated": false,
+          "data_hex": "ffff"
+        },
+        "pattern": {
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 2,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 2,
+          "data_truncated": false,
+          "data_hex": "beef"
+        },
+        "flow": null,
+        "canaries_intact": true
+      },
+      "qpc_before": 3956173865808,
+      "qpc_after": 3956173872314,
+      "qpc_frequency": 10000000,
+      "api_elapsed_ticks": 6506,
+      "utc_filetime": 134352274471913739,
+      "esp_before": 11758136,
+      "esp_after": 11758136,
+      "state": {
+        "clock_model": "QPC_MONOTONIC_MINIMUM",
+        "monotonic_ms": 395617387,
+        "requested_baud": 62500,
+        "baud_set_accepted": true,
+        "clear_mask": 3,
+        "connection_contract": {
+          "protocol": 3,
+          "flags": 512,
+          "baud": 4800
+        },
+        "opened": true,
+        "device": 1,
+        "connected": true,
+        "channel": 3,
+        "kernel_filter": true,
+        "filter_stop_attempted": false,
+        "acknowledged_chunks": 15,
+        "start_acknowledged": true,
+        "identity_validated": false,
+        "bounded_validated": false,
+        "tx_attempts": 23,
+        "requested_configuration": [
+          {
+            "parameter": 22,
+            "value": 0
+          },
+          {
+            "parameter": 7,
+            "value": 1
+          },
+          {
+            "parameter": 10,
+            "value": 0
+          },
+          {
+            "parameter": 12,
+            "value": 0
+          },
+          {
+            "parameter": 3,
+            "value": 0
+          }
+        ],
+        "successful_set_calls": 5,
+        "observed_configuration": [
+          {
+            "parameter": 22,
+            "value": 0
+          },
+          {
+            "parameter": 7,
+            "value": 1
+          },
+          {
+            "parameter": 10,
+            "value": 0
+          },
+          {
+            "parameter": 12,
+            "value": 0
+          },
+          {
+            "parameter": 3,
+            "value": 0
+          }
+        ],
+        "effective_configuration_valid": true,
+        "filter": {
+          "requested": true,
+          "active": true,
+          "id": 1,
+          "type": 1,
+          "requested_mask_hex": "ffff",
+          "requested_pattern_hex": "beef",
+          "requested_flow_hex": null,
+          "protocol": 3,
+          "flags": 0,
+          "returned_objects_valid": true,
+          "observed_mask": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 2,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 2,
+            "data_truncated": false,
+            "data_hex": "ffff"
+          },
+          "observed_pattern": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 2,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 2,
+            "data_truncated": false,
+            "data_hex": "beef"
+          },
+          "observed_flow": null
+        }
+      }
+    }
+  ],
+  "status_definitions": {
+    "STATUS_NOERROR": {
+      "value": 0,
+      "source_line": 236,
+      "source_text": "#define STATUS_NOERROR\t\t\t\t\t\t0x00"
+    },
+    "ERR_TIMEOUT": {
+      "value": 9,
+      "source_line": 245,
+      "source_text": "#define ERR_TIMEOUT\t\t\t\t\t\t\t0x09"
+    },
+    "ERR_BUFFER_EMPTY": {
+      "value": 16,
+      "source_line": 252,
+      "source_text": "#define ERR_BUFFER_EMPTY\t\t\t\t\t0x10"
+    }
+  },
+  "cleanup_records": [
+    {
+      "type": "api_return",
+      "sequence": 95,
+      "function": "PassThruStopMsgFilter",
+      "physical": true,
+      "cleanup": true,
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "filter_id_present": true,
+        "filter_id": 1
+      },
+      "output": {},
+      "qpc_before": 3956184398479,
+      "qpc_after": 3956184403847,
+      "qpc_frequency": 10000000,
+      "api_elapsed_ticks": 5368,
+      "utc_filetime": 134352274482445279,
+      "state": {
+        "clock_model": "QPC_MONOTONIC_MINIMUM",
+        "monotonic_ms": 395618440,
+        "requested_baud": 62500,
+        "baud_set_accepted": true,
+        "clear_mask": 3,
+        "connection_contract": {
+          "protocol": 3,
+          "flags": 512,
+          "baud": 4800
+        },
+        "opened": true,
+        "device": 1,
+        "connected": true,
+        "channel": 3,
+        "kernel_filter": true,
+        "filter_stop_attempted": true,
+        "acknowledged_chunks": 15,
+        "start_acknowledged": true,
+        "identity_validated": true,
+        "bounded_validated": false,
+        "tx_attempts": 25,
+        "requested_configuration": [
+          {
+            "parameter": 22,
+            "value": 0
+          },
+          {
+            "parameter": 7,
+            "value": 1
+          },
+          {
+            "parameter": 10,
+            "value": 0
+          },
+          {
+            "parameter": 12,
+            "value": 0
+          },
+          {
+            "parameter": 3,
+            "value": 0
+          }
+        ],
+        "successful_set_calls": 5,
+        "observed_configuration": [
+          {
+            "parameter": 22,
+            "value": 0
+          },
+          {
+            "parameter": 7,
+            "value": 1
+          },
+          {
+            "parameter": 10,
+            "value": 0
+          },
+          {
+            "parameter": 12,
+            "value": 0
+          },
+          {
+            "parameter": 3,
+            "value": 0
+          }
+        ],
+        "effective_configuration_valid": true,
+        "filter": {
+          "requested": true,
+          "active": false,
+          "id": 1,
+          "type": 1,
+          "requested_mask_hex": "ffff",
+          "requested_pattern_hex": "beef",
+          "requested_flow_hex": null,
+          "protocol": 3,
+          "flags": 0,
+          "returned_objects_valid": true,
+          "observed_mask": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 2,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 2,
+            "data_truncated": false,
+            "data_hex": "ffff"
+          },
+          "observed_pattern": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 2,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 2,
+            "data_truncated": false,
+            "data_hex": "beef"
+          },
+          "observed_flow": null
+        }
+      }
+    },
+    {
+      "type": "api_return",
+      "sequence": 96,
+      "function": "PassThruDisconnect",
+      "physical": true,
+      "cleanup": true,
+      "status": 0,
+      "input": {
+        "channel": 3,
+        "filter_id_present": false,
+        "filter_id": 0
+      },
+      "output": {},
+      "qpc_before": 3956184404879,
+      "qpc_after": 3956184409234,
+      "qpc_frequency": 10000000,
+      "api_elapsed_ticks": 4355,
+      "utc_filetime": 134352274482450562,
+      "state": {
+        "clock_model": "QPC_MONOTONIC_MINIMUM",
+        "monotonic_ms": 395618440,
+        "requested_baud": 62500,
+        "baud_set_accepted": true,
+        "clear_mask": 3,
+        "connection_contract": {
+          "protocol": 3,
+          "flags": 512,
+          "baud": 4800
+        },
+        "opened": true,
+        "device": 1,
+        "connected": false,
+        "channel": 3,
+        "kernel_filter": true,
+        "filter_stop_attempted": true,
+        "acknowledged_chunks": 15,
+        "start_acknowledged": true,
+        "identity_validated": true,
+        "bounded_validated": false,
+        "tx_attempts": 25,
+        "requested_configuration": [
+          {
+            "parameter": 22,
+            "value": 0
+          },
+          {
+            "parameter": 7,
+            "value": 1
+          },
+          {
+            "parameter": 10,
+            "value": 0
+          },
+          {
+            "parameter": 12,
+            "value": 0
+          },
+          {
+            "parameter": 3,
+            "value": 0
+          }
+        ],
+        "successful_set_calls": 5,
+        "observed_configuration": [
+          {
+            "parameter": 22,
+            "value": 0
+          },
+          {
+            "parameter": 7,
+            "value": 1
+          },
+          {
+            "parameter": 10,
+            "value": 0
+          },
+          {
+            "parameter": 12,
+            "value": 0
+          },
+          {
+            "parameter": 3,
+            "value": 0
+          }
+        ],
+        "effective_configuration_valid": true,
+        "filter": {
+          "requested": true,
+          "active": false,
+          "id": 1,
+          "type": 1,
+          "requested_mask_hex": "ffff",
+          "requested_pattern_hex": "beef",
+          "requested_flow_hex": null,
+          "protocol": 3,
+          "flags": 0,
+          "returned_objects_valid": true,
+          "observed_mask": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 2,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 2,
+            "data_truncated": false,
+            "data_hex": "ffff"
+          },
+          "observed_pattern": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 2,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 2,
+            "data_truncated": false,
+            "data_hex": "beef"
+          },
+          "observed_flow": null
+        }
+      }
+    },
+    {
+      "type": "api_return",
+      "sequence": 97,
+      "function": "PassThruClose",
+      "physical": true,
+      "cleanup": true,
+      "status": 0,
+      "input": {
+        "device": 1,
+        "filter_id_present": false,
+        "filter_id": 0
+      },
+      "output": {},
+      "qpc_before": 3956184409886,
+      "qpc_after": 3956184417127,
+      "qpc_frequency": 10000000,
+      "api_elapsed_ticks": 7241,
+      "utc_filetime": 134352274482458473,
+      "state": {
+        "clock_model": "QPC_MONOTONIC_MINIMUM",
+        "monotonic_ms": 395618441,
+        "requested_baud": 62500,
+        "baud_set_accepted": true,
+        "clear_mask": 3,
+        "connection_contract": {
+          "protocol": 3,
+          "flags": 512,
+          "baud": 4800
+        },
+        "opened": false,
+        "device": 1,
+        "connected": false,
+        "channel": 3,
+        "kernel_filter": true,
+        "filter_stop_attempted": true,
+        "acknowledged_chunks": 15,
+        "start_acknowledged": true,
+        "identity_validated": true,
+        "bounded_validated": false,
+        "tx_attempts": 25,
+        "requested_configuration": [
+          {
+            "parameter": 22,
+            "value": 0
+          },
+          {
+            "parameter": 7,
+            "value": 1
+          },
+          {
+            "parameter": 10,
+            "value": 0
+          },
+          {
+            "parameter": 12,
+            "value": 0
+          },
+          {
+            "parameter": 3,
+            "value": 0
+          }
+        ],
+        "successful_set_calls": 5,
+        "observed_configuration": [
+          {
+            "parameter": 22,
+            "value": 0
+          },
+          {
+            "parameter": 7,
+            "value": 1
+          },
+          {
+            "parameter": 10,
+            "value": 0
+          },
+          {
+            "parameter": 12,
+            "value": 0
+          },
+          {
+            "parameter": 3,
+            "value": 0
+          }
+        ],
+        "effective_configuration_valid": true,
+        "filter": {
+          "requested": true,
+          "active": false,
+          "id": 1,
+          "type": 1,
+          "requested_mask_hex": "ffff",
+          "requested_pattern_hex": "beef",
+          "requested_flow_hex": null,
+          "protocol": 3,
+          "flags": 0,
+          "returned_objects_valid": true,
+          "observed_mask": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 2,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 2,
+            "data_truncated": false,
+            "data_hex": "ffff"
+          },
+          "observed_pattern": {
+            "protocol": 3,
+            "rx_status": 0,
+            "tx_flags": 0,
+            "timestamp": 0,
+            "data_size": 2,
+            "extra_data_index": 0,
+            "buffer_capacity": 4128,
+            "logged_bytes": 2,
+            "data_truncated": false,
+            "data_hex": "beef"
+          },
+          "observed_flow": null
+        }
+      }
+    }
+  ],
+  "terminal": {
+    "type": "probe_terminal",
+    "physical": true,
+    "status": "FAIL_TERMINAL",
+    "protocol_complete": false,
+    "cleanup_confirmed": true,
+    "cleanup_error_mask": 0,
+    "log_failed": false,
+    "failure": "J2534 nonzero status; terminal without retry",
+    "state": {
+      "clock_model": "QPC_MONOTONIC_MINIMUM",
+      "monotonic_ms": 395618441,
+      "requested_baud": 62500,
+      "baud_set_accepted": true,
+      "clear_mask": 3,
+      "connection_contract": {
+        "protocol": 3,
+        "flags": 512,
+        "baud": 4800
+      },
+      "opened": false,
+      "device": 1,
+      "connected": false,
+      "channel": 3,
+      "kernel_filter": true,
+      "filter_stop_attempted": true,
+      "acknowledged_chunks": 15,
+      "start_acknowledged": true,
+      "identity_validated": true,
+      "bounded_validated": false,
+      "tx_attempts": 25,
+      "requested_configuration": [
+        {
+          "parameter": 22,
+          "value": 0
+        },
+        {
+          "parameter": 7,
+          "value": 1
+        },
+        {
+          "parameter": 10,
+          "value": 0
+        },
+        {
+          "parameter": 12,
+          "value": 0
+        },
+        {
+          "parameter": 3,
+          "value": 0
+        }
+      ],
+      "successful_set_calls": 5,
+      "observed_configuration": [
+        {
+          "parameter": 22,
+          "value": 0
+        },
+        {
+          "parameter": 7,
+          "value": 1
+        },
+        {
+          "parameter": 10,
+          "value": 0
+        },
+        {
+          "parameter": 12,
+          "value": 0
+        },
+        {
+          "parameter": 3,
+          "value": 0
+        }
+      ],
+      "effective_configuration_valid": true,
+      "filter": {
+        "requested": true,
+        "active": false,
+        "id": 1,
+        "type": 1,
+        "requested_mask_hex": "ffff",
+        "requested_pattern_hex": "beef",
+        "requested_flow_hex": null,
+        "protocol": 3,
+        "flags": 0,
+        "returned_objects_valid": true,
+        "observed_mask": {
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 2,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 2,
+          "data_truncated": false,
+          "data_hex": "ffff"
+        },
+        "observed_pattern": {
+          "protocol": 3,
+          "rx_status": 0,
+          "tx_flags": 0,
+          "timestamp": 0,
+          "data_size": 2,
+          "extra_data_index": 0,
+          "buffer_capacity": 4128,
+          "logged_bytes": 2,
+          "data_truncated": false,
+          "data_hex": "beef"
+        },
+        "observed_flow": null
+      }
+    }
+  },
+  "model_comparison": {
+    "instruction_count": 10327,
+    "model_response_bytes": 523,
+    "model_ROM_reads": 512,
+    "model_response_sha256": "796f64cefcd2b81c5c7662b2bdacad828c0a948c55bfdc5d002ac5c8da7f898e",
+    "same_fixed_request": true,
+    "model_is_silicon_timing": false,
+    "replayed_again": false
+  },
+  "conclusions": [
+    "The fixed read was transmitted exactly once after the entire upload/start/identity prefix passed.",
+    "228 provider-returned data bytes were obtained; this is not a zero-data failure.",
+    "A 217-byte candidate ROM payload prefix matches current.bin, followed by one observed byte mismatch. The expected full reply is incomplete and has no validated full-frame checksum.",
+    "The host accepted the record as an incomplete fragment, then stopped on the next nonzero provider return, exactly as qualified.",
+    "ERR_BUFFER_EMPTY=16 is not ERR_TIMEOUT=9 even though the call lasted approximately one second.",
+    "Provider/client cleanup and process exit are confirmed by retained evidence.",
+    "The physical bounded-read milestone failed; the condition for qualifying the final two-pass physical release is not met."
+  ],
+  "unknowns": [
+    "No independent physical bus trace or ECU CPU trace identifies whether the partial/different byte originated in ECU execution, serial signaling, adapter buffering, or provider handling.",
+    "The logged provider bytes do not prove what the ECU continued doing after the last received byte; no physical waveform, ECU CPU trace, or post-upload RAM readback was captured.",
+    "No claim is made that longer waits, retries, different filters or timing changes would correct this failure.",
+    "The simulator response proves behavior only under its declared UART/peripheral timing assumptions.",
+    "The matching block prefix is also present in stock; it cannot attest the whole current calibration."
+  ],
+  "allowed_next_scope": "Offline evidence analysis only after operator recovery; no retry or final two-pass physical qualification from this failed result."
+}

@@ -1,0 +1,127 @@
+"""Read-only comparison of sealed evidence. No imports of project code or execution."""
+from pathlib import Path
+import datetime,hashlib,json,re
+A=Path(r'C:\Dev\A2WC511R_Final\analysis\rk03_bounded_read_physical_20260930_01')
+ROOT=Path(r'C:\Dev\A2WC511R_RK03_BoundedReadPhysical');PACKAGE=ROOT/'bounded_read_physical'
+SESSION=ROOT/'physical_session/RK03_BOUNDED_ROM_READ_01'
+OLD=Path(r'C:\Dev\A2WC511R_RK03_KernelIdentityPhysical\physical_session\RK03_KERNEL_START_IDENTITY_01\native_api.jsonl')
+MODEL=Path(r'C:\Dev\A2WC511R_RK03_BoundedRomReadOffline\bounded_rom_read\contract\CONTRACT.json')
+CPU=Path(r'C:\Dev\A2WC511R_Final\analysis\rk03_bounded_rom_read_offline_20260930_01\instruction_review\replay_20260930T065049517214Z\INSTRUCTION_REPLAY.json')
+OUT=A/'failure_analysis'
+def pin(p):
+ p=Path(p);b=p.read_bytes();return dict(path=str(p),bytes=len(b),sha256=hashlib.sha256(b).hexdigest())
+def read(p):return json.loads(Path(p).read_text(encoding='utf-8-sig'))
+def jsonl(p):return [json.loads(s) for s in Path(p).read_text().splitlines()]
+def ms(r):return r['api_elapsed_ticks']*1000/r['qpc_frequency']
+def utc(r):return (datetime.datetime(1601,1,1,tzinfo=datetime.timezone.utc)+datetime.timedelta(microseconds=r['utc_filetime']/10)).isoformat()
+def key(seed):
+ table=[5,6,7,1,9,12,13,8,10,13,2,11,15,4,0,3,11,4,6,0,15,2,13,9,5,12,1,10,3,13,14,8]
+ keys=[0x88F0,0x6E74,0x6B70,0x3563,0x9D34,0xDBA3,0x503D,0xAFB8,0x3608,0x834F,0x3382,0x7CA3,0x437D,0x72EB,0x33BC,0x53DA]
+ l,r=int.from_bytes(seed[:2],'big'),int.from_bytes(seed[2:],'big')
+ for k in keys:
+  e=(r^k)*0x10001;v=sum(table[(e>>s)&31]<<s for s in (0,4,8,12));v=((v>>3)|(v<<13))&65535;l,r=r,l^v
+ return r.to_bytes(2,'big')+l.to_bytes(2,'big')
+checks=[]
+def check(ok,name):
+ if not ok:raise AssertionError(name)
+ checks.append(name)
+def save(p,obj):
+ with p.open('x',encoding='utf-8',newline='\n') as f:json.dump(obj,f,indent=2);f.write('\n')
+raw=SESSION/'native_api.jsonl';rawpin=pin(raw)
+check(rawpin['sha256']=='42c900bbfae9e2537615eb3fd0967e013d7d603d315968c1d59bbd0de701ba1f','fixed observed failed raw log pin')
+check(pin(OLD)['sha256']=='e6ac67a41cc98433fc56f2d5d0d9a8144ce836678a31094a108aff4187662e09','retained successful physical identity raw pin')
+check(pin(MODEL)['sha256']=='9dccc5043477150c479255803ea25f48fe815d5b254f9c045e30b5923327edcf','retained static model contract pin')
+check(pin(CPU)['sha256']=='c8a6e1f00bcf17686b6e193e572d70546c54642320e5a8cd39f4829aee6a5147','retained narrow instruction replay pin')
+rows=jsonl(raw);previous=jsonl(OLD);contract=read(A/'PHYSICAL_BOUNDED_REVIEW_CONTRACT.json');model=read(MODEL);cpu=read(CPU);execution=read(SESSION/'EXECUTION.json')
+returns=[r for r in rows if r.get('type')=='api_return'];intents=[r for r in rows if r.get('type')=='api_intent'];oldret=[r for r in previous if r.get('type')=='api_return']
+check(len(returns)==len(intents)==98 and len(rows)==198,'complete98 call pairs plus startup terminal')
+for n,(i,r) in enumerate(zip(intents,returns)):
+ check(i['sequence']==r['sequence']==n and i['function']==r['function'] and i['input']==r['input'],'ordered complete pair '+str(n))
+ check(r['qpc_after']>=r['qpc_before'] and r['api_elapsed_ticks']==r['qpc_after']-r['qpc_before'],'clock accounting '+str(n))
+ if 'esp_before' in r:check(r['esp_before']==r['esp_after'],'recorded ABI stack '+str(n))
+ if 'canaries_intact' in r['output']:check(r['output']['canaries_intact'],'output guards '+str(n))
+tx=[r for r in returns if r['function']=='PassThruWriteMsgs'];oldtx=[r for r in oldret if r['function']=='PassThruWriteMsgs']
+check(len(tx)==25 and len(oldtx)==24,'one new read only')
+stages=[];responses=[]
+for stage,w in enumerate(tx):
+ end=next(r['sequence'] for r in returns if r['sequence']>w['sequence'] and r['function']!='PassThruReadMsgs')
+ rx=[r for r in returns if w['sequence']<r['sequence']<end and r['function']=='PassThruReadMsgs']
+ data=b''.join(bytes.fromhex(r['output']['message']['data_hex']) for r in rx if r['status']==0 and r['output']['count']==1 and r['output']['message']['rx_status']==0)
+ sent=bytes.fromhex(w['input']['message']['data_hex']);responses.append(data)
+ expected=contract['ordered_requests'][stage]['wire_hex']
+ if stage==4:
+  body=bytes.fromhex('8010f0062702')+key(responses[3][6:10]);expected=(body+bytes([sum(body)%256])).hex()
+ check(w['status']==0 and w['output']['count']==1 and w['input']['message']==w['output']['message'] and sent.hex()==expected,'exact accepted TX '+str(stage))
+ if stage<24:
+  check(all(r['status']==0 and r['output']['count']==1 for r in rx),'successful prefix receive '+str(stage))
+  check(sum(data[:-1])%256==data[-1],'prefix checksum '+str(stage))
+  if stage==3:check(len(data)==11 and data[:6]==bytes.fromhex('80f010066701'),'dynamic seed framing')
+  else:check(data.hex()==contract['ordered_requests'][stage]['expected_reply_hex'],'exact prefix reply '+str(stage))
+ stages.append(dict(stage=stage,tx_sequence=w['sequence'],tx_line=2*w['sequence']+3,request_hex=sent.hex(),write_status=w['status'],write_count=w['output']['count'],write_ms=ms(w),receive_sequences=[r['sequence'] for r in rx],response_hex=data.hex(),response_bytes=len(data)))
+read_tx=tx[-1];rx=[returns[s] for s in stages[-1]['receive_sequences']];received=responses[-1];expected=bytes.fromhex(contract['bounded_read']['response'])
+check([r['sequence'] for r in rx]==[92,93,94],'three bounded receive calls')
+check([(r['status'],r['output']['count'],r['output']['message']['data_size']) for r in rx]==[(0,1,0),(0,1,228),(16,0,0)],'exact bounded statuses counts and lengths')
+check(rx[0]['output']['message']['rx_status']==2 and rx[1]['output']['message']['rx_status']==0,'empty SOM then data')
+different=[dict(frame_offset=i,rom_payload_offset=i-10,actual_hex=f'{b:02x}',expected_hex=f'{expected[i]:02x}') for i,b in enumerate(received) if b!=expected[i]]
+check(different==[dict(frame_offset=227,rom_payload_offset=217,actual_hex='f8',expected_hex='28')],'one byte divergence in observed extent')
+check(received[:227]==expected[:227] and len(expected)-len(received)==295,'227 frame bytes match then295 expected bytes unobserved')
+check(expected.hex()==model['frames'][24]['rx']==cpu['response_hex'] and cpu['request_hex']==stages[-1]['request_hex'],'static and actual-instruction models agree on fixed request and expected full reply')
+check(cpu['response_bytes']==523 and cpu['data_bytes']==512 and cpu['ROM_data_read_events']==512,'retained CPU model full read')
+for artifact in cpu['artifacts']:check(pin(artifact['path'])['sha256']==artifact['sha256'],'retained CPU artifact '+Path(artifact['path']).name)
+header=PACKAGE/'src/j2534_tactrix.h';headerlines=header.read_text().splitlines();defs={}
+for n,line in enumerate(headerlines,1):
+ m=re.match(r'#define\s+(STATUS_NOERROR|ERR_TIMEOUT|ERR_BUFFER_EMPTY)\s+(0x[0-9A-Fa-f]+)',line)
+ if m:defs[m[1]]=dict(value=int(m[2],16),source_line=n,source_text=line.strip())
+check(defs['ERR_BUFFER_EMPTY']['value']==16 and defs['ERR_TIMEOUT']['value']==9,'actual pinned header status meaning')
+check(pin(header)['sha256']=='25df54ce5e75ef81bef26c27c694ac82ab74959381bfbf4a6d79a9a68e5d179a','retained provider header pin')
+def normalize(obj):
+ if isinstance(obj,dict):return {k:normalize(v) for k,v in obj.items() if k not in ['timestamp','config_pointer','owned_buffer_pointer','monotonic_before_ms','monotonic_after_ms','minimum_qpc_ticks','elapsed_qpc_ticks','qpc_frequency','overshoot_qpc_ticks']}
+ if isinstance(obj,list):return [normalize(x) for x in obj]
+ return obj
+prefix_diffs=[]
+for new,old in zip(returns[:91],oldret[:91]):
+ check(new['sequence']==old['sequence'] and new['function']==old['function'] and new['status']==old['status']==0,'successful physical API prefix action '+str(new['sequence']))
+ for field in ['input','output']:
+  left,right=normalize(new[field]),normalize(old[field])
+  if left!=right:prefix_diffs.append(dict(sequence=new['sequence'],function=new['function'],field=field,current=left,previous=right))
+check({d['sequence'] for d in prefix_diffs}=={tx[3]['sequence']+2,tx[4]['sequence']},'only dynamic seed reply and key request differ in normalized prefix')
+nonzero=[r for r in returns if r['status']!=0];check(len(nonzero)==1 and nonzero[0]['sequence']==94,'first and only nonzero API return')
+check([r['function'] for r in returns[95:]]==['PassThruStopMsgFilter','PassThruDisconnect','PassThruClose'] and all(r['status']==0 and r.get('cleanup') for r in returns[95:]),'immediate successful cleanup without retry')
+terminal=rows[-1];check(terminal['status']=='FAIL_TERMINAL' and not terminal['protocol_complete'] and not terminal['state']['bounded_validated'] and terminal['cleanup_confirmed'] and terminal['cleanup_error_mask']==0 and not terminal['log_failed'],'honest failed terminal with cleanup confirmed')
+check(not any(r['type']=='bounded_read_result' for r in rows),'no complete bounded data result or successful comparison emitted')
+check(execution['exit_code']==1 and execution['process_exited'] and execution['bookkeeping_error'] is None,'confirmed child exit1')
+check(execution['qualification_sha256']==pin(A/'qualification/QUALIFICATION.json')['sha256'] and execution['executable_sha256']==pin(PACKAGE/'build_a/rk03_bounded_rom_read_physical32.exe')['sha256'],'physical certificate and executable binding')
+current=Path(contract['bounded_read']['current_rom']['path']).read_bytes();check(hashlib.sha256(current).hexdigest()==contract['bounded_read']['current_rom']['sha256'],'current ROM pin intact')
+check(received[10:227]==current[:217],'217 candidate ROM payload prefix bytes match')
+control_records=[r for r in returns if r['function'] in ['PassThruReadVersion','PassThruConnect','PassThruIoctl','PassThruStartMsgFilter','MonotonicMinimumWait']]
+inputpaths=[raw,OLD,MODEL,CPU,A/'PHYSICAL_BOUNDED_REVIEW_CONTRACT.json',A/'qualification/QUALIFICATION.json',SESSION/'EXECUTION.json',SESSION/'AUTHORIZATION.txt',SESSION/'launch.reserved',SESSION/'invocation.once',SESSION/'POSTEXIT_CLIENT_CHECK.json',PACKAGE/'src/bounded_response.hpp',PACKAGE/'src/probe_core.hpp',header,Path(__file__)]
+check(read(SESSION/'POSTEXIT_CLIENT_CHECK.json')['pass'] is True,'postexit client scan evidence PASS without rerunning it')
+observed_elapsed=(rx[-1]['qpc_after']-rx[0]['qpc_before'])*1000/rx[0]['qpc_frequency']
+report=dict(schema=1,status='PASS_EVIDENCE_REVIEW_OF_FAILED_PHYSICAL_RUN',physical_bounded_result='FAIL',created_utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),reviewer='passive_review',checks_passed=len(checks),checks=checks,inputs=[pin(p) for p in inputpaths],physical_operations_by_review=0,provider_loads_by_review=0,native_or_model_executions_by_review=0,execution=execution,startup=rows[0],stage_comparison=stages,prefix_comparison=dict(successful_calls=91,transmissions=24,normalized_differences=prefix_diffs,normalization=['Host timestamps and durations differ by session.','J2534 configuration buffer pointers are process-local and removed.','Provider message timestamps removed only from cross-session comparison; full original records remain pinned.'],old_seed_hex=bytes.fromhex(oldret[tx[3]['sequence']+2]['output']['message']['data_hex'])[6:10].hex(),new_seed_hex=responses[3][6:10].hex(),new_key_request=stages[4]['request_hex']),first_divergence=dict(byte_observation_sequence=93,source_line=189,frame_offset=227,rom_payload_offset=217,expected_hex='28',observed_hex='f8',preceding_frame_bytes_matching=227,matching_ROM_payload_prefix_bytes=217,received_frame_bytes=228,expected_frame_bytes=523,unobserved_expected_frame_bytes=295,observed_sha256=hashlib.sha256(received).hexdigest(),observed_hex=received.hex(),full_expected_hex=expected.hex(),all_differences_within_observed_extent=different,short_record_is_valid_additive_frame=False,short_record_last_hex='f8',sum_preceding_short_record_bytes_hex=f'{sum(received[:-1])%256:02x}',first_nonzero_api_sequence=94,first_nonzero_api_status=16,first_nonzero_api_symbol='ERR_BUFFER_EMPTY',native_terminal_reason=terminal['failure']),bounded_exchange_records=[dict(source_line=2*r['sequence']+3,utc=utc(r),elapsed_ms=ms(r),record=r) for r in [read_tx]+rx],timing=dict(read_write_ms=ms(read_tx),empty_SOM_read_ms=ms(rx[0]),partial_data_read_ms=ms(rx[1]),empty_buffer_read_ms=ms(rx[2]),all_receive_window_ms=observed_elapsed,whole_frame_deadline_ms=2000,api_read_timeout_ms=1000,terminal_due_to_nonzero_status_not_whole_deadline=True),configuration_records=control_records,status_definitions=defs,cleanup_records=returns[95:],terminal=terminal,model_comparison=dict(instruction_count=cpu['instruction_count'],model_response_bytes=cpu['response_bytes'],model_ROM_reads=cpu['ROM_data_read_events'],model_response_sha256=cpu['response_sha256'],same_fixed_request=True,model_is_silicon_timing=False,replayed_again=False),conclusions=['The fixed read was transmitted exactly once after the entire upload/start/identity prefix passed.','228 provider-returned data bytes were obtained; this is not a zero-data failure.','A 217-byte candidate ROM payload prefix matches current.bin, followed by one observed byte mismatch. The expected full reply is incomplete and has no validated full-frame checksum.','The host accepted the record as an incomplete fragment, then stopped on the next nonzero provider return, exactly as qualified.','ERR_BUFFER_EMPTY=16 is not ERR_TIMEOUT=9 even though the call lasted approximately one second.','Provider/client cleanup and process exit are confirmed by retained evidence.','The physical bounded-read milestone failed; the condition for qualifying the final two-pass physical release is not met.'],unknowns=['No independent physical bus trace or ECU CPU trace identifies whether the partial/different byte originated in ECU execution, serial signaling, adapter buffering, or provider handling.','The logged provider bytes do not prove what the ECU continued doing after the last received byte.','No claim is made that longer waits, retries, different filters or timing changes would correct this failure.','The simulator response proves behavior only under its declared UART/peripheral timing assumptions.','The matching block prefix is also present in stock; it cannot attest the whole current calibration.'],allowed_next_scope='Offline evidence analysis only after operator recovery; no retry or final two-pass physical qualification from this failed result.')
+save(OUT/'INDEPENDENT_PHYSICAL_REVIEW.json',report)
+md=f'''# Independent review of failed bounded read
+
+**Physical result: FAIL.** The single run exited1 with cleanup confirmed. The prior24 transmissions, all15 upload acknowledgements, kernel start, and identity passed. All91 preceding API calls match the successful identity session in function/order/status; normalized content differences are the new seed and derived key.
+
+The final fixed TX was `beef00080300000000000200ba` at API sequence91, status0/count1. Subsequent receives were:
+
+| API sequence | Status/count | Record | API elapsed |
+|---|---|---|---|
+|92|0 /1|Empty START_OF_MESSAGE|{ms(rx[0]):.4f} ms|
+|93|0 /1|228 data bytes, ExtraDataIndex228|{ms(rx[1]):.4f} ms|
+|94|16 /0|No additional bytes|{ms(rx[2]):.4f} ms|
+
+The first227 frame bytes match the expected523-byte response. At zero-based frame offset227, actual `F8` differs from expected `28` (candidate ROM payload offset217). Thus217 payload-prefix bytes match current.bin, one following byte differs, and295 expected frame bytes remain unobserved. The trailing `F8` is not a valid checksum for the preceding227 bytes; their additive checksum would be `39`. No complete response or validated512-byte read was produced.
+
+The first observed byte divergence is sequence93, raw log line189. The host treats this record as a permissible incomplete fragment, so its actual stopping condition is sequence94, raw line191: `ERR_BUFFER_EMPTY` (16), defined by the pinned Tactrix header at line252. `ERR_TIMEOUT` is9 at line245. The receive observation window was {observed_elapsed:.4f} ms; the terminal was caused by the nonzero provider status, not expiration of the2000 ms whole-frame deadline.
+
+The five initial SETs and GET readback, broad filter, requested200/100/200 ms waits,15625 baud SET, TX/RX clears7/8, then62500 baud SET and BEEF filter are retained. Baud SET acceptance is recorded; no effective baud GET is claimed. Stop-filter/disconnect/close each returned0, with no retry or later TX.
+
+The sealed static model and retained instruction replay expect the same fixed request and523-byte response (response SHA256 `{cpu['response_sha256']}`). The instruction replay recorded512 ROM loads and10327 instructions under declared simulated UART/peripheral timing. It was not rerun. It does not establish the physical cause of the divergence.
+
+Raw log SHA256: `{rawpin['sha256']}`. The JSON review preserves complete final request/receive records, configuration, timing, source line pointers, expected/observed bytes, prefix differences, and source hashes. It distinguishes observed bytes from a validated ROM read.
+
+**No root cause is proven. No correction, retry, or full two-pass physical release is qualified by this failed result.** Further work remains offline; operator recovery is handled separately.
+'''
+with (OUT/'INDEPENDENT_PHYSICAL_REVIEW.md').open('x',encoding='utf-8',newline='\n') as f:f.write(md)
+print(json.dumps(dict(status=report['status'],checks=len(checks),json=pin(OUT/'INDEPENDENT_PHYSICAL_REVIEW.json'),markdown=pin(OUT/'INDEPENDENT_PHYSICAL_REVIEW.md'),prefix_differences=len(prefix_diffs),read_window_ms=observed_elapsed)))

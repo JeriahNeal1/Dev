@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "status": "PASS",
+  "utc": "2026-09-30T07:34:13.325095+00:00",
+  "certificate": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_read_physical_20260930_01\\qualification\\QUALIFICATION.json",
+    "bytes": 1003527,
+    "sha256": "15ba34b4d14c17e104fe28163faf7afe6b3c11b067ecf15a3bc97f8af8b253d1"
+  },
+  "source_commit": "96f6c49030b2d1c694e388ba6a1925d62d83b56a",
+  "physical_executable": {
+    "path": "C:\\Dev\\A2WC511R_RK03_BoundedReadPhysical\\bounded_read_physical\\build_a\\rk03_bounded_rom_read_physical32.exe",
+    "bytes": 423424,
+    "sha256": "5a66a0848601c8564a6896ddabbc35af453179c68c79ec871bee6d73e120bfb9"
+  },
+  "verified_certificate_files": 3450,
+  "verified_snapshot_members": 39,
+  "checks_passed": 3653,
+  "summary": [
+    "All certificate files and top-level artifact pins match.",
+    "All compiled sources, toolchain and build evidence match both clean-build reports.",
+    "Canonical build manifests are identical; snapshot source bytes match current certified files.",
+    "New-session gates bind the exact certificate and remain unconsumed and unauthorized at observation.",
+    "Immutable certificate excludes mutable gates/checkpoint/current state."
+  ],
+  "gate_observation": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_read_physical_20260930_01\\BOUNDED_GATE_STATE.json",
+    "sha256_at_observation": "7fa626f22f2e0ba6828f3eb3d158da2674ff558c53976de2958f476759afdbb3",
+    "state": {
+      "session_id": "RK03_BOUNDED_ROM_READ_01",
+      "qualification_sha256": "15ba34b4d14c17e104fe28163faf7afe6b3c11b067ecf15a3bc97f8af8b253d1",
+      "status": "WAITING_IGNITION_OFF",
+      "probe_invocation_count": 0,
+      "launch_reserved": false,
+      "physical_authorization_received": false,
+      "completed_pre_probe_gates": [],
+      "completed_recovery_gates": [],
+      "commit_authorization": null,
+      "physical_state": "UNCONFIRMED_FOR_NEW_SESSION",
+      "engine": "OFF",
+      "operator_managed_physical_context": true,
+      "full_acquisition_allowed": false,
+      "retry_allowed": false,
+      "abort_requested": false,
+      "next_gate": "IGNITION OFF"
+    },
+    "note": "Point-in-time mutable state; later actual human receipts may change this file."
+  },
+  "review_source": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_read_physical_20260930_01\\independent_review\\check_packaging.py",
+    "bytes": 6256,
+    "sha256": "b99ffcee43ee9b29a04242f69f95c9a7d8dae1d9f1f7e83f45145928245c0102"
+  },
+  "physical_operations": 0,
+  "provider_loads": 0,
+  "native_executions": 0,
+  "old_tests_rerun": 0,
+  "blocking_findings": [],
+  "limits": [
+    "Read-only packaging audit; this report neither authorizes nor performs hardware activity.",
+    "Only the first512 bytes are compared; they equal current and stock and cannot attest a whole ROM."
+  ]
+}

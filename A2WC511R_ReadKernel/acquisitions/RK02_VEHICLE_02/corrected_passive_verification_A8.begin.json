@@ -1,0 +1,27 @@
+{
+  "utc": "2026-09-29T23:09:52.930302+00:00",
+  "command_argv": [
+    "C:\\Windows\\py.exe",
+    "-3.14",
+    "-B",
+    "C:\\Dev\\A2WC511R_Final\\passive_som01\\integrations\\prehardware\\capture.py",
+    "--backend",
+    "physical-j2534",
+    "--authorize-physical-read-only",
+    "--count",
+    "120",
+    "--interval-ms",
+    "250",
+    "--output",
+    "C:\\Dev\\A2WC511R_ReadKernel\\acquisitions\\RK02_VEHICLE_02\\corrected_passive_verification_A8.jsonl"
+  ],
+  "qualification": "C:\\Dev\\A2WC511R_Final\\passive_som01\\reports\\qualification_01\\QUALIFICATION.json",
+  "qualification_sha256": "58bf899d597a6a38dc3cb8d202e9dbee294e71636a56330b7ca8e3f50004d53b",
+  "broker_sha256": "beab515c4fa68cb9ed1bea2f54f40a43bcc01769f1bac01e0f26d69412ad8424",
+  "gate_authorization": "Exact user DONE G24 after G20-G23; latest directive automatically authorizes corrected passive only",
+  "mode": "Normal mode, ignition ON, engine OFF, green connectors DISCONNECTED, fans intentionally disconnected",
+  "numeric_voltage": null,
+  "voltage_policy": "Operator monitors",
+  "RK02_launch_count": 0,
+  "retry": false
+}

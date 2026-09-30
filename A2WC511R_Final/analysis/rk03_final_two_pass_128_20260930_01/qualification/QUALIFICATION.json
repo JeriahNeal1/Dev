@@ -1,0 +1,1901 @@
+{
+  "schema": 1,
+  "status": "PASS_OFFLINE_QUALIFIED_PHYSICAL_FINAL_TWO_PASS_128",
+  "utc": "2026-09-30T08:49:21.616976+00:00",
+  "branch": "rk03/final-two-pass-128",
+  "commit": "62a261d977beb952d6a2393b6de179fea4b6fff0",
+  "session_id": "RK03_FINAL_TWO_PASS_128_01",
+  "maximum_physical_invocations": 1,
+  "physical_authorization_received": false,
+  "requires_exact_human_authorization": "PROCEED RK03 FINAL TWO PASS ACQUISITION",
+  "physical_executable": {
+    "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\build_a\\rk03_final_two_pass_128_physical32.exe",
+    "bytes": 448000,
+    "sha256": "991492809897e3333fdc1422e70d70690906f59d722e1e99088fb55bd56432ce"
+  },
+  "second_clean_executable": {
+    "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\build_b\\rk03_final_two_pass_128_physical32.exe",
+    "bytes": 448000,
+    "sha256": "991492809897e3333fdc1422e70d70690906f59d722e1e99088fb55bd56432ce"
+  },
+  "review_contract": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_final_two_pass_128_20260930_01\\FINAL_TWO_PASS_REVIEW_CONTRACT.json",
+    "bytes": 18395,
+    "sha256": "22944aad65f7999f064c48acb2335ab4f871826aca770119d44b4d90fdc34ac9"
+  },
+  "kernel_sha256": "808a5523d47de11881bfc2ea06a35278aedb5122ed51e8110f817b3210adb653",
+  "entry": "FFFF3004",
+  "identity_ascii": "A2WC511R-RK02\u0000",
+  "fixed_reads": {
+    "ROM_start": 0,
+    "ROM_end_exclusive": 1048576,
+    "block_bytes": 128,
+    "blocks_per_pass": 8192,
+    "passes": 2,
+    "total_reads": 16384,
+    "total_payload_bytes": 2097152,
+    "first_address": 0,
+    "last_address": 1048448,
+    "frame_length": 13,
+    "response_length": 139,
+    "response_body_length": 134,
+    "fixed_schedule": {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_final_two_pass_128_20260930_01\\FIXED_READ_SCHEDULE.bin",
+      "bytes": 212992,
+      "sha256": "2d9c6c3d74100f476c7a81c57b8b2c86a5f047b52dedb40bf5d01f8ae996f2f2"
+    },
+    "address_rule": "(index % 8192) * 128",
+    "pass_rule": "index // 8192",
+    "index_range": [
+      0,
+      16384
+    ],
+    "no_gaps": true,
+    "no_overlaps": true,
+    "no_duplicate_addresses_within_pass": true
+  },
+  "bytes_per_output": 1048576,
+  "total_output_bytes": 2097152,
+  "maximum_requests": 16408,
+  "maximum_ROM_requests": 16384,
+  "pass_to_pass_identity_required": true,
+  "baseline_equality_required_for_transport": false,
+  "current_reference": {
+    "path": "C:\\Dev\\SubaruRoms\\current.bin",
+    "bytes": 1048576,
+    "sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2"
+  },
+  "arbitrary_read_allowed": false,
+  "third_pass_allowed": false,
+  "flash_allowed": false,
+  "retry_allowed": false,
+  "independent_reviews": [
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_final_two_pass_128_20260930_01\\independent_review\\REVIEW.json",
+      "bytes": 45551,
+      "sha256": "26f7a3f86f75d72e38b43e747b5cd5e58fada8c3780a4f6331b9c3a8437d0bd8"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_final_two_pass_128_20260930_01\\root_review\\REVIEW.json",
+      "bytes": 608644,
+      "sha256": "3433057aea42f085196f5f090cb02b7e950ba504dadb5beec1598122db9628eb"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_final_two_pass_128_20260930_01\\independent_review\\PACKAGING_REVIEW.json",
+      "bytes": 8778,
+      "sha256": "38a951f0da2d9237df7d082289a85692b0658956b3fc7f176b14c966436f2a0b"
+    }
+  ],
+  "native_test_report": {
+    "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\TEST_REPORT.json",
+    "bytes": 218250,
+    "sha256": "56f620bee03bd847413542caacbd1f5f9fa35db3d38f4ce07729208dfb7f38bf"
+  },
+  "native_cases_passed": 38,
+  "native_positive_cases": 4,
+  "native_negative_cases": 34,
+  "validator_tests": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_final_two_pass_128_20260930_01\\FINAL_VALIDATOR_TESTS.json",
+    "bytes": 15485,
+    "sha256": "3c5ef0e183c3eaef5a4f2a4342011e118449dca740eba516db4d4e5662b4dfa4"
+  },
+  "launcher_tests": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_final_two_pass_128_20260930_01\\LAUNCHER_TESTS.json",
+    "bytes": 1859,
+    "sha256": "ebac52c1afbe4eee5e02a5bcfd14da7d080fe3ca85056dbd1a04f6158f2eda25"
+  },
+  "recovery_tests": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_final_two_pass_128_20260930_01\\OEM_RETURN_CONTROL_TESTS.json",
+    "bytes": 1014,
+    "sha256": "a5b2a50e0829f1067146438b6b70e6abcb653cb2415745a1343e8005e645c16e"
+  },
+  "retained_physical128_result": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_128_20260930_01\\physical_result\\PHYSICAL_RESULT.json",
+    "bytes": 9812,
+    "sha256": "84b6a7cd1540540ade99aa2582723c91ac1c6efebf95ba04e37a3e6383fac754"
+  },
+  "retained_OEM_return": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_128_20260930_01\\oem_return_after_bounded_01\\OEM_RETURN_RESULT.json",
+    "bytes": 4020,
+    "sha256": "716619203ca7823e31b8a76f7884dc8332b08e3d49341a168b938b7bb5dc5e2f"
+  },
+  "source_snapshot": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_final_two_pass_128_20260930_01\\qualification\\SOURCE_SNAPSHOT.zip",
+    "bytes": 104410,
+    "sha256": "ed9d8f5df88d4cd16066c6188563ab3aee0d7ab6aa4d20ea245f82ffcaf647ab"
+  },
+  "canonical_build_manifest": {
+    "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\build_a\\REPRODUCIBLE_MANIFEST.json",
+    "bytes": 6395,
+    "sha256": "573ee19c11821dd0790d176bc8a476f219f02a083d09aab6fb31cfb51eba1502"
+  },
+  "files": [
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\OEM_RETURN_REUSE.json",
+      "bytes": 4450,
+      "sha256": "c2190d166c5d4ddab7a0b6e0e1aecbb54654d4ef96bf6e2d4bbf53980996867d"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_128_20260930_01\\FIXED_UPLOAD_128_MANIFEST.json",
+      "bytes": 9135,
+      "sha256": "b050503942079ad5392ca82f84aff18d414d4cb771e9d5217d3a934ca350fe4a"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_128_20260930_01\\oem_return_after_bounded_01\\OEM_RETURN_RESULT.json",
+      "bytes": 4020,
+      "sha256": "716619203ca7823e31b8a76f7884dc8332b08e3d49341a168b938b7bb5dc5e2f"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_128_20260930_01\\physical_result\\PHYSICAL_RESULT.json",
+      "bytes": 9812,
+      "sha256": "84b6a7cd1540540ade99aa2582723c91ac1c6efebf95ba04e37a3e6383fac754"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_128_20260930_01\\physical_review\\REVIEW.json",
+      "bytes": 9258,
+      "sha256": "19956576660399a231e7aa2a46210c9f0c59caaa3a43c1afb3a5edc3272f9492"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_128_20260930_01\\qualification\\QUALIFICATION.json",
+      "bytes": 367369,
+      "sha256": "a9080dae4b33766f7de2771ae5dbac575c5d8201096a52a3bf5611dcb926e26c"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_final_two_pass_128_20260930_01\\check_clients.ps1",
+      "bytes": 2187,
+      "sha256": "ed74ab449337a32be00870bde771a6927c46c767490c0776943e23768d8c2a93"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_final_two_pass_128_20260930_01\\complete_project.py",
+      "bytes": 4855,
+      "sha256": "5680ff1c7382195ad9c6d1d6028ceb8536d2cd4023801050f7ee0ccb50b9ff1b"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_final_two_pass_128_20260930_01\\FINAL_RUN_PLAN.md",
+      "bytes": 5595,
+      "sha256": "6638e755a725e53d47c5d59b4c36c9ba755a8c4ecebf1778a1fe0787fab52e01"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_final_two_pass_128_20260930_01\\FINAL_TWO_PASS_REVIEW_CONTRACT.json",
+      "bytes": 18395,
+      "sha256": "22944aad65f7999f064c48acb2335ab4f871826aca770119d44b4d90fdc34ac9"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_final_two_pass_128_20260930_01\\FINAL_VALIDATOR_TESTS.json",
+      "bytes": 15485,
+      "sha256": "3c5ef0e183c3eaef5a4f2a4342011e118449dca740eba516db4d4e5662b4dfa4"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_final_two_pass_128_20260930_01\\FIXED_READ_MANIFEST.json",
+      "bytes": 746,
+      "sha256": "f2d2112de424d5ca96470dab72402376407f79b828ff6fefca82fc5cbe2acde5"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_final_two_pass_128_20260930_01\\FIXED_READ_SCHEDULE.bin",
+      "bytes": 212992,
+      "sha256": "2d9c6c3d74100f476c7a81c57b8b2c86a5f047b52dedb40bf5d01f8ae996f2f2"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_final_two_pass_128_20260930_01\\independent_review\\PACKAGING_REVIEW.json",
+      "bytes": 8778,
+      "sha256": "38a951f0da2d9237df7d082289a85692b0658956b3fc7f176b14c966436f2a0b"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_final_two_pass_128_20260930_01\\independent_review\\REVIEW.json",
+      "bytes": 45551,
+      "sha256": "26f7a3f86f75d72e38b43e747b5cd5e58fada8c3780a4f6331b9c3a8437d0bd8"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_final_two_pass_128_20260930_01\\independent_review\\review_final_native.draft01_literal_check.py",
+      "bytes": 13506,
+      "sha256": "491c31ebe7641135b384ce1e0c6b9f341b7fc8249f26771e4bff6e47543f5fa7"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_final_two_pass_128_20260930_01\\independent_review\\review_final_native.py",
+      "bytes": 14191,
+      "sha256": "7b954cab3e96998f33df90664e967cd700bc4842949281082c61455a03a3927a"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_final_two_pass_128_20260930_01\\independent_review\\review_final_packaging.py",
+      "bytes": 9482,
+      "sha256": "babe431380b60e5f84b7e4d8943ff641b965ed051857d783bd2bf6e6b9886ce7"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_final_two_pass_128_20260930_01\\launch_final_once.py",
+      "bytes": 8720,
+      "sha256": "0660330474f65c5d3fdabc2a685af6480d113a1c827e50967ff1879d021dfead"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_final_two_pass_128_20260930_01\\launch_oem_return_once.py",
+      "bytes": 4316,
+      "sha256": "e685728424812a25534c2f0901fe9363e6f730d5cc6d1f59c07a128d4e9ddd2d"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_final_two_pass_128_20260930_01\\LAUNCHER_TESTS.json",
+      "bytes": 1859,
+      "sha256": "ebac52c1afbe4eee5e02a5bcfd14da7d080fe3ca85056dbd1a04f6158f2eda25"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_final_two_pass_128_20260930_01\\OEM_RETURN_CONTROL_TESTS.json",
+      "bytes": 1014,
+      "sha256": "a5b2a50e0829f1067146438b6b70e6abcb653cb2415745a1343e8005e645c16e"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_final_two_pass_128_20260930_01\\root_review\\REVIEW.json",
+      "bytes": 608644,
+      "sha256": "3433057aea42f085196f5f090cb02b7e950ba504dadb5beec1598122db9628eb"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_final_two_pass_128_20260930_01\\root_review\\SEALER_OPTIMIZED_REJECTION.json",
+      "bytes": 528,
+      "sha256": "52fc72845141e3fcd7da3b3396b7128368dbb6434eed682ca7a3938597c516b5"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_final_two_pass_128_20260930_01\\seal_final_result.py",
+      "bytes": 4313,
+      "sha256": "486ecfae3bcfcfaaa158c9a22303e746ef2b01f3b3146beea3e34eb6a41e515a"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_final_two_pass_128_20260930_01\\seal_oem_return_final.py",
+      "bytes": 5939,
+      "sha256": "51f98ab8c7c50545a5b8653fee639d0c9d4844cfbdfee63f0262c4c782d7cc20"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_final_two_pass_128_20260930_01\\test_final_validator.py",
+      "bytes": 5043,
+      "sha256": "b502cea13036a71c025ba0ed06996192332804e62ec43380fe5b6fdf54ce29a0"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_final_two_pass_128_20260930_01\\test_launcher_offline.py",
+      "bytes": 7864,
+      "sha256": "6da3acd7afbfa84995c5eea281aff7323958a5b5b1110d7902ae85887762cca7"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_final_two_pass_128_20260930_01\\test_oem_return_controls.py",
+      "bytes": 3584,
+      "sha256": "4323c55c40ba4003900d643a688e71b49b2fca4e1909978b1823bd6d8ba9f54f"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_final_two_pass_128_20260930_01\\validate_final.py",
+      "bytes": 12842,
+      "sha256": "75b5884fcefea655ff80f59e11752009a01615cae066963f463df290cd630bed"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\integrations\\m07\\backends.py",
+      "bytes": 8771,
+      "sha256": "745c151a77b0ba88135795c153297fca9bb0edbbaeaaa142827874b2938bcf61"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\integrations\\m07\\profile.json",
+      "bytes": 1520,
+      "sha256": "0641b0182360d8ff6cf77abab419b211340ba2b3456f51fa3cd4a0a464d3bc35"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\integrations\\m07\\protocol.py",
+      "bytes": 6498,
+      "sha256": "e9d062fcc4a2fb1b70ab04a35179d8fdfb6d2d1236f75cd05deb55d73f00e3ec"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\integrations\\prehardware\\broker.cpp",
+      "bytes": 11214,
+      "sha256": "cda81ee30ad2fda7e4ab62a7f445197974f3d15bab30ac55babdd9358fdf612c"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\integrations\\prehardware\\build\\broker.exe",
+      "bytes": 247808,
+      "sha256": "beab515c4fa68cb9ed1bea2f54f40a43bcc01769f1bac01e0f26d69412ad8424"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\integrations\\prehardware\\build\\BUILD_MANIFEST.json",
+      "bytes": 1474,
+      "sha256": "283ce6fa09ebe1953475528d996d95cc4b2b270a59adede1fd60f75b40c9fed4"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\integrations\\prehardware\\build\\fake_j2534.dll",
+      "bytes": 125952,
+      "sha256": "a39daea8186264c4d6b296ea9165b639aa8b34a7e5be8fd494b9e6e7851d82e7"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\integrations\\prehardware\\build_broker.py",
+      "bytes": 1819,
+      "sha256": "d6493fcfd4488a1b649d3c6ab5f887253c995d4ff4b7f03ac27a0079331e23c2"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\integrations\\prehardware\\capture.py",
+      "bytes": 3071,
+      "sha256": "d8fdab93292130a85e8d3a42b2ce0bd8a1b28d5ce65133a58171a5f0ed3bf3d7"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\integrations\\prehardware\\fake_j2534.cpp",
+      "bytes": 5618,
+      "sha256": "dc207066272805866b05fe66112f20695fbc092cce26ea6ba49336a503e8a9e3"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\integrations\\prehardware\\fake_j2534.def",
+      "bytes": 489,
+      "sha256": "3c8d7ce2c3b7065d004a5adf9f234990e8a050dcc897f8befbe5e6263f0a79ea"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\integrations\\prehardware\\j2534_abi.h",
+      "bytes": 717,
+      "sha256": "4e6773e43d48b633f56974c629bff1d2391f09088915ed04fdb8447475a40d56"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\integrations\\prehardware\\test_read_only.py",
+      "bytes": 12181,
+      "sha256": "95499df76876e7c5827bacd469d35aa90fec71c7899abdca2aabbff20abd043b"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\integrations\\prehardware\\test_start_of_message.py",
+      "bytes": 8082,
+      "sha256": "cb37e9e598ed910fcc7bce0dee22d5a5829eba09b3cc5ebc9022accb1fdc5e5b"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\integrations\\prehardware\\transport.py",
+      "bytes": 9973,
+      "sha256": "ad56f719f890630a214ce7010c444ae166058df30c43f79549bb5f20555fad04"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\qualify_offline.py",
+      "bytes": 9613,
+      "sha256": "aeb2048b3a623e5466e99b712a118f0348fe7dce611e7666a3b3ea9e1ddccaf0"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\reports\\local\\prehardware\\READ_ONLY_BACKEND_TESTS.json",
+      "bytes": 1931,
+      "sha256": "9815f27d11296b38de879a35b66e73dddc6444a8faa39005ad996d89565f34f9"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\reports\\local\\prehardware\\START_OF_MESSAGE_TESTS.json",
+      "bytes": 1235,
+      "sha256": "2909d1ccb333acf757d5067d0a659f4a166bc8e4f75498726bd8dd80d5d6c0b9"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\RELEASE_FREEZE.json",
+      "bytes": 4833,
+      "sha256": "788354d8be9a977d66901107982191f76ebe6c5a56082f0f8f2e5882858d9fb9"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_Bounded128Physical\\kernel128\\build\\a\\kernel.bin",
+      "bytes": 1808,
+      "sha256": "808a5523d47de11881bfc2ea06a35278aedb5122ed51e8110f817b3210adb653"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_Bounded128Physical\\kernel128\\build\\a\\manifest.json",
+      "bytes": 51117,
+      "sha256": "c62ceb64893e196888b103237aff03d02f30726ecb1765199d3979ca1211f5fc"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_Bounded128Physical\\physical_session\\RK03_BOUNDED_ROM_READ_128_01\\native_api.jsonl",
+      "bytes": 423991,
+      "sha256": "93d2ae9af66ab17c03af42926a5126fb35a83a197bb44721d1ee3521bcdaf380"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\.gitignore",
+      "bytes": 34,
+      "sha256": "a5f5ce95deb07cfa567f5940b9c17396b07bc9b3036b217c1ce57a1111d0ea00"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\build_a\\BUILD.json",
+      "bytes": 7489,
+      "sha256": "9dc4b80f12db169bf0c68172bb6e571cde6c053c52aa2bdaf6400b1483fca31e"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\build_a\\build.log",
+      "bytes": 309,
+      "sha256": "b5f3de449fb725eb148af621e4ea6b9f2463b8f53f6fd22011e760f10a57c493"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\build_a\\BUILD_INPUTS.json",
+      "bytes": 5608,
+      "sha256": "ff812b9b7f6d84922f20456d56c0ee480bf77f0b3e04bfedd79386ffe6c55117"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\build_a\\headers.txt",
+      "bytes": 5193,
+      "sha256": "5710944beb796128c44f68e1f6190275f8a05a24b36fc7186acd238c5d090f65"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\build_a\\imports.txt",
+      "bytes": 4364,
+      "sha256": "0f25fd898763c948aabe7387f682e1418015d5627f6514faba4adbf63837f3ab"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\build_a\\probe.obj",
+      "bytes": 1234606,
+      "sha256": "ea73bb70d3aa7dcbf247772c36ca4ffd4ef5e8bae251bc3ba9e9c0056153ff5e"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\build_a\\REPRODUCIBLE_MANIFEST.json",
+      "bytes": 6395,
+      "sha256": "573ee19c11821dd0790d176bc8a476f219f02a083d09aab6fb31cfb51eba1502"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\build_a\\resolved_compiler.txt",
+      "bytes": 113,
+      "sha256": "2d11feba000fb2cec4ab901ccdfbb1eb3b4d09d6fbdfea2ec03601b066c323f9"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\build_a\\resolved_linker.txt",
+      "bytes": 115,
+      "sha256": "bc2f12aae2edd58ee46ce1d73b7209fc2e1cfc5d2a550fbd7437715defa7631d"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\build_a\\rk03_final_two_pass_128_physical32.exe",
+      "bytes": 448000,
+      "sha256": "991492809897e3333fdc1422e70d70690906f59d722e1e99088fb55bd56432ce"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\build_b\\BUILD.json",
+      "bytes": 7489,
+      "sha256": "d7668d77a875d1b78e15ab0a4ccd61d1c92aedfb3d2e5c5455b06b431ec31c22"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\build_b\\build.log",
+      "bytes": 309,
+      "sha256": "b5f3de449fb725eb148af621e4ea6b9f2463b8f53f6fd22011e760f10a57c493"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\build_b\\BUILD_INPUTS.json",
+      "bytes": 5608,
+      "sha256": "ff812b9b7f6d84922f20456d56c0ee480bf77f0b3e04bfedd79386ffe6c55117"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\build_b\\headers.txt",
+      "bytes": 5193,
+      "sha256": "6d3b3d47427f33b783bd7e085237e1c10b6e488008c8a3a1b5696849e86580ab"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\build_b\\imports.txt",
+      "bytes": 4364,
+      "sha256": "a7133ca87a4bec4ffc221a21c285bcb911adcc6fc7c2110e875f2018201edfe5"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\build_b\\probe.obj",
+      "bytes": 1234606,
+      "sha256": "5b490e68741c8ad1e1978c0bafb86f5a4dd07de2fa2c5135a9f0437e09f4ad25"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\build_b\\REPRODUCIBLE_MANIFEST.json",
+      "bytes": 6395,
+      "sha256": "573ee19c11821dd0790d176bc8a476f219f02a083d09aab6fb31cfb51eba1502"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\build_b\\resolved_compiler.txt",
+      "bytes": 113,
+      "sha256": "2d11feba000fb2cec4ab901ccdfbb1eb3b4d09d6fbdfea2ec03601b066c323f9"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\build_b\\resolved_linker.txt",
+      "bytes": 115,
+      "sha256": "bc2f12aae2edd58ee46ce1d73b7209fc2e1cfc5d2a550fbd7437715defa7631d"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\build_b\\rk03_final_two_pass_128_physical32.exe",
+      "bytes": 448000,
+      "sha256": "991492809897e3333fdc1422e70d70690906f59d722e1e99088fb55bd56432ce"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\FINAL_RUN_PLAN.md",
+      "bytes": 5595,
+      "sha256": "6638e755a725e53d47c5d59b4c36c9ba755a8c4ecebf1778a1fe0787fab52e01"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\fixtures\\128_oracle.json",
+      "bytes": 116948,
+      "sha256": "fe211a6c727ccd12c0b15b62630fa41e8b81f3324bf324c7f6b1fbd53e48acde"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\fixtures\\full_upload_oracle.json",
+      "bytes": 12349,
+      "sha256": "df654c9c8b393ae19b5dcd0ba85f30ac6765f91c72112f8032ca07f418114b8e"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\fixtures\\identity_fixture_contract.json",
+      "bytes": 2368,
+      "sha256": "e0c1e17a46dced59dc98d51a69ed4ce05cae87b61aa3fcf5cc840601776dda2d"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\fixtures\\physical_first_chunk_replay.json",
+      "bytes": 6192,
+      "sha256": "f4bf8a26f009115d43059ec1ca42b906af89cc67a5d97c9cde1e11a324f41a13"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\INPUT_PINS.json",
+      "bytes": 1883,
+      "sha256": "387ba5bbb6777f545802d949b1f6a91e6f0646e58a62557ea8fefbadb7dfded0"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\README.md",
+      "bytes": 683,
+      "sha256": "71f1170ac43e6f892e163905c379189c1baea5fd83804c2537168e819331f6c8"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\release_controls\\check_clients.ps1",
+      "bytes": 2187,
+      "sha256": "ed74ab449337a32be00870bde771a6927c46c767490c0776943e23768d8c2a93"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\release_controls\\complete_project.py",
+      "bytes": 4855,
+      "sha256": "5680ff1c7382195ad9c6d1d6028ceb8536d2cd4023801050f7ee0ccb50b9ff1b"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\release_controls\\launch_final_once.py",
+      "bytes": 8720,
+      "sha256": "0660330474f65c5d3fdabc2a685af6480d113a1c827e50967ff1879d021dfead"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\release_controls\\launch_oem_return_once.py",
+      "bytes": 4316,
+      "sha256": "e685728424812a25534c2f0901fe9363e6f730d5cc6d1f59c07a128d4e9ddd2d"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\release_controls\\seal_final_result.py",
+      "bytes": 4313,
+      "sha256": "486ecfae3bcfcfaaa158c9a22303e746ef2b01f3b3146beea3e34eb6a41e515a"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\release_controls\\seal_oem_return_final.py",
+      "bytes": 5939,
+      "sha256": "51f98ab8c7c50545a5b8653fee639d0c9d4844cfbdfee63f0262c4c782d7cc20"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\release_controls\\test_final_validator.py",
+      "bytes": 5043,
+      "sha256": "b502cea13036a71c025ba0ed06996192332804e62ec43380fe5b6fdf54ce29a0"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\release_controls\\test_launcher_offline.py",
+      "bytes": 7864,
+      "sha256": "6da3acd7afbfa84995c5eea281aff7323958a5b5b1110d7902ae85887762cca7"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\release_controls\\test_oem_return_controls.py",
+      "bytes": 3584,
+      "sha256": "4323c55c40ba4003900d643a688e71b49b2fca4e1909978b1823bd6d8ba9f54f"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\release_controls\\validate_final.py",
+      "bytes": 12842,
+      "sha256": "75b5884fcefea655ff80f59e11752009a01615cae066963f463df290cd630bed"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\LATEST_QUALIFICATION.json",
+      "bytes": 283,
+      "sha256": "113f46f6e31451107326b85a608d2244ea6507d45d9e9eb6bd163b8744847e28"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\00_virtual_success.case.json",
+      "bytes": 5994,
+      "sha256": "5041817409b66ef0c46fe4087c890640d57dbea384d254fd6fd18f43638d221e"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\00_virtual_success.jsonl.gz",
+      "bytes": 3323743,
+      "sha256": "a54f1d5516d16899922809345bb4a13bb4721f7111b52f5a5c56fbf89a263d68"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\00_virtual_success.jsonl.images\\pass0.raw",
+      "bytes": 1048576,
+      "sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\00_virtual_success.jsonl.images\\pass1.raw",
+      "bytes": 1048576,
+      "sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\00_virtual_success.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\00_virtual_success.stdout.txt",
+      "bytes": 69,
+      "sha256": "709e5702aae49e494ef0717b13dfe0c66ab56833d2bf3d39634f985d1f95a262"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\01_virtual_success_changed_current.case.json",
+      "bytes": 6296,
+      "sha256": "4fc9cba212e8956df5373c4ac448d4cde7fa8ac2d50d82306a047f6f97370377"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\01_virtual_success_changed_current.jsonl.gz",
+      "bytes": 3317590,
+      "sha256": "5db3dbb0a359f6801a94d4d13fba20cd8984f3ee4dfbbaaadfe969f321e2d834"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\01_virtual_success_changed_current.jsonl.images\\pass0.raw",
+      "bytes": 1048576,
+      "sha256": "9cc942d4b66a440815ca45d2509699334c1ae7cdf9f5b3f67801664d897e0f4f"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\01_virtual_success_changed_current.jsonl.images\\pass1.raw",
+      "bytes": 1048576,
+      "sha256": "9cc942d4b66a440815ca45d2509699334c1ae7cdf9f5b3f67801664d897e0f4f"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\01_virtual_success_changed_current.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\01_virtual_success_changed_current.stdout.txt",
+      "bytes": 69,
+      "sha256": "709e5702aae49e494ef0717b13dfe0c66ab56833d2bf3d39634f985d1f95a262"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\02_virtual_success_indicators.case.json",
+      "bytes": 6093,
+      "sha256": "38836d416e9860eac83be7eaff7099993bd706930fa85a8472ae5b7aece18cbf"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\02_virtual_success_indicators.jsonl.gz",
+      "bytes": 3335931,
+      "sha256": "647673582cf63a61f7f042ac25590a5ed9174b7437ee1c7f30e0d17964e9c594"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\02_virtual_success_indicators.jsonl.images\\pass0.raw",
+      "bytes": 1048576,
+      "sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\02_virtual_success_indicators.jsonl.images\\pass1.raw",
+      "bytes": 1048576,
+      "sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\02_virtual_success_indicators.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\02_virtual_success_indicators.stdout.txt",
+      "bytes": 69,
+      "sha256": "709e5702aae49e494ef0717b13dfe0c66ab56833d2bf3d39634f985d1f95a262"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\03_virtual_bad_checksum_first.case.json",
+      "bytes": 4134,
+      "sha256": "50cef34ea09f0f513b4178cd49d1ce3599898cee41cfefa07ef11cfdba528409"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\03_virtual_bad_checksum_first.jsonl.gz",
+      "bytes": 11405,
+      "sha256": "7018cc0e25f927441db8c7d20220d360a517645a03b3eff2635ec02dcee8353b"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\03_virtual_bad_checksum_first.jsonl.images\\pass0.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\03_virtual_bad_checksum_first.jsonl.images\\pass1.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\03_virtual_bad_checksum_first.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\03_virtual_bad_checksum_first.stdout.txt",
+      "bytes": 45,
+      "sha256": "1c8b28be5141c546da21903ec93453ef5b701df00b878c2305f54163f3b06bb7"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\04_virtual_wrong_address_first.case.json",
+      "bytes": 4161,
+      "sha256": "2972c5ea3a4ddfb41c9d25c622cd673e3279c85265f4b01551c5d1f42e0d0fab"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\04_virtual_wrong_address_first.jsonl.gz",
+      "bytes": 11398,
+      "sha256": "806431ba6fd599f2132f4b47bcd7776cbf733906559918922f6668763c9d883c"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\04_virtual_wrong_address_first.jsonl.images\\pass0.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\04_virtual_wrong_address_first.jsonl.images\\pass1.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\04_virtual_wrong_address_first.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\04_virtual_wrong_address_first.stdout.txt",
+      "bytes": 45,
+      "sha256": "1c8b28be5141c546da21903ec93453ef5b701df00b878c2305f54163f3b06bb7"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\05_virtual_wrong_length_first.case.json",
+      "bytes": 4152,
+      "sha256": "66eca48fe7343d42b90274445dae8825d364846370b1db6aff9f91eacf4e85e0"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\05_virtual_wrong_length_first.jsonl.gz",
+      "bytes": 11441,
+      "sha256": "ad3c8f76eaa6de15905effe15f7199aef362c0a58357cd40b98c2142090ef530"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\05_virtual_wrong_length_first.jsonl.images\\pass0.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\05_virtual_wrong_length_first.jsonl.images\\pass1.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\05_virtual_wrong_length_first.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\05_virtual_wrong_length_first.stdout.txt",
+      "bytes": 45,
+      "sha256": "1c8b28be5141c546da21903ec93453ef5b701df00b878c2305f54163f3b06bb7"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\06_virtual_short_first.case.json",
+      "bytes": 4493,
+      "sha256": "6715436fe5b3f5953a5ad973517d4388ebc91eef312e2a4798c61f5cccbd9f40"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\06_virtual_short_first.jsonl.gz",
+      "bytes": 11470,
+      "sha256": "c87664bfa03f84d3b8d88b91f52e49ac6ca4ee354984c2eb2b028f4c3fcd6543"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\06_virtual_short_first.jsonl.images\\pass0.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\06_virtual_short_first.jsonl.images\\pass1.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\06_virtual_short_first.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\06_virtual_short_first.stdout.txt",
+      "bytes": 45,
+      "sha256": "1c8b28be5141c546da21903ec93453ef5b701df00b878c2305f54163f3b06bb7"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\07_virtual_missing_first.case.json",
+      "bytes": 3546,
+      "sha256": "7fd65902186ff5f62fd5035bcec2b3414faa997507f65da1d6033641b694a7b9"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\07_virtual_missing_first.jsonl.gz",
+      "bytes": 11376,
+      "sha256": "d2d2387af3a42da86a66f03d1d5181b0a8c17687cc67caf409313114ea7c3140"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\07_virtual_missing_first.jsonl.images\\pass0.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\07_virtual_missing_first.jsonl.images\\pass1.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\07_virtual_missing_first.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\07_virtual_missing_first.stdout.txt",
+      "bytes": 45,
+      "sha256": "1c8b28be5141c546da21903ec93453ef5b701df00b878c2305f54163f3b06bb7"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\08_virtual_duplicate_first.case.json",
+      "bytes": 4664,
+      "sha256": "987ee01c689c26c0864715be0f591a84e9d5efaca4f779c3d13267065a1e4ecf"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\08_virtual_duplicate_first.jsonl.gz",
+      "bytes": 11425,
+      "sha256": "29517ba85271c68a433ac7fa10281081a3e37459670200d16dbca545f729aefa"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\08_virtual_duplicate_first.jsonl.images\\pass0.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\08_virtual_duplicate_first.jsonl.images\\pass1.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\08_virtual_duplicate_first.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\08_virtual_duplicate_first.stdout.txt",
+      "bytes": 45,
+      "sha256": "1c8b28be5141c546da21903ec93453ef5b701df00b878c2305f54163f3b06bb7"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\09_virtual_reorder_first.case.json",
+      "bytes": 4107,
+      "sha256": "9ecbe3d8fa6a1bf98581af177435dade6b451615a217467577ff218161ecc194"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\09_virtual_reorder_first.jsonl.gz",
+      "bytes": 11460,
+      "sha256": "3444a369d2b8300974a1cdea02e451c5ea1c6d6ea423eeaf3028c8d738c2eab6"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\09_virtual_reorder_first.jsonl.images\\pass0.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\09_virtual_reorder_first.jsonl.images\\pass1.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\09_virtual_reorder_first.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\09_virtual_reorder_first.stdout.txt",
+      "bytes": 45,
+      "sha256": "1c8b28be5141c546da21903ec93453ef5b701df00b878c2305f54163f3b06bb7"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\10_virtual_status_failure_first.case.json",
+      "bytes": 3608,
+      "sha256": "3012a3b7e6a014b86ba63bfc55fc2bf99b9e8e9bff61f5e11bb09dc1e5d06fa7"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\10_virtual_status_failure_first.jsonl.gz",
+      "bytes": 11296,
+      "sha256": "d535af476882489339ecb68afb135777a3c7ec425463fde39bfb004ef3a801c8"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\10_virtual_status_failure_first.jsonl.images\\pass0.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\10_virtual_status_failure_first.jsonl.images\\pass1.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\10_virtual_status_failure_first.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\10_virtual_status_failure_first.stdout.txt",
+      "bytes": 45,
+      "sha256": "1c8b28be5141c546da21903ec93453ef5b701df00b878c2305f54163f3b06bb7"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\11_virtual_write_failure_first.case.json",
+      "bytes": 3183,
+      "sha256": "b024a564ec325e92335abd00dd2e7386c2f1ec93ad414f1e9c0e9a7661a0ce58"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\11_virtual_write_failure_first.jsonl.gz",
+      "bytes": 11264,
+      "sha256": "81dc21de836e9617bbf348ae214dbe9f650b89b20d7b419082a8c475b2c1bb9d"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\11_virtual_write_failure_first.jsonl.images\\pass0.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\11_virtual_write_failure_first.jsonl.images\\pass1.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\11_virtual_write_failure_first.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\11_virtual_write_failure_first.stdout.txt",
+      "bytes": 45,
+      "sha256": "1c8b28be5141c546da21903ec93453ef5b701df00b878c2305f54163f3b06bb7"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\12_virtual_bad_checksum_middle.case.json",
+      "bytes": 5277,
+      "sha256": "ed85a3224cc7140a3038a17069ea6b17b970e19cf0cb66adb340f73763a51971"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\12_virtual_bad_checksum_middle.jsonl.gz",
+      "bytes": 1654337,
+      "sha256": "c825b5bcfbb4e930cb291202cb125723d85356af2e3eb10a85eb9a4b37e11553"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\12_virtual_bad_checksum_middle.jsonl.images\\pass0.raw",
+      "bytes": 1048576,
+      "sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\12_virtual_bad_checksum_middle.jsonl.images\\pass1.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\12_virtual_bad_checksum_middle.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\12_virtual_bad_checksum_middle.stdout.txt",
+      "bytes": 47,
+      "sha256": "7016b5efcd3002a89c1b4d673507f1db783eb0496dc98195a5a71bc05be80733"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\13_virtual_wrong_address_middle.case.json",
+      "bytes": 5304,
+      "sha256": "ce3181e47ddca18d06e595e9b8562a7e85a891ab5650830229202854197f92f3"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\13_virtual_wrong_address_middle.jsonl.gz",
+      "bytes": 1656362,
+      "sha256": "df7f3308f4b509b06ae42c43ddaa5d96ef202b896f85c540b22eda520785de21"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\13_virtual_wrong_address_middle.jsonl.images\\pass0.raw",
+      "bytes": 1048576,
+      "sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\13_virtual_wrong_address_middle.jsonl.images\\pass1.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\13_virtual_wrong_address_middle.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\13_virtual_wrong_address_middle.stdout.txt",
+      "bytes": 47,
+      "sha256": "7016b5efcd3002a89c1b4d673507f1db783eb0496dc98195a5a71bc05be80733"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\14_virtual_status_failure_middle.case.json",
+      "bytes": 4751,
+      "sha256": "c4662a1ab365ac71fc9cf518013c7e0b8dce6a3f8cef16b59b967c3e79279c57"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\14_virtual_status_failure_middle.jsonl.gz",
+      "bytes": 1663449,
+      "sha256": "82ad710a32c2a87b6a5ed75de57126cf79125128e9d1ad02631686cc03c040f8"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\14_virtual_status_failure_middle.jsonl.images\\pass0.raw",
+      "bytes": 1048576,
+      "sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\14_virtual_status_failure_middle.jsonl.images\\pass1.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\14_virtual_status_failure_middle.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\14_virtual_status_failure_middle.stdout.txt",
+      "bytes": 47,
+      "sha256": "7016b5efcd3002a89c1b4d673507f1db783eb0496dc98195a5a71bc05be80733"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\15_virtual_bad_checksum_final.case.json",
+      "bytes": 5828,
+      "sha256": "a35b789f83dd81098a6c28806c38f3d0d11f474b0fbbfaf391f61bd9a85a7af5"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\15_virtual_bad_checksum_final.jsonl.gz",
+      "bytes": 3320567,
+      "sha256": "7c07bb5017ac5d9f9f66fb0d6d33add255cedc8b92e19e8e6a405957f19ebedd"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\15_virtual_bad_checksum_final.jsonl.images\\pass0.raw",
+      "bytes": 1048576,
+      "sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\15_virtual_bad_checksum_final.jsonl.images\\pass1.raw",
+      "bytes": 1048448,
+      "sha256": "39592171b28ea437cde47edd7dbd544f9290f8c3664ee491ef738b4396764db0"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\15_virtual_bad_checksum_final.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\15_virtual_bad_checksum_final.stdout.txt",
+      "bytes": 48,
+      "sha256": "2111561438b49f5fb1cc1ee47ffaedebb4fd9be1abc4b4a7bb8090250508c8a5"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\16_virtual_wrong_length_final.case.json",
+      "bytes": 5846,
+      "sha256": "3223b5ed87c746dfe91e9072feb4bf5ca2df4dea39330b3437bb7755ab51d263"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\16_virtual_wrong_length_final.jsonl.gz",
+      "bytes": 3309160,
+      "sha256": "9547a55efc714b4fc10fd2520c7b509a4e915e816d8949014e5a2ed9b1765b3c"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\16_virtual_wrong_length_final.jsonl.images\\pass0.raw",
+      "bytes": 1048576,
+      "sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\16_virtual_wrong_length_final.jsonl.images\\pass1.raw",
+      "bytes": 1048448,
+      "sha256": "39592171b28ea437cde47edd7dbd544f9290f8c3664ee491ef738b4396764db0"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\16_virtual_wrong_length_final.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\16_virtual_wrong_length_final.stdout.txt",
+      "bytes": 48,
+      "sha256": "2111561438b49f5fb1cc1ee47ffaedebb4fd9be1abc4b4a7bb8090250508c8a5"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\17_virtual_missing_final.case.json",
+      "bytes": 5240,
+      "sha256": "472de38b30d0c4f5721bd1fe13db10cd5639232cff8719f9ee472eb8c29f8848"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\17_virtual_missing_final.jsonl.gz",
+      "bytes": 3313828,
+      "sha256": "65b18ad22195610d390a93283475b31f4fb8dabe3b07e3fffa8316f5561c81a8"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\17_virtual_missing_final.jsonl.images\\pass0.raw",
+      "bytes": 1048576,
+      "sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\17_virtual_missing_final.jsonl.images\\pass1.raw",
+      "bytes": 1048448,
+      "sha256": "39592171b28ea437cde47edd7dbd544f9290f8c3664ee491ef738b4396764db0"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\17_virtual_missing_final.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\17_virtual_missing_final.stdout.txt",
+      "bytes": 48,
+      "sha256": "2111561438b49f5fb1cc1ee47ffaedebb4fd9be1abc4b4a7bb8090250508c8a5"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\18_virtual_reorder_final.case.json",
+      "bytes": 5801,
+      "sha256": "877ccd6223f46384fec00ba0bec05853adcae1d8bf0f888ee329a61b1973878e"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\18_virtual_reorder_final.jsonl.gz",
+      "bytes": 3309695,
+      "sha256": "17db546b84b803febbfeb33f0f12858b25e5d5c5f5d6d83c87eebad6d53f4868"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\18_virtual_reorder_final.jsonl.images\\pass0.raw",
+      "bytes": 1048576,
+      "sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\18_virtual_reorder_final.jsonl.images\\pass1.raw",
+      "bytes": 1048448,
+      "sha256": "39592171b28ea437cde47edd7dbd544f9290f8c3664ee491ef738b4396764db0"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\18_virtual_reorder_final.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\18_virtual_reorder_final.stdout.txt",
+      "bytes": 48,
+      "sha256": "2111561438b49f5fb1cc1ee47ffaedebb4fd9be1abc4b4a7bb8090250508c8a5"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\19_virtual_corruption_pass0_first.case.json",
+      "bytes": 4949,
+      "sha256": "079e62c9c339a87bb608c7994039f5a313acd3b716b1652e9c465edf5fa15947"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\19_virtual_corruption_pass0_first.jsonl.gz",
+      "bytes": 1657162,
+      "sha256": "82f75ffd63aadc769b3b27674bbad9934ee00900d95eaba4d6f18703275060fd"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\19_virtual_corruption_pass0_first.jsonl.images\\pass0.raw",
+      "bytes": 1048576,
+      "sha256": "9cc942d4b66a440815ca45d2509699334c1ae7cdf9f5b3f67801664d897e0f4f"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\19_virtual_corruption_pass0_first.jsonl.images\\pass1.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\19_virtual_corruption_pass0_first.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\19_virtual_corruption_pass0_first.stdout.txt",
+      "bytes": 47,
+      "sha256": "7016b5efcd3002a89c1b4d673507f1db783eb0496dc98195a5a71bc05be80733"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\20_virtual_corruption_pass0_middle.case.json",
+      "bytes": 5543,
+      "sha256": "d14ee12be8d0d4255d451ad09d0d1f06bbb8c8023dd9eb6daba0c51063fcfa02"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\20_virtual_corruption_pass0_middle.jsonl.gz",
+      "bytes": 2693274,
+      "sha256": "ab39426320363aa013e0e2b0a51e7831f34bcc861108fe552e4ec400c197471e"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\20_virtual_corruption_pass0_middle.jsonl.images\\pass0.raw",
+      "bytes": 1048576,
+      "sha256": "e47cbf9014b0ea7dfa7f987c889ac434b033a0d052ecf894f127f8f707087998"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\20_virtual_corruption_pass0_middle.jsonl.images\\pass1.raw",
+      "bytes": 524288,
+      "sha256": "c90c5a64c78877cdd485aea0faa99b1112f32bd693fa48d6636c293c5f66b054"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\20_virtual_corruption_pass0_middle.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\20_virtual_corruption_pass0_middle.stdout.txt",
+      "bytes": 48,
+      "sha256": "f3ae15e14761bcdaa178e60e450e2123b966837e68fb2fc0185ead2719ce010f"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\21_virtual_pass1_mismatch_final.case.json",
+      "bytes": 5512,
+      "sha256": "433c14ab7d311099da06746bc95c4d830e95bf34609676ab913f09ff87fb99cc"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\21_virtual_pass1_mismatch_final.jsonl.gz",
+      "bytes": 3318210,
+      "sha256": "0896b7d7f586ea24a6ec5b63991b9b09d5ee1c0ee8a1e91310c7d392a7f5b960"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\21_virtual_pass1_mismatch_final.jsonl.images\\pass0.raw",
+      "bytes": 1048576,
+      "sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\21_virtual_pass1_mismatch_final.jsonl.images\\pass1.raw",
+      "bytes": 1048448,
+      "sha256": "39592171b28ea437cde47edd7dbd544f9290f8c3664ee491ef738b4396764db0"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\21_virtual_pass1_mismatch_final.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\21_virtual_pass1_mismatch_final.stdout.txt",
+      "bytes": 48,
+      "sha256": "2111561438b49f5fb1cc1ee47ffaedebb4fd9be1abc4b4a7bb8090250508c8a5"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\22_virtual_output_write_first.case.json",
+      "bytes": 3586,
+      "sha256": "1563f4987e466e7f88a7ee3ca243a3d24ccb9f990ef03bbe42167da78e1e86ca"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\22_virtual_output_write_first.jsonl.gz",
+      "bytes": 11527,
+      "sha256": "b7e9e6016f3983b268fb34d622e57dbedad997a23794eea9872ddf501f476e78"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\22_virtual_output_write_first.jsonl.images\\pass0.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\22_virtual_output_write_first.jsonl.images\\pass1.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\22_virtual_output_write_first.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\22_virtual_output_write_first.stdout.txt",
+      "bytes": 45,
+      "sha256": "1c8b28be5141c546da21903ec93453ef5b701df00b878c2305f54163f3b06bb7"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\23_virtual_output_write_middle.case.json",
+      "bytes": 4728,
+      "sha256": "5ecb94e73841296de0043ee368382a57ca3e64c54bc2510b862ddf1b5e65dd04"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\23_virtual_output_write_middle.jsonl.gz",
+      "bytes": 1658413,
+      "sha256": "cff5700d4d81b93009273938a31e1b77df263bea3724f6edee6af3eb990b6d4c"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\23_virtual_output_write_middle.jsonl.images\\pass0.raw",
+      "bytes": 1048576,
+      "sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\23_virtual_output_write_middle.jsonl.images\\pass1.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\23_virtual_output_write_middle.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\23_virtual_output_write_middle.stdout.txt",
+      "bytes": 47,
+      "sha256": "7016b5efcd3002a89c1b4d673507f1db783eb0496dc98195a5a71bc05be80733"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\24_virtual_output_write_last.case.json",
+      "bytes": 5279,
+      "sha256": "b1e289ec38b0da15989f71d404e15c1687d590a96a1ae2579c50d5f3705e4b33"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\24_virtual_output_write_last.jsonl.gz",
+      "bytes": 3323609,
+      "sha256": "be34722e69fee8f84757652665ff4d71ce4d08e857f11960d2af9a22178df6c0"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\24_virtual_output_write_last.jsonl.images\\pass0.raw",
+      "bytes": 1048576,
+      "sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\24_virtual_output_write_last.jsonl.images\\pass1.raw",
+      "bytes": 1048448,
+      "sha256": "39592171b28ea437cde47edd7dbd544f9290f8c3664ee491ef738b4396764db0"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\24_virtual_output_write_last.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\24_virtual_output_write_last.stdout.txt",
+      "bytes": 48,
+      "sha256": "2111561438b49f5fb1cc1ee47ffaedebb4fd9be1abc4b4a7bb8090250508c8a5"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\25_virtual_output_flush.case.json",
+      "bytes": 5234,
+      "sha256": "c0dd106cb990f9dbc753209e7f1e26401261897f6781cc09aee8d2811da46b91"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\25_virtual_output_flush.jsonl.gz",
+      "bytes": 3313280,
+      "sha256": "fb9458e9bef33f66495cf354cec2c6eaecd62e7ff9f55adb3d2df444bab9d836"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\25_virtual_output_flush.jsonl.images\\pass0.raw",
+      "bytes": 1048576,
+      "sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\25_virtual_output_flush.jsonl.images\\pass1.raw",
+      "bytes": 1048576,
+      "sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\25_virtual_output_flush.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\25_virtual_output_flush.stdout.txt",
+      "bytes": 48,
+      "sha256": "2111561438b49f5fb1cc1ee47ffaedebb4fd9be1abc4b4a7bb8090250508c8a5"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\26_virtual_output_size.case.json",
+      "bytes": 5241,
+      "sha256": "9ce0497043b7db02c9ffc60332399b7e53bea3afe1c3cd6d15ccc101be766bbd"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\26_virtual_output_size.jsonl.gz",
+      "bytes": 3314628,
+      "sha256": "1603003b2fadc4bcd712e6e76ef09924cdc6f0aac69318d4eed4450e2a3fea47"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\26_virtual_output_size.jsonl.images\\pass0.raw",
+      "bytes": 1048576,
+      "sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\26_virtual_output_size.jsonl.images\\pass1.raw",
+      "bytes": 1048576,
+      "sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\26_virtual_output_size.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\26_virtual_output_size.stdout.txt",
+      "bytes": 48,
+      "sha256": "2111561438b49f5fb1cc1ee47ffaedebb4fd9be1abc4b4a7bb8090250508c8a5"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\27_virtual_cleanup_all_fail.case.json",
+      "bytes": 6053,
+      "sha256": "d25bcf0d0585b07a474a4d10444955d51a8e8a1be62d9a63d41fd35ea7dbc226"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\27_virtual_cleanup_all_fail.jsonl.gz",
+      "bytes": 3308039,
+      "sha256": "5ada0db0fcfb2a36c88ee7c3fbf75a9cc1613078dbd13a53215519d7eaf6580f"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\27_virtual_cleanup_all_fail.jsonl.images\\pass0.raw",
+      "bytes": 1048576,
+      "sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\27_virtual_cleanup_all_fail.jsonl.images\\pass1.raw",
+      "bytes": 1048576,
+      "sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\27_virtual_cleanup_all_fail.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\27_virtual_cleanup_all_fail.stdout.txt",
+      "bytes": 48,
+      "sha256": "2111561438b49f5fb1cc1ee47ffaedebb4fd9be1abc4b4a7bb8090250508c8a5"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\28_virtual_prefix_identity_bad.case.json",
+      "bytes": 3666,
+      "sha256": "83f1283996d1d5462e3111477c4c82c5821a23d6388d2ffbd80e17304f4a4eef"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\28_virtual_prefix_identity_bad.jsonl.gz",
+      "bytes": 9147,
+      "sha256": "6a4d572e281f6739e29434c91b01944f7aac4d1ed4e7d2fdae4196936abe3329"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\28_virtual_prefix_identity_bad.jsonl.images\\pass0.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\28_virtual_prefix_identity_bad.jsonl.images\\pass1.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\28_virtual_prefix_identity_bad.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\28_virtual_prefix_identity_bad.stdout.txt",
+      "bytes": 45,
+      "sha256": "9154a7975ce254a6f1faaafd61f87f9ea4d2ac9b39176a305718dbef62110c6b"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\29_virtual_prefix_upload_status16.case.json",
+      "bytes": 6086,
+      "sha256": "1ab051f91294d7852edc1b8506a8c8f1dbfea888b4c7b75c7a99a1e35e35193c"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\29_virtual_prefix_upload_status16.jsonl.gz",
+      "bytes": 8342,
+      "sha256": "fc7fef691fa649ece7746fa57b05e5394c9508fa04328822e1af8a547c75e2b0"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\29_virtual_prefix_upload_status16.jsonl.images\\pass0.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\29_virtual_prefix_upload_status16.jsonl.images\\pass1.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\29_virtual_prefix_upload_status16.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\29_virtual_prefix_upload_status16.stdout.txt",
+      "bytes": 45,
+      "sha256": "0f41e5415383109b83519eb5a7bbdbbc8fecec55b00687f70e769d2cc33c96ec"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\30_virtual_rx_protocol_first.case.json",
+      "bytes": 4126,
+      "sha256": "806a72754a26e2ff2f080d1c289b30e589dfc229cdbb5210f237f63e4cdb9630"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\30_virtual_rx_protocol_first.jsonl.gz",
+      "bytes": 11428,
+      "sha256": "bfde788ac726278d0913e4828ba8840c60b8ef06341a2a482970151fd415b25a"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\30_virtual_rx_protocol_first.jsonl.images\\pass0.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\30_virtual_rx_protocol_first.jsonl.images\\pass1.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\30_virtual_rx_protocol_first.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\30_virtual_rx_protocol_first.stdout.txt",
+      "bytes": 45,
+      "sha256": "1c8b28be5141c546da21903ec93453ef5b701df00b878c2305f54163f3b06bb7"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\31_virtual_rx_flags_first.case.json",
+      "bytes": 4099,
+      "sha256": "b9fa9036c66a359b12ff02e0241eb2c829dac13a4fcb3c0666def58d4ccd591b"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\31_virtual_rx_flags_first.jsonl.gz",
+      "bytes": 11409,
+      "sha256": "ee8d1c5359a76c68511ba3a93fec7093e50b98f4013dbc2a727e89f06ef2a108"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\31_virtual_rx_flags_first.jsonl.images\\pass0.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\31_virtual_rx_flags_first.jsonl.images\\pass1.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\31_virtual_rx_flags_first.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\31_virtual_rx_flags_first.stdout.txt",
+      "bytes": 45,
+      "sha256": "1c8b28be5141c546da21903ec93453ef5b701df00b878c2305f54163f3b06bb7"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\32_virtual_rx_count_first.case.json",
+      "bytes": 3816,
+      "sha256": "965d0f9b127ec670764db5f77fa5271c70ec0d0ad07df708e78586e3ed33b1c1"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\32_virtual_rx_count_first.jsonl.gz",
+      "bytes": 11424,
+      "sha256": "479ce1100643404c48bce60c4a453b101d403fa6c63c6a3d721539aa1a4800b9"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\32_virtual_rx_count_first.jsonl.images\\pass0.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\32_virtual_rx_count_first.jsonl.images\\pass1.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\32_virtual_rx_count_first.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\32_virtual_rx_count_first.stdout.txt",
+      "bytes": 45,
+      "sha256": "1c8b28be5141c546da21903ec93453ef5b701df00b878c2305f54163f3b06bb7"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\33_virtual_late_reply_first.case.json",
+      "bytes": 4130,
+      "sha256": "919153e0cf308bf6cff49035ca4629b63205e81381ea032c10e1da9e9afa334a"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\33_virtual_late_reply_first.jsonl.gz",
+      "bytes": 11396,
+      "sha256": "55c434bf594ad920670383a6856137ff4361fdf68812b5bbf04500270fde217e"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\33_virtual_late_reply_first.jsonl.images\\pass0.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\33_virtual_late_reply_first.jsonl.images\\pass1.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\33_virtual_late_reply_first.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\33_virtual_late_reply_first.stdout.txt",
+      "bytes": 45,
+      "sha256": "1c8b28be5141c546da21903ec93453ef5b701df00b878c2305f54163f3b06bb7"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\34_virtual_wrong_pass_first.case.json",
+      "bytes": 4134,
+      "sha256": "965a45d34ffc112f48b1e94ef14b5611ae9ac77e22633d4d2e212c82b5f71bb7"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\34_virtual_wrong_pass_first.jsonl.gz",
+      "bytes": 11406,
+      "sha256": "3879eb80cb0adc0efbe53eaef3c8f3a6dbb4b28151f187f4ffa6a74ee2d95651"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\34_virtual_wrong_pass_first.jsonl.images\\pass0.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\34_virtual_wrong_pass_first.jsonl.images\\pass1.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\34_virtual_wrong_pass_first.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\34_virtual_wrong_pass_first.stdout.txt",
+      "bytes": 45,
+      "sha256": "1c8b28be5141c546da21903ec93453ef5b701df00b878c2305f54163f3b06bb7"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\35_virtual_wrong_command_first.case.json",
+      "bytes": 4161,
+      "sha256": "6c9f7f9b721654bfcbd54c0de5436f22ce5c36217158c3aa52a4df11eb301081"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\35_virtual_wrong_command_first.jsonl.gz",
+      "bytes": 11492,
+      "sha256": "86f81a8da39f679e6c8a3b043890b37cff140c87be62848b20010b75cc1b79fc"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\35_virtual_wrong_command_first.jsonl.images\\pass0.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\35_virtual_wrong_command_first.jsonl.images\\pass1.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\35_virtual_wrong_command_first.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\35_virtual_wrong_command_first.stdout.txt",
+      "bytes": 45,
+      "sha256": "1c8b28be5141c546da21903ec93453ef5b701df00b878c2305f54163f3b06bb7"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\36_virtual_extra_byte_first.case.json",
+      "bytes": 4121,
+      "sha256": "aafbc97e51b97b28d19d16a10803780e59ae9a4ffd631393f10e13da3d87fdcb"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\36_virtual_extra_byte_first.jsonl.gz",
+      "bytes": 11425,
+      "sha256": "f0afdb2323cca0df13ba3496db794667fd2bb79c348c6e64ed58ee8fb8b75de3"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\36_virtual_extra_byte_first.jsonl.images\\pass0.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\36_virtual_extra_byte_first.jsonl.images\\pass1.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\36_virtual_extra_byte_first.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\36_virtual_extra_byte_first.stdout.txt",
+      "bytes": 45,
+      "sha256": "1c8b28be5141c546da21903ec93453ef5b701df00b878c2305f54163f3b06bb7"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\37_real_clock_success.case.json",
+      "bytes": 6028,
+      "sha256": "06b64fd263cdae2a5d7e69465bad2b0915ed45f6e151470f55e8aa7d424a048f"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\37_real_clock_success.jsonl",
+      "bytes": 70103544,
+      "sha256": "681b79e462cde21eb9824eab6d255aae04da92215d805bd389768aaa3d34f5a5"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\37_real_clock_success.jsonl.images\\pass0.raw",
+      "bytes": 1048576,
+      "sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\37_real_clock_success.jsonl.images\\pass1.raw",
+      "bytes": 1048576,
+      "sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\37_real_clock_success.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\37_real_clock_success.stdout.txt",
+      "bytes": 69,
+      "sha256": "709e5702aae49e494ef0717b13dfe0c66ab56833d2bf3d39634f985d1f95a262"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\reports\\qualification_20260930T083515367270Z\\TEST_REPORT.json",
+      "bytes": 218250,
+      "sha256": "56f620bee03bd847413542caacbd1f5f9fa35db3d38f4ce07729208dfb7f38bf"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\src\\bootstrap.hpp",
+      "bytes": 6793,
+      "sha256": "a7123b3471b01a4593eb7f5c58cd1117fe1fc9fb7a9fe7b27bdc1885833b80d9"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\src\\bootstrap_tests.hpp",
+      "bytes": 5071,
+      "sha256": "7754a91f18c89bcd1be4115faab9ce756085bb7488c60a0828112ee56305d402"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\src\\bounded_response.hpp",
+      "bytes": 1848,
+      "sha256": "dbc1de5fe3fe89a98527e371813632ce74d5dacf5f6e742f9807ae1ec13b7153"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\src\\common.hpp",
+      "bytes": 6279,
+      "sha256": "e502c533058d2aeed48d44d8b1c393bb75511a010ca37bf897bd4c341964d3d8"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\src\\current_physical_replay.hpp",
+      "bytes": 12395,
+      "sha256": "78f00d870f5363fca10d12f63756d038312530f053f8382896bbae0ea687eba4"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\src\\fake_backend.hpp",
+      "bytes": 7496,
+      "sha256": "283c886fb98bbe646766c0c6823940cfa6975fc6318ff1a9dcdb199bc8db97e8"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\src\\first_physical_replay.hpp",
+      "bytes": 3187,
+      "sha256": "40ef1c01b6504409a1408fd7312778b76b6a225462d288e6d0991b07953eb83c"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\src\\fixed_reads.hpp",
+      "bytes": 2281,
+      "sha256": "e3c110c31d712805cd817d7839faa90656d4ce5182fbbde01205d3f2f057b165"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\src\\fixtures.hpp",
+      "bytes": 5623,
+      "sha256": "d8f6c6f146a8421619ec8c0bb1b7ac16eedcd494e06067f60906ffd070d7bc23"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\src\\full_physical_replay.hpp",
+      "bytes": 6918,
+      "sha256": "30a2f426fad41e8f9c742cb726e6f9d04002d259382c2b131e47d4c66fba2060"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\src\\identity_physical_replay.hpp",
+      "bytes": 623,
+      "sha256": "84a549d8f5d6cbe87a133739519610b91661966bfa6932564cb9f1d548efec98"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\src\\identity_response.hpp",
+      "bytes": 1535,
+      "sha256": "fb6946295bf676bd43b0d84451a8565287a542b4396baeddba62aac448f4c326"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\src\\j2534_tactrix.h",
+      "bytes": 11763,
+      "sha256": "25df54ce5e75ef81bef26c27c694ac82ab74959381bfbf4a6d79a9a68e5d179a"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\src\\main.cpp",
+      "bytes": 3781,
+      "sha256": "76e0d61dd86661f3f7a62c1d4a45fe3a861236323c50ed5368e3faf7a1e021fe"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\src\\owned_artifact.h",
+      "bytes": 9306,
+      "sha256": "618fc9432d53c4a0a83de384b69b336f0eb744b19f88385a4d87b216b714c806"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\src\\physical_replay.hpp",
+      "bytes": 1814,
+      "sha256": "21440a7071d8f00289164a3c7f37d8f07138f8133ee45600d39e4f6f86fb8421"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\src\\pins.hpp",
+      "bytes": 764,
+      "sha256": "d83286e861ce2eb0bc55ff036c0913bff2a76901707142095ccea25ef69d0319"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\src\\prefix_fake.hpp",
+      "bytes": 28131,
+      "sha256": "038aeff025f41611959ffff4daa62647e3999e22376563cee511b392aa4abd61"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\src\\probe_core.hpp",
+      "bytes": 22909,
+      "sha256": "8ba054ba594384c032ce27c0680f8f15083d6ef370785bb8d08579137975aade"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\src\\protocol.hpp",
+      "bytes": 1077,
+      "sha256": "60ebaa976978f48352d67249817c43ff63c346ebd9df1cda68c36083c5c6a877"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\src\\raw_images.hpp",
+      "bytes": 4721,
+      "sha256": "d63ae667e42c8a55b270932f2180c25d3d214567d25f88ce7dabe4bba9e61ba6"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\src\\real_clock.hpp",
+      "bytes": 1064,
+      "sha256": "2e2358ba07c89e55520c64dc943b7fca750014753772ecd66e084d5ae2b37818"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\tools\\build_probe.cmd",
+      "bytes": 769,
+      "sha256": "12c7be4ed154922089b2544bc268c127443a1bc25fd86130382e3105839588d7"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\tools\\build_probe.py",
+      "bytes": 2149,
+      "sha256": "4e09200e9745b0082772de7cbd9f44da29cd8ac105fadea728278e47b85b1e50"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\tools\\root_review.py",
+      "bytes": 5961,
+      "sha256": "1bef3857307ae5b0fcda632c1b305cc59d0d9d95ae173daf9e19582e9ff4f725"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\tools\\seal_final_release.py",
+      "bytes": 9079,
+      "sha256": "157f4f1b6d101fe46708ea93964e441de68d0d61d1409357e07b5aa3c3cde12d"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\tools\\test_final_physical.py",
+      "bytes": 23632,
+      "sha256": "4e8f0c13852385346553578dec0485724c7331fb890a67ee08b5ec57aaed912e"
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\integrations\\prehardware\\build\\BUILD_MANIFEST.json",
+      "bytes": 1369,
+      "sha256": "749126e5cc5aad1ec6c3e321ebe0ecde75927db964ff6b573276076c6c0f45f7"
+    },
+    {
+      "path": "C:\\Dev\\SubaruRoms\\current.bin",
+      "bytes": 1048576,
+      "sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2"
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\op20pt32.dll",
+      "bytes": 1781896,
+      "sha256": "f432084801762d919a3c31974616e097562424470003edc4f4fb843df34103cf"
+    }
+  ],
+  "physical_operations_during_final_qualification": 0,
+  "provider_loads_during_final_qualification": 0,
+  "remaining_physical_milestone": "RK03 FINAL TWO-PASS 128-BYTE ACQUISITION",
+  "future_recovery": [
+    "IGNITION OFF",
+    "NORMAL MODE ON",
+    "PASSIVE BF/A8 OEM return",
+    "Raw comparison and integrity audit",
+    "Final checkpoint/tag",
+    "PROJECT COMPLETE"
+  ],
+  "limitations": [
+    "One128 physical block is established; sustained complete two-pass acquisition remains the single future physical milestone.",
+    "Prior512 cutoff cause remains unresolved; this release uses the physically proven128 frame and fixed128 kernel.",
+    "Fake execution proves host scheduling/validation, not silicon timing or long-session behavior.",
+    "Baseline equality is reported independently from transport two-pass identity."
+  ]
+}

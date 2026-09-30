@@ -1,0 +1,1738 @@
+{
+  "classification": "ARCHIVED_INSTALLED_HOST_WITH_FAKE_PROVIDER_NOT_PHYSICAL_PROOF",
+  "source": "C:\\Dev\\Astra_A2WC511R\\work\\ecuflash_dynamic\\qualification_01\\j2534.jsonl",
+  "source_sha256": "d0a9d8ae43b5595578f0c9989d04e33ec3e7b9dd31ed7c5d400694800937af28",
+  "events": [
+    {
+      "source_line": 37,
+      "physical": false,
+      "request": {
+        "baud": 4800,
+        "device": 1,
+        "flags": 512,
+        "function": "PassThruConnect",
+        "monotonic_counter": 952728130848,
+        "monotonic_frequency": 10000000,
+        "pid": 20580,
+        "protocol": 3,
+        "thread": 22052,
+        "utc_filetime": 134349271015770694
+      },
+      "response": {
+        "channel": 101,
+        "status": 0
+      },
+      "sequence": 36,
+      "server_monotonic_ns": 95272814234900,
+      "server_utc": "2026-09-26T20:11:41.578212+00:00",
+      "virtual_state_after": "OEM",
+      "virtual_state_before": "OEM"
+    },
+    {
+      "source_line": 38,
+      "physical": false,
+      "request": {
+        "config": [
+          {
+            "parameter": 22,
+            "value": 0
+          }
+        ],
+        "function": "PassThruIoctl",
+        "id": 101,
+        "input_pointer": 158001112,
+        "ioctl": 2,
+        "monotonic_counter": 952728159362,
+        "monotonic_frequency": 10000000,
+        "output_pointer": 0,
+        "pid": 20580,
+        "thread": 22052,
+        "utc_filetime": 134349271015799207
+      },
+      "response": {
+        "provenance": "FAKE_PROVIDER_CONFIGURATION_STORED_ONLY_NO_PHYSICAL_TIMING",
+        "status": 0
+      },
+      "sequence": 37,
+      "server_monotonic_ns": 95272816951900,
+      "server_utc": "2026-09-26T20:11:41.580928+00:00",
+      "virtual_state_after": "OEM",
+      "virtual_state_before": "OEM"
+    },
+    {
+      "source_line": 39,
+      "physical": false,
+      "request": {
+        "function": "PassThruIoctl",
+        "id": 101,
+        "input_pointer": 0,
+        "ioctl": 7,
+        "monotonic_counter": 952728183322,
+        "monotonic_frequency": 10000000,
+        "output_pointer": 0,
+        "pid": 20580,
+        "thread": 22052,
+        "utc_filetime": 134349271015823168
+      },
+      "response": {
+        "provenance": "FAKE_QUEUE_OR_FILTER_CLEANUP",
+        "status": 0
+      },
+      "sequence": 38,
+      "server_monotonic_ns": 95272819222600,
+      "server_utc": "2026-09-26T20:11:41.583200+00:00",
+      "virtual_state_after": "OEM",
+      "virtual_state_before": "OEM"
+    },
+    {
+      "source_line": 40,
+      "physical": false,
+      "request": {
+        "function": "PassThruIoctl",
+        "id": 101,
+        "input_pointer": 0,
+        "ioctl": 8,
+        "monotonic_counter": 952728205864,
+        "monotonic_frequency": 10000000,
+        "output_pointer": 0,
+        "pid": 20580,
+        "thread": 22052,
+        "utc_filetime": 134349271015845709
+      },
+      "response": {
+        "provenance": "FAKE_QUEUE_OR_FILTER_CLEANUP",
+        "status": 0
+      },
+      "sequence": 39,
+      "server_monotonic_ns": 95272821506900,
+      "server_utc": "2026-09-26T20:11:41.585484+00:00",
+      "virtual_state_after": "OEM",
+      "virtual_state_before": "OEM"
+    },
+    {
+      "source_line": 41,
+      "physical": false,
+      "request": {
+        "config": [
+          {
+            "parameter": 22,
+            "value": 0
+          }
+        ],
+        "function": "PassThruIoctl",
+        "id": 101,
+        "input_pointer": 158002264,
+        "ioctl": 2,
+        "monotonic_counter": 952728232266,
+        "monotonic_frequency": 10000000,
+        "output_pointer": 0,
+        "pid": 20580,
+        "thread": 22052,
+        "utc_filetime": 134349271015872112
+      },
+      "response": {
+        "provenance": "FAKE_PROVIDER_CONFIGURATION_STORED_ONLY_NO_PHYSICAL_TIMING",
+        "status": 0
+      },
+      "sequence": 40,
+      "server_monotonic_ns": 95272824133700,
+      "server_utc": "2026-09-26T20:11:41.588111+00:00",
+      "virtual_state_after": "OEM",
+      "virtual_state_before": "OEM"
+    },
+    {
+      "source_line": 42,
+      "physical": false,
+      "request": {
+        "config": [
+          {
+            "parameter": 7,
+            "value": 1
+          }
+        ],
+        "function": "PassThruIoctl",
+        "id": 101,
+        "input_pointer": 158002296,
+        "ioctl": 2,
+        "monotonic_counter": 952728254671,
+        "monotonic_frequency": 10000000,
+        "output_pointer": 0,
+        "pid": 20580,
+        "thread": 22052,
+        "utc_filetime": 134349271015894517
+      },
+      "response": {
+        "provenance": "FAKE_PROVIDER_CONFIGURATION_STORED_ONLY_NO_PHYSICAL_TIMING",
+        "status": 0
+      },
+      "sequence": 41,
+      "server_monotonic_ns": 95272826361300,
+      "server_utc": "2026-09-26T20:11:41.590339+00:00",
+      "virtual_state_after": "OEM",
+      "virtual_state_before": "OEM"
+    },
+    {
+      "source_line": 43,
+      "physical": false,
+      "request": {
+        "config": [
+          {
+            "parameter": 10,
+            "value": 0
+          }
+        ],
+        "function": "PassThruIoctl",
+        "id": 101,
+        "input_pointer": 158002296,
+        "ioctl": 2,
+        "monotonic_counter": 952728276791,
+        "monotonic_frequency": 10000000,
+        "output_pointer": 0,
+        "pid": 20580,
+        "thread": 22052,
+        "utc_filetime": 134349271015916636
+      },
+      "response": {
+        "provenance": "FAKE_PROVIDER_CONFIGURATION_STORED_ONLY_NO_PHYSICAL_TIMING",
+        "status": 0
+      },
+      "sequence": 42,
+      "server_monotonic_ns": 95272828636600,
+      "server_utc": "2026-09-26T20:11:41.592614+00:00",
+      "virtual_state_after": "OEM",
+      "virtual_state_before": "OEM"
+    },
+    {
+      "source_line": 44,
+      "physical": false,
+      "request": {
+        "config": [
+          {
+            "parameter": 12,
+            "value": 0
+          }
+        ],
+        "function": "PassThruIoctl",
+        "id": 101,
+        "input_pointer": 158002296,
+        "ioctl": 2,
+        "monotonic_counter": 952728300377,
+        "monotonic_frequency": 10000000,
+        "output_pointer": 0,
+        "pid": 20580,
+        "thread": 22052,
+        "utc_filetime": 134349271015940222
+      },
+      "response": {
+        "provenance": "FAKE_PROVIDER_CONFIGURATION_STORED_ONLY_NO_PHYSICAL_TIMING",
+        "status": 0
+      },
+      "sequence": 43,
+      "server_monotonic_ns": 95272831070200,
+      "server_utc": "2026-09-26T20:11:41.595045+00:00",
+      "virtual_state_after": "OEM",
+      "virtual_state_before": "OEM"
+    },
+    {
+      "source_line": 45,
+      "physical": false,
+      "request": {
+        "config": [
+          {
+            "parameter": 3,
+            "value": 0
+          }
+        ],
+        "function": "PassThruIoctl",
+        "id": 101,
+        "input_pointer": 158002296,
+        "ioctl": 2,
+        "monotonic_counter": 952728334677,
+        "monotonic_frequency": 10000000,
+        "output_pointer": 0,
+        "pid": 20580,
+        "thread": 22052,
+        "utc_filetime": 134349271015974522
+      },
+      "response": {
+        "provenance": "FAKE_PROVIDER_CONFIGURATION_STORED_ONLY_NO_PHYSICAL_TIMING",
+        "status": 0
+      },
+      "sequence": 44,
+      "server_monotonic_ns": 95272834419700,
+      "server_utc": "2026-09-26T20:11:41.598397+00:00",
+      "virtual_state_after": "OEM",
+      "virtual_state_before": "OEM"
+    },
+    {
+      "source_line": 46,
+      "physical": false,
+      "request": {
+        "function": "PassThruIoctl",
+        "id": 101,
+        "input_pointer": 0,
+        "ioctl": 7,
+        "monotonic_counter": 952728357387,
+        "monotonic_frequency": 10000000,
+        "output_pointer": 0,
+        "pid": 20580,
+        "thread": 22052,
+        "utc_filetime": 134349271015997233
+      },
+      "response": {
+        "provenance": "FAKE_QUEUE_OR_FILTER_CLEANUP",
+        "status": 0
+      },
+      "sequence": 45,
+      "server_monotonic_ns": 95272836663400,
+      "server_utc": "2026-09-26T20:11:41.600639+00:00",
+      "virtual_state_after": "OEM",
+      "virtual_state_before": "OEM"
+    },
+    {
+      "source_line": 47,
+      "physical": false,
+      "request": {
+        "function": "PassThruIoctl",
+        "id": 101,
+        "input_pointer": 0,
+        "ioctl": 8,
+        "monotonic_counter": 952728380303,
+        "monotonic_frequency": 10000000,
+        "output_pointer": 0,
+        "pid": 20580,
+        "thread": 22052,
+        "utc_filetime": 134349271016020148
+      },
+      "response": {
+        "provenance": "FAKE_QUEUE_OR_FILTER_CLEANUP",
+        "status": 0
+      },
+      "sequence": 46,
+      "server_monotonic_ns": 95272839016500,
+      "server_utc": "2026-09-26T20:11:41.602994+00:00",
+      "virtual_state_after": "OEM",
+      "virtual_state_before": "OEM"
+    },
+    {
+      "source_line": 48,
+      "physical": false,
+      "request": {
+        "channel": 101,
+        "filter_type": 1,
+        "flow": {
+          "data_hex": "00000000",
+          "extra": 0,
+          "protocol": 3,
+          "rx_status": 0,
+          "timestamp": 0,
+          "tx_flags": 0
+        },
+        "function": "PassThruStartMsgFilter",
+        "mask": {
+          "data_hex": "00000000",
+          "extra": 0,
+          "protocol": 3,
+          "rx_status": 0,
+          "timestamp": 0,
+          "tx_flags": 0
+        },
+        "monotonic_counter": 952728404727,
+        "monotonic_frequency": 10000000,
+        "pattern": {
+          "data_hex": "00000000",
+          "extra": 0,
+          "protocol": 3,
+          "rx_status": 0,
+          "timestamp": 0,
+          "tx_flags": 0
+        },
+        "pid": 20580,
+        "thread": 22052,
+        "utc_filetime": 134349271016044573
+      },
+      "response": {
+        "id": 1,
+        "status": 0
+      },
+      "sequence": 47,
+      "server_monotonic_ns": 95272841556800,
+      "server_utc": "2026-09-26T20:11:41.605534+00:00",
+      "virtual_state_after": "OEM",
+      "virtual_state_before": "OEM"
+    },
+    {
+      "source_line": 49,
+      "physical": false,
+      "request": {
+        "device": 1,
+        "function": "PassThruSetProgrammingVoltage",
+        "monotonic_counter": 952728429335,
+        "monotonic_frequency": 10000000,
+        "pid": 20580,
+        "pin": 9,
+        "thread": 22052,
+        "utc_filetime": 134349271016069181,
+        "voltage": 4294967295
+      },
+      "response": {
+        "provenance": "OBSERVED_INSTALLED_READ_PIN9_VOLTAGE_OFF; VENDOR_HEADER_FFFFFFFF; NO_ELECTRICAL_EFFECT",
+        "status": 0,
+        "virtual_pin9": "OFF"
+      },
+      "sequence": 48,
+      "server_monotonic_ns": 95272843933800,
+      "server_utc": "2026-09-26T20:11:41.607911+00:00",
+      "virtual_state_after": "OEM",
+      "virtual_state_before": "OEM"
+    },
+    {
+      "source_line": 50,
+      "physical": false,
+      "request": {
+        "function": "PassThruIoctl",
+        "id": 101,
+        "input_pointer": 0,
+        "ioctl": 7,
+        "monotonic_counter": 952729962940,
+        "monotonic_frequency": 10000000,
+        "output_pointer": 0,
+        "pid": 20580,
+        "thread": 22052,
+        "utc_filetime": 134349271017602784
+      },
+      "response": {
+        "provenance": "FAKE_QUEUE_OR_FILTER_CLEANUP",
+        "status": 0
+      },
+      "sequence": 49,
+      "server_monotonic_ns": 95272997712900,
+      "server_utc": "2026-09-26T20:11:41.761688+00:00",
+      "virtual_state_after": "OEM",
+      "virtual_state_before": "OEM"
+    },
+    {
+      "source_line": 51,
+      "physical": false,
+      "request": {
+        "function": "PassThruIoctl",
+        "id": 101,
+        "input_pointer": 0,
+        "ioctl": 8,
+        "monotonic_counter": 952729991508,
+        "monotonic_frequency": 10000000,
+        "output_pointer": 0,
+        "pid": 20580,
+        "thread": 22052,
+        "utc_filetime": 134349271017631352
+      },
+      "response": {
+        "provenance": "FAKE_QUEUE_OR_FILTER_CLEANUP",
+        "status": 0
+      },
+      "sequence": 50,
+      "server_monotonic_ns": 95273000129200,
+      "server_utc": "2026-09-26T20:11:41.764105+00:00",
+      "virtual_state_after": "OEM",
+      "virtual_state_before": "OEM"
+    },
+    {
+      "source_line": 52,
+      "physical": false,
+      "request": {
+        "channel": 101,
+        "count": 1,
+        "function": "PassThruWriteMsgs",
+        "messages": [
+          {
+            "data_hex": "8010f001bf40",
+            "extra": 0,
+            "protocol": 3,
+            "rx_status": 0,
+            "timestamp": 157994390,
+            "tx_flags": 0
+          }
+        ],
+        "monotonic_counter": 952730016586,
+        "monotonic_frequency": 10000000,
+        "pid": 20580,
+        "thread": 22052,
+        "timeout": 400,
+        "utc_filetime": 134349271017656432
+      },
+      "response": {
+        "count": 1,
+        "delivery_events": [
+          {
+            "kind": "ECU_MODEL_REPLY",
+            "provenance": {
+              "basis": "ACTUAL_STOCK_BF_PRODUCER_BYTES_REPLAYED_VIRTUALLY",
+              "classification": "VIRTUAL_RESPONSE_HYPOTHESIS",
+              "current_rom_identified": false,
+              "ecu_id": "2F12515306",
+              "kernel_executed": false,
+              "not_vehicle_telemetry": true,
+              "reference_sha256": "9e8061a9ba08c8d9adb0e908282bbd6ee9b072bd7a0f0e645db171d086fb26fe",
+              "request_event_index": 1,
+              "response_mask_hypothesis": "80"
+            },
+            "queued": true,
+            "reason": "PASS_FILTER_MATCH",
+            "wire_hex": "80f01039ffa210112f1251530673facba62b81fea800000060ce54f9b1e4000c200000000000dc00005d1f3080f226000043fb00e1000000000000c1f0c2"
+          }
+        ],
+        "provenance": "TX_ACCEPTANCE_IS_NOT_ECU_ACKNOWLEDGEMENT",
+        "status": 0,
+        "virtual_events": [
+          {
+            "classification": "HYPOTHETICAL_REPLY",
+            "index": 1,
+            "physical": false,
+            "protocol_id": 3,
+            "reason": null,
+            "replies": [
+              {
+                "protocol_id": 3,
+                "provenance": {
+                  "basis": "ACTUAL_STOCK_BF_PRODUCER_BYTES_REPLAYED_VIRTUALLY",
+                  "classification": "VIRTUAL_RESPONSE_HYPOTHESIS",
+                  "current_rom_identified": false,
+                  "ecu_id": "2F12515306",
+                  "kernel_executed": false,
+                  "not_vehicle_telemetry": true,
+                  "reference_sha256": "9e8061a9ba08c8d9adb0e908282bbd6ee9b072bd7a0f0e645db171d086fb26fe",
+                  "request_event_index": 1,
+                  "response_mask_hypothesis": "80"
+                },
+                "wire_hex": "80f01039ffa210112f1251530673facba62b81fea800000060ce54f9b1e4000c200000000000dc00005d1f3080f226000043fb00e1000000000000c1f0c2"
+              }
+            ],
+            "stage_after": "IDENTIFIED",
+            "stage_before": "OEM",
+            "timestamp_us": null,
+            "wire_hex": "8010f001bf40",
+            "wire_type": "bytes"
+          }
+        ]
+      },
+      "sequence": 51,
+      "server_monotonic_ns": 95273002723900,
+      "server_utc": "2026-09-26T20:11:41.766701+00:00",
+      "virtual_state_after": "IDENTIFIED",
+      "virtual_state_before": "OEM"
+    },
+    {
+      "source_line": 53,
+      "physical": false,
+      "request": {
+        "channel": 101,
+        "count": 1,
+        "function": "PassThruReadMsgs",
+        "monotonic_counter": 952730042243,
+        "monotonic_frequency": 10000000,
+        "pid": 20580,
+        "thread": 22052,
+        "timeout": 400,
+        "utc_filetime": 134349271017682089
+      },
+      "response": {
+        "messages": [
+          {
+            "data_hex": "80f01039ffa210112f1251530673facba62b81fea800000060ce54f9b1e4000c200000000000dc00005d1f3080f226000043fb00e1000000000000c1f0c2",
+            "extra": 62,
+            "protocol": 3,
+            "provenance": {
+              "basis": "ACTUAL_STOCK_BF_PRODUCER_BYTES_REPLAYED_VIRTUALLY",
+              "classification": "VIRTUAL_RESPONSE_HYPOTHESIS",
+              "current_rom_identified": false,
+              "ecu_id": "2F12515306",
+              "kernel_executed": false,
+              "not_vehicle_telemetry": true,
+              "reference_sha256": "9e8061a9ba08c8d9adb0e908282bbd6ee9b072bd7a0f0e645db171d086fb26fe",
+              "request_event_index": 1,
+              "response_mask_hypothesis": "80",
+              "timestamp_origin": "SYNTHETIC_ZERO_UNTIMED"
+            },
+            "rx_status": 0,
+            "timestamp": 0,
+            "tx_flags": 0
+          }
+        ],
+        "provenance": "FAKE_IMMEDIATE_QUEUE_READ_TIMEOUT_CAPPED_AT_50MS_NOT_NATIVE_TIMING",
+        "status": 0
+      },
+      "sequence": 52,
+      "server_monotonic_ns": 95273005171200,
+      "server_utc": "2026-09-26T20:11:41.769148+00:00",
+      "virtual_state_after": "IDENTIFIED",
+      "virtual_state_before": "IDENTIFIED"
+    },
+    {
+      "source_line": 54,
+      "physical": false,
+      "request": {
+        "channel": 101,
+        "count": 1,
+        "function": "PassThruWriteMsgs",
+        "messages": [
+          {
+            "data_hex": "8010f0018102",
+            "extra": 0,
+            "protocol": 3,
+            "rx_status": 157995000,
+            "timestamp": 134758267,
+            "tx_flags": 0
+          }
+        ],
+        "monotonic_counter": 952730077204,
+        "monotonic_frequency": 10000000,
+        "pid": 20580,
+        "thread": 22052,
+        "timeout": 2000,
+        "utc_filetime": 134349271017717050
+      },
+      "response": {
+        "count": 1,
+        "delivery_events": [
+          {
+            "kind": "ECU_MODEL_REPLY",
+            "provenance": {
+              "basis": "REFERENCE_MINIMAL_POSITIVE_RESPONSE_NOT_INSTALLED_ACCEPTANCE",
+              "classification": "VIRTUAL_RESPONSE_HYPOTHESIS",
+              "kernel_executed": false,
+              "not_vehicle_telemetry": true,
+              "reference_sha256": "9e8061a9ba08c8d9adb0e908282bbd6ee9b072bd7a0f0e645db171d086fb26fe",
+              "request_event_index": 2,
+              "response_mask_hypothesis": "80",
+              "unmodeled": "Additional installed keyword fields unknown"
+            },
+            "queued": true,
+            "reason": "PASS_FILTER_MATCH",
+            "wire_hex": "80f01001c142"
+          }
+        ],
+        "provenance": "TX_ACCEPTANCE_IS_NOT_ECU_ACKNOWLEDGEMENT",
+        "status": 0,
+        "virtual_events": [
+          {
+            "classification": "HYPOTHETICAL_REPLY",
+            "index": 2,
+            "physical": false,
+            "protocol_id": 3,
+            "reason": null,
+            "replies": [
+              {
+                "protocol_id": 3,
+                "provenance": {
+                  "basis": "REFERENCE_MINIMAL_POSITIVE_RESPONSE_NOT_INSTALLED_ACCEPTANCE",
+                  "classification": "VIRTUAL_RESPONSE_HYPOTHESIS",
+                  "kernel_executed": false,
+                  "not_vehicle_telemetry": true,
+                  "reference_sha256": "9e8061a9ba08c8d9adb0e908282bbd6ee9b072bd7a0f0e645db171d086fb26fe",
+                  "request_event_index": 2,
+                  "response_mask_hypothesis": "80",
+                  "unmodeled": "Additional installed keyword fields unknown"
+                },
+                "wire_hex": "80f01001c142"
+              }
+            ],
+            "stage_after": "COMM_STARTED",
+            "stage_before": "IDENTIFIED",
+            "timestamp_us": null,
+            "wire_hex": "8010f0018102",
+            "wire_type": "bytes"
+          }
+        ]
+      },
+      "sequence": 53,
+      "server_monotonic_ns": 95273008833400,
+      "server_utc": "2026-09-26T20:11:41.772809+00:00",
+      "virtual_state_after": "COMM_STARTED",
+      "virtual_state_before": "IDENTIFIED"
+    },
+    {
+      "source_line": 55,
+      "physical": false,
+      "request": {
+        "channel": 101,
+        "count": 1,
+        "function": "PassThruReadMsgs",
+        "monotonic_counter": 952730102670,
+        "monotonic_frequency": 10000000,
+        "pid": 20580,
+        "thread": 22052,
+        "timeout": 2000,
+        "utc_filetime": 134349271017742516
+      },
+      "response": {
+        "messages": [
+          {
+            "data_hex": "80f01001c142",
+            "extra": 6,
+            "protocol": 3,
+            "provenance": {
+              "basis": "REFERENCE_MINIMAL_POSITIVE_RESPONSE_NOT_INSTALLED_ACCEPTANCE",
+              "classification": "VIRTUAL_RESPONSE_HYPOTHESIS",
+              "kernel_executed": false,
+              "not_vehicle_telemetry": true,
+              "reference_sha256": "9e8061a9ba08c8d9adb0e908282bbd6ee9b072bd7a0f0e645db171d086fb26fe",
+              "request_event_index": 2,
+              "response_mask_hypothesis": "80",
+              "timestamp_origin": "SYNTHETIC_ZERO_UNTIMED",
+              "unmodeled": "Additional installed keyword fields unknown"
+            },
+            "rx_status": 0,
+            "timestamp": 0,
+            "tx_flags": 0
+          }
+        ],
+        "provenance": "FAKE_IMMEDIATE_QUEUE_READ_TIMEOUT_CAPPED_AT_50MS_NOT_NATIVE_TIMING",
+        "status": 0
+      },
+      "sequence": 54,
+      "server_monotonic_ns": 95273011238100,
+      "server_utc": "2026-09-26T20:11:41.775213+00:00",
+      "virtual_state_after": "COMM_STARTED",
+      "virtual_state_before": "COMM_STARTED"
+    },
+    {
+      "source_line": 56,
+      "physical": false,
+      "request": {
+        "channel": 101,
+        "count": 1,
+        "function": "PassThruWriteMsgs",
+        "messages": [
+          {
+            "data_hex": "8010f002830005",
+            "extra": 0,
+            "protocol": 3,
+            "rx_status": 15460322,
+            "timestamp": 4294967295,
+            "tx_flags": 0
+          }
+        ],
+        "monotonic_counter": 952730127657,
+        "monotonic_frequency": 10000000,
+        "pid": 20580,
+        "thread": 22052,
+        "timeout": 500,
+        "utc_filetime": 134349271017767503
+      },
+      "response": {
+        "count": 1,
+        "delivery_events": [
+          {
+            "kind": "ECU_MODEL_REPLY",
+            "provenance": {
+              "basis": "REFERENCE_MINIMAL_POSITIVE_RESPONSE_NOT_INSTALLED_ACCEPTANCE",
+              "classification": "VIRTUAL_RESPONSE_HYPOTHESIS",
+              "kernel_executed": false,
+              "not_vehicle_telemetry": true,
+              "reference_sha256": "9e8061a9ba08c8d9adb0e908282bbd6ee9b072bd7a0f0e645db171d086fb26fe",
+              "request_event_index": 3,
+              "response_mask_hypothesis": "80",
+              "unmodeled": "Installed timing bytes unknown; opcode-only hypothesis"
+            },
+            "queued": true,
+            "reason": "PASS_FILTER_MATCH",
+            "wire_hex": "80f01001c344"
+          }
+        ],
+        "provenance": "TX_ACCEPTANCE_IS_NOT_ECU_ACKNOWLEDGEMENT",
+        "status": 0,
+        "virtual_events": [
+          {
+            "classification": "HYPOTHETICAL_REPLY",
+            "index": 3,
+            "physical": false,
+            "protocol_id": 3,
+            "reason": null,
+            "replies": [
+              {
+                "protocol_id": 3,
+                "provenance": {
+                  "basis": "REFERENCE_MINIMAL_POSITIVE_RESPONSE_NOT_INSTALLED_ACCEPTANCE",
+                  "classification": "VIRTUAL_RESPONSE_HYPOTHESIS",
+                  "kernel_executed": false,
+                  "not_vehicle_telemetry": true,
+                  "reference_sha256": "9e8061a9ba08c8d9adb0e908282bbd6ee9b072bd7a0f0e645db171d086fb26fe",
+                  "request_event_index": 3,
+                  "response_mask_hypothesis": "80",
+                  "unmodeled": "Installed timing bytes unknown; opcode-only hypothesis"
+                },
+                "wire_hex": "80f01001c344"
+              }
+            ],
+            "stage_after": "TIMINGS_ACCEPTED",
+            "stage_before": "COMM_STARTED",
+            "timestamp_us": null,
+            "wire_hex": "8010f002830005",
+            "wire_type": "bytes"
+          }
+        ]
+      },
+      "sequence": 55,
+      "server_monotonic_ns": 95273013961300,
+      "server_utc": "2026-09-26T20:11:41.777936+00:00",
+      "virtual_state_after": "TIMINGS_ACCEPTED",
+      "virtual_state_before": "COMM_STARTED"
+    },
+    {
+      "source_line": 57,
+      "physical": false,
+      "request": {
+        "channel": 101,
+        "count": 1,
+        "function": "PassThruReadMsgs",
+        "monotonic_counter": 952730158377,
+        "monotonic_frequency": 10000000,
+        "pid": 20580,
+        "thread": 22052,
+        "timeout": 500,
+        "utc_filetime": 134349271017798222
+      },
+      "response": {
+        "messages": [
+          {
+            "data_hex": "80f01001c344",
+            "extra": 6,
+            "protocol": 3,
+            "provenance": {
+              "basis": "REFERENCE_MINIMAL_POSITIVE_RESPONSE_NOT_INSTALLED_ACCEPTANCE",
+              "classification": "VIRTUAL_RESPONSE_HYPOTHESIS",
+              "kernel_executed": false,
+              "not_vehicle_telemetry": true,
+              "reference_sha256": "9e8061a9ba08c8d9adb0e908282bbd6ee9b072bd7a0f0e645db171d086fb26fe",
+              "request_event_index": 3,
+              "response_mask_hypothesis": "80",
+              "timestamp_origin": "SYNTHETIC_ZERO_UNTIMED",
+              "unmodeled": "Installed timing bytes unknown; opcode-only hypothesis"
+            },
+            "rx_status": 0,
+            "timestamp": 0,
+            "tx_flags": 0
+          }
+        ],
+        "provenance": "FAKE_IMMEDIATE_QUEUE_READ_TIMEOUT_CAPPED_AT_50MS_NOT_NATIVE_TIMING",
+        "status": 0
+      },
+      "sequence": 56,
+      "server_monotonic_ns": 95273017039900,
+      "server_utc": "2026-09-26T20:11:41.781015+00:00",
+      "virtual_state_after": "TIMINGS_ACCEPTED",
+      "virtual_state_before": "TIMINGS_ACCEPTED"
+    },
+    {
+      "source_line": 58,
+      "physical": false,
+      "request": {
+        "channel": 101,
+        "count": 1,
+        "function": "PassThruWriteMsgs",
+        "messages": [
+          {
+            "data_hex": "8010f0022701aa",
+            "extra": 0,
+            "protocol": 3,
+            "rx_status": 0,
+            "timestamp": 0,
+            "tx_flags": 0
+          }
+        ],
+        "monotonic_counter": 952730186780,
+        "monotonic_frequency": 10000000,
+        "pid": 20580,
+        "thread": 22052,
+        "timeout": 500,
+        "utc_filetime": 134349271017826625
+      },
+      "response": {
+        "count": 1,
+        "delivery_events": [
+          {
+            "kind": "ECU_MODEL_REPLY",
+            "provenance": {
+              "basis": "REFERENCE_MINIMAL_POSITIVE_RESPONSE_NOT_INSTALLED_ACCEPTANCE",
+              "classification": "VIRTUAL_RESPONSE_HYPOTHESIS",
+              "kernel_executed": false,
+              "not_vehicle_telemetry": true,
+              "reference_sha256": "9e8061a9ba08c8d9adb0e908282bbd6ee9b072bd7a0f0e645db171d086fb26fe",
+              "request_event_index": 4,
+              "response_mask_hypothesis": "80",
+              "synthetic_seed_hex": "12345678"
+            },
+            "queued": true,
+            "reason": "PASS_FILTER_MATCH",
+            "wire_hex": "80f0100667011234567802"
+          }
+        ],
+        "provenance": "TX_ACCEPTANCE_IS_NOT_ECU_ACKNOWLEDGEMENT",
+        "status": 0,
+        "virtual_events": [
+          {
+            "classification": "HYPOTHETICAL_REPLY",
+            "index": 4,
+            "physical": false,
+            "protocol_id": 3,
+            "reason": null,
+            "replies": [
+              {
+                "protocol_id": 3,
+                "provenance": {
+                  "basis": "REFERENCE_MINIMAL_POSITIVE_RESPONSE_NOT_INSTALLED_ACCEPTANCE",
+                  "classification": "VIRTUAL_RESPONSE_HYPOTHESIS",
+                  "kernel_executed": false,
+                  "not_vehicle_telemetry": true,
+                  "reference_sha256": "9e8061a9ba08c8d9adb0e908282bbd6ee9b072bd7a0f0e645db171d086fb26fe",
+                  "request_event_index": 4,
+                  "response_mask_hypothesis": "80",
+                  "synthetic_seed_hex": "12345678"
+                },
+                "wire_hex": "80f0100667011234567802"
+              }
+            ],
+            "stage_after": "SEED_SENT",
+            "stage_before": "TIMINGS_ACCEPTED",
+            "timestamp_us": null,
+            "wire_hex": "8010f0022701aa",
+            "wire_type": "bytes"
+          }
+        ]
+      },
+      "sequence": 57,
+      "server_monotonic_ns": 95273019812200,
+      "server_utc": "2026-09-26T20:11:41.783784+00:00",
+      "virtual_state_after": "SEED_SENT",
+      "virtual_state_before": "TIMINGS_ACCEPTED"
+    },
+    {
+      "source_line": 59,
+      "physical": false,
+      "request": {
+        "channel": 101,
+        "count": 1,
+        "function": "PassThruReadMsgs",
+        "monotonic_counter": 952730214082,
+        "monotonic_frequency": 10000000,
+        "pid": 20580,
+        "thread": 22052,
+        "timeout": 500,
+        "utc_filetime": 134349271017853928
+      },
+      "response": {
+        "messages": [
+          {
+            "data_hex": "80f0100667011234567802",
+            "extra": 11,
+            "protocol": 3,
+            "provenance": {
+              "basis": "REFERENCE_MINIMAL_POSITIVE_RESPONSE_NOT_INSTALLED_ACCEPTANCE",
+              "classification": "VIRTUAL_RESPONSE_HYPOTHESIS",
+              "kernel_executed": false,
+              "not_vehicle_telemetry": true,
+              "reference_sha256": "9e8061a9ba08c8d9adb0e908282bbd6ee9b072bd7a0f0e645db171d086fb26fe",
+              "request_event_index": 4,
+              "response_mask_hypothesis": "80",
+              "synthetic_seed_hex": "12345678",
+              "timestamp_origin": "SYNTHETIC_ZERO_UNTIMED"
+            },
+            "rx_status": 0,
+            "timestamp": 0,
+            "tx_flags": 0
+          }
+        ],
+        "provenance": "FAKE_IMMEDIATE_QUEUE_READ_TIMEOUT_CAPPED_AT_50MS_NOT_NATIVE_TIMING",
+        "status": 0
+      },
+      "sequence": 58,
+      "server_monotonic_ns": 95273022444700,
+      "server_utc": "2026-09-26T20:11:41.786421+00:00",
+      "virtual_state_after": "SEED_SENT",
+      "virtual_state_before": "SEED_SENT"
+    },
+    {
+      "source_line": 60,
+      "physical": false,
+      "request": {
+        "abi_provenance": "VENDOR_KLOGGER_SAMPLE_AND_INSTALLED_RVA96C20_INLINE_RECORD",
+        "function": "PassThruIoctl",
+        "id": 1,
+        "input_bytes": [
+          1,
+          18,
+          52,
+          86,
+          120
+        ],
+        "input_pointer": 157997884,
+        "ioctl": 458752,
+        "monotonic_counter": 952730238954,
+        "monotonic_frequency": 10000000,
+        "output_capacity": 255,
+        "output_pointer": 157997900,
+        "pid": 20580,
+        "service_id": 1,
+        "thread": 22052,
+        "utc_filetime": 134349271017878800
+      },
+      "response": {
+        "output_bytes": [
+          231,
+          143,
+          31,
+          33
+        ],
+        "provenance": "OBSERVED_READ004_TX_AND_RVA9B7E0_OUTPUT4; PUBLIC_REFERENCE_SEED_KEY; NO_HARDWARE_OR_LICENSE_IDENTITY",
+        "status": 0
+      },
+      "sequence": 59,
+      "server_monotonic_ns": 95273024933800,
+      "server_utc": "2026-09-26T20:11:41.788910+00:00",
+      "virtual_state_after": "SEED_SENT",
+      "virtual_state_before": "SEED_SENT"
+    },
+    {
+      "source_line": 61,
+      "physical": false,
+      "request": {
+        "channel": 101,
+        "count": 1,
+        "function": "PassThruWriteMsgs",
+        "messages": [
+          {
+            "data_hex": "8010f0062702e78f1f2165",
+            "extra": 0,
+            "protocol": 3,
+            "rx_status": 873595239,
+            "timestamp": 0,
+            "tx_flags": 0
+          }
+        ],
+        "monotonic_counter": 952730262906,
+        "monotonic_frequency": 10000000,
+        "pid": 20580,
+        "thread": 22052,
+        "timeout": 500,
+        "utc_filetime": 134349271017902752
+      },
+      "response": {
+        "count": 1,
+        "delivery_events": [
+          {
+            "kind": "ECU_MODEL_REPLY",
+            "provenance": {
+              "basis": "REFERENCE_MINIMAL_POSITIVE_RESPONSE_NOT_INSTALLED_ACCEPTANCE",
+              "basis_detail": "INSTALLED_RVA9B136_REQUIRES_POST_SID_LENGTH2_AND_BYTE1_34",
+              "classification": "VIRTUAL_RESPONSE_HYPOTHESIS",
+              "kernel_executed": false,
+              "not_vehicle_telemetry": true,
+              "reference_sha256": "9e8061a9ba08c8d9adb0e908282bbd6ee9b072bd7a0f0e645db171d086fb26fe",
+              "request_event_index": 5,
+              "response_mask_hypothesis": "80"
+            },
+            "queued": true,
+            "reason": "PASS_FILTER_MATCH",
+            "wire_hex": "80f0100367023420"
+          }
+        ],
+        "provenance": "TX_ACCEPTANCE_IS_NOT_ECU_ACKNOWLEDGEMENT",
+        "status": 0,
+        "virtual_events": [
+          {
+            "classification": "HYPOTHETICAL_REPLY",
+            "index": 5,
+            "physical": false,
+            "protocol_id": 3,
+            "reason": null,
+            "replies": [
+              {
+                "protocol_id": 3,
+                "provenance": {
+                  "basis": "REFERENCE_MINIMAL_POSITIVE_RESPONSE_NOT_INSTALLED_ACCEPTANCE",
+                  "basis_detail": "INSTALLED_RVA9B136_REQUIRES_POST_SID_LENGTH2_AND_BYTE1_34",
+                  "classification": "VIRTUAL_RESPONSE_HYPOTHESIS",
+                  "kernel_executed": false,
+                  "not_vehicle_telemetry": true,
+                  "reference_sha256": "9e8061a9ba08c8d9adb0e908282bbd6ee9b072bd7a0f0e645db171d086fb26fe",
+                  "request_event_index": 5,
+                  "response_mask_hypothesis": "80"
+                },
+                "wire_hex": "80f0100367023420"
+              }
+            ],
+            "stage_after": "AUTHENTICATED",
+            "stage_before": "SEED_SENT",
+            "timestamp_us": null,
+            "wire_hex": "8010f0062702e78f1f2165",
+            "wire_type": "bytes"
+          }
+        ]
+      },
+      "sequence": 60,
+      "server_monotonic_ns": 95273027394300,
+      "server_utc": "2026-09-26T20:11:41.791372+00:00",
+      "virtual_state_after": "AUTHENTICATED",
+      "virtual_state_before": "SEED_SENT"
+    },
+    {
+      "source_line": 62,
+      "physical": false,
+      "request": {
+        "channel": 101,
+        "count": 1,
+        "function": "PassThruReadMsgs",
+        "monotonic_counter": 952730289049,
+        "monotonic_frequency": 10000000,
+        "pid": 20580,
+        "thread": 22052,
+        "timeout": 500,
+        "utc_filetime": 134349271017928893
+      },
+      "response": {
+        "messages": [
+          {
+            "data_hex": "80f0100367023420",
+            "extra": 8,
+            "protocol": 3,
+            "provenance": {
+              "basis": "REFERENCE_MINIMAL_POSITIVE_RESPONSE_NOT_INSTALLED_ACCEPTANCE",
+              "basis_detail": "INSTALLED_RVA9B136_REQUIRES_POST_SID_LENGTH2_AND_BYTE1_34",
+              "classification": "VIRTUAL_RESPONSE_HYPOTHESIS",
+              "kernel_executed": false,
+              "not_vehicle_telemetry": true,
+              "reference_sha256": "9e8061a9ba08c8d9adb0e908282bbd6ee9b072bd7a0f0e645db171d086fb26fe",
+              "request_event_index": 5,
+              "response_mask_hypothesis": "80",
+              "timestamp_origin": "SYNTHETIC_ZERO_UNTIMED"
+            },
+            "rx_status": 0,
+            "timestamp": 0,
+            "tx_flags": 0
+          }
+        ],
+        "provenance": "FAKE_IMMEDIATE_QUEUE_READ_TIMEOUT_CAPPED_AT_50MS_NOT_NATIVE_TIMING",
+        "status": 0
+      },
+      "sequence": 61,
+      "server_monotonic_ns": 95273029939600,
+      "server_utc": "2026-09-26T20:11:41.793914+00:00",
+      "virtual_state_after": "AUTHENTICATED",
+      "virtual_state_before": "AUTHENTICATED"
+    },
+    {
+      "source_line": 63,
+      "physical": false,
+      "request": {
+        "channel": 101,
+        "count": 1,
+        "function": "PassThruWriteMsgs",
+        "messages": [
+          {
+            "data_hex": "8010f0031085021a",
+            "extra": 0,
+            "protocol": 3,
+            "rx_status": 0,
+            "timestamp": 0,
+            "tx_flags": 0
+          }
+        ],
+        "monotonic_counter": 952732316662,
+        "monotonic_frequency": 10000000,
+        "pid": 20580,
+        "thread": 22052,
+        "timeout": 2000,
+        "utc_filetime": 134349271019956506
+      },
+      "response": {
+        "count": 1,
+        "delivery_events": [
+          {
+            "kind": "ECU_MODEL_REPLY",
+            "provenance": {
+              "basis": "REFERENCE_MINIMAL_POSITIVE_RESPONSE_NOT_INSTALLED_ACCEPTANCE",
+              "classification": "VIRTUAL_RESPONSE_HYPOTHESIS",
+              "kernel_executed": false,
+              "not_vehicle_telemetry": true,
+              "reference_next_baud": 15625,
+              "reference_sha256": "9e8061a9ba08c8d9adb0e908282bbd6ee9b072bd7a0f0e645db171d086fb26fe",
+              "request_event_index": 6,
+              "response_mask_hypothesis": "80"
+            },
+            "queued": true,
+            "reason": "PASS_FILTER_MATCH",
+            "wire_hex": "80f0100150d1"
+          }
+        ],
+        "provenance": "TX_ACCEPTANCE_IS_NOT_ECU_ACKNOWLEDGEMENT",
+        "status": 0,
+        "virtual_events": [
+          {
+            "classification": "HYPOTHETICAL_REPLY",
+            "index": 6,
+            "physical": false,
+            "protocol_id": 3,
+            "reason": null,
+            "replies": [
+              {
+                "protocol_id": 3,
+                "provenance": {
+                  "basis": "REFERENCE_MINIMAL_POSITIVE_RESPONSE_NOT_INSTALLED_ACCEPTANCE",
+                  "classification": "VIRTUAL_RESPONSE_HYPOTHESIS",
+                  "kernel_executed": false,
+                  "not_vehicle_telemetry": true,
+                  "reference_next_baud": 15625,
+                  "reference_sha256": "9e8061a9ba08c8d9adb0e908282bbd6ee9b072bd7a0f0e645db171d086fb26fe",
+                  "request_event_index": 6,
+                  "response_mask_hypothesis": "80"
+                },
+                "wire_hex": "80f0100150d1"
+              }
+            ],
+            "stage_after": "PROGRAMMING",
+            "stage_before": "AUTHENTICATED",
+            "timestamp_us": null,
+            "wire_hex": "8010f0031085021a",
+            "wire_type": "bytes"
+          }
+        ]
+      },
+      "sequence": 62,
+      "server_monotonic_ns": 95273233096500,
+      "server_utc": "2026-09-26T20:11:41.997072+00:00",
+      "virtual_state_after": "PROGRAMMING",
+      "virtual_state_before": "AUTHENTICATED"
+    },
+    {
+      "source_line": 64,
+      "physical": false,
+      "request": {
+        "channel": 101,
+        "count": 1,
+        "function": "PassThruReadMsgs",
+        "monotonic_counter": 952732347499,
+        "monotonic_frequency": 10000000,
+        "pid": 20580,
+        "thread": 22052,
+        "timeout": 2000,
+        "utc_filetime": 134349271019987344
+      },
+      "response": {
+        "messages": [
+          {
+            "data_hex": "80f0100150d1",
+            "extra": 6,
+            "protocol": 3,
+            "provenance": {
+              "basis": "REFERENCE_MINIMAL_POSITIVE_RESPONSE_NOT_INSTALLED_ACCEPTANCE",
+              "classification": "VIRTUAL_RESPONSE_HYPOTHESIS",
+              "kernel_executed": false,
+              "not_vehicle_telemetry": true,
+              "reference_next_baud": 15625,
+              "reference_sha256": "9e8061a9ba08c8d9adb0e908282bbd6ee9b072bd7a0f0e645db171d086fb26fe",
+              "request_event_index": 6,
+              "response_mask_hypothesis": "80",
+              "timestamp_origin": "SYNTHETIC_ZERO_UNTIMED"
+            },
+            "rx_status": 0,
+            "timestamp": 0,
+            "tx_flags": 0
+          }
+        ],
+        "provenance": "FAKE_IMMEDIATE_QUEUE_READ_TIMEOUT_CAPPED_AT_50MS_NOT_NATIVE_TIMING",
+        "status": 0
+      },
+      "sequence": 63,
+      "server_monotonic_ns": 95273235843900,
+      "server_utc": "2026-09-26T20:11:41.999820+00:00",
+      "virtual_state_after": "PROGRAMMING",
+      "virtual_state_before": "PROGRAMMING"
+    },
+    {
+      "source_line": 65,
+      "physical": false,
+      "request": {
+        "config": [
+          {
+            "parameter": 1,
+            "value": 15625
+          }
+        ],
+        "function": "PassThruIoctl",
+        "id": 101,
+        "input_pointer": 158002296,
+        "ioctl": 2,
+        "monotonic_counter": 952733377299,
+        "monotonic_frequency": 10000000,
+        "output_pointer": 0,
+        "pid": 20580,
+        "thread": 22052,
+        "utc_filetime": 134349271021017144
+      },
+      "response": {
+        "provenance": "FAKE_PROVIDER_CONFIGURATION_STORED_ONLY_NO_PHYSICAL_TIMING",
+        "status": 0
+      },
+      "sequence": 64,
+      "server_monotonic_ns": 95273339107700,
+      "server_utc": "2026-09-26T20:11:42.103083+00:00",
+      "virtual_state_after": "PROGRAMMING",
+      "virtual_state_before": "PROGRAMMING"
+    },
+    {
+      "source_line": 66,
+      "physical": false,
+      "request": {
+        "function": "PassThruIoctl",
+        "id": 101,
+        "input_pointer": 0,
+        "ioctl": 7,
+        "monotonic_counter": 952733405663,
+        "monotonic_frequency": 10000000,
+        "output_pointer": 0,
+        "pid": 20580,
+        "thread": 22052,
+        "utc_filetime": 134349271021045508
+      },
+      "response": {
+        "provenance": "FAKE_QUEUE_OR_FILTER_CLEANUP",
+        "status": 0
+      },
+      "sequence": 65,
+      "server_monotonic_ns": 95273341568700,
+      "server_utc": "2026-09-26T20:11:42.105544+00:00",
+      "virtual_state_after": "PROGRAMMING",
+      "virtual_state_before": "PROGRAMMING"
+    },
+    {
+      "source_line": 67,
+      "physical": false,
+      "request": {
+        "function": "PassThruIoctl",
+        "id": 101,
+        "input_pointer": 0,
+        "ioctl": 8,
+        "monotonic_counter": 952733429276,
+        "monotonic_frequency": 10000000,
+        "output_pointer": 0,
+        "pid": 20580,
+        "thread": 22052,
+        "utc_filetime": 134349271021069121
+      },
+      "response": {
+        "provenance": "FAKE_QUEUE_OR_FILTER_CLEANUP",
+        "status": 0
+      },
+      "sequence": 66,
+      "server_monotonic_ns": 95273343917600,
+      "server_utc": "2026-09-26T20:11:42.107894+00:00",
+      "virtual_state_after": "PROGRAMMING",
+      "virtual_state_before": "PROGRAMMING"
+    },
+    {
+      "source_line": 68,
+      "physical": false,
+      "request": {
+        "channel": 101,
+        "count": 1,
+        "function": "PassThruWriteMsgs",
+        "messages": [
+          {
+            "data_hex": "8010f00834ff30000400123435",
+            "extra": 0,
+            "protocol": 3,
+            "rx_status": 2010821296,
+            "timestamp": 134802176,
+            "tx_flags": 0
+          }
+        ],
+        "monotonic_counter": 952735461027,
+        "monotonic_frequency": 10000000,
+        "pid": 20580,
+        "thread": 22052,
+        "timeout": 500,
+        "utc_filetime": 134349271023100870
+      },
+      "response": {
+        "count": 1,
+        "delivery_events": [
+          {
+            "kind": "ECU_MODEL_REPLY",
+            "provenance": {
+              "basis": "REFERENCE_MINIMAL_POSITIVE_RESPONSE_NOT_INSTALLED_ACCEPTANCE",
+              "basis_detail": "INSTALLED9C154_AND9C164_DOUBLE34_BEFORE_DATA; EXPLICIT_IDEMPOTENT_VIRTUAL_RAM_DECLARATION",
+              "classification": "VIRTUAL_RESPONSE_HYPOTHESIS",
+              "declaration_number": 1,
+              "kernel_executed": false,
+              "not_vehicle_telemetry": true,
+              "reference_sha256": "9e8061a9ba08c8d9adb0e908282bbd6ee9b072bd7a0f0e645db171d086fb26fe",
+              "request_event_index": 7,
+              "response_mask_hypothesis": "80",
+              "virtual_RAM_length": 4660,
+              "virtual_RAM_start": 4294914048
+            },
+            "queued": true,
+            "reason": "PASS_FILTER_MATCH",
+            "wire_hex": "80f0100174f5"
+          }
+        ],
+        "provenance": "TX_ACCEPTANCE_IS_NOT_ECU_ACKNOWLEDGEMENT",
+        "status": 0,
+        "virtual_events": [
+          {
+            "classification": "HYPOTHETICAL_REPLY",
+            "index": 7,
+            "physical": false,
+            "protocol_id": 3,
+            "reason": null,
+            "replies": [
+              {
+                "protocol_id": 3,
+                "provenance": {
+                  "basis": "REFERENCE_MINIMAL_POSITIVE_RESPONSE_NOT_INSTALLED_ACCEPTANCE",
+                  "basis_detail": "INSTALLED9C154_AND9C164_DOUBLE34_BEFORE_DATA; EXPLICIT_IDEMPOTENT_VIRTUAL_RAM_DECLARATION",
+                  "classification": "VIRTUAL_RESPONSE_HYPOTHESIS",
+                  "declaration_number": 1,
+                  "kernel_executed": false,
+                  "not_vehicle_telemetry": true,
+                  "reference_sha256": "9e8061a9ba08c8d9adb0e908282bbd6ee9b072bd7a0f0e645db171d086fb26fe",
+                  "request_event_index": 7,
+                  "response_mask_hypothesis": "80",
+                  "virtual_RAM_length": 4660,
+                  "virtual_RAM_start": 4294914048
+                },
+                "wire_hex": "80f0100174f5"
+              }
+            ],
+            "stage_after": "UPLOADING",
+            "stage_before": "PROGRAMMING",
+            "timestamp_us": null,
+            "wire_hex": "8010f00834ff30000400123435",
+            "wire_type": "bytes"
+          }
+        ]
+      },
+      "sequence": 67,
+      "server_monotonic_ns": 95273550552200,
+      "server_utc": "2026-09-26T20:11:42.314525+00:00",
+      "virtual_state_after": "UPLOADING",
+      "virtual_state_before": "PROGRAMMING"
+    },
+    {
+      "source_line": 69,
+      "physical": false,
+      "request": {
+        "channel": 101,
+        "count": 1,
+        "function": "PassThruReadMsgs",
+        "monotonic_counter": 952735529949,
+        "monotonic_frequency": 10000000,
+        "pid": 20580,
+        "thread": 22052,
+        "timeout": 500,
+        "utc_filetime": 134349271023169788
+      },
+      "response": {
+        "messages": [
+          {
+            "data_hex": "80f0100174f5",
+            "extra": 6,
+            "protocol": 3,
+            "provenance": {
+              "basis": "REFERENCE_MINIMAL_POSITIVE_RESPONSE_NOT_INSTALLED_ACCEPTANCE",
+              "basis_detail": "INSTALLED9C154_AND9C164_DOUBLE34_BEFORE_DATA; EXPLICIT_IDEMPOTENT_VIRTUAL_RAM_DECLARATION",
+              "classification": "VIRTUAL_RESPONSE_HYPOTHESIS",
+              "declaration_number": 1,
+              "kernel_executed": false,
+              "not_vehicle_telemetry": true,
+              "reference_sha256": "9e8061a9ba08c8d9adb0e908282bbd6ee9b072bd7a0f0e645db171d086fb26fe",
+              "request_event_index": 7,
+              "response_mask_hypothesis": "80",
+              "timestamp_origin": "SYNTHETIC_ZERO_UNTIMED",
+              "virtual_RAM_length": 4660,
+              "virtual_RAM_start": 4294914048
+            },
+            "rx_status": 0,
+            "timestamp": 0,
+            "tx_flags": 0
+          }
+        ],
+        "provenance": "FAKE_IMMEDIATE_QUEUE_READ_TIMEOUT_CAPPED_AT_50MS_NOT_NATIVE_TIMING",
+        "status": 0
+      },
+      "sequence": 68,
+      "server_monotonic_ns": 95273554155700,
+      "server_utc": "2026-09-26T20:11:42.318129+00:00",
+      "virtual_state_after": "UPLOADING",
+      "virtual_state_before": "UPLOADING"
+    },
+    {
+      "source_line": 70,
+      "physical": false,
+      "request": {
+        "channel": 101,
+        "count": 1,
+        "function": "PassThruWriteMsgs",
+        "messages": [
+          {
+            "data_hex": "8010f00834ff30000400123435",
+            "extra": 0,
+            "protocol": 3,
+            "rx_status": 2010838388,
+            "timestamp": 134802176,
+            "tx_flags": 0
+          }
+        ],
+        "monotonic_counter": 952735559240,
+        "monotonic_frequency": 10000000,
+        "pid": 20580,
+        "thread": 22052,
+        "timeout": 500,
+        "utc_filetime": 134349271023199084
+      },
+      "response": {
+        "count": 1,
+        "delivery_events": [
+          {
+            "kind": "ECU_MODEL_REPLY",
+            "provenance": {
+              "basis": "REFERENCE_MINIMAL_POSITIVE_RESPONSE_NOT_INSTALLED_ACCEPTANCE",
+              "basis_detail": "INSTALLED9C154_AND9C164_DOUBLE34_BEFORE_DATA; EXPLICIT_IDEMPOTENT_VIRTUAL_RAM_DECLARATION",
+              "classification": "VIRTUAL_RESPONSE_HYPOTHESIS",
+              "declaration_number": 2,
+              "kernel_executed": false,
+              "not_vehicle_telemetry": true,
+              "reference_sha256": "9e8061a9ba08c8d9adb0e908282bbd6ee9b072bd7a0f0e645db171d086fb26fe",
+              "request_event_index": 8,
+              "response_mask_hypothesis": "80",
+              "virtual_RAM_length": 4660,
+              "virtual_RAM_start": 4294914048
+            },
+            "queued": true,
+            "reason": "PASS_FILTER_MATCH",
+            "wire_hex": "80f0100174f5"
+          }
+        ],
+        "provenance": "TX_ACCEPTANCE_IS_NOT_ECU_ACKNOWLEDGEMENT",
+        "status": 0,
+        "virtual_events": [
+          {
+            "classification": "HYPOTHETICAL_REPLY",
+            "index": 8,
+            "physical": false,
+            "protocol_id": 3,
+            "reason": null,
+            "replies": [
+              {
+                "protocol_id": 3,
+                "provenance": {
+                  "basis": "REFERENCE_MINIMAL_POSITIVE_RESPONSE_NOT_INSTALLED_ACCEPTANCE",
+                  "basis_detail": "INSTALLED9C154_AND9C164_DOUBLE34_BEFORE_DATA; EXPLICIT_IDEMPOTENT_VIRTUAL_RAM_DECLARATION",
+                  "classification": "VIRTUAL_RESPONSE_HYPOTHESIS",
+                  "declaration_number": 2,
+                  "kernel_executed": false,
+                  "not_vehicle_telemetry": true,
+                  "reference_sha256": "9e8061a9ba08c8d9adb0e908282bbd6ee9b072bd7a0f0e645db171d086fb26fe",
+                  "request_event_index": 8,
+                  "response_mask_hypothesis": "80",
+                  "virtual_RAM_length": 4660,
+                  "virtual_RAM_start": 4294914048
+                },
+                "wire_hex": "80f0100174f5"
+              }
+            ],
+            "stage_after": "UPLOADING",
+            "stage_before": "UPLOADING",
+            "timestamp_us": null,
+            "wire_hex": "8010f00834ff30000400123435",
+            "wire_type": "bytes"
+          }
+        ]
+      },
+      "sequence": 69,
+      "server_monotonic_ns": 95273558413600,
+      "server_utc": "2026-09-26T20:11:42.322387+00:00",
+      "virtual_state_after": "UPLOADING",
+      "virtual_state_before": "UPLOADING"
+    },
+    {
+      "source_line": 71,
+      "physical": false,
+      "request": {
+        "channel": 101,
+        "count": 1,
+        "function": "PassThruReadMsgs",
+        "monotonic_counter": 952735602212,
+        "monotonic_frequency": 10000000,
+        "pid": 20580,
+        "thread": 22052,
+        "timeout": 500,
+        "utc_filetime": 134349271023242056
+      },
+      "response": {
+        "messages": [
+          {
+            "data_hex": "80f0100174f5",
+            "extra": 6,
+            "protocol": 3,
+            "provenance": {
+              "basis": "REFERENCE_MINIMAL_POSITIVE_RESPONSE_NOT_INSTALLED_ACCEPTANCE",
+              "basis_detail": "INSTALLED9C154_AND9C164_DOUBLE34_BEFORE_DATA; EXPLICIT_IDEMPOTENT_VIRTUAL_RAM_DECLARATION",
+              "classification": "VIRTUAL_RESPONSE_HYPOTHESIS",
+              "declaration_number": 2,
+              "kernel_executed": false,
+              "not_vehicle_telemetry": true,
+              "reference_sha256": "9e8061a9ba08c8d9adb0e908282bbd6ee9b072bd7a0f0e645db171d086fb26fe",
+              "request_event_index": 8,
+              "response_mask_hypothesis": "80",
+              "timestamp_origin": "SYNTHETIC_ZERO_UNTIMED",
+              "virtual_RAM_length": 4660,
+              "virtual_RAM_start": 4294914048
+            },
+            "rx_status": 0,
+            "timestamp": 0,
+            "tx_flags": 0
+          }
+        ],
+        "provenance": "FAKE_IMMEDIATE_QUEUE_READ_TIMEOUT_CAPPED_AT_50MS_NOT_NATIVE_TIMING",
+        "status": 0
+      },
+      "sequence": 70,
+      "server_monotonic_ns": 95273561360500,
+      "server_utc": "2026-09-26T20:11:42.325335+00:00",
+      "virtual_state_after": "UPLOADING",
+      "virtual_state_before": "UPLOADING"
+    },
+    {
+      "source_line": 72,
+      "physical": false,
+      "request": {
+        "channel": 101,
+        "count": 1,
+        "function": "PassThruWriteMsgs",
+        "messages": [
+          {
+            "data_hex": "8010f08436ff30002178b10a857f69a1afc2ea3ba72c21f37ba9b9fdbc6a96d42178b10a2178b10a73c62a562178b10a2178b10a2178b10aa8e328418d2a28480c5ef2658ed66b73b96e4e485d9f2017359a6896b1c1258c9d77a4331c0a96c2169179b6e47416979685d90e045faa82405317f8b3c2cd841bcec3ab79c793af4bedb0c3d925f79154",
+            "extra": 0,
+            "protocol": 3,
+            "rx_status": 0,
+            "timestamp": 132275848,
+            "tx_flags": 0
+          }
+        ],
+        "monotonic_counter": 952735631077,
+        "monotonic_frequency": 10000000,
+        "pid": 20580,
+        "thread": 22052,
+        "timeout": 500,
+        "utc_filetime": 134349271023270920
+      },
+      "response": {
+        "count": 1,
+        "delivery_events": [
+          {
+            "kind": "ECU_MODEL_REPLY",
+            "provenance": {
+              "accepted_upload_bytes": 128,
+              "basis": "REFERENCE_MINIMAL_POSITIVE_RESPONSE_NOT_INSTALLED_ACCEPTANCE",
+              "classification": "VIRTUAL_RESPONSE_HYPOTHESIS",
+              "installed_transfer_checksum_verified": false,
+              "kernel_executed": false,
+              "not_vehicle_telemetry": true,
+              "reference_sha256": "9e8061a9ba08c8d9adb0e908282bbd6ee9b072bd7a0f0e645db171d086fb26fe",
+              "request_event_index": 9,
+              "response_mask_hypothesis": "80"
+            },
+            "queued": true,
+            "reason": "PASS_FILTER_MATCH",
+            "wire_hex": "80f0100176f7"
+          }
+        ],
+        "provenance": "TX_ACCEPTANCE_IS_NOT_ECU_ACKNOWLEDGEMENT",
+        "status": 0,
+        "virtual_events": [
+          {
+            "classification": "HYPOTHETICAL_REPLY",
+            "index": 9,
+            "physical": false,
+            "protocol_id": 3,
+            "reason": null,
+            "replies": [
+              {
+                "protocol_id": 3,
+                "provenance": {
+                  "accepted_upload_bytes": 128,
+                  "basis": "REFERENCE_MINIMAL_POSITIVE_RESPONSE_NOT_INSTALLED_ACCEPTANCE",
+                  "classification": "VIRTUAL_RESPONSE_HYPOTHESIS",
+                  "installed_transfer_checksum_verified": false,
+                  "kernel_executed": false,
+                  "not_vehicle_telemetry": true,
+                  "reference_sha256": "9e8061a9ba08c8d9adb0e908282bbd6ee9b072bd7a0f0e645db171d086fb26fe",
+                  "request_event_index": 9,
+                  "response_mask_hypothesis": "80"
+                },
+                "wire_hex": "80f0100176f7"
+              }
+            ],
+            "stage_after": "UPLOADING",
+            "stage_before": "UPLOADING",
+            "timestamp_us": null,
+            "wire_hex": "8010f08436ff30002178b10a857f69a1afc2ea3ba72c21f37ba9b9fdbc6a96d42178b10a2178b10a73c62a562178b10a2178b10a2178b10aa8e328418d2a28480c5ef2658ed66b73b96e4e485d9f2017359a6896b1c1258c9d77a4331c0a96c2169179b6e47416979685d90e045faa82405317f8b3c2cd841bcec3ab79c793af4bedb0c3d925f79154",
+            "wire_type": "bytes"
+          }
+        ]
+      },
+      "sequence": 71,
+      "server_monotonic_ns": 95273564309500,
+      "server_utc": "2026-09-26T20:11:42.328284+00:00",
+      "virtual_state_after": "UPLOADING",
+      "virtual_state_before": "UPLOADING"
+    },
+    {
+      "source_line": 73,
+      "physical": false,
+      "request": {
+        "channel": 101,
+        "count": 1,
+        "function": "PassThruReadMsgs",
+        "monotonic_counter": 952735660943,
+        "monotonic_frequency": 10000000,
+        "pid": 20580,
+        "thread": 22052,
+        "timeout": 500,
+        "utc_filetime": 134349271023300785
+      },
+      "response": {
+        "messages": [
+          {
+            "data_hex": "80f0100176f7",
+            "extra": 6,
+            "protocol": 3,
+            "provenance": {
+              "accepted_upload_bytes": 128,
+              "basis": "REFERENCE_MINIMAL_POSITIVE_RESPONSE_NOT_INSTALLED_ACCEPTANCE",
+              "classification": "VIRTUAL_RESPONSE_HYPOTHESIS",
+              "installed_transfer_checksum_verified": false,
+              "kernel_executed": false,
+              "not_vehicle_telemetry": true,
+              "reference_sha256": "9e8061a9ba08c8d9adb0e908282bbd6ee9b072bd7a0f0e645db171d086fb26fe",
+              "request_event_index": 9,
+              "response_mask_hypothesis": "80",
+              "timestamp_origin": "SYNTHETIC_ZERO_UNTIMED"
+            },
+            "rx_status": 0,
+            "timestamp": 0,
+            "tx_flags": 0
+          }
+        ],
+        "provenance": "FAKE_IMMEDIATE_QUEUE_READ_TIMEOUT_CAPPED_AT_50MS_NOT_NATIVE_TIMING",
+        "status": 0
+      },
+      "sequence": 72,
+      "server_monotonic_ns": 95273567178800,
+      "server_utc": "2026-09-26T20:11:42.331153+00:00",
+      "virtual_state_after": "UPLOADING",
+      "virtual_state_before": "UPLOADING"
+    }
+  ]
+}

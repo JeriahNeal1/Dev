@@ -1,0 +1,3 @@
+The authoritative RK03 transition status is PHYSICAL PASS, with the exact C3 response `80 F0 10 07 C3 00 00 FF 00 FF 00 48`, followed by OEM_RETURN_AFTER_TRANSITION_PROBE = PASS. Older reports describing that transition probe as NOT RUN or unverified are historical snapshots superseded by the newer evidence linked in SUPERSESSION_STATUS.json. Those historical reports remain unchanged.
+
+The current ROM and its complete classification are retained by hash; the offline continuation at commit2a8eeee2a7ff251346314c54d6dd028f6df93766 passed127/127 cases. None of these results means a physical first-chunk probe has run. The new first-chunk session is NOT_RUN with invocation count0 and no final human authorization received.

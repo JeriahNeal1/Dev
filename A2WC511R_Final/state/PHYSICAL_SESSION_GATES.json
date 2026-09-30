@@ -1,0 +1,227 @@
+{
+  "schema": 1,
+  "acquisition_folder": "C:\\Dev\\A2WC511R_ReadKernel\\acquisitions\\RK02_VEHICLE_03",
+  "prior_acquisition_folder": "C:\\Dev\\A2WC511R_ReadKernel\\acquisitions\\RK02_VEHICLE_02",
+  "governing_sequence": "Latest user instruction: offline only after G13 and user-confirmed OEM return; no further physical programming attempt this run; failed directory immutable",
+  "status": "G13_CONFIRMED_OEM_RETURN_USER_REPORTED_OFFLINE_ROOT_CAUSE_ONLY",
+  "next_human_gate": null,
+  "active_restart_progress": "C:\\Dev\\A2WC511R_ReadKernel\\acquisitions\\RK02_VEHICLE_03\\HUMAN_GATE_PROGRESS.json",
+  "restart_voltage_policy": "Operator manually monitors voltage; no numerical voltage request unless operator reports a power problem. No numeric voltage inferred.",
+  "corrected_passive_qualification": "C:\\Dev\\A2WC511R_Final\\passive_som01\\reports\\qualification_01\\QUALIFICATION.json",
+  "corrected_passive_broker_sha256": "beab515c4fa68cb9ed1bea2f54f40a43bcc01769f1bac01e0f26d69412ad8424",
+  "corrected_passive_physical_acceptance": "C:\\Dev\\A2WC511R_ReadKernel\\acquisitions\\RK02_VEHICLE_02\\CORRECTED_PASSIVE_PHYSICAL_ACCEPTANCE.json",
+  "prior_unsatisfied_gate": "G18_VEHICLE_SIDE_POWER_LOSS_NEVER_CONFIRMED",
+  "latest_user_direction": "Simplified three-state ignition policy; next NORMAL MODE ON then passive OEM return; no more programming-session probes",
+  "diagnostic_report": "C:\\Dev\\A2WC511R_Final\\diagnostics\\openport_20260929_01\\DIAGNOSIS.md",
+  "diagnostic_result": "One Read attempt failed after seed/key step; ECU identity 2F12515306 received; no kernel upload or ROM read logged; ECUFlash exited; no remaining known diagnostic clients",
+  "completed_human_gates": [
+    {
+      "gate": "G00",
+      "reply": "VOLTAGE G00 13.74",
+      "volts": 13.74,
+      "measurement": "Battery posts, ignition OFF",
+      "source": "user report"
+    },
+    {
+      "gate": "G01",
+      "reply": "DONE G01",
+      "state": "Schumacher SE-5212A connected/configured in intended 10 A charging mode, not 50 A Engine Start",
+      "source": "user confirmation"
+    },
+    {
+      "gate": "G02",
+      "reply": "DONE G02",
+      "state": "Subaru green Test Mode connectors physically confirmed disconnected; ignition remains OFF",
+      "source": "user confirmation"
+    },
+    {
+      "gate": "G03",
+      "reply": "DONE G03",
+      "state": "Genuine OpenPort 2.0 connected to vehicle/laptop as required; ignition remains OFF",
+      "source": "user confirmation"
+    },
+    {
+      "gate": "G04",
+      "reply": "DONE G04",
+      "state": "Ignition ON, engine OFF, Subaru green Test Mode connectors disconnected",
+      "source": "user confirmation"
+    },
+    {
+      "gate": "G05",
+      "reply": "VOLTAGE G05 12.22",
+      "volts": 12.22,
+      "measurement": "Battery posts, ignition ON, engine OFF, normal mode, OpenPort connected",
+      "source": "user report"
+    },
+    {
+      "gate": "G13",
+      "reply": "DONE G13",
+      "state": "Ignition OFF",
+      "source": "user confirmation"
+    },
+    {
+      "gate": "G14",
+      "reply": "DONE G14",
+      "state": "OpenPort physically disconnected from vehicle",
+      "source": "user confirmation"
+    },
+    {
+      "gate": "G15",
+      "reply": "DONE G15",
+      "state": "Schumacher charger/support disconnected from vehicle",
+      "source": "user confirmation"
+    },
+    {
+      "gate": "G16",
+      "reply": "DONE G16",
+      "state": "Battery negative terminal disconnected and physically isolated",
+      "source": "user confirmation"
+    },
+    {
+      "gate": "G17",
+      "reply": "done g17",
+      "state": "Battery positive terminal disconnected; negative remains isolated",
+      "source": "user confirmation"
+    }
+  ],
+  "pending_gate_observations": [
+    {
+      "gate": "G18",
+      "reply": "VOLTAGE G18 12.48",
+      "volts": 12.48,
+      "test_point": "DISCONNECTED_BATTERY_POSTS_USER_CLARIFIED",
+      "source": "user report followed by explicit probe-location clarification",
+      "accepted_as_vehicle_power_loss": false,
+      "reason": "Reading measures the disconnected battery; vehicle-side supply relative to chassis has not yet been measured"
+    },
+    {
+      "gate": "G18",
+      "reply": "VOLTAGE G18 12.52, locations confirmed",
+      "volts": 12.52,
+      "test_point": "User confirms red probe on disconnected vehicle positive cable terminal and black probe on clean chassis ground",
+      "source": "user report",
+      "accepted_as_vehicle_power_loss": false,
+      "reason": "Reported vehicle-side reading remains at 12.52 V. Treat as energized; power source and measurement setup require clarification. No G19 or reconnection authorized."
+    }
+  ],
+  "latest_offline_validation": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\PRE_CONNECTION_VALIDATION_20260929T2314520751731Z.json",
+  "latest_offline_validation_status": "CONDITIONAL",
+  "software_status": "PASS",
+  "failed_checks": [],
+  "prior_failed_validation": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\PRE_CONNECTION_VALIDATION_20260929T2150246237619Z.json",
+  "preservation_restore_audit": "C:\\Dev\\A2WC511R_Final\\state\\preconnection_preservation_restore_20260929T231442036314Z",
+  "preservation_restore": "Restored three absent historical logs from hash-verified snapshots and one ECUFlash cached device-location string after preserving original drift. Provider registrations and qualified software unchanged. Fresh unchanged validator passed; six physical requirements remain open.",
+  "vehicle_software_launched_by_assistant_this_session": true,
+  "passive_before_takeover": {
+    "result": "FAIL",
+    "samples_written": 0,
+    "BF_identity_validated": false,
+    "raw_request": "8010f001bf40",
+    "failure": "Worker reported terminal failure; unsupported RX metadata: rx_status=2, declared_size=0, raw empty",
+    "capture_error": "ProtocolError",
+    "cleanup_error_reported": null,
+    "observer_exit_code": 1,
+    "observer_exited": true,
+    "remaining_observer_or_broker_processes": [],
+    "capture_file": "C:\\Dev\\A2WC511R_ReadKernel\\acquisitions\\RK02_VEHICLE_01\\pre_kernel_A8.jsonl",
+    "execution_evidence": "C:\\Dev\\A2WC511R_ReadKernel\\acquisitions\\RK02_VEHICLE_01\\pre_kernel_A8.execution.json",
+    "retry": false
+  },
+  "offline_failure_diagnosis": {
+    "basis": "Saved physical stderr, passive broker.cpp receive guard, local Tactrix j2534_tactrix.h START_OF_MESSAGE definition, and independent read-only source review",
+    "observed_event": "rx_status=0x2 is START_OF_MESSAGE; declared_size=0",
+    "passive_receiver_policy": "Rejects zero-sized records and any RxStatus bits other than 0x1 before parsing BF response",
+    "finding": "Host receive-metadata incompatibility; no validated ECU response or ECU negative reply was obtained",
+    "test_mode_conclusion": "This failure does not establish a Test Mode requirement or ECU mode rejection. User schedule already places Test Mode before RK02. RK02 package does not certify physical connector mapping.",
+    "RK02_receiver_comparison": "Has explicit bounded handling for empty START_OF_MESSAGE and TX_DONE indications; this is not authorization to bypass passive gates",
+    "software_modified": false,
+    "additional_vehicle_calls": false,
+    "next_offline_requirement": "Review and qualify a corrected passive receive policy separately before any new acquisition attempt"
+  },
+  "failure_exit": {
+    "authority": "HUMAN_ACQUISITION_RK02.md Failure exit: first identity/transport failure requires no retry, client exit, established ignition OFF/verified power-down/ON sequence and passive BF check",
+    "capture_class": "INCOMPLETE_NOT_CURRENT_ROM",
+    "normal_gates_not_entered": [
+      "G06",
+      "G07",
+      "G08",
+      "G09",
+      "G10",
+      "G11",
+      "G12"
+    ],
+    "mapping": "G13-G25 implement the established verified power-down and OEM-return sequence. No Test Mode admission, RK02 launch, finalization of nonexistent ROM, or original-acquisition retry.",
+    "if_OEM_return_fails": "Stop for approved vehicle recovery; no erase/program/reset opcode or alternate acquisition tool"
+  },
+  "rk02_launch_count_this_session": 1,
+  "g11_authorization_received": true,
+  "physical_session_complete": false,
+  "offline_current_rom_ingest_started": false,
+  "required_automatic_transitions": [],
+  "latest_user_directive": "C:\\Dev\\A2WC511R_Final\\state\\RESUME_DIRECTIVE_G20_20260929T230449422265Z.json",
+  "current_physical_state": {
+    "failure_recovery_G13_through_G19_complete": true,
+    "vehicle_fully_depowered": false,
+    "ignition": "OFF",
+    "battery_positive": "CONNECTED",
+    "battery_negative": "CONNECTED",
+    "test_mode_connectors": "CONNECTED",
+    "radiator_fans": "INTENTIONALLY_PHYSICALLY_DISCONNECTED",
+    "rk02_invocations": 1,
+    "temporary_ram_kernel_uploaded": false,
+    "flash_operation_occurred": false,
+    "charger": "SCHUMACHER_SE_5212A_CONNECTED_10A_CHARGING",
+    "openport": "GENUINE_OPENPORT_2_0_CONNECTED",
+    "engine": "OFF",
+    "test_mode_indications": "CEL_AND_FUEL_PUMP_CYCLING_USER_CONFIRMED_G09",
+    "OEM_return": "CONFIRMED_BY_USER_NO_NEW_ASSISTANT_PHYSICAL_CHECK"
+  },
+  "prior_unsatisfied_gate_scope": "Historical RK02_VEHICLE_01 only; RK02_VEHICLE_02 G18 and G19 subsequently confirmed by user",
+  "historical_fields_scope": "completed_human_gates, pending_gate_observations, passive_before_takeover, offline_failure_diagnosis, and earlier failure_exit mapping retain historical evidence. Current session uses active_restart_progress and latest_user_directive.",
+  "corrected_passive_execution_evidence": "C:\\Dev\\A2WC511R_ReadKernel\\acquisitions\\RK02_VEHICLE_02\\corrected_passive_verification_A8.begin.json",
+  "corrected_passive_capture_status": "PASS_CAPTURE_ONLY",
+  "rk02_launch_count_all_sessions": 1,
+  "latest_offline_validation_sha256": "58c88663d7e9480fbabaedc964fcc5548bd2a2e778a1acf19475ed095400b19b",
+  "current_diagnostics_backup": "C:\\Dev\\A2WC511R_Final\\state\\preconnection_diagnostic_snapshot_20260929T2314358151523Z",
+  "g11_readiness": "C:\\Dev\\A2WC511R_ReadKernel\\acquisitions\\RK02_VEHICLE_03\\G11_READINESS.json",
+  "voltage_gate_policy": "Numerical G10 request superseded by latest user direction; operator monitors voltage independently",
+  "g11_exact_user_reply": "PROCEED RK02",
+  "rk02_launch_reserved": true,
+  "pending_gate": null,
+  "rk02_launch_count": 1,
+  "rk02_process_id": 13548,
+  "rk02_launched": true,
+  "rk02_exit_code": 1,
+  "rk02_process_exited": true,
+  "finalizer_exit_code": 1,
+  "finalizer_exception": null,
+  "finalizer_completed_or_definitively_failed": true,
+  "capture_class": "INCOMPLETE_NOT_CURRENT_ROM",
+  "terminal_failure": "C:\\Dev\\A2WC511R_ReadKernel\\acquisitions\\RK02_VEHICLE_03\\TERMINAL_FAILURE.json",
+  "retry_allowed": false,
+  "offline_analysis_directory": "C:\\Dev\\A2WC511R_Final\\analysis\\rk02_vehicle_03_transition",
+  "latest_recovery_observation": "C:\\Dev\\A2WC511R_Final\\analysis\\rk02_vehicle_03_transition\\USER_RECOVERY_OBSERVATION.json",
+  "further_physical_programming_attempts_allowed": false,
+  "active_restart_progress_scope": "Frozen failed-session historical record; latest recovery observation is external to preserve RK02_VEHICLE_03 unchanged",
+  "analysis_report": "C:\\Dev\\A2WC511R_Final\\analysis\\rk02_vehicle_03_transition\\RK02_VEHICLE_03_SESSION_TRANSITION_ANALYSIS.md",
+  "event_diff": "C:\\Dev\\A2WC511R_Final\\analysis\\rk02_vehicle_03_transition\\RK02_VEHICLE_03_SESSION_TRANSITION_EVENT_DIFF.json",
+  "offline_analysis_status": "OFFLINE_ANALYSIS_AND_ISOLATED_CORRECTION_COMPLETE_WITH_CAUSAL_LIMITS",
+  "offline_analysis_result": "C:\\Dev\\A2WC511R_Final\\analysis\\rk02_vehicle_03_transition\\DEVELOPMENT_RESULT.json",
+  "updated_utc": "2026-09-30T02:04:01.086019+00:00",
+  "current_gate_state": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\PROBE_GATE_STATE.json",
+  "current_gate_state_scope": "New separately identified transition-only probe; all RK02 fields remain historical and failed-session files remain immutable",
+  "transition_probe_allowed_after_human_authorization": true,
+  "full_rk03_acquisition_allowed": false,
+  "active_human_gate_policy": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\gate_policy_migrations\\20260930T020401086019Z\\OPERATOR_SIMPLIFIED_GATE_POLICY.json",
+    "sha256": "2489c1ef5c9599dba9d830768c98e1d247dc126b6c6711710387337d3ab3f983"
+  },
+  "legacy_gate_fields_are_historical": true,
+  "allowed_manual_state_replies": [
+    "IGNITION OFF",
+    "TEST MODE ON",
+    "NORMAL MODE ON"
+  ],
+  "individual_component_gates_required": false,
+  "transition_probe_rerun_allowed": false
+}

@@ -1,0 +1,38 @@
+{
+  "status": "PLANNED_RESTORE_WITH_ORIGINAL_DRIFT_PRESERVED",
+  "failed_validation": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\PRE_CONNECTION_VALIDATION_20260929T2150246237619Z.json",
+  "source_logs_observed_missing": [
+    {
+      "source": "C:\\Users\\Jeriah Neal\\AppData\\Roaming\\OpenECU\\EcuFlash\\logs\\ecuflash_log_20260726t173948.txt",
+      "snapshot": "C:\\Dev\\A2WC511R_ReadKernel\\preservation\\snapshot_20260927\\roaming_OpenECU\\EcuFlash\\logs\\ecuflash_log_20260726t173948.txt",
+      "sha256": "6290b0c1b74ea02692d5bb39fe17edcd4aaa235594c97161f5a1937b44752e7c",
+      "bytes": 2252
+    },
+    {
+      "source": "C:\\Users\\Jeriah Neal\\AppData\\Roaming\\OpenECU\\EcuFlash\\logs\\ecuflash_log_20260726t174613.txt",
+      "snapshot": "C:\\Dev\\A2WC511R_ReadKernel\\preservation\\snapshot_20260927\\roaming_OpenECU\\EcuFlash\\logs\\ecuflash_log_20260726t174613.txt",
+      "sha256": "b02a9ea761aed4db17f5094b3188f9b67082fca434a592db8e62566285c51b68",
+      "bytes": 80385
+    },
+    {
+      "source": "C:\\Users\\Jeriah Neal\\AppData\\Roaming\\OpenECU\\EcuFlash\\logs\\ecuflash_log_20260818t120321.txt",
+      "snapshot": "C:\\Dev\\A2WC511R_ReadKernel\\preservation\\snapshot_20260927\\roaming_OpenECU\\EcuFlash\\logs\\ecuflash_log_20260818t120321.txt",
+      "sha256": "aa3918b717f72fe82fb50d600310b267f0e90a80eb310572a8b284139e020978",
+      "bytes": 79612
+    }
+  ],
+  "registry_change": {
+    "key": "HKCU\\Software\\OpenECU\\EcuFlash\\hardware\\openport",
+    "name": "last available",
+    "before": {
+      "type": 1,
+      "value": "OpenPort 2.0 on \\\\?\\usb#vid_0403&pid_cc4c&mi_00#7&2743fbd8&1&0000#{6d1781b7-c987-4f6c-8d4f-1efc098bea67}"
+    },
+    "restore": {
+      "type": 1,
+      "value": "OpenPort 2.0 on \\\\?\\usb#vid_0403&pid_cc4c&mi_00#7&2743fbd8&0&0000#{6d1781b7-c987-4f6c-8d4f-1efc098bea67}"
+    }
+  },
+  "provider_loaded": false,
+  "qualification_inputs_modified": false
+}

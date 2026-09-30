@@ -1,0 +1,115 @@
+{
+  "schema": 1,
+  "session": "RK02_VEHICLE_02",
+  "status": "CORRECTED_PASSIVE_PHYSICAL_VERIFICATION_PASSED_CONTINUING_AS_NEW_ACQUISITION",
+  "latest_user_voltage_instruction": "Operator manually monitors voltage; no numerical voltage request unless operator reports a power problem. No numeric voltage inferred.",
+  "numeric_voltage_current": null,
+  "voltage_verified_by_assistant": false,
+  "passive_mode": "Test Mode, latest user report at capture start",
+  "passive_result": "FAIL_ZERO_SAMPLES_UNSUPPORTED_START_OF_MESSAGE",
+  "passive_cleanup_error": null,
+  "observer_exited": true,
+  "broker_exited": true,
+  "rk02_launch_count": 0,
+  "g11_authorization_received": false,
+  "completed_failure_gates": [
+    {
+      "gate": "G13",
+      "reply": "DONE G13",
+      "state": "Ignition OFF"
+    },
+    {
+      "gate": "G14",
+      "reply": "DONE G14",
+      "state": "OpenPort disconnected from vehicle"
+    },
+    {
+      "gate": "G15",
+      "reply": "done g15",
+      "state": "Schumacher charger/support disconnected",
+      "source": "User confirmation in this conversation, reaffirmed by latest resume directive"
+    },
+    {
+      "gate": "G16",
+      "reply": "DONE G16",
+      "state": "Battery negative disconnected and isolated",
+      "source": "User confirmation in this conversation, reaffirmed by latest resume directive"
+    },
+    {
+      "gate": "G17",
+      "reply": "DONE G17",
+      "state": "Battery positive disconnected; negative isolated",
+      "source": "User confirmation in this conversation, reaffirmed by latest resume directive"
+    },
+    {
+      "gate": "G18",
+      "reply": "DONE G18",
+      "state": "Vehicle-side power loss independently verified by user; no numeric voltage supplied",
+      "source": "User confirmation in this conversation, reaffirmed by latest resume directive"
+    },
+    {
+      "gate": "G19",
+      "reply": "DONE G19",
+      "state": "Green Test Mode connectors disconnected while vehicle fully unpowered",
+      "source": "User confirmation in this conversation, reaffirmed by latest resume directive"
+    },
+    {
+      "gate": "G20",
+      "reply": "DONE G20",
+      "state": "Battery POSITIVE terminal reconnected; negative remains disconnected and isolated",
+      "source": "User confirmation in this conversation",
+      "recorded_at_utc": "2026-09-29T23:05:24.510353+00:00"
+    },
+    {
+      "gate": "G21",
+      "reply": "DONE G21",
+      "state": "Battery NEGATIVE terminal reconnected after positive",
+      "source": "User confirmation in this conversation",
+      "recorded_at_utc": "2026-09-29T23:05:49.911732+00:00"
+    },
+    {
+      "gate": "G22",
+      "reply": "DONE G22",
+      "state": "Schumacher SE-5212A reconnected in 10 A charging mode, not 50 A Engine Start",
+      "source": "User confirmation in this conversation",
+      "recorded_at_utc": "2026-09-29T23:07:27.666543+00:00"
+    },
+    {
+      "gate": "G23",
+      "reply": "DONE G23",
+      "state": "Genuine OpenPort 2.0 reconnected; ignition OFF; green Test Mode connectors disconnected",
+      "source": "User confirmation in this conversation",
+      "recorded_at_utc": "2026-09-29T23:08:25.299035+00:00"
+    },
+    {
+      "gate": "G24",
+      "reply": "DONE G24",
+      "state": "Ignition ON; engine OFF; green Test Mode connectors DISCONNECTED",
+      "source": "User confirmation",
+      "recorded_at_utc": "2026-09-29T23:09:52.930302+00:00"
+    }
+  ],
+  "pending_gate": null,
+  "correction_root": "C:\\Dev\\A2WC511R_Final\\passive_som01",
+  "correction_physical_backend_executed": true,
+  "physical_session_complete": false,
+  "latest_user_directive": "C:\\Dev\\A2WC511R_Final\\state\\RESUME_DIRECTIVE_G20_20260929T230449422265Z.json",
+  "current_physical_state": {
+    "failure_recovery_G13_through_G19_complete": true,
+    "vehicle_fully_depowered": false,
+    "ignition": "ON",
+    "battery_positive": "CONNECTED",
+    "battery_negative": "CONNECTED",
+    "test_mode_connectors": "DISCONNECTED",
+    "radiator_fans": "INTENTIONALLY_PHYSICALLY_DISCONNECTED",
+    "rk02_invocations": 0,
+    "temporary_ram_kernel_uploaded": false,
+    "flash_operation_occurred": false,
+    "charger": "SCHUMACHER_SE_5212A_CONNECTED_10A_CHARGING",
+    "openport": "GENUINE_OPENPORT_2_0_CONNECTED",
+    "engine": "OFF"
+  },
+  "corrected_passive_execution_evidence": "C:\\Dev\\A2WC511R_ReadKernel\\acquisitions\\RK02_VEHICLE_02\\corrected_passive_verification_A8.begin.json",
+  "corrected_passive_acceptance": "C:\\Dev\\A2WC511R_ReadKernel\\acquisitions\\RK02_VEHICLE_02\\CORRECTED_PASSIVE_PHYSICAL_ACCEPTANCE.json",
+  "successor_acquisition_session": "RK02_VEHICLE_03"
+}

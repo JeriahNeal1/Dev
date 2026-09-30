@@ -1,0 +1,625 @@
+{
+  "schema": 1,
+  "status": "PASS_INDEPENDENT_PHYSICAL_TRANSITION_AUDIT",
+  "created_utc": "2026-09-30T02:15:47.608336+00:00",
+  "session_id": "RK03_TRANSITION_PROBE_01",
+  "reviewer": "oem_transition",
+  "review_mode": "Read existing files only; no probe/provider/hardware/test invocation",
+  "checks": [
+    {
+      "check": "One physical session header and terminal record",
+      "pass": true
+    },
+    {
+      "check": "22 exactly paired consecutive API calls",
+      "pass": true
+    },
+    {
+      "check": "Exact setup, three exchanges, then cleanup order",
+      "pass": true
+    },
+    {
+      "check": "Every API return is status zero",
+      "pass": true
+    },
+    {
+      "check": "Input/output call identity is complete",
+      "pass": true
+    },
+    {
+      "check": "QPC/UTC timing is coherent",
+      "pass": true
+    },
+    {
+      "check": "All logged normal API stack pointers match",
+      "pass": true
+    },
+    {
+      "check": "All logged message/configuration canaries intact",
+      "pass": true
+    },
+    {
+      "check": "Executed PE matches qualified and current bytes",
+      "pass": true
+    },
+    {
+      "check": "Certificate and contract hashes match execution",
+      "pass": true
+    },
+    {
+      "check": "Native authorization and one-shot reservations verified",
+      "pass": true
+    },
+    {
+      "check": "Reserved files bind the exact session/PE/contract",
+      "pass": true
+    },
+    {
+      "check": "Protocol/flags/baud unchanged",
+      "pass": true
+    },
+    {
+      "check": "Five separate SET_CONFIG calls in exact order",
+      "pass": true
+    },
+    {
+      "check": "GET_CONFIG follows SETs with input-only list",
+      "pass": true
+    },
+    {
+      "check": "All five effective settings equal requested values",
+      "pass": true
+    },
+    {
+      "check": "Broad filter exactly matches four-zero nonnull objects",
+      "pass": true
+    },
+    {
+      "check": "Exactly three fixed TX frames, no later command",
+      "pass": true
+    },
+    {
+      "check": "Each TX is exactly one accepted unchanged message",
+      "pass": true
+    },
+    {
+      "check": "Retained requested timeout semantics",
+      "pass": true
+    },
+    {
+      "check": "Six RX records: empty start indicators and complete frames",
+      "pass": true
+    },
+    {
+      "check": "TX/RX packet lengths and additive checksums valid",
+      "pass": true
+    },
+    {
+      "check": "BF identity exact 2F12515306",
+      "pass": true
+    },
+    {
+      "check": "81 response exact full C1 EF 8F frame",
+      "pass": true
+    },
+    {
+      "check": "8300 response exact full C3 frame",
+      "pass": true
+    },
+    {
+      "check": "All received/transmitted message bytes completely bounded",
+      "pass": true
+    },
+    {
+      "check": "Cleanup status zero in StopFilter/Disconnect/Close order",
+      "pass": true
+    },
+    {
+      "check": "Terminal state confirms cleanup and no errors",
+      "pass": true
+    },
+    {
+      "check": "Process exit confirmed by launcher record",
+      "pass": true
+    },
+    {
+      "check": "Console result agrees with native journal",
+      "pass": true
+    },
+    {
+      "check": "Recorded prelaunch/postexit client checks passed",
+      "pass": true
+    },
+    {
+      "check": "Postexit scan follows recorded process exit",
+      "pass": true
+    },
+    {
+      "check": "Root seal and all sealed evidence hashes validate",
+      "pass": true
+    },
+    {
+      "check": "Sealed raw copies equal original session files",
+      "pass": true
+    },
+    {
+      "check": "Raw session remains byte-identical throughout audit",
+      "pass": true
+    }
+  ],
+  "check_count": 35,
+  "errors": [],
+  "raw_session_inputs": [
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\physical_session\\RK03_TRANSITION_PROBE_01\\AUTHORIZATION.txt",
+      "bytes": 223,
+      "sha256": "e7e944f840c43a35f2e8a5b5d4bce2380a1856e70610e2994223643f98266268"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\physical_session\\RK03_TRANSITION_PROBE_01\\console.log",
+      "bytes": 56,
+      "sha256": "94b73eeb0b4a7bd7bb0c6fb229e2e2683cc6a58e91cb966971d416e228ebfef1"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\physical_session\\RK03_TRANSITION_PROBE_01\\EXECUTION.json",
+      "bytes": 1035,
+      "sha256": "4e36aa7086198a2570ba215047d37563210dfeecebc551ff31c2381e9d6d173f"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\physical_session\\RK03_TRANSITION_PROBE_01\\EXECUTION_BEGIN.json",
+      "bytes": 895,
+      "sha256": "36cc1091bdb129858b881ec4e863fb89058d5e34c220f052207150312dae25bd"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\physical_session\\RK03_TRANSITION_PROBE_01\\invocation.once",
+      "bytes": 155,
+      "sha256": "496df8bdbf3d54894a3307389e23b56a08129f308e2a16716eb0a60a0e12a7b0"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\physical_session\\RK03_TRANSITION_PROBE_01\\launch.reserved",
+      "bytes": 155,
+      "sha256": "496df8bdbf3d54894a3307389e23b56a08129f308e2a16716eb0a60a0e12a7b0"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\physical_session\\RK03_TRANSITION_PROBE_01\\native_api.jsonl",
+      "bytes": 72999,
+      "sha256": "57352963c842fa8cef0f45769a8c0f9613994df9c198fe434ee78e73d262a68b"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\physical_session\\RK03_TRANSITION_PROBE_01\\POSTEXIT_CLIENT_CHECK.json",
+      "bytes": 494,
+      "sha256": "0265a6d2edc8ee3b9427da46351abd2fc4bd0329feb5c8de7f1832e687271a01"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\physical_session\\RK03_TRANSITION_PROBE_01\\PRELAUNCH_CLIENT_CHECK.json",
+      "bytes": 494,
+      "sha256": "d65ea330443b664d7213030fec3ee90e86ecb88caa0511f16d274a0c010e482b"
+    }
+  ],
+  "additional_inputs": [
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\PROBE_REVIEW_CONTRACT.json",
+      "bytes": 4386,
+      "sha256": "a0b98003aadcd647a98a38fffc3a7404091af01b407ca19ea81177d6d48ed889"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\probe_qualification\\QUALIFICATION.json",
+      "bytes": 86590,
+      "sha256": "96d64646cdc9fa620d45afc7f2fc80e9c5b90a146a54b40c79324de85b9ee4d3"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\physical_probe_result\\MANIFEST.json",
+      "bytes": 3069,
+      "sha256": "dd4d4d662346fdcd653fd71d634953f8c16b316b91f7d8f0e4270eb1111b9454"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\physical_probe_result\\evidence\\POSTEXIT_CLIENT_CHECK.json",
+      "bytes": 494,
+      "sha256": "0265a6d2edc8ee3b9427da46351abd2fc4bd0329feb5c8de7f1832e687271a01"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\build_a\\rk03_transition_probe32.exe",
+      "bytes": 283648,
+      "sha256": "1573fa0046a6c1ee6b0ca9d3b0873ce0b3536fb2cdc6888304fb1e7b1ff3513e"
+    }
+  ],
+  "api_count": 22,
+  "nonzero_api_status_count": 0,
+  "transmit_frames": [
+    "8010f001bf40",
+    "8010f0018102",
+    "8010f002830005"
+  ],
+  "receive_frames": [
+    "80f01039ffa210112f1251530673facba62b81fea800000060ce54f9b1e4000c200000000000dc00005d1f3080f226000043fb00e1000000000000c1f0c2",
+    "80f01003c1ef8fc2",
+    "80f01007c30000ff00ff0048"
+  ],
+  "ecu_id": "2f12515306",
+  "effective_configuration": [
+    {
+      "parameter": 22,
+      "value": 0
+    },
+    {
+      "parameter": 7,
+      "value": 1
+    },
+    {
+      "parameter": 10,
+      "value": 0
+    },
+    {
+      "parameter": 12,
+      "value": 0
+    },
+    {
+      "parameter": 3,
+      "value": 0
+    }
+  ],
+  "version_strings": {
+    "firmware": "1.17.4877",
+    "dll": "1.02.4870 Feb  3 2017 23:36:05",
+    "api": "04.04"
+  },
+  "ordered_api_events": [
+    {
+      "sequence": 0,
+      "function": "PassThruOpen",
+      "status": 0,
+      "qpc_before": 3736955811925,
+      "qpc_after": 3736955928591,
+      "api_duration_ms": 11.6666,
+      "count": null,
+      "message": null
+    },
+    {
+      "sequence": 1,
+      "function": "PassThruReadVersion",
+      "status": 0,
+      "qpc_before": 3736955929104,
+      "qpc_after": 3736955929108,
+      "api_duration_ms": 0.0004,
+      "count": null,
+      "message": null
+    },
+    {
+      "sequence": 2,
+      "function": "PassThruConnect",
+      "status": 0,
+      "qpc_before": 3736955929773,
+      "qpc_after": 3736955961028,
+      "api_duration_ms": 3.1255,
+      "count": null,
+      "message": null
+    },
+    {
+      "sequence": 3,
+      "function": "PassThruIoctl",
+      "status": 0,
+      "qpc_before": 3736955961402,
+      "qpc_after": 3736955965293,
+      "api_duration_ms": 0.3891,
+      "count": null,
+      "message": null
+    },
+    {
+      "sequence": 4,
+      "function": "PassThruIoctl",
+      "status": 0,
+      "qpc_before": 3736955966098,
+      "qpc_after": 3736955969740,
+      "api_duration_ms": 0.3642,
+      "count": null,
+      "message": null
+    },
+    {
+      "sequence": 5,
+      "function": "PassThruIoctl",
+      "status": 0,
+      "qpc_before": 3736955970221,
+      "qpc_after": 3736955974205,
+      "api_duration_ms": 0.3984,
+      "count": null,
+      "message": null
+    },
+    {
+      "sequence": 6,
+      "function": "PassThruIoctl",
+      "status": 0,
+      "qpc_before": 3736955974554,
+      "qpc_after": 3736955978510,
+      "api_duration_ms": 0.3956,
+      "count": null,
+      "message": null
+    },
+    {
+      "sequence": 7,
+      "function": "PassThruIoctl",
+      "status": 0,
+      "qpc_before": 3736955979015,
+      "qpc_after": 3736955982863,
+      "api_duration_ms": 0.3848,
+      "count": null,
+      "message": null
+    },
+    {
+      "sequence": 8,
+      "function": "PassThruIoctl",
+      "status": 0,
+      "qpc_before": 3736955983236,
+      "qpc_after": 3736956013477,
+      "api_duration_ms": 3.0241,
+      "count": null,
+      "message": null
+    },
+    {
+      "sequence": 9,
+      "function": "PassThruStartMsgFilter",
+      "status": 0,
+      "qpc_before": 3736956014355,
+      "qpc_after": 3736956019869,
+      "api_duration_ms": 0.5514,
+      "count": null,
+      "message": null
+    },
+    {
+      "sequence": 10,
+      "function": "PassThruWriteMsgs",
+      "status": 0,
+      "qpc_before": 3736956020747,
+      "qpc_after": 3736956153910,
+      "api_duration_ms": 13.3163,
+      "count": 1,
+      "message": {
+        "protocol": 3,
+        "rx_status": 0,
+        "tx_flags": 0,
+        "timestamp": 0,
+        "data_size": 6,
+        "extra_data_index": 0,
+        "buffer_capacity": 4128,
+        "logged_bytes": 6,
+        "data_truncated": false,
+        "data_hex": "8010f001bf40"
+      }
+    },
+    {
+      "sequence": 11,
+      "function": "PassThruReadMsgs",
+      "status": 0,
+      "qpc_before": 3736956154723,
+      "qpc_after": 3736956842101,
+      "api_duration_ms": 68.7378,
+      "count": 1,
+      "message": {
+        "protocol": 3,
+        "rx_status": 2,
+        "tx_flags": 0,
+        "timestamp": 1307635543,
+        "data_size": 0,
+        "extra_data_index": 0,
+        "buffer_capacity": 4128,
+        "logged_bytes": 0,
+        "data_truncated": false,
+        "data_hex": ""
+      }
+    },
+    {
+      "sequence": 12,
+      "function": "PassThruReadMsgs",
+      "status": 0,
+      "qpc_before": 3736956842986,
+      "qpc_after": 3736957493466,
+      "api_duration_ms": 65.048,
+      "count": 1,
+      "message": {
+        "protocol": 3,
+        "rx_status": 0,
+        "tx_flags": 0,
+        "timestamp": 1307765064,
+        "data_size": 62,
+        "extra_data_index": 62,
+        "buffer_capacity": 4128,
+        "logged_bytes": 62,
+        "data_truncated": false,
+        "data_hex": "80f01039ffa210112f1251530673facba62b81fea800000060ce54f9b1e4000c200000000000dc00005d1f3080f226000043fb00e1000000000000c1f0c2"
+      }
+    },
+    {
+      "sequence": 13,
+      "function": "PassThruWriteMsgs",
+      "status": 0,
+      "qpc_before": 3736957494608,
+      "qpc_after": 3736957626495,
+      "api_duration_ms": 13.1887,
+      "count": 1,
+      "message": {
+        "protocol": 3,
+        "rx_status": 0,
+        "tx_flags": 0,
+        "timestamp": 0,
+        "data_size": 6,
+        "extra_data_index": 0,
+        "buffer_capacity": 4128,
+        "logged_bytes": 6,
+        "data_truncated": false,
+        "data_hex": "8010f0018102"
+      }
+    },
+    {
+      "sequence": 14,
+      "function": "PassThruReadMsgs",
+      "status": 0,
+      "qpc_before": 3736957627170,
+      "qpc_after": 3736957847368,
+      "api_duration_ms": 22.0198,
+      "count": 1,
+      "message": {
+        "protocol": 3,
+        "rx_status": 2,
+        "tx_flags": 0,
+        "timestamp": 1307783393,
+        "data_size": 0,
+        "extra_data_index": 0,
+        "buffer_capacity": 4128,
+        "logged_bytes": 0,
+        "data_truncated": false,
+        "data_hex": ""
+      }
+    },
+    {
+      "sequence": 15,
+      "function": "PassThruReadMsgs",
+      "status": 0,
+      "qpc_before": 3736957848052,
+      "qpc_after": 3736957848072,
+      "api_duration_ms": 0.002,
+      "count": 1,
+      "message": {
+        "protocol": 3,
+        "rx_status": 0,
+        "tx_flags": 0,
+        "timestamp": 1307800580,
+        "data_size": 8,
+        "extra_data_index": 8,
+        "buffer_capacity": 4128,
+        "logged_bytes": 8,
+        "data_truncated": false,
+        "data_hex": "80f01003c1ef8fc2"
+      }
+    },
+    {
+      "sequence": 16,
+      "function": "PassThruWriteMsgs",
+      "status": 0,
+      "qpc_before": 3736957848505,
+      "qpc_after": 3736957999429,
+      "api_duration_ms": 15.0924,
+      "count": 1,
+      "message": {
+        "protocol": 3,
+        "rx_status": 0,
+        "tx_flags": 0,
+        "timestamp": 0,
+        "data_size": 7,
+        "extra_data_index": 0,
+        "buffer_capacity": 4128,
+        "logged_bytes": 7,
+        "data_truncated": false,
+        "data_hex": "8010f002830005"
+      }
+    },
+    {
+      "sequence": 17,
+      "function": "PassThruReadMsgs",
+      "status": 0,
+      "qpc_before": 3736958000217,
+      "qpc_after": 3736958305821,
+      "api_duration_ms": 30.5604,
+      "count": 1,
+      "message": {
+        "protocol": 3,
+        "rx_status": 2,
+        "tx_flags": 0,
+        "timestamp": 1307820413,
+        "data_size": 0,
+        "extra_data_index": 0,
+        "buffer_capacity": 4128,
+        "logged_bytes": 0,
+        "data_truncated": false,
+        "data_hex": ""
+      }
+    },
+    {
+      "sequence": 18,
+      "function": "PassThruReadMsgs",
+      "status": 0,
+      "qpc_before": 3736958306685,
+      "qpc_after": 3736958306706,
+      "api_duration_ms": 0.0021,
+      "count": 1,
+      "message": {
+        "protocol": 3,
+        "rx_status": 0,
+        "tx_flags": 0,
+        "timestamp": 1307846085,
+        "data_size": 12,
+        "extra_data_index": 12,
+        "buffer_capacity": 4128,
+        "logged_bytes": 12,
+        "data_truncated": false,
+        "data_hex": "80f01007c30000ff00ff0048"
+      }
+    },
+    {
+      "sequence": 19,
+      "function": "PassThruStopMsgFilter",
+      "status": 0,
+      "qpc_before": 3736958307445,
+      "qpc_after": 3736958311800,
+      "api_duration_ms": 0.4355,
+      "count": null,
+      "message": null
+    },
+    {
+      "sequence": 20,
+      "function": "PassThruDisconnect",
+      "status": 0,
+      "qpc_before": 3736958313136,
+      "qpc_after": 3736958317521,
+      "api_duration_ms": 0.4385,
+      "count": null,
+      "message": null
+    },
+    {
+      "sequence": 21,
+      "function": "PassThruClose",
+      "status": 0,
+      "qpc_before": 3736958318624,
+      "qpc_after": 3736958325083,
+      "api_duration_ms": 0.6459,
+      "count": null,
+      "message": null
+    }
+  ],
+  "timing": {
+    "qpc_frequency_hz": 10000000,
+    "c1_read_exit_to_83_write_enter_ms": 0.0433,
+    "c1_read_exit_to_83_write_exit_ms": 15.1357,
+    "83_write_exit_to_c3_read_exit_ms": 30.7277,
+    "first_api_enter_to_final_close_exit_ms": 251.3158,
+    "interpretation": "Host API boundary intervals; not measured on-wire bit/interbyte timing."
+  },
+  "process_exit": {
+    "session_id": "RK03_TRANSITION_PROBE_01",
+    "command_argv": [
+      "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\build_a\\rk03_transition_probe32.exe",
+      "--physical-transition-probe",
+      "--session",
+      "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\physical_session\\RK03_TRANSITION_PROBE_01",
+      "--authorization-file",
+      "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\physical_session\\RK03_TRANSITION_PROBE_01\\AUTHORIZATION.txt"
+    ],
+    "started_utc": "2026-09-30T01:32:03.824745+00:00",
+    "executable_sha256": "1573fa0046a6c1ee6b0ca9d3b0873ce0b3536fb2cdc6888304fb1e7b1ff3513e",
+    "contract_sha256": "a0b98003aadcd647a98a38fffc3a7404091af01b407ca19ea81177d6d48ed889",
+    "qualification_sha256": "96d64646cdc9fa620d45afc7f2fc80e9c5b90a146a54b40c79324de85b9ee4d3",
+    "authorization_source": "Exact user commit reply recorded after all four human preparation gates",
+    "retry_allowed": false,
+    "pid": 7496,
+    "exit_code": 0,
+    "exited_utc": "2026-09-30T01:32:04.220958+00:00",
+    "process_exited": true,
+    "bookkeeping_error": null
+  },
+  "conclusion": "The one recorded qualified physical probe completed BF,81,8300 with the complete expected C3 response and clean J2534 cleanup, then exited zero.",
+  "limits": [
+    "This success establishes the reviewed three-request transition with the combined tested configuration/filter path; it does not uniquely identify which difference caused the prior RK02 failure.",
+    "No seed/key, upload, kernel start, ROM read or flash operation is present in the exact recorded transmit sequence. Full acquisition is outside this probe.",
+    "J2534 cleanup and process exit are confirmed by the recorded successful returns, launcher exit and sealed postexit client scan. This audit does not perform a new live process scan.",
+    "Subsequent physical recovery and OEM-return status are owned by root and are outside this bounded transition audit.",
+    "All old component-gate details belong to the historical probe authorization; current human gate policy is managed by root."
+  ]
+}

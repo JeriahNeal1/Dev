@@ -1,0 +1,173 @@
+{
+  "ROM_read_requests": 1,
+  "address": "00000000",
+  "arbitrary_address_or_payload": false,
+  "artifact_kind": "DETERMINISTIC_PYTHON_ZIPAPP_STATIC_FAKE_MODEL",
+  "canonical_build_manifest_sha256": "1ffadea2fb621b9797a62165db399e658cb5d592363e43b55badec28b44a8628",
+  "current_ROM_sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2",
+  "end_exclusive": "00000200",
+  "expected_data_sha256": "d3421c81a4380638a8844e34012db592ba6eed35ca5cb8402880b79869e71f01",
+  "expected_reply_sha256": "796f64cefcd2b81c5c7662b2bdacad828c0a948c55bfdc5d002ac5c8da7f898e",
+  "flash_operations": 0,
+  "future_plan": {
+    "bytes": 3521,
+    "path": "C:\\Dev\\A2WC511R_RK03_BoundedRomReadOffline\\bounded_rom_read\\FUTURE_PHYSICAL_RELEASE_PLAN.md",
+    "sha256": "0e4c3d634c5433ee2f06651dceca9b5963b69343c5bf22dfac769bd7ed264202"
+  },
+  "identity_count": 1,
+  "independent_reviews": [
+    {
+      "bytes": 81763,
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_rom_read_offline_20260930_01\\instruction_review\\INDEPENDENT_REVIEW.json",
+      "sha256": "6e43a7cdd2ee5d4588bf314d11ec5769539221474d73998b45b50d99e8d97b95"
+    },
+    {
+      "bytes": 2350,
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_rom_read_offline_20260930_01\\root_instruction_review\\ROOT_INSTRUCTION_REVIEW.json",
+      "sha256": "b919a91b5d2b2e273bbfb3f28c9e96a2426883eb5125a1affe5af4ac73cfdfed"
+    },
+    {
+      "bytes": 6897,
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_rom_read_offline_20260930_01\\instruction_review\\PACKAGING_REVIEW.json",
+      "sha256": "433e5e139ffcf8d969b762e705b0b10b5aeae310f4439034e5188e912d53d736"
+    }
+  ],
+  "instruction_count": 10327,
+  "instruction_replay": {
+    "bytes": 14841,
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_rom_read_offline_20260930_01\\instruction_review\\replay_20260930T065049517214Z\\INSTRUCTION_REPLAY.json",
+    "sha256": "c8a6e1f00bcf17686b6e193e572d70546c54642320e5a8cd39f4829aee6a5147"
+  },
+  "length": 512,
+  "limits": [
+    "This qualification applies only to a static fake model and one SH-2E instruction continuation.",
+    "No physical bounded ROM read occurred. The completed physical stage stopped after identity.",
+    "The first512 bytes also match stock; this block cannot identify complete calibration or the entire current ROM.",
+    "Recorded prefix is reused as data; prior transport/seed/image qualification is not rerun or added to the test count.",
+    "Streaming receive fragmentation, native ABI/deadlines and physical recovery require a separately qualified future native release.",
+    "Instruction/peripheral ticks are declared simulation assumptions, not silicon timing."
+  ],
+  "maximum_transmits": 25,
+  "model_sha256": "bf240d6c64257aca1952295c8a7bee03be714179124e002cdf45854d599aa0f6",
+  "negative_fault_cases": 78,
+  "new_instruction_read_requests": 1,
+  "pass_number": 0,
+  "physical_operations_this_scope": 0,
+  "physical_status": "NOT_RUN_NOT_AUTHORIZED_IN_THIS_SCOPE",
+  "prior_upload_start_identity_instructions_reexecuted": 0,
+  "provider_loads": 0,
+  "qualification_tests": {
+    "bytes": 28986,
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_rom_read_offline_20260930_01\\qualification_tests\\TEST_REPORT.json",
+    "sha256": "133f89d03a49dc28e4640b67c11ee9af60217c1180d9633f0103f799afd6afcb"
+  },
+  "request_hex": "beef00080300000000000200ba",
+  "schema": 1,
+  "sealed_source_and_builds": [
+    {
+      "bytes": 31,
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_rom_read_offline_20260930_01\\sealed\\source\\.gitignore",
+      "sha256": "223395e937c51c7e22dc1735dfcca0b49906689140db8b01f20a0e163ac961eb"
+    },
+    {
+      "bytes": 3521,
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_rom_read_offline_20260930_01\\sealed\\source\\FUTURE_PHYSICAL_RELEASE_PLAN.md",
+      "sha256": "0e4c3d634c5433ee2f06651dceca9b5963b69343c5bf22dfac769bd7ed264202"
+    },
+    {
+      "bytes": 3231,
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_rom_read_offline_20260930_01\\sealed\\source\\README.md",
+      "sha256": "d38b2f20689057de0500359b061ac361ca70e8ce2b6d7a585f16aeb81821e4ff"
+    },
+    {
+      "bytes": 115516,
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_rom_read_offline_20260930_01\\sealed\\source\\contract\\CONTRACT.json",
+      "sha256": "9dccc5043477150c479255803ea25f48fe815d5b254f9c045e30b5923327edcf"
+    },
+    {
+      "bytes": 2647,
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_rom_read_offline_20260930_01\\sealed\\source\\contract\\SOURCE_PINS.json",
+      "sha256": "054998147923ccc7e6727ff5ca6c47fa0aaf4dda4ef63d30583b309091c35590"
+    },
+    {
+      "bytes": 409,
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_rom_read_offline_20260930_01\\sealed\\source\\src\\__main__.py",
+      "sha256": "90c37d180c151be48151047b01e8f363db8ebf307eb0a06ef843eb18e013fe3f"
+    },
+    {
+      "bytes": 9990,
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_rom_read_offline_20260930_01\\sealed\\source\\src\\bounded_model.py",
+      "sha256": "6af958e16372a3e1e0b62d0b1278f4b8f4bf09ecabdfcad7907f065de31d32c7"
+    },
+    {
+      "bytes": 78344,
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_rom_read_offline_20260930_01\\sealed\\source\\src\\fixed_data.py",
+      "sha256": "df97c018b3cc90629be46fb0a7a352d3f04b25320931f088da88238001c60fc8"
+    },
+    {
+      "bytes": 1539,
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_rom_read_offline_20260930_01\\sealed\\source\\tools\\build.py",
+      "sha256": "b5818dbe4d83e44e6bdd4d8d2be9290300f0b08f2a0ae862d61e8c46e6156d4e"
+    },
+    {
+      "bytes": 11627,
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_rom_read_offline_20260930_01\\sealed\\source\\tools\\derive_offline_artifact.py",
+      "sha256": "64b647247837bea0b19c109076342763b29133864ac88911bba4ba411df63637"
+    },
+    {
+      "bytes": 10489,
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_rom_read_offline_20260930_01\\sealed\\source\\tools\\qualify.py",
+      "sha256": "964e4e581cf9c3b0086d549cf5206876d8425b087e3837c9b4f1f6c213583b69"
+    },
+    {
+      "bytes": 5871,
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_rom_read_offline_20260930_01\\sealed\\source\\tools\\review_instruction_evidence.py",
+      "sha256": "a8597595b26a32d40c949c25c390fc917f9150549153250bbb05b45f2f40e0e5"
+    },
+    {
+      "bytes": 9414,
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_rom_read_offline_20260930_01\\sealed\\source\\tools\\seal_offline.py",
+      "sha256": "4b838790d0f4d8ce2ebc1522ff006fdd5d7c8669360de53c0f2b72dc1fa321e3"
+    },
+    {
+      "bytes": 89073,
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_rom_read_offline_20260930_01\\sealed\\source\\build_a\\rk03_bounded_rom_read_offline.pyz",
+      "sha256": "bf240d6c64257aca1952295c8a7bee03be714179124e002cdf45854d599aa0f6"
+    },
+    {
+      "bytes": 1014,
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_rom_read_offline_20260930_01\\sealed\\source\\build_a\\BUILD_MANIFEST.json",
+      "sha256": "1ffadea2fb621b9797a62165db399e658cb5d592363e43b55badec28b44a8628"
+    },
+    {
+      "bytes": 89073,
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_rom_read_offline_20260930_01\\sealed\\source\\build_b\\rk03_bounded_rom_read_offline.pyz",
+      "sha256": "bf240d6c64257aca1952295c8a7bee03be714179124e002cdf45854d599aa0f6"
+    },
+    {
+      "bytes": 1014,
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_rom_read_offline_20260930_01\\sealed\\source\\build_b\\BUILD_MANIFEST.json",
+      "sha256": "1ffadea2fb621b9797a62165db399e658cb5d592363e43b55badec28b44a8628"
+    },
+    {
+      "bytes": 1808,
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_rom_read_offline_20260930_01\\sealed\\unchanged_kernel_image.bin",
+      "sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581"
+    },
+    {
+      "bytes": 512,
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_rom_read_offline_20260930_01\\sealed\\expected_first512_current.bin",
+      "sha256": "d3421c81a4380638a8844e34012db592ba6eed35ca5cb8402880b79869e71f01"
+    }
+  ],
+  "sealed_utc": "2026-09-30T07:00:41.367944+00:00",
+  "second_read_allowed": false,
+  "source_branch": "rk03/bounded-rom-read-offline",
+  "source_commit": "64da59dc1f4f2fe9e7d11c3443ac34034936c780",
+  "start_count": 1,
+  "status": "PASS_OFFLINE_RK03_BOUNDED_ROM_READ",
+  "test_count": 122,
+  "tests_passed": 122,
+  "uploaded_image_bytes": 1808,
+  "uploaded_image_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581"
+}

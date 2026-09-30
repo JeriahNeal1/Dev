@@ -1,0 +1,356 @@
+{
+  "schema": 1,
+  "status": "OFFLINE_FINAL_RELEASE_CONTRACT_NOT_PHYSICAL_AUTHORIZATION",
+  "created_utc": "2026-09-30T08:29:28.521947+00:00",
+  "session_id": "RK03_FINAL_TWO_PASS_128_01",
+  "session_path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\physical_session\\RK03_FINAL_TWO_PASS_128_01",
+  "requires_exact_human_authorization": "PROCEED RK03 FINAL TWO PASS ACQUISITION",
+  "maximum_physical_invocations": 1,
+  "physical_authorization_received": false,
+  "expected_ECU_identity": "2F12515306",
+  "maximum_requests": 16408,
+  "maximum_ROM_requests": 16384,
+  "ordered_prefix_requests": [
+    {
+      "stage": 0,
+      "wire_hex": "8010f001bf40",
+      "dynamic_rule": null,
+      "sample_wire_hex": "8010f001bf40",
+      "expected_reply_hex": "80f01039ffa210112f1251530673facba62b81fea800000060ce54f9b1e4000c200000000000dc00005d1f3080f226000043fb00e1000000000000c1f0c2"
+    },
+    {
+      "stage": 1,
+      "wire_hex": "8010f0018102",
+      "dynamic_rule": null,
+      "sample_wire_hex": "8010f0018102",
+      "expected_reply_hex": "80f01003c1ef8fc2"
+    },
+    {
+      "stage": 2,
+      "wire_hex": "8010f002830005",
+      "dynamic_rule": null,
+      "sample_wire_hex": "8010f002830005",
+      "expected_reply_hex": "80f01007c30000ff00ff0048"
+    },
+    {
+      "stage": 3,
+      "wire_hex": "8010f0022701aa",
+      "dynamic_rule": null,
+      "sample_wire_hex": "8010f0022701aa",
+      "expected_reply_hex": "80f0100667011234567802"
+    },
+    {
+      "stage": 4,
+      "wire_hex": null,
+      "dynamic_rule": "2702 plus reviewed key derived from validated four-byte seed",
+      "sample_wire_hex": "8010f0062702e78f1f2165",
+      "expected_reply_hex": "80f0100367023420"
+    },
+    {
+      "stage": 5,
+      "wire_hex": "8010f0031085021a",
+      "dynamic_rule": null,
+      "sample_wire_hex": "8010f0031085021a",
+      "expected_reply_hex": "80f01002508557"
+    },
+    {
+      "stage": 6,
+      "wire_hex": "8010f00834ff30000400071006",
+      "dynamic_rule": null,
+      "sample_wire_hex": "8010f00834ff30000400071006",
+      "expected_reply_hex": "80f0100274847a"
+    },
+    {
+      "stage": 7,
+      "wire_hex": "8010f08436ff30002178b10a345b1076fd256f75f05ba033e301ed7bbae243b735e6aedbc143c40be01bf9b6caab4599eccaacb23d3eeb06dddf471ed3b0238f2bf0553861e117054bad87079a8cbb9681c01303b7825b2d199bc7e5c4dd5bcf85cf1a64050df3ab050df3ab2a45f9b476963b1f16baea94084e321a79bd4cf9c0f25912ab9d7b8df4",
+      "dynamic_rule": null,
+      "sample_wire_hex": "8010f08436ff30002178b10a345b1076fd256f75f05ba033e301ed7bbae243b735e6aedbc143c40be01bf9b6caab4599eccaacb23d3eeb06dddf471ed3b0238f2bf0553861e117054bad87079a8cbb9681c01303b7825b2d199bc7e5c4dd5bcf85cf1a64050df3ab050df3ab2a45f9b476963b1f16baea94084e321a79bd4cf9c0f25912ab9d7b8df4",
+      "expected_reply_hex": "80f0100176f7"
+    },
+    {
+      "stage": 8,
+      "wire_hex": "8010f08436ff3080a614d816e73b7a2f8010d0033c21fd82e809dcd33849889e1bb8439f58c18e12d1328f80e2d30dccf17eadf57d339c382284e4779a8cbb96094cf9da205bf8c04e6120419a8cbb9687d0d3c3ea5b98c957670833e1a0128aff648ef5c03ca6b7b876eac3f7b569d887422e4be8f5108bedc55089c03ca6b7539b8ad1a4d30a534a",
+      "dynamic_rule": null,
+      "sample_wire_hex": "8010f08436ff3080a614d816e73b7a2f8010d0033c21fd82e809dcd33849889e1bb8439f58c18e12d1328f80e2d30dccf17eadf57d339c382284e4779a8cbb96094cf9da205bf8c04e6120419a8cbb9687d0d3c3ea5b98c957670833e1a0128aff648ef5c03ca6b7b876eac3f7b569d887422e4be8f5108bedc55089c03ca6b7539b8ad1a4d30a534a",
+      "expected_reply_hex": "80f0100176f7"
+    },
+    {
+      "stage": 9,
+      "wire_hex": "8010f08436ff3100e28c3ee42446007d2de0ddaa9dce70327241c643aab2699ea62dd88c9cead164bbf16590f4e0cd28e987359e6b371cd882af16896daaa08c2bfb509b6f5a700b7016e8ad4d3d09337306eba60e9f2d6e3e5ccec225f798f1fc359ea168d7727d2e12bfa5927d740c170a930a862403ee9330f481bc7dd24e36e13bd0697c3ebcfc",
+      "dynamic_rule": null,
+      "sample_wire_hex": "8010f08436ff3100e28c3ee42446007d2de0ddaa9dce70327241c643aab2699ea62dd88c9cead164bbf16590f4e0cd28e987359e6b371cd882af16896daaa08c2bfb509b6f5a700b7016e8ad4d3d09337306eba60e9f2d6e3e5ccec225f798f1fc359ea168d7727d2e12bfa5927d740c170a930a862403ee9330f481bc7dd24e36e13bd0697c3ebcfc",
+      "expected_reply_hex": "80f0100176f7"
+    },
+    {
+      "stage": 10,
+      "wire_hex": "8010f08436ff3180e53ad55784b629fd3cea7e81d4dc1bda5cf12a09f0b79a4aa55b665170242840fb7a57ac4529e2035494df2334c35cd56728ca429349c6346df8cb0851762c820bd86e23ff3f981ecfaa3f64bd138e591f7758aa5bc2bb0a356880ee7fe99c9e999df968b7990b479cead164b8a522b9916f7876b64b0a986df8cb08e41af6e447",
+      "dynamic_rule": null,
+      "sample_wire_hex": "8010f08436ff3180e53ad55784b629fd3cea7e81d4dc1bda5cf12a09f0b79a4aa55b665170242840fb7a57ac4529e2035494df2334c35cd56728ca429349c6346df8cb0851762c820bd86e23ff3f981ecfaa3f64bd138e591f7758aa5bc2bb0a356880ee7fe99c9e999df968b7990b479cead164b8a522b9916f7876b64b0a986df8cb08e41af6e447",
+      "expected_reply_hex": "80f0100176f7"
+    },
+    {
+      "stage": 11,
+      "wire_hex": "8010f08436ff3200eca5fa6a8a62f844b5e1848ef17eadf568825b141d4ff58dc89ab04cfbd4a32d9abc830e01f8532ebdbc9702cee42851332c5982b6577390905dcdb16d01a44985461295b0146d10af5802982bcc68f85cf4a719a94e5346ef3981a189138327778d6eabd4a1b462624856a52b19196c33317cbf50c026109533ebf66df8cb08ea",
+      "dynamic_rule": null,
+      "sample_wire_hex": "8010f08436ff3200eca5fa6a8a62f844b5e1848ef17eadf568825b141d4ff58dc89ab04cfbd4a32d9abc830e01f8532ebdbc9702cee42851332c5982b6577390905dcdb16d01a44985461295b0146d10af5802982bcc68f85cf4a719a94e5346ef3981a189138327778d6eabd4a1b462624856a52b19196c33317cbf50c026109533ebf66df8cb08ea",
+      "expected_reply_hex": "80f0100176f7"
+    },
+    {
+      "stage": 12,
+      "wire_hex": "8010f08436ff3280f40b4a6eaac8fec9999df968727f34e532725d2a308f31b7fd4a3cc0fb7a57ac2178b10aecaf7860c2a995fabf999e820e33d2922119a57cfdd3ffff83d78c2ed9d6fc2e55d8f95b582d518eecaf786053bb63cf43eb460683d78c2e08ac051618f01400e24c1787a16505d65eb63b868a551574082d051ad708c41bde2eec0c0e",
+      "dynamic_rule": null,
+      "sample_wire_hex": "8010f08436ff3280f40b4a6eaac8fec9999df968727f34e532725d2a308f31b7fd4a3cc0fb7a57ac2178b10aecaf7860c2a995fabf999e820e33d2922119a57cfdd3ffff83d78c2ed9d6fc2e55d8f95b582d518eecaf786053bb63cf43eb460683d78c2e08ac051618f01400e24c1787a16505d65eb63b868a551574082d051ad708c41bde2eec0c0e",
+      "expected_reply_hex": "80f0100176f7"
+    },
+    {
+      "stage": 13,
+      "wire_hex": "8010f08436ff33006bf35d4fef1ead4e87be33e29dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf3123c8",
+      "dynamic_rule": null,
+      "sample_wire_hex": "8010f08436ff33006bf35d4fef1ead4e87be33e29dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf3123c8",
+      "expected_reply_hex": "80f0100176f7"
+    },
+    {
+      "stage": 14,
+      "wire_hex": "8010f08436ff33809dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf3123ec",
+      "dynamic_rule": null,
+      "sample_wire_hex": "8010f08436ff33809dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf3123ec",
+      "expected_reply_hex": "80f0100176f7"
+    },
+    {
+      "stage": 15,
+      "wire_hex": "8010f08436ff34009dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31236d",
+      "dynamic_rule": null,
+      "sample_wire_hex": "8010f08436ff34009dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31236d",
+      "expected_reply_hex": "80f0100176f7"
+    },
+    {
+      "stage": 16,
+      "wire_hex": "8010f08436ff34809dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf3123ed",
+      "dynamic_rule": null,
+      "sample_wire_hex": "8010f08436ff34809dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf3123ed",
+      "expected_reply_hex": "80f0100176f7"
+    },
+    {
+      "stage": 17,
+      "wire_hex": "8010f08436ff35009dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31236e",
+      "dynamic_rule": null,
+      "sample_wire_hex": "8010f08436ff35009dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31236e",
+      "expected_reply_hex": "80f0100176f7"
+    },
+    {
+      "stage": 18,
+      "wire_hex": "8010f08436ff35809dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf3123ee",
+      "dynamic_rule": null,
+      "sample_wire_hex": "8010f08436ff35809dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf3123ee",
+      "expected_reply_hex": "80f0100176f7"
+    },
+    {
+      "stage": 19,
+      "wire_hex": "8010f08436ff36009dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31236f",
+      "dynamic_rule": null,
+      "sample_wire_hex": "8010f08436ff36009dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31236f",
+      "expected_reply_hex": "80f0100176f7"
+    },
+    {
+      "stage": 20,
+      "wire_hex": "8010f08436ff36809dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf3123ef",
+      "dynamic_rule": null,
+      "sample_wire_hex": "8010f08436ff36809dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf31239dbf3123ef",
+      "expected_reply_hex": "80f0100176f7"
+    },
+    {
+      "stage": 21,
+      "wire_hex": "8010f01436ff37009dbf31239dbf31239dbf3123506e0f1dfa",
+      "dynamic_rule": null,
+      "sample_wire_hex": "8010f01436ff37009dbf31239dbf31239dbf3123506e0f1dfa",
+      "expected_reply_hex": "80f0100176f7"
+    },
+    {
+      "stage": 22,
+      "wire_hex": "8010f003310101b6",
+      "dynamic_rule": null,
+      "sample_wire_hex": "8010f003310101b6",
+      "expected_reply_hex": "80f01003710101f6"
+    },
+    {
+      "stage": 23,
+      "wire_hex": "beef000101af",
+      "dynamic_rule": null,
+      "sample_wire_hex": "beef000101af",
+      "expected_reply_hex": "beef000f8141325743353131522d524b3032005f"
+    }
+  ],
+  "fixed_reads": {
+    "ROM_start": 0,
+    "ROM_end_exclusive": 1048576,
+    "block_bytes": 128,
+    "blocks_per_pass": 8192,
+    "passes": 2,
+    "total_reads": 16384,
+    "total_payload_bytes": 2097152,
+    "first_address": 0,
+    "last_address": 1048448,
+    "frame_length": 13,
+    "response_length": 139,
+    "response_body_length": 134,
+    "fixed_schedule": {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_final_two_pass_128_20260930_01\\FIXED_READ_SCHEDULE.bin",
+      "bytes": 212992,
+      "sha256": "2d9c6c3d74100f476c7a81c57b8b2c86a5f047b52dedb40bf5d01f8ae996f2f2"
+    },
+    "address_rule": "(index % 8192) * 128",
+    "pass_rule": "index // 8192",
+    "index_range": [
+      0,
+      16384
+    ],
+    "no_gaps": true,
+    "no_overlaps": true,
+    "no_duplicate_addresses_within_pass": true
+  },
+  "connect": {
+    "protocol": 3,
+    "flags": 512,
+    "baud": 4800
+  },
+  "set_config_order": [
+    {
+      "parameter": 22,
+      "value": 0
+    },
+    {
+      "parameter": 7,
+      "value": 1
+    },
+    {
+      "parameter": 10,
+      "value": 0
+    },
+    {
+      "parameter": 12,
+      "value": 0
+    },
+    {
+      "parameter": 3,
+      "value": 0
+    }
+  ],
+  "get_config": "Immediately after all five SET_CONFIG calls, retrieve and check all five returned values using GET_CONFIG with SCONFIG_LIST in pInput and null pOutput; sentinel initialize values and verify list integrity",
+  "filter": {
+    "type": 1,
+    "protocol": 3,
+    "tx_flags": 0,
+    "mask_hex": "00000000",
+    "pattern_hex": "00000000",
+    "flow_control_hex": "00000000",
+    "flow_pointer_nonnull": true,
+    "source": "Archived installed-host API sequence47; provider.cpp serializes a null pointer as JSON null, so the logged four-byte flow object proves a nonnull argument"
+  },
+  "kernel_filter": {
+    "type": 1,
+    "protocol": 3,
+    "tx_flags": 0,
+    "mask_hex": "ffff",
+    "pattern_hex": "beef",
+    "flow_control_hex": null,
+    "flow_pointer_nonnull": false
+  },
+  "waits_ms": [
+    200,
+    100,
+    200
+  ],
+  "baud_set": 15625,
+  "post_start_baud": 62500,
+  "queue_clears_in_order": [
+    7,
+    8
+  ],
+  "kernel_sha256": "808a5523d47de11881bfc2ea06a35278aedb5122ed51e8110f817b3210adb653",
+  "kernel_image": {
+    "path": "C:\\Dev\\A2WC511R_RK03_Bounded128Physical\\kernel128\\build\\a\\kernel.bin",
+    "bytes": 1808,
+    "sha256": "808a5523d47de11881bfc2ea06a35278aedb5122ed51e8110f817b3210adb653"
+  },
+  "kernel_manifest": {
+    "path": "C:\\Dev\\A2WC511R_RK03_Bounded128Physical\\kernel128\\build\\a\\manifest.json",
+    "bytes": 51117,
+    "sha256": "c62ceb64893e196888b103237aff03d02f30726ecb1765199d3979ca1211f5fc"
+  },
+  "start_frame": "8010f003310101b6",
+  "start_ack": "80f01003710101f6",
+  "entry": "FFFF3004",
+  "identity_request": "beef000101af",
+  "identity_reply": "beef000f8141325743353131522d524b3032005f",
+  "identity_ascii": "A2WC511R-RK02\u0000",
+  "physical_provider": {
+    "path": "C:\\Windows\\SysWOW64\\op20pt32.dll",
+    "bytes": 1781896,
+    "sha256": "f432084801762d919a3c31974616e097562424470003edc4f4fb843df34103cf"
+  },
+  "current_reference": {
+    "path": "C:\\Dev\\SubaruRoms\\current.bin",
+    "bytes": 1048576,
+    "sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2"
+  },
+  "baseline_equality_required_for_transport": false,
+  "pass_to_pass_identity_required": true,
+  "final_outputs": [
+    "pass0.raw",
+    "pass1.raw"
+  ],
+  "exact_bytes_per_output": 1048576,
+  "full_byte_comparison_before_success": true,
+  "no_retry": true,
+  "no_flash": true,
+  "no_arbitrary_address": true,
+  "no_arbitrary_length": true,
+  "no_arbitrary_pass_count": true,
+  "no_alternate_kernel": true,
+  "no_alternate_entry": true,
+  "cleanup_required": true,
+  "simplified_pre_gates": [
+    "IGNITION OFF",
+    "TEST MODE ON"
+  ],
+  "simplified_recovery_gates": [
+    "IGNITION OFF",
+    "NORMAL MODE ON"
+  ],
+  "retained_bounded_qualification": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_128_20260930_01\\qualification\\QUALIFICATION.json",
+    "bytes": 367369,
+    "sha256": "a9080dae4b33766f7de2771ae5dbac575c5d8201096a52a3bf5611dcb926e26c"
+  },
+  "physical128_result": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_128_20260930_01\\physical_result\\PHYSICAL_RESULT.json",
+    "bytes": 9812,
+    "sha256": "84b6a7cd1540540ade99aa2582723c91ac1c6efebf95ba04e37a3e6383fac754"
+  },
+  "physical128_review": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_128_20260930_01\\physical_review\\REVIEW.json",
+    "bytes": 9258,
+    "sha256": "19956576660399a231e7aa2a46210c9f0c59caaa3a43c1afb3a5edc3272f9492"
+  },
+  "OEM_return_after128": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_128_20260930_01\\oem_return_after_bounded_01\\OEM_RETURN_RESULT.json",
+    "bytes": 4020,
+    "sha256": "716619203ca7823e31b8a76f7884dc8332b08e3d49341a168b938b7bb5dc5e2f"
+  },
+  "physical128_journal": {
+    "path": "C:\\Dev\\A2WC511R_RK03_Bounded128Physical\\physical_session\\RK03_BOUNDED_ROM_READ_128_01\\native_api.jsonl",
+    "bytes": 423991,
+    "sha256": "93d2ae9af66ab17c03af42926a5126fb35a83a197bb44721d1ee3521bcdaf380"
+  },
+  "fixed_upload_manifest": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_128_20260930_01\\FIXED_UPLOAD_128_MANIFEST.json",
+    "bytes": 9135,
+    "sha256": "b050503942079ad5392ca82f84aff18d414d4cb771e9d5217d3a934ca350fe4a"
+  },
+  "limitations": [
+    "One128 physical block is established; sustained complete two-pass acquisition remains the single future physical milestone.",
+    "Prior512 cutoff cause remains unresolved; this release uses the physically proven128 frame and fixed128 kernel.",
+    "Fake execution proves host scheduling/validation, not silicon timing or long-session behavior.",
+    "Baseline equality is reported independently from transport two-pass identity."
+  ]
+}

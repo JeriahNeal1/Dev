@@ -1,0 +1,29 @@
+{
+  "status": "OFFLINE_QUALIFICATION_PASS_FINAL_SEAL_REVIEW_PENDING",
+  "physical_invocations": 0,
+  "provider_loaded": false,
+  "source_base_commit": "41b01141ab2aaa8f001f993b245e09cb1756f5b5",
+  "new_branch": "rk03/kernel-start-identity-physical",
+  "identity_query_scope": "EXPLICITLY_AUTHORIZED_BY_USER_YES",
+  "completed": [
+    "Fixed identity query explicitly authorized by user Yes",
+    "Two identical clean builds",
+    "386 native cases PASS",
+    "36 launcher / 14 recovery / 46 result-validator checks PASS",
+    "Independent native/control review PASS",
+    "Root independent raw-journal audit PASS"
+  ],
+  "not_completed": [
+    "Final sealing mechanics review",
+    "Source commit and certificate seal",
+    "Fresh human ignition gates and physical execution token",
+    "One physical identity run and passive OEM return"
+  ],
+  "blocking_conflict": null,
+  "review_contract": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_physical_20260930_01\\PHYSICAL_IDENTITY_REVIEW_CONTRACT.json",
+    "sha256": "5f2b1e263d98bc1a4a957770ea8e3c214a6ffb5a6798caf7aba79bcc5ecfe167",
+    "bytes": 20306
+  },
+  "updated_utc": "2026-09-30T06:27:54.802650+00:00"
+}

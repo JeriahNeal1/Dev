@@ -1,0 +1,46 @@
+{
+  "full_capture": {
+    "status": "PASS_CAPTURE_ONLY",
+    "samples": 120,
+    "BF_transmits": 1,
+    "A8_transmits": 120,
+    "markers_per_exchange": 2,
+    "worker_exit": 0,
+    "cleanup_error": null
+  },
+  "unchanged_wire_guards": [
+    "missing_echo",
+    "echo_mismatch",
+    "checksum",
+    "identity"
+  ],
+  "bounded_marker_count": 4,
+  "flood_and_partial_message_rejection": "PASS",
+  "invalid_marker_fixtures": [
+    "som_nonempty",
+    "som_oversized",
+    "som_unknown",
+    "som_mixed",
+    "som_wrong_protocol",
+    "som_tx_flags",
+    "som_extra",
+    "som_zero_status",
+    "som_count_zero",
+    "som_count_many"
+  ],
+  "positive_fixtures": [
+    "original_no_marker",
+    "som",
+    "som_before_echo",
+    "som_before_response",
+    "som_split",
+    "som_four"
+  ],
+  "status": "FAIL",
+  "test_groups": 6,
+  "failures": 17,
+  "errors": 0,
+  "real_provider_loaded": false,
+  "source_sha256": "e604c0e9a4aa8d33e5e418bc320f7d3ae64f424a32f586897c893428824dc380",
+  "build_manifest_sha256": "283ce6fa09ebe1953475528d996d95cc4b2b270a59adede1fd60f75b40c9fed4"
+}

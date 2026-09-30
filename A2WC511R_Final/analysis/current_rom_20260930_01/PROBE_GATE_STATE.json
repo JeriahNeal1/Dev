@@ -1,0 +1,310 @@
+{
+  "schema": 1,
+  "session_id": "RK03_TRANSITION_PROBE_01",
+  "status": "PHYSICAL_PROBE_OEM_RETURN_AND_REQUESTED_OFFLINE_SCOPE_COMPLETE",
+  "next_gate": null,
+  "qualification_sha256": "96d64646cdc9fa620d45afc7f2fc80e9c5b90a146a54b40c79324de85b9ee4d3",
+  "executable_sha256": "1573fa0046a6c1ee6b0ca9d3b0873ce0b3536fb2cdc6888304fb1e7b1ff3513e",
+  "completed_pre_probe_gates": [
+    {
+      "gate": "G06",
+      "reply": "DONE G06",
+      "raw_reply": "`DONE G06`  ",
+      "source": "user",
+      "received_utc": "2026-09-30T01:26:56.370470+00:00"
+    },
+    {
+      "gate": "G07",
+      "reply": "DONE G07",
+      "raw_reply": "DONE G07  ",
+      "source": "user",
+      "received_utc": "2026-09-30T01:27:52.905072+00:00"
+    },
+    {
+      "gate": "G08",
+      "reply": "DONE G08",
+      "raw_reply": "DONE G08  ",
+      "source": "user",
+      "received_utc": "2026-09-30T01:28:47.326454+00:00"
+    },
+    {
+      "gate": "G09",
+      "reply": "TESTMODE G09 CEL, FUEL PUMP ARE CYCLING",
+      "source": "user",
+      "received_utc": "2026-09-30T01:30:12.512403+00:00",
+      "test_mode_confirmed": true,
+      "observations": "CEL and fuel pump are cycling; radiator fans intentionally disconnected per operator context"
+    }
+  ],
+  "commit_authorization": {
+    "reply": "PROCEED RK03 TRANSITION PROBE",
+    "raw_reply": "PROCEED RK03 TRANSITION PROBE  ",
+    "source": "user",
+    "received_utc": "2026-09-30T01:31:52.785878+00:00"
+  },
+  "probe_invocation_count": 1,
+  "launch_reserved": true,
+  "engine": "OFF",
+  "stationary": true,
+  "charger": "DISCONNECTED",
+  "adapter": "GENUINE_OPENPORT_2_0",
+  "operator_monitors_voltage": true,
+  "context_source": "Latest user physical-context directive; actual fresh Test Mode indications required at G09",
+  "full_acquisition_allowed": false,
+  "physical_authorization_received": true,
+  "protocol": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\gate_policy_migrations\\20260930T020401086019Z\\OPERATOR_SIMPLIFIED_GATE_POLICY.json",
+  "updated_utc": "2026-09-30T02:39:29.358642+00:00",
+  "ignition": "ON",
+  "test_mode_connectors": "DISCONNECTED_OPERATOR_MANAGED",
+  "test_mode_confirmed": false,
+  "commit_checks": {
+    "hashes": {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\G09_COMMIT_PRECHECK.json",
+      "sha256": "1f4715c8327711438e26f969bfc7d02d67140057a526ff6ae716f0813424ba0b"
+    },
+    "clients": {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\COMMIT_CLIENT_CHECK.json",
+      "sha256": "ef8534f51a6dad2dec6a0a54ca3fbd43f8796dd78c20708d545c7c49eace1ab1"
+    }
+  },
+  "expected_commit_reply": "PROCEED RK03 TRANSITION PROBE",
+  "launch_reserved_utc": "2026-09-30T01:32:03.824342+00:00",
+  "process_id": 7496,
+  "process_exited": true,
+  "exit_code": 0,
+  "physical_result": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\physical_probe_result\\PHYSICAL_RESULT.json",
+    "bytes": 10152,
+    "sha256": "acc41d5d8bbb499ab15805ef0b039a1602307ba8605bfdb90e91c4e73a929544"
+  },
+  "completed_recovery_gates": [
+    {
+      "gate": "G13",
+      "reply": "DONE G13",
+      "source": "user",
+      "received_utc": "2026-09-30T01:35:13.597734+00:00"
+    },
+    {
+      "gate": "G14",
+      "reply": "DONE G14",
+      "source": "user",
+      "received_utc": "2026-09-30T01:49:44.169756+00:00",
+      "recovery_confirmation_cycle": "20260930T014807602768Z"
+    },
+    {
+      "gate": "G15",
+      "reply": "DONE G15",
+      "raw_reply": "**DONE G15**  ",
+      "source": "user",
+      "received_utc": "2026-09-30T01:50:17.553609+00:00",
+      "recovery_confirmation_cycle": "20260930T014807602768Z"
+    },
+    {
+      "gate": "G16",
+      "reply": "DONE G16",
+      "raw_reply": "DONE G16  ",
+      "source": "user",
+      "received_utc": "2026-09-30T01:51:41.393617+00:00",
+      "recovery_confirmation_cycle": "20260930T014807602768Z"
+    },
+    {
+      "gate": "G17",
+      "reply": "DONE G17",
+      "source": "user",
+      "received_utc": "2026-09-30T01:52:23.716774+00:00",
+      "recovery_confirmation_cycle": "20260930T014807602768Z"
+    },
+    {
+      "gate": "G18",
+      "status": "WAIVED_BY_EXPLICIT_USER_INSTRUCTION",
+      "reply": "G18 is WAIVED. Proceed directly to G19 while the vehicle is unpowered. Then reconnect battery positive, then negative, and continue to the passive OEM-return check.",
+      "source": "user",
+      "received_utc": "2026-09-30T01:58:24.039689+00:00",
+      "recovery_confirmation_cycle": "20260930T014807602768Z",
+      "measurement_obtained": false,
+      "vehicle_unpowered_basis": "Operator report in latest directive; no measured power-loss verification claimed"
+    },
+    {
+      "gate": "G19",
+      "reply": "DONE G19",
+      "source": "user",
+      "received_utc": "2026-09-30T01:59:19.288849+00:00",
+      "recovery_confirmation_cycle": "20260930T014807602768Z"
+    }
+  ],
+  "ignored_duplicate_authorizations": [
+    {
+      "reply": "PROCEED RK03 TRANSITION PROBE",
+      "source": "user",
+      "recorded_utc": "2026-09-30T01:36:25.005753+00:00",
+      "reason": "Single physical probe already completed; no retry allowed; no invocation performed"
+    }
+  ],
+  "openport_vehicle_connection": "DISCONNECTED",
+  "battery_negative": "DISCONNECTED_AND_PHYSICALLY_ISOLATED",
+  "battery_positive": "DISCONNECTED",
+  "vehicle_power_loss_verified": false,
+  "recovery_gate_attempts": [
+    {
+      "gate": "G18",
+      "reply": "VOLTAGE G18 14.87",
+      "source": "user",
+      "received_utc": "2026-09-30T01:40:36.850737+00:00",
+      "reported_volts": 14.87,
+      "accepted": false,
+      "reason": "Reported voltage is inconsistent with complete vehicle-side power loss; measurement location or remaining supply must be resolved before G19"
+    },
+    {
+      "gate": "G18",
+      "reply": "VOLTAGE G18 13.28",
+      "source": "user",
+      "received_utc": "2026-09-30T01:42:36.795437+00:00",
+      "reported_volts": 13.28,
+      "accepted": false,
+      "reason": "Reported voltage does not establish complete vehicle-side power loss; exact red and black probe contact points require clarification"
+    },
+    {
+      "gate": "G18",
+      "reply": "There was no vehicle side power loss",
+      "source": "user",
+      "received_utc": "2026-09-30T01:44:02.447737+00:00",
+      "accepted": false,
+      "reason": "Operator explicitly reports vehicle-side power loss has not occurred; physical isolation requires verification"
+    }
+  ],
+  "last_vehicle_side_reported_volts": 13.28,
+  "physical_isolation_requires_reverification": false,
+  "recovery_resume_directives": [
+    {
+      "source": "user",
+      "received_utc": "2026-09-30T01:48:07.602768+00:00",
+      "instruction": "Resume existing physical session with G13 complete and G14 pending; no repeated transition probe; reconfirm remaining recovery gates one at a time",
+      "previous_next_gate": "G18",
+      "new_next_gate": "G14",
+      "prior_gate_state": {
+        "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\recovery_resume_history\\20260930T014807602768Z\\PROBE_GATE_STATE.before_resume.json",
+        "sha256": "00cb506b11d0a483857b00f7a63bef6c546236b5ec7a1060250c4a7d75399115"
+      }
+    }
+  ],
+  "recovery_confirmation_cycle": "20260930T014807602768Z",
+  "operator_recovery_reports": [
+    {
+      "reply": "The battery is completely disconnected, no need to verify battery",
+      "source": "user",
+      "received_utc": "2026-09-30T01:51:13.502126+00:00",
+      "recovery_confirmation_cycle": "20260930T014807602768Z",
+      "interpretation": "Operator reports battery completely disconnected. No battery voltage reading requested. Negative cable physical isolation and exact G16 acknowledgement remain pending; no later gate inferred."
+    }
+  ],
+  "battery_disconnection_report": "COMPLETELY_DISCONNECTED_REPORTED_BY_OPERATOR",
+  "recovery_gate_waivers": [
+    {
+      "gate": "G18",
+      "status": "WAIVED_BY_EXPLICIT_USER_INSTRUCTION",
+      "reply": "G18 is WAIVED. Proceed directly to G19 while the vehicle is unpowered. Then reconnect battery positive, then negative, and continue to the passive OEM-return check.",
+      "source": "user",
+      "received_utc": "2026-09-30T01:58:24.039689+00:00",
+      "recovery_confirmation_cycle": "20260930T014807602768Z",
+      "measurement_obtained": false,
+      "vehicle_unpowered_basis": "Operator report in latest directive; no measured power-loss verification claimed"
+    }
+  ],
+  "vehicle_unpowered_operator_reported": true,
+  "power_loss_basis": "OPERATOR_REPORT_MEASUREMENT_GATE_EXPLICITLY_WAIVED",
+  "gate_policy_migrations": [
+    {
+      "previous_next_gate": "G20",
+      "new_next_gate": "NORMAL_MODE_ON",
+      "policy": {
+        "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\gate_policy_migrations\\20260930T020401086019Z\\OPERATOR_SIMPLIFIED_GATE_POLICY.json",
+        "sha256": "2489c1ef5c9599dba9d830768c98e1d247dc126b6c6711710387337d3ab3f983"
+      },
+      "previous_state_archive": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\gate_policy_migrations\\20260930T020401086019Z",
+      "source": "user",
+      "received_utc": "2026-09-30T02:04:01.086019+00:00"
+    }
+  ],
+  "superseded_individual_gates": [
+    {
+      "gate": "G20",
+      "status": "WAIVED_BY_OPERATOR_SIMPLIFIED_GATE_POLICY",
+      "required_for_current_scope": false,
+      "source": "user",
+      "recorded_utc": "2026-09-30T02:04:01.086019+00:00"
+    },
+    {
+      "gate": "G21",
+      "status": "WAIVED_BY_OPERATOR_SIMPLIFIED_GATE_POLICY",
+      "required_for_current_scope": false,
+      "source": "user",
+      "recorded_utc": "2026-09-30T02:04:01.086019+00:00"
+    },
+    {
+      "gate": "G22",
+      "status": "WAIVED_BY_OPERATOR_SIMPLIFIED_GATE_POLICY",
+      "required_for_current_scope": false,
+      "source": "user",
+      "recorded_utc": "2026-09-30T02:04:01.086019+00:00"
+    },
+    {
+      "gate": "G23",
+      "status": "WAIVED_BY_OPERATOR_SIMPLIFIED_GATE_POLICY",
+      "required_for_current_scope": false,
+      "source": "user",
+      "recorded_utc": "2026-09-30T02:04:01.086019+00:00"
+    },
+    {
+      "gate": "G25",
+      "status": "WAIVED_BY_OPERATOR_SIMPLIFIED_GATE_POLICY",
+      "required_for_current_scope": false,
+      "source": "user",
+      "recorded_utc": "2026-09-30T02:04:01.086019+00:00"
+    },
+    {
+      "gate": "G27",
+      "status": "WAIVED_BY_OPERATOR_SIMPLIFIED_GATE_POLICY",
+      "required_for_current_scope": false,
+      "source": "user",
+      "recorded_utc": "2026-09-30T02:04:01.086019+00:00"
+    },
+    {
+      "gate": "G28",
+      "status": "WAIVED_BY_OPERATOR_SIMPLIFIED_GATE_POLICY",
+      "required_for_current_scope": false,
+      "source": "user",
+      "recorded_utc": "2026-09-30T02:04:01.086019+00:00"
+    }
+  ],
+  "qualification_time_human_protocol": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\TRANSITION_PROBE_HUMAN_PROTOCOL.json",
+  "active_human_gate_policy": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\gate_policy_migrations\\20260930T020401086019Z\\OPERATOR_SIMPLIFIED_GATE_POLICY.json",
+    "sha256": "2489c1ef5c9599dba9d830768c98e1d247dc126b6c6711710387337d3ab3f983"
+  },
+  "expected_manual_reply": null,
+  "operator_managed_physical_context": [
+    "battery condition",
+    "charger state and mode",
+    "battery connections and isolation",
+    "OpenPort connection",
+    "voltage monitoring",
+    "radiator-fan disconnected state",
+    "Test Mode connector handling"
+  ],
+  "individual_component_confirmation_required": false,
+  "normal_mode_confirmation": {
+    "reply": "NORMAL MODE ON",
+    "source": "user",
+    "received_utc": "2026-09-30T02:11:31.169280+00:00"
+  },
+  "OEM_RETURN_AFTER_TRANSITION_PROBE": "PASS",
+  "oem_return_result": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\oem_return_after_probe_01\\OEM_RETURN_RESULT.json",
+    "bytes": 4018,
+    "sha256": "e20b02e5dd13a5701649b782103f80693c885953e287034a3c18af73062df32a"
+  },
+  "passive_oem_return_invocations": 1,
+  "further_physical_activity_allowed": false,
+  "completion_report": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\run_completion_20260930_01\\RUN_RESULT.json",
+  "offline_continuation_status": "PASS_127_OF_127"
+}

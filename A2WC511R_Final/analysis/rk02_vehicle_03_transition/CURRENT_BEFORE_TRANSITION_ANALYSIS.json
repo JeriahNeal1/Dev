@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "started_utc": "2026-09-29T00:17:53.563125+00:00",
+  "phase": "PHASE1_WAITING_FOR_HUMAN_PHYSICAL_READINESS",
+  "overall_objective": "Acquired current calibration -> qualified modular A2WC511R candidate -> explicitly approved human flash -> OEM return and basic health validation",
+  "new_user_scope": "Latest user authorizes final development and practical current-ROM residency assessment. Historical universal ownership failure remains evidence, not automatically the sole development blocker. Final integrity/target/current-calibration/boot gates remain mandatory.",
+  "current_vehicle_ROM": "UNIDENTIFIED",
+  "vehicle_connection_this_run": false,
+  "real_provider_loaded_this_run": false,
+  "RAM_upload_this_run": false,
+  "flash_write_this_run": false,
+  "physical_write_approval": "NOT_REQUESTED_NO_CANDIDATE",
+  "calibration_base": "Only the future exact two-pass physical acquisition; never substitute stock calibration",
+  "acquisition_folder": "C:\\Dev\\A2WC511R_ReadKernel\\acquisitions\\RK02_VEHICLE_01",
+  "RK02_kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+  "RK02_host_sha256": "58d0867b85162e6fa4ccd3ac7fe0413c40e4054cbc416d12e39e29f926e60862",
+  "release_validation": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\PRE_CONNECTION_VALIDATION_20260929_001.json",
+  "release_validation_sha256": "58c88663d7e9480fbabaedc964fcc5548bd2a2e778a1acf19475ed095400b19b",
+  "sealed_acquisition_tree": "Unchanged; future development/state outside sealed inputs",
+  "human_required": [
+    "Vehicle/genuine adapter availability and diagnostic clients closed",
+    "Voltage measurement and stable support details",
+    "Vehicle-specific verified power-down method",
+    "Ignition actions during guided acquisition"
+  ],
+  "next_action": "Confirm physical readiness, then BF and fixed six A8 before any RAM session",
+  "firmware_candidate": null,
+  "rollback_image": null,
+  "completion_claimed": false
+}

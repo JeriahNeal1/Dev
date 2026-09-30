@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "status": "PASS_INDEPENDENT_RECOVERY_WRAPPER_REVIEW",
+  "reviewer": "oem_transition",
+  "utc": "2026-09-30T03:42:29.409399+00:00",
+  "reviewer_process_launches": 0,
+  "reviewer_provider_loads": 0,
+  "physical_authorization": false,
+  "wrapper": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\launch_oem_return_once.py",
+    "sha256": "765b75d246721ad85076a61f585923427fec9f592efb14f583810773f540ca2b",
+    "bytes": 4318
+  },
+  "test_source": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\test_oem_return_controls.py",
+    "sha256": "c4501985af3ed866d2ef21ff137a10b04c6daae0402048b84cfda0075b86bef0",
+    "bytes": 3587
+  },
+  "test_report": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\OEM_RETURN_CONTROL_TESTS_V2.json",
+    "sha256": "5238f056fc39680bb96a860d681e45740d43bfa505b5c9f0bec2feca103d1f95",
+    "bytes": 1000
+  },
+  "launcher_dependency": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\launch_first_chunk_once.py",
+    "sha256": "4a3d100ae3e7fcacf5e67cf0aa6bd0556f37ef5a1e16171e255213931c4af893",
+    "bytes": 8664
+  },
+  "qualified_passive_reuse": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\OEM_RETURN_REUSE.json",
+    "sha256": "c2190d166c5d4ddab7a0b6e0e1aecbb54654d4ef96bf6e2d4bbf53980996867d",
+    "bytes": 4450
+  },
+  "qualified_passive_files_verified": 20,
+  "resolved_findings": [
+    {
+      "id": "FC-RECOVERY-01",
+      "finding": "Recovery gate rows did not establish that OFF and NORMAL MODE followed probe exit.",
+      "resolution": "Timezone-aware timestamps require confirmed exit <= new user OFF <= new user NORMAL MODE, all matching the current session."
+    },
+    {
+      "id": "FC-RECOVERY-02",
+      "finding": "Gate state and abort could change during client inspection without being rechecked.",
+      "resolution": "Reload and revalidate current gates and execution after client inspection, before reservation; the injected abort-during-scan case fails before launching."
+    },
+    {
+      "id": "FC-RECOVERY-03",
+      "finding": "Qualification hashing and parsing used separate file reads, permitting misleading hash attribution.",
+      "resolution": "Read bytes once, hash and parse that same buffer, require unchanged hash after client inspection, and persist that validated hash in PREFLIGHT."
+    }
+  ],
+  "unresolved_findings": [],
+  "reviewed_behavior": [
+    "Requires exactly one prior probe invocation, confirmed child exit, engine OFF and fresh NORMAL MODE recovery state.",
+    "Allows only fixed qualified passive BF/A8 capture with count120 and interval250ms; checks all retained passive input hashes.",
+    "Exclusive output directory and invocation marker prevent retries or evidence overwrite.",
+    "Checks clients before capture and after child exit. Shares reviewed wait-for-child lifecycle handling.",
+    "V2 mocked controls PASS14, including fresh chronology and abort arriving during the client scan; source and wrapper hashes match current files."
+  ],
+  "limits": [
+    "The wrapper performs no RK03/RK02 kernel upload and grants no physical authorization.",
+    "A passive child exit alone does not prove OEM-return success; root must independently require BF2F12515306, expected acquisition, PASS_CAPTURE_ONLY and clean observer/broker/provider exit from produced evidence.",
+    "Output-directory reservation is consumed even if client inspection fails; no automatic retry.",
+    "Old component gates remain operator-managed under the current simplified ignition-state policy."
+  ]
+}

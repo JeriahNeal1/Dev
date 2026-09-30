@@ -1,0 +1,13 @@
+LIBRARY fake_j2534
+EXPORTS
+PassThruOpen=_PassThruOpen@8
+PassThruClose=_PassThruClose@4
+PassThruConnect=_PassThruConnect@20
+PassThruDisconnect=_PassThruDisconnect@4
+PassThruIoctl=_PassThruIoctl@16
+PassThruStartMsgFilter=_PassThruStartMsgFilter@24
+PassThruStopMsgFilter=_PassThruStopMsgFilter@8
+PassThruWriteMsgs=_PassThruWriteMsgs@16
+PassThruReadMsgs=_PassThruReadMsgs@16
+PassThruSetProgrammingVoltage=_PassThruSetProgrammingVoltage@12
+PassThruStartPeriodicMsg=_PassThruStartPeriodicMsg@16

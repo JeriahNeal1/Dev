@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "status": "DESIGN_ONLY_BUILD_BLOCKED_UNTIL_A_THROUGH_A4_COMPLETE",
+  "session_class": "RK03_TRANSITION_PROBE_ONLY",
+  "maximum_physical_invocations": 1,
+  "requires_exact_human_authorization": "PROCEED RK03 TRANSITION PROBE",
+  "physical_authorization_received": false,
+  "full_acquisition_allowed": false,
+  "original_branch_head_to_preserve": "00664cbe83c35eee0faffd4161c76fc70888984f",
+  "wire_whitelist_in_order": ["8010f001bf40", "8010f0018102", "8010f002830005"],
+  "expected_ecu_id": "2f12515306",
+  "expected_81_response": "80f01003c1ef8fc2",
+  "expected_83_response": "80f01007c30000ff00ff0048",
+  "connect": {"protocol": 3, "flags": 512, "baud": 4800},
+  "set_config_order": [{"parameter":22,"value":0},{"parameter":7,"value":1},{"parameter":10,"value":0},{"parameter":12,"value":0},{"parameter":3,"value":0}],
+  "get_config": "Immediately after all five SET_CONFIG calls, retrieve and check all five returned values using GET_CONFIG with SCONFIG_LIST in pInput and null pOutput; sentinel initialize values and verify list integrity",
+  "filter": {"type":1,"protocol":3,"tx_flags":0,"mask_hex":"00000000","pattern_hex":"00000000","flow_control_hex":"00000000","flow_pointer_nonnull":true,"source":"Archived installed-host API sequence47; provider.cpp serializes a null pointer as JSON null, so the logged four-byte flow object proves a nonnull argument"},
+  "transport_constraints": [
+    "Only three fixed wire frames exist in the probe send path; no arbitrary payload/address argument or file loading for transmission",
+    "Remove all seed/key, BEEF, programming session, kernel bytes, upload/read/flash paths from probe source and build",
+    "Fixed provider path and SHA256 for physical backend; no registry/global provider changes",
+    "No queue clears, baud changes, voltage IOCTLs, arbitrary delays, speculative timeout changes or retries",
+    "Record every received message/status before validating, including unexpected frames and provider error outputs",
+    "Malformed or unexpected input terminates progression; success at 83 also terminates protocol immediately",
+    "Every exit path after resource allocation attempts StopMsgFilter, Disconnect and Close in order, logging each status; cleanup failures must make overall result fail",
+    "Provider load is forbidden during offline tests except an isolated fake provider, and never uses the physical DLL",
+    "Exclusive new journal/session; launch marker reserved before physical start; no automatic retry"
+  ],
+  "journal": [
+    "monotonic call sequence and function",
+    "all input and output arguments, pointer presence/capacity where relevant",
+    "status and input/output message counts",
+    "complete bounded message bytes and all PASSTHRU_MSG fields",
+    "host QPC immediately before and immediately after actual API call, QPC frequency, elapsed duration and UTC",
+    "active requested/effective configuration and filters, channel/device identifiers",
+    "ReadVersion firmware/DLL/API strings",
+    "call intent flushed before timing starts; logging overhead must not be counted as API duration"
+  ],
+  "offline_qualification": [
+    "recorded RK02 status16 at83 preserves outcome and no advancement",
+    "full expected stock C3 response accepted",
+    "exact five SET_CONFIG calls and GET_CONFIG round-trip before TX",
+    "exact broad filter before BF",
+    "fail each SET_CONFIG, unexpected each GET_CONFIG value, filter failure, wrong BF ID, malformed81, malformed83",
+    "test fragmentation, empty status indications, malformed framing/checksum, unexpected frames, count and metadata bounds",
+    "verify cleanup on success and every failure, including cleanup API failure",
+    "prove fixed transmit whitelist and no reachable arbitrary write/kernel/seed/key/flash path through source and executable review",
+    "two independent clean builds with matching executable bytes and hashes",
+    "independent review and hash-pinned qualification manifest",
+    "all negative cases must fail closed before later stage while still attempting resource cleanup"
+  ],
+  "documentation_sources": [
+    "Installed Tactrix j2534_tactrix.h and J2534.cpp are primary for installed definitions",
+    "https://www.scandoc.de/en/develop/j2534/pt_ioctl_config.html",
+    "https://github.com/RomRaider/RomRaider/blob/master/src/main/java/com/romraider/io/j2534/api/J2534Impl.java"
+  ]
+}

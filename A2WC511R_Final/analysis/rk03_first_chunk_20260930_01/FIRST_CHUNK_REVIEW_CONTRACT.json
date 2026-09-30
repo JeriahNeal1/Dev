@@ -1,0 +1,269 @@
+{
+  "schema": 1,
+  "created_utc": "2026-09-30T03:22:47.882797+00:00",
+  "status": "REVIEW_CONTRACT_NOT_PHYSICAL_AUTHORIZATION",
+  "session_class": "RK03_FIRST_CHUNK_ONLY",
+  "session_id": "RK03_FIRST_CHUNK_01",
+  "session_path": "C:\\Dev\\A2WC511R_RK03_FirstChunkPhysical\\physical_session\\RK03_FIRST_CHUNK_01",
+  "maximum_physical_invocations": 1,
+  "requires_exact_human_authorization": "PROCEED RK03 FIRST CHUNK PROBE",
+  "physical_authorization_received": false,
+  "full_acquisition_allowed": false,
+  "automatic_retry_allowed": false,
+  "base_branch": "rk03/post-transition-offline",
+  "base_commit": "2a8eeee2a7ff251346314c54d6dd028f6df93766",
+  "build_branch": "rk03/first-chunk-physical",
+  "expected_ecu_id": "2f12515306",
+  "expected_81_response": "80f01003c1ef8fc2",
+  "expected_83_response": "80f01007c30000ff00ff0048",
+  "connect": {
+    "protocol": 3,
+    "flags": 512,
+    "baud": 4800
+  },
+  "set_config_order": [
+    {
+      "parameter": 22,
+      "value": 0
+    },
+    {
+      "parameter": 7,
+      "value": 1
+    },
+    {
+      "parameter": 10,
+      "value": 0
+    },
+    {
+      "parameter": 12,
+      "value": 0
+    },
+    {
+      "parameter": 3,
+      "value": 0
+    }
+  ],
+  "get_config": "Immediately after all five SET_CONFIG calls, retrieve and check all five returned values using GET_CONFIG with SCONFIG_LIST in pInput and null pOutput; sentinel initialize values and verify list integrity",
+  "filter": {
+    "type": 1,
+    "protocol": 3,
+    "tx_flags": 0,
+    "mask_hex": "00000000",
+    "pattern_hex": "00000000",
+    "flow_control_hex": "00000000",
+    "flow_pointer_nonnull": true,
+    "source": "Archived installed-host API sequence47; provider.cpp serializes a null pointer as JSON null, so the logged four-byte flow object proves a nonnull argument"
+  },
+  "ordered_requests": [
+    {
+      "stage": 0,
+      "name": "BF",
+      "wire_hex": "8010f001bf40"
+    },
+    {
+      "stage": 1,
+      "name": "81",
+      "wire_hex": "8010f0018102"
+    },
+    {
+      "stage": 2,
+      "name": "8300",
+      "wire_hex": "8010f002830005"
+    },
+    {
+      "stage": 3,
+      "name": "2701",
+      "wire_hex": "8010f0022701aa"
+    },
+    {
+      "stage": 4,
+      "name": "2702",
+      "wire_hex": "DERIVED_FROM_EXACT_FOUR_BYTE_SEED_BY_PINNED_ALGORITHM"
+    },
+    {
+      "stage": 5,
+      "name": "108502",
+      "wire_hex": "8010f0031085021a"
+    },
+    {
+      "stage": 6,
+      "name": "34",
+      "wire_hex": "8010f00834ff30000400071006"
+    },
+    {
+      "stage": 7,
+      "name": "36",
+      "wire_hex": "8010f08436ff30002178b10a345b1076fd256f75f05ba033e301ed7bbae243b735e6aedbc143c40be01bf9b6caab4599eccaacb23d3eeb06dddf471ed3b0238f2bf0553861e117054bad87079a8cbb9681c01303b7825b2d199bc7e5c4dd5bcf85cf1a64050df3ab050df3ab2a45f9b476963b1f16baea94084e321a79bd4cf9c0f25912ab9d7b8df4"
+    }
+  ],
+  "expected_ack_payloads": {
+    "2701": "6701 + exactly four seed bytes",
+    "2702": "670234",
+    "108502": "5085",
+    "34": "7484",
+    "36": "76"
+  },
+  "fixed_transfer": {
+    "ram_address": "FFFF3000",
+    "address_wire_hex": "ff3000",
+    "length": 128,
+    "end_exclusive": "FFFF3080",
+    "cipher_hex": "2178b10a345b1076fd256f75f05ba033e301ed7bbae243b735e6aedbc143c40be01bf9b6caab4599eccaacb23d3eeb06dddf471ed3b0238f2bf0553861e117054bad87079a8cbb9681c01303b7825b2d199bc7e5c4dd5bcf85cf1a64050df3ab050df3ab2a45f9b476963b1f16baea94084e321a79bd4cf9c0f25912ab9d7b8d",
+    "cipher_sha256": "b27c4fe47f71a7c96881891c73002084f3dbc5ebe977ec7e7e857b5dc4c44413",
+    "frame_hex": "8010f08436ff30002178b10a345b1076fd256f75f05ba033e301ed7bbae243b735e6aedbc143c40be01bf9b6caab4599eccaacb23d3eeb06dddf471ed3b0238f2bf0553861e117054bad87079a8cbb9681c01303b7825b2d199bc7e5c4dd5bcf85cf1a64050df3ab050df3ab2a45f9b476963b1f16baea94084e321a79bd4cf9c0f25912ab9d7b8df4",
+    "frame_sha256": "d2db948b4bedf0d660f00ec0830a8dfcc8a4686be0bf218327799898b88359f2",
+    "plaintext_sha256": "4f467e4371e66ff93b991f29c3081d9d78fdfafc58299acd3e3e0240b93da309",
+    "source_kernel_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+    "download_declaration_size": 1808,
+    "embedded_payload_bytes": 128,
+    "declaration_note": "Retain reviewed 1808-byte declaration; send only first128 bytes. Never start or complete upload in this executable."
+  },
+  "ordered_post_key_actions": [
+    {
+      "wait_ms": 200,
+      "after": "validated key ACK"
+    },
+    {
+      "send": "108502"
+    },
+    {
+      "wait_ms": 100,
+      "after": "validated session ACK"
+    },
+    {
+      "set_config": {
+        "parameter": 1,
+        "value": 15625
+      }
+    },
+    {
+      "ioctl": 7,
+      "name": "CLEAR_TX_BUFFER"
+    },
+    {
+      "ioctl": 8,
+      "name": "CLEAR_RX_BUFFER"
+    },
+    {
+      "wait_ms": 200,
+      "before": "single34 declaration"
+    },
+    {
+      "send": "34",
+      "count": 1
+    },
+    {
+      "send": "36",
+      "count": 1
+    },
+    {
+      "require_ack": "76"
+    },
+    {
+      "action": "STOP_AND_CLEANUP"
+    }
+  ],
+  "timing_contract": "Exact requested durations200/100/200ms, minimum elapsed enforced with QPC on real clock; scheduler overshoot recorded. Virtual tests do not prove physical elapsed timing.",
+  "baud_evidence_limit": "Reviewed SET_CONFIG return and object integrity checked. No GET_CONFIG baud claim or electrical waveform claim.",
+  "hard_exclusions": [
+    "second36",
+    "full kernel upload",
+    "kernel start",
+    "custom kernel execution",
+    "ROM read",
+    "flash erase",
+    "flash program",
+    "flash commit",
+    "arbitrary RAM address",
+    "external payload selection",
+    "automatic retry"
+  ],
+  "human_physical_states": [
+    "IGNITION OFF",
+    "TEST MODE ON",
+    "NORMAL MODE ON"
+  ],
+  "physical_gate_policy": "Operator manages all battery/charger/voltage/adapter/Test Mode connector details. Exact new ignition confirmations and exact new software authorization required; earlier probe authorization is not reusable.",
+  "recovery": "After one invocation, require IGNITION OFF then NORMAL MODE ON; only qualified passive BF/A8 OEM return, with BF2F12515306 PASS_CAPTURE_ONLY clean observer/broker/provider exit.",
+  "transport_constraints": [
+    "Fixed eight-stage dispatch and no arbitrary send entrypoint; seed-derived key is the sole variable request content",
+    "Exactly128 embedded cipher bytes; no full kernel bytes or payload file input",
+    "Fixed provider path/hash; physical EXE/auth/reservation bound to session and review contract",
+    "Native exclusive invocation marker before provider load; no retry after reservation or failure",
+    "Offline CLI selects static fake provider and cannot load actual provider",
+    "Validate all complete frames, metadata, checksums, request order, counts; any fault stops progression",
+    "Log all received records before interpretation, including unexpected frames/statuses",
+    "Attempt StopMsgFilter, Disconnect, Close in order after allocation even after journal failure; cleanup fault prevents PASS",
+    "A failed36 may already have changed RAM: stock writes before trailing checksum validation; recovery is mandatory",
+    "No test is permission to execute a full acquisition"
+  ],
+  "journal": [
+    "monotonic call sequence and function",
+    "all input and output arguments, pointer presence/capacity where relevant",
+    "status and input/output message counts",
+    "complete bounded message bytes and all PASSTHRU_MSG fields",
+    "host QPC immediately before and immediately after actual API call, QPC frequency, elapsed duration and UTC",
+    "active requested/effective configuration and filters, channel/device identifiers",
+    "ReadVersion firmware/DLL/API strings",
+    "call intent flushed before timing starts; logging overhead must not be counted as API duration"
+  ],
+  "qualification_requirements": [
+    "reuse127modelcases",
+    "exactsuccessfulphysicalBF81/83transcript",
+    "all16reviewedseedvectors",
+    "200/100/200virtualandrealclockfakechecks",
+    "baud15625thenTX7RX8",
+    "one34one36strict76",
+    "hardexclusionsreview",
+    "two byte-identical clean builds",
+    "independent review",
+    "hash-pinned qualification manifest"
+  ],
+  "reused_evidence": [
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\SUPERSESSION_STATUS.json",
+      "bytes": 2522,
+      "sha256": "caae68da48de85c532de726fc24c1f6e2fc0e46e5980b3c5cd3b3bbe69a2e702"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\run_completion_20260930_01\\CONTINUATION_QUALIFICATION.json",
+      "bytes": 215562,
+      "sha256": "a706de3800d855569403ac93724c55a8b4e7d1b1ea09bb04fb12fc66fa5259ac"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\physical_probe_result\\PHYSICAL_RESULT.json",
+      "bytes": 10152,
+      "sha256": "acc41d5d8bbb499ab15805ef0b039a1602307ba8605bfdb90e91c4e73a929544"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\physical_session\\RK03_TRANSITION_PROBE_01\\native_api.jsonl",
+      "bytes": 72999,
+      "sha256": "57352963c842fa8cef0f45769a8c0f9613994df9c198fe434ee78e73d262a68b"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\post83_oem_review\\FIRST_BLOCK_REPLAY.json",
+      "bytes": 196776,
+      "sha256": "23f1526b7a831d2034ea849c039ea5f2ad3b1fa295c942c410b89fb9aebd6967"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_PostTransitionOffline\\continuation\\src\\fixtures.hpp",
+      "bytes": 1766,
+      "sha256": "d3d196af30c3242564fb1de7c0c9f04cea644fe85095560438d4814be8cc217f"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_PostTransitionOffline\\continuation\\src\\protocol.hpp",
+      "bytes": 1088,
+      "sha256": "0032265b2ec8bc9931f9487bca90f26429f4e6457126098f5476e49c1aac3761"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_PostTransitionOffline\\continuation\\src\\owned_artifact.h",
+      "bytes": 9399,
+      "sha256": "35f08b8595a3d4f713938db1f8ceb8c6f89f9e91e3f7b7697469eb36128b70cc"
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\op20pt32.dll",
+      "bytes": 1781896,
+      "sha256": "f432084801762d919a3c31974616e097562424470003edc4f4fb843df34103cf"
+    }
+  ]
+}

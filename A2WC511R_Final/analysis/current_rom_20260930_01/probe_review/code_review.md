@@ -1,0 +1,11 @@
+Independent offline probe review: **PASS**. No open findings remain. This review does not authorize physical execution.
+
+Both clean x86 builds match SHA256 `1573fa0046a6c1ee6b0ca9d3b0873ce0b3536fb2cdc6888304fb1e7b1ff3513e`. The build compiles only the new probe source and local headers. The physical write call can receive only the fixed ordered BF, 81, 8300 frames; protocol completion or any terminal error leads directly to cleanup. No seed/key, kernel, ROM-read or flash path is in the probe build.
+
+The reviewed native code preserves the specified 4800-baud/ISO9141 connection and retained timeout policy, applies the five ordered settings, verifies GET_CONFIG through the correct input pointer, installs the exact broad filter, logs bounded raw API outputs before validation, and attempts StopMsgFilter/Disconnect/Close on all ordinary and handled-error paths. Explicit x86 ABI assertions cover message and configuration layouts.
+
+All 65 same-PE offline cases passed. Independent review rehashed 211 test/source/output references and inspected 1059 journal API intents and 244 read returns with no audit errors. Cases cover the exact five retained physical receive records ending in status 16, full stock-code C3 response, malformed input, configuration and cleanup errors, and journal-failure ownership. The C3 fixture remains an offline oracle, not a physical observation.
+
+The parent launcher requires the exact completed human gates and commit reply, source-bound qualification, client absence and exclusive session reservation. The native bootstrap independently verifies the fixed session, authorization content, running executable hash and reservation; it reserves invocation.once before locking, hashing and loading the fixed provider. Bookkeeping failure cannot bypass waiting for an already-started child.
+
+Seven development findings were resolved before the reviewed build/test snapshots: cleanup allocation errors, QPC scope, launcher child lifetime, certificate attribution, non-ASCII JSON bytes, BCrypt buffer lifetime and runner input-pin default. The exact findings, final source/build/test pins and scope limits are in code_review.json. No executable, test runner, provider or hardware was invoked by this reviewer.

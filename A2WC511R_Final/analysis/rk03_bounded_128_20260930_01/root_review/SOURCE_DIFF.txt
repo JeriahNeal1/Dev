@@ -1,0 +1,29 @@
+--- sealed_identity/probe_core.hpp
++++ bounded/probe_core.hpp
+@@ -12,7 +12,7 @@
+  bool get_observed=false,get_valid=false,filter_requested=false,filter_objects_valid=false;SCONFIG observed[5]{};PASSTHRU_MSG observed_mask{},observed_pattern{},observed_flow{};char failure[256]{};
+  Probe(Api a,FILE* j,bool p,bool real=false):api(a),journal(j),physical(p),real_clock(real){require(!p||real,"Physical mode requires monotonic minimum waits");}
+  Bytes request(unsigned stage)const{
+-  require(stage<25,"One fixed512 read is the final protocol action");
++  require(stage<25,"One fixed128 read is the final protocol action");
+   if(stage==24){require(identity_validated&&kernel_filter&&filtered&&requested_baud==62500,"Read only after exact identity");return BoundedReply::request();}
+   if(stage==22){require(acknowledged_chunks==15,"All fifteen ACKs before fixed start");return decode("8010f003310101b6");}
+   if(stage==23){require(start_acknowledged&&kernel_filter&&filtered&&requested_baud==62500,"Identity follows reviewed start transition");return decode("beef000101af");}
+@@ -130,12 +130,12 @@
+    require(payload(exchange(22))==Bytes({0x71,1,1}),"Exact fixed start ACK");start_acknowledged=true;identity_transport();
+    require(exchange(23)==IdentityReply::expected(),"Exact pinned kernel identity including NUL");identity_validated=true;
+    const Bytes reply=exchange(24),expected=BoundedReply::expected();std::string differences="[";unsigned mismatches=0;
+-   for(unsigned i=0;i<512;i++)if(reply[10+i]!=expected[10+i]){if(mismatches++)differences+=',';differences+="{\"address\":"+number(i)+",\"expected\":"+number(expected[10+i])+",\"actual\":"+number(reply[10+i])+"}";}differences+=']';
+-   event("{\"type\":\"bounded_read_result\",\"address\":0,\"length\":512,\"request_hex\":"+quote(hex(BoundedReply::request().data(),13))+",\"response_hex\":"+quote(hex(reply.data(),reply.size()))+",\"payload_hex\":"+quote(hex(reply.data()+10,512))+",\"checksum_pass\":true,\"mismatch_count\":"+number(mismatches)+",\"mismatches\":"+differences+"}");
+-   require(reply==expected,"Returned512 bytes differ from pinned current.bin");bounded_validated=true;protocol_complete=true;
++   for(unsigned i=0;i<128;i++)if(reply[10+i]!=expected[10+i]){if(mismatches++)differences+=',';differences+="{\"address\":"+number(i)+",\"expected\":"+number(expected[10+i])+",\"actual\":"+number(reply[10+i])+"}";}differences+=']';
++   event("{\"type\":\"bounded_read_result\",\"address\":0,\"length\":128,\"request_hex\":"+quote(hex(BoundedReply::request().data(),13))+",\"response_hex\":"+quote(hex(reply.data(),reply.size()))+",\"payload_hex\":"+quote(hex(reply.data()+10,128))+",\"checksum_pass\":true,\"mismatch_count\":"+number(mismatches)+",\"mismatches\":"+differences+"}");
++   require(reply==expected,"Returned128 bytes differ from pinned current.bin");bounded_validated=true;protocol_complete=true;
+   }catch(const std::exception& e){strncpy_s(failure,e.what(),_TRUNCATE);}
+   cleanup();bool pass=!failure[0]&&!cleanup_errors&&!log_failed&&protocol_complete;
+-  try{event("{\"type\":\"probe_terminal\",\"physical\":"+boolean(physical)+",\"status\":"+quote(pass?(physical?"PASS_BOUNDED_ROM_READ_ONLY":"PASS_OFFLINE_BOUNDED_ROM_READ_ONLY"):"FAIL_TERMINAL")+",\"protocol_complete\":"+boolean(protocol_complete)+",\"cleanup_confirmed\":"+boolean(!opened&&!connected&&!filtered)+",\"cleanup_error_mask\":"+number(cleanup_errors)+",\"log_failed\":"+boolean(log_failed)+",\"failure\":"+quote(failure)+",\"state\":"+state()+"}");}catch(...){pass=false;}
+-  printf("%s physical=%s tx_attempts=%u\n",pass?(physical?"PASS_BOUNDED_ROM_READ_ONLY":"PASS_OFFLINE_BOUNDED_ROM_READ_ONLY"):"FAIL_TERMINAL",physical?"true":"false",next_tx);return pass?0:1;
++  try{event("{\"type\":\"probe_terminal\",\"physical\":"+boolean(physical)+",\"status\":"+quote(pass?(physical?"PASS_BOUNDED_ROM_READ_128_ONLY":"PASS_OFFLINE_BOUNDED_ROM_READ_128_ONLY"):"FAIL_TERMINAL")+",\"protocol_complete\":"+boolean(protocol_complete)+",\"cleanup_confirmed\":"+boolean(!opened&&!connected&&!filtered)+",\"cleanup_error_mask\":"+number(cleanup_errors)+",\"log_failed\":"+boolean(log_failed)+",\"failure\":"+quote(failure)+",\"state\":"+state()+"}");}catch(...){pass=false;}
++  printf("%s physical=%s tx_attempts=%u\n",pass?(physical?"PASS_BOUNDED_ROM_READ_128_ONLY":"PASS_OFFLINE_BOUNDED_ROM_READ_128_ONLY"):"FAIL_TERMINAL",physical?"true":"false",next_tx);return pass?0:1;
+  }
+ };

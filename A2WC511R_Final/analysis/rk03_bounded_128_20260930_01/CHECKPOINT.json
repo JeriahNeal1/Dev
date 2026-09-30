@@ -1,0 +1,55 @@
+{
+  "status": "BOUNDED128_PHYSICAL_AND_OEM_RETURN_PASS_SEALED_CONTINUED_OFFLINE",
+  "classification": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_128_20260930_01\\BOUNDED_512_FAILURE_CLASSIFICATION.json",
+    "sha256": "f3c183164c56655ad83f5470d8263555b9c03977afb349554311b50f53a78f9a"
+  },
+  "physical_invocations": 1,
+  "physical_authorization_received": false,
+  "new_kernel_required": "Pinned512kernel rejects128; minimal fixedsize variant must pass newqualification.",
+  "final_full_physical_allowed_this_run": false,
+  "next_after_physical128_and_OEM_PASS": "OFFLINE_QUALIFY_FINAL_TWO_PASS_128",
+  "completed_old_work_reused": true,
+  "branch": "rk03/bounded-128-physical",
+  "commit": "ea696a82d2e37e57ba1e2f7983de219f780b05da",
+  "host_tests": {
+    "passed": 349,
+    "total": 349
+  },
+  "kernel_instruction_tests": {
+    "passed": 17,
+    "total": 17
+  },
+  "control_tests": {
+    "launcher": 36,
+    "recovery": 14,
+    "result_validator": 54
+  },
+  "root_review_checks": 1827,
+  "independent_native_review_checks": 11295,
+  "physical_provider_loads": 0,
+  "updated_utc": "2026-09-30T08:21:39.893292+00:00",
+  "next_after_physical_pass_and_OEM_return": "Continue offline in same run to RK03_FINAL_TWO_PASS_128; do not execute final",
+  "certificate": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_128_20260930_01\\qualification\\QUALIFICATION.json",
+    "bytes": 367369,
+    "sha256": "a9080dae4b33766f7de2771ae5dbac575c5d8201096a52a3bf5611dcb926e26c"
+  },
+  "physical_executable": {
+    "path": "C:\\Dev\\A2WC511R_RK03_Bounded128Physical\\bounded_128_physical\\build_a\\rk03_bounded_rom_read_128_physical32.exe",
+    "bytes": 423424,
+    "sha256": "1e98524252b28b634129bc3622b37e739b18d99ea5955209c9857a8f4ce02c45"
+  },
+  "RK03_BOUNDED_ROM_READ_128_PHYSICAL": "PASS",
+  "physical_result": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_128_20260930_01\\physical_result\\PHYSICAL_RESULT.json",
+  "final_development_worktree": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128",
+  "final_development_branch": "rk03/final-two-pass-128",
+  "next_action": "Final two-pass128 release qualification/sealing offline only",
+  "OEM_RETURN_AFTER_BOUNDED_ROM_READ_128": "PASS",
+  "session_completion": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_128_20260930_01\\session_completion\\COMPLETION_MANIFEST.json",
+    "bytes": 9569,
+    "sha256": "879af782fa59daa43f7b3ebfa873fc43ad4b7ffe9ff4cf9b48c588e332e7378e"
+  },
+  "final_analysis": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_final_two_pass_128_20260930_01"
+}

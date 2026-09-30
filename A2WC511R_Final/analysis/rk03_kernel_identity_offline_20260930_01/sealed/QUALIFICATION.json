@@ -1,0 +1,139 @@
+{
+  "ROM_acquisition_requests": 0,
+  "artifact_kind": "DETERMINISTIC_PYTHON_ZIPAPP_STATIC_FAKE_MODEL",
+  "canonical_build_manifest_sha256": "bf3aaa321fcf09e7a8af69b5eabe45e87a95654d0886b4a481e654a2f69b58fe",
+  "entry": "FFFF3004",
+  "fixed_upload_chunks": 15,
+  "flash_operations": 0,
+  "future_plan": {
+    "bytes": 3969,
+    "path": "C:\\Dev\\A2WC511R_RK03_KernelIdentityOffline\\kernel_identity\\FUTURE_PHYSICAL_RELEASE_PLAN.md",
+    "sha256": "7088c43b861e2e052d745decd9a74fd726009db786b7ec3e3155118739ac85c9"
+  },
+  "identity_ascii": "A2WC511R-RK02\u0000",
+  "identity_reply": "beef000f8141325743353131522d524b3032005f",
+  "identity_request": "beef000101af",
+  "identity_request_count": 1,
+  "independent_review": {
+    "bytes": 290812,
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_offline_20260930_01\\instruction_review\\INDEPENDENT_REVIEW.json",
+    "sha256": "b431059c8bf5bfd910d67e82c48b42e540ba10391897569db072c02ac5cbbe2f"
+  },
+  "instruction_replay": {
+    "bytes": 80671,
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_offline_20260930_01\\instruction_review\\replay_20260930T054149444398Z\\INSTRUCTION_REPLAY.json",
+    "sha256": "300de29c90b7f79b7bc845859232bcc75f08ce3a311f749f0851e01f7bca0ffa"
+  },
+  "instruction_review": {
+    "bytes": 492,
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_offline_20260930_01\\instruction_review\\INSTRUCTION_REVIEW.json",
+    "sha256": "042a8a9751e896d11e215534c846280285c89ab29375ef5c0078766b818b2889"
+  },
+  "limits": [
+    "Offline deterministic model qualification only; this zipapp has no physical provider boundary.",
+    "Captured22-transmit prefix and fixed seed/key are replayed as data; earlier native287test qualification is reused, not rerun or recounted.",
+    "Instruction replay executes the fixed start/identity path under declared peripheral fixtures. It does not establish silicon timing or physical kernel execution.",
+    "The unchanged kernel image contains its preexisting acquisition command. This artifact and replay expose only fixed identity01; no acquisition path is exercised.",
+    "Native ABI, receive fragmentation, real deadlines, opaque provider handles and physical recovery require the future separately qualified physical release."
+  ],
+  "maximum_transmits": 24,
+  "model_sha256": "04d8332493c98e90fa3c537c8ea0bc12926b5a85e37ea8ea9c826ec8e03c34fe",
+  "negative_tests": 433,
+  "physical_operations_this_scope": 0,
+  "physical_status": "NOT_RUN_NOT_AUTHORIZED_IN_THIS_SCOPE",
+  "provider_loads": 0,
+  "qualification_tests": {
+    "bytes": 175683,
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_offline_20260930_01\\qualification_tests\\TEST_REPORT.json",
+    "sha256": "99bec7de62bb646dfccba9fd8d24960772ea488dca26e8884c21304a8e31d9cc"
+  },
+  "schema": 1,
+  "sealed_image": {
+    "bytes": 1808,
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_offline_20260930_01\\sealed\\unchanged_kernel_image.bin",
+    "sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581"
+  },
+  "sealed_source_and_builds": [
+    {
+      "bytes": 3969,
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_offline_20260930_01\\sealed\\source\\FUTURE_PHYSICAL_RELEASE_PLAN.md",
+      "sha256": "7088c43b861e2e052d745decd9a74fd726009db786b7ec3e3155118739ac85c9"
+    },
+    {
+      "bytes": 3907,
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_offline_20260930_01\\sealed\\source\\README.md",
+      "sha256": "00ddcc1fa96afc9ef3fa8ba977c1c58d677381aea42dbb3b58e48a3d52ca3751"
+    },
+    {
+      "bytes": 1020,
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_offline_20260930_01\\sealed\\source\\build_a\\BUILD_MANIFEST.json",
+      "sha256": "bf3aaa321fcf09e7a8af69b5eabe45e87a95654d0886b4a481e654a2f69b58fe"
+    },
+    {
+      "bytes": 81146,
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_offline_20260930_01\\sealed\\source\\build_a\\rk03_kernel_start_identity_offline.pyz",
+      "sha256": "04d8332493c98e90fa3c537c8ea0bc12926b5a85e37ea8ea9c826ec8e03c34fe"
+    },
+    {
+      "bytes": 1020,
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_offline_20260930_01\\sealed\\source\\build_b\\BUILD_MANIFEST.json",
+      "sha256": "bf3aaa321fcf09e7a8af69b5eabe45e87a95654d0886b4a481e654a2f69b58fe"
+    },
+    {
+      "bytes": 81146,
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_offline_20260930_01\\sealed\\source\\build_b\\rk03_kernel_start_identity_offline.pyz",
+      "sha256": "04d8332493c98e90fa3c537c8ea0bc12926b5a85e37ea8ea9c826ec8e03c34fe"
+    },
+    {
+      "bytes": 107888,
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_offline_20260930_01\\sealed\\source\\contract\\CONTRACT.json",
+      "sha256": "bed9a78f0bde41f092e5617d547eed520784a9354a099ea607e82e47c80afd31"
+    },
+    {
+      "bytes": 2450,
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_offline_20260930_01\\sealed\\source\\contract\\SOURCE_PINS.json",
+      "sha256": "db6ffd0e45f0a92cecb8b11f88f75df0a0f06d05de2bdd5862c2239d147cbd1b"
+    },
+    {
+      "bytes": 420,
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_offline_20260930_01\\sealed\\source\\src\\__main__.py",
+      "sha256": "1e4595c43df57f666fe310c4f2e62f32ac58cec88ae9071e4ad064e848b0c622"
+    },
+    {
+      "bytes": 72024,
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_offline_20260930_01\\sealed\\source\\src\\fixed_data.py",
+      "sha256": "c60f48857a7c9c905e057cc36e6038e7ab4abc705cf3431512c507a254b51ac4"
+    },
+    {
+      "bytes": 8370,
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_offline_20260930_01\\sealed\\source\\src\\identity_model.py",
+      "sha256": "8b2523cb4a20c75b0f5c53f9e5e663a6c78e7dd1a5dcbd52915f468160096b53"
+    },
+    {
+      "bytes": 1545,
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_offline_20260930_01\\sealed\\source\\tools\\build.py",
+      "sha256": "98fc90663fdf44297d4fee9f9303a461d80423e1284fcd9bed656336ef6dedd0"
+    },
+    {
+      "bytes": 8909,
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_offline_20260930_01\\sealed\\source\\tools\\derive_contract.py",
+      "sha256": "181d5606efcc4ddf09d69880bcd4b2f6df3ac541646db0e642b2abd1e3e24a78"
+    },
+    {
+      "bytes": 9508,
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_offline_20260930_01\\sealed\\source\\tools\\qualify.py",
+      "sha256": "31559cc46beb2273ba7182ab0b7a691918969486c5e3121993e1932d3aca95de"
+    }
+  ],
+  "sealed_utc": "2026-09-30T05:46:49.883017+00:00",
+  "source_branch": "rk03/kernel-start-identity-offline",
+  "source_commit": "8ccd48b6e7dda637d13eaed33175a1c415d8bfc1",
+  "start_ack": "80f01003710101f6",
+  "start_count": 1,
+  "start_frame": "8010f003310101b6",
+  "status": "PASS_OFFLINE_RK03_KERNEL_START_IDENTITY_ONLY",
+  "test_count": 526,
+  "tests_passed": 526,
+  "uploaded_image_bytes": 1808,
+  "uploaded_image_sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581"
+}

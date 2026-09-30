@@ -1,0 +1,26 @@
+{
+  "session_id": "RK03_BOUNDED_ROM_READ_128_01",
+  "utc": "2026-09-30T08:18:33.165177+00:00",
+  "expected_ECU": "2F12515306",
+  "executable_sha256": "1e98524252b28b634129bc3622b37e739b18d99ea5955209c9857a8f4ce02c45",
+  "certificate_sha256": "a9080dae4b33766f7de2771ae5dbac575c5d8201096a52a3bf5611dcb926e26c",
+  "kernel_sha256": "808a5523d47de11881bfc2ea06a35278aedb5122ed51e8110f817b3210adb653",
+  "entry": "FFFF3004",
+  "identity": "A2WC511R-RK02\u0000",
+  "fixed_address": "00000000",
+  "fixed_length": 128,
+  "expected_payload_sha256": "e3e408102d41a7b927df188b025a89688d8e831d21a36666b01c2cc7807bc012",
+  "expected_framed_bytes": 139,
+  "maximum_ROM_reads": 1,
+  "retry_allowed": false,
+  "arbitrary_read_allowed": false,
+  "flash_allowed": false,
+  "physical_invocations": 0,
+  "competing_clients_absent": true,
+  "client_check": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_128_20260930_01\\PREAUTH_CLIENT_CHECK.json",
+    "sha256": "a95722fca5d2b845d8b4b3798121fcbbaf8bee5d173ab8066b6cf524fbdfff07"
+  },
+  "required_reply": "PROCEED RK03 128 BYTE ROM READ",
+  "no_physical_state_changes_while_active": true
+}

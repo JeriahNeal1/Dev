@@ -1,0 +1,63 @@
+{
+  "session_id": "RK03_BOUNDED_ROM_READ_128_01",
+  "qualification_sha256": "a9080dae4b33766f7de2771ae5dbac575c5d8201096a52a3bf5611dcb926e26c",
+  "status": "OEM_RETURN_RUNNING",
+  "probe_invocation_count": 1,
+  "launch_reserved": true,
+  "physical_authorization_received": true,
+  "completed_pre_probe_gates": [
+    {
+      "reply": "IGNITION OFF",
+      "source": "user",
+      "session_id": "RK03_BOUNDED_ROM_READ_128_01",
+      "received_utc": "2026-09-30T08:16:55.253934+00:00"
+    },
+    {
+      "reply": "TEST MODE ON",
+      "source": "user",
+      "session_id": "RK03_BOUNDED_ROM_READ_128_01",
+      "received_utc": "2026-09-30T08:18:04.194174+00:00"
+    }
+  ],
+  "completed_recovery_gates": [
+    {
+      "reply": "IGNITION OFF",
+      "source": "user",
+      "session_id": "RK03_BOUNDED_ROM_READ_128_01",
+      "received_utc": "2026-09-30T08:21:57.532441+00:00"
+    },
+    {
+      "reply": "NORMAL MODE ON",
+      "source": "user",
+      "session_id": "RK03_BOUNDED_ROM_READ_128_01",
+      "received_utc": "2026-09-30T08:24:09.602661+00:00"
+    }
+  ],
+  "commit_authorization": {
+    "reply": "PROCEED RK03 128 BYTE ROM READ",
+    "source": "user",
+    "session_id": "RK03_BOUNDED_ROM_READ_128_01",
+    "qualification_sha256": "a9080dae4b33766f7de2771ae5dbac575c5d8201096a52a3bf5611dcb926e26c",
+    "received_utc": "2026-09-30T08:19:34.480757+00:00"
+  },
+  "physical_state": "NORMAL MODE ON",
+  "engine": "OFF",
+  "operator_managed_physical_context": true,
+  "full_acquisition_allowed": false,
+  "retry_allowed": false,
+  "abort_requested": false,
+  "next_gate": null,
+  "updated_utc": "2026-09-30T08:24:09.602661+00:00",
+  "launch_reserved_utc": "2026-09-30T08:19:39.104878+00:00",
+  "process_id": 26152,
+  "process_exited": true,
+  "exit_code": 0,
+  "bounded_physical": "PASS",
+  "physical_result": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_128_20260930_01\\physical_result\\PHYSICAL_RESULT.json",
+    "bytes": 9812,
+    "sha256": "84b6a7cd1540540ade99aa2582723c91ac1c6efebf95ba04e37a3e6383fac754"
+  },
+  "passive_oem_return_invocations": 1,
+  "passive_process_id": 26244
+}

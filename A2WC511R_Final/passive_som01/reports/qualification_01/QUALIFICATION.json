@@ -1,0 +1,160 @@
+{
+  "schema": 1,
+  "status": "PASS_OFFLINE_PASSIVE_RECEIVER_QUALIFICATION",
+  "utc": "2026-09-29T22:50:36.717348+00:00",
+  "artifact_class": "FIXED_BF_A8_PASSIVE_OBSERVER",
+  "real_provider_loaded": false,
+  "physical_backend_executed": false,
+  "physical_acceptance": "NOT_TESTED_FOR_THIS_NEW_BUILD",
+  "RK02_release_requalified": false,
+  "RK02_frozen_files_unchanged": 20,
+  "original_broker_unchanged": true,
+  "unchanged_host_files": [
+    "integrations/prehardware/capture.py",
+    "integrations/prehardware/transport.py",
+    "integrations/prehardware/j2534_abi.h",
+    "integrations/prehardware/fake_j2534.def",
+    "integrations/prehardware/build_broker.py",
+    "integrations/prehardware/test_read_only.py",
+    "integrations/m07/protocol.py",
+    "integrations/m07/backends.py",
+    "integrations/m07/profile.json"
+  ],
+  "production_change_scope": "Only copied broker RX loop and two RX constants; fixed transmit and post-RX validation source unchanged",
+  "baseline_test_groups": 16,
+  "targeted_tests": {
+    "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\reports\\local\\prehardware\\START_OF_MESSAGE_TESTS.json",
+    "sha256": "2909d1ccb333acf757d5067d0a659f4a166bc8e4f75498726bd8dd80d5d6c0b9",
+    "bytes": 1235
+  },
+  "reproducible_builds": [
+    {
+      "name": "broker.exe",
+      "qualified_build": "beab515c4fa68cb9ed1bea2f54f40a43bcc01769f1bac01e0f26d69412ad8424",
+      "fresh_directory": "beab515c4fa68cb9ed1bea2f54f40a43bcc01769f1bac01e0f26d69412ad8424"
+    },
+    {
+      "name": "fake_j2534.dll",
+      "qualified_build": "a39daea8186264c4d6b296ea9165b639aa8b34a7e5be8fd494b9e6e7851d82e7",
+      "fresh_directory": "a39daea8186264c4d6b296ea9165b639aa8b34a7e5be8fd494b9e6e7851d82e7"
+    }
+  ],
+  "reproduced_fake_exchange": {
+    "exit_code": 0,
+    "frames": [
+      "8010f001bf40",
+      "8010f014a800ff4c75ff4c8dff4ca1ff4c50ff4bc1ff4bc272"
+    ],
+    "cleanup": {
+      "type": "closed"
+    }
+  },
+  "provider_hash_read_only": "f432084801762d919a3c31974616e097562424470003edc4f4fb843df34103cf",
+  "files": [
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\qualify_offline.py",
+      "sha256": "aeb2048b3a623e5466e99b712a118f0348fe7dce611e7666a3b3ea9e1ddccaf0",
+      "bytes": 9613
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\reports\\local\\prehardware\\READ_ONLY_BACKEND_TESTS.json",
+      "sha256": "9815f27d11296b38de879a35b66e73dddc6444a8faa39005ad996d89565f34f9",
+      "bytes": 1931
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\reports\\local\\prehardware\\START_OF_MESSAGE_TESTS.json",
+      "sha256": "2909d1ccb333acf757d5067d0a659f4a166bc8e4f75498726bd8dd80d5d6c0b9",
+      "bytes": 1235
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\integrations\\prehardware\\build\\BUILD_MANIFEST.json",
+      "sha256": "283ce6fa09ebe1953475528d996d95cc4b2b270a59adede1fd60f75b40c9fed4",
+      "bytes": 1474
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\integrations\\prehardware\\build\\BUILD_MANIFEST.json",
+      "sha256": "749126e5cc5aad1ec6c3e321ebe0ecde75927db964ff6b573276076c6c0f45f7",
+      "bytes": 1369
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\RELEASE_FREEZE.json",
+      "sha256": "788354d8be9a977d66901107982191f76ebe6c5a56082f0f8f2e5882858d9fb9",
+      "bytes": 4833
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\integrations\\prehardware\\capture.py",
+      "sha256": "d8fdab93292130a85e8d3a42b2ce0bd8a1b28d5ce65133a58171a5f0ed3bf3d7",
+      "bytes": 3071
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\integrations\\prehardware\\transport.py",
+      "sha256": "ad56f719f890630a214ce7010c444ae166058df30c43f79549bb5f20555fad04",
+      "bytes": 9973
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\integrations\\prehardware\\j2534_abi.h",
+      "sha256": "4e6773e43d48b633f56974c629bff1d2391f09088915ed04fdb8447475a40d56",
+      "bytes": 717
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\integrations\\prehardware\\fake_j2534.def",
+      "sha256": "3c8d7ce2c3b7065d004a5adf9f234990e8a050dcc897f8befbe5e6263f0a79ea",
+      "bytes": 489
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\integrations\\prehardware\\build_broker.py",
+      "sha256": "d6493fcfd4488a1b649d3c6ab5f887253c995d4ff4b7f03ac27a0079331e23c2",
+      "bytes": 1819
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\integrations\\prehardware\\test_read_only.py",
+      "sha256": "95499df76876e7c5827bacd469d35aa90fec71c7899abdca2aabbff20abd043b",
+      "bytes": 12181
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\integrations\\m07\\protocol.py",
+      "sha256": "e9d062fcc4a2fb1b70ab04a35179d8fdfb6d2d1236f75cd05deb55d73f00e3ec",
+      "bytes": 6498
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\integrations\\m07\\backends.py",
+      "sha256": "745c151a77b0ba88135795c153297fca9bb0edbbaeaaa142827874b2938bcf61",
+      "bytes": 8771
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\integrations\\m07\\profile.json",
+      "sha256": "0641b0182360d8ff6cf77abab419b211340ba2b3456f51fa3cd4a0a464d3bc35",
+      "bytes": 1520
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\integrations\\prehardware\\broker.cpp",
+      "sha256": "cda81ee30ad2fda7e4ab62a7f445197974f3d15bab30ac55babdd9358fdf612c",
+      "bytes": 11214
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\integrations\\prehardware\\fake_j2534.cpp",
+      "sha256": "dc207066272805866b05fe66112f20695fbc092cce26ea6ba49336a503e8a9e3",
+      "bytes": 5618
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\integrations\\prehardware\\build\\broker.exe",
+      "sha256": "beab515c4fa68cb9ed1bea2f54f40a43bcc01769f1bac01e0f26d69412ad8424",
+      "bytes": 247808
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\integrations\\prehardware\\build\\fake_j2534.dll",
+      "sha256": "a39daea8186264c4d6b296ea9165b639aa8b34a7e5be8fd494b9e6e7851d82e7",
+      "bytes": 125952
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\integrations\\prehardware\\test_start_of_message.py",
+      "sha256": "cb37e9e598ed910fcc7bce0dee22d5a5829eba09b3cc5ebc9022accb1fdc5e5b",
+      "bytes": 8082
+    }
+  ],
+  "limitations": [
+    "Offline fake cases are not vehicle observations.",
+    "Physical BF identity and all requested passive samples remain required before G11.",
+    "This report does not authorize RK02 or any flash operation."
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "recorded_at_utc": "2026-09-29T23:12:10.496968+00:00",
+  "status": "PASS_CORRECTED_PASSIVE_PHYSICAL_VERIFICATION",
+  "capture_status": "PASS_CAPTURE_ONLY",
+  "ecu_id": "2F12515306",
+  "samples_requested": 120,
+  "samples_written": 120,
+  "variables_per_sample": 6,
+  "addresses": [
+    "FFFF4BC1",
+    "FFFF4BC2",
+    "FFFF4C50",
+    "FFFF4C75",
+    "FFFF4C8D",
+    "FFFF4CA1"
+  ],
+  "physical_mode": "NORMAL_MODE_IGNITION_ON_ENGINE_OFF_GREEN_DISCONNECTED",
+  "radiator_fans": "INTENTIONALLY_DISCONNECTED_PER_OPERATOR",
+  "numeric_voltage": null,
+  "voltage_policy": "Operator monitored; no power problem reported",
+  "observer_exit_code": 0,
+  "observer_exited": true,
+  "remaining_observer_or_broker_processes": [],
+  "capture_error": null,
+  "cleanup_error": null,
+  "broker_provider_cleanup": "CONFIRMED_BY_QUALIFIED_CLOSE_PROTOCOL_AND_SUCCESSFUL_CAPTURE_EXIT",
+  "cleanup_evidence_basis": "Unchanged qualified transport requires CLOSE acknowledgement and broker exit zero before PASS_CAPTURE_ONLY; broker checked filter-stop/disconnect/provider-close and unload; post-exit process scan empty",
+  "current_ROM_attestation": false,
+  "RK02_launch_count": 0,
+  "artifacts": [
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\acquisitions\\RK02_VEHICLE_02\\corrected_passive_verification_A8.jsonl",
+      "sha256": "64c24a0924147f11a2f10063b04eea752704fb175d10f5166a712f1fb90b7847",
+      "bytes": 272313
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\acquisitions\\RK02_VEHICLE_02\\corrected_passive_verification_A8.jsonl.provider.stderr.log",
+      "sha256": "4ad65478374c6d62ac2fc9f5d3b909d188c0508b2f088fd82da54f017c0e6516",
+      "bytes": 87142
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\acquisitions\\RK02_VEHICLE_02\\corrected_passive_verification_A8.execution.json",
+      "sha256": "10e8dfc4b5764b85638a649b86a91e3ce0c1bd95ee910de1f635986cbf95d5a5",
+      "bytes": 803
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\acquisitions\\RK02_VEHICLE_02\\corrected_passive_verification_A8.postexit_processes.json",
+      "sha256": "c53070168858334f0aa1e42c6a4ea4e71b9899f5b79b9613b7ca77cfe4c04684",
+      "bytes": 113
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\acquisitions\\RK02_VEHICLE_02\\corrected_passive_verification_A8.console.log",
+      "sha256": "6464ea4f3499b76e6fe8dfc9575ab479d42db18098ab8a42c516cc419789838a",
+      "bytes": 245
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\acquisitions\\RK02_VEHICLE_02\\corrected_passive_verification_A8.begin.json",
+      "sha256": "b345844fdf4debda8ba3be88fe00fbb5b0781fc2a6877fbdfcc7ad1cd70d0a85",
+      "bytes": 1133
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\acquisitions\\RK02_VEHICLE_02\\corrected_passive_verification_A8.prelaunch_processes.json",
+      "sha256": "1d5448a21ecf4fdcf6b30a44786e32fc2623c539d87bc25961d776a317e51d9b",
+      "bytes": 168
+    }
+  ]
+}

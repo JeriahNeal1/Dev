@@ -1,0 +1,50 @@
+{
+  "full_capture": {
+    "status": "PASS_CAPTURE_ONLY",
+    "samples": 120,
+    "BF_transmits": 1,
+    "A8_transmits": 120,
+    "markers_per_exchange": 2,
+    "worker_exit": 0,
+    "cleanup_error": null
+  },
+  "unchanged_wire_guards": [
+    "missing_echo",
+    "echo_mismatch",
+    "checksum",
+    "identity"
+  ],
+  "bounded_marker_count": 4,
+  "flood_and_partial_message_rejection": "PASS",
+  "invalid_marker_fixtures": [
+    "som_nonempty",
+    "som_oversized",
+    "som_unknown",
+    "som_mixed",
+    "som_wrong_protocol",
+    "som_tx_flags",
+    "som_extra",
+    "som_zero_status",
+    "som_count_zero",
+    "som_count_many"
+  ],
+  "marker_without_data": {
+    "status": "PASS_TERMINAL_TIMEOUT",
+    "elapsed_seconds": 1.2143037000205368
+  },
+  "positive_fixtures": [
+    "original_no_marker",
+    "som",
+    "som_before_echo",
+    "som_before_response",
+    "som_split",
+    "som_four"
+  ],
+  "status": "PASS",
+  "test_groups": 6,
+  "failures": 0,
+  "errors": 0,
+  "real_provider_loaded": false,
+  "source_sha256": "cb37e9e598ed910fcc7bce0dee22d5a5829eba09b3cc5ebc9022accb1fdc5e5b",
+  "build_manifest_sha256": "283ce6fa09ebe1953475528d996d95cc4b2b270a59adede1fd60f75b40c9fed4"
+}

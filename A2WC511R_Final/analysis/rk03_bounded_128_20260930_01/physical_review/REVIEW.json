@@ -1,0 +1,197 @@
+{
+  "schema": 1,
+  "status": "PASS",
+  "scope": "INDEPENDENT_READ_ONLY_REVIEW_OF_COMPLETED_PHYSICAL_BOUNDED128_RUN",
+  "utc": "2026-09-30T08:23:47.607719+00:00",
+  "reviewer": "passive_review",
+  "checks_passed": 880,
+  "blocking_findings": [],
+  "result": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_128_20260930_01\\physical_result\\PHYSICAL_RESULT.json",
+    "bytes": 9812,
+    "sha256": "84b6a7cd1540540ade99aa2582723c91ac1c6efebf95ba04e37a3e6383fac754"
+  },
+  "journal": {
+    "path": "C:\\Dev\\A2WC511R_RK03_Bounded128Physical\\physical_session\\RK03_BOUNDED_ROM_READ_128_01\\native_api.jsonl",
+    "bytes": 423991,
+    "sha256": "93d2ae9af66ab17c03af42926a5126fb35a83a197bb44721d1ee3521bcdaf380"
+  },
+  "session_id": "RK03_BOUNDED_ROM_READ_128_01",
+  "execution": {
+    "session_id": "RK03_BOUNDED_ROM_READ_128_01",
+    "command_argv": [
+      "C:\\Dev\\A2WC511R_RK03_Bounded128Physical\\bounded_128_physical\\build_a\\rk03_bounded_rom_read_128_physical32.exe",
+      "--physical-bounded-rom-read-128",
+      "--session",
+      "C:\\Dev\\A2WC511R_RK03_Bounded128Physical\\physical_session\\RK03_BOUNDED_ROM_READ_128_01",
+      "--authorization-file",
+      "C:\\Dev\\A2WC511R_RK03_Bounded128Physical\\physical_session\\RK03_BOUNDED_ROM_READ_128_01\\AUTHORIZATION.txt"
+    ],
+    "started_utc": "2026-09-30T08:19:39.105540+00:00",
+    "executable_sha256": "1e98524252b28b634129bc3622b37e739b18d99ea5955209c9857a8f4ce02c45",
+    "contract_sha256": "767885ac7ec8dae204902dd0bc7dda54c8a7a3890ee9703f20a169fae05ba16a",
+    "qualification_sha256": "a9080dae4b33766f7de2771ae5dbac575c5d8201096a52a3bf5611dcb926e26c",
+    "authorization_source": "Exact new user token after IGNITION OFF and TEST MODE ON",
+    "retry_allowed": false,
+    "pid": 26152,
+    "exit_code": 0,
+    "exited_utc": "2026-09-30T08:19:41.585912+00:00",
+    "process_exited": true,
+    "bookkeeping_error": null
+  },
+  "counts": {
+    "physical_invocations_recorded": 1,
+    "TX": 25,
+    "API_pairs": 97,
+    "ROM_requests": 1,
+    "upload_chunks": 15,
+    "upload_ACKs": 15,
+    "uploaded_bytes": 1808,
+    "start_requests": 1,
+    "identity_requests": 1,
+    "cleanup_calls": 3,
+    "retries": 0
+  },
+  "bounded_read": {
+    "address": 0,
+    "length": 128,
+    "request": "beef0008030000000000008038",
+    "response": "beef008683000000000000000aacffffbfa000000aacffffbfa000000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa800000aa8ffffffffffffffffdf01442b00090000ffffbfa0df01000b00090000ffffbfa0e5f74518750a8451e3ff4318620c737f2239324ce13c622c4118321c25210009000900090009000b98",
+    "response_bytes": 139,
+    "response_sha256": "3c0e406477a9ca394e5dfe14453f794eed16b7cd2833a23e1526ed2e596229f6",
+    "payload_sha256": "e3e408102d41a7b927df188b025a89688d8e831d21a36666b01c2cc7807bc012",
+    "mismatch_locations": [],
+    "exchange": {
+      "stage": 24,
+      "TX_sequence": 91,
+      "RX_sequences": [
+        92,
+        93
+      ],
+      "response_bytes": 139,
+      "receive_window_ms": 24.1618
+    }
+  },
+  "seed": "10548d47",
+  "derived_key": "1e7adce7",
+  "kernel_sha256": "808a5523d47de11881bfc2ea06a35278aedb5122ed51e8110f817b3210adb653",
+  "captured_cipher_sha256": "622612355cd294c554a3197a8b28b4968d8c15b7e8b6dc7f7991be1f088158ae",
+  "waits_ms_actual": [
+    200.0103,
+    101.9605,
+    200.7269
+  ],
+  "conclusions": [
+    "All nine result-pinned raw files retain their sealed hashes; recorded authorization, certificate, executable and provider match the new release.",
+    "Exactly 15 contiguous uploaded ciphertext chunks independently decode to the new128 kernel and each has its exact positive ACK before subsequent control operations.",
+    "One start and one identity precede the sole128-byte ROM request; exact139-byte frame, body length, address/pass, checksum and all128 bytes match current.bin.",
+    "The journal contains no additional TX, retry or flash command; all three cleanup calls return0 and the child exited0 with a clean recorded post-exit client/module scan."
+  ],
+  "limitations": [
+    "This is review of preserved physical API evidence, not a second physical operation or a rerun of the qualified sealer.",
+    "Only128 bytes at address0 were validated; they cannot attest the whole current calibration and are also known to match stock.",
+    "No raw waveform or ECU RAM readback was captured; upload ACKs and release-bound ciphertext support the image association.",
+    "This successful shorter response does not establish the cause of the preceding failed512-byte response.",
+    "OEM-return/recovery is managed separately by root and was pending when this review was requested. Full two-pass acquisition is neither executed nor authorized by this review."
+  ],
+  "reviewed_files": [
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_128_20260930_01\\physical_result\\PHYSICAL_RESULT.json",
+      "bytes": 9812,
+      "sha256": "84b6a7cd1540540ade99aa2582723c91ac1c6efebf95ba04e37a3e6383fac754"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_Bounded128Physical\\physical_session\\RK03_BOUNDED_ROM_READ_128_01\\AUTHORIZATION.txt",
+      "bytes": 228,
+      "sha256": "9fecb194dc1e10b577185f138cf73eed4c905377f8306ed17575d21843b175e9"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_Bounded128Physical\\physical_session\\RK03_BOUNDED_ROM_READ_128_01\\console.log",
+      "bytes": 61,
+      "sha256": "599648af05d38faad9a27799ac16a424b37813c89691aaef2de945c97bae60fd"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_Bounded128Physical\\physical_session\\RK03_BOUNDED_ROM_READ_128_01\\EXECUTION.json",
+      "bytes": 1074,
+      "sha256": "4a4615d26d8084af19e697f6dbea5f801bf2c329a1b5bd4a05b7455688bd64e7"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_Bounded128Physical\\physical_session\\RK03_BOUNDED_ROM_READ_128_01\\EXECUTION_BEGIN.json",
+      "bytes": 933,
+      "sha256": "5b736e3a8a7040d588c196fca4477d6acb3436fdb756dbf4cb6c0ebad45a7982"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_Bounded128Physical\\physical_session\\RK03_BOUNDED_ROM_READ_128_01\\invocation.once",
+      "bytes": 159,
+      "sha256": "1036c932c43889652a4549d95b3d885a6b7e721ea7f5836d5ee37aae3d13a7a5"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_Bounded128Physical\\physical_session\\RK03_BOUNDED_ROM_READ_128_01\\launch.reserved",
+      "bytes": 159,
+      "sha256": "1036c932c43889652a4549d95b3d885a6b7e721ea7f5836d5ee37aae3d13a7a5"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_Bounded128Physical\\physical_session\\RK03_BOUNDED_ROM_READ_128_01\\native_api.jsonl",
+      "bytes": 423991,
+      "sha256": "93d2ae9af66ab17c03af42926a5126fb35a83a197bb44721d1ee3521bcdaf380"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_Bounded128Physical\\physical_session\\RK03_BOUNDED_ROM_READ_128_01\\POSTEXIT_CLIENT_CHECK.json",
+      "bytes": 494,
+      "sha256": "26e368af1e36bf000f1494e6ad9b7b60ccb1ef5706226e6d20795e374cec07f6"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_Bounded128Physical\\physical_session\\RK03_BOUNDED_ROM_READ_128_01\\PRELAUNCH_CLIENT_CHECK.json",
+      "bytes": 494,
+      "sha256": "9d55ca7bc3e0dbb49645c43ad94ded740d60c82ba5f67c72a6e63e60abf637a7"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_128_20260930_01\\seal_bounded_result.py",
+      "bytes": 19200,
+      "sha256": "1d45cd1642214f51056bc17e3552da76a9b209d4cd479623f691ddded8db4fc8"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_128_20260930_01\\qualification\\QUALIFICATION.json",
+      "bytes": 367369,
+      "sha256": "a9080dae4b33766f7de2771ae5dbac575c5d8201096a52a3bf5611dcb926e26c"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_Bounded128Physical\\bounded_128_physical\\build_a\\rk03_bounded_rom_read_128_physical32.exe",
+      "bytes": 423424,
+      "sha256": "1e98524252b28b634129bc3622b37e739b18d99ea5955209c9857a8f4ce02c45"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_128_20260930_01\\PHYSICAL_BOUNDED_128_REVIEW_CONTRACT.json",
+      "bytes": 23476,
+      "sha256": "767885ac7ec8dae204902dd0bc7dda54c8a7a3890ee9703f20a169fae05ba16a"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_128_20260930_01\\FIXED_UPLOAD_128_MANIFEST.json",
+      "bytes": 9135,
+      "sha256": "b050503942079ad5392ca82f84aff18d414d4cb771e9d5217d3a934ca350fe4a"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_Bounded128Physical\\kernel128\\build\\a\\kernel.bin",
+      "bytes": 1808,
+      "sha256": "808a5523d47de11881bfc2ea06a35278aedb5122ed51e8110f817b3210adb653"
+    },
+    {
+      "path": "C:\\Dev\\SubaruRoms\\current.bin",
+      "bytes": 1048576,
+      "sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2"
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\op20pt32.dll",
+      "bytes": 1781896,
+      "sha256": "f432084801762d919a3c31974616e097562424470003edc4f4fb843df34103cf"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_128_20260930_01\\physical_review\\review_physical128.py",
+      "bytes": 15104,
+      "sha256": "c0af85163ce903fbedee9c932fe4140fe6dc691f73afa6a52bbb7bd5f8ba988e"
+    }
+  ],
+  "physical_operations_by_reviewer": 0,
+  "provider_loads_by_reviewer": 0,
+  "native_executions_by_reviewer": 0
+}

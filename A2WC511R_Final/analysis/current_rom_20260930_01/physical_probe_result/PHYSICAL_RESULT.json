@@ -1,0 +1,288 @@
+{
+  "schema": 1,
+  "created_utc": "2026-09-30T01:34:55.650812+00:00",
+  "session_id": "RK03_TRANSITION_PROBE_01",
+  "RK03_TRANSITION_PHYSICAL": "PASS",
+  "physical_invocations": 1,
+  "retry_allowed": false,
+  "full_acquisition_allowed": false,
+  "BF_identity": "2F12515306",
+  "transmitted_frames": [
+    "8010f001bf40",
+    "8010f0018102",
+    "8010f002830005"
+  ],
+  "received_frames": [
+    "80f01039ffa210112f1251530673facba62b81fea800000060ce54f9b1e4000c200000000000dc00005d1f3080f226000043fb00e1000000000000c1f0c2",
+    "80f01003c1ef8fc2",
+    "80f01007c30000ff00ff0048"
+  ],
+  "C3_response": "80f01007c30000ff00ff0048",
+  "all_api_calls": 22,
+  "all_api_statuses_zero": true,
+  "configuration_requested": [
+    {
+      "parameter": 22,
+      "value": 0
+    },
+    {
+      "parameter": 7,
+      "value": 1
+    },
+    {
+      "parameter": 10,
+      "value": 0
+    },
+    {
+      "parameter": 12,
+      "value": 0
+    },
+    {
+      "parameter": 3,
+      "value": 0
+    }
+  ],
+  "configuration_reported_effective": [
+    {
+      "parameter": 22,
+      "value": 0
+    },
+    {
+      "parameter": 7,
+      "value": 1
+    },
+    {
+      "parameter": 10,
+      "value": 0
+    },
+    {
+      "parameter": 12,
+      "value": 0
+    },
+    {
+      "parameter": 3,
+      "value": 0
+    }
+  ],
+  "connection": {
+    "device": 1,
+    "protocol": 3,
+    "flags": 512,
+    "baud": 4800,
+    "channel_output_present": true
+  },
+  "broad_filter": {
+    "channel": 3,
+    "filter_type": 1,
+    "mask_present": true,
+    "pattern_present": true,
+    "flow_present": true,
+    "filter_output_present": true,
+    "mask": {
+      "protocol": 3,
+      "rx_status": 0,
+      "tx_flags": 0,
+      "timestamp": 0,
+      "data_size": 4,
+      "extra_data_index": 0,
+      "buffer_capacity": 4128,
+      "logged_bytes": 4,
+      "data_truncated": false,
+      "data_hex": "00000000"
+    },
+    "pattern": {
+      "protocol": 3,
+      "rx_status": 0,
+      "tx_flags": 0,
+      "timestamp": 0,
+      "data_size": 4,
+      "extra_data_index": 0,
+      "buffer_capacity": 4128,
+      "logged_bytes": 4,
+      "data_truncated": false,
+      "data_hex": "00000000"
+    },
+    "flow": {
+      "protocol": 3,
+      "rx_status": 0,
+      "tx_flags": 0,
+      "timestamp": 0,
+      "data_size": 4,
+      "extra_data_index": 0,
+      "buffer_capacity": 4128,
+      "logged_bytes": 4,
+      "data_truncated": false,
+      "data_hex": "00000000"
+    }
+  },
+  "ReadVersion": {
+    "firmware": {
+      "capacity": 80,
+      "nul_terminated": true,
+      "value": "1.17.4877",
+      "raw_buffer_hex": "312e31372e343837370000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "dll": {
+      "capacity": 80,
+      "nul_terminated": true,
+      "value": "1.02.4870 Feb  3 2017 23:36:05",
+      "raw_buffer_hex": "312e30322e343837302046656220203320323031372032333a33363a30350000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "api": {
+      "capacity": 80,
+      "nul_terminated": true,
+      "value": "04.04",
+      "raw_buffer_hex": "30342e3034000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "canaries_intact": true
+  },
+  "cleanup": [
+    {
+      "function": "PassThruStopMsgFilter",
+      "status": 0
+    },
+    {
+      "function": "PassThruDisconnect",
+      "status": 0
+    },
+    {
+      "function": "PassThruClose",
+      "status": 0
+    }
+  ],
+  "process_exited": true,
+  "exit_code": 0,
+  "postexit_client_check_pass": true,
+  "C1_API_return_to_83_API_entry_ms": 0.0433,
+  "C3_API_return_latency_from_83_write_return_ms": 30.7277,
+  "timing_limit": "Host API boundaries are not measured physical K-line symbol timing.",
+  "interpretation": "Reproducing the reviewed ECUFlash-style explicit serial initialization and broad filtering restored successful progression through 83 00 in this physical session. Individual-change causality was not isolated.",
+  "remaining": "Human key-off/verified power-down/OEM-return recovery remains required, then only offline remaining-sequence qualification. No full RK03 acquisition in this run.",
+  "evidence": [
+    {
+      "source": {
+        "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\physical_session\\RK03_TRANSITION_PROBE_01\\AUTHORIZATION.txt",
+        "bytes": 223,
+        "sha256": "e7e944f840c43a35f2e8a5b5d4bce2380a1856e70610e2994223643f98266268"
+      },
+      "preserved": {
+        "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\physical_probe_result\\evidence\\AUTHORIZATION.txt",
+        "bytes": 223,
+        "sha256": "e7e944f840c43a35f2e8a5b5d4bce2380a1856e70610e2994223643f98266268"
+      }
+    },
+    {
+      "source": {
+        "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\physical_session\\RK03_TRANSITION_PROBE_01\\console.log",
+        "bytes": 56,
+        "sha256": "94b73eeb0b4a7bd7bb0c6fb229e2e2683cc6a58e91cb966971d416e228ebfef1"
+      },
+      "preserved": {
+        "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\physical_probe_result\\evidence\\console.log",
+        "bytes": 56,
+        "sha256": "94b73eeb0b4a7bd7bb0c6fb229e2e2683cc6a58e91cb966971d416e228ebfef1"
+      }
+    },
+    {
+      "source": {
+        "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\physical_session\\RK03_TRANSITION_PROBE_01\\EXECUTION.json",
+        "bytes": 1035,
+        "sha256": "4e36aa7086198a2570ba215047d37563210dfeecebc551ff31c2381e9d6d173f"
+      },
+      "preserved": {
+        "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\physical_probe_result\\evidence\\EXECUTION.json",
+        "bytes": 1035,
+        "sha256": "4e36aa7086198a2570ba215047d37563210dfeecebc551ff31c2381e9d6d173f"
+      }
+    },
+    {
+      "source": {
+        "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\physical_session\\RK03_TRANSITION_PROBE_01\\EXECUTION_BEGIN.json",
+        "bytes": 895,
+        "sha256": "36cc1091bdb129858b881ec4e863fb89058d5e34c220f052207150312dae25bd"
+      },
+      "preserved": {
+        "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\physical_probe_result\\evidence\\EXECUTION_BEGIN.json",
+        "bytes": 895,
+        "sha256": "36cc1091bdb129858b881ec4e863fb89058d5e34c220f052207150312dae25bd"
+      }
+    },
+    {
+      "source": {
+        "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\physical_session\\RK03_TRANSITION_PROBE_01\\invocation.once",
+        "bytes": 155,
+        "sha256": "496df8bdbf3d54894a3307389e23b56a08129f308e2a16716eb0a60a0e12a7b0"
+      },
+      "preserved": {
+        "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\physical_probe_result\\evidence\\invocation.once",
+        "bytes": 155,
+        "sha256": "496df8bdbf3d54894a3307389e23b56a08129f308e2a16716eb0a60a0e12a7b0"
+      }
+    },
+    {
+      "source": {
+        "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\physical_session\\RK03_TRANSITION_PROBE_01\\launch.reserved",
+        "bytes": 155,
+        "sha256": "496df8bdbf3d54894a3307389e23b56a08129f308e2a16716eb0a60a0e12a7b0"
+      },
+      "preserved": {
+        "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\physical_probe_result\\evidence\\launch.reserved",
+        "bytes": 155,
+        "sha256": "496df8bdbf3d54894a3307389e23b56a08129f308e2a16716eb0a60a0e12a7b0"
+      }
+    },
+    {
+      "source": {
+        "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\physical_session\\RK03_TRANSITION_PROBE_01\\native_api.jsonl",
+        "bytes": 72999,
+        "sha256": "57352963c842fa8cef0f45769a8c0f9613994df9c198fe434ee78e73d262a68b"
+      },
+      "preserved": {
+        "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\physical_probe_result\\evidence\\native_api.jsonl",
+        "bytes": 72999,
+        "sha256": "57352963c842fa8cef0f45769a8c0f9613994df9c198fe434ee78e73d262a68b"
+      }
+    },
+    {
+      "source": {
+        "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\physical_session\\RK03_TRANSITION_PROBE_01\\POSTEXIT_CLIENT_CHECK.json",
+        "bytes": 494,
+        "sha256": "0265a6d2edc8ee3b9427da46351abd2fc4bd0329feb5c8de7f1832e687271a01"
+      },
+      "preserved": {
+        "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\physical_probe_result\\evidence\\POSTEXIT_CLIENT_CHECK.json",
+        "bytes": 494,
+        "sha256": "0265a6d2edc8ee3b9427da46351abd2fc4bd0329feb5c8de7f1832e687271a01"
+      }
+    },
+    {
+      "source": {
+        "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\physical_session\\RK03_TRANSITION_PROBE_01\\PRELAUNCH_CLIENT_CHECK.json",
+        "bytes": 494,
+        "sha256": "d65ea330443b664d7213030fec3ee90e86ecb88caa0511f16d274a0c010e482b"
+      },
+      "preserved": {
+        "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\physical_probe_result\\evidence\\PRELAUNCH_CLIENT_CHECK.json",
+        "bytes": 494,
+        "sha256": "d65ea330443b664d7213030fec3ee90e86ecb88caa0511f16d274a0c010e482b"
+      }
+    },
+    {
+      "source": {
+        "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\PROBE_GATE_STATE.json",
+        "bytes": 2794,
+        "sha256": "1897e78ccbdb2b0ff18eef24860acb19c4a22d737db246916ee91532ee34fed8"
+      },
+      "preserved": {
+        "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\physical_probe_result\\evidence\\PROBE_GATE_STATE.json",
+        "bytes": 2794,
+        "sha256": "1897e78ccbdb2b0ff18eef24860acb19c4a22d737db246916ee91532ee34fed8"
+      }
+    }
+  ],
+  "validator": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\seal_physical_probe.py",
+    "bytes": 9225,
+    "sha256": "e02e887a7d0efa16c1de0d44ddebcf682606b5edc2eb8b4572cf795c40d8ed29"
+  }
+}

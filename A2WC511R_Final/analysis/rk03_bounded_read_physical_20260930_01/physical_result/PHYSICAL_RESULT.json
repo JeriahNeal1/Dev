@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "RK03_BOUNDED_ROM_READ_PHYSICAL": "FAIL",
+  "session_id": "RK03_BOUNDED_ROM_READ_01",
+  "utc": "2026-09-30T07:37:54.049973+00:00",
+  "physical_invocations": 1,
+  "execution": {
+    "session_id": "RK03_BOUNDED_ROM_READ_01",
+    "command_argv": [
+      "C:\\Dev\\A2WC511R_RK03_BoundedReadPhysical\\bounded_read_physical\\build_a\\rk03_bounded_rom_read_physical32.exe",
+      "--physical-bounded-rom-read",
+      "--session",
+      "C:\\Dev\\A2WC511R_RK03_BoundedReadPhysical\\physical_session\\RK03_BOUNDED_ROM_READ_01",
+      "--authorization-file",
+      "C:\\Dev\\A2WC511R_RK03_BoundedReadPhysical\\physical_session\\RK03_BOUNDED_ROM_READ_01\\AUTHORIZATION.txt"
+    ],
+    "started_utc": "2026-09-30T07:37:24.763949+00:00",
+    "executable_sha256": "5a66a0848601c8564a6896ddabbc35af453179c68c79ec871bee6d73e120bfb9",
+    "contract_sha256": "be14e560229f5a7eb1904cc18c47dc9c36fe6df3b79c86be12f844640fe15e02",
+    "qualification_sha256": "15ba34b4d14c17e104fe28163faf7afe6b3c11b067ecf15a3bc97f8af8b253d1",
+    "authorization_source": "Exact new user token after IGNITION OFF and TEST MODE ON",
+    "retry_allowed": false,
+    "pid": 8880,
+    "exit_code": 1,
+    "exited_utc": "2026-09-30T07:37:28.251569+00:00",
+    "process_exited": true,
+    "bookkeeping_error": null
+  },
+  "validation": null,
+  "validation_failure": "Process exit/bookkeeping failure",
+  "source_evidence": [
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_BoundedReadPhysical\\physical_session\\RK03_BOUNDED_ROM_READ_01\\AUTHORIZATION.txt",
+      "bytes": 223,
+      "sha256": "d887b49deac76481ebc0a655254f16ca636961a1dead8fcb6f31f3d4d5450972"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_BoundedReadPhysical\\physical_session\\RK03_BOUNDED_ROM_READ_01\\console.log",
+      "bytes": 44,
+      "sha256": "a6258c4174376f9abde73a16a36b5f64961804e0013b547c0e2896300e6d6358"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_BoundedReadPhysical\\physical_session\\RK03_BOUNDED_ROM_READ_01\\EXECUTION.json",
+      "bytes": 1057,
+      "sha256": "32b601554d2590dcf25d8a868a5b250eaeeb1aed377e1e3b3b9341ffd34a7ea3"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_BoundedReadPhysical\\physical_session\\RK03_BOUNDED_ROM_READ_01\\EXECUTION_BEGIN.json",
+      "bytes": 917,
+      "sha256": "15e47b07ee41ddbd6bad9b74c3a5858d70a00c387c0e9b1c8ee00819400c5216"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_BoundedReadPhysical\\physical_session\\RK03_BOUNDED_ROM_READ_01\\invocation.once",
+      "bytes": 155,
+      "sha256": "e03be9b6f5db376b4f68340d9c7e3327f32ee2b7458d344ab767cd0e902717c8"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_BoundedReadPhysical\\physical_session\\RK03_BOUNDED_ROM_READ_01\\launch.reserved",
+      "bytes": 155,
+      "sha256": "e03be9b6f5db376b4f68340d9c7e3327f32ee2b7458d344ab767cd0e902717c8"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_BoundedReadPhysical\\physical_session\\RK03_BOUNDED_ROM_READ_01\\native_api.jsonl",
+      "bytes": 427545,
+      "sha256": "42c900bbfae9e2537615eb3fd0967e013d7d603d315968c1d59bbd0de701ba1f"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_BoundedReadPhysical\\physical_session\\RK03_BOUNDED_ROM_READ_01\\POSTEXIT_CLIENT_CHECK.json",
+      "bytes": 356,
+      "sha256": "57e701c82a1d05d8772c7ceb4537faa4d4462e71bc8508f5eb612ccfc674b385"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_BoundedReadPhysical\\physical_session\\RK03_BOUNDED_ROM_READ_01\\PRELAUNCH_CLIENT_CHECK.json",
+      "bytes": 494,
+      "sha256": "136f58a93b73c01467d065970f6ca19646a392a53e981af838346d3cafb058d0"
+    }
+  ],
+  "validator": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_read_physical_20260930_01\\seal_bounded_result.py",
+    "bytes": 18977,
+    "sha256": "7abf6b462c17c022f22fdcb565bd81493da4124f5fc6a8d1b2da8ea18f9ace51"
+  },
+  "retry_allowed": false,
+  "additional_kernel_start_allowed": false,
+  "next_required_state": "IGNITION OFF"
+}

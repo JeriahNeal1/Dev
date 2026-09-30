@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "status": "PASS_INDEPENDENT_CURRENT_REPLAY_SOURCE_AND_ARTIFACT_REVIEW",
+  "created_utc": "2026-09-30T04:37:39.145660+00:00",
+  "author": "root",
+  "reviewer": "passive_review",
+  "CPU_reexecution_during_review": false,
+  "physical_operations": 0,
+  "provider_loads": 0,
+  "blocking_findings": [],
+  "script": {
+    "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\tools\\replay_current_no_start.py",
+    "sha256": "bdb961d623ce5bc74863e3f32278640f053c4ee55c26a250726d2d6f3f5de250",
+    "bytes": 6968
+  },
+  "report": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_no_start_20260930_01\\current_instruction_replay\\CURRENT_NO_START_REPLAY.json",
+    "sha256": "ed9a2d53349a22373ace06003e8b73f3fac67b2561f2640cbdb14bfc0b51b567",
+    "bytes": 10599
+  },
+  "trace": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_no_start_20260930_01\\current_instruction_replay\\CURRENT_NO_START_TRACE.json.gz",
+    "sha256": "61d5ce455950dbb1a965795de5e07617219a768f68fbc0e69e519998e563485a",
+    "bytes": 6956210
+  },
+  "derived_ram": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_no_start_20260930_01\\current_instruction_replay\\expected_uploaded_ram.bin",
+    "sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+    "bytes": 1808
+  },
+  "retained_contract": {
+    "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\UPLOAD_WIRE_CONTRACT_RK02.json",
+    "sha256": "b1c5431141f9b249b16dd15938c290f20b99593e7ab8512caebcde1906c37f50",
+    "bytes": 9330
+  },
+  "checks": [
+    "Read script import/entry flow: retained model main() never called; only Memory/CPU constructors and step() are used.",
+    "Script pins current.bin, kernel, retained source/contract and all contract inputs before CPU execution.",
+    "Only frames0..15 consumed; exact forbidden310101 index16 checked then excluded.",
+    "Per-byte bounded CPU step loop checks noFFFF3004 entry before/after every instruction and returnedOEMcaller.",
+    "Retained artifact independently decoded:476281instructions, allPC in13F6..1F40,452contiguous4byte stores atPC1646,exact1808derivedRAM.",
+    "Independent TDR reconstruction matches declaration ACK and all15full76ACKs.",
+    "Read original/current prefix equality assertions; root executed them. This review hashes retainedstocktrace but does not duplicate the full trace comparison."
+  ],
+  "limits": [
+    "Execution starts at admitted programming parser with suppliedRDR/readyTEND/WDT values; no fullreset,UARTwaveform,physicalclock,interrupt/power/recovery simulation.",
+    "Inherited assumptions say pinnedstockbytes; actual execution loads hash-pinned current.bin directly and current versus stock executed prefix equality is asserted.",
+    "No custom-kernel instruction, hardware operation or futurephysicalreadiness qualified."
+  ]
+}

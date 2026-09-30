@@ -1,0 +1,91 @@
+{
+  "status": "ONE_REMAINING_PHYSICAL_MILESTONE_FINAL_TWO_PASS128",
+  "utc": "2026-09-30T08:50:46.248422+00:00",
+  "RK03_BOUNDED_ROM_READ_128_PHYSICAL": "PASS",
+  "OEM_RETURN_AFTER_BOUNDED_ROM_READ_128": "PASS",
+  "BF_identity": "2F12515306",
+  "passive_samples": 120,
+  "capture_status": "PASS_CAPTURE_ONLY",
+  "cleanup": "PASS_OBSERVER_BROKER_PROVIDER",
+  "failed512_classification": "TRUNCATED_RESPONSE",
+  "failed512_cause": "UNRESOLVED",
+  "failed512_complete_short_response": false,
+  "classification": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_128_20260930_01\\BOUNDED_512_FAILURE_CLASSIFICATION.json",
+    "bytes": 17079,
+    "sha256": "f3c183164c56655ad83f5470d8263555b9c03977afb349554311b50f53a78f9a"
+  },
+  "bounded_result": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_128_20260930_01\\physical_result\\PHYSICAL_RESULT.json",
+    "bytes": 9812,
+    "sha256": "84b6a7cd1540540ade99aa2582723c91ac1c6efebf95ba04e37a3e6383fac754"
+  },
+  "OEM_result": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_128_20260930_01\\oem_return_after_bounded_01\\OEM_RETURN_RESULT.json",
+    "bytes": 4020,
+    "sha256": "716619203ca7823e31b8a76f7884dc8332b08e3d49341a168b938b7bb5dc5e2f"
+  },
+  "bounded_completion": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_128_20260930_01\\session_completion\\COMPLETION_MANIFEST.json",
+    "bytes": 9569,
+    "sha256": "879af782fa59daa43f7b3ebfa873fc43ad4b7ffe9ff4cf9b48c588e332e7378e"
+  },
+  "final_branch": "rk03/final-two-pass-128",
+  "final_commit": "62a261d977beb952d6a2393b6de179fea4b6fff0",
+  "final_executable": {
+    "path": "C:\\Dev\\A2WC511R_RK03_FinalTwoPass128\\final_two_pass_128\\build_a\\rk03_final_two_pass_128_physical32.exe",
+    "bytes": 448000,
+    "sha256": "991492809897e3333fdc1422e70d70690906f59d722e1e99088fb55bd56432ce"
+  },
+  "final_certificate": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_final_two_pass_128_20260930_01\\qualification\\QUALIFICATION.json",
+    "bytes": 98386,
+    "sha256": "7e3fd3de08872f2e6ad4327d344e0b580bd0f1f4996ca7683be05cdcd93b7ca9"
+  },
+  "kernel_sha256": "808a5523d47de11881bfc2ea06a35278aedb5122ed51e8110f817b3210adb653",
+  "fixed_ROM_range": "[00000000,00100000)",
+  "block_bytes": 128,
+  "blocks_per_pass": 8192,
+  "passes": 2,
+  "total_reads": 16384,
+  "bytes_per_output": 1048576,
+  "total_output_bytes": 2097152,
+  "first_address": "00000000",
+  "last_address": "000FFF80",
+  "native_cases": "38/38 PASS",
+  "validator_cases": "65/65 PASS",
+  "launcher_checks": "36/36 PASS",
+  "recovery_checks": "14/14 PASS",
+  "independent_review": "PASS",
+  "builds_byte_identical": true,
+  "certificate_file_pins_verified": 350,
+  "final_physical_invocations": 0,
+  "current_reference": {
+    "path": "C:\\Dev\\SubaruRoms\\current.bin",
+    "bytes": 1048576,
+    "sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2"
+  },
+  "pass_to_pass_identity_required": true,
+  "current_equality_reported_separately": true,
+  "only_remaining_physical_milestone": "RK03 FINAL TWO-PASS 128-BYTE ACQUISITION",
+  "authorization_phrase": "PROCEED RK03 FINAL TWO PASS ACQUISITION",
+  "human_actions": [
+    "IGNITION OFF",
+    "TEST MODE ON",
+    "PROCEED RK03 FINAL TWO PASS ACQUISITION",
+    "IGNITION OFF",
+    "NORMAL MODE ON"
+  ],
+  "automatic_finish": [
+    "passive BF/A8 OEM-return verification",
+    "raw-image comparison",
+    "integrity audit",
+    "completion checkpoint and local tag",
+    "PROJECT COMPLETE only after all succeed"
+  ],
+  "plan": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_final_two_pass_128_20260930_01\\FINAL_RUN_PLAN.md",
+    "bytes": 5595,
+    "sha256": "6638e755a725e53d47c5d59b4c36c9ba755a8c4ecebf1778a1fe0787fab52e01"
+  }
+}

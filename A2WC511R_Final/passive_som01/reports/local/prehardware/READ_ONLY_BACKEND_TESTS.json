@@ -1,0 +1,46 @@
+{
+  "fixed_frame_accepted_opcodes": [
+    168
+  ],
+  "cleanup_failure_latching": "PASS_ALL_THREE_OPERATIONS",
+  "frame_mutations_rejected": 19176,
+  "host_abort_cleanup_regressions": "PASS_TIMEOUT_PARSE_OUTER_CLIENT_TIMEOUT",
+  "hard_hang": "BOUNDED_KILL_CLEANUP_EXPLICITLY_UNCONFIRMED",
+  "process_boundary_malformed_cases": 273,
+  "provider_faults_terminal": [
+    "bad_checksum",
+    "wrong_opcode",
+    "wrong_identity",
+    "missing_echo",
+    "echo_mismatch",
+    "timeout",
+    "rx_status",
+    "wrong_protocol",
+    "extra_bytes",
+    "oversized",
+    "short_tx"
+  ],
+  "common_caller_backends": [
+    "replay",
+    "native-virtual",
+    "fake-j2534"
+  ],
+  "native_token_selftest": {
+    "status": "PASS",
+    "single_byte_token_mutations_rejected": 11520
+  },
+  "status": "PASS",
+  "test_groups": 16,
+  "failures": 0,
+  "errors": 0,
+  "real_provider_loaded": false,
+  "scope": "All public grammar branches; all opcode values; exhaustive single-byte edit domains. Exact enum-to-constant construction is the universal allowlist argument, not finite fuzzing.",
+  "source_sha256": "95499df76876e7c5827bacd469d35aa90fec71c7899abdca2aabbff20abd043b",
+  "host_dependency_sha256": {
+    "C:\\Dev\\A2WC511R_Final\\passive_som01\\integrations\\prehardware\\transport.py": "ad56f719f890630a214ce7010c444ae166058df30c43f79549bb5f20555fad04",
+    "C:\\Dev\\A2WC511R_Final\\passive_som01\\integrations\\prehardware\\capture.py": "d8fdab93292130a85e8d3a42b2ce0bd8a1b28d5ce65133a58171a5f0ed3bf3d7",
+    "C:\\Dev\\A2WC511R_Final\\passive_som01\\integrations\\m07\\protocol.py": "e9d062fcc4a2fb1b70ab04a35179d8fdfb6d2d1236f75cd05deb55d73f00e3ec",
+    "C:\\Dev\\A2WC511R_Final\\passive_som01\\integrations\\m07\\backends.py": "745c151a77b0ba88135795c153297fca9bb0edbbaeaaa142827874b2938bcf61"
+  },
+  "build_manifest_sha256": "283ce6fa09ebe1953475528d996d95cc4b2b270a59adede1fd60f75b40c9fed4"
+}

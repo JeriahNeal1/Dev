@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "created_utc": "2026-09-30T04:04:12.222206+00:00",
+  "OEM_RETURN_AFTER_FIRST_CHUNK": "PASS",
+  "session_id": "RK03_FIRST_CHUNK_01",
+  "BF_identity": "2F12515306",
+  "capture_status": "PASS_CAPTURE_ONLY",
+  "samples": 120,
+  "variables_per_sample": 6,
+  "observer_exit_code": 0,
+  "observer_cleanup_confirmed": true,
+  "broker_cleanup_confirmed": true,
+  "provider_cleanup_confirmed": true,
+  "cleanup_basis": "Pinned capture/transport completed without cleanup errors, requiring broker CLOSE and worker exit0; post-exit process/module scan PASS.",
+  "wire_requests": {
+    "BF": 1,
+    "A8": 120,
+    "other": 0
+  },
+  "programming_session_requests": 0,
+  "physical_probe_invocations": 1,
+  "passive_return_invocations": 1,
+  "further_physical_operations_allowed": false,
+  "battery_or_vehicle_power_loss_measured": false,
+  "physical_context": "Operator-managed simplified ignition states; no numerical power-loss measurement claimed.",
+  "current_rom_attested_by_passive_check": false,
+  "current_rom_source": "Preserved prior direct ECUFlash current.bin remains authoritative.",
+  "evidence": [
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\oem_return_after_first_chunk_01\\capture.jsonl",
+      "bytes": 272313,
+      "sha256": "f9522d5fae37068a8c071e314739140c60a0abd6f9370821bc4ebacca094390c"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\oem_return_after_first_chunk_01\\capture.jsonl.provider.stderr.log",
+      "bytes": 87142,
+      "sha256": "fb0109b694255390da9e207fb1388a19b5488825d7c1761eec409311ad16db6a"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\oem_return_after_first_chunk_01\\console.log",
+      "bytes": 245,
+      "sha256": "266cb78ea28b2f4bb13cc4cecf9414a72495a6b58dc9755f6dd4e1bfe7f397cb"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\oem_return_after_first_chunk_01\\EXECUTION.json",
+      "bytes": 724,
+      "sha256": "8a6424ff3ca1e786f5428ec2d14d5ff198cba803035743b06a1995f836249111"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\oem_return_after_first_chunk_01\\GATE_STATE_AT_OEM_RETURN.json",
+      "bytes": 3067,
+      "sha256": "450df967a4a299614934605380193e9db6941791316e883bd9627bdf580514b6"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\oem_return_after_first_chunk_01\\GATE_STATE_BEFORE_OEM_RETURN.json",
+      "bytes": 3009,
+      "sha256": "10543fa5563d9c881010e83d2a047bc8baa5ea5d778e1a4b9d75de019d55104b"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\oem_return_after_first_chunk_01\\invocation.once",
+      "bytes": 583,
+      "sha256": "72c456b5c77586438dc8db3e992c51fbf215ecf95584bd487103e4a158cc739c"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\oem_return_after_first_chunk_01\\POSTEXIT_CLIENT_CHECK.json",
+      "bytes": 494,
+      "sha256": "55e4c99aec2dd14fb9fb3ce0ccda6595fa1d3ef2ac225cc1089f15e0626cfee5"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\oem_return_after_first_chunk_01\\PREFLIGHT.json",
+      "bytes": 4118,
+      "sha256": "89323ec38b2951282fcb058743a4bcb8aeea1e1e765b491e82a6854bc28622ce"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\oem_return_after_first_chunk_01\\PRELAUNCH_CLIENT_CHECK.json",
+      "bytes": 494,
+      "sha256": "af2d34998732c7ea9765a2899ad42f160e6c36680df95dfa19c9c4860f007cbe"
+    }
+  ],
+  "validator": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\seal_oem_return_first_chunk.py",
+    "bytes": 5563,
+    "sha256": "0758c69f8e130c453b19476b0f6ee62b4ae7d6402162262d65ce743da3b4119d"
+  },
+  "next_scope": "OFFLINE ONLY: prepare and separately qualify FULL_KERNEL_UPLOAD_NO_START; do not execute it in this run."
+}

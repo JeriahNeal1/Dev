@@ -1,0 +1,188 @@
+{
+  "headers": [
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\vendor\\j2534_tactrix.h",
+      "sha256": "c559ea33654af59ad147eedfcccd56a1f2cb6e95daeb2412b53f6f4bbc76a7d9",
+      "bytes": 12119,
+      "definitions": [
+        {
+          "line": 58,
+          "text": "#define ISO9141\t\t\t\t\t\t\t3"
+        },
+        {
+          "line": 90,
+          "text": "#define SET_CONFIG\t\t\t\t\t\t\t\t0x02"
+        },
+        {
+          "line": 94,
+          "text": "#define CLEAR_TX_BUFFER\t\t\t\t\t\t\t0x07"
+        },
+        {
+          "line": 95,
+          "text": "#define CLEAR_RX_BUFFER\t\t\t\t\t\t\t0x08"
+        },
+        {
+          "line": 156,
+          "text": "#define DATA_RATE\t\t\t\t\t\t0x01"
+        },
+        {
+          "line": 157,
+          "text": "#define LOOPBACK\t\t\t\t\t\t0x03"
+        },
+        {
+          "line": 161,
+          "text": "#define P1_MAX\t\t\t\t\t\t\t0x07"
+        },
+        {
+          "line": 164,
+          "text": "#define P3_MIN\t\t\t\t\t\t\t0x0A"
+        },
+        {
+          "line": 166,
+          "text": "#define P4_MIN\t\t\t\t\t\t\t0x0C"
+        },
+        {
+          "line": 245,
+          "text": "#define ERR_TIMEOUT\t\t\t\t\t\t\t0x09"
+        },
+        {
+          "line": 252,
+          "text": "#define ERR_BUFFER_EMPTY\t\t\t\t\t0x10"
+        },
+        {
+          "line": 274,
+          "text": "#define ISO9141_NO_CHECKSUM\t\t\t\t\t0x00000200"
+        },
+        {
+          "line": 276,
+          "text": "#define ISO9141_K_LINE_ONLY\t\t\t\t\t0x00001000"
+        }
+      ]
+    },
+    {
+      "path": "C:\\Program Files (x86)\\OpenECU\\OpenPort 2.0\\samples\\common\\j2534_tactrix.h",
+      "sha256": "c559ea33654af59ad147eedfcccd56a1f2cb6e95daeb2412b53f6f4bbc76a7d9",
+      "bytes": 12119,
+      "definitions": [
+        {
+          "line": 58,
+          "text": "#define ISO9141\t\t\t\t\t\t\t3"
+        },
+        {
+          "line": 90,
+          "text": "#define SET_CONFIG\t\t\t\t\t\t\t\t0x02"
+        },
+        {
+          "line": 94,
+          "text": "#define CLEAR_TX_BUFFER\t\t\t\t\t\t\t0x07"
+        },
+        {
+          "line": 95,
+          "text": "#define CLEAR_RX_BUFFER\t\t\t\t\t\t\t0x08"
+        },
+        {
+          "line": 156,
+          "text": "#define DATA_RATE\t\t\t\t\t\t0x01"
+        },
+        {
+          "line": 157,
+          "text": "#define LOOPBACK\t\t\t\t\t\t0x03"
+        },
+        {
+          "line": 161,
+          "text": "#define P1_MAX\t\t\t\t\t\t\t0x07"
+        },
+        {
+          "line": 164,
+          "text": "#define P3_MIN\t\t\t\t\t\t\t0x0A"
+        },
+        {
+          "line": 166,
+          "text": "#define P4_MIN\t\t\t\t\t\t\t0x0C"
+        },
+        {
+          "line": 245,
+          "text": "#define ERR_TIMEOUT\t\t\t\t\t\t\t0x09"
+        },
+        {
+          "line": 252,
+          "text": "#define ERR_BUFFER_EMPTY\t\t\t\t\t0x10"
+        },
+        {
+          "line": 274,
+          "text": "#define ISO9141_NO_CHECKSUM\t\t\t\t\t0x00000200"
+        },
+        {
+          "line": 276,
+          "text": "#define ISO9141_K_LINE_ONLY\t\t\t\t\t0x00001000"
+        }
+      ]
+    },
+    {
+      "path": "C:\\Program Files (x86)\\OpenECU\\EcuFlash\\samples\\common\\j2534_tactrix.h",
+      "sha256": "c559ea33654af59ad147eedfcccd56a1f2cb6e95daeb2412b53f6f4bbc76a7d9",
+      "bytes": 12119,
+      "definitions": [
+        {
+          "line": 58,
+          "text": "#define ISO9141\t\t\t\t\t\t\t3"
+        },
+        {
+          "line": 90,
+          "text": "#define SET_CONFIG\t\t\t\t\t\t\t\t0x02"
+        },
+        {
+          "line": 94,
+          "text": "#define CLEAR_TX_BUFFER\t\t\t\t\t\t\t0x07"
+        },
+        {
+          "line": 95,
+          "text": "#define CLEAR_RX_BUFFER\t\t\t\t\t\t\t0x08"
+        },
+        {
+          "line": 156,
+          "text": "#define DATA_RATE\t\t\t\t\t\t0x01"
+        },
+        {
+          "line": 157,
+          "text": "#define LOOPBACK\t\t\t\t\t\t0x03"
+        },
+        {
+          "line": 161,
+          "text": "#define P1_MAX\t\t\t\t\t\t\t0x07"
+        },
+        {
+          "line": 164,
+          "text": "#define P3_MIN\t\t\t\t\t\t\t0x0A"
+        },
+        {
+          "line": 166,
+          "text": "#define P4_MIN\t\t\t\t\t\t\t0x0C"
+        },
+        {
+          "line": 245,
+          "text": "#define ERR_TIMEOUT\t\t\t\t\t\t\t0x09"
+        },
+        {
+          "line": 252,
+          "text": "#define ERR_BUFFER_EMPTY\t\t\t\t\t0x10"
+        },
+        {
+          "line": 274,
+          "text": "#define ISO9141_NO_CHECKSUM\t\t\t\t\t0x00000200"
+        },
+        {
+          "line": 276,
+          "text": "#define ISO9141_K_LINE_ONLY\t\t\t\t\t0x00001000"
+        }
+      ]
+    }
+  ],
+  "provider": {
+    "path": "C:\\Windows\\SysWOW64\\op20pt32.dll",
+    "sha256": "f432084801762d919a3c31974616e097562424470003edc4f4fb843df34103cf",
+    "bytes": 1781896
+  },
+  "matching_ascii_strings": [],
+  "scope": "Static bytes and installed SDK only; no DLL loaded; strings alone do not assign numeric codes"
+}

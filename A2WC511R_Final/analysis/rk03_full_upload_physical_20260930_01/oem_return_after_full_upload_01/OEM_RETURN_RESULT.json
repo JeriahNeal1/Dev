@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "created_utc": "2026-09-30T05:20:48.431042+00:00",
+  "OEM_RETURN_AFTER_FULL_UPLOAD_NO_START": "PASS",
+  "session_id": "RK03_FULL_UPLOAD_NO_START_01",
+  "BF_identity": "2F12515306",
+  "capture_status": "PASS_CAPTURE_ONLY",
+  "samples": 120,
+  "variables_per_sample": 6,
+  "observer_exit_code": 0,
+  "observer_cleanup_confirmed": true,
+  "broker_cleanup_confirmed": true,
+  "provider_cleanup_confirmed": true,
+  "cleanup_basis": "Pinned capture/transport completed without cleanup errors, requiring broker CLOSE and worker exit0; post-exit process/module scan PASS.",
+  "wire_requests": {
+    "BF": 1,
+    "A8": 120,
+    "other": 0
+  },
+  "programming_session_requests": 0,
+  "physical_probe_invocations": 1,
+  "passive_return_invocations": 1,
+  "further_physical_operations_allowed": false,
+  "battery_or_vehicle_power_loss_measured": false,
+  "physical_context": "Operator-managed simplified ignition states; no numerical power-loss measurement claimed.",
+  "current_rom_attested_by_passive_check": false,
+  "current_rom_source": "Preserved prior direct ECUFlash current.bin remains authoritative.",
+  "evidence": [
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\oem_return_after_full_upload_01\\capture.jsonl",
+      "bytes": 272313,
+      "sha256": "313241f81218f204c2ce3bdf0fe62a6cb82e374487681b16618581e6f4af0db6"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\oem_return_after_full_upload_01\\capture.jsonl.provider.stderr.log",
+      "bytes": 87142,
+      "sha256": "8d5dbf98dd3257e7122daebb3fcf2de28498366a2ae5860ed7d2f793fadf7599"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\oem_return_after_full_upload_01\\console.log",
+      "bytes": 245,
+      "sha256": "0d05c94281a49a8d55f55ad2916b46f129c7af7e97c5fd34e9177447e0986954"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\oem_return_after_full_upload_01\\EXECUTION.json",
+      "bytes": 742,
+      "sha256": "35b112f705f8c45be812fb061f44430044d6bf599e6d6be966c7eea2ff84bf3b"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\oem_return_after_full_upload_01\\GATE_STATE_AT_OEM_RETURN.json",
+      "bytes": 2775,
+      "sha256": "3a6a3b914bb79d5b6e01c574a0d7f71cd73dfb29dc6980d58aef12aa9df7af70"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\oem_return_after_full_upload_01\\GATE_STATE_BEFORE_OEM_RETURN.json",
+      "bytes": 2756,
+      "sha256": "f80697527d9f7b93d585d9f20883b1a353f8d1858d88750aecf1136675df48fc"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\oem_return_after_full_upload_01\\invocation.once",
+      "bytes": 601,
+      "sha256": "1db1b502cf0dbf1c843151e48228c080a234afef5b842affcf90858ba27773d3"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\oem_return_after_full_upload_01\\POSTEXIT_CLIENT_CHECK.json",
+      "bytes": 494,
+      "sha256": "adf8ce908600dc0031785a4180657aa9293945b19acc00be47b8494cb8d753f3"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\oem_return_after_full_upload_01\\PREFLIGHT.json",
+      "bytes": 4118,
+      "sha256": "680dac8db08b820592f880f74a1294343985eae08c5c37fe4ae98335ccc1d29d"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\oem_return_after_full_upload_01\\PRELAUNCH_CLIENT_CHECK.json",
+      "bytes": 494,
+      "sha256": "833723ecdc5af29fd39464830763b2f99f3d5681b50315805262c0727bfbf947"
+    }
+  ],
+  "validator": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_physical_20260930_01\\seal_oem_return_full_upload.py",
+    "bytes": 6017,
+    "sha256": "8ebad67be03c3dd8f99ec2a1141e0fc4eac0a7478352312873bc65dcd048c2ba"
+  },
+  "upload_physical_result": "PASS",
+  "next_scope": "OFFLINE ONLY: prepare and separately qualify RK03_KERNEL_START_IDENTITY_ONLY; do not execute it in this run."
+}

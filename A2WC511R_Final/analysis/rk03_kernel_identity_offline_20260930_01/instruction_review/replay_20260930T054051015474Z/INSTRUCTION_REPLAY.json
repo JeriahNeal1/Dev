@@ -1,0 +1,2358 @@
+{
+  "schema": 1,
+  "status": "FAIL",
+  "scope": "OFFLINE_OEM_START_AND_SINGLE_IDENTITY_ONLY",
+  "physical_operations": 0,
+  "provider_loads": 0,
+  "acquisition_requests": 0,
+  "reviewer": "passive_review",
+  "upload_instructions_reexecuted": 0,
+  "OEM_start": {
+    "request": "8010f003310101b6",
+    "reply_from_executed_TDR": "80f01003710101f6",
+    "instructions": 2902,
+    "per_byte": [
+      {
+        "ordinal": 0,
+        "byte": 128,
+        "instructions": 74,
+        "end_pc": "FFFFFFFC",
+        "pending_branch": null,
+        "returned": true
+      },
+      {
+        "ordinal": 1,
+        "byte": 16,
+        "instructions": 71,
+        "end_pc": "FFFFFFFC",
+        "pending_branch": null,
+        "returned": true
+      },
+      {
+        "ordinal": 2,
+        "byte": 240,
+        "instructions": 72,
+        "end_pc": "FFFFFFFC",
+        "pending_branch": null,
+        "returned": true
+      },
+      {
+        "ordinal": 3,
+        "byte": 3,
+        "instructions": 67,
+        "end_pc": "FFFFFFFC",
+        "pending_branch": null,
+        "returned": true
+      },
+      {
+        "ordinal": 4,
+        "byte": 49,
+        "instructions": 83,
+        "end_pc": "FFFFFFFC",
+        "pending_branch": null,
+        "returned": true
+      },
+      {
+        "ordinal": 5,
+        "byte": 1,
+        "instructions": 92,
+        "end_pc": "FFFFFFFC",
+        "pending_branch": null,
+        "returned": true
+      },
+      {
+        "ordinal": 6,
+        "byte": 1,
+        "instructions": 92,
+        "end_pc": "FFFFFFFC",
+        "pending_branch": null,
+        "returned": true
+      },
+      {
+        "ordinal": 7,
+        "byte": 182,
+        "instructions": 2351,
+        "end_pc": "FFFF3004",
+        "pending_branch": null,
+        "returned": false
+      }
+    ],
+    "entry_reached": "FFFF3004",
+    "SP": "FFFFBFA0",
+    "SR": "000000F0",
+    "kernel_instructions_executed_in_OEM_phase": 0,
+    "restored_prior_memory_write_events": 42969,
+    "restored_SCR": 32,
+    "exact_retained_stock_start_suffix_match": true,
+    "OEM_ROM_constant_read_events": [
+      {
+        "mode": "r",
+        "address": "00001554",
+        "size": 2,
+        "value": "0000BFDD",
+        "pc": "00001446",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001554"
+        ],
+        "address_sources": [
+          "instruction:00001446"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001556",
+        "size": 2,
+        "value": "0000BFBD",
+        "pc": "00001450",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001556"
+        ],
+        "address_sources": [
+          "instruction:00001450"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001558",
+        "size": 2,
+        "value": "0000F015",
+        "pc": "00001452",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001558"
+        ],
+        "address_sources": [
+          "instruction:00001452"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000155A",
+        "size": 2,
+        "value": "0000F014",
+        "pc": "00001458",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000155A"
+        ],
+        "address_sources": [
+          "instruction:00001458"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000155C",
+        "size": 2,
+        "value": "0000BFBC",
+        "pc": "00001462",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000155C"
+        ],
+        "address_sources": [
+          "instruction:00001462"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000155E",
+        "size": 2,
+        "value": "0000BFB8",
+        "pc": "00001464",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000155E"
+        ],
+        "address_sources": [
+          "instruction:00001464"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001560",
+        "size": 2,
+        "value": "0000BFC9",
+        "pc": "00001476",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001560"
+        ],
+        "address_sources": [
+          "instruction:00001476"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000143C",
+        "size": 2,
+        "value": "00000080",
+        "pc": "00001400",
+        "call_context": [
+          "00001440",
+          "000013F6"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000143C"
+        ],
+        "address_sources": [
+          "instruction:00001400"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001554",
+        "size": 2,
+        "value": "0000BFDD",
+        "pc": "00001446",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001554"
+        ],
+        "address_sources": [
+          "instruction:00001446"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001556",
+        "size": 2,
+        "value": "0000BFBD",
+        "pc": "00001450",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001556"
+        ],
+        "address_sources": [
+          "instruction:00001450"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001558",
+        "size": 2,
+        "value": "0000F015",
+        "pc": "00001452",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001558"
+        ],
+        "address_sources": [
+          "instruction:00001452"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000155A",
+        "size": 2,
+        "value": "0000F014",
+        "pc": "00001458",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000155A"
+        ],
+        "address_sources": [
+          "instruction:00001458"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000155C",
+        "size": 2,
+        "value": "0000BFBC",
+        "pc": "00001462",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000155C"
+        ],
+        "address_sources": [
+          "instruction:00001462"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000155E",
+        "size": 2,
+        "value": "0000BFB8",
+        "pc": "00001464",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000155E"
+        ],
+        "address_sources": [
+          "instruction:00001464"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001560",
+        "size": 2,
+        "value": "0000BFC9",
+        "pc": "00001476",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001560"
+        ],
+        "address_sources": [
+          "instruction:00001476"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001554",
+        "size": 2,
+        "value": "0000BFDD",
+        "pc": "00001446",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001554"
+        ],
+        "address_sources": [
+          "instruction:00001446"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001556",
+        "size": 2,
+        "value": "0000BFBD",
+        "pc": "00001450",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001556"
+        ],
+        "address_sources": [
+          "instruction:00001450"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001558",
+        "size": 2,
+        "value": "0000F015",
+        "pc": "00001452",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001558"
+        ],
+        "address_sources": [
+          "instruction:00001452"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000155A",
+        "size": 2,
+        "value": "0000F014",
+        "pc": "00001458",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000155A"
+        ],
+        "address_sources": [
+          "instruction:00001458"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000155C",
+        "size": 2,
+        "value": "0000BFBC",
+        "pc": "00001462",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000155C"
+        ],
+        "address_sources": [
+          "instruction:00001462"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000155E",
+        "size": 2,
+        "value": "0000BFB8",
+        "pc": "00001464",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000155E"
+        ],
+        "address_sources": [
+          "instruction:00001464"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001560",
+        "size": 2,
+        "value": "0000BFC9",
+        "pc": "00001476",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001560"
+        ],
+        "address_sources": [
+          "instruction:00001476"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000143E",
+        "size": 2,
+        "value": "000000F0",
+        "pc": "00001424",
+        "call_context": [
+          "00001440",
+          "000013F6"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000143E"
+        ],
+        "address_sources": [
+          "instruction:00001424"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001554",
+        "size": 2,
+        "value": "0000BFDD",
+        "pc": "00001446",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001554"
+        ],
+        "address_sources": [
+          "instruction:00001446"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001556",
+        "size": 2,
+        "value": "0000BFBD",
+        "pc": "00001450",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001556"
+        ],
+        "address_sources": [
+          "instruction:00001450"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001558",
+        "size": 2,
+        "value": "0000F015",
+        "pc": "00001452",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001558"
+        ],
+        "address_sources": [
+          "instruction:00001452"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000155A",
+        "size": 2,
+        "value": "0000F014",
+        "pc": "00001458",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000155A"
+        ],
+        "address_sources": [
+          "instruction:00001458"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000155C",
+        "size": 2,
+        "value": "0000BFBC",
+        "pc": "00001462",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000155C"
+        ],
+        "address_sources": [
+          "instruction:00001462"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000155E",
+        "size": 2,
+        "value": "0000BFB8",
+        "pc": "00001464",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000155E"
+        ],
+        "address_sources": [
+          "instruction:00001464"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001560",
+        "size": 2,
+        "value": "0000BFC9",
+        "pc": "00001476",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001560"
+        ],
+        "address_sources": [
+          "instruction:00001476"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001554",
+        "size": 2,
+        "value": "0000BFDD",
+        "pc": "00001446",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001554"
+        ],
+        "address_sources": [
+          "instruction:00001446"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001556",
+        "size": 2,
+        "value": "0000BFBD",
+        "pc": "00001450",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001556"
+        ],
+        "address_sources": [
+          "instruction:00001450"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001558",
+        "size": 2,
+        "value": "0000F015",
+        "pc": "00001452",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001558"
+        ],
+        "address_sources": [
+          "instruction:00001452"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000155A",
+        "size": 2,
+        "value": "0000F014",
+        "pc": "00001458",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000155A"
+        ],
+        "address_sources": [
+          "instruction:00001458"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000155C",
+        "size": 2,
+        "value": "0000BFBC",
+        "pc": "00001462",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000155C"
+        ],
+        "address_sources": [
+          "instruction:00001462"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000155E",
+        "size": 2,
+        "value": "0000BFB8",
+        "pc": "00001464",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000155E"
+        ],
+        "address_sources": [
+          "instruction:00001464"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001560",
+        "size": 2,
+        "value": "0000BFC9",
+        "pc": "00001476",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001560"
+        ],
+        "address_sources": [
+          "instruction:00001476"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001736",
+        "size": 2,
+        "value": "0000BFCD",
+        "pc": "000016D2",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001736"
+        ],
+        "address_sources": [
+          "instruction:000016D2"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001738",
+        "size": 2,
+        "value": "0000BFBA",
+        "pc": "000016D4",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001738"
+        ],
+        "address_sources": [
+          "instruction:000016D4"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000186C",
+        "size": 2,
+        "value": "0000BFC9",
+        "pc": "0000179A",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000186C"
+        ],
+        "address_sources": [
+          "instruction:0000179A"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001870",
+        "size": 2,
+        "value": "0000BFC0",
+        "pc": "000017B0",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001870"
+        ],
+        "address_sources": [
+          "instruction:000017B0"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000186E",
+        "size": 2,
+        "value": "0000BFBF",
+        "pc": "000017B4",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000186E"
+        ],
+        "address_sources": [
+          "instruction:000017B4"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001554",
+        "size": 2,
+        "value": "0000BFDD",
+        "pc": "00001446",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001554"
+        ],
+        "address_sources": [
+          "instruction:00001446"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001556",
+        "size": 2,
+        "value": "0000BFBD",
+        "pc": "00001450",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001556"
+        ],
+        "address_sources": [
+          "instruction:00001450"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001558",
+        "size": 2,
+        "value": "0000F015",
+        "pc": "00001452",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001558"
+        ],
+        "address_sources": [
+          "instruction:00001452"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000155A",
+        "size": 2,
+        "value": "0000F014",
+        "pc": "00001458",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000155A"
+        ],
+        "address_sources": [
+          "instruction:00001458"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000155C",
+        "size": 2,
+        "value": "0000BFBC",
+        "pc": "00001462",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000155C"
+        ],
+        "address_sources": [
+          "instruction:00001462"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000155E",
+        "size": 2,
+        "value": "0000BFB8",
+        "pc": "00001464",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000155E"
+        ],
+        "address_sources": [
+          "instruction:00001464"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001560",
+        "size": 2,
+        "value": "0000BFC9",
+        "pc": "00001476",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001560"
+        ],
+        "address_sources": [
+          "instruction:00001476"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001AD4",
+        "size": 2,
+        "value": "0000BFC0",
+        "pc": "000019F8",
+        "call_context": [
+          "00001440",
+          "000019F8"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001AD4"
+        ],
+        "address_sources": [
+          "instruction:000019F8"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001AD6",
+        "size": 2,
+        "value": "0000BFBD",
+        "pc": "00001A04",
+        "call_context": [
+          "00001440",
+          "000019F8"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001AD6"
+        ],
+        "address_sources": [
+          "instruction:00001A04"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001AD8",
+        "size": 2,
+        "value": "0000BFBC",
+        "pc": "00001A08",
+        "call_context": [
+          "00001440",
+          "000019F8"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001AD8"
+        ],
+        "address_sources": [
+          "instruction:00001A08"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001ADC",
+        "size": 2,
+        "value": "0000BFB8",
+        "pc": "00001A2C",
+        "call_context": [
+          "00001440",
+          "000019F8"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001ADC"
+        ],
+        "address_sources": [
+          "instruction:00001A2C"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001ADE",
+        "size": 2,
+        "value": "0000BFC9",
+        "pc": "00001A38",
+        "call_context": [
+          "00001440",
+          "000019F8"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001ADE"
+        ],
+        "address_sources": [
+          "instruction:00001A38"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001732",
+        "size": 2,
+        "value": "0000BFBF",
+        "pc": "00001672",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001732"
+        ],
+        "address_sources": [
+          "instruction:00001672"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001734",
+        "size": 2,
+        "value": "0000BFBE",
+        "pc": "00001674",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001734"
+        ],
+        "address_sources": [
+          "instruction:00001674"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001554",
+        "size": 2,
+        "value": "0000BFDD",
+        "pc": "00001446",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001554"
+        ],
+        "address_sources": [
+          "instruction:00001446"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001556",
+        "size": 2,
+        "value": "0000BFBD",
+        "pc": "00001450",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001556"
+        ],
+        "address_sources": [
+          "instruction:00001450"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001558",
+        "size": 2,
+        "value": "0000F015",
+        "pc": "00001452",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001558"
+        ],
+        "address_sources": [
+          "instruction:00001452"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000155A",
+        "size": 2,
+        "value": "0000F014",
+        "pc": "00001458",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000155A"
+        ],
+        "address_sources": [
+          "instruction:00001458"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000155C",
+        "size": 2,
+        "value": "0000BFBC",
+        "pc": "00001462",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000155C"
+        ],
+        "address_sources": [
+          "instruction:00001462"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000155E",
+        "size": 2,
+        "value": "0000BFB8",
+        "pc": "00001464",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000155E"
+        ],
+        "address_sources": [
+          "instruction:00001464"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001560",
+        "size": 2,
+        "value": "0000BFC9",
+        "pc": "00001476",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001560"
+        ],
+        "address_sources": [
+          "instruction:00001476"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001AD4",
+        "size": 2,
+        "value": "0000BFC0",
+        "pc": "000019F8",
+        "call_context": [
+          "00001440",
+          "000019F8"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001AD4"
+        ],
+        "address_sources": [
+          "instruction:000019F8"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001AD6",
+        "size": 2,
+        "value": "0000BFBD",
+        "pc": "00001A04",
+        "call_context": [
+          "00001440",
+          "000019F8"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001AD6"
+        ],
+        "address_sources": [
+          "instruction:00001A04"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001AD8",
+        "size": 2,
+        "value": "0000BFBC",
+        "pc": "00001A08",
+        "call_context": [
+          "00001440",
+          "000019F8"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001AD8"
+        ],
+        "address_sources": [
+          "instruction:00001A08"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001ADC",
+        "size": 2,
+        "value": "0000BFB8",
+        "pc": "00001A2C",
+        "call_context": [
+          "00001440",
+          "000019F8"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001ADC"
+        ],
+        "address_sources": [
+          "instruction:00001A2C"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001ADE",
+        "size": 2,
+        "value": "0000BFC9",
+        "pc": "00001A38",
+        "call_context": [
+          "00001440",
+          "000019F8"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001ADE"
+        ],
+        "address_sources": [
+          "instruction:00001A38"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001732",
+        "size": 2,
+        "value": "0000BFBF",
+        "pc": "00001672",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001732"
+        ],
+        "address_sources": [
+          "instruction:00001672"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001734",
+        "size": 2,
+        "value": "0000BFBE",
+        "pc": "00001674",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001734"
+        ],
+        "address_sources": [
+          "instruction:00001674"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001554",
+        "size": 2,
+        "value": "0000BFDD",
+        "pc": "00001446",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001554"
+        ],
+        "address_sources": [
+          "instruction:00001446"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001556",
+        "size": 2,
+        "value": "0000BFBD",
+        "pc": "00001450",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001556"
+        ],
+        "address_sources": [
+          "instruction:00001450"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001558",
+        "size": 2,
+        "value": "0000F015",
+        "pc": "00001452",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001558"
+        ],
+        "address_sources": [
+          "instruction:00001452"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000155A",
+        "size": 2,
+        "value": "0000F014",
+        "pc": "00001458",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000155A"
+        ],
+        "address_sources": [
+          "instruction:00001458"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000155C",
+        "size": 2,
+        "value": "0000BFBC",
+        "pc": "00001462",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000155C"
+        ],
+        "address_sources": [
+          "instruction:00001462"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000155E",
+        "size": 2,
+        "value": "0000BFB8",
+        "pc": "00001464",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000155E"
+        ],
+        "address_sources": [
+          "instruction:00001464"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001560",
+        "size": 2,
+        "value": "0000BFC9",
+        "pc": "00001476",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001560"
+        ],
+        "address_sources": [
+          "instruction:00001476"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001AD4",
+        "size": 2,
+        "value": "0000BFC0",
+        "pc": "000019F8",
+        "call_context": [
+          "00001440",
+          "000019F8"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001AD4"
+        ],
+        "address_sources": [
+          "instruction:000019F8"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001AD6",
+        "size": 2,
+        "value": "0000BFBD",
+        "pc": "00001A04",
+        "call_context": [
+          "00001440",
+          "000019F8"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001AD6"
+        ],
+        "address_sources": [
+          "instruction:00001A04"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001AD8",
+        "size": 2,
+        "value": "0000BFBC",
+        "pc": "00001A08",
+        "call_context": [
+          "00001440",
+          "000019F8"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001AD8"
+        ],
+        "address_sources": [
+          "instruction:00001A08"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001ADA",
+        "size": 2,
+        "value": "0000BFBE",
+        "pc": "00001A20",
+        "call_context": [
+          "00001440",
+          "000019F8"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001ADA"
+        ],
+        "address_sources": [
+          "instruction:00001A20"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001732",
+        "size": 2,
+        "value": "0000BFBF",
+        "pc": "00001672",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001732"
+        ],
+        "address_sources": [
+          "instruction:00001672"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001734",
+        "size": 2,
+        "value": "0000BFBE",
+        "pc": "00001674",
+        "call_context": [
+          "00001440"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001734"
+        ],
+        "address_sources": [
+          "instruction:00001674"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "000019A2",
+        "size": 2,
+        "value": "0000BFC9",
+        "pc": "0000194E",
+        "call_context": [
+          "00001440",
+          "0000194C"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:000019A2"
+        ],
+        "address_sources": [
+          "instruction:0000194E"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "000019A8",
+        "size": 2,
+        "value": "0000BFA4",
+        "pc": "0000196E",
+        "call_context": [
+          "00001440",
+          "0000194C"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:000019A8"
+        ],
+        "address_sources": [
+          "instruction:0000196E"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "000019A6",
+        "size": 2,
+        "value": "0000BFA0",
+        "pc": "00001970",
+        "call_context": [
+          "00001440",
+          "0000194C"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:000019A6"
+        ],
+        "address_sources": [
+          "instruction:00001970"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "000019B0",
+        "size": 2,
+        "value": "00005AA5",
+        "pc": "00001984",
+        "call_context": [
+          "00001440",
+          "0000194C"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:000019B0"
+        ],
+        "address_sources": [
+          "instruction:00001984"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001884",
+        "size": 2,
+        "value": "0000BFB4",
+        "pc": "00001850",
+        "call_context": [
+          "00001440",
+          "0000194C",
+          "00001850"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001884"
+        ],
+        "address_sources": [
+          "instruction:00001850"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000187E",
+        "size": 2,
+        "value": "0000BFD5",
+        "pc": "00001854",
+        "call_context": [
+          "00001440",
+          "0000194C",
+          "00001850"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000187E"
+        ],
+        "address_sources": [
+          "instruction:00001854"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000187C",
+        "size": 2,
+        "value": "0000BFBC",
+        "pc": "000017D8",
+        "call_context": [
+          "00001440",
+          "0000194C",
+          "00001850"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000187C"
+        ],
+        "address_sources": [
+          "instruction:000017D8"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000187E",
+        "size": 2,
+        "value": "0000BFD5",
+        "pc": "000017E0",
+        "call_context": [
+          "00001440",
+          "0000194C",
+          "00001850"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000187E"
+        ],
+        "address_sources": [
+          "instruction:000017E0"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001880",
+        "size": 2,
+        "value": "00000080",
+        "pc": "000017E2",
+        "call_context": [
+          "00001440",
+          "0000194C",
+          "00001850"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001880"
+        ],
+        "address_sources": [
+          "instruction:000017E2"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001882",
+        "size": 2,
+        "value": "000000F0",
+        "pc": "000017E4",
+        "call_context": [
+          "00001440",
+          "0000194C",
+          "00001850"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001882"
+        ],
+        "address_sources": [
+          "instruction:000017E4"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001884",
+        "size": 2,
+        "value": "0000BFB4",
+        "pc": "000017EC",
+        "call_context": [
+          "00001440",
+          "0000194C",
+          "00001850"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001884"
+        ],
+        "address_sources": [
+          "instruction:000017EC"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001888",
+        "size": 4,
+        "value": "00001CEE",
+        "pc": "00001814",
+        "call_context": [
+          "00001440",
+          "0000194C",
+          "00001850"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001888"
+        ],
+        "address_sources": [
+          "instruction:00001814"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001DE8",
+        "size": 2,
+        "value": "0000F012",
+        "pc": "00001CEE",
+        "call_context": [
+          "00001440",
+          "0000194C",
+          "00001850",
+          "00001CEE"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001DE8"
+        ],
+        "address_sources": [
+          "instruction:00001CEE"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "0000188C",
+        "size": 4,
+        "value": "00001D00",
+        "pc": "00001820",
+        "call_context": [
+          "00001440",
+          "0000194C",
+          "00001850"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:0000188C"
+        ],
+        "address_sources": [
+          "instruction:00001820"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001DEC",
+        "size": 2,
+        "value": "00000080",
+        "pc": "00001D0C",
+        "call_context": [
+          "00001440",
+          "0000194C",
+          "00001850"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001DEC"
+        ],
+        "address_sources": [
+          "instruction:00001D0C"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001DEE",
+        "size": 2,
+        "value": "0000F014",
+        "pc": "00001D10",
+        "call_context": [
+          "00001440",
+          "0000194C",
+          "00001850"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001DEE"
+        ],
+        "address_sources": [
+          "instruction:00001D10"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001DFC",
+        "size": 4,
+        "value": "FFFFBFE0",
+        "pc": "00001D18",
+        "call_context": [
+          "00001440",
+          "0000194C",
+          "00001850"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001DFC"
+        ],
+        "address_sources": [
+          "instruction:00001D18"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001DEA",
+        "size": 2,
+        "value": "0000F013",
+        "pc": "00001D1C",
+        "call_context": [
+          "00001440",
+          "0000194C",
+          "00001850"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001DEA"
+        ],
+        "address_sources": [
+          "instruction:00001D1C"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001DF2",
+        "size": 2,
+        "value": "0000EC10",
+        "pc": "00001DB6",
+        "call_context": [
+          "00001440",
+          "0000194C",
+          "00001850",
+          "00001DB6"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001DF2"
+        ],
+        "address_sources": [
+          "instruction:00001DB6"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001DF2",
+        "size": 2,
+        "value": "0000EC10",
+        "pc": "00001DB6",
+        "call_context": [
+          "00001440",
+          "0000194C",
+          "00001850",
+          "00001DB6"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001DF2"
+        ],
+        "address_sources": [
+          "instruction:00001DB6"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001DF2",
+        "size": 2,
+        "value": "0000EC10",
+        "pc": "00001DB6",
+        "call_context": [
+          "00001440",
+          "0000194C",
+          "00001850",
+          "00001DB6"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001DF2"
+        ],
+        "address_sources": [
+          "instruction:00001DB6"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001DF2",
+        "size": 2,
+        "value": "0000EC10",
+        "pc": "00001DB6",
+        "call_context": [
+          "00001440",
+          "0000194C",
+          "00001850",
+          "00001DB6"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001DF2"
+        ],
+        "address_sources": [
+          "instruction:00001DB6"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001DF2",
+        "size": 2,
+        "value": "0000EC10",
+        "pc": "00001DB6",
+        "call_context": [
+          "00001440",
+          "0000194C",
+          "00001850",
+          "00001DB6"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001DF2"
+        ],
+        "address_sources": [
+          "instruction:00001DB6"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001DF2",
+        "size": 2,
+        "value": "0000EC10",
+        "pc": "00001DB6",
+        "call_context": [
+          "00001440",
+          "0000194C",
+          "00001850",
+          "00001DB6"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001DF2"
+        ],
+        "address_sources": [
+          "instruction:00001DB6"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001DF2",
+        "size": 2,
+        "value": "0000EC10",
+        "pc": "00001DB6",
+        "call_context": [
+          "00001440",
+          "0000194C",
+          "00001850",
+          "00001DB6"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001DF2"
+        ],
+        "address_sources": [
+          "instruction:00001DB6"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001DF2",
+        "size": 2,
+        "value": "0000EC10",
+        "pc": "00001DB6",
+        "call_context": [
+          "00001440",
+          "0000194C",
+          "00001850",
+          "00001DB6"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001DF2"
+        ],
+        "address_sources": [
+          "instruction:00001DB6"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "000019B2",
+        "size": 2,
+        "value": "0000BFC7",
+        "pc": "00001992",
+        "call_context": [
+          "00001440",
+          "0000194C"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:000019B2"
+        ],
+        "address_sources": [
+          "instruction:00001992"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "000019B4",
+        "size": 2,
+        "value": "0000BFE4",
+        "pc": "00001994",
+        "call_context": [
+          "00001440",
+          "0000194C"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:000019B4"
+        ],
+        "address_sources": [
+          "instruction:00001994"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "000019C4",
+        "size": 4,
+        "value": "FFFF3004",
+        "pc": "00001998",
+        "call_context": [
+          "00001440",
+          "0000194C"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:000019C4"
+        ],
+        "address_sources": [
+          "instruction:00001998"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "000019C8",
+        "size": 4,
+        "value": "00001C28",
+        "pc": "0000199C",
+        "call_context": [
+          "00001440",
+          "0000194C"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:000019C8"
+        ],
+        "address_sources": [
+          "instruction:0000199C"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      },
+      {
+        "mode": "r",
+        "address": "00001C30",
+        "size": 4,
+        "value": "FFFFBFA0",
+        "pc": "00001C28",
+        "call_context": [
+          "00001440",
+          "0000194C"
+        ],
+        "delay_slot": false,
+        "value_sources": [
+          "rom:00001C30"
+        ],
+        "address_sources": [
+          "instruction:00001C28"
+        ],
+        "control_sources": [],
+        "watchpoints": []
+      }
+    ],
+    "trace": {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_offline_20260930_01\\instruction_review\\replay_20260930T054051015474Z\\OEM_START_TRACE.json.gz",
+      "bytes": 32623,
+      "sha256": "d9956c1a1ae3eb13dc95612e39ab0fee0bc174e527035b45ec92c8a191dccb3f"
+    }
+  },
+  "kernel_identity_variants": {},
+  "error": "Traceback (most recent call last):\n  File \"C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_offline_20260930_01\\instruction_review\\replay_identity_only.py\", line 213, in main\n    assert all(symbols[name] not in session.cpu.pc_counts for name in forbidden_symbols)\n           ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+  "artifacts": [
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_offline_20260930_01\\instruction_review\\replay_20260930T054051015474Z\\OEM_START_TRACE.json.gz",
+      "bytes": 32623,
+      "sha256": "d9956c1a1ae3eb13dc95612e39ab0fee0bc174e527035b45ec92c8a191dccb3f"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_offline_20260930_01\\instruction_review\\replay_20260930T054051015474Z\\poisoned_registers\\kernel_exchanges\\exchange_00000.json",
+      "bytes": 544,
+      "sha256": "ffb354a5c066b3794b179f5aa3d2481ce6f1868b8fe07447bae70b2a389b8bd6"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_offline_20260930_01\\instruction_review\\replay_20260930T054051015474Z\\poisoned_registers\\kernel_exchanges\\exchange_00001.json",
+      "bytes": 583,
+      "sha256": "7fb2db06b70f2444566c4646a633987693caa89d98213a433c80485ce1330c11"
+    }
+  ]
+}

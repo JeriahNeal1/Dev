@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "status": "PASS_OFFLINE_QUALIFICATION_AND_MODEL_REVIEW",
+  "created_utc": "2026-09-30T04:39:16.718342+00:00",
+  "reviewer": "passive_review",
+  "native_and_model_author": "root",
+  "runner_author_and_executor": "passive_review",
+  "independent_runner_reviewer": "root",
+  "physical_operations": 0,
+  "real_provider_loads": 0,
+  "hardware_authorization": false,
+  "blocking_findings": [],
+  "qualification_cases": {
+    "passed": 287,
+    "total": 287,
+    "virtual": 283,
+    "real_clock": 4,
+    "later_chunk_negatives": 154,
+    "measured_waits_all_meet_minimum": 12
+  },
+  "scope": "Fixed22-TX offline host:BF/81/83/seed/key/session,one34,fifteenfixed36; stop after final76; no31,no custom-kernel execution,no ROM acquisition",
+  "native_source_review": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_no_start_20260930_01\\native_review\\NATIVE_SOURCE_REVIEW.json",
+    "sha256": "b83f12b6d8e5c03d7aba3658bdd0374967eff9980f42987d587e12323116d95c",
+    "bytes": 6982
+  },
+  "qualification_report": {
+    "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\reports\\qualification_20260930T043538633340Z\\TEST_REPORT.json",
+    "sha256": "bb3a7813be188705492ff5d265a27ede1d741b2cedd4df673b429b4002d79aa5",
+    "bytes": 649656
+  },
+  "runner_author_audit": {
+    "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\reports\\RUNNER_AUTHOR_AUDIT.json",
+    "sha256": "5aeb70618bcb51f39d8bc6416966885299822a0beca3bd457930c4c7e72f2ed7",
+    "bytes": 4182
+  },
+  "current_replay_review": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_no_start_20260930_01\\native_review\\CURRENT_REPLAY_REVIEW.json",
+    "sha256": "eb488a38de5f9038837c33b396026273220682b187fc1162cc4eb83ea69a49f2",
+    "bytes": 2927
+  },
+  "current_replay_report": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_no_start_20260930_01\\current_instruction_replay\\CURRENT_NO_START_REPLAY.json",
+    "sha256": "ed9a2d53349a22373ace06003e8b73f3fac67b2561f2640cbdb14bfc0b51b567",
+    "bytes": 10599
+  },
+  "root_runner_review": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_full_upload_no_start_20260930_01\\root_review\\ROOT_REVIEW.json",
+    "sha256": "c662d3f8c6450af36f277cac3d809c0766f2b2f205ea133d5211f5a2e2b978a9",
+    "bytes": 3090
+  },
+  "runner": {
+    "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\tools\\test_full_upload_independent.py",
+    "sha256": "d96ca60e6a97ab6fba06e0956424eca2ac6ea8e162c8b567956b1b5308c6abea",
+    "bytes": 68369
+  },
+  "readme": {
+    "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\README.md",
+    "sha256": "ff6bcaf93dc3e07f14d6cc591709ee2ae912d99c7c3a2e60fbfc0c3918a69e90",
+    "bytes": 9286
+  },
+  "future_plan": {
+    "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\FUTURE_PHYSICAL_RELEASE_PLAN.md",
+    "sha256": "59a37b583ef563a488cbaf33da14e6138814c8196d9bb77e0890e4d7796adaae",
+    "bytes": 5700
+  },
+  "exe": {
+    "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\build_a\\rk03_full_upload_no_start_offline32.exe",
+    "sha256": "602f2b0835d8e39d37af9b1eddead0223cd7ba5411970645e1ebc7e78dc1c7a5",
+    "bytes": 328704
+  },
+  "second_clean_exe": {
+    "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\build_b\\rk03_full_upload_no_start_offline32.exe",
+    "sha256": "602f2b0835d8e39d37af9b1eddead0223cd7ba5411970645e1ebc7e78dc1c7a5",
+    "bytes": 328704
+  },
+  "checks": [
+    "Native source review and all pinned sources/builds unchanged after qualification.",
+    "Initial285/287 attempt and exact runner snapshot preserved; two service-name/stage-index collisions corrected only in runner; native/build unchanged.",
+    "Final287/287 suite preserves861artifacts;1199hashreferences covering906distinctpaths audited.",
+    "Four realclock cases yielded12actualQPCwaits meeting200/100/200ms minima.",
+    "Current replay decoded independently:476281OEMinstructions;452contiguous4bytestores;1808bytes exactly equal pinnedkernel;16complete TDR replies; no RAMinstruction.",
+    "Script excludes historical310101 and never calls imported reference main(); reviewed prefix-comparison assertions were executed by root.",
+    "Future plan is documentation only; it explicitly requires a separate physical artifact, review, qualification and fresh authorization."
+  ],
+  "limits": [
+    "Application has no physicalCLI,providerdiscovery/loader or authorization/session path. Generic CRT GetProcAddress/LoadLibraryExW/FreeLibrary imports remain and are not concealed.",
+    "Fake/replay results do not qualify physical timing, complete custom-host upload, recovery, kernel execution, ROM acquisition or finalization.",
+    "The authoritative current-ROM execution uses explicit readyTEND/admission/watchdog/interrupt assumptions; historical peripheral fixtures do not reproduce vehicle state.",
+    "Runner author audit is distinct from root independent runner/journal review; native and model review is independent of root authorship."
+  ]
+}

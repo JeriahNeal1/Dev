@@ -1,0 +1,1797 @@
+{
+  "schema": 1,
+  "created_utc": "2026-09-30T01:18:49.360921+00:00",
+  "status": "PASS_OFFLINE_QUALIFIED_TRANSITION_PROBE_ONLY",
+  "physical_executable": {
+    "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\build_a\\rk03_transition_probe32.exe",
+    "bytes": 283648,
+    "sha256": "1573fa0046a6c1ee6b0ca9d3b0873ce0b3536fb2cdc6888304fb1e7b1ff3513e"
+  },
+  "reproducible_build_executable": {
+    "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\build_b\\rk03_transition_probe32.exe",
+    "bytes": 283648,
+    "sha256": "1573fa0046a6c1ee6b0ca9d3b0873ce0b3536fb2cdc6888304fb1e7b1ff3513e"
+  },
+  "review_contract": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\PROBE_REVIEW_CONTRACT.json",
+    "bytes": 4386,
+    "sha256": "a0b98003aadcd647a98a38fffc3a7404091af01b407ca19ea81177d6d48ed889"
+  },
+  "native_test_report": {
+    "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\TEST_REPORT.json",
+    "bytes": 124637,
+    "sha256": "5c0c017258750b607b660c0f0e0ef8eb033428f020df1e5ee59d07863be82f0c"
+  },
+  "native_cases_passed": 65,
+  "independent_review": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\probe_review\\code_review.json",
+    "bytes": 17995,
+    "sha256": "a9754ceaff1f2d22c9b8af356ae38cb07f88552dfa918a5c459bd410b47cc713"
+  },
+  "launcher_control_tests": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\LAUNCHER_FINAL_TESTS.json",
+    "bytes": 795,
+    "sha256": "875011532fbd42838e99e0203300d961551e767a924f52f9efe408ea1a12b057"
+  },
+  "branch": "rk03/transition-probe",
+  "commit": "6d2a076cc8cf90f023211c1e71ad5571e7b0ee8d",
+  "original_branch_head_unchanged": "00664cbe83c35eee0faffd4161c76fc70888984f",
+  "physical_authorization_received": false,
+  "physical_probe_invocations": 0,
+  "maximum_physical_probe_invocations": 1,
+  "full_rk03_acquisition_allowed": false,
+  "allowed_wire_requests": [
+    "8010f001bf40",
+    "8010f0018102",
+    "8010f002830005"
+  ],
+  "expected_C3_response": "80f01007c30000ff00ff0048",
+  "files": [
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\TEST_REPORT.json",
+      "bytes": 124637,
+      "sha256": "5c0c017258750b607b660c0f0e0ef8eb033428f020df1e5ee59d07863be82f0c"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\success.jsonl",
+      "bytes": 61382,
+      "sha256": "870bf5b423e96dcfe00cf7603ba4254b2cb4fe8549872f1de4174d5f9d2d7bb5"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\fragmented.jsonl",
+      "bytes": 366004,
+      "sha256": "cf496565bfbcbebaf5c10a3676844aa8e3e5b1e4da911746aada779e2f01e9df"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\indicators_fragmented.jsonl",
+      "bytes": 412635,
+      "sha256": "7af8aaf67f621ea88d864f4a4cfc6cc0dfd05a1f4368e13ab354b1278b2fa8c4"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\version_nonascii.jsonl",
+      "bytes": 61395,
+      "sha256": "5952c70c3e31b7f4b39d6c0669871aa57f792e7f2e78773615482e10909a0267"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\extra_index_size.jsonl",
+      "bytes": 61460,
+      "sha256": "ec75fa4e8db334a83ffb34eae083b72d17b5ad9b69fca61c6d5acf2fb5e78ef2"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\physical_83_buffer_empty.jsonl",
+      "bytes": 69138,
+      "sha256": "6c3be53ffa595f4abd6a72e4620c39fc27c115bd9964d2c1254787e63b0b5aa2"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\wrong_bf.jsonl",
+      "bytes": 45843,
+      "sha256": "76442e00ddda851d0b2ee8b86cd2cfc30b3dfb1980cbf263b7ef3ee2f8435521"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\wrong_81.jsonl",
+      "bytes": 53622,
+      "sha256": "b376035ac4e1b65a8c526309545b515d0fae5ede40c29c9d54d87c52ea68d80d"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\wrong_83.jsonl",
+      "bytes": 61470,
+      "sha256": "f18f6803cf0f8f09f0d0cada5b89c1394d806feae9db07907405f31f36af1b67"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\bad_checksum_bf.jsonl",
+      "bytes": 45852,
+      "sha256": "0c415b1fdec0ab7903b54dfba36481407627c5bdad9789bfb95bb50bc8c15e3f"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\bad_checksum_81.jsonl",
+      "bytes": 53615,
+      "sha256": "c60bb091b175ebedb57d257ab9cb459742b63880c566f16de98be972c5ef30d2"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\bad_checksum_83.jsonl",
+      "bytes": 61395,
+      "sha256": "1d4bd64fd3a30e3b8461d7f6cdc4447a901e3ac1413714d789ab406ea50c1143"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\unexpected_frame.jsonl",
+      "bytes": 45740,
+      "sha256": "92ee9b8b2e2996858e081bb389303064d3850a94681368f686bb2d2c19d35f6a"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\open_fail.jsonl",
+      "bytes": 2751,
+      "sha256": "2eddfaea112206b2e41c91e9150f146afbf586bdf0c207dce7c74b5e4dc7a13f"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\version_fail.jsonl",
+      "bytes": 6905,
+      "sha256": "01b97215848883073f8546950c6768422f2543da7fe44d1387d20a0a0b0c9af5"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\version_unterminated.jsonl",
+      "bytes": 6948,
+      "sha256": "82e311ac50c332f86ed5f73a73aa72ea3a297a53875355dcd98d051bfae8d714"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\connect_fail.jsonl",
+      "bytes": 8662,
+      "sha256": "3bcb8b2835038c1e4f2247ab08bf64e14e684cd495d9f6895164e90985977975"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\set_fail_0.jsonl",
+      "bytes": 12823,
+      "sha256": "702d397a991992b90f2403198ad82980b46c810bce0f00841ad188d08d3425e8"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\set_fail_1.jsonl",
+      "bytes": 15408,
+      "sha256": "554e79b6bc16f03597571a73639672f7fb1a7d19b1ca4a61840eb0989bda2d30"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\set_fail_2.jsonl",
+      "bytes": 18055,
+      "sha256": "7a10fd9d507a5e7e68b9208e725646e05929d77ca671df90afa9b74d24005b77"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\set_fail_3.jsonl",
+      "bytes": 20718,
+      "sha256": "a4316afaeca07e246ef828364bdb16fd76d4db70b143d688efd086fd88e46b5e"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\set_fail_4.jsonl",
+      "bytes": 23501,
+      "sha256": "83412284a4521fd6e9c8651264231977e67ed3d0aa2b9b2fc0c43a11d4b64064"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\set_mutation.jsonl",
+      "bytes": 12801,
+      "sha256": "bd0bcd29eb2399df351a6dfa033d04a26bf64789f4e07066c30b5bd894857fe9"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\get_fail.jsonl",
+      "bytes": 27306,
+      "sha256": "2d219bca98de7949471c1bc4b43db80b91f338435aa3f83a8c2c81e0085b2e98"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\get_wrong_0.jsonl",
+      "bytes": 27264,
+      "sha256": "20e7450e316910dabd405585548df09e29b1a218f26a66b6379ac34d9ad8ff90"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\get_wrong_1.jsonl",
+      "bytes": 27264,
+      "sha256": "75e99b5b1206a8e78754cc726c2d3644ef631bab63c94c75d4421d69046a93c5"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\get_wrong_2.jsonl",
+      "bytes": 27264,
+      "sha256": "02b2b84de31d863dd1c9ed58de077c8148cac52f62995ca155835fb52cd11526"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\get_wrong_3.jsonl",
+      "bytes": 27264,
+      "sha256": "a8e137bf21ede93f4681b869ecdae8296c5821f9d00b34016080ea17c45488df"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\get_wrong_4.jsonl",
+      "bytes": 27319,
+      "sha256": "2ab094f9f6249f65a2c252782ccdba239783bd81b40323a6b2514a400288ef29"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\get_sentinel.jsonl",
+      "bytes": 27627,
+      "sha256": "40e951dc2c73517bd0826909b33f5009eed42e31828f9d3f42d701ab82b90ef9"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\get_count_zero.jsonl",
+      "bytes": 27294,
+      "sha256": "3bf4d99d63d3ff0569be49c80e6a6e14c48d07b1754d5555b9f7a8f51366a347"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\get_count_large.jsonl",
+      "bytes": 27296,
+      "sha256": "5bca7065682d4e7679f10c95dc9a3c56ec71178c2c1f71775f9558dd4c7292e1"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\get_pointer_null.jsonl",
+      "bytes": 27289,
+      "sha256": "ac2c3cfc78fc8c1cde21aba0950387824b6523b8706a8bd3038e7229e02e8023"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\get_pointer_invalid.jsonl",
+      "bytes": 27294,
+      "sha256": "e8b8996e3b364d91d2470f25774045f0c703d3c4dba2592b6b6172aa747ea73c"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\get_parameter.jsonl",
+      "bytes": 27259,
+      "sha256": "7d0bbab884098f3c2d9af48ddfb758d46135da5562d914ccd26d12b2f71208e2"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\filter_fail.jsonl",
+      "bytes": 34847,
+      "sha256": "b86f6bf5bda0eaf4cb672474e94870b2c2c0813a70ba7fe4ed28eb139e4598b5"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\filter_mutation.jsonl",
+      "bytes": 37999,
+      "sha256": "7342b0eda8f47a81d8ede074bc7d620975c84fc138d21d5f132757bb2086a0f4"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\write_fail.jsonl",
+      "bytes": 41946,
+      "sha256": "b0617006fdf19c91235f675c42b8ab3f14c38ab5d1dc4724dae0925d63dee399"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\write_count_zero.jsonl",
+      "bytes": 41878,
+      "sha256": "6086a82787587faa93d159b85058e1125c5dc911ba9544324f20c7b84a59ee27"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\write_count_large.jsonl",
+      "bytes": 41937,
+      "sha256": "4dd5486b3a50acb3183bb558dbfa44d572dac01e263a35e24edf102daf893619"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\write_mutation.jsonl",
+      "bytes": 41876,
+      "sha256": "7016d3bd69642851e9581b7a277e1638db6bc67e08aba75af84c413bdc75a338"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\read_count_zero.jsonl",
+      "bytes": 45911,
+      "sha256": "fcb18083d71540fd71fe09bf36a1c812577647af4e4fe5dd99d7cfae3f2dfaa7"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\read_count_large.jsonl",
+      "bytes": 45853,
+      "sha256": "8f7b3d8d2f4b0fa8aa77e27e10cf93129e4257f1f0402041a1566ef420cc1771"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\read_error_output.jsonl",
+      "bytes": 45880,
+      "sha256": "ed8262e5641e3a0e7fe1c8dfa7cda0002d0d7997abdea6a56ef0125a04b8f454"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\rx_oversize.jsonl",
+      "bytes": 53981,
+      "sha256": "38d7c46d5665fc618d2a44982b21e7474d869562195ebe6ae344d5dd4e53f06e"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\rx_protocol.jsonl",
+      "bytes": 45848,
+      "sha256": "83c78f69ceb0f4f8bf50d113c07bc4482dc1edec0362ee5edb1c67c3748ab43a"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\rx_flags.jsonl",
+      "bytes": 45844,
+      "sha256": "a0824df994c273e6f8d7a8d850a7fd1b5b06f78ee991a62f9b963385dd3d5b63"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\rx_extra.jsonl",
+      "bytes": 45844,
+      "sha256": "e548fb251663e15ccd6aa308eac340558aa8c061e9afa8b688061c786a841da1"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\rx_unknown_status.jsonl",
+      "bytes": 45913,
+      "sha256": "990b29705bb7180e7d8a119c0f6a3ed87ff5b8436a3e6f0a6d1ca5f3b83c07b8"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\rx_combined_status.jsonl",
+      "bytes": 45913,
+      "sha256": "d8e8199c24d5205445ea9b2cb7f0fff8225bd024ee4b420372f4d601f71e8340"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\rx_nonempty_indicator.jsonl",
+      "bytes": 45861,
+      "sha256": "ba4775570d6dafdfa7af30958d891ca95042d7540f8051ccc0f970587e06e8d1"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\rx_wrong_echo.jsonl",
+      "bytes": 45735,
+      "sha256": "47598d76ca715fc6df90618a78fd10cdaa4e84091b9e64427c49e4e97d2f4aa7"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\rx_indicator_flood.jsonl",
+      "bytes": 61229,
+      "sha256": "752ab4119d9439d606c92ad82bb89b7f2d0577ce9862a4b3710ef1a3a4588181"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\rx_indicator_after_data.jsonl",
+      "bytes": 49600,
+      "sha256": "6d822b8718dc2b4afbcfd97c08c15a31ee4dc409cf0029f8ce76d310cce4b0c6"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\rx_empty.jsonl",
+      "bytes": 45722,
+      "sha256": "a8ae5bae4a381440ef16d588be831bccff41a47894acfd41192877f5f0431367"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\rx_trailing.jsonl",
+      "bytes": 45917,
+      "sha256": "49f8f39b10842a7ca104a46eaee5a523703ea757b9895b07aafc23100605e200"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\rx_wrong_direction.jsonl",
+      "bytes": 45908,
+      "sha256": "cc639b1d2c1af867c01ea67b8849813be01bcb3cc9780b22db7c7381d6c49489"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\rx_zero_length.jsonl",
+      "bytes": 45857,
+      "sha256": "cd18de1145ba8e9f13ebb283929b1b75c3859c1b97e6a4ba164c2bf2b1a45348"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\rx_marker_only.jsonl",
+      "bytes": 49666,
+      "sha256": "2b8d78ff725c479055168d7b43d3fd81ba56b19130848224c410497c3a06f209"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\cleanup_stop_fail.jsonl",
+      "bytes": 61441,
+      "sha256": "e6b4ed6acfa117d7de7d0d38e7ddfbd3d126969229f6d2de91b64646cf3385eb"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\cleanup_disconnect_fail.jsonl",
+      "bytes": 61449,
+      "sha256": "607fb04ed324c7064148f647bda28073365a16a841a0d56927bf9ebf403b4f9c"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\cleanup_close_fail.jsonl",
+      "bytes": 61379,
+      "sha256": "e470fb84d5b69a487543b6606b010df0661263242546c5ad9598a726df547111"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\cleanup_all_fail.jsonl",
+      "bytes": 61437,
+      "sha256": "c735fa60b412585a66881332875f9a115d3eca08ceb47d34eecf89b47ebb2b80"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\physical_83_cleanup_all_fail.jsonl",
+      "bytes": 69202,
+      "sha256": "cac0866adff73c8288183db3e01e4d890402924a2afbed3bc209e5eb0e3c9bb5"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\journal_failure_after_filter.jsonl",
+      "bytes": 35145,
+      "sha256": "2caf5713040613fa216a846df812fbaa133958da6259d47ea610feed1941cce3"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\build_a\\rk03_transition_probe32.exe",
+      "bytes": 283648,
+      "sha256": "1573fa0046a6c1ee6b0ca9d3b0873ce0b3536fb2cdc6888304fb1e7b1ff3513e"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\src\\common.hpp",
+      "bytes": 6606,
+      "sha256": "3e892d6eeec55ef5eaa004a7ce4f7b18f07802ba7a46af60df087840858e6e2d"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\src\\fake_backend.hpp",
+      "bytes": 8535,
+      "sha256": "7b2e1b701b7334fe1cc413e4ff6ca27e1fb2a8f6ec3c5b1df716c2feb6af6bde"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\src\\j2534_tactrix.h",
+      "bytes": 12119,
+      "sha256": "c559ea33654af59ad147eedfcccd56a1f2cb6e95daeb2412b53f6f4bbc76a7d9"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\src\\main.cpp",
+      "bytes": 7461,
+      "sha256": "14ec5777e795e10c669b5324a6eea21bf1590eafd1e63b634d86f377e3f23d2a"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\src\\pins.hpp",
+      "bytes": 929,
+      "sha256": "8290c79bc25de6ec7286dd51bf14a1ae5c24cf97a25e682e587caf66bd78aad6"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\src\\probe_core.hpp",
+      "bytes": 12642,
+      "sha256": "13dd69a6dd2a4cc7f8534cf6e2af146c59dd35e8038a0acf101919d851b17089"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\tools\\build_probe.cmd",
+      "bytes": 736,
+      "sha256": "5cda96428b261e1a96fe442c7fe9b57159caf16f74bd9e15be67792071ea6e66"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\tools\\build_probe.py",
+      "bytes": 2150,
+      "sha256": "8bc8760ceea8e3bdb4d4e82a69158ab34c484e4ca6c51e4c59d58312a5b4ff6e"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\INPUT_PINS.json",
+      "bytes": 3976,
+      "sha256": "5f81fb9f782dd30ba2a6284b65102ede0eb3a12cf581e15749e5d87bc129f337"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\fixtures\\transition_probe_oracle.json",
+      "bytes": 1067,
+      "sha256": "aa6a9231059f5fc2a73453ad7a58c0c23f07f003d9675f7a10f39366019026be"
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx86\\x86\\cl.exe",
+      "bytes": 598416,
+      "sha256": "fc26dcba228dd91cd09429670f298f4608833c84841a4ceca8c4955b4d495a7b"
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx86\\x86\\link.exe",
+      "bytes": 2782600,
+      "sha256": "83d4fbff908e88be425898184d8470be1f139bf843190c24e041b019c9c69a78"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\build_a\\build.log",
+      "bytes": 309,
+      "sha256": "b5f3de449fb725eb148af621e4ea6b9f2463b8f53f6fd22011e760f10a57c493"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\build_a\\imports.txt",
+      "bytes": 4284,
+      "sha256": "ad934360fdaf069343af570b5f23af98722c60bf7b137d34a09dc68a9eb8e30e"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\build_a\\headers.txt",
+      "bytes": 5182,
+      "sha256": "faa69b80a0c04875cfd59de56a41d24ecfd24e46fc35a0e0bf32d5565a33e4d0"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\build_b\\build.log",
+      "bytes": 309,
+      "sha256": "b5f3de449fb725eb148af621e4ea6b9f2463b8f53f6fd22011e760f10a57c493"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\build_b\\imports.txt",
+      "bytes": 4284,
+      "sha256": "105ceae84cced6b289037e12fa81a794d3702bc20d0143dcd3004cc5db98a8d3"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\build_b\\headers.txt",
+      "bytes": 5182,
+      "sha256": "3d7eaf2188b3c7a442b14b69d510f7a9ca4f8d282dc3a6c6431658b3e498e09d"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\build_a\\BUILD.json",
+      "bytes": 3433,
+      "sha256": "7aca37081e106e0cddafbe4e5aa096fb0ad0594bf19067abb2d04db2f2908ab2"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\build_b\\BUILD.json",
+      "bytes": 3433,
+      "sha256": "6d6dc72bc577d25a2c7a6522c7ea1c17a52f128daf57735529231a9675dabcae"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\build_b\\rk03_transition_probe32.exe",
+      "bytes": 283648,
+      "sha256": "1573fa0046a6c1ee6b0ca9d3b0873ce0b3536fb2cdc6888304fb1e7b1ff3513e"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\PROBE_REVIEW_CONTRACT.json",
+      "bytes": 4386,
+      "sha256": "a0b98003aadcd647a98a38fffc3a7404091af01b407ca19ea81177d6d48ed889"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\acquisitions\\RK02_VEHICLE_03\\native_api.jsonl",
+      "bytes": 3536,
+      "sha256": "e277405b588f5cfeec12a073f1ab0ac447945b23e3e48ba2303035c4caa6e53f"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\tools\\test_probe_independent.py",
+      "bytes": 30482,
+      "sha256": "3f348d00cbb450fb455e79431b1f2233e7287e82691e031e3f26b833d7985fcb"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\bad_checksum_81.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\bad_checksum_81.stdout.txt",
+      "bytes": 44,
+      "sha256": "9b80fca12b5a658ebd1750dea5a8e795510fe361779a0efffe28beace77acefc"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\bad_checksum_83.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\bad_checksum_83.stdout.txt",
+      "bytes": 44,
+      "sha256": "961e584168d46c8feff53a98550897cf2e0cf14d7dc78310af28dbb0b129ef28"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\bad_checksum_bf.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\bad_checksum_bf.stdout.txt",
+      "bytes": 44,
+      "sha256": "4a4c022a0f5629a39c005ef51840f9d5d776719c6f04a0191a9bec4a6e29c902"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\cleanup_all_fail.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\cleanup_all_fail.stdout.txt",
+      "bytes": 44,
+      "sha256": "961e584168d46c8feff53a98550897cf2e0cf14d7dc78310af28dbb0b129ef28"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\cleanup_close_fail.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\cleanup_close_fail.stdout.txt",
+      "bytes": 44,
+      "sha256": "961e584168d46c8feff53a98550897cf2e0cf14d7dc78310af28dbb0b129ef28"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\cleanup_disconnect_fail.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\cleanup_disconnect_fail.stdout.txt",
+      "bytes": 44,
+      "sha256": "961e584168d46c8feff53a98550897cf2e0cf14d7dc78310af28dbb0b129ef28"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\cleanup_stop_fail.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\cleanup_stop_fail.stdout.txt",
+      "bytes": 44,
+      "sha256": "961e584168d46c8feff53a98550897cf2e0cf14d7dc78310af28dbb0b129ef28"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\connect_fail.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\connect_fail.stdout.txt",
+      "bytes": 44,
+      "sha256": "72d3a2968ee4875e3c8176eb6848cba2f774ecc79002255d56a933921990dd85"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\extra_index_size.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\extra_index_size.stdout.txt",
+      "bytes": 57,
+      "sha256": "dcd8c75583edc248959d8a66065910c685d04d28e00c7d917c1635a8c18a443f"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\filter_fail.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\filter_fail.stdout.txt",
+      "bytes": 44,
+      "sha256": "72d3a2968ee4875e3c8176eb6848cba2f774ecc79002255d56a933921990dd85"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\filter_mutation.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\filter_mutation.stdout.txt",
+      "bytes": 44,
+      "sha256": "72d3a2968ee4875e3c8176eb6848cba2f774ecc79002255d56a933921990dd85"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\fragmented.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\fragmented.stdout.txt",
+      "bytes": 57,
+      "sha256": "dcd8c75583edc248959d8a66065910c685d04d28e00c7d917c1635a8c18a443f"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\get_count_large.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\get_count_large.stdout.txt",
+      "bytes": 44,
+      "sha256": "72d3a2968ee4875e3c8176eb6848cba2f774ecc79002255d56a933921990dd85"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\get_count_zero.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\get_count_zero.stdout.txt",
+      "bytes": 44,
+      "sha256": "72d3a2968ee4875e3c8176eb6848cba2f774ecc79002255d56a933921990dd85"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\get_fail.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\get_fail.stdout.txt",
+      "bytes": 44,
+      "sha256": "72d3a2968ee4875e3c8176eb6848cba2f774ecc79002255d56a933921990dd85"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\get_parameter.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\get_parameter.stdout.txt",
+      "bytes": 44,
+      "sha256": "72d3a2968ee4875e3c8176eb6848cba2f774ecc79002255d56a933921990dd85"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\get_pointer_invalid.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\get_pointer_invalid.stdout.txt",
+      "bytes": 44,
+      "sha256": "72d3a2968ee4875e3c8176eb6848cba2f774ecc79002255d56a933921990dd85"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\get_pointer_null.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\get_pointer_null.stdout.txt",
+      "bytes": 44,
+      "sha256": "72d3a2968ee4875e3c8176eb6848cba2f774ecc79002255d56a933921990dd85"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\get_sentinel.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\get_sentinel.stdout.txt",
+      "bytes": 44,
+      "sha256": "72d3a2968ee4875e3c8176eb6848cba2f774ecc79002255d56a933921990dd85"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\get_wrong_0.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\get_wrong_0.stdout.txt",
+      "bytes": 44,
+      "sha256": "72d3a2968ee4875e3c8176eb6848cba2f774ecc79002255d56a933921990dd85"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\get_wrong_1.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\get_wrong_1.stdout.txt",
+      "bytes": 44,
+      "sha256": "72d3a2968ee4875e3c8176eb6848cba2f774ecc79002255d56a933921990dd85"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\get_wrong_2.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\get_wrong_2.stdout.txt",
+      "bytes": 44,
+      "sha256": "72d3a2968ee4875e3c8176eb6848cba2f774ecc79002255d56a933921990dd85"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\get_wrong_3.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\get_wrong_3.stdout.txt",
+      "bytes": 44,
+      "sha256": "72d3a2968ee4875e3c8176eb6848cba2f774ecc79002255d56a933921990dd85"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\get_wrong_4.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\get_wrong_4.stdout.txt",
+      "bytes": 44,
+      "sha256": "72d3a2968ee4875e3c8176eb6848cba2f774ecc79002255d56a933921990dd85"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\indicators_fragmented.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\indicators_fragmented.stdout.txt",
+      "bytes": 57,
+      "sha256": "dcd8c75583edc248959d8a66065910c685d04d28e00c7d917c1635a8c18a443f"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\journal_failure_after_filter.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\journal_failure_after_filter.stdout.txt",
+      "bytes": 44,
+      "sha256": "72d3a2968ee4875e3c8176eb6848cba2f774ecc79002255d56a933921990dd85"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\open_fail.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\open_fail.stdout.txt",
+      "bytes": 44,
+      "sha256": "72d3a2968ee4875e3c8176eb6848cba2f774ecc79002255d56a933921990dd85"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\physical_83_buffer_empty.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\physical_83_buffer_empty.stdout.txt",
+      "bytes": 44,
+      "sha256": "961e584168d46c8feff53a98550897cf2e0cf14d7dc78310af28dbb0b129ef28"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\physical_83_cleanup_all_fail.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\physical_83_cleanup_all_fail.stdout.txt",
+      "bytes": 44,
+      "sha256": "961e584168d46c8feff53a98550897cf2e0cf14d7dc78310af28dbb0b129ef28"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\read_count_large.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\read_count_large.stdout.txt",
+      "bytes": 44,
+      "sha256": "4a4c022a0f5629a39c005ef51840f9d5d776719c6f04a0191a9bec4a6e29c902"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\read_count_zero.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\read_count_zero.stdout.txt",
+      "bytes": 44,
+      "sha256": "4a4c022a0f5629a39c005ef51840f9d5d776719c6f04a0191a9bec4a6e29c902"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\read_error_output.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\read_error_output.stdout.txt",
+      "bytes": 44,
+      "sha256": "4a4c022a0f5629a39c005ef51840f9d5d776719c6f04a0191a9bec4a6e29c902"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\rx_combined_status.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\rx_combined_status.stdout.txt",
+      "bytes": 44,
+      "sha256": "4a4c022a0f5629a39c005ef51840f9d5d776719c6f04a0191a9bec4a6e29c902"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\rx_empty.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\rx_empty.stdout.txt",
+      "bytes": 44,
+      "sha256": "4a4c022a0f5629a39c005ef51840f9d5d776719c6f04a0191a9bec4a6e29c902"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\rx_extra.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\rx_extra.stdout.txt",
+      "bytes": 44,
+      "sha256": "4a4c022a0f5629a39c005ef51840f9d5d776719c6f04a0191a9bec4a6e29c902"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\rx_flags.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\rx_flags.stdout.txt",
+      "bytes": 44,
+      "sha256": "4a4c022a0f5629a39c005ef51840f9d5d776719c6f04a0191a9bec4a6e29c902"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\rx_indicator_after_data.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\rx_indicator_after_data.stdout.txt",
+      "bytes": 44,
+      "sha256": "4a4c022a0f5629a39c005ef51840f9d5d776719c6f04a0191a9bec4a6e29c902"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\rx_indicator_flood.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\rx_indicator_flood.stdout.txt",
+      "bytes": 44,
+      "sha256": "4a4c022a0f5629a39c005ef51840f9d5d776719c6f04a0191a9bec4a6e29c902"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\rx_marker_only.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\rx_marker_only.stdout.txt",
+      "bytes": 44,
+      "sha256": "4a4c022a0f5629a39c005ef51840f9d5d776719c6f04a0191a9bec4a6e29c902"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\rx_nonempty_indicator.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\rx_nonempty_indicator.stdout.txt",
+      "bytes": 44,
+      "sha256": "4a4c022a0f5629a39c005ef51840f9d5d776719c6f04a0191a9bec4a6e29c902"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\rx_oversize.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\rx_oversize.stdout.txt",
+      "bytes": 44,
+      "sha256": "4a4c022a0f5629a39c005ef51840f9d5d776719c6f04a0191a9bec4a6e29c902"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\rx_protocol.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\rx_protocol.stdout.txt",
+      "bytes": 44,
+      "sha256": "4a4c022a0f5629a39c005ef51840f9d5d776719c6f04a0191a9bec4a6e29c902"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\rx_trailing.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\rx_trailing.stdout.txt",
+      "bytes": 44,
+      "sha256": "4a4c022a0f5629a39c005ef51840f9d5d776719c6f04a0191a9bec4a6e29c902"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\rx_unknown_status.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\rx_unknown_status.stdout.txt",
+      "bytes": 44,
+      "sha256": "4a4c022a0f5629a39c005ef51840f9d5d776719c6f04a0191a9bec4a6e29c902"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\rx_wrong_direction.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\rx_wrong_direction.stdout.txt",
+      "bytes": 44,
+      "sha256": "4a4c022a0f5629a39c005ef51840f9d5d776719c6f04a0191a9bec4a6e29c902"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\rx_wrong_echo.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\rx_wrong_echo.stdout.txt",
+      "bytes": 44,
+      "sha256": "4a4c022a0f5629a39c005ef51840f9d5d776719c6f04a0191a9bec4a6e29c902"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\rx_zero_length.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\rx_zero_length.stdout.txt",
+      "bytes": 44,
+      "sha256": "4a4c022a0f5629a39c005ef51840f9d5d776719c6f04a0191a9bec4a6e29c902"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\set_fail_0.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\set_fail_0.stdout.txt",
+      "bytes": 44,
+      "sha256": "72d3a2968ee4875e3c8176eb6848cba2f774ecc79002255d56a933921990dd85"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\set_fail_1.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\set_fail_1.stdout.txt",
+      "bytes": 44,
+      "sha256": "72d3a2968ee4875e3c8176eb6848cba2f774ecc79002255d56a933921990dd85"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\set_fail_2.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\set_fail_2.stdout.txt",
+      "bytes": 44,
+      "sha256": "72d3a2968ee4875e3c8176eb6848cba2f774ecc79002255d56a933921990dd85"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\set_fail_3.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\set_fail_3.stdout.txt",
+      "bytes": 44,
+      "sha256": "72d3a2968ee4875e3c8176eb6848cba2f774ecc79002255d56a933921990dd85"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\set_fail_4.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\set_fail_4.stdout.txt",
+      "bytes": 44,
+      "sha256": "72d3a2968ee4875e3c8176eb6848cba2f774ecc79002255d56a933921990dd85"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\set_mutation.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\set_mutation.stdout.txt",
+      "bytes": 44,
+      "sha256": "72d3a2968ee4875e3c8176eb6848cba2f774ecc79002255d56a933921990dd85"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\success.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\success.stdout.txt",
+      "bytes": 57,
+      "sha256": "dcd8c75583edc248959d8a66065910c685d04d28e00c7d917c1635a8c18a443f"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\unexpected_frame.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\unexpected_frame.stdout.txt",
+      "bytes": 44,
+      "sha256": "4a4c022a0f5629a39c005ef51840f9d5d776719c6f04a0191a9bec4a6e29c902"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\version_fail.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\version_fail.stdout.txt",
+      "bytes": 44,
+      "sha256": "72d3a2968ee4875e3c8176eb6848cba2f774ecc79002255d56a933921990dd85"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\version_nonascii.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\version_nonascii.stdout.txt",
+      "bytes": 57,
+      "sha256": "dcd8c75583edc248959d8a66065910c685d04d28e00c7d917c1635a8c18a443f"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\version_unterminated.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\version_unterminated.stdout.txt",
+      "bytes": 44,
+      "sha256": "72d3a2968ee4875e3c8176eb6848cba2f774ecc79002255d56a933921990dd85"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\write_count_large.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\write_count_large.stdout.txt",
+      "bytes": 44,
+      "sha256": "4a4c022a0f5629a39c005ef51840f9d5d776719c6f04a0191a9bec4a6e29c902"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\write_count_zero.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\write_count_zero.stdout.txt",
+      "bytes": 44,
+      "sha256": "4a4c022a0f5629a39c005ef51840f9d5d776719c6f04a0191a9bec4a6e29c902"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\write_fail.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\write_fail.stdout.txt",
+      "bytes": 44,
+      "sha256": "4a4c022a0f5629a39c005ef51840f9d5d776719c6f04a0191a9bec4a6e29c902"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\write_mutation.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\write_mutation.stdout.txt",
+      "bytes": 44,
+      "sha256": "4a4c022a0f5629a39c005ef51840f9d5d776719c6f04a0191a9bec4a6e29c902"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\wrong_81.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\wrong_81.stdout.txt",
+      "bytes": 44,
+      "sha256": "9b80fca12b5a658ebd1750dea5a8e795510fe361779a0efffe28beace77acefc"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\wrong_83.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\wrong_83.stdout.txt",
+      "bytes": 44,
+      "sha256": "961e584168d46c8feff53a98550897cf2e0cf14d7dc78310af28dbb0b129ef28"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\wrong_bf.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\qualification_20260930T011245807266Z\\wrong_bf.stdout.txt",
+      "bytes": 44,
+      "sha256": "4a4c022a0f5629a39c005ef51840f9d5d776719c6f04a0191a9bec4a6e29c902"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\OBJECTIVES_A_COMPLETE.json",
+      "bytes": 20806,
+      "sha256": "5ec533f88810a6a8245b6a142989afeab9c00acc800b6360527dab88ef6ae590"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\current.preserved.bin",
+      "bytes": 1048576,
+      "sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionDev\\fixtures\\transition_oracle.json",
+      "bytes": 1871,
+      "sha256": "75ee980962d543bd100d9073699d24c79ea9b4d1c8919e7ad064cbce517a4c65"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk02_vehicle_03_transition\\oem_transition_gap_replay.json",
+      "bytes": 3351,
+      "sha256": "d7cb2c969884c0fa78308466ad0d4f7263c95cdc86752db02bceaf9e59a5ab21"
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\work\\ecuflash_dynamic\\qualification_01\\j2534.jsonl",
+      "bytes": 14673441,
+      "sha256": "d0a9d8ae43b5595578f0c9989d04e33ec3e7b9dd31ed7c5d400694800937af28"
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\integrations\\ecuflash_virtual\\provider.cpp",
+      "bytes": 14995,
+      "sha256": "a07eb4512dd9f0791cb10ee7376a7ee702dc8e89b453561b5cff3c3229855cfa"
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\integrations\\ecuflash_virtual\\api_redirect.cpp",
+      "bytes": 6187,
+      "sha256": "3d2b7bb5582c7d614f074d91c383314d22cd79988e796ecfd3462509c0fd1010"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\vendor\\j2534_tactrix.h",
+      "bytes": 12119,
+      "sha256": "c559ea33654af59ad147eedfcccd56a1f2cb6e95daeb2412b53f6f4bbc76a7d9"
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\op20pt32.dll",
+      "bytes": 1781896,
+      "sha256": "f432084801762d919a3c31974616e097562424470003edc4f4fb843df34103cf"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\tools\\pin_inputs.py",
+      "bytes": 3062,
+      "sha256": "db1601a6b4f8dee83187ac03beaa398c2625b587811055ff061181bdb2c2bcb1"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\launch_probe_once.py",
+      "bytes": 7170,
+      "sha256": "3956ce39faf25f9c6759bcddb7d2d843062f0d2669477d70cc60ade9478fa5bd"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\check_clients.ps1",
+      "bytes": 1982,
+      "sha256": "4c86344593f64b50d33784c69e7033af43d554d8d8962ddc6eb68221c47a0d04"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\TRANSITION_PROBE_HUMAN_PROTOCOL.json",
+      "bytes": 4719,
+      "sha256": "a6ed7b78ab7386cd7e1d290da70c1dd0024fe39a7a8fb4453bd5676376c78e44"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\test_launcher_controls.py",
+      "bytes": 3009,
+      "sha256": "ceb7fd7b8ccbe5932559908af433dde2b7e574e55f54f1a529d1f1e3bff30c23"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\LAUNCHER_FINAL_TESTS.json",
+      "bytes": 795,
+      "sha256": "875011532fbd42838e99e0203300d961551e767a924f52f9efe408ea1a12b057"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\probe_review\\code_review.json",
+      "bytes": 17995,
+      "sha256": "a9754ceaff1f2d22c9b8af356ae38cb07f88552dfa918a5c459bd410b47cc713"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\probe_review\\code_review.md",
+      "bytes": 2251,
+      "sha256": "ef9f2afa4e79fb0424072cd6d6e60af7ffda4546dba49ba12d04bdecaa8a1377"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\README.md",
+      "bytes": 7446,
+      "sha256": "9a280ed9f11c2595aaf7aedd047ad8100491bc0ac299960a5b7232c7949cff1f"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\probe_review\\qualification_review.json",
+      "bytes": 7607,
+      "sha256": "6635710f7ac8fa3cea2dcc14dfadd8466c9db3f69071ebc522b2e16cc8f8c980"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\probe_review\\qualification_review.md",
+      "bytes": 2672,
+      "sha256": "cf9223516c64a949bc2b2b78f7dce4c2d80fd7ffcca49ce7ba652ff3b9cd5367"
+    },
+    {
+      "path": "C:\\Dev\\SubaruRoms\\current.bin",
+      "bytes": 1048576,
+      "sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2"
+    },
+    {
+      "path": "C:\\Dev\\SubaruRoms\\OEM\\A2WC511R.bin",
+      "bytes": 1048576,
+      "sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218"
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\interfaces\\native_snapshot.json",
+      "bytes": 1237473,
+      "sha256": "c089da8cadd4e3f02604ca5ee8c82a099924836c1a04fcc2801e3cf2ed42eb75"
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\gate_closure\\rom\\definition_overlap.json",
+      "bytes": 118647,
+      "sha256": "62c2f3d7408583052a61791db856aebc1c2a42b718b0dfa5a297e054a3b60e24"
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\gate_closure\\ida\\defined_code_export.json",
+      "bytes": 21072738,
+      "sha256": "db77bfa6d563df046d58fd666b6ccf90ddcbb53c171c2f96d2076eee0a3f7578"
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\diaphora\\EXPORT_INDEX.json",
+      "bytes": 22928,
+      "sha256": "e812c2f88cad7b09a4cc02209a72437ebf3e56dfc1dc61559000f320fcf228e7"
+    },
+    {
+      "path": "C:\\Dev\\SubaruDefs\\RomRaider\\ecu\\standard\\ecu_defs.xml",
+      "bytes": 7948713,
+      "sha256": "bda3c17445954341537a77d4afe6b4dddaba82036ae79a41c2fdfd13da33af5d"
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\interfaces\\checksum_audit.py",
+      "bytes": 4558,
+      "sha256": "00b868761261d819572a8e5a51655e7a526849d8d9ba4828dbd904d0bb9dc6bc"
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\work\\diaphora\\exports\\A2WC511R_stock_03.sqlite",
+      "bytes": 22605824,
+      "sha256": "3b9c0441f416fed686876be7e916d6a89ba70c951e3096d08f1d932254405605"
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\work\\diaphora\\exports\\A2WC511R_stock_03.analysis.json",
+      "bytes": 5387066,
+      "sha256": "850429c62f255f108c04ccb186c2f4b416c02770a89e96bec0b92604688f032d"
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\reports\\definition_inheritance.json",
+      "bytes": 1648,
+      "sha256": "0975e9aab2b4e9d19fc4567150be3858d93f63c4ae9ca478610656596a13b377"
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\integrations\\romraider\\src\\rombridge\\RomAccess.java",
+      "bytes": 23395,
+      "sha256": "0ce29fbdfc40beb5b8e0fe092b9e9ff7811e7fdf683ab319d72907be091d3280"
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\tools\\prehardware\\validator_registry.json",
+      "bytes": 107900,
+      "sha256": "e715887f064e605371f3d413beba55876a62fe0290c4da6aefee9e85e0a7a861"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\rom_classification\\classify_current.py",
+      "bytes": 17252,
+      "sha256": "a5accccda428b47d98c1541c804fdd5daf1d8933d3e67d2e97eda74ef28ec788"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\rom_classification\\CHANGED_BYTES.csv",
+      "bytes": 101694,
+      "sha256": "16f112aba8745422f39228bc14e0a45aeb43ef18d980cd90c11bda25c0a84695"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\rom_classification\\CHANGED_OBJECTS.json",
+      "bytes": 359884,
+      "sha256": "66da7feb58c940eac068e9a1a4dd45601a63377f1099a14961c7df5dbcdc12e8"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\rom_classification\\CHANGED_RANGES.json",
+      "bytes": 238073,
+      "sha256": "b2c63b77ab61418e54b6a4192a3e39aeb755d14896e735052c59b786d55b66b5"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\rom_classification\\CHECKSUMS.json",
+      "bytes": 7744,
+      "sha256": "22ea555d82dbf05dc926e310dff5d5e5c3fcc811bc4800b5f98bbcd7b183eb51"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\rom_classification\\CLASSIFICATION_SUMMARY.json",
+      "bytes": 12600,
+      "sha256": "5ad4a1ca5d6db1e6fe83e6f6a7e7d53613e8c058587b56b31bdffc8751760d72"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\rom_classification\\EXECUTABLE_COMPARISON.json",
+      "bytes": 2997,
+      "sha256": "34cf9e07e6cc6c0d65e2ff7d862fb695923a33e656b5fccc5225436de4acca87"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\rom_classification\\IDENTITY.json",
+      "bytes": 838,
+      "sha256": "10dcfdc1c3a261c7476299dffff9439f433e339eb0b424bdb83b9934015b40f6"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\rom_classification\\PRESERVED_HOOKS.json",
+      "bytes": 2340,
+      "sha256": "4fcbfcbe6a924bc7cfb95aec2a281b6591c807431477037b90ec1d81607495f4"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\rom_classification\\ROM_CLASSIFICATION.md",
+      "bytes": 5950,
+      "sha256": "a22bc07846165e0b0fbe36215dd3fd13ba048634e52362f172fcbf07cb3af934"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\rom_classification\\OUTPUT_MANIFEST.json",
+      "bytes": 2472,
+      "sha256": "9c67507b2f14b6562e9486ddf559cc68695cc507c6d4be95e39eef9a4d19d069"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\historical_comparison\\HISTORICAL_COMPARISON.json",
+      "bytes": 2034041,
+      "sha256": "8afa968bf8973fc37d3a8b262ad1e009f45ca51d41fa39eb3bdbef9d5ff13e7e"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\historical_comparison\\HISTORICAL_COMPARISON.md",
+      "bytes": 2151,
+      "sha256": "3d3b0b36c02b9c7566874e3879ce142fe29fd50d5eaf411701932df01c972dd0"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\historical_comparison\\compare_historical.py",
+      "bytes": 9455,
+      "sha256": "02da865a912f5c4cbd5898690a5f26b2c47c1beec0403770c83e50109044691b"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\historical_comparison\\MANIFEST.json",
+      "bytes": 823,
+      "sha256": "a2cd7fd54bd4c8470163cf39d9aa23467b7ce264bc1e4a9182887fb311e03975"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\ecuflash_current_session\\after_close.json",
+      "bytes": 521,
+      "sha256": "357d4b865869aa07478ad7ae2788e10b0c2832627f86290cce71339aa41bc93e"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\ecuflash_current_session\\aug18_success.supplement.txt",
+      "bytes": 79612,
+      "sha256": "aa3918b717f72fe82fb50d600310b267f0e90a80eb310572a8b284139e020978"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\ecuflash_current_session\\before_close.json",
+      "bytes": 861,
+      "sha256": "ab7951111eb1f7ca112280b4ff93ec08518f27e2c8533907ae21583f2f2a83d1"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\ecuflash_current_session\\ecuflash_log_20260929t172612.preserved.txt",
+      "bytes": 79435,
+      "sha256": "9fecae4b465edfbe6d7ad9b75ff8cfb39101dac67efd655dcbf151d50ad73f30"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\ecuflash_current_session\\ecuflash_printwindow_01.png",
+      "bytes": 106009,
+      "sha256": "caaeb9e5d934724fd8d48e2ab089dc7d326e94d789eb7716a1ad70e46bc046f8"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\ecuflash_current_session\\extract_session.py",
+      "bytes": 15025,
+      "sha256": "a87b079ec21ed97d8cd3e897161adb7006d810299ad5e87a274eb6730744ba12"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\ecuflash_current_session\\log_copy_before_close.txt",
+      "bytes": 79435,
+      "sha256": "9fecae4b465edfbe6d7ad9b75ff8cfb39101dac67efd655dcbf151d50ad73f30"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\ecuflash_current_session\\normal_close_request.json",
+      "bytes": 100,
+      "sha256": "b92979c21c695f49b87867810f4a5ecd479c6eaaae7d1089204dbfd5f062ea37"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\ecuflash_current_session\\RK02_VEHICLE_03_G11_READINESS.supplement.json",
+      "bytes": 2389,
+      "sha256": "bc243f8a475231d20871d54fe5032c8c4026de13b0493c7324864ac3db62b331"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\ecuflash_current_session\\RK02_VEHICLE_03_native_api.supplement.jsonl",
+      "bytes": 3536,
+      "sha256": "e277405b588f5cfeec12a073f1ab0ac447945b23e3e48ba2303035c4caa6e53f"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\ecuflash_current_session\\SESSION_COMPARISON.md",
+      "bytes": 4578,
+      "sha256": "2ff43cdfac1ffbc72782730a467d62e1103aa9740cdb9e8592e005a138cfba96"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\ecuflash_current_session\\SESSION_EVIDENCE.json",
+      "bytes": 734535,
+      "sha256": "b64d721abe5a4f6ca134ded3b0cc2be2e856ae9a0321c8636085b3b07a7e1f59"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\ecuflash_current_session\\win32_snapshot_01.json",
+      "bytes": 129,
+      "sha256": "d656b79a93a371bccbe5074208bc4bcb754ec5bda0b229a04934c8be31f21e6d"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\ecuflash_current_session\\window_visible_01.png",
+      "bytes": 151027,
+      "sha256": "c201b5584ee67fe472c7b3561f0354bc57ae98140d1bf041ecafe7de2e0f013d"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\ecuflash_current_session\\EVIDENCE_MANIFEST.json",
+      "bytes": 3619,
+      "sha256": "ff76706bfeca197811fd6ccc6db70866f03ed86d4277e940a14ffee97cb33e91"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\acquisitions\\RK02_VEHICLE_03\\finalizer.console.log",
+      "bytes": 1116,
+      "sha256": "d0dc16fa7b3b4393a3129227398b84997b99d0c6831aed593800d8ffd94e3297"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\acquisitions\\RK02_VEHICLE_03\\FINALIZER_EXECUTION.json",
+      "bytes": 506,
+      "sha256": "059d356f1c848c686ee2bc3e91c73d7ae72598a1eb740ec5b9483461194086e5"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\acquisitions\\RK02_VEHICLE_03\\G11_CLIENT_CHECK.json",
+      "bytes": 284,
+      "sha256": "76c5a25e265d25d19b0039746b30078923cdf9632229d2fe5d19312764693cb7"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\acquisitions\\RK02_VEHICLE_03\\G11_READINESS.json",
+      "bytes": 2389,
+      "sha256": "bc243f8a475231d20871d54fe5032c8c4026de13b0493c7324864ac3db62b331"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\acquisitions\\RK02_VEHICLE_03\\HUMAN_GATE_PROGRESS.json",
+      "bytes": 4016,
+      "sha256": "527f8040866e02e319ebb878a2731fb4971eb26e96cac47032290ccb1e525787"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\acquisitions\\RK02_VEHICLE_03\\native.log",
+      "bytes": 71,
+      "sha256": "8b633a75b8d8f02af88163d85bf72dd1c11a66e8353f99037f682990042a7474"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\acquisitions\\RK02_VEHICLE_03\\owned_physical_read32.exe",
+      "bytes": 164352,
+      "sha256": "58d0867b85162e6fa4ccd3ac7fe0413c40e4054cbc416d12e39e29f926e60862"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\acquisitions\\RK02_VEHICLE_03\\pass0.partial.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\acquisitions\\RK02_VEHICLE_03\\pass1.partial.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\acquisitions\\RK02_VEHICLE_03\\PREPARATION.json",
+      "bytes": 1577,
+      "sha256": "955371d23dd0e5822592c723778203d9637af5af2cedeb13b971a575459f340b"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\acquisitions\\RK02_VEHICLE_03\\RK02_EXECUTION.json",
+      "bytes": 481,
+      "sha256": "ea64c44079e4be6181c9a4ee95371d19269cfa9d24489a341c4f00305c9a8d6f"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\acquisitions\\RK02_VEHICLE_03\\RK02_LAUNCH_AUTHORIZATION.json",
+      "bytes": 809,
+      "sha256": "1eb8348e454c51e812e25c08843a02b802218b338f643424026b377c4d6488e2"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\acquisitions\\RK02_VEHICLE_03\\RK02_POSTEXIT_CLIENT_CHECK.json",
+      "bytes": 110,
+      "sha256": "c1f979773c1f82b6b9239f91cca8327531f657d3457621f864098200a8b4b29f"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\acquisitions\\RK02_VEHICLE_03\\RK02_PRELAUNCH_CLIENT_CHECK.json",
+      "bytes": 83,
+      "sha256": "7ed6d85755d6cf26653c0c032a317346114b17054213b4a6a3381a8b0b27fb90"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\acquisitions\\RK02_VEHICLE_03\\RK02_STARTED.json",
+      "bytes": 187,
+      "sha256": "634373ac56814c999c1330d4a0fd7ade658752011a0a6a5b8097e3a7f880a605"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\acquisitions\\RK02_VEHICLE_03\\TERMINAL_FAILURE.json",
+      "bytes": 3340,
+      "sha256": "160bbdb00fc6c10bfda7a0609ee96c89fddee76a4723bb9f854149b6d738c76a"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk02_vehicle_03_transition\\RK02_VEHICLE_03_SESSION_TRANSITION_ANALYSIS.md",
+      "bytes": 14033,
+      "sha256": "393cd5e3586e2892d330aea2d882b1cd1c3e3faab9a6f4cff2aafb620ca25830"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk02_vehicle_03_transition\\RK02_VEHICLE_03_SESSION_TRANSITION_EVENT_DIFF.json",
+      "bytes": 69521,
+      "sha256": "493f31a574ec6cd92119585fc748adb584d43bde568cc3db1b530bc7b0772886"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\OFFLINE_SOFTWARE_CERTIFICATE.json",
+      "bytes": 2137,
+      "sha256": "effd2cb9158f10a2a6ca517dae8390553392035b640af360dfbb923e1bab59d5"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\RELEASE_CERTIFICATE.json",
+      "bytes": 2660,
+      "sha256": "98b159d10b6cab49243c98eac28c30b3874934abeb3de514c8c9b00f2f3af189"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\QUALIFICATION_INPUTS.json",
+      "bytes": 3533557,
+      "sha256": "d4c194210471aa527bfc231f8e2b77c2299e36bbdd92e9818a3f231dd03caac0"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\ENGINEERING_GATES.json",
+      "bytes": 6592,
+      "sha256": "66c0addbc7276ad650033a4a20c3109798db2d8e5dbf30778a216e5c7da80af7"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\HUMAN_ACQUISITION_RK02.md",
+      "bytes": 11595,
+      "sha256": "d4add862135ad104ecc3c0145f09ddec879da8ef53775cb90c106f8221c67f81"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\FINAL_QUALIFICATION.md",
+      "bytes": 5700,
+      "sha256": "4305419ac0c61c9221e29549f805e508bf9ba1f5324effc4b37c1d841944e22b"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\build\\rk02_01\\kernel.bin",
+      "bytes": 1808,
+      "sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\build\\rk02_01\\kernel.elf",
+      "bytes": 3816,
+      "sha256": "7cd79cbc0da69ff9d504c5b517eaf25a1d8954994e2e0960e5b4442bcd3e3803"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\build\\rk02_01\\manifest.json",
+      "bytes": 51029,
+      "sha256": "a35562a19f21d4a2815e88fb729d21dd2cc08bf702c0d866f88ffc9e3ddb659e"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\build\\rk02_repro_01\\kernel.bin",
+      "bytes": 1808,
+      "sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\build\\rk02_repro_01\\kernel.elf",
+      "bytes": 3816,
+      "sha256": "7cd79cbc0da69ff9d504c5b517eaf25a1d8954994e2e0960e5b4442bcd3e3803"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\build\\rk02_repro_01\\manifest.json",
+      "bytes": 51041,
+      "sha256": "a4a691bb5b900c29df7e4432fe7e86f23f0f32a504d2d0da1e5b1f507ac16f2f"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\build\\rk02_guarded_01\\kernel.bin",
+      "bytes": 1808,
+      "sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\build\\rk02_guarded_01\\kernel.elf",
+      "bytes": 3816,
+      "sha256": "7cd79cbc0da69ff9d504c5b517eaf25a1d8954994e2e0960e5b4442bcd3e3803"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\build\\rk02_guarded_01\\manifest.json",
+      "bytes": 51045,
+      "sha256": "98bf4650ce1cce2c5d1efebcafeb8625dd2e60f74ab05647f1ecbf8408fda737"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\build\\native_05\\owned_read32.exe",
+      "bytes": 168960,
+      "sha256": "4b681bcdb3c178b89382b37b207b4a7679f0a1e87ab13c7051e8cf8019c094ec"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\build\\native_05\\binding.json",
+      "bytes": 917,
+      "sha256": "c2022fd081d2f22313831c462627207241ea91ceb8d072273d7351aabcc39609"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\build\\native_05\\BUILD_MANIFEST.json",
+      "bytes": 3031,
+      "sha256": "0bfe0b866c6575f1146b49b6b2b671ebaf34848191171d49bbffe4fbf07d15bd"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\physical_build\\rk02_physical_01\\owned_physical_read32.exe",
+      "bytes": 164352,
+      "sha256": "58d0867b85162e6fa4ccd3ac7fe0413c40e4054cbc416d12e39e29f926e60862"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\physical_build\\rk02_physical_01\\BUILD_MANIFEST.json",
+      "bytes": 7584,
+      "sha256": "fb761f3e5e3951b81a402b8f82b159ff1c691762cf3f8abcc20bd3aa44708d70"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\CURRENT_ROM_STATUS.json",
+      "bytes": 242857,
+      "sha256": "018615b863b9ce80d705c7118863ba2bca40b28c2e925dfc4127eac220ab3f0c"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\CURRENT_ROM_STATUS.md",
+      "bytes": 3817,
+      "sha256": "142750bfb9ffa67e62a1d31c35646d4f6f360cb1c4a3b95b9d4f8bd4451c8175"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\qualify_offline.py",
+      "bytes": 9613,
+      "sha256": "aeb2048b3a623e5466e99b712a118f0348fe7dce611e7666a3b3ea9e1ddccaf0"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\reports\\local\\prehardware\\READ_ONLY_BACKEND_TESTS.json",
+      "bytes": 1931,
+      "sha256": "9815f27d11296b38de879a35b66e73dddc6444a8faa39005ad996d89565f34f9"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\reports\\local\\prehardware\\START_OF_MESSAGE_TESTS.json",
+      "bytes": 1235,
+      "sha256": "2909d1ccb333acf757d5067d0a659f4a166bc8e4f75498726bd8dd80d5d6c0b9"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\integrations\\prehardware\\build\\BUILD_MANIFEST.json",
+      "bytes": 1474,
+      "sha256": "283ce6fa09ebe1953475528d996d95cc4b2b270a59adede1fd60f75b40c9fed4"
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\integrations\\prehardware\\build\\BUILD_MANIFEST.json",
+      "bytes": 1369,
+      "sha256": "749126e5cc5aad1ec6c3e321ebe0ecde75927db964ff6b573276076c6c0f45f7"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\rk02\\RELEASE_FREEZE.json",
+      "bytes": 4833,
+      "sha256": "788354d8be9a977d66901107982191f76ebe6c5a56082f0f8f2e5882858d9fb9"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\integrations\\prehardware\\capture.py",
+      "bytes": 3071,
+      "sha256": "d8fdab93292130a85e8d3a42b2ce0bd8a1b28d5ce65133a58171a5f0ed3bf3d7"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\integrations\\prehardware\\transport.py",
+      "bytes": 9973,
+      "sha256": "ad56f719f890630a214ce7010c444ae166058df30c43f79549bb5f20555fad04"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\integrations\\prehardware\\j2534_abi.h",
+      "bytes": 717,
+      "sha256": "4e6773e43d48b633f56974c629bff1d2391f09088915ed04fdb8447475a40d56"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\integrations\\prehardware\\fake_j2534.def",
+      "bytes": 489,
+      "sha256": "3c8d7ce2c3b7065d004a5adf9f234990e8a050dcc897f8befbe5e6263f0a79ea"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\integrations\\prehardware\\build_broker.py",
+      "bytes": 1819,
+      "sha256": "d6493fcfd4488a1b649d3c6ab5f887253c995d4ff4b7f03ac27a0079331e23c2"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\integrations\\prehardware\\test_read_only.py",
+      "bytes": 12181,
+      "sha256": "95499df76876e7c5827bacd469d35aa90fec71c7899abdca2aabbff20abd043b"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\integrations\\m07\\protocol.py",
+      "bytes": 6498,
+      "sha256": "e9d062fcc4a2fb1b70ab04a35179d8fdfb6d2d1236f75cd05deb55d73f00e3ec"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\integrations\\m07\\backends.py",
+      "bytes": 8771,
+      "sha256": "745c151a77b0ba88135795c153297fca9bb0edbbaeaaa142827874b2938bcf61"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\integrations\\m07\\profile.json",
+      "bytes": 1520,
+      "sha256": "0641b0182360d8ff6cf77abab419b211340ba2b3456f51fa3cd4a0a464d3bc35"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\integrations\\prehardware\\broker.cpp",
+      "bytes": 11214,
+      "sha256": "cda81ee30ad2fda7e4ab62a7f445197974f3d15bab30ac55babdd9358fdf612c"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\integrations\\prehardware\\fake_j2534.cpp",
+      "bytes": 5618,
+      "sha256": "dc207066272805866b05fe66112f20695fbc092cce26ea6ba49336a503e8a9e3"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\integrations\\prehardware\\build\\broker.exe",
+      "bytes": 247808,
+      "sha256": "beab515c4fa68cb9ed1bea2f54f40a43bcc01769f1bac01e0f26d69412ad8424"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\integrations\\prehardware\\build\\fake_j2534.dll",
+      "bytes": 125952,
+      "sha256": "a39daea8186264c4d6b296ea9165b639aa8b34a7e5be8fd494b9e6e7851d82e7"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\passive_som01\\integrations\\prehardware\\test_start_of_message.py",
+      "bytes": 8082,
+      "sha256": "cb37e9e598ed910fcc7bce0dee22d5a5829eba09b3cc5ebc9022accb1fdc5e5b"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\OEM_RETURN_REUSE.json",
+      "bytes": 4450,
+      "sha256": "c2190d166c5d4ddab7a0b6e0e1aecbb54654d4ef96bf6e2d4bbf53980996867d"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\INGEST_MANIFEST.json",
+      "bytes": 567,
+      "sha256": "210e40750086c4a6426826c2feef18812141cb8e3aceb94490e24a6060dbb071"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\seal_probe_qualification.py",
+      "bytes": 10658,
+      "sha256": "5debb908040df241b4fdd0ca0dca166bac3297db91cb1195f28ebb23d2c7687a"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionProbe\\probe\\reports\\SOURCE_PATCH.diff",
+      "bytes": 101030,
+      "sha256": "cd7991f085b7d11811e17ac0e080b29e1e2845940e20b6db10bd70e76fb7e5b0"
+    }
+  ],
+  "limits": [
+    "Offline qualification permits presentation of human gates only; exact final authorization is still required.",
+    "No physical provider path has been executed for this candidate. Fake cases do not establish electrical timing or real provider behavior.",
+    "No seed/key, programming session, upload, kernel start, ROM read or flash path is in the probe build.",
+    "Physical result remains NOT_RUN. No full RAM acquisition is permitted in this run."
+  ]
+}

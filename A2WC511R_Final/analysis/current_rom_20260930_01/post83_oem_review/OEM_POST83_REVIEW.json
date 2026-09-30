@@ -1,0 +1,1191 @@
+{
+  "schema": 1,
+  "status": "PASS_SCOPED_POST83_OEM_EVIDENCE_REVIEW",
+  "utc": "2026-09-30T02:25:44.539729+00:00",
+  "physical_operations": 0,
+  "artifact_class": "OFFLINE_STOCK_CURRENT_OEM_PROTOCOL_ORACLES_NOT_PHYSICAL_QUALIFICATION",
+  "input_hash_checks": [
+    {
+      "source": "KWP_WIRE_CONTRACT.json",
+      "path": "C:\\Dev\\SubaruRoms\\OEM\\A2WC511R.bin",
+      "pass": true
+    },
+    {
+      "source": "KWP_WIRE_CONTRACT.json",
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\verify_kwp_wire.py",
+      "pass": true
+    },
+    {
+      "source": "KWP_WIRE_CONTRACT.json",
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\verify_kwp_contract.py",
+      "pass": true
+    },
+    {
+      "source": "KWP_WIRE_CONTRACT.json",
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\verify_oem_contracts.py",
+      "pass": true
+    },
+    {
+      "source": "KWP_PRODUCER_REGRESSIONS.json",
+      "path": "C:\\Dev\\SubaruRoms\\OEM\\A2WC511R.bin",
+      "pass": true
+    },
+    {
+      "source": "KWP_PRODUCER_REGRESSIONS.json",
+      "path": "C:\\Dev\\A2WC511R_Sim\\sh2e.py",
+      "pass": true
+    },
+    {
+      "source": "KWP_PRODUCER_REGRESSIONS.json",
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\verify_oem_contracts.py",
+      "pass": true
+    },
+    {
+      "source": "KWP_PRODUCER_REGRESSIONS.json",
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\verify_kwp_contract.py",
+      "pass": true
+    },
+    {
+      "source": "KWP_PRODUCER_REGRESSIONS.json",
+      "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\ecuflash_dynamic\\kernel_candidate\\read_paths_CANDIDATE\\cleanup_CANDIDATE.py",
+      "pass": true
+    },
+    {
+      "source": "KWP_PRODUCER_REGRESSIONS.json",
+      "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\ecuflash_dynamic\\kernel_candidate\\execute_CANDIDATE.py",
+      "pass": true
+    },
+    {
+      "source": "KWP_PRODUCER_REGRESSIONS.json",
+      "path": "C:\\Dev\\A2WC511R_Sim\\preflash_boot\\boot.py",
+      "pass": true
+    },
+    {
+      "source": "BOOT_SETUP_CONTRACT.json",
+      "path": "C:\\Dev\\SubaruRoms\\OEM\\A2WC511R.bin",
+      "pass": true
+    },
+    {
+      "source": "BOOT_SETUP_CONTRACT.json",
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\verify_boot_setup.py",
+      "pass": true
+    },
+    {
+      "source": "BOOT_SETUP_CONTRACT.json",
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\verify_boot_entry.py",
+      "pass": true
+    },
+    {
+      "source": "BOOT_SETUP_CONTRACT.json",
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\BOOT_SETUP_TRACE.json.gz",
+      "pass": true
+    },
+    {
+      "source": "BOOT_ENTRY_REGRESSIONS.json",
+      "path": "C:\\Dev\\SubaruRoms\\OEM\\A2WC511R.bin",
+      "pass": true
+    },
+    {
+      "source": "BOOT_ENTRY_REGRESSIONS.json",
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\verify_boot_entry.py",
+      "pass": true
+    },
+    {
+      "source": "BOOT_ENTRY_REGRESSIONS.json",
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\verify_kwp_contract.py",
+      "pass": true
+    },
+    {
+      "source": "BOOT_ENTRY_REGRESSIONS.json",
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\verify_oem_contracts.py",
+      "pass": true
+    },
+    {
+      "source": "BOOT_ENTRY_REGRESSIONS.json",
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\BOOT_ENTRY_TRACE.json.gz",
+      "pass": true
+    },
+    {
+      "source": "OEM_LOADER_REGRESSION.json",
+      "path": "C:\\Dev\\SubaruRoms\\OEM\\A2WC511R.bin",
+      "pass": true
+    },
+    {
+      "source": "OEM_LOADER_REGRESSION.json",
+      "path": "C:\\Dev\\A2WC511R_Sim\\sh2e.py",
+      "pass": true
+    },
+    {
+      "source": "OEM_LOADER_REGRESSION.json",
+      "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\ecuflash_dynamic\\protocol_reference\\protocol_reference.py",
+      "pass": true
+    },
+    {
+      "source": "OEM_LOADER_REGRESSION.json",
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\verify_oem_contracts.py",
+      "pass": true
+    },
+    {
+      "source": "OEM_LOADER_REGRESSION.json",
+      "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\ecuflash_dynamic\\kernel_candidate\\read_paths_CANDIDATE\\cleanup_CANDIDATE.py",
+      "pass": true
+    },
+    {
+      "source": "OEM_LOADER_REGRESSION.json",
+      "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\ecuflash_dynamic\\kernel_candidate\\execute_CANDIDATE.py",
+      "pass": true
+    },
+    {
+      "source": "OEM_LOADER_REGRESSION.json",
+      "path": "C:\\Dev\\A2WC511R_Sim\\preflash_boot\\boot.py",
+      "pass": true
+    },
+    {
+      "source": "UPLOAD_WIRE_CONTRACT_RK02.json",
+      "path": "C:\\Dev\\SubaruRoms\\OEM\\A2WC511R.bin",
+      "pass": true
+    },
+    {
+      "source": "UPLOAD_WIRE_CONTRACT_RK02.json",
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\build\\rk02_01\\kernel.bin",
+      "pass": true
+    },
+    {
+      "source": "UPLOAD_WIRE_CONTRACT_RK02.json",
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\protocol.py",
+      "pass": true
+    },
+    {
+      "source": "UPLOAD_WIRE_CONTRACT_RK02.json",
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\verify_upload_wire_rk02.py",
+      "pass": true
+    },
+    {
+      "source": "UPLOAD_WIRE_CONTRACT_RK02.json",
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\verify_boot_entry.py",
+      "pass": true
+    },
+    {
+      "source": "UPLOAD_WIRE_CONTRACT_RK02.json",
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\verify_kwp_contract.py",
+      "pass": true
+    },
+    {
+      "source": "UPLOAD_WIRE_CONTRACT_RK02.json",
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\verify_oem_contracts.py",
+      "pass": true
+    },
+    {
+      "source": "UPLOAD_WIRE_CONTRACT_RK02.json",
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\UPLOAD_WIRE_RK02_TRACE.json.gz",
+      "pass": true
+    },
+    {
+      "source": "UPLOAD_NEGATIVE_CONTROLS_RK02.json",
+      "path": "C:\\Dev\\SubaruRoms\\OEM\\A2WC511R.bin",
+      "pass": true
+    },
+    {
+      "source": "UPLOAD_NEGATIVE_CONTROLS_RK02.json",
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\verify_upload_negative_rk02.py",
+      "pass": true
+    },
+    {
+      "source": "UPLOAD_NEGATIVE_CONTROLS_RK02.json",
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\verify_upload_wire_rk02.py",
+      "pass": true
+    },
+    {
+      "source": "UPLOAD_NEGATIVE_CONTROLS_RK02.json",
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\build\\rk02_01\\kernel.bin",
+      "pass": true
+    },
+    {
+      "source": "KWP_WIRE_CONTRACT.json",
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\KWP_WIRE_TRACE.json.gz",
+      "pass": true
+    },
+    {
+      "source": "retained_code_block",
+      "path": "quiescence",
+      "pass": true
+    },
+    {
+      "source": "current_code_equivalence",
+      "path": "quiescence",
+      "pass": true
+    },
+    {
+      "source": "retained_code_block",
+      "path": "mask_save_restore",
+      "pass": true
+    },
+    {
+      "source": "current_code_equivalence",
+      "path": "mask_save_restore",
+      "pass": true
+    },
+    {
+      "source": "retained_code_block",
+      "path": "mask_enter_exit",
+      "pass": true
+    },
+    {
+      "source": "current_code_equivalence",
+      "path": "mask_enter_exit",
+      "pass": true
+    },
+    {
+      "source": "retained_code_block",
+      "path": "gpio_mask_helpers",
+      "pass": true
+    },
+    {
+      "source": "current_code_equivalence",
+      "path": "gpio_mask_helpers",
+      "pass": true
+    },
+    {
+      "source": "retained_code_block",
+      "path": "zero_scaler_code",
+      "pass": true
+    },
+    {
+      "source": "current_code_equivalence",
+      "path": "zero_scaler_code",
+      "pass": true
+    },
+    {
+      "source": "retained_code_block",
+      "path": "zero_scaler_literals",
+      "pass": true
+    },
+    {
+      "source": "current_code_equivalence",
+      "path": "zero_scaler_literals",
+      "pass": true
+    },
+    {
+      "source": "retained_code_block",
+      "path": "fixedpoint_product",
+      "pass": true
+    },
+    {
+      "source": "current_code_equivalence",
+      "path": "fixedpoint_product",
+      "pass": true
+    },
+    {
+      "source": "retained_code_block",
+      "path": "zero_pair_writer",
+      "pass": true
+    },
+    {
+      "source": "current_code_equivalence",
+      "path": "zero_pair_writer",
+      "pass": true
+    },
+    {
+      "source": "retained_code_block",
+      "path": "zero_pair_literals",
+      "pass": true
+    },
+    {
+      "source": "current_code_equivalence",
+      "path": "zero_pair_literals",
+      "pass": true
+    },
+    {
+      "source": "retained_code_block",
+      "path": "marker",
+      "pass": true
+    },
+    {
+      "source": "current_code_equivalence",
+      "path": "marker",
+      "pass": true
+    },
+    {
+      "source": "retained_code_block",
+      "path": "boot_and_loader",
+      "pass": true
+    },
+    {
+      "source": "current_code_equivalence",
+      "path": "boot_and_loader",
+      "pass": true
+    },
+    {
+      "source": "current_code_equivalence",
+      "path": "KWP_security_and_serializer",
+      "pass": true
+    },
+    {
+      "source": "current_code_equivalence",
+      "path": "seed_key_table",
+      "pass": true
+    },
+    {
+      "source": "current_code_equivalence",
+      "path": "seed_substitution_table",
+      "pass": true
+    },
+    {
+      "source": "current_code_equivalence",
+      "path": "quiescence_zero_scaling_operand",
+      "pass": true
+    },
+    {
+      "source": "current_code_equivalence",
+      "path": "boot_transition_vector",
+      "pass": true
+    },
+    {
+      "source": "current_code_equivalence",
+      "path": "boot_entry_pointers",
+      "pass": true
+    },
+    {
+      "source": "current_code_equivalence",
+      "path": "application_exception_vectors",
+      "pass": true
+    },
+    {
+      "source": "new_replay_trace",
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\post83_oem_review\\stock_1_declarations.trace.json.gz",
+      "pass": true
+    },
+    {
+      "source": "new_replay_trace",
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\post83_oem_review\\stock_2_declarations.trace.json.gz",
+      "pass": true
+    },
+    {
+      "source": "new_replay_trace",
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\post83_oem_review\\current_1_declarations.trace.json.gz",
+      "pass": true
+    },
+    {
+      "source": "new_replay_trace",
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\post83_oem_review\\current_2_declarations.trace.json.gz",
+      "pass": true
+    }
+  ],
+  "input_hash_failures": [],
+  "evidence": [
+    {
+      "path": "C:\\Dev\\SubaruRoms\\OEM\\A2WC511R.bin",
+      "bytes": 1048576,
+      "sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\verify_kwp_wire.py",
+      "bytes": 6163,
+      "sha256": "dc4fc4c218f60ece9b0561fcd7c780ddfe16fa085abfc6751a34a075b8286772"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\verify_kwp_contract.py",
+      "bytes": 10190,
+      "sha256": "bc449cee55fc25c0a7975a2444bf3c8fe5124a9a4ae8cd73ccc7bd18cc628a58"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\verify_oem_contracts.py",
+      "bytes": 7414,
+      "sha256": "eb5fd8a5bdeeef214ac8c5f214c8d7637265643ae36bbf3571a2fe0452b8f191"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\KWP_WIRE_CONTRACT.json",
+      "bytes": 2728,
+      "sha256": "118b7f5e9537ac1e1700b67ce16799d8d357692c84ab80fd42dffdca207c23a2"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Sim\\sh2e.py",
+      "bytes": 29610,
+      "sha256": "b47ac261634c116c3ffcdf19da9ec73e7014c034cd349ea8867f5f54895cdfff"
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\ecuflash_dynamic\\kernel_candidate\\read_paths_CANDIDATE\\cleanup_CANDIDATE.py",
+      "bytes": 8892,
+      "sha256": "abd503568849f515057ec6a7cff28944ae82876b4dac9c25aa5ea379e39d2c85"
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\ecuflash_dynamic\\kernel_candidate\\execute_CANDIDATE.py",
+      "bytes": 13926,
+      "sha256": "bb8ee4e24edb9c076c019b6c1512e1b59e7a5a3a38339cead7688d583872c851"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Sim\\preflash_boot\\boot.py",
+      "bytes": 30985,
+      "sha256": "cea90b24165a33acbc161d873f14d80cbfe71832ab72158c8091a402c1d0b5ee"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\KWP_PRODUCER_REGRESSIONS.json",
+      "bytes": 44321,
+      "sha256": "9bc39da629507ecfe76ec4c76e6d6efdaee6745480c506ac1fd5c4edae2cdbfe"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\verify_boot_setup.py",
+      "bytes": 4373,
+      "sha256": "0f3ee64335dc27716e4bf791bb96617e61498263d5d7d3adfcd3f11718260152"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\verify_boot_entry.py",
+      "bytes": 6314,
+      "sha256": "70f1521fa040c86f7ba5c7264e2031eb1ced4022dadf248b1d8fc9a195d6970e"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\BOOT_SETUP_TRACE.json.gz",
+      "bytes": 8143,
+      "sha256": "afd4cb554bc5257a321688d59186c29a94aab1aea51352f65acea6db7600cdd7"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\BOOT_SETUP_CONTRACT.json",
+      "bytes": 13241,
+      "sha256": "bf4416c9aafa5d7b2ce498dbaa1bc44708609a411e496e8f8a546c519fc60fe2"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\BOOT_ENTRY_TRACE.json.gz",
+      "bytes": 5724,
+      "sha256": "c0d76868a89cb760c20da6bf9521d3820887f9917be32f3c5e6991c075546e38"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\BOOT_ENTRY_REGRESSIONS.json",
+      "bytes": 9464,
+      "sha256": "ea9ad2b1f64abe88dd64be4e7e986430924da93c3e654ec66499d0d1ccaf9698"
+    },
+    {
+      "path": "C:\\Dev\\Astra_A2WC511R\\reports\\local\\ecuflash_dynamic\\protocol_reference\\protocol_reference.py",
+      "bytes": 7314,
+      "sha256": "9e8061a9ba08c8d9adb0e908282bbd6ee9b072bd7a0f0e645db171d086fb26fe"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\OEM_LOADER_REGRESSION.json",
+      "bytes": 17603,
+      "sha256": "f5cfc7db3e7c491903fc842987b21aba7f842fdd83510dcd1da74ca26109483c"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\build\\rk02_01\\kernel.bin",
+      "bytes": 1808,
+      "sha256": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\host\\protocol.py",
+      "bytes": 4623,
+      "sha256": "d7909dc2026fae0545d94d048c2c71ab366e804df84c5ee563d656d3774dbf38"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\verify_upload_wire_rk02.py",
+      "bytes": 5824,
+      "sha256": "d2c088b23baf2d3ad33dfa0db776e9047caa9dee0bcc25328039df024ea7ad95"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\UPLOAD_WIRE_RK02_TRACE.json.gz",
+      "bytes": 6987389,
+      "sha256": "148aa99345229c92f789c25339e008eb7bf3ec5e133ce3bb5f3c385d5451f469"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\UPLOAD_WIRE_CONTRACT_RK02.json",
+      "bytes": 9330,
+      "sha256": "b1c5431141f9b249b16dd15938c290f20b99593e7ab8512caebcde1906c37f50"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\verify_upload_negative_rk02.py",
+      "bytes": 3742,
+      "sha256": "29f206b94796ba592db81cf65fdf65a6fc62387c060efab7af66bde34d29f754"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\UPLOAD_NEGATIVE_CONTROLS_RK02.json",
+      "bytes": 2246,
+      "sha256": "16a68bbe388e2a60f4f6d0a57ec9bb9b5e340fa0727ccbcd37b0bc170d97124d"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\OEM_ACQUISITION_CONTRACT_RK02.json",
+      "bytes": 46034,
+      "sha256": "7b9dec51df688866d527f89b823ac611f06781fcab2c988f4ae92a284d71a329"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\KWP_WIRE_TRACE.json.gz",
+      "bytes": 119536,
+      "sha256": "6c1e03791eb1e52bb4d3efa5def5c956bf098d36e7cf915c6bf1a75f9623edff"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\current.preserved.bin",
+      "bytes": 1048576,
+      "sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\post83_oem_review\\FIRST_BLOCK_REPLAY.json",
+      "bytes": 196776,
+      "sha256": "23f1526b7a831d2034ea849c039ea5f2ad3b1fa295c942c410b89fb9aebd6967"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\post83_oem_review\\replay_first_block.py",
+      "bytes": 8065,
+      "sha256": "8bb58cb32158f7bdc2d489f62f6682536e5a7a1a453c8838e8c5b17556321c9e"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\post83_oem_review\\stock_1_declarations.trace.json.gz",
+      "bytes": 505662,
+      "sha256": "ed078a9e515863f9ee39d939b33b1d6149e7ea8451464d65f8c91caf1061bd72"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\post83_oem_review\\stock_2_declarations.trace.json.gz",
+      "bytes": 519632,
+      "sha256": "57416cb7ac9bd1976ad61193c3d2123ceceb23c05575476a5857817d62d7c7d7"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\post83_oem_review\\current_1_declarations.trace.json.gz",
+      "bytes": 505662,
+      "sha256": "ed078a9e515863f9ee39d939b33b1d6149e7ea8451464d65f8c91caf1061bd72"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\post83_oem_review\\current_2_declarations.trace.json.gz",
+      "bytes": 519632,
+      "sha256": "57416cb7ac9bd1976ad61193c3d2123ceceb23c05575476a5857817d62d7c7d7"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk02_vehicle_03_transition\\ecuflash_static_findings.json",
+      "bytes": 15522,
+      "sha256": "ff191dc9600001dde0884c12be4ffafcafceab9e10434437eccdc1020fb8fb8b"
+    }
+  ],
+  "ROM_designations": {
+    "stock": {
+      "path": "C:\\Dev\\SubaruRoms\\OEM\\A2WC511R.bin",
+      "bytes": 1048576,
+      "sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218"
+    },
+    "current_physical_capture": {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\current.preserved.bin",
+      "bytes": 1048576,
+      "sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2"
+    },
+    "current_is_not_factory_stock": true
+  },
+  "current_equivalence_blocks": [
+    {
+      "name": "quiescence",
+      "start": "00047AFC",
+      "end_exclusive": "00047C3C",
+      "sha256": "80c08d21d689568b1a77f6e24be30fabd88b7c5f143536849d2a5d85f97aadda",
+      "stock_sha256": "80c08d21d689568b1a77f6e24be30fabd88b7c5f143536849d2a5d85f97aadda",
+      "current_sha256": "80c08d21d689568b1a77f6e24be30fabd88b7c5f143536849d2a5d85f97aadda",
+      "identical": true
+    },
+    {
+      "name": "mask_save_restore",
+      "start": "00002088",
+      "end_exclusive": "0000209C",
+      "sha256": "79578e01b82a33f1737af4aeb016ee9edd2bc4b25f66b87e317d5a87c5db0dfe",
+      "stock_sha256": "79578e01b82a33f1737af4aeb016ee9edd2bc4b25f66b87e317d5a87c5db0dfe",
+      "current_sha256": "79578e01b82a33f1737af4aeb016ee9edd2bc4b25f66b87e317d5a87c5db0dfe",
+      "identical": true
+    },
+    {
+      "name": "mask_enter_exit",
+      "start": "00003AF4",
+      "end_exclusive": "00003B28",
+      "sha256": "d76bab101d94008832322c0df64d45a8107f03a37fc6cd0b03ce5c6bf85f6630",
+      "stock_sha256": "d76bab101d94008832322c0df64d45a8107f03a37fc6cd0b03ce5c6bf85f6630",
+      "current_sha256": "d76bab101d94008832322c0df64d45a8107f03a37fc6cd0b03ce5c6bf85f6630",
+      "identical": true
+    },
+    {
+      "name": "gpio_mask_helpers",
+      "start": "00004ACC",
+      "end_exclusive": "00004B1C",
+      "sha256": "e4fcb206ed5bbc7627983632a6355213529380a8140093602610b32efc8b2c9e",
+      "stock_sha256": "e4fcb206ed5bbc7627983632a6355213529380a8140093602610b32efc8b2c9e",
+      "current_sha256": "e4fcb206ed5bbc7627983632a6355213529380a8140093602610b32efc8b2c9e",
+      "identical": true
+    },
+    {
+      "name": "zero_scaler_code",
+      "start": "0000AC9A",
+      "end_exclusive": "0000ACCA",
+      "sha256": "ca6bc5c8dc03952834b74f5638ff63e68562d4b5ea633e7f98efe365b934a3fa",
+      "stock_sha256": "ca6bc5c8dc03952834b74f5638ff63e68562d4b5ea633e7f98efe365b934a3fa",
+      "current_sha256": "ca6bc5c8dc03952834b74f5638ff63e68562d4b5ea633e7f98efe365b934a3fa",
+      "identical": true
+    },
+    {
+      "name": "zero_scaler_literals",
+      "start": "0000ACDC",
+      "end_exclusive": "0000ACFC",
+      "sha256": "fbf9b490909d3c59db5622c1b893b3470c14bfef82c35d577ac0a4c7bdb25320",
+      "stock_sha256": "fbf9b490909d3c59db5622c1b893b3470c14bfef82c35d577ac0a4c7bdb25320",
+      "current_sha256": "fbf9b490909d3c59db5622c1b893b3470c14bfef82c35d577ac0a4c7bdb25320",
+      "identical": true
+    },
+    {
+      "name": "fixedpoint_product",
+      "start": "00002390",
+      "end_exclusive": "00002424",
+      "sha256": "25d7d33e9e25547d7ee81aa0d055d765068a4a348bbe50eff93552cb47b76a34",
+      "stock_sha256": "25d7d33e9e25547d7ee81aa0d055d765068a4a348bbe50eff93552cb47b76a34",
+      "current_sha256": "25d7d33e9e25547d7ee81aa0d055d765068a4a348bbe50eff93552cb47b76a34",
+      "identical": true
+    },
+    {
+      "name": "zero_pair_writer",
+      "start": "00008384",
+      "end_exclusive": "000083AE",
+      "sha256": "e2682806a4175650d1b28ca7d96eba907a4d2d53c341971fea5d601234981efe",
+      "stock_sha256": "e2682806a4175650d1b28ca7d96eba907a4d2d53c341971fea5d601234981efe",
+      "current_sha256": "e2682806a4175650d1b28ca7d96eba907a4d2d53c341971fea5d601234981efe",
+      "identical": true
+    },
+    {
+      "name": "zero_pair_literals",
+      "start": "0000848C",
+      "end_exclusive": "00008498",
+      "sha256": "3c1d246679dcebadbd9bc4223c578df48a5d0f79b202290e3db5c82f99a81ca1",
+      "stock_sha256": "3c1d246679dcebadbd9bc4223c578df48a5d0f79b202290e3db5c82f99a81ca1",
+      "current_sha256": "3c1d246679dcebadbd9bc4223c578df48a5d0f79b202290e3db5c82f99a81ca1",
+      "identical": true
+    },
+    {
+      "name": "marker",
+      "start": "0000F6FE",
+      "end_exclusive": "0000F706",
+      "sha256": "305bc38fe4de3deb1f2ccc18d400343a0ede6cc82f057a172f25e2948ac63e48",
+      "stock_sha256": "305bc38fe4de3deb1f2ccc18d400343a0ede6cc82f057a172f25e2948ac63e48",
+      "current_sha256": "305bc38fe4de3deb1f2ccc18d400343a0ede6cc82f057a172f25e2948ac63e48",
+      "identical": true
+    },
+    {
+      "name": "boot_and_loader",
+      "start": "00001008",
+      "end_exclusive": "00001F44",
+      "sha256": "e203cb9c878007c8d93a2ae362dd874d1026cbca562eb9ded487410193d3846e",
+      "stock_sha256": "e203cb9c878007c8d93a2ae362dd874d1026cbca562eb9ded487410193d3846e",
+      "current_sha256": "e203cb9c878007c8d93a2ae362dd874d1026cbca562eb9ded487410193d3846e",
+      "identical": true
+    },
+    {
+      "name": "KWP_security_and_serializer",
+      "start": "00047108",
+      "end_exclusive": "0004823A",
+      "stock_sha256": "b9fbb4cd02fb8f98c046bc736322a62fd6ed2d123e5dbdbc7b1221139a3eb6b7",
+      "current_sha256": "b9fbb4cd02fb8f98c046bc736322a62fd6ed2d123e5dbdbc7b1221139a3eb6b7",
+      "identical": true
+    },
+    {
+      "name": "seed_key_table",
+      "start": "0004EAAC",
+      "end_exclusive": "0004EACC",
+      "stock_sha256": "ef32df672a24e22b911c147931450d94e83583fc12c8321c8b987a42606e32e0",
+      "current_sha256": "ef32df672a24e22b911c147931450d94e83583fc12c8321c8b987a42606e32e0",
+      "identical": true
+    },
+    {
+      "name": "seed_substitution_table",
+      "start": "0004EAEC",
+      "end_exclusive": "0004EB0C",
+      "stock_sha256": "262e6b3cabd6e5872be20c428c2b5b2b4903e2aea3e59e51e9c13adac8cb8f7f",
+      "current_sha256": "262e6b3cabd6e5872be20c428c2b5b2b4903e2aea3e59e51e9c13adac8cb8f7f",
+      "identical": true
+    },
+    {
+      "name": "quiescence_zero_scaling_operand",
+      "start": "000CCCB8",
+      "end_exclusive": "000CCCBA",
+      "stock_sha256": "b5609376c87f00c645433e48648cb02e6a3f83467f2c827194de5d58f971c8f0",
+      "current_sha256": "b5609376c87f00c645433e48648cb02e6a3f83467f2c827194de5d58f971c8f0",
+      "identical": true
+    },
+    {
+      "name": "boot_transition_vector",
+      "start": "00000040",
+      "end_exclusive": "00000044",
+      "stock_sha256": "0ebdc72eeb737d4a6baab10ff4f08f2757a6e2189714f1469d47e114fa8bea9d",
+      "current_sha256": "0ebdc72eeb737d4a6baab10ff4f08f2757a6e2189714f1469d47e114fa8bea9d",
+      "identical": true
+    },
+    {
+      "name": "boot_entry_pointers",
+      "start": "00001000",
+      "end_exclusive": "00001008",
+      "stock_sha256": "612bf9efec5a21590d31a6594b0525f8663d5db808d8cb7499c05ebbe81674f9",
+      "current_sha256": "612bf9efec5a21590d31a6594b0525f8663d5db808d8cb7499c05ebbe81674f9",
+      "identical": true
+    },
+    {
+      "name": "application_exception_vectors",
+      "start": "000FFC50",
+      "end_exclusive": "00100000",
+      "stock_sha256": "54c4b7610b48217c470f764a02db18161e1a0cc6fb5ed3c8f94d1c8351b66418",
+      "current_sha256": "54c4b7610b48217c470f764a02db18161e1a0cc6fb5ed3c8f94d1c8351b66418",
+      "identical": true
+    }
+  ],
+  "exact_positive_oracles": [
+    {
+      "request": "8010f0022701aa",
+      "executed_TDR_reply": "80f0100667011234567802",
+      "source": "stock instructions; explicit ready/TEND register input",
+      "physical_completion": false
+    },
+    {
+      "request": "8010f0062702e78f1f2165",
+      "executed_TDR_reply": "80f0100367023420",
+      "source": "stock instructions; explicit ready/TEND register input",
+      "physical_completion": false
+    },
+    {
+      "request": "8010f0031085021a",
+      "executed_TDR_reply": "80f01002508557",
+      "source": "stock instructions; explicit ready/TEND register input",
+      "physical_completion": false
+    },
+    {
+      "request": "8010f00834ff30000400071006",
+      "executed_TDR_reply": "80f0100274847a",
+      "source": "Retained actual stock upload parser execution"
+    },
+    {
+      "request": "8010f08436ff30002178b10a345b1076fd256f75f05ba033e301ed7bbae243b735e6aedbc143c40be01bf9b6caab4599eccaacb23d3eeb06dddf471ed3b0238f2bf0553861e117054bad87079a8cbb9681c01303b7825b2d199bc7e5c4dd5bcf85cf1a64050df3ab050df3ab2a45f9b476963b1f16baea94084e321a79bd4cf9c0f25912ab9d7b8df4",
+      "executed_TDR_reply": "80f0100176f7",
+      "source": "Retained actual stock upload parser execution"
+    }
+  ],
+  "seed_key": {
+    "contract": {
+      "entry": "000479A0",
+      "timer_read": "FFFFF430 long",
+      "expected_key_store": "FFFF63EC long",
+      "rounds": 16,
+      "keys": "0004EAAC..0004EACC",
+      "substitution_table": "0004EAEC..0004EB0C",
+      "round_function": "00047AD2 -> 00047A4C",
+      "host_inverse": "Same Feistel permutation with reversed keys; exact stock constants match host reference."
+    },
+    "independent_executed_vectors": [
+      {
+        "wire_seed": "3be61b56",
+        "expected_key": "00000000",
+        "executed_steps": 1545,
+        "instruction_trace_sha256": "9f89c3a5c9bf01b0edeff1a7a3964c6e509caf62aace99292275261bd4c66422",
+        "timer_read": [
+          {
+            "pc": "000479AE",
+            "address": "FFFFF430",
+            "width": 4,
+            "value": "00000000"
+          }
+        ]
+      },
+      {
+        "wire_seed": "1f503559",
+        "expected_key": "ffffffff",
+        "executed_steps": 1545,
+        "instruction_trace_sha256": "affd9b0d5f50e98c360de5e562fc07ecd44378288cbb533e6dbec41e78ccbe50",
+        "timer_read": [
+          {
+            "pc": "000479AE",
+            "address": "FFFFF430",
+            "width": 4,
+            "value": "FFFFFFFF"
+          }
+        ]
+      },
+      {
+        "wire_seed": "9da745a4",
+        "expected_key": "12345678",
+        "executed_steps": 1545,
+        "instruction_trace_sha256": "96f3deb1af2f71fc34099ab60e5f960db5de3a23e7ffe5bcc1058142f87aee76",
+        "timer_read": [
+          {
+            "pc": "000479AE",
+            "address": "FFFFF430",
+            "width": 4,
+            "value": "12345678"
+          }
+        ]
+      },
+      {
+        "wire_seed": "12345678",
+        "expected_key": "e78f1f21",
+        "executed_steps": 1545,
+        "instruction_trace_sha256": "b4935e236d90d5ed34bc2a5767a1dc9568418a4602561f9b79b3f34c03ed7491",
+        "timer_read": [
+          {
+            "pc": "000479AE",
+            "address": "FFFFF430",
+            "width": 4,
+            "value": "E78F1F21"
+          }
+        ]
+      },
+      {
+        "wire_seed": "c60d519d",
+        "expected_key": "5d176f6a",
+        "executed_steps": 1545,
+        "instruction_trace_sha256": "fa9a9191d30a47e1166577d6d6070c9cd92d9036b57018e2fa6ba47271a72189",
+        "timer_read": [
+          {
+            "pc": "000479AE",
+            "address": "FFFFF430",
+            "width": 4,
+            "value": "5D176F6A"
+          }
+        ]
+      },
+      {
+        "wire_seed": "a20afa23",
+        "expected_key": "9604517e",
+        "executed_steps": 1545,
+        "instruction_trace_sha256": "ab9ee83660f873a06167d64d04c9efd30f3ee4e91009a868b39cc063aacc2133",
+        "timer_read": [
+          {
+            "pc": "000479AE",
+            "address": "FFFFF430",
+            "width": 4,
+            "value": "9604517E"
+          }
+        ]
+      },
+      {
+        "wire_seed": "f6cb469c",
+        "expected_key": "a7aca2dd",
+        "executed_steps": 1545,
+        "instruction_trace_sha256": "66ab9c2222efc7829dd370775808b0520745589e299f8ad3607e42a9b0c8e3be",
+        "timer_read": [
+          {
+            "pc": "000479AE",
+            "address": "FFFFF430",
+            "width": 4,
+            "value": "A7ACA2DD"
+          }
+        ]
+      },
+      {
+        "wire_seed": "5b432fa5",
+        "expected_key": "8f6313bd",
+        "executed_steps": 1545,
+        "instruction_trace_sha256": "a4dc323da13c61c72d924c27e09c5d5a8768bc9715851203928af05681e2a8ce",
+        "timer_read": [
+          {
+            "pc": "000479AE",
+            "address": "FFFFF430",
+            "width": 4,
+            "value": "8F6313BD"
+          }
+        ]
+      },
+      {
+        "wire_seed": "acf1d28f",
+        "expected_key": "e70c3ab1",
+        "executed_steps": 1545,
+        "instruction_trace_sha256": "2d95e6dd49000aecda0f1017b07ce35d4ce53e68235d17f5bd61fee654d82382",
+        "timer_read": [
+          {
+            "pc": "000479AE",
+            "address": "FFFFF430",
+            "width": 4,
+            "value": "E70C3AB1"
+          }
+        ]
+      },
+      {
+        "wire_seed": "71fdc863",
+        "expected_key": "4ce8b6ef",
+        "executed_steps": 1545,
+        "instruction_trace_sha256": "e4c469146a1759af5c9963d6c0adc369be07b9dddb8adf0c3833378f94bb984a",
+        "timer_read": [
+          {
+            "pc": "000479AE",
+            "address": "FFFFF430",
+            "width": 4,
+            "value": "4CE8B6EF"
+          }
+        ]
+      },
+      {
+        "wire_seed": "10129079",
+        "expected_key": "cad36081",
+        "executed_steps": 1545,
+        "instruction_trace_sha256": "3e0890bd8ace17f303158bcf5c3f43ba708486b1525d240c6876e4ebb026c927",
+        "timer_read": [
+          {
+            "pc": "000479AE",
+            "address": "FFFFF430",
+            "width": 4,
+            "value": "CAD36081"
+          }
+        ]
+      },
+      {
+        "wire_seed": "2556d8eb",
+        "expected_key": "edf500cf",
+        "executed_steps": 1545,
+        "instruction_trace_sha256": "50d1177408657a6d57041243dc52be210201763afec218e466d789b8de8506fc",
+        "timer_read": [
+          {
+            "pc": "000479AE",
+            "address": "FFFFF430",
+            "width": 4,
+            "value": "EDF500CF"
+          }
+        ]
+      },
+      {
+        "wire_seed": "8178cf41",
+        "expected_key": "1277dcaa",
+        "executed_steps": 1545,
+        "instruction_trace_sha256": "2ced657f585fb46d829bfa1dc01c4672ced7ef429afc972150c02b56b701ad2e",
+        "timer_read": [
+          {
+            "pc": "000479AE",
+            "address": "FFFFF430",
+            "width": 4,
+            "value": "1277DCAA"
+          }
+        ]
+      },
+      {
+        "wire_seed": "98ac1ac5",
+        "expected_key": "dad7437e",
+        "executed_steps": 1545,
+        "instruction_trace_sha256": "6b47120908d9009240a6c6d2e2c481be704d3cedd44590bf7fc03cc962dfbd9d",
+        "timer_read": [
+          {
+            "pc": "000479AE",
+            "address": "FFFFF430",
+            "width": 4,
+            "value": "DAD7437E"
+          }
+        ]
+      },
+      {
+        "wire_seed": "e446da65",
+        "expected_key": "14c7be92",
+        "executed_steps": 1545,
+        "instruction_trace_sha256": "03fd8655d6a200522ce445ac884b98fee7f587fcf524fcf896e8cfd3377d555a",
+        "timer_read": [
+          {
+            "pc": "000479AE",
+            "address": "FFFFF430",
+            "width": 4,
+            "value": "14C7BE92"
+          }
+        ]
+      },
+      {
+        "wire_seed": "c2c91202",
+        "expected_key": "0f33343a",
+        "executed_steps": 1545,
+        "instruction_trace_sha256": "a9896182d1dec507c02d7b19e53ae1715d83abcf5705f99357d9fde7db03a282",
+        "timer_read": [
+          {
+            "pc": "000479AE",
+            "address": "FFFFF430",
+            "width": 4,
+            "value": "0F33343A"
+          }
+        ]
+      }
+    ],
+    "validation": "Actual OEM seed producer reads the explicit timer fixture, stores its value as expected key atFFFF63EC, and emits a transformed seed. The native host inverse must recover the stored key; these vectors are independently derived from stock instructions.",
+    "key_acceptance": "Dispatcher validates session, subfunction, length and supplied key; valid key sets649C=1; positive body670234.",
+    "negative_controls": [
+      {
+        "name": "kwp_27_cooldown",
+        "request": "2701",
+        "response_opcode": "7f",
+        "response_length": 3,
+        "reason": "37",
+        "unlocked_after": 0
+      },
+      {
+        "name": "kwp_27_key_wrong",
+        "request": "270212345679",
+        "response_opcode": "7f",
+        "response_length": 3,
+        "reason": "35",
+        "unlocked_after": 0
+      },
+      {
+        "name": "kwp_10_locked",
+        "request": "108502",
+        "response_opcode": "7f",
+        "response_length": 3,
+        "reason": "22",
+        "unlocked_after": 0
+      },
+      {
+        "name": "kwp_10_wrong_rate",
+        "request": "108503",
+        "response_opcode": "7f",
+        "response_length": 3,
+        "reason": "10",
+        "unlocked_after": 1
+      }
+    ]
+  },
+  "session_transition": {
+    "request": "8010f0031085021a",
+    "response": "80f01002508557",
+    "wire_response_payload": "5085",
+    "normal_mode_validation": "Requires authenticated649C and exact108502; wrongrate108503 returns7F1010; locked returns7F1022.",
+    "completion_boundary": "Final response echo and TX state select4717E ->47AFC ->471AE ->40 ->125C. Retained KWP wire replay stops before quiescence; boot entry and setup are separately qualified bounded contracts.",
+    "initial_boot": {
+      "entry": "125C fromROM1004, not1150 fromROM1000",
+      "clock": "1CBE(R4=0) writesword3C00toSYSCR2FFFFF70A thenfourNOP; CKSEL0 CPU4xEXTAL, peripheral2xEXTAL.",
+      "callees": [
+        "1CBE",
+        "1DD4",
+        "1B56",
+        "1A66",
+        "1A5A",
+        "14E6",
+        "1CDC",
+        "1008",
+        "1C94",
+        "1DB6",
+        "1C28",
+        "12FE"
+      ],
+      "peripherals": [
+        "GPIOF720..F776 exactlisted31store1B56 initialization",
+        "SCI2F010..F016",
+        "WDTEC10/EC12",
+        "SYSCR2F70A",
+        "ADCF818/F819 andconditionalreadF802",
+        "PFDRF74E masked80/200",
+        "conditionalPDDR F746OR0200",
+        "loopGPIOdirection/functionF750/F752/F756/F758/F75A/F75C"
+      ],
+      "FWE_limit": "No directflashcontroller store or FKEY/SCO/erase/program operation. Quiescence preservesPD8;1B56 writesPDDR3CFF andPDIOR0320 selectingPD8outputlow. This does not prove board-levelFWE voltage or otherGPIOeffects.",
+      "DMA_limit": "OEM path has no provenDMAquiescence beforeclockchange/upload; no asynchronous corruptingDMA is an explicitentry assumption, eliminated prospectively onlybyownedDMAOR0."
+    },
+    "baud_register_writes": [
+      {
+        "pc": "00001CCC",
+        "mode": "w",
+        "address": "FFFFF70A",
+        "size": 2,
+        "value": "3C00"
+      },
+      {
+        "pc": "00001A70",
+        "mode": "w",
+        "address": "FFFFF012",
+        "size": 1,
+        "value": "00"
+      },
+      {
+        "pc": "00001A74",
+        "mode": "w",
+        "address": "FFFFF010",
+        "size": 1,
+        "value": "00"
+      },
+      {
+        "pc": "00001A7A",
+        "mode": "w",
+        "address": "FFFFF011",
+        "size": 1,
+        "value": "27"
+      },
+      {
+        "pc": "00001A80",
+        "mode": "w",
+        "address": "FFFFF016",
+        "size": 1,
+        "value": "F0"
+      },
+      {
+        "pc": "00001A86",
+        "mode": "w",
+        "address": "FFFFF012",
+        "size": 1,
+        "value": "10"
+      },
+      {
+        "pc": "00001CE2",
+        "mode": "w",
+        "address": "FFFFF012",
+        "size": 1,
+        "value": "10"
+      },
+      {
+        "pc": "00001CEC",
+        "mode": "w",
+        "address": "FFFFF012",
+        "size": 1,
+        "value": "10"
+      },
+      {
+        "pc": "00001CE2",
+        "mode": "w",
+        "address": "FFFFF012",
+        "size": 1,
+        "value": "10"
+      },
+      {
+        "pc": "00001CEC",
+        "mode": "w",
+        "address": "FFFFF012",
+        "size": 1,
+        "value": "10"
+      }
+    ],
+    "baud_interpretation": "OEM loader selects SMR00/BRR27 (hex39), consistent with15625 baud under the retained peripheral20MHz assumption:20,000,000/(32*(39+1)). No83 baud change. Actual oscillator/line timing is not measured here.",
+    "programming_admission": "1008 observed F74Ebit6=0 and F75Ebit2=0 continuously across at least78 WDT counter ticks; setsBFBA1. ADC alternative not executed.",
+    "timing_limit": "The78-watchdog-tick admission predicate is retained instruction evidence, not a derived millisecond deadline. No physical tick rate or universal post-key/post-session delay requirement is established by these explicit peripheral transcripts."
+  },
+  "declaration_and_first_block": {
+    "replay": {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\post83_oem_review\\FIRST_BLOCK_REPLAY.json",
+      "bytes": 196776,
+      "sha256": "23f1526b7a831d2034ea849c039ea5f2ad3b1fa295c942c410b89fb9aebd6967"
+    },
+    "cases": 4,
+    "new_instructions_executed": 143536,
+    "single34_sufficient": true,
+    "duplicate34_required": false,
+    "duplicate_scope": "One immediate identical declaration before any36; exactBFA0..BFD0 state preserved and positive7484 repeated in stock/current. This is not authorization to retry after a failure or after data transmission.",
+    "declaration_wire": "8010f00834ff30000400071006",
+    "declaration_reply": "80f0100274847a",
+    "first36_wire": "8010f08436ff30002178b10a345b1076fd256f75f05ba033e301ed7bbae243b735e6aedbc143c40be01bf9b6caab4599eccaacb23d3eeb06dddf471ed3b0238f2bf0553861e117054bad87079a8cbb9681c01303b7825b2d199bc7e5c4dd5bcf85cf1a64050df3ab050df3ab2a45f9b476963b1f16baea94084e321a79bd4cf9c0f25912ab9d7b8df4",
+    "first36_reply": "80f0100176f7",
+    "plaintext_first128_hex": "00090009dfa7e0f0600c400ed0a6402ed1a66011e00021016011c8018901a0bd0009d1a36010d0b021016010c8208901a0b40009d19f6011c8088901a0ae0009d19d601020088901a0a80009d19bd29ce0002102710432108bfbd09ad19a2102d19a2102e800e900ea00eb00d198e00080122100e0f28016e0098011d2956021",
+    "plaintext_first128_sha256": "4f467e4371e66ff93b991f29c3081d9d78fdfafc58299acd3e3e0240b93da309",
+    "store_contract": {
+      "count": 32,
+      "size": 4,
+      "PC": "00001646",
+      "address_begin": "FFFF3000",
+      "address_end_exclusive": "FFFF3080",
+      "decryption_entry": "00001E3C",
+      "declared_full_length": 1808,
+      "full_image_start": "FFFF3000",
+      "full_image_end_inclusive": "FFFF370F"
+    },
+    "kernel_start_requested": false,
+    "flash_controller_accesses": 0,
+    "checksum_warning": "OEM36 decrypts/stores RAM before trailing packet checksum validation; a bad checksum may already alter RAM and then yield no ACK. Retained bad36checksum_after_stream_store negative control proves this; a terminal error must stop the host."
+  },
+  "host_parity_distinction": {
+    "source": {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk02_vehicle_03_transition\\ecuflash_static_findings.json",
+      "bytes": 15522,
+      "sha256": "ff191dc9600001dde0884c12be4ffafcafceab9e10434437eccdc1020fb8fb8b"
+    },
+    "reviewed_installed_host_choices": [
+      "200ms delay after key acceptance",
+      "100ms after108502 before DATA_RATE15625",
+      "CLEAR_TX_BUFFER and CLEAR_RX_BUFFER after baud change",
+      "200ms before upload",
+      "Two identical34 declarations in installed DUAL1.07 upload path"
+    ],
+    "status": "These are observed installed-host choices. They are not physical necessity established by the OEM instruction fixtures. Single34 is independently justified at the admitted loader boundary by the new four-case replay."
+  },
+  "coverage_limits": [
+    "Current ROM is a known edited capture. Only named relevant code/data ranges and directly replayed stock/current loader cases are asserted equivalent.",
+    "No full uninterrupted electrical/reset-to-boot execution is claimed. Seed/KWP, response-echo/quiescence, boot setup and loader traces have explicitly linked boundaries.",
+    "Ready/TEND, RDR bytes, programming gate/watchdog input and absence of DMA/interrupt/NMI faults are explicit fixtures. Real physical timing and future admission remain unqualified.",
+    "This work adds no new simulator instruction semantics and changes no sealed ReadKernel evidence, ROM, probe or qualified executable."
+  ]
+}

@@ -1,0 +1,1134 @@
+{
+  "artifact": {
+    "bytes": 89073,
+    "path": "C:\\Dev\\A2WC511R_RK03_BoundedRomReadOffline\\bounded_rom_read\\build_a\\rk03_bounded_rom_read_offline.pyz",
+    "sha256": "bf240d6c64257aca1952295c8a7bee03be714179124e002cdf45854d599aa0f6"
+  },
+  "checks": [
+    {
+      "case": "success_one_bounded_read_then_cleanup",
+      "detail": {
+        "bytes": 512,
+        "tx": 25
+      },
+      "pass_case": true
+    },
+    {
+      "case": "reuse_exact_latest_physical_identity_prefix",
+      "detail": {
+        "bytes": 405971,
+        "path": "C:\\Dev\\A2WC511R_RK03_KernelIdentityPhysical\\physical_session\\RK03_KERNEL_START_IDENTITY_01\\native_api.jsonl",
+        "sha256": "e6ac67a41cc98433fc56f2d5d0d9a8144ce836678a31094a108aff4187662e09"
+      },
+      "pass_case": true
+    },
+    {
+      "case": "retained24TX_and_single_new_request",
+      "detail": [
+        "8010f003310101b6",
+        "beef000101af",
+        "beef00080300000000000200ba"
+      ],
+      "pass_case": true
+    },
+    {
+      "case": "fixed_request_address_length_pass_encoding",
+      "detail": "beef00080300000000000200ba",
+      "pass_case": true
+    },
+    {
+      "case": "request_checksum",
+      "detail": 186,
+      "pass_case": true
+    },
+    {
+      "case": "fixed_response_framing_and_echo_fields",
+      "detail": "beef0206830000000000",
+      "pass_case": true
+    },
+    {
+      "case": "response_checksum",
+      "detail": 231,
+      "pass_case": true
+    },
+    {
+      "case": "actual_current_ROM_first512_bytes",
+      "detail": {
+        "current_ROM_sha256": "bf10be6d7c75b4f2ae663b0d57a912e6e9ef7654ccfc985195954596e50427b2",
+        "region_sha256": "d3421c81a4380638a8844e34012db592ba6eed35ca5cb8402880b79869e71f01"
+      },
+      "pass_case": true
+    },
+    {
+      "case": "all15_upload_chunks_unchanged",
+      "detail": "3a65d6f0700bae394a24ba9f552d03500b7f66e6344ec57613f10bfd360d8581",
+      "pass_case": true
+    },
+    {
+      "case": "one_start_one_identity_before_one_read",
+      "detail": [
+        "8010f003310101b6",
+        "beef000101af",
+        "beef00080300000000000200ba"
+      ],
+      "pass_case": true
+    },
+    {
+      "case": "stop_immediately_after_first_read_reply",
+      "detail": [
+        "PassThruReadMsgs",
+        "PassThruStopMsgFilter",
+        "PassThruDisconnect",
+        "PassThruClose"
+      ],
+      "pass_case": true
+    },
+    {
+      "case": "fixed_signature_no_address_payload_backend",
+      "detail": "(fault='none', fault_step=-1)",
+      "pass_case": true
+    },
+    {
+      "case": "negative_api_failure_82",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruWriteMsgs",
+        "tx": 23
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_output_mismatch_82",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "tx": 23
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_api_failure_83",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "tx": 23
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_output_mismatch_83",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "tx": 23
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_api_failure_84",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "tx": 23
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_output_mismatch_84",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "tx": 23
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_api_failure_85",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruStopMsgFilter",
+        "tx": 23
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_output_mismatch_85",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "tx": 23
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_api_failure_86",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruIoctl",
+        "tx": 23
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_output_mismatch_86",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "tx": 23
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_api_failure_87",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruStartMsgFilter",
+        "tx": 23
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_output_mismatch_87",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "tx": 23
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_api_failure_88",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruWriteMsgs",
+        "tx": 24
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_output_mismatch_88",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "tx": 24
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_api_failure_89",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "tx": 24
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_output_mismatch_89",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "tx": 24
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_api_failure_90",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "tx": 24
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_output_mismatch_90",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "tx": 24
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_api_failure_91",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruWriteMsgs",
+        "tx": 25
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_output_mismatch_91",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "tx": 25
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_api_failure_92",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "tx": 25
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_output_mismatch_92",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "tx": 25
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_api_failure_93",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "tx": 25
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_output_mismatch_93",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "tx": 25
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_api_failure_94",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [
+          "Fake status 16 at PassThruStopMsgFilter"
+        ],
+        "failure": null,
+        "tx": 25
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_output_mismatch_94",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [
+          "Cleanup output contract"
+        ],
+        "failure": null,
+        "tx": 25
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_api_failure_95",
+      "detail": {
+        "cleanup_confirmed": false,
+        "cleanup_errors": [
+          "Fake status 16 at PassThruDisconnect"
+        ],
+        "failure": null,
+        "tx": 25
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_output_mismatch_95",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [
+          "Cleanup output contract"
+        ],
+        "failure": null,
+        "tx": 25
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_api_failure_96",
+      "detail": {
+        "cleanup_confirmed": false,
+        "cleanup_errors": [
+          "Fake status 16 at PassThruClose"
+        ],
+        "failure": null,
+        "tx": 25
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_output_mismatch_96",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [
+          "Cleanup output contract"
+        ],
+        "failure": null,
+        "tx": 25
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_count_zero_88",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "tx": 24
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_count_zero_89",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "tx": 24
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_count_zero_90",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "tx": 24
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_count_zero_91",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "tx": 25
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_count_zero_92",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "tx": 25
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_count_zero_93",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "tx": 25
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_bad_checksum_84",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "tx": 23
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_wrong_ack_84",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "tx": 23
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_truncated_84",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "tx": 23
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_wrong_length_84",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "tx": 23
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_wrong_rx_status_84",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "tx": 23
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_wrong_protocol_84",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "tx": 23
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_trailing_bytes_84",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "tx": 23
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_bad_checksum_90",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "tx": 24
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_wrong_ack_90",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "tx": 24
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_truncated_90",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "tx": 24
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_wrong_length_90",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "tx": 24
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_wrong_rx_status_90",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "tx": 24
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_wrong_protocol_90",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "tx": 24
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_trailing_bytes_90",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "tx": 24
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_bad_checksum_93",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "tx": 25
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_wrong_ack_93",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "tx": 25
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_truncated_93",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "tx": 25
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_wrong_length_93",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "tx": 25
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_wrong_rx_status_93",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "tx": 25
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_wrong_protocol_93",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "tx": 25
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_trailing_bytes_93",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "tx": 25
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_wrong_identity_90",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "tx": 24
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_wrong_version_90",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "tx": 24
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_wrong_read_pass_93",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "tx": 25
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_wrong_read_address_93",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "tx": 25
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_wrong_read_data_93",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "tx": 25
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_wrong_read_command_93",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Exact captured/model output contract",
+        "tx": 25
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_api_failure_39",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "tx": 8
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_api_failure_42",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "tx": 9
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_api_failure_45",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "tx": 10
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_api_failure_48",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "tx": 11
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_api_failure_51",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "tx": 12
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_api_failure_54",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "tx": 13
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_api_failure_57",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "tx": 14
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_api_failure_60",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "tx": 15
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_api_failure_63",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "tx": 16
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_api_failure_66",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "tx": 17
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_api_failure_69",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "tx": 18
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_api_failure_72",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "tx": 19
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_api_failure_75",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "tx": 20
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_api_failure_78",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "tx": 21
+      },
+      "pass_case": true
+    },
+    {
+      "case": "negative_api_failure_81",
+      "detail": {
+        "cleanup_confirmed": true,
+        "cleanup_errors": [],
+        "failure": "Fake status 16 at PassThruReadMsgs",
+        "tx": 22
+      },
+      "pass_case": true
+    },
+    {
+      "case": "reject_invalid_fault_arguments_('none', 0)",
+      "detail": null,
+      "pass_case": true
+    },
+    {
+      "case": "reject_invalid_fault_arguments_('arbitrary', -1)",
+      "detail": null,
+      "pass_case": true
+    },
+    {
+      "case": "reject_invalid_fault_arguments_('api_failure', -2)",
+      "detail": null,
+      "pass_case": true
+    },
+    {
+      "case": "reject_invalid_fault_arguments_('api_failure', 97)",
+      "detail": null,
+      "pass_case": true
+    },
+    {
+      "case": "reject_invalid_fault_arguments_('api_failure', True)",
+      "detail": null,
+      "pass_case": true
+    },
+    {
+      "case": "no_dynamic_parameter_address",
+      "detail": null,
+      "pass_case": true
+    },
+    {
+      "case": "no_dynamic_parameter_payload",
+      "detail": null,
+      "pass_case": true
+    },
+    {
+      "case": "no_dynamic_parameter_provider",
+      "detail": null,
+      "pass_case": true
+    },
+    {
+      "case": "no_dynamic_parameter_backend",
+      "detail": null,
+      "pass_case": true
+    },
+    {
+      "case": "no_dynamic_parameter_entry",
+      "detail": null,
+      "pass_case": true
+    },
+    {
+      "case": "changed_address_contract_rejected_before_actions",
+      "detail": null,
+      "pass_case": true
+    },
+    {
+      "case": "closed_distributable_imports",
+      "detail": [
+        "json",
+        "sys",
+        "bounded_model",
+        "hashlib",
+        "json",
+        "fixed_data"
+      ],
+      "pass_case": true
+    },
+    {
+      "case": "no_physical_loader_filesystem_or_dynamic_execution_calls",
+      "detail": [],
+      "pass_case": true
+    },
+    {
+      "case": "fixed_emit_alphabet_and_no_second_read",
+      "detail": {
+        "flash_operations": 0,
+        "read_requests": 1,
+        "transmits": 25
+      },
+      "pass_case": true
+    },
+    {
+      "case": "closed_archive_a",
+      "detail": [
+        "__main__.py",
+        "fixed_data.py",
+        "bounded_model.py"
+      ],
+      "pass_case": true
+    },
+    {
+      "case": "built_model_a",
+      "detail": {
+        "returncode": 0
+      },
+      "pass_case": true
+    },
+    {
+      "case": "reject_CLI_a--physical",
+      "detail": {
+        "returncode": 2
+      },
+      "pass_case": true
+    },
+    {
+      "case": "reject_CLI_a--provider",
+      "detail": {
+        "returncode": 2
+      },
+      "pass_case": true
+    },
+    {
+      "case": "reject_CLI_a--address",
+      "detail": {
+        "returncode": 2
+      },
+      "pass_case": true
+    },
+    {
+      "case": "reject_CLI_a--length",
+      "detail": {
+        "returncode": 2
+      },
+      "pass_case": true
+    },
+    {
+      "case": "reject_CLI_a--payload",
+      "detail": {
+        "returncode": 2
+      },
+      "pass_case": true
+    },
+    {
+      "case": "reject_CLI_a--entry",
+      "detail": {
+        "returncode": 2
+      },
+      "pass_case": true
+    },
+    {
+      "case": "closed_archive_b",
+      "detail": [
+        "__main__.py",
+        "fixed_data.py",
+        "bounded_model.py"
+      ],
+      "pass_case": true
+    },
+    {
+      "case": "built_model_b",
+      "detail": {
+        "returncode": 0
+      },
+      "pass_case": true
+    },
+    {
+      "case": "reject_CLI_b--physical",
+      "detail": {
+        "returncode": 2
+      },
+      "pass_case": true
+    },
+    {
+      "case": "reject_CLI_b--provider",
+      "detail": {
+        "returncode": 2
+      },
+      "pass_case": true
+    },
+    {
+      "case": "reject_CLI_b--address",
+      "detail": {
+        "returncode": 2
+      },
+      "pass_case": true
+    },
+    {
+      "case": "reject_CLI_b--length",
+      "detail": {
+        "returncode": 2
+      },
+      "pass_case": true
+    },
+    {
+      "case": "reject_CLI_b--payload",
+      "detail": {
+        "returncode": 2
+      },
+      "pass_case": true
+    },
+    {
+      "case": "reject_CLI_b--entry",
+      "detail": {
+        "returncode": 2
+      },
+      "pass_case": true
+    },
+    {
+      "case": "two_clean_artifacts_identical",
+      "detail": {
+        "bytes": 89073,
+        "path": "C:\\Dev\\A2WC511R_RK03_BoundedRomReadOffline\\bounded_rom_read\\build_a\\rk03_bounded_rom_read_offline.pyz",
+        "sha256": "bf240d6c64257aca1952295c8a7bee03be714179124e002cdf45854d599aa0f6"
+      },
+      "pass_case": true
+    },
+    {
+      "case": "two_clean_manifests_identical",
+      "detail": {
+        "bytes": 1014,
+        "path": "C:\\Dev\\A2WC511R_RK03_BoundedRomReadOffline\\bounded_rom_read\\build_a\\BUILD_MANIFEST.json",
+        "sha256": "1ffadea2fb621b9797a62165db399e658cb5d592363e43b55badec28b44a8628"
+      },
+      "pass_case": true
+    }
+  ],
+  "contract": {
+    "bytes": 115516,
+    "path": "C:\\Dev\\A2WC511R_RK03_BoundedRomReadOffline\\bounded_rom_read\\contract\\CONTRACT.json",
+    "sha256": "9dccc5043477150c479255803ea25f48fe815d5b254f9c045e30b5923327edcf"
+  },
+  "negative_fault_cases": 78,
+  "passed": 122,
+  "physical_operations": 0,
+  "prior_qualification_reused_not_recounted": true,
+  "provider_loads": 0,
+  "runner": {
+    "bytes": 10489,
+    "path": "C:\\Dev\\A2WC511R_RK03_BoundedRomReadOffline\\bounded_rom_read\\tools\\qualify.py",
+    "sha256": "964e4e581cf9c3b0086d549cf5206876d8425b087e3837c9b4f1f6c213583b69"
+  },
+  "scope": "NEW_OFFLINE_FIXED_FIRST512_READ_MODEL_ONLY",
+  "source_inputs": [
+    {
+      "bytes": 409,
+      "path": "C:\\Dev\\A2WC511R_RK03_BoundedRomReadOffline\\bounded_rom_read\\src\\__main__.py",
+      "sha256": "90c37d180c151be48151047b01e8f363db8ebf307eb0a06ef843eb18e013fe3f"
+    },
+    {
+      "bytes": 9990,
+      "path": "C:\\Dev\\A2WC511R_RK03_BoundedRomReadOffline\\bounded_rom_read\\src\\bounded_model.py",
+      "sha256": "6af958e16372a3e1e0b62d0b1278f4b8f4bf09ecabdfcad7907f065de31d32c7"
+    },
+    {
+      "bytes": 78344,
+      "path": "C:\\Dev\\A2WC511R_RK03_BoundedRomReadOffline\\bounded_rom_read\\src\\fixed_data.py",
+      "sha256": "df97c018b3cc90629be46fb0a7a352d3f04b25320931f088da88238001c60fc8"
+    }
+  ],
+  "status": "PASS",
+  "tests": 122
+}

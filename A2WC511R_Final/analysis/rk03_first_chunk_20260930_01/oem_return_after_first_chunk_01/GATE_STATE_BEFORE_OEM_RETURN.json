@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "session_id": "RK03_FIRST_CHUNK_01",
+  "created_utc": "2026-09-30T03:27:17.204536+00:00",
+  "status": "RECOVERY_NORMAL_MODE_CONFIRMED",
+  "qualification_sha256": "51f42896bc04e63b62fdcbb57b490ef8212af69f906e71e5e51c577ce12a6af4",
+  "probe_invocation_count": 1,
+  "launch_reserved": true,
+  "commit_authorization": {
+    "reply": "PROCEED RK03 FIRST CHUNK PROBE",
+    "source": "user",
+    "session_id": "RK03_FIRST_CHUNK_01",
+    "qualification_sha256": "51f42896bc04e63b62fdcbb57b490ef8212af69f906e71e5e51c577ce12a6af4",
+    "received_utc": "2026-09-30T03:54:53.900557+00:00"
+  },
+  "completed_pre_probe_gates": [
+    {
+      "reply": "IGNITION OFF",
+      "source": "user",
+      "session_id": "RK03_FIRST_CHUNK_01",
+      "received_utc": "2026-09-30T03:49:25.174857+00:00",
+      "gate": "IGNITION OFF"
+    },
+    {
+      "reply": "TEST MODE ON",
+      "source": "user",
+      "session_id": "RK03_FIRST_CHUNK_01",
+      "received_utc": "2026-09-30T03:51:48.078909+00:00",
+      "gate": "TEST MODE ON"
+    }
+  ],
+  "completed_recovery_gates": [
+    {
+      "reply": "IGNITION OFF",
+      "source": "user",
+      "session_id": "RK03_FIRST_CHUNK_01",
+      "received_utc": "2026-09-30T03:58:23.162553+00:00",
+      "gate": "IGNITION OFF"
+    },
+    {
+      "reply": "NORMAL MODE ON",
+      "source": "user",
+      "session_id": "RK03_FIRST_CHUNK_01",
+      "received_utc": "2026-09-30T04:03:15.720888+00:00",
+      "gate": "NORMAL MODE ON"
+    }
+  ],
+  "physical_state": "NORMAL MODE ON",
+  "engine": "OFF",
+  "operator_managed_physical_context": true,
+  "full_acquisition_allowed": false,
+  "retry_allowed": false,
+  "abort_requested": false,
+  "first_chunk_physical": "PASS",
+  "oem_return_after_first_chunk": "NOT_RUN",
+  "next_gate": null,
+  "allowed_physical_states": [
+    "IGNITION OFF",
+    "TEST MODE ON",
+    "NORMAL MODE ON"
+  ],
+  "policy_reference": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\gate_policy_migrations\\20260930T020401086019Z\\OPERATOR_SIMPLIFIED_GATE_POLICY.json",
+  "historical_transition_pass": true,
+  "historical_oem_return_pass": true,
+  "historical_gates_or_authorizations_reusable": false,
+  "qualification_path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\qualification\\QUALIFICATION.json",
+  "physical_executable_sha256": "3a6abe4e11fc6a85682c33018e67b533897860a932962f2840976fbd35ed1c02",
+  "updated_utc": "2026-09-30T04:03:15.720888+00:00",
+  "precommit_display": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\precommit_checks\\COMMIT_GATE.json",
+  "launch_reserved_utc": "2026-09-30T03:54:58.216263+00:00",
+  "process_id": 7496,
+  "process_exited": true,
+  "exit_code": 0,
+  "RK03_FIRST_CHUNK_PHYSICAL": "PASS",
+  "physical_result": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\physical_result\\PHYSICAL_RESULT.json",
+    "bytes": 9469,
+    "sha256": "29a87941a4ee101ea21db981047c0622e3ad9d44932e6474e9fc1ed923e5ae35"
+  },
+  "cleanup_confirmed": true
+}

@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "created_at_utc": "2026-09-30T00:14:24.064812+00:00",
+  "status": "OFFLINE_ANALYSIS_AND_ISOLATED_CORRECTION_COMPLETE_WITH_CAUSAL_LIMITS",
+  "physical_cause": "NOT_UNIQUELY_DETERMINED",
+  "confirmed_host_failure": "ReadMsgs returned ERR_BUFFER_EMPTY (16), count 0 after 8300; RK02 terminated on its fatal nonzero-status guard",
+  "confirmed_software_omission": "RK02 inherits unrecorded serial defaults instead of applying the five explicit settings present in the installed ECUFlash channel initialization",
+  "configuration_correction": [
+    {
+      "parameter": 22,
+      "value": 0
+    },
+    {
+      "parameter": 7,
+      "value": 1
+    },
+    {
+      "parameter": 10,
+      "value": 0
+    },
+    {
+      "parameter": 12,
+      "value": 0
+    },
+    {
+      "parameter": 3,
+      "value": 0
+    }
+  ],
+  "first_divergence_scope": "Matched OEM-channel initialization segment after PassThruConnect; complete ECUFlash prefix also contains an earlier kernel-version probe",
+  "development": {
+    "directory": "C:\\Dev\\A2WC511R_RK03_TransitionDev",
+    "branch": "rk03/explicit-serial-init",
+    "commit": "00664cbe83c35eee0faffd4161c76fc70888984f",
+    "git_clean": true,
+    "readme": {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionDev\\README.md",
+      "bytes": 4419,
+      "sha256": "0c2e7cf2bd28426583ecfe7a1235203a4bf53bf27a394e942494f7eab98499ef"
+    },
+    "candidate": {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionDev\\build\\rk03_transition_fake32.exe",
+      "bytes": 184832,
+      "sha256": "1e5969ebc1e40341036bd7dd98cef7d000e65dfd603cfa009f463f3293c39de0"
+    },
+    "test_report": {
+      "path": "C:\\Dev\\A2WC511R_RK03_TransitionDev\\reports\\run_20260930T000721019704Z\\TEST_REPORT.json",
+      "bytes": 25264,
+      "sha256": "e82c36175608a7d09748993948336acb896cd1e58e63b1bfdb5afd800296117d"
+    },
+    "test_cases_passed": 25,
+    "test_groups_passed": 7
+  },
+  "independent_review": {
+    "candidate_reviewer": "/root/passive_review",
+    "result": "No blocking finding for stated offline scope; 20 artifact hashes and 25 journal hashes verified; native execution, config-before-TX, failure stopping and fake-only isolation reviewed",
+    "provenance": "Root transcription of reviewer final message in this Codex run; reviewer performed read-only review",
+    "oem_review": {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk02_vehicle_03_transition\\oem_transition_review.json",
+      "bytes": 15573,
+      "sha256": "65885b7fc02e4d7a234388fcf973790233d07d90e7f51896fbf9b8905efaec88"
+    }
+  },
+  "deliverables": [
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk02_vehicle_03_transition\\RK02_VEHICLE_03_SESSION_TRANSITION_ANALYSIS.md",
+      "bytes": 14033,
+      "sha256": "393cd5e3586e2892d330aea2d882b1cd1c3e3faab9a6f4cff2aafb620ca25830"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk02_vehicle_03_transition\\RK02_VEHICLE_03_SESSION_TRANSITION_EVENT_DIFF.json",
+      "bytes": 69521,
+      "sha256": "493f31a574ec6cd92119585fc748adb584d43bde568cc3db1b530bc7b0772886"
+    }
+  ],
+  "analysis_written_before_development": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk02_vehicle_03_transition\\ANALYSIS_BEFORE_DEVELOPMENT_MANIFEST.json",
+    "bytes": 616,
+    "sha256": "a5669bb20a8975504a4a0d703be82b3b693aca5f21f4256f9ce54513c7b029f6"
+  },
+  "integrity_audit": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk02_vehicle_03_transition\\FINAL_INTEGRITY_AUDIT.json",
+    "bytes": 41472,
+    "sha256": "901e269a0a2c6db2a64fbdfd9b5e4b390f4ab5d82dc522c04955fbe74d049d9d"
+  },
+  "physical_activity_during_analysis_and_development": false,
+  "rk02_physical_invocations_this_run": 1,
+  "qualified_rk02_and_failed_session_unchanged": true,
+  "new_physical_attempt_qualified": false,
+  "new_physical_attempt_requested": false,
+  "current_vehicle_rom": "UNIDENTIFIED_NO_BYTES_ACQUIRED",
+  "limitations": [
+    "Historical successful physical application logs omit raw 81/83 traffic, provider defaults and exact bus timing; full physical transition equivalence cannot be established",
+    "Fake replay combines independently labelled sources; its positive replies are not a successful historical physical transcript",
+    "Synthetic incompatible defaults test configuration admission, not the cause of the actual 83 silence",
+    "Recorded status 16 replay preserves API outcome and request order, not physical elapsed time",
+    "Candidate stops after first acknowledged 36 chunk; no RAM start, two full reads, finalization or cleanup qualification",
+    "Later ECUFlash delays, duplicate 34, queue clears, response parsing and kernel differences remain outside the correction and unresolved for full transition qualification",
+    "Stock instruction replay does not establish executable equality with the edited, unacquired current ROM"
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "session_id": "RK03_TRANSITION_PROBE_01",
+  "status": "PROBE_EXITED_RECOVERY_G13_REQUIRED",
+  "next_gate": "G13",
+  "qualification_sha256": "96d64646cdc9fa620d45afc7f2fc80e9c5b90a146a54b40c79324de85b9ee4d3",
+  "executable_sha256": "1573fa0046a6c1ee6b0ca9d3b0873ce0b3536fb2cdc6888304fb1e7b1ff3513e",
+  "completed_pre_probe_gates": [
+    {
+      "gate": "G06",
+      "reply": "DONE G06",
+      "raw_reply": "`DONE G06`  ",
+      "source": "user",
+      "received_utc": "2026-09-30T01:26:56.370470+00:00"
+    },
+    {
+      "gate": "G07",
+      "reply": "DONE G07",
+      "raw_reply": "DONE G07  ",
+      "source": "user",
+      "received_utc": "2026-09-30T01:27:52.905072+00:00"
+    },
+    {
+      "gate": "G08",
+      "reply": "DONE G08",
+      "raw_reply": "DONE G08  ",
+      "source": "user",
+      "received_utc": "2026-09-30T01:28:47.326454+00:00"
+    },
+    {
+      "gate": "G09",
+      "reply": "TESTMODE G09 CEL, FUEL PUMP ARE CYCLING",
+      "source": "user",
+      "received_utc": "2026-09-30T01:30:12.512403+00:00",
+      "test_mode_confirmed": true,
+      "observations": "CEL and fuel pump are cycling; radiator fans intentionally disconnected per operator context"
+    }
+  ],
+  "commit_authorization": {
+    "reply": "PROCEED RK03 TRANSITION PROBE",
+    "raw_reply": "PROCEED RK03 TRANSITION PROBE  ",
+    "source": "user",
+    "received_utc": "2026-09-30T01:31:52.785878+00:00"
+  },
+  "probe_invocation_count": 1,
+  "launch_reserved": true,
+  "engine": "OFF",
+  "stationary": true,
+  "charger": "SCHUMACHER_SE_5212A_10A_CHARGING",
+  "adapter": "GENUINE_OPENPORT_2_0",
+  "operator_monitors_voltage": true,
+  "context_source": "Latest user physical-context directive; actual fresh Test Mode indications required at G09",
+  "full_acquisition_allowed": false,
+  "physical_authorization_received": true,
+  "protocol": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\TRANSITION_PROBE_HUMAN_PROTOCOL.json",
+  "updated_utc": "2026-09-30T01:31:52.785878+00:00",
+  "ignition": "ON",
+  "test_mode_connectors": "CONNECTED",
+  "test_mode_confirmed": true,
+  "commit_checks": {
+    "hashes": {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\G09_COMMIT_PRECHECK.json",
+      "sha256": "1f4715c8327711438e26f969bfc7d02d67140057a526ff6ae716f0813424ba0b"
+    },
+    "clients": {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\COMMIT_CLIENT_CHECK.json",
+      "sha256": "ef8534f51a6dad2dec6a0a54ca3fbd43f8796dd78c20708d545c7c49eace1ab1"
+    }
+  },
+  "expected_commit_reply": "PROCEED RK03 TRANSITION PROBE",
+  "launch_reserved_utc": "2026-09-30T01:32:03.824342+00:00",
+  "process_id": 7496,
+  "process_exited": true,
+  "exit_code": 0
+}

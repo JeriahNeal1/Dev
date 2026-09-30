@@ -1,0 +1,48 @@
+{
+  "origin": "RESTORED_RETAINED_POST_IDENTITY_EMPTY_RX_CHECKPOINT",
+  "pc": "FFFF31BE",
+  "registers": {
+    "r0": "FFFFFF84",
+    "r1": "FFFFF010",
+    "r2": "FFFFFF84",
+    "r3": "00010000",
+    "r4": "0000055F",
+    "r5": "FFFF330B",
+    "r6": "00000000",
+    "r7": "00000000",
+    "r8": "00000000",
+    "r9": "00000000",
+    "r10": "00000001",
+    "r11": "00000000",
+    "r12": "00000000",
+    "r13": "00000000",
+    "r14": "FFFF3130",
+    "r15": "FFFF372C"
+  },
+  "system": {
+    "SR": "000000F1",
+    "PR": "FFFF30B0",
+    "VBR": "FFFF330C",
+    "MACH": "00000000",
+    "MACL": "00000000"
+  },
+  "call_context": [
+    "FFFF3004",
+    "FFFF31BC"
+  ],
+  "restored_private_write_events": 11,
+  "SCI_events_exactly_reproduced": 220,
+  "other_peripheral_events_exactly_reproduced": 10,
+  "SCI_registers": {
+    "FFFFF010": 0,
+    "FFFFF011": 9,
+    "FFFFF012": 16,
+    "FFFFF013": 95,
+    "FFFFF014": 132,
+    "FFFFF015": 175,
+    "FFFFF016": 242
+  },
+  "SCI_tick": 4778,
+  "queues_empty": true,
+  "new_CPU_instructions_before_read": 0
+}

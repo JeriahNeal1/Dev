@@ -1,0 +1,24 @@
+{
+  "utc": "2026-09-30T02:12:04.909291+00:00",
+  "command_argv": [
+    "C:\\Windows\\py.exe",
+    "-3.14",
+    "-B",
+    "C:\\Dev\\A2WC511R_Final\\passive_som01\\integrations\\prehardware\\capture.py",
+    "--backend",
+    "physical-j2534",
+    "--authorize-physical-read-only",
+    "--count",
+    "120",
+    "--interval-ms",
+    "250",
+    "--output",
+    "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\oem_return_after_probe_01\\capture.jsonl"
+  ],
+  "scope": "PASSIVE_BF_A8_OEM_RETURN_ONLY",
+  "retry_allowed": false,
+  "pid": 25504,
+  "exit_code": 0,
+  "process_exited": true,
+  "exited_utc": "2026-09-30T02:12:45.461251+00:00"
+}

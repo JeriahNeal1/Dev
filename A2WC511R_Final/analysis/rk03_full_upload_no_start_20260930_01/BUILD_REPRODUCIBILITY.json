@@ -1,0 +1,34 @@
+{
+  "status": "PASS_BYTE_IDENTICAL_EXES_AND_CANONICAL_MANIFESTS",
+  "build_executables": [
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\build_a\\rk03_full_upload_no_start_offline32.exe",
+      "bytes": 328704,
+      "sha256": "602f2b0835d8e39d37af9b1eddead0223cd7ba5411970645e1ebc7e78dc1c7a5"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\build_b\\rk03_full_upload_no_start_offline32.exe",
+      "bytes": 328704,
+      "sha256": "602f2b0835d8e39d37af9b1eddead0223cd7ba5411970645e1ebc7e78dc1c7a5"
+    }
+  ],
+  "canonical_manifests": [
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\build_a\\REPRODUCIBLE_MANIFEST.json",
+      "bytes": 4100,
+      "sha256": "f4ee846486a79e4c0ed500af8d9baca27011c171ca614ab887d7d9d7a823f764"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_RK03_FullUploadNoStart\\full_upload_no_start\\build_b\\REPRODUCIBLE_MANIFEST.json",
+      "bytes": 4100,
+      "sha256": "f4ee846486a79e4c0ed500af8d9baca27011c171ca614ab887d7d9d7a823f764"
+    }
+  ],
+  "excluded_volatile_build_fields": [
+    "UTC build timestamp",
+    "output directory and per-directory dump headers"
+  ],
+  "source_inputs_identical": true,
+  "compiler_and_linker_identical": true,
+  "two_completed_clean_builds_reused": true
+}

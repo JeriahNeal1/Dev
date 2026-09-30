@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "created_utc": "2026-09-30T07:43:44.548249+00:00",
+  "OEM_RETURN_AFTER_BOUNDED_ROM_READ": "PASS",
+  "session_id": "RK03_BOUNDED_ROM_READ_01",
+  "BF_identity": "2F12515306",
+  "capture_status": "PASS_CAPTURE_ONLY",
+  "samples": 120,
+  "variables_per_sample": 6,
+  "observer_exit_code": 0,
+  "observer_cleanup_confirmed": true,
+  "broker_cleanup_confirmed": true,
+  "provider_cleanup_confirmed": true,
+  "cleanup_basis": "Pinned capture/transport completed without cleanup errors, requiring broker CLOSE and worker exit0; post-exit process/module scan PASS.",
+  "wire_requests": {
+    "BF": 1,
+    "A8": 120,
+    "other": 0
+  },
+  "programming_session_requests": 0,
+  "physical_probe_invocations": 1,
+  "passive_return_invocations": 1,
+  "further_physical_operations_allowed": false,
+  "battery_or_vehicle_power_loss_measured": false,
+  "physical_context": "Operator-managed simplified ignition states; no numerical power-loss measurement claimed.",
+  "current_rom_attested_by_passive_check": false,
+  "current_rom_source": "Preserved prior direct ECUFlash current.bin remains authoritative.",
+  "evidence": [
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_read_physical_20260930_01\\oem_return_after_bounded_01\\capture.jsonl",
+      "bytes": 272313,
+      "sha256": "33615c6bb8785d9514ce94a1fb4ff627ab2605b4d2c40a66c12c11d9d079716e"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_read_physical_20260930_01\\oem_return_after_bounded_01\\capture.jsonl.provider.stderr.log",
+      "bytes": 87142,
+      "sha256": "4a6247dc37281dd67791999d7ccc61fa2bf419a6f87a8e916f45f716ec276050"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_read_physical_20260930_01\\oem_return_after_bounded_01\\console.log",
+      "bytes": 245,
+      "sha256": "ffb14c86410a33e8f269e27ed13d424751d4560e7b45ed1252ce595d2a0c691d"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_read_physical_20260930_01\\oem_return_after_bounded_01\\EXECUTION.json",
+      "bytes": 735,
+      "sha256": "41e8d768c7dfb99116db049e334bb79b4f3850941d6b44a0df5abadf4a3a7ddb"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_read_physical_20260930_01\\oem_return_after_bounded_01\\GATE_STATE_AT_OEM_RETURN.json",
+      "bytes": 2038,
+      "sha256": "ca797a138def26c572eccd2775ae947f034866a8eda524f53f3e94ce25c8bee5"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_read_physical_20260930_01\\oem_return_after_bounded_01\\GATE_STATE_BEFORE_OEM_RETURN.json",
+      "bytes": 1980,
+      "sha256": "7fcc8997b72a13a07b79eb5e61782abab8718c97f8ab966e762e83e140495bdc"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_read_physical_20260930_01\\oem_return_after_bounded_01\\invocation.once",
+      "bytes": 594,
+      "sha256": "15492a9dc298cc48a6f6b45bf16a912ccd88bbeffad9a3f8618c260c59fe8617"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_read_physical_20260930_01\\oem_return_after_bounded_01\\POSTEXIT_CLIENT_CHECK.json",
+      "bytes": 494,
+      "sha256": "1f1a5c4297043e8f3de0640c9b96ee4dc628c97ee912d0359350f5419196d725"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_read_physical_20260930_01\\oem_return_after_bounded_01\\PREFLIGHT.json",
+      "bytes": 4118,
+      "sha256": "ba70820c798e1fb11ffaa440b05f6f79bf6c08a6df6321718a2857ec99a41fe6"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_read_physical_20260930_01\\oem_return_after_bounded_01\\PRELAUNCH_CLIENT_CHECK.json",
+      "bytes": 494,
+      "sha256": "52b58076e42d11c9baeea752703a5b2f2da99cdf8fb43e0648df184c5525e5fd"
+    }
+  ],
+  "validator": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_bounded_read_physical_20260930_01\\seal_oem_return_bounded.py",
+    "bytes": 5941,
+    "sha256": "2149cf95c43c75867ad85518f1b75d3341b3b26fa9d88b26fe74c186e5cbcc14"
+  },
+  "bounded_physical_result": "FAIL",
+  "next_scope": "OFFLINE ONLY: exact first-divergence analysis; no retry or further physical attempt."
+}

@@ -1,0 +1,272 @@
+{
+  "schema": 1,
+  "created_utc": "2026-09-30T03:57:55.544454+00:00",
+  "RK03_FIRST_CHUNK_PHYSICAL": "PASS",
+  "session_id": "RK03_FIRST_CHUNK_01",
+  "physical_invocations": 1,
+  "retry_allowed": false,
+  "process_exited": true,
+  "exit_code": 0,
+  "ecu_identity": "2F12515306",
+  "physical_C1": "80f01003c1ef8fc2",
+  "physical_C3": "80f01007c30000ff00ff0048",
+  "seed_response": "80f010066701a917a34fa0",
+  "key_request": "8010f00627024015f4978f",
+  "key_ack": "80f0100367023420",
+  "session_ack": "80f01002508557",
+  "download_declarations": 1,
+  "download_declaration": "8010f00834ff30000400071006",
+  "download_ack": "80f0100274847a",
+  "transfer_count": 1,
+  "transfer_bytes": 128,
+  "transfer_target": "FFFF3000",
+  "transfer_end_exclusive": "FFFF3080",
+  "transfer_frame_sha256": "d2db948b4bedf0d660f00ec0830a8dfcc8a4686be0bf218327799898b88359f2",
+  "transfer_ack": "80f0100176f7",
+  "j2534_calls": 40,
+  "logged_wait_calls": 3,
+  "all_api_statuses_zero": true,
+  "all_received_records_preserved": true,
+  "initial_requested_configuration": [
+    {
+      "parameter": 22,
+      "value": 0
+    },
+    {
+      "parameter": 7,
+      "value": 1
+    },
+    {
+      "parameter": 10,
+      "value": 0
+    },
+    {
+      "parameter": 12,
+      "value": 0
+    },
+    {
+      "parameter": 3,
+      "value": 0
+    }
+  ],
+  "initial_effective_configuration": [
+    {
+      "parameter": 22,
+      "value": 0
+    },
+    {
+      "parameter": 7,
+      "value": 1
+    },
+    {
+      "parameter": 10,
+      "value": 0
+    },
+    {
+      "parameter": 12,
+      "value": 0
+    },
+    {
+      "parameter": 3,
+      "value": 0
+    }
+  ],
+  "broad_filter": {
+    "type": 1,
+    "protocol": 3,
+    "tx_flags": 0,
+    "mask_hex": "00000000",
+    "pattern_hex": "00000000",
+    "flow_control_hex": "00000000",
+    "flow_pointer_nonnull": true,
+    "source": "Archived installed-host API sequence47; provider.cpp serializes a null pointer as JSON null, so the logged four-byte flow object proves a nonnull argument"
+  },
+  "baud_set_requested": 15625,
+  "baud_set_accepted": true,
+  "baud_get_performed": false,
+  "tx_rx_queue_clears": [
+    7,
+    8
+  ],
+  "measured_waits": [
+    {
+      "reason": "post_key_ack",
+      "requested_ms": 200,
+      "elapsed_ms": 203.774,
+      "qpc_before": 3822688955602,
+      "qpc_after": 3822690993342,
+      "qpc_frequency": 10000000
+    },
+    {
+      "reason": "post_session_ack",
+      "requested_ms": 100,
+      "elapsed_ms": 102.1152,
+      "qpc_before": 3822691365037,
+      "qpc_after": 3822692386189,
+      "qpc_frequency": 10000000
+    },
+    {
+      "reason": "pre_download_declaration",
+      "requested_ms": 200,
+      "elapsed_ms": 200.4695,
+      "qpc_before": 3822692451026,
+      "qpc_after": 3822694455721,
+      "qpc_frequency": 10000000
+    }
+  ],
+  "cleanup_confirmed": true,
+  "cleanup": [
+    {
+      "function": "PassThruStopMsgFilter",
+      "status": 0
+    },
+    {
+      "function": "PassThruDisconnect",
+      "status": 0
+    },
+    {
+      "function": "PassThruClose",
+      "status": 0
+    }
+  ],
+  "postexit_client_check": "PASS",
+  "kernel_start_sent": false,
+  "custom_kernel_execution": false,
+  "rom_read": false,
+  "flash_operation": false,
+  "full_kernel_uploaded": false,
+  "OEM_RETURN_AFTER_FIRST_CHUNK": "PENDING_RECOVERY",
+  "next_gate": "IGNITION OFF",
+  "next_stage": "Only after recovery and passive OEM return: prepare FULL_KERNEL_UPLOAD_NO_START offline, never execute it in this run",
+  "evidence": [
+    {
+      "source": {
+        "path": "C:\\Dev\\A2WC511R_RK03_FirstChunkPhysical\\physical_session\\RK03_FIRST_CHUNK_01\\AUTHORIZATION.txt",
+        "bytes": 219,
+        "sha256": "ec9cfb1962d8c996c3549f412578bacdc5930935783caf3eeb071b04d2200f14"
+      },
+      "preserved": {
+        "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\physical_result\\evidence\\AUTHORIZATION.txt",
+        "bytes": 219,
+        "sha256": "ec9cfb1962d8c996c3549f412578bacdc5930935783caf3eeb071b04d2200f14"
+      }
+    },
+    {
+      "source": {
+        "path": "C:\\Dev\\A2WC511R_RK03_FirstChunkPhysical\\physical_session\\RK03_FIRST_CHUNK_01\\console.log",
+        "bytes": 57,
+        "sha256": "342b18599a4dccdb19bc6883c7b9c173f245cf0b947fee99a428b7a5fa1f2d7b"
+      },
+      "preserved": {
+        "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\physical_result\\evidence\\console.log",
+        "bytes": 57,
+        "sha256": "342b18599a4dccdb19bc6883c7b9c173f245cf0b947fee99a428b7a5fa1f2d7b"
+      }
+    },
+    {
+      "source": {
+        "path": "C:\\Dev\\A2WC511R_RK03_FirstChunkPhysical\\physical_session\\RK03_FIRST_CHUNK_01\\EXECUTION.json",
+        "bytes": 1022,
+        "sha256": "7ccec3261c50787aee5e702348a1add87b28e1b9cc638b77184b4df1f8248b21"
+      },
+      "preserved": {
+        "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\physical_result\\evidence\\EXECUTION.json",
+        "bytes": 1022,
+        "sha256": "7ccec3261c50787aee5e702348a1add87b28e1b9cc638b77184b4df1f8248b21"
+      }
+    },
+    {
+      "source": {
+        "path": "C:\\Dev\\A2WC511R_RK03_FirstChunkPhysical\\physical_session\\RK03_FIRST_CHUNK_01\\EXECUTION_BEGIN.json",
+        "bytes": 882,
+        "sha256": "8a8f147bcddacbf250c70112646fa6e79c106a58d1ef7837c1a7f1097bf04a72"
+      },
+      "preserved": {
+        "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\physical_result\\evidence\\EXECUTION_BEGIN.json",
+        "bytes": 882,
+        "sha256": "8a8f147bcddacbf250c70112646fa6e79c106a58d1ef7837c1a7f1097bf04a72"
+      }
+    },
+    {
+      "source": {
+        "path": "C:\\Dev\\A2WC511R_RK03_FirstChunkPhysical\\physical_session\\RK03_FIRST_CHUNK_01\\invocation.once",
+        "bytes": 150,
+        "sha256": "fac796a5f7ab2a06916ba40e61a6f0d8759306bb0e5e480405c33c8b89b0eddf"
+      },
+      "preserved": {
+        "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\physical_result\\evidence\\invocation.once",
+        "bytes": 150,
+        "sha256": "fac796a5f7ab2a06916ba40e61a6f0d8759306bb0e5e480405c33c8b89b0eddf"
+      }
+    },
+    {
+      "source": {
+        "path": "C:\\Dev\\A2WC511R_RK03_FirstChunkPhysical\\physical_session\\RK03_FIRST_CHUNK_01\\launch.reserved",
+        "bytes": 150,
+        "sha256": "fac796a5f7ab2a06916ba40e61a6f0d8759306bb0e5e480405c33c8b89b0eddf"
+      },
+      "preserved": {
+        "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\physical_result\\evidence\\launch.reserved",
+        "bytes": 150,
+        "sha256": "fac796a5f7ab2a06916ba40e61a6f0d8759306bb0e5e480405c33c8b89b0eddf"
+      }
+    },
+    {
+      "source": {
+        "path": "C:\\Dev\\A2WC511R_RK03_FirstChunkPhysical\\physical_session\\RK03_FIRST_CHUNK_01\\native_api.jsonl",
+        "bytes": 163830,
+        "sha256": "d258d9eb5b0690e8dd1c79d29f217aa86e152d866e1aeb1e938bf98aa13896a3"
+      },
+      "preserved": {
+        "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\physical_result\\evidence\\native_api.jsonl",
+        "bytes": 163830,
+        "sha256": "d258d9eb5b0690e8dd1c79d29f217aa86e152d866e1aeb1e938bf98aa13896a3"
+      }
+    },
+    {
+      "source": {
+        "path": "C:\\Dev\\A2WC511R_RK03_FirstChunkPhysical\\physical_session\\RK03_FIRST_CHUNK_01\\POSTEXIT_CLIENT_CHECK.json",
+        "bytes": 494,
+        "sha256": "062483de953cab256ba25f1ad9ca8a39801c14004dd27f4d3aae19b6434e9f28"
+      },
+      "preserved": {
+        "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\physical_result\\evidence\\POSTEXIT_CLIENT_CHECK.json",
+        "bytes": 494,
+        "sha256": "062483de953cab256ba25f1ad9ca8a39801c14004dd27f4d3aae19b6434e9f28"
+      }
+    },
+    {
+      "source": {
+        "path": "C:\\Dev\\A2WC511R_RK03_FirstChunkPhysical\\physical_session\\RK03_FIRST_CHUNK_01\\PRELAUNCH_CLIENT_CHECK.json",
+        "bytes": 494,
+        "sha256": "81096bde085e38a0946fa0dae6141c36e730c8c3b95aaca4115f86d2f0cca823"
+      },
+      "preserved": {
+        "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\physical_result\\evidence\\PRELAUNCH_CLIENT_CHECK.json",
+        "bytes": 494,
+        "sha256": "81096bde085e38a0946fa0dae6141c36e730c8c3b95aaca4115f86d2f0cca823"
+      }
+    }
+  ],
+  "qualification": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\qualification\\QUALIFICATION.json",
+    "bytes": 196687,
+    "sha256": "51f42896bc04e63b62fdcbb57b490ef8212af69f906e71e5e51c577ce12a6af4"
+  },
+  "review_contract": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\FIRST_CHUNK_REVIEW_CONTRACT.json",
+    "bytes": 10169,
+    "sha256": "a7482b0eba224c9642745b830c71b3fff14f987988a58cdc1376e45dc0aa839c"
+  },
+  "validator": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_first_chunk_20260930_01\\seal_physical_result.py",
+    "bytes": 10245,
+    "sha256": "20346bc8e9e4096717143b6745764bd1edeca24393a9337d5393547cbd614e17"
+  },
+  "limits": [
+    "One bounded physical first-chunk success, not full kernel upload or acquisition qualification.",
+    "Baud SET succeeded and the ECU acknowledged the transfer; electrical waveform and effective baud GET were not measured.",
+    "This combined transport/session path succeeded; no individual change is isolated as the cause of the older RK02 failure.",
+    "Transport cleanup is confirmed; OEM return remains pending the human recovery states and passive check."
+  ]
+}

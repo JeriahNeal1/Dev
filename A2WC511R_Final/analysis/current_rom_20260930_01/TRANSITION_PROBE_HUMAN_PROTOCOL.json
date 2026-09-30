@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "scope": "One future RK03 transition-only probe after offline qualification and explicit human authorization",
+  "qualification_pass_required_before_first_gate": true,
+  "physical_authorization_received": false,
+  "run_count": 0,
+  "max_runs": 1,
+  "full_acquisition_allowed": false,
+  "voltage_policy": "Operator monitors battery power; no numerical battery readings requested. G18 retains the established measured vehicle-side complete-power-loss requirement.",
+  "operator_context": {
+    "source": "Latest user directive; confirm actual Test Mode observations at G09",
+    "stationary": true,
+    "engine": "OFF",
+    "adapter": "genuine OpenPort 2.0",
+    "charger": "Schumacher SE-5212A, 10 A charging only; never 50 A Engine Start",
+    "radiator_fans": "intentionally physically disconnected"
+  },
+  "pre_probe_gates": [
+    {"id":"G06","action":"Turn ignition OFF.","reply_exact":"DONE G06"},
+    {"id":"G07","action":"With ignition OFF, connect the two Subaru green Test Mode connectors.","reply_exact":"DONE G07"},
+    {"id":"G08","action":"Turn ignition ON. Keep engine OFF.","reply_exact":"DONE G08"},
+    {"id":"G09","action":"Observe and report actual Test Mode indications. Intentionally disconnected fans are not expected to cycle.","reply_prefix":"TESTMODE G09 ","observations_required":true}
+  ],
+  "commit_gate": {
+    "display": ["validated current ROM hash/identity/checksum/code comparison", "qualified probe executable SHA256", "qualification manifest SHA256", "provider SHA256 and expected API version", "BF81/83-only transmit whitelist and no seed/key/upload", "Test Mode observations", "charger state and operator voltage monitoring", "current process/module scan for ECUFlash/RomRaider/other J2534 clients", "probe invocation count zero; no full acquisition permitted"],
+    "statement": "RK03 TRANSITION PROBE IS NEXT. NO PHYSICAL STATE CHANGES UNTIL IT EXITS.",
+    "reply_exact": "PROCEED RK03 TRANSITION PROBE"
+  },
+  "automatic_after_commit": ["Recheck pinned inputs and client absence", "Atomically reserve single launch", "Run qualified probe once", "Record exit and its StopMsgFilter/Disconnect/Close results", "Preserve and hash complete evidence; no retry"],
+  "recovery_gates": [
+    {"id":"G13","action":"Turn ignition OFF.","reply_exact":"DONE G13"},
+    {"id":"G14","action":"Physically disconnect OpenPort from the vehicle.","reply_exact":"DONE G14"},
+    {"id":"G15","action":"Disconnect/remove the Schumacher charger from the vehicle.","reply_exact":"DONE G15"},
+    {"id":"G16","action":"Disconnect battery NEGATIVE terminal and physically isolate it.","reply_exact":"DONE G16"},
+    {"id":"G17","action":"Disconnect battery POSITIVE terminal; negative must already be isolated.","reply_exact":"DONE G17"},
+    {"id":"G18","action":"Measure the previously verified vehicle-side always-hot supply relative to chassis ground; report actual voltage. Do not infer power loss from elapsed time.","reply_prefix":"VOLTAGE G18 ","require_complete_power_loss":true},
+    {"id":"G19","action":"While the vehicle is fully unpowered, disconnect the green Test Mode connectors.","reply_exact":"DONE G19"},
+    {"id":"G20","action":"Reconnect battery POSITIVE terminal.","reply_exact":"DONE G20"},
+    {"id":"G21","action":"Reconnect battery NEGATIVE terminal.","reply_exact":"DONE G21"},
+    {"id":"G22","action":"Reconnect/configure Schumacher in 10 A charging mode only.","reply_exact":"DONE G22"},
+    {"id":"G23","action":"With ignition OFF and green connectors disconnected, reconnect genuine OpenPort.","reply_exact":"DONE G23"},
+    {"id":"G24","action":"Turn ignition ON, engine OFF; green connectors remain disconnected.","reply_exact":"DONE G24"}
+  ],
+  "automatic_after_recovery_G24": {
+    "tool":"Previously qualified corrected passive BF/A8 observer, unchanged hashes",
+    "samples":120,
+    "interval_ms":250,
+    "require":["ECU BF identity 2F12515306","120 six-variable samples","PASS_CAPTURE_ONLY","null capture_error","null cleanup_error","observer exit zero","broker/provider cleanup and process exit"]
+  },
+  "final_gates_after_successful_oem_return": [
+    {"id":"G26","action":"Turn ignition OFF.","reply_exact":"DONE G26"},
+    {"id":"G27","action":"Disconnect OpenPort from the vehicle.","reply_exact":"DONE G27"},
+    {"id":"G28","action":"Disconnect charger/support; physical session is complete.","reply_exact":"DONE G28"}
+  ],
+  "after_G28":"Declare PHYSICAL SESSION COMPLETE, then continue only the applicable offline decision branch. Do not run full RK03 acquisition.",
+  "terminal_failure_policy":"No retry or speculative configuration/timeout change; preserve evidence and finish human recovery before any subsequent offline work"
+}

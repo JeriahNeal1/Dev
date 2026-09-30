@@ -1,0 +1,154 @@
+{
+  "schema": 1,
+  "session_id": "RK03_TRANSITION_PROBE_01",
+  "status": "PROBE_PASS_RECOVERY_G18_OPERATOR_REPORTS_NO_POWER_LOSS",
+  "next_gate": "G18",
+  "qualification_sha256": "96d64646cdc9fa620d45afc7f2fc80e9c5b90a146a54b40c79324de85b9ee4d3",
+  "executable_sha256": "1573fa0046a6c1ee6b0ca9d3b0873ce0b3536fb2cdc6888304fb1e7b1ff3513e",
+  "completed_pre_probe_gates": [
+    {
+      "gate": "G06",
+      "reply": "DONE G06",
+      "raw_reply": "`DONE G06`  ",
+      "source": "user",
+      "received_utc": "2026-09-30T01:26:56.370470+00:00"
+    },
+    {
+      "gate": "G07",
+      "reply": "DONE G07",
+      "raw_reply": "DONE G07  ",
+      "source": "user",
+      "received_utc": "2026-09-30T01:27:52.905072+00:00"
+    },
+    {
+      "gate": "G08",
+      "reply": "DONE G08",
+      "raw_reply": "DONE G08  ",
+      "source": "user",
+      "received_utc": "2026-09-30T01:28:47.326454+00:00"
+    },
+    {
+      "gate": "G09",
+      "reply": "TESTMODE G09 CEL, FUEL PUMP ARE CYCLING",
+      "source": "user",
+      "received_utc": "2026-09-30T01:30:12.512403+00:00",
+      "test_mode_confirmed": true,
+      "observations": "CEL and fuel pump are cycling; radiator fans intentionally disconnected per operator context"
+    }
+  ],
+  "commit_authorization": {
+    "reply": "PROCEED RK03 TRANSITION PROBE",
+    "raw_reply": "PROCEED RK03 TRANSITION PROBE  ",
+    "source": "user",
+    "received_utc": "2026-09-30T01:31:52.785878+00:00"
+  },
+  "probe_invocation_count": 1,
+  "launch_reserved": true,
+  "engine": "OFF",
+  "stationary": true,
+  "charger": "DISCONNECTED",
+  "adapter": "GENUINE_OPENPORT_2_0",
+  "operator_monitors_voltage": true,
+  "context_source": "Latest user physical-context directive; actual fresh Test Mode indications required at G09",
+  "full_acquisition_allowed": false,
+  "physical_authorization_received": true,
+  "protocol": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\TRANSITION_PROBE_HUMAN_PROTOCOL.json",
+  "updated_utc": "2026-09-30T01:44:02.447737+00:00",
+  "ignition": "OFF",
+  "test_mode_connectors": "CONNECTED",
+  "test_mode_confirmed": true,
+  "commit_checks": {
+    "hashes": {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\G09_COMMIT_PRECHECK.json",
+      "sha256": "1f4715c8327711438e26f969bfc7d02d67140057a526ff6ae716f0813424ba0b"
+    },
+    "clients": {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\COMMIT_CLIENT_CHECK.json",
+      "sha256": "ef8534f51a6dad2dec6a0a54ca3fbd43f8796dd78c20708d545c7c49eace1ab1"
+    }
+  },
+  "expected_commit_reply": "PROCEED RK03 TRANSITION PROBE",
+  "launch_reserved_utc": "2026-09-30T01:32:03.824342+00:00",
+  "process_id": 7496,
+  "process_exited": true,
+  "exit_code": 0,
+  "physical_result": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\current_rom_20260930_01\\physical_probe_result\\PHYSICAL_RESULT.json",
+    "bytes": 10152,
+    "sha256": "acc41d5d8bbb499ab15805ef0b039a1602307ba8605bfdb90e91c4e73a929544"
+  },
+  "completed_recovery_gates": [
+    {
+      "gate": "G13",
+      "reply": "DONE G13",
+      "source": "user",
+      "received_utc": "2026-09-30T01:35:13.597734+00:00"
+    },
+    {
+      "gate": "G14",
+      "reply": "DONE G14",
+      "source": "user",
+      "received_utc": "2026-09-30T01:36:25.005753+00:00"
+    },
+    {
+      "gate": "G15",
+      "reply": "DONE G15",
+      "source": "user",
+      "received_utc": "2026-09-30T01:36:55.156751+00:00"
+    },
+    {
+      "gate": "G16",
+      "reply": "DONE G16",
+      "source": "user",
+      "received_utc": "2026-09-30T01:37:26.309928+00:00"
+    },
+    {
+      "gate": "G17",
+      "reply": "DONE G17",
+      "source": "user",
+      "received_utc": "2026-09-30T01:38:34.347624+00:00"
+    }
+  ],
+  "ignored_duplicate_authorizations": [
+    {
+      "reply": "PROCEED RK03 TRANSITION PROBE",
+      "source": "user",
+      "recorded_utc": "2026-09-30T01:36:25.005753+00:00",
+      "reason": "Single physical probe already completed; no retry allowed; no invocation performed"
+    }
+  ],
+  "openport_vehicle_connection": "DISCONNECTED",
+  "battery_negative": "DISCONNECTED_AND_PHYSICALLY_ISOLATED",
+  "battery_positive": "DISCONNECTED",
+  "vehicle_power_loss_verified": false,
+  "recovery_gate_attempts": [
+    {
+      "gate": "G18",
+      "reply": "VOLTAGE G18 14.87",
+      "source": "user",
+      "received_utc": "2026-09-30T01:40:36.850737+00:00",
+      "reported_volts": 14.87,
+      "accepted": false,
+      "reason": "Reported voltage is inconsistent with complete vehicle-side power loss; measurement location or remaining supply must be resolved before G19"
+    },
+    {
+      "gate": "G18",
+      "reply": "VOLTAGE G18 13.28",
+      "source": "user",
+      "received_utc": "2026-09-30T01:42:36.795437+00:00",
+      "reported_volts": 13.28,
+      "accepted": false,
+      "reason": "Reported voltage does not establish complete vehicle-side power loss; exact red and black probe contact points require clarification"
+    },
+    {
+      "gate": "G18",
+      "reply": "There was no vehicle side power loss",
+      "source": "user",
+      "received_utc": "2026-09-30T01:44:02.447737+00:00",
+      "accepted": false,
+      "reason": "Operator explicitly reports vehicle-side power loss has not occurred; physical isolation requires verification"
+    }
+  ],
+  "last_vehicle_side_reported_volts": 13.28,
+  "physical_isolation_requires_reverification": true
+}

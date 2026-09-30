@@ -1,0 +1,189 @@
+{
+  "schema": 1,
+  "status": "PASS_INDEPENDENT_SEALING_MECHANICS_REVIEW",
+  "utc": "2026-09-30T06:32:19.095772+00:00",
+  "reviewer": "passive_review",
+  "roles": {
+    "sealer_and_root_audit_author": "root",
+    "sealing_reviewer": "passive_review",
+    "qualification_runner_author_and_executor": "passive_review",
+    "independent_runner_and_raw_journal_reviewer": "root"
+  },
+  "scope": "Read-only source and recorded-result review of exactly the four inspected files. No sealer, native executable, test runner, launcher, client inspection or provider was invoked.",
+  "inspected_files": {
+    "sealer": {
+      "path": "C:\\Dev\\A2WC511R_RK03_KernelIdentityPhysical\\kernel_identity_physical\\tools\\seal_physical_release.py",
+      "bytes": 16230,
+      "sha256": "3b941b01fbe3d8b99ef16ba474502b4430a11a87dcf96e8ec982e55cbd371405"
+    },
+    "readme": {
+      "path": "C:\\Dev\\A2WC511R_RK03_KernelIdentityPhysical\\kernel_identity_physical\\README.md",
+      "bytes": 3176,
+      "sha256": "e7d1ec092a0fed519ca2c09e29fbc4f98e6c965c4e4876c591b064a746458cf9"
+    },
+    "root_audit_source": {
+      "path": "C:\\Dev\\A2WC511R_RK03_KernelIdentityPhysical\\kernel_identity_physical\\tools\\root_audit.py",
+      "bytes": 9907,
+      "sha256": "3d9897f6d0070a1be712c32c7ef15930909825fd8c71fbb8aa0ac68c2920c0a7"
+    },
+    "root_audit_report": {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk03_kernel_identity_physical_20260930_01\\root_review\\ROOT_REVIEW.json",
+      "bytes": 157263,
+      "sha256": "3d80e4440ea2daeccf2e0c9cd415ee4757c2f2bac276c666b7f96d719e1a34fb"
+    }
+  },
+  "blocking_findings": [],
+  "findings": [
+    {
+      "id": "fixed_scope",
+      "result": "PASS",
+      "source": "sealer",
+      "lines": [
+        18,
+        20,
+        47,
+        56,
+        113,
+        125
+      ],
+      "detail": "Exact expected executable, contract and unchanged kernel hashes are constants. The sealer checks the fixed session, FFFF3004 entry, 24-request bound, one fixed start and one exact identity request/reply. The certificate limits execution to the fixed identity scope; it excludes a sixteenth transfer, second start, arbitrary input, ROM read, flash and automatic retry."
+    },
+    {
+      "id": "qualification_integrity",
+      "result": "PASS",
+      "source": "sealer",
+      "lines": [
+        29,
+        37,
+        57,
+        76,
+        92,
+        120,
+        150
+      ],
+      "detail": "Recursive pin verification covers qualification and review inputs; 386 native cases and 36/14/46 control checks must pass. Both build source closures and executable bytes must match. Canonical operational controls must equal their tracked source copies. The certificate pins source snapshot, binary, contract, controls, reports, reviews and completed reused dependencies, then verifies the assembled pins."
+    },
+    {
+      "id": "source_and_reproducibility",
+      "result": "PASS",
+      "source": "sealer",
+      "lines": [
+        42,
+        43,
+        73,
+        90,
+        183
+      ],
+      "detail": "Sealing requires the intended branch and clean committed source, builds a deterministic tracked-source archive and byte-identical canonical build manifests, and rejects historical active control names or draft builds in tracked source. The final git check detects tracked-source drift."
+    },
+    {
+      "id": "no_preauthorization",
+      "result": "PASS",
+      "source": "sealer",
+      "lines": [
+        44,
+        46,
+        108,
+        109,
+        122,
+        128,
+        155,
+        174
+      ],
+      "detail": "Existing physical session, qualification directory or human gate state is rejected. Initial gates contain no completed human actions, no reservation and no authorization, with zero invocations and unconfirmed engine/physical state. The certificate and CURRENT both explicitly deny received physical authorization. The operator approval of the fixed query is recorded separately from the future exact execution token."
+    },
+    {
+      "id": "mutable_state_exclusion",
+      "result": "PASS",
+      "source": "sealer",
+      "lines": [
+        92,
+        104,
+        155,
+        183
+      ],
+      "detail": "The constructed certificate input list excludes the new mutable CURRENT, CHECKPOINT and human gate state; those are written only after certificate verification. Gate state is bound to the completed certificate hash. Root separately checked transitive reused dependency pins before sealing; this review did not repeat that dependency audit."
+    },
+    {
+      "id": "preservation",
+      "result": "PASS",
+      "source": "sealer",
+      "lines": [
+        27,
+        28,
+        44,
+        46,
+        84,
+        90,
+        143,
+        154,
+        163,
+        176
+      ],
+      "detail": "New evidence uses exclusive creation; historical superseded drafts are pinned separately without becoming current qualification. Existing source/evidence content is read and hashed, not rewritten. Current operational state is snapshotted before its authorized update. Read-only attributes are applied to the new completed release evidence."
+    },
+    {
+      "id": "one_shot_control_binding",
+      "result": "PASS",
+      "source": "sealer",
+      "lines": [
+        11,
+        17,
+        71,
+        72,
+        108,
+        124,
+        155,
+        174
+      ],
+      "detail": "This packaging script contains no native/provider dispatch and creates no AUTHORIZATION or reservation file. Its only subprocess operations are fixed git queries. It binds the already independently reviewed one-shot launcher/control implementation and initializes its required human gates as unmet; it does not replace launcher/native once-only enforcement."
+    },
+    {
+      "id": "independent_root_audit",
+      "result": "PASS",
+      "source": "root_audit_source",
+      "lines": [
+        24,
+        39,
+        40,
+        103,
+        104,
+        133
+      ],
+      "detail": "Root independently reads the completed raw journals, constrains every TX to the fixed prefix plus retained known seed/key vectors, recovers all 15 upload ACKs/start ACK/exact identity bytes on success, checks failure stage and cleanup-only continuation, compares 22 TX/44 RX physical-prefix messages including metadata, and verifies late-valid replies fail. The report pins this exact audit source and the frozen reviewer-authored runner/test report."
+    },
+    {
+      "id": "audit_accounting",
+      "result": "PASS",
+      "source": "root_audit_report",
+      "detail": "Recorded counts reconcile: 50 successful protocol cases + 312 negative protocol cases + 24 bootstrap cases = 386. The 362 case rows are protocol cases; bootstrap cases are checked and counted separately by the source. Retained 311 plus 75 new cases match the qualification. Root records 1,339 distinct verified pins and zero new executable invocations/provider loads/physical operations."
+    },
+    {
+      "id": "documentation",
+      "result": "PASS",
+      "source": "readme",
+      "lines": [
+        3,
+        24,
+        26,
+        43,
+        48,
+        54
+      ],
+      "detail": "README agrees with fixed wire sequence, final executable hash, qualification counts and limitations. It distinguishes query-scope approval from physical launch authorization, requires fresh IGNITION OFF then TEST MODE ON plus the exact token, and permits only offline bounded-ROM-read preparation after physical identity PASS and passive OEM-return PASS."
+    }
+  ],
+  "limitations": [
+    "This is a static review of sealing mechanics and a consistency review of the already recorded independent root audit. The sealer was not executed, and no completed certificate is asserted to exist by this review.",
+    "Sealing is deliberately exclusive rather than transactionally atomic: a later dependency or filesystem failure can leave partial new outputs. Existing-output checks prevent silent overwrite or automatic continuation; such a failure needs an explicit offline evidence-preserving recovery. No partial output grants physical authorization.",
+    "The complete reused dependency closure was audited by root separately. This bounded review inspects only the four listed files and does not repeat old qualification or historical preservation audits.",
+    "Offline fake results and instruction-model evidence do not establish physical kernel execution, effective electrical baud or silicon timing. Fresh physical gates and the exact new execution token remain required."
+  ],
+  "frozen_prior_reviews_modified": false,
+  "sealer_executions": 0,
+  "native_executable_invocations": 0,
+  "test_invocations": 0,
+  "physical_operations": 0,
+  "provider_loads": 0,
+  "authorization_created": false
+}

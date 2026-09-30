@@ -1,0 +1,93 @@
+{
+  "status": "PASS_STOCK_INTERBYTE_PERIODIC_TICK_BOUNDARY",
+  "cases": [
+    {
+      "periodic_ticks_between_header_byte0_and_byte1": 0,
+      "tick_duration_seconds": null,
+      "state_at_gap_end": {
+        "counter_63F6": 0,
+        "receive_cursor_63FD": 1,
+        "session_63E1": 32
+      },
+      "request_83": "8010f002830005",
+      "response_after_83": "80f01007c30000ff00ff0048",
+      "executed_instructions": 4814
+    },
+    {
+      "periodic_ticks_between_header_byte0_and_byte1": 7,
+      "tick_duration_seconds": null,
+      "state_at_gap_end": {
+        "counter_63F6": 7,
+        "receive_cursor_63FD": 1,
+        "session_63E1": 32
+      },
+      "request_83": "8010f002830005",
+      "response_after_83": "80f01007c30000ff00ff0048",
+      "executed_instructions": 5262
+    },
+    {
+      "periodic_ticks_between_header_byte0_and_byte1": 8,
+      "tick_duration_seconds": null,
+      "state_at_gap_end": {
+        "counter_63F6": 8,
+        "receive_cursor_63FD": 0,
+        "session_63E1": 32
+      },
+      "request_83": "8010f002830005",
+      "response_after_83": "",
+      "executed_instructions": 3508
+    },
+    {
+      "periodic_ticks_between_header_byte0_and_byte1": 9,
+      "tick_duration_seconds": null,
+      "state_at_gap_end": {
+        "counter_63F6": 9,
+        "receive_cursor_63FD": 0,
+        "session_63E1": 32
+      },
+      "request_83": "8010f002830005",
+      "response_after_83": "",
+      "executed_instructions": 3666
+    }
+  ],
+  "inputs": [
+    {
+      "path": "C:\\Dev\\SubaruRoms\\OEM\\A2WC511R.bin",
+      "bytes": 1048576,
+      "sha256": "22d52a5b3de7d86562eed2f85cca772db10e0949fcedc2d61b7540b45f760218"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk02_vehicle_03_transition\\oem_transition_gap_replay.py",
+      "bytes": 4493,
+      "sha256": "7d59e48645d122a936a64a6661b1c09d380d15b9fee5e368bb5e4d71c93a5e32"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk02_vehicle_03_transition\\oem_transition_replay.py",
+      "bytes": 6079,
+      "sha256": "b6fb81978af6ffd4613f0888463bf76607db5d5c87fba31ebe366674d83c3278"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\verify_kwp_contract.py",
+      "bytes": 10190,
+      "sha256": "bc449cee55fc25c0a7975a2444bf3c8fe5124a9a4ae8cd73ccc7bd18cc628a58"
+    },
+    {
+      "path": "C:\\Dev\\A2WC511R_ReadKernel\\evidence\\contracts\\verify_kwp_wire.py",
+      "bytes": 6163,
+      "sha256": "dc4fc4c218f60ece9b0561fcd7c780ddfe16fa085abfc6751a34a075b8286772"
+    }
+  ],
+  "trace": {
+    "path": "C:\\Dev\\A2WC511R_Final\\analysis\\rk02_vehicle_03_transition\\oem_transition_gap_trace.json.gz",
+    "bytes": 239907,
+    "sha256": "f3e62c12064803ddd326676d3c72f5da04ed0d272696c4a0011b73a5113bf0e7"
+  },
+  "physical_operations": 0,
+  "limits": [
+    "No milliseconds assigned to periodic ticks.",
+    "Each periodiccall completes between suppliedRXI calls; asynchronouspreemption unmodeled.",
+    "No provider, adapter, waveform, currentvehicleROM or electricalacceptanceclaim.",
+    "SR390 supplied to preserve a nonzero mask through3AF4/3B08; schedulerdescriptor domainnotexecuted.",
+    "SCI ready/noerror transcript retained; actual requestparser, RXI, echo and periodicfunctionexecute."
+  ]
+}

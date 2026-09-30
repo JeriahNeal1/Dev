@@ -1,0 +1,7 @@
+# Classification: truncated response, cause unresolved
+
+The228-byte provider record is not a valid217-byte short response. Its `0206` field declares518 body bytes and523 total bytes. The first227 bytes match the expected frame; the final observed `F8` differs from expected `28` at payload offset217. `F8` is not the checksum of the preceding227 bytes (`39`). A coherent217-data-byte response would instead require length `00DF` and checksum `10`.
+
+J2534 delivered one228-byte data record, then `ERR_BUFFER_EMPTY`16/count0. The4128-byte host buffer and complete228-byte log rule out host log truncation; they do not establish a provider frame limit or physical cause. `DataSize=ExtraDataIndex=228` is metadata, not proof of a complete BEEF frame. No second data record, independent bus trace, ECU trace, or RAM readback resolves the source of the cutoff/different byte.
+
+The existing kernel requires request length0200 and transmits512 bytes. A128-byte variant therefore needs two targeted comparison changes, `.Lblock=128`, `.Lraw_length=134`, a regenerated loader checksum, and matching new manifest/native/oracle pins. Preserve the pass-count compare2. The proposed fixed request is `beef0008030000000000008038`; reply length is139 bytes. This report derives the contract only and does not build or authorize it. Exact proposed instruction/constant locations and qualification requirements are in the JSON.
